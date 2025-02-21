@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ La topología supuesta para esta sección consiste en un clúster de creación d
 
 ![mongo-secondary](assets/mongo-secondaries.jpg)
 
-1. Cree nuevas instancias de autor de la versión 6.5, conectadas a la instancia actualizada de Mongo.
+1. Cree nuevas instancias de autor de 6.5.2025, conectadas a la instancia actualizada de Mongo.
 
 1. Vuelva a generar los nodos MongoDB que se quitaron del clúster.
 
