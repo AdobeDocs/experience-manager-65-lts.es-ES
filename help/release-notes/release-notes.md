@@ -1,0 +1,113 @@
+---
+title: Notas de la versión actuales de Adobe Experience Manager 6.5 LTS
+description: Estas son las notas de la versión actuales de Adobe Experience Manager 6.5 LTS.
+source-git-commit: e062ab3ff820c85ebcbd0052c28e9e719222154f
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 22%
+
+---
+
+
+# Notas de la versión actuales de Adobe Experience Manager 6.5 LTS {#release-notes}
+
+## Información de la versión {#release-information}
+
+| Producto | [!DNL Adobe Experience Manager] |
+|---|---|
+| Versión | 6,5 LTS |
+| Tipo | Versión principal |
+| Fecha de disponibilidad general | sábado, 28 de febrero de 2025 |
+
+## Novedades {#what-s-new}
+
+[!DNL Adobe Experience Manager] 6.5 LTS es una actualización de la base de código de [!DNL Adobe Experience Manager] 6.5. Proporciona funcionalidades nuevas y mejoradas, correcciones importantes para los clientes, mejoras de alta prioridad y correcciones generales de errores orientadas a la estabilidad del producto. También incluye [!DNL Adobe Experience Manager] versiones del paquete de servicio 6.5 hasta SP22.
+
+La lista siguiente proporciona una descripción general, mientras que las páginas siguientes enumeran todos los detalles.
+
+### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
+
+La plataforma de [!DNL Adobe Experience Manager] 6.5 LTS se basa en las versiones actualizadas del marco basado en OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java™: Apache Jackrabbit Oak 1.68.0.
+
+Quickstart utiliza Eclipse Jetty 11.0.x como motor de servlets.
+
+#### Compatibilidad con Java™  {#java-support}
+
+* Compatibilidad con Java™ 17.
+* Para obtener un rendimiento óptimo, reemplace los valores de GC predeterminados por otros valores. Para obtener más información, consulte la sección [instalar y actualizar](/help/sites-deploying/custom-standalone-install.md).
+* Adobe distribuye las actualizaciones de mantenimiento de Java™ 17 para que las utilicen los clientes en proyectos relacionados con AEM, cuando no están disponibles públicamente en Oracle.
+
+#### Desarrollo de Java™ {#java-development}
+
+* Ahora hay [dos versiones de Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), una versión recomendada con interfaces públicas que no están marcadas para desaprobación y una versión que incluye solamente interfaces marcadas para desaprobación.
+
+#### Actualizar {#upgrade}
+
+* Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
+
+#### Repositorio {#repository}
+
+* La base de Adobe Experience Manager 6.5 LTS se basa en las versiones actualizadas del marco basado en OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java™: Apache Jackrabbit Oak 1.68.0.
+
+## Instalar y actualizar {#install-update}
+
+Para conocer los requisitos de instalación, consulte [instrucciones de instalación](/help/sites-deploying/custom-standalone-install.md).
+
+Para obtener instrucciones detalladas, consulte [documentación de actualización](/help/sites-deploying/upgrade.md).
+
+## Plataformas compatibles {#supported-platforms}
+
+Encuentre la matriz completa de plataformas compatibles, incluido el nivel de compatibilidad, en [Requisitos técnicos de AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
+
+>[!NOTE]
+>
+>Java™ 17 es la versión recomendada para usar con AEM 6.5 LTS.
+
+
+## Funciones en desuso y eliminadas {#deprecated-and-removed-features}
+
+Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores.
+
+Para comunicar la inminente eliminación o sustitución de las funciones de Adobe Experience Manager (AEM), se aplican las siguientes reglas:
+
+1. Primero se anuncia el desuso. Aunque están en desuso, las funciones siguen estando disponibles, pero no se siguen mejorando.
+1. La eliminación de las funciones obsoletas se produce en la siguiente versión principal como pronto. La fecha objetivo real para la eliminación se anunciará más adelante.
+
+Este proceso proporciona a los clientes un ciclo de lanzamiento para adaptar su implementación a una nueva versión o a la siguiente versión de una capacidad en desuso, antes de eliminarla.
+
+### Funciones obsoletas {#deprecated-features}
+
+Esta sección enumera las funciones que se han marcado como obsoletas con AEM 6.5 LTS. Por lo general, las funciones que se planea eliminar en una versión futura se establecen en primer lugar como obsoletas, con una alternativa que las sustituye.
+
+Se recomienda a los clientes que comprueben si utilizan la función o capacidad en su implementación actual, y que planifiquen el cambio de la implementación y usen la alternativa proporcionada.
+
+| Área | Funcionalidad | Reemplazo | Versión (SP) |
+|---|---|---|---|
+| Sites | [Editor de SPA](/help/sites-developing/spa-overview.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. | 6,5 LTS GA |
+
+### Funciones eliminadas {#removed-features}
+
+Esta sección enumera las funciones que se han eliminado de AEM 6.5 LTS. Las versiones anteriores tenían estas funciones marcadas como obsoletas.
+
+| Área | Funcionalidad | Reemplazo | Versión (SP) |
+|--- |--- |--- |--- |
+| Comercio | AEM CIF Classic no es compatible. | Debe migrar a [AEM CIF](/help/commerce/cif/migration.md). | 6,5 LTS GA |
+| Soluciones | Social/Communities no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Screens | Screens no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Recursos | `dam-pim` y `dam-rating` no son compatibles porque los paquetes dependen de las redes sociales. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Granite | Se ha eliminado el paquete `com.adobe.granite.socketio`. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Granite | `com.adobe.granite.crx-explorer` no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Guayaba | Todas las dependencias de guayaba ahora se eliminan en AEM y, por lo tanto, el paquete `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` no forma parte de AEM. | Los clientes pueden agregar guayaba por su cuenta si dependen de la guayaba o reemplazar el código de guayaba con colecciones java u otras alternativas si es posible. | 6,5 LTS GA |
+| We.Retail | No se admite el sitio de muestra We-retail. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Código abierto | No se admite el paquete `oak-solr-osgi`. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Código abierto | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` y `org.apache.sling.atom.taglib` no son compatibles. | No hay reemplazo disponible. | 6,5 LTS GA |
+| Código abierto | `org.apache.commons.io packages` se han exportado desde `org.apache.commons.commons-io`. | No se requiere ningún cambio. | 6,5 LTS GA |
+| Código abierto | Se están exportando `javax.mail` paquetes desde el paquete `com.sun.javax.mail`. | No se requiere ningún cambio. | 6,5 LTS GA |
+| Código abierto | `org.apache.jackrabbit.api` paquetes ahora se exportan del paquete `org.apache.jackrabbit.oak-jackrabbit-api`. | No se requiere ningún cambio. | 6,5 LTS GA |
+
+## Sitios web restringidos{#restricted-sites}
+
+Estos sitios web solo están disponibles para los clientes de. Si es cliente de y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
+
+* [Descarga de producto en Licensing.adobe.com](https://licensing.adobe.com/)
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
