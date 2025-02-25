@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 72bf54362948b6429627466111a088bcebfd2a2b
+source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
 workflow-type: tm+mt
 source-wordcount: '7022'
 ht-degree: 70%
@@ -782,7 +782,7 @@ ht-degree: 70%
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
       + [Usar la firma manuscrita en formularios HTML5](/help/forms/using/scribble-signature.md)
       + [Cambiar el contenido de la página cero en Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Prácticas recomendadas de accesibilidad]{#accessibility-best-practices}
+      + Prácticas recomendadas de accesibilidad {#accessibility-best-practices}
          + [Introducción](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Prácticas recomendadas para crear formularios](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Técnicas para probar la accesibilidad de los formularios](/help/forms/using/techniques-for-testing-form-accessibility.md)
