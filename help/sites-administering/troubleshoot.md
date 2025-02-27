@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,6 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
  </tbody>
 </table>
 
-## Problemas de instalación {#installation-issues}
-
-Consulte [Problemas comunes de instalación](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obtener información sobre los siguientes escenarios de solución de problemas:
-
-* Hacer doble clic en el JAR de inicio rápido no tiene efecto o el archivo JAR con otro programa (como el administrador de archivos).
-* Las aplicaciones que se ejecutan en CRX generan errores de memoria insuficiente.
-* La pantalla de bienvenida de AEM no se muestra en el explorador después de hacer doble clic en Inicio rápido de AEM.
 
 ## Métodos para el análisis de resolución de problemas {#methods-for-troubleshooting-analysis}
 
