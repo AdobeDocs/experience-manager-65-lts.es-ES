@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión actuales de Adobe Experience Manager 6.5 LTS
 description: Estas son las notas de la versión actuales de Adobe Experience Manager 6.5 LTS.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 23%
+source-wordcount: '796'
+ht-degree: 22%
 
 ---
 
@@ -59,7 +59,6 @@ Encuentre la matriz completa de plataformas compatibles, incluido el nivel de co
 >
 >Java™ 17 es la versión recomendada para usar con AEM 6.5 LTS.
 
-
 ## Funciones en desuso y eliminadas {#deprecated-and-removed-features}
 
 Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores.
@@ -92,6 +91,7 @@ Esta sección enumera las funciones que se han eliminado de AEM 6.5 LTS. Las ver
 | Screens | Screens no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
 | Recursos | `dam-pim` y `dam-rating` no son compatibles porque los paquetes dependen de las redes sociales. | No hay reemplazo disponible. | 6,5 LTS GA |
 | Recursos | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` se ha eliminado. | Utilice la API alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` que se ha agregado. | 6,5 LTS GA |
+| Portal | AEM Portal Director no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
 | Granite | Se ha eliminado el paquete `com.adobe.granite.socketio`. | No hay reemplazo disponible. | 6,5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` no es compatible. | No hay reemplazo disponible. | 6,5 LTS GA |
 | Granite | `crx2oak` no es compatible. | Elija la versión relevante de [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
@@ -104,7 +104,6 @@ Esta sección enumera las funciones que se han eliminado de AEM 6.5 LTS. Las ver
 | Código abierto | Se están exportando `javax.mail` paquetes desde el paquete `com.sun.javax.mail`. | No se requiere ningún cambio. | 6,5 LTS GA |
 | Código abierto | `org.apache.jackrabbit.api` paquetes ahora se exportan del paquete `org.apache.jackrabbit.oak-jackrabbit-api`. | No se requiere ningún cambio. | 6,5 LTS GA |
 | Código abierto | `com.github.jknack.handlebars` no es compatible | Elegir [versión](https://mvnrepository.com/artifact/com.github.jknack/handlebars) relevante | 6,5 LTS GA |
-
 
 ## Sitios web restringidos{#restricted-sites}
 
