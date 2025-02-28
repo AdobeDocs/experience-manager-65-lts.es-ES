@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
+user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
-ht-degree: 70%
+source-wordcount: '7020'
+ht-degree: 69%
 
 ---
 
 
-# Documentación de Adobe Experience Manager 6.5 {#content}
+# Documentación de Adobe Experience Manager 6.5 LTS {#content}
 
 + Notas de la versión {#release-notes}
    + [Notas de la versión](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 70%
    + [Gestión de solicitudes de RGPD para AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [Vista principal para la administración de permisos](/help/sites-administering/touch-ui-principal-view.md)
    + [Filtro de disposición de contenido](/help/sites-administering/content-disposition-filter.md)
-   + [Asignación de grupos de usuarios personalizados en AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Asignación de grupos de usuarios personalizados](/help/sites-administering/cug-mapping.md)
    + [Compatibilidad con cookies de SameSite](/help/sites-administering/same-site-cookie-support.md)
    + [Credenciales de JWT de Adobe Developer Console en desuso](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configuración de integraciones de IMS para AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 70%
       + Introducción a la plataforma de AEM {#introduction}
          + [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
          + [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
-         + [Elementos de almacenamiento en AEM 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [Elementos de almacenamiento en AEM](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM con MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + Implementando AEM {#deploying}
          + [Implementación y mantenimiento](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 70%
          + [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md)
          + [Consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md)
          + [Cómo ejecutar AEM con el modo de espera pasiva TarMK](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Compatibilidad con RDBMS en AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [Compatibilidad con RDBMS en AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexación mediante el Jar ejecutado por Oak](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 70%
          + [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
          + [Configuración de la consola web](/help/sites-deploying/configuring-web-console.md)
-      + Actualizando a AEM 6.5 {#upgrading}
-         + [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
+      + Actualizando a AEM 6.5 LTS {#upgrading}
+         + [Actualización a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)
          + [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)
-         + [Compatibilidad con versiones anteriores en AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+         + [Compatibilidad con versiones anteriores en AEM 6.5 LTS](/help/sites-deploying/backward-compatibility.md)
          + [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md)
          + [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md)
          + [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
