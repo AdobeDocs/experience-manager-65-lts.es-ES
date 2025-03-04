@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 41%
@@ -80,7 +80,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * Instale la última versión de Apache Maven [.Apache Maven ](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
-* Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
+* Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
@@ -315,7 +315,7 @@ Para eliminar temas no utilizados o no deseados:
 1. Elimine la carpeta de la temática y guarde los cambios.
 
 
-## Pregunta más frecuente {#faq}
+## Preguntas frecuentes {#faq}
 
 **P:** ¿Qué personalización tiene prioridad al realizar personalizaciones en una carpeta de temas tanto a nivel global como a nivel de componente?
 
@@ -336,7 +336,7 @@ Para eliminar temas no utilizados o no deseados:
 
 1. Guarde el archivo y vuelva a implementar la temática.
 
-## Ver también
+## Véase también
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)

@@ -8,7 +8,7 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -119,7 +119,7 @@ La sección **ObservationQueueMaxLength** muestra el número de eventos en la co
 1. Colóquelo en la carpeta /crx-quickstart/install.
 
 >[!NOTE]
->Ver [AEM 6.x | Consejos para ajustar el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)
+>Ver [AEM 6.x | Consejos para ajustar el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 La configuración predeterminada es 10 000, pero la mayoría de las implementaciones deben aumentarla a 20 000 o 50 000.
 
@@ -147,7 +147,7 @@ Después de ejecutar pruebas de rendimiento en la instancia de autor, cualquier 
 * Observe el registro de errores para ver si hay errores o advertencias. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 * Supervise los recursos de hardware del sistema, como la utilización de memoria y CPU, E/S de disco o E/S de red. Estos recursos suelen ser la causa de cuellos de botella en el rendimiento.
 * Optimizar la arquitectura de las páginas y cómo se dirigen para minimizar el uso de parámetros de URL y permitir el mayor almacenamiento en caché posible.
-* Siga la documentación de [optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [consejos para el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html).
+* Siga la documentación de [optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [consejos para el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
 
 * Si hay problemas con la edición de determinadas páginas o componentes en instancias de autor, utilice el modo de desarrollador de TouchUI para inspeccionar la página en cuestión. Al hacerlo, se proporciona un desglose de cada área de contenido de la página y de su tiempo de carga.
 * Minimice todos los JS y CSS del sitio. Ver esta [publicación de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

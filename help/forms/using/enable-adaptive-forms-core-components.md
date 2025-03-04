@@ -5,7 +5,7 @@ keywords: Habilitar componentes principales, componentes principales, Forms adap
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 48%
@@ -31,7 +31,7 @@ Este artículo contiene instrucciones detalladas para configurar e implementar u
 
 Antes de habilitar los componentes principales de Forms adaptable en un entorno de AEM 6.5 Forms:
 
-* [Actualice a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Actualice a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -130,7 +130,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    Una vez que el proyecto de arquetipo de AEM se haya compilado correctamente, se generará un paquete de AEM. Puede encontrar el paquete en [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip
 
-1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
+1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
 
 >[!NOTE]
 >

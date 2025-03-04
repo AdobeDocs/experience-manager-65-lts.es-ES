@@ -8,7 +8,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 89%
@@ -149,8 +149,8 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Cree un índice de propiedades y establézcalo en true](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Cree un índice de propiedades y establézcalo en true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
 
 1. Después de configurar índices en CRX DE o implementar mediante un paquete, [vuelva a realizar el índice del repositorio](https://helpx.adobe.com/es/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html

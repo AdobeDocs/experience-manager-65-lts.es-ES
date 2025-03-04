@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2728'
 ht-degree: 0%
@@ -242,7 +242,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 ## Buscar índices {#search-indexes}
 
-Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/administer/performance-tuning-guidelines.html?lang=en) para ver algunas optimizaciones del índice.
+Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) para ver algunas optimizaciones del índice.
 
 Cree índices personalizados para consultas que ejecute con frecuencia. Para obtener más información, consulte [metodología para analizar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) y [crear índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obtener información adicional sobre las prácticas recomendadas de consultas e índices, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

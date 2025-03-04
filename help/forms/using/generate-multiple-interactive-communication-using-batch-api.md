@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 75%
@@ -86,7 +86,7 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
@@ -146,7 +146,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
@@ -362,4 +362,4 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
 
 >[!NOTE]
 >
->Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

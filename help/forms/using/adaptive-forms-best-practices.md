@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 77%
@@ -104,9 +104,9 @@ Las plantillas de formulario también se pueden cargar desde paquetes de formula
 
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
-Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * El paquete de complementos de Forms es necesario para que la creación y la publicación admitan las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
-Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 Para obtener más información, consulte las prácticas recomendadas en [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
 
@@ -328,7 +328,7 @@ Algunas prácticas recomendadas para configurar AEM para mejorar el rendimiento 
 
 * Habilitar el HTML mediante el módulo de compresión del servidor web. Para obtener más información, consulte [Ajustar el rendimiento del servidor de AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
 * Aumentar las llamadas por configuración de solicitud para formularios grandes. Consulte [Optimizar el rendimiento de formularios grandes y complejos](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Crear [páginas de error personalizadas mostradas por el administrador de errores](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html).
+* Crear [páginas de error personalizadas mostradas por el administrador de errores](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
 * Asegurar el servidor de AEM Forms.
 
    * Usar el modo de ejecución `nosamplecontent` para asegurarse de que no haya contenido ni usuarios de muestra implementados en el servidor de producción. Consultar [Ejecutar AEM en el modo Producción lista](/help/sites-administering/production-ready.md).

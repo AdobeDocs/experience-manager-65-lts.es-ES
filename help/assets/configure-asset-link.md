@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Para configurar Experience Manager Assets para que se utilice con Asset Link, im
 
 1. Para asignar usuarios con licencia de Creative Cloud a usuarios de Experience Manager, administra [control de acceso de usuario](#user-access).
 
-1. Cree [índice de consultas personalizado](#create-custom-index), configure [representaciones de FPO](/help/assets/configure-fpo-renditions.md) para InDesign, configure [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md) y configure [búsqueda visual o de similitudes](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Cree [índice de consultas personalizado](#create-custom-index), configure [representaciones de FPO](/help/assets/configure-fpo-renditions.md) para InDesign, configure [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md) y configure [búsqueda visual o de similitudes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Requisitos previos y compatibilidad con varias funcionalidades {#prerequisites}
 
@@ -242,7 +242,7 @@ En Experience Manager 6.4 y Experience Manager 6.5, los administradores pueden c
 
 La configuración es útil para usuarios y especialistas en marketing de línea de negocios, por ejemplo, para crear un flujo de trabajo personalizado en unas pocas carpetas específicas. Supongamos que todos los activos de la sesión fotográfica de una agencia pueden marcarse como agua o que todos los activos cargados por un freelancer pueden procesarse para crear representaciones específicas.
 
-Para obtener más información y para la configuración de Experience Manager, consulte [flujo de trabajo de ejecución automática en los recursos](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Para obtener más información y para la configuración de Experience Manager, consulte [flujo de trabajo de ejecución automática en los recursos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Crear un índice personalizado en las versiones de Experience Manager 6.4.x {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager contiene índices que se utilizan para consultas. Cree el sig
 
 ## Configurar la búsqueda visual o de similitudes {#configure-visual-similarity-search}
 
-La funcionalidad Búsqueda visual permite buscar recursos visualmente similares en el repositorio de AEM Assets mediante el panel Adobe Asset Link. La funcionalidad está disponible en 6.5.0 o versiones posteriores y solo se buscan los recursos indexados. Para obtener más información, vea [cómo configurar la búsqueda visual](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+La funcionalidad Búsqueda visual permite buscar recursos visualmente similares en el repositorio de AEM Assets mediante el panel Adobe Asset Link. La funcionalidad está disponible en 6.5.0 o versiones posteriores y solo se buscan los recursos indexados. Para obtener más información, vea [cómo configurar la búsqueda visual](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Generar representaciones solo para ubicación para Adobe InDesign {#fpo-renditions}
 
@@ -269,7 +269,7 @@ Experience Manager proporciona representaciones que se utilizan solo para ubicac
 
 ## Integración con Adobe Stock {#adobe-stock-integration}
 
-Las organizaciones integran sus cuentas de Adobe Stock con Experience Manager Assets. Ayuda a los especialistas en marketing a poner a disposición de sus proyectos creativos y de marketing fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad y libres de derechos de autor. Los profesionales creativos pueden utilizar estos recursos mediante el panel Asset Link.
+Las organizaciones integran sus cuentas de Adobe Stock con Experience Manager Assets. Ayuda a los especialistas en marketing a poner a disposición de sus proyectos creativos y de marketing fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad y libres de derechos de autor. Los profesionales de Creative pueden utilizar estos recursos mediante el panel Asset Link.
 
 Para integrar con Adobe Stock, consulte [Recursos de Adobe Stock en Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Se requiere Experience Manager 6.4.2 o posterior para la integración con Adobe Stock.
 

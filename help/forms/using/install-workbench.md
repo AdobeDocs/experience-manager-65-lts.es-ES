@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 65%
@@ -36,11 +36,11 @@ Los recursos de esta tabla pueden ayudarle a obtener más información y a empez
   </tr>
   <tr>
    <td><p>Información general sobre AEM Forms y su integración con otros productos de Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda la documentación disponible para AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">Documentación de AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">Documentación de AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
@@ -190,7 +190,7 @@ Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, n
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
-De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
+De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
 
 ### Configurar Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

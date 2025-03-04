@@ -4,7 +4,7 @@ description: Ampliación de  [!DNL Adobe Experience Manager] 6.5 mediante Adobe 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -29,7 +29,7 @@ App Builder ha estado disponible para clientes y socios empresariales mediante l
 
 >[!NOTE]
 >
->Para los clientes de AEM as a Cloud Service que quieran usar App Builder, vea [Ampliar Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/app-builder.html).
+>Para los clientes de AEM as a Cloud Service que quieran usar App Builder, vea [Ampliar Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
 
 ## Arquitectura {#architecture}
 
