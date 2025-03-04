@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ El proceso de actualización de AEM necesita fases de planificación, análisis 
 >
 >La actualización a AEM 6.5 LTS es compatible con los últimos 6 Service Packs
 
-Es importante asegurarse de que está ejecutando un sistema operativo compatible, un tiempo de ejecución de Java™, un httpd y una versión de Dispatcher. Para obtener más información, consulte el TBD: vínculo a los requisitos técnicos de AEM 6.5 LTS. La actualización de estos componentes debe tenerse en cuenta en el plan de actualización y debe realizarse antes de actualizar AEM.
+Es importante asegurarse de que está ejecutando un sistema operativo compatible, un tiempo de ejecución de Java™, un httpd y una versión de Dispatcher. Para obtener más información, consulte [requisitos técnicos de AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). La actualización de estos componentes debe tenerse en cuenta en el plan de actualización y debe realizarse antes de actualizar AEM.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Creación de un Plan de Pruebas {#creating-a-test-plan}
 
-La implementación de AEM por parte de cada cliente es única y se ha personalizado para satisfacer los requisitos empresariales. Como resultado, es importante determinar todas las personalizaciones que se han realizado en el sistema para que se puedan incluir en un plan de prueba. Este plan de prueba potencia el proceso de control de calidad que Adobe realiza en la instancia actualizada.
+La implementación de AEM por parte de cada cliente es única y se ha personalizado para satisfacer los requisitos empresariales. Como resultado, es importante determinar todas las personalizaciones que se han realizado en el sistema para que se puedan incluir en un plan de prueba.
 
 Es necesario duplicar el entorno de producción exacto y se deben realizar pruebas en él después de la actualización para asegurarse de que todas las aplicaciones y el código personalizado siguen ejecutándose como se desea. Regrese todas las personalizaciones y ejecute pruebas de rendimiento, carga y seguridad. Al organizar el plan de prueba, asegúrese de cubrir todas las personalizaciones que se han realizado en el sistema, además de las IU y los flujos de trabajo predeterminados que se utilizan en sus operaciones diarias. Pueden incluir servicios y servlets OSGI personalizados, integraciones en Adobe Experience Cloud, integraciones con terceros a través de conectores AEM, integraciones de terceros personalizadas, componentes y plantillas personalizados, superposiciones de IU personalizadas en AEM y flujos de trabajo personalizados. Además, las consultas personalizadas deben probarse para garantizar que sus índices siguen funcionando de forma eficaz después de la actualización.
 
 ### Evaluación de la complejidad de actualización {#assessing-upgrade-complexity}
 
-Debido a la amplia variedad en la cantidad y naturaleza de las personalizaciones que los clientes de Adobe aplican a sus entornos de AEM, es importante pasar algún tiempo por adelantado para determinar el nivel general de esfuerzo que se debe esperar en la actualización. Analyzer para AEM puede ayudarle a evaluar la complejidad de la actualización.
+Debido a la amplia variedad en la cantidad y naturaleza de las personalizaciones que los clientes de Adobe aplican a sus entornos de AEM, es importante pasar algún tiempo por adelantado para determinar el nivel general de esfuerzo que se debe esperar en la actualización. [AEM Analyzer para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) puede ayudarle a evaluar la complejidad de la actualización.
 
-AEM Analyer para AEM 6.5 LTS debería proporcionarle una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a AEM 6.5 LTS según las instrucciones de [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con 6.5 LTS. Cuando se combina con el analizador de AEM y los cambios de arquitectura determinados en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para que planifique la actualización.
+El [Analizador de AEM para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) le proporcionará una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a AEM 6.5 LTS según las instrucciones de [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con AEM 6.5 LTS. Cuando se combina con [AEM Analyzer](/help/sites-deploying/pattern-detector.md) y los cambios de arquitectura determinados en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para planificar la actualización.
 
 ### Generación de la actualización y reversión de Runbook {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe ha proporcionado procedimientos de actualización y reversión en [Procedi
 
 ### Desarrollo de un plan de actualización {#developing-an-upgrade-plan}
 
-Los resultados de los ejercicios anteriores se pueden utilizar para crear un plan de actualización que abarque los plazos previstos para los esfuerzos de prueba o desarrollo, la formación y la ejecución real de la actualización.
+Los resultados de los ejercicios anteriores se pueden utilizar para crear un plan de actualización que abarque los plazos previstos para las tareas de prueba o desarrollo, y la ejecución real de la actualización.
 
 <!--Alexandru: drafting for now
 
