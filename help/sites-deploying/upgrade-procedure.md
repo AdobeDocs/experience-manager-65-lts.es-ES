@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ La topología supuesta para esta sección consiste en un clúster de creación d
 1. Reinicie el autor principal para asegurarse de que se reinicia correctamente.
 1. Deshabilite los agentes de replicación en el autor principal.
 1. Ejecute [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en la instancia de autor principal.
-1. Si es necesario, actualice MongoDB en la instancia principal de Mongo a la versión 3.2 con WiredTiger.
 
 ### Ejecución de actualización {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ La topología supuesta para esta sección consiste en un clúster de creación d
 
 ![mongo-secondary](assets/mongo-secondaries.jpg)
 
-1. Cree nuevas instancias de autor de 6.5.2025, conectadas a la instancia actualizada de Mongo.
+1. Cree nuevas instancias de autor de AEM 6.5 LTS, conectadas a la instancia actualizada de Mongo.
 
 1. Vuelva a generar los nodos MongoDB que se quitaron del clúster.
 
