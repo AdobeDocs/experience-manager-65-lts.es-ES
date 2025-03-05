@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-Al actualizar a AEM 6.5.2025, los siguientes paquetes se desinstalarán automáticamente, según la versión del Service Pack de AEM 6.5 en la que se haya realizado la actualización:
+Al actualizar a AEM 6.5 LTS, se desinstalarán automáticamente los siguientes paquetes, según la versión de Service Pack de AEM 6.5 en la que se haya realizado la actualización:
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ Al actualizar a AEM 6.5.2025, los siguientes paquetes se desinstalarán automát
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-Los siguientes paquetes no están incluidos en una instancia nueva de AEM 6.5.2025. Después de la actualización, es posible que encuentre estos paquetes en estados no activos. Se pueden eliminar manualmente:
+Los siguientes paquetes no están incluidos en una instancia nueva de AEM 6.5 LTS. Después de la actualización, es posible que encuentre estos paquetes en estados no activos. Se pueden eliminar manualmente:
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
