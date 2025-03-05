@@ -1,16 +1,15 @@
 ---
 title: Los esquemas de metadatos definen el diseño de la página de propiedades de metadatos
 description: El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos mostradas para los recursos. Obtenga información sobre cómo crear esquemas de metadatos personalizados, editar esquemas de metadatos y cómo aplicar esquemas de metadatos a recursos.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 8%
+source-wordcount: '3607'
+ht-degree: 7%
 
 ---
 
@@ -89,21 +88,21 @@ Puede editar un formulario de esquema de metadatos recién agregado o existente.
 La pestaña **[!UICONTROL Generar formulario]** enumera los elementos de formulario que usa en el formulario de esquema. La ficha **[!UICONTROL Configuración]** proporciona los atributos de cada elemento que selecciona en la ficha **[!UICONTROL Generar formulario]**. En la tabla siguiente se enumeran los elementos de formulario disponibles en la ficha **[!UICONTROL Generar formulario]**:
 
 | Nombre del componente | Descripción |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
-| [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
-| [!UICONTROL Número] | Añada un componente de número. |
-| [!UICONTROL Fecha] | Añada un componente de fecha. |
-| [!UICONTROL Menú Desplegable] | Añada una lista desplegable. |
-| [!UICONTROL Etiquetas estándar] | Añada una etiqueta. |
-| [!UICONTROL Etiquetas inteligentes] | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
-| [!UICONTROL Campo oculto] | Agregue un campo oculto. Se envía como parámetro POST cuando se guarda el recurso. |
-| [!UICONTROL Recurso Referido Por] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
-| [!UICONTROL Referencia de recurso] | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
-| [!UICONTROL Referencias de productos] | Agregar para mostrar la lista de productos vinculados con el recurso. |
-| [!UICONTROL Clasificación de recursos] | Agregar para ver las opciones de clasificación del recurso. |
-| [!UICONTROL Metadatos contextuales] | Agregue para controlar la visualización de otras pestañas de metadatos en la página de propiedades de los recursos. |
+|----|----|
+| **[!UICONTROL Encabezado de sección]** | Añada un encabezado de sección para una lista de componentes comunes. |
+| **[!UICONTROL Texto de una sola línea]** | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
+| **[!UICONTROL Texto con varios valores]** | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| **[!UICONTROL Número]** | Añada un componente de número. |
+| **[!UICONTROL Fecha]** | Añada un componente de fecha. |
+| **[!UICONTROL Menú Desplegable]** | Añada una lista desplegable. |
+| **[!UICONTROL Etiquetas estándar]** | Añada una etiqueta. Es posible que los administradores tengan que cambiar el valor de ruta. Por ejemplo, `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`, si publican el formulario de esquema de metadatos desde Experience Manager Assets, donde la ruta no incluye información de inquilino, por ejemplo, `/etc/tags/<custom_tag_namespace>`. |
+| **[!UICONTROL Etiquetas inteligentes]** | Etiquetas detectadas automáticamente si ha adquirido y configurado el complemento Experience Manager Assets smart tags. |
+| **[!UICONTROL Campo oculto]** | Agregue un campo oculto. Se envía como parámetro POST cuando se guarda el recurso. |
+| **[!UICONTROL Recurso Referido Por]** | Agregue este componente para ver una lista de los recursos a los que hace referencia el recurso. |
+| **[!UICONTROL Referencia de recurso]** | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
+| **[!UICONTROL Metadatos contextuales]** | Agregue para controlar la visualización de otras pestañas de metadatos en la página Propiedades de los recursos. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### Editar el componente de metadatos {#edit-the-metadata-component}
 
