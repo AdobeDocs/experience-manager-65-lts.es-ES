@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -112,9 +112,9 @@ Es necesario duplicar el entorno de producción exacto y se deben realizar prueb
 
 ### Evaluación de la complejidad de actualización {#assessing-upgrade-complexity}
 
-Debido a la amplia variedad en la cantidad y naturaleza de las personalizaciones que los clientes de Adobe aplican a sus entornos de AEM, es importante pasar algún tiempo por adelantado para determinar el nivel general de esfuerzo que se debe esperar en la actualización. [AEM Analyzer para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) puede ayudarle a evaluar la complejidad de la actualización.
+Debido a la amplia variedad en la cantidad y naturaleza de las personalizaciones que los clientes de Adobe aplican a sus entornos de AEM, es importante pasar algún tiempo por adelantado para determinar el nivel general de esfuerzo que se debe esperar en la actualización. [AEM Analyzer para AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) puede ayudarle a evaluar la complejidad de la actualización.
 
-El [Analizador de AEM para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) le proporcionará una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a AEM 6.5 LTS según las instrucciones de [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con AEM 6.5 LTS. Cuando se combina con [AEM Analyzer](/help/sites-deploying/pattern-detector.md) y los cambios de arquitectura determinados en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para planificar la actualización.
+El [Analizador de AEM para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) le proporcionará una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a AEM 6.5 LTS según las instrucciones de [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con AEM 6.5 LTS. Cuando se combina con [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) y los cambios de arquitectura determinados en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para planificar la actualización.
 
 ### Generación de la actualización y reversión de Runbook {#building-the-upgrade-and-rollback-runbook}
 

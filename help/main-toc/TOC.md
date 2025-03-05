@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 8253f7c3b779f9ef08a15c9a5dfc9ae1b437756a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
-source-wordcount: '7044'
+source-wordcount: '7052'
 ht-degree: 69%
 
 ---
@@ -1466,6 +1466,7 @@ ht-degree: 69%
          + [Actualización a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)
          + [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)
+         + [Evaluación de la complejidad de la actualización con AEM Analyzer](/help/sites-deploying/aem-analyzer.md)
          + [Compatibilidad con versiones anteriores en AEM 6.5 LTS](/help/sites-deploying/backward-compatibility.md)
          + [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md)
          + [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md)

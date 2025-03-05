@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Al planificar una actualización, se deben investigar y abordar las siguientes �
 
 ## Información general {#overview}
 
-1. **AEM Analyzer** - Ejecute AEM Analyzer como se define en la página [Evaluación de la complejidad de la actualización con AEM Analyzer](/help/sites-deploying/pattern-detector.md). Recibirá un informe de AEM Analyzer que contiene más detalles sobre las áreas que deben abordarse, además de las API/paquetes no disponibles en la versión de Target de AEM. El informe de AEM Analyzer le proporciona una indicación de cualquier incompatibilidad en el código. Si no existe, la implementación es compatible con AEM 6.5 LTS. Puede optar por realizar un nuevo desarrollo para utilizar AEM 6.5 LTS, pero no lo necesita solo para mantener la compatibilidad.
-1. **Desarrollar base de código para 6.5 LTS**- Crear una rama o repositorio dedicado para la base de código para la versión de AEM de Target. Utilice la información de Compatibilidad previa a la actualización para planificar las áreas de código que desea actualizar.
-1. **Compile con 6.5 LTS Uber jar**- Actualice los POM base de código para que apunten a AEM 6.5 LTS uber jar y compile el código con él.
-1. **Implementar en el entorno 6.5 LTS**: se debe configurar una instancia limpia de AEM 6.5 LTS (Autor + Publicación) en un entorno de desarrollo/control de calidad. Se debe implementar una base de código actualizada y una muestra representativa de contenido (de producción actual).
-1. **Validación de control de calidad y corrección de errores**: el control de calidad debe validar la aplicación en las instancias de autor y publicación de AEM 6.5 LTS. Cualquier error encontrado debe corregirse y confirmarse con la base de código AEM 6.5 LTS. Repita Dev-Cycle según sea necesario hasta que se corrijan todos los errores.
+1. **AEM Analyzer**: ejecute AEM Analyzer tal como se describe en la planificación de la actualización y se describe en detalle en la página [Evaluación de la complejidad de la actualización con AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Recibirá un informe de AEM Analyzer que contiene más detalles sobre las áreas que deben abordarse, además de las API/paquetes no disponibles en la versión de Target de AEM. El informe de AEM Analyzer le proporciona una indicación de cualquier incompatibilidad en el código. Si no existe, la implementación ya es compatible con 6.5 LTS. Puede optar por realizar un nuevo desarrollo para utilizar la funcionalidad 6.5 LTS, pero no la necesita solo para mantener la compatibilidad.
+1. **Desarrollar base de código para 6.5 LTS**- Crear una rama o repositorio dedicado para la base de código para la versión de Target. Utilice la información de Compatibilidad previa a la actualización para planificar las áreas de código que desea actualizar.
+1. **Compile con 6.5 LTS Uber jar**- Actualice los POM de base de código para que apunten a 6.5.2025 uber jar y compile el código con él.
+1. **Implementar en el entorno 6.5 LTS**: se debe instalar una instancia limpia de AEM 6.5 LTS (Autor + Publicación) en un entorno de desarrollo/control de calidad. Se debe implementar una base de código actualizada y una muestra representativa de contenido (de producción actual).
+1. **Validación de control de calidad y corrección de errores**: el control de calidad debe validar la aplicación en las instancias de autor y publicación de 6.5.2025. Cualquier error encontrado debe corregirse y confirmarse con la base de código 6.5 LTS. Repita Dev-Cycle según sea necesario hasta que se corrijan todos los errores.
 
 Antes de continuar con la actualización, debe tener una base de código de aplicación estable que se haya probado exhaustivamente con AEM 6.5 LTS.
 
