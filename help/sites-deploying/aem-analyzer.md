@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # Evaluación de la complejidad de la actualización con AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ El tiempo de caducidad que queda para el informe de AEM Analyzer se muestra en l
 
 * En ocasiones, la operación Quitar puede mostrar la notificación: *&quot;Algunas rutas no se quitaron correctamente, compruebe los registros e inténtelo de nuevo.*&quot;. Sin embargo, si las rutas se eliminaron, puede ignorar este mensaje de forma segura
 * Del mismo modo, la operación del paquete puede fallar con el siguiente error: *&quot;Error al realizar la operación deseada, compruebe los registros e inténtelo de nuevo.*&quot;. Es probable que se deba a la caducidad de la sesión. En estos casos, el problema se debe resolver reintentando la operación.
-
-
-
-
-
