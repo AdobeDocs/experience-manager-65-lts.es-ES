@@ -4,10 +4,11 @@ description: Aprenda a configurar el etiquetado inteligente y el etiquetado inte
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: be7c294c-149b-4825-8376-573f9e2987e2
+source-git-commit: 20e1f9b362a42eb0d6b4ab2b5668f01fbefd2448
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 17%
+source-wordcount: '1935'
+ht-degree: 18%
 
 ---
 
@@ -30,22 +31,24 @@ Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente:
 
 * [Integrar con Adobe Developer Console](#integrate-adobe-io).
 * [Entrenar el servicio de contenido inteligente](#training-the-smart-content-service).
-
 * Instale el [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es) más reciente.
+
+Además, consulte [preparar Assets para el etiquetado inteligente](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/administer/config-smart-tagging) para la configuración de etiquetas inteligentes en AEM 6.5.
 
 ## Actualización de SCS para admitir Oauth para Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
-**Nuevos usuarios**
+<!--**New Users**-->
 
-Instale el paquete de servicio 21. Para admitir la integración de Oauth en el Service Pack 21, debe instalar [Revisión para el Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
+Instale el paquete de servicio 22. Para admitir la integración de Oauth en el Service Pack 22, debe instalar la revisión [para el Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Siga las instrucciones mencionadas en este artículo para configurar Smart Content Services.
+<!--Follow the instructions mentioned in this article to set up Smart Content Services.
 
-**Usuarios existentes**
+**Existing users**
 
-Si ha actualizado a Service Pack 21, instale la revisión [para SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) para admitir la integración con Oauth. Cualquier configuración existente se elimina automáticamente. Siga las instrucciones mencionadas en este artículo para configurar Smart Content Services.
+If you have upgraded to Service Pack 21, install the [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) to support Oauth integration. Any existing configuration is automatically deleted. Follow the instructions mentioned in this article to set up Smart Content Services. If you upgrade to Service Pack 22, you must install this [Hotfix for Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Para Service Pack 20 y versiones anteriores, debe realizar los pasos de la solución para que SCS admita la integración con Oauth. Consulte [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md).
+For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](config-oauth.md).
+-->
 
 ## Actualización de SCS para admitir Oauth para usuarios On-Premise {#scs-upgrade-oauth-on-premise}
 
@@ -56,10 +59,10 @@ Smart Content Services ya no está disponible para los nuevos usuarios locales d
 **Usuarios existentes**
 
 Los usuarios locales existentes, que ya tienen esta capacidad habilitada, pueden seguir utilizando Smart Content Services.
+<!--
+If you have upgraded to Service Pack 21, install the [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) to support Oauth integration. Any existing configuration is automatically deleted. Follow the instructions mentioned in this article to set up Smart Content Services. If you upgrade to Service Pack 22, you must install this [Hotfix for Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Si ha actualizado a Service Pack 21, instale la revisión [para SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) para admitir la integración con Oauth. Cualquier configuración existente se elimina automáticamente. Siga las instrucciones mencionadas en este artículo para configurar Smart Content Services.
-
-Para Service Pack 20 y versiones anteriores, debe realizar los pasos de la solución para que SCS admita la integración con Oauth. Consulte [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md).
+For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](config-oauth.md).-->
 
 
 ## Integración con Adobe Developer Console {#integrate-adobe-io}
