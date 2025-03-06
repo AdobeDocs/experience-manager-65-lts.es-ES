@@ -7,9 +7,10 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3261'
 ht-degree: 9%
 
 ---
@@ -26,10 +27,6 @@ La funcionalidad Administrador de varios sitios (MSM) en [!DNL Adobe Experience 
 * Cree recursos una vez y luego haga copias de estos para reutilizarlos en otras áreas del sitio.
 * Mantenga varias copias en sincronización y actualice la copia principal original una vez para insertar los cambios en las copias secundarias.
 * Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre los recursos principales y secundarios.
-
-## Requisitos previos {#prereq}
-
-Para usar MSM para [!DNL Assets], instale al menos [!DNL Experience Manager] 6.5 Service Pack 1. Para obtener más información, consulte [las notas de la versión del Service Pack más reciente](/help/release-notes/release-notes.md).
 
 ## Comprender las ventajas y los conceptos {#concepts}
 

@@ -1,18 +1,14 @@
 ---
 title: Entrega de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media, como vídeos e imágenes, a sus páginas web.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 9%
+source-wordcount: '313'
+ht-degree: 10%
 
 ---
 
@@ -41,9 +37,7 @@ Para obtener más información, consulte los temas siguientes:
 * [Vinculación de URL en la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Distribución de imágenes optimizadas para un sitio adaptable](/help/assets/responsive-site.md)
 * [Entrega HTTP2 de contenido](/help/assets/http2.md)
-* [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de reglas para transformar URL](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 

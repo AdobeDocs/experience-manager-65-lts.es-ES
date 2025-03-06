@@ -1,17 +1,14 @@
 ---
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar el documento de registro (DoR) para formularios adaptables.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 86%
+source-wordcount: '4283'
+ht-degree: 87%
 
 ---
 
@@ -30,11 +27,6 @@ ht-degree: 86%
 Después de enviar un formulario, normalmente los clientes desean guardar un registro —impreso o en formato de documento— de la información que han rellenado en el formulario para utilizarlo como referencia en el futuro. Este registro se denomina documento de registro.
 
 Este artículo explica cómo generar un documento de registro para un Forms adaptable o un fragmento de formulario adaptable.
-
->[!NOTE]
->
-> La compatibilidad para personalizar los fragmentos de formulario adaptable y sus campos en el editor de formularios adaptables se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
-
 
 >[!NOTE]
 >

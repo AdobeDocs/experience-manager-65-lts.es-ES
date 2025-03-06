@@ -1,18 +1,14 @@
 ---
 title: 'Configuración de Dynamic Media: modo Scene7'
 description: 'Obtenga información sobre cómo configurar Dynamic Media: modo Scene7.'
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -131,7 +127,7 @@ Consulte [Instalar paquete de funciones 18912 para la migración masiva de recur
 
    * **[!UICONTROL Publicación de Assets]**. Puede elegir entre las tres opciones siguientes:
       * **[!UICONTROL Inmediatamente]** significa que cuando se cargan recursos, el sistema los ingiere y proporciona la dirección URL/incrustación al instante. No es necesaria la intervención del usuario para publicar los recursos.
-      * **[!UICONTROL Tras la activación]** significa que primero debe publicar explícitamente el recurso antes de que se proporcione un vínculo URL/incrustado.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir de Experience Manager 6.5.8, la instancia de publicación de Experience Manager refleja valores precisos de metadatos de Dynamic Media, como `dam:scene7Domain` y `dam:scene7FileStatus` solo en el modo de publicación **[!UICONTROL Tras la activación]**. Para habilitar esta funcionalidad, instale el Service Pack 8 y, a continuación, reinicie Experience Manager. Vaya al Administrador de configuración de Sling. Busque la configuración de `Scene7ActivationJobConsumer Component` o cree una nueva). Seleccione la casilla de verificación **[!UICONTROL Replicar metadatos después de la publicación de Dynamic Media]** y, a continuación, seleccione **[!UICONTROL Guardar]**.
+      * **[!UICONTROL Tras la activación]** significa que primero debe publicar explícitamente el recurso antes de que se proporcione un vínculo URL/incrustado.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir de Experience Manager 6.5.8, la instancia de publicación de Experience Manager refleja valores precisos de metadatos de Dynamic Media, como `dam:scene7Domain` y `dam:scene7FileStatus` solo en el modo de publicación **[!UICONTROL Tras la activación]**. Vaya al Administrador de configuración de Sling. Busque la configuración de `Scene7ActivationJobConsumer Component` o cree una nueva). Seleccione la casilla de verificación **[!UICONTROL Replicar metadatos después de la publicación de Dynamic Media]** y, a continuación, seleccione **[!UICONTROL Guardar]**.
 
         ![Casilla Replicar metadatos después de la publicación de Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
@@ -249,7 +245,7 @@ En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carg
 
 Si tiene intención de utilizar esta función, tenga en cuenta los siguientes requisitos previos y puntos:
 
-* Debe estar ejecutando Experience Manager 6.5 con Service Pack 6.5.4.0 o posterior en el modo Dynamic Media - Scene7.
+* Debe estar ejecutando Experience Manager 6.5 LTS en modo Dynamic Media - Scene7.
 * Esta característica de carga de gran tamaño solo es compatible con los clientes de [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
 * Asegúrese de que la instancia de Experience Manager esté configurada con Amazon S3 o Microsoft® Azure Blob Storage.
 

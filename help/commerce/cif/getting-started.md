@@ -5,9 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '672'
 ht-degree: 4%
 
 ---
@@ -16,9 +17,6 @@ ht-degree: 4%
 
 Para empezar a usar AEM Content y Commerce, debe instalar el complemento AEM Content y Commerce para AEM 6.5.
 
-## Requisito mínimo de software
-
-Se requiere [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) 7 o posterior.
 
 ## Incorporación {#onboarding}
 

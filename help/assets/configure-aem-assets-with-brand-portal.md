@@ -9,13 +9,13 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 7%
 
 ---
-
 
 # Configuración de AEM Assets con Brand Portal {#configure-integration-65}
 
@@ -68,11 +68,11 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 
 [Descargue e instale el último Service Pack de AEM](#servicepack)
 
-### Descargar e instalar AEM 6.5 {#aemquickstart}
+### Descargue e instale AEM 6.5 LTS {#aemquickstart}
 
-Se recomienda tener AEM 6.5 para configurar una instancia de autor de AEM. Si no tiene AEM en funcionamiento, descárguelo desde las siguientes ubicaciones:
+Se recomienda tener AEM 6.5 LTS para configurar una instancia de autor de AEM. Si no tiene AEM en funcionamiento, descárguelo desde las siguientes ubicaciones:
 
-* Si ya es cliente de AEM, descargue AEM 6.5 desde el [sitio web de licencias de Adobe](https://licensing.adobe.com).
+* Si ya es cliente de AEM, descargue AEM 6.5 LTS del [sitio web de licencias de Adobe](https://licensing.adobe.com).
 
 * Si es socio de Adobe, use el [Programa de formación de socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
 
@@ -80,7 +80,7 @@ Después de descargar AEM, para obtener instrucciones para configurar una instan
 
 ### Descargue e instale el último Service Pack de AEM {#servicepack}
 
-Para obtener instrucciones detalladas, consulte las [Notas de la versión del paquete de servicio de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Para obtener instrucciones detalladas, consulte las [Notas de la versión de AEM 6.5 LTS Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Póngase en contacto con el servicio de atención al cliente de Adobe** si no encuentra el paquete o el paquete de servicio más reciente de AEM.
 

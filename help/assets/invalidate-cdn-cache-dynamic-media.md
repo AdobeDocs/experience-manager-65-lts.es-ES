@@ -8,31 +8,24 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1277'
 ht-degree: 1%
 
 ---
-
 
 # Invalidación de la caché de CDN mediante Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 
 La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para una entrega rápida a sus clientes. Sin embargo, cuando realice actualizaciones en esos recursos, desea que los cambios surtan efecto inmediatamente en el sitio web. La depuración o invalidación de la caché de la CDN permite actualizar rápidamente los recursos que entrega Dynamic Media. En lugar de esperar a que la caché caduque con un valor TTL (Tiempo de vida) (el valor predeterminado es de diez horas), puede enviar una solicitud desde Dynamic Media para que la caché caduque en cuestión de minutos.
 
 
-
->[!IMPORTANT]
->
->Los siguientes pasos se aplican únicamente al modo Dynamic Media - Scene7 en Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) o posterior. Esta función de invalidación de la CDN también requiere que utilice la CDN predeterminada integrada en Adobe Experience Manager - Dynamic Media. Esta función no admite ninguna otra CDN personalizada.<br>Si usa Dynamic Media en Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) o versiones anteriores, siga los pasos que se encuentran en [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Para invalidar el contenido en caché de la red de distribución de contenido (CDN) para los recursos de Dynamic Media:**
 
 *Parte 1 de 2: Creación de una plantilla de invalidación de CDN*
 
-1. En Experience Manager 6.5.6 o posterior, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidación de CDN]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidación de CDN]**.
 
    ![Característica de validación de CDN](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

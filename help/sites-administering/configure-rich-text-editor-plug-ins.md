@@ -5,13 +5,13 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f185c622-1681-4221-a082-cac71d6b510b
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4381'
 ht-degree: 2%
 
 ---
-
 
 # Configuración de los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
@@ -285,10 +285,6 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 ### Configuración de RTE para saltos de palabra óptimos en japonés {#jpwordwrap}
 
 Los autores que utilizan AEM para crear contenido en japonés pueden aplicar un estilo a los caracteres para evitar saltos de línea donde no es necesario un salto. Esto permite a los autores dejar que las frases se rompan en la posición deseada. El estilo de esta funcionalidad se basa en la clase CSS predefinida en la hoja de estilos CSS.
-
->[!NOTE]
->
->Esta función requiere al menos AEM 6.5 Service Pack 1.
 
 Para crear el estilo que los autores pueden aplicar al texto en japonés, siga estos pasos:
 

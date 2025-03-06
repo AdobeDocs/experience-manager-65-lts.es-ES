@@ -4,10 +4,11 @@ description: Obtenga información sobre el impacto de las credenciales de JWT en
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 72%
+source-wordcount: '352'
+ht-degree: 75%
 
 ---
 
@@ -28,7 +29,7 @@ En las secciones siguientes se enumeran los escenarios en los que los clientes d
 
 **Acción**: migre la configuración ahora que AEM admite las credenciales de OAuth.
 
-**Versiones relevantes de AEM**: Adobe Managed Services (Service Pack 21 y posterior).
+**Versiones relevantes de AEM**: Adobe Managed Services.
 
 Los clientes de AEM utilizan AEM para configurar integraciones con todas las demás soluciones de Adobe. Por ejemplo, Adobe Target y Adobe Analytics, entre otras.
 
@@ -43,6 +44,6 @@ Consulte [Configuración de integraciones de IMS para AEM](/help/sites-administe
 
 **Acción**: confirme cuándo se puede realizar la migración de JWT a las credenciales de OAuth.
 
-**Versiones relevantes de AEM**: Adobe Managed Services (Service Pack 21 y posterior).
+**Versiones relevantes de AEM**: Adobe Managed Services.
 
 Los clientes crean proyectos de Adobe Developer Console para que puedan invocar las [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Las credenciales del proyecto de Adobe Developer deben migrarse al tipo de credencial de servidor a servidor de OAuth, antes de que las credenciales de JWT caduquen en enero de 2025.
