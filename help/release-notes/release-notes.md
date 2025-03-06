@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión actuales de Adobe Experience Manager 6.5 LTS
 description: Estas son las notas de la versión actuales de Adobe Experience Manager 6.5 LTS.
-source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
+exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
+source-git-commit: f9fefb530e9cdcced664bede2e11556ab0345876
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 22%
+source-wordcount: '795'
+ht-degree: 23%
 
 ---
-
 
 # Notas de la versión actuales de Adobe Experience Manager 6.5 LTS {#release-notes}
 
@@ -27,7 +27,7 @@ La lista siguiente proporciona una descripción general, mientras que las págin
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-La plataforma de [!DNL Adobe Experience Manager] 6.5 LTS se basa en las versiones actualizadas del marco basado en OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java™: Apache Jackrabbit Oak 1.68.0.
+La plataforma de [!DNL Adobe Experience Manager] 6.5 LTS se basa en las versiones actualizadas del marco basado en OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java™: Apache Jackrabbit Oak 1.68.x.
 
 Quickstart utiliza Eclipse Jetty 11.0.x como motor de servlets.
 
@@ -111,3 +111,4 @@ Estos sitios web solo están disponibles para los clientes de. Si es cliente de 
 
 * [Descarga de producto en Licensing.adobe.com](https://licensing.adobe.com/)
 * [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+

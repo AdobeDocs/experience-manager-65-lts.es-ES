@@ -9,7 +9,8 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
+exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
+source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -64,7 +65,7 @@ Vaya a la consola OSGi `/system/console/bundles` y compruebe si no se han inicia
 
 ### Verificar la versión de Oak {#verify-oak-version}
 
-Después de la actualización, debería ver que la versión de Oak se ha actualizado a **1.68.1-B002**. Para comprobar la versión de Oak, vaya a la consola OSGi y observe la versión asociada a los paquetes de Oak: Oak Core, Oak Commons, Segment TAR de Oak.
+Después de la actualización, debería ver que la versión de Oak se ha actualizado a **1.68.x**. Para comprobar la versión de Oak, vaya a la consola OSGi y observe la versión asociada a los paquetes de Oak: Oak Core, Oak Commons, Segment TAR de Oak.
 
 ### Validación inicial de páginas {#initial-validation-of-pages}
 

@@ -4,10 +4,11 @@ description: Migración al complemento AEM Commerce integration framework (CIF) 
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
+source-git-commit: fdb84a17b3af7eaa76e5a7c30d21d7a601463278
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 5%
+source-wordcount: '259'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +18,7 @@ Esta guía ayuda a identificar las áreas que debe actualizar para la migración
 
 ## Complemento de CIF
 
-El complemento de CIF está disponible para AEM 6.5 a través de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Es compatible y proporciona las mismas funciones que el complemento de CIF para Experience Manager as a Cloud Service.
+El complemento de CIF está disponible a través de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16). Es compatible y proporciona las mismas funciones que el complemento de CIF para Experience Manager as a Cloud Service.
 
 Consulte [Introducción al contenido de AEM y Commerce](getting-started.md).
 
