@@ -4,7 +4,10 @@ description: Obtenga información sobre cómo pasar credenciales mediante encabe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 558d9b27-8734-4da2-b498-5bb2361ac65b
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%

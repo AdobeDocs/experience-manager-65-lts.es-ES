@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+hide: true
+hidefromtoc: true
+exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 0%
@@ -195,4 +198,3 @@ Haga clic para conocer los pasos para [asignar funciones a usuarios y grupos](/h
    ![Buscar grupo de usuarios](/help/forms/using/assets/search-user-group.png)
 1. Asigne las funciones a los usuarios o grupos según sea necesario.
    ![Asignación de funciones de usuario](/help/forms/using/assets/user-role-assign.png)
-

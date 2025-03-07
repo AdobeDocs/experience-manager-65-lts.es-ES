@@ -5,7 +5,8 @@ topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 84%
@@ -73,8 +74,8 @@ Antes de empezar a instalar y configurar AEM Forms Document Services, asegúr
 
 * Se ha instalado el software cliente requerido para que PDF Generator realice conversiones en Microsoft® Windows y Linux®:
 
-   * **Microsoft® Windows**: instale [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
-   * **Linux®**: instale [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p).
+   * **Microsoft® Windows**: instale **Microsoft® Office** o **Apache OpenOffice**.
+   * **Linux®**: instale **Apache OpenOffice**.
 
 >[!NOTE]
 >
@@ -653,7 +654,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++ Adobe Acrobat
 
-* Asegúrese de que solo están instaladas las [versiones compatibles](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft® Office (32 bits) y Adobe Acrobat y de que se cancelan los cuadros de diálogo de apertura.
+* Asegúrese de que solo están instaladas las [versiones compatibles](/help/sites-deploying/technical-requirements.md) de Microsoft® Office (32 bits) y Adobe Acrobat y de que se cancelan los cuadros de diálogo de apertura.
 * Asegúrese de que el servicio Update de Adobe Acrobat esté deshabilitado.
 * Asegúrese de que el archivo por lotes [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) se ha ejecutado con privilegios de administrador.
 * Asegúrese de que se agrega un usuario de PDF Generator en la interfaz de usuario de la configuración de PDF.
@@ -666,7 +667,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 **Microsoft® Windows**
 
-* Asegúrese de que la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de 32 bits de Microsoft Office está instalada y de que los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
+* Asegúrese de que la [versión compatible](/help/sites-deploying/technical-requirements.md) de 32 bits de Microsoft Office está instalada y de que los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
 * Asegúrese de que se agrega un usuario de PDF Generator en la interfaz de usuario de la configuración de PDF.
 * Asegúrese de que el usuario de PDF Generator sea miembro del grupo de administradores y de que se establece el privilegio [Reemplazar un (símbolo) token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) para el usuario.
 * Asegúrese de que el usuario está configurado en la interfaz de usuario de PDF Generator y realiza las siguientes acciones:
@@ -680,7 +681,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 **Linux®**
 
-* Instale la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
+* Instale la versión compatible de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
 
 * Cree una variable de entorno `OpenOffice_PATH` y configúrela para que apunte a que la instalación de OpenOffice está establecida en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
 * Si hay problemas al instalar OpenOffice, asegúrese de que las [bibliotecas de 32 bits](#extrarequirements) requeridas para la instalación de OpenOffice están disponibles.

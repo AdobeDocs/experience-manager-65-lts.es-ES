@@ -7,8 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+feature: Adaptive Forms, Document Services, APIs & Integrations
+hide: true
+hidefromtoc: true
+exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 2%

@@ -5,9 +5,10 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
+exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3064'
 ht-degree: 13%
 
 ---
@@ -42,7 +43,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 >* [El paquete de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) requiere 15 GB de espacio temporal.
 >
 
-Para obtener más información, consulte las Pautas](/help/managing/hardware-sizing-guidelines.md) de [cambio de tamaño de hardware.
+Para obtener más información, consulte las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
 ### Niveles de soporte {#support-levels}
 
@@ -92,7 +93,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Oracle Java™ SE 17 JDK | A: Compatible `[1]` |
 | VM de IBM® Semeru J9 - compilación 17.0.13.0 | A: Compatible `[2]` |
 
-1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 son versiones no LTS de Oracle (consulte [la hoja](https://www.oracle.com/technetwork/java/eol-135779.html) de ruta de soporte de Oracle Java™ SE). Para implementar AEM en un entorno de producción, Adobe Systems proporciona soporte solo para las versiones LTS de Java™. El soporte y la distribución del JDK Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones LTS más allá del final de las actualizaciones públicas, son compatibles con Adobe Systems directamente para todos los clientes AEM que utilizan la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 son versiones no LTS de Oracle (consulte [la hoja](https://www.oracle.com/technetwork/java/eol-135779.html) de ruta de soporte de Oracle Java™ SE). Para implementar AEM en un entorno de producción, Adobe Systems proporciona soporte solo para las versiones LTS de Java™. El soporte y la distribución del JDK Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones LTS más allá del final de las actualizaciones públicas, son compatibles con Adobe Systems directamente para todos los clientes AEM que utilizan la tecnología Oracle Java™ SE. Consulte el directiva de [soporte de Java™ para obtener Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Esta versión es compatible con Oracle Java™ 17.**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
@@ -108,7 +109,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Compatible |
 | Microsoft® Azure Blob Storage | Binarios | A: Compatible |
-| MongoDB Enterprise 6.0 y 7.0 | Repositorio | R: Compatible `[3, 4]` |
+| MongoDB Enterprise 6.0 y 7.0 | Repositorio | A: Compatible `[3, 4]` |
 | **Apache Lucene (inicio rápido integrado)** | Servicio Search | A: Compatible |
 
 1. &#39;Archivo System&#39; incluye bloques almacenamiento que son compatibles con POSIX. Incluye tecnología de almacenamiento de red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Cargar AEM de prueba con el sistema de archivos de red/remoto.
@@ -149,12 +150,11 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
 | **Plataforma** | **Nivel de soporte** |
 |---|---|
-| **Linux®, basado en la distribución Red Hat®** | R: Compatible `[1]` `[3]` |
-| Linux®, basado en la distribución Debian incl. Ubuntu | A: Compatible `[1]` `[2]` |
+| **Linux®, basado en la distribución Red Hat®** | R: Compatible `[1]` `[2]` |
+| Linux®, basado en la distribución Debian incl. Ubuntu (en inglés) | A: Compatible `[1]` |
 | Linux®, basado en la distribución SUSE® | A: Compatible `[1]` |
 
-1. Linux® Kernel 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
-1. AEM Forms es compatible con Ubuntu 20.04 LTS.
+1. Linux® Kernel 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®.
 1. Distribución Linux® compatible con Adobe Managed Services.
 
    >[!NOTE]
@@ -165,6 +165,8 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 o posterior)
+
 
 ### Entornos de computación virtual y en la nube {#virtual-cloud-computing-environments}
 
@@ -174,7 +176,7 @@ Para un entorno nativo de la nube, revise la última oferta de la línea de prod
 
 Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema notificado en relación con AEM que se ejecuta en cualquiera de estos entornos nube debe ser reproducible independientemente de cualquier servicio en la nube específica del informática de la nube entorno. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en este Página, por ejemplo, Azure Blob almacenamiento o AWS S3.
+En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en este Página, por ejemplo, Azure Blob almacenamiento o AWS S3.
 
 Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Systems Managed Services, Adobe Systems recomienda trabajar directamente con el proveedor de nube. O bien, trabajar con Adobe Systems socios que apoyan el implementación de AEM en la nube entorno de su elección. El proveedor nube o socio seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura, para cumplir con sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 
@@ -335,13 +337,13 @@ Si utiliza Dynamic Media en Linux®, se deben cumplir los siguientes requisitos 
 >
 >**Arquitectura NUMA:** Los sistemas con procesadores AMD64 e Intel® EM64T suelen configurarse como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye varios nodos de memoria durante el arranque en lugar de construir un solo nodo de memoria.
 >
->La construcción de múltiples nodo puede resultar en el agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando ocurre el agotamiento de la memoria, el kernel puede decidir matar los procesos (por ejemplo, el Imagen Server o Platform Server) igualado aunque haya memoria disponible.
+>La construcción de varios nodos puede causar agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando ocurre el agotamiento de la memoria, el kernel puede decidir matar los procesos (por ejemplo, el Imagen Server o Platform Server) igualado aunque haya memoria disponible.
 >
 >Por lo tanto, Adobe Systems recomienda que si está ejecutando un sistema de este tipo desactive NUMA utilizando la **opción numa=off** boot para evitar que el kernel mate estos procesos.
 
 >[!NOTE]
 >
->**El nombre del host servidor debe resolverse:** Asegúrese de que el nombre host del servidor se pueda resolver en una dirección IP. Si eso no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
+>**El nombre de host del servidor debe resolverse:** Asegúrese de que el nombre de host del servidor puede resolverse en una dirección IP. Si eso no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -433,10 +435,12 @@ Para Windows x86:
 >Además,
 >
 >* PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
->* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
->* PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
+>* PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+>* La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
+>* Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 >* PDF Generator admite las versiones de 32 y 64 bits de OpenOffice en el sistema operativo Linux®.
 >* PDF Generator no admite Microsoft® Office 365.
+>* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
 >* Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
 >* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Mediante programación, acceda a la versión agrupada solo con AEM Forms, durante el período de licencia de AEM Forms, para utilizarlo con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([Local](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* El servicio PDF Generator no es compatible con Microsoft® Windows 10.
@@ -444,7 +448,7 @@ Para Windows x86:
 >* PDF Generator no puede convertir archivos con Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir `.VSD` y `.VSDX` archivos.
 >
 
-### Requisitos para AEM Forms Designer {#requirements-for-aem-forms-designer}
+### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
@@ -472,7 +476,7 @@ La reescritura de XMP es compatible y está habilitada para las siguientes plata
    * Windows Server
    * macOS X (64 bits)
 
-* **Formatos de archivo**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
+* **Archivo formatos**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 
 ### Requisitos para que Recursos AEM procese activos de metadatos pesado en Linux® {#assetsonlinux}
 

@@ -6,10 +6,11 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 97%
+source-wordcount: '1551'
+ht-degree: 96%
 
 ---
 
@@ -27,9 +28,7 @@ AEM Forms es una potente plataforma de clase empresarial. El flujo de trabajo c
 
 >[!NOTE]
 >
->Con el flujo de trabajo centrado en Forms de OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la capacidad Process Management completa en la pila JEE. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms de OSGi y Process Management en JEE para conocer las diferencias y similitudes en las capacidades.
->
->Después de la comparación, si decide instalar la capacidad Process Management en la pila de JEE, consulte [Instalación o actualización de AEM Forms en JEE](/help/forms/using/introduction-aem-forms.md) para obtener información detallada sobre la instalación y configuración de la pila JEE y las funcionalidades de Process Management.
+>Con el flujo de trabajo centrado en Forms de OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Topología de implementación {#deployment-topology}
 

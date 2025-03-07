@@ -4,7 +4,10 @@ description: Obtenga información sobre cómo configurar y solucionar problemas 
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '3943'
 ht-degree: 0%

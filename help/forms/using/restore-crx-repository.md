@@ -4,7 +4,10 @@ description: Conozca los pasos sobre cómo restaurar un repositorio de CRX que e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 716d8eb2-2010-4d55-b8fe-bd4f6f256a4d
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 2%

@@ -4,7 +4,10 @@ description: No se puede abrir PDF forms basado en XFA en Google Chrome, Firefox
 feature: Adaptive Forms,Document Services
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+exl-id: a28b084e-ec74-4c05-a90c-d447792faa41
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

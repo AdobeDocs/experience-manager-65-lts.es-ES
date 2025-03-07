@@ -3,8 +3,11 @@ title: Registre una transacción para la API de componente personalizada para AE
 description: Obtenga información acerca del uso de la API TransactionRecorder para registrar transacciones de componentes personalizados.
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
+exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

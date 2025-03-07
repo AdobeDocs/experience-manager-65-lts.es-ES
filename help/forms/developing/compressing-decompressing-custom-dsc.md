@@ -4,7 +4,10 @@ description: Aprenda a comprimir y descomprimir archivos mediante AEM Forms en u
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%

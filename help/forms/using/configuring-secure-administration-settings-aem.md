@@ -4,10 +4,13 @@ description: Aprenda a administrar cuentas de usuario y servicios que, aunque se
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+hide: true
+hidefromtoc: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 98%

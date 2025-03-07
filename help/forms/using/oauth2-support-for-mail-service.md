@@ -4,7 +4,10 @@ description: Configuración de la autenticación basada en OAuth2 para Microsoft
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+exl-id: a9790625-af8d-4416-b96f-4724a025260b
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%

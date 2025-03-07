@@ -4,7 +4,10 @@ description: Prácticas recomendadas para reiniciar el SDK de AEM
 role: Admin, Developer, User
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 68935045-89b1-4219-b111-88a4600200df
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 100%

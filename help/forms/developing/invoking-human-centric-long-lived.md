@@ -7,8 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
+hide: true
+hidefromtoc: true
+exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '3674'
 ht-degree: 0%

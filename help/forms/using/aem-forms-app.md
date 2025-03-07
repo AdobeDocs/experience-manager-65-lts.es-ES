@@ -8,10 +8,11 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 96%
+source-wordcount: '2337'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 96%
 
 ## Información general {#overview}
 
-La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) o flujos de trabajo de Forms en JEE. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
+La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
 
 El código fuente de la aplicación de AEM Forms está disponible para los clientes a través de la distribución de software. El paquete de código fuente de distribución de software está disponible de la siguiente manera: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -60,9 +61,13 @@ Para sincronizar su formulario en la aplicación de AEM Forms:
 
 Cuando se publique el formulario, la aplicación se sincronizará con el servidor y recuperará el formulario. Para sincronizar varios formularios, en la instancia de autor, selecciona varios formularios en el administrador de formularios y selecciona **[!UICONTROL Sincronizar con la aplicación de AEM Forms]**.
 
-## Compatibilidad con dispositivos móviles {#mobile-device-support}
+<!--
 
-Consulte [Aplicación de AEM Forms (anteriormente denominada Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Características principales de la aplicación de AEM Forms {#key-features-of-aem-forms-app}
 
@@ -70,7 +75,7 @@ Consulte [Aplicación de AEM Forms (anteriormente denominada Mobile Workspace)](
 
 Puede sincronizar la aplicación con el servidor de AEM Forms y trabajar con formularios en su dispositivo móvil.
 
-Con el servidor de flujo de trabajo de AEM Forms, un formulario se puede asociar a un punto de inicio en un proceso de área de trabajo y a la aplicación Bandeja de entrada de AEM. La aplicación Bandeja de entrada de AEM puede tener asociado un formulario adaptable. Un punto de inicio puede tener asociado un formulario adaptable, un formulario HTML5 o un conjunto de formularios. Un punto de inicio se puede enviar como tarea o se puede guardar como borrador. Para obtener más información sobre las diferencias entre la aplicación Bandeja de entrada de AEM y un punto de inicio, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
+Con el servidor de flujo de trabajo de AEM Forms, un formulario se puede asociar a un punto de inicio en un proceso de área de trabajo y a la aplicación Bandeja de entrada de AEM. La aplicación Bandeja de entrada de AEM puede tener asociado un formulario adaptable. Un punto de inicio puede tener asociado un formulario adaptable, un formulario HTML5 o un conjunto de formularios. Un punto de inicio se puede enviar como tarea o se puede guardar como borrador. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Con el servidor de AEM Forms sin flujo de trabajo de AEM Forms, se procesa en la aplicación de AEM Forms un formulario habilitado para la sincronización en la aplicación. Los formularios están disponibles en la pestaña Formularios de la aplicación y se pueden enviar o guardar como borrador. Los formularios adaptables y los formularios móviles son compatibles con la aplicación.
 
@@ -121,7 +126,7 @@ Consulte [Usar el guardado automático en la aplicación de AEM Forms](/help/for
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. La Bandeja de entrada de AEM solo funciona con [flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md), mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. La Bandeja de entrada de AEM solo funciona con [flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md), mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Formularios compatibles {#supported-forms}
 

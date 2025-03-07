@@ -8,7 +8,10 @@ topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 1%
@@ -368,7 +371,7 @@ Cree un documento de PDF con la API de salida (servicio web):
    * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
-   Ver también
+   Véase también
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
