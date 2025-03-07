@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Antes de ejecutar la actualización, hay que completar varios pasos. Consulte [Actualización de código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) y [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obtener más información. Además, asegúrese de que su sistema cumpla los [requisitos de AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Compruebe [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md) y cómo el [Analizador de AEM](/help/sites-deploying/pattern-detector.md) puede ayudarle a calcular la complejidad de la actualización de AEM.
+Compruebe [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md) y cómo el [Analizador de AEM](/help/sites-deploying/aem-analyzer.md) puede ayudarle a calcular la complejidad de la actualización de AEM.
 
 ### Requisitos previos de migración {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Compruebe [Planificación de la actualización](/help/sites-deploying/upgrade-pl
    java -version
    ```
 
-1. Revise los parámetros de inicio del servidor de AEM y asegúrese de actualizar los parámetros según sus necesidades. Consulte [Consideraciones de Java 17](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) para obtener más información
+1. Revise los parámetros de inicio del servidor de AEM y asegúrese de actualizar los parámetros según sus necesidades. Consulte [Consideraciones de Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) para obtener más información.
 1. Descargue el nuevo archivo WAR de 6.5 LTS y cópielo en la carpeta de puntos ubicada en: `/<path-to-aem-server>/dropins/`
 1. Inicie la instancia de AEM: se puede hacer generalmente con este comando:
 

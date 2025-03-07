@@ -1,14 +1,13 @@
 ---
 title: Configurar SSL para el servidor de aplicaciones WebSphere
 description: Obtenga información sobre cómo configurar SSL para el servidor de aplicaciones WebSphere.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
+source-git-commit: 00d0576a5ea24efcfb40a2c9a44d596a5205f52c
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 2%

@@ -1,14 +1,13 @@
 ---
 title: Actualización de Forms de búsqueda personalizada
 description: Este artículo detalla los ajustes necesarios después de una actualización para que funcionen los formularios de búsqueda personalizados.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
+source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 2%

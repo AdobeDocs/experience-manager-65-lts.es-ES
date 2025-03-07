@@ -7,7 +7,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+exl-id: 4db457d2-fefb-410d-8e74-58147f52bbd3
+source-git-commit: 9334414dd47f00eeb79b2d122b78952d2a9c3735
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 2%
@@ -275,4 +278,3 @@ In line with planned EOL of Adobe Flash Player and overall direction of migratin
 
 AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
 !-->
-

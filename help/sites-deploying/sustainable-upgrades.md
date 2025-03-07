@@ -1,15 +1,13 @@
 ---
 title: Actualizaciones sostenibles
 description: Obtenga información acerca de las actualizaciones sostenibles en Adobe Experience Manager 6.4.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: upgrading
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
+source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%

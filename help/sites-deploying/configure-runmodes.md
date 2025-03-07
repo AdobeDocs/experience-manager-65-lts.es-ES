@@ -1,16 +1,13 @@
 ---
 title: Ejecutar modos
 description: Aprenda a ajustar la instancia de AEM para fines específicos mediante los modos de ejecución.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -37,18 +34,14 @@ Los modos de ejecución de la instalación están disponibles de forma predeterm
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Son dos pares de modos de ejecución mutuamente excluyentes; por ejemplo, puede:
 
 * definir `author` o `publish`, no ambos al mismo tiempo
 
-* combinar `author` con `samplecontent` o `nosamplecontent` (pero no ambos)
-
 >[!CAUTION]
 >
->Al utilizar uno de los modos de ejecución anteriores (author, publish, samplecontent, nosamplecontent), el valor utilizado en el momento de la instalación define el modo de ejecución para *toda la duración* de esa instalación.
+>Cuando se usa uno de los modos de ejecución anteriores (autor, publicación), el valor utilizado durante la instalación define el modo de ejecución durante *toda la duración* de la instalación.
 >
 >Estos modos de ejecución *no pueden* cambiarlos después de la instalación.
 
@@ -67,16 +60,6 @@ También puede crear sus propios modos de ejecución personalizados. Se pueden c
 * según sea necesario . .
 
 También se pueden seleccionar modos de ejecución personalizados en cada inicio.
-
-## Uso de samplecontent y nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-Estos modos permiten controlar el uso del contenido de muestra. El contenido de muestra se define antes de que se genere el inicio rápido y puede incluir paquetes, configuraciones, etc.:
-
-* El modo de ejecución `samplecontent` instala este contenido (el modo predeterminado).
-
-* El modo `nosamplecontent` no instala el contenido de muestra.
-
-El modo de ejecución nosamplecontent está diseñado para instalaciones de producción.
 
 ## Definición de propiedades de configuración para un modo de ejecución {#defining-configuration-properties-for-a-run-mode}
 

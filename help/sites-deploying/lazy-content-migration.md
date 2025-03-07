@@ -1,15 +1,13 @@
 ---
 title: Migración de contenido diferido
 description: Obtenga información acerca de la migración de contenido diferido en Adobe Experience Manager 6.4.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: upgrading
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
+source-git-commit: 09d2e75729060135f9eff1fc9f0126b0f940310b
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
