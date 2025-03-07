@@ -4,9 +4,10 @@ description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas rec
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3430ab95465f4f0ee40ab781989ee6cbf563de43
+exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '11126'
+source-wordcount: '10487'
 ht-degree: 2%
 
 ---
@@ -128,7 +129,7 @@ La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codi
 
 Para obtener información técnica detallada sobre el algoritmo, consulte [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo siguiente:
+Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten los siguientes elementos:
 
 * Cargue vídeos en varios formatos compatibles y codifíquelos en MP4 H.264 para reproducirlos en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
@@ -261,10 +262,6 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   </tr>
  </tbody>
 </table>
-
->[!IMPORTANT]
->
->*Para usar DASH en los vídeos, el servicio de asistencia técnica de Adobe debe habilitarlo primero en la cuenta. Consulte [Habilitar DASH en su cuenta de Dynamic Media](#enable-dash).
 
 ## Arquitectura de la solución de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -418,60 +415,6 @@ Por ejemplo, supongamos que el vídeo de origen es 1920 × 1080. En la tabla sig
 
 Dynamic Media recomienda utilizar ajustes preestablecidos de codificación de vídeo MP4 H.264. Como los archivos MP4 utilizan el códec de vídeo H.264, proporciona vídeo de alta calidad pero en un tamaño de archivo comprimido.
 
-### Habilite la compatibilidad con DASH, subtítulos múltiples y pistas de audio en su cuenta de Dynamic Media {#enable-dash}
-
-**Acerca de habilitar DASH en tu cuenta**
-DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.
-
-Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:
-
-* Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.
-* La transmisión optimizada para el explorador con reproductores de Dynamic Media cambia entre la transmisión de HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
-* Puede configurar su método de streaming preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.
-* La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH a fin de optimizar los costes de almacenamiento de vídeo.
-* Ayuda a que la entrega de vídeo sea más accesible para los clientes.
-* Obtenga también la URL de flujo continuo mediante API.
-
-Para habilitar DASH en su cuenta de, se requieren dos pasos:
-
-* Configuración de Dynamic Media para utilizar DASH, que puede realizar fácilmente.
-* La configuración de Experience Manager para utilizar DASH se realiza mediante un caso de asistencia al cliente de Adobe que crea y envía.
-
-Cuando crea un caso de Soporte de Adobe para habilitar DASH en su cuenta, también se habilita automáticamente la compatibilidad con varios subtítulos y pistas de audio. Una vez activados, todos los vídeos recién cargados se procesan con una arquitectura backend actualizada que admite la adición de varias pistas de subtítulos y audio.
-
->[!IMPORTANT]
->
->Cualquier vídeo que hayas subido *antes de* y que habilites la compatibilidad con múltiples subtítulos y pistas de audio en tu cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles múltiples subtítulos y pistas de audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
-
-**Para habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiples en su cuenta de Dynamic Media:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Comience por **configurar Dynamic Media para DASH** - Desde Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-
-1. Desde la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, desplácese hasta el nombre *Indicador de la función de transmisión avanzada de vídeo de Dynamic Media para AEM Assets*.
-
-1. A la izquierda del nombre, seleccione la casilla de verificación para activar DASH.
-
-1. Seleccione **[!UICONTROL Guardar]**.
-
-1. Ahora, usa Admin Console para iniciar la [creación de un nuevo caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-1. Para crear un caso de soporte, siga las instrucciones y asegúrese de proporcionar la siguiente información:
-
-   * Nombre del contacto principal, correo electrónico, teléfono.
-   * Nombre de su cuenta de Dynamic Media.
-   * Especifique que desea habilitar la compatibilidad con GUIONES, subtítulos múltiples y pistas de audio múltiples en su cuenta de Dynamic Media, en Experience Manager.
-
-1. La Asistencia al cliente de Adobe le añade a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
-1. Cuando Adobe esté listo para administrar su solicitud, el Servicio de atención al cliente se pondrá en contacto con usted para coordinar y establecer una fecha objetivo para la activación.
-1. El servicio de atención al cliente le notificará una vez finalizado.
-1. Ahora, puede realizar una de las siguientes acciones:
-
-   * Cree su [ajuste preestablecido de visor de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
-   * [Agregue varios subtítulos y pistas de audio](#add-msma) al vídeo.
-
 ## Ver informes de vídeo {#viewing-video-reports}
 
 >[!NOTE]
@@ -609,7 +552,6 @@ Antes de agregar varias pistas de subtítulos y audio al vídeo, asegúrese de q
 
 * Dynamic Media está configurado en un entorno de AEM.
 * Se ha aplicado un perfil de vídeo de [Dynamic Media a la carpeta en la que se han introducido los vídeos](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Se han habilitado varios subtítulos y pistas de audio en tu cuenta de Dynamic Media](#enable-dash).
 
 Los subtítulos y subtítulos agregados son compatibles con los formatos WebVTT y Adobe `.vtt`. Además, los archivos de pista de audio añadidos son compatibles con el formato MP3.
 
@@ -841,10 +783,6 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 
 ## Adición de subtítulos a un vídeo {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Adobe recomienda [habilitar la capacidad de seguimiento de audio y subtítulos múltiples](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte de audio.
 
