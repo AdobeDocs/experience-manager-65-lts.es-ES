@@ -4,9 +4,10 @@ description: Una lista de recomendaciones relacionadas con las interfaces de usu
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: f65f9e94-0837-48d1-a565-cfb880963790
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -92,10 +93,6 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
   </tr>
  </tbody>
 </table>
-
-### Preguntas más frecuentes {#faq}
-
-Consulte el artículo de la Base de conocimiento [Preguntas frecuentes sobre la creación de IU táctiles](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) para obtener más información, incluida la información sobre la programación de desaprobación de la IU clásica.
 
 ### Selección de la IU {#selecting-your-ui}
 
