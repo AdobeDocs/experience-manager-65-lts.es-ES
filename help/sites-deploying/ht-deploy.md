@@ -4,7 +4,10 @@ description: Una lista de artículos que describen cómo realizar tareas de impl
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 343eefa0e1351cbfc296a883107f0e9d8719178b
+hide: true
+hidefromtoc: true
+exl-id: c316a5d6-0e4a-4710-b4d0-3467f1d5085b
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
