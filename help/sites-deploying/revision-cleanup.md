@@ -8,9 +8,10 @@ topic-tags: deploying
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -77,18 +78,15 @@ Debido a este hecho, se recomienda dimensionar el disco al menos dos o tres vece
 
 ## Modos De Compactación Completa Y De Cola  {#full-and-tail-compaction-modes}
 
-**AEM 6.5** presenta **dos nuevos modos** para la fase de **compactación** del proceso de limpieza de revisiones en línea:
+**AEM 6.5 LTS** tiene **dos modos** para la fase de **compactación** del proceso de limpieza de revisión en línea:
 
-* El modo **compactación completa** reescribe todos los segmentos y archivos tar de todo el repositorio. La fase de limpieza posterior puede, por lo tanto, eliminar la cantidad máxima de residuos en el repositorio. Debido a que la compactación completa afecta a todo el repositorio, requiere una cantidad considerable de recursos del sistema y tiempo para completarse. La compactación completa corresponde a la fase de compactación de AEM 6.3.
+* El modo **compactación completa** reescribe todos los segmentos y archivos tar de todo el repositorio. La fase de limpieza posterior puede, por lo tanto, eliminar la cantidad máxima de residuos en el repositorio. Debido a que la compactación completa afecta a todo el repositorio, requiere una cantidad considerable de recursos del sistema y tiempo para completarse.
 * El modo **tail compaction** solo reescribe los segmentos y archivos tar más recientes del repositorio. Los segmentos y archivos tar más recientes son los que se han añadido desde la última vez que se ejecutó la compactación completa o de cola. Por lo tanto, la fase de limpieza posterior solo puede eliminar la basura contenida en la parte reciente del repositorio. Debido a que la compactación de cola solo afecta a una parte del repositorio, requiere considerablemente menos recursos del sistema y tiempo para completarla que la compactación completa.
 
 Estos modos de compactación constituyen un equilibrio entre la eficiencia y el consumo de recursos: aunque la compactación de cola es menos eficaz, también tiene menos impacto en el funcionamiento normal del sistema. Por el contrario, la compactación total es más eficaz, pero tiene un mayor impacto en el funcionamiento normal del sistema.
 
-AEM 6.5 también introduce un mecanismo de deduplicación de contenido más eficaz durante la compactación, que reduce aún más el espacio en disco del repositorio.
+AEM 6.5 LTS cuenta con un mecanismo eficaz de deduplicación de contenido durante la compactación, lo que reduce aún más el espacio en disco del repositorio.
 
-Los dos gráficos siguientes muestran los resultados de las pruebas de laboratorio internas que ilustran la reducción de los tiempos de ejecución promedio y la huella media en disco en AEM 6.5 en comparación con AEM 6.3:
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### Cómo configurar la compactación completa y de cola {#how-to-configure-full-and-tail-compaction}
 
@@ -107,7 +105,7 @@ Además, tenga en cuenta que:
 Cuando utilice los nuevos modos de compactación, tenga en cuenta lo siguiente:
 
 * Puede monitorizar la actividad de entrada/salida (E/S), por ejemplo: operaciones de E/S, CPU esperando E/S, tamaño de cola de confirmación. Esto ayuda a determinar si el sistema está enlazado a E/S y si es necesario convertir.
-* `RevisionCleanupTaskHealthCheck` indica el estado general de la Limpieza de revisión en línea. Funciona del mismo modo que en AEM 6.3 y no distingue entre compactación total y de cola.
+* `RevisionCleanupTaskHealthCheck` indica el estado general de la Limpieza de revisión en línea.
 * Los mensajes de registro llevan información relevante sobre los modos de compactación. Por ejemplo, cuando se inicia la Limpieza de revisión en línea, los mensajes de registro correspondientes indican el modo de compactación. Además, en algunos casos extremos, el sistema vuelve a la compactación completa cuando estaba programado para ejecutar una compactación de cola y los mensajes de registro indican este cambio. Las siguientes muestras de registro indican el modo de compactación y el cambio de cola a compactación completa:
 
 ```
@@ -122,83 +120,6 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
 **Se recomienda cambiar el tamaño del disco al menos dos o tres veces más grande que el tamaño de repositorio estimado inicialmente.**
 
 ## Preguntas más frecuentes sobre Limpieza de revisiones en línea {#online-revision-cleanup-frequently-asked-questions}
-
-### Consideraciones de actualización de AEM 6.5 {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Preguntas </td>
-   <td>Respuestas</td>
-  </tr>
-  <tr>
-   <td>¿Qué debo tener en cuenta al actualizar a AEM 6.5?</td>
-   <td><p>El formato de persistencia de TarMK cambia con AEM 6.5. Estos cambios no requieren un paso de migración proactiva. Los repositorios existentes pasan por una migración móvil, que es transparente para el usuario. El proceso de migración se inicia la primera vez que AEM 6.5 (o las herramientas relacionadas) accede al repositorio.</p> <p><strong>Una vez iniciada la migración al formato de persistencia de AEM 6.5, el repositorio no se puede revertir al formato de persistencia anterior de AEM 6.3.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migración al Segmento de destino de Oak {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Preguntas</strong></td>
-   <td><strong>Respuestas</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Por qué necesito migrar el repositorio?</strong></td>
-   <td><p>En AEM 6.3 era necesario realizar cambios en el formato de almacenamiento, especialmente para mejorar el rendimiento y la eficacia de Online Revision Cleanup. Estos cambios no son compatibles con versiones anteriores y los repositorios creados con el antiguo segmento de Oak (AEM 6.2 y versiones anteriores) deben migrarse.</p> <p>Ventajas adicionales de cambiar el formato de almacenamiento:</p>
-    <ul>
-     <li>Mejor escalabilidad (tamaño de segmento optimizado).</li>
-     <li><a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Recopilación de residuos del almacén de datos</a> más rápida.<br /> </li>
-     <li>Trabajo en tierra para futuras mejoras.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Sigue siendo compatible el formato Tar anterior?</strong></td>
-   <td>Solo se admite el nuevo Segmento de tar de Oak con AEM 6.3 o superior.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Es siempre obligatoria la migración de contenido?</strong></td>
-   <td>Sí. A menos que comience con una instancia nueva, siempre tendrá que migrar el contenido.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Puedo actualizar a la versión 6.3 o superior y realizar la migración más adelante (por ejemplo, utilizando otra ventana de mantenimiento)?</strong></td>
-   <td>No, como se ha explicado anteriormente, la migración de contenido es obligatoria.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Se puede evitar el tiempo de inactividad al migrar?</strong></td>
-   <td>No. Este es un esfuerzo único que no se puede realizar en una instancia en ejecución.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Qué sucede si ejecuto accidentalmente con el formato de repositorio incorrecto?</strong></td>
-   <td>Si intenta ejecutar el módulo oak-segment en un repositorio oak-segment-tar (o a la inversa), el inicio falla con una <em>IllegalStateException</em> con el mensaje "Formato de segmento no válido". No se dañan los datos.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Será necesario reindexar los índices de búsqueda?</strong></td>
-   <td>No. La migración de oak-segment a oak-segment-tar introduce cambios en el formato del contenedor. Los datos contenidos no se ven afectados y no se modificarán.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Cómo calcular mejor el espacio en disco esperado necesario durante y después de la migración?</strong></td>
-   <td>La migración equivale a volver a crear el almacén de segmentos con el nuevo formato. Esto puede utilizarse para calcular el espacio en disco adicional necesario durante la migración. Después de la migración, se puede eliminar el almacén de segmentos antiguo para recuperar espacio.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Cómo calcular mejor la duración de la migración?</strong></td>
-   <td>El rendimiento de la migración se puede mejorar en gran medida si <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">offline revision cleanup</a> se ejecuta antes de la migración. Se aconseja a todos los clientes que lo ejecuten como un requisito previo del proceso de actualización. En general, la duración de la migración debe ser similar a la duración de la tarea de limpieza de revisión sin conexión, suponiendo que la tarea de limpieza de revisión sin conexión se haya ejecutado antes de la migración.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Ejecución de Limpieza de revisión en línea {#running-online-revision-cleanup}
 
@@ -242,11 +163,6 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   <tr>
    <td><strong>¿Las ventanas Autor y Publicación suelen tener diferentes ventanas Limpieza de revisiones en línea?</strong></td>
    <td>Esto depende del horario de oficina y de los patrones de tráfico de la presencia en línea del cliente. Las ventanas de mantenimiento deben configurarse fuera de los tiempos de producción principales para permitir la mejor eficacia de limpieza. Para varias instancias de publicación de AEM (granja TarMK), las ventanas de mantenimiento para Limpieza de revisiones en línea deben estar escalonadas.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>¿Hay algún requisito previo antes de ejecutar la limpieza de revisión en línea?</strong></td>
-   <td><p>Limpieza de revisión en línea solo está disponible con AEM 6.3 y versiones posteriores. Además, si usa una versión anterior de AEM, debe migrar al nuevo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Segmento de destino de Oak</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
