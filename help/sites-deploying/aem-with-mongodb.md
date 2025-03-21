@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ En esta implementación, todos los componentes son necesarios para una implement
 
 ### Sistemas operativos {#operating-systems}
 
-Para obtener una lista de los sistemas operativos compatibles con AEM 6, consulte la [página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+Para obtener una lista de los sistemas operativos compatibles con AEM 6.5 LTS, consulte la [página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ### Entornos {#environments}
 

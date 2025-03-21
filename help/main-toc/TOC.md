@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
+source-wordcount: '6798'
 ht-degree: 69%
 
 ---
@@ -1112,7 +1112,7 @@ ht-degree: 69%
          + [Uso de selectores de catálogos CIF](/help/commerce/cif/customizing/use-cif-pickers.md)
    + [PWA Studio de Adobe Commerce](/help/commerce/cif/pwa-studio/getting-started.md)
    + [Migración](/help/commerce/cif/migration.md)
-   + [Preguntas más frecuentes](/help/commerce/cif/faq.md)
+   + [Preguntas frecuentes](/help/commerce/cif/faq.md)
 + Headless {#headless}
    + [Recorridos sin AEM](/help/journey-headless/overview.md)
    + Recorrido para desarrolladores de AEM sin encabezado {#developer}
@@ -1407,7 +1407,6 @@ ht-degree: 69%
          + [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md)
          + [Consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md)
          + [Cómo ejecutar AEM con el modo de espera pasiva TarMK](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Compatibilidad con RDBMS en AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexación mediante el Jar ejecutado por Oak](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
