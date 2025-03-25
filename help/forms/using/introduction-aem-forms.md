@@ -1,6 +1,6 @@
 ---
 title: Introducción a AEM Forms
-description: Utilice esta guía de AEM 6.5 LTS para crear, administrar, publicar y actualizar formularios digitales. Obtenga ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
+description: Utilice esta guía de AEM 6.5 LTS para crear, administrar, publicar y actualizar formularios digitales. Obtenga ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -8,7 +8,7 @@ exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
