@@ -12,7 +12,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: eb6903d0a34e9f9e90eaeee3ca6a89d1a2622dd0
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -68,7 +68,7 @@ El flujo de datos está diseñado para detectar y gestionar automáticamente los
 
 #### Rendimiento {#performance}
 
-Habilitar el modo de espera en frío de TarMK en la instancia principal casi no tiene ningún impacto mensurable en el rendimiento. El consumo adicional de CPU es bajo y el disco duro y la E/S de red adicionales no deberían producir problemas de rendimiento.
+Habilitar el modo de espera en frío de TarMK en la instancia principal casi no tiene ningún impacto mensurable en el rendimiento. El consumo adicional de CPU es bajo y el disco duro y la E/S de red adicionales no deberían producir ningún problema de rendimiento.
 
 En el modo de espera, se espera un alto consumo de CPU durante el proceso de sincronización. Como el procedimiento no es multiproceso, no se puede acelerar utilizando varios núcleos. Si no se cambian ni transfieren datos, no hay actividad mensurable. La velocidad de conexión varía según el hardware y el entorno de red, pero no depende del tamaño del repositorio ni del uso de SSL. Tenga esto en cuenta a la hora de estimar el tiempo necesario para una sincronización inicial o cuando se hayan cambiado muchos datos en el ínterin en el nodo principal.
 
