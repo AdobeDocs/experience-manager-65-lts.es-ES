@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
 workflow-type: tm+mt
 source-wordcount: '6798'
 ht-degree: 69%
@@ -366,7 +366,7 @@ ht-degree: 69%
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Habilitación de la funcionalidad de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
-      + [Administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+      + [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variaciones: Crear contenido de fragmentos](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenido asociado de fragmentos de contenido](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
@@ -1281,7 +1281,7 @@ ht-degree: 69%
          + [Introducción a React](/help/sites-developing/spa-getting-started-react.md)
          + [Implementación de un componente de React para SPA](/help/sites-developing/spa-implementing-react-component.md)
          + [Introducción a Angular](/help/sites-developing/spa-getting-started-angular.md)
-         + [Profundización en SPA](/help/sites-developing/spa-deep-dives.md)
+         + [Profundización en SPA](/help/sites-developing/spa-deep-dives-gems.md)
          + [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md)
          + [Información general del editor de SPA](/help/sites-developing/spa-overview.md)
          + [Modelo SPA](/help/sites-developing/spa-blueprint.md)
