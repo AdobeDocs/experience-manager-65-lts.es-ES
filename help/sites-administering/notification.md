@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 8ed6afaa78f8f916b15977dda339cb4a3ae934b0
+exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
-
 
 # Configuración de notificaciones por correo electrónico{#configuring-email-notification}
 
@@ -83,7 +83,7 @@ Utilice el siguiente procedimiento para definir el nodo en las carpetas de orige
 
 ## Configuración del servicio de notificaciones de correo electrónico de flujo de trabajo {#configuring-the-workflow-email-notification-service}
 
-Cuando recibe notificaciones por correo electrónico del flujo de trabajo, tanto la dirección de correo electrónico de origen como el prefijo de URL del host se establecen en valores predeterminados. Puede cambiar estos valores configurando el **Servicio de notificación por correo electrónico del flujo de trabajo CQ por día** en la consola web. Si lo hace, se recomienda mantener el cambio en el repositorio.
+Cuando recibe notificaciones por correo electrónico del flujo de trabajo, tanto la dirección de correo electrónico de origen como el prefijo de URL del host se establecen en valores predeterminados. Puede cambiar estos valores configurando el **Servicio de notificación por correo electrónico del flujo de trabajo CQ por día** en la consola web. Si lo hace, debe mantener el cambio en el repositorio.
 
 La configuración predeterminada tiene el siguiente aspecto en la consola web:
 
