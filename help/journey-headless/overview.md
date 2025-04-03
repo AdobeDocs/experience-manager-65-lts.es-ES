@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 
@@ -48,7 +48,7 @@ Los siguientes Recorridos de documentación están disponibles para temas sin en
 |---|---|---|
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Obtenga información sobre las tecnologías sin encabezado, lo que aportan a la experiencia del usuario, cómo AEM admite modelos sin encabezado y cómo implementar su propio proyecto de desarrollo sin encabezado de A a Z. | Desarrolladores |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Obtenga información sobre las tecnologías sin encabezado, por qué se pueden utilizar en el proyecto y cómo crear y actualizar proyectos de traducción en AEM de A a Z. | Especialistas en traducción |
-| [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado. | Arquitectos |
-| [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager as a Cloud Service y cómo diseñar contenido para su proyecto. | Creadores y autores de contenido |
+| [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado. | Arquitectos |
+| [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager as a Cloud Service y cómo crear contenido para su proyecto. | Creadores y autores de contenido |
 
 Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/home.md#journeys)
