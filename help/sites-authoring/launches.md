@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
+source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 77%
+source-wordcount: '892'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +21,9 @@ ht-degree: 77%
 
 Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura.
 
-Se crea un lanzamiento para permitirle realizar cambios listos para su publicación futura (sin perder de vista las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
+Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse para una publicación futura y, al mismo tiempo, mantener las páginas actuales. Esto significa que está editando dos versiones al mismo tiempo: páginas que se publican actualmente y una versión de esas páginas, que se publicarán a la vez en el futuro. Una vez que llegue ese momento, puede reemplazar las páginas originales y publicar la nueva versión.
+
+Usted crea un *Lanzamiento* y, después de editar y actualizar sus páginas de *Lanzamiento*, las *Promociona* de nuevo a *Source*. A continuación, puede activar estas páginas de *Source* (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
 
 Por ejemplo, las páginas de productos de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
 
