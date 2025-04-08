@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d0e6fe09ddafabd5da06d53a69b85adad295e415
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Las ventajas:
 * Failover
 
 ### Clúster Oak con failover MongoMK para alta disponibilidad en un solo centro de datos {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+
+>[!NOTE]
+>
+>La versión mínima admitida de Mongo es Mongo 6.
 
 Este método implica que varias instancias de Oak acceden a un conjunto de réplicas de MongoDB dentro de un solo centro de datos y, de hecho, crean un clúster activo-activo para el entorno de creación de AEM. Los conjuntos de réplicas de MongoDB se utilizan para proporcionar alta disponibilidad y redundancia en caso de un error de hardware o de red.
 

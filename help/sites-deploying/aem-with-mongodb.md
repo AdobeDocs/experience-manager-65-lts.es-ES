@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>La versión mínima admitida de Mongo es Mongo 6.
 
 Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente AEM (Adobe Experience Manager) con MongoDB.
 
@@ -74,8 +78,6 @@ Para lograr el rendimiento de lectura y escritura para un mejor rendimiento sin 
 
 ### RAM {#ram}
 
-Las versiones 2.6 y 3.0 de MongoDB que utilizan el motor de almacenamiento MAP requieren que el conjunto de trabajo de la base de datos y sus índices se ajuste a la RAM.
-
 La insuficiencia de RAM provoca una reducción significativa del rendimiento. El tamaño del conjunto de trabajo y de la base de datos depende en gran medida de la aplicación. Aunque se pueden hacer algunas estimaciones, la manera más confiable de determinar la cantidad de RAM necesaria es crear la aplicación AEM y probarla.
 
 Para ayudarle con el proceso de prueba de carga, se puede dar por hecha la siguiente relación entre el espacio de trabajo y el tamaño total de la base de datos:
@@ -85,11 +87,9 @@ Para ayudarle con el proceso de prueba de carga, se puede dar por hecha la sigui
 
 Estas proporciones significan que para las implementaciones de SSD se requieren 200 GB de RAM para una base de datos de 2 TB.
 
-Aunque las mismas limitaciones se aplican al motor de almacenamiento WiredTiger en MongoDB 3.0, la correlación entre el conjunto de trabajo, la RAM y los errores de página no es tan fuerte. WiredTiger no utiliza la asignación de memoria de la misma manera que lo hace el motor de almacenamiento MAP.
-
 >[!NOTE]
 >
->Adobe recomienda utilizar el motor de almacenamiento WiredTiger para implementaciones de AEM 6.1 que utilicen MongoDB 3.0.
+>Adobe recomienda utilizar el motor de almacenamiento WiredTiger para implementaciones de AEM 6.5 LTS que usen MongoDB 6 o superior.
 
 ### Almacén de datos {#data-store}
 
@@ -235,8 +235,6 @@ Se recomienda habilitar una configuración de caché persistente para implementa
 
 ### Compatibilidad con sistemas operativos {#operating-system-support}
 
-MongoDB 2.6 utiliza un motor de almacenamiento asignado a la memoria que es sensible a algunos aspectos de la gestión de nivel del sistema operativo entre la RAM y el disco. El rendimiento de consulta y lectura de la instancia de MongoDB depende de evitar o eliminar las operaciones de E/S lentas, a menudo denominadas errores de página. Estos problemas son errores de página que se aplican al proceso `mongod` en particular. No confunda esto con errores de página del sistema operativo.
-
 Para un funcionamiento rápido, la base de datos MongoDB solo debe acceder a los datos que ya están en la RAM. Los datos a los que debe acceder están formados por índices y datos. Esta colección de índices y datos se denomina conjunto de trabajo. Cuando el conjunto de trabajo es mayor que la RAM disponible, MongoDB tiene que paginar esos datos desde el disco incurriendo en un coste de E/S, desalojando otros datos que ya están en la memoria. Si la expulsión hace que los datos se vuelvan a cargar desde el disco, los errores de página predominan y el rendimiento se degrada. Cuando el conjunto de trabajo es dinámico y variable, se incurre en más errores de página para admitir operaciones.
 
 MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad de sabores Linux®, Windows y macOS. Consulte [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) para obtener más información. Según la elección del sistema operativo, MongoDB tiene diferentes recomendaciones de nivel de sistema operativo. Hay documentos en [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) que se resumen aquí por comodidad.
@@ -246,7 +244,6 @@ MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad 
 * Desactive las páginas transparentes y desarrástrelas. Para obtener más información, consulte [Configuración de páginas transparentes de gran tamaño](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/).
 * [Ajuste la configuración de lectura anticipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) en los dispositivos que almacenan los archivos de la base de datos para que se ajuste a su caso de uso.
 
-   * Para el motor de almacenamiento MMAPv1, si el conjunto de trabajo es mayor que la RAM disponible y el patrón de acceso a documentos es aleatorio, considere la posibilidad de reducir la lectura anticipada a 32 o 16. Evalúe diferentes configuraciones para poder encontrar un valor óptimo que maximice la memoria residente y reduzca el número de errores de página.
    * Para el motor de almacenamiento WiredTiger, establezca la lectura anticipada en 0 independientemente del tipo de medio de almacenamiento (giratorio, SSD, etc.). En general, utilice la configuración de lectura anticipada recomendada a menos que las pruebas muestren un beneficio mensurable, repetible y fiable en un valor de lectura anticipada más alto. [El Soporte Profesional de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) puede proporcionar consejos y orientación sobre configuraciones de lectura anticipada distintas a cero.
 
 * Deshabilite la herramienta optimizada si ejecuta RHEL 7/CentOS 7 en un entorno virtual.
@@ -358,11 +355,13 @@ Para ajustar el tamaño de la caché interna de WiredTiger, consulte [storage.wi
 
 ### NUMA {#numa}
 
-NUMA (Acceso a Memoria No Uniforme) permite que un núcleo administre cómo se asigna la memoria a los núcleos del procesador. Aunque este proceso intenta acelerar el acceso a la memoria de los núcleos, asegurándose de que puedan acceder a los datos necesarios, NUMA interfiere con MAP introduciendo una latencia adicional, ya que las lecturas no se pueden predecir. Como resultado, NUMA debe deshabilitarse para el proceso `mongod` en todos los sistemas operativos compatibles.
+NUMA (Acceso a Memoria No Uniforme) permite que un núcleo administre cómo se asigna la memoria a los núcleos del procesador.
 
 En esencia, en una arquitectura NUMA, la memoria se conecta a las CPU y las CPU se conectan a un bus. En una arquitectura SMP o UMA, la memoria se conecta al bus y se comparte con las CPU. Cuando un subproceso asigna memoria en un CPU NUMA, se asigna según una directiva. El valor predeterminado es asignar memoria conectada al CPU local del subproceso a menos que no haya memoria libre, momento en el que utiliza la memoria de un CPU libre a un costo mayor. Una vez asignada, la memoria no se mueve entre las CPU. La asignación se realiza mediante una directiva heredada del subproceso primario, que en última instancia es el subproceso que inició el proceso.
 
-En muchas bases de datos que ven el equipo como una arquitectura de memoria uniforme multinúcleo, este escenario lleva a que el CPU inicial se llene primero y el CPU secundario se llene más tarde. Es especialmente cierto si un subproceso central es responsable de asignar búferes de memoria. La solución consiste en cambiar la directiva NUMA del subproceso principal utilizado para iniciar el proceso `mongod` ejecutando el siguiente comando:
+La ejecución de MongoDB en un sistema con acceso a memoria no uniforme (NUMA) puede causar una serie de problemas operativos, incluido un rendimiento lento durante períodos de tiempo, la incapacidad para utilizar toda la RAM disponible y un uso elevado de los procesos del sistema.
+
+La solución consiste en cambiar la directiva NUMA del subproceso principal utilizado para iniciar el proceso `mongod` ejecutando el siguiente comando:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Para obtener información genérica sobre el rendimiento de MongoDB, vea [Análi
 Aunque el uso simultáneo de varias instancias de AEM con una sola base de datos es compatible con MongoMK, las instalaciones simultáneas no lo son.
 
 Para solucionar este problema, asegúrese de ejecutar primero la instalación con un solo miembro y agregar los demás después de que el primero haya terminado de instalarse.
-
-### Longitud del nombre de página {#page-name-length}
-
-Si AEM se está ejecutando en una implementación del administrador de persistencia MongoMK, [los nombres de página están limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

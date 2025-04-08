@@ -1,5 +1,5 @@
 ---
-title: Configuración de almacenes de nodos y almacenes de datos en AEM 6
+title: Configuración de almacenes de nodos y almacenes de datos en AEM 6.5 LTS
 description: Obtenga información sobre cómo configurar almacenes de nodos y almacenes de datos, y cómo realizar la recopilación de elementos no utilizados del almacén de datos.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
 
-# Configuración de almacenes de nodos y almacenes de datos en AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configuración de almacenes de nodos y almacenes de datos en AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introducción {#introduction}
 
@@ -46,19 +46,10 @@ Para configurar el almacén de nodos y el almacén de datos, realice estos pasos
 
 ## Configuraciones del almacén de nodos {#node-store-configurations}
 
->[!CAUTION]
->
->Las versiones más recientes de Oak emplean un nuevo esquema de nomenclatura y formato para los archivos de configuración OSGi. El nuevo esquema de nombres requiere que el nombre del archivo de configuración sea **.config** y que se escriban valores en el nuevo formato. Para obtener más información, consulte [El modelo de aprovisionamiento de Apache Sling y Apache SlingStart: formato de configuración predeterminado](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Si actualiza desde una versión anterior de Oak, asegúrese de realizar primero una copia de seguridad de la carpeta `crx-quickstart/install`. Después de la actualización, restaure el contenido de la carpeta a la instalación actualizada y modifique la extensión de los archivos de configuración de **.cfg** a **.config**.
-
 ### Almacén de nodos de segmentos {#segment-node-store}
 
-El almacén de nodos de segmentos es la base de la implementación TarMK de Adobe en AEM6. Utiliza el PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para la configuración.
+El almacén de nodos de segmentos es la base de la implementación TarMK de Adobe en AEM 6.5 LTS. Utiliza el PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para la configuración.
 
->[!CAUTION]
->
->El PID del almacén de nodos de segmentos ha cambiado de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` de AEM 6 a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` en AEM 6.3. Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 
 Puede configurar las siguientes opciones:
 
@@ -86,7 +77,7 @@ El almacén de nodos de documentos es la base de la implementación MongoMK de A
 
 * `mongouri`: el [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necesario para conectarse a la base de datos de Mongo. El valor predeterminado es `mongodb://localhost:27017`
 
-* `db`: nombre de la base de datos Mongo. El valor predeterminado es **Oak** ``. However, new AEM 6 installations use **aem-author** ``como nombre de base de datos predeterminado.
+* `db`: nombre de la base de datos Mongo. El valor predeterminado es **aem-author**.
 
 * `cache`: tamaño de la caché en MB. Se distribuye entre varias memorias caché utilizadas en DocumentNodeStore. El valor predeterminado es `256`
 
@@ -143,9 +134,9 @@ AEM se puede configurar para almacenar datos en el servicio de almacenamiento se
 
 >[!NOTE]
 >
->AEM 6.5 admite el almacenamiento de datos en Amazon S3; sin embargo, la compatibilidad no se amplía al almacenamiento de datos en otras plataformas, cuyos proveedores pueden tener sus propias implementaciones de las API S3 de Amazon.
+>AEM 6.5 LTS admite el almacenamiento de datos en Amazon S3; sin embargo, la compatibilidad no se amplía al almacenamiento de datos en otras plataformas, cuyos proveedores pueden tener sus propias implementaciones de las API S3 de Amazon.
 
-Para habilitar la funcionalidad del almacén de datos S3, se debe descargar e instalar un paquete de funciones que contenga el conector del almacén de datos S3. Vaya a [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) y descargue la versión más reciente de las versiones 1.10.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Además, debe descargar e instalar el Service Pack más reciente de AEM que aparece en la página [Notas de la versión de AEM 6.5](/help/release-notes/release-notes.md).
+Para habilitar la funcionalidad del almacén de datos S3, se debe descargar e instalar un paquete de funciones que contenga el conector del almacén de datos S3. Vaya a [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) y descargue la versión más reciente de las versiones 1.60.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.s3connector-1.60.2.zip). Además, debe descargar e instalar el Service Pack más reciente de AEM que aparece en la página [Notas de la versión de AEM 6.5 LTS](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ Una vez descargado, puede instalar y configurar el conector S3 de la siguiente m
 1. Edite el archivo y añada las opciones de configuración que requiera el programa de instalación.
 1. Inicie AEM.
 
-## Actualización a una nueva versión del conector S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Actualización a una nueva versión del conector S3 1.60.x {#upgrading-to-a-new-version-of-the-s-connector}
 
-Para actualizar a una nueva versión del conector 1.10.x S3 (por ejemplo, de 1.10.0 a 1.10.4), siga estos pasos:
+Para actualizar a una nueva versión del conector 1.60.x S3, siga estos pasos:
 
 1. Detenga la instancia de AEM.
 
@@ -205,7 +196,7 @@ Para actualizar a una nueva versión del conector 1.10.x S3 (por ejemplo, de 1.1
    >
    >Los nombres de archivo presentados anteriormente se utilizan únicamente con fines ilustrativos.
 
-1. Descargue la última versión del paquete de funciones 1.10.x del [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Descargue la última versión del paquete de funciones 1.60.x desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip).
 1. Descomprima el contenido en una carpeta independiente y luego vaya a `jcr_root/libs/system/install/15`.
 1. Copie los archivos jar en **&lt;aem-install>**/crx-quickstart/install/15 en la carpeta de instalación de AEM.
 1. Inicie AEM y compruebe la funcionalidad del conector.
@@ -413,7 +404,7 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 
 AEM se puede configurar para almacenar datos en el servicio de almacenamiento de Azure de Microsoft®. Utiliza el PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para la configuración.
 
-Para habilitar la funcionalidad del almacén de datos de Azure, se debe descargar e instalar un paquete de funciones que contenga el conector de Azure. Vaya a [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) y descargue la versión más reciente de las versiones 1.6.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Para habilitar la funcionalidad del almacén de datos de Azure, se debe descargar e instalar un paquete de funciones que contenga el conector de Azure. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) y descargue la versión más reciente de las versiones 1.9.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >
