@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cafc7120-114e-487a-8b81-9c695318731e
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -144,7 +145,7 @@ Solo se puede acceder a un recurso estático a través del proxy si reside debaj
 
 A modo de ejemplo:
 
-* Tiene una clientlib en `/apps/myproject/clientlibs/foo`
+* Tiene una clientlib en `/apps/myprojects/clientlibs/foo`
 * Tiene una imagen estática en `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 A continuación, establezca la propiedad `allowProxy` de `foo` en true.
