@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
+source-wordcount: '6797'
 ht-degree: 66%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 66%
          + [Segmentación de Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
          + [Creación de Adobe Campaign Forms en AEM](/help/sites-authoring/adobe-campaign-forms.md)
          + [Componentes de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
-   + Administración {#administering}
+   + Administración  {#administering}
       + [Introducción a la Guía del usuario de administración](/help/sites-administering/home.md)
       + Funciones de sitios {#introduction}
          + [MSM y traducción](/help/sites-administering/msm-and-translation.md)
@@ -377,7 +377,7 @@ ht-degree: 66%
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Creación de proyectos de traducción para fragmentos de contenido](/help/assets/creating-translation-projects-for-content-fragments.md)
    + Administrar Assets {#managing}
-      + [Administrar recursos digitales](/help/assets/manage-assets.md)
+      + [Administrar los recursos digitales ](/help/assets/manage-assets.md)
       + [Administrar colecciones](/help/assets/manage-collections.md)
       + [Selector de recursos](/help/assets/asset-selector.md)
       + [Habilitar detección de duplicados](/help/assets/duplicate-detection.md)
@@ -387,7 +387,7 @@ ht-degree: 66%
       + [Preparación de recursos para su traducción](/help/assets/preparing-assets-for-translation.md)
       + [Descarga de recursos desde Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Datos de Assets](/help/assets/asset-insights.md)
+      + [Información de recursos](/help/assets/asset-insights.md)
       + [Habilitar perspectivas de recursos mediante DTM](/help/assets/use-dtm-for-asset-insights.md)
       + [Configurar perspectivas de recursos](/help/assets/configure-asset-insights.md)
       + [Proteger y desproteger recursos](/help/assets/check-out-and-submit-assets.md)
@@ -1092,14 +1092,14 @@ ht-degree: 66%
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solución de comercio de terceros](/help/commerce/cif/integrating/third-party.md)
-   + AEM Storefront {#storefront}
+   + AEM Storefront  {#storefront}
       + [Introducción](/help/commerce/cif/getting-started.md)
       + Creación {#authoring}
          + [Experiencias de Commerce](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [Product Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
          + [Enriquecimiento de datos de producto con contenido asociado](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Recomendaciones de producto](/help/commerce/cif/authoring/product-recommendations.md)
-      + Administración {#administering}
+      + Administración  {#administering}
          + [Configuración de varias tiendas](/help/commerce/cif/configuring/multi-store-setup.md)
          + [Uso de varias plantillas](/help/commerce/cif/configuring/multi-template-usage.md)
          + [Configuración de direcciones URL para SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
@@ -1114,7 +1114,7 @@ ht-degree: 66%
    + [PWA Studio de Adobe Commerce](/help/commerce/cif/pwa-studio/getting-started.md)
    + [Migración](/help/commerce/cif/migration.md)
    + [Preguntas frecuentes](/help/commerce/cif/faq.md)
-+ Headless {#headless}
++ Sin encabezado {#headless}
    + [Recorridos sin AEM](/help/journey-headless/overview.md)
    + Recorrido para desarrolladores de AEM sin encabezado {#developer}
       + [Comprender el sin encabezado en AEM](/help/journey-headless/developer/overview.md)
@@ -1147,7 +1147,7 @@ ht-degree: 66%
       + [Traducir contenido](/help/journey-headless/translation/translate-content.md)
       + [Publicar contenido traducido](/help/journey-headless/translation/publish-content.md)
    + [¿Qué es un recorrido de documentación?](/help/journey-documentation/home.md)
-+ Implementación {#implementing}
++ Implementación  {#implementing}
    + El desarrollo de {#developing}
       + Introducción para desarrolladores {#introduction}
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
@@ -1226,7 +1226,7 @@ ht-degree: 66%
       + [Modelos con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md)
       + Administración de experiencias sin encabezado {#headless}
          + [Sin encabezado y AEM](/help/sites-developing/headless/introduction.md)
-         + Recorridos sin encabezado {#journeys}
+         + Recorridos sin encabezado  {#journeys}
             + Recorrido para los desarrolladores de contenido sin encabezado {#developer}
                + [Comprender el sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
                + [Obtenga información acerca del desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
@@ -1238,7 +1238,7 @@ ht-degree: 66%
                + [Cómo ponerlo todo junto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [Publicación de la aplicación sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
                + [Opcional: cómo crear aplicaciones de una sola página con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
-            + Recorrido de arquitecto de contenido sin encabezado {#architect}
+            + Recorrido para arquitectos de contenido sin encabezado {#architect}
                + [Información general sobre el Recorrido de arquitectos de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [Modelado de contenido para Headless con AEM: introducción](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [Conozca los conceptos básicos del modelado de contenido para Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
@@ -1429,10 +1429,9 @@ ht-degree: 66%
          + [Asignación de recursos](/help/sites-deploying/resource-mapping.md)
          + [Comprobaciones de coherencia y recorrido](/help/sites-deploying/consistency-check.md)
          + [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
-         + [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md)
+         + [Optimización de rendimiento](/help/sites-deploying/configuring-performance.md)
          + [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
-         + [Configuración de la consola web](/help/sites-deploying/configuring-web-console.md)
       + Actualización a AEM 6.5 LTS {#upgrading}
          + [Actualización a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)

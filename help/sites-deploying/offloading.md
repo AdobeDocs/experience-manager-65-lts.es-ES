@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2323'
 ht-degree: 1%
 
 ---
@@ -80,9 +80,9 @@ Para cada instancia del clúster, puede ver varias propiedades relacionadas con 
 * Temas de trabajo para los que se ha registrado la instancia para la descarga.
 * Los temas de trabajo que procesa la instancia.
 
-1. Con la IU táctil, haga clic en la pestaña Herramientas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. En el área Operaciones de Granite, haga clic en Explorador de descarga.
-1. En el panel de navegación, haga clic en Explorador de topología.
+1. Con la IU táctil, haga clic en la pestaña Herramientas. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Para ver la descarga, haga clic en Mosaico de descarga en la sección Implementación.
+1. Para ver la topología, haga clic en el mosaico Topología en la sección Implementación.
 
    Aparecen los clústeres que participan en la topología.
 
@@ -100,7 +100,7 @@ También puede utilizar la consola web para ver información de topología. La c
 Utilice el siguiente procedimiento para abrir la página Topology Management de la consola web:
 
 1. Abra la consola web en el explorador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Haga clic en Principal > Administración de topología.
+1. Haga clic en Sling > Administración de topología.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
