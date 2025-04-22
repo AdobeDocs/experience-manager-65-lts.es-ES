@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ Estas son todas las [configuraciones de OSGi](/help/sites-deploying/configuring-
 * el número de versiones que se van a conservar
 * rotación de versiones; tamaño máximo o intervalo de tiempo
 * el formato que se utilizará al escribir los mensajes de registro
-
->[!NOTE]
->
->Este [artículo de la Base de conocimiento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica cómo girar los archivos request.log y access.log.
 
 ## Registradores y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
 

@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,6 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 >La configuración necesaria varía según el proyecto.
 >
 >Consulte la consola web para obtener información detallada sobre los parámetros y los valores utilizados.
-
->[!NOTE]
->
->La herramienta Diferencias de configuración de OSGi, que forma parte de [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), se puede usar para enumerar las configuraciones de OSGi predeterminadas.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 
 Ver [Registro de AEM](/help/sites-deploying/configure-logging.md) y [Registro de Sling](https://sling.apache.org/documentation/development/logging.html).
 
-**Grupo de hilos de eventos de Apache Sling** Configurar:
+**Grupo de subprocesos de Apache Sling** Configurar:
 
 * **Tamaño mínimo del grupo** y **Tamaño máximo del grupo**, el tamaño del grupo utilizado para contener los subprocesos de evento.
 
@@ -102,7 +98,7 @@ No deshabilite JSON.
 >
 >Esta opción se configura automáticamente para las instancias de producción si ejecuta AEM en [Modo listo para la producción](/help/sites-administering/production-ready.md).
 
-**Controlador de Apache Sling JavaScript** Configure las opciones para la compilación de archivos .java como scripts (servlets).
+**Controlador Apache Sling Java Script** Configure las opciones para la compilación de archivos .java como scripts (servlets).
 
 Ciertas configuraciones pueden afectar al rendimiento. Deshabilite esta configuración siempre que sea posible, especialmente en el caso de una instancia de producción.
 
@@ -118,9 +114,9 @@ Ciertas configuraciones pueden afectar al rendimiento. Deshabilite esta configur
 
 * **Ruta de búsqueda**, lista de rutas en las que jcrinstall busca los recursos que se van a instalar, junto con un número que indica el factor de ponderación para esa ruta.
 
-**Controlador de eventos del trabajo Apache Sling** Configure los parámetros que administran la programación del trabajo:
+**Configuración de la cola de Apache Sling** Configure los parámetros que administran la programación de trabajos:
 
-* **Intervalo de reintento**, **Máximo de reintentos**, **Máximo de trabajos paralelos**, **Confirmación de tiempo de espera**, entre otros.
+* **Intervalo de reintento**, **Reintentos máximos**, **Trabajos paralelos máximos**, entre otros.
 
 * Cambiar esta configuración puede mejorar el rendimiento en escenarios con un número elevado de trabajos; por ejemplo, un uso intensivo de DAM y flujos de trabajo de AEM.
 * Los valores específicos de su escenario deben establecerse con pruebas.
@@ -177,7 +173,7 @@ Ver [Registro de AEM](/help/sites-deploying/configure-logging.md) y [Registro de
 
 * **Número de llamadas por solicitud** y **Profundidad de recursión** para proteger su sistema contra la recursión infinita y las llamadas de script excesivas.
 
-**Servicio de tipo MIME de Apache Sling** Configurar:
+**Servicio de tipo MIME de Apache Sling Commons** Configurar:
 
 * **Tipos MIME** para agregar al sistema los tipos requeridos por el proyecto. Al hacerlo, se permite una solicitud `GET` en un archivo para establecer el encabezado de tipo de contenido correcto para vincular el tipo de archivo y la aplicación.
 
@@ -239,23 +235,11 @@ Se pueden configurar varios parámetros, entre ellos:
 * **Rutas de ejecución**: enumera las rutas para buscar scripts ejecutables. Al configurar rutas específicas, puede limitar qué scripts se pueden ejecutar. Si no se configura ninguna ruta de acceso, se usa la predeterminada ( `/` = raíz), lo que permite la ejecución de todos los scripts.
 Si un valor de ruta configurado termina con una barra diagonal, se busca en todo el subárbol. Sin esta barra diagonal, la secuencia de comandos solo se ejecuta si coincide exactamente.
 
-* **Usuario de script**: esta propiedad opcional puede especificar la cuenta de usuario del repositorio utilizada para leer los scripts. Si no se especifica ninguna cuenta, se utiliza el usuario `admin` de forma predeterminada.
-
 * **Extensiones predeterminadas**: lista de extensiones para las que se usa el comportamiento predeterminado. El último segmento de ruta del tipo de recurso se puede utilizar como nombre de script.
 
 **Configuración proxy de componentes HTTP Apache**: la configuración proxy para todo el código que use el cliente HTTP Apache, usado cuando se hace un HTTP. Por ejemplo, en la replicación.
 
 Al crear una configuración, no cambie la configuración de fábrica. En su lugar, cree una configuración de fábrica para este componente con el administrador de configuración disponible aquí: **https://localhost:4502/system/console/configMgr/**. La configuración proxy está disponible en **org.apache.http.proxyconfigurator.**
-
->[!NOTE]
->
->En AEM 6.0 y versiones anteriores, el proxy se configuraba en el cliente HTTP de Day Commons. En AEM 6.1 y versiones posteriores, la configuración proxy se ha trasladado a la &quot;Configuración proxy de componentes HTTP Apache&quot; en lugar de a la configuración &quot;Cliente HTTP Day Commons&quot;.
-
-**Antispam Day CQ** Configure el servicio antispam (Akismet) usado. Esta función requiere que registre lo siguiente:
-
-* **Proveedor**
-* **Clave de API**
-* **URL registrada**
 
 **Adobe Granite HTML Library Manager** Configúrelo para controlar el manejo de las bibliotecas de cliente (css o js), incluyendo, por ejemplo, cómo se ve la estructura subyacente.
 
@@ -281,7 +265,7 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 >
 >Esta opción se configura automáticamente para las instancias de producción si ejecuta AEM en [Modo listo para la producción](/help/sites-administering/production-ready.md).
 
-**Controlador de autenticación de encabezado HTTP de CQ por día** Configuración de todo el sistema para el método de autenticación básico de la solicitud HTTP.
+**Controlador de autenticación de encabezado HTTP de Adobe Granite** Configuración de todo el sistema para el método de autenticación básico de la solicitud HTTP.
 
 Al usar [grupos de usuarios cerrados](/help/sites-administering/cug.md), puede configurar, entre otros, lo siguiente:
 
@@ -377,7 +361,7 @@ Se puede acceder a los demás modos desde la barra de tareas o se puede utilizar
 >
 >Esta opción se configura automáticamente para las instancias de producción si ejecuta AEM en [Modo listo para la producción](/help/sites-administering/production-ready.md).
 
-**Configurador Day CQ WCM Link Checker** Configurar:
+**Verificador de vínculos CQ WCM por día** Configurar:
 
 * **Lista de configuraciones de reescritura** para especificar una lista de ubicaciones para las configuraciones del verificador de vínculos basado en contenido. Las configuraciones se pueden basar en el modo de ejecución. Este hecho es importante para distinguir entre los entornos de creación y publicación, ya que la configuración del verificador de vínculos puede diferir.
 
@@ -427,7 +411,7 @@ Consulte [Depuración de versiones](/help/sites-deploying/version-purging.md) pa
 
 **Servicio de notificación por correo electrónico del flujo de trabajo de CQ por día** Configure los parámetros de correo electrónico para las notificaciones enviadas por un flujo de trabajo.
 
-**Fábrica del analizador HTML de reescritura CQ**
+**Fábrica del analizador de HTML del reescritor de Adobe AEM**
 
 Controla el analizador de HTML para la reescritura CQ.
 
