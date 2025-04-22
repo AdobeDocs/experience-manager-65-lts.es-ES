@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ Existen varias razones para que la replicación falle. Este artículo explica el
 
 **¿Se están activando las replicaciones al hacer clic en el botón Activar? Si NO, haga lo siguiente:**
 
-1. Vaya a /crx/explorer e inicie sesión como administrador.
-1. Abra &quot;Explorador de contenido&quot;
+1. Vaya a /crx/de/index.jsp e inicie sesión como administrador.
 1. Vea si existe un nodo /bin/replicate o /bin/replicate.json. Si el nodo existe, elimínelo y guárdelo.
 
 **¿Se están poniendo en cola las replicaciones en las colas del agente de replicación?**
@@ -76,12 +75,12 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
 A veces resulta útil configurar todos los registros de replicación para que se agreguen en un archivo de registro independiente en el nivel DEBUG. Para ello, haga lo siguiente:
 
 1. Vaya a https://host:port/system/console/configMgr e inicie sesión como administrador.
-1. Busque la fábrica del registrador de Apache Sling y cree una instancia haciendo clic en el botón **+** a la derecha de la configuración de fábrica. Esto crea un nuevo registrador.
+1. Busque la configuración del registrador de Apache Sling y cree una instancia haciendo clic en el botón **+** a la derecha de la configuración de fábrica. Esto crea un nuevo registrador.
 1. Establezca la configuración de esta manera:
 
    * Nivel de registro: DEPURAR
-   * Ruta del archivo de registro: logs/replication.log
-   * Categorías: com.day.cq.replication
+   * Archivo de registro: logs/replication.log
+   * Registrador: com.day.cq.replication
 
 1. Si sospecha que el problema está relacionado con eventos/trabajos de sling de alguna manera, también puede agregar este paquete Java™ en categorías:org.apache.sling.event
 

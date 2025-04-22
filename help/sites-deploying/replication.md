@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 1%
 
 ---
@@ -60,18 +60,26 @@ La replicación inversa utiliza un agente en el entorno de publicación que hace
 
 ### Replicación: de forma predeterminada {#replication-out-of-the-box}
 
-El sitio web de venta minorista web que se incluye en una instalación estándar de AEM se puede utilizar para ilustrar la replicación.
+Cree una página siguiendo [Creación y organización de páginas](/help/sites-authoring/managing-pages.md).
 
 Para seguir este ejemplo y usar los agentes de replicación predeterminados, [instale AEM](/help/sites-deploying/deploy.md) con:
 
+
 * el entorno de creación en el puerto `4502`
 * el entorno de publicación en el puerto `4503`
+
+Esta replicación se lleva a cabo desde el entorno de creación mediante:
+
+* **Agente predeterminado (publicar)**
+Este agente replica el contenido en la instancia de publicación predeterminada.
+Se puede acceder a los detalles de esto (configuración y registros) desde la consola Herramientas del entorno de creación; o bien:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Habilitado de forma predeterminada:
 >
->* Agentes en Autor : Agente predeterminado (publicar)
+>* Agentes en Autor : Agente predeterminado (publicar); si no es así, asegúrese de habilitarlo antes de continuar.
 >
 >Deshabilitado de forma predeterminada (a partir de AEM 6.1):
 >
@@ -84,19 +92,13 @@ Para seguir este ejemplo y usar los agentes de replicación predeterminados, [in
 #### Replicación (de autor a publicación) {#replication-author-to-publish}
 
 1. Vaya a la página de asistencia técnica en el entorno de creación.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Edite la página para poder agregar texto nuevo.
 1. **Activar página** para poder publicar los cambios.
 1. Abra la página de soporte en el entorno de publicación:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Ahora puede ver los cambios introducidos en Autor.
 
-Esta replicación se lleva a cabo desde el entorno de creación mediante:
-
-* **Agente predeterminado (publicar)**
-Este agente replica el contenido en la instancia de publicación predeterminada.
-Se puede acceder a los detalles de esto (configuración y registros) desde la consola Herramientas del entorno de creación; o bien:
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agentes de replicación: predefinidos {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Se utiliza para replicar de Autor a Publicar.
 * Vaciado de Dispatcher
 Se utiliza para administrar la caché de Dispatcher. Consulte [Invalidación de la caché de Dispatcher desde el entorno de creación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidación de la caché de Dispatcher desde una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obtener más información.
 
-* [Replicación inversa](#reverse-replication-publish-to-author)
+* [Replicación inversa](#configuring-reverse-replication)
 Se utiliza para replicar desde Publicar en Autor. La replicación inversa no se utiliza para funciones de Communities, como foros, blogs y comentarios. Se desactiva de forma efectiva, ya que la bandeja de salida no está activada. El uso de la replicación inversa requeriría una configuración personalizada.
 
 * Agente estático
@@ -312,7 +314,7 @@ La siguiente configuración solo es necesaria si se necesita un proxy:
 
   Versión del protocolo. Por ejemplo, `1.0` para HTTP/1.0.
 
-#### Desencadenadores {#triggers}
+#### Activadores {#triggers}
 
 Esta configuración se utiliza para definir déclencheur para la replicación automatizada:
 
