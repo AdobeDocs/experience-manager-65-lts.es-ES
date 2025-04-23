@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Oak-run admite la indexación de casos de uso en la línea de comandos sin tener
 
 Las ventajas generales de utilizar el método de comandos oak-run.jar index para administrar índices Oak son las siguientes:
 
-1. El comando index de ejecución de Oak proporciona un nuevo conjunto de herramientas de indexación para AEM 6.4.
+1. El comando index de ejecución de Oak proporciona un nuevo conjunto de herramientas de indexación desde AEM 6.4.
 1. La ejecución de Oak reduce el tiempo de reindexación, lo que reduce los tiempos de reindexación en repositorios más grandes.
 1. La ejecución de Oak reduce el consumo de recursos durante la reindexación en AEM, lo que resulta en un mejor rendimiento general del sistema.
 1. La ejecución de Oak proporciona reindexación fuera de banda, lo que admite situaciones en las que la producción debe estar disponible y no puede tolerar el mantenimiento o el tiempo de inactividad que, de lo contrario, se requeriría para reindexar.

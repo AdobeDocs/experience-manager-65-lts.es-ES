@@ -1,6 +1,6 @@
 ---
 title: Consultas e indexación de Oak
-description: Obtenga información sobre cómo configurar índices en Adobe Experience Manager (AEM) 6.5.
+description: Obtenga información sobre cómo configurar índices en Adobe Experience Manager (AEM) 6.5 LTS.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '2577'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Este artículo trata sobre la configuración de índices en AEM 6. Para obtener prácticas recomendadas sobre cómo optimizar el rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Este artículo trata sobre la configuración de índices en AEM 6.5 LTS. Para obtener prácticas recomendadas sobre cómo optimizar el rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Introducción {#introduction}
 
@@ -50,7 +50,7 @@ El back-end basado en Apache Oak permite que diferentes indexadores se conecten 
 
 Un indizador es **Property Index**, cuya definición de índice se almacena en el propio repositorio.
 
-Las implementaciones para **Apache Lucene** y **Solr** también están disponibles de manera predeterminada, y ambas admiten la indexación de texto completo.
+La implementación para **Apache Lucene** está disponible de manera predeterminada, y admite la indexación de texto completo.
 
 Se usa el **índice de recorrido** si no hay ningún otro indizador disponible. Esto significa que el contenido no está indexado y que los nodos de contenido se atraviesan para encontrar coincidencias con la consulta.
 
@@ -109,7 +109,7 @@ El índice ordenado es una extensión del índice de propiedad. Sin embargo, ha 
 
 ### Índice de texto completo de Lucene {#the-lucene-full-text-index}
 
-Un indexador de texto completo basado en Apache Lucene está disponible en AEM 6.
+Un indexador de texto completo basado en Apache Lucene está disponible en AEM 6.5 LTS.
 
 Si se configura un índice de texto completo, todas las consultas que tienen una condición de texto completo utilizan el índice de texto completo, independientemente de si hay otras condiciones que están indizadas y de si hay una restricción de ruta.
 
@@ -308,7 +308,7 @@ Si desea utilizar cualquier analizador predeterminado, puede configurarlo siguie
 
 #### Creación de analizadores mediante composición {#creating-analyzers-via-composition}
 
-Los analizadores también se pueden componer en función de `Tokenizers`, `TokenFilters` y `CharFilters`. Para ello, especifique un analizador y cree nodos secundarios de sus tokenizers y filtros opcionales que se apliquen en el orden indicado. Ver también [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Los analizadores también se pueden componer en función de `Tokenizers`, `TokenFilters` y `CharFilters`. Para ello, especifique un analizador y cree nodos secundarios de sus tokenizers y filtros opcionales que se apliquen en el orden indicado.
 
 Consideremos esta estructura de nodos como un ejemplo:
 
@@ -359,87 +359,6 @@ El nombre de los filtros, charFilters y tokenizers se forman eliminando los sufi
 Cualquier parámetro de configuración necesario para la fábrica se especifica como propiedad del nodo en cuestión.
 
 En el caso de casos como la carga de palabras de detención en los que se debe cargar contenido de archivos externos, el contenido se puede proporcionar creando un nodo secundario de tipo `nt:file` para el archivo en cuestión.
-
-### El Índice Solr {#the-solr-index}
-
-El propósito del índice Solr es la búsqueda de texto completo, pero también se puede utilizar para indexar la búsqueda por ruta, restricciones de propiedad y restricciones de tipo principal. Esto significa que el índice Solr de Oak se puede utilizar para cualquier tipo de consulta JCR.
-
-La integración en AEM se produce en el nivel de repositorio, por lo que Solr es uno de los posibles índices que se pueden utilizar en Oak, la nueva implementación de repositorio que se incluye con AEM.
-
-Se puede configurar para que funcione como un servidor remoto con la instancia de AEM.
-
-### Configuración de AEM con un único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
-
-AEM también se puede configurar para que funcione con una instancia remota del servidor Solr:
-
-1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte la [Documentación de instalación de Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
-1. Ahora, cree dos fragmentos de Solr. Para ello, cree carpetas para cada uso compartido de la carpeta en la que se ha desempaquetado Solr:
-
-   * Para el primer uso compartido, cree la carpeta:
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * Para el segundo uso compartido, cree la carpeta:
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. Busque la instancia de ejemplo en el paquete Solr. Se encuentra en una carpeta llamada &quot;`example`&quot; en la raíz del paquete.
-1. Copie las siguientes carpetas de la instancia de ejemplo en las dos carpetas compartidas ( `aemsolr1\node1` y `aemsolr2\node2`):
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. Cree una carpeta denominada &quot;`cfg`&quot; en cada una de las dos carpetas compartidas.
-1. Coloque los archivos de configuración de Solr y Zookeeper en las carpetas `cfg` recién creadas.
-
-   >[!NOTE]
-   >
-   >Para obtener más información sobre la configuración de Solr y ZooKeeper, consulte la [Documentación de configuración de Solr](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) y la [Guía de introducción a ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
-
-1. Inicie el primer uso compartido con compatibilidad con ZooKeeper yendo a `aemsolr1\node1` y ejecutando el siguiente comando:
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. Inicie el segundo uso compartido yendo a `aemsolr2\node2` y ejecutando el siguiente comando:
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. Una vez que se hayan iniciado ambos fragmentos, compruebe que todo esté en funcionamiento conectándose a la interfaz de Solr en `http://localhost:8983/solr/#/`
-1. Inicie AEM y vaya a la consola web en `http://localhost:4502/system/console/configMgr`
-1. Establezca la siguiente configuración en **Configuración del servidor remoto Oak Solr**:
-
-   * URL HTTP de Solr: `http://localhost:8983/solr/`
-
-1. Elija **Solr remoto** en la lista desplegable bajo **Oak Solr** proveedor de servidores.
-
-1. Vaya a CRXDE e inicie sesión como administrador.
-1. Cree un nodo llamado **solrIndex** en **oak:index** y establezca las siguientes propiedades:
-
-   * **tipo:** solr (de tipo cadena)
-   * **async:** async (de tipo cadena)
-   * **reindex:** true (de tipo booleano)
-
-1. Guarde los cambios.
-
-#### Configuración recomendada para Solr {#recommended-configuration-for-solr}
-
-A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. Se adapta a los índices de propiedades específicos que ya están presentes en AEM; no los utilice con otras aplicaciones.
-
-Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en el Directorio principal de Solr. Si hay implementaciones de varios nodos, debe ir directamente a la carpeta raíz de cada nodo.
-
-Archivos de configuración de Solr recomendados
-
-[Obtener archivo](assets/recommended-conf.zip)
 
 ### Herramientas de indexación de AEM {#aem-indexing-tools}
 

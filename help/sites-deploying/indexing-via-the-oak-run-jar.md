@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Oak-run admite todos los casos de uso de indexación en la línea de comandos sin tener que operar desde el nivel JMX. Las ventajas del enfoque oak-run son:
 
-1. Es un nuevo conjunto de herramientas de indexación para AEM 6.4
+1. Es un nuevo conjunto de herramientas de indexación desde AEM 6.4
 1. Reduce el tiempo de reindexación, lo que afecta positivamente a los tiempos de reindexación en repositorios más grandes
 1. Reduce el consumo de recursos durante la reindexación en AEM, lo que resulta en un mejor rendimiento del sistema para otras actividades de AEM
 1. La ejecución de Oak proporciona compatibilidad fuera de banda: Si las condiciones de producción no permiten ejecutar reindexaciones en instancias de producción, se puede utilizar un entorno clonado para la reindexación a fin de evitar un impacto crítico en el rendimiento.
@@ -64,7 +64,7 @@ Este diagrama es un árbol de decisión para saber cuándo utilizar los distinto
 
 ### Extracción previa de texto para SegmentNodeStore y DocumentNodeStore {#textpre-extraction}
 
-[La extracción previa de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (una característica que existe con AEM 6.3) se puede usar para reducir el tiempo de reindexación. La preextracción de texto se puede utilizar con todos los enfoques de reindexación.
+[La extracción previa de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (una característica que ha existido desde AEM 6.3) se puede usar para reducir el tiempo de reindexación. La preextracción de texto se puede utilizar con todos los enfoques de reindexación.
 
 Dependiendo del método de indexación `oak-run.jar`, hay varios pasos a cada lado del paso Realizar reindexación en el diagrama siguiente.
 

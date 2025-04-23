@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ Un apagado forzado provoca que AEM suspenda la indexación asincrónica durante 
 1. Espere aproximadamente 45 minutos para que AEM reanude las operaciones normales de indexación asincrónica.
 
 ## Grupo de subprocesos sobrecargado {#thread-pool-overloaded}
-
->[!NOTE]
->
->Para AEM 6.1, asegúrese de que el CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) de [AEM 6.1 está instalado.
 
 En circunstancias excepcionales, el grupo de subprocesos utilizado para administrar la indexación asincrónica puede sobrecargarse. Para aislar el proceso de indexación, se puede configurar un grupo de hilos para evitar que otros trabajos de AEM interfieran con la capacidad de Oak para indexar contenido de manera oportuna. En estos casos, haga lo siguiente:
 
