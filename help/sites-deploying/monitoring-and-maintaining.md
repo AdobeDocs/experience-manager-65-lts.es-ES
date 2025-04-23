@@ -1,5 +1,5 @@
 ---
-title: Supervisión y mantenimiento de su instancia Adobe Experience Manager
+title: Supervisión y mantenimiento de la instancia de Adobe Experience Manager
 description: Obtenga información sobre cómo monitorizar y mantener su instancia de Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
@@ -51,19 +51,15 @@ Es probable que su compañía tenga una directiva de copia de seguridad que uste
 * volumen de datos; la capacidad puede ser ocasionalmente un problema, al igual que el tiempo para realizar la copia de seguridad.
 * si la copia de seguridad se puede realizar mientras los usuarios están en línea y, si es posible, cuál es el impacto en el rendimiento.
 * la distribución geográfica de los usuarios; es decir, ¿cuándo es el mejor momento para realizar copias de seguridad (para minimizar el impacto)?
-* su política de recuperación ante desastres; ¿existen directrices sobre dónde deben almacenarse los datos de copia de seguridad (por ejemplo, fuera del sitio y en un medio específico)?
+* su directiva de recuperación ante desastres; ¿Existen directrices sobre dónde se deben almacenar los datos de copia de seguridad (por ejemplo, fuera del sitio y en un medio específico)?
 
-A menudo, se realiza una copia de seguridad completa a intervalos regulares (por ejemplo, diaria, semanal o mensual), con copias de seguridad incrementales intermedias (por ejemplo, por hora, diaria o semanal).
+A menudo, se toma un copia de seguridad completo a intervalos regulares (por ejemplo, diariamente, semanalmente o mensualmente), con copias de seguridad incrementales en el medio (por ejemplo, cada hora, día o semana).
 
 >[!CAUTION]
 >
 >Al implementar copias de seguridad de las instancias de producción, se deben realizar pruebas *para garantizar que la copia de seguridad se restaure correctamente.*
 >
 >Sin esta prueba, la copia de seguridad es potencialmente inútil (en el peor de los casos).
-
->[!NOTE]
->
->Para obtener más información sobre el rendimiento de las copias de seguridad, lea la sección [Rendimiento de las copias de seguridad](/help/sites-deploying/configuring-performance.md#backup-performance).
 
 ### Copia de seguridad de la instalación del software {#backing-up-your-software-installation}
 
@@ -72,11 +68,11 @@ Después de la instalación o cambios significativos en la configuración, cree 
 Para llevar a cabo este tarea, [haga una copia de seguridad de todo su repositorio](#backing-up-your-repository) y luego:
 
 1. Parada AEM.
-1. Haga una copia de seguridad de todo el(la) `<cq-installation-dir>` desde su sistema de archivos.
+1. Atrás todo `<cq-installation-dir>` desde su sistema de archivos.
 
 >[!CAUTION]
 >
->Si utiliza un servidor de aplicaciones de terceros, las carpetas adicionales pueden estar en una ubicación diferente y también se debe realizar una copia de seguridad de las mismas. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre cómo instalar servidores de aplicaciones.
+>Si está utilizando un servidor aplicación terceros, es posible que haya carpetas adicionales en una ubicación diferente y que también se deba realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre cómo instalar servidores de aplicaciones.
 
 >[!CAUTION]
 >
@@ -160,7 +156,7 @@ Establezca la antigüedad máxima de la versión en días (para cada nodo) que d
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->Los nodos purgados no se pueden revertir sin restaurar el repositorio. Tenga cuidado con la configuración realizando siempre una ejecución en seco antes de purgar.
+>Los nodos purgados no se pueden revertir sin restaurar el repositorio. Cuide su configuración realizando siempre un simulacro antes de purgar.
 
 #### Ejecución en seco: Análisis de la consola {#analyzing-the-console}
 
@@ -174,7 +170,7 @@ El proceso enumera todos los nodos que se han procesado. Durante el proceso, un 
 
 * `ignore (no version)`: el nodo no tiene ninguna versión y se omite durante el proceso.
 
-* `retained`: el nodo no se ha purgado.
+* `retained`: la nodo no se depura.
 * `purged`: el nodo se ha purgado.
 
 Además, la consola proporciona información útil sobre las versiones:
@@ -187,9 +183,9 @@ Además, la consola proporciona información útil sobre las versiones:
 En el ejemplo siguiente:
 
 * Las **[!DNL Shirts]** versiones se depuran porque su antigüedad es superior a dos días.
-* Las versiones de **[!DNL Tonga Fashions!]** se purgan porque su número de versiones es mayor que 5.
+* Las **[!DNL Tonga Fashions!]** versiones se depuran porque su número de versiones es mayor que 5.
 
-![captura de pantalla_versión_global](assets/global_version_screenshot.png)
+![Versión_global_captura de pantalla](assets/global_version_screenshot.png)
 
 ## Trabajar con registros de auditoría y archivos de registro {#working-with-audit-records-and-log-files}
 
@@ -278,7 +274,7 @@ Los niveles de registro son los siguientes:
 | 0 | Error grave | La acción ha fallado y el instalador no puede continuar. |
 |---|---|---|
 | 1 | Error | La acción ha fallado. La instalación continúa, pero una parte de AEM WCM no se instaló correctamente y no funciona. |
-| 2 | Advertencia | La acción se realizó correctamente pero se encontraron problemas. AEM WCM puede funcionar o no correctamente. |
+| 2 | Advertencia | La acción se ha realizado correctamente pero ha encontrado problemas. AEM Gestión de contenidos web puede o no funcionar correctamente. |
 | 3 | Información | La acción se ha realizado correctamente. |
 
 ### Crear un archivo de registro personalizado {#create-a-custom-log-file}
@@ -287,9 +283,9 @@ Los niveles de registro son los siguientes:
 >
 >Al trabajar con Adobe Experience Manager, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
-En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. En el repositorio, haga lo siguiente:
+En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. En la repositorio, realice lo siguiente:
 
-1. Si no existe, cree una carpeta de configuración (`sling:Folder`) para el proyecto `/apps/<project-name>/config`.
+1. Si no existe, cree una carpeta de configuración ( `sling:Folder`) para su proyecto `/apps/<project-name>/config`.
 1. En `/apps/<project-name>/config`, cree un nodo para la nueva [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Nombre: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
@@ -308,7 +304,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Nombre: `org.apache.sling.commons.log.file`
 
-     Tipo: cadena
+     Tipo: String
 
      Valor: especifique el archivo de registro; por ejemplo, `logs/myLogFile.log`
 
@@ -430,9 +426,9 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >`org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro estableciendo:
    >
    >* un tamaño de archivo máximo
-   >* una programación de fecha y hora
+   >* un cronograma de fecha y hora
    >
-   >para indicar cuándo se crea un nuevo archivo (y el nombre del archivo existente cambia según el patrón de nombre).
+   >para indicar cuándo se crea un archivo nuevo (y se cambia el nombre del archivo existente según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como número de bytes, o puede agregar uno de los indicadores de tamaño: `KB`, `MB` o `GB` (se omite el uso de mayúsculas y minúsculas).
    >* Se puede especificar una programación de hora/fecha como un patrón `java.util.SimpleDateFormat`. Define el período de tiempo después del cual se gira el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
@@ -515,8 +511,8 @@ Para supervisar un agente de replicación:
 
    * Compruebe si el agente está activado.
    * Consulte el objetivo de cualquier replicación.
-   * Ver si la cola de replicación está activa (habilitada).
-   * Ver si hay algún elemento en la cola.
+   * Ver si el cola de replicación está activo (habilitado).
+   * Compruebe si hay elementos en el cola.
    * **Actualizar** o **Borrar** para actualizar la visualización de las entradas de la cola. Al hacerlo, puede ver los elementos que entran y salen de la cola.
    * **Ver registro** para acceder al registro de cualquier acción por parte del agente de replicación.
    * **Probar conexión** a la instancia de destino.
@@ -526,9 +522,9 @@ Para supervisar un agente de replicación:
    >
    >No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
    >
-   >Si se realiza una prueba de replicación para una cola de Bandeja de salida, los elementos anteriores a la replicación de prueba se vuelven a procesar con cada replicación inversa.
+   >Si se realiza una prueba de replicación para una cola de Bandeja de salida, los elementos anteriores a la replicación del prueba se vuelven a procesar con cada replicación inversa.
    >
-   >Si estos elementos existen en cola, se pueden encontrar con la siguiente consulta JCR XPath y deben eliminarse.
+   >Si tales elementos existen en una cola, se pueden encontrar con el siguiente consulta XPath JCR y deben eliminarse.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -538,11 +534,11 @@ De nuevo, puede desarrollar una solución para detectar todos los agentes de rep
 
 [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) es un proceso interactivo que recibe el enfoque durante el desarrollo. Después de la implementación, se revisa después de intervalos o eventos específicos.
 
-Los métodos utilizados al recopilar información para la optimización también se pueden utilizar para la monitorización continua.
+Los métodos utilizados al recopilar información para la optimización también se pueden utilizar para el monitoreo continuo.
 
 >[!NOTE]
 >
->También se pueden comprobar [configuraciones específicas disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
+>También se pueden consultar configuraciones específicas [disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
 
 A continuación se enumeran los problemas comunes de rendimiento que se producen, junto con propuestas sobre cómo detectarlos y contrarrestarlos.
 
@@ -578,9 +574,9 @@ Toda esta información debe obtenerse, ordenarse y analizarse antes de optimizar
    * compruebe si algo (relacionado con el sistema) ha cambiado en un espacio de tiempo adecuado y si alguno de estos cambios podría haber afectado al rendimiento
    * haga preguntas como:
 
-      * ¿el problema solo se produce en momentos específicos?
-      * ¿el problema solo se produce en páginas específicas?
-      * ¿se ven afectadas otras solicitudes?
+      * ¿El problema solo ocurre en momentos específicos?
+      * ¿El problema solo ocurre en páginas específicas?
+      * ¿Otras solicitudes se ven afectadas?
 
    * recopile la mayor cantidad de información posible para compararla con su conocimiento del sistema en circunstancias normales:
 
@@ -651,11 +647,6 @@ Algunas de estas herramientas dependen del sistema operativo.
    <td>JConsole</td>
    <td>Observe las métricas y los hilos de JVM.</td>
    <td><p>Uso: jconsole</p> <p>Ver <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> y <a href="#monitoring-performance-using-jconsole">Supervisar el rendimiento con JConsole</a>.</p> <p><strong>Nota:</strong> Con JDK 1.8, JConsole es extensible con complementos; por ejemplo, Top o TDA (Thread Dump Analyzer).</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>Observe las métricas, los hilos, la memoria y los perfiles de JVM.</td>
-   <td><p>Uso: visualvm o visualvm<br /> </p> <p>Ver <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> y <a href="#monitoring-performance-using-j-visualvm">Supervisar el rendimiento con (J)VisualVM</a>.</p> <p><strong>Nota:</strong> Con JDK 1.8, VisualVM es extensible con complementos. VisualVM se interrumpe después de JDK 9. En su lugar, utilice Java™ Flight Recorder.</p> </td>
   </tr>
   <tr>
    <td>armadura/escalera, lsof</td>
@@ -925,31 +916,6 @@ El comando de herramienta `jconsole` está disponible con el JDK.
 
    Ahora puede seleccionar otras opciones.
 
-### Supervisión del rendimiento mediante (J)VisualVM {#monitoring-performance-using-j-visualvm}
-
-Para JDK 6-8, está disponible el comando de herramienta `visualvm`. Después de instalar un JDK, puede hacer lo siguiente:
-
-1. Inicie la instancia de AEM.
-
-   >[!NOTE]
-   >
-   >Si utiliza Java™ 5, puede agregar el argumento `-Dcom.sun.management.jmxremote` a la línea de comandos de Java™ que inicia la JVM. JMX está habilitado de forma predeterminada con Java™ 6.
-
-1. Ejecute una de estas acciones:
-
-   * `jvisualvm`: en la carpeta JDK bin 1.6 (versión probada)
-   * `visualvm`: se puede descargar desde [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (versión de borde sangrante)
-
-1. Desde la aplicación `Local`, haga doble clic en `com.day.crx.quickstart.Main`. La Información general se muestra como predeterminada:
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   Ahora puede seleccionar otras opciones, incluido Monitor:
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-Puede utilizar esta herramienta para generar volcados de hilos y volcados de cabezales de memoria. El equipo de soporte técnico suele solicitar esta información.
-
 ### Recopilación de información {#information-collection}
 
 Conocer en la medida de lo posible su instalación puede ayudarle a averiguar qué puede haber causado un cambio en el rendimiento y si estos cambios están justificados. Recopile estas métricas a intervalos regulares para poder ver fácilmente cambios significativos.
@@ -1039,7 +1005,7 @@ Para ver cuántos recursos DAM mantiene actualmente, utilice una consulta del re
 
 #### ¿Cuál es el tamaño promedio de los recursos? {#what-is-the-average-size-of-the-assets}
 
-Para determinar el tamaño total de la `/var/dam` carpeta:
+Para determinar el tamaño total de la carpeta `/var/dam`:
 
 1. Utilice WebDAV para asignar el repositorio al sistema de archivos local.
 
@@ -1103,16 +1069,11 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
->* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU al 100 % {#cpu-at}
 
-Si el CPU del sistema se ejecuta constantemente al 100 %, consulte lo siguiente:
-
-* Base de conocimiento:
-
-   * [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+Si el CPU del sistema se ejecuta constantemente al 100 %, compruebe los registros de AEM y utilice herramientas como top, htop o jstack para identificar subprocesos de alto nivel de CPU. Analice los volcados de hilos para detectar bucles infinitos, hilos bloqueados o una recolección de elementos no utilizados excesiva.
 
 ### Memoria insuficiente {#out-of-memory}
 
@@ -1138,28 +1099,25 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Administrador de bibliotecas HTML de CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtrar de depuración de CQ Gestión de contenidos web](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Administrador de bibliotecas CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Si ha configurado Versión purga de y cómo lo ha hecho [](/help/sites-deploying/version-purging.md)
+* Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [El diario consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 
 Si ve que el rendimiento de su instancia se deteriora después de cada reinicio (a veces una semana o más tarde), se puede comprobar lo siguiente:
 
 * [Memoria insuficiente](#outofmemory)
-* Base de conocimiento:
-
-   * [Sesiones sin cerrar](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [Sesiones sin cerrar](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### Ajuste de JVM {#jvm-tuning}
 
-La máquina virtual Java™ (JVM) ha mejorado en cuanto a la optimización (especialmente desde Java™ 7). Por lo tanto, a menudo resulta adecuado especificar un tamaño de JVM fijo razonable y utilizar los valores predeterminados.
+La máquina virtual Java™ (JVM) ha mejorado con respecto al ajuste. Por lo tanto, a menudo resulta adecuado especificar un tamaño de JVM fijo razonable y utilizar los valores predeterminados.
 
 Si la configuración predeterminada no es adecuada, es importante establecer un método para supervisar y evaluar el rendimiento de GC. Hágalo antes de intentar ajustar la JVM. Este proceso puede incluir factores de monitorización, como el tamaño de la pila, el algoritmo y otros aspectos.
 
@@ -1190,12 +1148,6 @@ O JConsole:
   ```
 
 * A continuación, conéctese a JVM con JConsole; consulte lo siguiente:
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 Puede ver cuánta memoria se está utilizando, qué algoritmos de GC se están utilizando, cuánto tardan en ejecutarse y qué efecto tiene este proceso en el rendimiento de la aplicación. Sin él, la sintonización es solo &quot;perillas giratorias aleatoriamente&quot;.
-
->[!NOTE]
->
->Para la VM de Oracle, también hay información en:
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

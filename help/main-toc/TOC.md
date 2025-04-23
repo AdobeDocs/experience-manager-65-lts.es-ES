@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6797'
+source-wordcount: '6795'
 ht-degree: 66%
 
 ---
@@ -1428,7 +1428,6 @@ ht-degree: 66%
          + [Descargando trabajos](/help/sites-deploying/offloading.md)
          + [Asignación de recursos](/help/sites-deploying/resource-mapping.md)
          + [Comprobaciones de coherencia y recorrido](/help/sites-deploying/consistency-check.md)
-         + [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
          + [Optimización de rendimiento](/help/sites-deploying/configuring-performance.md)
          + [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)

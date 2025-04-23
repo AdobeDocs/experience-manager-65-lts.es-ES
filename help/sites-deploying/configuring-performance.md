@@ -1,5 +1,5 @@
 ---
-title: Optimización del rendimiento
+title: Optimización de rendimiento
 description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,18 +11,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 12%
+source-wordcount: '5052'
+ht-degree: 16%
 
 ---
 
-# Optimización del rendimiento {#performance-optimization}
+# Optimización de rendimiento {#performance-optimization}
 
 >[!NOTE]
->
->Para obtener instrucciones generales sobre el rendimiento, lea la página [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md).
 >
 >Para obtener más información acerca de cómo solucionar problemas de rendimiento, vea también [Árbol de rendimiento](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Al optimizar el rendimiento, deben tenerse en cuenta determinadas reglas:
 
 Se pueden configurar ciertos aspectos de AEM (o del repositorio subyacente) para optimizar el rendimiento. A continuación se indican posibilidades y sugerencias. Debe estar seguro de si utiliza la funcionalidad en cuestión antes de realizar cambios, o de cómo hacerlo.
 
->[!NOTE]
->
->Consulte [Optimización del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Indexación de búsqueda {#search-indexing}
 
 A partir de AEM 6.0, Adobe Experience Manager utiliza una arquitectura de repositorio basada en Oak.
@@ -224,6 +218,7 @@ Por ejemplo, cuando se cargan imágenes (o recursos DAM en general), los flujos 
 
 El motor de flujo de trabajo utiliza las colas de trabajos de Apache Sling para administrar y programar el procesamiento de elementos de trabajo. Los siguientes servicios de cola de trabajos se han creado de forma predeterminada desde la fábrica del servicio de configuración de colas de trabajos de Apache Sling para procesar trabajos de flujo de trabajo:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Cola de flujo de trabajo de Granite: la mayoría de los pasos del flujo de trabajo, como los que procesan recursos DAM, utilizan el servicio Cola de flujo de trabajo de Granite.
 * Cola de trabajos de proceso externo de Granite Workflow: este servicio se utiliza para pasos especiales de flujo de trabajo externo que normalmente se utilizan para ponerse en contacto con un sistema externo y sondear resultados. Por ejemplo, el paso Proceso de extracción de medios de InDesign se implementa como un proceso externo. El motor de flujo de trabajo utiliza la cola externa para procesar el sondeo. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Hay una selección de herramientas disponibles para ayudarle con la generación 
 
 * [JMeter](https://jmeter.apache.org/)
 * [Cargar ejecutor](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interactivo de Java™](https://jiprof.sourceforge.net/)
 
 Tras la optimización, vuelva a realizar pruebas para confirmar el impacto.
@@ -642,87 +636,3 @@ Para asegurarse de que los archivos se almacenan en caché correctamente, siga e
 
 * Asegúrese de que los archivos siempre tengan la extensión adecuada.
 * Evite los scripts genéricos del servidor de archivos, que tienen direcciones URL como `download.jsp?file=2214`. Para utilizar direcciones URL que contengan la especificación del archivo, vuelva a escribir el script. Para el ejemplo anterior, esta reescritura es `download.2214.pdf`.
-
-## Rendimiento de backup {#backup-performance}
-
-Esta sección presenta una serie de análisis de rendimiento utilizados para evaluar el rendimiento de los backups de AEM y los efectos de la actividad de backup en el rendimiento de la aplicación. Las copias de seguridad de AEM presentan una carga significativa en el sistema mientras se ejecuta. Adobe mide este impacto y los efectos de la configuración de retraso de las copias de seguridad que intenta modular estos efectos. El objetivo es ofrecer algunos datos de referencia sobre el rendimiento esperado de las copias de seguridad en configuraciones realistas y cantidades de datos de producción, y proporcionar orientación sobre cómo estimar los tiempos de copia de seguridad para los sistemas planificados.
-
-### Entorno de referencia {#reference-environment}
-
-#### Sistema físico {#physical-system}
-
-Los resultados comunicados en este documento se obtuvieron de los análisis de rendimiento ejecutados en un entorno de referencia con la siguiente configuración. Esta configuración es similar a un entorno de producción típico en un centro de datos:
-
-* HP ProLiant DL380 G6, 8 CPU x 2,533 GHz
-* Unidades SCSI conectadas en serie de 300 GB a 10.000 rpm
-* Controladora RAID de hardware; ocho unidades en una cabina RAID0+5
-* Imagen de VMware CPU x 2 Intel Xeon® E5540 a 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Instancia de autor única
-
-El subsistema de disco de este servidor es rápido, representativo de una configuración RAID de alto rendimiento que podría utilizarse en un servidor de producción. El rendimiento de las copias de seguridad puede ser sensible al rendimiento del disco y los resultados de este entorno reflejan el rendimiento de una configuración RAID rápida. La imagen VMWare está configurada para tener un único volumen de disco grande que reside físicamente en el almacenamiento de disco local, en la matriz RAID.
-
-La configuración de AEM coloca el repositorio y el almacén de datos en el mismo volumen lógico, junto con el sistema operativo y el software de AEM. El directorio de destino para las copias de seguridad también reside en este sistema de archivos lógico.
-
-#### Volúmenes de datos {#data-volumes}
-
-La siguiente tabla ilustra el tamaño de los volúmenes de datos que se utilizan en los análisis de rendimiento de copia de seguridad. El contenido de línea de base inicial se instala primero y, a continuación, se agregan cantidades de datos conocidos adicionales para aumentar el tamaño del contenido del que se realiza una copia de seguridad. Las copias de seguridad se crean en incrementos específicos para representar un gran aumento del contenido y de lo que se puede producir en un día. La distribución del contenido (páginas, imágenes, etiquetas) se basa aproximadamente en la composición realista de los recursos de producción. Las páginas, las imágenes y las etiquetas están limitadas a un máximo de 800 páginas secundarias. Cada página incluye componentes de título, Flash, texto/imagen, vídeo, presentación de diapositivas, formulario, tabla, nube y carrusel. Las imágenes se cargan desde un grupo de 400 archivos únicos con un tamaño de 37 KB a 594 KB.
-
-| Contenido | Nodos | Páginas | Imágenes | Etiquetas |
-|---|---|---|---|---|
-| Instalación base | 69 610 | 562 | 256 | 237 |
-| Contenido pequeño para copia de seguridad incremental |  | +100 | +2 | +2 |
-| Contenido grande para copia de seguridad completa |  | +10 000 | +100 | +100 |
-
-La referencia de copia de seguridad se repite con los conjuntos de contenido adicionales añadidos en cada repetición.
-
-#### Escenarios de referencia {#benchmark-scenarios}
-
-Los análisis de rendimiento de copia de seguridad cubren dos situaciones principales: copias de seguridad cuando el sistema está bajo una carga de aplicación significativa y copias de seguridad cuando el sistema está inactivo. Aunque la recomendación general es que las copias de seguridad se realicen cuando AEM esté lo más inactivo posible, hay situaciones en las que es necesario que la copia de seguridad se ejecute cuando el sistema está bajo carga.
-
-* **Estado inactivo**: las copias de seguridad se realizan sin ninguna otra actividad en AEM.
-* **Bajo carga**: las copias de seguridad se realizan mientras el sistema está por debajo del 80% de carga de los procesos en línea. El retraso de la copia de seguridad varió para ver el impacto en la carga.
-
-Los tiempos de copia de seguridad y el tamaño del backup resultante se obtienen de los registros del servidor de AEM. Normalmente, se recomienda que las copias de seguridad se programen para horas de inactividad cuando AEM está inactivo, como a mitad de la noche. Este escenario es representativo del enfoque recomendado.
-
-La carga consiste en páginas creadas, páginas eliminadas, recorridos y consultas. La mayor parte de la carga proviene de los recorridos y las consultas de la página. Añadir y eliminar demasiadas páginas aumenta continuamente el tamaño del espacio de trabajo e impide que se completen las copias de seguridad. La distribución de la carga que utiliza el script es un 75 % de recorridos de página, un 24 % de consultas y un 1 % de creaciones de página (un solo nivel sin subpáginas anidadas). El promedio máximo de transacciones por segundo en un sistema inactivo se logra con cuatro subprocesos simultáneos, que se utilizan al probar copias de seguridad con carga.
-
-El impacto de la carga en el rendimiento del backup puede estimarse por la diferencia entre el rendimiento con y sin esta carga de aplicación. El impacto de la copia de seguridad en el rendimiento de la aplicación se encuentra comparando el rendimiento del escenario en transacciones por hora con y sin una copia de seguridad simultánea en curso, y con copias de seguridad que funcionan con diferentes configuraciones de &quot;retraso de copia de seguridad&quot;.
-
-* **Configuración de demora**: en varios casos, la configuración de demora de la copia de seguridad también varió, con valores de 10 milisegundos (predeterminado), 1 milisegundos y 0 milisegundos, para explorar cómo afectó esta configuración al rendimiento de las copias de seguridad.
-* **Tipo de copia de seguridad**: todas las copias de seguridad eran copias de seguridad externas del repositorio realizadas en un directorio de copia de seguridad sin crear un archivo zip, excepto en un caso para la comparación en el que el comando tar se utilizó directamente. Dado que las copias de seguridad incrementales no se pueden crear en un archivo zip, o cuando la copia de seguridad completa anterior es un archivo zip, el método de directorio de copia de seguridad es el más utilizado en situaciones de producción.
-
-### Resumen de resultados {#summary-of-results}
-
-#### Tiempo y rendimiento de backup {#backup-time-and-throughput}
-
-El principal resultado de estos análisis de rendimiento es mostrar cómo varían los tiempos de backup en función del tipo de backup y la cantidad total de datos. El siguiente gráfico muestra el tiempo de copia de seguridad obtenido utilizando la configuración de copia de seguridad predeterminada, como una función del número total de páginas.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-Los tiempos de copia de seguridad en una instancia inactiva son bastante coherentes, con un promedio de 0,608 MB por segundo, independientemente de las copias de seguridad completas o incrementales (consulte el gráfico a continuación). El tiempo de copia de seguridad es simplemente una función de la cantidad de datos de los que se está realizando una copia de seguridad. El tiempo para completar una copia de seguridad completa aumenta claramente con la cantidad total de páginas. El tiempo para completar una copia de seguridad incremental también aumenta con la cantidad total de páginas, pero a una tasa mucho menor. El tiempo necesario para completar el backup incremental es mucho menor debido a la cantidad relativamente pequeña de datos de los que se realiza el backup.
-
-El tamaño de la copia de seguridad producida es el principal factor determinante del tiempo necesario para completar una copia de seguridad. El siguiente gráfico muestra el tiempo empleado como función del tamaño final de la copia de seguridad.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Este gráfico ilustra que tanto las copias de seguridad incrementales como las completas siguen un patrón de tamaño y tiempo sencillo que Adobe puede medir como rendimiento. Los tiempos de copia de seguridad en una instancia inactiva son bastante coherentes, con un promedio de 0,61 MB por segundo, independientemente de los backups completos o incrementales en el entorno de referencia.
-
-#### Retraso de copia {#backup-delay}
-
-El parámetro de retraso de copia de seguridad se proporciona para limitar el grado en que las copias de seguridad pueden interferir con las cargas de trabajo de producción. El parámetro especifica un tiempo de espera en milisegundos, que se intercala en la operación de copia de seguridad archivo por archivo. El efecto global depende en parte del tamaño de los archivos afectados. La medición del rendimiento de la copia de seguridad en MB/s ofrece una forma razonable de comparar los efectos de la demora en la copia de seguridad.
-
-* La ejecución simultánea de una copia de seguridad con la carga normal de la aplicación tiene un impacto negativo en el rendimiento de la carga normal.
-* El impacto puede ser leve (tan solo un 5 %) o significativo, lo que provoca una caída de hasta el 75 % en el rendimiento. Es probable que dependa más de la aplicación.
-* El backup no es una carga pesada en CPU, por lo que las cargas de trabajo de producción intensivas en CPU se verían menos afectadas por el backup que las intensivas en E/S.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-Para comparar, el rendimiento obtenido mediante una copia de seguridad del sistema de archivos (&quot;tar&quot;) para realizar una copia de seguridad de los mismos archivos del repositorio. El rendimiento del tar es comparable, pero ligeramente superior al de la copia de seguridad con retraso establecido en cero. La configuración de incluso un pequeño retraso reduce en gran medida el rendimiento del backup y el retraso predeterminado de 10 milisegundos reduce en gran medida el rendimiento. En situaciones en las que se pueden programar copias de seguridad cuando el uso general de la aplicación es bajo o la aplicación puede estar inactiva, reduzca el retraso por debajo del valor predeterminado para permitir que la copia de seguridad se realice más rápidamente.
-
-El impacto real del rendimiento de la aplicación de un backup continuo depende de la aplicación y de los detalles de la infraestructura. La elección del valor de retardo debe hacerse mediante un análisis empírico de la aplicación, pero debe elegirse lo más pequeño posible, de modo que las copias de seguridad puedan completarse lo más rápido posible. Debido a que existe una correlación débil entre el valor de retardo elegido y el impacto en el rendimiento de la aplicación, la elección del retardo debería favorecer tiempos de backup generales más cortos para minimizar el impacto general de los backups. Una copia de seguridad que tarda ocho horas en completarse, pero que afecta al rendimiento en un -20 % probablemente tenga un impacto general mayor que una que tarda dos horas en completarse, pero afecta al rendimiento en un -30 %.
-
-### Referencias {#references}
-
-* [Administración: copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md)
-* [Administración: capacidad y volumen](/help/managing/best-practices-further-reference.md#capacity-and-volume)
