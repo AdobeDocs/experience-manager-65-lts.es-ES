@@ -9,9 +9,10 @@ legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 0%
 
 ---
@@ -50,8 +51,6 @@ Antes de que se inicie una conversación seria sobre el desarrollo de componente
   [La interfaz de usuario estándar](/help/sites-developing/touch-ui-concepts.md) se basa en la experiencia de usuario unificada de Adobe Experience Cloud, que usa las tecnologías subyacentes de [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU clásica**
 Interfaz de usuario basada en la tecnología ExtJS obsoleta con AEM 6.4.
-
-Consulte [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
 
 Los componentes se pueden implementar para admitir la IU táctil, la IU clásica o ambas. Al ver una instancia estándar también verá componentes predeterminados que se diseñaron originalmente para la interfaz de usuario clásica, la interfaz de usuario táctil o ambas.
 

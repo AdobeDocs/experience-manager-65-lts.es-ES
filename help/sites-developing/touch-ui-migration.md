@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -99,10 +100,6 @@ Al migrar, tenga en cuenta las siguientes diferencias principales entre la IU cl
 </table>
 
 En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la IU táctil significa trasladar un *widget ExtJS* a un *componente Sling*. Para facilitar esto, la interfaz de usuario táctil se basa en el marco de trabajo de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de la interfaz de usuario de Granite).
-
-Antes de empezar, compruebe el estado y las recomendaciones relacionadas:
-
-* [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md)
 
 Los conceptos básicos del desarrollo de la IU táctil proporcionan una base sólida:
 

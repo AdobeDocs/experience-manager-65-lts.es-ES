@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '374'
+ht-degree: 5%
 
 ---
 
@@ -72,10 +72,6 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## IU {#ui}
 
-Las prácticas recomendadas en la interfaz de usuario se describen aquí:
-
-[Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md)
-
 Actualmente, AEM tiene dos interfaces de usuario: la clásica y la táctil en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre cuál utilizar durante la implementación del proyecto. El objetivo de este documento es ayudar a encontrar la opción correcta.
 
 ## Rendimiento {#performance}
@@ -95,8 +91,8 @@ Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
    <td>Una red de entrega de contenido (CDN), como Akamai Edge Delivery o Amazon Cloud Front, ofrece contenido desde una ubicación cercana al usuario final.</td>
   </tr>
   <tr>
-   <td>Optimización del rendimiento</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md">Optimización del rendimiento</a></td>
+   <td>Optimización de rendimiento</td>
+   <td><a href="/help/sites-deploying/configuring-performance.md">Optimización de rendimiento</a></td>
    <td>Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes.</td>
   </tr>
   <tr>
