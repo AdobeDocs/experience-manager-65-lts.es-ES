@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 0%
@@ -75,9 +75,9 @@ La siguiente leyenda describe las posibles áreas de escollo de rendimiento con 
 
 **Sistema de archivos temporales** Un sistema de archivos local lento puede causar problemas de rendimiento interactivos, especialmente al realizar búsquedas, porque los índices de búsqueda están almacenados en el disco local. También puede causar problemas de procesamiento de recursos si se utiliza el proceso de línea de comandos.
 
-**AEM DAM Finder** Los problemas de rendimiento interactivos, que a menudo se experimentan en las búsquedas, están causados por un alto uso de CPU debido a la presencia de muchos usuarios simultáneos u otros procesos que consumen CPU en la misma instancia. Pasar de máquinas virtuales a máquinas dedicadas y asegurarse de que no se ejecuten otros servicios en la máquina puede ayudar a mejorar el rendimiento. Si la carga de CPU es alta debido al procesamiento de recursos y a muchos usuarios simultáneos, Day recomienda agregar nodos de clúster adicionales.
+**AEM DAM Finder** Los problemas de rendimiento interactivos, que a menudo se experimentan en las búsquedas, están causados por un alto uso de CPU debido a la presencia de muchos usuarios simultáneos u otros procesos que consumen CPU en la misma instancia. Pasar de máquinas virtuales a máquinas dedicadas y asegurarse de que no se ejecuten otros servicios en la máquina puede ayudar a mejorar el rendimiento. Si la carga de CPU es alta debido al procesamiento de recursos y a muchos usuarios simultáneos, Adobe recomienda añadir nodos de clúster adicionales.
 
-**Flujo de trabajo DAM de AEM** Los procesos de flujo de trabajo de larga duración durante la ingesta de recursos causan problemas de rendimiento de procesamiento de recursos. Según el tipo de recursos que se procesen, esto puede indicar una sobreutilización de CPU. Day recomienda reducir el número de otros procesos que se ejecutan en el sistema y aumentar el número de CPU disponibles agregando nodos de clúster.
+**Flujo de trabajo DAM de AEM** Los procesos de flujo de trabajo de larga duración durante la ingesta de recursos causan problemas de rendimiento de procesamiento de recursos. Según el tipo de recursos que se procesen, esto puede indicar una sobreutilización de CPU. Adobe recomienda reducir el número de otros procesos que se ejecutan en el sistema y aumentar el número de CPU disponibles añadiendo nodos de clúster.
 
 **Conectividad NAS** La mala conectividad de red con NAS causa problemas de rendimiento interactivo, ya que el acceso a los nuevos nodos durante el procesamiento de recursos se ralentiza debido a la latencia de la red. Además, el rendimiento de red lento afecta negativamente al rendimiento, pero también al rendimiento del procesamiento de recursos, porque la carga y el guardado de representaciones se ralentizan.
 
