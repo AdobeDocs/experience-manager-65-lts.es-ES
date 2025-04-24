@@ -4,10 +4,11 @@ description: Crear, comparar y restaurar versiones de una página en Adobe Exper
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -20,6 +21,13 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
    * para deshacer un cambio realizado en la página.
 * Comparar la versión actual de una página con una versión anterior:
    * para resaltar diferencias en el texto y las imágenes.
+
+>[!NOTE]
+>
+>En el repositorio de AEM solo se crea una versión del contenido. Los recursos dinámicos, como código, CSS y JavaScript, no tienen versiones.
+>
+>* Cuando se visualizan versiones, el contenido se visualiza con el código, CSS y JavaScript actuales del repositorio.
+>* Al restaurar versiones, solo se restaura el contenido y se le aplican el código, CSS y JavaScript actuales del repositorio.
 
 ## Creación de una nueva versión   {#creating-a-new-version}
 
