@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 13%
+source-wordcount: '2961'
+ht-degree: 11%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe recomienda estas configuraciones y proporciona soporte total como parte de
   </tr>
   <tr>
    <td><strong>R: Compatibilidad restringida</strong></td>
-   <td>Para garantizar el éxito del proyecto de los clientes, Adobe proporciona soporte completo dentro de un programa de soporte restringido, que requiere que se cumplan condiciones específicas. El soporte de nivel R requiere una solicitud de cliente formal y la confirmación de Adobe. Para obtener más información, póngase en contacto con el Servicio de atención al cliente de Adobe.</td>
+   <td>Para garantizar el éxito del proyecto de los clientes, Adobe Systems proporciona soporte completo dentro de un programa de soporte restringido, que requiere que se cumplan condiciones específicas. El soporte de nivel R requiere una solicitud de cliente formal y la confirmación de Adobe. Para obtener más información, póngase en contacto con Adobe Systems Servicio de atención al cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -110,7 +110,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Amazon S3 | Binarios | A: Compatible |
 | Microsoft® Azure Blob Storage | Binarios | A: Compatible |
 | MongoDB Enterprise 6.0 y 7.0 | Repositorio | A: Compatible `[3, 4]` |
-| **Apache Lucene (inicio rápido integrado)** | Servicio Search | A: Compatible |
+| **Apache Lucene (integrado en Quickstart)** | Servicio Search | A: Compatible |
 
 1. &#39;Archivo System&#39; incluye bloques almacenamiento que son compatibles con POSIX. Incluye tecnología de almacenamiento de red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Cargar AEM de prueba con el sistema de archivos de red/remoto.
 1. El uso compartido de MongoDB no es compatible con AEM.
@@ -153,13 +153,14 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | **Linux®, basado en la distribución Red Hat®** | R: Compatible `[1]` `[2]` |
 | Linux®, basado en la distribución Debian incl. Ubuntu (en inglés) | A: Compatible `[1]` |
 | Linux®, basado en la distribución SUSE® | A: Compatible `[1]` |
+| Microsoft® Windows Server 2022 | R: Compatible |
 
 1. Linux® Kernel 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®.
 1. Distribución Linux® compatible con Adobe Managed Services.
 
    >[!NOTE]
    >
-   >Para el servidor basado en Linux (pila OSGI y JEE), el complemento de AEM Forms requiere dependencias de tiempo de ejecución como:
+   >Para servidores basados en Linux, los complementos de AEM Forms requieren dependencias de tiempo de ejecución como:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -176,7 +177,7 @@ Para un entorno nativo de la nube, revise la última oferta de la línea de prod
 
 Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en este Página, por ejemplo, Azure Blob almacenamiento o AWS S3.
+En todos los demás casos de implementación de AEM en Azure o AWS, o cualquier otro informática de la nube entorno, el soporte de Adobe Systems se incluye en el entorno de proceso virtual. Ese entorno virtual debe ejecutarse de conformidad con las especificaciones técnicas enumeradas en este Página. Cualquier problema notificado en relación con AEM que se ejecuta en cualquiera de estos entornos nube debe ser reproducible independientemente de cualquier servicio en la nube específica del informática de la nube entorno. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en este Página, por ejemplo, Azure Blob almacenamiento o AWS S3.
 
 Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Systems Managed Services, Adobe Systems recomienda trabajar directamente con el proveedor de nube. O bien, trabajar con Adobe Systems socios que apoyan el implementación de AEM en la nube entorno de su elección. El proveedor nube o socio seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura, para cumplir con sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 
@@ -268,14 +269,14 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
  </tbody>
 </table>
 
-1. Lanzamiento de soporte ampliado de Firefox [Más información en mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. Compatibilidad con Apple iPad
+1. Soporte extendido Versión de Firefox [Más información sobre mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Soporte para Apple iPad
 
 ### Navegadores admitidos para sitios web {#supported-browsers-for-websites}
 
 En general, explorador soporte para los sitios web prestados por AEM Sites depende de la implementación de AEM plantillas de Página, diseño y salida de componentes, y por lo tanto está bajo el control de la parte que implementa estas partes.
 
-## Notas Platform adicionales {#additional-platform-notes}
+## Notas de plataforma adicionales {#additional-platform-notes}
 
 Esta sección proporciona notas especiales e información más detallada sobre la ejecución de Adobe Experience Manager y sus complementos.
 
@@ -335,24 +336,24 @@ Si utiliza Dynamic Media en Linux®, se deben cumplir los siguientes requisitos 
 
 >[!NOTE]
 >
->**Arquitectura NUMA:** Los sistemas con procesadores AMD64 e Intel® EM64T suelen configurarse como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye varios nodos de memoria durante el arranque en lugar de construir un solo nodo de memoria.
+>**Arquitectura NUMA:** Los sistemas con procesadores con AMD64 e Intel® EM64T se configuran normalmente como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye múltiples nodos de memoria en el momento del arranque en lugar de construir un solo nodo de memoria.
 >
->La construcción de varios nodos puede causar agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando ocurre el agotamiento de la memoria, el kernel puede decidir matar los procesos (por ejemplo, el Imagen Server o Platform Server) igualado aunque haya memoria disponible.
+>La construcción de múltiples nodo puede resultar en el agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando se agota la memoria, el núcleo puede decidir matar procesos (por ejemplo, el servidor de imágenes o el servidor de plataforma) aunque haya memoria disponible.
 >
->Por lo tanto, Adobe Systems recomienda que si está ejecutando un sistema de este tipo desactive NUMA utilizando la **opción numa=off** boot para evitar que el kernel mate estos procesos.
+>Por lo tanto, Adobe recomienda que si está ejecutando un sistema de este tipo, desactive NUMA usando la opción de arranque **numa=off** para evitar que el núcleo destruya estos procesos.
 
 >[!NOTE]
 >
->**El nombre de host del servidor debe resolverse:** Asegúrese de que el nombre de host del servidor puede resolverse en una dirección IP. Si eso no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
+>**El nombre del host servidor debe resolverse:** Asegúrese de que el nombre host del servidor se pueda resolver en una dirección IP. Si eso no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Intercambiar espacio igual a al menos el doble de la cantidad de memoria física (RAM)
+* Intercambiar el espacio al menos el doble de la cantidad de memoria física (RAM)
 
-Para usar Dynamic Media en Windows, instale Microsoft® Visual Studio 2010, 2013 y 2015 redistribuible para x64 y x86.
+Para utilizar Dynamic Media en Windows, instale Microsoft® Visual Studio 2010, 2013 y 2015 redistribuible para x64 y x86.
 
 Para Windows x64:
 
@@ -386,15 +387,7 @@ Para Windows x86:
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> versión más reciente (Obsoleto)</td>
-   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, y DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (Obsoleto)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Para Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (Obsoleto)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (Obsoleto)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (Obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -448,7 +425,7 @@ Para Windows x86:
 >* PDF Generator no puede convertir archivos con Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir `.VSD` y `.VSDX` archivos.
 >
 
-### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
+### Requisitos para AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
@@ -461,13 +438,13 @@ Para Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegios administrativos para instalar Designer
 * Tiempo de ejecución de 32 bits de Microsoft Visual C++ 2019 (VC 14.28 o superior) para AEM Forms Designer de 32 bits
-* Tiempo de ejecución de 64 bits de Microsoft Visual C++ 2019 (VC 14.28 o superior) para AEM Forms Designer de 64 bits (para pila OSGI y JEE)
+* Tiempo de ejecución de 64 bits de Microsoft Visual C++ 2019 (VC 14.28 o superior) para AEM Forms Designer de 64 bits
 
 [Instalar y configurar AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
-### Requisitos para la reescritura de metadatos de XMP de AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Requisitos para la reescritura metadatos XMP Recursos AEM {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-La reescritura de XMP es compatible y está habilitada para las siguientes plataformas y formatos de archivo:
+XMP reescritura admite y habilita para las siguientes plataformas y formatos de archivo:
 
 * **Sistemas operativos:**
 
@@ -476,8 +453,8 @@ La reescritura de XMP es compatible y está habilitada para las siguientes plata
    * Windows Server
    * macOS X (64 bits)
 
-* **Archivo formatos**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
+* **Formatos de archivo**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 
-### Requisitos para que Recursos AEM procese activos de metadatos pesado en Linux® {#assetsonlinux}
+### Requisitos para que los AEM Assets procesen recursos con muchos metadatos en Linux® {#assetsonlinux}
 
-El proceso XMPFilesProcessor requiere que biblioteca GLIBC_2.14 funcione. Utilice un kernel de Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar activos que contienen una gran cantidad de archivos metadatos gustar PSD. El uso de una versión anterior de GLIBC produce errores en los registros que comienzan con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+El proceso XMPFilesProcessor requiere la biblioteca GLIBC_2.14 para funcionar. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos PSD. El uso de una versión anterior de GLIBC produce un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
