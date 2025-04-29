@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,6 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
    1. En el cuadro &quot;Consulta&quot;, escriba esta consulta /jcr:root/var/eventing/jobs/element(&#42;,slingevent:Job) ordenar por @slingevent:created
    1. Haga clic en Buscar.
    1. En los resultados, los elementos principales son los últimos trabajos de eventos de Sling. Haga clic en cada una de ellas y busque las réplicas atascadas que coincidan con lo que aparece en la parte superior de la cola.
-
-1. Puede haber algún problema con las colas de trabajos del marco de eventos de Sling. Intente reiniciar el paquete org.apache.sling.event en /system/console.
-1. Puede ser que el procesamiento del trabajo esté desactivado. Puede comprobarlo en la Consola Felix, en la pestaña Evento de Sling. Compruebe si se muestra: Evento de Apache Sling (EL PROCESAMIENTO DEL TRABAJO ESTÁ DESHABILITADO)
-
-   * Si es así, compruebe el controlador de eventos del trabajo Apache Sling en la pestaña Configuración en la consola Felix. Es posible que la casilla &quot;Procesamiento de trabajos activado&quot; esté desmarcada. Si está marcado y sigue mostrando que &quot;el procesamiento del trabajo está deshabilitado&quot;, compruebe si hay alguna superposición en /apps/system/config que esté deshabilitando el procesamiento del trabajo. Intente crear un nodo osgi:config para jobmanager.enabled con un valor booleano en true y vuelva a comprobar si la activación se ha iniciado y no hay más trabajos en cola.
-
-1. También puede ocurrir que la configuración de DefaultJobManager pase a un estado incoherente. Esto puede suceder cuando alguien modifica manualmente la configuración del &quot;Controlador de eventos de trabajos de Apache Sling&quot; a través de la consola OSG (por ejemplo, deshabilita y vuelve a habilitar la propiedad &quot;Procesamiento de trabajos habilitado&quot; y guarda la configuración).
-
-   * En este punto, la configuración de DefaultJobManager almacenada en crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config entra en un estado incoherente. Y aunque la propiedad &quot;Apache Sling Job Event Handler&quot; muestra que &quot;Procesamiento de trabajos activado&quot; está en estado activado, cuando se navega a la pestaña Eventos de Sling, muestra el mensaje: EL PROCESAMIENTO DE TRABAJOS ESTÁ DESHABILITADO y la replicación no funciona.
-   * Para resolver este problema, vaya a la página Configuración de la consola OSGi y elimine la configuración &quot;Controlador de eventos del trabajo Apache Sling&quot;. A continuación, reinicie el nodo principal del clúster para volver a poner la configuración en un estado coherente. Esto debería solucionar el problema y la replicación volverá a funcionar.
 
 **Crear un archivo replication.log**
 

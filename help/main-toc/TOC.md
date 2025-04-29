@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '6790'
+source-wordcount: '6786'
 ht-degree: 67%
 
 ---
@@ -1420,7 +1420,6 @@ ht-degree: 67%
          + [Ejecutar modos](/help/sites-deploying/configure-runmodes.md)
          + [Consola web](/help/sites-deploying/web-console.md)
          + [Replicación](/help/sites-deploying/replication.md)
-         + [Duplicación mediante SSL mutuo](/help/sites-deploying/mssl-replication.md)
          + [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
          + [Caducidad de objetos estáticos](/help/sites-deploying/expiration-static-objects.md)
          + [Depuración de versiones](/help/sites-deploying/version-purging.md)
