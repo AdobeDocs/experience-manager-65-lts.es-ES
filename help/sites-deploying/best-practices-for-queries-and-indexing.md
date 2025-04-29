@@ -8,12 +8,10 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4196'
 ht-degree: 0%
 
 ---
@@ -145,7 +143,7 @@ Los valores recomendados son:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-En AEM 6.3, los dos parámetros anteriores están preconfigurados de forma predeterminada y se pueden mantener mediante OSGi QueryEngineSettings.
+AEM 6.3 y versiones posteriores. Los dos parámetros anteriores están preconfigurados de forma predeterminada y se pueden mantener mediante OSGi QueryEngineSettings.
 
 Más información disponible en: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -168,20 +166,6 @@ Los índices Lucene se introdujeron en Oak 1.0.9 y ofrecen algunas optimizacione
 * Debido a su carácter asincrónico, los índices Lucene no pueden aplicar restricciones de exclusividad. Si es necesario, es necesario establecer un índice de propiedades.
 
 En general, se recomienda utilizar índices de Lucene a menos que exista una necesidad imperiosa de utilizar índices de propiedad para poder obtener los beneficios de un rendimiento y una flexibilidad mayores.
-
-### Indexación de Solr {#solr-indexing}
-
-AEM también admite la indexación Solr de forma predeterminada. Se utiliza para admitir la búsqueda de texto completo, pero también se puede utilizar para admitir cualquier tipo de consulta JCR. Solr debe tenerse en cuenta cuando las instancias de AEM no tienen la capacidad de CPU para gestionar la cantidad de consultas necesarias en implementaciones que requieren mucha búsqueda, como los sitios web impulsados por búsquedas con un alto número de usuarios simultáneos. Como alternativa, Solr se puede implementar con un enfoque basado en rastreadores para utilizar algunas de las funciones más avanzadas de la plataforma.
-
-Los índices Solr se pueden configurar para que se ejecuten incrustados en el servidor de AEM para entornos de desarrollo o se pueden descargar en una instancia remota para mejorar la escalabilidad de la búsqueda en los entornos de producción y ensayo. Aunque la descarga de búsquedas mejora la escalabilidad, introduce latencia y, por ello, no se recomienda a menos que sea necesario. Para obtener más información sobre cómo configurar la integración de Solr y cómo crear índices de Solr, consulte la [documentación sobre consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
-
->[!NOTE]
->
->Al mismo tiempo que se utiliza el enfoque de búsqueda integrada de Solr, se permite descargar la indexación en un servidor Solr. Si las funciones más avanzadas del servidor Solr se utilizan mediante un método basado en rastreador, se requiere un trabajo de configuración adicional.
-
-El inconveniente de este enfoque es que, aunque de forma predeterminada, las consultas de AEM respetan las ACL y, por lo tanto, ocultan los resultados a los que un usuario no tiene acceso, la externalización de la búsqueda a un servidor Solr no admitirá esta función. Si la búsqueda se va a externalizar de esta manera, se debe tener especial cuidado para garantizar que los usuarios no reciban resultados que no deberían ver.
-
-Casos de uso potenciales en los que este método puede ser adecuado son casos en los que puede ser necesario acumular datos de búsqueda de múltiples fuentes. Por ejemplo, es posible que tenga un sitio alojado en AEM y un segundo sitio alojado en una plataforma de terceros. Solr se puede configurar para que rastree el contenido de ambos sitios y los almacene en un índice agregado. Esto permitiría búsquedas entre sitios.
 
 ### Consideraciones de diseño {#design-considerations}
 
@@ -216,7 +200,7 @@ Al eliminar un índice en una instancia de MongoDB, el coste de eliminación es 
 
 ### Hoja de características clave de la consulta JCR {#jcrquerycheatsheet}
 
-Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5 y AEM as a Cloud Service.
+Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5, AEM 6.5 LTS y AEM as a Cloud Service.
 
 ## Reindexación {#re-indexing}
 
@@ -380,7 +364,7 @@ A continuación se detallan los posibles problemas junto con las resoluciones:
 
 >[!NOTE]
 >
->En AEM 6.5, [oak-run.jar es el ÚNICO método compatible](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) para la reindexación en repositorios MongoMK o RDBMK.
+>En AEM 6.5 LTS, [oak-run.jar es el ÚNICO método compatible](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) para la reindexación en repositorios MongoMK o RDBMK.
 
 #### Reindexación de índices de propiedades {#re-indexing-property-indexes}
 
