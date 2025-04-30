@@ -4,7 +4,8 @@ description: Cambios importantes del complemento de Commerce integration framewo
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -59,4 +60,4 @@ AEM procesa experiencias de catálogo de productos sobre la marcha mediante plan
 
 >[!NOTE]
 >
->Para obtener documentación adicional sobre cómo usar CIF con AEM Managed Service o AEM On-Premise, consulte [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Para obtener documentación adicional sobre cómo usar CIF con AEM Managed Service o AEM On-Premise, consulte [Commerce integration framework](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)

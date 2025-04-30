@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 1%
@@ -166,4 +167,4 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 Para obtener más información sobre los conceptos relacionados con la IU táctil, lee [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
+Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.

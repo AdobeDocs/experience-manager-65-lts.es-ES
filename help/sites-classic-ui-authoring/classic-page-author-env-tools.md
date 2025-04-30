@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 5%
@@ -44,7 +45,7 @@ Además de obtener acceso a [ayuda desde las barras de herramientas de la consol
 
 O usando el botón **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará ayuda contextual.
 
-## Sidekick {#sidekick}
+## Barra de tareas  {#sidekick}
 
 La pestaña **Componentes** de la barra de tareas le permite examinar los componentes disponibles para agregarlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
 
@@ -149,7 +150,7 @@ puede utilizar cualquier número de caracteres comodín en una consulta.
 
 >[!NOTE]
 >
->También puede usar la búsqueda [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>También puede usar la búsqueda [SQL2](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrando referencias {#showing-references}
 

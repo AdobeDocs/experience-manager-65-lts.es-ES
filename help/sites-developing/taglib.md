@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 15f30571-7129-402c-98be-270a142c4cbb
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -37,7 +38,7 @@ La biblioteca global también declara la [biblioteca Sling](/help/sites-developi
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-La etiqueta `<ui:includeClientLib>` incluye una biblioteca de cliente HTML de AEM, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+La etiqueta `<ui:includeClientLib>` incluye una biblioteca de cliente HTML de AEM, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Tiene los atributos siguientes:
 

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a3595673-8d43-4ef2-a00e-ec8aa8d9cb55
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 6%
@@ -187,7 +188,7 @@ Consulte la [sección Seguridad](/help/sites-administering/security.md) para obt
 
 ### Mecanismo de selección de vínculos {#link-selection-mechanism}
 
-En `/libs/cq/core/components/welcome/welcome.jsp` se usa [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en nodos que tienen la propiedad:
+En `/libs/cq/core/components/welcome/welcome.jsp` se usa [ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en nodos que tienen la propiedad:
 
 * `jcr:mixinTypes` con el valor: `cq:Console`
 

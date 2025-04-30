@@ -4,7 +4,8 @@ description: La seguridad de la aplicación se inicia durante la fase de desarro
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -33,7 +34,7 @@ Es importante que adapte esta configuración a sus propias necesidades de seguri
 
 >[!NOTE]
 >
->Adobe recomienda que siempre acceda a la API de protección XSS usando el [XSSAPI proporcionado por AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe recomienda que siempre acceda a la API de protección XSS usando el [XSSAPI proporcionado por AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Además, un firewall de aplicaciones web, como [mod_security para Apache](https://www.modsecurity.org), puede proporcionar un control central y confiable sobre la seguridad del entorno de implementación y protegerlo contra ataques de scripts entre sitios que no se habían detectado anteriormente.
 

@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
 
 ---
-
 
 # Desarrollo de informes {#developing-reports}
 
@@ -107,7 +107,7 @@ Cada columna es una instancia del componente [`columnbase` ](#column-base-compon
 La consulta:
 
 * Se define como parte del componente [`reportbase`](#report-base).
-* Se basa en [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* Se basa en [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera los datos utilizados como base del informe. Cada fila del conjunto de resultados (tabla) está vinculada a un nodo tal como lo devuelve la consulta. A continuación, se extrae información específica para [columnas individuales](#column-base-component) de este conjunto de datos.
 
 * Por lo general consta de:

@@ -5,7 +5,8 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -58,4 +59,4 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 ## Leer eventos grabados {#reading-recorded-events}
 
-Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

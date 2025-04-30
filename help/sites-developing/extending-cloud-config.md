@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 4%
@@ -135,7 +136,7 @@ propertyname
 
 ### API {#api}
 
-Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webserviceSupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webserviceSupport](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integración de AEM {#aem-integration}
 

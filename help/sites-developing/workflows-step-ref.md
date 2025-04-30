@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 6%
@@ -427,7 +428,7 @@ Cree un servicio OSGi o un ECMAScript que seleccione un usuario al que asignar e
 
 * **Servicio OSGi**
 
-  Los servicios deben implementar la interfaz [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). La interfaz define los siguientes miembros:
+  Los servicios deben implementar la interfaz [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). La interfaz define los siguientes miembros:
 
    * Campo `SERVICE_PROPERTY_LABEL`: utilice este campo para especificar el nombre del selector de participantes. El nombre aparece en una lista de selectores de participantes disponibles en las propiedades de **Paso de participante dinámico**.
 

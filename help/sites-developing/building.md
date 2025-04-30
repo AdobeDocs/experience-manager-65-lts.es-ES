@@ -8,7 +8,8 @@ content-type: reference
 feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada, esta página describe el uso de
 
-* [API de etiquetado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [API de etiquetado](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
 
 Que interactúa con el
 
@@ -32,7 +33,7 @@ Para obtener información relacionada con el etiquetado, consulte:
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
-La implementación del [marco de etiquetado](/help/sites-developing/framework.md) en AEM permite administrar las etiquetas y el contenido de las etiquetas mediante la API de JCR TagManager garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para las etiquetas movidas o combinadas. TagManager utiliza un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+La implementación del [marco de etiquetado](/help/sites-developing/framework.md) en AEM permite administrar las etiquetas y el contenido de las etiquetas mediante la API de JCR TagManager garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para las etiquetas movidas o combinadas. TagManager utiliza un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory: devuelve una implementación basada en JCR de `TagManager`. Es la implementación de referencia de la API de etiquetado.
 * `TagManager`: permite resolver y crear etiquetas por rutas y nombres.
@@ -155,7 +156,7 @@ Cuando se agrega la etiqueta **Animals** a la página **Productos**, el valor `s
 
 La API del lado del servidor ha localizado `title` métodos relacionados:
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
    * getLocalizedTitle(Configuración regional)
    * getLocalizedTitlePaths()
@@ -163,7 +164,7 @@ La API del lado del servidor ha localizado `title` métodos relacionados:
    * getTitle(Configuración regional)
    * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, Configuración regional)
    * createTagByTitle(String tagTitlePath, Configuración regional)
