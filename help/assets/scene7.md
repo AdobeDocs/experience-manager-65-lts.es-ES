@@ -176,13 +176,13 @@ El componente Dynamic Media Classic **[!UICONTROL Image]** le permite agregar fu
 
 **[!UICONTROL Enfoque]** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [Prácticas recomendadas de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options) y [Prácticas recomendadas de enfoque](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificadores de URL]**: puede cambiar los efectos de imagen si proporciona comandos de imagen de Dynamic Media Classic adicionales. Estos comandos se describen en [Ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y en [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificadores de URL]**: puede cambiar los efectos de imagen si proporciona comandos de imagen de Dynamic Media Classic adicionales. Estos comandos se describen en [Ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y en [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
 
 **[!UICONTROL Puntos de interrupción]**: si el sitio web responde, desea ajustar los puntos de interrupción. Los puntos de interrupción deben estar separados por comas ( , ).
 
 ### Plantilla de imagen {#image-template}
 
-[Las plantillas de imagen de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) son contenido de Photoshop con capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para mejorar la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
+[Las plantillas de imagen de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=es) son contenido de Photoshop con capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para mejorar la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
 
 Seleccione **[!UICONTROL Editar]** si desea configurar el componente. Puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic](#settings-common-to-all-scene-components) y otras opciones que se describen en esta sección.
 

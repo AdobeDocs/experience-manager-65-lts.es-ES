@@ -24,7 +24,7 @@ Cada actualización del repositorio crea una revisión de contenido. Como result
 
 Con AEM 6.3 y versiones posteriores, se introdujo una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. En comparación con la Limpieza de revisión sin conexión, en la que hay que cerrar la instancia de AEM, la Limpieza de revisión en línea se puede ejecutar mientras la instancia de AEM está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
-**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para ver una introducción y cómo usar la Limpieza de revisión en línea.
+**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=es) para ver una introducción y cómo usar la Limpieza de revisión en línea.
 
 El proceso de limpieza de revisión consta de tres fases: **estimación**, **compactación** y **limpieza**. La estimación determina si se debe ejecutar la siguiente fase (compactación) o no en función de la cantidad de basura que se pueda recolectar. Durante la fase de compactación, los segmentos y los archivos tar se vuelven a escribir sin tener en cuenta el contenido no utilizado. A continuación, la fase de limpieza elimina los segmentos antiguos, incluida la basura que puedan contener. El modo sin conexión generalmente puede recuperar más espacio porque el modo en línea debe tener en cuenta el conjunto de trabajo de AEM, que evita que se recopilen segmentos adicionales.
 
@@ -409,7 +409,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
     <ol>
      <li>Una aplicación que elude los mecanismos de acceso recomendados (como Sling y la API JCR) y utiliza una API/SPI de nivel inferior para acceder al repositorio y, a continuación, supera el tiempo de retención de un segmento. Es decir, mantiene una referencia a una entidad más larga que el tiempo de retención permitido por Limpieza de revisión en línea (de forma predeterminada, 24 horas). Este caso es transitorio y no provoca daños en los datos. Para recuperarse, la herramienta oak-run debe utilizarse para confirmar la naturaleza transitoria de la excepción (la comprobación oak-run no debe notificar ningún error). Para ello, la instancia debe desconectarse y reiniciarse después.</li>
      <li>Un evento externo dañó los datos del disco. Esto puede ser un error de disco, espacio insuficiente en disco o una modificación accidental de los archivos de datos necesarios. En este caso, la instancia debe desconectarse y repararse mediante la comprobación de oak-run. Para obtener más información sobre cómo realizar la comprobación de oak-run, lea la siguiente <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentación de Apache</a>.</li>
-     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
+     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>

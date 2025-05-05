@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] le permite compartir recursos, carpetas y colecciones como una dirección URL con miembros de su organización y entidades externas, incluidos socios y proveedores. Compartir recursos a través de un vínculo es una manera cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión primero en [!DNL Assets].

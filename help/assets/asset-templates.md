@@ -123,7 +123,7 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
    >
    >Para permitir que [!DNL Experience Manager] resuelva imágenes, haga lo siguiente:
    >
-   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/es/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
    >
    >Para obtener más información sobre cómo trabajar con documentos de [!DNL InDesign], consulte [prácticas recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).

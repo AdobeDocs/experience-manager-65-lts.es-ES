@@ -106,7 +106,7 @@ Los siguientes agentes están disponibles en una instalación estándar de AEM:
 Se utiliza para replicar de Autor a Publicar.
 
 * Vaciado de Dispatcher
-Se utiliza para administrar la caché de Dispatcher. Consulte [Invalidación de la caché de Dispatcher desde el entorno de creación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidación de la caché de Dispatcher desde una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obtener más información.
+Se utiliza para administrar la caché de Dispatcher. Consulte [Invalidación de la caché de Dispatcher desde el entorno de creación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidación de la caché de Dispatcher desde una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-a-publishing-instance) para obtener más información.
 
 * [Replicación inversa](#configuring-reverse-replication)
 Se utiliza para replicar desde Publicar en Autor. La replicación inversa no se utiliza para funciones de Communities, como foros, blogs y comentarios. Se desactiva de forma efectiva, ya que la bandeja de salida no está activada. El uso de la replicación inversa requeriría una configuración personalizada.
@@ -352,7 +352,7 @@ Desde la pestaña Herramientas del entorno de creación, puede configurar los ag
 
 >[!NOTE]
 >
->Cuando un Dispatcher administra solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe agregar el encabezado PATH a la lista Dispatcher de encabezados de cliente. Consulte [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>Cuando un Dispatcher administra solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe agregar el encabezado PATH a la lista Dispatcher de encabezados de cliente. Consulte [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Acceda a la ficha **Herramientas** en AEM.

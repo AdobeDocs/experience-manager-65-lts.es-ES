@@ -153,7 +153,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=es#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar el extremo de correo electrónico {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=es).
 
 ## Solución de problemas {#troubleshooting}
 

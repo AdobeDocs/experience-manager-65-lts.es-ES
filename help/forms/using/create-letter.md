@@ -227,7 +227,7 @@ Primero necesita lo siguiente para crear una correspondencia:
 
 * [Paquete de compatibilidad](compatibility-package.md). Instale el paquete de compatibilidad para ver la opción **Cartas** en la página **Formularios**.
 * La carta XDP ([diseño](/help/forms/using/document-fragments.md)).
-* Otros XDP ([fragmentos de diseño](document-fragments.md#document-fragments)) que forman parte de la carta. Los XDP\Diseños se crean en [Designer](https://www.adobe.com/go/learn_aemforms_designer_65).
+* Otros XDP ([fragmentos de diseño](document-fragments.md#document-fragments)) que forman parte de la carta. Los XDP\Diseños se crean en [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es).
 * El diccionario de datos [relevante](/help/forms/using/data-dictionary.md) (Opcional).
 * Los [módulos de datos](/help/forms/using/document-fragments.md) que desee utilizar en la correspondencia.
 * [Datos de prueba](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) es el archivo XML con los datos de prueba transferidos en él. Los datos de prueba son necesarios si utiliza un diccionario de datos.

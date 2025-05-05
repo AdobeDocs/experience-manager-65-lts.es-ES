@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a los recursos que ayuda a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. [!DNL Experience Manager Assets] admite que el texto se utilice como marca de agua en archivos PNG y JPEG.

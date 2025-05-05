@@ -97,7 +97,7 @@ Las propiedades se distribuyen entre varias pestañas.
   >* No debe configurarse en una página existente.
   >
 
-  Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+  Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Redirigir URL de vanidad**
 
@@ -189,7 +189,7 @@ Muestra la miniatura de la página. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de uso compartido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de uso compartido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=es).
 
    * **Habilitar el uso compartido de usuarios en Facebook**
    * **Habilitar el uso compartido de usuarios en Pinterest**

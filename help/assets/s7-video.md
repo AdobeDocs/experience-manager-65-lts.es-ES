@@ -65,7 +65,7 @@ Si necesita un flujo de trabajo o control de versiones para sus recursos, cárgu
 
 Si no necesita un flujo de trabajo o control de versiones para sus recursos, cárguelos en Scene7. El flujo de trabajo recomendado es el siguiente:
 
-1. En Dynamic Media Classic, [configure una carga y codificación de FTP programada en Scene7 (automatizado por el sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. En Dynamic Media Classic, [configure una carga y codificación de FTP programada en Scene7 (automatizado por el sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=es#upload-files-using-via-ftp).
 1. En Experience Manager, acceda a los recursos de vídeo en WCM en la pestaña **[!UICONTROL Scene7]** del Buscador de contenido.
 1. Autor con el componente **[!UICONTROL Scene7 Video]**.
 
@@ -84,7 +84,7 @@ Si no necesita un flujo de trabajo o control de versiones para sus recursos, cá
 
    >[!NOTE]
    >
-   >Para obtener más información sobre el significado de los ajustes preestablecidos de vídeo, consulte la [documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Para obtener más información sobre el significado de los ajustes preestablecidos de vídeo, consulte la [documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=es#video-presets-for-encoding-video-files).
    >
    >Adobe recomienda seleccionar ambos conjuntos de vídeos adaptables al configurar los ajustes preestablecidos universales o seleccionar la opción **[!UICONTROL Codificación de vídeo adaptable]**.
 

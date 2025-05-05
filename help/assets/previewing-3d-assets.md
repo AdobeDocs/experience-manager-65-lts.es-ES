@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Experience Manager admite la carga, el envío y la previsualización interactiva de recursos 3D como parte del proceso de creación.

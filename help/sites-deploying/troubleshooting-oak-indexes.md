@@ -124,7 +124,7 @@ Para identificar y corregir un proceso de reindexación atascado, haga lo siguie
 1. Después de recopilar toda la información descrita en el paso 1, reinicie AEM.
 
    * El reinicio de AEM puede solucionar el problema si hay una carga simultánea alta (desbordamiento de la cola de observación o algo similar).
-   * Si un reinicio no soluciona el problema, abre un problema con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support) y proporciona toda la información recopilada en el paso 1.
+   * Si un reinicio no soluciona el problema, abre un problema con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support) y proporciona toda la información recopilada en el paso 1.
 
 ## Anulación segura de la reindexación asíncrona {#safely-aborting-asynchronous-re-indexing}
 

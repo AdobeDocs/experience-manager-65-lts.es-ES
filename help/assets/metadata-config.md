@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 <!-- Scope of metadata articles:
@@ -117,7 +117,7 @@ Un perfil de metadatos le permite aplicar metadatos predeterminados a los recurs
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para confirmar la operación de eliminación. El perfil de metadatos se elimina de la lista.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/es/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -277,7 +277,7 @@ Escriba valores de metadatos en los distintos campos y haga clic en **[!UICONTRO
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=es).
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Prácticas recomendadas para organizar los recursos digitales a fin de que utilicen perfiles de procesamiento](/help/assets/organize-assets.md).
 >* [reescritura de XMP](/help/assets/xmp-writeback.md).

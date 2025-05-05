@@ -18,7 +18,7 @@ ht-degree: 14%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Una colección es un conjunto de recursos dentro de [!DNL Adobe Experience Manager Assets]. Utilice las colecciones para compartir recursos entre los usuarios. El conjunto puede ser una colección estática o dinámica basada en los resultados de búsqueda.

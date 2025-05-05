@@ -69,7 +69,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 +++  Habilitar los componentes principales de formularios adaptables para su entorno
 
-Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
+Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=es).
 
 +++
 

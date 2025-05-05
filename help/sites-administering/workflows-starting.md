@@ -34,7 +34,7 @@ Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 >
 >* [Aplicar flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/es/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Proyectos de traducción](/help/sites-administering/tc-manage.md)
 >
 

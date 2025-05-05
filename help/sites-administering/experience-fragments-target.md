@@ -47,7 +47,7 @@ Los fragmentos de experiencias de AEM se pueden exportar al espacio de trabajo p
 >Para obtener más información, consulte:
 >
 >* [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
->* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=es)
 >
 
 ## Requisitos previos {#prerequisites}
@@ -99,7 +99,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
    >
    >Consulte el componente principal:
    >
-   >[Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=es)
 
    En **Adobe Target** seleccione:
 
@@ -169,7 +169,7 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
 
 ## Uso de los fragmentos de experiencias en Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Adobe Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) para saber lo que puede lograr allí.
+Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Adobe Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=es) para saber lo que puede lograr allí.
 
 >[!NOTE]
 >

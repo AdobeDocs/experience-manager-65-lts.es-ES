@@ -768,7 +768,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, se requier
   >
   >Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consultas persistentes para que el resultado se pueda almacenar en caché.
   >
-  >Esto sirve para garantizar que la consulta se ajuste a los requisitos de Dispatcher para los documentos que se pueden almacenar en caché. Para obtener más información, consulte [¿Cómo devuelve documentos Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+  >Esto sirve para garantizar que la consulta se ajuste a los requisitos de Dispatcher para los documentos que se pueden almacenar en caché. Para obtener más información, consulte [¿Cómo devuelve documentos Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=es#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 

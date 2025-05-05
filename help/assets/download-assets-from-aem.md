@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Puede descargar recursos, incluidas representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados están agrupados en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño de archivo máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 activos totales por trabajo de exportación.
@@ -79,13 +79,13 @@ De manera predeterminada, para `GET` solicitudes de descarga de archivos, [!DNL 
 
 El `Asset Download Servlet` se puede deshabilitar en una instancia de publicación de [!DNL Experience Manager] al actualizar la configuración de Dispatcher para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
 
-1. Para bloquear solicitudes de descarga de recursos a través de una configuración de Dispatcher, edite la configuración de `dispatcher.any` y agregue una regla a la [sección de filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear solicitudes de descarga de recursos a través de una configuración de Dispatcher, edite la configuración de `dispatcher.any` y agregue una regla a la [sección de filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Para deshabilitar el componente OSGi en una instancia de publicación, acceda a la consola OSGi en `http://[aem_server]:[port]/system/console/components`. Busque `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` y haga clic en **[!UICONTROL Deshabilitar]**.
 
 >[!MORELIKETHIS]
 >
->* [Descargar recursos mediante Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Descargar recursos mediante Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=es)
 >* [Descargar recursos protegidos por DRM](drm.md).
->* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#download-assets).
 >* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html).

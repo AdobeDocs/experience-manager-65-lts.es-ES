@@ -53,7 +53,7 @@ Adobe recomienda instalar el paquete de configuración [adobe-asset-link-config]
    Establezca las siguientes propiedades y guarde los cambios.
 
    * [!UICONTROL Asignaciones de grupo]: dejar vacío a menos que lo desee. Para obtener más información, consulte [Asignación de grupo](#group-mapping).
-   * [!UICONTROL Organización]: escriba el identificador de organización que está usando en Adobe Admin Console. Para obtener más información sobre los identificadores de organización, consulte [Crear grupo de usuarios](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organización]: escriba el identificador de organización que está usando en Adobe Admin Console. Para obtener más información sobre los identificadores de organización, consulte [Crear grupo de usuarios](https://helpx.adobe.com/es/enterprise/using/create-aal-user-group.html).
 
 1. Busque la configuración **[!UICONTROL Controlador de autenticación del portador de Granite de Adobe]** y haga clic para editarla.
 
@@ -115,7 +115,7 @@ Para configurar Experience Manager manualmente:
 
 ## Configuración adicional después de la migración a Perfiles de empresa {#configure-migration-activity}
 
-Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/es/enterprise/kb/introducing-adobe-profiles.html).
 
 Solo se requiere una configuración adicional si utiliza diferentes organizaciones de Adobe IMS para Experience Manager y Creative Cloud para empresas (CCE) y se establece una relación de confianza de dominio entre estas dos organizaciones.
 
@@ -282,11 +282,11 @@ Si tiene problemas al configurar o utilizar Adobe Asset Link, intente lo siguien
 * Asegúrese de que la implementación cumpla los requisitos previos. Concretamente, asegúrese de que están instalados los paquetes de funciones o paquetes adecuados.
 * Póngase en contacto con el socio o integrador de sistemas de su organización.
 * Si los usuarios de Creative Cloud no pueden comprobar los recursos desprotegidos, compruebe el uso de mayúsculas y minúsculas en los nombres de dominio en los ID de correo electrónico. Para solucionarlo, consulte [configuración manual](#manual-configuration).
-* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/es/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
 >* [Acerca de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* [Use Asset Link en la aplicación de escritorio de Creative Cloud y administre recursos](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Configurar Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [Configurar Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/es/enterprise/using/configure-aem-assets-for-asset-link.html).

@@ -384,4 +384,4 @@ Del mismo modo, la prueba de las cadenas de diccionario debe realizarse como par
 
 >[!NOTE]
 >
->Al usar Dispatcher, debe [invalidar las páginas en caché](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir nuevas cadenas de diccionario en las cadenas de componentes procesadas.
+>Al usar Dispatcher, debe [invalidar las páginas en caché](https://helpx.adobe.com/es/experience-manager/dispatcher/using/page-invalidate.html) para incluir nuevas cadenas de diccionario en las cadenas de componentes procesadas.

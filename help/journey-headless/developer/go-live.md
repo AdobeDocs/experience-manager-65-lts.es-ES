@@ -96,7 +96,7 @@ El entorno de desarrollo local se compone de tres áreas principales:
 
 Una vez configurado el entorno de desarrollo local, puede simular el contenido que se sirve a la aplicación React implementando un servidor de nodos estático localmente.
 
-Para obtener información más detallada sobre la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+Para obtener información más detallada sobre la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=es).
 
 ## Preparación de la aplicación sin encabezado de AEM para el lanzamiento {#prepare-your-aem-headless-application-for-golive}
 
@@ -143,11 +143,11 @@ La implementación en producción puede depender de si tiene una instancia de AE
 
 ## Implementación en producción mediante Maven {#deploy-to-production-maven}
 
-Para una implementación *tradicional* (que no es AMS) que use Maven, consulte el [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obtener una descripción general.
+Para una implementación *tradicional* (que no es AMS) que use Maven, consulte el [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es#build) para obtener una descripción general.
 
 ## Implementación en producción mediante Cloud Manager {#deploy-to-production-cloud-manager}
 
-Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
+Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=es).
 
 Una vez que las actualizaciones se hayan cargado a Cloud Manager, impleméntelas en AEM mediante [la canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
 
@@ -224,7 +224,7 @@ Si necesita este tipo de flexibilidad para su proyecto, continúe con la parte o
 
 * Caché de CDN
 
-   * [Controlar una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [Controlar una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
 
    * Configurando la [reescritura de CDN](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*buscar reescritura de CDN*)
 

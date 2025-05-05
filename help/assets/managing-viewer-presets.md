@@ -27,7 +27,7 @@ Para obtener instrucciones sobre cómo crear y personalizar sus propios ajustes 
 Ruta: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por ejemplo, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
+Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visualizador. Puede aplicar un ajuste preestablecido de visualizador a un recurso en cualquier momento en el que lo previsualice. Consulte [Aplicación de ajustes preestablecidos de visor](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +39,7 @@ En esta sección se describe cómo crear, editar y administrar ajustes preestabl
 
 Todos los visores predeterminados admiten la accesibilidad del teclado.
 
-Consulte también [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
+Consulte también [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
 
 ## Administrar ajustes preestablecidos de visor {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ Puede agregar, editar, eliminar, publicar y cancelar la publicación y previsual
 
 Las diferentes páginas web tienen diferentes necesidades. Por ejemplo, a veces desea una página web que proporcione un vínculo que abra el Visor de HTML5 en una ventana independiente del explorador. En otros casos, puede ser necesario incrustar el visualizador de HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O bien, puede ser &quot;adaptable&quot; y mostrarse de forma diferente en diferentes dispositivos o para diferentes tamaños de ventana del explorador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos e integrados que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web con diseño interactivo.
 
-Consulte la [biblioteca de imágenes adaptables](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) para obtener más información sobre cómo incrustar visores adaptables en las páginas web.
+Consulte la [biblioteca de imágenes adaptables](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) para obtener más información sobre cómo incrustar visores adaptables en las páginas web.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Ver también [demostraciones en vivo](https://landing.adobe.com/en/na/dynamic-me
 
 Para obtener información sobre las versiones compatibles del explorador web y el sistema operativo para los visualizadores, consulte las Notas de la versión de los visualizadores.
 
-Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
+Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de visu
 
      El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver qué efecto tiene en el visor al instante mediante la muestra a la izquierda del editor.
 
-     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del visor *`<viewer name>`*&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources). Por ejemplo, si está creando un ajuste preestablecido de visualizador de tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) para obtener una lista y una descripción de cada propiedad.
+     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del visor *`<viewer name>`*&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources). Por ejemplo, si está creando un ajuste preestablecido de visualizador de tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en los AEM Assets. Seleccione **[!UICONTROL Importar CSS]** del menú desplegable **[!UICONTROL Tipo seleccionado]**. Si es necesario, desplace el editor visual hacia arriba para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador.
 
      Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS que importe deben definirse con su nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización de *&lt;nombre del visor>* Visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources). Por ejemplo, si desea leer acerca de los marcadores CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización de *&lt;nombre del visor>* Visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources). Por ejemplo, si desea leer acerca de los marcadores CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ Por ejemplo, para el tipo *VideoPlayer*, en **[!UICONTROL Modificadores]** > **[
 
    Muchos componentes del editor visual tienen asociada una descripción detallada. Estas descripciones aparecen en los cuadros azules cuando se expande un componente para mostrar sus parámetros asociados.
 
-   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
+   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
 
    >[!NOTE]
    >

@@ -49,7 +49,7 @@ Por ejemplo, vea la configuración de los campos agrupados en **Más títulos y 
 
 >[!TIP]
 >
->Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
+>Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=es) para obtener una guía sobre cómo personalizar las propiedades de página.
 
 ## Configuración de las propiedades de página {#configuring-your-page-properties}
 

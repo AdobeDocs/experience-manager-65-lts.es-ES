@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->La mayoría de los componentes de base están obsoletos con AEM 6.5. Adobe recomienda usar los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) más modernos y ampliables en los proyectos de AEM. Estos componentes forman parte del [contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y también se pueden [instalar por separado y el administrador los puede usar para el desarrollo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html).
+>La mayoría de los componentes de base están obsoletos con AEM 6.5. Adobe recomienda usar los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) más modernos y ampliables en los proyectos de AEM. Estos componentes forman parte del [contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y también se pueden [instalar por separado y el administrador los puede usar para el desarrollo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es).
 >
 >Puede usar el [Conjunto de herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) para refactorizar el sitio basado en componentes de base y usar los componentes principales.
 
@@ -457,7 +457,7 @@ Este componente proporciona un sistema de párrafos de cuadrícula que le permit
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=es) en su lugar.
 
 El componente Lista permite configurar los criterios de búsqueda para mostrar una lista:
 
@@ -631,7 +631,7 @@ Después de la configuración, el contenido aparece exactamente como en la pági
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal de búsqueda rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal de búsqueda rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html?lang=es) en su lugar.
 
 El componente Buscar agrega la capacidad de búsqueda a la página.
 
@@ -700,7 +700,7 @@ El ejemplo siguiente muestra un término de búsqueda que está mal escrito y no
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar [Navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [Navegación de idioma](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html) y [Componentes principales de ruta de exploración](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar [Navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=es), [Navegación de idioma](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html?lang=es) y [Componentes principales de ruta de exploración](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html?lang=es) en su lugar.
 
 Lista automática de mapas del sitio que (con la configuración predeterminada) muestra todas las páginas (como vínculos activos) del sitio web actual. Por ejemplo, un extracto muestra:
 
@@ -752,7 +752,7 @@ A continuación, el componente de presentación con diapositivas muestra repetid
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es) en su lugar.
 
 >[!NOTE]
 >
@@ -801,7 +801,7 @@ Para obtener más información acerca de cómo aplicar etiquetas, visite [Usar e
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es) en su lugar.
 
 >[!NOTE]
 >
@@ -830,7 +830,7 @@ Además del modo de edición de texto enriquecido basado en cuadros de diálogo,
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) y [Text Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) y [Text Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es) en su lugar.
 
 El componente Texto e imagen agrega un bloque de texto y una imagen. También puede agregar y editar texto e imágenes por separado. Vea los componentes [Texto](#text) e [Imagen](#image) para obtener detalles.
 
@@ -878,7 +878,7 @@ El siguiente ejemplo muestra un componente Imagen de texto que muestra la imagen
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=es) en su lugar.
 
 El componente de título puede:
 
@@ -907,7 +907,7 @@ El ejemplo siguiente muestra un componente **Title**; el diseño está determina
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=es) en su lugar.
 
 >[!CAUTION]
 >
@@ -1087,7 +1087,7 @@ Este campo es obligatorio y solo debe contener los siguientes caracteres:
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal del contenedor de formularios](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal del contenedor de formularios](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=es) en su lugar.
 
 El componente Formulario define el inicio y el final de un formulario con los elementos **Inicio del formulario** y **Fin del formulario**. El inicio y el final siempre están emparejados para garantizar que el formulario esté definido correctamente.
 
@@ -1315,7 +1315,7 @@ Marca el final del formulario. Puede configurar lo siguiente:
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=es) en su lugar.
 
 Permite que el usuario introduzca un nombre de cuenta:
 
@@ -1325,7 +1325,7 @@ Permite que el usuario introduzca un nombre de cuenta:
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=es) en su lugar.
 
 Permite agregar un campo de dirección internacional con el siguiente formato:
 
@@ -1353,7 +1353,7 @@ Puede configurar varios parámetros para este componente, incluido un mensaje qu
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=es) en su lugar.
 
 Una casilla de verificación permite crear una lista de una o más casillas de verificación, varias de las cuales se pueden seleccionar al mismo tiempo.
 
@@ -1381,7 +1381,7 @@ Permite proporcionar los campos necesarios para introducir los datos de la tarje
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=es) en su lugar.
 
 Se puede configurar una lista desplegable para proporcionar al usuario un rango de valores para la selección:
 
@@ -1407,13 +1407,13 @@ El componente de carga de archivos proporciona al usuario un mecanismo para sele
 
 >[!NOTE]
 >
->Puede crear un componente de carga personalizado para cargar archivos en un servlet Sling. Para obtener más información, consulte [Cargar archivos a Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
+>Puede crear un componente de carga personalizado para cargar archivos en un servlet Sling. Para obtener más información, consulte [Cargar archivos a Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=es).
 
 ### Campo oculto {#hidden-field}
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal oculto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal oculto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html?lang=es) en su lugar.
 
 Permite crear un campo oculto. Estos campos ocultos se pueden utilizar para varios fines. Por ejemplo, cuando debe realizar una acción después de enviar el formulario o cuando se requieren datos ocultos en el procesamiento posterior.
 
@@ -1429,7 +1429,7 @@ Permite crear un campo oculto. Estos campos ocultos se pueden utilizar para vari
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=es) en su lugar.
 
 Un botón de imagen permite crear un botón con su propia imagen y texto:
 
@@ -1486,7 +1486,7 @@ Con la configuración predeterminada, el componente aparece de la siguiente mane
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal de opciones de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=es) en su lugar.
 
 Un grupo de opciones le proporciona una lista de una o varias casillas de verificación de opciones, de las cuales sólo una se puede seleccionar en un momento determinado.
 
@@ -1504,7 +1504,7 @@ Puede especificar el nombre del elemento junto con un título y una descripción
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=es) en su lugar.
 
 Este componente permite crear un botón de envío, con el texto predeterminado:
 
@@ -1545,7 +1545,7 @@ Puede especificar varios parámetros, incluidas las áreas de nombres que se pue
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [componente principal Texto de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=es) en su lugar.
 
 El campo de texto estándar se puede configurar según el tamaño requerido y con su propio posible cliente en el mensaje:
 
@@ -1555,7 +1555,7 @@ El campo de texto estándar se puede configurar según el tamaño requerido y co
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) en su lugar.
+>Este componente de base está obsoleto. Adobe recomienda usar el [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=es) en su lugar.
 
 Permite crear un botón Enviar para utilizarlo en un flujo de trabajo.
 

@@ -86,7 +86,7 @@ El conector admite lo siguiente:
 
 ### Instalación estándar {#standard-installation}
 
-Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es#software-distribution).
 
 
 #### Integración con AEM {#integrating-with-aem}

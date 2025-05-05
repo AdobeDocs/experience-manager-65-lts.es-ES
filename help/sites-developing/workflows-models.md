@@ -20,7 +20,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Para usar la IU clásica, consulte la [documentación de AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
+>Para usar la IU clásica, consulte la [documentación de AEM 6.3](https://helpx.adobe.com/es/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
 
 Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos. 
 

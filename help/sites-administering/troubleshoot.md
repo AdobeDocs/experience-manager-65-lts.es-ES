@@ -93,7 +93,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obtener más información
+Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es) para obtener más información
 
 ### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 

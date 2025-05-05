@@ -32,7 +32,7 @@ Consulte la [API de administración de fragmentos de contenido - del lado del cl
 
 >[!CAUTION]
 >
->Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
+>Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
 >
 >Esta sección detalla el componente original enviado para su uso con fragmentos de contenido (**Fragmento de contenido** en el grupo **General**).
 

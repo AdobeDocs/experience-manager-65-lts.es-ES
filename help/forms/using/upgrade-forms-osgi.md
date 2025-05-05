@@ -32,7 +32,7 @@ Después de actualizar al Service Pack AEM Forms 6.5.22.0, siga estos pasos para
    1. Abra el [Administrador de paquetes](/help/sites-administering/package-manager.md) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
    1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
-      También puede descargar el paquete utilizando el vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+      También puede descargar el paquete utilizando el vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
       Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo &lt;crx-repository>/error.log y el registro esté estable. Tenga en cuenta también que algunos paquetes pueden permanecer en el estado instalado. Puede ignorar de forma segura el estado de estos paquetes.
 
@@ -93,4 +93,4 @@ Después de actualizar al Service Pack AEM Forms 6.5.22.0, siga estos pasos para
 
    >[!NOTE]
    >
-   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

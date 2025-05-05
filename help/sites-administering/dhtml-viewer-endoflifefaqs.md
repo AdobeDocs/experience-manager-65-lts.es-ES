@@ -19,7 +19,7 @@ ht-degree: 0%
 
 A partir del 31 de enero de 2014, la plataforma del visor DHTML quedará obsoleta oficialmente.
 
-Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para conocer los visores compatibles más recientes.
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=es) para conocer los visores compatibles más recientes.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
@@ -130,5 +130,5 @@ Although you can still be live in production with DHTML-based viewers, it is imp
 
 **Who do I contact for more information?**
 
-If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
  -->

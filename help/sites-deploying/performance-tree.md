@@ -77,7 +77,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 4</strong></td>
    <td>¿Las solicitudes provienen de Dispatcher?</td>
-   <td><p>Para ver si las solicitudes se almacenan en la caché correctamente, consulte la <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">documentación de depuración de Dispatcher</a>.<br /> </p> </td>
+   <td><p>Para ver si las solicitudes se almacenan en la caché correctamente, consulte la <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#debugging">documentación de depuración de Dispatcher</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 5</strong></td>
@@ -107,7 +107,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Pasos 10 y 29</strong></td>
    <td>Investigar la capa de red</td>
-   <td><p>Investigue la capa de red para ver si hay problemas de saturación y latencia.</p> <p>Para el nivel de creación, se recomienda que la latencia no supere los 100 milisegundos.</p> <p>Para obtener más información acerca de sugerencias de optimización de rendimiento, vea <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">esta página</a>.</p> </td>
+   <td><p>Investigue la capa de red para ver si hay problemas de saturación y latencia.</p> <p>Para el nivel de creación, se recomienda que la latencia no supere los 100 milisegundos.</p> <p>Para obtener más información acerca de sugerencias de optimización de rendimiento, vea <a href="https://helpx.adobe.com/es/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">esta página</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 11</strong></td>
@@ -160,7 +160,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
    <td><br />
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Memoria insuficiente</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">Analizar problemas de memoria.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es">Analizar problemas de memoria.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -183,7 +183,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
    <td>Ajuste del repositorio</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Consejos de ajuste de rendimiento</a></li>
+     <li><a href="https://helpx.adobe.com/es/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Consejos de ajuste de rendimiento</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configurar para el rendimiento</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Ajuste del rendimiento del repositorio</a></li>
     </ul> </td>
@@ -211,7 +211,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servicio de sincronización de Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Varias instancias de DAM</a></li>
-     <li>Artículo de sugerencias de optimización de rendimiento <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">aquí</a>.<br /> </li>
+     <li>Artículo de sugerencias de optimización de rendimiento <a href="https://helpx.adobe.com/es/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">aquí</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -232,7 +232,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 32</strong></td>
    <td>Para descargar el servidor de AEM, utilice la administración de sesiones en el nivel de Dispatcher</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Activar sesiones seguras</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-secure-sessions-sessionmanagement">Activar sesiones seguras</a></p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 33</strong></td>
@@ -240,7 +240,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
    <td>
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es">Configuración general de Dispatcher</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuración de la caché de Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-the-dispatcher-cache-cache">Configuración de la caché de Dispatcher</a></li>
     </ol> <p>Cómo mejorar la proporción de caché; hacer que las solicitudes puedan almacenarse en caché (prácticas recomendadas de Dispatcher)</p> <p>Además, considere la siguiente configuración para optimizar las configuraciones de almacenamiento en caché<br /> </p>
     <ol>
      <li>Establezca una regla sin caché para la solicitud HTTP que no sea GET</li>
@@ -252,26 +252,26 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 34</strong></td>
    <td>Actualizar la versión de Dispatcher</td>
-   <td><p>Puede descargar la versión más reciente de Dispatcher en esta ubicación:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">Seguir vínculo</a></p> </td>
+   <td><p>Puede descargar la versión más reciente de Dispatcher en esta ubicación:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es">Seguir vínculo</a></p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 35</strong></td>
    <td>Configurar Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html">Configuración de Dispatcher</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es">Configuración de Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 36</strong></td>
    <td>Comprobar invalidación de caché</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidación de caché para el nivel de Author;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidación de caché para el nivel de publicación.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidación de caché para el nivel de Author;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidación de caché para el nivel de publicación.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Pasos 37 y 38</strong></td>
    <td>Carga diferida</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Ver la sesión de Gem sobre el rendimiento web de AEM.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=es">Ver la sesión de Gem sobre el rendimiento web de AEM.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 39</strong></td>
@@ -291,7 +291,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 49</strong></td>
    <td>Reducir tamaño de carga útil</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Habilitar Gzip</a> y <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">reducir el tamaño de la imagen</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Habilitar Gzip</a> y <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=es">reducir el tamaño de la imagen</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Pasos 42 y 43</strong></td>
@@ -323,7 +323,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Pasos 50 y 51</strong></td>
    <td>Bloqueo de código JS</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=es">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=es</a></td>
   </tr>
  </tbody>
 </table>

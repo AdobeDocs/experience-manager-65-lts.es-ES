@@ -197,7 +197,7 @@ El script JSP de este componente genera llamadas a la API de JavaScript de Targe
 
 El archivo mbox.js predeterminado que se usa para crear mboxes se encuentra en /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para utilizar un archivo mbox.js de cliente, agregue el archivo a la configuración de la nube de Target. Para agregar el archivo, el archivo mbox.js debe estar disponible en el sistema de archivos.
 
-Por ejemplo, si desea utilizar el [servicio Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html), debe descargar mbox.js para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) y [antes de la implementación](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
+Por ejemplo, si desea utilizar el [servicio Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es), debe descargar mbox.js para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=es) y [antes de la implementación](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=es).
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ Por ejemplo, para deshabilitar el direccionamiento para los componentes de títu
 >
 >Si no utiliza la DTM, envía una confirmación de pedido a Adobe Target.
 
-Para realizar un seguimiento del rendimiento del sitio web, envíe información de compra desde la página de confirmación de pedido a Adobe Target. (Consulte [Crear un mbox de orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) y [Mbox de confirmación de pedido: añadir parámetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de mbox es `orderConfirmPage` y usa los siguientes nombres de parámetro específicos:
+Para realizar un seguimiento del rendimiento del sitio web, envíe información de compra desde la página de confirmación de pedido a Adobe Target. (Consulte [Crear un mbox de orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) y [Mbox de confirmación de pedido: añadir parámetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=es)) Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de mbox es `orderConfirmPage` y usa los siguientes nombres de parámetro específicos:
 
 * productPurchasedId: Una lista de ID que identifican los productos comprados.
 * orderId: ID del pedido.

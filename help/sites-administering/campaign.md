@@ -26,7 +26,7 @@ Adobe Campaign es un conjunto de soluciones que le permite personalizar y entreg
 >
 >Este documento describe la integración de Adobe Campaign con AEM 6.5, la solución de AEM local o alojada en AMS.
 >
->Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service, la solución nativa de la nube de AEM, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service, la solución nativa de la nube de AEM, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=es)
 
 ## Integración con Adobe Campaign Classic {#acc}
 
@@ -43,7 +43,7 @@ En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en AEM.
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en AEM.
 * [Solución de problemas de la integración de Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md): aprenda a solucionar los problemas más comunes con la integración de AEM y ACC.
 
 ## Integración con Adobe Campaign Standard {#acs}
@@ -61,4 +61,4 @@ En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)

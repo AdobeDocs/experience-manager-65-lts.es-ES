@@ -60,7 +60,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [repositorio de CRX, esquema de base de datos y GDS (almacenamiento global de documentos)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Haga una copia de seguridad de su [repositorio de CRX, esquema de base de datos y GDS (almacenamiento global de documentos)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=es).
 1. Haga una copia de seguridad de la carpeta &lt;*AEM_forms_root*>/deploy.
 
 >[!NOTE]
@@ -209,7 +209,7 @@ El paquete está      se instala automáticamente.
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [Repositorio de CRX y Esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Haga una copia de seguridad de su [Repositorio de CRX y Esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=es).
 
 >[!NOTE]
 >

@@ -26,7 +26,7 @@ Consulte [configuración de servicios de contenido inteligente](#integrate-adobe
 
 >[!NOTE]
 >
->Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&amp;support-tab=home?lang=es#support).
+>Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&amp;support-tab=home?lang=es#support).
 
 ## Configuración de OAuth para los usuarios de AMS existentes {#oauth-config-new-ams-users}
 
@@ -43,7 +43,7 @@ Una configuración de OAuth requiere los siguientes requisitos previos:
 
 ### Configuración de OAuth para los usuarios de AMS y OnPrem existentes {#steps-config-oauth-onprem}
 
-El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&amp;support-tab=home?lang=es#support).
+El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&amp;support-tab=home?lang=es#support).
 
 1. Agregar o actualizar las siguientes propiedades en `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -186,4 +186,4 @@ Para configurar la integración, use los valores de los campos [!UICONTROL ID. D
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Configurar el etiquetado inteligente](config-smart-tagging.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)

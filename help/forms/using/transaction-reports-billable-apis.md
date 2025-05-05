@@ -18,7 +18,7 @@ ht-degree: 92%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
 | AEM 6.5 | Este artículo |
 
 AEM Forms ofrece varias API para enviar formularios, procesar documentos y representar documentos. Algunas API se contabilizan como transacciones y otras se pueden usar libremente. Este documento proporciona una lista de todas las API que se contabilizan como transacciones en un informe de transacciones. Estos son algunos escenarios comunes en los que se utiliza un API facturable:

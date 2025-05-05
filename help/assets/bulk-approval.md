@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Configure flujos de trabajo de revisión para los recursos de una carpeta o una colección y compártala con revisores o socios creativos para buscar comentarios.

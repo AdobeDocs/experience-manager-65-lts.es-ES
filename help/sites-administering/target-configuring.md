@@ -51,7 +51,7 @@ Los siguientes valores de propiedad se utilizan en la configuración de nube de 
 >* Mejores opciones de implementación para aplicaciones de una sola página
 >* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=es -->
 
 ### Propiedades de Target Framework aprovisionadas {#provisioned-target-framework-properties}
 
@@ -114,7 +114,7 @@ Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclus
 >
 >Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=es -->
 
 ### Creación de una configuración de Target Cloud {#creating-a-target-cloud-configuration}
 
@@ -219,7 +219,7 @@ Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia d
 
 ### Asociación de actividades con la configuración de nube de Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la configuración de la nube de Target para poder reflejar las actividades en [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la configuración de la nube de Target para poder reflejar las actividades en [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=es).
 
 >[!NOTE]
 >

@@ -102,7 +102,7 @@ El formato del informe es el siguiente:
 
 >[!NOTE]
 >
->Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Para comprender los niveles de importancia, siga la tabla siguiente:
 

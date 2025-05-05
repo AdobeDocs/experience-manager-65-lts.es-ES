@@ -130,7 +130,7 @@ Para obtener más información, consulte [Fragmento de contenido: eliminar consi
 
 >[!CAUTION]
 >
->Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
+>Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
 
 Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, como cualquier otro tipo de recurso. AEM proporciona el componente principal [**Fragmento de contenido**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) - un componente [que le permite incluir fragmentos de contenido en sus páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal **Fragmento de contenido**.
 

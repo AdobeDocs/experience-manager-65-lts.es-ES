@@ -70,7 +70,7 @@ CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se 
 
 Los estilos específicos de marca se pueden aplicar a los componentes principales de AEM CIF agregando y anulando el CSS administrado por estas bibliotecas de cliente. Es fundamental comprender cómo se estructuran e incluyen las bibliotecas de cliente en la página.
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) es un proyecto [webpack](https://webpack.js.org/) dedicado para administrar todos los recursos front-end de un proyecto. Esto permite a los desarrolladores de front-end usar cualquier número de idiomas y tecnologías, como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) y mucho más.
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=es) es un proyecto [webpack](https://webpack.js.org/) dedicado para administrar todos los recursos front-end de un proyecto. Esto permite a los desarrolladores de front-end usar cualquier número de idiomas y tecnologías, como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) y mucho más.
 
 El módulo `ui.frontend` también es un módulo Maven y se integra con el proyecto más grande usando un módulo NPM: [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante una compilación, `aem-clientlib-generator` copia los archivos CSS y JavaScript compilados en una biblioteca de cliente en el módulo `ui.apps`.
 
@@ -80,7 +80,7 @@ El módulo `ui.frontend` también es un módulo Maven y se integra con el proyec
 
 ## Actualizar el estilo del teaser {#ui-frontend-module}
 
-A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo funcionan el módulo `ui.frontend` y las bibliotecas de cliente. Use [el IDE de su elección](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar el proyecto Venia. Las capturas de pantalla utilizadas provienen del [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo funcionan el módulo `ui.frontend` y las bibliotecas de cliente. Use [el IDE de su elección](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es#set-up-the-development-ide) para importar el proyecto Venia. Las capturas de pantalla utilizadas provienen del [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es#microsoft-visual-studio-code).
 
 1. Navegue y expanda el módulo **ui.frontend** y expanda la jerarquía de carpetas a: `ui.frontend/src/main/styles/commerce`:
 
@@ -444,7 +444,7 @@ Vuelva al IDE y al proyecto generado.
    ```
 
    >[!NOTE]
-   >Existen [herramientas y configuración IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) adicionales que pueden sincronizar los archivos de proyecto directamente con una instancia de AEM local sin tener que realizar una compilación completa de Maven.
+   >Existen [herramientas y configuración IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es#set-up-an-integrated-development-environment) adicionales que pueden sincronizar los archivos de proyecto directamente con una instancia de AEM local sin tener que realizar una compilación completa de Maven.
 
 ## Ver teaser de productos actualizado {#view-updated-product-teaser}
 

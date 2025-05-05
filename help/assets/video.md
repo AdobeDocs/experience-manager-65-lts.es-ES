@@ -145,7 +145,7 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten lo
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -161,7 +161,7 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -179,7 +179,7 @@ Al combinar en un solo reproductor lo siguiente:
 
 Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles, y garantiza una experiencia de vídeo optimizada.
 
-Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -469,7 +469,7 @@ Especifique el intervalo de fechas inicial y final para el que desea obtener dat
 
 Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de HTML5 Viewer, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
 **Para ver informes de vídeo basados en un visor de vídeo que creó con el SDK de Dynamic Media HTML5 Viewer:**
 
@@ -801,7 +801,7 @@ Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm
 
 Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 

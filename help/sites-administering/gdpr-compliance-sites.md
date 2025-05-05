@@ -49,7 +49,7 @@ AEM tiene un [servicio de exclusión de cookies](/help/sites-developing/cookie-o
 
 AEM Sites incluye una integración opcional con Enhanced Insights by Analytics que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Analytics.
 
-Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=es).
 
 ## Personalization mejorado por Target {#enhanced-personalization-by-target}
 

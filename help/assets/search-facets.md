@@ -17,7 +17,7 @@ ht-degree: 16%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Una implementación de [!DNL Adobe Experience Manager Assets] en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo si solo usa las capacidades de búsqueda genéricas de [!DNL Experience Manager].

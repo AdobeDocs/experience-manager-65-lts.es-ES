@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >Este artículo se aplica a los componentes de base obsoletos basados en los componentes de correo electrónico de AEM.
 >
->Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 

@@ -26,7 +26,7 @@ Las referencias se resuelven en función de la ruta, el ID de documento y el ID 
 
 Puede hacer referencia a recursos digitales existentes desde un archivo de [!DNL Adobe Illustrator].
 
-1. Con [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), recupere los recursos digitales en el sistema de archivos local. Vaya a la ubicación del sistema de archivos del recurso al que desee hacer referencia.
+1. Con [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es), recupere los recursos digitales en el sistema de archivos local. Vaya a la ubicación del sistema de archivos del recurso al que desee hacer referencia.
 1. Arrastre el recurso de la carpeta local al archivo [!DNL Illustrator].
 
 1. Guarde el archivo de [!DNL Illustrator] en la unidad montada o [cargue](/help/assets/manage-assets.md#uploading-assets) en el repositorio de [!DNL Experience Manager].
@@ -64,14 +64,14 @@ Este procedimiento es similar a [agregar recursos digitales como referencias en 
 ### Crear referencias a recursos exportando un archivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Siga los pasos de [Crear modelos de flujo de trabajo](/help/sites-developing/workflows-models.md) para crear un flujo de trabajo.
-1. Use [característica de paquete](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar el documento. [!DNL Adobe InDesign] puede exportar un documento y los recursos vinculados como un paquete. En este caso, la carpeta exportada contiene una carpeta `Links` que contiene subrecursos en el archivo [!DNL InDesign]. La carpeta `Links` está presente en la misma carpeta que el archivo INDD.
+1. Use [característica de paquete](https://helpx.adobe.com/es/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar el documento. [!DNL Adobe InDesign] puede exportar un documento y los recursos vinculados como un paquete. En este caso, la carpeta exportada contiene una carpeta `Links` que contiene subrecursos en el archivo [!DNL InDesign]. La carpeta `Links` está presente en la misma carpeta que el archivo INDD.
 1. Cree un archivo ZIP y cárguelo en el repositorio [!DNL Experience Manager].
 1. Inicie el flujo de trabajo `Unarchiver`.
 1. Cuando se completa el flujo de trabajo, se hace referencia automáticamente a las referencias de la carpeta Links como subrecursos. Para ver una lista de recursos a los que se hace referencia, vaya a la página de detalles del recurso [!DNL InDesign] y cierre el [carril](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop]: agregar recursos digitales como referencias {#refps}
 
-1. Use la aplicación de escritorio [!DNL Experience Manager] para tener acceso a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Use la funcionalidad [!UICONTROL Colocar elemento vinculado] en [!DNL Adobe Photoshop]. Ver [colocar recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Use la aplicación de escritorio [!DNL Experience Manager] para tener acceso a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Use la funcionalidad [!UICONTROL Colocar elemento vinculado] en [!DNL Adobe Photoshop]. Ver [colocar recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#place-assets-in-native-documents).
 
 1. Guardar en [!DNL Photoshop] archivo en la unidad montada o [cargar](/help/assets/manage-assets.md#uploading-assets) en el repositorio [!DNL Experience Manager].
 1. Una vez completado el flujo de trabajo, las referencias a los recursos existentes [!DNL Experience Manager] se enumeran en la página de detalles del recurso.
@@ -124,7 +124,7 @@ Para [!DNL InDesign], puede extraer páginas mediante [!DNL InDesign Server]. Si
 
 Las siguientes opciones están disponibles en la barra de herramientas, en el carril izquierdo y en los controles del visor de páginas:
 
-* **[!UICONTROL Acciones de escritorio]** para abrir o mostrar un subrecurso específico mediante la aplicación de escritorio [!DNL Experience Manager]. Consulte cómo [configurar acciones de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) si usa la aplicación de escritorio [!DNL Experience Manager].
+* **[!UICONTROL Acciones de escritorio]** para abrir o mostrar un subrecurso específico mediante la aplicación de escritorio [!DNL Experience Manager]. Consulte cómo [configurar acciones de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#desktopactions-v2) si usa la aplicación de escritorio [!DNL Experience Manager].
 
 * La opción **[!UICONTROL Propiedades]** abre la página [!UICONTROL Propiedades] del subrecurso específico.
 
@@ -140,7 +140,7 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 >[!MORELIKETHIS]
 >
->* [Usar la aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Configurar acciones de escritorio en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
->* [Crear objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Colocar gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Usar la aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
+>* [Configurar acciones de escritorio en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#desktopactions-v2)
+>* [Crear objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/es/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Colocar gráficos en Adobe InDesign](https://helpx.adobe.com/es/indesign/using/placing-graphics.html)

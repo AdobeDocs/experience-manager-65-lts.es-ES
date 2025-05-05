@@ -16,9 +16,9 @@ ht-degree: 100%
 
 # Ayuda de Forms Designer {#form-designer-help}
 
-[Using Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
-[Designer Quick Start Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-[Designer Samples](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+[Using Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
+[Designer Quick Start Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
+[Designer Samples](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
 [Designer Scripting Basics](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
 [Designer Scripting Reference](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
 [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)

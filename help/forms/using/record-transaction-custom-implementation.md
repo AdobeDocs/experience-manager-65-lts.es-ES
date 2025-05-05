@@ -18,7 +18,7 @@ ht-degree: 72%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
 | AEM 6.5 | Este artículo |
 
 Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.

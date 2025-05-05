@@ -25,7 +25,7 @@ Los ejemplos de este documento le ayudarán a comprender y utilizar Servicios de
 
 * Antes de usar las API del servicio DocAssurance, [configure el servicio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Descargue y configure el [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) con su proyecto Maven de AEM. Las clases de cliente necesarias para crear proyectos Maven mediante AEM Document Services están disponibles allí.
+* Descargue y configure el [AEM Forms Client SDK](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) con su proyecto Maven de AEM. Las clases de cliente necesarias para crear proyectos Maven mediante AEM Document Services están disponibles allí.
 
 * Más información sobre [cómo crear su proyecto de AEM con Maven](/help/sites-developing/ht-projects-maven.md)
 

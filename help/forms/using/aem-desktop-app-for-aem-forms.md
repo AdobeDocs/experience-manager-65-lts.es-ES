@@ -19,7 +19,7 @@ ht-degree: 47%
 
 La aplicación de escritorio de AEM le permite asignar el repositorio de recursos de Adobe Experience Manager (AEM) y los archivos binarios de AEM Forms a un directorio de red del sistema. Puede ver los recursos sincronizados y los archivos binarios en un explorador de archivos y usar varias aplicaciones para editar los archivos como desee. Además de ver los archivos, también puede crear, cargar y eliminar los archivos binarios. También puede abrir, editar y guardar archivos directamente desde el software. Por ejemplo, puede abrir y editar directamente un archivo XDP desde Designer. Los cambios que realice en los recursos localmente se reflejarán en el repositorio de AEM Assets y en la interfaz de usuario de AEM Forms.
 
-Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
+Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=es).
 
 ## Recursos de AEM Forms compatibles con la aplicación de escritorio de AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 

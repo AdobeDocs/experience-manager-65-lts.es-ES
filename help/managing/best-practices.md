@@ -238,7 +238,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support).
+  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 
@@ -631,4 +631,4 @@ Además, las siguientes secciones de la documentación de AEM son de especial in
 
 * Documentación relacionada
 
-   * Adobe Experience Cloud - [Planificación de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planificación de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=es)

@@ -20,7 +20,7 @@ En los temas siguientes se describe cómo realizar tareas de implementación esp
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Cómo purgar flujos de trabajo y el registro de auditoría](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Cómo purgar flujos de trabajo y el registro de auditoría](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Consejos de ajuste de rendimiento](/help/sites-deploying/configuring-performance.md)
 

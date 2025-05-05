@@ -30,7 +30,7 @@ Antes de iniciar el proyecto de desarrollo de AEM, revise primero estas práctic
 * [Problemas de código](/help/sites-developing/code-pitfalls.md)
 * [Interacción JCR](/help/sites-developing/jcr-integration.md)
 * [Paquetes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Prácticas recomendadas para la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Prácticas recomendadas para la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es)
 
 ### Información adicional sobre prácticas recomendadas {#additional-best-practices-information}
 
@@ -83,7 +83,7 @@ El lenguaje de plantilla HTML (HTL) es un nuevo sistema de plantillas de HTML, i
 |  |  |  |
 |---|---|---|
 | Información general sobre HTL | [Resumen y sintaxis de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) | Este documento describe qué es HTL, cómo pasar a HTL, un proyecto de ejemplo, sintaxis, expresiones e instrucciones |
-| Uso de la API en Java | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. |
+| Uso de la API en Java | [HTL Java Use-API](https://helpx.adobe.com/es/experience-manager/htl/using/use-api.html) | La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. |
 
 >[!NOTE]
 >

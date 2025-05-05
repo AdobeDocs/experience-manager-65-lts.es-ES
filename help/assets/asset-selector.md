@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->El [selector de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) se llamaba [selector de recursos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Experience Manager].
+>El [selector de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=es) se llamaba [selector de recursos](https://helpx.adobe.com/es/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Experience Manager].
 
 El selector de recursos le permite examinar, buscar y filtrar recursos en [!DNL Adobe Experience Manager] Assets. También puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Para personalizar la interfaz del selector de recursos, puede iniciarla con parámetros de solicitud compatibles. Estos parámetros establecen el contexto del selector de recursos para un escenario en particular.
 
@@ -62,4 +62,4 @@ Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el s
 
 >[!MORELIKETHIS]
 >
->* [Selector de recursos de Micro-Frontend en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* [Selector de recursos de Micro-Frontend en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=es)

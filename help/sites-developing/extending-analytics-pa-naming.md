@@ -41,7 +41,7 @@ El servicio `DefaultPageNameProvider` determina cuál de estas variables CQ se a
 
 * `pagedata.navTitle`: el servicio usa `page.getNavigationTitle()`
 
-El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
+El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
 
 Si no asigna una variable CQ a la propiedad `s.pageName` en el marco de trabajo, el valor de `s.pageName` se genera a partir de la ruta de acceso de la página. Por ejemplo, la página con la ruta de acceso `/content/geometrixx/en` usa el valor `content:geometrixx:en` para `s.pageName`.
 

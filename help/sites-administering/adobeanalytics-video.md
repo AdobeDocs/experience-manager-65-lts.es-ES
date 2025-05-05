@@ -138,7 +138,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -273,7 +273,7 @@ eventdata.events.milestoneXX
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -382,4 +382,4 @@ Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analyt
 
 **Referencias utilizadas en este tutorial:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es)

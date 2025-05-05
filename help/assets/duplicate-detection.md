@@ -30,4 +30,4 @@ La característica de detección de duplicados ahora está habilitada en [!DNL A
 >[!MORELIKETHIS]
 >
 >* [Activos duplicados en el repositorio existente (un tutorial de un miembro de la comunidad)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Detectar recursos duplicados en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Detectar recursos duplicados en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=es)

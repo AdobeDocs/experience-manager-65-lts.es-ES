@@ -104,7 +104,7 @@ Específico de la tienda:
 
 >[!NOTE]
 >
->Ver también la [Referencia de la API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
+>Ver también la [Referencia de la API de ContextHub](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adición de devoluciones de llamada de registro {#adding-record-callbacks}
 

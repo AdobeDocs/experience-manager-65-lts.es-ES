@@ -86,6 +86,6 @@ Ahora, inicie sesión en Brand Portal para ver si los recursos publicados están
 
 1. Cambie a la vista de lista ![Vista de lista](assets/list-view.svg) para ver el estado de publicación actual del recurso.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![estado del informe generado](assets/report-status.JPG)

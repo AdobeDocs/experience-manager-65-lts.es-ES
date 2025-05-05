@@ -270,4 +270,4 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)

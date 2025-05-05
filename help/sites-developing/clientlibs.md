@@ -66,7 +66,7 @@ Como HTL es la tecnología preferida para desarrollar sitios de AEM, HTL debe ut
 
 ### Uso de HTL {#using-htl}
 
-En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por AEM, a la que se puede acceder mediante [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por AEM, a la que se puede acceder mediante [`data-sly-use`](https://helpx.adobe.com/es/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/es/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css**: carga solo los archivos CSS de las bibliotecas de cliente a las que se hace referencia.
 * **js** - Carga solamente los archivos JavaScript de las bibliotecas cliente a las que se hace referencia.
@@ -74,7 +74,7 @@ En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda
 
 Cada plantilla de ayuda espera una opción `categories` para hacer referencia a las bibliotecas de cliente deseadas. Esa opción puede ser una matriz de valores de cadena o una cadena que contenga una lista de valores separados por comas.
 
-Para obtener más información y un ejemplo de uso, consulte el documento [Introducción al lenguaje de plantilla de HTML](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Para obtener más información y un ejemplo de uso, consulte el documento [Introducción al lenguaje de plantilla de HTML](https://helpx.adobe.com/es/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Uso de JSP {#using-jsp}
 
