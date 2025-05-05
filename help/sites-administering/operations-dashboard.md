@@ -659,7 +659,7 @@ El **Panel de información general del sistema** muestra información general de
 
 >[!NOTE]
 >
->También puedes [ver este vídeo](https://video.tv.adobe.com/v/21340) para ver una introducción al Panel de información general del sistema.
+>También puedes [ver este vídeo](https://video.tv.adobe.com/v/40159?captions=spa) para ver una introducción al Panel de información general del sistema.
 
 ### Cómo Acceder A {#how-to-access}
 

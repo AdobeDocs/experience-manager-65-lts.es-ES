@@ -12,7 +12,7 @@ ht-degree: 68%
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) vienen con un [carro de compras](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) listo para usar que procesa un carro de compras y un formulario de cierre de compra. El carro de compras requiere [AEM Dispatcher con la configuración de enrutamiento de GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher). El siguiente vídeo detalla una configuración local y la configuración mediante una imagen de Docker.
 
->[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32904/?quality=12&captions=spa)
 
 Puede encontrar más información sobre este tema en los siguientes recursos:
 

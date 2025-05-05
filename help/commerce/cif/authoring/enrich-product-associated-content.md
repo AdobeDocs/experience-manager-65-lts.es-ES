@@ -18,19 +18,19 @@ Descubra cómo los especialistas en marketing pueden enriquecer los datos de pro
 
 ## Recursos digitales
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447312/?quality=12&learn=on&captions=spa)
 
 Los recursos digitales se pueden asociar con uno o más SKU de producto. Una vez asociado, el recurso digital se puede descubrir con búsquedas de palabras clave basadas en el SKU. El recurso también aparecerá automáticamente como contenido asociado al editar una página que incluya el producto correspondiente, lo que facilita aún más la creación de la siguiente experiencia digital
 
 ## Fragmentos de experiencias
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343337/?quality=12&learn=on&captions=spa)
 
 Los fragmentos de experiencias son una característica de Adobe Experience Manager que permite a un experto en marketing crear contenido reutilizable **unstructured**. Los fragmentos de experiencias se pueden asociar a un SKU de producto o a un ID de catálogo. Una vez asociados, los especialistas en marketing pueden descubrir fácilmente fragmentos relacionados basados en los productos mostrados en una página. Los fragmentos de experiencias también se pueden incluir dinámicamente en una página del catálogo de productos mediante el uso de un marcador de posición y una asociación.
 
 ## Fragmentos de contenido
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452160/?quality=12&learn=on&captions=spa)
 
 Los fragmentos de contenido son una característica de Adobe Experience Manager que permite a un experto en marketing crear contenido **estructurado** reutilizable. Los fragmentos de contenido se pueden asociar a un SKU de producto o a un ID de catálogo. Una vez asociados, los especialistas en marketing pueden descubrir fácilmente fragmentos relacionados basados en los productos mostrados en una página. Los fragmentos de contenido también se pueden incluir dinámicamente en una página del catálogo de productos mediante el uso de un marcador de posición y una asociación.
 
