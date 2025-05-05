@@ -110,7 +110,7 @@ Y usamos las siguientes definiciones de teaser:
 
 Entonces, si aplicamos esto a un visitante donde:
 
-* **S1**, **S2 y **S6** se resolvieron correctamente
+* **S1**, **S2 y &#x200B;** S6** se resolvieron correctamente
 
 * la etiqueta **marketing** tiene tres visitas
 * la etiqueta **business** tiene seis visitas

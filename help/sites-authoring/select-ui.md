@@ -103,9 +103,11 @@ El sistema puede anular la configuración definida por un usuario o un administr
 * Al crear páginas:
 
    * Se fuerza el uso del editor clásico al acceder a la página con `cf#` en la dirección URL. Por ejemplo:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Se fuerza el uso del editor táctil al usar `/editor.html` en la URL o al usar un dispositivo táctil. Por ejemplo:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Cualquier forzamiento es temporal y solo es válido para la sesión del explorador

@@ -92,7 +92,7 @@ Puede crear una Live Copy de cualquier página:
 La única diferencia es que la disponibilidad del comando **Despliegue** en las páginas de origen/modelo depende de si una configuración de modelo hace referencia al origen:
 
 * Si crea la Live Copy a partir de una página de origen a la que se hace referencia **is** en una configuración de modelo, el comando Despliegue estará disponible en las páginas de origen/modelo.
-* Si crea la Live Copy a partir de una página de origen a la que no se hace referencia **1} en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.**
+* Si crea la Live Copy a partir de una página de origen a la que no se hace referencia **1&rbrace; en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.**
 
 Para crear una Live Copy:
 

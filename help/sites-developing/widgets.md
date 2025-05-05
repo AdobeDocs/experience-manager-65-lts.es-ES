@@ -374,7 +374,7 @@ Los widgets listos para usar que se envían con AEM deben cubrir la mayoría de 
 * el cuadro de diálogo Examinar árbol (nodo `treebrowse` ) muestra una ventana con una pestaña que contiene un widget de exploración de rutas: al hacer clic en la flecha, se abre una ventana en la que puede examinar una jerarquía y seleccionar un elemento. A continuación, la ruta del elemento se agrega al campo de ruta y se mantiene cuando se cierra el cuadro de diálogo.
 * un cuadro de diálogo basado en el complemento Editor de texto enriquecido (nodo `rteplugin` ) que agrega un botón personalizado al Editor de texto enriquecido para insertar texto personalizado en el texto principal. Consiste en un widget `richtext` (RTE) y una característica personalizada que se agrega a través del mecanismo de complemento RTE.
 
-Los widgets personalizados y el complemento están incluidos en el componente denominado **3. Widgets personalizados del** paquete Using ExtJS Widgets.**** Para incluir este componente en la Página de ejemplo:
+Los widgets personalizados y el complemento están incluidos en el componente denominado **3. Widgets personalizados del** paquete Using ExtJS Widgets.**&#x200B;** Para incluir este componente en la Página de ejemplo:
 
 1. añadir el **3. Componente Widgets** personalizados al Página de muestra de la **pestaña Uso de widgets de** ExtJS en la **barra de tareas**.
 1. El componente muestra un título, texto y, al hacer clic en el **vincular PROPIEDADES** , las propiedades del párrafo almacenadas en el repositorio. Al volver a hacer clic en se ocultan las propiedades.
@@ -394,6 +394,7 @@ El cuadro de diálogo **Multicampo personalizado** basado en widgets:
 * El widget `multifield` tiene un elemento fieldconfig (tipo de nodo = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) basado en el elemento xtype personalizado &#39; `ejstcustom`&#39;:
    * `fieldconfig` es una opción de configuración del objeto ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
    * &#39; `optionsProvider`&#39; es una configuración del widget `ejstcustom`. Se configura con el método `Ejst.x3.provideOptions` que se define en `exercises.js` en:
+
      `/apps/extjstraining/clientlib/js/exercises.js`
 y devuelve dos opciones.
 * Definido por el nodo `multifield` en:
@@ -544,6 +545,7 @@ El código JavaScript incrustado en el componente jsp:
 * Si la ventana que muestra el árbol no existe, se crea `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)):
    * `treePanel` contiene los datos utilizados para crear la ventana.
    * Los datos se recuperan llamando al servlet registrado en:
+
      `/bin/wcm/siteadmin/tree.json`
 * El agente de escucha `beforeload` se asegura de que se ha cargado el nodo seleccionado.
 * El objeto `root` establece la ruta de acceso `apps/extjstraining` como raíz de árbol.
@@ -630,8 +632,10 @@ El archivo JavaScript (`defaultgrid.js`) al que se hace referencia en el compone
   `store.load();`
 * `gridPanel` es un objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` que consume `store`:
    * las anchuras de columna siempre se redimensionan:
+
      `forceFit: true`
    * solo se puede seleccionar una fila a la vez:
+
      `singleSelect:true`
 
 #### Ejemplo 2: Cuadrícula de búsqueda de referencia {#example-reference-search-grid}
@@ -642,7 +646,7 @@ Al instalar el paquete, `content.jsp` del componente **Información general de c
 * Se basa en los datos recuperados del repositorio mediante una llamada a un servlet.
 * Las celdas de la última columna se pueden editar. El valor se mantiene en una propiedad `test` debajo del nodo definido por la ruta mostrada en la primera columna.
 
-Como se explica en la sección anterior, el objeto window obtiene su objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` llamando al método `getGridPanel()` definido en el archivo `defaultgrid.js` en `/apps/extjstraining/components/gridoverview/defaultgrid.js`. El componente **Información general de cuadrícula ** proporciona una implementación diferente para el método `getGridPanel()`, definido en el archivo `referencesearch.js` en `/apps/extjstraining/components/gridoverview/referencesearch.js`. Al cambiar el archivo .js al que se hace referencia en el componente jsp, la cuadrícula se basa en los datos recuperados del repositorio.
+Como se explica en la sección anterior, el objeto window obtiene su objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` llamando al método `getGridPanel()` definido en el archivo `defaultgrid.js` en `/apps/extjstraining/components/gridoverview/defaultgrid.js`. El componente **Información general de cuadrícula &#x200B;** proporciona una implementación diferente para el método `getGridPanel()`, definido en el archivo `referencesearch.js` en `/apps/extjstraining/components/gridoverview/referencesearch.js`. Al cambiar el archivo .js al que se hace referencia en el componente jsp, la cuadrícula se basa en los datos recuperados del repositorio.
 
 Cambie el archivo .js al que se hace referencia en el componente jsp:
 
@@ -672,6 +676,7 @@ Las celdas de la columna &quot;Prueba&quot; se pueden editar tal como se definen
 * `gridPanel` es un objeto ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` que se puede editar:
    * se basa en el `store` predefinido y en el modelo de columna `cm`
    * solo se puede seleccionar una fila a la vez:
+
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * el agente de escucha `afteredit` se asegura de que después de editar una celda de la columna &quot;**Test**&quot;:
       * la propiedad &#39;`test`&#39; del nodo en la ruta definida por la columna &quot;**jcr:path**&quot; se establece en el repositorio con el valor de la celda

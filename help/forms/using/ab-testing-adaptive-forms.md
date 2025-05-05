@@ -108,7 +108,7 @@ Puede seleccionar la audiencia cuando configure las pruebas A/B para un formular
 1. Haga clic en la herramienta **Seleccionar** en la barra de herramientas y seleccione el formulario adaptable.
 1. Haga clic en **Más** en la barra de herramientas y seleccione **Configurar pruebas A/B**. Se abrirá la página Configurar prueba A/B.
 
-[](assets/ab-test-configure-1.png)
+[&#128279;](assets/ab-test-configure-1.png)
 
 1. Especifique un **Nombre de la actividad** para la prueba A/B.
 
@@ -152,7 +152,7 @@ Para ver y analizar el informe de prueba A/B:
 
 1. Seleccione el formulario adaptable, haga clic en **Más** y, a continuación, haga clic en **Informe de prueba A/B**. Se mostrará el informe.
 
-[](assets/ab-test-report-3.png)
+[&#128279;](assets/ab-test-report-3.png)
 
 1. Analice el informe y compruebe si tiene suficientes datos para declarar como ganadora a la experiencia con mejor rendimiento. Puede optar por continuar con la misma prueba A/B durante más tiempo o declarar un ganador y finalizarla.
 1. Para declarar un ganador y finalizar la prueba A/B, haga clic en el botón **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.

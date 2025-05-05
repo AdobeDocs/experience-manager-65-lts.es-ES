@@ -405,7 +405,7 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
 * **serviceConfig:** Un objeto que contiene las siguientes propiedades:
 
    * host: (cadena) nombre del servidor o dirección IP.
-   * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
+   * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
    * params: Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
    * path: (String) Ruta al servicio.
    * port: (número) número de puerto del servicio.
@@ -434,7 +434,7 @@ Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El 
 Un objeto con las siguientes propiedades:
 
 * **host:** (cadena) El nombre del servidor o la dirección IP.
-* **jsonp:** (booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
+* **jsonp:** (booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
 
 * **parámetros:** parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
 * **ruta de acceso:** (cadena) Ruta de acceso al servicio.

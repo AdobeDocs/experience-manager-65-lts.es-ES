@@ -100,10 +100,10 @@ Para solucionar el problema, puede probar lo siguiente:
 * Compruebe las ACL en `/etc/cloudservices`. Las ACL deben ser:
 
    * permitir; jcr:read; webservice-support-servicelibfinder
-   * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults`
-   * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public`
+   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
+   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
+   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
+   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
 
 Para obtener más información sobre la administración de ACL, lea la página [Administración de usuarios y seguridad](/help/sites-administering/security.md#permissions-in-aem).
 

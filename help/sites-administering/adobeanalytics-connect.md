@@ -173,7 +173,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 
 1. En la consola **Sites**, seleccione la página que desee configurar con seguimiento.
 1. Abra **[Propiedades de página](/help/sites-authoring/editing-page-properties.md)**, ya sea directamente desde la consola o desde el editor de páginas.
-1. Abra la pestaña ** Cloud Services**.
+1. Abra la pestaña **&#x200B; Cloud Services**.
 
 1. Utilice la lista desplegable **Agregar configuración** para seleccionar **Adobe Analytics** de las opciones disponibles. Si se hereda, desactívelo antes de que el selector esté disponible.
 

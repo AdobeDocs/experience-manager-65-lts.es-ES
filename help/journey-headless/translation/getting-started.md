@@ -87,6 +87,7 @@ Dado que los modelos de contenido definen la estructura de tu contenido, debes s
 1. Se abrirá el **Editor de modelos de fragmento de contenido**.
    1. La columna izquierda contiene los campos del modelo. Esta columna nos interesa.
    1. La columna derecha contiene los campos que se pueden agregar al modelo. Esta columna se puede ignorar.
+
       ![Editor del modelo de fragmentos de contenido](assets/content-fragment-model-editor.png)
 1. Haga clic en uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)

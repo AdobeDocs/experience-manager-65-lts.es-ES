@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ![Imagen-héroe](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
 
 Una vez que el formulario adaptable esté listo, puede publicarlo para que los usuarios finales puedan acceder a él. Los usuarios finales pueden abrir el formulario publicado en cualquier dispositivo y explorador de Internet. Cuando se publica un formulario adaptable, el formulario y el contenido relacionado se copian de una instancia de autor de AEM a una instancia de publicación. El formulario está disponible para el usuario final a través de la instancia de publicación.
 

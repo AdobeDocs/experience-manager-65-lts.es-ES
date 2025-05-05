@@ -451,7 +451,7 @@ Al marcar la casilla **Incluir tiempo de ejecución** antes de ejecutar la consu
 
 El propósito del Administrador de índices es facilitar la administración de índices, como el mantenimiento de índices o la visualización de su estado.
 
-Se puede acceder a él desde **Herramientas - Operaciones - Diagnóstico **desde la pantalla de bienvenida y, a continuación, haciendo clic en el botón **Administrador de índices**.
+Se puede acceder a él desde **Herramientas - Operaciones - Diagnóstico &#x200B;** desde la pantalla de bienvenida y, a continuación, haciendo clic en el botón **Administrador de índices**.
 
 También se puede obtener acceso a él directamente desde esta dirección URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

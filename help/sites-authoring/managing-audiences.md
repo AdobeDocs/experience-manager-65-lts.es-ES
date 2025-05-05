@@ -64,7 +64,7 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 >[!NOTE]
 >
->Si no ve **Crear audiencia de Target **en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
+>Si no ve **Crear audiencia de Target &#x200B;** en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
 
 Para crear una audiencia de Adobe Target:
 
@@ -72,7 +72,7 @@ Para crear una audiencia de Adobe Target:
 
    ![captura de pantalla_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. En la consola Audiencias, haga clic en **Crear** y, a continuación** Crear audiencia de destino**.
+1. En la consola Audiencias, haga clic en **Crear** y, a continuación **&#x200B; Crear audiencia de destino**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

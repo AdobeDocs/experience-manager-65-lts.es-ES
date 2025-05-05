@@ -110,7 +110,7 @@ A continuación, se enumeran las propiedades tal como se muestran en la consola 
 * **Componentes correctos**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descripción**: Una lista de los componentes que desea que se vean afectados por los comandos Deshacer y Rehacer. Añada rutas de componentes a esta lista cuando funcionen correctamente con Deshacer/Rehacer. Anexe un asterisco (&amp;ast;) para especificar un grupo de componentes:
+   * **Descripción**: Una lista de los componentes que desea que se vean afectados por los comandos Deshacer y Rehacer. Añada rutas de componentes a esta lista cuando funcionen correctamente con Deshacer/Rehacer. Anexe un asterisco (&ast;) para especificar un grupo de componentes:
 
       * El siguiente valor especifica el componente de texto de base:
 

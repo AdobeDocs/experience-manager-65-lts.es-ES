@@ -113,7 +113,7 @@ En la siguiente sección se describe cómo editar el archivo HTML para convertir
 
 Antes de realizar la importación, tenga en cuenta las siguientes limitaciones:
 
-### No se conserva ningún atributo como class o id aplicado en la etiqueta &amp;lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### No se conserva ningún atributo como class o id aplicado en la etiqueta &lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Si se aplica algún atributo como id o class en la etiqueta body por ejemplo, `<body id="container">`, no se conservará después de la importación. Por lo tanto, el diseño que se esté importando no debería tener dependencias en los atributos aplicados en la etiqueta `<body>`.
 
@@ -469,7 +469,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 Esto se debe a que elementos html adicionales como la etiqueta &lt;div> se añaden al HTML generado después de la importación.
 
 * Tampoco se recomiendan los scripts que dependen de una estructura similar a la anterior para su uso con elementos marcados para su conversión a componentes de AEM.
-* No se recomienda el uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
+* No se recomienda el uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&ast;&quot;>.
 * El diseño debe seguir las prácticas recomendadas de las plantillas HTML5. Más información sobre: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuración de módulos OSGI {#configuring-osgi-modules}
@@ -530,7 +530,7 @@ En la tabla siguiente se describen brevemente las propiedades:
 >
 >Por ejemplo, si la configuración predeterminada es
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Y necesita reemplazar `CQ_DESIGN_PATH` con `VIPURL` en el patrón de búsqueda, entonces el patrón de búsqueda debería tener este aspecto:
 >

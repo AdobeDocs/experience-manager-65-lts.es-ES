@@ -69,7 +69,7 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 1. En Seguridad administrativa, seleccione **Funciones de usuario administrativo**.
 1. Haga clic en Agregar y haga lo siguiente:
 
-   1. Escriba **&amp;ast;** en el cuadro de búsqueda y haga clic en buscar.
+   1. Escriba **&ast;** en el cuadro de búsqueda y haga clic en buscar.
    1. Haga clic en **Administrador** en los roles.
    1. Agregue el usuario recién creado a la función Asignado a y asígnelo al administrador.
 

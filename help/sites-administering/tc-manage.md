@@ -376,7 +376,7 @@ Para comparar las copias de idioma con el idioma principal:
 1. En la consola **Sites**, vaya a la copia de idioma que desee comparar.
 1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)**.
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
-1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro **o **Comparar con anterior **si procede.
+1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro &#x200B;** o **Comparar con anterior &#x200B;** si procede.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 

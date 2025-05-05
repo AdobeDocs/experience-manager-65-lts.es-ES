@@ -44,6 +44,7 @@ Una campaña es una colección de **experiencias** individuales.
 El contenido enfocado forma las distintas experiencias que se presentan al visitante en **puntos de contacto**. Hay varios tipos de experiencia disponibles:
 
    * **Teasers**
+
      [Páginas teaser / Párrafos](#teasers) se usan para dirigir a visitantes específicos **Segmentos** a contenido que se centra en sus intereses.
 
      Las páginas teaser pueden:

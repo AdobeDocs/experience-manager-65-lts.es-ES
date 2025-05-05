@@ -51,7 +51,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
 
-   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
@@ -65,6 +65,7 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Previsualización y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
+
         [Previsualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](previewing-assets.md)
         [Ver representaciones de vídeo](video-renditions.md)
         [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
@@ -75,9 +76,11 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Trabajo con metadatos de vídeo
 
       * Vea las propiedades de una representación de vídeo codificada, como velocidad de fotogramas, velocidad de bits de audio y vídeo y códec:
+
         [Ver propiedades de representación de vídeo](video-renditions.md)
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
+
         [Editar propiedades de vídeo](manage-assets.md#editing-properties)
 
       * [Administración de metadatos para recursos digitales](metadata.md)
@@ -102,9 +105,11 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Si utiliza un sistema de administración de contenido web de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
+
         [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante código incrustado en una página web:
+
         [Incrustar el visor de vídeo en una página web](embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).

@@ -89,7 +89,7 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
       * **Consulta de validación:** especifica una consulta SQL SELECT para validar conexiones desde el grupo. La consulta debe devolver al menos una fila. Por ejemplo, **seleccione &#42; desde customerdetails**.
       * **Aislamiento de transacciones**: establezca el valor en **READ_COMMITTED**.
 
-        Deje otras propiedades con los valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predeterminados [y seleccione **[!UICONTROL Guardar]**.
+        Deje otras propiedades con los valores[&#128279;](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predeterminados y seleccione **[!UICONTROL Guardar]**.
 
         Se creará una configuración similar a la siguiente.
 
@@ -223,7 +223,7 @@ Haga lo siguiente para ejecutar la prueba:
 
 1. Vaya a la ficha **[!UICONTROL Modelo]**, seleccione el objeto del modelo de datos **customerdetails** y seleccione **[!UICONTROL Objeto del modelo de prueba]**.
 1. En la ventana [!UICONTROL Modelo/servicio de prueba], seleccione **[!UICONTROL Objeto del modelo de lectura]** de la lista desplegable **[!UICONTROL Seleccionar modelo/servicio]**.
-1. En la **sección customerdetails**, especifique un valor para el argumento id **** que existe en la base de datos configurada [!DNL MySQL] y seleccione **[!UICONTROL Test]**.
+1. En la **sección customerdetails**, especifique un valor para el argumento id **&#x200B;**&#x200B;que existe en la base de datos configurada [!DNL MySQL] y seleccione **[!UICONTROL Test]**.
 
    Los detalles del cliente asociados con el ID especificado se recuperan y se muestran en la sección **[!UICONTROL Salida]** como se muestra a continuación.
 

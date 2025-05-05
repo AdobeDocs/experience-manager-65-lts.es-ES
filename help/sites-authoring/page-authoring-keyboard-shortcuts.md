@@ -41,13 +41,13 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Una vez que el usuario empieza a interactuar con la página en modo de vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
+>&ast; Una vez que el usuario empieza a interactuar con la página en modo de vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
-Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 

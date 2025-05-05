@@ -163,7 +163,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
    ![El cliente detalla el texto estático](assets/customer_details_static_text_new.png)
 
 1. Coloque el cursor junto al campo **Número de móvil** y haga doble clic en la propiedad **cliente** > **mobilenum**.
-1. Coloque el cursor junto al **Número de contacto alternativo** y haga doble clic en la propiedad ** cliente** > **alternatemobilenumber**.
+1. Coloque el cursor junto al **Número de contacto alternativo** y haga doble clic en la propiedad **&#x200B; cliente** > **alternatemobilenumber**.
 1. Coloque el cursor junto al campo **Número de relación** y haga doble clic en la propiedad **cliente** > **relationshipnumber**.
 1. Seleccione la pestaña **Variables**, coloque el cursor junto al campo **Lugar de suministro** y haga doble clic en la variable **Placesupply**.
 1. Coloque el cursor junto al campo **Código de estado** y haga doble clic en la variable **Statecode**.

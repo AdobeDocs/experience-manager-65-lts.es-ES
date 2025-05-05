@@ -251,7 +251,7 @@ Los permisos de etiqueta son [&#39;seguros (de forma predeterminada)&#39;](/help
       * por ejemplo, vaya a http://localhost:4502/useradmin
 
    * en el panel izquierdo, seleccione el grupo (o usuario) para el que se debe otorgar [permiso de lectura](/help/sites-administering/security.md#permissions)
-   * en el panel derecho, busque el **Path **to the Tag Namespace
+   * en el panel derecho, busque el **Path &#x200B;** to the Tag Namespace
 
       * por ejemplo, `/content/cq:tags/mycommunity`
 

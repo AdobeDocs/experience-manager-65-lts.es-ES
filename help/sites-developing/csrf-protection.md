@@ -44,6 +44,6 @@ Para utilizar los tokens, debe replicar el binario HMAC en todas las instancias 
 
 >[!NOTE]
 >
->Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
+>Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
 >
-Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página de OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).
+>Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página de OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).

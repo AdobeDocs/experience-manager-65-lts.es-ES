@@ -209,11 +209,11 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de ImageServer proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
    >
-   Ejemplo de nombre de archivo de registro de Image Server: `ImageServer-57346-2020-07-25.log`
+   >Ejemplo de nombre de archivo de registro de Image Server: `ImageServer-57346-2020-07-25.log`
    >
-   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media a través de `/is/image` y `/is/content`.
+   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media a través de `/is/image` y `/is/content`.
    >
-   Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Descargar completo** que se genera desde la página `system/console/status-Bundlelist`; cuando llame a la atención al cliente si tiene un problema de Dynamic Media, anexe ambos registros al problema.
+   >Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Descargar completo** que se genera desde la página `system/console/status-Bundlelist`; cuando llame a la atención al cliente si tiene un problema de Dynamic Media, anexe ambos registros al problema.
 
 ### Si instaló Experience Manager en un puerto o ruta de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -232,7 +232,7 @@ En una implementación WAR de Experience Manager QuickStart, el número de puert
 
 >[!NOTE]
 >
-En una implementación independiente de [Experience Manager Quickstart](/help/sites-deploying/deploy.md), no suele ser necesario configurar un **dominio propio**, ya que el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el **dominio propio**.
+>En una implementación independiente de [Experience Manager Quickstart](/help/sites-deploying/deploy.md), no suele ser necesario configurar un **dominio propio**, ya que el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el **dominio propio**.
 
 ## Deshabilitar Dynamic Media  {#disabling-dynamic-media}
 
@@ -254,9 +254,9 @@ Para deshabilitar Dynamic Media después de haberla habilitado, quite la marca d
 
    >[!NOTE]
    >
-   Una vez deshabilitado el modo de ejecución de Dynamic Media, el paso de flujo de trabajo que genera la representación de `cqdam.pyramid.tiff` se omite automáticamente. También deshabilita la compatibilidad con representaciones dinámicas y otras funciones de Dynamic Media.
+   >Una vez deshabilitado el modo de ejecución de Dynamic Media, el paso de flujo de trabajo que genera la representación de `cqdam.pyramid.tiff` se omite automáticamente. También deshabilita la compatibilidad con representaciones dinámicas y otras funciones de Dynamic Media.
    >
-   Tenga en cuenta también que cuando el modo de ejecución de Dynamic Media está deshabilitado después de configurar el servidor de Experience Manager, todos los recursos que se cargaron en ese modo de ejecución ahora no son válidos.
+   >Tenga en cuenta también que cuando el modo de ejecución de Dynamic Media está deshabilitado después de configurar el servidor de Experience Manager, todos los recursos que se cargaron en ese modo de ejecución ahora no son válidos.
 
 ## (Opcional) Migre los ajustes preestablecidos y las configuraciones de Dynamic Media de la versión 6.3 a la versión 6.5 sin tiempo de inactividad {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -264,7 +264,7 @@ Si actualiza Experience Manager Dynamic Media de 6.3 a 6.5 (que ahora incluye la
 
 >[!NOTE]
 >
-Si ejecuta la instancia de Experience Manager en modo de compatibilidad (es decir, tiene instalado el paquete de compatibilidad), no necesita ejecutar estos comandos.
+>Si ejecuta la instancia de Experience Manager en modo de compatibilidad (es decir, tiene instalado el paquete de compatibilidad), no necesita ejecutar estos comandos.
 
 Para todas las actualizaciones, ya sea con o sin el paquete de compatibilidad, puede copiar los ajustes preestablecidos predeterminados del visualizador incorporado originalmente con Dynamic Media ejecutando el siguiente comando Linux® curl:
 
@@ -289,13 +289,13 @@ Después de configurar el agente de replicación, debe [validar y probar que se 
 
 >[!NOTE]
 >
-El límite de memoria predeterminado para la creación de PTIFF es de 3 GB en todos los flujos de trabajo. Por ejemplo, puede procesar una imagen que requiera 3 GB de memoria mientras otros flujos de trabajo están en pausa, o puede procesar 10 imágenes en paralelo que requieran 300 MB de memoria cada una.
+>El límite de memoria predeterminado para la creación de PTIFF es de 3 GB en todos los flujos de trabajo. Por ejemplo, puede procesar una imagen que requiera 3 GB de memoria mientras otros flujos de trabajo están en pausa, o puede procesar 10 imágenes en paralelo que requieran 300 MB de memoria cada una.
 >
-El límite de memoria es configurable y se ajusta a la disponibilidad de recursos del sistema y al tipo de contenido de imagen que se procesa. Si tiene muchos recursos grandes y memoria suficiente en el sistema, puede aumentar este límite para asegurarse de que las imágenes se procesen en paralelo.
+>El límite de memoria es configurable y se ajusta a la disponibilidad de recursos del sistema y al tipo de contenido de imagen que se procesa. Si tiene muchos recursos grandes y memoria suficiente en el sistema, puede aumentar este límite para asegurarse de que las imágenes se procesen en paralelo.
 >
-Se rechaza una imagen que requiera más del límite máximo de memoria.
+>Se rechaza una imagen que requiera más del límite máximo de memoria.
 >
-Para cambiar el límite de memoria para la creación de PTIFF, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** y cambie el valor de **[!UICONTROL maxMemory]**.
+>Para cambiar el límite de memoria para la creación de PTIFF, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** y cambie el valor de **[!UICONTROL maxMemory]**.
 
 ### Configurar autenticación {#setting-up-authentication}
 
@@ -319,7 +319,7 @@ Configure la autenticación de replicación en el autor para que pueda replicar 
 
    >[!NOTE]
    >
-   Recuerde la contraseña porque debe introducirla de nuevo cuando configure el Agente de replicación más adelante.
+   >Recuerde la contraseña porque debe introducirla de nuevo cuando configure el Agente de replicación más adelante.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
@@ -378,10 +378,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
-También puede comprobarlo realizando una de las siguientes acciones:
+>También puede comprobarlo realizando una de las siguientes acciones:
 >
-* Compruebe los registros de replicación para asegurarse de que el recurso esté replicado.
-* Publique una imagen. Seleccione la imagen y seleccione **[!UICONTROL Visualizadores]** en el menú desplegable; a continuación, seleccione un ajuste preestablecido de visualizador. Seleccione **[!UICONTROL URL]**. Para comprobar que puede ver la imagen, copie y pegue la ruta URL en el explorador.
+>* Compruebe los registros de replicación para asegurarse de que el recurso esté replicado.
+>* Publique una imagen. Seleccione la imagen y seleccione **[!UICONTROL Visualizadores]** en el menú desplegable; a continuación, seleccione un ajuste preestablecido de visualizador. Seleccione **[!UICONTROL URL]**. Para comprobar que puede ver la imagen, copie y pegue la ruta URL en el explorador.
 >
 
 ### Solucionar problemas de autenticación {#troubleshooting-authentication}
@@ -544,7 +544,7 @@ Como parte de la configuración, debe introducir un ID de registro, una URL de s
 
 >[!NOTE]
 >
-Antes de configurar los servicios en la nube de Dynamic Media, asegúrese de tener configurada la instancia de publicación. También debe tener configurada la replicación antes de configurar los servicios en la nube de Dynamic Media.
+>Antes de configurar los servicios en la nube de Dynamic Media, asegúrese de tener configurada la instancia de publicación. También debe tener configurada la replicación antes de configurar los servicios en la nube de Dynamic Media.
 
 **Para configurar los servicios de nube de Dynamic Media:**
 
@@ -685,7 +685,7 @@ Consulte [Publicar ajustes preestablecidos del visor](/help/assets/managing-view
 
 >[!NOTE]
 >
-De manera predeterminada, el sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** y varios ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar o disminuir el número de visualizaciones. Vea [Aumentar el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumentar el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>De manera predeterminada, el sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** y varios ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar o disminuir el número de visualizaciones. Vea [Aumentar el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumentar el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtrado de recursos para la replicación {#filtering-assets-for-replication}
 
@@ -748,7 +748,7 @@ Si usa Dynamic Media para (1) imágenes en producción *o* (2) imágenes y víde
 
 >[!NOTE]
 >
-Los filtros se aplican a los tipos MIME y no pueden ser específicos de la ruta.
+>Los filtros se aplican a los tipos MIME y no pueden ser específicos de la ruta.
 
 ### Configurar filtros de recursos para implementaciones solo de vídeo {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -790,9 +790,9 @@ Estos pasos configuran la instancia de publicación de Experience Manager para e
 
 >[!NOTE]
 >
-Si hay muchos filtros diferentes en un autor, cada agente necesita que se le asigne un usuario diferente. El código Granite aplica un modelo de filtro por usuario. Siempre tenga un usuario diferente para cada configuración de filtro.
+>Si hay muchos filtros diferentes en un autor, cada agente necesita que se le asigne un usuario diferente. El código Granite aplica un modelo de filtro por usuario. Siempre tenga un usuario diferente para cada configuración de filtro.
 >
-¿Está utilizando más de un filtro en un servidor? Por ejemplo, un filtro para que se publique la replicación y un segundo filtro para la entrega de s7. Si es así, debe asegurarse de que estos dos filtros tengan un **userId** diferente asignado en el nodo `jcr:content`. Vea la siguiente imagen:
+>¿Está utilizando más de un filtro en un servidor? Por ejemplo, un filtro para que se publique la replicación y un segundo filtro para la entrega de s7. Si es así, debe asegurarse de que estos dos filtros tengan un **userId** diferente asignado en el nodo `jcr:content`. Vea la siguiente imagen:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -843,7 +843,7 @@ La configuración del servidor de imágenes de Dynamic Media implica la edición
 
 >[!NOTE]
 >
-Dynamic Media funciona de forma predeterminada [después de habilitarse](#enabling-dynamic-media). Sin embargo, si lo desea, puede ajustar la instalación configurando el servidor de imágenes de Dynamic Media para que cumpla determinadas especificaciones o requisitos.
+>Dynamic Media funciona de forma predeterminada [después de habilitarse](#enabling-dynamic-media). Sin embargo, si lo desea, puede ajustar la instalación configurando el servidor de imágenes de Dynamic Media para que cumpla determinadas especificaciones o requisitos.
 
 **Requisito previo** - *Antes* de configurar el servidor de imágenes de Dynamic Media, asegúrese de que su VM de Windows® incluya una instalación de las bibliotecas de Microsoft® Visual C++. Las bibliotecas son necesarias para ejecutar Dynamic Media Image Server. Puede [descargar el paquete redistribuible de Microsoft® Visual C++ 2010 (x64) aquí](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
@@ -862,7 +862,7 @@ Para establecer la configuración del servidor de imágenes de Dynamic Media:
 
    >[!NOTE]
    >
-   Normalmente, no es necesario cambiar los valores predeterminados. Sin embargo, si cambia los valores predeterminados, debe reiniciar el paquete para que los cambios surtan efecto.
+   >Normalmente, no es necesario cambiar los valores predeterminados. Sin embargo, si cambia los valores predeterminados, debe reiniciar el paquete para que los cambios surtan efecto.
 
    | Propiedad | Valor predeterminado | Descripción |
    | --- | --- | --- |
@@ -879,7 +879,7 @@ Para establecer la configuración del servidor de imágenes de Dynamic Media:
 
    >[!NOTE]
    >
-   El servidor de imágenes de Dynamic Media utiliza su propia caché de disco para almacenar en caché las respuestas. La caché HTTP de Experience Manager y Dispatcher no se pueden usar para almacenar en caché las respuestas del servidor de imágenes de Dynamic Media.
+   >El servidor de imágenes de Dynamic Media utiliza su propia caché de disco para almacenar en caché las respuestas. La caché HTTP de Experience Manager y Dispatcher no se pueden usar para almacenar en caché las respuestas del servidor de imágenes de Dynamic Media.
 
    | Propiedad | Valor predeterminado | Descripción |
    |---|---|---|
@@ -938,7 +938,7 @@ Los casos de uso avanzados podrían utilizar un modificador `icc=` de configurac
 
 >[!NOTE]
 >
-El conjunto estándar de perfiles de color de Adobe solo está disponible si tiene instalado [Feature Pack 12445 de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Todos los paquetes de funciones y paquetes de servicio están disponibles en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
+>El conjunto estándar de perfiles de color de Adobe solo está disponible si tiene instalado [Feature Pack 12445 de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Todos los paquetes de funciones y paquetes de servicio están disponibles en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
 
 
 ### Instalación del paquete de funciones 12445 {#installing-feature-pack}
@@ -1040,7 +1040,7 @@ Después de instalar el paquete de funciones, configure los perfiles de color pr
 
 >[!NOTE]
 >
-Los nombres de propiedad distinguen entre mayúsculas y minúsculas y deben estar en minúscula.
+>Los nombres de propiedad distinguen entre mayúsculas y minúsculas y deben estar en minúscula.
 
 **Tabla de perfiles de color**
 
@@ -1251,23 +1251,23 @@ Consulte [Entrega de Dynamic Media Assets](/help/assets/delivering-dynamic-media
   <tr>
    <td>Copiar el código incrustado de un visor</td>
    <td><p>El cuadro de diálogo Copiar código incrustado muestra un fragmento de código similar al siguiente (el ejemplo de código es solo para fines de demostración):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>Donde <code>PUBLISHNODE</code> hace referencia al nodo de publicación normal de Experience Manager y <code>IMAGESERVICEPUBLISHNODE</code> hace referencia a la URL del servicio de imágenes.</p> <p>Consulte también <a href="/help/assets/delivering-dynamic-media-assets.md">Entrega de Dynamic Media Assets</a>.</p> </td>
   </tr>
  </tbody>

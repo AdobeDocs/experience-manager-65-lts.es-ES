@@ -95,7 +95,7 @@ Los scripts de formulario que se encuentran en el evento form:ready se ejecutan 
 
 >[!NOTE]
 >
-En un formulario de varias páginas, los cambios realizados por JavaScript en una página no se conservan si se mueve a una página diferente.
+>En un formulario de varias páginas, los cambios realizados por JavaScript en una página no se conservan si se mueve a una página diferente.
 
 Puede invocar scripts personalizados antes de enviar un formulario. Esta función funciona en todos los navegadores disponibles. Sin embargo, solo se puede usar cuando los usuarios procesen el formulario de HTML que tenga la propiedad `Output Type` establecida en `Form Body`. No funcionará cuando `Output Type` tenga `Full HTML`. Consulte Configuración de formularios en la ayuda de administración para ver los pasos necesarios para configurar esta función.
 
@@ -169,7 +169,7 @@ El siguiente script mantiene el `fillColor` de un campo basado en el valor de `h
 
 >[!NOTE]
 >
-Los objetos estáticos no se muestran en un formulario HTML procesado cuando están anidados dentro de una celda de tabla. Por ejemplo, un círculo y un rectángulo anidados dentro de una celda de tabla no se muestran dentro de un formulario de HTML de procesamiento. Sin embargo, estos mismos objetos estáticos se muestran correctamente cuando se encuentran fuera de la tabla.
+>Los objetos estáticos no se muestran en un formulario HTML procesado cuando están anidados dentro de una celda de tabla. Por ejemplo, un círculo y un rectángulo anidados dentro de una celda de tabla no se muestran dentro de un formulario de HTML de procesamiento. Sin embargo, estos mismos objetos estáticos se muestran correctamente cuando se encuentran fuera de la tabla.
 
 ## Firma digital de formularios HTML {#digitally-signing-html-forms}
 
@@ -192,7 +192,7 @@ Se recomienda limitar el uso de reglas de validación para los campos de formula
 
 >[!NOTE]
 >
-Para obtener más información acerca del servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -228,11 +228,11 @@ Las direcciones URL HTTP donde se publican los datos del formulario se pueden es
 
 >[!NOTE]
 >
-La representación de un formulario de HTML con una barra de herramientas es opcional.
+>La representación de un formulario de HTML con una barra de herramientas es opcional.
 
 >[!NOTE]
 >
-Si procesa un formulario AHTML, se recomienda no agregar una barra de herramientas al formulario.
+>Si procesa un formulario AHTML, se recomienda no agregar una barra de herramientas al formulario.
 
 **Procesar un formulario de HTML**
 
@@ -284,7 +284,7 @@ Procesar un formulario de HTML mediante la API de Forms (Java):
 
    >[!NOTE]
    >
-   Forms no se representa correctamente en HTML cuando la opción `StandAlone` es `true` y `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el valor `ApplicationWebRoot` se especifica utilizando el objeto `URLSpec` que se pasa al método `(Deprecated) renderHTMLForm` del objeto `FormsServiceClient`). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI de raíz web en la consola de administración debe establecerse como el valor del URI de aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
+   >Forms no se representa correctamente en HTML cuando la opción `StandAlone` es `true` y `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el valor `ApplicationWebRoot` se especifica utilizando el objeto `URLSpec` que se pasa al método `(Deprecated) renderHTMLForm` del objeto `FormsServiceClient`). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI de raíz web en la consola de administración debe establecerse como el valor del URI de aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Procesar un formulario de HTML
 
@@ -342,7 +342,7 @@ Procesar un formulario de HTML mediante la API de Forms (servicio web):
 
    >[!NOTE]
    >
-   Forms no se representa correctamente en HTML cuando la opción `StandAlone` es `true` y `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el valor `ApplicationWebRoot` se especifica utilizando el objeto `URLSpec` que se pasa al método `(Deprecated) renderHTMLForm` del objeto `FormsServiceClient`). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI de raíz web en la consola de administración debe establecerse como el valor del URI de aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
+   >Forms no se representa correctamente en HTML cuando la opción `StandAlone` es `true` y `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el valor `ApplicationWebRoot` se especifica utilizando el objeto `URLSpec` que se pasa al método `(Deprecated) renderHTMLForm` del objeto `FormsServiceClient`). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI de raíz web en la consola de administración debe establecerse como el valor del URI de aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Procesar un formulario de HTML
 

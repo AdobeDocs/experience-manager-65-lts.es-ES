@@ -311,15 +311,15 @@ Una vez completada la configuración en la nube, es posible que desee probar el 
 
    >[!NOTE]
    >
-   Después de probar los servicios, haga clic en **Cancelar** para asegurarse de que los cambios involuntarios no se propagan al modelo de datos de formulario.
+   >Después de probar los servicios, haga clic en **Cancelar** para asegurarse de que los cambios involuntarios no se propagan al modelo de datos de formulario.
 
    >[!NOTE]
    >
-   Se ha informado de que era necesario reiniciar el servidor de AEM para que la fuente de datos se enlace correctamente al FDM.
+   >Se ha informado de que era necesario reiniciar el servidor de AEM para que la fuente de datos se enlace correctamente al FDM.
 
    >[!NOTE]
    >
-   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
+   >Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 #### Prueba del modelo de datos de Forms (Derby) {#test-fdm-derby}
 
@@ -424,7 +424,7 @@ Los administradores pueden proporcionar a los usuarios permisos de análisis de 
 
 >[!NOTE]
 >
-Los datos de AEM Forms Analytics están disponibles sin conexión o sin una configuración de Adobe Analytics Cloud si el paquete `we-gov-forms.ui.analytics-<version>.zip` está instalado, pero los datos de AEM Sites requieren una configuración de nube activa.
+>Los datos de AEM Forms Analytics están disponibles sin conexión o sin una configuración de Adobe Analytics Cloud si el paquete `we-gov-forms.ui.analytics-<version>.zip` está instalado, pero los datos de AEM Sites requieren una configuración de nube activa.
 
 1. Vaya a *https://&lt;aemserver>:&lt;port>/sites.html/content*.
 1. Seleccione el “Sitio de We.Gov de AEM Forms” para ver las páginas del sitio.
@@ -453,7 +453,7 @@ Los datos de AEM Forms Analytics están disponibles sin conexión o sin una conf
 
 >[!NOTE]
 >
-Los datos de AEM Forms Analytics están disponibles sin conexión o sin una configuración de Adobe Analytics Cloud si el paquete `we-gov-forms.ui.analytics-<version>.zip` está instalado, pero los datos de AEM Sites requieren una configuración de nube activa.
+>Los datos de AEM Forms Analytics están disponibles sin conexión o sin una configuración de Adobe Analytics Cloud si el paquete `we-gov-forms.ui.analytics-<version>.zip` está instalado, pero los datos de AEM Sites requieren una configuración de nube activa.
 
 1. Vaya a
 
@@ -499,7 +499,7 @@ Para que el servicio se comunique correctamente con la herramienta de conversió
 
 >[!NOTE]
 >
-El certificado creado en esta sección se utilizará para crear el servicio de integración en Adobe I/O. Una vez que se crean usuarios en el servicio de integración, estos pueden utilizar esa información de Adobe I/O para finalizar la configuración.
+>El certificado creado en esta sección se utilizará para crear el servicio de integración en Adobe I/O. Una vez que se crean usuarios en el servicio de integración, estos pueden utilizar esa información de Adobe I/O para finalizar la configuración.
 
 #### Creación de la integración en Adobe I/O. {#create-integration-adobeio}
 
@@ -798,7 +798,7 @@ Para configurarlos para que se activen en el flujo de trabajo, los usuarios debe
 
    >[!NOTE]
    >
-   Aunque un usuario habilite el servicio en la página Administrador de configuración, tendrá que establecer una configuración de servicio para comunicarse con los servicios externos solicitados.
+   >Aunque un usuario habilite el servicio en la página Administrador de configuración, tendrá que establecer una configuración de servicio para comunicarse con los servicios externos solicitados.
 
    ![Paquete de formularios de we gov](assets/aftia-configuration-options.jpg)
 

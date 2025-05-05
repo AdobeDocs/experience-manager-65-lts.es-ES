@@ -243,7 +243,7 @@ Los certificados autofirmados se pueden utilizar al configurar AEM para autentic
 
 1. Asegúrese de tener una biblioteca SSL instalada y en funcionamiento. Este procedimiento utiliza OpenSSL como ejemplo.
 
-1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esta configuración se puede realizar copiando el archivo de configuración **openssl.cnf ** predeterminado y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
+1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esta configuración se puede realizar copiando el archivo de configuración **openssl.cnf &#x200B;** predeterminado y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
 
 1. Continúe creando la clave raíz de la CA ejecutando el siguiente comando en un terminal:
 
@@ -279,12 +279,12 @@ Para habilitar el registro de depuración, debe hacer lo siguiente:
 
 * Nivel de registro: depuración
 * Archivo de registro logs/ldap.log
-* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nivel de registro: depuración
 * Archivo de registro: logs/external.log
-* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una palabra sobre afiliación grupal {#a-word-on-group-affiliation}

@@ -425,7 +425,7 @@ Al diseñar estas pruebas, debe tenerse en cuenta que no todos los escenarios se
 
 | Escenario de error | Tipo de error | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo se busca &amp;ast;&amp;ast;&amp;ast;. |
+| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo se busca &ast;&ast;&ast;. |
 |   | Detener palabra | 20 | 2 |  | Buscando una palabra de detención. |
 |   | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
 |   | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |

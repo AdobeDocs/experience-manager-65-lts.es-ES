@@ -79,7 +79,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo de actividad: **El tipo de actividad: prueba A/B o segmentación de experiencias
+* **Tipo de actividad: &#x200B;** El tipo de actividad: prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
@@ -107,7 +107,7 @@ Para añadir una actividad, haga lo siguiente:
 1. Agregue una o varias experiencias a la actividad. Haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
 
-   1. Haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
+   1. Haga clic en **Seleccionar audiencia &#x200B;** y seleccione el segmento de destino de la experiencia.
    1. Haga clic en **Agregar experiencia**, escriba un nombre y haga clic en **Aceptar**.
 
    1. Haga clic en **Siguiente**.

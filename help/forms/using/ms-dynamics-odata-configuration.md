@@ -102,6 +102,7 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de Microsoft Dynamics en AEM Forms. El servicio en la nube predeterminado instalado con el paquete de AEM Forms se implementa en la siguiente URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:

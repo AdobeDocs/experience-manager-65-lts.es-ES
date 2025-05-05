@@ -47,7 +47,7 @@ Para crear una configuración de Silverpop en Cloud Services:
    >
    >Silverpop Engage no está disponible como opción en los servicios de terceros a menos que descargue el paquete desde Package Share.
 
-1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de ** Configuración ** Silverpop.
+1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de **&#x200B; Configuración &#x200B;** Silverpop.
 1. Introduzca el nombre de usuario y la contraseña, y seleccione un punto final de API en la lista desplegable.
 1. Haga clic en **Conectar con Silverpop.** Cuando se haya conectado correctamente, verá un cuadro de diálogo correcto. Haz clic en **Aceptar** para salir de la ventana. Para ir a Silverpop, haga clic en **Ir a Silverpop Engage**.
 1. Silverpop se ha configurado. Puede editar la configuración haciendo clic en **Editar**.

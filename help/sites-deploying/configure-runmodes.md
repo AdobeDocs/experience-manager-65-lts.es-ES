@@ -103,8 +103,8 @@ Estas carpetas son del tipo `nt:folder` y deben contener el paquete apropiado.
 Si ha definido configuraciones para varios modos de ejecución, debe definir cuál se utilizará al iniciar. Existen varios métodos para especificar qué modo de ejecución utilizar; el orden de resolución es el siguiente:
 
 1. [propiedades del sistema (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [Detección de nombres de archivo](#filename-detection-renaming-the-jar-file)
 
 Cuando use un servidor de aplicaciones, también puede [definir el modo de ejecución en web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

@@ -292,6 +292,7 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
    * Seleccione **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
+
         >[!NOTE]
         >
         >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.

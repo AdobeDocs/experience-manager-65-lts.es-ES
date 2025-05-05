@@ -67,7 +67,7 @@ Crear una anatomía para la comunicación interactiva con los siguientes modos d
 * Datos condicionales
 * Imágenes
 
-[](/help/forms/using/planning-interactive-communications.md)
+[&#128279;](/help/forms/using/planning-interactive-communications.md)
 
 ## Paso 2: Crear un modelo de datos de formulario {#step-create-form-data-model}
 
@@ -86,7 +86,7 @@ Un modelo de datos de formulario permite conectar una comunicación interactiva 
 * Editar datos de muestra
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba
 
-[](/help/forms/using/create-form-data-model0.md)
+[&#128279;](/help/forms/using/create-form-data-model0.md)
 
 ## Paso 3: Crear fragmentos de documento {#step-create-document-fragments}
 
@@ -100,7 +100,7 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 * Crear variables
 * Crear y aplicar reglas
 
-[](/help/forms/using/create-document-fragments.md)
+[&#128279;](/help/forms/using/create-document-fragments.md)
 
 ## Paso 4: Crear plantillas {#step-create-templates}
 
@@ -118,7 +118,7 @@ Las plantillas del canal Web se crean en AEM. Los autores y administradores de p
 * Cargar las plantillas XDP al servidor de AEM Forms
 * Crear y habilitar plantillas para el canal Web
 
-[](/help/forms/using/create-templates-print-web.md)
+[&#128279;](/help/forms/using/create-templates-print-web.md)
 
 ## Paso 5: Crear una comunicación interactiva {#step-create-an-interactive-communication}
 
@@ -137,7 +137,7 @@ Las comunicaciones interactivas se pueden entregar a través de dos canales: Imp
 * Crear un gráfico en la versión web de la comunicación interactiva
 * Crear hipervínculos en la versión web de la comunicación interactiva
 
-[](/help/forms/using/create-interactive-communication0.md)
+[&#128279;](/help/forms/using/create-interactive-communication0.md)
 
 ## Paso 6: Publicar la comunicación interactiva {#step-publish-your-interactive-communication}
 

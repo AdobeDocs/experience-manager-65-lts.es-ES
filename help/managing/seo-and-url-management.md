@@ -51,6 +51,7 @@ A continuación se ofrecen algunas sugerencias generales para crear las URL para
    * Si se utilizan selectores en una página, se prefieren los selectores que proporcionan un valor semántico.
    * Si un ser humano no puede leer su URL, un motor de búsqueda tampoco podrá.
    * Por ejemplo:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
 
@@ -254,6 +255,7 @@ Sin embargo, también hay una forma más sencilla de administrar este problema:
    Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Adobe recomienda crear las asignaciones necesarias para acortar las direcciones URL como expresiones regulares y luego definir estas configuraciones en un nodo OsgiConfignode, `config.publish`, que se incluye en la compilación.

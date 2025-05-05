@@ -130,7 +130,7 @@ Para descargar todos los recursos de Administración de correspondencia y las de
 
    ![publicación-recursos-cmp-1](assets/publish-cmp-assets-1.png)
 
-   ( ``Aparece la página Exportar todos los recursos de Administración de correspondencia y muestra la información de la última vez que se intentó realizar el proceso de exportación y un vínculo para descargar el último paquete que se exportó correctamente.
+   ( &grave;&grave;Aparece la página Exportar todos los recursos de Administración de correspondencia y muestra la información de la última vez que se intentó realizar el proceso de exportación y un vínculo para descargar el último paquete que se exportó correctamente.
 
    ![exportar-detalles-última-ejecución](assets/export-last-run-details.png)
 

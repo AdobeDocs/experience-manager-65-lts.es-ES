@@ -32,8 +32,10 @@ Esta solución se aplica a:
 1. Extraiga y copie el contenido de la carpeta descargada.
 1. Vaya a las rutas siguientes para los servidores de aplicaciones correspondientes:
    * **jboss**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **esfera web**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

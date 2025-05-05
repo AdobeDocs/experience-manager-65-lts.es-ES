@@ -87,7 +87,7 @@ devuelve el número de versión de la biblioteca de scripts.
 
       * **widgetConfig:** permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente forma:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
       * **pagingConfig:** permite al usuario anular el comportamiento predeterminado al procesar solo la primera página. La configuración se anula de la siguiente forma:
 

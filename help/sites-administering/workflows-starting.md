@@ -173,7 +173,7 @@ Un paquete de flujo de trabajo:
      Esta propiedad del lanzador es una lista de elementos separados por comas: &quot;
 
       * `property-name` ignora cualquier evento `jcr` que se haya activado en el nombre de propiedad especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora cualquier evento que contenga `*<someValue*`> `user-data` establecido a través de la API [`ObservationManager`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` ignora cualquier evento que contenga `*<someValue*`> `user-data` establecido a través de la API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por ejemplo:
 

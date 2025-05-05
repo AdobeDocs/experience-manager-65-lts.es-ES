@@ -22,7 +22,7 @@ ht-degree: 94%
 
 AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y las comunicaciones interactivas incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
-En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [Componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
+En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [Componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
 
 Para obtener información sobre la incrustación de un formulario adaptable en una página de AEM Sites que no sea una SPA, consulte [Incrustar un formulario adaptable o una comunicación interactiva en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 

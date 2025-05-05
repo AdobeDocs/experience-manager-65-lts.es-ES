@@ -455,7 +455,7 @@ En modo **Structure** del editor de plantillas:
 
   Para quitar una configuración, haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-  Para quitar una configuración, haga clic en el botón** Delete**.
+  Para quitar una configuración, haga clic en el botón **&#x200B; Delete**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -473,7 +473,7 @@ En modo **Structure** del editor de plantillas:
 
   >[!NOTE]
   >
-  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 

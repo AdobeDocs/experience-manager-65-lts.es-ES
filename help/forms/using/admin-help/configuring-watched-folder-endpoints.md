@@ -148,7 +148,7 @@ Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos 
 
 **Tiempo de espera:** Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
-Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
+Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&ast;60 &ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
 
 **Patrón de exclusión de archivos:** Lista delimitada por punto y coma **;** de patrones que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analizará para su procesamiento.
 
@@ -156,29 +156,29 @@ Esta configuración es útil cuando la entrada es una carpeta con varios archivo
 
 Puede utilizar patrones de archivo para excluir:
 
-* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, data.&amp;ast; excluiría archivos y carpetas llamados *data1*, *data2*, etc.
+* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Archivos con nombres específicos; por ejemplo, data.&ast; excluiría archivos y carpetas llamados *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * &ast;.[dD][Aa]&#39;port&#39;
+   * &ast;.[Xx][Mm][Ll]
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Patrón de archivo de inclusión:** (obligatorio) Lista delimitada por punto y coma **;** de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
+**Patrón de archivo de inclusión:** (obligatorio) Lista delimitada por punto y coma **;** de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&ast;, todos los archivos y carpetas que coincidan con input&ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
 
-El valor predeterminado es &amp;ast; e indica todos los archivos y carpetas.
+El valor predeterminado es &ast; e indica todos los archivos y carpetas.
 
 Puede utilizar patrones de archivo para incluir:
 
-* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, data.&amp;ast; incluiría archivos y carpetas llamados *data1*, *data2*, etc.
+* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Archivos con nombres específicos; por ejemplo, data.&ast; incluiría archivos y carpetas llamados *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * &ast;.[dD][Aa]&#39;port&#39;
+   * &ast;.[Xx][Mm][Ll]
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -230,7 +230,7 @@ El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El
 
 **Literal:** La carpeta vigilada usa el valor introducido en el campo tal como se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
 
-**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada usa para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
+**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada usa para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo PDF, el usuario puede utilizar &ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
 
 **Asignaciones de parámetros de salida:** Se usa para configurar los resultados del servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada.
 
@@ -244,13 +244,13 @@ La salida de la carpeta inspeccionada puede ser un solo documento, una lista de 
 
 Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta vigilada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
 
-* Archivos con extensiones de nombre de archivo específicas. Por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Archivos con nombres específicos. Por ejemplo, datos.&amp;ast;
+* Archivos con extensiones de nombre de archivo específicas. Por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf
+* Archivos con nombres específicos. Por ejemplo, datos.&ast;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * &ast;.[dD][Aa]&#39;port&#39;
+   * &ast;.[Xx][Mm][Ll]
 
 El administrador puede definir el patrón de archivo de la carpeta de salida en la que desea almacenar los resultados. Para las carpetas de salida (resultado, conservar y error), el administrador puede especificar cualquiera de estos patrones de archivo:
 
@@ -376,11 +376,11 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 * Si tiene una carpeta vigilada en Windows que está procesando archivos de imagen, especifique valores para las opciones Incluir patrón de archivo o Excluir patrón de archivo para evitar que la carpeta vigilada sondee el archivo Thumbs.db generado automáticamente por Windows.
 * Si se especifica una expresión cron, se omite el intervalo de repetición. El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 * El tamaño del lote es el número de archivos o carpetas que se recogerán en cada análisis de la carpeta vigilada. Si el tamaño del lote se establece en dos y se sueltan diez archivos o carpetas en la carpeta de entrada de la carpeta vigilada, solo se recogerán dos en cada análisis. En el siguiente análisis, que se realizará después del tiempo especificado en el intervalo de repetición, se recogerán los dos archivos siguientes.
-* Para los patrones de archivo, los administradores pueden especificar expresiones regulares con compatibilidad añadida con patrones de comodines para especificar patrones de archivo. La carpeta inspeccionada modifica la expresión regular para admitir patrones de comodines como &amp;ast;.&amp;ast; o &amp;ast;.pdf. Estos patrones de comodines no son compatibles con las expresiones regulares.
+* Para los patrones de archivo, los administradores pueden especificar expresiones regulares con compatibilidad añadida con patrones de comodines para especificar patrones de archivo. La carpeta inspeccionada modifica la expresión regular para admitir patrones de comodines como &ast;.&ast; o &ast;.pdf. Estos patrones de comodines no son compatibles con las expresiones regulares.
 * La carpeta inspeccionada analiza la carpeta de entrada en busca de la entrada y no sabe si el archivo o la carpeta de origen se copia completamente en la carpeta de entrada antes de comenzar a procesar el archivo o la carpeta. Para asegurarse de que el archivo o la carpeta de origen se copia completamente en la carpeta de entrada de la carpeta vigilada antes de que se recoja el archivo o la carpeta, realice estas tareas:
 
-   * Usar tiempo de espera, que es el tiempo en milisegundos que la carpeta inspeccionada espera desde la última hora de modificación. Utilice esta función si tiene archivos grandes para procesar. Por ejemplo, si un archivo tarda 10 minutos en descargarse, especifique el tiempo de espera como 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evitará que la carpeta inspeccionada recoja el archivo si no tiene 10 minutos de antigüedad.
-   * Utilice el patrón de archivo de exclusión y el patrón de archivo de inclusión. Por ejemplo, si el patrón de archivo de exclusión es `ex*` y el patrón de archivo de inclusión es `in*`, la carpeta inspeccionada recogerá los archivos que comienzan con &quot;en&quot; y no recogerá los archivos que comienzan con &quot;ex&quot;. Para copiar archivos o carpetas grandes, cambie primero el nombre del archivo o carpeta de modo que el nombre comience por &quot;ex&quot;. Una vez que el archivo o la carpeta denominada &quot;ex&quot; se haya copiado completamente en la carpeta vigilada, cambie su nombre a &quot;in&amp;ast;&quot;.
+   * Usar tiempo de espera, que es el tiempo en milisegundos que la carpeta inspeccionada espera desde la última hora de modificación. Utilice esta función si tiene archivos grandes para procesar. Por ejemplo, si un archivo tarda 10 minutos en descargarse, especifique el tiempo de espera como 10&ast;60 &ast;1000 milisegundos. Esto evitará que la carpeta inspeccionada recoja el archivo si no tiene 10 minutos de antigüedad.
+   * Utilice el patrón de archivo de exclusión y el patrón de archivo de inclusión. Por ejemplo, si el patrón de archivo de exclusión es `ex*` y el patrón de archivo de inclusión es `in*`, la carpeta inspeccionada recogerá los archivos que comienzan con &quot;en&quot; y no recogerá los archivos que comienzan con &quot;ex&quot;. Para copiar archivos o carpetas grandes, cambie primero el nombre del archivo o carpeta de modo que el nombre comience por &quot;ex&quot;. Una vez que el archivo o la carpeta denominada &quot;ex&quot; se haya copiado completamente en la carpeta vigilada, cambie su nombre a &quot;in&ast;&quot;.
 
 * Utilice la duración de la depuración para mantener la carpeta de resultados limpia. La carpeta inspeccionada limpia todos los archivos que son anteriores a la duración mencionada en la duración de la depuración. La duración es en días.
 * Al agregar un punto final de carpeta inspeccionada, después de seleccionar el nombre de la operación, se rellena la asignación de parámetros de entrada. Para cada entrada de la operación, se genera un campo de asignación de parámetros de entrada. Estos son ejemplos de asignaciones de parámetros de entrada:
@@ -399,7 +399,7 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 
    * Solución 1
 
-      1. Especifique un patrón para Excluir patrón de archivo, como temp&amp;ast;.ps.
+      1. Especifique un patrón para Excluir patrón de archivo, como temp&ast;.ps.
       1. Copie los archivos que comienzan por temp (por ejemplo, temp1.ps) en la carpeta vigilada.
       1. Una vez que el archivo se haya copiado completamente en la carpeta inspeccionada, cambie el nombre del archivo para que se corresponda con el patrón especificado para Patrón de archivo de inclusión. A continuación, la carpeta inspeccionada mueve el archivo completado al escenario.
 

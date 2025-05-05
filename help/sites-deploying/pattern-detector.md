@@ -50,7 +50,7 @@ Puede utilizar varios métodos para comprobar el resultado de Pattern Detector:
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **A través de una interfaz JSON normal o basada en texto reactivo**
-* **A través de una interfaz de líneas JSON reactiva, **que genera un documento JSON independiente en cada línea.
+* **A través de una interfaz de líneas JSON reactiva, &#x200B;** que genera un documento JSON independiente en cada línea.
 
 Ambos métodos se detallan a continuación:
 

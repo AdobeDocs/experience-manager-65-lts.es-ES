@@ -47,7 +47,7 @@ En AEM 6.3, de forma predeterminada, cuando se alcanza un recorrido de 100 000, 
 
 #### Durante el desarrollo {#during-development}
 
-Explique **todas** las consultas y asegúrese de que sus planes de consulta no contengan la explicación **/&amp;ast; traverse** en ellas. Ejemplo de plan de consulta de recorrido:
+Explique **todas** las consultas y asegúrese de que sus planes de consulta no contengan la explicación **/&ast; traverse** en ellas. Ejemplo de plan de consulta de recorrido:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

@@ -556,6 +556,7 @@ Las directivas de página permiten definir la [directiva de contenido](#content-
    * Estableciendo la propiedad status en el nodo `jcr:content`.
 
       * Por ejemplo, en:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
@@ -568,6 +569,7 @@ Las directivas de página permiten definir la [directiva de contenido](#content-
 
    * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-authoring/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
+
      `cq:allowedTemplates`
 En el nodo `jcr:content` de la rama requerida.
 

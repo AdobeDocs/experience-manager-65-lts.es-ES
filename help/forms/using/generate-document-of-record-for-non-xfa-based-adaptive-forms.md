@@ -412,6 +412,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 
 * **[!UICONTROL BÁSICO]**
    * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
+
      ![texto alternativo](image.png)
    * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
    * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
@@ -424,6 +425,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
       * Vertical
       * Horizontal
       * Igual que el formulario adaptable
+
      >[!NOTE]
      > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)

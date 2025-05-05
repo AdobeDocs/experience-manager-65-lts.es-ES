@@ -425,6 +425,7 @@ Para configurar la replicación de contenido para una instancia de publicación 
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
+
         `https://localhost:4504/bin/receive`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
@@ -468,6 +469,7 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, todaví
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.

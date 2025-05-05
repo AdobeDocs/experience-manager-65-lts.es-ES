@@ -323,7 +323,7 @@ Para ayudar a evitar el uso indebido de DoS, puede hacer lo siguiente:
 >
 >Esta mitigación solo debe realizarse en entornos de AEM que no utilicen Forms.
 
-Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente interrumpe la déclencheur de AEM. Los selectores de formularios se pueden detectar mediante la presencia de **&amp;ast;.form.&amp;ast;** cadena en consultas.
+Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente interrumpe la déclencheur de AEM. Los selectores de formularios se pueden detectar mediante la presencia de **&ast;.form.&ast;** cadena en consultas.
 
 Para mitigar este problema, puede realizar los siguientes pasos:
 
@@ -376,7 +376,7 @@ No se debe realizar ninguna configuración para habilitarla, ya que ahora es la 
 
 Aunque no se recomienda, puede deshabilitarla en caso de que necesite la implementación antigua para mantener la compatibilidad con las aplicaciones existentes. Para ello, debe hacer lo siguiente:
 
-1. Vaya a la consola web y elimine la entrada org**.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
+1. Vaya a la consola web y elimine la entrada org&#x200B;**.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
 
    También puede encontrar el proveedor de seguridad de Oak buscando el PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** en las configuraciones de OSGi.
 

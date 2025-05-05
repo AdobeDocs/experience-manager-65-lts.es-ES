@@ -25,7 +25,7 @@ La función de informes de transacciones está disponible como parte del paquete
 * Habilite la replicación inversa en todas las instancias de publicación
 * Habilite los informes de transacciones
 * Proporcione derechos para ver un informe de transacciones
-* (Opcional) Configure el período de vaciado de transacción y las bandejas de salida [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Opcional) Configure el período de vaciado de transacción y las bandejas de salida [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

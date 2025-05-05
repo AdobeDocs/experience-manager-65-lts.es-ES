@@ -62,7 +62,7 @@ Desde AEM 6.0, se han realizado cambios en la implementación y el uso de las su
 
 Las superposiciones son el método recomendado para muchos cambios, como [configurar las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [crear la categoría de selección en el explorador de recursos del panel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizado al crear páginas). Se requieren como sigue:
 
-* ***No* realice cambios en la rama `/libs`**Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
+* ***No* realice cambios en la rama `/libs`**&#x200B;Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
 
    * actualice en su instancia
    * aplicar una revisión

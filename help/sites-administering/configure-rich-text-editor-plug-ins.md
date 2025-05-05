@@ -347,17 +347,17 @@ En primer lugar, habilite el complemento de paraformato:
 
 >[!NOTE]
 >
-Si el complemento no se sigue configurando, se habilitan los siguientes formatos predeterminados:
+>Si el complemento no se sigue configurando, se habilitan los siguientes formatos predeterminados:
 >
-* Párrafo (`<p>`)
-* Encabezado 1 ( `<h1>`)
-* Encabezado 2 ( `<h2>`)
-* Encabezado 3 ( `<h3>`)
+>* Párrafo (`<p>`)
+>* Encabezado 1 ( `<h1>`)
+>* Encabezado 2 ( `<h2>`)
+>* Encabezado 3 ( `<h3>`)
 >
 
 >[!CAUTION]
 >
-Al configurar el formato de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si se quita la etiqueta `<p>`, el autor del contenido no podrá seleccionar la opción **Formatos de párrafo** aunque haya otros formatos configurados.
+>Al configurar el formato de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si se quita la etiqueta `<p>`, el autor del contenido no podrá seleccionar la opción **Formatos de párrafo** aunque haya otros formatos configurados.
 
 ### Especificar los formatos de párrafo disponibles {#paraformatsindropdown}
 
@@ -394,7 +394,7 @@ Los formatos de párrafo podrán ser seleccionados por:
 
 >[!CAUTION]
 >
-Si define formatos personalizados, se quitarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>`, ya que es el formato predeterminado.
+>Si define formatos personalizados, se quitarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>`, ya que es el formato predeterminado.
 
 ## Configuración de caracteres especiales {#spchar}
 
@@ -404,7 +404,7 @@ Puede configurar el RTE para que su propia selección de caracteres esté dispon
 
 >[!CAUTION]
 >
-Si agrega sus propios caracteres especiales, se anulará la selección predeterminada. Si es necesario, defina o redefina estos caracteres en su propia selección.
+>Si agrega sus propios caracteres especiales, se anulará la selección predeterminada. Si es necesario, defina o redefina estos caracteres en su propia selección.
 
 ### Definir un solo carácter {#definesinglechar}
 
@@ -455,10 +455,12 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
+
      **Tipo** `Long`
      **Value** representa [Unicode](https://unicode.org/) (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
+
      **Tipo** `Long`
      **Valor**: la representación [Unicode](https://unicode.org/) (decimal) del último carácter del intervalo
 
@@ -478,11 +480,11 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
 
 >[!NOTE]
 >
-Puede definir estilos para tablas y celdas solo para la IU clásica.
+>Puede definir estilos para tablas y celdas solo para la IU clásica.
 
 >[!NOTE]
 >
-La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
+>La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
 1. Dentro del componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. Cree la propiedad `features` en el nodo `table`:
@@ -493,13 +495,13 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
 
    >[!NOTE]
    >
-   Si no desea habilitar todas las características de la tabla, puede crear la propiedad `features` como:
+   >Si no desea habilitar todas las características de la tabla, puede crear la propiedad `features` como:
    >
-   * **Tipo** `String[]`
+   >* **Tipo** `String[]`
    >
-   * **Valor** uno o ambos de los siguientes, según sea necesario:
-   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-   * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
+   >* **Valor** uno o ambos de los siguientes, según sea necesario:
+   >* `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   >* `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para que pueda hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el nodo `table`, cree los siguientes nodos nuevos (según sea necesario):
@@ -561,7 +563,7 @@ Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios
 
 >[!NOTE]
 >
-Se ve el mensaje `Spell checking failed` si se intenta realizar una comprobación en un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame correspondientes. No modifique los archivos.
+>Se ve el mensaje `Spell checking failed` si se intenta realizar una comprobación en un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame correspondientes. No modifique los archivos.
 
 Una instalación estándar de AEM incluye los diccionarios de inglés americano (`en_us`) e inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
 
@@ -576,16 +578,16 @@ Una instalación estándar de AEM incluye los diccionarios de inglés americano 
 
    >[!CAUTION]
    >
-   Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
+   >Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
 1. Busque los archivos `.aff` y `.dic`. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos `.aff` y `.dic` en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
-El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto. Para ejecutar el corrector ortográfico, haga clic en [!UICONTROL Corrector ortográfico] en la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
+>El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto. Para ejecutar el corrector ortográfico, haga clic en [!UICONTROL Corrector ortográfico] en la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
 >
-Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas dejan de resaltarse. Para ejecutar el corrector ortográfico, vuelva a hacer clic en el botón Corrector ortográfico.
+>Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas dejan de resaltarse. Para ejecutar el corrector ortográfico, vuelva a hacer clic en el botón Corrector ortográfico.
 
 ## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
 
@@ -621,7 +623,7 @@ Cuando la sangría está habilitada (opción predeterminada), puede definir el t
 
 >[!NOTE]
 >
-Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
+>Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. Dentro del componente, vaya al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. En el nodo `lists`, cree el parámetro `indentSize`:
@@ -634,7 +636,7 @@ Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afect
 
 >[!NOTE]
 >
-Esto solo es aplicable cuando se utiliza el RTE en un cuadro de diálogo (no en la edición in situ en la IU clásica).
+>Esto solo es aplicable cuando se utiliza el RTE en un cuadro de diálogo (no en la edición in situ en la IU clásica).
 
 Puede definir la altura del espacio editable que se muestra en el cuadro de diálogo del componente:
 
@@ -646,7 +648,7 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
 
    >[!NOTE]
    >
-   Esto no cambia la altura de la ventana de diálogo.
+   >Esto no cambia la altura de la ventana de diálogo.
 
 1. Guarde los cambios.
 
@@ -667,13 +669,13 @@ Para configurar cómo se añaden los vínculos en AEM desde otro programa, defin
 
    >[!NOTE]
    >
-   El nodo `../items/text` tiene la propiedad:
+   >El nodo `../items/text` tiene la propiedad:
    >
-   * **Nombre** `xtype`
-   * **Tipo** `String`
-   * **Valor** `richtext`
+   >* **Nombre** `xtype`
+   >* **Tipo** `String`
+   >* **Valor** `richtext`
    >
-   La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nodo.
 

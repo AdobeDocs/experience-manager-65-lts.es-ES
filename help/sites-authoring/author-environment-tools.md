@@ -283,7 +283,7 @@ El botón Información de página (icono de ecualizador) abre un menú que tambi
 Por ejemplo, cuando sea apropiado, **Información de la página** también tiene las opciones:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es un lanzamiento
-* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3}](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3&rbrace;](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 

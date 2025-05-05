@@ -91,7 +91,7 @@ En este procedimiento:
 
    * Clúster de servidor - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
+1. &#x200B;
    * **Para un solo servidor,** en el archivo lc_&lt;dbaname/tunkey>.xml, agregue lo siguiente después de la sección &lt;security-realms>:
 
    ```xml

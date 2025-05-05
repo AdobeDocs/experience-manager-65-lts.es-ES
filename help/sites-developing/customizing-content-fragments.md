@@ -82,6 +82,7 @@ Los fragmentos de contenido con contenido estructurado (es decir, basados en un 
 * Todo el contenido se almacena en el nodo `jcr:content/data` del recurso:
 
    * Los datos del elemento se almacenan en el subnodo principal:
+
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación:

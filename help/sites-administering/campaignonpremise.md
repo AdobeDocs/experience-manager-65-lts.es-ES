@@ -204,7 +204,7 @@ Ha configurado el externalizador y Adobe Campaign puede acceder a su contenido.
 
 >[!NOTE]
 >
-Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign. Si apunta a `localhost:4503` u otro servidor al que Adobe Campaign no pueda acceder, las imágenes de AEM no aparecerán en la consola de Adobe Campaign.
+>Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign. Si apunta a `localhost:4503` u otro servidor al que Adobe Campaign no pueda acceder, las imágenes de AEM no aparecerán en la consola de Adobe Campaign.
 
 ## Configuración del usuario remoto de Campaign en AEM {#configure-user}
 

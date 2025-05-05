@@ -226,7 +226,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Esta es la **primera llamada**a Adobe Analytics que contiene los siguientes valores:*
+*Esta es la **primera llamada**&#x200B;a Adobe Analytics que contiene los siguientes valores:*
 
 * *prop1 y eVar1 para eventdata.a.media.name,*
 * *props2-4, junto con eVar2 y eVar3 que contienen contentType (vídeo) y segmento (1:O:1-4)*
@@ -234,7 +234,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Esta es la **tercera llamada**realizada a Adobe Analytics:*
+*Esta es la **tercera llamada**&#x200B;realizada a Adobe Analytics:*
 
 * *prop1 y eVar1 contienen a.media.name;*
 * *evento1 porque se ha visto un segmento*
@@ -321,7 +321,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    ![hitos1](assets/lmilestones1.png)
 
-   *La variable **pev3**enviada en la llamada contiene la siguiente información:*
+   *La variable **pev3**&#x200B;enviada en la llamada contiene la siguiente información:*
 
    * *Nombre* - El nombre del archivo de vídeo (*film.avi*)
 
@@ -337,7 +337,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
 ## Segundos heredados {#legacy-seconds}
 
-Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
+Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
 
 1. Establezca el desplazamiento de pista en cualquier número de segundos,
 

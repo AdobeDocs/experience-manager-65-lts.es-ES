@@ -27,7 +27,7 @@ Para cualquier problema relacionado con la plataforma, póngase en contacto con 
 
 Requisitos mínimos para instalar Adobe Experience Manager:
 
-* Instalación de Platform Java™, JDK Standard Edition u otras máquinas virtuales Java™ compatibles [](#java-virtual-machines)
+* Instalación de Platform Java™, JDK Standard Edition u otras máquinas virtuales Java™ compatibles [&#128279;](#java-virtual-machines)
 * Experience Manager Archivo de inicio rápido (JAR independiente o aplicación web implementación WAR)
 
 ### Requisitos mínimos de tamaño {#minimum-sizing-requirements}
@@ -43,7 +43,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 >* [AEM Forms paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md) de complementos requiere 15 GB de espacio temporal.
 >
 
-Para obtener más información, consulte las Pautas](/help/managing/hardware-sizing-guidelines.md) de [cambio de tamaño de hardware.
+Para obtener más información, consulte las Pautas[&#128279;](/help/managing/hardware-sizing-guidelines.md) de cambio de tamaño de hardware.
 
 ### Niveles de soporte {#support-levels}
 

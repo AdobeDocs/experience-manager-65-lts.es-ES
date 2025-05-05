@@ -333,7 +333,7 @@ La siguiente lista especifica los valores de configuración que se establecen al
 * **userName**: nombre de usuario utilizado al invocar un servicio de destino desde la carpeta inspeccionada. Este valor es obligatorio. El valor predeterminado es SuperAdmin.
 * **domainName**: el dominio del usuario. Este valor es obligatorio. El valor predeterminado es DefaultDom.
 * **batchSize**: número de archivos o carpetas que se van a recoger por análisis. Utilice este valor para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
-* **waitTime**: tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. Este atributo es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
+* **waitTime**: tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. Este atributo es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&ast;60 &ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
 * **excludeFilePattern**: El patrón que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta que tenga este patrón se analizará para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta que contiene varios archivos. El contenido de la carpeta se puede copiar en una carpeta que tenga un nombre que recogerá la carpeta vigilada. Este paso evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si el valor excludeFilePattern es `data*`, no se recogen todos los archivos y carpetas que coinciden con `data*`. Esto incluye archivos y carpetas con los nombres `data1`, `data2`, etc. Además, el patrón se puede complementar con patrones de comodines para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones de comodines como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín.
 * **includeFilePattern**: El patrón que usa la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si este valor es `*`, se recogerán todos los archivos y carpetas que coincidan con `input*`. Esto incluye archivos y carpetas con los nombres `input1`, `input2`, etc. El valor predeterminado es `*`. Este valor indica todos los archivos y carpetas. Además, el patrón se puede complementar con patrones de comodines para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones de comodines como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín. Este valor es obligatorio.
 * **resultFolderName**: La carpeta donde se almacenan los resultados guardados. Esta ubicación puede ser una ruta de acceso de directorio absoluta o relativa. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `result/%Y/%M/%D/`. Esta es la carpeta de resultados dentro de la carpeta vigilada.
@@ -431,7 +431,7 @@ Añada un punto final de carpeta inspeccionada mediante la API de Java de AEM Fo
    * Valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de entrada `InDoc` es `com.adobe.idp.Document`.
    * Valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
-   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
+   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &ast;.pdf como patrón de archivo.
 
    >[!NOTE]
    >
@@ -568,7 +568,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **userName**: nombre de usuario utilizado al invocar un servicio de destino desde el correo electrónico. El valor predeterminado es `SuperAdmin`.
 * **domainName**: un valor de configuración obligatorio. El valor predeterminado es `DefaultDom`.
 * **domainPattern**: Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo, si se usa `adobe.com`, solo se procesa el correo electrónico de adobe.com y se omite el correo electrónico de otros dominios.
-* **filePattern**: especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos que tienen nombres específicos (data) y archivos que tienen expresiones compuestas en el nombre y la extensión (&amp;ast;).[dD][aA]&#39;port&#39;). El valor predeterminado es `*`.
+* **filePattern**: especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones de nombre de archivo específicas (&ast;.dat, &ast;.xml), archivos que tienen nombres específicos (data) y archivos que tienen expresiones compuestas en el nombre y la extensión (&ast;).[dD][aA]&#39;port&#39;). El valor predeterminado es `*`.
 * **recipientSuccessfulJob**: dirección de correo electrónico a la que se envían mensajes para indicar que los trabajos se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee almacenar en déclencheur un proceso y no desee recibir una notificación del resultado por correo electrónico. El valor predeterminado es `sender`.
 * **recipientFailedJob**: dirección de correo electrónico a la que se envían mensajes para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. El valor predeterminado es `sender`.
 * **inboxHost**: El nombre de host de la bandeja de entrada o la dirección IP para que el proveedor de correo electrónico analice.
@@ -676,7 +676,7 @@ Añadir un extremo de correo electrónico mediante la API de Java:
    * Valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de entrada `InDoc` es `com.adobe.idp.Document`.
    * Valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
-   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
+   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &ast;.pdf como patrón de archivo.
 
    >[!NOTE]
    >
@@ -803,7 +803,7 @@ Para crear un extremo remoto para un servicio, especifique los siguientes valore
 * **Descripción**: especifica la descripción del extremo.
 * **Nombre**: especifica el nombre del extremo.
 * **Valor del identificador de servicio**: Especifica el servicio al que pertenece el extremo. Por ejemplo, para agregar un extremo remoto al proceso introducido en esta sección (un proceso se convierte en un servicio cuando se activa en Workbench), especifique `EncryptDocument`.
-* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo Remoting, especifique un carácter comodín (&amp;ast;).
+* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo Remoting, especifique un carácter comodín (&ast;).
 
 **Crear un extremo remoto**
 
@@ -841,7 +841,7 @@ Agregar un extremo remoto mediante la API de Java:
    * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
    * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
    * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que invoca el método `setOperationName` del objeto `CreateEndpointInfo` y pase un valor de cadena que especifique el nombre de la operación. Para un extremo Remoting, especifique un carácter comodín (&amp;ast;).
+   * Especifique la operación que invoca el método `setOperationName` del objeto `CreateEndpointInfo` y pase un valor de cadena que especifique el nombre de la operación. Para un extremo Remoting, especifique un carácter comodín (&ast;).
 
 1. Cree un extremo remoto.
 

@@ -231,7 +231,7 @@ En Adobe Campaign Classic:
 
 >[!NOTE]
 >
-El contenido no aprobado se puede sincronizar con un envío en Adobe Campaign, pero el envío no se puede ejecutar. Solo se puede enviar contenido aprobado a través de envíos de Campaign.
+>El contenido no aprobado se puede sincronizar con un envío en Adobe Campaign, pero el envío no se puede ejecutar. Solo se puede enviar contenido aprobado a través de envíos de Campaign.
 
 ## Vinculación de AEM con Adobe Campaign Standard y Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
@@ -255,7 +255,7 @@ Al hacerlo, puede enviar el contenido. Verá si un boletín informativo está vi
 
 >[!NOTE]
 >
-Si un boletín informativo está vinculado a varios envíos, se muestra el número de envíos vinculados (pero no todos los ID).
+>Si un boletín informativo está vinculado a varios envíos, se muestra el número de envíos vinculados (pero no todos los ID).
 
 Para vincular una página creada en AEM con un correo electrónico de Adobe Campaign:
 
@@ -271,7 +271,7 @@ Para vincular una página creada en AEM con un correo electrónico de Adobe Camp
 
    >[!NOTE]
    >
-   Si la opción **Vínculo con un Adobe Experience Manager** no aparece en la barra de acciones, compruebe que el **Modo de edición de contenido** esté configurado correctamente en **Adobe Experience Manager** en las propiedades de correo electrónico.
+   >Si la opción **Vínculo con un Adobe Experience Manager** no aparece en la barra de acciones, compruebe que el **Modo de edición de contenido** esté configurado correctamente en **Adobe Experience Manager** en las propiedades de correo electrónico.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -286,7 +286,7 @@ Para vincular una página creada en AEM con un correo electrónico de Adobe Camp
 
    >[!NOTE]
    >
-   De forma predeterminada, el contenido que ya está sincronizado con una entrega está oculto. Sin embargo, puede mostrarlo y utilizarlo. Por ejemplo, si desea utilizar el contenido como plantilla para varios envíos.
+   >De forma predeterminada, el contenido que ya está sincronizado con una entrega está oculto. Sin embargo, puede mostrarlo y utilizarlo. Por ejemplo, si desea utilizar el contenido como plantilla para varios envíos.
 
    Cuando el correo electrónico está vinculado a un contenido de AEM, el contenido no se puede editar en Adobe Campaign.
 
@@ -295,11 +295,11 @@ Para vincular una página creada en AEM con un correo electrónico de Adobe Camp
 
    >[!NOTE]
    >
-   Si el contenido se actualiza en AEM mientras está vinculado a un correo electrónico, se actualiza automáticamente en Adobe Campaign durante el análisis. La sincronización también se puede ejecutar manualmente usando **Actualizar contenido de Adobe Experience Manager** desde la barra de acciones de contenido.
+   >Si el contenido se actualiza en AEM mientras está vinculado a un correo electrónico, se actualiza automáticamente en Adobe Campaign durante el análisis. La sincronización también se puede ejecutar manualmente usando **Actualizar contenido de Adobe Experience Manager** desde la barra de acciones de contenido.
    >
-   Puede cancelar el vínculo entre un correo electrónico y el contenido de AEM usando **Eliminar el vínculo con el contenido de Adobe Experience Manager** de la barra de acciones de contenido. Este botón solo está disponible si un contenido ya está vinculado con la entrega. Para vincular un contenido diferente a una entrega, debe eliminar el vínculo de contenido actual antes de poder establecer un vínculo nuevo.
+   >Puede cancelar el vínculo entre un correo electrónico y el contenido de AEM usando **Eliminar el vínculo con el contenido de Adobe Experience Manager** de la barra de acciones de contenido. Este botón solo está disponible si un contenido ya está vinculado con la entrega. Para vincular un contenido diferente a una entrega, debe eliminar el vínculo de contenido actual antes de poder establecer un vínculo nuevo.
    >
-   Cuando se elimina el vínculo, el contenido local se conserva y se puede editar en Adobe Campaign. Si vuelve a vincular el contenido después de haberlo modificado, se perderán todos los cambios.
+   >Cuando se elimina el vínculo, el contenido local se conserva y se puede editar en Adobe Campaign. Si vuelve a vincular el contenido después de haberlo modificado, se perderán todos los cambios.
 
 ### Sincronización del contenido creado en AEM con un envío de Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -318,11 +318,11 @@ En AEM, si un boletín informativo está vinculado a un solo envío, el código 
 
 >[!NOTE]
 >
-Si la newsletter está vinculada a varios envíos, se muestra el número de envíos vinculados (pero no todos los ID).
+>Si la newsletter está vinculada a varios envíos, se muestra el número de envíos vinculados (pero no todos los ID).
 >
-[!NOTE]
+>[!NOTE]
 >
-El paso del flujo de trabajo **Publicar en Adobe Campaign** está obsoleto en AEM 6.1. Este paso formaba parte de la integración de AEM 6.0 con Adobe Campaign y ya no es necesario.
+>El paso del flujo de trabajo **Publicar en Adobe Campaign** está obsoleto en AEM 6.1. Este paso formaba parte de la integración de AEM 6.0 con Adobe Campaign y ya no es necesario.
 
 Para sincronizar contenido creado en AEM con un envío de Adobe Campaign:
 
@@ -334,7 +334,7 @@ Para sincronizar contenido creado en AEM con un envío de Adobe Campaign:
 
    >[!NOTE]
    >
-   Si la opción **Synchronize** no aparece en la barra de herramientas de la entrega, compruebe que el campo **Content editing mode** esté configurado correctamente en **AEM** seleccionando **Properties** > **Advanced**.
+   >Si la opción **Synchronize** no aparece en la barra de herramientas de la entrega, compruebe que el campo **Content editing mode** esté configurado correctamente en **AEM** seleccionando **Properties** > **Advanced**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -349,7 +349,7 @@ Para sincronizar contenido creado en AEM con un envío de Adobe Campaign:
 
    >[!NOTE]
    >
-   De forma predeterminada, el contenido que ya está sincronizado con una entrega está oculto. Sin embargo, puede mostrarlo y utilizarlo. Por ejemplo, si desea utilizar el contenido como plantilla para varios envíos.
+   >De forma predeterminada, el contenido que ya está sincronizado con una entrega está oculto. Sin embargo, puede mostrarlo y utilizarlo. Por ejemplo, si desea utilizar el contenido como plantilla para varios envíos.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
@@ -359,8 +359,8 @@ Para sincronizar contenido creado en AEM con un envío de Adobe Campaign:
 
    >[!NOTE]
    >
-   * Una vez sincronizados el envío y el contenido, el contenido de la entrega en Adobe Campaign se convierte en de solo lectura. El asunto del correo electrónico y su contenido ya no se pueden modificar.
-   * Si el contenido se actualiza en AEM mientras está vinculado a una entrega en Adobe Campaign, se actualiza automáticamente en la entrega durante el análisis de la entrega. La sincronización también se puede ejecutar manualmente con el botón **Actualizar contenido ahora**.
-   * Puede cancelar la sincronización entre un envío y el contenido de AEM mediante el botón **Desincronizar**. Esto solo está disponible si un contenido ya está sincronizado con el envío. Para sincronizar un contenido diferente con una entrega, debe cancelar la sincronización de contenido actual antes de poder establecer un nuevo vínculo.
-   * Si se desincroniza, el contenido local se conserva y se puede editar en Adobe Campaign. Si vuelve a sincronizar el contenido después de haberlo modificado, perderá todos los cambios.
-   * En el caso de los envíos recurrentes y continuos, la sincronización con el contenido de AEM se detiene cada vez que se ejecuta el envío.
+   >* Una vez sincronizados el envío y el contenido, el contenido de la entrega en Adobe Campaign se convierte en de solo lectura. El asunto del correo electrónico y su contenido ya no se pueden modificar.
+   >* Si el contenido se actualiza en AEM mientras está vinculado a una entrega en Adobe Campaign, se actualiza automáticamente en la entrega durante el análisis de la entrega. La sincronización también se puede ejecutar manualmente con el botón **Actualizar contenido ahora**.
+   >* Puede cancelar la sincronización entre un envío y el contenido de AEM mediante el botón **Desincronizar**. Esto solo está disponible si un contenido ya está sincronizado con el envío. Para sincronizar un contenido diferente con una entrega, debe cancelar la sincronización de contenido actual antes de poder establecer un nuevo vínculo.
+   >* Si se desincroniza, el contenido local se conserva y se puede editar en Adobe Campaign. Si vuelve a sincronizar el contenido después de haberlo modificado, perderá todos los cambios.
+   >* En el caso de los envíos recurrentes y continuos, la sincronización con el contenido de AEM se detiene cada vez que se ejecuta el envío.

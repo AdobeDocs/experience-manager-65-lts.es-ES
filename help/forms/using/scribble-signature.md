@@ -71,7 +71,7 @@ Al hacer clic en el icono de geolocalización mientras se crea la firma manuscri
 
 >[!NOTE]
 >
-De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
+>De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
 
 En iPad, el icono de geolocalización no se muestra de forma predeterminada y la información de geolocalización se incrusta automáticamente al hacer clic en **Aceptar**.
 

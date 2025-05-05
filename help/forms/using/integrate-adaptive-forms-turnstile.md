@@ -55,8 +55,10 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
 
 1. Configure sus servicios en la nube:
    1. En la instancia de autor de AEM, ve a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y haz clic en **[!UICONTROL Torniquete]**.
+
       ![Torniquete en Cloud Services](assets/turnstile-in-ui.png)
    1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Haga clic en **[!UICONTROL Crear]**.
+
       ![Turnstile de configuración](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de widget]** como administrado, no interactivo o invisible.
    1. Proporcione otros detalles como **[!UICONTROL Title]**, **[!UICONTROL Name]**.
@@ -93,6 +95,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
    * **[!UICONTROL Mensaje de validación]:** Proporcione un mensaje de validación para validar el captcha al enviar el formulario o en una acción del usuario.
    * **[!UICONTROL Servicio Captcha]:** Seleccione el servicio CAPTCHA para el envío del formulario, aquí selecciona Turnstile®.
    * **[!UICONTROL Ajustes de configuración]:** Seleccione la configuración de nube configurada para Turnstile®.
+
      >[!NOTE]
      >Puede tener varias configuraciones en la nube en su entorno para un propósito similar. Por lo tanto, elija el servicio con cuidado. Si no hay ningún servicio en la lista, consulte [Conectar su entorno de AEM Forms con Turnstile](#connect-your-forms-environment-with-turnstile-service) para aprender a crear un Cloud Service que conecte su entorno de AEM Forms con el servicio de Turnstile.
 

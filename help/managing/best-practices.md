@@ -55,7 +55,7 @@ La hoja de cálculo de **Project Heartbeat** proporciona una descripción genera
 
 ## Estado por rol {#status-by-role}
 
-La hoja de cálculo **Estado por rol** muestra un desglose detallado de [**Salud**, **Calidad y **Complejidad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
+La hoja de cálculo **Estado por rol** muestra un desglose detallado de [**Salud**, **Calidad y &#x200B;** Complejidad&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; y &#x200B;** [Persona](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 

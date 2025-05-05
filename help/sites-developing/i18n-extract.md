@@ -65,10 +65,10 @@ La parte de patrón de una regla se utiliza para hacer coincidir los nombres de 
 | Prefijo | Efecto |
 |---|---|
 | / | Indica una ruta JCR. Por lo tanto, este prefijo coincide con los archivos situados debajo del directorio jcr_root. |
-| &amp;ast; | Indica un archivo normal del sistema de archivos. |
+| &ast; | Indica un archivo normal del sistema de archivos. |
 | ninguno | Ningún prefijo, o un patrón que comience con un nombre de archivo o carpeta, indica un archivo normal en el sistema de archivos. |
 
-Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y el carácter &amp;ast; coincide con todos. En la tabla siguiente se enumeran varias reglas de ejemplo.
+Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y el carácter &ast; coincide con todos. En la tabla siguiente se enumeran varias reglas de ejemplo.
 
 <table>
  <tbody>

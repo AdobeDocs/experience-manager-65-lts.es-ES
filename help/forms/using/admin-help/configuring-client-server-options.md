@@ -61,13 +61,13 @@ Para ver cómo funciona la concesión y sincronización sin conexión, consulte 
 
 Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de AEM Forms. Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar del nombre de usuario y la contraseña de los formularios AEM, desde Acrobat y el cliente de Reader. De manera predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre de servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***nota **: La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posterior.*
+***nota &#x200B;**: La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posterior.*
 
 **Ancho de control de HTML preferido para la autenticación extendida** Especifique el ancho del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
 
 **Altura de control de HTML preferida para la autenticación extendida** Especifique la altura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales del usuario.
 
-***nota **: Los límites de anchura y altura de este cuadro de diálogo son los siguientes:*
+***nota &#x200B;**: Los límites de anchura y altura de este cuadro de diálogo son los siguientes:*
 Anchura: mínima = 400, máxima = 900
 
 Altura: mínima = 450; máxima = 800
@@ -90,7 +90,7 @@ La lista de usuarios y grupos visibles está visible para el coordinador de conj
 
 1. Después de instalar y configurar el entorno de AEM Forms con Document Security, configure todos los dominios adecuados en Administración de usuarios. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***nota **: la creación de dominios debe realizarse antes de poder crear directivas.*
+   ***nota &#x200B;**: la creación de dominios debe realizarse antes de poder crear directivas.*
 
 1. En la consola de administración, haga clic en Servicios > Administración de documentos > Directivas y, a continuación, haga clic en la pestaña Conjuntos de directivas.
 1. Seleccione Conjunto de directivas globales y, a continuación, haga clic en la ficha Usuarios y grupos visibles.
@@ -491,7 +491,7 @@ Puede crear plantillas de marcas de agua dinámicas. Estas plantillas siguen est
 1. Haga clic en Nuevo.
 1. En el cuadro Nombre, escriba un nombre para la nueva marca de agua.
 
-   ***nota **: no se pueden utilizar algunos caracteres especiales en los nombres o descripciones de marcas de agua o elementos de marcas de agua. Vea las restricciones enumeradas en [Consideraciones para editar directivas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***nota &#x200B;**: no se pueden utilizar algunos caracteres especiales en los nombres o descripciones de marcas de agua o elementos de marcas de agua. Vea las restricciones enumeradas en [Consideraciones para editar directivas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. En Nombre, junto al signo más, escriba un nombre significativo en el elemento de marca de agua, como Encabezado, agregue una descripción y expanda el signo más para mostrar las opciones.
 1. En Source, seleccione el tipo de marca de agua como Texto o PDF.
@@ -500,11 +500,11 @@ Puede crear plantillas de marcas de agua dinámicas. Estas plantillas siguen est
    * Seleccione los tipos de marcas de agua que desea incluir. Si selecciona Texto personalizado, en el cuadro adyacente, escriba el texto que se mostrará para la marca de agua. Tenga en cuenta la longitud del texto que aparecerá como marca de agua.
    * Especifique las propiedades de formato de texto, como el nombre de la fuente, el tamaño de fuente, el color de primer plano y el color de fondo del contenido del texto de la marca de agua. Especifique el color de primer plano y de fondo como valores hexadecimales.
 
-     ***nota **: Si selecciona la opción de escalado como Ajustar a página, la propiedad de tamaño de fuente no estará disponible para la edición.*
+     ***nota &#x200B;**: Si selecciona la opción de escalado como Ajustar a página, la propiedad de tamaño de fuente no estará disponible para la edición.*
 
 1. Si seleccionó PDF para las opciones de marca de agua enriquecida, haga clic en **Examinar** junto a Seleccionar marca de agua PDF para seleccionar el documento de PDF que desea utilizar como marca de agua.
 
-   ***nota **: no use un documento de PDF protegido por contraseña. Si especifica un PDF protegido por contraseña como elemento de marca de agua, la marca de agua no se aplicará.*
+   ***nota &#x200B;**: no use un documento de PDF protegido por contraseña. Si especifica un PDF protegido por contraseña como elemento de marca de agua, la marca de agua no se aplicará.*
 
 1. En Usar como fondo, seleccione Sí o No.
 
@@ -586,9 +586,9 @@ Puede restringir el registro con Document Security para determinados usuarios o 
 
 La siguiente configuración se encuentra en el área Filtro de restricción de correo electrónico de la página Registro de usuario invitado.
 
-**Exclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee excluir. Para excluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para excluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para excluir todos los usuarios del dominio example.com, escriba &amp;ast;.example.com.
+**Exclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee excluir. Para excluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para excluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para excluir todos los usuarios del dominio example.com, escriba &ast;.example.com.
 
-**Inclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee incluir. Para incluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para incluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para incluir a todos los usuarios en el dominio example.com, escriba &amp;ast;.example.com.
+**Inclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee incluir. Para incluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para incluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para incluir a todos los usuarios en el dominio example.com, escriba &ast;.example.com.
 
 ### Parámetros de servidor y cuenta de registro {#server-and-registration-account-parameters}
 
@@ -953,7 +953,7 @@ En este ejemplo, se deniegan todas las solicitudes de una instalación de Micros
 
 De forma predeterminada, se puede especificar un máximo de cinco elementos en una marca de agua. Además, el tamaño máximo de archivo del documento de PDF que desea utilizar como marca de agua está limitado a 100 KB. Puede cambiar estos parámetros en el archivo config.xml.
 
-***nota **: debe cambiar estos parámetros con precaución.*
+***nota &#x200B;**: debe cambiar estos parámetros con precaución.*
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Abra el archivo de configuración en un editor y busque el nodo `ServerSettings`.

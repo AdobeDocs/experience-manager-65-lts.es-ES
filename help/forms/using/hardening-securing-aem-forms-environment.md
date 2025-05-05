@@ -122,9 +122,9 @@ Puede configurar el cortafuegos interno para permitir que ciertos componentes de
 
 De forma predeterminada, los recursos disponibles en los nodos de publicación son accesibles para todos. El acceso de solo lectura está habilitado para todos los recursos. Es necesario para habilitar el acceso anónimo. Si planea restringir la vista de Forms y enviar el acceso solo a usuarios autenticados, utilice un grupo común para permitir que solo los usuarios autenticados tengan acceso de solo lectura a los recursos disponibles en los nodos de publicación. Las siguientes ubicaciones/directorios contienen recursos de Forms que requieren protección (acceso de solo lectura para usuarios autenticados):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Administrar de forma segura los datos de Forms  {#securely-handle-forms-data}
 

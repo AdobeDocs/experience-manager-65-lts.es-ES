@@ -43,14 +43,14 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 
 >[!NOTE]
 >
->Los métodos abreviados marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+>Los métodos abreviados marcados con &quot;&ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 >[!NOTE]
 >
-Selección múltiple en un dispositivo de escritorio:
+>Selección múltiple en un dispositivo de escritorio:
 >
-* Windows: Ctrl + clic en los componentes necesarios.
-* macOS: Comando + clic en los componentes necesarios.
+>* Windows: Ctrl + clic en los componentes necesarios.
+>* macOS: Comando + clic en los componentes necesarios.
 >
 
 ## Editor de temas  {#themeeditor}
@@ -65,7 +65,7 @@ Selección múltiple en un dispositivo de escritorio:
 
 >[!NOTE]
 >
-Los métodos abreviados marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+>Los métodos abreviados marcados con &quot;&ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 ## Explorador de contenido  {#contentbrowser}
 

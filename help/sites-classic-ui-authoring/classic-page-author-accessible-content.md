@@ -408,9 +408,9 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
   >RTE en una instalación AEM estándar está configurada para utilizar:
   >
   >* &lt;b> para &lt;strong>
-  * &lt;i> para &lt;em>
+  >* &lt;i> para &lt;em>
   >
-  Aunque son igual de eficaces, &lt;strong> y &lt;em> son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar &lt;strong> y &lt;em> (en lugar de &lt;b> e &lt;i>) al desarrollar su instancia de proyecto.
+  >Aunque son igual de eficaces, &lt;strong> y &lt;em> son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar &lt;strong> y &lt;em> (en lugar de &lt;b> e &lt;i>) al desarrollar su instancia de proyecto.
 
 * **Utilizar listas**:
 Es posible utilizar HTML para especificar tres tipos de listas distintas.
@@ -427,7 +427,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   >[!NOTE]
   >
-  RTE no admite el elemento `<dl>`.
+  >RTE no admite el elemento `<dl>`.
 
 * **Usar tablas**:
 
@@ -440,7 +440,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   >[!NOTE]
   >
-  Las tablas deben realizarse con el componente **Table**. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
+  >Las tablas deben realizarse con el componente **Table**. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
   Además, las tablas accesibles utilizan los siguientes elementos y atributos:
 
@@ -450,7 +450,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   >[!NOTE]
   >
-  Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   Al agregar una **Tabla**, puede configurar **propiedades de la tabla** mediante el cuadro de diálogo.
 
@@ -469,11 +469,11 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   >[!NOTE]
   >
-  El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
+  >El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
 
   >[!NOTE]
   >
-  Las tablas deben realizarse con el componente **Table**. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
+  >Las tablas deben realizarse con el componente **Table**. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
   ```xml
   <table>
@@ -506,7 +506,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   >[!NOTE]
   >
-  Esta funcionalidad no se encuentra disponible de inmediato en las instalaciones estándar. Requiere la configuración de RTE, reglas de HTML y serializador.
+  >Esta funcionalidad no se encuentra disponible de inmediato en las instalaciones estándar. Requiere la configuración de RTE, reglas de HTML y serializador.
 
 #### Más información: Información y relaciones (1.3.1) {#more-information-info-and-relationships}
 
@@ -527,7 +527,7 @@ Del mismo modo, la información que requiere distinguir entre sonidos diferentes
 
 >[!NOTE]
 >
-Para los requisitos relativos a las alternativas de color, consulte [Uso del color](#use-of-color).
+>Para los requisitos relativos a las alternativas de color, consulte [Uso del color](#use-of-color).
 
 #### Cómo cumplir: Características sensoriales (1.3.3)     {#how-to-meet-sensory-characteristics}
 
@@ -538,7 +538,7 @@ Asegúrese de que cualquier información relativa a las características visuale
 
 >[!NOTE]
 >
-El uso de términos descriptivos es aceptable si se entiende que tienen significado en un contexto no visual. Por ejemplo, usar *por encima* y *por debajo* sería aceptable en general, ya que implican contenido antes y después de un elemento de contenido en particular, respectivamente. Aún tendría sentido cuando el contenido se hable en voz alta.
+>El uso de términos descriptivos es aceptable si se entiende que tienen significado en un contexto no visual. Por ejemplo, usar *por encima* y *por debajo* sería aceptable en general, ya que implican contenido antes y después de un elemento de contenido en particular, respectivamente. Aún tendría sentido cuando el contenido se hable en voz alta.
 
 #### Más información: Características sensoriales (1.3.3)     {#more-information-sensory-characteristics}
 
@@ -557,7 +557,7 @@ El uso de términos descriptivos es aceptable si se entiende que tienen signific
 
 >[!NOTE]
 >
-Este criterio de éxito se dirige específicamente a la percepción del color. Otras formas de percepción se tratan en [Adaptable (1.3)](#adaptable); incluyendo el acceso programático al color y otros códigos de presentación visual.
+>Este criterio de éxito se dirige específicamente a la percepción del color. Otras formas de percepción se tratan en [Adaptable (1.3)](#adaptable); incluyendo el acceso programático al color y otros códigos de presentación visual.
 
 #### Objetivo: Uso del color (1.4.1)     {#purpose-use-of-color}
 
@@ -621,7 +621,7 @@ Las personas con ciertas deficiencias visuales quizá no puedan distinguir entre
 
 >[!NOTE]
 >
-El texto que se utiliza con fines puramente decorativos se excluye de estos criterios de éxito.
+>El texto que se utiliza con fines puramente decorativos se excluye de estos criterios de éxito.
 
 #### Cómo cumplir: Cumplir los criterios de contraste (Mínimo) (1.4.3)     {#how-to-meet-contrast-minimum}
 
@@ -653,7 +653,7 @@ Si no es posible alcanzar los niveles de contraste recomendados, proporcione un 
 
 >[!NOTE]
 >
-Los logotipos (texto que forma parte de un logotipo o de un nombre de marca) se consideran esenciales.
+>Los logotipos (texto que forma parte de un logotipo o de un nombre de marca) se consideran esenciales.
 
 #### Objetivo: Imágenes de texto (1.4.5)          {#purpose-images-of-text}
 
@@ -726,7 +726,7 @@ Según la naturaleza del contenido, se puede aplicar una o varias de las siguien
 
 >[!NOTE]
 >
-Ya que cualquier contenido que no cumpla este criterio de éxito puede interferir en la capacidad de un usuario para utilizar toda la página, todo el contenido de la página web (tanto si se utiliza para cumplir otros criterios como si no) debe cumplir este criterio de éxito. Consulte [Requisito de conformidad 5: no interferencia](https://www.w3.org/TR/WCAG20/#cc5).
+>Ya que cualquier contenido que no cumpla este criterio de éxito puede interferir en la capacidad de un usuario para utilizar toda la página, todo el contenido de la página web (tanto si se utiliza para cumplir otros criterios como si no) debe cumplir este criterio de éxito. Consulte [Requisito de conformidad 5: no interferencia](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Objetivo: Tres parpadeos o Por debajo de los límites (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -812,7 +812,7 @@ John Smith's publications
 
 >[!NOTE]
 >
-El fragmento anterior representa una ilustración; es recomendable utilizar el componente **Imagen**.
+>El fragmento anterior representa una ilustración; es recomendable utilizar el componente **Imagen**.
 
 Aunque se recomienda proporcionar un texto para el vínculo que identifique su objetivo sin necesidad de contexto adicional, no siempre es posible. Los vínculos de contexto libre se pueden utilizar en los casos siguientes, cuyos ejemplos HTML se pueden encontrar en [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
@@ -898,7 +898,7 @@ El atributo `lang` se puede utilizar para identificar los cambios en el idioma d
 
 >[!NOTE]
 >
-Los bloques de citas no funcionan con las instancias listas para usarse. Se podría desarrollar un componente personalizado para admitir la función.
+>Los bloques de citas no funcionan con las instancias listas para usarse. Se podría desarrollar un componente personalizado para admitir la función.
 
 De manera similar, el navegador puede mostrar un préstamo poco común o una expresión correcta si el elemento `span` se utiliza de la manera siguiente:
 
@@ -908,7 +908,7 @@ De manera similar, el navegador puede mostrar un préstamo poco común o una exp
 
 >[!NOTE]
 >
-No es necesario seguir este criterio de éxito cuando se incluyen nombres o ciudades en distintos idiomas, o cuando se utilizan préstamos o expresiones que ya son comunes en el idioma por defecto (como *schadenfreude* en inglés).
+>No es necesario seguir este criterio de éxito cuando se incluyen nombres o ciudades en distintos idiomas, o cuando se utilizan préstamos o expresiones que ya son comunes en el idioma por defecto (como *schadenfreude* en inglés).
 
 Para añadir el elemento “span” (extensión), con un idioma adecuado, puede editar manualmente sus especificaciones HTML en el modo de edición de la fuente de RTE para que se lea como puede ver arriba. Alternativamente, el atributo `lang` se puede incluir en RTE a través de un administrador del sistema (consulte [Añadir ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

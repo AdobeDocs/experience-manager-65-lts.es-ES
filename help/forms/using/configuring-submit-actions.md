@@ -76,7 +76,7 @@ Configurar la acción de envío del punto final de REST.
 
 >[!NOTE]
 >
-Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
+>Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
 
 ### Publicar datos enviados en un recurso o punto final REST externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -107,7 +107,7 @@ Puede usar la acción de envío **Enviar correo electrónico** para enviar un co
 
 >[!NOTE]
 >
-Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes), para incluir los datos del formulario en un mensaje de correo electrónico.
+>Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes), para incluir los datos del formulario en un mensaje de correo electrónico.
 
 ## Enviar PDF por correo electrónico {#send-pdf-via-email}
 
@@ -115,7 +115,7 @@ La acción de envío **Enviar PDF por correo electrónico** envía un mensaje de
 
 >[!NOTE]
 >
-Esta acción de envío está disponible para formularios adaptables basados en XFA y en XSD que tienen la plantilla Documento de registro.
+>Esta acción de envío está disponible para formularios adaptables basados en XFA y en XSD que tienen la plantilla Documento de registro.
 
 ## Invocar un flujo de trabajo de formularios {#invoke-a-forms-workflow}
 
@@ -149,7 +149,7 @@ La acción de envío coloca lo siguiente en la ubicación de carga útil del flu
 
 >[!NOTE]
 >
-Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenar datos externo como si no.
+>Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenar datos externo como si no.
 
 * **Archivos adjuntos**: Puede usar la opción **[!UICONTROL Ruta de archivos adjuntos]** para especificar el nombre de la carpeta en la que se almacenarán los archivos adjuntos cargados en el formulario adaptable. La carpeta se creará en relación con la carga útil. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable de la lista de variables disponibles para el modelo de flujo de trabajo.
 
@@ -172,7 +172,7 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 >[!NOTE]
 >
-La característica Enviar a Microsoft® SharePoint List se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>La característica Enviar a Microsoft® SharePoint List se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
@@ -198,7 +198,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
      >[!NOTE]
      >
-     El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
+     >El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
@@ -217,16 +217,16 @@ Al enviar el formulario, los datos se guardan en el almacenamiento de lista de S
 
 >[!NOTE]
 >
-En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
-* columna de imagen
-* columna de metadatos
-* columna de persona
-* columna de datos externos
+>En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
+>* columna de imagen
+>* columna de metadatos
+>* columna de persona
+>* columna de datos externos
 
 
 >[!NOTE]
 >
-Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
+>Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 ## Revalidación del lado del servidor en formularios adaptables {#server-side-revalidation-in-adaptive-form}
 
@@ -254,7 +254,7 @@ Si el usuario final omite esas validaciones y envía los formularios, el servido
 
 >[!NOTE]
 >
-La validación del lado del servidor valida el modelo de formulario. Se recomienda crear una biblioteca de cliente independiente para las validaciones y no mezclarla con otras cosas como el estilo del HTML y la manipulación DOM en la misma biblioteca de cliente.
+>La validación del lado del servidor valida el modelo de formulario. Se recomienda crear una biblioteca de cliente independiente para las validaciones y no mezclarla con otras cosas como el estilo del HTML y la manipulación DOM en la misma biblioteca de cliente.
 
 ### Compatibilidad con funciones personalizadas en expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
 

@@ -116,7 +116,7 @@ Por ejemplo, si el ratón se encuentra actualmente sobre la parte izquierda o de
 
 >[!NOTE]
 >
-Las etiquetas configuradas en recursos DAM que se muestran en las páginas visitadas no se contarán.
+>Las etiquetas configuradas en recursos DAM que se muestran en las páginas visitadas no se contarán.
 
 **Almacenamiento tecnográfico** Este componente depende de la instalación.
 
@@ -128,7 +128,7 @@ Para obtener más información, consulte [Client Context en detalle](/help/sites
 
 >[!NOTE]
 >
-Los datos de página ya no están en el contexto de cliente como componente predeterminado. Si es necesario, puede agregarlo editando el contexto del cliente, agregando el componente **Propiedades de almacenamiento genérico** y configurándolo para definir **Almacén** como `pagedata`.
+>Los datos de página ya no están en el contexto de cliente como componente predeterminado. Si es necesario, puede agregarlo editando el contexto del cliente, agregando el componente **Propiedades de almacenamiento genérico** y configurándolo para definir **Almacén** como `pagedata`.
 
 ## Cambio del perfil de ClientContext {#changing-the-client-context-profile}
 
