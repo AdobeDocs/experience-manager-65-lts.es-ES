@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Compruebe [Planificación de la actualización](/help/sites-deploying/upgrade-pl
 
 ### Requisitos previos de migración {#migration-prerequisites}
 
-* **Versión mínima de Java requerida**: Asegúrese de que ha instalado IBM® Sumeru JRE 17 en el servidor WLP.
+* **Versión mínima de Java requerida**: Asegúrese de que ha instalado IBM® Sumeru JRE 17/21 en su servidor WLP.
 
 ### Realización de la actualización {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ Compruebe [Planificación de la actualización](/help/sites-deploying/upgrade-pl
 
 1. Realice una copia de seguridad del archivo `sling.properties` (normalmente presente en `crx-quickstart/conf/`) y elimínelo
 1. Cambiar la versión del servlet a **6.0** en el archivo `server.xml`
-1. Instale Java 17 y asegúrese de que está correctamente instalado ejecutando:
+1. Instale Java 17/Java 21 y asegúrese de que está correctamente instalado ejecutando:
 
    ```shell
    java -version
    ```
 
-1. Revise los parámetros de inicio del servidor de AEM y asegúrese de actualizar los parámetros según sus necesidades. Consulte [Consideraciones de Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) para obtener más información.
+1. Revise los parámetros de inicio del servidor de AEM y asegúrese de actualizar los parámetros según sus necesidades. Consulte [Consideraciones de Java 17/Java 21](/help/sites-deploying/custom-standalone-install.md#java-considerations) para obtener más información.
 1. Descargue el nuevo archivo WAR de 6.5 LTS y cópielo en la carpeta de puntos ubicada en: `/<path-to-aem-server>/dropins/`
 1. Inicie la instancia de AEM: se puede hacer generalmente con este comando:
 

@@ -9,9 +9,9 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '767'
 ht-degree: 25%
 
 ---
@@ -40,7 +40,7 @@ El complemento de AEM Commerce para AEM, conocido como complemento de CIF, tambi
 Lo siguiente debe instalarse de manera local:
 
 - AEM local 6.5 LTS
-- [Java 17](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 - [Nodo LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)

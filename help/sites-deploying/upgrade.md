@@ -9,9 +9,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -50,6 +51,6 @@ Para facilitar la referencia a las instancias de AEM involucradas en estos proce
 
 ### Actualizaciones {#updates}
 
-La capa de base ahora es compatible con Java 17, e incorpora los últimos paquetes de código abierto de Apache Sling, Felix y Jackrabbit Oak. Además, el empaquetado de AEM 6.5 LTS uber-jar ha cambiado. Además, se han eliminado algunas funciones heredadas de AEM 6.5 LTS. Para obtener más información, consulte [Notas de la versión](/help/release-notes/release-notes.md#whats-new-what-s-new) y [Lista de paquetes obsoletos desinstalados después de la actualización](/help/sites-deploying/obsolete-bundles.md)
+La capa de base ahora es compatible con Java 17 y Java 21, e incorpora los últimos paquetes de código abierto de Apache Sling, Felix y Jackrabbit Oak. Además, el empaquetado de AEM 6.5 LTS uber-jar ha cambiado. Además, se han eliminado algunas funciones heredadas de AEM 6.5 LTS. Para obtener más información, consulte [Notas de la versión](/help/release-notes/release-notes.md#whats-new-what-s-new) y [Lista de paquetes obsoletos desinstalados después de la actualización](/help/sites-deploying/obsolete-bundles.md)
 
 AEM 6.5 LTS tiene un fuerte enfoque en la compatibilidad con versiones anteriores de las características y viene con una herramienta de análisis. Consulte [Evaluación de la complejidad de la actualización con AEM Analyzer](/help/sites-deploying/aem-analyzer.md) para evaluar la complejidad al comenzar a [planificar la actualización](/help/sites-deploying/upgrade-planning.md).

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 3e7947935e9632ff6f5a68c2104896e01f52a3ed
+source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2980'
 ht-degree: 11%
 
 ---
@@ -91,10 +91,12 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | **Plataforma** | **Nivel de soporte** | **Vincular** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | A: Compatible `[1]` |
+| Oracle Java™ SE 21 JDK | A: Compatible `[1]` |
 | VM de IBM® Semeru J9 - compilación 17.0.13.0 | A: Compatible `[2]` |
+| VM de IBM® Semeru J9 - compilación 21.0.6.0 | A: Compatible `[2]` |
 
 1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. El soporte y la distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, son compatibles directamente con Adobe para todos los clientes de AEM que utilizan la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Esta versión es compatible con Oracle Java™ 17.**
+   **Esta versión es compatible con Oracle Java™ 17 y Oracle Java™ 21.**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
 
@@ -139,7 +141,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1. Además, AEM 
 | Plataforma | Nivel de soporte |
 |---|---|
 | **Motor de servlet integrado Quickstart (Jetty 11.0.x)** | A: Compatible |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con el perfil web 24.0.0.7 y IBM® Sumeru open JRE® 17 | R: Compatibilidad restringida para nuevos contratos `[1]` |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Perfil web 24.0.0.7 y IBM® Sumeru open JRE® 17/21 | R: Compatibilidad restringida para nuevos contratos `[1]` |
 | Apache Tomcat 11.0.x | R: Compatibilidad restringida para nuevos contratos `[1]` |
 
 1. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
@@ -183,7 +185,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
