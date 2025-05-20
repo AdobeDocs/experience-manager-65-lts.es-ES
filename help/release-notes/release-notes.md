@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 28%
+source-wordcount: '927'
+ht-degree: 25%
 
 ---
 
@@ -108,10 +108,28 @@ Esta sección enumera las funciones que se han eliminado de AEM 6.5 LTS. Las ver
 | Código abierto | `org.apache.jackrabbit.api` paquetes ahora se exportan del paquete `org.apache.jackrabbit.oak-jackrabbit-api`. | No se requiere ningún cambio. | 6.5 LTS GA |
 | Código abierto | `com.github.jknack.handlebars` no es compatible | Elegir [versión](https://mvnrepository.com/artifact/com.github.jknack/handlebars) relevante | 6.5 LTS GA |
 
+## Problemas conocidos {#known-issues}
+
+### Error de conexión de Dispatcher con función solo SSL {#ssl-only-feature}
+
+Al habilitar la función solo SSL en las implementaciones de AEM, existe un problema conocido que afecta a la conectividad entre las instancias de Dispatcher y AEM. Después de habilitar esta función, las comprobaciones de estado pueden fallar y la comunicación entre las instancias de Dispatcher y AEM puede interrumpirse.
+
+**Impacto:**
+* Errores de comprobación de estado con códigos de respuesta HTTP 500
+* Tráfico roto entre las instancias de Dispatcher y AEM
+* El contenido no se puede proporcionar correctamente a través de Dispatcher
+
+**Entornos afectados:**
+* implementaciones de AEM con configuraciones de Dispatcher
+* Sistemas en los que se ha habilitado la función de solo SSL
+
+**Solución:**
+Si tiene este problema, póngase en contacto con el servicio de atención al cliente de Adobe. Hay disponible una revisión [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) para resolver este problema. No intente habilitar las funciones solo SSL hasta que aplique la revisión necesaria.
+
 ## Sitios web restringidos{#restricted-sites}
 
 Estos sitios web solo están disponibles para los clientes de. Si es cliente de y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en Licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
