@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '2980'
-ht-degree: 11%
+source-wordcount: '2981'
+ht-degree: 12%
 
 ---
 
@@ -45,7 +45,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 
 Para obtener más información, consulte las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
-### Niveles de soporte {#support-levels}
+### Niveles de compatibilidad {#support-levels}
 
 Este documento enumera las plataformas de cliente y servidor compatibles con Adobe Experience Manager. Adobe proporciona varios niveles de compatibilidad, tanto para las configuraciones recomendadas como para otras configuraciones.
 
@@ -74,7 +74,7 @@ Adobe recomienda estas configuraciones y proporciona soporte total como parte de
 
 | Nivel de soporte | Descripción |
 |---|---|
-| **Z: no compatible** | La configuración no es compatible. Adobe no realiza declaraciones sobre si la configuración funciona o no y no la admite. |
+| **Z: no compatible** | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no, y no la admite. |
 
 ## Plataformas compatibles {#supported-platforms}
 
@@ -142,7 +142,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1. Además, AEM 
 |---|---|
 | **Motor de servlet integrado Quickstart (Jetty 11.0.x)** | A: Compatible |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Perfil web 24.0.0.7 y IBM® Sumeru open JRE® 17/21 | R: Compatibilidad restringida para nuevos contratos `[1]` |
-| Apache Tomcat 11.0.x | R: Compatibilidad restringida para nuevos contratos `[1]` |
+| Apache Tomcat 10.0.x/10.1.x | R: Compatibilidad restringida para nuevos contratos `[1]` |
 
 1. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
 
@@ -185,7 +185,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
@@ -206,7 +206,7 @@ Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatche
 
 ### Exploradores admitidos para la interfaz de usuario de creación {#supported-browsers-for-authoring-user-interface}
 
-La interfaz de usuario de Adobe Experience Manager funciona con las siguientes plataformas de cliente. Todos los exploradores se prueban con el conjunto predeterminado de complementos y complementos.
+La interfaz de usuario de Adobe Experience Manager funciona con las siguientes plataformas de cliente. Todos los exploradores se prueban con el conjunto predeterminado de complementos.
 
 La interfaz de usuario de AEM está optimizada para pantallas más grandes (normalmente portátiles y equipos de escritorio) y formatos de tableta (como Apple iPad o Microsoft® Surface). El factor de forma del teléfono no es compatible.
 
@@ -271,10 +271,10 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
  </tbody>
 </table>
 
-1. Lanzamiento de soporte ampliado de Firefox [Más información en mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Lanzamiento de soporte ampliado de Firefox [Más información en mozilla.org](https://www.mozilla.org/es-ES/firefox/enterprise/)
 1. Compatibilidad con Apple iPad
 
-### Exploradores admitidos para sitios web {#supported-browsers-for-websites}
+### Exploradores compatibles con los sitios web {#supported-browsers-for-websites}
 
 Por lo general, la compatibilidad del explorador con los sitios web procesados por AEM Sites depende de la implementación de las plantillas de página de AEM, el diseño y la salida de componentes y, por lo tanto, depende del control de la parte que implementa estas partes.
 

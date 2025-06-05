@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Esta sección le explica cómo instalar Adobe Experience Manager (AEM) con un se
 Se describen los pasos de instalación de los siguientes servidores de aplicaciones:
 
 * [WebSphere](#websphere)
-* [Tomcat 11.0.x](#tomcat)
+* [Tomcat 10.0.x/10.1.x](#tomcat)
 
 Consulte la documentación adecuada del servidor de aplicaciones para obtener más información sobre la instalación de aplicaciones web, las configuraciones de servidor y cómo iniciar y detener el servidor.
 
@@ -122,7 +122,7 @@ Antes de la implementación, lea la [Descripción general](#general-description)
 
 * Inicio de la aplicación web de AEM
 
-#### Tomcat 11.0.x {#tomcat}
+#### Tomcat 10.0.x/10.1.x {#tomcat}
 
 Antes de una implementación, lea la [Descripción general](#general-description) anterior.
 
