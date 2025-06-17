@@ -29,9 +29,9 @@ En este documento se describen los pasos recomendados para cargar un SPA indepen
 Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
-* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
    * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
-   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}
