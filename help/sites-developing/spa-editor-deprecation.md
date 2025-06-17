@@ -64,7 +64,7 @@ El editor universal ofrece muchas ventajas, por lo que la migración a él es un
 * **Revisión para el futuro:** La hoja de ruta de AEM da prioridad al Editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
 * **Integración más sencilla:** No se requiere SDK específico de AEM para usar el Editor universal, lo que reduce el bloqueo de pila tecnológica.
 * **Traer su propia aplicación:** El editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
-* **Extensibilidad:** El editor universal se beneficia de un marco de trabajo de [extensión sólido,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) que incluye integraciones con GenAI, Workfront y más.
+* **Extensibilidad:** El editor universal se beneficia de un marco de trabajo de [extensión sólido,](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) que incluye integraciones con GenAI, Workfront y más.
 
 No hay una ruta de migración directa del Editor de SPA al Editor universal. Esto se debe a diferencias fundamentales entre las dos tecnologías.
 
