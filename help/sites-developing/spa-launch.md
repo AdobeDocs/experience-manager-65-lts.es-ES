@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: aa4471bf-8477-4377-b474-861269f69334
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 1%
 
 ---
+
 
 # Integración de SPA y Adobe Experience Platform Launch{#spa-and-adobe-experience-platform-launch-integration}
 

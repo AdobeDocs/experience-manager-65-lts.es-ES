@@ -8,12 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: ba64fb22-85fb-434b-93fa-be910af107a0
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
 
 ---
+
 
 # Materiales de referencia de SPA {#spa-reference-materials}
 

@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: b179ca99-c9c6-435a-b000-c7f3fd15cd53
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
 
 ---
+
 
 # Información general del editor de SPA{#spa-editor-overview}
 

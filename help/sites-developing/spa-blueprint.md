@@ -8,12 +8,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
+
 
 # Modelo SPA{#spa-blueprint}
 
@@ -98,7 +101,7 @@ Para facilitar la interoperabilidad de las bibliotecas, Adobe recomienda que el 
 
 #### Implementaciones {#implementations}
 
-#### Reaccionar {#react}
+#### React {#react}
 
 módulo npm: [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 

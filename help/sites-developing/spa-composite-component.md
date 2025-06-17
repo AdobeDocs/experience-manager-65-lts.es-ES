@@ -4,12 +4,15 @@ description: Aprenda a crear sus propios componentes compuestos, componentes for
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 95cc8c29-7494-4326-934d-6def59875d71
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
 
 ---
+
 
 # Componentes compuestos en SPA {#composite-components-in-spas}
 

@@ -4,12 +4,15 @@ description: En este documento se describen los pasos recomendados para cargar u
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 71b7f46de3619605c8a5aedc496cfb85ed582f59
+exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
+
 
 # Edición de un SPA externo en Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -26,9 +29,9 @@ En este documento se describen los pasos recomendados para cargar un SPA indepen
 Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
-* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
+* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
-   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
+   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}

@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # Desarrollo de SPA para AEM{#developing-spas-for-aem}
 
@@ -61,7 +64,7 @@ Al igual que con el procesamiento, todo el enrutamiento también debe ser dinám
 
 Cualquier enrutamiento estático funciona en contra del [principio de portabilidad](/help/sites-developing/spa-architecture.md#portability) y limita al autor al no ser compatible con las características de creación de contenido de AEM. Por ejemplo, con el enrutamiento estático, si el autor de contenido desea cambiar una ruta o cambiar una página, tendría que pedirle al desarrollador front-end que lo haga.
 
-## Tipo de archivo del proyecto AEM {#aem-project-archetype}
+## Arquetipo del proyecto AEM {#aem-project-archetype}
 
 Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 

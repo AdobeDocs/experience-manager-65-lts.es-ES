@@ -8,12 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 051be106-bb15-46b2-8158-53817f68f57c
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
 
 ---
+
 
 # Asignación de modelos dinámicos a componentes para SPA{#dynamic-model-to-component-mapping-for-spas}
 

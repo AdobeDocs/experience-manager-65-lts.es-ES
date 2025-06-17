@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 4%
 
 ---
+
 
 # Introducción a SPA en AEM: React{#getting-started-with-spas-in-aem-react}
 
@@ -116,7 +119,7 @@ En realidad, al crear la aplicación se usa [Webpack](https://webpack.js.org/) p
 
 Una vez creado, el paquete se puede cargar en una instancia de AEM.
 
-### Tipo de archivo del proyecto AEM {#aem-project-archetype}
+### Arquetipo del proyecto AEM {#aem-project-archetype}
 
 Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 

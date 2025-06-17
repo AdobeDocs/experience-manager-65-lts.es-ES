@@ -8,12 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 0a72d11c-1411-4b95-bcde-bf7458b7856e
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
+
 
 # Tutorial WKND de SPA{#spa-wknd-tutorial}
 
@@ -25,7 +28,7 @@ Sumérjase en el desarrollo de SPA con este tutorial de varias partes. Implement
 
 Para ver un ejemplo completo de cómo crear su propia aplicación de una sola página editable con AEM a partir de la configuración del proyecto mediante el enrutamiento de aplicaciones, consulte los Tutoriales de la SPA de WKND:
 
-* [Introducción al Editor de SPA de AEM y Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=es)
+* [Introducción al Editor de SPA de AEM y Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 * [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es)
 
 Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, asegúrese de revisar también el documento [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md).
