@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -54,7 +55,7 @@ Cuando se inicia (ejecuta) un modelo del flujo de trabajo, se crea una instancia
 
 >[!CAUTION]
 >
->Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo de flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más información.
+>Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo y ampliación de flujos de trabajo - Modelos](/help/sites-developing/workflows.md#model) para obtener más información.
 
 Las instancias de flujo de trabajo progresan a través del siguiente ciclo vital:
 
