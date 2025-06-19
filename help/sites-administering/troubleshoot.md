@@ -94,7 +94,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obtener más información
+Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es) para obtener más información
 
 ### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ Cuando la funcionalidad está desarrollada para AEM WCM, se pueden abrir sesione
 * Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
 * De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
-Para empezar a analizar las sesiones no cerradas, consulte el artículo de Knowledge Base [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Para empezar a analizar las sesiones no cerradas, consulte el artículo de Knowledge Base [Unclosed Resource Resolver](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

@@ -421,7 +421,7 @@ Sin embargo, si no desea que los recursos insertados en Dynamic Media Classic se
 Para poder insertar recursos en Dynamic Media Classic sin publicarlos, debe configurar lo siguiente:
 
 1. [Use Admin Console para crear un caso de soporte](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). En su caso de asistencia, solicite la activación de la previsualización segura para su cuenta de Dynamic Media Classic.
-1. [Configure la vista previa segura para su cuenta de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
+1. [Configure la vista previa segura para su cuenta de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es).
 
 Estos pasos son los mismos que seguiría para crear cualquier configuración de prueba segura en Dynamic Media Classic.
 
@@ -450,7 +450,7 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 1. Seleccione la pestaña **[!UICONTROL Avanzadas]**.
 1. En el menú desplegable **[!UICONTROL Habilitar vista segura]**, seleccione **[!UICONTROL Tras la activación de publicación de AEM]** para insertar los recursos en Dynamic Media Classic sin publicarlos. (De manera predeterminada, este valor se establece en **[!UICONTROL Inmediatamente]**, donde los recursos de Dynamic Media Classic se publican inmediatamente).
 
-   Consulte [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) para obtener más información sobre cómo probar recursos antes de publicarlos.
+   Consulte [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es) para obtener más información sobre cómo probar recursos antes de publicarlos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -565,7 +565,7 @@ Concretamente, puede configurar el formato de archivo aceptado por tipo MIME en 
 
    Por ejemplo, `psprocess="rasterize"&psresolution=120`.
 
-   Consulte la [API del sistema de producción de imágenes de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) para obtener más parámetros de trabajo de carga que pueda usar.
+   Consulte la [API del sistema de producción de imágenes de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=es) para obtener más parámetros de trabajo de carga que pueda usar.
 
    >[!NOTE]
    >

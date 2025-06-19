@@ -56,8 +56,8 @@ Esto ayuda a un desarrollador a lo siguiente:
 >
 >Consulte:
 >
->* Artículo de la base de conocimiento, [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obtener más sugerencias y herramientas.
->* Sesión de AEM Gems sobre [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* Artículo de la base de conocimiento, [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-16935), para obtener más sugerencias y herramientas.
+>* Sesión de AEM Gems sobre [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=es).
 >
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
