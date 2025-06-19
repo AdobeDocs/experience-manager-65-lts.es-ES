@@ -9,9 +9,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 59%
 
 ---
@@ -270,7 +271,7 @@ Para los subtítulos cerrados, crea y proporciona un archivo de subtítulos sinc
 
 Ver los tutoriales en [Más información: subtítulos (pregrabados) (1.2.2)](#more-information-captions-pre-recorded). Asegúrese de proporcionar una nota para que los usuarios sepan que hay subtítulos disponibles para el vídeo.
 
-Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Este método se logra utilizando aplicaciones de edición de vídeo que permiten la superposición de títulos en el vídeo.
+Si necesita utilizar subtítulos abiertos, incruste el texto en la pista de vídeo. Este método se logra utilizando aplicaciones de edición de vídeo que permiten la superposición de títulos en el vídeo.
 
 #### Más información: Subtítulos (pregrabados) (1.2.2)  {#more-information-captions-pre-recorded}
 
@@ -311,7 +312,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 * [Entender los criterios de éxito 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/es/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Subtítulos (en vivo) (1.2.4)    {#captions-live}
 
@@ -327,12 +328,11 @@ Este criterio de éxito es idéntico al de [Subtítulos (pregrabados)](#captions
 
 Siga las instrucciones proporcionadas para [Subtítulos (pregrabados)](#captions-pre-recorded) arriba. Sin embargo, debido a la naturaleza de los medios, los subtítulos deben crearse lo más rápido posible y en respuesta a lo que está sucediendo. Por eso es necesario considerar la posibilidad de utilizar subtítulos a tiempo real o herramientas de función de voz a texto.
 
-Las instrucciones detalladas van más allá del alcance de este documento, pero los siguientes recursos proporcionan información útil:
+Las instrucciones detalladas exceden el ámbito de este documento, pero el siguiente recurso proporciona información útil:
 
 * [WebAIM: Subtítulos a tiempo real](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (Universidad de Washington): ¿Se pueden generar subtítulos de manera automática utilizando el reconocimiento de voz?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Más información: Subtítulos (en vivo) (1.2.4)     {#more-information-captions-live}
+#### Más información: Subtítulos (en vivo) (1.2.4)  {#more-information-captions-live}
 
 * [Entender los criterios de éxito 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Cumplir los criterios de éxito 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)

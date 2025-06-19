@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 1%
@@ -436,7 +436,7 @@ Puede utilizar el archivo de configuración con las siguientes opciones:
 * azureSas=&quot;&quot;: en la versión 1.6.3 del conector, se agregó compatibilidad con la firma de acceso compartido (SAS) de Azure. **Si existen credenciales de SAS y de almacenamiento en el archivo de configuración, SAS tiene prioridad.** Para obtener más información acerca de SAS, consulte la [documentación oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Asegúrese de que el carácter &quot;=&quot; tiene un carácter de escape similar a &quot;\=&quot;.
 
 * azureBlobEndpoint=&quot;&quot;: El extremo del blob de Azure. Por ejemplo, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: nombre de la cuenta de almacenamiento. Para obtener más información acerca de las credenciales de autenticación de Microsoft® Azure, consulte la [documentación oficial](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: nombre de la cuenta de almacenamiento. Para obtener más información acerca de las credenciales de autenticación de Microsoft® Azure, consulte la [documentación oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: La clave de acceso de almacenamiento. Asegúrese de que el carácter &quot;=&quot; tiene un carácter de escape similar a &quot;\=&quot;.
 * container=&quot;&quot;: el nombre del contenedor de almacenamiento del blob de Microsoft® Azure. El contenedor es una agrupación de un conjunto de blobs. Para obtener más información, lea la [documentación oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -72,8 +73,6 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 >[!CAUTION]
 >
 >La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe superar 1000.
->
->Vea [¿Cuántos datos puede manejar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Ejemplos {#example-2}
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 6%
 
 ---
@@ -188,7 +188,7 @@ El paso **Establecer variable** se ejecuta repetidamente, incrementando el valor
 
 >[!NOTE]
 >
->Ver [paso OR Split](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Ver [paso OR Split](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![Bifurcación mediante OR Split](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con la carga útil**
 
    * Para almacenar datos de widget como una propiedad de la carga útil del flujo de trabajo, utilice el siguiente formato para el valor de la propiedad name del nodo de widget:
-
      `./jcr:content/nodename`
 
    * Los datos se almacenan en la propiedad `nodename` del nodo de carga útil. Si el nodo no contiene esa propiedad, se crea la propiedad.
@@ -294,7 +293,6 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con el elemento de trabajo**
 
    * Para almacenar los datos del widget como una propiedad de los metadatos del elemento de trabajo, utilice el siguiente formato para el valor de la propiedad name:
-
      `nodename`
 
    * Los datos se almacenan en la propiedad `nodename` del elemento de trabajo `metadata`. Los datos se conservan si el cuadro de diálogo se utiliza posteriormente con la misma carga útil.

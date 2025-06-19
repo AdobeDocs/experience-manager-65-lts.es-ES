@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 3%
 
 ---
-
 
 # Desarrollo y ampliación de flujos de trabajo{#developing-and-extending-workflows}
 
@@ -39,10 +39,9 @@ Los aspectos clave se tratan a continuación, mientras que las siguientes págin
 >
 >* Al participar en flujos de trabajo, consulte [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
 >* Para administrar flujos de trabajo e instancias de flujo de trabajo, consulte [Administrar flujos de trabajo](/help/sites-administering/workflows.md).
->* Para ver un artículo completo de la comunidad, consulte [Modificación de Digital Assets mediante flujos de trabajo de Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
+>* Para ver un artículo completo de la comunidad, consulte [Modificación de Digital Assets mediante flujos de trabajo de Adobe Experience Manager.](/help/assets/assets-workflow.md).
 >* Consulte [Preguntar al seminario web de expertos de AEM sobre flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Cambios en las ubicaciones de la información, consulte [Prácticas recomendadas de flujo de trabajo - Ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
->
 
 ## Modelo {#model}
 
@@ -205,7 +204,7 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
 
 ### Flujos de trabajo y Forms {#workflows-and-forms}
 
-Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en AEM. Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=es) disponibles en una instancia de AEM estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en AEM. Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibles en una instancia de AEM estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Al crear un formulario, el envío del formulario se puede asociar fácilmente a un modelo del flujo de trabajo. Por ejemplo, para almacenar el contenido en una ubicación concreta del repositorio o para notificar a un usuario el envío del formulario y su contenido.
 

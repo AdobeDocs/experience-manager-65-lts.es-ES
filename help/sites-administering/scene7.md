@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5425'
+source-wordcount: '5405'
 ht-degree: 0%
 
 ---
@@ -420,13 +421,9 @@ Sin embargo, si no desea que los recursos insertados en Dynamic Media Classic se
 Para poder insertar recursos en Dynamic Media Classic sin publicarlos, debe configurar lo siguiente:
 
 1. [Use Admin Console para crear un caso de soporte](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). En su caso de asistencia, solicite la activación de la previsualización segura para su cuenta de Dynamic Media Classic.
-1. [Configure la vista previa segura para su cuenta de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es).
+1. [Configure la vista previa segura para su cuenta de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Estos pasos son los mismos que seguiría para crear cualquier configuración de prueba segura en Dynamic Media Classic.
-
->[!NOTE]
->
->Si el entorno de instalación es un sistema operativo UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) con respecto a otras opciones de configuración que debe establecer.
 
 #### Limitaciones conocidas para insertar recursos en estado sin publicar  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -453,7 +450,7 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 1. Seleccione la pestaña **[!UICONTROL Avanzadas]**.
 1. En el menú desplegable **[!UICONTROL Habilitar vista segura]**, seleccione **[!UICONTROL Tras la activación de publicación de AEM]** para insertar los recursos en Dynamic Media Classic sin publicarlos. (De manera predeterminada, este valor se establece en **[!UICONTROL Inmediatamente]**, donde los recursos de Dynamic Media Classic se publican inmediatamente).
 
-   Consulte [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es) para obtener más información sobre cómo probar recursos antes de publicarlos.
+   Consulte [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) para obtener más información sobre cómo probar recursos antes de publicarlos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -568,7 +565,7 @@ Concretamente, puede configurar el formato de archivo aceptado por tipo MIME en 
 
    Por ejemplo, `psprocess="rasterize"&psresolution=120`.
 
-   Consulte la [API del sistema de producción de imágenes de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=es) para obtener más parámetros de trabajo de carga que pueda usar.
+   Consulte la [API del sistema de producción de imágenes de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) para obtener más parámetros de trabajo de carga que pueda usar.
 
    >[!NOTE]
    >

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1363'
 ht-degree: 6%
 
 ---
@@ -234,10 +234,6 @@ Si la instancia se instaló desde la interfaz de usuario de, se abrirá automát
 
 ![pantalla de inicio](assets/screen_shot_.png)
 
->[!NOTE]
->
->Si utiliza enlaces simbólicos, eche un vistazo a [problemas con enlaces simbólicos](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
-
 ### Inicio y detención {#starting-and-stopping}
 
 Una vez que AEM se ha desempaquetado a sí mismo y se ha iniciado por primera vez, al hacer doble clic en el archivo jar en el directorio de instalación simplemente se inicia la instancia, no se vuelve a instalar.
@@ -270,7 +266,7 @@ Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más infor
 
 * [Creación](/help/sites-authoring/first-steps.md)
 * [Administración ](/help/sites-administering/home.md)
-* [El desarrollo de](/help/sites-developing/getting-started.md)
+* [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
 ## Implementación avanzada {#advanced-deployment}

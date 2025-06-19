@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 1%
@@ -43,8 +43,8 @@ Esta página le ayuda a ampliar las funcionalidades del Administrador de varios 
 
 Multi Site Management consta de los siguientes paquetes:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
 
 Los objetos principales de la API de MSM interactúan de la siguiente manera (consulte también [Términos utilizados](/help/sites-administering/msm.md#terms-used)):
 
@@ -208,15 +208,12 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 1. Agregue las siguientes propiedades a este nodo:
    * **Nombre**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: Un título de identificación que aparecerá en la interfaz de usuario.
    * **Nombre**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: una descripción opcional.
    * **Nombre**: `cq:trigger`
-
      **Tipo**: `String`
      **Value**: [Déclencheur de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) que se va a usar. Seleccionar de:
       * `rollout`
@@ -689,7 +686,6 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
       * **Tipo**: `String`
 
       * **Value**: contiene el nombre de la propiedad en consideración (y es comparable al valor de la propiedad `name`; por ejemplo, vea
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuando se ha definido `cq-msm-lockable`, romper/cerrar la cadena interactuará con MSM de la siguiente manera:
