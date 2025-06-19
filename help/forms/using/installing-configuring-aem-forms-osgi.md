@@ -243,5 +243,5 @@ AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Clou
 Ha configurado un entorno para utilizar las capacidades de AEM Forms Data Capture. Ahora, los siguientes pasos para utilizar esta capacidad son:
 
 * [Creación de su primer formulario adaptable](/help/forms/using/create-your-first-adaptive-form.md)
-* [Creación de su primer formulario PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Creación de su primer formulario PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
 * [Introducción a los formularios HTML5](/help/forms/using/introduction.md)
