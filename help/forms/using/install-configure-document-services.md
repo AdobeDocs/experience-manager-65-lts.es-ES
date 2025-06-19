@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '5660'
+source-wordcount: '5659'
 ht-degree: 84%
 
 ---
@@ -23,9 +23,9 @@ AEM Forms proporciona un conjunto de servicios OSGi para realizar distintas oper
 
 * **Servicio de formularios con códigos de barras:** permite extraer datos de imágenes electrónicas de códigos de barras. El servicio acepta archivos TIFF y PDF que incluyen uno o más códigos de barras como entrada y extrae los datos del código de barras. Para obtener más información, consulte [Servicio de formularios con códigos de barras](/help/forms/using/using-barcoded-forms-service.md).
 
-* **Servicio DocAssurance:** permite cifrar y descifrar documentos, ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales y agregar firmas digitales a los documentos. El servicio Doc Assurance contiene tres servicios: Signature, Encryption y Extensiones de Reader. Para obtener más información, consulte [Servicio DocAssurance](/help/forms/using/overview-aem-document-services.md).
+* **Servicio DocAssurance:** permite cifrar y descifrar documentos, ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales y agregar firmas digitales a los documentos. El servicio Doc Assurance contiene tres servicios: Firma, Cifrado y Extensiones de Reader. Para obtener más información, consulte [Servicio DocAssurance](/help/forms/using/overview-aem-document-services.md).
 
-* **Servicio Encryption:** permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Para obtener más información, consulte [Servicio Encryption](/help/forms/using/overview-aem-document-services.md#encryption-service).
+* **Servicio Encryption:** permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Para obtener más información, consulte [Servicio Cifrado](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
 * **Servicio Forms:** permite crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y entregan formularios que normalmente se crean en Forms Designer. El servicio Forms procesa cualquier diseño de formulario que hay desarrollado en documentos PDF. Para obtener más información, consulte [Servicio de Forms](/help/forms/using/forms-service.md).
 
@@ -379,7 +379,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
 1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
-1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra el [Administrador de paquetes](/help/sites-administering/package-manager.md) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
@@ -502,7 +502,7 @@ Con la administración de almacén de confianza, puede importar, editar y elimin
 1. Vaya a **[!UICONTROL Herramientas]** >  **[!UICONTROL Seguridad]** >  **[!UICONTROL Almacén de confianza]**.
 1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca la contraseña y seleccione **[!UICONTROL Guardar]**.
 
-### Configuración de certificados para los servicios Encryption y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
+### Configuración de certificados para los servicios Cifrado y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 
 El servicio DocAssurance puede aplicar derechos de uso a los documentos PDF. Para aplicar derechos de uso a documentos PDF, configure los certificados.
 
@@ -782,7 +782,6 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
          
          ```
-
      
    * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
@@ -790,8 +789,8 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
+     
+* Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++
 

@@ -5,10 +5,11 @@ role: Admin,Leader,Architect
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 9%
+source-wordcount: '1112'
+ht-degree: 4%
 
 ---
 
@@ -16,12 +17,12 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Workfront] es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado, conectando intrínsecamente el trabajo con la administración de recursos digitales. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios.
 
-[!DNL Workfront for Experience Manager enhanced connector] habilita procesos empresariales mejorados con flujos de trabajo de un extremo a otro, y proporciona experiencias de cliente de un extremo a otro personalizadas y almacenamiento central. Adobe ofrece un conector estándar y un conector mejorado para integrar las dos soluciones. Vea las funciones admitidas a continuación para ver una comparación y vea [las novedades de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+[!DNL Workfront for Experience Manager enhanced connector] habilita procesos empresariales mejorados con flujos de trabajo de un extremo a otro, y proporciona experiencias de cliente de un extremo a otro personalizadas y almacenamiento central. Adobe ofrece un conector estándar y un conector mejorado para integrar las dos soluciones. Vea las funciones admitidas a continuación para ver una comparación y vea [las novedades de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] permite a su organización:
 
@@ -31,7 +32,7 @@ ht-degree: 9%
 * Establezca los estados de objetos de Workfront en función de condiciones configurables mediante flujos de trabajo de Experience Manager.
 * Publique recursos en el entorno de publicación de Experience Manager o en Brand Portal.
 
-Consulte los [requisitos previos y compatibilidad con la plataforma para el conector mejorado](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Consulte los [requisitos previos y compatibilidad con la plataforma para el conector mejorado](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
@@ -39,7 +40,7 @@ Consulte los [requisitos previos y compatibilidad con la plataforma para el cone
 >
 >* Adobe puede publicar actualizaciones para [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hagan redundante este conector; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
 >
->* Adobe admite las versiones 1.7.4 y posteriores del conector mejorado. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, vaya al grupo `digital.hoodoo` disponible en el panel izquierdo de [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en).
+>* Adobe admite las versiones 1.7.4 y posteriores del conector mejorado. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, vaya al grupo `digital.hoodoo` disponible en el panel izquierdo de [Administrador de paquetes](/help/sites-administering/package-manager.md).
 >
 >* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, consulte [Guía para exámenes](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -47,7 +48,7 @@ Consulte los [requisitos previos y compatibilidad con la plataforma para el cone
 
 A continuación se muestran los detalles de las funcionalidades disponibles a través de varios tipos de integraciones entre [!DNL Assets] y [!DNL Workfront].
 
-| Funcionalidad | Descripción | [!DNL Workfront] y [!DNL Assets Essentials] *Sin conector (predeterminado)* | [!DNL Workfront for Experience Manager enhanced connector] *Requiere Conector* | Workfront y [!DNL Experience Manager as a Cloud Service] *Sin conector (predeterminado)* |
+| Función | Descripción | [!DNL Workfront] y [!DNL Assets Essentials] *Sin conector (predeterminado)* | [!DNL Workfront for Experience Manager enhanced connector] *Requiere Conector* | Workfront y [!DNL Experience Manager as a Cloud Service] *Sin conector (predeterminado)* |
 |----|----|----|-----|-----|
 | Métodos de implementación | Apropiado para la oferta [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **General** |

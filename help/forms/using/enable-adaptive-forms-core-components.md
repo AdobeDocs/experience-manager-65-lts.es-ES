@@ -5,9 +5,10 @@ keywords: Habilitar componentes principales, componentes principales, Forms adap
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '966'
 ht-degree: 48%
 
 ---
@@ -102,11 +103,11 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 1. Actualizar el proyecto para que incluya la última versión de los componentes principales de Forms:
 
    1. Abra la [Carpeta de proyecto de arquetipo de AEM]/pom.xml para editarla.
-   1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` en la [última versión de los componentes principales de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=es#aem-as-form-version-history) y asegúrese de que ambos tengan la misma versión que los **componentes principales de Forms** mencionados en la tabla, y establezca la versión de `core.wcm.components.version` tal como se indica en los [componentes principales de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=es).
+   1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` en la [última versión de los componentes principales de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) y asegúrese de que ambos tengan la misma versión que los **componentes principales de Forms** mencionados en la tabla, y establezca la versión de `core.wcm.components.version` tal como se indica en los [componentes principales de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Al crear un proyecto Archetype con versión 45, `[AEM Archetype Project Folder]/pom.xml` establece inicialmente la versión de los componentes principales de Forms en 1.1.28. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 1.1.26. Puede encontrar la versión más reciente en el [historial de versiones de AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=es#aem-as-form-version-history).
+      >* Al crear un proyecto Archetype con versión 45, `[AEM Archetype Project Folder]/pom.xml` establece inicialmente la versión de los componentes principales de Forms en 1.1.28. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 1.1.26. Puede encontrar la versión más reciente en el [historial de versiones de AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
@@ -130,7 +131,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    Una vez que el proyecto de arquetipo de AEM se haya compilado correctamente, se generará un paquete de AEM. Puede encontrar el paquete en [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip
 
-1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
+1. Utilice el [Administrador de paquetes](/help/sites-administering/package-manager.md) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
 
 >[!NOTE]
 >

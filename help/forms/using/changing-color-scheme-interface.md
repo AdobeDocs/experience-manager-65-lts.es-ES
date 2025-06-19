@@ -1,17 +1,14 @@
 ---
 title: Cambiar el esquema de colores de la interfaz
 description: Cómo modificar el esquema de colores de las partes de la interfaz de usuario de AEM Forms Workspace de forma selectiva.
-contentOwner: robhagat
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f15ead5f-d48c-401c-98c5-b58f93776f82
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 96%
+source-wordcount: '208'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +27,7 @@ Actualizar la barra de navegación de la parte superior de AEM Forms Workspace.
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   >Para obtener más información, consulte [Acceso a WebDAV](/help/sites-administering/webdav-access.md).
 
 1. Agregue el siguiente estilo para hacer referencia a la nueva imagen de fondo en /apps/ws/css/newStyle.css
 

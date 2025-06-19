@@ -1,17 +1,14 @@
 ---
-title: 'Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM '
+title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM
 description: La bandeja de entrada AEM permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 89%
+source-wordcount: '1066'
+ht-degree: 87%
 
 ---
 
@@ -139,7 +136,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -149,8 +146,6 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Cree un índice de propiedades y establézcalo en true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Cree un índice de propiedades y establézcalo en true](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Después de configurar índices en CRX DE o implementar mediante un paquete, [vuelva a realizar el índice del repositorio](https://helpx.adobe.com/es/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. Después de configurar índices en CRX DE o implementar mediante un paquete, vuelva a indexar el repositorio.

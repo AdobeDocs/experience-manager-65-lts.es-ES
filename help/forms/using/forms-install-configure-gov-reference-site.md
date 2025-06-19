@@ -6,9 +6,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4533'
 ht-degree: 63%
 
 ---
@@ -87,7 +88,7 @@ Esta sección contiene información sobre la instalación del paquete de demostr
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
 1. Seleccione el nombre del paquete **we-gov-forms.pkg.all-&lt;version>.zip**, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
-1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra el [Administrador de paquetes](/help/sites-administering/package-manager.md) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    ![Paquete de formularios de we gov](assets/wegov_forms_package.jpg)
@@ -225,7 +226,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración en la nu
 **Referencias:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configuración de Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=es)
+1. [Configuración de Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### Servicio en la nube de OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -319,7 +320,7 @@ Una vez completada la configuración en la nube, es posible que desee probar el 
 
    >[!NOTE]
    >
-   >Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 #### Prueba del modelo de datos de Forms (Derby) {#test-fdm-derby}
 
@@ -577,7 +578,7 @@ Una vez completada la configuración de IMS, puede proceder a revisar la configu
 
 1. Para esta configuración, dejaremos vacíos los valores de las dos casillas de verificación.
 
-   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=es#configure-the-cloud-service).
+   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Configuración en la nube (producción de AFC de We.Finance) {#configure-cloud-configuration-wefinance}
 
@@ -607,7 +608,7 @@ Una vez completada la configuración de IMS, podemos proceder a crear la configu
 
 1. Para esta configuración, dejaremos vacíos los valores de las dos casillas de verificación.
 
-   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=es#configure-the-cloud-service).
+   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Prueba de la conversión de formularios (Solicitud de We.Gov) {#test-forms-conversion}
 
@@ -647,7 +648,7 @@ Una vez establecida la configuración, los usuarios pueden probarla cargando un 
 
 #### Problemas conocidos y notas {#known-issues-notes}
 
-El servicio de conversión de formularios automatizada incluye una serie de [prácticas recomendadas, patrones complejos conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=es) y [problemas conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=es). Revise estos elementos antes de empezar a utilizar el servicio de conversión de formularios automatizada de AEM Forms.
+El servicio de conversión de formularios automatizada incluye una serie de [prácticas recomendadas, patrones complejos conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html) y [problemas conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Revise estos elementos antes de empezar a utilizar el servicio de conversión de formularios automatizada de AEM Forms.
 
 1. Genere el formulario con la opción Generar formularios adaptables sin enlaces de datos habilitados si desea enlazar el formulario a un FDM después de la conversión.
 

@@ -6,16 +6,17 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5536'
 ht-degree: 77%
 
 ---
 
 # Prácticas recomendadas para usar formularios adaptables  {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 ## Información general {#overview}
 
@@ -98,15 +99,15 @@ Para obtener más información, consulte [Crear un formulario adaptable](/help/f
 
 ### Crear plantillas de formulario
 
-Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=es).
+Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). Algunas de las prácticas recomendadas son las siguientes:
+Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algunas de las prácticas recomendadas son las siguientes:
 
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
-Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](/help/forms/using/publishing-unpublishing-forms.md)
 * El paquete de complementos de Forms es necesario para que la creación y la publicación admitan las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
-Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](/help/forms/using/upgrade-forms-osgi.md).
 
 Para obtener más información, consulte las prácticas recomendadas en [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
 
@@ -136,7 +137,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 * Consulte los componentes por jerarquía única relativa para evitar conflictos. Por ejemplo, `parentName.fieldName`.
 
 * Cuando administre reglas complejas o comúnmente utilizadas, considere la posibilidad de escribir lógica empresarial como funciones en una biblioteca de cliente independiente que puede especificar y reutilizar en formularios adaptables. La biblioteca de cliente debe ser una biblioteca independiente y no debe tener dependencias externas, excepto jQuery y Underscore.js. También puede utilizar la biblioteca de cliente para aplicar [revalidación del lado del servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) de los datos de formulario enviados.
-* Los formularios adaptables proporcionan un conjunto de API que puede utilizar para comunicarse con los formularios adaptables y realizar acciones en ellos. Algunas de las API clave son las siguientes: Para obtener más información, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+* Los formularios adaptables proporcionan un conjunto de API que puede utilizar para comunicarse con los formularios adaptables y realizar acciones en ellos. Algunas de las API clave son las siguientes: Para obtener más información, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
    * `guideBridge.reset()`: restablece un formulario.
    * `guideBridge.submit()`: envía un formulario.
@@ -365,11 +366,11 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
 
-* &#x200B;<!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
-* &#x200B;<!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
-* &#x200B;<!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
-* &#x200B;<!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
 
 El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
 
@@ -416,6 +417,3 @@ Antes de decidir utilizar bibliotecas de cliente personalizadas, es importante t
 * **Proceso de desarrollo eficiente:**
    * La modularidad permite a los desarrolladores centrarse en funcionalidades específicas.
    * Reduce la carga de los desarrolladores al reducir las complejidades de todo el código base para un proceso de desarrollo más eficiente.
-
-
-

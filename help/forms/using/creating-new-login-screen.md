@@ -1,17 +1,14 @@
 ---
 title: Creación de una pantalla de inicio de sesión
 description: Modificar la página de inicio de sesión de los módulos de LiveCycle, por ejemplo, de AEM Forms Workspace o Forms Manager.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '443'
+ht-degree: 93%
 
 ---
 
@@ -292,7 +289,7 @@ css.newLoginContentArea {
 1. Agregar imágenes nuevas en `/apps/livecycle/core/content/login`. Para agregar una imagen:
 
    1. Instale el cliente WebDAV.
-   1. Navegue hasta la carpeta `/apps/livecycle/core/content/login`, mediante el cliente webDAV. Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navegue hasta la carpeta `/apps/livecycle/core/content/login`, mediante el cliente webDAV. Para obtener más información, consulte [Acceso a WebDAV](/help/sites-administering/webdav-access.md).
 
    1. Agregar imágenes nuevas.
 

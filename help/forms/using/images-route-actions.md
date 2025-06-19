@@ -7,9 +7,10 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 782043c0-79f8-42a4-ae1b-4743b480e523
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 97%
 
 ---
@@ -28,7 +29,7 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, siga los pas
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   >Para obtener más información, consulte [Acceso a WebDAV](/help/sites-administering/webdav-access.md).
 
    >[!NOTE]
    >

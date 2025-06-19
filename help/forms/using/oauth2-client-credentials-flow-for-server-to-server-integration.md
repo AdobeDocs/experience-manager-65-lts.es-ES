@@ -4,18 +4,19 @@ description: Pasos para integrar la integración de Salesforce con AEM Forms med
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '401'
 ht-degree: 76%
 
 ---
 
-# Integración de Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integración de Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration) |
 | AEM 6.5 | Este artículo |
 
 Puede utilizar las credenciales de cliente de OAuth 2.0 para integrar AEM Forms con la aplicación Salesforce. Las credenciales de cliente de OAuth 2.0 son un método estándar y seguro para la comunicación directa sin la participación del usuario.
@@ -33,9 +34,9 @@ El uso de credenciales del cliente OAuth 2.0 para la autenticación a través de
 
 Antes de establecer la comunicación entre una aplicación de Salesforce y un entorno de AEM, haga lo siguiente:
 
-* Cree una [Aplicación conectada de Salesforce con flujo de credenciales de cliente de OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) y un único usuario de API para su organización y obtenga la clave y el secreto de consumidor para la aplicación.
+* Cree una [Aplicación conectada de Salesforce con flujo de credenciales de cliente de OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) y un único usuario de API para su organización y obtenga la clave y el secreto de consumidor para la aplicación.
 
-* Asegúrese de que el archivo Swagger esté configurado correctamente para que coincida con las API de su organización. También puede optar por [crear un archivo Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=es) desde cero, adaptado para su utilización en el entorno de AEM.
+* Asegúrese de que el archivo Swagger esté configurado correctamente para que coincida con las API de su organización. También puede optar por [crear un archivo Swagger](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) desde cero, adaptado para su utilización en el entorno de AEM.
 >[!NOTE]
 >
 > AEM 6.5 solo admite especificaciones de archivo de Swagger 2.0.
@@ -69,4 +70,4 @@ Antes de establecer la comunicación entre una aplicación de Salesforce y un en
 1. Haga clic en **[!UICONTROL Probar conexión]**.
 1. Si la conexión se realiza correctamente, haga clic en el botón **[!UICONTROL Crear]**.
 
-Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con su Forms adaptable.
+Ahora, puede [crear el modelo de datos de formulario](/help/forms/using/create-form-data-model.md) para integrar la fuente de datos configurada con su Forms adaptable.
