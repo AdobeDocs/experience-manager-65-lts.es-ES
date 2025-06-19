@@ -285,6 +285,7 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con la carga útil**
 
    * Para almacenar datos de widget como una propiedad de la carga útil del flujo de trabajo, utilice el siguiente formato para el valor de la propiedad name del nodo de widget:
+
      `./jcr:content/nodename`
 
    * Los datos se almacenan en la propiedad `nodename` del nodo de carga útil. Si el nodo no contiene esa propiedad, se crea la propiedad.
@@ -293,6 +294,7 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con el elemento de trabajo**
 
    * Para almacenar los datos del widget como una propiedad de los metadatos del elemento de trabajo, utilice el siguiente formato para el valor de la propiedad name:
+
      `nodename`
 
    * Los datos se almacenan en la propiedad `nodename` del elemento de trabajo `metadata`. Los datos se conservan si el cuadro de diálogo se utiliza posteriormente con la misma carga útil.

@@ -303,9 +303,11 @@ Si el ID de Sling de una instancia de publicación coincide con el ID de Sling d
    * busque y elimine el archivo de nombre *sling.id.file*
 
       * por ejemplo, en un sistema Linux®:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * por ejemplo, en un sistema Windows:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. inicio de la instancia de publicación
