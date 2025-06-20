@@ -95,7 +95,7 @@ Por ejemplo, si la URL de vanidad se establece en `welcome` para la página iden
 >* No admiten patrones regex.
 >* No debe configurarse en una página existente.
 
-Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Agregar**: toque o haga clic para agregar una URL de vanidad.
 * **Quitar**: toque o haga clic para quitar una URL de vanidad.
