@@ -26,13 +26,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
->  >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  &#x200B;>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
->  >  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  &#x200B;>  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
->  >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  &#x200B;>  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 
 ## Privilegios insuficientes {#insufficient-privileges}
 
