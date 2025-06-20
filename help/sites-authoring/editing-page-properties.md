@@ -1,15 +1,18 @@
 ---
-title: Edición de propiedades de página de contenido
+title: 'Edición de las propiedades de página  '
 description: Defina las propiedades necesarias para una página en Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5148afb9-f447-4475-a15c-1fa345325711
+mini-toc-levels: 2
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 42%
+source-wordcount: '2477'
+ht-degree: 38%
 
 ---
+
 
 # Edición de las propiedades de página  {#editing-page-properties}
 
@@ -21,237 +24,226 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Básico {#basic}
 
-* **Título**
+#### Título y etiquetas {#tile}
 
-  El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
-
-  Este es un campo obligatorio.
-
-* **Etiquetas**
-
-  Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección:
-
+* **Título**: el título de la página se muestra en varias ubicaciones
+   * Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   * Este es un campo obligatorio.
+* **Etiquetas**: aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
    * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
    * Se puede introducir una etiqueta nueva escribiendo el nombre en un cuadro de selección vacío.
-
       * La etiqueta nueva se crea al pulsar Intro.
       * La etiqueta nueva se muestra con una pequeña estrella a la derecha que indica que se trata de una etiqueta nueva.
-
-   * Con la funcionalidad desplegable, puede seleccionar entre las etiquetas existentes.
+   * Con la lista desplegable, puede seleccionar una de las etiquetas existentes.
    * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección, que se puede utilizar para quitar esa etiqueta para esa página.
+   * Para obtener más información sobre las etiquetas, vea [Usar etiquetas.](/help/sites-authoring/tags.md)
+* **Ocultar en navegación**: indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante
 
-  Para obtener más información sobre las etiquetas, consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
+#### Personalización de marca {#branding}
 
-* **Ocultar en navegación**
+Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
-  Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
+* **Sobrescribir**: marque para definir el slug de marca en esta página.
+   * El valor lo hereda cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
+* **Sobrescribir valor**: el texto del slug de marca que se agregará al título de la página
+   * El valor se anexa al título de la página después de un carácter de barra vertical como `Cycling Tuscany | Always ready for the WKND`
 
-* **Marca**
+#### Más títulos y descripciones {#more}
 
-  Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* **Título de página**: un título que se usará en la página
+   * Normalmente lo utilizan los componentes de título
+   * Si está vacío, se utiliza **Título**.
+* **Título de navegación**: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso).
+   * Si está vacío, se utiliza **Título**.
+* **Subtítulo**: un subtítulo para usar en la página
+* **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que desee agregar
 
-   * **Sobrescribir**: marque para definir el slug de marca en esta página.
-      * El valor lo hereda cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
-   * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
-      * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
-* **Título de página**
+#### Tiempo de activación/desactivación {#on-time}
 
-  Título que se utilizará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utiliza **Título**.
+El tiempo de activación/desactivación de una página es una forma cómoda de ocultar temporalmente contenido que ya se ha publicado. El contenido permanece en la instancia de publicación cuando está desactivado. Desactivar una página no cancela la publicación del contenido.
 
-* **Título de navegación**
+* **Tiempo de activación**: la fecha y hora a las que se hace visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
-  Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, se utiliza **Título**.
+   * Si ya se ha [publicado,](/help/sites-authoring/publishing-pages.md) esta página está disponible en la instancia de publicación, pero se mantiene inactiva (oculta) hasta que se procese a la hora especificada.
+   * Si no se publica y se configura [para la replicación automática](/help/sites-deploying/replication.md), la página se publicará automáticamente y, a continuación, se procesará a la hora especificada.
+   * Si no se publica y no se configura para la replicación automática, la página no se publica automáticamente, por lo que se ve un error 404 al intentar acceder a la página.
 
-* **Subtítulo**
+* **Tiempo de desactivación**: similar a **Tiempo de activación** y usado a menudo en combinación, define el momento en el que la página publicada se oculta en el entorno de publicación.
 
-  Un subtítulo para usar en la página.
+Deje estos campos (**Tiempo de activación** y **Tiempo de inactividad**) vacíos para las páginas que desee publicar y disponibles de inmediato y disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
-* **Descripción**
+>[!NOTE]
+>Si el **Tiempo de activación** o el **Tiempo de desactivación** se sitúan en el pasado y se configura la replicación automática, la acción relevante se activa de inmediato.
 
-  La descripción de la página, su propósito o cualquier otro detalle que desee agregar.
+>[!TIP]
+>
+>Los tiempos de activación/desactivación tratan estrictamente el contenido que ya se ha publicado (ya sea de forma manual o mediante replicación automática). Por este motivo, los flujos de trabajo de publicación, como los de aprobación de contenido, no se activan por los tiempos de activación/desactivación y los tiempos de activación/desactivación no afectan al estado de publicación de la página. Por este motivo, los momentos de activación y desactivación son los más adecuados para mostrar u ocultar temporalmente contenido que ya se ha aprobado y publicado.
+>
+>Si desea publicar contenido nuevo con todos los flujos de trabajo asociados o eliminar por completo (cancelar la publicación) del sitio, considere [administrar la publicación.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-* **A Tiempo**
+#### URL mnemónica {#vanity-url}
 
-  La fecha y la hora en que se activa la página publicada. Cuando se publica, esta página permanece inactiva hasta el momento especificado.
+Introduzca una URL de vanidad para esta página, que puede permitirle tener una URL más corta o expresiva.
 
-  Deje estos campos vacíos para las páginas que desee publicar inmediatamente (el escenario normal).
+Por ejemplo, si la URL de vanidad se establece en `welcome` para la página identificada por la ruta de acceso `/v1.0/startpage` para el sitio web `http://example.com,`, `http://example.com/welcome` sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
 
-* **Tiempo de inactividad**
+>[!CAUTION]
+>
+>URL de vanidad:
+>
+>* Debe ser único.
+>* No admiten patrones regex.
+>* No debe configurarse en una página existente.
 
-  Hora a la que se desactiva la página publicada.
+Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
-  De nuevo, deje estos campos vacíos para una acción inmediata.
-
-* **URL mnemónica**
-
-  Introduzca una URL de vanidad para esta página, que puede permitirle tener una URL más corta o expresiva.
-
-  Por ejemplo, si la URL de vanidad se establece en `welcome` para la página identificada por la ruta de acceso `/v1.0/startpage` para el sitio web `http://example.com,`, `http://example.com/welcome` sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
-
-  >[!CAUTION]
-  >
-  >URL de vanidad:
-  >
-  >* Debe ser único. Asegúrese de que otra página no esté usando ya el valor.
-  >* No admiten patrones regex.
-  >* No debe configurarse en una página existente.
-  >
-
-  Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
-
-* **Redirigir URL de vanidad**
-
-  Indica si desea que la página use la URL de vanidad.
+* **Agregar**: toque o haga clic para agregar una URL de vanidad.
+* **Quitar**: toque o haga clic para quitar una URL de vanidad.
+  **Redirigir URL de vanidad**: indica si desea que la página use la URL de vanidad o redirija a la URL real de la página
 
 ### Avanzado  {#advanced}
 
-* **Idioma**
+#### Configuración {#settings}
 
-  El idioma de la página.
-
-* **Raíz de idioma**
-
-  Si la página es la raíz de una copia en un idioma, es necesario marcar esta opción.
-
-* **Redirigir**
-
-  Indique la página a la que esta página debe redirigirse automáticamente.
-
-* **Design**
-
-  Indique el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
-
-* **Alias**
-
-  Especifique un alias para utilizarlo con esta página.
-
+* **Idioma**: el idioma de la página
+* **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
+* **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente
+* **Diseño** - Indica el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
+* **Alias**: especifica un alias que se usará con esta página
    * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
    * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
    * No se pueden publicar páginas a las que se accede mediante alias en el editor. Las [Opciones de publicación](/help/sites-authoring/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
    * Para obtener más información, consulte [Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Heredado de &lt;*ruta*>**
+#### Configuración {#configuration}
 
-  Indica si la página se hereda. y de dónde.
+* **Heredado de &lt;*ruta*>** - Habilitar/deshabilitar la herencia de **Configuración de nube** para la página
+* **Configuración de nube**: la ruta a la configuración
 
-* **Configuración de la nube**
+#### Configuración de plantilla {#templates}
 
-  La ruta a la configuración.
+* **Plantillas permitidas**: [define la lista de plantillas que están disponibles](/help/sites-authoring/templates.md#allowingatemplate) dentro de esta rama secundaria
 
-* **Plantillas permitidas**
+#### Requisito de autenticación {#authentication}
 
-  [Defina la lista de plantillas disponibles](/help/sites-authoring/templates.md#allowingatemplate) dentro de esta rama secundaria.
+* **Habilitar**: habilita (o deshabilita) el uso de la autenticación para que pueda acceder a la página
+* **Página de inicio de sesión**: la página que se usará para iniciar sesión
 
-* **Habilitar** (requisito de autenticación)
+>[!NOTE]
+>
+>Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](/help/sites-authoring/editing-page-properties.md#permissions)**.
 
-  Habilite (o deshabilite) el uso de la autenticación para poder acceder a la página.
+>[!CAUTION]
+>
+>La pestaña **[Permisos](#permissions)** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia en **Requisito de autenticación** y la opción no se puede editar, como tampoco lo son los [Permisos](/help/sites-authoring/editing-page-properties.md#permissions).
+>
+>
+>En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-  >[!NOTE]
-  >
-  >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](/help/sites-authoring/editing-page-properties.md#permissions)**.
+#### Exportar {#export}
 
-  >[!CAUTION]
-  >
-  >La pestaña **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia en **Requisito de autenticación** y la opción no se puede editar, como tampoco lo son los [Permisos](/help/sites-authoring/editing-page-properties.md#permissions).
-  >
-  >
-  >En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+* **Configuración** - Especifica una configuración de exportación
 
-* **Página de inicio de sesión**
+#### SEO {#seo}
 
-  La página que se utilizará para iniciar sesión.
+* **URL canónica**: se usa para sobrescribir la URL canónica de la página
+   * Si se deja en blanco, la dirección URL de la página es su dirección URL canónica.
+* **Etiquetas de robots**: utilice el menú desplegable para seleccionar las etiquetas de robots y controlar el comportamiento de los rastreadores de los motores de búsqueda
+   * Algunas opciones entran en conflicto entre sí, en cuyo caso la opción más permisiva tiene prioridad.
+* **Generar mapa de sitio**: cuando se selecciona, se genera un `sitemap.xml` para esta página y sus descendientes.
 
-* **Configuración de exportación**
+### Imágenes {#images}
 
-  Especifique una configuración de exportación.
+#### Imagen destacada {#featured-image}
 
-### Miniatura    {#thumbnail}
+Esta sección se utiliza para seleccionar y configurar la imagen que desea mostrar. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
 
-Muestra la miniatura de la página. Puede hacer lo siguiente:
+* **Imagen** - Puedes **elegir** un recurso o buscar un archivo para cargar, después **editar** o **borrar** la imagen seleccionada.
+* **Texto alternativo**: texto utilizado para representar el significado o la función de la imagen, que suelen utilizar los lectores de pantalla
+* **Heredar: valor tomado del recurso DAM**: cuando se selecciona, el texto alternativo se rellena con el valor de los `dc:description`metadatos de DAM.
 
-* **Generar vista previa**
+#### Miniaturas {#thumbnail}
 
-  Genere una previsualización de la página que desee utilizar como miniatura.
+Esta sección se utiliza para seleccionar y configurar la miniatura de la imagen para la página. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
 
-* **Cargar imagen**
-
-  Cargue una imagen que desee utilizar como miniatura.
-
-* **Seleccionar imagen**
-
-  Seleccione un recurso existente que desee utilizar como miniatura.
-
-* **Revertir**
-
-  Esta opción está disponible después de cambiar la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardarlo.
-
-### Redes sociales {#social-media}
-
-* **Compartir en redes sociales**
-
-  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de uso compartido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=es).
-
-   * **Habilitar el uso compartido de usuarios en Facebook**
-   * **Habilitar el uso compartido de usuarios en Pinterest**
-   * **Variación de XF preferida**
-Definir la variación del fragmento de experiencia que se utiliza para generar metadatos para una página
+* **Generar vista previa**: genera una vista previa de la página que desea utilizar como miniatura
+* **Cargar imagen**: carga una imagen que desea usar como miniatura
+* **Seleccionar imagen**: selecciona un recurso existente que desee usar como miniatura
+* **Revertir**: esta opción está disponible después de que haya cambiado la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardarlo.
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
-
-  Defina propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
+* **Configuraciones de Cloud Service**: define qué configuración se usa para los servicios en la nube de la página
+* **Heredado de**: para Live Copies y copias de idioma, las configuraciones en la nube se heredan del modelo de forma predeterminada.
+   * Anular selección para anular herencia
 
 ### Personalización {#personalization}
 
-* **Configuración de ContextHub**
+#### Configuración de ContextHub {#contexthub}
 
-  Seleccione la [configuración de ContextHub](/help/sites-developing/ch-configuring.md) y la [ruta de acceso de los segmentos](/help/sites-administering/segmentation.md).
+* **Se hereda de**. Las configuraciones de ContextHub se heredan de forma predeterminada de la página principal.
+   * Anule la selección para anular la herencia.
+* **Ruta de ContextHub** - Selecciona la [configuración de ContextHub](/help/sites-developing/ch-configuring.md)
+* **Ruta de segmentos** - Selecciona la [Ruta de segmentos](/help/sites-administering/segmentation.md).
 
-* **Configuración de ámbito**
+#### Configuración de segmentación {#targeting}
 
-  Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-authoring/target-adobe-campaign.md).
+Seleccione una [marca para especificar un ámbito de segmentación.](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
+>[!NOTE]
+>Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
 ### Permisos    {#permissions}
 
-* **Permisos**
+Utilice la ficha **Permisos** para definir qué usuarios, grupos o [grupos de usuarios cerrados (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=es) pueden acceder o modificar la página.
 
-  En esta pestaña puede:
+* [Agregar permisos](/help/sites-administering/user-group-ac-admin.md)
+* [Editar grupo de usuarios cerrado](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* Ver los [Permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
 
-   * [Agregar permisos](/help/sites-administering/user-group-ac-admin.md)
-   * [Editar grupo de usuarios cerrado](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>La pestaña **Permisos** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia y los permisos de CUG no se pueden editar, ni se puede editar el requisito de autenticación de la pestaña [Advanced](/help/sites-authoring/editing-page-properties.md#advanced).
+>
+>
+>En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-   * Ver los [Permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
-
-  >[!CAUTION]
-  >
-  >La pestaña **Permisos** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia y los permisos de CUG no se pueden editar, ni se puede editar el requisito de autenticación de la pestaña [Advanced](/help/sites-authoring/editing-page-properties.md#advanced).
-  >
-  >
-  >En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-
-  >[!NOTE]
-  >
-  >La pestaña Permisos no permite la creación de grupos de CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar el Explorador de CRX. Consulte el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
+>[!NOTE]
+>
+>La pestaña Permisos no permite la creación de grupos de CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar el Explorador de CRX. Consulte el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
 
 ### Modelo {#blueprint}
 
-* **Modelo**
+Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de la [Administración de varios sitios](/help/sites-administering/msm.md)
 
-  Defina propiedades para una página de modelo en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagan las modificaciones a Live Copy.
+* **Despliegue**: inicia un despliegue del contenido del modelo en Live Copies
+* **Información general de Live Copy**: abre una ventana para examinar la estructura de la página de Live Copy
+* **Live Copies actuales**: una lista de páginas basadas en (es decir, que son Live Copies de) la página de modelo seleccionada
+* **Configuración de despliegue**: define la configuración de despliegue para la página
 
 ### Live Copy {#live-copy}
 
-* **Live Copy**
+Esta pestaña solo está visible para páginas configuradas como Live Copies. Al igual que con los [modelos,](#blueprint) Live Copies son parte de [Administración de varios sitios.](/help/sites-administering/msm.md)
 
-  Defina propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagan las modificaciones desde el modelo.
+* **Sincronizar**: sincroniza Live Copy con el modelo, conservando las modificaciones locales
+* **Restablecer**: restablece Live Copy al estado del modelo y elimina las modificaciones locales
+* **Suspender**: suspende Live Copy de nuevas modificaciones en el despliegue
+* **Desasociar** - Desasocia Live Copy del modelo
 
-### Estructura del sitio    {#site-structure}
+#### Origen {#source}
 
-* Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
+* Muestra la ruta del modelo para esta Live Copy
+
+#### Estado {#status}
+
+* Enumera el estado actual de Live Copy de la página
+
+#### Configuración {#live-copy-config}
+
+* **Herencia de Live Copy**: si está marcada, la configuración de Live Copy es efectiva en todas las tareas secundarias.
+* **Heredar configuraciones de despliegue de la página principal**: si está marcada, la configuración de despliegue se hereda de la página principal de la página.
+* **Elija la configuración de despliegue**: define las circunstancias en las que se propagan las modificaciones desde el modelo y solo está disponible cuando **Heredar configuraciones de despliegue de la página principal** no está seleccionado
+* **Lista de rutas excluidas**
 
 ## Edición de las propiedades de página   {#editing-page-properties-1}
 

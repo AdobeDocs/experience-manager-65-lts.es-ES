@@ -4,12 +4,14 @@ description: Obtenga información sobre cómo publicar páginas de contenido en 
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 64%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
+
 
 # Publicar páginas {#publishing-pages}
 
@@ -24,13 +26,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
->  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
->  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
->  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 
 ## Privilegios insuficientes {#insufficient-privileges}
 
@@ -195,6 +197,10 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>La programación de contenido para la publicación duplica contenido y respeta los flujos de trabajo de publicación. Si desea ocultar temporalmente contenido ya publicado sin cancelar la publicación, considere que [**Tiempo de activación** y **Tiempo de inactividad** están disponibles en las propiedades de la página.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
