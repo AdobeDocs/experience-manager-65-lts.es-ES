@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -314,6 +314,10 @@ Aunque hay muchas posibilidades para configurar AEM WCM, se deben realizar deter
 
 * Consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) para ver las tareas necesarias a fin de asegurarse de que el sistema sigue siendo seguro.
 * Revise la lista de usuarios y grupos predeterminados instalados con AEM WCM. Comprueba si deseas realizar acciones en otras cuentas. Consulta [Seguridad y administración de usuarios](/help/sites-administering/security.md) para obtener más información.
+
+>[!NOTE]
+>
+> Para instalaciones nuevas de AEM 6.5 LTS, las definiciones de índice deben instalarse por separado. Para obtener más información, consulte [this](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Acceso a CRXDE Lite y la consola web {#accessing-crxde-lite-and-the-web-console}
 

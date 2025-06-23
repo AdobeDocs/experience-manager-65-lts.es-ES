@@ -9,9 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
+exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Antes de comenzar la actualización, es importante realizar estas tareas de mant
 
 ## Definiciones de índice {#index-definitions}
 
-Asegúrese de que ha instalado las definiciones de índice necesarias incluidas en los Service Packs de AEM 6.5 proporcionadas hasta el Service Pack 22 de AEM como mínimo. (Consulte las [notas de la versión del Service Pack de AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/release-notes) para obtener más información).
+Asegúrese de que ha instalado las definiciones de índice necesarias incluidas en el último paquete de servicio de AEM 6.5. (Consulte las [notas de la versión del Service Pack de AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/release-notes) para obtener más información).
 
 ## Garantizar suficiente espacio en disco {#ensure-sufficient-disk-space}
 
