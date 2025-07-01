@@ -1,16 +1,13 @@
 ---
 title: Usar AEM Forms Workspace
 description: Familiarícese con AEM Forms Workspace con esta breve descripción general de los flujos de trabajo de proceso.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7374797f-4154-402b-bb59-075134763c58
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 97%
 
 ---
@@ -132,8 +129,4 @@ Puede personalizar la mayor parte de la interfaz y las principales funcionalidad
 
 En cada nuevo proceso, los formularios XDP se representan de forma predeterminada en formato PDF en los equipos de escritorio y en formato HTML en las tabletas. Siempre es posible procesar un formulario XDP en formato HTML. Para obtener más información, consulte [Nuevos servicios de renderización y envío](/help/forms/using/new-render-submit-service.md).
 
-La funcionalidad [Mobile Forms](https://helpx.adobe.com/es/livecycle/help/mobile-forms/introduction.html), que funciona con [perfiles](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario de HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.
-
-## Aplicación de AEM Forms Workspace {#aem-forms-workspace-app}
-
-Para trabajar en los procesos empresariales en un dispositivo móvil, puede utilizar la oferta de la aplicación AEM Forms Workspace de AEM Forms. Para obtener más información, consulte [Información general sobre la aplicación de AEM Forms Workspace](https://helpx.adobe.com/es/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+La funcionalidad [Mobile Forms](/help/forms/using/introduction.md), que funciona con [perfiles](/help/forms/using/custom-profile.md), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario de HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.

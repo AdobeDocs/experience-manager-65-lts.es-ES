@@ -1,18 +1,13 @@
 ---
 title: 'Componentes de Adobe Experience Manager: conceptos básicos'
 description: Cuando empiece a desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 0%
 
 ---
@@ -312,7 +307,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Si se establece, esta propiedad se toma como ID de celda. Para obtener más información, consulte el artículo de Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Cómo se crean los ID de celda de diseño</a>.<br /> </td>
+   <td>Si se establece, esta propiedad se toma como ID de celda.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -597,7 +592,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en **&#x200B; CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
+* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en** CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

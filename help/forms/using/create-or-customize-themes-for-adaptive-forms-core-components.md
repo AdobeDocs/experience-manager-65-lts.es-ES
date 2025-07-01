@@ -2,15 +2,13 @@
 title: Crear o personalizar temáticas de formularios adaptables
 description: Aprenda a crear o personalizar temáticas para componentes principales de Forms adaptables mediante especificaciones de BEM
 keywords: crear una temática de componentes principales de formularios adaptables, crear una nueva temática, personalizar una temática, cargar una nueva, utilizar una temática en formularios, eliminar una temática, crear una temática en formularios AEM 6.5
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1938'
 ht-degree: 41%
 
 ---
@@ -80,7 +78,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * Instale la última versión de Apache Maven [.Apache Maven ](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
-* Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
+* Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM proporciona bibliotecas de cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
@@ -110,7 +108,7 @@ Crear o personalizar una temática es un proceso de varios pasos. Realice los pa
 
 Los ejemplos proporcionados en el documento se basan en el tema **Lienzo**, pero puede clonar cualquier tema y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
 
-#### 1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
+#### &#x200B;1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
 
 Para clonar una temática para componentes principales basados en formularios adaptables, elija una de las siguientes temáticas:
 
@@ -140,9 +138,9 @@ Siga estas instrucciones para clonar una temática:
 
 Después de ejecutar el comando correctamente, queda una copia local de la temática disponible en la carpeta `aem-forms-theme-canvas` del equipo.
 
-#### 2. Personalizar la temática {#customize-the-theme}
+#### &#x200B;2. Personalizar la temática {#customize-the-theme}
 
-Tiene la flexibilidad de personalizar componentes individuales o realizar cambios en el nivel de tema mediante las variables globales de un tema. La modificación de variables globales tiene un efecto en cascada en todos los componentes individuales. Por ejemplo, puede utilizar variables globales para cambiar el color del borde de todos los componentes de un formulario adaptable o aplicar un color de relleno vibrante a los botones de llamada a la acción (CTA). Puede hacer lo siguiente:
+Tiene la flexibilidad de personalizar componentes individuales o realizar cambios en el nivel de tema mediante las variables globales de un tema. La modificación de variables globales tiene un efecto en cascada en todos los componentes individuales. Por ejemplo, puede utilizar variables globales para cambiar el color del borde de todos los componentes de un formulario adaptable o aplicar un color de relleno vibrante a los botones de Call to action (CTA). Puede hacer lo siguiente:
 
 * [Establecer estilos de nivel de temática](#theme-customization-global-level)
 
@@ -189,7 +187,7 @@ También tiene la opción de personalizar la fuente, el color, el tamaño y otra
 >
 > Cuando se define un estilo tanto en el nivel de tema como de componente, el estilo definido en el nivel de componente tiene prioridad.
 
-#### 3. Preparar el tema para la implementación {#generate-the-clientlib}
+#### &#x200B;3. Preparar el tema para la implementación {#generate-the-clientlib}
 
 Para implementar una temática en una instancia de AEM, debe convertirse en una biblioteca de cliente. Siga estos pasos para convertir la temática en una biblioteca de cliente:
 
@@ -214,7 +212,7 @@ Para implementar una temática en una instancia de AEM, debe convertirse en una 
 
    ![Ubicación de la biblioteca de cliente](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Implementar el tema en un entorno local {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Implementar el tema en un entorno local {#deploy-the-theme-on-a-local-environment}
 
 Para implementar el tema en el entorno de desarrollo o prueba local, siga estos pasos:
 
@@ -265,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Implementar un tema en el entorno de producción {#deploy-theme}
+#### &#x200B;5. Implementar un tema en el entorno de producción {#deploy-theme}
 
 Una vez que haya probado correctamente el tema en su entorno de desarrollo local, puede continuar implementando el tema en los entornos de producción, incluidas las instancias de autor y publicación. Siga estos pasos para implementar el tema en los entornos de producción:
 

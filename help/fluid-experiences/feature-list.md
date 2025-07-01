@@ -5,10 +5,11 @@ index: n
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 4%
+source-wordcount: '267'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 Adobe Experience Manager Fluid Experiences se basa en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para la entrega de contenido sin encabezado.
 
-AEM Fluid Experiences se diferencia del AEM clásico en que solo se aborda el caso de uso de la entrega sin encabezado. La creación y entrega de contenido con encabezado y la sólida compatibilidad de AEM con los casos de uso híbridos están disponibles con las [soluciones completas de AEM Sites, Assets y Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html).
+AEM Fluid Experiences se diferencia del AEM clásico en que solo se aborda el caso de uso de la entrega sin encabezado. La creación y entrega de contenido con encabezado y la sólida compatibilidad de AEM con casos de uso híbridos están disponibles con las soluciones completas de AEM Sites, Assets y Dynamic Media.
 
 Las siguientes tablas definen las funciones de AEM Fluid Experiences y vinculan a la documentación de asistencia pertinente.
 
@@ -83,7 +84,7 @@ Las siguientes tablas definen las funciones de AEM Fluid Experiences y vinculan 
 
 ## Más información {#learn-more}
 
-* [Experiencias fluidas para casos de uso sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=es)
+* [Experiencias fluidas para casos de uso sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
 * [Servicio de contenido de AEM: ¿qué, por qué y cómo?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=es)
-* [Preguntas más frecuentes sobre el acceso de terceros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=es)
-* [Usar las API de Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=es#sling-models)
+* [Preguntas más frecuentes sobre el acceso de terceros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Usar las API de Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

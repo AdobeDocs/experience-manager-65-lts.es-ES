@@ -7,9 +7,10 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb6528fd-6761-412d-8413-c72049acf91d
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3805'
 ht-degree: 82%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 82%
 
 ## Crear correspondencia en la interfaz de usuario Crear correspondencia {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Después de crear [la plantilla de carta en Administración de correspondencia](../../forms/using/create-letter.md), el usuario/agente/administrador de reclamaciones final puede abrir la carta en la interfaz de usuario de Crear correspondencia y crear una correspondencia al introducir datos, configurar el contenido y administrar los archivos adjuntos. Finalmente, el agente o administrador de reclamaciones puede administrar el contenido en el modo de vista previa y enviar la carta.
+Después de crear [la plantilla de carta en Administración de correspondencia](/help/forms/using/create-letter.md), el usuario/agente/administrador de reclamaciones final puede abrir la carta en la interfaz de usuario de Crear correspondencia y crear una correspondencia al introducir datos, configurar el contenido y administrar los archivos adjuntos. Finalmente, el agente o administrador de reclamaciones puede administrar el contenido en el modo de vista previa y enviar la carta.
 
 ### Previsualizar una correspondencia {#preview-a-correspondence}
 
@@ -50,13 +51,13 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
 1. La vista previa HTML de cartas (vista previa de formularios móviles) se abrirá con la pestaña Datos enfocada de forma predeterminada.
 
-   Para obtener más información sobre los formularios móviles y las características que admiten, consulte [Diferenciar las características de Mobile Forms y de los formularios PDF](https://helpx.adobe.com/es/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Para obtener más información sobre los formularios móviles y las características que admiten, consulte [Diferenciar las características de Mobile Forms y de los formularios PDF](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Hay tres pestañas: datos, contenido y archivos adjuntos. Si no hay elementos de datos (variables de marcador de posición y campos de diseño), la carta se abrirá directamente con la pestaña Contenido. La pestaña Datos adjuntos solo estará disponible cuando haya archivos adjuntos o cuando el acceso a la biblioteca esté habilitado.
 
    >[!NOTE]
    >
-   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Introducir datos {#enterdata}
 
@@ -110,17 +111,13 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
    >[!NOTE]
    >
-   >Sin embargo, el formato del texto pegado tiene algunas [limitaciones](https://helpx.adobe.com/es/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Sin embargo, el formato del texto pegado tiene algunas limitaciones.
 
    Puede sangrar el texto y los números de la carta utilizando el tabulador. Por ejemplo, puede utilizar el tabulador para alinear varias columnas de texto de una lista con un formato de tabla.
 
    ![tabspaces](assets/tabspaces.png)
 
    Ejemplo: Usar el tabulador para alinear varias columnas de texto en un formato tabular
-
-   >[!NOTE]
-   >
-   >Para obtener más información sobre la configuración del espaciado de tabulación para los módulos de texto y las cartas, consulte [Más información sobre el uso del espaciado de tabulación para organizar el texto](https://helpx.adobe.com/es/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Si es necesario, inserte caracteres especiales en la correspondencia. Por ejemplo, puede utilizar la paleta Caracteres especiales para insertar:
 
@@ -374,7 +371,7 @@ Para obtener más información sobre la compatibilidad con scripts en formulario
 
 De forma predeterminada, la interfaz de usuario de Crear correspondencia utiliza HTML o formularios móviles para obtener la vista previa de la carta. La vista previa de formularios móviles no presenta problemas de representación en ningún explorador, ya que utiliza el complemento nativo del explorador y no requiere complementos adicionales. Puede cambiar el modo de vista previa de la carta a PDF. Sin embargo, las restricciones del explorador pueden crear problemas para diferentes características de la vista previa interactiva PDF de la carta.
 
-Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para cambiar el modo de vista previa de la carta, complete los siguientes pasos:
 
