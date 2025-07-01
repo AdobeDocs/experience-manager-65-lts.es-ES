@@ -57,7 +57,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    >[!NOTE]
    >
-   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Introducir datos {#enterdata}
 
@@ -371,7 +371,7 @@ Para obtener más información sobre la compatibilidad con scripts en formulario
 
 De forma predeterminada, la interfaz de usuario de Crear correspondencia utiliza HTML o formularios móviles para obtener la vista previa de la carta. La vista previa de formularios móviles no presenta problemas de representación en ningún explorador, ya que utiliza el complemento nativo del explorador y no requiere complementos adicionales. Puede cambiar el modo de vista previa de la carta a PDF. Sin embargo, las restricciones del explorador pueden crear problemas para diferentes características de la vista previa interactiva PDF de la carta.
 
-Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para cambiar el modo de vista previa de la carta, complete los siguientes pasos:
 
