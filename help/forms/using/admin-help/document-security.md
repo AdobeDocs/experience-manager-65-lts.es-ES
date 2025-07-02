@@ -1,20 +1,15 @@
 ---
 title: ¿Qué es Document Security?
 description: Descubra cómo puede crear, almacenar y aplicar configuraciones de confidencialidad predefinidas, y distribuir su información de forma segura mediante Document Security.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 4%
 
 ---
@@ -26,7 +21,7 @@ La seguridad de los documentos garantiza que solo los usuarios autorizados pueda
 * Archivos Adobe PDF
 * Archivos de Microsoft® Word, Excel y PowerPoint
 
-Para obtener más información acerca de cómo las directivas protegen los tipos de archivo admitidos, vea [más información de seguridad de documentos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
+Para obtener más información acerca de cómo las directivas protegen los tipos de archivo admitidos, vea [más información de seguridad de documentos](/help/forms/using/document-security-offerings.md).
 
 Con Document Security, puede crear, almacenar y aplicar fácilmente parámetros de confidencialidad predefinidos a sus documentos. Para evitar que la información se propague más allá de su alcance, también puede monitorizar y controlar cómo los destinatarios utilizan los documentos después de distribuirlos.
 

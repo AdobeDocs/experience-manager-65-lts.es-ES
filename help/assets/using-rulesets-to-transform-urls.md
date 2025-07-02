@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin,Developer
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8f005ada-275a-444f-9883-64d847fd9959
+source-git-commit: ce717f045221a65f88766d1d5f62d0fa33a3ffcd
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,8 +34,6 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
 * Solicite la codificación de ciertos caracteres, como `$`, `{` y `}`, y de ciertos caracteres, para su descodificación hacia ImageServer. Por ejemplo, Facebook no funciona bien con direcciones URL que contienen caracteres especiales.
 
-  Consulte [Quitar caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
-
 En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de los recursos pueden cargar archivos XML en Dynamic Media. Puede designar uno de estos archivos como el archivo del conjunto de reglas de preprocesamiento para el servicio de recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica empresarial de los sistemas que se integran con Dynamic Media. Especifique un archivo XML que sirva como ruta de acceso del archivo de definiciones del conjunto de reglas.
 
 >[!CAUTION]
@@ -42,25 +41,22 @@ En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado e
 >Tenga cuidado al utilizar conjuntos de reglas; pueden evitar que el contenido de Dynamic Media se muestre en el sitio web.
 
 Hay conjuntos de reglas de ejemplo disponibles que pueden ayudarle a crear su propio conjunto de reglas.
-Consulte [Referencia del conjunto de reglas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=es).
+Consulte [Referencia del conjunto de reglas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Al igual que con toda la creación de conjuntos de reglas, asegúrese de que el archivo XML es válido antes de cargarlo mediante un programa de validación XML como xmlvalid.
-Consulte también [Solucionar problemas de conjuntos de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
 Además, asegúrese de probar primero el conjunto de reglas en un entorno de ensayo que no afecte al entorno de producción en directo.
 Los entornos de producción y los entornos de ensayo suelen requerir distintos inicios de sesión.
 
-Consulte la [aplicación de escritorio de Adobe Dynamic Media Classic para obtener información de inicio de sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#sign-in-dmc-app).
+Consulte la [aplicación de escritorio de Adobe Dynamic Media Classic para obtener información de inicio de sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-Vea también [Usar la imagen &#39;asset&#39; en lugar de &#39;is&#39; en un conjunto de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
-
 **Para implementar conjuntos de reglas XML:**
 
-1. Inicie sesión en [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#sign-in-dmc-app).
+1. Inicie sesión en [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 

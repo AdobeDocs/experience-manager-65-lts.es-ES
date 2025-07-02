@@ -1,17 +1,15 @@
 ---
 title: Agregar y configurar usuarios
 description: La configuración de Administración de usuarios en la consola de administración le permite crear o eliminar usuarios y configurar otras opciones de configuración de usuario.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -41,10 +39,6 @@ Cuando cree usuarios, puede agregarlos a grupos y asignarles funciones.
 
 1. (Opcional) Para asignar roles al usuario, haga clic en **[!UICONTROL Buscar roles]**, active la casilla de los roles que desea asignar y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic en **[!UICONTROL Finalizar]**.
-
-   >[!NOTE]
-   >
-   >Si encuentra algún problema de inicio de sesión con el usuario, consulte [AEM Forms en JEE no puede iniciar sesión en AEM Forms en OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Configuración de usuario {#user-settings}
 
@@ -171,11 +165,11 @@ Si un usuario sin los formularios AEM Forms y los permisos CQ necesarios intenta
 * Solución de Administración de correspondencia
 * AEM forms Workspace
 
-  ***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios de AEM.*
+  ***nota **: Flex Workspace está obsoleto para la versión de formularios de AEM.*
 
 * administrador de formularios
 * Informes de procesos 
 
 CQ proporciona un mecanismo para anular el controlador jsp 404 predeterminado.
 
-Para obtener más información sobre cómo personalizar la página de control de errores, consulte [Personalización de páginas mostradas por el controlador de errores](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) en la documentación de Adobe Experience Manager.
+Para obtener más información sobre cómo personalizar la página de control de errores, consulte [Personalización de páginas mostradas por el controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md) en la documentación de Adobe Experience Manager.

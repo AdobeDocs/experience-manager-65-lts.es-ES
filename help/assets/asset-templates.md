@@ -1,13 +1,13 @@
 ---
 title: Plantillas de recursos
 description: Obtenga información acerca de las plantillas de recursos en  [!DNL Adobe Experience Manager Assets]  y cómo usar plantillas de recursos para crear material promocional.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
@@ -123,10 +123,8 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
    >
    >Para permitir que [!DNL Experience Manager] resuelva imágenes, haga lo siguiente:
    >
-   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/es/indesign/using/graphics-links.html)).
+   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
-   >
-   >Para obtener más información sobre cómo trabajar con documentos de [!DNL InDesign], consulte [prácticas recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para generar una representación de PDF para el folleto, seleccione la opción Acrobat en el cuadro de diálogo y haga clic en **[!UICONTROL Continuar]**.
 1. El fragmento de material colateral se crea en la carpeta con la que comenzó. Para ver las representaciones, abra el material promocional y elija **[!UICONTROL Representaciones]** en la lista GlobalNav.

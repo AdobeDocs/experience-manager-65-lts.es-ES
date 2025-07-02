@@ -6,19 +6,19 @@ role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
+source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
 
 ---
 
-
 # Usar la biblioteca de medios para la administración básica de recursos {#manage-assets-using-media-library}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 La plataforma [!DNL Adobe Experience Manager] proporciona diferentes capacidades para administrar recursos. La biblioteca de medios permite a los usuarios cargar un pequeño número de recursos en el repositorio, buscarlos y utilizarlos en las páginas web y realizar tareas sencillas de administración de recursos en los recursos.
@@ -37,7 +37,7 @@ La biblioteca de medios se instala como parte de Sites. No se requiere ninguna l
 
 Experience Manager Assets proporciona funcionalidad DAM de nivel empresarial. La funcionalidad de Assets se entrega con [!DNL Experience Manager] en un solo paquete. Sin embargo, los usuarios que no hayan adquirido una licencia de Assets no tienen derecho a utilizar las funciones avanzadas de DAM. Sin la licencia de Assets, solo están disponibles [las características de la biblioteca multimedia](#use-media-library).
 
-Si desea evitar el uso no intencionado de las características de [!DNL Assets] para las que no tiene licencia, quite todos los flujos de trabajo, componentes, taxonomías, opciones y el administrador de [!DNL Assets] de [!DNL Experience Manager], que son específicos de [!DNL Assets]. Al hacerlo, se evita que los usuarios usen accidentalmente características de [!DNL Assets] para las que no se obtuvo licencia.
+Si desea evitar el uso no intencionado de las características de [!DNL Assets] para las que no tiene licencia, quite todos los flujos de trabajo, componentes, taxonomías, opciones y el administrador de [!DNL Assets] de [!DNL Assets], que son específicos de [!DNL Experience Manager]. Al hacerlo, se evita que los usuarios usen accidentalmente características de [!DNL Assets] para las que no se obtuvo licencia.
 
 ## Usar la biblioteca de medios {#use-media-library}
 
@@ -93,6 +93,6 @@ Tenga en cuenta que no puede utilizar etiquetas inteligentes, el vínculo [!DNL 
 
 >[!MORELIKETHIS]
 >
->* [Funciones DAM en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/home.html)
+>* [Funciones DAM en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
 >* [[!DNL Experience Manager] Descripción del producto de Managed Services de 6.5](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] Descripción del producto on-premise de 6.5](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html)

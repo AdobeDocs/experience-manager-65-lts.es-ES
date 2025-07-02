@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Cree o edite una configuración de tipo de archivo para especificar cómo admini
 
 1. Después de completar todas las secciones, haz clic en **[!UICONTROL Guardar]** o **[!UICONTROL Guardar como]** y proporciona un nombre para la configuración.
 
-Se puede personalizar la compatibilidad con varios tipos de archivo. (Consulte &quot;[Agregar compatibilidad con formatos de archivo nativos adicionales](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; en [Programar con formularios AEM](https://www.adobe.com/go/learn_lc_programming_11).)
+Se puede personalizar la compatibilidad con varios tipos de archivo.
 
 ## Cambiar la configuración predeterminada {#change-the-default-settings}
 
@@ -128,7 +128,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) a PDF. El software OCR le permite buscar, corregir y copiar el texto en PDF.
 
-***nota &#x200B;**: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
+***nota **: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
 
 **Idioma principal de OCR:** Especifica el idioma que el motor de OCR utilizará para identificar los caracteres.
 
@@ -267,7 +267,7 @@ Para obtener instrucciones sobre cómo obtener acceso a esta configuración, con
 
    >[!NOTE]
    >
-   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**&#x200B;aún están completamente desincrustadas.*
+   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**aún están completamente desincrustadas.*
 
    >[!NOTE]
    >

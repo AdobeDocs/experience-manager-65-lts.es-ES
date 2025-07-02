@@ -1,14 +1,14 @@
 ---
 title: Reescritura de XMP en representaciones
 description: Descubra cómo la función de reescritura de XMP propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas específicas.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=es) |
-| AEM 6.5 | Este artículo |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | Este artículo |
 
 Esta característica de reescritura de XMP en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Assets o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
 
@@ -68,8 +68,6 @@ Siga estos pasos para que la función de reescritura de XMP propague metadatos a
 Los cambios de metadatos se propagan a las representaciones representaciones thumbnail.140.100.png y thumbnail.319.319.png del recurso, y no a las demás.
 
 >[!NOTE]
->
->Para problemas de reescritura de XMP en Linux de 64 bits, consulte [Cómo habilitar la reescritura de XMP en RedHat Linux de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Para las plataformas admitidas, consulte [Requisitos previos para la reescritura de metadatos de XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

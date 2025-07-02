@@ -1,19 +1,15 @@
 ---
 title: Estrategia de copia de seguridad y restauración en un entorno en clúster
 description: Si la implementación de AEM Forms almacena datos personalizados adicionales en una base de datos diferente, debe implementar una estrategia para realizar una copia de seguridad de estos datos, asegurándose de que permanezcan sincronizados con los datos de los formularios AEM.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 1%
 
 ---
@@ -53,7 +49,7 @@ En este tema se describen las siguientes estrategias para realizar copias de seg
    1. Haga una copia de seguridad de todos los archivos de cualquier nodo de clúster secundario, incluidos los subdirectorios.
    1. Haga una copia de seguridad del ID de sistema/repositorio de cada nodo del clúster por separado.
 
-   Para ver los pasos detallados, consulte [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Para ver los pasos detallados, consulte [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 
 1. Haga una copia de seguridad de cualquier otro dato, como las fuentes del cliente.
 1. Inicie de nuevo el clúster.
@@ -72,7 +68,7 @@ En este tema se describen las siguientes estrategias para realizar copias de seg
    1. Haga una copia de seguridad de todos los archivos de cualquier nodo de clúster secundario, incluidos los subdirectorios.
    1. Haga una copia de seguridad de repository/system.id de cada nodo de clúster por separado.
 
-   Para ver los pasos detallados, consulte [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Para ver los pasos detallados, consulte [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 
 1. Haga una copia de seguridad de cualquier otro dato, como las fuentes del cliente.
 1. Inicie de nuevo el clúster.
@@ -135,7 +131,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en el nodo.
    1. Elimine el .lock en el nodo, si existe.
    1. Elimine el repository/system.id en el nodo, si existe.
-   1. Elimine los archivos &ast;&ast;/listener.properties en el nodo, si existe.
+   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en el nodo, si existe.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
@@ -165,7 +161,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en todos los nodos del clúster.
    1. Elimine el .lock en todos los nodos del clúster, si existe.
    1. Elimine todos los nodos de clúster de repository/system.id, si existen.
-   1. Elimine los archivos &ast;&ast;/listener.properties en todos los nodos del clúster, si los hay.
+   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en todos los nodos del clúster, si los hay.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
@@ -178,15 +174,15 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 
 ## Realizar una copia de seguridad y restaurar el nodo de publicación de Administración de correspondencia {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-El nodo del editor no tiene ninguna relación principal-secundaria en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher siguiendo [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+El nodo del editor no tiene ninguna relación principal-secundaria en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher siguiendo [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 
 ### Recuperación de un solo nodo de editor {#recover-a-single-publisher-node}
 
 1. Cierre el nodo que debe recuperarse y no realice ninguna actividad de publicación hasta que el nodo vuelva a estar activo.
-1. Restaure el nodo Publicar mediante [Restaurando la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo Publicar mediante [Restaurando la copia de seguridad](/help/sites-administering/backup-and-restore.md).
 
 ### Recuperar un clúster {#recover-a-cluster}
 
 1. Cierre el clúster.
-1. Restaure el nodo Publicar mediante [Restaurando la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo Publicar mediante [Restaurando la copia de seguridad](/help/sites-administering/backup-and-restore.md).
 1. Inicie el nodo principal seguido del nodo secundario del clúster de creación.

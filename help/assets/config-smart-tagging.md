@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 995bad770ba026ee918233f4bf28e6ba3cf003a6
+source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 19%
@@ -64,10 +64,10 @@ Para obtener más información sobre cómo realizar esta configuración, consult
       * [Autenticación de servidor a servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Creación de una nueva credencial de OAuth:
-      * [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+      * [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migración de una credencial JWT existente a una credencial de OAuth:
-      * [Migración de una credencial de cuenta de servicio (JWT) a una credencial de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+      * [Migración de una credencial de cuenta de servicio (JWT) a una credencial de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
 1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**.
@@ -270,4 +270,4 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
