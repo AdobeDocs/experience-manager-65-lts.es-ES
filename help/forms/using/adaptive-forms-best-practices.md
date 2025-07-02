@@ -96,9 +96,9 @@ Para obtener más información, consulte [Crear un formulario adaptable](/help/f
 
 ### Crear plantillas de formulario
 
-Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algunas de las prácticas recomendadas son las siguientes:
+Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algunas de las prácticas recomendadas son las siguientes:
 
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
