@@ -165,7 +165,7 @@ Si un usuario sin los formularios AEM Forms y los permisos CQ necesarios intenta
 * Solución de Administración de correspondencia
 * AEM forms Workspace
 
-  ***nota **: Flex Workspace está obsoleto para la versión de formularios de AEM.*
+  ***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios de AEM.*
 
 * administrador de formularios
 * Informes de procesos 

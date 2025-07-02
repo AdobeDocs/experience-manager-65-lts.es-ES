@@ -131,7 +131,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en el nodo.
    1. Elimine el .lock en el nodo, si existe.
    1. Elimine el repository/system.id en el nodo, si existe.
-   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en el nodo, si existe.
+   1. Elimine los archivos &ast;&ast;/listener.properties en el nodo, si existe.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en todos los nodos del clúster.
    1. Elimine el .lock en todos los nodos del clúster, si existe.
    1. Elimine todos los nodos de clúster de repository/system.id, si existen.
-   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en todos los nodos del clúster, si los hay.
+   1. Elimine los archivos &ast;&ast;/listener.properties en todos los nodos del clúster, si los hay.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
