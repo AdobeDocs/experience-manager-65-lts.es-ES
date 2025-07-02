@@ -1,17 +1,15 @@
 ---
 title: Habilitar AEM para buscar documentos PDF protegidos mediante Seguridad de documentos y documentos de Microsoft Office
 description: Aprenda a habilitar la búsqueda nativa de AEM para realizar búsquedas de texto completo en documentos PDF protegidos por DRM.
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +46,7 @@ Una conexión segura permite un flujo de información fluido entre AEM Forms en 
 
 ### Configurar el paquete del AEM Forms Client SDK mediante autenticación mutua {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Habilite la autenticación mutua para AEM Forms en JEE. Para obtener información detallada, consulte [CAC y autenticación mutua](https://helpx.adobe.com/es/livecycle/kb/cac-mutual-authentication.html).
+1. Habilite la autenticación mutua para AEM Forms en JEE.
 1. Abra el administrador de configuración de AEM e inicie sesión como administrador. La dirección URL predeterminada es https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Busque y abra el paquete del AEM Forms Client SDK. Especifique un valor para las siguientes propiedades:
 

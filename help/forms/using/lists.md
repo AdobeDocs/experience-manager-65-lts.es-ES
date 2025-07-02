@@ -1,15 +1,13 @@
 ---
 title: Fragmentos de documento en AEM
 description: Los fragmentos de documento, como texto, listas, condiciones y fragmentos de diseño, de Administración de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia del cliente.
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6895'
 ht-degree: 88%
 
 ---
@@ -91,10 +89,6 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    ![pastetexttextmodule](assets/pastetexttextmodule.png)
 
-   >[!NOTE]
-   >
-   >Sin embargo, el formato del texto pegado tiene algunas [limitaciones](https://helpx.adobe.com/es/aem-forms/kb/cm-copy-paste-text-limitations.html).
-
 1. Si es necesario, inserte caracteres especiales en el fragmento de documento. Por ejemplo, puede utilizar la paleta Caracteres especiales para insertar:
 
    * Símbolos monetarios como €, ￥ y £
@@ -124,11 +118,11 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    ![Elementos de marcador de posición](assets/placeholder_elements_in_xmldata.png)
 
-   Los elementos de marcador de posición, tal como se especifican en el archivo de datos de ejemplo de un diccionario de datos.
+   Los elementos de marcador de posición, tal como se especifican en el archivo de datos de muestra de un diccionario de datos.
 
    ![Elementos de marcador de posición en una carta](assets/placeholder_elements_in_text.png)
 
-   Los valores de los elementos de marcador de posición de la vista CCR se rellenan desde las variables del diccionario de datos, tal como se especifica en el archivo de datos de ejemplo.
+   Los valores de los elementos de marcador de posición de la vista CCR se rellenan desde las variables del diccionario de datos, tal como se especifica en el archivo de datos de muestra.
 
    También puede utilizar el símbolo @ para buscar y agregar elementos de diccionario de datos y marcador de posición al Editor de texto. Coloque el cursor en el lugar donde desea insertar el elemento. Escriba @ seguido de la cadena de búsqueda. El Editor de texto realiza la operación de búsqueda en todos los elementos de diccionario de datos y marcador de posición disponibles en el fragmento de documento de texto. La operación de búsqueda recupera y muestra los elementos que contienen la cadena de búsqueda como una lista desplegable. Navegue por los resultados de búsqueda y haga clic en el elemento que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
@@ -193,7 +187,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 1. Si vuelve a pulsar Buscar, la búsqueda continuará en la parte superior de la página.
 
-   Utilice la opción Reemplazar todo para reemplazar todas las instancias de un texto en el módulo de texto. Si usa &grave;&grave;, se mostrará el número de reemplazos en forma de mensaje en el cuadro de diálogo Buscar y reemplazar.
+   Utilice la opción Reemplazar todo para reemplazar todas las instancias de un texto en el módulo de texto. Si usa ``, se mostrará el número de reemplazos en forma de mensaje en el cuadro de diálogo Buscar y reemplazar.
 
 #### Prácticas recomendadas, sugerencias y trucos para los módulos de texto {#best-practices-tips-and-tricks-for-text-modules}
 
@@ -492,7 +486,7 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
 1. Cree el diccionario de datos (DD) que desee usar en el ejemplo, tal como se muestra en el gráfico.
 
-   A continuación, seleccione el DD y exporte los datos de ejemplo. El archivo XML que obtiene contiene datos de empleados y tres instancias para Nominee_details (de forma predeterminada, se descargan 3 instancias. Puede agregar más o eliminarlas según sus necesidades). Actualice los valores y, a continuación, importe los datos de prueba en el DD. El archivo CMP es el paquete y contiene el DD. Importe el DD en Administración de correspondencia.
+   A continuación, seleccione el DD y exporte los datos de muestra. El archivo XML que obtiene contiene datos de empleados y tres instancias para Nominee_details (de forma predeterminada, se descargan 3 instancias. Puede agregar más o eliminarlas según sus necesidades). Actualice los valores y, a continuación, importe los datos de prueba en el DD. El archivo CMP es el paquete y contiene el DD. Importe el DD en Administración de correspondencia.
 
    Para obtener más información sobre cómo trabajar con el diccionario de datos y los datos de prueba, consulte [Diccionario de datos](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
@@ -538,7 +532,7 @@ Para obtener más información sobre la creación de diseños, consulte [Ayuda d
 
    ![Tabla estática en la carta](assets/statictableletter.png)
 
-   En la tabla dinámica, las tres filas aparecen según el número de registros del archivo de datos de prueba. Esto ocurre porque, al agregar el diseño a la carta, se crea un enlace entre los campos de la tabla dinámica y los elementos de colección del diccionario de datos. Los valores Nombre, Dirección y Sexo se rellenan desde el archivo de datos de prueba utilizado.
+   En la tabla dinámica, las tres filas aparecen según el número de registros del archivo de datos de prueba. Esto ocurre porque, al agregar el diseño a la carta, se crea un enlace entre los campos de la tabla dinámica y los elementos de colección del diccionario de datos. Los valores Nombre, Dirección y Género se rellenan desde el archivo de datos de prueba utilizado.
 
    ![Tabla dinámica en la carta](assets/dynamictableletter.png)
 

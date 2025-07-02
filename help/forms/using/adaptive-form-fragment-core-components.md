@@ -6,7 +6,8 @@ keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario a
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
+source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 96%
@@ -30,7 +31,7 @@ Puede agregar un fragmento varias veces a un documento y utilizar las propiedade
 
 >[!NOTE]
 >
-> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=es).
+> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 
 ## Creación de un fragmento de formulario {#create-a-fragment}
@@ -199,7 +200,7 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
 Fragmentos de formulario adaptable de referencia que puede utilizar para crear el formulario.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
-## Consulte también {#see-also}
+## Véase también {#see-also}
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)

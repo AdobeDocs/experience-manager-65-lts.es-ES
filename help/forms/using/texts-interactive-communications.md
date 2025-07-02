@@ -1,15 +1,13 @@
 ---
 title: Textos en comunicaciones interactivas
 description: 'Crear y editar fragmentos de documento de texto para usarlos en comunicaciones interactivas: el texto es uno de los cuatro tipos de fragmentos de documento que se utilizan para crear comunicaciones interactivas. Los otros tres son condiciones, listas y fragmentos de diseño.'
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2464'
 ht-degree: 83%
 
 ---
@@ -188,7 +186,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
 1. Seleccione **[!UICONTROL Listo]**.
 
-   La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el ratón sobre el controlador izquierdo del resaltado, aparece la regla aplicada.
+   La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el puntero por encima del controlador izquierdo del resaltado, aparece la regla aplicada.
 
    ![appliedruletext](assets/appliedruletext.png)
 
@@ -237,10 +235,6 @@ Puede copiar y pegar uno o varios párrafos de texto en un fragmento de document
 Puede copiar y pegar directamente el texto del documento de Microsoft® Word en un fragmento de documento de texto editable. El formato, como la lista con viñetas, la fuente y el color del texto, se conservará en el fragmento del documento de texto.
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
-
->[!NOTE]
->
->Sin embargo, el formato del texto pegado tiene algunas [limitaciones](https://helpx.adobe.com/es/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 ## Insertar caracteres especiales en el texto {#special}
 
