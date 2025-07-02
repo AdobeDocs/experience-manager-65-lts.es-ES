@@ -363,11 +363,11 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
 
-* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
-* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
-* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
-* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
-* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+* &#x200B;<!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* &#x200B;<!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* &#x200B;<!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* &#x200B;<!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* &#x200B;<!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
 
 El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
 

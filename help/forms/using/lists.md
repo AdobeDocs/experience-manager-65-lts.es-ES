@@ -187,7 +187,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 1. Si vuelve a pulsar Buscar, la búsqueda continuará en la parte superior de la página.
 
-   Utilice la opción Reemplazar todo para reemplazar todas las instancias de un texto en el módulo de texto. Si usa ``, se mostrará el número de reemplazos en forma de mensaje en el cuadro de diálogo Buscar y reemplazar.
+   Utilice la opción Reemplazar todo para reemplazar todas las instancias de un texto en el módulo de texto. Si usa &grave;&grave;, se mostrará el número de reemplazos en forma de mensaje en el cuadro de diálogo Buscar y reemplazar.
 
 #### Prácticas recomendadas, sugerencias y trucos para los módulos de texto {#best-practices-tips-and-tricks-for-text-modules}
 
