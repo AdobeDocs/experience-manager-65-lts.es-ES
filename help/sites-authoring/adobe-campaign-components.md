@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 4%
 
 ---
+
 
 # Componentes de Adobe Campaign{#adobe-campaign-components}
 
@@ -319,7 +322,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Campo de opción (Campaign)</p> </td>
    <td><p>byte con valores asociados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Género</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campaign)</p> </td>
