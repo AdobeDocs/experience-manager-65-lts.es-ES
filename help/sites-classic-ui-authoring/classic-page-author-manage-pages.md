@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bff63900-0007-472d-a910-bf20b8013668
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
@@ -105,7 +106,7 @@ Si proporciona solo una página **Title** al crear una página, AEM deriva la p�
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nombre {#name}
 
@@ -262,7 +263,7 @@ Para mover o cambiar el nombre de una página:
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   La página también enumera todas las páginas que hacen referencia a la página que se está moviendo. Según el estado de la página de referencia, es posible que pueda ajustar esos vínculos en las páginas o volver a publicarlas.
+   La página también enumera cualquier página que haga referencia directa o indirectamente a la página que se está moviendo. Según el estado de la página de referencia, es posible que pueda ajustar esos vínculos en las páginas o volver a publicarlas.
 
 1. Rellene los campos siguientes, según corresponda:
 

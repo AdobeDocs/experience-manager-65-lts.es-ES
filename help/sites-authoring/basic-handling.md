@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9c874cabb5d966b85c11acaf761349c21ceb9fd9
+exl-id: 281c96e2-24f8-4568-add2-67972148b406
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 42%
 
 ---
@@ -557,13 +558,14 @@ Se puede acceder a estas opciones mediante las comillas angulares que aparecen j
 
 **Referencias** muestran conexiones al recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
 
+* [Planes](/help/sites-administering/msm.md)
 * [Lanzamientos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referencias de contenido:
 
-   * vínculos de otras páginas a la página seleccionada
-   * el contenido que el componente de referencia extrae de la página seleccionada, o que entrega a la misma o a ambas
+   * Vínculos directos de otras páginas a la página seleccionada
+   * Contenido que el componente de referencia extrae de la página seleccionada, que entrega a esta o ambas
 
 ![bh-28](assets/bh-28.png)
 

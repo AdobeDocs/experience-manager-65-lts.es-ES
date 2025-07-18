@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 5%
 
 ---
@@ -156,7 +156,7 @@ puede utilizar cualquier número de caracteres comodín en una consulta.
 
 AEM permite ver qué páginas están vinculadas a la página en la que está trabajando actualmente.
 
-Para mostrar referencias de página directas:
+Para mostrar referencias de página:
 
 1. En la barra de tareas, seleccione el icono de la ficha **Página**.
 
@@ -165,6 +165,10 @@ Para mostrar referencias de página directas:
 1. Seleccione **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM muestra todas las páginas que hacen referencia directamente a la página seleccionada, así como todas las referencias indirectas. Esto resulta útil para comprender todos los vínculos que se actualizan si necesita mover o eliminar la página.
+
+## Acciones adicionales de Sidekick {#additional-actions}
 
 En determinadas situaciones, Sidekick ofrece más acciones, entre las que se incluyen:
 
@@ -175,7 +179,7 @@ En determinadas situaciones, Sidekick ofrece más acciones, entre las que se inc
 
 Se pueden ver otras [relaciones entre páginas en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Registro de auditorías {#audit-log}
+## Registro de auditoría {#audit-log}
 
 Se puede acceder al **Registro de auditoría** desde la ficha **Información** de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
 

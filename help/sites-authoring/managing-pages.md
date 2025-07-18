@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo crear y administrar páginas con A
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
@@ -322,7 +323,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    Se abrirá el asistente para mover páginas.
 
-1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
+1. El paso **Rename** del asistente le proporciona **información** sobre la página, incluida la fecha de creación, la ruta y el número de referencias directas. Desde aquí puede hacer lo siguiente:
 
    * Especifique el nombre que desea que tenga la página cuando se haya movido y, a continuación, haga clic en **Siguiente** para continuar.
 
@@ -361,7 +362,8 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* En este paso se enumeran las referencias directas e indirectas. Esto puede diferir de la cantidad informada en el paso **Rename** del asistente, así como de las referencias notificadas por el carril de referencias, que solo informan de referencias directas por motivos de rendimiento.
 
    ![caop-09](assets/caop-09.png)
 
