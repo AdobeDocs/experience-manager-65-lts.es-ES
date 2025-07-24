@@ -187,7 +187,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
