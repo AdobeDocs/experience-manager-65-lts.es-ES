@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
+source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 13%
@@ -111,9 +111,9 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Compatible |
 | Microsoft® Azure Blob Storage | Binarios | A: Compatible |
-| MongoDB Enterprise 8.0 | Repositorio | A: Compatible `[3, 4]` |
-| MongoDB Enterprise 7.0 | Repositorio | A: Compatible `[3, 4]` |
-| MongoDB Enterprise 6.0 | Repositorio | A: Compatible `[3, 4]` |
+| MongoDB Enterprise 8.0 | Repositorio | A: Compatible `[2, 3]` |
+| MongoDB Enterprise 7.0 | Repositorio | A: Compatible `[2, 3]` |
+| MongoDB Enterprise 6.0 | Repositorio | A: Compatible `[2, 3]` |
 | **Apache Lucene (integrado en Quickstart)** | Servicio de búsqueda | A: Compatible |
 
 1. &quot;File System&quot; incluye almacenamiento en bloque compatible con POSIX. Incluye tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Cargar AEM de prueba con el sistema de archivos de red/remoto.
@@ -187,7 +187,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
