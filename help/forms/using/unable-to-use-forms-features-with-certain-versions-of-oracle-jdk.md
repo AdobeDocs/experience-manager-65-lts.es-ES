@@ -4,7 +4,8 @@ description: No se puede usar Experience Manager Forms con ciertas versiones de 
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4aa45f02-ff89-4e40-a15d-e62c5879a87d
+source-git-commit: cf2f70432ccf9ebc80847cf5ec6acfe630feb39f
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 100%
@@ -39,7 +40,9 @@ Las versiones anteriores y posteriores de Java incluyen nuevos límites de proce
 1. Detenga el servidor de Experience Manager Forms.
 1. Configure el siguiente argumento JVM para su servidor de aplicaciones:
 
-   `-Djdk.xml.xpathExprOpLimit=2000`
+   `-Djdk.xml.xpathExprGrpLimit=100`
+   `-Djdk.xml.xpathExprOpLimit=10000`
+   `-Djdk.xml.xpathTotalOpLimit=10000`
 
    Establece la propiedad del sistema en JVM en un valor razonablemente alto para que no se alcance el límite predeterminado.
 
