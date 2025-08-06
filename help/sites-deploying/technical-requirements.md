@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
+source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 13%
+source-wordcount: '3239'
+ht-degree: 14%
 
 ---
 
@@ -187,7 +187,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
@@ -376,9 +376,46 @@ Para Windows x86:
 * 10.9.x y posterior
 * Solo se admite con fines de prueba y demostración
 
-### Requisitos para AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
+### Consideraciones para PDF Generator {#software-support-for-pdf-generator}
 
-### Soporte de software para el generador de PDF {#software-support-for-pdf-generator}
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Producto</strong></p> </th>
+   <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versión más reciente</td>
+   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML y HTM</td>
+  </tr>
+
+<tr>
+   <td>Microsoft® Office 2021 Professional Plus, licencias por volumen y venta minorista</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
+  </tr>
+  <tr>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT<br>
+
+</td>
+  </tr>
+ </tbody>
+</table>
+
+>[!NOTE]
+>
+>* El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
+>* PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
+>* PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+>* Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
+>* PDF Generator no admite Microsoft® Office 365.
+>* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
+>* Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
+>* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para utilizarlo únicamente con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([Local](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* El servicio PDF Generator no es compatible con Microsoft® Windows 11.
+
 
 <table>
  <tbody>
