@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10213'
+source-wordcount: '10247'
 ht-degree: 47%
 
 ---
@@ -242,6 +242,12 @@ El proceso de instalación de Adobe Acrobat Pro DC para Microsoft Office varía 
 
 * **Tipo de licencia**: licencia comercial o por volumen
 * **Tipo de implementación**: usuario único o varios usuarios
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>El vídeo muestra el proceso de instalación de una licencia comercial: configuración de usuario único. Para otros escenarios de implementación (Venta minorista - Varios usuarios, Licencia por volumen - Un solo usuario o Licencia por volumen - Varios usuarios), consulte las instrucciones específicas del paso 9 en las pestañas correspondientes a continuación para garantizar el inicio adecuado del servidor y la activación de la licencia para su tipo de implementación.
 
 Cada pestaña contiene instrucciones adaptadas y optimizadas para su configuración específica, lo que le ayuda a evitar problemas de configuración y a garantizar el cumplimiento adecuado de las licencias.
 
@@ -691,8 +697,8 @@ Después de desinstalar la versión anterior, debe descargar e instalar una vers
 
 Después de completar todos los procesos, realice una prueba de acción rápida para confirmar que la instalación es válida:
 
-1. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor e iniciar el servidor de AEM Forms mediante los servicios de.
-2. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor e iniciar el servidor de AEM Forms mediante Servicios de Windows. Una vez que el servidor se esté ejecutando, no cierre simplemente la ventana RDP. En su lugar, cierre la sesión correctamente cerrando la sesión del usuario, lo que garantiza que la sesión finalice sin problemas mientras el servicio sigue ejecutándose en segundo plano.
+1. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor de e iniciar el servidor de AEM Forms mediante los servicios de.
+2. Una vez que el servidor se esté ejecutando, no cierre simplemente la ventana RDP. En su lugar, cierre la sesión correctamente cerrando la sesión del usuario, lo que garantiza que la sesión finalice sin problemas mientras el servicio sigue ejecutándose en segundo plano.
 
 ###### Paso 10: Probar el servicio PDF Generator
 
@@ -1450,7 +1456,6 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
          
          ```
-
      
    * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
@@ -1458,8 +1463,8 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
+     
+* Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++
 
