@@ -4,10 +4,11 @@ description: Comprenda cómo el editor de fragmentos de contenido utiliza la sin
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 88%
+source-wordcount: '522'
+ht-degree: 86%
 
 ---
 
@@ -129,7 +130,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -165,7 +166,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un intervalo de código, encapsúlelo con acentos graves (&grave;). A diferencia de los bloques de código con formato previo, un intervalo de código indica el código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúlelo con acentos graves (`` ` ``). A diferencia de los bloques de código con formato previo, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
