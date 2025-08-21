@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8c726951cbd99660d2cfd23abef8857a6f4fcf36
+source-git-commit: b6a5e6bacfee72e162ce3bc035f909c02fbbf6db
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '4935'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 14%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 incluye nuevas funciones, mejoras clave solicitadas por el cliente y correcciones de errores. También incluye mejoras de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad inicial de 6.5 LTS en marzo de 2025. [Instalar este Service Pack](#install-update) en 6.5 LTS.
 
-## Funciones principales y mejoras
+<!-- ## Key features and enhancements -->
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -468,5 +468,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
