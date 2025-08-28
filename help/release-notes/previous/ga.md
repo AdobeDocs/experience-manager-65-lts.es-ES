@@ -153,4 +153,4 @@ Si tiene este problema, póngase en contacto con Atención al cliente de Adobe. 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
