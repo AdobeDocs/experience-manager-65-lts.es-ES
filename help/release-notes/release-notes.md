@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 18%
 
 ---
@@ -297,7 +297,6 @@ Se ha corregido un problema de accesibilidad en el que los marcadores de posici�
 #### Guía de inicio rápido{#foundation-quickstart-65-lts-sp1}
 
 * Se ha actualizado el script de desinstalación para ajustar el intervalo de versiones del paquete Guava, lo que evita que se vea incluido en la lista de bloqueados cuando se instala mediante el Administrador de paquetes. (GRANITE-59559)
-* Se ha corregido un error de configuración de varias partes que se producía durante las cargas de paquetes de AEMFD en Tomcat 11 con JDK 17 al actualizar la configuración del servidor para admitir instalaciones de paquetes grandes sin activar errores de análisis. (GRANITE-58327)
 * Se ha corregido un problema en la interfaz de usuario de replicación que mostraba un error (`#1660`) al editar los agentes de replicación al corregir la administración de las casillas de verificación clásicas en la interfaz. (GRANITE-58302)
 * Se han resuelto varios errores de inicio del almacén de datos S3 al ejecutar AEM 6.5 LTS con JDK 21. Para ello, se han de corregir los permisos de servicio que faltaban, actualizar la administración de la configuración y garantizar que los servicios necesarios se inicialicen correctamente. (GRANITE-57082)
 * Se ha definido la estrategia de mantenimiento y mantenimiento para AEM 6.5. Esta corrección incluye lo siguiente:
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 ## Instalación y actualización {#install-update}
 
 Para conocer los requisitos de configuración, consulte las [instrucciones de instalación](/help/sites-deploying/custom-standalone-install.md).
+
+>[!NOTE]
+>
+> Si está actualizando directamente a LTS SP1 desde SPs antiguos de 6.5, siga las instrucciones que se dan para 6.5 a 6.5 LTS GA [actualizar](/help/sites-deploying/upgrade.md).
+
 
 Para obtener instrucciones detalladas, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
 
@@ -452,7 +456,11 @@ Cuando se produce este problema, puede aparecer una de las siguientes excepcione
 
 Hay disponible una revisión [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) para resolver este problema.
 
-### Error de conexión de Dispatcher con función solo SSL {#ssl-only-feature}
+### Error de conexión de Dispatcher con la función solo SSL (corregido en AEM 6.5 LTS SP1 y posterior){#ssl-only-feature}
+
+>[!NOTE]
+>
+> Este problema solo está presente en la versión AEM 6.5 LTS GA.
 
 Al habilitar la función Solo SSL en las implementaciones de AEM, existe un problema conocido que afecta a la conectividad entre las instancias de Dispatcher y AEM. Después de habilitar esta función, las comprobaciones de estado pueden fallar y la comunicación entre las instancias de Dispatcher y AEM puede verse interrumpida. Este problema se produce específicamente cuando los clientes intentan conectarse a través de `https + IP` desde Dispatcher a instancias de AEM. Está relacionado con problemas de validación de SNI (Server Name Indication).
 
@@ -485,5 +493,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
