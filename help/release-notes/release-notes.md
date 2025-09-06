@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
+source-git-commit: 50f63016e5769939309d5013309043ad476e8b71
 workflow-type: tm+mt
-source-wordcount: '7221'
+source-wordcount: '7219'
 ht-degree: 71%
 
 ---
@@ -459,7 +459,7 @@ Para obtener instrucciones detalladas, consulte la [documentación de actualizac
 
 ## Instalación y actualización del complemento de AEM Forms {#install-update-aem-forms-add-on}
 
-Para obtener instrucciones detalladas, consulte [Instrucciones de instalación del Service Pack de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Para obtener instrucciones detalladas, consulte [Realización de una actualización in situ](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -576,5 +576,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
