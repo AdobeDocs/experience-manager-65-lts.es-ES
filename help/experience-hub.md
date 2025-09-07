@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub presenta un punto de partida centralizado para administrar conten
 
 Vea un recorrido rápido por el espacio de trabajo reinventado de AEM Experience Hub (4 minutos y 9 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471444?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -50,11 +50,11 @@ La página de Adobe Experience Manager se ha actualizado con widgets interactivo
 >
 >Los widgets, las herramientas y los artefactos que se muestran dependen del perfil del usuario, los derechos y el tipo de implementación de AEM (AEM as a Cloud Service o Managed Services 6.5/6.5 LTS).
 
-Estas soluciones ahora se han movido a la navegación principal en **Herramientas** o **Servicios**. Además, los nuevos elementos de navegación proporcionan acceso rápido a las funciones clave de Adobe Experience Manager específicas para las soluciones habilitadas, como Assets, Sites, Forms, Fragmentos de contenido, Lanzamientos y mucho más.
+Estas soluciones ahora se han movido a la navegación principal en **Herramientas** o **Servicios**. Además, los nuevos elementos de navegación proporcionan un acceso rápido a las funciones clave de Adobe Experience Manager específicas para las soluciones habilitadas. Estas soluciones incluyen Assets, Sites, Forms, Fragmentos de contenido, Lanzamientos y mucho más.
 
 ![Entornos de Experience Hub](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-Estas funciones están disponibles para el entorno de producción principal al que tiene acceso o puede seleccionar un entorno específico para segmentar si tiene acceso a varias instancias de AEM.
+Estas funciones están disponibles para el entorno de producción principal al que puede acceder. O bien, puede seleccionar un entorno específico para segmentar en caso de que tenga acceso a varias instancias de AEM.
 
 ![Entornos de producción y ensayo](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ Los widgets también se pueden cambiar de tamaño y cambiar de posición en la p
 
 ![widgets de Experience Hub](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-La sección **Entornos de creación** muestra todos los entornos de AEM accesibles para usted, con accesos directos específicos para las soluciones y páginas disponibles para ellos, que también le permiten fijar entornos específicos que desea que se muestren en la parte superior de la lista.
+La sección **Entornos de creación** muestra todos los entornos de AEM accesibles para usted. Existen métodos abreviados específicos para las soluciones y páginas disponibles para ellas que también le permiten fijar entornos específicos que desea que se muestren en la parte superior de la lista.
 
 La sección **Recientes**, que se ve en la imagen siguiente, enumera las páginas que visitó recientemente en AEM. Según las licencias del inquilino, el widget puede incluir elementos como Programa, Ejecución de canalización, Assets, Editor de páginas y Editor de formularios.
 

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: 3c729308d25e680a47f82f840bfe7bd16d7e59bb
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1279'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,9 @@ El asistente de IA es compatible con AEM as a Cloud Service, e incluye las sigui
 
 Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cloud Manager y la interfaz de usuario del autor.
 
-El siguiente vídeo de 3 minutos y 39 segundos ofrece una guía paso a paso del asistente de IA en AEM.
+El siguiente vídeo de 3 minutos y 39 segundos ofrece una guía paso a paso del AI Assistant en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470358?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Obtenga acceso al asistente de IA en AEM{#get-access}
 
@@ -54,17 +54,17 @@ Las solicitudes del asistente de IA en AEM se autentican mediante Adobe Identity
 
     The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
 
-1. El administrador de AEM configura el asistente de IA para su uso en la organización. Consulte [Configuración del asistente de IA en AEM](/help/ai-assistant-in-aem-admin.md).
+1. El administrador de AEM configura el asistente de IA para su uso en la organización. Consulte [Configuración del Asistente de IA en AEM](/help/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Ámbito {#scope}
 
-El ámbito actual del asistente de IA de AEM se centra en abordar las preguntas de conocimiento del producto para AEMr as a Cloud Service. Este ámbito incluye un amplio soporte para áreas clave. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+El ámbito actual de AI Assistant en AEM se centra en abordar las preguntas de conocimiento de productos para AEMr as a Cloud Service. Este ámbito incluye un amplio soporte para áreas clave. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Superficies**: disponible en AEM Experience Hub, IU de creación y Cloud Manager.
 * **Capacidades**: conocimiento del producto y primera parada para solucionar problemas y obtener instrucciones, creación automatizada de vales de soporte y búsqueda.
@@ -74,7 +74,7 @@ El ámbito actual del asistente de IA de AEM se centra en abordar las preguntas 
 
 El asistente de IA de AEM está diseñado con un fuerte énfasis en la privacidad, la seguridad y la gobernanza.
 
-Este artículo describe las funciones centradas en la confianza que puede esperar del asistente de IA de AEM:
+Este artículo describe las funciones centradas en la confianza que puede esperar del Asistente de IA en AEM:
 
 * AI Assistant no utiliza datos personales en AEM, ni siquiera para fines de formación.
 * El asistente de IA de AEM no tiene acceso a los datos de los consumidores.
@@ -93,7 +93,7 @@ El conocimiento del producto engloba conceptos y temas derivados de la documenta
 | Aprendizaje puntual | <ul><li>¿Qué es el editor universal?</li><li>¿Cómo se crea un programa en Cloud Manager?</li></ul> |
 | Abrir detección | <ul><li>¿Cómo se utiliza el editor universal?</li><li>¿Hay alguna manera de copiar contenido de un entorno a otro?</li></ul> |
 | Resolución de problemas | <ul><li>¿Por qué no puedo acceder al editor universal?</li><li>¿Por qué falla mi canalización?</li></ul> |
-| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico &#x200B;**<br>**Ejemplos** |
+| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico **<br>**Ejemplos** |
 | Creación automatizada de tickets de asistencia que captura el historial y el contexto de chat del asistente de IA | <ul><li>Crea un ticket de asistencia para mí.</li></ul> |
 | Recuperar el estado del ticket de asistencia | <ul><li>Muéstrame todos los boletos de soporte que he abierto.</li><li>Muéstrame el estado del ticket &quot;E-----------&quot;</li></ul> |
 
@@ -123,7 +123,7 @@ Por ejemplo, en el mensaje, ayuda dar un nombre a la solución de AEM en la que 
 <!-- UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 ![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
@@ -131,9 +131,9 @@ From an employee's perspective, the process is straightforward: identify the pro
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -176,7 +176,7 @@ El asistente de IA de AEM incluye una función de detección que le ayudará a e
 
 1. Para ocultar el panel de detección de mensajes, vuelva a hacer clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 
-### Comparta sus comentarios sobre el asistente de IA en AEM
+### Comparta sus comentarios sobre AI Assistant en AEM
 
 Sus datos ayudan a Adobe a mejorar el asistente de IA para obtener un mejor rendimiento y precisión.
 
@@ -188,11 +188,11 @@ Comparta sus comentarios sobre su experiencia con el AI Assistant de AEM mediant
 | --- | --- |
 | ![Icono de esquema en miniatura](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Indique lo que ha salido bien y comparta sus comentarios positivos. |
 | ![Icono de esquema en miniatura](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Proporcione sugerencias para mejorar. Añada comentarios específicos sobre su experiencia, que se revisan diariamente. |
-| ![Icono de marca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Informe de sus preocupaciones o proporcione comentarios detallados sobre su interacción con el asistente de IA en AEM. |
+| ![Icono de marca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Informe de sus problemas o proporcione comentarios detallados sobre su interacción con el asistente de IA en AEM. |
 
 ## Preguntas frecuentes sobre el asistente de IA en AEM {#ai-faq}
 
-A continuación encontrará respuestas a algunas preguntas comunes sobre el asistente de IA:
+A continuación encontrará respuestas a algunas preguntas comunes sobre el Asistente de IA:
 
 * **¿La información proporcionada por el Asistente de IA en AEM es en tiempo real?**\
   No. El asistente de IA obtiene su contenido de la documentación de Adobe Experience League. Las actualizaciones del contenido pueden tardar un poco en reflejarse en sus respuestas.
