@@ -8,11 +8,11 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
 workflow-type: tm+mt
 source-wordcount: '7223'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
-# Notas de la versión actuales de Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Notas de la versión actual de Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Información de la versión {#release-information}
 
@@ -83,7 +83,7 @@ ht-degree: 71%
 * Visibilidad mejorada y ayuda contextual para los iconos en escenarios de Reflow. Se ha mejorado el comportamiento de Reflow para garantizar que la ayuda contextual se muestre correctamente en los iconos **Descargar**, **Volver a procesar recursos** y **Cierre de compra**. Se centró en un problema de accesibilidad por el que los iconos y sus etiquetas se volvían invisibles cuando cambiaba el tamaño de la ventanilla móvil o la configuración de zoom del explorador. Esta corrección admite usuarios con visión reducida al mantener la visibilidad y proporcionar descripciones de iconos adecuadas durante el Reflow. (SITES-26871)
 
 
-#### Interfaz de usuario de administrador{#sites-adminui-65-lts-sp1}
+#### Interfaz de usuario administrador{#sites-adminui-65-lts-sp1}
 
 * Se ha corregido un problema de accesibilidad por el que JAWS no anunciaba funciones de lista ni proporcionaba instrucciones de navegación y activación en el cuadro de diálogo Crear sitio. (SITES-30661)
 * La compatibilidad del lector de pantalla con los mensajes de estado en la vista de filtro Sitios funciona según lo previsto, lo que garantiza que los usuarios reciban comentarios claros y oportunos al cambiar entre vistas. (SITES-24992)
@@ -136,7 +136,7 @@ Otros autores aún pueden publicar fragmentos de contenido incluso cuando otro a
 
 Se ha corregido un problema en el componente Lista de productos por el que la casilla “Seleccionar todo” añadía solo las 20 primeras SKU de la página inicial en lugar de todas las SKU en los resultados de búsqueda. (SITES-29191)
 
-#### Servidor principal{#sites-core-backend-65-lts-sp1}
+#### Back-end principal{#sites-core-backend-65-lts-sp1}
 
 Los metadatos de XMP con formato incorrecto desencadenaron un error durante el procesamiento de los recursos de imagen en `ValidationDataServlet`. La corrección garantiza la administración de metadatos compatible y evita el análisis repetido de propiedades no válidas. (SITE-30683)
 
@@ -452,7 +452,7 @@ Para conocer los requisitos de configuración, consulte las [instrucciones de in
 
 >[!NOTE]
 >
-> Si está actualizando directamente a LTS SP1 desde SPs antiguos de 6.5, siga las instrucciones que se dan para 6.5 a 6.5 LTS GA [actualizar](/help/sites-deploying/upgrade.md).
+> Si está actualizando directamente a LTS SP1 desde SPs antiguos de 6.5, siga las instrucciones que se dan para la [actualización](/help/sites-deploying/upgrade.md) de 6.5 a 6.5 LTS GA.
 
 
 Para obtener instrucciones detalladas, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
@@ -580,5 +580,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
