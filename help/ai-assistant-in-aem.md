@@ -35,7 +35,7 @@ Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cl
 
 El siguiente vídeo de 3 minutos y 39 segundos ofrece una guía paso a paso del AI Assistant en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470358?learn=on&captions=spa)
 
 ## Obtenga acceso al asistente de IA en AEM{#get-access}
 
