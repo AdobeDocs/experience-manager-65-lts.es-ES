@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 94%
+source-wordcount: '2064'
+ht-degree: 93%
 
 ---
 
 # Variables en flujos de trabajo de AEM Forms{#variables-in-aem-forms-workflows}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html).
 
 Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. Entonces, puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable. También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
 
@@ -38,13 +39,13 @@ Las variables son una extensión de la interfaz [MetaDataMap](https://developer.
 Las variables se crean mediante la sección Variables disponible en la barra de tareas del modelo de flujo de trabajo. Las variables del flujo de trabajo de AEM admiten los siguientes tipos de datos:
 
 * **Tipos de datos primitivos**: Largo, Doble, Booleano, Fecha y Cadena
-* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
+* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
 
 >[!NOTE]
 >
 >Los flujos de trabajo solo admiten el formato ISO8601 para las variables de tipo Fecha.
 
-Necesita el [Paquete de complementos para AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos del Modelo de datos de documento y formulario.  Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede crear una variable ArrayList para todos los tipos de datos primitivos y complejos. Por ejemplo, cree una variable ArrayList y seleccione Cadena como subtipo para almacenar varios valores en cadena mediante el uso de la variable.
+Necesita el [Paquete de complementos para AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos Documento y Modelo de datos de formulario.  Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede crear una variable ArrayList para todos los tipos de datos primitivos y complejos. Por ejemplo, cree una variable ArrayList y seleccione Cadena como subtipo para almacenar varios valores en cadena mediante el uso de la variable.
 
 Siga estos pasos para crear una variable:
 
@@ -148,13 +149,13 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 El paso Ir a, OR Split y todos los pasos del flujo de trabajo de AEM Forms admiten variables.
 
-#### Paso OR Split {#or-split-step}
+#### Paso División O {#or-split-step}
 
-OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
 Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
-Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso OR Split, consulte [Paso OR Split](/help/sites-developing/workflows-step-ref.md#or-split).
+Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso División O, consulte [Paso División O](/help/sites-developing/workflows-step-ref.md#or-split).
 
 En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [ejemplo 2](../../forms/using/variable-in-aem-workflows.md#example2) para establecer el valor de la variable **totalvalue**. La rama 1 está activa si el valor de la variable **totalvalue** es mayor que 50 000. Del mismo modo, puede definir una regla para que la rama 2 se active si el valor de la variable **totalvalue** es menor que 50 000.
 
@@ -166,7 +167,7 @@ Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](../../fo
 
 El **Paso Ir a** permite especificar el siguiente paso en el modelo de flujo de trabajo que se va a ejecutar, según el resultado de una expresión de enrutamiento.
 
-De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
+De forma similar al paso División O, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
 
 Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Ir a, consulte [Paso Ir a](/help/sites-developing/workflows-step-ref.md#goto-step).
 
@@ -196,7 +197,7 @@ Utilice las siguientes API en el script ECMA para recuperar los valores de varia
 | Modelo de datos de formulario | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Necesita el [Paquete de complementos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos de variables del Modelo de datos de documento y formulario.
+Necesita el [Paquete de complementos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos variables Documento y Modelo de datos de formulario.  
 
 **Ejemplo**
 

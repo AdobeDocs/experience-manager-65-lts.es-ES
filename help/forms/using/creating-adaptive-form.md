@@ -5,10 +5,11 @@ role: User, Developer
 level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 94%
+source-wordcount: '1993'
+ht-degree: 93%
 
 ---
 
@@ -16,10 +17,11 @@ ht-degree: 94%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=es).
 
 ## Crear un formulario adaptable {#strong-create-an-adaptive-form-strong}
 
@@ -61,7 +63,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 1. Seleccione **[!UICONTROL Abrir]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También mostrará la barra lateral para personalizar el formulario recién creado según las necesidades.
 
-   En base al tipo de formulario adaptable, los elementos del formulario presentes en la plantilla del formulario XFA, el esquema XML o JSON asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En base al tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA, el esquema XML o JSON asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
    Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios adaptables](introduction-forms-authoring.md).
 
@@ -126,7 +128,7 @@ Haga lo siguiente para utilizar el esquema XML o JSON como modelo de formulario 
 1. Seleccione **[!UICONTROL Seleccionar esquema]** y realice una de las siguientes acciones:
 
    * **[!UICONTROL Cargar desde disco]**: seleccione esta opción y seleccione Cargar definición de esquema para examinar y cargar un esquema XML o JSON desde su sistema de archivos. El archivo de esquema cargado reside con el formulario y no es accesible para otros formularios adaptables.
-   * **[!UICONTROL Buscar en el repositorio]**: seleccione esta opción para seleccionar archivos disponibles en el repositorio de la lista de archivos de definición. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado está asociado al formulario por referencia y es accesible para utilizarlo en otros formularios adaptables.
+   * **[!UICONTROL Buscar en el repositorio]**: seleccione esta opción para seleccionar de la lista de archivos de definición de esquemas disponibles en el repositorio. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado está asociado al formulario por referencia y es accesible para utilizarlo en otros formularios adaptables.
 
    >[!CAUTION]
    >
@@ -156,7 +158,7 @@ Además, puede utilizar el editor de plantillas para crear sus propias plantilla
 
 ## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
-Los formularios adaptables se crean sin un modelo de formulario (con la opción Ninguno del modelo de formulario) o mediante un modelo de formulario como una plantilla de formulario, un esquema XML o JSON o un modelo de datos de formulario. Puede cambiar el modelo de formulario para un formulario adaptable de Ninguno a otro modelo de formulario. Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro esquema de formulario, esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario. Pero no puede cambiar de un modelo de formulario a otro.
+Los formularios adaptables se crean sin un modelo de formulario (con la opción Ninguno del modelo de formulario) o mediante un modelo de formulario como una plantilla de formulario, un esquema XML o JSON o un modelo de datos de formulario. Puede cambiar el modelo de formulario para un formulario adaptable de Ninguno a otro modelo de formulario. Si el formulario adaptable se basa en un modelo de formulario, puede elegir otra plantilla de formulario, esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario. Pero no puede cambiar de un modelo de formulario a otro.
 
 1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
@@ -177,7 +179,7 @@ De forma predeterminada, el contenido de un formulario adaptable se guarda con u
 
 ### Habilitar el guardado automático para un formulario adaptable {#enable-auto-save-for-an-adaptive-form}
 
-De forma predeterminada, la opción de guardado automático no está activada. Puede habilitar la opción de guardado automático desde la pestaña Guardado automático de un formulario adaptable. La pestaña Guardar automáticamente también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
+De forma predeterminada, la opción de guardado automático no está habilitada. Puede habilitar la opción de guardado automático desde la pestaña Guardado automático de un formulario adaptable. La pestaña Guardar automáticamente también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
 
 1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente, luego seleccione ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardar automáticamente]**, **[!UICONTROL habilite]** la opción Guardar automáticamente.
@@ -187,7 +189,7 @@ De forma predeterminada, la opción de guardado automático no está activada. P
    * **[!UICONTROL En base a tiempo:]** seleccione esta opción para comenzar a guardar el contenido en función de un intervalo de tiempo específico.
    * **[!UICONTROL En base a eventos:]** seleccione esta opción para comenzar a guardar el contenido en función de cuándo se activa un evento.
 
-   Cuando selecciona un activador, se activará el cuadro Configuración de estrategia. El cuadro Configuración de estrategia le permite:
+   Cuando selecciona un activador, se habilitará el cuadro Configuración de estrategia. El cuadro Configuración de estrategia le permite:
 
    * Especificar un intervalo de tiempo si selecciona el activador **[!UICONTROL En base a tiempo]**.
    * Especificar un nombre de evento si selecciona el activador **[!UICONTROL En base a eventos]**.

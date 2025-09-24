@@ -8,9 +8,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6615'
 ht-degree: 94%
 
 ---
@@ -19,10 +20,11 @@ ht-degree: 94%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Información general {#overview}
 
@@ -428,7 +430,7 @@ Vamos a comprender cómo crear una regla en el editor visual utilizando el sigui
 La sección Loan Requirements (requisitos de préstamo) del formulario de solicitud de ejemplo requiere que los solicitantes especifiquen su estado civil, su salario y, si están casados, el salario de su cónyuge. En función de las entradas del usuario, la regla calcula la cantidad de idoneidad para el préstamo y se muestra en el campo Loan Eligibility (elegibilidad del préstamo). Aplique las siguientes reglas para implementar el escenario:
 
 * El campo Spouse’s Salary (salario del cónyuge) solo se muestra cuando en el estado civil (Marital Status) se indica que se está casado o casada (Married).
-* La cantidad de la elegibilidad del préstamo es el 50 % del salario total.
+* La cantidad de la idoneidad del préstamo es el 50 % del salario total.
 
 Siga estos pasos para escribir reglas:
 
@@ -606,8 +608,8 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 * **Sintaxis**
 de tipo de retorno: `@return {type}`
 O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
+Añade información sobre la función, como su objetivo.
+  {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
    1. cadena
    1. número
@@ -783,11 +785,11 @@ Para copiar y pegar reglas, haga lo siguiente:
 
 El editor de reglas permite utilizar varios operadores AND y OR para crear reglas anidadas. Puede combinar varios operadores AND y OR en las reglas.
 
-A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la elegibilidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
+A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la idoneidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
 
 ![complexexpression](assets/complexexpression.png)
 
-También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el ratón por encima del controlador (![controlador](assets/handle.png)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
+También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el puntero por encima del controlador (![controlador](assets/handle.png)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
 
 ![drag-and-drop](assets/drag-and-drop.png)
 

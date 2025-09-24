@@ -5,10 +5,11 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 3%
+source-wordcount: '3394'
+ht-degree: 5%
 
 ---
 
@@ -23,10 +24,11 @@ Este artículo describe la creación de funciones personalizadas con el componen
 Asegúrese de establecer la [última versión del formulario](https://github.com/adobe/aem-core-forms-components/tree/release/650) en el entorno del componente principal de AEM Forms para utilizar las características más recientes en las funciones personalizadas. </span>
 
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Este artículo |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Introducción
 
@@ -59,8 +61,8 @@ Las funciones personalizadas son esencialmente bibliotecas de cliente que se agr
 
 >[!NOTE]
 >`[functionName]` es el nombre de la función. No se permiten espacios.
->`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
->Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
+>>`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
+>>Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
 
 #### Parámetro
 
@@ -152,7 +154,7 @@ El tipo de valor devuelto especifica el tipo de valor que la función personaliz
 
 * `@return {type}`
 * `@returns {type}`
-  `{type}` representa el tipo devuelto de la función. Los tipos de valor devuelto permitidos son:
+  `{type}` representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 * string: Representa un solo valor de cadena.
 * number: representa un solo valor numérico.
 * boolean: Representa un solo valor booleano (true o false).
@@ -354,7 +356,7 @@ O
 
 ### Crear una biblioteca de cliente con el tipo de archivo del proyecto de AEM{#create-client-library-archetype}
 
-Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Si tiene un proyecto existente <!--and have already the project structure as shown in the image below,-->, puede agregar directamente [funciones personalizadas](#create-add-custom-function) a su proyecto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -571,7 +573,7 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Compatibilidad con funciones asincrónicas en funciones personalizadas {#support-of-async-functions}
 
@@ -608,11 +610,11 @@ Consulte el siguiente código para ver cómo se pueden invocar funciones asincr�
 }
 ```
 
-En el ejemplo anterior, la función asyncFunction es un `asynchronous function`. Realiza una operación asincrónica realizando una solicitud `GET` a `https://petstore.swagger.io/v2/store/inventory`. Espera la respuesta con `await`, analiza el cuerpo de la respuesta como JSON con `response.json()` y, a continuación, devuelve los datos. La función `callAsyncFunction` es una función sincrónica personalizada que invoca la función `asyncFunction` y muestra los datos de respuesta en la consola. Aunque la función `callAsyncFunction` es sincrónica, llama a la función asyncFunction asincrónica y controla su resultado con instrucciones `then` y `catch`.
+En el ejemplo anterior, la función asyncFunction es una `asynchronous function`. Realiza una operación asíncrona realizando una solicitud `GET` a `https://petstore.swagger.io/v2/store/inventory`. Espera la respuesta con `await`, analiza el cuerpo de la respuesta como JSON con `response.json()` y, a continuación, devuelve los datos. La función `callAsyncFunction` es una función síncrona personalizada que invoca la función `asyncFunction` y muestra los datos de respuesta en la consola. Aunque la función `callAsyncFunction` es síncrona, llama a la función asyncFunction asíncrona y gestiona su resultado con las instrucciones `then` y `catch`.
 
 Para ver cómo funciona, vamos a agregar un botón y crear una regla para el botón que invoca la función asincrónica al hacer clic en un botón.
 
-![creando regla para la función asincrónica](/help/forms/using/assets/rule-for-async-funct.png)
+![creación de la regla para la función asíncrona](/help/forms/using/assets/rule-for-async-funct.png)
 
 Consulte la ilustración de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspeccione la ventana de la consola para ver la respuesta tras hacer clic en el botón:
 
@@ -977,7 +979,7 @@ Los Forms adaptables implementan el almacenamiento en caché de funciones person
 
 En caso de que se modifiquen las funciones personalizadas, el almacenamiento en caché se invalidará y se analizará.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 * El usuario debe asegurarse de que el componente principal [y la versión de especificación estén configurados en la última versión](https://github.com/adobe/aem-core-forms-components/tree/release/650). Sin embargo, para los proyectos y formularios AEM existentes, hay que seguir algunos pasos adicionales:
 

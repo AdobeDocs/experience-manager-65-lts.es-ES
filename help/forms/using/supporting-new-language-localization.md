@@ -8,19 +8,21 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 91%
+source-wordcount: '841'
+ht-degree: 89%
 
 ---
 
 # Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
 
@@ -46,7 +48,7 @@ Para anular la configuración regional del explorador de los usuarios, puede pas
 
    * La configuración de idioma del usuario especificada en AEM.
 
-   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración del explorador local,
+   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
       * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`. 
       * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
       * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
@@ -115,7 +117,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Cree un nodo `languages` `nt:unstructured` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale>``de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 

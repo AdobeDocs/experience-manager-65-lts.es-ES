@@ -7,19 +7,20 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 96%
+source-wordcount: '1849'
+ht-degree: 95%
 
 ---
 
 # Crear y utilizar fragmentos de Formularios adaptables en un formulario adaptable basado en componentes principales {#adaptive-form-fragments}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Este artículo |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=es) |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=es).
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de los formularios, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
 
@@ -200,11 +201,11 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
 Fragmentos de formulario adaptable de referencia que puede utilizar para crear el formulario.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
-## Véase también {#see-also}
+## Ver también {#see-also}
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

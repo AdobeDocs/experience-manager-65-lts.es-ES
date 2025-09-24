@@ -8,19 +8,21 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 63%
+source-wordcount: '1052'
+ht-degree: 62%
 
 ---
 
 # Introducción a la publicación de formularios en un portal{#introduction-to-publishing-forms-on-a-portal}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=es).
 
 
 ## Descripción general de los componentes del portal de AEM Forms {#aem-forms-portal-components-overview}

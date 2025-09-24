@@ -8,22 +8,24 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 300fcbdc-d884-409b-9011-89cdf2706535
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 74%
+source-wordcount: '1841'
+ht-degree: 73%
 
 ---
 
 # Usar CAPTCHA en formularios adaptables{#using-captcha-in-adaptive-forms}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=es).
 
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -71,7 +73,7 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
       >
       > * Los autores de formularios pueden especificar una puntuación en el rango adecuado para el envío ininterrumpido de formularios.
 
-   1. Selecciona **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
+   1. Seleccione **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
 
    1. En el cuadro de diálogo Editar componente, especifique el nombre, el ID de proyecto, la clave del sitio, la clave de API (obtenida en los pasos 2 y 3), seleccione el tipo de clave e introduzca la puntuación de umbral. Seleccione **[!UICONTROL Guardar configuración]** y, a continuación, seleccione **[!UICONTROL Aceptar]** para completar la configuración.
 

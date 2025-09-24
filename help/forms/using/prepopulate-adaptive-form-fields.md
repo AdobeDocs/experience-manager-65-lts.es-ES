@@ -8,10 +8,11 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 99%
+source-wordcount: '2213'
+ht-degree: 98%
 
 ---
 
@@ -19,10 +20,11 @@ ht-degree: 99%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html).
 
 ## Introducción {#introduction}
 
@@ -364,7 +366,7 @@ El paquete de plantillas (paquete de servicio de relleno previo de ejemplo) cont
 1. En el código, establezca el siguiente valor:
 
    * `nodePath:` La variable de ruta del nodo que señala a la ubicación del repositorio crx contiene la ruta del archivo de datos (relleno previo). Por ejemplo, /content/prefilldata.xml
-   * `label:` El parámetro Etiqueta especifica el nombre del servicio para mostrar. Por ejemplo, Servicio de relleno previo predeterminado
+   * `label:` El parámetro Etiqueta especifica el nombre para mostrar del servicio. Por ejemplo, Servicio de relleno previo predeterminado
 
 1. Guarde y cierre el archivo `Prefill.java`.
 1. Agregue el paquete `AEM Forms Client SDK` a la ruta de la versión del proyecto de las plantillas.
@@ -390,11 +392,9 @@ Puede configurar el servidor de AEM Forms para que realice la acción de combin
    1. Habilite la opción Configuration.af.clientside.datamerge.enabled.name.
 * Para habilitar o deshabilitar esta opción desde la línea de comandos:
    * Para habilitarla, ejecute el siguiente comando cURL:
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Para deshabilitarla, ejecute el siguiente comando cURL:
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Para aprovechar al máximo los datos de relleno previo en la opción de cliente, actualice el servicio de relleno previo para que devuelva [FileAttachmentMap](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) y [CustomContext](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).

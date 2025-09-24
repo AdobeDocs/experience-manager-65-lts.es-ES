@@ -7,19 +7,21 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 93%
+source-wordcount: '1216'
+ht-degree: 91%
 
 ---
 
 # Configuración de OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html).
 
 ![integración de datos](assets/data-integeration.png)
 
@@ -102,7 +104,6 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de Microsoft Dynamics en AEM Forms. El servicio en la nube predeterminado instalado con el paquete de AEM Forms se implementa en la siguiente URL:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:

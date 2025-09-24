@@ -5,10 +5,11 @@ Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af,
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 92%
+source-wordcount: '2893'
+ht-degree: 91%
 
 ---
 
@@ -16,10 +17,11 @@ ht-degree: 92%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Este artículo |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=es) |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=es).
 
 Con AEM Forms, puede incorporar fácilmente formularios adaptables a sus páginas web. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
 
@@ -33,9 +35,9 @@ AEM Forms proporciona el contenedor del formulario adaptable y los componentes i
 
 El uso del contenedor de formulario adaptable en el editor de páginas de AEM permite crear experiencias de captura de datos sin problemas dentro de una página de Sites gracias a la potencia de los componentes de Forms adaptable, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios. Vamos a explorar algunas de estas características:
 
-* **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-authoring/working-with-page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de revertir a versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
-* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes audiencias](/help/sites-administering/target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
-* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-administering/translation.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para una audiencia global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
+* **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-authoring/working-with-page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de restablecer versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
+* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes públicos](/help/sites-administering/target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
+* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-administering/translation.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para un público global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
 * **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-administering/msm.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Ahora esta función le permite reutilizar formularios en diferentes sitios, lo que garantiza la consistencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
 * **Temáticas:** Las páginas de AEM Sites proporcionan un marco de trabajo para diseñar y mantener estilos visuales coherentes en varias páginas web. Estas definen colores, fuentes, hojas de estilo y otros elementos visuales que contribuyen a la apariencia general del sitio web. [Puede utilizar las temáticas diseñadas para una página de AEM Sites para un formulario adaptable, lo que ahorra tiempo y esfuerzo](/help/sites-authoring/style-system.md).
 * **Etiquetado:** las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/sites-authoring/tags.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
@@ -69,11 +71,11 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 +++  Habilitar los componentes principales de formularios adaptables para su entorno
 
-Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=es).
+Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
-+++
++++ 
 
-+++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites y de la página de Fragmento de experiencia.
++++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites y de la página de Fragmento de experiencia. 
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
@@ -117,7 +119,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 
 1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 
-+++
++++ 
 
 +++ Habilitar el contenedor de formularios adaptables
 
@@ -201,7 +203,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 
 ## Configurar un esquema o un modelo de datos de formulario para un formulario {#configure-schema-or-data-model-for-form}
 
-Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido.
+Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido.
 
 Antes de conectar un formulario a un esquema o a un modelo de datos de formulario
 

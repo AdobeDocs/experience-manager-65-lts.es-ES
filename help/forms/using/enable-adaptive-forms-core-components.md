@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: f21858421f2e84643fab1add5116b033cb6dd122
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 48%
+source-wordcount: '965'
+ht-degree: 47%
 
 ---
 
 # Habilitar los componentes principales de Forms adaptable en AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es).
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
@@ -101,11 +102,11 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 1. Actualizar el proyecto para que incluya la última versión de los componentes principales de Forms:
 
    1. Abra la [Carpeta de proyecto de arquetipo de AEM]/pom.xml para editarla.
-   1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` en la [última versión de los componentes principales de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=es#aem-as-form-version-history) y asegúrese de que ambos tengan la misma versión que los **componentes principales de Forms** mencionados en la tabla, y establezca la versión de `core.wcm.components.version` tal como se indica en los [componentes principales de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=es).
+   1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` en la [última versión de los componentes principales de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) y asegúrese de que ambos tengan la misma versión que los **componentes principales de Forms** mencionados en la tabla, y establezca la versión de `core.wcm.components.version` tal como se indica en los [componentes principales de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Al crear un proyecto Archetype con versión 45, `[AEM Archetype Project Folder]/pom.xml` establece inicialmente la versión de los componentes principales de Forms en 1.1.28. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 1.1.26. Puede encontrar la versión más reciente en el [historial de versiones de AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=es#aem-as-form-version-history).
+      >* Al crear un proyecto Archetype con versión 45, `[AEM Archetype Project Folder]/pom.xml` establece inicialmente la versión de los componentes principales de Forms en 1.1.28. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 1.1.26. Puede encontrar la versión más reciente en el [historial de versiones de AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >

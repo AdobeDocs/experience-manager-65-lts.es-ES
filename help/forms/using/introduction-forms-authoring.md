@@ -8,19 +8,21 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 96%
+source-wordcount: '3151'
+ht-degree: 95%
 
 ---
 
 # Introducción a la creación de formularios adaptables {#introduction-to-authoring-adaptive-forms}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Información general {#overview}
@@ -151,7 +153,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>
@@ -295,14 +297,14 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 
 * Puede habilitar un componente Cuadro de texto para que acepte texto enriquecido. Para habilitar el texto enriquecido en un cuadro de texto, active la casilla de verificación **[!UICONTROL Permitir texto enriquecido]** en las propiedades del componente.
 
-* Puede activar los componentes Cuadro de texto, Correo electrónico y Teléfono para rellenar automáticamente los valores de campos como Nombre, Dirección, Tarjeta de crédito, Teléfono y Correo electrónico a partir de la información almacenada en la configuración de relleno automático del explorador. Para habilitar esta función, seleccione **[!UICONTROL Habilitar relleno automático]** en las propiedades del componente y seleccione un **[!UICONTROL atributo de relleno automático]**. Cuando un usuario cumplimenta un formulario adaptable, los valores se sugieren desde el perfil de relleno automático del explorador o se basan en los valores rellenados anteriormente por el usuario. Tenga en cuenta que el relleno automático funciona si la configuración de relleno automático está activada en el explorador del usuario.
+* Puede habilitar los componentes Cuadro de texto, Correo electrónico y Teléfono para rellenar automáticamente los valores de campos como Nombre, Dirección, Tarjeta de crédito, Teléfono y Correo electrónico a partir de la información almacenada en la configuración de relleno automático del explorador. Para habilitar esta función, seleccione **[!UICONTROL Habilitar relleno automático]** en las propiedades del componente y seleccione un **[!UICONTROL atributo de relleno automático]**. Cuando un usuario cumplimenta un formulario adaptable, los valores se sugieren desde el perfil de relleno automático del explorador o se basan en los valores rellenados anteriormente por el usuario. Tenga en cuenta que el relleno automático funciona si la configuración de relleno automático está activada en el explorador del usuario.
 
 * Especifique valores para los elementos de Botón de opción y Casilla de verificación en el formato `{value}={text}` desde las propiedades de los componentes.
 * De forma predeterminada, el componente Archivo adjunto permite al usuario adjuntar un único archivo. Sin embargo, puede configurar las propiedades del componente para que admita varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden causar algunos problemas. Por lo tanto, se recomienda asociar un identificador único a cada archivo adjunto enviado cuando se envía el formulario. Para ello:
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
    1. Busque y seleccione **[!UICONTROL Servicio de configuración de formularios adaptables]**.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
+   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, habilite la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
 
 * Para permitir que los usuarios adjunten un PDF mediante el explorador Safari, asegúrese de que agrega **aplicación/pdf** a la propiedad Tipos de archivo compatibles del componente Archivo adjunto. Los formularios adaptables creados con versiones anteriores de AEM Forms pueden contener **.pdf** en lugar de **aplicación/pdf** en la propiedad Tipos de archivo compatibles.
 

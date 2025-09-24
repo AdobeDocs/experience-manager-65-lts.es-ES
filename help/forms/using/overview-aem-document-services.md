@@ -8,19 +8,21 @@ docset: aem65
 feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 100%
+source-wordcount: '1422'
+ht-degree: 98%
 
 ---
 
 # Descripción general de AEM Document Services{#overview-of-aem-document-services}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es).
 
 
 AEM Document Services es un conjunto de servicios OSGi para crear, ensamblar y proteger documentos PDF. Document Services contiene los siguientes servicios:
@@ -99,7 +101,7 @@ Puede utilizar un mapa de entrada simple para especificar las ubicaciones de los
 
 El servicio Doc Assurance le permite cifrar y descifrar documentos, ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales y añadir firmas digitales a sus documentos. Los usuarios pueden interactuar fácilmente con los formularios y los documentos PDF mientras su organización mejora la seguridad, el archivo y el cumplimiento normativo.
 
-El servicio Doc Assurance contiene tres servicios: Signature, Encryption y Extensiones de Reader.
+El servicio Doc Assurance contiene tres servicios: Firma, Cifrado y Extensiones de Reader.
 
 ### Servicio Signature {#signature-service}
 
@@ -111,13 +113,13 @@ El servicio Signature le permite trabajar con firmas y documentos digitales en e
 
 El servicio Signature accede a los certificados y credenciales almacenados en el almacén de confianza.
 
-### Servicio Encryption {#encryption-service}
+### Servicio Cifrado {#encryption-service}
 
 El servicio Encryption permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Puede cifrar todo el documento PDF (incluido el contenido, los metadatos y los archivos adjuntos), todo salvo los metadatos, o solo los archivos adjuntos. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder visualizar el documento en Adobe Reader o Acrobat. Si un documento PDF está cifrado con un certificado, el usuario debe descifrar el documento PDF con una clave privada (certificado). La clave privada utilizada para descifrar el documento del PDF debe corresponder a la clave pública utilizada para cifrarlo.
 
 ### Servicio Extensiones de Reader {#reader-extension-service}
 
-El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos PDF interactivos ampliando la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Extensiones de Reader es compatible con Adobe Reader 7.0 o versiones posteriores. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados.
+El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos PDF interactivos ampliando la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Extensiones de Reader es compatible con Adobe Reader 7.0 o versiones posteriores. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos habilitados.
 
 Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
 
@@ -130,7 +132,7 @@ Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los
 * compartir documentos PDF con terceros para que los revisores puedan agregar comentarios mediante herramientas de marcado intuitivas. Entre estas herramientas se incluyen las notas adhesivas electrónicas, los sellos, los resaltados y el tachado de texto. Estas funciones también están disponibles en Acrobat;
 * admitir la descodificación de formularios con códigos de barras.
 
-Estas funciones de usuario especiales se activan automáticamente al abrir un documento PDF con los derechos activados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con derechos activados, esas funciones vuelven a desactivarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
+Estas funciones de usuario especiales se activan automáticamente al abrir un documento PDF con los derechos habilitados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con derechos habilitados, esas funciones vuelven a deshabilitarse en Adobe Reader. Permanecen deshabilitados hasta que el usuario recibe otro documento PDF con los derechos habilitados.
 
 El servicio DocAssurance no está disponible para su uso de forma predeterminada. Para configurar el servicio DocAssurance, consulte [Instalación y configuración de Document Services](../../forms/using/install-configure-document-services.md).
 

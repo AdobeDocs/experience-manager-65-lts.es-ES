@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 75%
+source-wordcount: '2381'
+ht-degree: 74%
 
 ---
 
 # Fragmentos de formularios adaptables{#adaptive-form-fragments}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=es).
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares y detalles de ingresos. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
 
@@ -91,7 +92,6 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 1. En el cuadro de diálogo Creación de fragmentos, especifique la siguiente información:
 
    * **Nombre**: Nombre del fragmento. El valor predeterminado es el nombre de elemento del panel. Es un campo obligatorio.
-
      >[!NOTE]
      >
      >Asegúrese de especificar un nombre único para el fragmento. Si existe otro fragmento con el mismo nombre, el fragmento no se creará.
@@ -107,7 +107,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Modelo de formulario**: en función del modelo de formulario para el formulario adaptable, este campo muestra el **Esquema XML**, la **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
    * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
-Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz del modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
+Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos de formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz del modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
 
    * **XSD Ref**: solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
 

@@ -4,19 +4,21 @@ description: Obtenga información sobre cómo establecer la configuración de Fu
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 81%
+source-wordcount: '835'
+ht-degree: 78%
 
 ---
 
 # Configuración del ajuste fuera de la oficina {#configure-out-of-office-settings}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html).
 
 Si planea estar fuera de la oficina, puede especificar qué sucederá con los elementos que se le hayan asignado durante ese período.
 
@@ -69,4 +71,4 @@ Ahora, los elementos que se le hayan asignado durante el período de tiempo que 
 ## Restricciones {#limitations}
 
 * No se admite la asignación de elementos a un grupo.
-* Actualmente no se admite la activación de la configuración de Fuera de la oficina para tareas de proyecto.
+* Actualmente no se admite la habilitación de la configuración de Fuera de la oficina para tareas de proyecto.

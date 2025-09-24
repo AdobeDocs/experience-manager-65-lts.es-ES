@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 77%
+source-wordcount: '1802'
+ht-degree: 76%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 77%
 
 <span class="preview"> Adobe recomienda utilizar los componentes principales para [añadir Formularios adaptables a una página de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o para [crear Formularios adaptables independientes](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es).
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
@@ -53,7 +54,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Creación de un formulario adaptable {#create-an-adaptive-form}
@@ -91,7 +92,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 
-1. Abra la pestaña **[!UICONTROL Envío]**.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
@@ -119,7 +120,7 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 
 ## Configuración de un esquema o un modelo de datos de formulario para un formulario adaptable {#configure-schema-or-data-model-for-form}
 
-Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
+Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
 
 * [Crear un esquema JSON y cargarlo en su entorno](/help/forms/using/adaptive-form-json-schema-form-model.md)
 * [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
@@ -194,8 +195,8 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 
 
-## Véase también
+## Ver también
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

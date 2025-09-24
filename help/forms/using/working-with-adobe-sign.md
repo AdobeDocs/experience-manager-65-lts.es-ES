@@ -9,9 +9,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3e804a65-156c-40b5-b707-8f20f84a58e5
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3875'
+source-wordcount: '3884'
 ht-degree: 93%
 
 ---
@@ -20,10 +21,11 @@ ht-degree: 93%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=es).
 
 
 [!DNL Adobe Sign] habilita los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de administración de recursos humanos y más.
@@ -127,7 +129,7 @@ Realice los siguientes pasos para agregar campos a un formulario adaptable y per
    >[!NOTE]
    >
    >    * El uso del bloque [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no usa el bloque de [!DNL Adobe Sign] y agrega campos para los firmantes, el campo de firma predeterminado se muestra al final de los documentos de firma.
-   >    * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o un formulario basado en un formulario adaptable, el bloque [!DNL Adobe Sign] no es compatible.
+   >    * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o una plantilla de formulario basada en un formulario adaptable, el bloque [!DNL Adobe Sign] no es compatible.
    >
    >
 
@@ -294,7 +296,7 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
 
    * **[!UICONTROL Usar el componente de firma electrónica heredado]**: Si utiliza el formulario adaptable correspondiente en [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md), la aplicación de AEM [!DNL Forms] o el formulario adaptable subyacente tiene un componente de firma electrónica heredado, seleccione la opción **Usar el componente de firma electrónica heredado**.
 
-   * **[!UICONTROL Configuración]**: Seleccione una configuración ([!DNL Adobe Sign] Cloud Service). El cuadro desplegable solo está disponible si la opción **Usar el componente de firma electrónica heredado** está activada.
+   * **[!UICONTROL Configuración]**: Seleccione una configuración ([!DNL Adobe Sign] Cloud Service). El cuadro desplegable solo está disponible si la opción **Usar el componente de firma electrónica heredado** está habilitada.
 
    * **[!UICONTROL Clase CSS]**: Especifique la clase CSS para el componente.
 
@@ -336,7 +338,7 @@ Ahora, la experiencia de firma de formularios en está lista. Puede obtener una 
 **P:** AEM [!DNL Forms] proporciona ambos [!UICONTROL bloque de Adobe Sign] y componentes del Paso de firma. ¿Se pueden utilizar simultáneamente en un formulario adaptable?
 **R:** Puede utilizar ambos componentes simultáneamente en un formulario. Estas son algunas recomendaciones para utilizar estos componentes:
 
-**Bloque de Adobe Sign:** Puede usar el [!UICONTROL Bloque de Adobe Sign] para agregar campos de [!UICONTROL Adobe Sign] en cualquier parte del formulario adaptable. También ayuda a asignar campos específicos a los firmantes. Cuando se previsualiza o publica un formulario adaptable, el bloque de [!UICONTROL Adobe Sign] no está visible de forma predeterminada. Estos bloques solo están habilitados en el documento de firma. En el documento de firma, solo se activan los campos asignados a un firmante. [!UICONTROL El bloque de Adobe Sign] se puede utilizar con los primeros y siguientes firmantes.
+**Bloque de Adobe Sign:** Puede usar el [!UICONTROL Bloque de Adobe Sign] para agregar campos de [!UICONTROL Adobe Sign] en cualquier parte del formulario adaptable. También ayuda a asignar campos específicos a los firmantes. Cuando se previsualiza o publica un formulario adaptable, el bloque de [!UICONTROL Adobe Sign] no está visible de forma predeterminada. Estos bloques solo están habilitados en el documento de firma. En el documento de firma, solo se habilitan los campos asignados a un firmante. [!UICONTROL El bloque de Adobe Sign] se puede utilizar con los primeros y siguientes firmantes.
 
 **Componente del paso de firma:** Puede utilizar el componente del paso de firma para crear una experiencia de firma en el formulario. Solo permite que el primer firmante firme mientras se rellena el formulario. Cuando se representa la sección que contiene el componente Paso de firma, muestra una versión PDF firmable del formulario. Generalmente es la última o la penúltima sección seguida del componente de resumen de un formulario.
 

@@ -8,10 +8,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 95%
+source-wordcount: '2039'
+ht-degree: 94%
 
 ---
 
@@ -19,10 +20,11 @@ ht-degree: 95%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=es).
 
 
 
@@ -121,7 +123,7 @@ La capa de contenido inicial en el Editor de plantillas muestra el contenedor de
 
 ![Contenido inicial](assets/initial-content-layer-1.png)
 
-En la capa Contenido inicial, se creará la plantilla Formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, recursos y componentes.
+En la capa Contenido inicial, se creará la plantilla de formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, recursos y componentes.
 
 Consulte [Barra lateral](../../forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -149,7 +151,7 @@ Para crear las pestañas Información general e Información profesional, agregu
 
 #### Agregar contenido en pestañas {#adding-content-in-tabs}
 
-![Agregar campos en la plantilla del formulario adaptable](assets/template-edit-initial-content.png)
+![Agregar campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
 
 Después de agregar paneles y estructurarlos como pestañas, puede agregar campos dentro de las pestañas. Al seleccionar una pestaña en el editor, podrá ver la opción **Arrastrar componentes aquí**. Puede arrastrar y soltar componentes, como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el explorador de componentes en la barra lateral.
 

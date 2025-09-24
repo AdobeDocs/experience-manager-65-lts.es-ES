@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 41%
+source-wordcount: '1947'
+ht-degree: 40%
 
 ---
 
 # Crear o personalizar una temática de formulario adaptable {#introduction-to-theme}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=es).
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -289,7 +290,7 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 1. Inicie sesión en la instancia de autor local de AEM.
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Haga clic en **Crear** > **Forms adaptable**.
+1. Haga clic en **Crear** > **Formularios adaptables**. 
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. Aparecerá **Agregar propiedades**
 1. Especifique **Name** para el formulario adaptable.
 
@@ -334,11 +335,11 @@ Para eliminar temas no utilizados o no deseados:
 
 1. Guarde el archivo y vuelva a implementar la temática.
 
-## Véase también
+## Ver también
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

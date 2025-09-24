@@ -4,19 +4,21 @@ description: Aprenda a crear formularios interactivos, adaptables y de clase emp
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 71%
+source-wordcount: '917'
+ht-degree: 70%
 
 ---
 
 # Tutorial: Crear el primer formulario adaptable {#tutorial-create-your-first-adaptive-form}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=es).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -25,7 +27,7 @@ ht-degree: 71%
 
 ¿Está buscando una experiencia de **formularios** compatible con dispositivos móviles que simplifique la inscripción, aumente la participación y reduzca el tiempo de respuesta? **los formularios adaptables** son perfectos para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
 
-Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, debería poder hacer lo siguiente:
+Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, podrá hacer lo siguiente:
 
 * Crear un formulario adaptable y un modelo de datos de formulario.
 * Establecer el estilo de su formulario adaptable.
@@ -42,7 +44,7 @@ El sitio web se ejecuta en Adobe Experience Manager (AEM) y utiliza AEM [!DNL Fo
 
 ### Requisitos previos {#prerequisite}
 
-* Configurar una [instancia de autor de AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=es#author-and-publish-installs)
+* Configurar una [instancia de autor de AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instalar el [Complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
 * Obtener el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Los ejemplos del tutorial se basan en la base de datos [!DNL MySQL] y utiliza el [!DNL Oracle's] [Controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

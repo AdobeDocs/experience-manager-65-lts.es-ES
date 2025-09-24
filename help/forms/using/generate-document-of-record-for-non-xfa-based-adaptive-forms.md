@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 87%
+source-wordcount: '4292'
+ht-degree: 86%
 
 ---
 
@@ -16,10 +16,11 @@ ht-degree: 87%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es).
 
 
 ## Información general {#overview}
@@ -412,7 +413,6 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 
 * **[!UICONTROL BÁSICO]**
    * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
-
      ![texto alternativo](image.png)
    * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
    * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
@@ -425,7 +425,6 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
       * Vertical
       * Horizontal
       * Igual que el formulario adaptable
-
      >[!NOTE]
      > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
@@ -492,7 +491,7 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms
 | config/present/pdf/scriptModel | Controla si la información específica de XFA se incluye en el documento PDF de salida. |
 | config/present/common/data/adjustData | Controla si la aplicación XFA ajusta los datos después de la combinación. |
 | config/present/pdf/renderPolicy | Controla si la generación del contenido de la página se realiza en el servidor o se difiere al cliente. |
-| config/present/common/locale | Especifica la ubicación predeterminada utilizada en el documento de salida. |
+| config/present/common/locale | Especifica la configuración regional predeterminada utilizada en el documento de salida. |
 | config/present/destination | Cuando está contenido en un elemento presente, especifica el formato de salida. Cuando está contenido en un elemento openAction, especifica la acción que se debe realizar al abrir el documento en un cliente interactivo. |
 | config/present/output/type | Especifica el tipo de compresión que se aplicará a un archivo o el tipo de salida que se producirá. |
 | config/present/common/temp/uri | Especifica el URI del formulario. |

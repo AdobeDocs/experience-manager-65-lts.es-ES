@@ -9,19 +9,20 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 91%
+source-wordcount: '1480'
+ht-degree: 90%
 
 ---
 
 # Arquitectura y topologías de implementación para AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html).
 
 ## Arquitectura {#architecture}
 

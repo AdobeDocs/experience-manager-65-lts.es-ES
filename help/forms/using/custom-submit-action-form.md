@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 87%
+source-wordcount: '1544'
+ht-degree: 84%
 
 ---
 
 # Escribir una acción de envío personalizada para formularios adaptables{#writing-custom-submit-action-for-adaptive-forms}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
 
 Los formularios adaptables requieren enviar acciones para procesar los datos especificados por el usuario. Una acción de envío determina la tarea realizada en los datos enviados mediante un formulario adaptable. Adobe Experience Manager (AEM) incluye [acciones de envío listas para usar](../../forms/using/configuring-submit-actions.md) que muestran tareas personalizadas que puede realizar con los datos enviados por el usuario. Por ejemplo, puede realizar tareas como enviar correos electrónicos o almacenar los datos.
 
@@ -89,7 +90,7 @@ Si la acción no ofrece una ruta de reenvío, el servlet de envío redirecciona 
 
 ## Acción de envío {#submit-action}
 
-Una acción de envío es un sling:Folder, que incluye lo siguiente:
+Una acción de envío es un sling:Folder que incluye lo siguiente:
 
 * **addfields.jsp**: Este script aporta los campos de acción que se añaden al archivo HTML durante la representación. Utilice este script para agregar los parámetros de entrada ocultos necesarios durante el envío en el script post.POST.jsp.
 * **dialog.xml**: Este script es similar al cuadro de diálogo Componente CQ. Aporta información de configuración que el autor personaliza. Los campos se muestran en la pestaña Acciones de envío, del cuadro de diálogo Editar formulario adaptable, al seleccionar la acción de envío.
@@ -102,11 +103,11 @@ Una acción de envío es un sling:Folder, que incluye lo siguiente:
 
 ## Crear una acción de envío personalizada {#creating-a-custom-submit-action}
 
-Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío predeterminado (obsoleto) que guarda los datos en el repositorio de CRX. Además, CQ facilitará una API de [Correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) que se puede utilizar para enviar correos electrónicos. Antes de usar la API de correo electrónico, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es&wcmmode=disabled) el servicio Day CQ Mail a través de la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
+Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío predeterminado (obsoleto) que guarda los datos en el repositorio de CRX. Además, CQ facilitará una API de [Correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) que se puede utilizar para enviar correos electrónicos. Antes de usar la API de correo electrónico, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) el servicio Day CQ Mail a través de la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
 
-1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling:Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
+1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling::Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
 
-   ![Captura de pantalla que representa la creación de un nodo con la propiedad sling:Folder](assets/step1.png)
+   ![Captura de pantalla que representa la creación de un nodo con la propiedad sling::Folder](assets/step1.png)
 
 1. **Facilite los campos de configuración obligatorios.**
 
@@ -128,7 +129,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    * **guideDataModel** de tipo **Cadena** y valor **xfa, xsd, basic**
 
-   * **jcr:description** de tipo **Cadena** y valor **Acción de almacenamiento y correo electrónico**
+   * **jcr:description** de tipo **String** y valor **Acción de almacenamiento y correo electrónico**
 
 1. Abra cualquier formulario adaptable. Haga clic en el botón **Editar** junto a **Inicio** para abrir el cuadro de diálogo **Editar** del contenedor del formulario adaptable. La nueva acción se muestra en la pestaña **Acciones de envío**. Al seleccionar **Acción de almacenamiento y correo electrónico**, muestra la configuración añadida en el nodo de diálogo.
 

@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 94%
+source-wordcount: '2602'
+ht-degree: 93%
 
 ---
 
@@ -18,10 +19,11 @@ ht-degree: 94%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Introducción al envío de acciones {#introduction-to-submit-actions}
@@ -52,7 +54,7 @@ Las acciones de envío predeterminadas disponibles con los formularios adaptable
 >[!NOTE]
 >
 >Asegúrese de que el archivo [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->existe. Necesitará el directorio para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
+>>existe. Necesitará el directorio para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
 
 >[!CAUTION]
 >
@@ -172,7 +174,7 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 >[!NOTE]
 >
->La característica Enviar a Microsoft® SharePoint List se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> La característica Enviar a Microsoft® SharePoint List se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
@@ -198,7 +200,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
      >[!NOTE]
      >
-     >El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
+     > El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
@@ -217,16 +219,16 @@ Al enviar el formulario, los datos se guardan en el almacenamiento de lista de S
 
 >[!NOTE]
 >
->En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
->* columna de imagen
->* columna de metadatos
->* columna de persona
->* columna de datos externos
+> En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
+> * columna de imagen
+> * columna de metadatos
+> * columna de persona
+> * columna de datos externos
 
 
 >[!NOTE]
 >
->Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
+> Para establecer los valores de una configuración, [Genere las configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 ## Revalidación del lado del servidor en formularios adaptables {#server-side-revalidation-in-adaptive-form}
 
@@ -238,7 +240,7 @@ La característica de revalidación del lado del servidor permite ejecutar tambi
 
 Todas las validaciones de campo listas para usar de un formulario adaptable que se vuelven a ejecutar en el servidor son las siguientes:
 
-* Requerido
+* Necesario
 * Cláusula de imagen de validación
 * Expresión de validación
 

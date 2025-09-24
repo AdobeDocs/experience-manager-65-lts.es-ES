@@ -7,19 +7,21 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b27fceaf-38f8-433e-96c6-4f98bafa31af
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 95%
+source-wordcount: '961'
+ht-degree: 93%
 
 ---
 
 # Crear un modelo de datos de formulario{#create-form-data-model}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html).
 
 
 ![imagen a pantalla completa](do-not-localize/data-integration.png)
@@ -28,7 +30,7 @@ La integración de datos de AEM Forms ofrece una interfaz de usuario intuitiva p
 
 * **Utilizando fuentes de datos preconfiguradas**: Si ha configurado las fuentes de datos tal como se describe en [Configurar fuentes de datos](../../forms/using/configure-data-sources.md), puede seleccionarlas al crear un modelo de datos de formulario. Incorpora todos los objetos, propiedades y servicios del modelo de datos de las fuentes de datos seleccionados que se pueden utilizar en el modelo de datos de formulario.
 
-* **Sin fuentes de datos**: Si no ha configurado fuentes de datos para su modelo de datos de formulario, puede crearlos sin fuentes de datos. Puede utilizar el modelo de datos de formulario para crear formularios adaptables y comunicaciones interactivas y probarlos con datos de ejemplo. Cuando haya fuentes de datos disponibles, puede vincular el modelo de datos de formulario con fuentes de datos, lo que se reflejará automáticamente en los formularios adaptables asociados y en las comunicaciones interactivas.
+* **Sin fuentes de datos**: Si no ha configurado fuentes de datos para su modelo de datos de formulario, puede crearlos sin fuentes de datos. Puede utilizar el modelo de datos de formulario para crear formularios adaptables y comunicaciones interactivas y probarlos con datos de muestra. Cuando haya fuentes de datos disponibles, puede vincular el modelo de datos de formulario con fuentes de datos, lo que se reflejará automáticamente en los formularios adaptables asociados y en las comunicaciones interactivas.
 
 >[!NOTE]
 >
@@ -42,8 +44,8 @@ Asegúrese de haber configurado las fuentes de datos que desea utilizar en el mo
 1. Seleccione **[!UICONTROL Crear > Modelo de datos de formulario]**.
 1. En el cuadro de diálogo Crear un modelo de datos de formulario, haga lo siguiente:
 
-   * Especifique un nombre para el modelo de datos del formulario.
-   * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.
+   * Especifique un nombre para el modelo de datos de formulario.
+   * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos de formulario.
    * (**Opcional y aplicable solo si se configuran fuentes de datos**) Seleccione el icono de verificación situado junto al campo **[!UICONTROL Configuración de la fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier base de datos JDBC y fuentes de datos de perfil de usuario de AEM se muestran de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
 
    Seleccione **[!UICONTROL Siguiente]**.
@@ -83,7 +85,7 @@ Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de dato
    * Para agregar una fuente de datos nueva, seleccione **[!UICONTROL Añadir fuentes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
 
    * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, seleccione el icono **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
-   * Para eliminar una fuente de datos existente, seleccione el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
+   * Para eliminar una fuente de datos existente, seleccione el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos de formulario.
 
    ![fdm-properties](assets/fdm-properties.png)
 
@@ -95,6 +97,6 @@ Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de dato
 
 ## Pasos siguientes {#next-steps}
 
-Ahora tiene un modelo de datos de formulario con fuentes de datos agregadas. A continuación, puede editar el modelo de datos de formulario para agregar y configurar objetos y servicios del modelo de datos, agregar asociaciones entre objetos del modelo de datos, editar propiedades, agregar objetos y propiedades del modelo de datos personalizado, generar datos de ejemplo, etc.
+Ahora tiene un modelo de datos de formulario con fuentes de datos agregadas. A continuación, puede editar el modelo de datos de formulario para agregar y configurar objetos y servicios del modelo de datos, agregar asociaciones entre objetos del modelo de datos, editar propiedades, agregar objetos y propiedades del modelo de datos personalizado, generar datos de muestra, etc.
 
 Para obtener más información, consulte [Trabajo con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md).

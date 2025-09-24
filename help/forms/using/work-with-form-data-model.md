@@ -7,23 +7,25 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4159'
+source-wordcount: '4168'
 ht-degree: 95%
 
 ---
 
 # Trabajar con el modelo de datos de formulario{#work-with-form-data-model}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-El editor del modelo de datos de formulario proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario. Con el editor, se pueden agregar y configurar objetos, propiedades y servicios del modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario. Además, permite crear objetos y propiedades de modelos de datos sin fuentes de datos y enlazarlos posteriormente con objetos y propiedades de modelos de datos respectivos. También puede generar y editar datos de ejemplo para propiedades de objetos del modelo de datos que puede utilizar para prerrellenar formularios adaptables y comunicaciones interactivas al previsualizar. Puede probar los objetos y servicios del modelo de datos configurados en un modelo de datos de formulario para asegurarse de que está correctamente integrado con las fuentes de datos.
+El editor del modelo de datos de formulario proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario. Con el editor, se pueden agregar y configurar objetos, propiedades y servicios del modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario. Además, permite crear objetos y propiedades de modelos de datos sin fuentes de datos y enlazarlos posteriormente con objetos y propiedades de modelos de datos respectivos. También puede generar y editar datos de muestra para propiedades de objetos del modelo de datos que puede utilizar para prerrellenar formularios adaptables y comunicaciones interactivas al previsualizar. Puede probar los objetos y servicios del modelo de datos configurados en un modelo de datos de formulario para asegurarse de que está correctamente integrado con las fuentes de datos.
 
 Si acaba de empezar con la integración de datos de Forms y no ha configurado una fuente de datos o creado un modelo de datos de formulario, consulte los temas siguientes:
 
@@ -93,7 +95,7 @@ Para crear un objeto de modelo de datos sin fuentes de datos:
 
 1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Selecciona **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y seleccione **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y seleccione **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos de formulario. El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
@@ -112,7 +114,7 @@ Para crear una propiedad secundaria:
 
    Para enlazar manualmente una propiedad secundaria con una propiedad de objeto del modelo de datos, selecciona el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto del modelo de datos principal. Selecciona una propiedad con la que enlazar el objeto y selecciona el icono del tic. Tenga en cuenta que solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
 
-1. Selecciona **[!UICONTROL Listo]** para guardar la propiedad secundaria y selecciona **[!UICONTROL Guardar]** para guardar el modelo de datos del formulario. La propiedad secundaria se agrega ahora al objeto del modelo de datos.
+1. Selecciona **[!UICONTROL Listo]** para guardar la propiedad secundaria y selecciona **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario. La propiedad secundaria se agrega ahora al objeto del modelo de datos.
 
 Después de crear objetos y propiedades del modelo de datos, puede seguir creando formularios adaptables y comunicaciones interactivas basados en el modelo de datos de formulario. Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario con ellas. El enlace se actualizará automáticamente en los formularios adaptables y comunicaciones interactivas asociados. Para obtener más información sobre la creación de formularios adaptables y comunicaciones interactivas mediante el modelo de datos de formulario, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
 
@@ -310,7 +312,7 @@ Para editar propiedades:
 
 ### Crear propiedades calculadas {#computed}
 
-Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos del formulario.
+Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos de formulario.
 
 Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resultado de la concatenación de las propiedades **FirstName** y **LastName**. Para ello:
 
@@ -380,9 +382,9 @@ Una vez que agregue el servicio `GET LINK` a la pestaña Servicios del modelo de
 
 >[!NOTE]
 >
->Los valores disponibles en el campo **Valor predeterminado** del argumento **NavigationPropertyName** dependen del estado botón de opción **¿Devolver matriz?**. Cuando se activa la opción, se muestran las propiedades de navegación del tipo Colección.
+>Los valores disponibles en el campo **Valor predeterminado** del argumento **NavigationPropertyName** dependen del estado botón de opción **¿Devolver matriz?**. Cuando se habilita la opción, se muestran las propiedades de navegación del tipo Colección.
 
-En este ejemplo, también puede elegir el objeto del modelo de salida como argumento de propiedad Person (persona) y navegación como Friends o BestFriend (en función de si **¿Devolver matriz?** está activada o desactivada).
+En este ejemplo, también puede elegir el objeto del modelo de salida como argumento de propiedad Person (persona) y navegación como Friends o BestFriend (en función de si **¿Devolver matriz?** está habilitada o deshabilitada).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
@@ -390,19 +392,19 @@ Del mismo modo, puede elegir un servicio de `GET LINK` y configurar sus propieda
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
-## Generar y editar datos de ejemplo {#sample}
+## Generar y editar datos de muestra {#sample}
 
-El editor del modelo de datos de formulario permite generar datos de ejemplo para todas las propiedades de objetos del modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario. Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de ejemplo.
+El editor del modelo de datos de formulario permite generar datos de ejemplo para todas las propiedades de objetos del modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario. Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de muestra.
 
-Para generar y editar datos de ejemplo, haga lo siguiente:
+Para generar y editar datos de muestra, haga lo siguiente:
 
-1. Abra un modelo de datos de formulario y seleccione **[!UICONTROL Editar datos de ejemplo]**. Genera y muestra los datos de ejemplo en la ventana Editar datos de ejemplo.
+1. Abra un modelo de datos de formulario y seleccione **[!UICONTROL Editar datos de ejemplo]**. Genera y muestra los datos de muestra en la ventana Editar datos de muestra.
 
-   ![Generar datos de ejemplo](assets/form_data_model_generate_sample_data_new.png)
+   ![Generar datos de muestra](assets/form_data_model_generate_sample_data_new.png)
 
-1. En la ventana **[!UICONTROL Editar datos de ejemplo]**, edita los datos, según sea necesario, y selecciona **[!UICONTROL Guardar]**.
+1. En la ventana **[!UICONTROL Editar datos de muestra]**, edita los datos, según sea necesario, y selecciona **[!UICONTROL Guardar]**.
 
-A continuación, puede utilizar los datos de ejemplo para prerrellenar y probar comunicaciones interactivas basadas en el modelo de datos de formulario. Para obtener más información, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
+A continuación, puede utilizar los datos de muestra para prerrellenar y probar comunicaciones interactivas basadas en el modelo de datos de formulario. Para obtener más información, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
 
 ## Probar objetos y servicios del modelo de datos {#test-data-model-objects-and-services}
 

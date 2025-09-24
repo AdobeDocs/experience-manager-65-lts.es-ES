@@ -7,19 +7,21 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 82%
+source-wordcount: '2085'
+ht-degree: 81%
 
 ---
 
 # Configuración de las fuentes de datos{#configure-data-sources}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=es) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Integración de datos](do-not-localize/data-integeration.png)
@@ -143,16 +145,16 @@ Haga lo siguiente para configurar los servicios RESTful:
 
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
-### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
+### Configuración del cliente HTTP del modelo de datos de formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
-Modelo de datos del formulario [!DNL Experience Manager Forms] al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+El modelo de datos de formulario [!DNL Experience Manager Forms], al integrarse con servicios web RESTful como fuente de datos, incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos de formulario:
 
-1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La dirección URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
-1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos del formulario para fuente de datos REST: &#x200B;]
+1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: ]
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
@@ -192,8 +194,8 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
->El modelo de datos de formulario admite [OData versión 4](https://www.odata.org/documentation/).
->Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
+>>Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 80%
+source-wordcount: '2079'
+ht-degree: 78%
 
 ---
 
@@ -16,10 +16,11 @@ ht-degree: 80%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=es#adobe-acrobat-sign-for-government) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government).
 
 [!DNL Adobe Sign] habilita los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y mucho más.
 
@@ -36,7 +37,7 @@ Para conectar **[!DNL AEM Forms]** con **[!DNL Adobe Acrobat Sign]**, configure 
 
 Para integrar [!DNL Adobe Sign] con AEM [!DNL Forms], necesita lo siguiente:
 
-* Una [cuenta de desarrollador de Adobe Sign](https://www.adobe.com/acrobat/business/developer-form.html) activa.
+* Una [cuenta de desarrollador de Adobe Sign](https://www.adobe.com/acrobat/business/developer-form.html?lang=es) activa.
 * Un servidor AEM [Habilitado para SSL](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms].
 * Un [aplicación API de Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md);
 * Las credenciales (ID de cliente y Secreto de cliente) de la aplicación API de [!DNL Adobe Sign];
@@ -87,7 +88,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -236,7 +237,7 @@ El representante genera y comparte credenciales con usted. En la siguiente secci
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -272,7 +273,7 @@ Un [!DNL Adobe Sign] el formulario adaptable habilitado solo se envía una vez q
    También puede abrir la siguiente URL en una ventana del explorador:
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Busque y abra la opción **[!UICONTROL Servicio de configuración de Adobe Sign]**. Especifique una [expresión cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) en el campo **[!UICONTROL Expresión del programador de actualización de estado]** y haga clic en **[!UICONTROL Guardar]**. Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00, especifique `0 0 0 1/1 * ? *` en el campo **[!UICONTROL Expresión del programador de actualización de estado]**.
+1. Busque y abra la opción **[!UICONTROL Servicio de configuración de Adobe Sign]**. Especifique una [expresión cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) en el campo **[!UICONTROL Expresión del programador de actualización de estado]** y haga clic en **[!UICONTROL Guardar]**. Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00 a. m., especifique `0 0 0 1/1 * ? *` en el campo **[!UICONTROL Expresión del programador de actualización de estado]**.
 
 El intervalo predeterminado para sincronizar el estado de [!DNL Adobe Sign] ahora ha cambiado.
 

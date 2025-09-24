@@ -7,19 +7,21 @@ docset: aem65
 feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 92%
+source-wordcount: '1763'
+ht-degree: 90%
 
 ---
 
 # API facturables de informes de transacciones para AEM Forms en OSGi {#transaction-reports-billable-apis}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis).
 
 AEM Forms ofrece varias API para enviar formularios, procesar documentos y representar documentos. Algunas API se contabilizan como transacciones y otras se pueden usar libremente. Este documento proporciona una lista de todas las API que se contabilizan como transacciones en un informe de transacciones. Estos son algunos escenarios comunes en los que se utiliza un API facturable:
 
@@ -317,7 +319,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
    <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> que contiene los documentos resultantes. </td>
    <td>Documentos procesados</td>
-   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td>
+   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Assembler admite todos esos formatos como formatos de archivo de salida. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -335,8 +337,8 @@ El uso de la API de invocación se cuenta como una transacción cuando realiza u
 
 >[!NOTE]
 >
->* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
->* Un documento PDF único producido mediante el servicio de ensamblador puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código DDX proporcionado.
+>* El API de invocación del servicio Assembler puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
+>* Un documento PDF único producido mediante el servicio Assembler puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código DDX proporcionado.
 
 ### Servicio de utilidad de PDF  {#pdf-utility-service}
 

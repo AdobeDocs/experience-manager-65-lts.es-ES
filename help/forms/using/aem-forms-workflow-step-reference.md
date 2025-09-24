@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7604'
-ht-degree: 91%
+source-wordcount: '7613'
+ht-degree: 90%
 
 ---
 
 # Flujo de trabajo centrado en Forms en OSGi: referencia de los pasos {#forms-centric-workflow-on-osgi-step-reference}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
-| AEM 6.5 | Este artículo |
+## Se aplica a {#applies-to}
+
+Esta documentación se aplica a **AEM 6.5 LTS Forms**.
+
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
 
 Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -69,7 +70,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
    * **Seleccionar datos adjuntos de entrada mediante:** los archivos adjuntos disponibles en la ubicación se adjuntarán al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar los archivos adjuntos almacenados en una variable del tipo ArrayList of Document. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
-      * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Document, JSON o Form Data Model. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
+      * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Documento, JSON o Modelo de datos de formulario. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
       * **Elegir un servicio de rellenado previo personalizado:** selecciona el servicio de rellenado previo para recuperar los datos y rellenar previamente el documento del canal Web de comunicación interactiva o la interfaz de usuario de agente.
       * **Utilizar el servicio de rellenado previo de la comunicación interactiva seleccionada arriba:** utilice esta opción para utilizar el servicio de rellenado previo de la comunicación interactiva definida en la lista desplegable Usar comunicación interactiva.
       * **Asignar atributos de solicitud:** utilice la sección Asignar atributos de solicitud para definir el [nombre y el valor del atributo de solicitud](../../forms/using/work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.\
@@ -81,7 +82,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **Guardar archivos adjuntos mediante:** guarda los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos mediante una ruta relativa a la carga útil o almacenarla en una variable de matriz con un tipo de datos documento.
    * **Guardar documento de registro mediante:** ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable con un tipo de datos Doc. Si selecciona **Relativo a la carga útil**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo estará disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
-   * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Document, JSON o Form Data Model. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
+   * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Documento, JSON o Modelo de datos de formulario. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
    * **Guardar el documento PDF mediante:** guarda el documento PDF mediante una ruta relativa a la carga útil o lo almacena en una variable del tipo de datos Document. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
    * **Guardar plantilla de diseño mediante:** guarda la plantilla de diseño mediante una ruta relativa a la carga útil o la almacena en una variable de tipo de datos Document. La variable [plantilla de diseño](../../forms/using/layout-design-details.md) hace referencia a un archivo XDP que crea con Forms Designer. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
 
@@ -457,7 +458,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **Para usar el servidor predeterminado**: (Predeterminado) Use la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)).
+   * **Para usar el servidor predeterminado**: (Predeterminado) Use la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65)).
 
    * **Para utilizar un valor personalizado**: escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
