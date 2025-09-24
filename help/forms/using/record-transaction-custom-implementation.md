@@ -21,7 +21,7 @@ ht-degree: 64%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
 
 Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.
 
