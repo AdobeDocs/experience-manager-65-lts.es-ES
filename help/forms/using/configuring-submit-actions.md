@@ -54,7 +54,7 @@ Las acciones de envío predeterminadas disponibles con los formularios adaptable
 >[!NOTE]
 >
 >Asegúrese de que el archivo [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->>existe. Necesitará el directorio para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
+>&#x200B;>existe. Necesitará el directorio para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
 
 >[!CAUTION]
 >

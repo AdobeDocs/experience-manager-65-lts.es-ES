@@ -61,8 +61,8 @@ Las funciones personalizadas son esencialmente bibliotecas de cliente que se agr
 
 >[!NOTE]
 >`[functionName]` es el nombre de la función. No se permiten espacios.
->>`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
->>Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
+>&#x200B;>`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
+>&#x200B;>Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
 
 #### Parámetro
 

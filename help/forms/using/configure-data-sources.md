@@ -154,7 +154,7 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
 1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
-1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: ]
+1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: &#x200B;]
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
@@ -195,7 +195,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 >[!NOTE]
 >
 >El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
->>Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>&#x200B;>Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
