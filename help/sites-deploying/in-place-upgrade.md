@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -22,8 +22,6 @@ ht-degree: 0%
 ## Pasos previos a la actualización {#pre-upgrade-steps}
 
 Antes de ejecutar la actualización, hay que completar varios pasos. Consulte [Actualización de código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) y [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obtener más información. Además, asegúrese de que su sistema cumpla los [requisitos de AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) y vea las [consideraciones sobre la planificación de la actualización](/help/sites-deploying/upgrade-planning.md) y cómo [Analyzer](/help/sites-deploying/pattern-detector.md) puede ayudarle a calcular la complejidad.
-
-<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Requisitos previos de migración {#migration-prerequisites}
 

@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -86,6 +86,6 @@ La forma más sencilla de solucionar este problema es especificar el almacén de
 
 La advertencia también se puede ignorar, pero en este caso el repositorio se reindexará completamente en el primer inicio. Puede ser un proceso largo, especialmente para la gran instancia. El repositorio no se podrá utilizar hasta que se haya completado el proceso de reindexación. Utilice la opción `--skip-checkpoints` para suprimir la advertencia.
 
-También puede reindexar el repositorio sin conexión antes de iniciar AEM usando [reindexación sin conexión](/help/sites-deploying/upgrade-offline-reindexing.md) para evitar la reindexación completa al primer inicio.
+También puede reindexar el repositorio sin conexión antes de iniciar AEM usando [reindexación sin conexión](/help/sites-deploying/offline-reindexing.md) para evitar la reindexación completa al primer inicio.
 
 Para obtener más información sobre la herramienta oak-upgrade y el uso avanzado, consulte la [documentación oficial](https://jackrabbit.apache.org/oak/docs/migration.html).

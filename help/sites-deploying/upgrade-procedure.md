@@ -10,7 +10,8 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
+exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -24,12 +25,6 @@ ht-degree: 0%
 >La actualización requiere tiempo de inactividad para el nivel de Author, ya que la mayoría de las actualizaciones de Adobe Experience Manager (AEM) se realizan in situ. Si sigue estas prácticas recomendadas, puede minimizar o eliminar el tiempo de inactividad del nivel de publicación.
 
 Al actualizar los entornos de AEM, debe tener en cuenta las diferencias de enfoque entre actualizar los entornos de creación o los entornos de publicación para minimizar el tiempo de inactividad tanto para los autores como para los usuarios finales. Esta página describe el procedimiento de alto nivel para actualizar una topología de AEM que se esté ejecutando en una versión de AEM 6.x. Dado que el proceso difiere entre los niveles de creación y publicación y las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se han enumerado en una sección independiente. Al ejecutar la implementación, Adobe recomienda actualizar primero el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## Nivel de TarMK Author {#tarmk-author-tier}
 
