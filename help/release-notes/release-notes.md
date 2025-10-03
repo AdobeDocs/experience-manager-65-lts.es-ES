@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
-ht-degree: 94%
+source-wordcount: '7319'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 | Producto | [!DNL Adobe Experience Manager] 6.5 LTS |
 |---|---|
 | Versión | Service Pack 1 (SP1), revisión para GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Tipo | Versión de Service Pack |
+| Tipo | Versión del Service Pack |
 | Fecha | 9 de septiembre de 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Descargar URL | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
 
@@ -75,12 +75,12 @@ ht-degree: 94%
 * Se ha corregido un problema que hacía que aparecieran varias barras de desplazamiento horizontales en la página principal después de aplicar un Reflow, lo que garantiza que se muestre una sola barra de desplazamiento para una accesibilidad y visibilidad del contenido adecuadas. (SITES-26800)
 * Se ha corregido un problema de accesibilidad en el editor de páginas de AEM por el que el enfoque del teclado se restablece inesperadamente al principio de la barra de herramientas demográficas después de activar botones como Persona, Carro de compras o Abandonado. Ahora, el enfoque permanece en el botón activado para admitir flujos de trabajo coherentes de navegación mediante el teclado y lector de pantalla. (SITES-25306)
 * Se ha corregido un problema de asociación de etiquetas de accesibilidad para el título de página y los campos de etiquetas. La interfaz de AEM ahora asocia correctamente las etiquetas de accesibilidad con los campos “Título” y “Título de página” al utilizar lectores de pantalla como JAWS. La corrección garantiza una lectura de etiquetas adecuada y mejora el cumplimiento de la ADA en la creación de páginas, las propiedades y los flujos de trabajo de movimiento. (SITES-27149)
-* Se ha corregido la falta de etiqueta visual para los campos de entrada de comentarios en la cronología. Se han corregido las etiquetas visuales que faltaban para los campos de entrada de “comentario” en la sección de cronología para mejorar la accesibilidad. La actualización garantiza que los lectores de pantalla puedan anunciar con precisión las etiquetas de campo. Esta experiencia mejora la navegación y el envío de formularios para todos los usuarios, especialmente las personas que dependen de las tecnologías de asistencia. (SITES-26903)
-* Se ha corregido la accesibilidad del teclado para el botón de puntos suspensivos en comentarios sobre la cronología. Se ha habilitado la navegación mediante el teclado para el botón de puntos suspensivos (tres puntos) junto a los comentarios en la sección de cronología. Los usuarios ahora pueden acceder al botón e interactuar con él mediante la tecla Tab, lo que mejora la accesibilidad para los usuarios que dependen de la navegación solo mediante teclado. (SITES-26891)
-* Se han mejorado los anuncios de NVDA/Narrador para resultados de búsqueda en los cuadros de diálogo de selección. Se ha actualizado el cuadro de diálogo Abrir selección para anunciar si se encuentran o no resultados de búsqueda al utilizar lectores de pantalla, como NVDA o Narrador. Esta mejora ayuda a los usuarios que dependen de tecnologías de asistencia a comprender el resultado de sus acciones de búsqueda sin necesidad de confirmación visual. (SITES-26883)
+* Se ha corregido la falta de etiqueta visual para los campos de entrada de comentarios en la cronología. Se han corregido las etiquetas visuales que faltaban para los campos de entrada de “comentario” en la sección de cronología para mejorar la accesibilidad. La actualización garantiza que los lectores de pantalla puedan anunciar con precisión las etiquetas de campo. Esta experiencia mejora la navegación y el envío de formularios para todos los usuarios, y sobre todo para las personas que dependen de las tecnologías de asistencia. (SITES-26903)
+* Se ha corregido la accesibilidad del teclado para el botón de puntos suspensivos en comentarios de la cronología. Se ha habilitado la navegación mediante el teclado para el botón de puntos suspensivos (tres puntos) junto a los comentarios en la sección de cronología. Los usuarios ahora pueden acceder al botón e interactuar con él mediante la tecla de tabulación, lo que mejora la accesibilidad para los usuarios que dependen de la navegación solo mediante teclado. (SITES-26891)
+* Se han mejorado los anuncios de NVDA/Narrator para resultados de búsqueda en los cuadros de diálogo de selección. Se ha actualizado el cuadro de diálogo Abrir selección para anunciar si se encuentran o no resultados de búsqueda al utilizar lectores de pantalla, como NVDA o Narrator. Esta mejora ayuda a los usuarios que dependen de las tecnologías de asistencia a comprender el resultado de sus acciones de búsqueda sin necesidad de confirmación visual. (SITES-26883)
 * Se ha corregido la función ARIA del icono de puntos suspensivos junto al campo de entrada de comentarios. Se ha actualizado el icono de puntos suspensivos (tres puntos) junto al campo de entrada del comentario para utilizar la función ARIA correcta, lo que garantiza que los lectores de pantalla puedan identificar el elemento con precisión. Esta mejora optimiza el cumplimiento de la accesibilidad y la experiencia de los usuarios que dependen de las tecnologías de asistencia. (SITES-26881)
-* Se han corregido atributos ARIA no válidos en los componentes de Coral UI. Se han actualizado los componentes de Coral UI para garantizar que todos los atributos ARIA utilicen valores válidos, mejorando la accesibilidad y el cumplimiento. En particular, se abordaron casos en los que valores no válidos como `aria-modal="dialog"` se asignaron incorrectamente. Esta mejora permite a los lectores de pantalla interpretar correctamente los elementos del cuadro de diálogo, lo que mejora la accesibilidad para los usuarios que dependen de tecnologías de asistencia. (SITES-26873)
-* Visibilidad mejorada y ayuda contextual para los iconos en escenarios de Reflow. Se ha mejorado el comportamiento de Reflow para garantizar que la ayuda contextual se muestre correctamente en los iconos **Descargar**, **Volver a procesar recursos** y **Cierre de compra**. Se centró en un problema de accesibilidad por el que los iconos y sus etiquetas se volvían invisibles cuando cambiaba el tamaño de la ventanilla móvil o la configuración de zoom del explorador. Esta corrección admite usuarios con visión reducida al mantener la visibilidad y proporcionar descripciones de iconos adecuadas durante el Reflow. (SITES-26871)
+* Se han corregido atributos ARIA no válidos en los componentes de Coral UI. Se han actualizado los componentes de Coral UI para garantizar que todos los atributos ARIA utilicen valores válidos, lo que mejora la accesibilidad y el cumplimiento. En particular, se han abordado los casos en los que valores no válidos como `aria-modal="dialog"` se asignaban de forma incorrecta. Esta mejora permite a los lectores de pantalla interpretar correctamente los elementos del cuadro de diálogo, lo que mejora la accesibilidad para los usuarios que dependen de las tecnologías de asistencia. (SITES-26873)
+* Visibilidad mejorada e información sobre herramientas para iconos en escenarios de reflujo. Se ha mejorado el comportamiento de reflujo para garantizar que la información sobre herramientas se muestre correctamente en los iconos **Descargar**, **Volver a procesar recursos** y **Finalizar compra**. Se centró en un problema de accesibilidad en el que los iconos y sus etiquetas se volvían invisibles cuando cambiaba el tamaño de la ventanilla móvil o la configuración de zoom del explorador. Esta corrección admite usuarios con visión reducida al mantener la visibilidad y proporcionar descripciones de iconos adecuadas durante el reflujo. (SITES-26871)
 
 
 #### Interfaz de usuario administrador{#sites-adminui-65-lts-sp1}
@@ -138,7 +138,7 @@ Se ha corregido un problema en el componente Lista de productos por el que la ca
 
 #### Back-end principal{#sites-core-backend-65-lts-sp1}
 
-Los metadatos de XMP con formato incorrecto desencadenaron un error durante el procesamiento de los recursos de imagen en `ValidationDataServlet`. La corrección garantiza la administración de metadatos compatible y evita el análisis repetido de propiedades no válidas. (SITE-30683)
+Los metadatos de XMP con formato incorrecto activaron un error durante el procesamiento de los recursos de imagen en `ValidationDataServlet`. La corrección garantiza la administración de metadatos compatible y evita el análisis repetido de propiedades no válidas. (SITE-30683)
 
 <!--
 #### Core Components{#sites-core-components-65-lts-sp1}
@@ -385,15 +385,15 @@ Se ha corregido un problema de accesibilidad por el que los marcadores de posici
 * Un usuario encuentra problemas en los que las funcionalidades de borrador y envío guardadas fallan sin mostrar ningún mensaje de error. (FORMS-18069)
 * La transición de componentes básicos basados en XSD a componentes principales evita la implementación de referencias entre archivos en esquemas JSON, lo que afecta a la migración de Forms adaptable. (FORMS-18065)
 * Cuando un usuario obtiene una vista previa de una carta en la IU del agente, el campo de fecha muestra un valor incorrecto debido a problemas de conversión de tiempo CI. Estas discrepancias surgen de las diferencias de huso horario entre el entorno de la VM y la interpretación del tiempo por parte del sistema (horario UTC frente a hora local). (FORMS-17988) (FORMS-17248)
-* Cuando un usuario obtiene una vista previa de las cartas mediante plantillas de IC de notificación en AEM Forms, los tiempos de generación de PDF varían significativamente, de 1,5 segundos a más de 10 segundos, incluso en el mismo servidor. Esta incoherencia afecta a los flujos de trabajo críticos para el negocio. (FORMS-17951)
+* Cuando un usuario obtiene una vista previa de las cartas mediante plantillas de notificación CI en AEM Forms, los tiempos de generación del PDF varían significativamente, de 1,5 segundos a más de 10 segundos, incluso en el mismo servidor. Esta incoherencia afecta a los flujos de trabajo críticos para el negocio. (FORMS-17951)
 * Cuando un usuario enlaza un objeto de firma manuscrita en un formulario adaptable a un XDP mediante la opción “Fuentes de datos”, los cambios no se pueden guardar. El motivo se debe a errores persistentes de validación de la relación de aspecto, incluso cuando se utilizan valores válidos. (FORMS-17587)
-* Cuando un usuario utiliza un XDP específico con muchos campos ocultos para fragmentos de documento, AEM crea nodos de CRX con la propiedad `cm:optional` establecida en False, lo que provoca que falle el envío de la comunicación interactiva (IC). (FORMS-17538)
+* Cuando un usuario utiliza un XDP específico con muchos campos ocultos para fragmentos de documento, AEM crea nodos de CRX con la propiedad `cm:optional` establecida en falso, lo que provoca que falle el envío de la comunicación interactiva (CI). (FORMS-17538)
 * Cuando un cliente obtiene una vista previa de una carta, el campo del cuadro numérico no gestiona correctamente los valores negativos cuando se definen los límites de dígitos para el posible cliente potencial y el valor de fragmento. Este problema se produce debido al uso de parseFloat, que trata el signo menos como parte del número. (FORMS-17451)
 * Cuando se obtiene una vista previa de una carta, se advierte el uso del comodín &quot;*&quot; en el archivo Adobe.json, lo que despierta preocupación acerca de su propósito y posible modificación. (FORMS-17317)
 * Cuando un usuario utiliza un lector de pantalla en la cuenta conjunta Solicitar un ahorro de tasa fija, los encabezados se anuncian incorrectamente como elementos en los que se puede hacer clic, lo que provoca problemas de accesibilidad. (FORMS-17038)
 * Cuando se incrusta un formulario, al iframe generado le falta un atributo de título, lo que provoca un problema de cumplimiento de la accesibilidad. (FORMS-17010)
-* La descarga de un formulario mediante la interfaz de usuario de Forms Manager siempre incluye dependencias asociadas, como temáticas y fragmentos. (FORMS-15811)
-* Cuando un usuario accede al formulario en dispositivos móviles (iOS y Android™), los botones “Siguiente” y “Anterior” de la primera página están deshabilitados. Sin embargo, el lector de pantalla no los identifica como deshabilitados. (FORMS-15773)
+* La descarga de un formulario mediante la IU del administrador de Forms siempre incluye dependencias asociadas, como temáticas y fragmentos. (FORMS-15811)
+* Cuando un usuario accede al formulario en dispositivos móviles (iOS y Android™), los botones “siguiente” y “anterior” de la primera página están desactivados. Sin embargo, el lector de pantalla no los identifica como deshabilitados. (FORMS-15773)
 * Cuando un usuario guarda un formulario grande con fragmentos y carga diferida habilitados, no puede recuperar borradores, lo que interrumpe el flujo de trabajo. (FORMS-19890, FORMS-19808)
 * Los usuarios han experimentado problemas al guardar las propiedades del formulario para el formulario adaptable basado en los componentes principales. Este error se produjo porque se incluyen scripts redundantes del formulario adaptable basados en el editor de componentes de base, lo que provoca conflictos en el formulario adaptable basado en los componentes principales. editor. (FORMS-17474)
 * Los usuarios han tenido problemas con la página de firma de Adobe Sign GovCloud que no se representaba en un iframe. (FORMS-16803)
@@ -449,6 +449,43 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
 
+#### Prácticas recomendadas para actualizaciones del Service Pack de AEM 6.5 LTS
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**Entorno**
+Se aplica a: clientes de AEM 6.5 LTS (local) que instalan el Service Pack 1 (SP1). SP1 se entrega como un JAR de inicio rápido.
+
+**Por qué es importante**
+SP1 para AEM 6.5 LTS se envía como un JAR de inicio rápido en lugar de como un ZIP para instalarlo a través del Administrador de paquetes. Los clientes locales se actualizan reemplazando el JAR de Quickstart, desempaquetándolo y reiniciándolo. Este método es coherente con el procedimiento de actualización in situ de Adobe.
+
+**Flujo de actualización recomendado (autor o publicación)**
+
+1. Compruebe que la instancia de AEM 6.5 LTS esté en buen estado y accesible.
+1. Descargue el JAR de inicio rápido del SP1 (por ejemplo, `cq-quickstart-6.6.x.jar`) desde Distribución de software.
+1. Detenga la instancia en ejecución.
+1. En el directorio de instalación de AEM (fuera de `crx-quickstart/`), reemplace el JAR de inicio rápido anterior por el JAR del SP1.
+1. Desempaquetar el JAR:
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   (Ajuste los indicadores de pila según sea necesario).
+
+1. Cambie el nombre del JAR desempaquetado para que coincida con el rol y el puerto, por ejemplo `cq-author-4502.jar` o `cq-publish-4503.jar`.
+1. Inicie AEM y confirme la actualización en la interfaz de usuario (Ayuda > Acerca de) y en los registros.
+
+**Buena higiene**
+
+* Ejecute la actualización en entornos de prueba o inferiores antes de la producción.
+* Realice copias de seguridad completas y restaurables (repositorio más cualquier almacén de datos externo) antes de empezar.
+* Revise las directrices de actualización in situ y los requisitos técnicos de Adobe (se recomienda Java 17/21 para LTS).
+
+>[!NOTE]
+>
+>Los nombres de archivo mostrados arriba (por ejemplo, `cq-quickstart-6.6.x.jar`) reflejan la nomenclatura de artefactos de inicio rápido del SP1 observada para esta versión de LTS; use siempre el nombre de archivo exacto que descargue de Distribución de software.
+
 ## Instalación y actualización {#install-update}
 
 Para conocer los requisitos de configuración, consulte las [instrucciones de instalación](/help/sites-deploying/custom-standalone-install.md).
@@ -499,7 +536,7 @@ En esta sección se enumeran las características y funciones que Adobe ha dejad
 
 Se recomienda a los clientes que comprueben si utilizan la función o capacidad en su implementación actual, y que planifiquen el cambio de la implementación y usen la alternativa proporcionada.
 
-| Área | Funcionalidad | Reemplazo | Versión (SP) |
+| Área | Característica | Reemplazo | Versión (SP) |
 | --- | --- | --- | --- |
 | Sites | [Editor de SPA](/help/sites-developing/spa-overview.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. | 6.5 LTS GA |
 
@@ -507,7 +544,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 En esta sección se enumeran las características y funciones que se han eliminado de AEM 6.5 LTS. Las versiones anteriores tenían estas funciones marcadas como en desuso.
 
-| Área | Funcionalidad | Reemplazo | Versión (SP) |
+| Área | Característica | Reemplazo | Versión (SP) |
 | --- | --- | --- | --- |
 | Comercio | AEM CIF Classic no es compatible. | Migre a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluciones | Social/Communities no es compatible. | No hay sustitución disponible. | 6.5 LTS GA |
@@ -581,7 +618,7 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 
 ## Sitios web restringidos{#restricted-sites}
 
-Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
+Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
 * [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
