@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '455'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] instala el conector mejorado. Antes de instalar, revise la compatibilidad con la plataforma y otros [requisitos previos para el conector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
@@ -49,11 +49,14 @@ Para instalar el conector, siga estos pasos:
 1. Cree `wf-workfront-users` en el grupo de usuarios [!DNL Experience Manager] y asigne el permiso `jcr:all` a `/content/dam`.
 1. Agregue una propiedad personalizada a la definición de índice predeterminada de **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Siga estos pasos:
    * Agregar una propiedad de **`nt:unstructured`** denominada **`wfReferenceNumber`** a:
-
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Reindexe `index /oak:index/ntFolderDamLucene` cambiando el indicador de reindexación a `true`.
 
 Se crea automáticamente un usuario del sistema `workfront-tools` y los permisos necesarios se administran automáticamente. Todos los usuarios de [!DNL Workfront] que utilizan el conector se agregan automáticamente como parte de este grupo.
+
+>[!NOTE]
+>
+> Cuando use servidores proxy corporativos, incluya [!DNL workfront] en la [!UICONTROL configuración proxy de componentes HTTP Apache PID] para que el [!UICONTROL conector mejorado de Workfront] lo reconozca. El formato PID requerido es: `org.apache.http.proxyconfigurator~workfront`.
 
 ## Configurar la conexión entre [!DNL Experience Manager] y [!DNL Workfront] {#configure-connection}
 
