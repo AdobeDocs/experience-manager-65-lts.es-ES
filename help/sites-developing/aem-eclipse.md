@@ -126,7 +126,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    >[!TIP]
    >
-   >Para obtener más información sobre la depuración del proyecto que se ejecuta en un SDK de AEM local, consulte el documento [Depuración remota de SDK de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Para obtener más información sobre la depuración del proyecto que se ejecuta en un SDK de AEM local, consulte el documento [Depuración remota de SDK de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Haga clic en **Finalizar**.
 
