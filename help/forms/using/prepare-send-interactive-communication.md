@@ -145,7 +145,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 cara
 
 ### Fragmentos de documento {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Flechas arriba/abajo**: permiten mover fragmentos de documento hacia arriba o hacia abajo en la comunicación interactiva.
 * **Eliminar**: si dispone de los permisos necesarios, elimina el fragmento del documento de la comunicación interactiva.

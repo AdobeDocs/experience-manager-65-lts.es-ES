@@ -53,7 +53,7 @@ Para obtener más información sobre cómo trabajar con flujos de trabajo en AEM
 
 * [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
-* [Configuración de flujos de trabajo ](/help/sites-administering/workflows.md)
+* [Configuración de flujos de trabajo &#x200B;](/help/sites-administering/workflows.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 

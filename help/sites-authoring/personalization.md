@@ -19,7 +19,7 @@ AEM proporciona un marco de herramientas para crear contenido dirigido y present
 
 ## Modo Targeting {#targeting-mode}
 
-[Contenido orientado por el autor mediante el modo de Orientación de AEM. ](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
+[Contenido orientado por el autor mediante el modo de Orientación de AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
 
 ## Actividades {#activities}
 

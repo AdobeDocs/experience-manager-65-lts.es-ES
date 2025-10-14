@@ -383,5 +383,5 @@ Compruebe también que el código de implementación de varios campos y la estru
 
 **La configuración disponible para los administradores no está disponible para los autores**
 
-Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
 

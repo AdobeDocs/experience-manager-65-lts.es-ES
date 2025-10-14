@@ -86,7 +86,7 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
    >
    >Asegúrese de que el servidor de AEM Forms esté operativo. La vista previa HTML conecta con el servidor CRX para *generar* una vista previa.
 
-   ![Opciones de AEM Forms Designer ](assets/server_options.png)
+   ![Opciones de AEM Forms Designer &#x200B;](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 

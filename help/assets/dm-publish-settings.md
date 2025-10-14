@@ -64,7 +64,7 @@ Cuando *Probar servicio de imágenes* está establecido como contexto de publica
 
 **[!UICONTROL Dirección del cliente]**: le permite especificar una o más direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan desde un cliente con una dirección IP no incluida. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
 
-![Ficha de seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*La ficha de seguridad que muestra el campo &quot;Permitir&quot; de IP.*
+![Ficha de seguridad &#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*La ficha de seguridad que muestra el campo &quot;Permitir&quot; de IP.*
 
 ## Pestaña Administración de catálogos {#catalog-management-tab}
 

@@ -46,7 +46,7 @@ Tenga en cuenta los siguientes puntos sobre la búsqueda básica:
 
 En los criterios de búsqueda, además de la consulta, puede especificar algunos parámetros para que la búsqueda básica sea más eficiente y centrada.
 
-![Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM ](assets/search_forms_assets.png)
+![Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM &#x200B;](assets/search_forms_assets.png)
 
 Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM 
 

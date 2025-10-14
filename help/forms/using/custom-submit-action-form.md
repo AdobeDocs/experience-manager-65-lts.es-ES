@@ -54,7 +54,7 @@ Los datos XML se envían al servlet utilizando el parámetro de solicitud **`jcr
 
 ### Campos de acción {#action-fields}
 
-Una acción de envío puede agregar campos de entrada ocultos (mediante la etiqueta de [entrada HTML ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)) al HTML de formulario procesado. Estos campos ocultos pueden contener los valores que necesita al procesar el envío del formulario. Al enviar el formulario, estos valores de campo se vuelven a registrar como parámetros de solicitud que la acción de envío puede utilizar durante el envío. Los campos de entrada se denominan campos de acción.
+Una acción de envío puede agregar campos de entrada ocultos (mediante la etiqueta de [entrada HTML &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)) al HTML de formulario procesado. Estos campos ocultos pueden contener los valores que necesita al procesar el envío del formulario. Al enviar el formulario, estos valores de campo se vuelven a registrar como parámetros de solicitud que la acción de envío puede utilizar durante el envío. Los campos de entrada se denominan campos de acción.
 
 Por ejemplo, una acción de envío que también capture el tiempo necesario para rellenar un formulario, puede agregar los campos de entrada ocultos `startTime` y `endTime`.
 

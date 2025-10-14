@@ -406,7 +406,7 @@ Para definir una regla OR, siga este procedimiento:
 
    >[!NOTE]
    >
-   >Los scripts deben tener una función [ `check()`](#function-check) que devuelva un valor booleano.
+   >Los scripts deben tener una función [&#x200B; `check()`](#function-check) que devuelva un valor booleano.
 
 1. Edite el flujo de trabajo y agregue **OR Split** al modelo.
 1. Edite las propiedades de **Rama 1** de **OR Split**:

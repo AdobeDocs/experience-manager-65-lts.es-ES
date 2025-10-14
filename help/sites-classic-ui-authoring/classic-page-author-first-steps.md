@@ -52,7 +52,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 * [Cortar/copiar/pegar un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Bloquear una página  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publicación de una página {#publishing-a-page}

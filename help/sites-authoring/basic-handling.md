@@ -293,7 +293,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista   ](#list-view)
+* [Vista de lista   &#x200B;](#list-view)
 
 >[!NOTE]
 >

@@ -86,7 +86,7 @@ La página del informe es:
 
 ### Base del informe {#report-base}
 
-El componente [`reportbase` ](#report-base-component) forma la base de cualquier informe porque:
+El componente [`reportbase` &#x200B;](#report-base-component) forma la base de cualquier informe porque:
 
 * Conserva la definición de [query](#the-query-and-data-retrieval) que entrega el conjunto de resultados de datos subyacente.
 
@@ -96,7 +96,7 @@ El componente [`reportbase` ](#report-base-component) forma la base de cualquier
 
 ### Base de columna {#column-base}
 
-Cada columna es una instancia del componente [`columnbase` ](#column-base-component) que:
+Cada columna es una instancia del componente [`columnbase` &#x200B;](#column-base-component) que:
 
 * Es un párrafo que usa el parsys (`reportbase`) del informe respectivo.
 * Define el vínculo al [conjunto de resultados subyacente](#the-query-and-data-retrieval). Es decir, define los datos específicos a los que se hace referencia dentro de este conjunto de resultados y cómo se procesan.
@@ -189,7 +189,7 @@ Donde los pasos y elementos detallados son:
 Para construir y configurar un informe, es necesario lo siguiente:
 
 * una [ubicación para la definición de los componentes del informe](#location-of-report-components)
-* un componente [`reportbase` ](#report-base-component)
+* un componente [`reportbase` &#x200B;](#report-base-component)
 * uno o más [`columnbase` componentes](#column-base-component)
 * un [componente de página](#page-component)
 * un [diseño de informe](#report-design)

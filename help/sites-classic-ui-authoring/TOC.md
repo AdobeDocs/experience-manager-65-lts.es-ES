@@ -27,7 +27,7 @@ ht-degree: 31%
    + [Selección de la IU](/help/sites-classic-ui-authoring/author-env-select-ui.md)
    + [Búsqueda](/help/sites-classic-ui-authoring/author-env-search.md)
    + [Su bandeja de entrada](/help/sites-classic-ui-authoring/author-env-inbox.md)
-   + [Métodos abreviados del teclado para las consolas  ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
+   + [Métodos abreviados del teclado para las consolas  &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](/help/sites-classic-ui-authoring/classic-page-author.md)
    + [Creación: el entorno y las herramientas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
@@ -35,7 +35,7 @@ ht-degree: 31%
    + [Edición del contenido de una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)
    + [Publicar páginas](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md)
-   + [Edición de las propiedades de página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
+   + [Edición de las propiedades de página  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
    + [Anotaciones al editar una página](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)
    + [Resolución de problemas de AEM durante la creación](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
@@ -44,7 +44,7 @@ ht-degree: 31%
 + Características del sitio y de la página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md)
    + [Diseño adaptable](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md)
-   + [Uso de versiones de página  ](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
+   + [Uso de versiones de página  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
    + [Uso de etiquetas](/help/sites-classic-ui-authoring/classic-feature-tags.md)
    + [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
    + [Configuración de componentes en modo de diseño](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md)

@@ -75,7 +75,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    Barra de herramientas Párrafo
    [![Barra de herramientas de alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas de alineación
 
-   ![Barra de herramientas de lista ](assets/bulleteditingtoolbar.png)
+   ![Barra de herramientas de lista &#x200B;](assets/bulleteditingtoolbar.png)
 
    Barra de herramientas Lista (haga clic en para abrir una imagen de tamaño completo)
 

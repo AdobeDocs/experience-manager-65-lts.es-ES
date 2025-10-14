@@ -29,7 +29,7 @@ Diseño de muestra de la barra de herramientas
 
 Los formularios adaptables proporcionan un conjunto de diseños integrados:
 
-![Diseños de la barra de herramientas disponibles para usar ](assets/toolbar1.png)
+![Diseños de la barra de herramientas disponibles para usar &#x200B;](assets/toolbar1.png)
 
 Diseños de la barra de herramientas disponibles para usar
 
@@ -229,6 +229,6 @@ Diseño personalizado de la barra de herramientas
 >
 >La descripción actualizada en el paso anterior se muestra en la lista desplegable Diseño.
 
-![Vista de escritorio del diseño personalizado de la barra de herramientas ](assets/toolbar_1.png)
+![Vista de escritorio del diseño personalizado de la barra de herramientas &#x200B;](assets/toolbar_1.png)
 
 Vista de escritorio del diseño personalizado de la barra de herramientas

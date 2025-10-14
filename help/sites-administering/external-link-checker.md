@@ -78,7 +78,7 @@ Se muestra la siguiente información:
 * **Referente**: la página de contenido que contiene el vínculo externo
    * Esto solo se rellena [si está configurado.](#configuring)
 * **Última comprobación** - La última vez que el Verificador de vínculos validó el vínculo externo
-   * La frecuencia con la que se comprueban los vínculos [ es configurable.](#configuring)
+   * La frecuencia con la que se comprueban los vínculos [&#x200B; es configurable.](#configuring)
 * **Último estado**: el último código de estado de HTML devuelto cuando el vínculo comprobado comprobó por última vez el vínculo externo
 * **Última disponibilidad** - Tiempo desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
 * **Último acceso**: tiempo transcurrido desde que se accedió por última vez a la página con el vínculo externo en la interfaz de creación

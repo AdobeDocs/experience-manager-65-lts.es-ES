@@ -48,7 +48,7 @@ Asegúrese de que ha instalado las [revisiones de seguridad más recientes propo
 
 ### Cambiar contraseñas predeterminadas para las cuentas de administrador de la consola OSGi y AEM {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe recomienda después de la instalación cambiar la contraseña de las cuentas con privilegios [**AEM** `admin` ](#changing-the-aem-admin-password) (en todas las instancias).
+Adobe recomienda después de la instalación cambiar la contraseña de las cuentas con privilegios [**AEM** `admin` &#x200B;](#changing-the-aem-admin-password) (en todas las instancias).
 
 Estas cuentas incluyen:
 

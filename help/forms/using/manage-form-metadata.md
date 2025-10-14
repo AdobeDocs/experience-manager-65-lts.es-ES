@@ -192,7 +192,7 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
       >
       >Las Acciones rápidas son los elementos de acción que se muestran sobre una miniatura al pasar el ratón por encima.
 
-   1. Seleccione el formulario y haga clic en el icono Ver propiedades![ e_propiedades_modorevisión_n](assets/e_reviewmode_properties_n.png) que aparece en la barra de herramientas.
+   1. Seleccione el formulario y haga clic en el icono Ver propiedades![&#x200B; e_propiedades_modorevisión_n](assets/e_reviewmode_properties_n.png) que aparece en la barra de herramientas.
    1. Vaya a la página de detalles del formulario haciendo clic en la miniatura del formulario cuando no esté en el modo de selección. A continuación, haga clic en el icono en forma de ojo ![vistaactiva_ojo_aem6forms](assets/aem6forms_eye_viewon.png) de la parte superior derecha y, luego, haga clic en Propiedades en la lista que aparece debajo.
 
 1. La página de propiedades que se abre muestra un esquema que contiene solo las propiedades de metadatos que contienen algún valor.

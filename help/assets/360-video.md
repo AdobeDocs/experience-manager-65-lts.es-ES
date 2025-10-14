@@ -120,7 +120,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
    * Arrastre el puntero del ratón por el vídeo si desea modificar el ángulo de visualización de la escena estática.
    * Seleccione el botón **[!UICONTROL Reproducir]** del vídeo si desea que comience la reproducción. A medida que se reproduce el vídeo, arrastre el puntero del mouse (ratón) por el vídeo para modificar el ángulo de visualización.
 
-   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
+   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano &#x200B;](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 

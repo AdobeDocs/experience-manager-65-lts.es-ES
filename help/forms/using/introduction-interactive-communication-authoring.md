@@ -131,7 +131,7 @@ Además, la opción **Reemplazar** de la barra de herramientas permite reemplaza
 
 La barra de herramientas Página de la parte superior proporciona opciones que le permiten previsualizar la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva al crearla y realizar los cambios correspondientes. En la barra de herramientas Página, verá lo siguiente:
 
-* Alternar panel lateral![ alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
+* Alternar panel lateral![&#x200B; alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
 * Información de la página ![información_de_la_página](assets/pageinformationad.png): permite ver las propiedades de la página.
 * Emulador ![regla](assets/ruler.png): permite emular el aspecto de la comunicación interactiva en diferentes tamaños de visualización, como tabletas y teléfonos.
 * Edición: permite seleccionar otros modos, como Edición, Estilo, Desarrollador y Diseño.

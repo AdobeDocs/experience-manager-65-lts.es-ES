@@ -640,7 +640,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
    * **description**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de la descripción.
    * **icon**: especifica la imagen que representa el informe de forma gráfica. Puede dejar vacío el campo del icono.
 
-   ![Propiedades del nodo ](assets/node_properties_new.png)
+   ![Propiedades del nodo &#x200B;](assets/node_properties_new.png)
 
    Propiedades del nodo
 

@@ -453,7 +453,7 @@ Si lo siguiente es visible en el registro:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-A continuación, compruebe que la sección [2. Se siguió correctamente al usuario autorizado de creación ](#createauthuser).
+A continuación, compruebe que la sección [2. Se siguió correctamente al usuario autorizado de creación &#x200B;](#createauthuser).
 
 En esta sección se describe la creación de un usuario autorizado, que existe en todas las instancias de publicación, y su identificación en la configuración OSGi del &quot;Proveedor secreto&quot; en Autor. De manera predeterminada, el usuario es `admin`.
 
@@ -481,7 +481,7 @@ Como miembro del grupo `administrators`, el usuario autorizado debe tener los si
 
 Si el ID de Sling coincide entre dos o más instancias de publicación, se produce un error en la sincronización de grupos de usuarios.
 
-Consulte la sección [9. ID único de Sling ](#unique-sling-id)
+Consulte la sección [9. ID único de Sling &#x200B;](#unique-sling-id)
 
 ### Sincronización manual de usuarios y grupos de usuarios {#manually-syncing-users-and-user-groups}
 

@@ -216,7 +216,7 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 
 >[!NOTE]
 >
->La propiedad `sling:alias` se puede establecer con la propiedad de Alias [ al editar Propiedades](/help/sites-authoring/editing-page-properties.md#advanced) de página.
+>La propiedad `sling:alias` se puede establecer con la propiedad de Alias [&#x200B; al editar Propiedades](/help/sites-authoring/editing-page-properties.md#advanced) de página.
 
 #### /etc/map {#etc-map}
 

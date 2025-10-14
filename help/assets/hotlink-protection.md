@@ -19,7 +19,7 @@ ht-degree: 0%
 
 La vinculación activa se produce cuando un sitio web de terceros utiliza código HTML para mostrar una imagen del sitio web. Utilizan el ancho de banda cada vez que se solicita la imagen, ya que el explorador del visitante accede a ella directamente desde el servidor. La protección de vínculos interactivos *protection* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript en sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
 
-[Atención al cliente de Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;lang=es#support) puede configurar un filtro de referente en el nivel CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se ofrezca a los sitios web de su lista de sitios web permitidos para el dominio.
+[Atención al cliente de Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&lang=es#support) puede configurar un filtro de referente en el nivel CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se ofrezca a los sitios web de su lista de sitios web permitidos para el dominio.
 
 >[!NOTE]
 >

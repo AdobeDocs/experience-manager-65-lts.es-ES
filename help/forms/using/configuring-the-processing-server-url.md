@@ -31,7 +31,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configuración de la consola web AEM ](assets/web_configuration_console_new.png)
+   ![Configuración de la consola web AEM &#x200B;](assets/web_configuration_console_new.png)
 
 1. En la **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, busque y haga clic en la opción **[!UICONTROL Configuración de AEM DS]**.
 

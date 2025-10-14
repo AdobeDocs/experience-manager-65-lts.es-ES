@@ -357,7 +357,7 @@ Después de haber agregado la funcionalidad personalizada para descargar el PDF 
 
    El nombre del elemento de menú, la funcionalidad y el texto alternativo dependen de la personalización creada en [Escenario: Agregue un comando a la interfaz de usuario de la lista Cartas para descargar la versión de PDF aplanado de una carta.](#addcommandtoletters)
 
-   ![Funcionalidad personalizada: Descargar PDF aplanado ](assets/5_downloadflatpdf.png)
+   ![Funcionalidad personalizada: Descargar PDF aplanado &#x200B;](assets/5_downloadflatpdf.png)
 
 1. En el cuadro de diálogo Descargar carta como PDF, seleccione el XML relevante desde el que desea rellenar los datos en el PDF.
 

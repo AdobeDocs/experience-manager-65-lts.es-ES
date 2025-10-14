@@ -127,7 +127,7 @@ AEM guarda un registro de las últimas 50 acciones del componente actual, en ord
 
 ### Alineación {#alignment}
 
-![Barra de herramientas de alineación ](do-not-localize/cq55_rte_alignment.png)
+![Barra de herramientas de alineación &#x200B;](do-not-localize/cq55_rte_alignment.png)
 
 El texto puede estar alineado a la izquierda, al centro o a la derecha.
 

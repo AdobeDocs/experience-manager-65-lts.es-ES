@@ -653,7 +653,7 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
      El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Cuando se importa la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
 También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
-[ Consulte Obtener una apariencia específica mediante Temáticas](#specific-af-appearance)
+[&#x200B; Consulte Obtener una apariencia específica mediante Temáticas](#specific-af-appearance)
 
    * **Editor de temáticas:**
 

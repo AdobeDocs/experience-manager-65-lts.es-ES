@@ -114,7 +114,7 @@ Para obtener más información, consulte lo siguiente:
 
 AEM Forms incluye componentes y flujos de trabajo que capturan, procesan y almacenan datos para orquestar procesos empresariales y completar transacciones digitales. Los distintos componentes utilizan diferentes almacenes de datos y permiten la integración con almacenes de datos personalizados. En la siguiente documentación se explican los procedimientos y directrices para acceder y gestionar los datos de usuario con el fin de admitir los flujos de trabajo de protección de datos y privacidad (por ejemplo, RGPD o CCPA) de un componente.
 
-* [Portal de Forms ](/help/forms/using/forms-portal-handling-user-data.md)
+* [Portal de Forms &#x200B;](/help/forms/using/forms-portal-handling-user-data.md)
 * [Administración de correspondencia](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integrar con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)

@@ -31,7 +31,7 @@ Navegue hasta la página publicada del portal de Forms. Para obtener más inform
 
 El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de publicación del servidor de AEM. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
-![Página de ejemplo del portal de formularios ](assets/forms-portal-page.png)
+![Página de ejemplo del portal de formularios &#x200B;](assets/forms-portal-page.png)
 
 Página de ejemplo del portal de Forms
 

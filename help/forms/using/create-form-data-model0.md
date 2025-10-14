@@ -236,7 +236,7 @@ Ejecute los siguientes pasos para crear propiedades informáticas secundarias pa
 
    La siguiente imagen representa la expresión matemática en el editor de reglas:
 
-   ![Regla de gastos de uso ](assets/usage_charges_rule_all_new.png)
+   ![Regla de gastos de uso &#x200B;](assets/usage_charges_rule_all_new.png)
 
 1. Seleccione **Listo**.  La regla se crea en el Editor de reglas.
 1. Seleccione **Cerrar** para cerrar la ventana Editor de reglas.
@@ -381,7 +381,7 @@ Haga lo siguiente para ejecutar la prueba:
 
    Los detalles del cliente asociados con la propiedad mobilenum especificada se recuperarán y se mostrarán en la sección Salida como se muestra a continuación. Cierre el cuadro de diálogo.
 
-   ![Probar modelo de datos ](assets/test_data_model_new.png)
+   ![Probar modelo de datos &#x200B;](assets/test_data_model_new.png)
 
 1. Vaya a la pestaña **Servicios**.
 1. Seleccione el servicio **get** y seleccione el servicio **Test.**

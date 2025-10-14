@@ -42,7 +42,7 @@ Es posible que la configuración de caché predeterminada de AEM Forms no sea l
 * **Tamaño de caché** (en términos de número de formularios): según los requisitos
 * **Tamaño máximo del objeto**: según los requisitos
 
-![Configuraciones de Mobile Forms ](assets/snap.png)
+![Configuraciones de Mobile Forms &#x200B;](assets/snap.png)
 
 >[!NOTE]
 >

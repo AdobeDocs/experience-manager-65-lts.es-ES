@@ -67,7 +67,7 @@ También puede anular la función personalizada predeterminada para definir su p
 
       Si la propiedad no está presente, cree primero una propiedad con el nombre jcr:content.
 
-      ![propiedad jcr:content ](assets/3_jcrcontentntresource.png)
+      ![propiedad jcr:content &#x200B;](assets/3_jcrcontentntresource.png)
 
       Entre las subpropiedades de jcr:content está jcr:data, el cual se muestra atenuado. Haga doble clic en jcr:data. La propiedad se vuelve editable y aparece el botón Elegir archivo en la entrada. Haga clic en **Elegir archivo** y seleccione el archivo de imagen que desee utilizar como logotipo. No es necesario que el archivo de imagen tenga una extensión.
 

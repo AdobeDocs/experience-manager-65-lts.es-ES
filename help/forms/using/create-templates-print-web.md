@@ -142,7 +142,7 @@ Para crear un fragmento de diseño para el canal Imprimir de la comunicación in
 
 1. Haga clic en los campos de texto del encabezado en la **Vista de Designer** y cambie sus nombres a **Tiempo**, **Número**, **Duración** y **Gastos**.
 
-   ![Fragmento de diseño ](assets/layout_fragment_print_new.png)
+   ![Fragmento de diseño &#x200B;](assets/layout_fragment_print_new.png)
 
 1. Seleccione **Fila 1** en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento de datos**.
 

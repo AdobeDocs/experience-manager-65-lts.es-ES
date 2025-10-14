@@ -20,7 +20,7 @@ ht-degree: 96%
 
 Puede conectar widgets personalizados a formularios Mobile. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados mediante el marco de aspectos visuales. El motor XFA utiliza varios widgets, consulte [Marco de apariencia para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md) para obtener información detallada.
 
-![Ejemplo de widget predeterminado y personalizado ](assets/custom-widgets.jpg)
+![Ejemplo de widget predeterminado y personalizado &#x200B;](assets/custom-widgets.jpg)
 
 Ejemplo de widget predeterminado y personalizado
 

@@ -70,7 +70,7 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 * [Prácticas recomendadas para crear contenido](/help/sites-authoring/best-practices.md)
 * [Prácticas recomendadas para la administración de AEM](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas para desarrollar soluciones](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas para usar formularios adaptables ](/help/forms/using/adaptive-forms-best-practices.md)
+* [Prácticas recomendadas para usar formularios adaptables &#x200B;](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 

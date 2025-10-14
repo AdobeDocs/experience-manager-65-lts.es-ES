@@ -125,7 +125,7 @@ Las tablas Distribución del explorador, Distribución del SO y Distribución de
 
 Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo, si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se vuelve a representar con datos relevantes para el explorador Google Chrome de la siguiente forma:
 
-![Filtro aplicado al informe de Analytics: Google Chrome ](assets/filter-1.png)
+![Filtro aplicado al informe de Analytics: Google Chrome &#x200B;](assets/filter-1.png)
 
 Si ve el informe del panel tras aplicar un filtro, los datos del informe del panel también se muestran según el filtro aplicado.
 

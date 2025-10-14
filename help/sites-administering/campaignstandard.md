@@ -30,13 +30,13 @@ Esta integración permite utilizar AEM y Adobe Campaign Standard de forma indepe
 
 La configuración de la integración entre AEM y Adobe Campaign Standard requiere varios pasos en ambas soluciones.
 
-1. [Configure las variables ](#aemserver-user)
-1. [Compruebe el ](#resource-type-filter)
+1. [Configure las variables &#x200B;](#aemserver-user)
+1. [Compruebe el &#x200B;](#resource-type-filter)
 1. [Creación de una plantilla de envíos de correo electrónico específica de AEM en Campaign](#aem-email-delivery-template)
 1. [Configuración de la integración de Campaign en AEM](#campaign-integration)
 1. [Configuración de la replicación en la instancia de publicación de AEM](#replication)
 1. [Configuración del externalizador de AEM](#externalizer)
-1. [Configure las variables ](#campaign-remote-user)
+1. [Configure las variables &#x200B;](#campaign-remote-user)
 1. [Configuración de la cuenta externa de AEM en Campaign](#acc-external-user)
 
 Este documento le guía en detalle por cada uno de estos pasos.

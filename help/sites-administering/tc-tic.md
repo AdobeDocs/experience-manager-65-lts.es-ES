@@ -26,7 +26,7 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción.
 
-AEM incluye la capacidad de [conectarse a Microsoft® Translator](/help/sites-administering/tc-msconf.md) de forma predeterminada. Otros proveedores de tecnología de traducción con conectores de AEM que son miembros del programa de socios de Adobe Exchange se encuentran [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM incluye la capacidad de [conectarse a Microsoft® Translator](/help/sites-administering/tc-msconf.md) de forma predeterminada. Otros proveedores de tecnología de traducción con conectores de AEM que son miembros del programa de socios de Adobe Exchange se encuentran [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información acerca de cómo añadir una configuración de la nube para el conector de Microsoft Translator, consulte [Integración con Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
