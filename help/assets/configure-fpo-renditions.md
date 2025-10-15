@@ -119,7 +119,7 @@ Para utilizar el flujo de trabajo de Experience Manager para generar la represen
 
 Para utilizar las capacidades de procesamiento de ImageMagick para generar la representación FPO de los recursos existentes, cree un modelo de flujo de trabajo dedicado que utilice la línea de comandos de ImageMagick para hacerlo.
 
-1. Siga los pasos del paso 1 al 3 de la configuración [para generar la representación de los recursos existentes mediante la sección del flujo de trabajo ](#generate-renditions-of-existing-assets-using-aem-workflow) de Experience Manager.
+1. Siga los pasos del paso 1 al 3 de la configuración [para generar la representación de los recursos existentes mediante la sección del flujo de trabajo &#x200B;](#generate-renditions-of-existing-assets-using-aem-workflow) de Experience Manager.
 
 1. Siga el paso 4 al paso 8 de la configuración [para generar la representación de nuevos recursos mediante la sección ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
 
