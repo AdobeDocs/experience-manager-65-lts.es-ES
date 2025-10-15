@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD y la CCPA.
 
-El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. Consulte la página de [RGPD en el Centro de privacidad de Adobe](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. Consulte la página de [RGPD en el Centro de privacidad de Adobe](https://business.adobe.com/es/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

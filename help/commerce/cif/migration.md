@@ -30,7 +30,7 @@ El complemento de CIF no admite la importación de datos del catálogo de produc
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento open-source](https://business.adobe.com/es/products/magento/open-source.html).
 
 ## Experiencias del catálogo de productos con el procesamiento en AEM
 

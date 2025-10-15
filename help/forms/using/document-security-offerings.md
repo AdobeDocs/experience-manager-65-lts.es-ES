@@ -36,7 +36,7 @@ El servidor de seguridad de los documentos es el componente central mediante el 
 
 El servidor de seguridad de los documentos proporciona una interfaz basada en Web (página Web) para crear directivas, administrar documentos protegidos por directivas y supervisar eventos asociados a documentos protegidos por directivas. Los administradores también pueden configurar opciones globales como autenticación de usuarios, auditoría y mensajería para usuarios invitados y administrar cuentas de usuario invitadas.
 
-El servidor está incluido en la oferta de complementos de seguridad de los documentos de AEM Forms. Puede ponerse en contacto con el [equipo de ventas](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) de AEM Forms para adquirir el complemento Seguridad de los documentos.
+El servidor está incluido en la oferta de complementos de seguridad de los documentos de AEM Forms. Puede ponerse en contacto con el [equipo de ventas](https://business.adobe.com/es/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) de AEM Forms para adquirir el complemento Seguridad de los documentos.
 
 ### Proteger documentos {#protect-documents}
 

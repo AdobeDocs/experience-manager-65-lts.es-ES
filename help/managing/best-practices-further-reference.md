@@ -27,7 +27,7 @@ Esta página proporciona más detalles para ampliar o ampliar los documentos y p
 
 ### Funciones en AEM {#features-within-aem}
 
-Al implementar AEM (especialmente por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas desea o necesita.
+Al implementar AEM (especialmente por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas desea o necesita.
 
 Tenga en cuenta las funciones de AEM que está utilizando y el impacto en el diseño; por ejemplo:
 

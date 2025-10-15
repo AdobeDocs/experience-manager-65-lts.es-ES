@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Trabajar con Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen primarios, el software genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen primarios, el software genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 El software ofrece experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Incorpora de forma exclusiva los flujos de trabajo de la solución Adobe Experience Manager digital asset management (Assets) para simplificar y optimizar el proceso de administración de campañas digitales.
 

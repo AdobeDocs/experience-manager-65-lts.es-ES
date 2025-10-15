@@ -20,13 +20,13 @@ ht-degree: 0%
 
 La instalación del paquete de funciones 18912 es *opcional*.
 
-El paquete de funciones 18912 permite la ingesta masiva de recursos directamente en el modo Dynamic Media - Scene7 en Adobe Experience Manager a través del FTP. También le permite migrar recursos de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. El paquete de funciones está disponible en [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+El paquete de funciones 18912 permite la ingesta masiva de recursos directamente en el modo Dynamic Media - Scene7 en Adobe Experience Manager a través del FTP. También le permite migrar recursos de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. El paquete de funciones está disponible en [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >Puede usar el paquete de funciones para migrar recursos por su cuenta de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. También puede migrar recursos en lote mediante la función FTP de Dynamic Media Classic. Sin embargo, Adobe *no* recomienda que utilice cualquiera de estos métodos debido a la complejidad que implica.
 >
->Por lo tanto, este paquete de características de migración es *solo* compatible como parte de un proyecto de migración cuando se realiza a través de [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>Por lo tanto, este paquete de características de migración es *solo* compatible como parte de un proyecto de migración cuando se realiza a través de [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
 
 Antes de instalar el paquete de funciones, cree un usuario de servicio y proporcione esa información al servicio de asistencia de Adobe.
 
