@@ -5,7 +5,8 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Para procesar archivos de gran tamaño con ImageMagick, tenga en cuenta los requ
 
 Hay varias versiones de los archivos de instalación de ImageMagic disponibles para varios sistemas operativos. Utilice la versión adecuada para su sistema operativo.
 
-1. Descargue los [archivos de instalación de ImageMagick](https://www.imagemagick.org/script/download.php) adecuados para su sistema operativo.
+1. Descargue los archivos de instalación de ImageMagick adecuados (`https://www.imagemagick.org/script/download.php` sitio web) para su sistema operativo.
 1. Para instalar ImageMagick en el disco que hospeda el servidor [!DNL Experience Manager], inicie el archivo de instalación.
 
 1. Defina la variable de entorno de ruta en el directorio de instalación de ImageMagic.
@@ -81,7 +82,7 @@ Puede configurar el paso del proceso de la línea de comandos para su caso de us
 
 El uso de ImageMagick para procesar imágenes presenta múltiples vulnerabilidades de seguridad. Por ejemplo, el procesamiento de imágenes enviadas por el usuario implica el riesgo de ejecución de código remoto (RCE).
 
-Además, varios complementos de procesamiento de imágenes dependen de la biblioteca ImageMagick, incluidos, entre otros, la imagick de PHP, la imagemagick y el clip de papel de Ruby y la imagemagick de nodejs.
+Además, varios complementos de procesamiento de imágenes dependen de la biblioteca ImageMagick, incluidos, entre otros, imagick de PHP, rmagick y paperclip de Ruby y imagemagick de nodejs.
 
 Si utiliza ImageMagick o una biblioteca afectada, Adobe recomienda mitigar las vulnerabilidades conocidas realizando al menos una de las siguientes tareas (pero preferiblemente ambas):
 

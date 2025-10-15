@@ -6,10 +6,11 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 3%
+source-wordcount: '2116'
+ht-degree: 4%
 
 ---
 
@@ -122,7 +123,7 @@ Se deben implementar los siguientes métodos:
 
 Esta es una plantilla de ejemplo:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ la clase pública MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementa las partes relevantes }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ la clase pública MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementa las partes relevantes }
 
 La interfaz y las clases incluyen:
 
@@ -448,7 +449,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 
 Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en [!DNL Assets]:
 
-* Transformación de EPS e IA usando [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/).
+* Transformación de EPS e IA mediante ImageMagick (`https://www.imagemagick.org/script/index.php` sitio web) y [Ghostscript](https://www.ghostscript.com/).
 * Transcodificación de vídeo FLV con [FFmpeg](https://ffmpeg.org/).
 * Codificación MP3 con [LAME](https://lame.sourceforge.io/).
 * Procesamiento de audio mediante [SOX](https://sourceforge.net/projects/sox/).
@@ -475,7 +476,7 @@ Para ello, use [!DNL ImageMagick]. [!DNL ImageMagick] es un software gratuito de
 
 Instale [!DNL ImageMagick] en el disco que hospeda el servidor [!DNL Experience Manager]:
 
-1. Instalar [!DNL ImageMagick]: consulte [Documentación de ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Instalar [!DNL ImageMagick]: consulte la documentación de ImageMagick en el sitio web `https://www.imagemagick.org/script/download.php`.
 1. Configure la herramienta para que en la línea de comandos pueda ejecutar `convert`.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
