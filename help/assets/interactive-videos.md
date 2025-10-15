@@ -33,7 +33,7 @@ Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostracione
 
 * Seleccione la miniatura si desea pausar el vídeo y abrir la vista rápida del producto. Por ejemplo, seleccione la imagen en miniatura de KitchenAid del vídeo para obtener una vista de giro de 360 grados de la mesa de mezclas o aumente la imagen para ver los detalles de la mesa de mezclas.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=es. This now needs to call a new interactive video-->
 
 ![Fotograma de un vídeo interactivo de ventas](assets/chlimage_1-126.png) *Captura de fotograma de vídeo de un vídeo interactivo de ventas.*
 
@@ -62,13 +62,13 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 Busque el encabezado **Ejemplo** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en esta página web de demostración inicial que *aún no* tiene interactividad agregada:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
 
 Los **ejemplos** sirven para ilustrar los pasos que se siguen para integrar vídeos interactivos en su propio sitio web.
 
 Cuando termine el tutorial en la última sección Ejemplo, la página web de demostración final con el vídeo interactivo completamente integrado tendrá el siguiente aspecto:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es)
 
 Pasos del vídeo interactivo:
 
@@ -187,7 +187,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 Cuando se aplica el método anterior al sitio web de ejemplo, tiene una página web con varias miniaturas de productos, cada una con un botón &quot;VER MÁS&quot;:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
 
 Después de activar todas las vistas rápidas de productos disponibles en la página, obtiene la siguiente lista de solicitudes de vista rápida realizadas al back-end:
 
@@ -541,7 +541,7 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 
 Uso del sitio web de demostración como ejemplo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
 
 Observe que el código incrustado es estándar:
 
@@ -572,7 +572,7 @@ Observe que el código incrustado es estándar:
 
 La integración es tan sencilla como eliminar el código de incrustación de vídeo y sustituirlo por el código de incrustación de vídeo interactivo de Experience Manager. Puede ver los resultados en la siguiente dirección URL. Aunque muestra un vídeo interactivo presente en la página, aún no está integrado con la vista rápida existente:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=es)
 
 ## Integración de un vídeo interactivo con una vista rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -772,7 +772,7 @@ El código fuente completo es el siguiente:
 
 El sitio web de demostración final con el vídeo interactivo completamente integrado tiene el siguiente aspecto:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es)
 
 ## Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
