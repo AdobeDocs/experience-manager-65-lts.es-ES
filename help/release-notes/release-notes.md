@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -449,23 +449,23 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
 
-#### Prácticas recomendadas para actualizaciones del Service Pack de AEM 6.5 LTS
+#### Prácticas recomendadas para las actualizaciones del Service Pack de AEM 6.5 LTS
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Entorno**
-Se aplica a: clientes de AEM 6.5 LTS (local) que instalan el Service Pack 1 (SP1). SP1 se entrega como un JAR de inicio rápido.
+Se aplica a: clientes de AEM 6.5 LTS (locales) que instalan el Service Pack 1 (SP1). SP1 se suministra como un archivo JAR de inicio rápido.
 
 **Por qué es importante**
-SP1 para AEM 6.5 LTS se envía como un JAR de inicio rápido en lugar de como un ZIP para instalarlo a través del Administrador de paquetes. Los clientes locales se actualizan reemplazando el JAR de Quickstart, desempaquetándolo y reiniciándolo. Este método es coherente con el procedimiento de actualización in situ de Adobe.
+SP1 para AEM 6.5 LTS se envía como un archivo JAR de inicio rápido en lugar de como un archivo ZIP para instalarlo a través del administrador de paquetes. Los clientes locales se actualizan reemplazando el JAR de Quickstart, descomprimiéndolo y reiniciándolo. Este método es coherente con el procedimiento de actualización in situ de Adobe.
 
 **Flujo de actualización recomendado (autor o publicación)**
 
-1. Compruebe que la instancia de AEM 6.5 LTS esté en buen estado y accesible.
-1. Descargue el JAR de inicio rápido del SP1 (por ejemplo, `cq-quickstart-6.6.x.jar`) desde Distribución de software.
+1. Compruebe que la instancia de AEM 6.5 LTS esté en buen estado y sea accesible.
+1. Descargue el archivo JAR de inicio rápido SP1 (por ejemplo, `cq-quickstart-6.6.x.jar`) desde Distribución de software.
 1. Detenga la instancia en ejecución.
-1. En el directorio de instalación de AEM (fuera de `crx-quickstart/`), reemplace el JAR de inicio rápido anterior por el JAR del SP1.
-1. Desempaquetar el JAR:
+1. En el directorio de instalación de AEM (fuera de `crx-quickstart/`), reemplace el JAR de inicio rápido anterior por el JAR SP1.
+1. Descomprima el archivo JAR:
 
    ```java
    java -jar cq-quickstart-6.6.x.jar -unpack
@@ -473,7 +473,7 @@ SP1 para AEM 6.5 LTS se envía como un JAR de inicio rápido en lugar de como un
 
    (Ajuste los indicadores de pila según sea necesario).
 
-1. Cambie el nombre del JAR desempaquetado para que coincida con el rol y el puerto, por ejemplo `cq-author-4502.jar` o `cq-publish-4503.jar`.
+1. Cambie el nombre del JAR descomprimido para que coincida con la función y el puerto, por ejemplo `cq-author-4502.jar` o `cq-publish-4503.jar`.
 1. Inicie AEM y confirme la actualización en la interfaz de usuario (Ayuda > Acerca de) y en los registros.
 
 **Buena higiene**
@@ -484,7 +484,7 @@ SP1 para AEM 6.5 LTS se envía como un JAR de inicio rápido en lugar de como un
 
 >[!NOTE]
 >
->Los nombres de archivo mostrados arriba (por ejemplo, `cq-quickstart-6.6.x.jar`) reflejan la nomenclatura de artefactos de inicio rápido del SP1 observada para esta versión de LTS; use siempre el nombre de archivo exacto que descargue de Distribución de software.
+>Los nombres de archivo mostrados arriba (por ejemplo, `cq-quickstart-6.6.x.jar`) reflejan la nomenclatura de artefactos de inicio rápido de SP1 detectada para esta versión de LTS; use siempre el nombre de archivo exacto que se descarga de Distribución de software.
 
 ## Instalación y actualización {#install-update}
 
