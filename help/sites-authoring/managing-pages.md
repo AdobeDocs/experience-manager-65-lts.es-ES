@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 62%
+source-wordcount: '2468'
+ht-degree: 63%
 
 ---
 
@@ -148,7 +148,7 @@ Cuando se proporciona una página **Name** al crear una página, AEM [valida el 
 
 En AEM, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
-La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
+La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de producto, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
 AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
@@ -392,10 +392,6 @@ El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los t
 >[!NOTE]
 >
 >Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento [Trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) en la guía del usuario de administración.
-
->[!NOTE]
->
->El procesamiento asincrónico de movimiento de página requiere AEM 6.5.3.0 o superior.
 
 ### Eliminar una página {#deleting-a-page}
 

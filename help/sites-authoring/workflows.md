@@ -1,14 +1,11 @@
 ---
 title: Uso de flujos de trabajo
 description: Los flujos de trabajo de Adobe Experience Manager le permiten automatizar una serie de pasos que se realizan en una página o recurso.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 55382f3d-7aa4-433f-ac0c-c4764c01a8c3
+source-git-commit: d3ecfb99332ce5e5016f60b329ce5c10bc4593d4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%

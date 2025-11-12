@@ -1,22 +1,18 @@
 ---
-title: Trabajar con el administrador de campañas de marketing
+title: Uso de Marketing Campaign Manager
 description: El Administrador de campañas de marketing (MCM) es una consola que le ayuda a administrar campañas de varios canales. Con este software de automatización de marketing puede administrar todas sus marcas, campañas y experiencias, así como los segmentos, las listas, los posibles clientes y los informes relacionados.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Trabajar con el administrador de campañas de marketing{#working-with-the-marketing-campaign-manager}
+# Uso de Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 En AEM, el Administrador de campañas de marketing (MCM) es una consola que le ayuda a administrar campañas multicanal. Con este software de automatización de marketing puede administrar todas sus marcas, campañas y experiencias, así como los segmentos, las listas, los posibles clientes y los informes relacionados.
 

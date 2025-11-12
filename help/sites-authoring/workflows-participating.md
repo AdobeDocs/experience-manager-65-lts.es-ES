@@ -1,15 +1,11 @@
 ---
 title: Participación en flujo de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
+source-git-commit: 21c5407d1153fa23a3e8b60487eb91f1c3101337
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 73%
@@ -20,12 +16,12 @@ ht-degree: 73%
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo. El usuario recibe una notificación y puede realizar las acciones adecuadas:
 
-* [Visualización de notificaciones &#x200B;](#notifications-of-available-workflow-actions)
-* [Finalización de una etapa de participante &#x200B;](#completing-a-participant-step)
-* [Delegación de una etapa de participante &#x200B;](#delegating-a-participant-step)
-* [Realización de una etapa hacia atrás en una etapa de participante &#x200B;](#performing-step-back-on-a-participant-step)
-* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Visualización de la carga útil del flujo de trabajo (varios recursos) &#x200B;](#viewing-the-workflow-payload-multiple-resources)
+* [Visualización de notificaciones ](#notifications-of-available-workflow-actions)
+* [Finalización de una etapa de participante ](#completing-a-participant-step)
+* [Delegación de una etapa de participante ](#delegating-a-participant-step)
+* [Realización de una etapa hacia atrás en una etapa de participante ](#performing-step-back-on-a-participant-step)
+* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) ](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Visualización de la carga útil del flujo de trabajo (varios recursos) ](#viewing-the-workflow-payload-multiple-resources)
 
 ## Notificaciones de acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
@@ -279,7 +275,7 @@ Para ver la carga útil y los recursos de la instancia del flujo de trabajo:
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo. 
 
-   Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de medios** para añadir nuevas entradas.
+   Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de recursos** para añadir nuevas entradas.
 
    ![wf-78](assets/wf-78.png)
 

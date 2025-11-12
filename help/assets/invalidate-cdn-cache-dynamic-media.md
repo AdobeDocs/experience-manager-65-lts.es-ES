@@ -1,15 +1,11 @@
 ---
 title: Invalidación de la caché de la red de distribución de contenido mediante Dynamic Media
 description: Invalidar el contenido en caché de la red de distribución de contenido (CDN) le permite actualizar rápidamente los recursos que entrega Dynamic Media, en lugar de esperar a que la caché caduque.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
-topic-tags: dynamic-media
-content-type: reference
 role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: e13ca0cdc547fb4c83e8e332b3016f3c543b2e5c
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%

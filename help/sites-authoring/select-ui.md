@@ -1,12 +1,13 @@
 ---
 title: Selección de la interfaz de usuario en AEM
-description: Configure la interfaz que utilizará para trabajar en Adobe Experience Manager 6.5.
+description: Configure la interfaz que desea utilizar para trabajar en Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
+source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -103,11 +104,9 @@ El sistema puede anular la configuración definida por un usuario o un administr
 * Al crear páginas:
 
    * Se fuerza el uso del editor clásico al acceder a la página con `cf#` en la dirección URL. Por ejemplo:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Se fuerza el uso del editor táctil al usar `/editor.html` en la URL o al usar un dispositivo táctil. Por ejemplo:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Cualquier forzamiento es temporal y solo es válido para la sesión del explorador

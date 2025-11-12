@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
+source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 61%
+source-wordcount: '1562'
+ht-degree: 62%
 
 ---
 
@@ -203,7 +203,7 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 
 >[!TIP]
 >
->[Deformación de tiempo también se puede usar con Lanzamientos para obtener una vista previa del futuro](/help/sites-authoring/launches.md) al ejecutar AEM 6.5.10.0 o posterior.
+>[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md).
 
 La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función utiliza las versiones de página para determinar el estado del entorno de publicación:
 

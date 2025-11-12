@@ -1,19 +1,20 @@
 ---
 title: Guía rápida de WCAG 2.1
 description: Guía rápida de las directrices de accesibilidad del contenido web (WCAG) versión 2.1.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
+source-git-commit: 5aafd5e1ba5e2202f941975d292a3e242363601a
 workflow-type: tm+mt
 source-wordcount: '1744'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Guía rápida de WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) se ha desarrollado para maximizar el cumplimiento de las Directrices de accesibilidad del contenido web.
+Adobe Experience Manager (AEM) se ha desarrollado para maximizar el cumplimiento de las directrices de accesibilidad del contenido web.
 
 Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://www.w3.org/TR/WCAG/) son un conjunto de directrices reconocidas internacionalmente desarrolladas por el [World Wide Web Consortium (W3C)](https://www.w3.org/) en el marco de su [Iniciativa de accesibilidad a la web (WAI)](https://www.w3.org/WAI/).
 
@@ -23,11 +24,11 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 
 >[!NOTE]
 >
->Dado que estos documentos se escribieron en la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/) se publicó en octubre de 2023.
+>Desde que estos documentos se escribieron, la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/), se publicó en octubre de 2023.
 >
 >Ver [Comparación con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) y [Nuevas características de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
-WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo más accesibles posible para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, discapacidad visual, pérdida de audición, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
+WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
@@ -46,7 +47,7 @@ es decir, las directrices que pueden aplicarse a una amplia gama de formatos de 
 Cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté de acuerdo en general con que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito.
 
 * Apoyar la **implementación contextual y priorizada:**
-Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa o pueden requerir que los usuarios tengan tecnologías de asistencia o exploradores específicos para beneficiarse de las características de accesibilidad.
+Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.1.
 
@@ -72,7 +73,7 @@ Para obtener más detalles:
 * Las directrices se numeran de 1.1 a 4.1, donde el primer número corresponde al principio superior.
 * Cada directriz consta de uno o más **criterios de éxito**.
 * Los criterios de éxito se escriben como afirmaciones, que son `True` o `False` para una página web determinada.
-* Los criterios de éxito pueden incluir una u otra opción, o excepciones, que son situaciones en las que no es necesario cumplir los criterios de éxito.
+* Los criterios de éxito pueden incluir una u otra opción, o excepciones, que son situaciones en las que no es necesario reunir los criterios de éxito.
 * Los criterios de éxito se numeran según la directriz y el principio superior, de 1.1.1 a 4.1.1. También tienen un nombre corto que resume la intención del criterio, para facilitar la referencia. Por ejemplo, el criterio de éxito [1.1.1 es contenido no textual](https://www.w3.org/TR/WCAG/#non-text-content).
 * Los criterios de éxito incluyen una lista de las **técnicas** relacionadas (que se describen más adelante).
 

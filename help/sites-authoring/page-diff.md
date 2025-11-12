@@ -1,15 +1,11 @@
 ---
 title: Diferencias de página
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
+source-git-commit: db1c30db0a61e852484a25909c60ad5940b2b33a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 80%

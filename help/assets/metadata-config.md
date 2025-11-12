@@ -6,9 +6,10 @@ role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1980'
 ht-degree: 4%
 
 ---
@@ -17,8 +18,8 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=es) |
-| AEM 6.5 | Este artículo |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 LTS | Este artículo |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -117,7 +118,7 @@ Un perfil de metadatos le permite aplicar metadatos predeterminados a los recurs
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para confirmar la operación de eliminación. El perfil de metadatos se elimina de la lista.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/es/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -271,13 +272,13 @@ Escriba valores de metadatos en los distintos campos y haga clic en **[!UICONTRO
 
 * Para importar metadatos en áreas de nombres personalizadas, primero registre las áreas de nombres.
 * El Selector de propiedades muestra las propiedades que se utilizan en los editores de esquemas y formularios de búsqueda. El Selector de propiedades no elige propiedades de metadatos de un recurso.
-* Es posible que tenga perfiles de metadatos preexistentes desde antes de actualizar a [!DNL Experience Manager] 6.5. Después de la actualización, si aplica ese perfil en la carpeta [!UICONTROL Propiedades] de la pestaña [!UICONTROL Perfiles de metadatos], los campos del formulario de metadatos no se mostrarán. Sin embargo, si aplica un perfil de metadatos recién creado, los campos de formulario se muestran pero no están disponibles según lo esperado. No se pierde la funcionalidad, pero si desea ver los campos de formulario (no disponibles), edite y guarde los perfiles de metadatos existentes.
+* Es posible que tenga perfiles de metadatos preexistentes desde antes de actualizar a [!DNL Experience Manager] 6.5 LTS. Después de la actualización, si aplica ese perfil en la carpeta [!UICONTROL Propiedades] de la pestaña [!UICONTROL Perfiles de metadatos], los campos del formulario de metadatos no se mostrarán. Sin embargo, si aplica un perfil de metadatos recién creado, los campos de formulario se muestran pero no están disponibles según lo esperado. No se pierde la funcionalidad, pero si desea ver los campos de formulario (no disponibles), edite y guarde los perfiles de metadatos existentes.
 
 >[!MORELIKETHIS]
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=es).
+>* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Prácticas recomendadas para organizar los recursos digitales a fin de que utilicen perfiles de procesamiento](/help/assets/organize-assets.md).
 >* [reescritura de XMP](/help/assets/xmp-writeback.md).

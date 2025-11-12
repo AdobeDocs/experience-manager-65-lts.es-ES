@@ -1,14 +1,11 @@
 ---
 title: Explicación de la segmentación al crear una campaña
 description: La segmentación es una consideración clave al crear una campaña.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 46%
@@ -41,7 +38,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
+**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar el abono a un segmento específico.
 
 **Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
@@ -58,7 +55,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 * Ingresos
 * Tamaño de familia
 * Estado civil
-* Sexo
+* Género
 * Lugar de residencia
 
 **Características derivadas**: Algunas características demográficas son difíciles de determinar sin registro, pero se pueden obtener combinando características demográficas y de comportamiento.
@@ -67,7 +64,7 @@ Por ejemplo, si combina la dirección URL de referencia (como característica de
 
 **Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 
-**Página teaser**: Una página de teaser se dirige a una audiencia específica. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
+**Página teaser**: Una página de teaser se dirige a un público específico. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
 
 **Campaña**: Una campaña es una colección de páginas de teaser y de páginas de marketing por correo electrónico como, por ejemplo, newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 

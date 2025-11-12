@@ -1,19 +1,19 @@
 ---
 title: Publicación de páginas de contenido
-description: Obtenga información sobre cómo publicar páginas de contenido en Adobe Experience Manager 6.5.
+description: Aprenda a publicar páginas de contenido en Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1702'
 ht-degree: 63%
 
 ---
 
 
-# Publicar páginas {#publishing-pages}
+# Publicación de páginas {#publishing-pages}
 
 Después de crear y revisar el contenido en el entorno de creación, [haga que esté disponible en el sitio web público](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (el entorno de publicación).
 
@@ -26,13 +26,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
->  &#x200B;>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
->  &#x200B;>  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
->  &#x200B;>  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 
 ## Privilegios insuficientes {#insufficient-privileges}
 
@@ -88,8 +88,8 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Administrar publicación    &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicación rápida ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Administrar publicación    ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Publicación rápida  {#quick-publish}
 
@@ -128,7 +128,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    Posponer la publicación inicia un flujo de trabajo para publicar la página o páginas seleccionadas en el momento especificado. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
-   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para finalizar el flujo de trabajo correspondiente.
+   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para terminar el flujo de trabajo correspondiente.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -230,7 +230,7 @@ Al igual que [utiliza la opción Administrar publicación para publicar](/help/s
 
    Igual que posponer la publicación inicia un flujo de trabajo para publicar esta versión de la página en el momento especificado, desactivar más tarde inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento concreto.
 
-   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para finalizar el flujo de trabajo correspondiente.
+   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para terminar el flujo de trabajo correspondiente.
 
 1. Para completar la cancelación de la publicación, complete el asistente como haría para [publicar la página](/help/sites-authoring/publishing-pages.md#manage-publication).
 

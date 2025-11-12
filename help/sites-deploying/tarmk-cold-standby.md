@@ -1,5 +1,5 @@
 ---
-title: Cómo ejecutar AEM con el modo de espera pasiva TarMK
+title: Cómo ejecutar AEM con espera en frío de TarMK
 description: Aprenda a crear, configurar y mantener una configuración de espera en frío de TarMK.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,20 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 0%
+source-wordcount: '2680'
+ht-degree: 1%
 
 ---
 
-# Cómo ejecutar AEM con el modo de espera pasiva TarMK{#how-to-run-aem-with-tarmk-cold-standby}
+# Cómo ejecutar AEM con espera en frío de TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introducción {#introduction}
 
 La capacidad de espera en frío del núcleo Tar Micro permite que una o más instancias de Adobe Experience Manager en espera (AEM) se conecten a una instancia principal. El proceso de sincronización es de una sola manera, lo que significa que solo se realiza desde la instancia principal a la instancia en espera.
 
-El propósito de las instancias en espera es garantizar una copia de datos activa del repositorio principal y garantizar un cambio rápido sin pérdida de datos en caso de que el repositorio principal no esté disponible por algún motivo.
+El propósito de las instancias en espera es garantizar una copia de datos activa del repositorio principal y garantizar un cambio rápido sin pérdida de datos en caso de que la instancia principal no esté disponible por algún motivo.
 
 El contenido se sincroniza linealmente entre la instancia principal y las instancias en espera sin que la integridad compruebe si hay daños en el archivo o repositorio. Debido a este diseño, las instancias en espera son copias exactas de la instancia principal y no pueden ayudar a mitigar las incoherencias en las instancias principales.
 
@@ -43,7 +43,7 @@ El contenido se sincroniza linealmente entre la instancia principal y las instan
 
 ## Funcionamiento {#how-it-works}
 
-En la instancia principal de AEM, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que los esclavos envían al maestro:
+En la instancia principal de AEM, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que el modo de espera envía al principal:
 
 * un mensaje que solicita el ID de segmento del encabezado actual
 * un mensaje que solicita datos de segmento con un ID especificado
@@ -72,7 +72,7 @@ En el modo de espera, se espera un alto consumo de CPU durante el proceso de sin
 
 #### Seguridad {#security}
 
-Suponiendo que todas las instancias se ejecuten en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce en gran medida. Sin embargo, puede añadir una capa de seguridad adicional habilitando conexiones SSL entre los esclavos y el maestro. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
+Suponiendo que todas las instancias se ejecuten en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce en gran medida. Sin embargo, puede añadir una capa de seguridad adicional activando conexiones SSL entre las instancias de espera y principales. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
 
 Además, puede especificar las instancias de espera a las que se permite conectarse restringiendo la dirección IP de las solicitudes entrantes. Esto debería ayudar a garantizar que nadie en la intranet pueda copiar el repositorio.
 
@@ -93,7 +93,7 @@ Además, puede especificar las instancias de espera a las que se permite conecta
 
 Para crear una configuración de espera en frío de TarMK, cree primero las instancias de espera realizando una copia del sistema de archivos de toda la carpeta de instalación del principal en una nueva ubicación. A continuación, puede iniciar cada instancia con un modo de ejecución que especifique su función ( `primary` o `standby`).
 
-A continuación se muestra el procedimiento que debe seguirse para crear una configuración con una instancia maestra y una en espera:
+A continuación se muestra el procedimiento que debe seguirse para crear una configuración con una instancia principal y una instancia en espera:
 
 1. Instale AEM.
 
@@ -336,7 +336,7 @@ Para ello, siga los pasos descritos a continuación:
 
 ## Monitoreo {#monitoring}
 
-La función expone información mediante JMX o MBeans. Al hacerlo, puede inspeccionar el estado actual del modo de espera y del maestro mediante la [consola JMX](/help/sites-administering/jmx-console.md). La información se encuentra en un MBean de `type org.apache.jackrabbit.oak:type="Standby"`llamados `Status`.
+La función expone información mediante JMX o MBeans. Al hacerlo, puede inspeccionar el estado actual del modo de espera y el principal mediante la [consola JMX](/help/sites-administering/jmx-console.md). La información se encuentra en un MBean de `type org.apache.jackrabbit.oak:type="Standby"`llamados `Status`.
 
 **En espera**
 
@@ -365,7 +365,7 @@ La observación de la principal expone cierta información general a través de 
 
 * `Mode:` siempre muestra el valor `primary`.
 
-Además, se puede recuperar información para un máximo de diez clientes (instancias en espera) conectados al servidor maestro. El ID de MBean es el UUID de la instancia. No hay métodos invocables para estos MBean, pero hay algunos atributos útiles de solo lectura:
+Además, se puede recuperar información para un máximo de diez clientes (instancias en espera) conectados al servidor principal. El ID de MBean es el UUID de la instancia. No hay métodos invocables para estos MBean, pero hay algunos atributos útiles de solo lectura:
 
 * `Name:` el ID del cliente.
 * `LastSeenTimestamp:` marca de tiempo de la última solicitud en una representación de texto.
@@ -402,7 +402,7 @@ La instancia de espera puede tardar más de lo normal en completar la sincroniza
 
 Como alternativa, el repositorio principal se puede copiar manualmente al modo de espera después de ejecutar la compactación en el repositorio principal, lo que básicamente reconstruye el modo de espera cada vez que se ejecuta la compactación.
 
-### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+### Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Es importante ejecutar la recolección de basura en las instancias del almacén de datos de archivos de vez en cuando, de lo contrario, los binarios eliminados permanecen en el sistema de archivos y finalmente llenan la unidad. Para ejecutar la recolección de elementos no utilizados, siga el siguiente procedimiento:
 

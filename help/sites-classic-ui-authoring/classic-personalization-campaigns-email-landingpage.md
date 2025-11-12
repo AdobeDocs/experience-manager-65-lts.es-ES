@@ -1,22 +1,18 @@
 ---
-title: Creación de una página de aterrizaje de newsletter efectiva
+title: Creación de una página de destino de newsletter efectiva
 description: Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
-# Creación de una página de aterrizaje de newsletter efectiva{#creating-an-effective-newsletter-landing-page}
+# Creación de una página de destino de newsletter efectiva{#creating-an-effective-newsletter-landing-page}
 
 Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
 

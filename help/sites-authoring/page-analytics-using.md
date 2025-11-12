@@ -1,18 +1,13 @@
 ---
 title: Ver datos de análisis de página para medir la eficacia del contenido de la página
 description: Utilice datos de análisis de página para medir la eficacia del contenido de su página
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
-legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
+source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 5%
 
 ---
@@ -76,7 +71,7 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
+Abra [Insight de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
 1. En la barra de herramientas, haga clic en el icono Analytics and Recommendations.

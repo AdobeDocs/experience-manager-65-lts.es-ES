@@ -1,12 +1,13 @@
 ---
 title: Bandeja de entrada para administrar tareas
-description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
+description: Administrar las tareas con la bandeja de entrada en Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
+source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1156'
 ht-degree: 39%
 
 ---
@@ -41,7 +42,7 @@ Estas notificaciones las recibe en su propia bandeja de entrada, donde puede ver
 >* [Proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Proyectos: trabajo con tareas](/help/sites-authoring/task-content.md)
 >* [Flujos de trabajo](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Formularios](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
@@ -60,7 +61,7 @@ AEM viene precargado con cuatro tareas asignadas al grupo de usuarios &quot;admi
 
 * [Configurar Analytics y Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar la lista comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
-* Activar recopilación de estadísticas de uso agregadas
+* Habilitar recopilación de estadísticas de uso agregadas
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Apertura de la bandeja de entrada    {#opening-the-inbox}

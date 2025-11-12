@@ -7,7 +7,8 @@ content-type: reference
 feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
+source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -37,8 +38,6 @@ La inversión del enfoque sigue la ubicación natural del elemento de la interfa
    * Las siguientes cuatro `Tab` paradas son las cuatro esquinas del fotograma. Cuando el enfoque se coloca en una esquina del marco, la esquina se resalta. De nuevo, puede utilizar las teclas de flecha del teclado para mover la esquina enfocada.
 Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
-<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
-
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
@@ -53,12 +52,12 @@ Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](
 
 Todos los componentes listos para usar de [!DNL Dynamic Media] visores admiten la accesibilidad del teclado para sus clientes.
 
-Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=es) en la Guía de referencia de visores de Dynamic Media.
+Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) en la Guía de referencia de visores de Dynamic Media.
 
 ## Compatibilidad con tecnología de asistencia en [!DNL Dynamic Media] visores {#assistive-technology-support-for-dm-viewers}
 
 Todos los componentes del visor [!DNL Dynamic Media] admiten los roles y atributos ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia, como lectores de pantalla.
-Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=es) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=es#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
+Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
 
 ## Compatibilidad con subtítulos opcionales en Dynamic Media {#closed-caption-support}
 

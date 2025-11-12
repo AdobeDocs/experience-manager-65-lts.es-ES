@@ -1,20 +1,16 @@
 ---
 title: Diseño interactivo para las páginas de contenido
 description: Adobe Experience Manager permite crear un diseño interactivo para las páginas mediante el componente Contenedor de diseño.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9492907f011fa58dff6bd9eeaf1ae2c6d0397700
+exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
+source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 62%
 
 ---
-
 
 # Diseño adaptable{#responsive-layout}
 

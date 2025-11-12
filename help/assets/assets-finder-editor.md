@@ -1,19 +1,18 @@
 ---
-title: Crear y configurar páginas del Editor de recursos
+title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
-contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
 
 ---
 
-# Crear y configurar páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
+# Creación y configuración de páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
 Este documento describe lo siguiente:
 
@@ -21,7 +20,7 @@ Este documento describe lo siguiente:
 * Crear y personalizar páginas del Editor de recursos, que son páginas de WCM que permiten ver y editar metadatos y realizar acciones en el recurso.
 * Cómo editar varios recursos simultáneamente.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to default samples. -->
 
 >[!NOTE]
 >
@@ -330,7 +329,7 @@ El siguiente es un componente Etiquetas rellenado:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura    {#thumbnail}
+#### Miniaturas {#thumbnail}
 
 El componente Miniatura es el lugar donde el recurso muestra la miniatura seleccionada (para muchos de los formatos, la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [acciones que puede modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 

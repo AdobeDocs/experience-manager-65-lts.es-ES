@@ -1,14 +1,14 @@
 ---
 title: Biblioteca de transcodificación de imágenes
 description: Aprenda a configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones principales de administración de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 0%
+source-wordcount: '978'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +75,7 @@ Para configurar el procesamiento de ITL, cree un archivo de configuración y act
 
 Para configurar la biblioteca, cree un archivo CONF para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o de raíz.
 
-1. Descargue el paquete de la biblioteca de transcodificación de imágenes [de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e instálelo mediante el Administrador de paquetes. El paquete es compatible con [!DNL Experience Manager] 6.5.
+1. Descargue el paquete de la biblioteca de transcodificación de imágenes [de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e instálelo mediante el Administrador de paquetes. El paquete es compatible con [!DNL Experience Manager] 6.5 LTS.
 
 1. Para conocer un identificador de paquete para `com.day.cq.dam.cq-dam-switchengine`, inicia sesión en la consola web y haz clic en **[!UICONTROL OSGi]** > **[!UICONTROL Paquetes]**. Como alternativa, para abrir la consola de paquetes, acceda a la URL `https://[aem_server:[port]/system/console/bundles/`. Busque el paquete `com.day.cq.dam.cq-dam-switchengine` y su ID.
 

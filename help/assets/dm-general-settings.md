@@ -1,17 +1,14 @@
 ---
 title: Configuración general de Dynamic Media
 description: Obtenga información sobre cómo administrar la configuración general en Dynamic Media. Puede establecer el nombre del servidor de publicación y del servidor de origen aquí y establecer una opción de sobrescritura de imagen. También hay opciones de carga predeterminadas para el enmascaramiento de enfoque de imágenes y opciones de carga para cómo desea procesar los archivos de PostScript, Adobe Photoshop, PDF y Adobe Illustrator.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -21,7 +18,7 @@ ht-degree: 0%
 La configuración de **[!UICONTROL Configuración general de Dynamic Media]** solo está disponible si:
 
 * Está ejecutando Dynamic Media en modo Scene7. Consulte [Habilitar Dynamic Media en modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Tiene una *configuración de Dynamic Media* **[!UICONTROL existente]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5.11 o superior. Consulte [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Tiene una *configuración de Dynamic Media* **[!UICONTROL existente]** (en **[!UICONTROL Cloud Services]**). Consulte [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Es administrador del sistema de Experience Manager con privilegios de administrador.
 
 La Configuración general de Dynamic Media está pensada para que la utilicen programadores y desarrolladores de sitios web con experiencia. Adobe Dynamic Media recomienda que los usuarios que cambien esta configuración de publicación estén familiarizados con Dynamic Media en Adobe Experience Manager y con la tecnología básica de creación de imágenes.
@@ -51,7 +48,7 @@ Consulte también [Opcional: configuración de Dynamic Media: configuración del
    * Ficha [Illustrator](#illustrator-tab)
 
    ![Página de configuración general de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**&#x200B;seleccionada.*<br><br>
+   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**seleccionada.*<br><br>
 
 1. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
@@ -85,7 +82,7 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
   Controla la conservación de cualquier definición de recorte manual existente.
 
-  Consulte también `preserveCrop` en [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=es) y [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=es), ambos en la Guía de referencia de visores de Dynamic Media.
+  Consulte también `preserveCrop` en [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) y [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos en la Guía de referencia de visores de Dynamic Media.
 
 ## Opciones de carga predeterminadas {#default-upload-options}
 
