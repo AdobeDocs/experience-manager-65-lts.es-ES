@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -375,7 +375,7 @@ Se ha corregido un problema de accesibilidad por el que los marcadores de posici
 * Cuando un usuario abre una comunicación interactiva en la interfaz de usuario de Agent, los datos rellenados previamente no se pueden borrar por completo; al eliminarlos, se rellenan automáticamente con los mismos datos. (FORMS-19151)
 * Cuando un usuario previsualiza un campo de fecha en la interfaz de usuario de Agent, la fecha cambia inesperadamente. El problema se produce debido a discrepancias de las zonas horarias entre la configuración UTC de VM y la interpretación de la fecha por parte del sistema. (FORMS-19115)
 * Cuando un usuario envía un formulario, los archivos adjuntos pueden duplicarse, lo que provoca varias cargas del mismo archivo. (FORMS-19045)(FORMS-19051)
-* La adición de coordinadores a los conjuntos de directivas en Document Security falla tanto en los entornos de producción como en los entornos inferiores. (FORMS-18603, FORMS-18212, FORMS-19697)
+* La adición de coordinadores a los conjuntos de políticas en Document Security falla tanto en los entornos de producción como en los entornos inferiores. (FORMS-18603, FORMS-18212, FORMS-19697)
 * Cuando un usuario hace clic en el “datepicker-calendar-icon” en modo de escritorio con un campo vacío, se produce un error debido a la variable indefinida _$focusedDate, lo que interrumpe los scripts personalizados asociados. (FORMS-18483)(FORMS-18268)
 * Cuando un cliente obtiene una vista previa de una carta, el campo “Cantidad en palabras” no muestra o actualiza los valores numéricos incorrectamente, lo que provoca desalineación y falta de espacios en el contenido. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 * Cuando un cliente previsualiza una carta guardada en RHEL, el contenido no se alinea correctamente, faltan espacios y aparecen caracteres inesperados como “x”. (FORMS-18422)(FORMS-17641)
@@ -608,6 +608,18 @@ Al habilitar la función Solo SSL en las implementaciones de AEM, existe un prob
 
 **Solución:**
 Si tiene este problema, póngase en contacto con Atención al cliente de Adobe. Hay disponible una revisión [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) para resolver este problema. No intente habilitar las funciones Solo SSL hasta que aplique la revisión necesaria.
+
+### Página de permisos vacía en la interfaz de usuario de seguridad del SP1 de AEM 6.5 LTS
+
+>[!NOTE]
+>
+> Este problema solo está presente en la versión AEM 6.5 LTS SP1.
+
+Al acceder a la página Permisos en Herramientas -> Seguridad en AEM 6.5 LTS SP1, proporciona una página en blanco en lugar de mostrar permisos para un usuario o grupo.
+
+**Solución:**
+Hay disponible una revisión [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) para resolver este problema.
+
 
 ## Paquetes OSGI y paquetes de contenido incluidos{#osgi-bundles-and-content-packages-included}
 
