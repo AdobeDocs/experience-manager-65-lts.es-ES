@@ -16,12 +16,12 @@ ht-degree: 73%
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo. El usuario recibe una notificación y puede realizar las acciones adecuadas:
 
-* [Visualización de notificaciones ](#notifications-of-available-workflow-actions)
-* [Finalización de una etapa de participante ](#completing-a-participant-step)
-* [Delegación de una etapa de participante ](#delegating-a-participant-step)
-* [Realización de una etapa hacia atrás en una etapa de participante ](#performing-step-back-on-a-participant-step)
-* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) ](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Visualización de la carga útil del flujo de trabajo (varios recursos) ](#viewing-the-workflow-payload-multiple-resources)
+* [Visualización de notificaciones &#x200B;](#notifications-of-available-workflow-actions)
+* [Finalización de una etapa de participante &#x200B;](#completing-a-participant-step)
+* [Delegación de una etapa de participante &#x200B;](#delegating-a-participant-step)
+* [Realización de una etapa hacia atrás en una etapa de participante &#x200B;](#performing-step-back-on-a-participant-step)
+* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Visualización de la carga útil del flujo de trabajo (varios recursos) &#x200B;](#viewing-the-workflow-payload-multiple-resources)
 
 ## Notificaciones de acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
