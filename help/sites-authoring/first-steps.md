@@ -8,7 +8,7 @@ exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
 source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -51,7 +51,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear una página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicación de una página {#publishing-a-page}
 

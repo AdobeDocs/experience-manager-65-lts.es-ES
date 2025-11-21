@@ -1,5 +1,5 @@
 ---
-title: Introducción a la plataforma de AEM
+title: Introducción a AEM Platform
 description: Obtenga información sobre la plataforma AEM y sus componentes más importantes, incluida la instalación e implementación de Adobe Experience Manager 6.5 LTS, y sobre su arquitectura, incluida la implementación en la nube de Adobe Managed Services.
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
@@ -8,11 +8,11 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
-# Introducción a la plataforma de AEM{#introduction-to-the-aem-platform}
+# Introducción a AEM Platform{#introduction-to-the-aem-platform}
 
 La plataforma AEM de AEM 6 se basa en Apache Jackrabbit Oak.
 

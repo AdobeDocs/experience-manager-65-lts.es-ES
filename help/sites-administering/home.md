@@ -8,7 +8,7 @@ exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
 source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 74%
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 74%
 
 Obtenga información sobre la administración de AEM 6.5 LTS. Estas guías tratan las características del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
 
-## Artículos clave sobre administración
+## Artículos clave de administración
 
 * [Administración de varios sitios](/help/sites-administering/msm.md)
 * [MSM y traducción](/help/sites-administering/msm-and-translation.md)

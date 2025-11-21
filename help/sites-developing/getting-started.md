@@ -31,13 +31,13 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 La implementación del tutorial utiliza muchas funciones potentes de AEM. El sitio se implementará utilizando:
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
-* [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
+* [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html?lang=es)
 * [IU táctil](/help/sites-developing/touch-ui-concepts.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Plantillas editables](/help/sites-developing/page-templates-editable.md)
 
 Avance por el tutorial antes de profundizar en los conceptos anteriores en detalle.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Una vez que haya completado el [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere la posibilidad de revisar el documento [Conceptos principales de AEM](/help/sites-developing/the-basics.md) para comprender mejor algunas de las tecnologías subyacentes y los paradigmas de desarrollo de AEM.
