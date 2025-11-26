@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ Se ha corregido un problema de accesibilidad por el que los marcadores de posici
 * Los usuarios no pudieron utilizar la función de cronología de los PDF en los formularios de AEM. Este problema afectaba a la capacidad de los usuarios para rastrear los cambios y revisiones de los documentos de forma eficaz. Al cargar cualquier PDF en la sección “Formularios y documentos&quot; del área de AEM Forms, la vista de cronología deja de funcionar. (FORMS-19408)
 * Los usuarios experimentan una excepción de puntero nulo al interactuar con OData. Esto causa interrupciones en los procesos de recuperación de datos. (FORMS-20348)
 * Se ha eliminado la biblioteca google.common.collect tras la eliminación de Guava, una biblioteca Java de código abierto. Esta actualización garantiza una mejor compatibilidad y rendimiento para los clientes empresariales que utilizan Formularios adaptables. (FORMS-17031)
+* Cuando la validación del lado del servidor (SSV) está habilitada, los envíos de formularios pueden fallar. Si encuentra este problema, comuníquese con [Soporte técnico de Adobe](https://business.adobe.com/in/support/main.html) para obtener ayuda. (FORMS-21966)
 
 ### Captcha de Forms
 
