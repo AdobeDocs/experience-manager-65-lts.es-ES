@@ -5,13 +5,12 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb270a983d9d3f7d116a179886daf763e7e2341e
+source-git-commit: fbe90ee89a2c20496800b545ec5637e829e7c7d7
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
 
 ---
-
 
 # Revisiones de Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
@@ -37,7 +36,7 @@ Este artículo enumera las correcciones esenciales implementadas para solucionar
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Revisión2 para AEM Service Pack 6.5 LTS en Windows</a></li>
     <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]revisión-en-complemento/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">revisión2 para AEM Service Pack 6.5 LTS en Linux</a></li>
-     <li>OSX- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">revisión2 para AEM Service Pack 6.5 LTS en OSX</a></li>
+     <li>MacOS- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">revisión2 para AEM Service Pack 6.5 LTS en MacOS</a></li>
     <td>
     <ul>
     <li>Se ha mejorado la fiabilidad del envío de formularios al solucionar un problema en el que los envíos pueden fallar cuando la validación del lado del servidor (SSV) está habilitada. Si tiene algún problema, póngase en contacto con el [Soporte técnico de Adobe Experience Manager Forms] (https://business.adobe.com/in/support/main.html).
