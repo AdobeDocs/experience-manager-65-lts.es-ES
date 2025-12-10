@@ -5,7 +5,7 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fbe90ee89a2c20496800b545ec5637e829e7c7d7
+source-git-commit: 7ea96536f3047e31f4d2122a61def2b068757d6a
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
@@ -49,6 +49,7 @@ Este artículo enumera las correcciones esenciales implementadas para solucionar
   </tr>
   <tbody>
 </table>
+
 
 ## Descargar e instalar una revisión de OSGi {#download-install-hotfix}
 
