@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 65%
+source-wordcount: '2326'
+ht-degree: 66%
 
 ---
 
@@ -109,13 +109,6 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Añada uno o más campos de una sola línea de texto; se puede definir la longitud máxima
 * **Texto multilínea**
    * Un área de texto que puede ser Texto enriquecido, Texto sin formato o Markdown
-
-     >[!NOTE]
-     >
-     >Por motivos de rendimiento, no se recomienda tener más de diez campos de texto enriquecido en un modelo.
-     >
-     >Si es necesario, se recomienda usar [fragmentos de contenido anidados](#fragment-reference-nested-fragments).
-
 * **Número**
    * Adición de uno o más campos numéricos
 * **Booleana**
