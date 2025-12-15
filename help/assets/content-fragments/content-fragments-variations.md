@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 58%
+source-wordcount: '2309'
+ht-degree: 59%
 
 ---
 
@@ -407,12 +407,6 @@ Las variaciones le permiten tomar el contenido **Principal** y variar según el 
 
 Para crear una variación:
 
->[!NOTE]
->
->Las variaciones añaden tiempo de procesamiento a un fragmento de contenido, en el entorno de creación y durante la entrega. Se recomienda mantener el número de variaciones a un mínimo manejable.
->
->Una práctica recomendada es no superar las diez variaciones por fragmento de contenido.
-
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
@@ -474,7 +468,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Principal**&#x200B;a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincroniza el elemento actual de la variación.
 >

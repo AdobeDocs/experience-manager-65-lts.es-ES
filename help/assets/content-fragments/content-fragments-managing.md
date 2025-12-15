@@ -4,10 +4,11 @@ description: Aprenda a utilizar la consola de Assets para administrar los fragme
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 75%
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
@@ -33,6 +34,10 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
 >* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+>[!NOTE]
+>
+>Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!NOTE]
 >

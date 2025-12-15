@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 64%
+source-wordcount: '2355'
+ht-degree: 65%
 
 ---
 
@@ -22,6 +22,10 @@ Para utilizar modelos de fragmentos de contenido, puede:
 1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
 1. [Habilite los modelos de fragmentos de contenido](#enabling-disabling-a-content-fragment-model) para usarlos al crear fragmentos de contenido.
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
+
+>[!NOTE]
+>
+>Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
 
@@ -118,7 +122,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Adición de una casilla de verificación booleana
 * **Fecha y hora**
    * Adición de una fecha u hora
-* **Lista desglosada**
+* **Enumeración**
    * Agregar un conjunto de casillas de verificación, botones de opción o campos desplegables
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
@@ -237,13 +241,13 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
 >[!NOTE]
 >
->AEM tiene una protección contra recurrencias para lo siguiente:
+>AEM tiene una protección contra la periodicidad para lo siguiente:
 >
 >* Referencias de contenido
->Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+>  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
->Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 ### Referencia de contenido {#content-reference}
 
@@ -311,15 +315,15 @@ Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
 
 >[!NOTE]
 >
->Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+>Existe un mecanismo de protección contra la periodicidad. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
->También existe una protección contra la recurrencia para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
+>También existe una protección contra la periodicidad para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
 
-## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
+## Habilitación o deshabilitación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
 
 Para tener un control total sobre el uso de los modelos de fragmentos de contenido, estos tienen un estado que puede establecer.
 
-### Activación de un modelo de fragmento de contenido {#enabling-a-content-fragment-model}
+### Habilitación de un modelo de fragmento de contenido {#enabling-a-content-fragment-model}
 
 Una vez creado un modelo, debe habilitarse para que:
 
@@ -337,7 +341,7 @@ Puede usar la opción **Habilitar** desde:
 * La barra de herramientas superior, cuando se selecciona el Modelo requerido.
 * La Acción rápida correspondiente (pase el ratón sobre el Modelo requerido).
 
-![Activar un borrador o un modelo desactivado](assets/cfm-status-enable.png)
+![Habilitar un borrador o un modelo deshabilitado](assets/cfm-status-enable.png)
 
 ### Desactivación de un modelo de fragmento de contenido {#disabling-a-content-fragment-model}
 
