@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
+source-git-commit: 0a050ebdc32e127a093270be91f1eed59f8f4654
 workflow-type: tm+mt
-source-wordcount: '7476'
+source-wordcount: '7478'
 ht-degree: 98%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ### Formularios
 
-Ya está disponible AEM 6.5 Forms LTS en JEE. Para obtener más información sobre los entornos admitidos, consulte el documento Combinaciones de plataformas compatibles. Los vínculos del instalador están disponibles en la página Versiones de AEM Forms.
+Ya está disponible AEM 6.5 Forms LTS en JEE. Para obtener más información sobre los entornos admitidos, consulte el documento [Plataforma admitida](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms): Combinaciones. Los vínculos del instalador están disponibles en la página [Versiones de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
