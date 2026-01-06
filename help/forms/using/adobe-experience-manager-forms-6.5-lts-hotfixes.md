@@ -4,7 +4,7 @@ description: Proporciona información sobre cómo descargar e instalar una revis
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 504240bdad9e964460a9fcdc555228c7cb02e314
+source-git-commit: 979a817293034d09189417cdf729f476c77cdde3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
@@ -15,6 +15,7 @@ ht-degree: 45%
 # Revisiones de Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 Este artículo enumera las correcciones esenciales implementadas para solucionar problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms 6.5 LTS.
+
 
 >[!NOTE]
 >
