@@ -4,10 +4,11 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
+source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 83%
+source-wordcount: '1577'
+ht-degree: 82%
 
 ---
 
@@ -228,7 +229,7 @@ Esta consulta de ejemplo es una consulta directa para devolver `name` de todas l
 
 **Consulta de muestra**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
@@ -1737,10 +1738,10 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 
 | Nombre | País | Población | Categorías |
 |--- |--- |--- |--- |
-| Basilea | Suiza | 172258 | city:emea |
+| Basilea | Suiza | 172258 | ciudad:emea |
 | Berlín | Alemania | 3669491 | city:capital<br>city:emea |
 | Bucarest | Rumanía | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  EE. UU. |  883306 |  city:beach<br>city:na |
-| San José |  EE. UU. |  102635 |  city:na |
-| Stuttgart |  Alemania |  634830 |  city:emea |
+| San José |  EE. UU. |  102635 |  ciudad:na |
+| Stuttgart |  Alemania |  634830 |  ciudad:emea |
 |  Zúrich |  Suiza |  415367 |  city:capital<br>city:emea |
