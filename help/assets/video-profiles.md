@@ -11,7 +11,7 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 5%
@@ -99,7 +99,7 @@ En la tabla siguiente se identifican los perfiles de codificación de las práct
 
 ## Acerca del uso del recorte inteligente en perfiles de vídeo {#about-smart-crop-video}
 
-Recorte inteligente para vídeo: una función opcional disponible en Perfiles de vídeo es una herramienta que utiliza el poder de la inteligencia artificial en Adobe Sensei. Detecta y recorta automáticamente el punto focal en cualquier vídeo adaptable o vídeo progresivo que haya cargado, independientemente del tamaño.
+Recorte inteligente para vídeo: una función opcional disponible en Perfiles de vídeo es una herramienta que utiliza el poder de la inteligencia artificial en Adobe AI. Detecta y recorta automáticamente el punto focal en cualquier vídeo adaptable o vídeo progresivo que haya cargado, independientemente del tamaño.
 
 Los formatos de vídeo compatibles para el recorte inteligente incluyen MP4, MKV, MOV, AVI, FLV y WMV.
 
@@ -109,7 +109,7 @@ El tamaño máximo de archivo de vídeo admitido para el recorte inteligente es 
 * 30 cuadros por segundo (FPS).
 * Tamaño de archivo de 300 MB.
 
-Adobe Sensei está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, Adobe Sensei y el recorte inteligente admiten un vídeo de 60 FPS solo si dura al menos dos minutos y medio.
+La IA de Adobe está limitada a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, la IA de Adobe y el recorte inteligente admiten un vídeo de 60 FPS solo si dura al menos dos minutos y medio.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 

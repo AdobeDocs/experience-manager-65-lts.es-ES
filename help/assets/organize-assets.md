@@ -6,7 +6,8 @@ role: User
 feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=es) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
@@ -46,9 +47,9 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es an
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
-Con las etiquetas, como metadatos, puede buscar recursos fácilmente, crear colecciones utilizando los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y utilizar algoritmos de inteligencia artificial de Adobe Sensei para la detección de recursos.
+Con las etiquetas, como metadatos, puede buscar recursos fácilmente, crear colecciones mediante los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y utilizar algoritmos de inteligencia artificial de Adobe AI para la detección de recursos.
 
-[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permiten encontrar el recurso correcto en solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, la inteligencia artificial de Adobe y el marco de trabajo de aprendizaje automático, que puede formarse para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras o frases individuales y aplicar automáticamente etiquetas descriptivas a los recursos
+[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permiten encontrar el recurso correcto en solo unos clics. El etiquetado inteligente utiliza Adobe AI, la inteligencia artificial y el marco de trabajo de aprendizaje automático de Adobe, que puede formarse para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras o frases individuales y aplicar automáticamente etiquetas descriptivas a los recursos
 
 Para obtener más información, consulte los siguientes artículos:
 

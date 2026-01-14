@@ -6,7 +6,8 @@ feature: Smart Tags, Search
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Las organizaciones que trabajan con recursos digitales utilizan cada vez más vocabulario controlado por taxonomía en los metadatos de recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para referirse a recursos digitales de una clase determinada y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se identifiquen y recuperen fácilmente.
@@ -30,7 +31,7 @@ Para que el servicio de contenido inteligente aplique las etiquetas correctas, e
 
 Una vez que una etiqueta está preparada y lista, el servicio ahora puede aplicar estas etiquetas a los recursos a través de un flujo de trabajo de etiquetado.
 
-En segundo plano, el servicio de contenido inteligente utiliza el marco de trabajo de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos.
+En segundo plano, el servicio de contenido inteligente utiliza el marco de trabajo de Adobe AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos.
 
 El servicio de contenido inteligente es un servicio en la nube que está hospedado en [!DNL Adobe Developer Console]. Para usarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación de [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
@@ -132,7 +133,7 @@ Puede ejecutar el flujo de trabajo de etiquetado periódicamente o siempre que s
 
 Puede habilitar el Servicio de contenido inteligente para que etiquete periódicamente recursos de una carpeta. Abra la página de propiedades de la carpeta de recursos, seleccione **[!UICONTROL Habilitar etiquetas inteligentes]** en la ficha **[!UICONTROL Detalles]** y guarde los cambios.
 
-Una vez seleccionada esta opción para una carpeta, el servicio de contenido inteligente etiqueta automáticamente los recursos de la carpeta. De forma predeterminada, el flujo de trabajo de etiquetado se ejecuta todos los días a las 12:00 a.m.
+Una vez seleccionada esta opción para una carpeta, el servicio de contenido inteligente etiqueta automáticamente los recursos de la carpeta. De forma predeterminada, el flujo de trabajo de etiquetado se ejecuta todos los días a las 12:00 a. m.
 
 ### Etiquetado bajo demanda {#on-demand-tagging}
 
@@ -199,4 +200,4 @@ También puede asignar una clasificación más alta a una etiqueta para aumentar
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Configurar el etiquetado inteligente](config-smart-tagging.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

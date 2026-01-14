@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1896'
 ht-degree: 19%
 
 ---
 
 # Preparar [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Antes de empezar a etiquetar recursos usando Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para usar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
+Antes de empezar a etiquetar recursos usando Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para usar el servicio inteligente de [!DNL Adobe AI]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
 Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente:
 
 * [Integrar con Adobe Developer Console](#integrate-adobe-io).
@@ -222,7 +222,7 @@ Puede habilitar el Servicio de contenido inteligente para que se imparta formaci
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para entrenar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente a las 12:30 los sábados.
+Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para entrenar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De manera predeterminada, el flujo de trabajo de formación se ejecuta semanalmente a las 12:30 a.m. los sábados.
 
 ### Formación a la carta {#on-demand-training}
 
@@ -270,4 +270,4 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
