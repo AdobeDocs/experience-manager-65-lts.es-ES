@@ -22,4 +22,4 @@ ht-degree: 7%
 
 Adobe Commerce cuenta con un motor de recomendaciones impulsado por Adobe AI. Aprenda a insertar dinámicamente estas recomendaciones de productos en una tienda de Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342986/?captions=spa&learn=on)
