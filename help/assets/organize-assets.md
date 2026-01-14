@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
