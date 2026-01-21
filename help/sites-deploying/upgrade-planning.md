@@ -9,7 +9,8 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -28,7 +29,7 @@ El proceso de actualización de AEM necesita fases de planificación, análisis 
 
 >[!NOTE]
 >
->La actualización a AEM 6.5 LTS es compatible con los últimos 6 Service Packs
+>La actualización a AEM 6.5 LTS está disponible para todos los paquetes de servicio 6.5 admitidos.
 
 Es importante asegurarse de que está ejecutando un sistema operativo compatible, un tiempo de ejecución de Java™, un httpd y una versión de Dispatcher. Para obtener más información, consulte [requisitos técnicos de AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). La actualización de estos componentes debe tenerse en cuenta en el plan de actualización y debe realizarse antes de actualizar AEM.
 
