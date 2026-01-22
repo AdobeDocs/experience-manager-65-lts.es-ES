@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -44,14 +44,14 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
 * [Actualización a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
-* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
+* [Introducción a AEM Platform](/help/sites-deploying/platform.md)
 
 ## Conceptos básicos {#basic-concepts}
 
@@ -137,7 +137,7 @@ En la siguiente sección describimos la **instalación independiente**. Para obt
 
    Ubicación de instalación de UNIX®: **/opt/aem**
 
-   Ubicación de instalación de Windows: **`C:\Program Files\aem`**
+   Ubicación de instalación de Windows: **`C:\aem`**
 
    Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, Adobe hace referencia a esta ubicación de forma genérica como:
 
@@ -253,7 +253,7 @@ Esta carpeta contiene los siguientes scripts de shell bash de UNIX®:
 
 También hay **`bat`** archivos equivalentes para Windows. Para obtener información más detallada, consulte:
 
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 
 AEM se inicia y redirige automáticamente el explorador web a la página adecuada, normalmente la página de inicio de sesión; por ejemplo:
 
@@ -265,7 +265,7 @@ AEM se inicia y redirige automáticamente el explorador web a la página adecuad
 Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/first-steps.md)
-* [Administración &#x200B;](/help/sites-administering/home.md)
+* [Administración ](/help/sites-administering/home.md)
 * [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
@@ -277,12 +277,12 @@ La sección anterior le proporcionará una buena comprensión de los conceptos b
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
 * [Actualización a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
-* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
+* [Introducción a AEM Platform](/help/sites-deploying/platform.md)
 
