@@ -265,7 +265,7 @@ AEM se inicia y redirige automáticamente el explorador web a la página adecuad
 Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/first-steps.md)
-* [Administración ](/help/sites-administering/home.md)
+* [Administración &#x200B;](/help/sites-administering/home.md)
 * [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
