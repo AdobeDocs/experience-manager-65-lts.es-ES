@@ -193,7 +193,7 @@ Los dos ejemplos siguientes ilustran la definición:
 
 AEM utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
-También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/?lang=es) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

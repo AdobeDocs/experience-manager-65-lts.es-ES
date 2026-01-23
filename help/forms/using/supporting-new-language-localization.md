@@ -22,7 +22,7 @@ ht-degree: 87%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=es).
 
 ## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
 
