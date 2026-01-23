@@ -6,13 +6,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: b6d27aa78b195a6131b43c83dc4df74b797490fa
+exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 2%
+source-wordcount: '1388'
+ht-degree: 3%
 
 ---
-
 
 # Configuración del contenedor y el modo de diseño{#configuring-layout-container-and-layout-mode}
 
@@ -193,7 +193,7 @@ Los dos ejemplos siguientes ilustran la definición:
 
 AEM utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
-También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/?lang=es) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

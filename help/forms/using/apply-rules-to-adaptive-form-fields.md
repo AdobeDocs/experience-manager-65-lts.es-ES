@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 87%
+source-wordcount: '1120'
+ht-degree: 83%
 
 ---
 
@@ -94,7 +95,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
    >
    >No arrastre y suelte los campos **[!UICONTROL Nombre]** ni **[!UICONTROL ID del cliente]** hasta la propiedad tablename.property correspondiente (por ejemplo, customerdetails.name). Ayuda a evitar actualizar el nombre y el ID del cliente por error.
 
-1. Arrastre y suelte el campo **[!UICONTROL ID de cliente]** desde la pestaña [!UICONTROL Objetos de formulario] hasta el cuadro de diálogo **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla prefijado (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL ID]** en este caso de uso identifica de forma exclusiva un registro de la tabla **detalles del cliente**.
+1. Arrastre y suelte el campo **[!UICONTROL ID de cliente]** desde la pestaña [!UICONTROL Objetos de formulario] hasta el cuadro de diálogo **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla prefijado (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro de la tabla **customerdetails**.
 1. Seleccione **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
 1. Previsualice el formulario adaptable. Recuperar detalles de un cliente, actualizar la dirección de envío y enviar el formulario. Cuando recupere los detalles del mismo cliente de nuevo, se mostrará la dirección de envío actualizada.
 

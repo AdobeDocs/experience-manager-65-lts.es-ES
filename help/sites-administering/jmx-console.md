@@ -1,5 +1,5 @@
 ---
-title: Supervisión de recursos del servidor mediante la consola JMX
+title: Monitorización de recursos del servidor mediante la consola JMX
 description: Obtenga información sobre cómo monitorizar los recursos del servidor mediante la consola JMX.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4829'
+ht-degree: 1%
 
 ---
 
-# Supervisión de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
+# Monitorización de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La consola JMX permite supervisar y administrar los servicios en el servidor de CRX. Las secciones siguientes resumen los atributos y las operaciones expuestos a través del marco de trabajo JMX.
 
@@ -690,7 +691,7 @@ Supervise los servicios de cada agente de replicación. Al crear un agente de re
 * **Dominio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nombre:** sin valor
-* **Propiedades:** {id=&quot;*Nombre*&quot;}, donde *Nombre* es el valor de la propiedad Nombre del agente.
+* **Propiedades:** {id="*Name*"}, donde *Nombre* es el valor de la propiedad Nombre del agente.
 
 ### Atributos {#attributes-3}
 

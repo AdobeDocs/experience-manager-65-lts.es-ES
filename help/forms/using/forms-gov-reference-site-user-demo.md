@@ -6,10 +6,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a9cbab12-62a6-4779-955f-2858166945e6
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 58%
+ht-degree: 56%
 
 ---
 
@@ -80,7 +81,7 @@ También se incluyen los siguientes grupos:
 1. **Vínculos**: En la parte superior del menú principal del sitio de We.Gov.
 1. **Instrucciones para el usuario**: un conjunto de pasos numéricos a seguir cuando se navega por la historia del usuario.
 1. **Portal de Forms**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*.
-1. **Vista móvil**:El usuario de We.Gov debe replicar una vista móvil con un explorador cuyo tamaño se ha cambiado.
+1. **Vista móvil**:We.Gov del usuario para replicar una vista móvil con un explorador cuyo tamaño se ha cambiado.
 1. **Vista de escritorio**: el usuario de We.Gov para ver la demostración en un ordenador portátil o de escritorio.
 1. **Formulario de prefiltrado**: un formulario de la página de inicio del sitio de We.Gov.
 1. **Formulario adaptable**: el formulario de solicitud de la demostración de We.Gov.
@@ -223,12 +224,12 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
 1. Utilice la siguiente **lógica dinámica** para mostrar la función dinámica utilizando la lista desplegable **Situación familiar**:
 
    1. **Soltero**: mostrar el panel Familiares.
-   1. **Casado**: mostrar el panel Cónyuge a cargo.
+   1. **Casado**: mostrar el panel matrimonial dependiente
    1. **Divorciado**: mostrar el panel Familiares.
    1. **Viudo**: mostrar el panel Familiares.
-   1. **¿Tiene hijos?**: botón de selección (Sí/No) para mostrar el panel Hijos a cargo.
+   1. **¿Tiene hijos?**: botón de opción (Sí/No) para mostrar el panel secundario dependiente.
 
-      1. Botón (Agregar/quitar) para agregar/quitar varios paneles Hijos a cargo.
+      1. Botón (Agregar/quitar) para agregar/quitar varios paneles secundarios dependientes.
 
 1. Haga clic en la flecha derecha de la barra de menús gris.
 1. Haga clic en el botón Guardar de la parte inferior.
@@ -289,7 +290,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
 
 ![Funcionario público George](/help/forms/using/assets/george_lang-1.png)
 
-**Esta sección:** George es un analista empresarial de la agencia pública en la que Aya ha solicitado la prestación. George tiene un solo panel desde el que puede ver todas las solicitudes de prestaciones que se le han asignado para su revisión.
+**Esta sección:** George es un analista empresarial de la agencia pública en la que Aya ha solicitado la prestación. George tiene un solo panel de control desde el que puede ver todas las solicitudes de prestaciones que se le han asignado para su revisión.
 
 ### Bandeja de entrada de AEM (George) {#george-user-story-aem-inbox}
 

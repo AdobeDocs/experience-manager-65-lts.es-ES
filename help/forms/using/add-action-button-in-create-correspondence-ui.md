@@ -9,10 +9,10 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 97%
+source-wordcount: '1853'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
        </customAction>
    ```
 
-   ![etiqueta customAction &#x200B;](assets/5_acmextensionsconfig_xml.png)
+   ![etiqueta customAction ](assets/5_acmextensionsconfig_xml.png)
 
    La etiqueta modelExtension tiene un conjunto de etiquetas secundarias customAction que configuran la acción, los permisos y el aspecto del botón de acción. A continuación se muestra la lista de etiquetas de configuración customAction:
 
@@ -107,7 +107,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
    |---|---|
    | name | Nombre alfanumérico de la acción que se va a realizar. El valor de esta etiqueta es obligatorio, debe ser único (dentro de la etiqueta modelExtension) y debe comenzar con una letra. |
    | etiqueta | La etiqueta que se mostrará en el botón de acción |
-   | información de objeto | Texto de información del objeto del botón, que se muestra cuando el usuario pasa el ratón por encima del botón. |
+   | información de objeto | Texto de información del objeto del botón, que se muestra cuando el usuario pasa el puntero por encima del botón. |
    | styleName | Nombre del estilo personalizado que se aplica en el botón de acción. |
    | permissionName | La acción correspondiente solo se muestra si el usuario tiene el permiso especificado por permissionName. Cuando especifique permissionName como `forms-users`, todos los usuarios tendrán acceso a esta opción. |
    | actionHandler | Nombre completo de la clase ActionHandler a la que se llama cuando el usuario hace clic en el botón. |
@@ -122,7 +122,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
 
 1. Haga clic en **Guardar todo**.
 
-#### Cree una carpeta “locale” con un archivo de propiedades en la rama /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Cree una carpeta de configuración regional “locale” con un archivo de propiedades en la rama /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 El archivo ACMExtensionsMessages.properties incluye etiquetas y mensajes de información de objeto de varios campos en la interfaz de usuario Crear correspondencia. Para que funcionen las acciones/botones personalizados, realice una copia de este archivo en la rama /apps.
 
@@ -150,7 +150,7 @@ El archivo ACMExtensionsMessages.properties incluye etiquetas y mensajes de info
 
    El archivo ACMExtensionsMessages.properties se copia en la carpeta locale.
 
-1. Para localizar las etiquetas del botón/acción personalizados agregados recientemente, cree el archivo ACMExtensionsMessages.properties para el “locale” relevante en `/apps/fd/cm/config/defaultApp/locale/`.
+1. Para localizar las etiquetas del botón/acción personalizados agregados recientemente, cree el archivo ACMExtensionsMessages.properties para la configuración regional relevante en `/apps/fd/cm/config/defaultApp/locale/`.
 
    Por ejemplo, para localizar la acción/botón personalizado creado en este artículo, cree un archivo llamado ACMExtensionsMessages_fr.properties con la siguiente entrada:
 
@@ -264,7 +264,7 @@ La administración de la acción/botón al hacer clic en la acción/botón inclu
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
@@ -415,7 +415,7 @@ Para obtener más información, consulte [Conectar AEM Forms con Adobe LiveCycle
 
 1. Proporcione los siguientes parámetros en el archivo de configuración:
 
-   * **crx.serverUrl**=https:/host:port/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/host:port/[ruta de acceso de contexto]/[URL de AEM]
    * **crx.username**= nombre de usuario de Experience Manager
    * **crx.password**= contraseña de Experience Manager
    * **crx.appRoot**=/content/apps/cm
