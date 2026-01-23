@@ -117,7 +117,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Cree un nodo `languages` `nt:unstructured` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale>``de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 
