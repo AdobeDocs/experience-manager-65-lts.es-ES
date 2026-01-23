@@ -40,7 +40,7 @@ Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Vide
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo de 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
-Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
+Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carga de recursos para utilizarlos con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 

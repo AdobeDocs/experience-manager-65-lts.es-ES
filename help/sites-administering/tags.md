@@ -44,8 +44,8 @@ Algunas de las funciones de las etiquetas en AEM incluyen:
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja
    * Un área de nombres de etiqueta es una etiqueta de hoja o una etiqueta contenedora
 
-* El [componente de búsqueda](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
-* El [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
+* El [componente de búsqueda](https://helpx.adobe.com/es/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
+* El [componente Teaser](https://helpx.adobe.com/es/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
 * Si el etiquetado es un aspecto importante del contenido
 
    * asegúrese de empaquetar las etiquetas con las páginas que las utilizan

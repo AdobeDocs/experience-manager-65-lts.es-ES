@@ -28,7 +28,7 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperarán de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes en [!DNL Experience Manager] mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [Experience Manager desktop app](https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/release-notes).
+Los registros de actividad que se mostrarán en la cronología se recuperarán de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes en [!DNL Experience Manager] mediante [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [Experience Manager desktop app](https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/release-notes).
 
 >[!NOTE]
 >
