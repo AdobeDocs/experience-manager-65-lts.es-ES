@@ -1,17 +1,18 @@
 ---
-title: El Verificador De Vínculos
+title: El comprobador de vínculos
 description: El Verificador de vínculos ayuda a validar los vínculos internos y externos y permite la reescritura de vínculos.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# El Verificador De Vínculos {#the-link-checker}
+# El comprobador de vínculos {#the-link-checker}
 
 Los autores de contenido no deberían tener que preocuparse por validar cada vínculo que incluyen en sus páginas de contenido.
 
@@ -34,7 +35,7 @@ El Verificador de vínculos valida [vínculos internos](#internal) y [vínculos 
 Los vínculos internos son vínculos a otro contenido del repositorio de AEM. Los vínculos internos se pueden agregar utilizando el selector de rutas en RTE o utilizando un componente personalizado. Por ejemplo:
 
 * Su página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing.html` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es)
+* Contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing.html` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Los vínculos internos se validan en cuanto el autor de contenido añade un vínculo interno a una página. Si el vínculo deja de ser válido:
 
@@ -48,7 +49,7 @@ Los vínculos internos se validan en cuanto el autor de contenido añade un vín
 Los vínculos externos son vínculos a contenido fuera del repositorio de AEM. Se pueden añadir vínculos externos mediante RTE o mediante un componente personalizado. Por ejemplo:
 
 * Su página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es)
+* Contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Los vínculos externos se validan para la sintaxis y comprobando su disponibilidad. Esta comprobación se realiza de forma asíncrona en un entorno interno configurable. Si el Verificador de vínculos encuentra un vínculo externo no válido:
 
@@ -78,7 +79,7 @@ Se muestra la siguiente información:
 * **Referente**: la página de contenido que contiene el vínculo externo
    * Esto solo se rellena [si está configurado.](#configuring)
 * **Última comprobación** - La última vez que el Verificador de vínculos validó el vínculo externo
-   * La frecuencia con la que se comprueban los vínculos [&#x200B; es configurable.](#configuring)
+   * La frecuencia con la que se comprueban los vínculos [ es configurable.](#configuring)
 * **Último estado**: el último código de estado de HTML devuelto cuando el vínculo comprobado comprobó por última vez el vínculo externo
 * **Última disponibilidad** - Tiempo desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
 * **Último acceso**: tiempo transcurrido desde que se accedió por última vez a la página con el vínculo externo en la interfaz de creación

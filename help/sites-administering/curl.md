@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -60,7 +61,7 @@ En los pasos siguientes se describe cómo hacerlo utilizando la creación de una
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copie el comando cURL en un editor de texto y quite todos los encabezados del comando, que comienzan por `-H` (resaltado en azul en la imagen siguiente) y agregue el parámetro de autenticación adecuado como `-u <user>:<password>`.
+1. Copie el comando cURL en un editor de texto y quite todos los encabezados del comando, que empiezan por `-H` (resaltado en azul en la imagen siguiente) y agregue el parámetro de autenticación adecuado, como `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -289,7 +290,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 Consulte [Habilitar CRXDE Lite en AEM](/help/sites-administering/enabling-crxde-lite.md) para obtener más información.
 
-### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+### Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Consulte [Recopilación de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) para obtener más información.
 

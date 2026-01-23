@@ -5,10 +5,11 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -22,12 +23,12 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Eliminar
 * Descargar (incluidas representaciones)
 * Publicación
-* Cancelar publicación
+* Cancelar la publicación
 * Aprobar
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperarán de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes en [!DNL Experience Manager] mediante [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=es).
+Los registros de actividad que se mostrarán en la cronología se recuperarán de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes en [!DNL Experience Manager] mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [Experience Manager desktop app](https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/release-notes).
 
 >[!NOTE]
 >

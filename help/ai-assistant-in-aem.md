@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 03bd86504b5399163190cf88e814d95753b78767
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cl
 
 El siguiente vídeo de 3 minutos y 25 segundos ofrece una guía paso a paso del AI Assistant en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475361/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Obtenga acceso al asistente de IA en AEM{#get-access}
 
@@ -59,7 +59,7 @@ Para obtener acceso al asistente de IA en AEM, los clientes deben tener lo sigui
 
 ## Ámbito {#scope}
 
-El ámbito actual de AI Assistant en AEM se centra en abordar las preguntas de conocimiento de productos para AEMr as a Cloud Service. Este ámbito incluye un amplio soporte para áreas clave. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+El ámbito actual de AI Assistant en AEM se centra en abordar las preguntas de conocimiento de productos para AEM as a Cloud Service. Este ámbito incluye un amplio soporte para áreas clave. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Superficies**: disponible en AEM Experience Hub, IU de creación y Cloud Manager.
 * **Capacidades**: conocimiento del producto y primera parada para solucionar problemas y obtener instrucciones, creación automatizada de vales de soporte y búsqueda.
@@ -88,7 +88,7 @@ El conocimiento del producto engloba conceptos y temas derivados de la documenta
 | Aprendizaje puntual | <ul><li>¿Qué es el editor universal?</li><li>¿Cómo se crea un programa en Cloud Manager?</li></ul> |
 | Abrir detección | <ul><li>¿Cómo se utiliza el editor universal?</li><li>¿Hay alguna manera de copiar contenido de un entorno a otro?</li></ul> |
 | Resolución de problemas | <ul><li>¿Por qué no puedo acceder al editor universal?</li><li>¿Por qué falla mi canalización?</li></ul> |
-| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico &#x200B;**<br>**Ejemplos** |
+| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico **<br>**Ejemplos** |
 | Creación automatizada de tickets de asistencia que captura el historial y el contexto de chat del asistente de IA | <ul><li>Crea un ticket de asistencia para mí.</li></ul> |
 | Recuperar el estado del ticket de asistencia | <ul><li>Muéstrame todos los boletos de soporte que he abierto.</li><li>Muéstrame el estado del ticket &quot;E-----------&quot;</li></ul> |
 
@@ -128,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 

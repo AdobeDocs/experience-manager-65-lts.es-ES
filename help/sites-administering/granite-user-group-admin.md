@@ -8,13 +8,13 @@ content-type: reference
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Operaciones de Granite: administración de usuarios y grupos{#granite-operations-user-and-group-administration}
 

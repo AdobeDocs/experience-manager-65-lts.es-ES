@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -166,4 +167,3 @@ Con AEM se proporcionan varios componentes para la personalización. Algunos per
 | Cerrar sesión | Indica el usuario que ha iniciado sesión actualmente y le proporciona un vínculo para cerrar la sesión. |
 | Nube de etiquetas | Una nube de etiquetas para mostrar una selección de etiquetas presentada gráficamente dentro del sitio web |
 | Teaser | Un fragmento de contenido (normalmente una imagen) que se muestra en una página principal para &quot;provocar&quot; a los usuarios el acceso al contenido subyacente. |
-

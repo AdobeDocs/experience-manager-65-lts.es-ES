@@ -9,16 +9,17 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 0%
+source-wordcount: '1450'
+ht-degree: 1%
 
 ---
 
 # Asignación de datos de componente con propiedades de Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en la **variable CQ** correspondiente. Cuando se agrega un componente de este tipo a un marco de trabajo, el marco de trabajo muestra la lista de variables de CQ para que pueda agregarlas a la **variable de Analytics** correspondiente.
+Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en la **variable CQ** correspondiente. Cuando se agrega un componente de este tipo a un marco de trabajo, este muestra la lista de variables de CQ para que se puedan asignar a la **variable de Analytics** correspondiente.
 
 ![aa-11](assets/aa-11.png)
 

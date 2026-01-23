@@ -6,7 +6,7 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 4%
@@ -30,7 +30,7 @@ La incorporación de Contenido de AEM y Commerce es un proceso de dos pasos:
 
 Descargue e instale el complemento AEM Commerce para AEM 6.5 LTS desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 
-Inicie e instale el paquete de servicio AEM 6.5 LTS requerido. Se recomienda instalar el último Service Pack disponible.
+Inicie e instale el paquete de servicio AEM 6.5 LTS necesario. Se recomienda instalar el último Service Pack disponible.
 
 >[!NOTE]
 >

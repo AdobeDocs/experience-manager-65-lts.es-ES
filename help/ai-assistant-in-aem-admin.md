@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: 70e2c645d3c663ea566c1f24816a33092c332b92
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 4%
@@ -53,7 +53,7 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
 ## 1 - Crear un nuevo perfil de producto en Adobe Admin Console{#create-profile}
 
-1. Siga las instrucciones detalladas de [Crear un nuevo perfil de producto en Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-platform/access-control/ui/create-profile) que se encuentra en la documentación de Experience Platform.
+1. Siga las instrucciones detalladas de [Crear un nuevo perfil de producto en Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) que se encuentra en la documentación de Experience Platform.
 
 1. Al crear el nuevo perfil de producto, puede utilizar los siguientes valores sugeridos para el asistente de IA.
 
@@ -69,7 +69,7 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
 El proceso de asignación de permisos personalizados a perfiles de producto sigue el flujo de trabajo estándar de permisos personalizados de Adobe Cloud Manager.
 
-Artículo de referencia: [Asignar permisos personalizados al nuevo perfil de producto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Artículo de referencia: [Asignar permisos personalizados al nuevo perfil de producto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. En Admin Console, haga clic en el nombre del perfil de producto recién creado (`AI Assistant in AEM`)
 
@@ -139,7 +139,7 @@ Puede utilizar un grupo de usuarios de AEM existente si cumple los requisitos de
 
 1. En la página **Grupos de usuarios** para el **Asistente de IA en AEM**, haga clic en la ficha **Usuarios** y, a continuación, haga clic en **Agregar usuarios**.
 
-   ![Asistente de IA en la página de grupos de usuarios de AEM, que muestra la ficha Usuarios y la botón Agregar usuarios](/help/assets/assets-ai/ai-assistant-add-users.png)
+   ![Asistente de IA en la página de grupos de usuarios de AEM, que muestra la ficha Usuarios y el botón Agregar usuarios](/help/assets/assets-ai/ai-assistant-add-users.png)
 
 1. En la página **`Add users to this user group`**, busque y seleccione usuarios que necesiten acceso al Asistente de IA en AEM.
 
@@ -198,5 +198,5 @@ Haga que un usuario del grupo asignado haga lo siguiente:
 ## Ver también
 
 * [Asistente de IA en AEM](/help/ai-assistant-in-aem.md)
-* [Control de acceso de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/access-control/ui/overview)
+* [Control de acceso de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->

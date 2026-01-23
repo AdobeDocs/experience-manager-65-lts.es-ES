@@ -11,10 +11,10 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >Este artículo se aplica a los componentes de base obsoletos basados en los componentes de correo electrónico de AEM.
 >
->Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
+>Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 
@@ -98,7 +98,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 
 /libs/mcm/campaign/components/image
 
-| **Prácticas recomendadas** | **Implementación** |
+| **Prácticas recomendadas** | **Implementation** |
 |---|---|
 | Agregar atributos *alt* a imágenes | El atributo *alt* se ha definido como obligatorio para el componente de imagen. |
 | Usar *jpg* en lugar del formato *png* para imágenes | El componente de imagen siempre sirve las imágenes como JPG. |
@@ -128,7 +128,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 
 ### Genérica {#generic}
 
-| **Prácticas recomendadas** | **Implementación** |
+| **Prácticas recomendadas** | **Implementation** |
 |---|---|
 | Utilice el validador W3C para corregir el código HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se ha validado el código. Solo para el tipo de documento transitorio XHTML, falta el atributo xmlns que falta para el elemento `<html>`. |
 | Evite utilizar JavaScript o Flash: estas tecnologías suelen ser incompatibles con los clientes de correo electrónico. | JavaScript o Flash no se utilizan en la plantilla del boletín informativo. |

@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 3%
+source-wordcount: '1487'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +51,7 @@ Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesi�
 
 ### Configuración de AEM para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Los [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=es) de Adobe Analytics recopilan, procesan y almacenan datos asociados con su grupo de informes de Adobe Analytics. Configure AEM para que utilice el centro de datos que aloja su grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
+Los [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) de Adobe Analytics recopilan, procesan y almacenan datos asociados con su grupo de informes de Adobe Analytics. Configure AEM para que utilice el centro de datos que aloja su grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
 
 Si es necesario, use lo siguiente para ser enrutado al centro de datos correcto: `https://api.omniture.com/`.
 
@@ -173,7 +174,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 
 1. En la consola **Sites**, seleccione la página que desee configurar con seguimiento.
 1. Abra **[Propiedades de página](/help/sites-authoring/editing-page-properties.md)**, ya sea directamente desde la consola o desde el editor de páginas.
-1. Abra la pestaña **&#x200B; Cloud Services**.
+1. Abra la pestaña ** Cloud Services**.
 
 1. Utilice la lista desplegable **Agregar configuración** para seleccionar **Adobe Analytics** de las opciones disponibles. Si se hereda, desactívelo antes de que el selector esté disponible.
 
@@ -182,7 +183,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 1. Seleccione **Guardar y cerrar**.
 1. Para activar la página y cualquier configuración o archivo conectado, **[publique](/help/sites-authoring/publishing-pages.md)** la página.
 1. El paso final es visitar la página en la instancia de publicación y buscar una palabra clave (por ejemplo, berenjena) usando el componente **Search**.
-1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es).
+1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
 1. Utilizando el ejemplo proporcionado, la llamada debe contener el valor introducido (es decir, berenjena) en eVar7 y la lista de eventos debe contener event3.
 
 ### Vistas de la página {#page-views}

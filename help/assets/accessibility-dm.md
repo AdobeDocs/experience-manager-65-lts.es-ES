@@ -8,7 +8,7 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -52,12 +52,12 @@ Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](
 
 Todos los componentes listos para usar de [!DNL Dynamic Media] visores admiten la accesibilidad del teclado para sus clientes.
 
-Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=es) en la Guía de referencia de visores de Dynamic Media.
+Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) en la Guía de referencia de visores de Dynamic Media.
 
 ## Compatibilidad con tecnología de asistencia en [!DNL Dynamic Media] visores {#assistive-technology-support-for-dm-viewers}
 
 Todos los componentes del visor [!DNL Dynamic Media] admiten los roles y atributos ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia, como lectores de pantalla.
-Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=es) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=es#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
+Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
 
 ## Compatibilidad con subtítulos opcionales en Dynamic Media {#closed-caption-support}
 

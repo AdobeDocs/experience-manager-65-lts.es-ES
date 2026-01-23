@@ -9,10 +9,10 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 25%
+source-wordcount: '770'
+ht-degree: 26%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 25%
 El desarrollo de proyectos de AEM Commerce basados en Commerce integration framework (CIF) para AEM sigue las mismas reglas y prácticas recomendadas que otros proyectos de AEM. Primero revise estos:
 
 - [Guía del usuario de desarrollo de AEM](/help/sites-developing/getting-started.md)
-- [Conceptos principales de AEM](/help/sites-developing/the-basics.md)
+- [Componentes principales de AEM](/help/sites-developing/the-basics.md)
 - [Desarrollo de AEM: directrices y prácticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
-- [Cómo crear proyectos de AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
+- [Cómo generar proyectos AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Desarrollo local para AEM Commerce {#local}
 
@@ -42,7 +42,7 @@ Lo siguiente debe instalarse de manera local:
 - AEM local 6.5 LTS
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
-- [Nodo LTS](https://nodejs.org/en/)
+- [Nodo LTS](https://nodejs.org/es/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
@@ -139,7 +139,7 @@ Los componentes principales de CIF se pueden utilizar en cualquier proyecto incl
 
 ### Tienda de referencia Venia en AEM
 
-Una segunda opción para el inicio de un proyecto CIF es clonar y utilizar la [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia). La Tienda de referencia de Venia de AEM es una aplicación de tienda de referencia que muestra el uso de los componentes principales del CIF de AEM. Está diseñada como un conjunto de ejemplos de prácticas recomendadas y un punto de partida potencial para desarrollar su propia funcionalidad.
+Una segunda opción para el inicio de un proyecto CIF es clonar y utilizar la [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia). AEM Venia Reference Store es una aplicación de escaparate de referencia que muestra el uso de los componentes principales del CIF de AEM. Está diseñada como un conjunto de ejemplos de prácticas recomendadas y un punto de partida potencial para desarrollar su propia funcionalidad.
 
 Para comenzar con la Tienda de referencia de Venia, simplemente clone el [repositorio Git](https://github.com/adobe/aem-cif-guides-venia) y comience a personalizar el proyecto según sus necesidades.
 

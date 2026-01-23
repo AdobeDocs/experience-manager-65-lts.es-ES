@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 006e91327d15dd4dd0482230d6ad8535e924698e
+exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 2%
+source-wordcount: '1745'
+ht-degree: 5%
 
 ---
 
@@ -43,8 +44,8 @@ Algunas de las funciones de las etiquetas en AEM incluyen:
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja
    * Un área de nombres de etiqueta es una etiqueta de hoja o una etiqueta contenedora
 
-* El [componente de búsqueda](https://helpx.adobe.com/es/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
-* El [componente Teaser](https://helpx.adobe.com/es/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
+* El [componente de búsqueda](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
+* El [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
 * Si el etiquetado es un aspecto importante del contenido
 
    * asegúrese de empaquetar las etiquetas con las páginas que las utilizan
@@ -68,7 +69,7 @@ Para acceder a la consola de etiquetado:
 
 ![administrar_etiquetas_mediante_thetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
-### Creación de un área de nombres {#creating-a-namespace}
+### Creación de un espacio de nombres {#creating-a-namespace}
 
 Para crear un área de nombres, seleccione el icono **`Create Namespace`**.
 
@@ -100,7 +101,7 @@ Al seleccionar un área de nombres u otra etiqueta, están disponibles las sigui
 * [Mover](#moving-tags)
 * [Combinar](#merging-tags)
 * [Publicación](#publishing-tags)
-* [Cancelar publicación](#unpublishing-tags)
+* [Cancelar la publicación](#unpublishing-tags)
 * [Eliminar](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -251,7 +252,7 @@ Los permisos de etiqueta son [&#39;seguros (de forma predeterminada)&#39;](/help
       * por ejemplo, vaya a http://localhost:4502/useradmin
 
    * en el panel izquierdo, seleccione el grupo (o usuario) para el que se debe otorgar [permiso de lectura](/help/sites-administering/security.md#permissions)
-   * en el panel derecho, busque el **Path &#x200B;** to the Tag Namespace
+   * en el panel derecho, busque el **Path **to the Tag Namespace
 
       * por ejemplo, `/content/cq:tags/mycommunity`
 

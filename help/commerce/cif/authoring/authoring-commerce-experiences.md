@@ -4,9 +4,10 @@ description: El complemento de CIF amplía la creación de Adobe Experience Mana
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-El complemento de CIF amplía la creación de AEM con funciones específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
+El complemento de CIF amplía la creación de AEM con funciones específicas del comercio. Esto permite a los autores crear y administrar de forma eficaz las experiencias relacionadas con el comercio mediante el acceso a los datos y al contenido del producto sin abandonar el contexto.
 
 ## Seleccionadores {#pickers}
 
@@ -63,7 +64,7 @@ La pestaña &quot;Assets&quot; del panel lateral del editor ofrece acceso a los 
 
 ![Panel lateral de datos del producto](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-Analógicamente, los productos se pueden enviar en una página (que crea un componente teaser de productos como predeterminado) o en componentes (actualmente compatibles con teaser y carrusel de productos).
+De forma análoga a los recursos, los productos se pueden arrastrar y soltar en una página (lo que crea un componente teaser de productos como predeterminado) o en componentes (actualmente compatibles con teaser y carrusel de productos).
 
 ### Adición de vínculos en campos de texto mediante RTE {#rte}
 
@@ -79,7 +80,7 @@ Esto crea un vínculo de marcador de posición que se sustituye por un vínculo 
 
 ### Acceso al contenido del producto asociado {#associated-content}
 
-Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. Esta pestaña permite a los autores acceder rápidamente al contenido de AEM que se ha etiquetado con el producto (para obtener más información, consulte [enriquecer datos de productos con contenido de AEM asociado](./enrich-product-associated-content.md)). Esta pestaña ofrece desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de la pestaña &quot;Assets&quot;.
+Si el editor universal reconoce 1:n productos en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. Esta pestaña permite a los autores acceder rápidamente al contenido de AEM que se ha etiquetado con el producto (para obtener más información, consulte [enriquecer datos de productos con contenido de AEM asociado](./enrich-product-associated-content.md)). Esta pestaña ofrece desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de la pestaña &quot;Assets&quot;.
 
 ![Panel lateral de datos del producto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -93,7 +94,7 @@ Los componentes mostrarán un indicador visual si la fecha utilizada está ensay
 
 ![Indicador de ensayo](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## OmniSearch {#omnisearch}
 
 El uso de Omnisearch es una forma sencilla para que los profesionales encuentren contenido de AEM y datos del catálogo de productos mediante la búsqueda de texto completo. Omnisearch ejecutará la búsqueda de texto completo en AEM y en el backend de Commerce para encontrar objetos de catálogo de productos en el backend de Commerce y en el contenido de AEM. Los resultados de AEM también incluyen contenido etiquetado con datos de productos o categorías.
 

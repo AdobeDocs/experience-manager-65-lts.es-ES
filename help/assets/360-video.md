@@ -9,7 +9,8 @@ docset: aem65
 feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -39,7 +40,7 @@ Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Vide
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo de 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
-Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edit-360-vr-video.html).
+Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carga de recursos para utilizarlos con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -50,7 +51,7 @@ Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edi
 
 **Cargar recursos para usarlos con el visor de vídeo 360:**
 
-1. Se ha creado una carpeta dedicada a su recurso de vídeo 360.
+1. Cree una carpeta dedicada a su recurso de vídeo 360.
 1. [Aplicar un perfil de vídeo adaptable a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    La representación de contenido de vídeo de 360 bits exige mayores requisitos para la resolución de vídeo de origen y para la resolución de representaciones codificadas que el contenido de vídeo estándar que no es de 360 bits.
@@ -120,7 +121,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
    * Arrastre el puntero del ratón por el vídeo si desea modificar el ángulo de visualización de la escena estática.
    * Seleccione el botón **[!UICONTROL Reproducir]** del vídeo si desea que comience la reproducción. A medida que se reproduce el vídeo, arrastre el puntero del mouse (ratón) por el vídeo para modificar el ángulo de visualización.
 
-   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano &#x200B;](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
+   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
