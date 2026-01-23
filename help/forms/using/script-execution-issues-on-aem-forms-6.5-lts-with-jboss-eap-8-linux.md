@@ -1,15 +1,15 @@
 ---
 title: La ejecución de scripts falla en AEM Forms 6.5 LTS con JBoss EAP 8 (Linux)
-description: Al configurar JBoss EAP 8.0 (AEM Forms 6.5.1 LTS) en un entorno Linux, puede encontrar ciertos errores al ejecutar scripts de shell o archivos de inicio
+description: Al configurar JBoss EAP 8.0 en un entorno Linux, puede encontrar ciertos errores al ejecutar scripts de shell o archivos de inicio
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '236'
 ht-degree: 1%
 
 ---

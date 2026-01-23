@@ -1,15 +1,15 @@
 ---
 title: Configuración del almacén de credenciales de base de datos (basado en Elytron)
-description: JBoss EAP 8 admite almacenes de credenciales de Elytron para la administración segura de contraseñas de bases de datos en AEM Forms, con scripts automatizados para la configuración del modo de dominio.
+description: JBoss EAP 8 admite almacenes de credenciales de Elytron para la administración segura de contraseñas de bases de datos en AEM Forms para la configuración del modo de dominio.
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
