@@ -1,13 +1,13 @@
 ---
-title: Características e interfaces accesibles de  [!DNL Experience Manager Assets]
+title: Características e interfaces accesibles de  [!DNL Adobe Experience Manager Assets]
 description: Obtenga información sobre cómo las características de accesibilidad de [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] ayudan a los usuarios con discapacidades.
 feature: Asset Management
 role: User, Architect, Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: 61a1bb55f4b8da8c421f51ee203ca8e433a73a64
+source-git-commit: 55a82f12f0ddd952e720bed374e5bd3515648419
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1882'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ Possible topics to cover in this article are below.
 
 # Características de accesibilidad en [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] permite a los creadores y editores de contenido ofrecer experiencias increíbles en la web. Adobe se esfuerza por incluir a los creadores con discapacidades al mejorar la accesibilidad de [!DNL Experience Manager]. El software se mejora continuamente para satisfacer las necesidades de todos los tipos de usuarios y se adhiere a los estándares mundiales que incluyen personas con deficiencias visuales, auditivas, de movilidad u otras.
+[!DNL Adobe Experience Manager] permite a los creadores y editores de contenido ofrecer experiencias increíbles en la web. Adobe se esfuerza por incluir a los creadores con discapacidades al mejorar la accesibilidad de [!DNL Experience Manager]. El software se mejora continuamente para satisfacer las necesidades de todo tipo de usuarios. Se adhiere a los estándares mundiales que incluyen a individuos con deficiencias visuales, auditivas, de movilidad u otras.
 
 [!DNL Experience Manager] publica información de conformidad que describe los estándares a los que se adhiere, describe las características de accesibilidad del producto y describe el nivel de conformidad. Los informes de conformidad con la accesibilidad ayudan a los usuarios de [!DNL Experience Manager] a comprender el nivel de cumplimiento de varios estándares. Las mejoras realizadas en [!DNL Assets] permiten a todos los usuarios utilizar las interfaces fácilmente mediante el teclado, el lector de pantalla, los ampliadores y otras tecnologías de asistencia.
 
 [!DNL Experience Manager] proporciona distintos niveles de compatibilidad con los siguientes estándares:
 
-* [Directrices de accesibilidad de contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [Directrices de accesibilidad de contenido web (WCAG) 2.1](https://www.w3.org/TR/wcag/).
 * [Se ha revisado la Sección 508 de la Ley de Rehabilitación](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Iniciativa de accesibilidad - Aplicaciones de Internet enriquecidas accesibles (WAI-ARIA) por W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -59,14 +59,14 @@ Los usuarios con discapacidades suelen depender del hardware y el software para 
 
 En [!DNL Experience Manager], las características de accesibilidad satisfacen dos requisitos clave de [!DNL Experience Manager] usuarios y sus clientes.
 
-* Para los diseñadores y creadores de contenido, hay funciones para crear y publicar contenido accesible que utilizan a su vez sus clientes y visitantes del sitio web. Las personas con discapacidad utilizan el contenido con la ayuda de tecnologías de asistencia. Para obtener más información, consulte [directrices de accesibilidad web](/help/managing/web-accessibility.md).
+* Para los diseñadores y creadores de contenido, hay funciones para crear y publicar contenido accesible que utilizan a su vez sus clientes y visitantes del sitio web. Las personas con discapacidad utilizan el contenido con la ayuda de tecnologías de asistencia. Para obtener más información, consulte [Directrices de accesibilidad web](/help/managing/web-accessibility.md).
 * [!DNL Experience Manager] también permite a los usuarios y administradores con discapacidades acceder a la interfaz de usuario y a los controles para crear y administrar contenido. Las personas con discapacidades pueden usar tecnologías de asistencia para navegar, usar y administrar la capacidad de [!DNL Assets].
 
-Las características principales de [!DNL Assets] son más accesibles que antes y se actualizan con regularidad para mejorar el cumplimiento de los estándares globales. Las operaciones de CRUD en [!DNL Assets] tienen algún grado de accesibilidad integrado en ellas. Los flujos de trabajo de DAM, como la adición, administración, búsqueda y distribución de recursos, son accesibles con la ayuda de métodos abreviados de teclado, texto del lector de pantalla, contraste de color, etc.
+Las características principales de [!DNL Assets] son más accesibles que antes y se actualizan con regularidad para mejorar el cumplimiento de los estándares globales. Las operaciones de CRUD en [!DNL Assets] tienen incorporado algún grado de accesibilidad. Los flujos de trabajo de DAM, como la adición, administración, búsqueda y distribución de recursos, son accesibles con la ayuda de métodos abreviados de teclado, texto del lector de pantalla, contraste de color, etc.
 
 ## Compatibilidad con el uso del teclado {#keyboard-use}
 
-Muchos elementos de la interfaz de usuario en los que se puede hacer clic o que se pueden llevar a cabo acciones con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar las acciones adecuadas. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para almacenar en déclencheur un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y almacenarlos en déclencheur mediante el teclado. Por ejemplo, los usuarios pueden abrir la cronología de un recurso en el lado izquierdo de la interfaz de usuario navegando hasta el control de interfaz de usuario con un teclado, seleccionando `Return` y `Alt + 2` método abreviado de teclado.
+Muchos elementos de la interfaz de usuario en los que se puede hacer clic o que se pueden llevar a cabo acciones con un puntero también se pueden utilizar con un teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar las acciones adecuadas. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para almacenar en déclencheur un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y almacenarlos en déclencheur mediante el teclado. Por ejemplo, los usuarios pueden abrir la cronología de un recurso en el lado izquierdo de la interfaz de usuario. Busque el control de interfaz de usuario con un teclado y seleccione `Return`, y seleccione `Alt + 2` método abreviado de teclado.
 
 <!-- TBD items:
 
@@ -84,11 +84,11 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 |---|---|---|
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha arriba y abajo | Navegue hasta archivos y carpetas dentro de la misma jerarquía. |
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha izquierda y derecha | Vaya a los archivos y carpetas que se encuentran por encima o por debajo de la carpeta actual. |
-| Explorando carpetas en [!DNL Assets] | `/` | Invoque la búsqueda abriendo el cuadro Omnisearch. |
+| Explorando carpetas en [!DNL Assets] | `/` | Invoque una búsqueda abriendo el cuadro Omnisearch. |
 | Consola [!DNL Assets] | &grave; | Conmutar raíles laterales |
 | Consola [!DNL Assets] | `Alt + 1` | Abra el árbol de contenido. |
 | Consola [!DNL Assets] | `Alt + 2` | Abra el carril izquierdo de [!UICONTROL Navegación]. |
-| Consola [!DNL Assets] | `Alt + 3` | Mostrar [!UICONTROL línea de tiempo] de un recurso seleccionado. |
+| Consola [!DNL Assets] | `Alt + 3` | Mostrar una [!UICONTROL cronología] de un recurso seleccionado. |
 | Consola [!DNL Assets] | `Alt + 4` | Abra las referencias de Live Copy del recurso seleccionado. |
 | Consola [!DNL Assets] | `Alt + 5` | Inicie la búsqueda y busque dentro de la carpeta seleccionada. |
 | Se ha seleccionado el recurso o la carpeta | Retroceso | Eliminar el recurso o la carpeta seleccionados. |
@@ -97,19 +97,19 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 | Se ha seleccionado el recurso o la carpeta | `m` | Mover el recurso seleccionado. |
 | Se ha seleccionado el recurso o la carpeta | `Ctrl + c` | Copie el recurso seleccionado. |
 | Se ha seleccionado el recurso o la carpeta | `Esc` | Cancelar la selección. |
-| Se abre el cuadro de diálogo y está enfocado | `Esc` | Cerrar cuadro de diálogo. |
+| El cuadro de diálogo se abre y está enfocado | `Esc` | Cierre el cuadro de diálogo. |
 | Dentro de una carpeta en DAM | `Ctrl + v` | Pegue el recurso copiado. |
 | Consola [!DNL Assets] | `Ctrl + A` | Seleccionar todos los recursos. |
 | Páginas de propiedades de recursos | `Ctrl + S` | Guardar cambios. |
 | Consola [!DNL Assets] | `?` | Consulte una lista de métodos abreviados de teclado. |
 
-## Iniciar sesión y navegar por la interfaz de usuario de [!DNL Assets] {#login}
+## Iniciar sesión y navegar por la interfaz de usuario [!DNL Assets] {#login}
 
-Los usuarios pueden utilizar el teclado para desplazarse a y rellenar el campo de inicio de sesión para iniciar sesión. Los mensajes de error debido a combinaciones incorrectas de nombre de usuario y contraseña en la página de inicio de sesión los anuncian los lectores de pantalla cada vez que se produce el error.
+Los usuarios pueden utilizar el teclado para desplazarse a y rellenar el campo de inicio de sesión para iniciar sesión. Los lectores de pantalla anuncian mensajes de error en la página de inicio de sesión cada vez que un usuario introduce una combinación incorrecta de nombre de usuario y contraseña.
 
-Después de iniciar sesión, los usuarios de DAM pueden navegar dentro de la interfaz de usuario [!DNL Assets] mediante el teclado. Los elementos de la interfaz de usuario, como el carril izquierdo, los menús, el perfil de usuario, la barra de búsqueda, los archivos y carpetas y las opciones de administración y configuración, se pueden navegar mediante el teclado. El orden de navegación del teclado es de izquierda a derecha y de arriba a abajo. Al navegar con un teclado, una opción procesable cuando está enfocado se resalta con mejor contraste de color y se narra mediante un lector de pantalla. Cuando corresponde, un lector de pantalla anuncia el estado (por ejemplo, expandido, contraído y de estado mixto) de las opciones enfocadas del menú. Además, el lector de pantalla anuncia el propósito de la opción procesable, en lugar de, por ejemplo, la apariencia o la ubicación de la interfaz.
+Después de iniciar sesión, los usuarios de DAM pueden navegar dentro de la interfaz de usuario [!DNL Assets] con un teclado. Los elementos de la interfaz de usuario, como el carril izquierdo, los menús, el perfil de usuario, la barra de búsqueda, los archivos y carpetas y las opciones de administración y configuración, se pueden navegar mediante el teclado. El orden de navegación del teclado es de izquierda a derecha y de arriba a abajo. Cuando los usuarios navegan con un teclado, la interfaz de usuario resalta la opción procesable enfocada con un contraste de color mejorado y los lectores de pantalla la narran. Cuando corresponde, los lectores de pantalla anuncian el estado (por ejemplo, expandido, contraído o mixto) de las opciones del menú enfocado. Además, el lector de pantalla anuncia el propósito de la opción procesable, en lugar de, por ejemplo, la apariencia o la ubicación de la interfaz.
 
-Si un usuario expande la ayuda o la opción de perfil de usuario desde el menú, el lector de pantalla anuncia la opción o el estado correspondientes. Si un usuario amplía la opción de perfil de usuario, las opciones disponibles se pueden seleccionar mediante un teclado. Por ejemplo, un administrador puede suplantar a un usuario diferente. Si un usuario busca una cadena de la opción [!UICONTROL Ayuda], un narrador anuncia &quot;Buscando en la Ayuda&quot; para indicar que hay una búsqueda en curso.
+Si un usuario expande la opción de ayuda o perfil de usuario desde el menú, el lector de pantalla anuncia la opción o el estado adecuado. Si un usuario amplía la opción de perfil de usuario, las opciones disponibles se pueden seleccionar mediante un teclado. Por ejemplo, un administrador puede suplantar a un usuario diferente. Si un usuario busca una cadena de la opción [!UICONTROL Ayuda], un narrador anuncia &quot;Buscando en la Ayuda&quot; para indicar que hay una búsqueda en curso.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -120,7 +120,7 @@ Si un usuario expande la ayuda o la opción de perfil de usuario desde el menú,
 
 ## Examinar recursos y ver información relacionada {#browse}
 
-En la interfaz de usuario de [!DNL Assets], los usuarios pueden utilizar el teclado para examinar la lista de recursos digitales existentes en el repositorio de DAM, obtener una vista previa o descargar un recurso, ver representaciones generadas, cambiar vistas, ver las representaciones generadas, ver la cronología y el historial de versiones, ver comentarios y referencias, y ver y administrar metadatos.
+En la interfaz de usuario de [!DNL Assets], los usuarios pueden utilizar el teclado para examinar los recursos digitales en el repositorio de DAM y obtener una vista previa o descargar un recurso. Los usuarios también pueden ver las representaciones generadas, cambiar de vista y revisar la cronología, el historial de versiones, los comentarios y las referencias. Además, los usuarios pueden ver y administrar metadatos.
 
 <!-- TBD: Not sure about the following list items mean:
 
@@ -138,7 +138,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la accesibilidad:
 
-* El lector de pantalla anuncia alternativas de texto que ilustran el propósito o la funcionalidad de los iconos en lugar de sus nombres.
+* Un lector de pantalla anuncia alternativas de texto que ilustran el propósito o la funcionalidad de los iconos en lugar de sus nombres.
 * Los usuarios pueden acceder a las opciones interactivas de la interfaz de usuario y centrarlas en la lista de recursos Referencias mediante las teclas del teclado.
 * Los lectores de pantalla anuncian los elementos de cada fila en la vista de lista como elementos de la misma fila.
 * Al navegar con la tecla `Tab`, el enfoque puede moverse a la opción de cierre en la vista previa de la versión.
@@ -163,15 +163,13 @@ Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la acc
 
 Muchas tareas de administración de recursos, como las operaciones de CRUD, la descarga de un recurso y la adición de metadatos, son accesibles en varios grados. [!DNL Assets] le permite realizar las tareas utilizando diversas tecnologías de asistencia, como un lector de pantalla y un teclado.
 
-Vea un vídeo de demostración sobre cómo usar un teclado para [examinar el repositorio y descargar un recurso](https://youtu.be/K3dgqMRQJys).
+Para las operaciones de metadatos que suelen realizar las funciones, como los especialistas en marketing y los administradores, las siguientes funciones mejoran la accesibilidad:
 
-Para las operaciones de metadatos que suelen realizar funciones como especialistas en marketing y administradores, las siguientes funciones mejoran la accesibilidad:
-
-* Ahora se puede acceder a la opción [!UICONTROL Guardar y cerrar] en la página del recurso [!UICONTROL Propiedades] mediante el teclado.
+* Ahora se puede acceder a la opción [!UICONTROL Guardar y cerrar] de la página del recurso [!UICONTROL Propiedades] mediante el teclado.
 * Los lectores de pantalla anuncian las opciones para eliminar las etiquetas seleccionadas en la pestaña [!UICONTROL Básico] del recurso [!UICONTROL Propiedades].
 * Los usuarios pueden utilizar el cuadro de diálogo emergente Selector de fecha con un teclado. El elemento de interfaz de usuario Selector de fecha se utiliza para establecer las horas de activación y desactivación, y seleccionar la fecha.
 * La funcionalidad de arrastrar mediante el teclado funciona correctamente en [!UICONTROL Editor de esquemas de metadatos] en el modo de exploración del lector de pantalla.
-* Un usuario puede mover el enfoque mediante el teclado al campo Agregar usuario o grupo bajo [!UICONTROL Grupo de usuarios cerrado] en la ficha [!UICONTROL Permisos] de la carpeta [!UICONTROL Propiedades].
+* Un usuario puede usar el teclado para mover el enfoque al campo **Agregar usuario o grupo**.
 
 ## Búsqueda de recursos digitales {#search-assets}
 
@@ -182,14 +180,14 @@ La funcionalidad de búsqueda se hace accesible mediante la siguiente funcionali
 * El título de página, disponible para un lector de pantalla, ayuda a identificar la página como página de búsqueda de recursos.
 * Los usuarios buscan recursos desde el campo Omnisearch. Los usuarios pueden abrirlo mediante la navegación mediante el teclado o mediante el método abreviado de teclado `/`.
 * Los usuarios pueden empezar a escribir la palabra clave de búsqueda y, a continuación, seleccionar las sugerencias automáticas utilizando las teclas de flecha. La sugerencia resaltada se puede seleccionar con la clave `Return` y se buscan los recursos para la sugerencia seleccionada.
-* Los lectores de pantalla pueden identificar y anunciar las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no están seleccionadas y se atraviesan) en el panel Filtros al filtrar los resultados de búsqueda.
+* Los lectores de pantalla pueden identificar y anunciar casillas de verificación de estado mixto en el panel Filtros cuando los usuarios filtran los resultados de búsqueda. En un estado mixto, la casilla de verificación de primer nivel se marca hasta que los usuarios seleccionan todos los predicados anidados.
 * El enfoque del usuario se desplaza a las opciones de búsqueda una vez cerrado el cuadro Omnisearch.
 
 Al filtrar los resultados de búsqueda:
 
 * La página de resultados de búsqueda tiene un título informativo para comprender mejor a los usuarios del lector de pantalla.
-* Un lector de pantalla anuncia las opciones en el filtro de búsqueda como acordeones expandibles.
-* Los lectores de pantalla anuncian los predicados con opciones de estado mixto.
+* Un lector de pantalla anuncia las opciones del filtro de búsqueda como acordeones ampliables.
+* Los lectores de pantalla anuncian predicados que incluyen opciones de estado mixto.
 
 ## Compartir recursos {#share-assets}
 
@@ -203,7 +201,7 @@ Al compartir recursos, las siguientes funcionalidades mejoran la accesibilidad:
 * En el cuadro de diálogo de uso compartido de vínculos, al navegar en el modo de exploración, los lectores de pantalla,
 
    * No narre la información de la tabla cuando se carga el cuadro de diálogo.
-   * Puede navegar a todas las sugerencias de la lista.
+   * Vaya a todas las sugerencias de la lista.
    * Narre las sugerencias mostradas para los campos Añadir dirección de correo electrónico y Buscar.
 
 ## Documentación accesible {#accessible-docs}
@@ -211,16 +209,13 @@ Al compartir recursos, las siguientes funcionalidades mejoran la accesibilidad:
 [!DNL Experience Manager] proporciona documentación accesible para su uso por personas con discapacidades. A continuación, se ayuda a que la oferta de contenido sea accesible por ahora, mientras que Adobe sigue mejorando la plantilla y el contenido:
 
 * Los lectores de pantalla pueden leer el texto.
-* Las imágenes e ilustraciones tienen texto alternativo disponible.
+* Las imágenes y las ilustraciones tienen texto alternativo disponible.
 * Se puede navegar con el teclado.
 * Las relaciones de contraste ayudan a resaltar algunas partes del sitio web de documentación.
 
 ## Proporcionar comentarios {#a11y-feedback}
 
-Para proporcionar comentarios, formular preguntas y solicitar mejoras del producto, relacionadas con la accesibilidad, utilice los siguientes métodos:
-
-* Rellene el formulario en [www.adobe.com/accessibility/feedback.html](https://www.adobe.com/accessibility/feedback.html).
-* Envíenos un correo electrónico a access@adobe.com.
+Para proporcionar comentarios, formular preguntas y solicitar mejoras del producto relacionadas con la accesibilidad, utilice los siguientes métodos y envíenos un correo electrónico a `access@adobe.com`.
 
 >[!MORELIKETHIS]
 >
