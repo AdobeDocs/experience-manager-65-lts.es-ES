@@ -1,5 +1,5 @@
 ---
-title: Actualizar código y personalizaciones
+title: Actualización de código y personalizaciones
 description: Obtenga más información sobre la actualización de código y personalizaciones en AEM.
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,14 +11,14 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 0%
+source-wordcount: '1097'
+ht-degree: 1%
 
 ---
 
-# Actualizar código y personalizaciones{#upgrading-code-and-customizations}
+# Actualización de código y personalizaciones{#upgrading-code-and-customizations}
 
 Al planificar una actualización, se deben investigar y abordar las siguientes áreas de una implementación.
 
@@ -92,6 +92,7 @@ Para AEM 6.5 LTS, hay de nuevo dos tipos de Uber Jars:
 
 * AEM 6.5 LTS no incluye la biblioteca de guayaba de Google de forma predeterminada, la versión requerida se puede instalar según los requisitos.
 * El paquete Sling XSS ahora utiliza la biblioteca Java HTML Sanitizer, y el uso del método `XSSAPI#filterHTML()` debe usarse para representar el contenido de HTML de forma segura y no para pasar datos a otras API.
+* Actualización de la configuración del filtro SSL HTTP Apache Felix: en AEM 6.5 LTS, el paquete `org.apache.felix.http.sslfilter` se ha actualizado de la versión 1.2.6 a la 2.0.2. Como parte de esta actualización, el PID de configuración de OSGi `org.apache.felix.http.sslfilter.SslFilter` ha quedado obsoleto y se ha reemplazado con un nuevo PID: `org.apache.felix.http.sslfilter.Configuration`. Si se utiliza el filtro SSL en la implementación, las configuraciones existentes deben migrarse manualmente al nuevo PID mediante el Administrador de configuración OSGi (`/system/console/configMgr`). Si no se migra la configuración, es posible que el filtro SSL no se aplique como se espera después de la actualización.
 
 ## Procedimiento de prueba {#testing-procedure}
 
