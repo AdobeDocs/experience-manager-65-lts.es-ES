@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -75,8 +75,6 @@ Para obtener más información, consulte la guía de instalación y configuraci�
 
 Para obtener más información, consulte **Migración de javax a jakarta Namespace**.
 
-**Migración de javax a yakarta Namespace**
-
 #### Migración de `javax` a `jakarta` área de nombres
 
 A partir de **AEM Forms 6.5 LTS SP1**, solo se admiten los servidores de aplicaciones que implementan **Jakarta Servlet API 5/6**. Con **Jakarta EE 9 y versiones posteriores**, todas las API pasaron del área de nombres `javax.{}` a `jakarta.`.
@@ -110,9 +108,9 @@ Puede migrar los DSC personalizados existentes mediante uno de los siguientes m�
 
 A continuación, se muestran ejemplos comunes de cambios en el área de nombres necesarios durante la migración:
 
-Antes (javax)    Después (yakarta)
-javax.servlet. **jakarta.servlet**
-javax.servlet.http. **jakarta.servlet.http.**
+* Antes (javax)    Después (yakarta)
+* javax.servlet. **jakarta.servlet**
+* javax.servlet.http. **jakarta.servlet.http.**
 
 **Asignaciones de importación de muestra**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 ### Actualizar {#upgrade}
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
-* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Prácticas recomendadas para las actualizaciones del Service Pack de AEM 6.5 LTS
 
