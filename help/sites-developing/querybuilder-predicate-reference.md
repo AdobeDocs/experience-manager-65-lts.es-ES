@@ -382,7 +382,7 @@ Admite la extracción de facetas. Proporciona bloques para cada valor de propied
 
 * **profundidad**
 
-  Varios niveles comodín por debajo de los cuales puede existir la propiedad y la ruta relativa. Por ejemplo, `property=size depth=2` comprueba el nodo y su tamaño, node/&amp;ast;/size y node/&amp;ast;/&amp;ast;/size.
+  Varios niveles comodín por debajo de los cuales puede existir la propiedad y la ruta relativa. Por ejemplo, `property=size depth=2` comprueba el nodo y su tamaño, node/&ast;/size y node/&ast;/&ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 
