@@ -4,10 +4,7 @@ description: JBoss EAP 8 admite almacenes de credenciales de Elytron para la adm
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
+source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
