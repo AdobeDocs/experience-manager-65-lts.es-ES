@@ -228,7 +228,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración en la nu
 **Referencias:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configuración de Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Configuración de Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Servicio en la nube de OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ Para instalar y configurar AEM Forms con Adobe Forms, los usuarios de la herrami
 
 Revise lo siguiente antes de leer más instrucciones:
 
-* [Configurar el servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Configurar el servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/es/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Creación de una configuración de IMS: parte 1 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ Una vez completada la configuración de IMS, puede proceder a revisar la configu
 
 1. Para esta configuración, los dos valores de la casilla de verificación quedaron vacíos.
 
-   Para obtener más información sobre estas opciones, consulte [Configurar el servicio en la nube](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Para obtener más información sobre estas opciones, consulte [Configurar el servicio en la nube](https://experienceleague.adobe.com/es/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Configurar la configuración de nube (producción de AFC de `We.Finance`) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ Una vez completada la configuración de IMS, puede continuar con la creación de
 
 1. Para esta configuración, los dos valores de la casilla de verificación quedaron vacíos.
 
-   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/es/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Prueba de la conversión de formularios (Solicitud de We.Gov) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ Una vez establecida la configuración, los usuarios pueden probarla cargando un 
 
 #### Problemas conocidos y notas {#known-issues-notes}
 
-El servicio de conversión de formularios automatizada incluye una serie de [prácticas recomendadas, patrones complejos conocidos](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) y [problemas conocidos](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Revise esta información antes de empezar a utilizar el servicio de conversión automatizada de formularios de AEM Forms.
+El servicio de conversión de formularios automatizada incluye una serie de [prácticas recomendadas, patrones complejos conocidos](https://experienceleague.adobe.com/es/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) y [problemas conocidos](https://experienceleague.adobe.com/es/docs/aem-forms-automated-conversion-service/using/known-issues#). Revise esta información antes de empezar a utilizar el servicio de conversión automatizada de formularios de AEM Forms.
 
 1. Cree el formulario con la opción Generar formularios adaptables sin enlaces de datos habilitados si desea enlazar el formulario a un FDM después de la conversión.
 
