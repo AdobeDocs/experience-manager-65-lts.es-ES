@@ -1,5 +1,5 @@
 ---
-title: Lista de paquetes obsoletos desinstalados después de la actualización
+title: Lista de paquetes obsoletos desinstalados tras la actualización
 description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,15 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
+exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
+source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 8%
 
 ---
 
-# Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# Lista de paquetes obsoletos desinstalados tras la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 Al actualizar a AEM 6.5 LTS, se desinstalarán automáticamente los siguientes paquetes, según la versión de Service Pack de AEM 6.5 en la que se haya realizado la actualización:
 
@@ -100,5 +101,5 @@ Los siguientes paquetes no están incluidos en una instancia nueva de AEM 6.5 LT
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (se puede reemplazar con la versión compatible con AEM 6.5 LTS)
+* com.adobe.cq.core.wcm.components.core (se puede reemplazar con [AEM 6.5 LTS compatible version](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (se puede reemplazar con la versión compatible con AEM 6.5 LTS)
