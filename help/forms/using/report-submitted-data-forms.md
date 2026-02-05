@@ -1,28 +1,29 @@
 ---
-title: API para trabajar con formularios enviados en el portal de formularios
-description: AEM Forms proporciona una API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
+title: API para trabajar con formularios enviados en el portal de Forms
+description: AEM Forms proporciona una API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 98%
+source-wordcount: '512'
+ht-degree: 76%
 
 ---
 
-# API para trabajar con formularios enviados en el portal de formularios {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API para trabajar con formularios enviados en Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms proporciona una API que puede utilizar para consultar los datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
+AEM Forms proporciona una API que puede utilizar para consultar los datos de formularios enviados a través del portal de Forms. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
 
 >[!NOTE]
 >
->Los usuarios que invoquen las API deben agregarse al grupo de revisores tal como se describe en [Asociar revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
+>Los usuarios que invocan las API deben agregarse al grupo de revisores. Consulte [Asociación de revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Devuelve una lista de todos los formularios aptos.
 
@@ -56,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Devuelve los detalles de todos los formularios enviados. Sin embargo, puede usar parámetros de URL para limitar los resultados.
 
@@ -84,11 +85,11 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (opcional)</td>
-   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <strong>jcr:lastModified</strong>, que ordena los resultados en función de la última hora de modificación.</td>
+   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <code>jcr:lastModified</code>, que ordena los resultados según la última hora de modificación.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (opcional)</td>
-   <td>Especifica el orden para ordenar los resultados. El valor predeterminado es <strong>desc</strong>, que ordena los resultados en orden descendente. Puede especificar <code>asc</code> para ordenar los resultados en orden ascendente.</td>
+   <td>Especifica el orden para ordenar los resultados. El valor predeterminado es <code>desc</code>, que ordena los resultados en orden descendente. Puede especificar <code>asc</code> para ordenar los resultados en orden ascendente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
@@ -96,7 +97,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
-   <td>Busca el valor especificado en las propiedades del formulario y devuelve formularios con valores coincidentes. El valor predeterminado es <strong>""</strong>.</td>
+   <td>Busca el valor especificado en las propiedades del formulario y devuelve formularios con valores coincidentes. El valor predeterminado es <code>""</code>.</td>
   </tr>
  </tbody>
 </table>
@@ -126,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## PUBLICAR `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Agrega un comentario a la instancia de envío especificada.
 
@@ -157,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Devuelve todos los comentarios publicados en la instancia de envío especificada.
 
@@ -195,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## PUBLICAR `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Actualiza el valor de la propiedad especificada de la instancia de formulario enviada especificada.
 

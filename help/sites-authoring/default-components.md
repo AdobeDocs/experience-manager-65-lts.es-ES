@@ -4,18 +4,19 @@ description: Adobe Experience Manager incluye varios componentes listos para usa
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 48cdca14c4e993281ed8c0a4a364aebe7a4611ad
+exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 38%
+source-wordcount: '376'
+ht-degree: 21%
 
 ---
 
 # Componentes{#components}
 
-Adobe Experience Manager (AEM) incorpora varios componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
+Adobe Experience Manager (AEM) incorpora varios componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Los agrupan por un área funcional principal denominada grupo de componentes para ayudar en el filtrado.
 
-Los componentes están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Para ayudar en el filtrado, los componentes se agrupan por área funcional principal (es decir, grupo de componentes).
+Los componentes están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Agrupe los componentes por su área funcional principal (el grupo de componentes) para ayudar en el filtrado.
 
 >[!NOTE]
 >
@@ -23,7 +24,7 @@ Los componentes están disponibles cuando [edita una página](/help/sites-author
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
-## Uso general   {#general-usage}
+## Uso general {#general-usage}
 
 Los componentes están disponibles en la pestaña **Componentes** del panel lateral del editor de página al [editar una página](/help/sites-authoring/editing-content.md).
 
@@ -37,9 +38,9 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 Para obtener más información sobre cómo agregar componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
-* **We.Retail**: incluye los componentes principales procesados como proxy para usarlos con la [implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).
+* **WeRetail**: incluye los componentes principales procesados como proxy para usarlos con la [implementación de referencia de WeRetail](/help/sites-developing/we-retail.md).
 
-* **We.Retail Commerce**: incluye componentes de comercio como carros de compras y cuadrículas de productos
+* **WeRetail Commerce**: incluye componentes de comercio como carros de compras y cuadrículas de productos
 
 * **General**: incluye el contenedor de diseño y el fragmento de experiencia
 
@@ -51,11 +52,11 @@ La [Consola de componentes](/help/sites-authoring/default-components-console.md)
 
 Las siguientes páginas proporcionan vínculos a información adicional e importante sobre los componentes:
 
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
+* [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
 ### Configuración de componentes {#configuring-components}
 
 Además de los componentes a los que los autores pueden acceder en una instalación estándar, también hay otros componentes disponibles.
 
-* Si la página se basa en una plantilla moderna, editable y recomendada, puede [editar la plantilla](/help/sites-authoring/templates.md), habilitar o deshabilitar estas y editar los parámetros de componentes específicos.
-* Si su página está basada en una plantilla estática, puede usar [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitar o deshabilitar estas y editar los parámetros de componentes específicos.
+* Si la página se basa en una plantilla moderna, editable y recomendada, puede [cambiar la plantilla](/help/sites-authoring/templates.md), habilitarla o deshabilitarla y editar los parámetros de componentes específicos.
+* Si la página está basada en una plantilla estática, puede usar [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitarlas o deshabilitarlas y editar los parámetros de componentes específicos.

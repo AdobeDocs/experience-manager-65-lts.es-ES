@@ -1,5 +1,5 @@
 ---
-title: Integrar la interfaz de usuario de Crear correspondencia con su portal personalizado
+title: Integración de la solución Crear correspondencia con su portal personalizado
 description: Aprenda a integrar la interfaz de usuario de Crear correspondencia con su portal personalizado
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,22 +8,23 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 46%
 
 ---
 
-# Integrar la interfaz de usuario de Crear correspondencia con su portal personalizado{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integración de la solución `Create Correspondence` con su portal personalizado{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Información general {#overview}
 
-Este artículo explica cómo puede integrar la solución Crear correspondencia con su entorno.
+Este artículo detalla cómo puede integrar la solución `Create Correspondence` con su entorno.
 
 ## Invocación basada en URL {#url-based-invocation}
 
-Una forma de llamar a la aplicación Crear correspondencia desde un portal personalizado es preparar la URL con los siguientes parámetros de solicitud:
+Una forma de llamar a la aplicación `Create Correspondence` desde un portal personalizado es preparar la dirección URL con los siguientes parámetros de solicitud:
 
 * el identificador de la plantilla de carta (con el parámetro cmLetterId)
 
@@ -38,16 +39,16 @@ Por ejemplo, el portal personalizado prepararía la dirección URL como\
 
 >[!NOTE]
 >
->Antes de llamar a la aplicación Crear correspondencia, guarde y cargue los datos para llamar a la interfaz de usuario de Crear correspondencia en la URL de datos determinada. Puede hacerlo desde el propio portal personalizado o a través de otro proceso de back-end.
+>Antes de llamar a la aplicación `Create Correspondence`, guarde y cargue los datos para llamar a la interfaz de usuario de `Create Correspondence` en la dirección URL de datos especificada. Este proceso se puede realizar desde el propio portal personalizado o a través de otro proceso de back-end.
 
 ## Invocación basada en datos en línea {#inline-data-based-invocation}
 
-Otra forma (y más segura) de llamar a la aplicación Crear correspondencia es simplemente visitar la URL en https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html mientras se envían los parámetros y los datos para llamar a la aplicación Crear correspondencia como una petición POST (ocultándolos al usuario final). Eso significa también que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible ni lo ideal en el caso del método anterior.
+Otra forma más segura de llamar a la aplicación `Create Correspondence` es ir a la dirección URL en https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html. Ejecute esta dirección URL al enviar los parámetros y datos para llamar a la aplicación `Create Correspondence` como una petición POST que los oculta al usuario final. Este flujo de trabajo también significa que ahora puede pasar los datos XML para la aplicación `Create Correspondence` en línea (como parte de la misma solicitud, utilizando el parámetro `cmData`). Este flujo de trabajo no era posible ni ideal en el caso del método anterior.
 
 ### Parámetros para especificar una carta {#parameters-for-specifying-letter}
 
 | **Nombre** | **Tipo** | **Descripción** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | Cadena | El identificador de la instancia de carta. |
 | cmLetterId | Cadena | El nombre de la plantilla de carta. |
 
@@ -65,17 +66,17 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Los datos XML de un archivo de fuente utilizando protocolos básicos como cq, ftp, http o file.<br /> </td> 
+   <td>Datos XML de un archivo de origen mediante protocolos básicos, como cq, ftp, http o file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Cadena</td> 
-   <td>El uso de los datos XML disponibles en la instancia de carta.</td> 
+   <td>Uso de los datos xml disponibles en la instancia de carta.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Booleano</td> 
-   <td>Permite reutilizar los datos de prueba adjuntos en un diccionario de datos.</td> 
+   <td>Para reutilizar los datos de prueba adjuntos en un diccionario de datos.</td> 
   </tr>
  </tbody>
 </table>
@@ -104,4 +105,4 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
  </tbody>
 </table>
 
-Si utiliza el protocolo http o cq para cmDataURL, la URL de http/cq debe ser accesible de forma anónima.
+Si usa el protocolo http o cq para `cmDataURL`, la dirección URL de `http/cq` debe ser accesible de forma anónima.
