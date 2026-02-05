@@ -4,7 +4,7 @@ description: Busque la configuración del almacén de credenciales de base de da
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Información general
 
 Esta guía describe la **configuración del almacén de credenciales de la base de datos** para AEM Forms JEE en JBoss/Red Hat EAP en **modo independiente**. Esto es necesario cuando se realiza una instalación manual.
+
 
 **Esta guía describe:**
 

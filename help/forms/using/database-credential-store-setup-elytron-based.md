@@ -4,7 +4,7 @@ description: JBoss EAP 8 admite almacenes de credenciales de Elytron para la adm
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Configurar el almacén de credenciales de base de datos mediante Elytron
 
 JBoss EAP 8 usa **almacenes de credenciales de Elytron** para administrar de forma segura las contraseñas de base de datos para implementaciones de AEM Forms. Adobe proporciona **scripts automatizados** para simplificar la creación y configuración del almacén de credenciales basado en Elytron en modo de dominio.
+
 
 Esta configuración debe completarse **antes de iniciar el controlador de dominio de JBoss**.
 
