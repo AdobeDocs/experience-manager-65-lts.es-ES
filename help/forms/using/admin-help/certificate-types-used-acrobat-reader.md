@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '945'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ La cadena contiene los siguientes elementos:
 
 ## Perfiles de certificado {#certificate-profiles}
 
-En la tabla siguiente se enumeran los perfiles de certificado que pueden encontrarse al analizar los certificados de extensiones de Acrobat Reader DC.
+En la tabla siguiente se enumeran los perfiles de certificado que se pueden encontrar al analizar los certificados de las extensiones de Acrobat Reader DC.
 
 <table>
  <thead>
@@ -91,7 +91,7 @@ En la tabla siguiente se enumeran los perfiles de certificado que pueden encontr
   </tr>
   <tr>
    <td><p>P6</p></td>
-   <td><p>Extensiones de Acrobat Reader DC, Evaluación</p></td>
+   <td><p>Extensiones de Acrobat Reader DC, evaluación</p></td>
    <td><p>60 días</p></td>
    <td><p>Evaluación</p></td>
   </tr>
@@ -109,37 +109,37 @@ En la tabla siguiente se enumeran los perfiles de certificado que pueden encontr
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; puede ser utilizado por los OEM</p></td>
+   <td><p>Forms; los OEM pueden utilizar Forms</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; puede ser utilizado por los OEM</p></td>
+   <td><p>Forms; los OEM pueden utilizar Forms.</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Solo firma; los OEM pueden utilizarla</p></td>
+   <td><p>Solo firma; los OEM solo pueden usar firma</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Solo comentarios sin conexión; los OEM pueden utilizarlos</p></td>
+   <td><p>Solo comentarios sin conexión; los OEM pueden utilizar comentarios sin conexión</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Sólo comentarios; los OEM pueden utilizarlos</p></td>
+   <td><p>Solo comentarios; los OEM solo pueden utilizar comentarios</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>Permisos completos; pueden utilizarlos los OEM</p></td>
+   <td><p>Permisos completos; los OEM pueden utilizar permisos completos</p></td>
    <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
@@ -152,13 +152,13 @@ Los certificados de evaluación se emiten a clientes y desarrolladores para que 
 
 Los certificados de integración de socios se emiten para los socios comerciales de Adobe con el fin de apoyar el desarrollo, la integración, la creación de prototipos y las demostraciones de software. Estos certificados son válidos durante dos años a partir de la fecha de emisión.
 
-Los certificados de uso interno de Adobe se utilizan en Adobe para admitir el desarrollo, la integración, la creación de prototipos y las demostraciones de software. Estos certificados son válidos durante dos años a partir de la fecha de emisión.
+Los certificados de uso interno de Adobe se utilizan en Adobe para admitir el desarrollo, la integración, la creación de prototipos y la demostración de software. Estos certificados son válidos durante dos años a partir de la fecha de emisión.
 
 Los certificados de producción se emiten para los clientes que compraron extensiones de Acrobat Reader DC. Estos certificados son válidos durante el período máximo permitido por la entidad de certificación (CA), que se muestra como *Max* en la tabla Perfiles de certificado.
 
 ## Derechos de uso de extensiones de Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
-Al examinar el certificado de extensiones de Acrobat Reader DC en el Visor de certificados, puede seleccionar el elemento de derechos de uso de la pestaña Detalles (si está configurado) para ver una lista desglosada de los derechos de uso de Adobe Reader que puede habilitar el certificado. Los derechos de uso habilitados en un documento en particular pueden ser un subconjunto de los habilitados por el certificado.
+Al examinar el certificado de extensiones de Acrobat Reader DC en el Visor de certificados, puede seleccionar el elemento de derechos de uso de la pestaña Detalles (si está configurado). Puede ver una lista desglosada de los derechos de uso de Adobe Reader que puede habilitar el certificado. Los derechos de uso habilitados en un documento en particular pueden ser un subconjunto de esos derechos habilitados por el certificado.
 
 Si se requieren comentarios en línea en un entorno no colaborativo, póngase en contacto con el soporte técnico de Adobe para obtener más información. La propiedad Mode coincide con el tipo de implementación y es *production* o *evaluation*.
 
@@ -174,7 +174,7 @@ Los derechos de uso de las extensiones de Acrobat Reader DC permitidas constan d
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>Rellene los campos de formulario y guarde los archivos localmente.</p></td>
+   <td><p>Rellene los campos del formulario y guarde los archivos localmente.</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>

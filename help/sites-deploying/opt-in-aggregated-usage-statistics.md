@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
-# Inclusión En La Recopilación De Estadísticas De Uso Agregadas{#opting-into-aggregated-usage-statistics-collection}
+# Inclusión en la recopilación de estadísticas de uso agregadas{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introducción {#introduction}
 
@@ -33,29 +33,29 @@ Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario t
 
 >[!NOTE]
 >
->Puede optar por no participar en cualquier momento utilizando la [consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o no seleccionando la opción de inclusión en la pantalla de inclusión de AEM.
+>Puede optar por no participar en cualquier momento utilizando la [consola web]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console o no seleccionando la opción de inclusión en la pantalla de inclusión de AEM.
 
 ## Inclusión mediante la interfaz de usuario táctil {#opt-in-by-using-the-touch-ui}
 
-La primera vez que inicie AEM, puede optar por su inclusión mediante la IU táctil de la siguiente manera:
+La primera vez que inicie AEM, puede adherirse utilizando la interfaz de usuario táctil de la siguiente manera:
 
 1. En la pantalla Navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
 
    ![pantalla de navegación de usage_statistics](assets/usage_statisticsnavigationscreen.png)
 
-1. En la lista desplegable, haga clic en &quot;**Habilitar la recopilación de estadísticas de uso agregadas**&quot;.
+1. En la lista desplegable, haga clic en **Habilitar la recopilación de estadísticas de uso agregadas**.
 
    ![pantalla de navegación_estadísticas_uso2](assets/usage_statisticsnavigationscreen2.png)
 
-1. En la pantalla de inclusión, seleccione &quot;**Permitir la recopilación de estadísticas de uso agregadas**&quot;.
+1. En la pantalla de inclusión, haga clic en la opción **[!UICONTROL Permitir recopilar estadísticas de uso agregadas]**.
 
    ![usage_statisticsSpot-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. Haga clic en &quot;**Listo**&quot;.
+1. Haga clic en **Listo**.
 
 ## Inclusión mediante la consola web de {#opt-in-by-using-the-web-console}
 
-Puede realizar la inclusión (o la exclusión) utilizando la consola web de la siguiente manera:
+Puede adherirse (u optar por no participar) mediante la consola web de la siguiente manera:
 
 1. En la pantalla Navegación de AEM, haz clic en **Herramientas** y luego en **Operaciones**.
 
@@ -65,7 +65,7 @@ Puede realizar la inclusión (o la exclusión) utilizando la consola web de la s
 
    ![usage_staticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. Busque &quot;**Recopilación de estadísticas de uso agregadas**&quot;.
+1. Busque **Recopilación de estadísticas de uso agregadas**.
 1. Haga clic en el icono **Editar**.
 
    ![usage_statscolltionedit](assets/usage_statisticscollectionedit.png)

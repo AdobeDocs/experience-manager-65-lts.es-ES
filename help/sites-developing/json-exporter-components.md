@@ -1,5 +1,5 @@
 ---
-title: Activación de la exportación de JSON para un componente
+title: Habilitación de la exportación de JSON para un componente
 description: Los componentes se pueden adaptar para generar la exportación JSON de su contenido en función de un marco de trabajo del modelador.
 contentOwner: User
 content-type: reference
@@ -8,33 +8,34 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 6%
+source-wordcount: '464'
+ht-degree: 4%
 
 ---
 
-# Activación de la exportación de JSON para un componente{#enabling-json-export-for-a-component}
+# Habilitar la exportación de JSON para un componente{#enabling-json-export-for-a-component}
 
 Los componentes se pueden adaptar para generar la exportación JSON de su contenido en función de un marco de trabajo del modelador.
 
 ## Información general {#overview}
 
-La exportación de JSON se basa en [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html) y en el marco de [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (que a su vez se basa en [anotaciones Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
+La exportación de JSON se basa en [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html?lang=es) y en el marco de [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (que a su vez se basa en [anotaciones Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Esto significa que el componente debe tener un modelo Sling si debe exportar JSON. Por lo tanto, siga estos dos pasos para habilitar la exportación de JSON en cualquier componente.
+Este método significa que el componente debe tener un modelo Sling si debe exportar JSON. Por lo tanto, siga estos dos pasos para habilitar la exportación de JSON en cualquier componente.
 
 * [Defina un modelo Sling para el componente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Anotar la interfaz del modelo Sling](#annotate-the-sling-model-interface)
 
-## Definir un modelo Sling para el componente {#define-a-sling-model-for-the-component}
+## Defina un modelo Sling para el componente {#define-a-sling-model-for-the-component}
 
 En primer lugar, se debe definir un modelo Sling para el componente.
 
 >[!NOTE]
 >
->Para ver un ejemplo del uso de modelos Sling, consulte [Desarrollo de exportadores de modelos Sling en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es).
+>Para ver un ejemplo del uso de modelos Sling, consulte [Desarrollo de exportadores de modelos Sling en AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
 
 La clase de implementación del modelo Sling debe estar anotada con lo siguiente:
 
@@ -44,13 +45,13 @@ La clase de implementación del modelo Sling debe estar anotada con lo siguiente
 @JsonSerialize(as = MyComponent.class)
 ```
 
-Esto garantiza que el componente se pueda exportar solo, utilizando el selector `.model` y la extensión `.json`.
+Al hacerlo, se asegura de que el componente se pueda exportar solo, utilizando el selector `.model` y la extensión `.json`.
 
-Además, esto especifica que la clase de modelo Sling se puede adaptar a la interfaz `ComponentExporter`.
+Además, especifica que la clase de modelo Sling se puede adaptar a la interfaz `ComponentExporter`.
 
 >[!NOTE]
 >
->Las anotaciones de Jackson no se especifican en el nivel de clase del Modelo Sling, sino en el nivel de interfaz del Modelo. Esto sirve para garantizar que la exportación de JSON se considere como parte de la API del componente.
+>Las anotaciones de Jackson no se especifican en el nivel de clase del Modelo Sling, sino en el nivel de interfaz del Modelo. Este método consiste en garantizar que la exportación de JSON se considere como parte de la API del componente.
 
 >[!NOTE]
 >
@@ -68,15 +69,15 @@ Sin embargo, en tal caso, el selector `model` debe ser el primer selector y la e
 
 ## Anotar la interfaz del modelo Sling {#annotate-the-sling-model-interface}
 
-Para que el marco del exportador JSON lo tenga en cuenta, la interfaz del modelo debe implementar la interfaz `ComponentExporter` (o `ContainerExporter`, si hay un componente contenedor).
+Para que el marco del exportador JSON lo procese, la interfaz del modelo debe implementar la interfaz `ComponentExporter` (o `ContainerExporter` para un componente de contenedor).
 
 La interfaz del modelo Sling correspondiente (`MyComponent`) se anotaría usando [anotaciones Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) para definir cómo se debe exportar (serializar).
 
-La interfaz del modelo debe estar anotada correctamente para definir qué métodos se deben serializar. De forma predeterminada, todos los métodos que respetan la convención de nombres habitual de los captadores se serializan y derivan sus nombres de propiedades JSON de forma natural de los nombres de captadores. Esto se puede evitar o sobrescribir usando `@JsonIgnore` o `@JsonProperty` para cambiar el nombre de la propiedad JSON.
+La interfaz del modelo debe estar anotada correctamente para definir qué métodos se serializan. De forma predeterminada, todos los métodos que respetan la convención de nombres habitual de los captadores se serializan y derivan sus nombres de propiedades JSON de forma natural de los nombres de captadores. Este enfoque se puede prevenir o anular usando `@JsonIgnore` o `@JsonProperty` para cambiar el nombre de la propiedad JSON.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-Los componentes principales admiten la exportación de JSON desde la versión [1.1.0 de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y se pueden usar como referencia.
+Los componentes principales admiten la exportación de JSON desde la versión [1.1.0 de los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) y se pueden usar como referencia.
 
 Para ver un ejemplo, consulte la implementación del modelo Sling del componente principal de imagen y su interfaz anotada.
 
@@ -84,16 +85,14 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-core-wcm-components en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
-* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
+* [Abrir el proyecto aem-core-wcm-components en GitHub](https://github.com/adobe/aem-core-wcm-components)
+* Descargar el proyecto como [archivo ZIP](https://codeload.github.com/adobe/aem-core-wcm-components/zip/main)
+
 
 ## Documentación relacionada {#related-documentation}
 
-Para obtener más información, consulte lo siguiente:
-
-* El tema [Fragmentos de contenido en la guía del usuario de Assets](https://helpx.adobe.com/es/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
-
+* El tema [Fragmentos de contenido en la guía del usuario de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md)
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://helpx.adobe.com/es/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
