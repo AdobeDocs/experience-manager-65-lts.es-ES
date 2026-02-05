@@ -86,10 +86,10 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
 ## Consulte también {#further-information}
 
-Para obtener más información sobre los componentes principales, consulte la guía de creación de [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) para obtener una descripción general de las funcionalidades. Consulte la guía [Desarrollo de componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) para obtener información general técnica.
+Para obtener más información sobre los componentes principales, consulte la guía de creación de [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) para obtener una descripción general de las funcionalidades. Consulte la guía [Desarrollo de componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/overview) para obtener información general técnica.
 
 
 
-Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) para obtener una descripción general de las funciones de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) para obtener detalles técnicos.
+Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) para obtener una descripción general de las funciones de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/overview) para obtener detalles técnicos.
 
 Quizá también desee investigar [plantillas editables](/help/sites-developing/we-retail-editable-templates.md). Consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas - Editables](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre las plantillas editables.
