@@ -22,6 +22,6 @@ AEM 6.5 sigue las prácticas recomendadas más recientes para la administración
 >
 >* El artículo [Estructura del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) de la documentación de AEM as a Cloud Service sobre cómo estructurar proyectos AEM modernos.
 >* Documentación de [AEM Project Archetype](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) para obtener información sobre cómo iniciar un nuevo proyecto de AEM con el arquetipo.
->* Artículo de [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools) en la documentación de AEM as a Cloud Service sobre cómo implementar aplicaciones de AEM.
+>* Artículo de [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools) en la documentación de AEM as a Cloud Service sobre cómo implementar aplicaciones de AEM.
 >
 >Los tres documentos se aplican a AEM 6.5.
