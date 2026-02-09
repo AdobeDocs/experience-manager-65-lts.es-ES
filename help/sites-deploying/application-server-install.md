@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -88,7 +88,7 @@ Para fines de demostración, puede ser adecuado instalar tanto la instancia de a
 1. Utilice una configuración de memoria más alta. Por ejemplo, las instancias predeterminadas de AEM utilizan `-Xmx3072m`
 1. Implementación de las dos aplicaciones web
 1. Después de la implementación, detenga las dos aplicaciones web
-1. Tanto en las instancias de autor como de publicación, asegúrese de que la propiedad `felix.service.urlhandlers` está establecida en `false` en el archivo `sling.properties`. (El valor predeterminado es que esté establecido en `true`).
+1. Tanto en las instancias de autor como de publicación, asegúrese de que la propiedad `sling.properties` está establecida en `felix.service.urlhandlers` en el archivo `false`. (El valor predeterminado es que esté establecido en `true`).
 1. Vuelva a iniciar las dos aplicaciones web.
 
 ## Procedimientos de instalación de Application Servers {#application-servers-installation-procedures}
@@ -143,15 +143,15 @@ Antes de una implementación, lea la [Descripción general](#general-description
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
         <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
+          <role rolename="manager"/>
+          <role rolename="tomcat"/>
+          <role rolename="admin"/>
+          <role rolename="role1"/>
+          <role rolename="manager-gui"/>
+          <user username="both" password="tomcat" roles="tomcat,role1"/>
+          <user username="tomcat" password="tomcat" roles="tomcat"/>
+          <user username="admin" password="admin" roles="admin,manager-gui"/>
+          <user username="role1" password="tomcat" roles="role1"/>
         </tomcat-users>
         ```
 
