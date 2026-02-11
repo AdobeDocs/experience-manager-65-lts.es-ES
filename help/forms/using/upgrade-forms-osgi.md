@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
+source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 78%
+source-wordcount: '1527'
+ht-degree: 45%
 
 ---
 
@@ -93,4 +93,319 @@ Después de actualizar al Service Pack AEM Forms 6.5.22.0, siga estos pasos para
 
    >[!NOTE]
    >
-   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+
+
+## Implementación de AEM en JBoss EAP 8 (Windows)
+
+### Información general
+
+Esta guía proporciona instrucciones paso a paso para implementar Adobe Experience Manager (AEM) como archivo OSGi WAR independiente en JBoss Enterprise Application Platform (EAP) 8 en un entorno Windows con JDK 21.
+
+### Requisitos del sistema
+
+Antes de comenzar el proceso de implementación, asegúrese de que su entorno cumpla los siguientes requisitos:
+
+| Componente | Requisito |
+|-----------|-------------|
+| Sistema operativo | Windows Server 2016 o posterior (64 bits) |
+| Java Development Kit | JDK 21 (Oracle o OpenJDK) |
+| Servidor de aplicaciones | JBoss EAP 8.x |
+| Distribución de AEM | Archivo WAR de AEM (obtenido de Adobe) |
+
+>[!NOTE]
+>
+> Compruebe que la variable de entorno `JAVA_HOME` apunta al directorio de instalación de JDK 21.
+
+### Paso 1: Instalar JBoss EAP 8
+
+#### Descargar JBoss EAP
+
+1. Vaya al portal para desarrolladores de Red Hat:\
+   [https://developers.redhat.com/products/eap/download](https://developers.redhat.com/products/eap/download)
+
+2. Descargue la distribución JBoss EAP 8 ZIP para Windows.
+
+#### Extraer JBoss EAP
+
+1. Extraiga el archivo ZIP descargado en el directorio de instalación preferido.
+
+2. Tenga en cuenta esta ruta de acceso de directorio como `<JBOSS_HOME>` para su uso en esta guía.
+
+   **Ejemplo:**\
+   ```C:\jboss-eap-8.0```
+
+### Paso 2: Preparar el archivo WAR de AEM
+
+#### Obtener AEM WAR
+
+Adquiera el archivo WAR de AEM desde la Distribución de software de Adobe o su representante de Adobe.
+
+#### Cambiar nombre de archivo WAR
+
+Cambie el nombre del archivo WAR para que refleje la ruta de contexto de URL deseada:
+
+```
+cq-quickstart.war
+```
+
+>[!IMPORTANT]
+>
+> El nombre de archivo WAR determina el contexto URL de la aplicación. Por ejemplo, `cq-quickstart.war` será accesible a las `/cq-quickstart`.
+
+
+### Paso 3: Configuración de AEM WAR
+
+Todas las modificaciones de configuración deben completarse **antes de** implementar en JBoss.
+
+#### Crear directorio de trabajo
+
+1. Cree un directorio de trabajo temporal:
+
+   ```
+   C:\aem\war-config
+   ```
+
+2. Copie `cq-quickstart.war` en este directorio.
+
+#### Extraer contenido WAR
+
+1. Abra **Símbolo del sistema** y vaya al directorio de trabajo:
+
+   ```cmd
+   cd C:\aem\war-config
+   ```
+
+2. Extraiga el archivo WAR:
+
+   ```cmd
+   jar -xvf cq-quickstart.war
+   ```
+
+   Esto crea una estructura de directorio con `WEB-INF` y otros archivos de aplicación.
+
+### Paso 4: Configuración del descriptor de implementación de JBoss
+
+#### Crear archivo de estructura de implementación
+
+1. Vaya al directorio `WEB-INF` dentro del WAR extraído:
+
+   ```cmd
+   cd WEB-INF
+   ```
+
+2. Cree un nuevo archivo con el nombre `jboss-deployment-structure.xml`.
+
+3. Añada el siguiente contenido XML:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+       <deployment>
+           <dependencies>
+               <module name="jdk.unsupported" />
+           </dependencies>
+       </deployment>
+   </jboss-deployment-structure>
+   ```
+
+4. Guarde y cierre el archivo.
+
+**Propósito:** Esta configuración proporciona acceso a los módulos internos JDK requeridos por AEM.
+
+### Paso 5: Configurar la carga de varias partes
+
+>[!NOTE]
+>
+> El paso 5 solo es aplicable a **AEM Forms**. Si está configurando **solo AEM**, puede omitir este paso.
+
+
+#### Modificar web.xml
+
+1. Abra `WEB-INF\web.xml` en un editor de texto.
+
+2. Busque la sección `<servlet>` que contiene la configuración del modo de ejecución:
+
+   ```xml
+   <!-- Set the runmode per default to author -->
+   <init-param>
+       <param-name>sling.run.modes</param-name>
+       <param-value>author</param-value>
+   </init-param>
+   <load-on-startup>100</load-on-startup>
+   </servlet>
+   ```
+
+3. Reemplazar la etiqueta `</servlet>` de cierre y la línea anterior por:
+
+   ```xml
+   <init-param>
+       <param-name>sling.run.modes</param-name>
+       <param-value>author</param-value>
+   </init-param>
+   <multipart-config>
+       <max-file-size>1048576000</max-file-size>
+       <max-request-size>1048576000</max-request-size>
+       <file-size-threshold>0</file-size-threshold>
+   </multipart-config>
+   <load-on-startup>100</load-on-startup>
+   </servlet>
+   ```
+
+4. Guarde y cierre `web.xml`.
+
+**Objetivo:** Esta configuración habilita cargas de archivos grandes (hasta 1 GB) para AEM Forms y la administración de recursos digitales.
+
+### Paso 6: Volver a empaquetar el archivo WAR
+
+Después de completar todos los cambios de configuración, vuelva a empaquetar el archivo WAR.
+
+1. Vuelva al directorio de trabajo que contiene el contenido extraído:
+
+   ```cmd
+   cd C:\aem\war-config
+   ```
+
+2. Cree el nuevo archivo WAR:
+
+   ```cmd
+   jar -cvf cq-quickstart.war *
+   ```
+
+>[!IMPORTANT]
+>
+> Realice este paso solo una vez, una vez completadas todas las configuraciones.
+
+### Paso 7: Implementar e iniciar AEM
+
+#### Implementar WAR en JBoss
+
+1. Copie el `cq-quickstart.war` vuelto a empaquetar en el directorio de implementaciones de JBoss:
+
+   ```
+   <JBOSS_HOME>\standalone\deployments
+   ```
+
+   **Ejemplo:**
+   ```C:\jboss-eap-8.0\standalone\deployments```
+
+#### Configuración de JVM (opcional pero recomendada)
+
+Antes de iniciar JBoss, configure las opciones de memoria de JVM:
+
+1. Abra `<JBOSS_HOME>\bin\standalone.conf.bat` en un editor de texto.
+
+1. Modifique o agregue la siguiente línea para establecer la memoria de la pila:
+
+   ```batch
+   set "JAVA_OPTS=-Xms4096m -Xmx4096m -XX:MaxMetaspaceSize=512m"
+   ```
+
+>[!NOTE]
+>
+> Ajuste los valores de memoria en función de la capacidad del servidor y los requisitos de AEM.
+
+1. Guarde y cierre el archivo.
+
+#### Iniciar JBoss EAP
+
+1. Abra **Símbolo del sistema** como **Administrador**.
+
+1. Vaya al directorio bin de JBoss:
+
+   ```cmd
+   cd <JBOSS_HOME>\bin
+   ```
+
+   **Ejemplo:**
+   ```cmd cd C:\jboss-eap-8.0\bin```
+
+1. Inicie el servidor JBoss:
+
+   ```cmd
+   standalone.bat -b 0.0.0.0 -bmanagement 0.0.0.0
+   ```
+
+   **Parámetros:**
+   * `-b 0.0.0.0` — enlaza el servidor a todas las interfaces de red
+   * `-bmanagement 0.0.0.0` — enlaza la interfaz de administración a todas las interfaces de red
+
+#### Supervisar implementación
+
+Observe la salida de la consola para ver los mensajes de implementación. La implementación correcta se indica mediante:
+
+```
+Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
+```
+
+### Paso 8: Acceso a AEM
+
+Una vez completada la implementación y iniciada por completo AEM:
+
+**URL de autor de AEM:**
+```http://<server-ip>:8080/cq-quickstart```
+
+**Credenciales predeterminadas:**
+
+* Nombre de usuario: `admin`
+* Contraseña: `admin`
+
+**Importante:** Cambie la contraseña predeterminada inmediatamente después del primer inicio de sesión.
+
+### Solución de problemas
+
+#### Problemas comunes
+
+| Problema | Solución |
+|-------|----------|
+| La implementación falla con ClassNotFoundException | Verificar que `jboss-deployment-structure.xml` esté configurado correctamente |
+| OutOfMemoryError durante el inicio | Aumentar memoria de montón en `standalone.conf.bat` |
+| AEM no se inicia después de la implementación | Comprobar los registros de JBoss en `<JBOSS_HOME>\standalone\log\server.log` |
+| No se puede acceder a AEM en el navegador | Verificar la configuración del firewall para permitir el puerto 8080 |
+
+#### Archivos de registro
+
+* **Registro del servidor JBoss:** `<JBOSS_HOME>\standalone\log\server.log`
+* **Registro de errores de AEM:** Disponible a través de la consola web de AEM después del inicio en\
+  `http://<server-ip>:8080/cq-quickstart/system/console`
+
+### Configuración adicional
+
+#### Configuración de modos de ejecución
+
+Para cambiar los modos de ejecución de AEM (autor/publicación), modifique el parámetro `sling.run.modes` en `WEB-INF\web.xml` antes de volver a empaquetar WAR:
+
+```xml
+<init-param>
+    <param-name>sling.run.modes</param-name>
+    <param-value>publish</param-value>
+</init-param>
+```
+
+#### Recomendaciones de producción
+
+Para entornos de producción:
+
+* Configuración de certificados SSL/TLS en JBoss
+* Configuración de agentes de replicación de AEM
+* Configurar Dispatcher para el equilibrio de carga
+* Habilitar backups automatizados
+* Implementación de monitorización y alertas
+
+### Documentación relacionada
+
+* [Documentación de JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
+* [Documentación de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
+* [Guía de instalación e implementación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es)
+
+### Información del documento
+
+| Campo | Valor |
+|-------|-------|
+| Última actualización | Febrero de 2026 |
+| Versión de AEM | 6.5+ (LTS) |
+| Versión de JBoss | EAP 8.x |
+| Versión de JDK | 21 |
+| Plataforma | Windows |
+
+
