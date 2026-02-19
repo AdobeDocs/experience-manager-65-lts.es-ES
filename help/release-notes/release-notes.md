@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 56a6a366aa563cab3a0385c619041238f04b31c5
+source-git-commit: ad26ea17d3d8fba351c31199607003ab4981c53d
 workflow-type: tm+mt
-source-wordcount: '5867'
+source-wordcount: '6060'
 ht-degree: 21%
 
 ---
@@ -302,9 +302,9 @@ AEM ahora sincroniza las actividades de Adobe Target incluso cuando existen fech
 <!--
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
-#### Localization{#foundation-localization-65-lts-sp2}
+#### Localization{#foundation-localization-65-lts-sp2} 
 
-#### Oak {#foundation-oak-65-lts-sp2}
+
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -313,9 +313,36 @@ AEM ahora sincroniza las actividades de Adobe Target incluso cuando existen fech
 #### Projects{#foundation-projects-65-lts-sp2}
 -->
 
+#### Oak {#foundation-oak-65-lts-sp2}
+
+El paquete de servicio 2 de AEM 6.5 LTS requiere el conector S3 1.60.10 o posterior. La configuración del almacén de datos de S3 ahora incluye `crossRegionAccess` y `mode`, de modo que los administradores pueden habilitar el acceso de bloque entre regiones y cambiar el almacenamiento a GCP cuando sea necesario. `s3EndPoint` espera ahora una región alineada con `s3Region` o permanece vacía para que el controlador genere el extremo. (GRANITE-64873)
+
+
 #### Guía de inicio rápido{#foundation-quickstart-65-lts-sp2}
 
-AEM 6.5 LTS SP2 actualiza el paquete de capas base establecido para Sling, Oak y Felix. Estas actualizaciones refuerzan la estabilidad del tiempo de ejecución principal y alinean las versiones de dependencia en toda la plataforma. (GRANITE-61874)
+* Sling actualiza la lista de permitidos de inicio de sesión administrativo para utilizar una terminología inclusiva y nuevos PID de configuración. Este cambio se ajusta a Sling JCR Base 3.2.0. (GRANITE-63756)
+
+  **Impacto**
+
+   * Sling anula el uso de estos PID y debe eliminarlos de sus configuraciones:
+      * PID de fábrica: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+      * PID global: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+Estas configuraciones antiguas utilizan propiedades como `whitelist.name` y `whitelist.bundles`.
+
+   * Sling sigue proporcionando compatibilidad con versiones anteriores parciales para los PID obsoletos, pero no los utiliza para nuevas configuraciones. En su lugar, utilice los `LoginAdminAllowList.*` PID más recientes.
+   * No ejecute configuraciones de lista de permitidos obsoletas y nuevas al mismo tiempo. Las configuraciones mixtas pueden crear ambigüedad y producir un comportamiento no deseado. Cuando migre a AEM 6.5 LTS SP2, elimine por completo los PID obsoletos.
+
+  **Lo que debe hacer**
+
+   1. Busque configuraciones de lista de permitidos que utilicen `LoginAdminWhitelist*` PID.
+   1. Sustitúyalos por los nuevos PID adecuados:
+
+      * PID de fábrica: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+      * PID global: `org.apache.sling.jcr.base.LoginAdminAllowList`
+
+      Para obtener más información, consulte [Enfoque obsoleto de los paquetes de lista de permitidos para el inicio de sesión administrativo](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+
+* AEM 6.5 LTS SP2 actualiza el paquete de capas base establecido para Sling, Oak y Felix. Estas actualizaciones refuerzan la estabilidad del tiempo de ejecución principal y alinean las versiones de dependencia en toda la plataforma. (GRANITE-61874)
 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
@@ -362,7 +389,7 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 ### Actualizar {#upgrade}
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
-* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Prácticas recomendadas para las actualizaciones del Service Pack de AEM 6.5 LTS
 
@@ -537,5 +564,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
