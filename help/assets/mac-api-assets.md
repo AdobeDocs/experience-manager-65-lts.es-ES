@@ -6,18 +6,19 @@ role: Developer
 feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 1%
 
 ---
 
-# API HTTP [!DNL Assets] {#assets-http-api}
+# API del HTTP [!DNL Assets] {#assets-http-api}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
