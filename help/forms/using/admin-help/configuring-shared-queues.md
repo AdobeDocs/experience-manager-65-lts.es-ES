@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Una vez compartidas, el usuario puede completar estas tareas, con acceso a la co
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
 1. Seleccione **Servicios** > **Forms Workflow** > **Cola compartida**.
 
-1. En la pestaña Administrar el acceso a un usuario, busque y seleccione el usuario cuya cola desea administrar.
+1. En la pestaña Administrar el acceso a un usuario, busque y seleccione el usuario cuya cola desee administrar.
 1. El panel inferior derecho muestra la lista de usuarios con acceso a la cola de usuarios seleccionada. Seleccione el usuario y haga clic en Revocar.
 1. Haga clic en Guardar para completar el proceso.
 

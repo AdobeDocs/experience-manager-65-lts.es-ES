@@ -1,19 +1,19 @@
 ---
-title: 'Configuración de Dynamic Media: modo Scene7'
+title: Configuración de Dynamic Media, modo Scene7
 description: 'Obtenga información sobre cómo configurar Dynamic Media: modo Scene7.'
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6494'
 ht-degree: 3%
 
 ---
 
-# Configuración de Dynamic Media: modo Scene7{#configuring-dynamic-media-scene-mode}
+# Configuración de Dynamic Media, modo Scene7{#configuring-dynamic-media-scene-mode}
 
 Si utiliza la configuración de Adobe Experience Manager para diferentes entornos, como desarrollo, ensayo y producción, configure los servicios de nube de Dynamic Media para cada uno de esos entornos.
 
@@ -24,7 +24,7 @@ El diagrama de arquitectura siguiente describe cómo funciona el modo Dynamic Me
 Con la nueva arquitectura, Experience Manager es responsable de los recursos de origen principales y sincroniza con Dynamic Media para el procesamiento y la publicación de recursos:
 
 1. Cuando el recurso de origen principal se carga en Experience Manager, se replica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
-(En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga es de 2 GB o menos. Para habilitar la carga de archivos de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
+(En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga es de 2 GB o menos. Para habilitar la carga de archivos de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. Una vez generadas las representaciones, Experience Manager puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se envían binarios de vuelta a la instancia de Experience Manager).
 1. Una vez que el contenido está listo para publicarse y aprobarse, el servicio Dynamic Media déclencheur el envío del contenido a los servidores de entrega y el almacenamiento en caché del contenido en la CDN (red de distribución de contenido).
 
@@ -43,7 +43,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 ## Habilitar Dynamic Media en el modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las ventajas de las funciones de Dynamic Media, debe habilitarlo.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las ventajas de las funciones de Dynamic Media, debe habilitarlo.
 
 >[!WARNING]
 >
@@ -75,13 +75,13 @@ Para migrar cualquier ajuste preestablecido y configuración de visor personaliz
 
 La instalación del paquete de funciones 18912 es *opcional*.
 
-El paquete de funciones 18912 permite realizar ingestas masivas de recursos mediante FTP, o migrar recursos desde Dynamic Media (modo híbrido) o Dynamic Media Classic a Dynamic Media (modo Scene7) en Experience Manager. Está disponible en [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
+El paquete de funciones 18912 permite realizar ingestas masivas de recursos mediante FTP, o migrar recursos desde Dynamic Media (modo híbrido) o Dynamic Media Classic a Dynamic Media (modo Scene7) en Experience Manager. Está disponible en [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consulte [Instalar paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md) para obtener más información.
 
 ## Crear una configuración de Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -115,7 +115,6 @@ Consulte [Instalar paquete de funciones 18912 para la migración masiva de recur
 1. Cuando la conexión se realice correctamente, configure lo siguiente. Los encabezados con asterisco (*) son obligatorios:
 
    * **[!UICONTROL Compañía]**: nombre de la cuenta de Dynamic Media.
-
      >[!IMPORTANT]
      >
      >Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Adobe no admite ni recomienda varias configuraciones de Dynamic Media en una instancia de Experience Manager _o_.
@@ -142,7 +141,7 @@ A menos que tenga una disposición especial para utilizar el servidor de su prop
    * **[!UICONTROL Modo de sincronización de Dynamic Media]**
       * **[!UICONTROL Habilitada de forma predeterminada]**: la configuración se aplica a todas las carpetas de forma predeterminada a menos que marque una carpeta específicamente para su exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]**: la configuración no se aplicará a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Vea también [Trabajar con publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
+Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**anteriormente.* Vea también [Trabajar con publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Heredado]**: no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. Estado detallado de los programas heredados mediante información sobre herramientas.
          * **[!UICONTROL Habilitar para subcarpetas]**: incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluye todo en este subárbol de la sincronización con Dynamic Media.
@@ -156,7 +155,7 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Para obtener una vista previa segura del contenido de Dynamic Media antes de publicarlo, Experience Manager Author utiliza la validación basada en tokens y, por lo tanto, Experience Manager Author obtiene una vista previa del contenido de Dynamic Media de forma predeterminada. Sin embargo, puede &quot;lista de permitidos&quot; más direcciones IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción en Experience Manager, consulte [Configuración del programa de instalación de publicación de Dynamic Media para el servidor de imágenes: ficha Seguridad](/help/assets/dm-publish-settings.md#security-tab).
 
-Si desea personalizar aún más la configuración, como habilitar los permisos ACL (Access Control List), puede completar opcionalmente cualquiera de las tareas en [&#x200B; (Opcional) Configurar la configuración avanzada en Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si desea personalizar aún más la configuración, como habilitar los permisos ACL (Access Control List), puede completar opcionalmente cualquiera de las tareas en [ (Opcional) Configurar la configuración avanzada en Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -247,8 +246,8 @@ En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carg
 Si tiene intención de utilizar esta función, tenga en cuenta los siguientes requisitos previos y puntos:
 
 * Debe estar ejecutando Experience Manager 6.5 LTS en modo Dynamic Media - Scene7.
-* Esta característica de carga de gran tamaño solo es compatible con los clientes de [*Managed Services*](https://business.adobe.com/es/products/experience-manager/managed-services.html).
-* Asegúrese de que la instancia de Experience Manager esté configurada con Amazon S3 o Microsoft® Azure Blob Storage.
+* Esta característica de carga de gran tamaño solo es compatible con los clientes de [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Asegúrese de que la instancia de Experience Manager esté configurada con el almacenamiento del blob de Amazon S3 o Microsoft® Azure.
 
   >[!NOTE]
   >
@@ -348,7 +347,7 @@ Consulte [Configurar la instalación de publicación de Dynamic Media para el se
 
 Configure la URL de Dynamic Media **[!UICONTROL Nombre del servidor de publicación]** y la URL de **[!UICONTROL Nombre del servidor de origen]**. También puede especificar la configuración de **[!UICONTROL Cargar a la aplicación]** y **[!UICONTROL Opciones de carga predeterminadas]**, todo en función de su caso de uso particular.
 
-Consulte [Configuración general de Dynamic Media](/help/assets/dm-general-settings.md).
+Consulte [Configuración de Dynamic Media, Configuración general](/help/assets/dm-general-settings.md).
 
 #### Configurar la administración de color {#configuring-color-management}
 
@@ -466,7 +465,7 @@ Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. E
 
 **Para configurar el nombre predeterminado:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -500,7 +499,7 @@ Puede utilizar el método del campo de formulario para definir un ajuste preesta
 
 **Para crear un conjunto preestablecido de lotes:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -556,7 +555,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 **Para crear un conjunto preestablecido de lotes para la generación automática de un conjunto de giros 2D:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -720,7 +719,7 @@ Los filtros proporcionan una forma de *excluir* recursos de replicarse en el nod
 
 Si utiliza Dynamic Media para imágenes, vídeo o ambos, puede utilizar los filtros predeterminados que proporciona Adobe tal cual. Los siguientes filtros están activos de forma predeterminada:
 
-|   | Filter | Tipo MIME | Representaciones |
+|   | Filter | Tipo de mime | Representaciones |
 | --- | --- | --- | --- |
 | Entrega de imágenes de Dynamic Media | filter-image<br>filter-sets | Comienza con **image/**<br> Contiene **applications/** y termina con **set**. | Las &quot;imágenes de filtro&quot; predeterminadas (se aplica a recursos de imágenes únicas, incluidas imágenes interactivas) y &quot;conjuntos de filtros&quot; (se aplica a conjuntos de giros, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de carrusel) harán lo siguiente:<br>· Excluir de la replicación la imagen original y las representaciones de imágenes estáticas. |
 | Entrega de vídeo de Dynamic Media | filter-video | Comienza con **video/** | El &quot;filtro de vídeo&quot; predeterminado será:<br>· Excluir de la replicación el vídeo original y las representaciones de miniaturas estáticas. |

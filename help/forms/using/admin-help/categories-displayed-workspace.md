@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -39,11 +39,11 @@ Si utiliza MySQL como base de datos de formularios AEM Forms, la consola de admi
 ## Agregar una categoría {#add-a-category}
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de categorías.
-1. Haga clic en Agregar. Si desea agregar una subcategoría, seleccione una y haga clic en Agregar.
+1. Haga clic en Agregar. Si desea agregar una subcategoría, selecciónela y haga clic en Agregar.
 1. En el cuadro Nombre, escriba un nombre para la categoría y, en el cuadro Descripción, escriba una descripción de la categoría.
 1. Haga clic en Agregar. La categoría se muestra en la página Administración de categorías.
 
-   ***nota &#x200B;**: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
+   ***nota **: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
 
 ## Editar una categoría {#edit-a-category}
 

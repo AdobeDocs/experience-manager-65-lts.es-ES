@@ -1,18 +1,18 @@
 ---
-title: Creación de una pantalla de inicio de sesión
+title: Crear una pantalla de inicio de sesión
 description: Modificar la página de inicio de sesión de los módulos de LiveCycle, por ejemplo, de AEM Forms Workspace o Forms Manager.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 93%
+ht-degree: 86%
 
 ---
 
-# Creación de una pantalla de inicio de sesión{#creating-a-new-login-screen}
+# Crear una pantalla de inicio de sesión{#creating-a-new-login-screen}
 
 Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Forms que utilizan la pantalla de inicio de sesión de AEM Forms. Por ejemplo, las modificaciones afectan a la pantalla de inicio de sesión de Forms Manager y de AEM Forms Workspace.
 

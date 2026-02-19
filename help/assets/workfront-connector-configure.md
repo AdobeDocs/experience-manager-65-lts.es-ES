@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1696'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] configura el conector mejorado después de instalarlo. Para obtener instrucciones de instalación, consulte [Instalar el conector](/help/assets/workfront-integrations.md).
@@ -60,7 +60,7 @@ Para suscribirse a los eventos, siga estos pasos:
 
 1. Vaya a la pestaña Carpetas vinculadas del proyecto en los servicios en la nube.
 1. Ruta principal de la carpeta vinculada: seleccione una carpeta en DAM en la que desee crear las carpetas vinculadas. Si se deja vacío, el valor predeterminado será /content/dam. Asegúrese de que el esquema de metadatos de Workfront Tools y el esquema de metadatos de la carpeta de carpetas vinculadas de Workfront se hayan aplicado a la carpeta seleccionada.
-1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name o algún &quot;Valor de cadena literal&quot; (este último entre comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
+1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name o algún &quot;Valor de cadena literal&quot; (este último entre comillas). Actualmente está establecido en Portfolio,Program,Year,DE:Project Type,Name.
 1. Configurar permisos: agregar permisos de `jcr:all permissions` a `/conf/workfront-tools/settings/cloudconfigs` para el grupo `wf-workfront-users`.
 1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, es el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
@@ -83,7 +83,7 @@ Para configurar las asignaciones, siga estos pasos:
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos de carpeta]**.
 1. Seleccione el formulario de esquema de metadatos de carpeta que desee editar y haga clic en Editar.
 1. Seleccione el campo del formulario del esquema de metadatos de la carpeta que desea editar y seleccione la pestaña Configuración en el panel derecho.
-1. En el campo [!UICONTROL Asignado desde el campo Workfront], seleccione el nombre del campo Workfront que desea asignar a la propiedad de carpeta AEM seleccionada. Las opciones disponibles son:
+1. En el campo [!UICONTROL Asignado desde el campo de Workfront], seleccione el nombre del campo de Workfront que desea asignar a la propiedad de carpeta de AEM seleccionada. Las opciones disponibles son:
 
    * Campos de formulario personalizados del proyecto
    * Campos de Información general del proyecto (ID, nombre, descripción, número de referencia, fecha planificada de finalización, propietario del proyecto, patrocinador del proyecto, Portfolio o programa)
