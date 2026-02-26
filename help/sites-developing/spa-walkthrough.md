@@ -8,10 +8,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -83,7 +83,7 @@ Al ser más rápido, fluido y más parecido a una aplicación nativa, una SPA se
 
 La idea principal detrás de una SPA es que las llamadas y la dependencia de un servidor se reduzcan para minimizar los retrasos causados por las llamadas al servidor, de modo que la SPA se aproxime a la capacidad de respuesta de una aplicación nativa.
 
-En una página web secuencial tradicional, solo se cargan los datos necesarios para la página inmediata. Esto significa que cuando el visitante se mueve a otra página, se llama al servidor para obtener los recursos adicionales. Pueden ser necesarias llamadas adicionales a medida que el visitante interactúa con los elementos de la página. Estas llamadas múltiples pueden dar una sensación de retardo o retraso, ya que la página tiene que estar al día con las solicitudes del visitante.
+En una página web secuencial tradicional, solo se cargan los datos necesarios para la página inmediata. Esto significa que cuando el visitante se mueve a otra página, se llama al servidor para obtener los recursos adicionales. Es posible que sea necesario realizar llamadas adicionales, a medida que el visitante interactúa con elementos de la página. Estas llamadas múltiples pueden dar una sensación de retardo o retraso, ya que la página tiene que estar al día con las solicitudes del visitante.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -225,7 +225,7 @@ En la siguiente sección analizaremos el contrato que permite al Editor de SPA r
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Con las herramientas de desarrollador incorporadas del explorador, inspeccione el contenido de la página. Usando la herramienta de selección, seleccione un componente editable en la página y vea los detalles del elemento.
+1. Con las herramientas de desarrollador integradas del explorador, inspeccione el contenido de la página. Usando la herramienta de selección, seleccione un componente editable en la página y vea los detalles del elemento.
 
    El componente tiene un nuevo atributo de datos `data-cq-data-path`.
 
