@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ad26ea17d3d8fba351c31199607003ab4981c53d
+source-git-commit: f75f02c1e10deb6eef788d6584229c045b88880d
 workflow-type: tm+mt
-source-wordcount: '6060'
+source-wordcount: '6062'
 ht-degree: 21%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 21%
 
 **AEM Sites**
 
-AEM 6.5 LTS SP2 ahora incluye OpenAPI para la administración de modelos y fragmentos de contenido y lanzamientos. Estas API proporcionan acceso a los fragmentos de contenido y a los lanzamientos para la creación y programación. Utilizan las mismas OpenAPI modernas que AEM as a Cloud Service.
+AEM 6.5 LTS SP2 ahora incluye OpenAPI para [administración de modelos y fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/) y [lanzamientos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/). Estas API proporcionan acceso a los fragmentos de contenido y a los lanzamientos para la creación y programación. Utilizan las mismas OpenAPI modernas que AEM as a Cloud Service.
 
 
 <!-- UPDATE THE EACH RELEASE -->
@@ -389,7 +389,7 @@ Eclipse Jetty 11.0.x se utiliza como motor servlet para Quickstart.
 ### Actualizar {#upgrade}
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
-* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Prácticas recomendadas para las actualizaciones del Service Pack de AEM 6.5 LTS
 
@@ -564,5 +564,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
