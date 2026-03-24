@@ -4,13 +4,13 @@ description: JBoss EAP 8 admite almacenes de credenciales de Elytron para la adm
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Configuración del almacén de credenciales de base de datos (basado en Elytron)
 
@@ -186,5 +186,5 @@ Todos los alias hacen referencia a la misma contraseña de base de datos almacen
 
 >[!NOTE]
 >
->* Configure el almacén de credenciales solo en el nodo principal.
->* Los nodos secundarios utilizan automáticamente la configuración de dominio sincronizada desde el nodo principal.
+>* Copie el archivo de almacén de credenciales (cred-store.p12) creado en el principal a cada uno de los nodos esclavos.
+
