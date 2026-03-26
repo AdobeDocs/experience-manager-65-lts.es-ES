@@ -4,10 +4,11 @@ description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y 
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -97,7 +98,7 @@ También se pueden configurar con la herramienta de línea de comandos **cURL**.
 
 ```shell
 $ curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H 'authorization: Basic yourauthorizationcode' \
     -H "Content-Type: application/json" \
     "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
     -d \
@@ -233,7 +234,7 @@ Actualmente, el filtrado en el nivel JCR solo funciona para fragmentos de nivel 
 
 Si un filtro se dirige a los campos de un fragmento anidado, AEM tiene que volver a cargar (en memoria) todos los fragmentos que comparten el modelo subyacente.
 
-Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con la variable [AND operator](#logical-operations-in-filter-expressions).
+Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con el operador [AND](#logical-operations-in-filter-expressions).
 
 ### Uso de la estructura de contenido {#use-content-structure}
 
