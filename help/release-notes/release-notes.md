@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
+source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6983'
 ht-degree: 18%
 
 ---
@@ -286,9 +286,9 @@ La relación de Assets ahora funciona para nombres de archivo que incluyen espac
 
 * FORMS-20679: Los usuarios experimentaron una vulnerabilidad de seguridad en el panel de Forms adaptable. Específicamente, se identificó un problema de ejecución de scripts en sitios múltiples (XSS) en el archivo startpointcontrol.js, que podría permitir la ejecución de scripts malintencionados.
 
-* FORMS-24687: en implementaciones de clúster LTS de AEM Forms 6.5 en JBoss EAP 8, `domain/configuration/domain_oracle.xml` ya no contiene una etiqueta `<security>` duplicada que provocaba un XML no válido e impedía que se iniciara el controlador de dominio.
+* FORMS-24687: en implementaciones de clúster LTS de AEM Forms 6.5 en JBoss EAP 8, los archivos domain/configuration/domain_oracle.xml, domain_mysql.xml y domain_mssql.xml ya no contienen una etiqueta `<security>` duplicada que produjo XML no válido e impidió que se iniciara el controlador de dominio.
 
-* FORMS-24689:In Turnkey Upgrade Mode, actualizar el puerto de base de datos en `lc_turnkey.xml` ahora se aplica correctamente durante la actualización y ya no hace referencia al valor de puerto antiguo.
+* FORMS-24689: en el modo llave en mano, la actualización del puerto de la base de datos ahora se aplica correctamente durante la nueva instalación y actualización. En el modo de instalación nueva, los usuarios pueden seleccionar entre todos los puertos disponibles y, en el modo de actualización, se hace referencia correctamente al puerto de base de datos actualizado en lc_turnkey.xml durante el proceso de actualización.
 
 * FORMS-24688: Al configurar JBoss EAP 8.0 en Linux, los scripts de shell modificados en Windows ya no causan `/bin/sh^M: bad interpreter or $'\r': command not found` errores debido a los finales de línea CRLF.
 
@@ -463,7 +463,7 @@ Consulte también [Actualizar la versión de AEM Uber Jar](/help/sites-deploying
 ### Actualizar {#upgrade}
 
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
-* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obtener instrucciones de actualización detalladas, consulte la [Guía de actualización para AEM Forms 6.5 LTS SP1 en JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Prácticas recomendadas para las actualizaciones del Service Pack de AEM 6.5 LTS
 
@@ -589,7 +589,7 @@ En esta sección se enumeran las características y funciones que se han elimina
 
 ### AEM Forms
 
-* **FORMS-24690:** En el Administrador de configuración, la inicialización de la base de datos puede fallar durante el arranque en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se seleccionan módulos o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a adobe-livecycle-jboss.ear\lib resuelve el problema.
+* **FORMS-24690:** En el Administrador de configuración, la inicialización de la base de datos falla durante el arranque en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se seleccionan módulos o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a adobe-livecycle-jboss.ear\lib resuelve el problema.
 
 * **FORMS-24692:** Es posible que el servicio de correo no pueda establecer una conexión de socket TLS, por lo que el envío de correo electrónico fallará.
 
@@ -658,5 +658,5 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
