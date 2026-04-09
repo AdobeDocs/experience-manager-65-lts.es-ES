@@ -3,8 +3,9 @@ title: Recorrido para arquitectos de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: b5f5e214-d8b3-4066-b834-0ba74d773bbc
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 91%
@@ -17,7 +18,7 @@ Comience aquí para obtener un recorrido guiado a través de las funciones poten
 
 ## Introducción {#introduction}
 
-La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal y dónde se encuentren.
+La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su público, independientemente del canal y dónde se encuentren.
 
 La implementación sin encabezado renuncia a la administración de páginas y componentes, ya que es tradicional en soluciones de pila completa y se centra en la creación de fragmentos de contenido neutros y reutilizables para el canal y en su entrega multicanal. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
@@ -35,7 +36,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-headless/overview.md) es dónde debe empezar.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para los arquitectos de contenido. Como arquitecto de contenido, definirá la estructura de este. Estas definiciones las utilizarán los autores de contenido cuando creen los contenidos propiamente dichos.
 

@@ -3,9 +3,9 @@ title: 'Reglamentos de protección de datos y privacidad de datos: preparación 
 description: Obtenga información sobre la compatibilidad de Adobe Experience Manager con las distintas normas de protección y privacidad de datos. Esto incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de privacidad del consumidor de California, y cómo cumplirlos al implementar un nuevo proyecto de AEM.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 98%

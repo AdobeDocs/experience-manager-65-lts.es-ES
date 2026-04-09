@@ -3,8 +3,9 @@ title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 75%
@@ -21,7 +22,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo crear 
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: presentar los conceptos básicos de la creación de CMS sin encabezado.
    * Introducción a la creación con AEMaaCS.
    * Introducción a los fragmentos de contenido.

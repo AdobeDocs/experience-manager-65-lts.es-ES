@@ -3,10 +3,10 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6.5 LTS
 description: Busque la información de la versión actual de Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ En esta sección se enumeran las características y funciones que Adobe ha dejad
 
 Se recomienda a los clientes que comprueben si utilizan la función o capacidad en su implementación actual, y que planifiquen el cambio de la implementación y usen la alternativa proporcionada.
 
-| Área | Funcionalidad | Reemplazo | Versión (SP) |
+| Área | Característica | Reemplazo | Versión (SP) |
 |---|---|---|---|
 | Sites | [Editor de SPA](/help/sites-developing/spa-overview.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. | 6.5 LTS GA |
 
@@ -92,7 +92,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 En esta sección se enumeran las características y funciones que se han eliminado de AEM 6.5 LTS. Las versiones anteriores tenían estas funciones marcadas como en desuso.
 
-| Área | Funcionalidad | Reemplazo | Versión (SP) |
+| Área | Característica | Reemplazo | Versión (SP) |
 |--- |--- |--- |--- |
 | Comercio | AEM CIF Classic no es compatible. | Migre a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluciones | Social/Communities no es compatible. | No hay sustitución disponible. | 6.5 LTS GA |
@@ -151,7 +151,7 @@ Si tiene este problema, póngase en contacto con Atención al cliente de Adobe. 
 
 ## Sitios web restringidos{#restricted-sites}
 
-Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
+Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
 * [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).

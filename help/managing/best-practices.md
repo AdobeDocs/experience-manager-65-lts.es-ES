@@ -3,9 +3,9 @@ title: 'Administración de proyectos: lista de comprobación de prácticas recom
 description: La administración de un proyecto para implementar Adobe Experience Manager (AEM) requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una monitorización de alto nivel de su estado.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 100%
@@ -234,7 +234,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
+  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 

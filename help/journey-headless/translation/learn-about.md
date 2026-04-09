@@ -3,11 +3,12 @@ title: Obtenga información sobre el contenido sin encabezado y cómo traducirlo
 description: Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: b81293da-772a-4ff1-8606-cec92d8cbd72
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +29,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
-En un CMS de pila completa, toda la funcionalidad para manipular contenido se encuentra en CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Hay un solo sistema que mantener.
 * El contenido se administra de forma centralizada.

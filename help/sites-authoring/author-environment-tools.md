@@ -8,15 +8,16 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+role: User,Admin,Developer
+exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 47%
 
 ---
 
-# Creación: el entorno y las herramientas{#authoring-the-environment-and-tools}
+# Creación: entorno y herramientas{#authoring-the-environment-and-tools}
 
 El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
@@ -250,7 +251,7 @@ Por ejemplo, se puede corregir una referencia rota dentro de un componente Refer
 
 ![ateat-14](assets/ateat-14.png)
 
-## Eventos: línea de tiempo {#events-timeline}
+## Eventos: cronología {#events-timeline}
 
 Para obtener los recursos adecuados (por ejemplo, páginas de la consola **Sitios** o activos de la consola **Activos**) se [puede utilizar la cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-authoring/basic-handling.md#timeline).
 
@@ -283,7 +284,7 @@ El botón Información de página (icono de ecualizador) abre un menú que tambi
 Por ejemplo, cuando sea apropiado, **Información de la página** también tiene las opciones:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es un lanzamiento
-* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3&rbrace;](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3}](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 

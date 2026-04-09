@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 82%
@@ -1717,22 +1717,22 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 
 | Nombre | Nombre | Premios |
 |--- |--- |--- |
-| Lincoln |  Abe | |
-| Smith | Adam |   |
-| Enclavado |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobs |  Steve |   |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Enclavado | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | |
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Trabajos | Steve | |
 
 #### Premio {#fragment-award}
 
 | Método abreviado/ID | Título |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Ciudad {#fragment-city}
 

@@ -7,11 +7,12 @@ topic-tags: page-authoring
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 52%
+ht-degree: 55%
 
 ---
 
@@ -41,7 +42,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&ast; Una vez que el usuario empieza a interactuar con la página en modo de vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario empieza a interactuar con la página en modo de vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

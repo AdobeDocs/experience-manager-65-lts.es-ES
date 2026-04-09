@@ -3,8 +3,9 @@ title: Guía de inicio rápido Creación de modelos de fragmentos de contenido s
 description: Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager (AEM) mediante modelos de fragmentos de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 768a5d73-521f-47a5-b4a3-d1b0b77798f7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
@@ -45,17 +46,17 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
    ![Configure las propiedades](assets/models-configure-properties.png)
 1. Cuando termine de crear el modelo, haga clic en **Guardar**.
 
-1. El tipo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
+1. El tipo del modelo recién creado depende de si ha seleccionado **Habilitar modelo** al crearlo:
    * seleccionado: el nuevo modelo ya está **Habilitado**
    * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
 1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
    1. Seleccione el modelo que creó y, a continuación, haga clic en **Habilitar**.
 
-      ![Activación del modelo](assets/models-enable.png)
+      ![Habilitación del modelo](assets/models-enable.png)
    1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.
 
-      ![Activación del cuadro de diálogo de confirmación](assets/models-enabling.png)
+      ![Habilitación del cuadro de diálogo de confirmación](assets/models-enabling.png)
 1. El modelo está ahora habilitado y listo para usarse.
 
    ![Modelo habilitado](assets/models-enabled.png)

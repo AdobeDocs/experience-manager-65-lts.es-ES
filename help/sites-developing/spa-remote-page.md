@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Consulte el artículo [Edición de un SPA externo en AEM](spa-edit-external.md) 
 
 {{ue-over-spa}}
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 * Habilitar CORS en desarrollo
 * Configurar URL remota en Propiedades de página

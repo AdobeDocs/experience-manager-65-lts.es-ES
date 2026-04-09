@@ -3,12 +3,12 @@ title: Reutilización de recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User,Admin,Developer
 feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3261'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 La funcionalidad Administrador de varios sitios (MSM) en [!DNL Adobe Experience Manager] permite a los usuarios reutilizar contenido creado una vez y reutilizado en varias ubicaciones web. Lo mismo está disponible para los recursos digitales que MSM para la funcionalidad [!DNL Assets]. Con MSM para [!DNL Assets], puede:
@@ -132,7 +132,7 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 [!DNL Experience Manager] proporciona una consola para comprobar los estados de todas las Live Copies de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
 
 1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. También puede usar el método abreviado de teclado `p`.
-1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este panel de control proporciona un estado de nivel superior de todos los recursos secundarios.
 
    ![Ver los estados de Live Copies en la consola Live Copy del origen](assets/livecopy-statuses.png)
 
@@ -215,7 +215,7 @@ También puede iniciar una acción de despliegue desde el carril Referencias des
 
 Una acción de sincronización extrae las modificaciones de un origen solo para la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Cómo usar |
+| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Usos |
 |---|---|---|
 | [!UICONTROL Referencias] carril | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Ver [acciones rápidas del carril Referencias para el origen](#refrailsource) |
 | Barra de herramientas en la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Ver [Sincronizar una Live Copy](#sync-lc) |
@@ -279,7 +279,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
 1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. También puede usar el método abreviado de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
-1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desasociar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
+1. En este panel de control, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desasociar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola de información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 

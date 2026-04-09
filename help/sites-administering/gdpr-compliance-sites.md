@@ -1,43 +1,44 @@
 ---
-title: 'AEM Sites: Preparación para el RGPD'
-description: Conozca los procedimientos para gestionar las solicitudes de RGPD en AEM Sites y cómo utilizarlas.
+title: 'AEM Sites: preparación para el RGPD'
+description: Conozca los procedimientos para gestionar las solicitudes del RGPD en AEM Sites y cómo utilizarlas.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,Leader,User
+exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# AEM Sites: Preparación para el RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites: preparación para el RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD, la CCPA, etc.
+>El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad, como el RGPD, la CCPA, etc.
 
 El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018.
 
-AEM Sites está preparado para ayudar a los clientes con sus obligaciones de cumplimiento del RGPD. Esta página guía a los clientes a través de los procedimientos para gestionar las solicitudes de RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.
+AEM Sites está preparado para ayudar a los clientes con sus obligaciones de cumplimiento del RGPD. Esta página guía a los clientes a través de los procedimientos para tratar las solicitudes del RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.
 
-Para obtener más información, consulte la página de [RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obtener más información, consulte la [página del RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html?lang=es).
 
 >[!NOTE]
 >
->Consulte [Preparación para el RGPD de AEM](/help/managing/data-protection-and-privacy.md) para obtener más información.
+>Consulte la [Preparación para el RGPD de AEM](/help/managing/data-protection-and-privacy.md) para obtener más información.
 
 ## Servidor de creación {#author-server}
 
-Las cuentas de usuario y el contenido generado por usuarios en el servidor de creación se tratan en [Documentación del RGPD de la plataforma](/help/managing/data-protection-and-privacy.md).
+Las cuentas de usuario y el contenido generado por usuarios en el servidor de creación se tratan en la [Documentación del RGPD de Platform](/help/managing/data-protection-and-privacy.md).
 
 ## Servidor de publicación {#publish-server}
 
-Las cuentas de usuario utilizadas para autenticar a los visitantes en el sitio y el contenido generado por usuarios en el servidor de publicación se tratan en la [Documentación del RGPD de la plataforma](/help/managing/data-protection-and-privacy.md).
+Las cuentas de usuario utilizadas para autenticar a los visitantes en el sitio y el contenido generado por usuarios en el servidor de publicación se tratan en la [Documentación del RGPD de Platform](/help/managing/data-protection-and-privacy.md).
 
 De forma predeterminada, los componentes de AEM Sites no almacenan los datos de formulario introducidos por los visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a Adobe Campaign para un procesamiento posterior.
 
@@ -45,21 +46,21 @@ De forma predeterminada, los componentes de AEM Sites no almacenan los datos de 
 
 AEM tiene un [servicio de exclusión de cookies](/help/sites-developing/cookie-optout.md) que se puede usar para administrar la inclusión/exclusión de los usuarios.
 
-## Perspectivas mejoradas de Analytics {#enhanced-insights-by-analytics}
+## Datos mejorados de Analytics {#enhanced-insights-by-analytics}
 
-AEM Sites incluye una integración opcional con Enhanced Insights by Analytics que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Analytics.
+AEM Sites incluye una integración opcional con Datos mejorados de Analytics que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Analytics.
 
-Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=es).
+Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y el RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=es).
 
-## Personalization mejorado por Target {#enhanced-personalization-by-target}
+## Personalización mejorada de Target {#enhanced-personalization-by-target}
 
-AEM Sites incluye una integración opcional con Personalization mejorado por Target que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Target.
+AEM Sites incluye una integración opcional con Personalización mejorada de Target que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Target.
 
-Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Target, consulte [Adobe Target: Reglamento general de protección de datos](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Target, consulte [Adobe Target: privacidad y Reglamento general de protección de datos](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=es).
 
 ## ContextHub {#contexthub}
 
-AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md). Esto mantiene los datos específicos del visitante en el explorador, para usarlos para la personalización basada en reglas.
+AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md).  Esto mantiene los datos específicos del visitante en el explorador, para usarlos para la personalización basada en reglas.
 
 De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM envía reglas a la capa de datos para tomar decisiones de personalización en el explorador.
 
@@ -67,16 +68,16 @@ De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM en
 >
 >Antes de Adobe AEM (CQ) 5.6, ClientContext (una versión anterior de ContextHub) enviaba los datos al servidor, pero no los almacenaba.
 >
->Adobe AEM 6.4 y versiones anteriores ahora son EOL y no están cubiertas por esta documentación. Ver [documentación de versiones anteriores de Adobe Experience Manager, CQ y CRX](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 y versiones anteriores han llegado al fin de su vida y no están cubiertas por esta documentación. Consulte la [documentación de versiones anteriores de Adobe Experience Manager, CQ y CRX](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementación de la inclusión/exclusión {#implementing-opt-in-opt-out}
 
 El propietario del sitio debe implementar un componente de exclusión según las siguientes directrices.
 
-Estas directrices implementan la inclusión como predeterminada. Por lo tanto, el visitante de un sitio web debe aceptar claramente antes de que los datos personales se almacenen en la persistencia del explorador (del lado del cliente).
+Estas directrices implementan la inclusión como predeterminada. Por lo tanto, un visitante de un sitio web debe aceptar con claridad antes de que cualquier dato personal se almacene en la persistencia del explorador (del lado del cliente).
 
 * El componente de exclusión debe incluirse cada vez que se incluya el componente ContextHub.
-* Los términos y condiciones relacionados con el RGPD para el sitio web deben mostrarse al visitante del sitio web, lo que le permite:
+* Los términos y condiciones relacionados con el RGPD del sitio web deben mostrarse al visitante del sitio web, lo que le permite hacer lo siguiente:
 
    * Aceptar
    * Rechazar

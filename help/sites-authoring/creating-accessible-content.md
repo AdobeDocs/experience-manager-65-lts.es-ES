@@ -3,15 +3,16 @@ title: Crear contenido accesible para Adobe Experience Manager (Conformidad con 
 description: Utilice AEM para ayudar a que las personas con discapacidades puedan acceder al contenido web y utilizarlo
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 0c3e3b6c-3c41-455e-823a-7cce50f174d4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 82%
+source-wordcount: '13630'
+ht-degree: 81%
 
 ---
 
-# Crear contenido accesible (Conformidad con WCAG 2.1) {#creating-accessible-content-wcag-conformance}
+# Crear contenido accesible (en conformidad con WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
 Las [Directrices de accesibilidad al contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaboradas por [un grupo de trabajo del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consisten en un conjunto de directrices y criterios de éxito independientes de la tecnología para ayudar a las personas con discapacidades a tener acceso al contenido web y utilizarlo.
 
@@ -164,7 +165,7 @@ Insertar contenido multimedia en sus páginas web de AEM es similar a insertar u
 
 >[!NOTE]
 >
->Al utilizar contenido multimedia con contenido informativo, también se deben crear vínculos a opciones alternativas. Por ejemplo, para incluir una transcripción textual, cree una página HTML para reproducir la transcripción y añada un vínculo debajo o junto al contenido del audio.
+>Al utilizar contenido multimedia con contenido informativo, también se deben crear vínculos a opciones alternativas. Por ejemplo, para mostrar una transcripción textual, cree una página HTML para mostrar la transcripción y añada un vínculo debajo o junto al contenido del audio.
 
 #### Más información: Solo audio y solo vídeo (pregrabado) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -190,9 +191,9 @@ Los subtítulos pueden ser:
 
 Utilice subtítulos cerrados siempre que sea posible, ya que proporciona a los usuarios la opción de verlos o no.
 
-Para los subtítulos cerrados, crea y proporciona un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el alcance de esta guía, pero proporcionamos vínculos a varios tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o activar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
+Para los subtítulos cerrados, crea y proporciona un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el alcance de esta guía, pero proporcionamos vínculos a varios tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o habilitar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
 
-Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
+Si necesita utilizar subtítulos abiertos, incruste el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
 
 #### Más información: Subtítulos (pregrabados) (1.2.2) {#more-information-captions-prerecorded}
 
@@ -234,7 +235,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/es/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Subtítulos (en vivo) (1.2.4)          {#captions-live}
@@ -309,7 +310,7 @@ AEM facilita construir contenido web con sentido semántico utilizando los eleme
 
 Puede garantizar que las páginas web tengan la estructura adecuada mediante los siguientes elementos, según corresponda:
 
-* **Encabezados:** siempre y cuando tenga las funciones de accesibilidad del RTE activadas, AEM ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
+* **Encabezados:** siempre y cuando tenga las funciones de accesibilidad del RTE habilitadas, AEM ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 
 * **Listas**: Puede utilizar HTML para especificar tres tipos diferentes de listas:
    * El elemento `<ul>` se utiliza para listas *desordenadas* (o listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. En el RTE, utilice el icono **Lista con viñetas**.
@@ -359,7 +360,7 @@ Puede garantizar que las páginas web tengan la estructura adecuada mediante los
 
   >[!NOTE]
   >
-  >El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
+  >El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede habilitar configurando las normas HTML y el serializador en el RTE.
 
   Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
@@ -518,8 +519,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.4.2](https://ww
 
 * Criterios de éxito 1.4.3
 * Nivel AA
-* Contraste (mínimo): la presentación visual del texto y las imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto en los siguientes casos:
-   * Texto grande: el texto y las imágenes de texto a gran escala mantienen una relación de contraste de al menos 3:1.
+* Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4,5:1, excepto en los casos siguientes:
+   * Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 3:1.
    * Secundario: el texto o las imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, [decoración pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), no son visibles para nadie o forman parte de una imagen que contiene otro contenido visual significativo, no tienen requisitos de contraste.
    * Logotipos: El texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
 
@@ -542,9 +543,9 @@ Las personas con ciertas deficiencias visuales quizá no puedan distinguir entre
 
 Asegúrese de que el texto contraste lo suficiente con el fondo. Las relaciones de contraste dependen del tamaño y del estilo del texto en cuestión:
 
-* Para los textos cuyo tamaño es menor de 18 puntos (o 14 puntos en negrita), la relación de contraste entre el texto o las imágenes del texto y el fondo debería ser de al menos 4.5:1.
-* Para los textos cuyo tamaño es de al menos 18 puntos (o 14 puntos en negrita), la relación de contraste debería ser de al menos 3:1.
-* Ante un fondo estampado, el fondo alrededor de cualquier texto debería estar sombreado para que la relación 4.5:1 o 3:1 se mantenga.
+* Para el texto cuyo tamaño es menor de 18 puntos (o 14 puntos en negrita), la relación de contraste entre el texto o las imágenes del texto y el fondo debe ser de al menos 4,5:1.
+* Para el texto cuyo tamaño es de al menos 18 puntos (o 14 puntos en negrita), la relación de contraste debe ser de al menos 3:1.
+* Si el fondo es un patrón, el fondo alrededor de cualquier texto debe estar sombreado para que se mantenga la relación 4.5:1 o 3:1.
 
 >[!NOTE]
 >

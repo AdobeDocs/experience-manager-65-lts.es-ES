@@ -9,8 +9,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 76%

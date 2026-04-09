@@ -5,7 +5,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '4292'
 ht-degree: 86%
@@ -200,9 +200,9 @@ Las siguientes secciones describen cómo se muestran los elementos de formulario
 ### Componentes estáticos {#static-components}
 
 | Componente de formulario adaptable | Componente XFA correspondiente | Notas |
-|---|---|---|
+| --- | --- | --- |
 | Imagen | Imagen | Los componentes TextDraw e Image, estén enlazados o no, siempre aparecen en el documento de registro de un formulario adaptable basado en XSD, a menos que se excluyan en la configuración del documento de registro. |
-| Texto | Texto  |
+| Texto | Texto  | |
 
 >[!NOTE]
 >

@@ -3,8 +3,9 @@ title: Configuración de componentes predeterminados en el modo Diseño
 description: Configuración de componentes de Adobe Experience Manager en el modo Diseño.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+role: User,Admin,Developer
+exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 10%
@@ -70,7 +71,7 @@ Para habilitar o deshabilitar un componente:
 
 1. El icono **Configurar** para el sistema de párrafos se muestra en la barra de acciones del elemento principal.
 
-   ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configuración](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Seleccione esta opción para mostrar el cuadro de diálogo.
 

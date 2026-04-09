@@ -3,9 +3,9 @@ title: Uso del editor de texto enriquecido para crear contenido
 description: Uso del editor de texto enriquecido para crear contenido en Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 35%
@@ -16,8 +16,8 @@ ht-degree: 35%
 
 El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes, entre ellos, los siguientes:
 
-* [Texto](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabla](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Texto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabla](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Edición in situ {#in-place-editing}
 

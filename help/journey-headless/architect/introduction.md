@@ -1,19 +1,20 @@
 ---
-title: Recorrido de arquitectos de contenido de Adobe Experience Manager Headless
-description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo diseñar contenido para su proyecto.
+title: Recorrido de arquitecto de contenido sin encabezado de Adobe Experience Manager
+description: Una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y cómo diseñar contenido para su proyecto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Modelado de contenido para Headless con AEM: introducción {#architect-headless-introduction}
 
-En esta parte del [Recorrido de arquitectos de contenido sin encabezado de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM).
+En esta parte del [Recorrido de arquitectos de contenido AEM Headless](overview.md), podrá aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM).
 
 Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se modela el contenido para que no tenga encabezado. Después de leer, debería haber logrado lo siguiente:
 
@@ -22,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado, có
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: introducir los conceptos y la terminología relevantes para el Modelado de contenido sin encabezado.
 
 ## Entrega de contenido de pila completa {#full-stack}
@@ -31,7 +32,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
-En un CMS de pila completa, toda la funcionalidad para manipular contenido se encuentra en CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Hay un solo sistema que mantener.
 * El contenido se administra de forma centralizada.
@@ -68,9 +69,9 @@ En AEM, usted, como arquitecto de contenido, realizará el modelado de contenido
 
 Se trata más bien de un detalle de desarrollo, pero puede interesarle para completar la historia.
 
-Una vez creados los modelos de fragmentos de contenido y que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado deben acceder a este.
+Una vez haya creado los modelos de fragmento de contenido y que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado tendrán que acceder a este contenido.
 
-Adobe Experience Manager (AEM) puede acceder selectivamente a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
+Adobe Experience Manager (AEM) puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
 
 Esto significa que el proyecto puede realizar una entrega sin encabezado de contenido estructurado para usarlo en las aplicaciones.
 
@@ -80,7 +81,7 @@ Ahora que ha aprendido los conceptos y la terminología, el siguiente paso consi
 
 ## Recursos adicionales {#additional-resources}
 
-* Recorrido para desarrolladores de AEM sin encabezado
+* Recorrido para desarrolladores de AEM headless
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 * [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)

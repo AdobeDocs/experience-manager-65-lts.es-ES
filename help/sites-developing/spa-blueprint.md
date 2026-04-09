@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
@@ -76,9 +76,9 @@ La estructura de contenido de la página se almacena en AEM. El modelo de la pá
 
 Los componentes de la SPA deben estar sincronizados con el modelo de página y actualizarse con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que utilice componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
 
-### Metadatos de campos {#meta-fields}
+### Campos de Meta {#meta-fields}
 
-El modelo de página utiliza el Exportador de modelos JSON, que a su vez se basa en la API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
+El modelo de página utiliza el Exportador de modelos JSON, que a su vez se basa en la API [Sling Model](https://sling.apache.org/documentation/bundles/models.html?lang=es). Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
 
 * `:type`: tipo de recurso de AEM (predeterminado = tipo de recurso)
 * `:children`: elementos secundarios jerárquicos del recurso actual. Los elementos secundarios no forman parte del contenido interno del recurso actual (se pueden encontrar en elementos que representan una página)

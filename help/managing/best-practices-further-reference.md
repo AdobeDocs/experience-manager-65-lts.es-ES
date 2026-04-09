@@ -3,9 +3,9 @@ title: 'La lista de comprobación: referencia adicional'
 description: Obtenga más información sobre los detalles que amplían o complementan los documentos y principios tratados en la lista de verificación de prácticas recomendadas para la administración de proyectos.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Esta página proporciona más información sobre los detalles que amplían o com
 
 ### Funciones en AEM {#features-within-aem}
 
-Al implementar AEM (sobre todo por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas quiere o necesita.
+Al implementar AEM (sobre todo por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas quiere o necesita.
 
 Tenga en cuenta las funciones de AEM que está utilizando y el impacto en el diseño; por ejemplo:
 

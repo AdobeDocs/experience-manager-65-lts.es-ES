@@ -9,9 +9,10 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6654'
 ht-degree: 0%
 
 ---
@@ -687,7 +688,7 @@ Las nuevas instalaciones de AEM utilizarán de forma predeterminada las nuevas i
 |---|---|
 | Rutas admitidas `/content` | La administración del control de acceso para las directivas CUG está habilitada. |
 | Evaluación de CUG habilitada FALSE | La evaluación de permisos está deshabilitada. Las políticas de CUG no surten efecto. |
-| Clasificación | 200 | Consulte la documentación de Oak. |
+| Clasificación \|200 | Consulte la documentación de Oak. |
 
 >[!NOTE]
 >
@@ -699,7 +700,7 @@ Las nuevas instalaciones de AEM utilizarán de forma predeterminada las nuevas i
 |---|---|
 | Rutas admitidas `/content` | La administración del control de acceso para las políticas de CUG está habilitada debajo de las rutas configuradas. |
 | Evaluación de CUG habilitada VERDADERO | La evaluación de permisos está habilitada debajo de las rutas configuradas. Las directivas de grupos de usuarios compartidos surten efecto en `Session.save()`. |
-| Clasificación | 200 | Consulte la documentación de Oak. |
+| Clasificación \|200 | Consulte la documentación de Oak. |
 
 | **&quot;Lista de exclusión de Apache Jackrabbit Oak CUG&quot;** | **Explicación** |
 |---|---|
@@ -801,7 +802,7 @@ Este cambio de las propiedades JCR residuales a una política de control de acce
 
 Cree políticas de CUG en el nodo JCR que definan el subárbol que debe estar sujeto al acceso de lectura restringido. Es probable que sea una página de AEM en caso de que se espere que el CUG afecte a todo el árbol.
 
-Colocar la directiva CUG solo en el nodo jcr:content ubicado debajo de una página determinada solo restringe el acceso al contenido s.str de una página determinada, pero no surte efecto en ninguna página del mismo nivel o secundaria. Este puede ser un caso de uso válido y se puede lograr con un editor de repositorios que le permita aplicar contenido de acceso de grano fino. Sin embargo, contrasta con la implementación anterior, en la que al colocar una propiedad cq:cugEnabled en el nodo jcr:content se reasignaba internamente al nodo de la página. Esta asignación ya no se realiza.
+Colocar la directiva CUG solo en el nodo jcr:content ubicado debajo de una página determinada solo restringe el acceso al contenido s.str de una página determinada, pero no surte efecto en ninguna página secundaria o del mismo nivel. Este puede ser un caso de uso válido y se puede lograr con un editor de repositorios que le permita aplicar contenido de acceso de grano fino. Sin embargo, contrasta con la implementación anterior, en la que al colocar una propiedad cq:cugEnabled en el nodo jcr:content, se reasignó internamente al nodo de la página. Esta asignación ya no se realiza.
 
 **Evaluación de permisos con políticas de CUG**
 
@@ -844,7 +845,7 @@ Cree requisitos de autenticación en el nodo JCR que definan el subárbol que de
 
 Colocar la directiva CUG solo en el nodo jcr:content ubicado debajo de una página determinada solo restringe el acceso al contenido. Sin embargo, no tiene efecto en el propio nodo de página ni en ninguna página secundaria.
 
-Este puede ser un escenario válido y es posible con un editor de repositorios que le permita colocar el mixin en cualquier nodo. Sin embargo, el comportamiento contrasta con la implementación anterior, en la que al colocar una propiedad cq:cugEnabled o cq:cugLoginPage en el nodo jcr:content se reasignaba internamente, en última instancia, al nodo de la página. Esta asignación ya no se realiza.
+Este puede ser un escenario válido y es posible con un editor de repositorios que le permita colocar el mixin en cualquier nodo. Sin embargo, el comportamiento contrasta con la implementación anterior, en la que al colocar una propiedad cq:cugEnabled o cq:cugLoginPage en el nodo jcr:content se reasignó internamente, en última instancia, al nodo de la página. Esta asignación ya no se realiza.
 
 #### Rutas admitidas configuradas {#configured-supported-paths}
 

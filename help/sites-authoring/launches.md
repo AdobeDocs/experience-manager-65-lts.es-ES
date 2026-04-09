@@ -8,11 +8,11 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '896'
 ht-degree: 69%
 
 ---
@@ -25,7 +25,7 @@ Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse pa
 
 Usted crea un *Lanzamiento* y, después de editar y actualizar sus páginas de *Lanzamiento*, las *Promociona* de nuevo a *Source*. A continuación, puede activar estas páginas de *Source* (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
 
-Por ejemplo, las páginas de productos de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
+Por ejemplo, las páginas de producto de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
 
 * Cambios en las páginas de origen que se producen como resultado de tareas normales de mantenimiento. Estos cambios se duplican automáticamente en las páginas de lanzamiento.
 * Ediciones que se realizan en las páginas de lanzamiento directamente en preparación para el trimestre siguiente.

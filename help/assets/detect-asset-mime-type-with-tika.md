@@ -2,13 +2,14 @@
 title: Detección del tipo MIME de los recursos mediante Apache Tika
 description: Habilite Apache Tika para ayudar a  [!DNL Experience Manager Assets] detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión de archivo.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Metadata,Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4c953b8b-ae50-4c02-889a-78b02b4ba975
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 

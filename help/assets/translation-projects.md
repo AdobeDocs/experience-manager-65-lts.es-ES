@@ -2,13 +2,14 @@
 title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en  [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e6b78580-a96e-4560-8f25-b62bb04b060e
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
@@ -219,7 +220,7 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Seleccione la casilla de verificación que se encuentra delante de **[!UICONTROL Textos en idiomas]**, de esta forma, selecciona los textos disponibles en diferentes idiomas. Anule la selección de otros textos excepto el texto (textos) en el idioma correspondiente a las configuraciones regionales a las que desea traducir.
+1. Seleccione la casilla de verificación que se encuentra delante de **[!UICONTROL Textos en idiomas]**, de esta forma, selecciona los textos disponibles en diferentes idiomas. Anule la selección de otras copias excepto la copia (copias) de idioma correspondiente a las configuraciones regionales a las que desea traducir.
 
    ![seleccionar copia de idioma](assets/lang-copy1.png)
 

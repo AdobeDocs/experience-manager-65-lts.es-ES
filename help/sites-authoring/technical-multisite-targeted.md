@@ -7,11 +7,12 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 435fcee8-ddb4-4b3c-a55f-fca1b91b7d52
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 

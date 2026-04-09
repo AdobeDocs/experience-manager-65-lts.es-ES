@@ -7,14 +7,14 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 40%
 
 ---
-
 
 # Uso de flujos de trabajo de proyecto {#working-with-project-workflows}
 
@@ -22,7 +22,7 @@ Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen l
 
 * **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
-* **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
+* **Solicitar página de destino**: este flujo de trabajo solicita una página de destino.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Sesión fotográfica del producto y Sesión fotográfica del producto (Commerce)**: asigna recursos con productos
 * **Crear y traducir copia DAM y crear copia de idioma DAM**: crea archivos binarios, metadatos y etiquetas traducidos para archivos y carpetas.
@@ -36,14 +36,14 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Sesión fotográfica del producto (Commerce) |  |  | x |  |
 | Aprobación del proyecto | x |  |  |  |
 | Solicitar lanzamiento | x |  |  |  |
-| Solicitar página de aterrizaje | x |  |  |  |
+| Solicitar página de destino | x |  |  |  |
 | Solicitar correo electrónico | x |  |  |  |
-| Creación de copia de idioma de DAM&ast; |  |  |  | x |
-| Creación y traducción de copia de idioma de DAM&ast; |  |  |  | x |
+| Creación de copia de idioma de DAM&amp;ast; |  |  |  | x |
+| Creación y traducción de copia de idioma de DAM&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
@@ -53,7 +53,7 @@ Para obtener más información sobre cómo trabajar con flujos de trabajo en AEM
 
 * [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
-* [Configuración de flujos de trabajo &#x200B;](/help/sites-administering/workflows.md)
+* [Configuración de flujos de trabajo ](/help/sites-administering/workflows.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
@@ -73,7 +73,7 @@ Se inicia el flujo de trabajo. La tarea aparece en la tarjeta **Tareas**.
 
 ## Flujo de trabajo de sesión fotográfica del producto {#product-photo-shoot-workflow}
 
-Los flujos de trabajo de la **sesión fotográfica del producto** (tanto comerciales como sin comerciales) se tratan en detalle en el documento [Proyectos creativos](/help/sites-authoring/managing-product-information.md)
+Los flujos de trabajo de la **sesión fotográfica del producto** (tanto comerciales como sin comerciales) se tratan en detalle en el documento [Proyectos de Creative](/help/sites-authoring/managing-product-information.md)
 
 ## Flujo de trabajo de aprobación del proyecto {#project-approval-workflow}
 

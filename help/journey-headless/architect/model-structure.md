@@ -3,8 +3,9 @@ title: Obtenga información acerca de la creación de modelos de fragmento de co
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
@@ -21,7 +22,7 @@ Este artículo se basa en estos modelos para que pueda comprender cómo crear su
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: obtener conceptos y mecanismos de modelado de contenido para su CMS sin encabezado utilizando los modelos de fragmentos de contenido.
 
 <!-- which persona does this? -->
@@ -81,7 +82,7 @@ Sus autores de contenido no verán los tipos de datos ni las propiedades reales 
 >
 >Consulte Recursos adicionales: Modelos de fragmento de contenido.
 
-## Administración de modelos de fragmento de contenido {#managing-content-fragment-models}
+## Administración de los modelos de fragmento de contenido {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
@@ -120,7 +121,7 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
 
       * [Definición del modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Activación o desactivación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Habilitación o deshabilitación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
       * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 

@@ -3,8 +3,9 @@ title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 87%
@@ -87,7 +88,6 @@ Dado que los modelos de contenido definen la estructura de tu contenido, debes s
 1. Se abrirá el **Editor de modelos de fragmento de contenido**.
    1. La columna izquierda contiene los campos del modelo. Esta columna nos interesa.
    1. La columna derecha contiene los campos que se pueden agregar al modelo. Esta columna se puede ignorar.
-
       ![Editor del modelo de fragmentos de contenido](assets/content-fragment-model-editor.png)
 1. Haga clic en uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)

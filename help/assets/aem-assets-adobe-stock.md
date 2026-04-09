@@ -7,7 +7,7 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: b40c803de59f85fb34536849370ff3e77bba473a
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 LTS | Este artículo |
 
 <!-- old content
@@ -102,7 +102,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Como desarrollador, ejecute los siguientes pasos para integrar [!DNL Adobe Experience Manager] y [!DNL Adobe Stock].
 
 1. [Configurar un programa en  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Agregar configuración en la instancia de autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Agregar configuración en la instancia de autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar un programa en [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -463,9 +463,9 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
->* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/es/stock/faq.html)
+>* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--old content

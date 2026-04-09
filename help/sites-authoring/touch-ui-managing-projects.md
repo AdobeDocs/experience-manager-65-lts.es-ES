@@ -7,14 +7,14 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
 
 ---
-
 
 # Administración de proyectos {#managing-projects}
 
@@ -155,7 +155,7 @@ Siga estos pasos para eliminar un proyecto.
 1. AEM puede eliminar o modificar los datos de proyecto asociados al eliminar el proyecto. Seleccione las opciones que necesite en el cuadro de diálogo **Eliminar proyecto**.
    * Eliminar los grupos y las funciones de proyecto
    * Eliminar carpeta Assets del proyecto
-   * Completar los flujos de trabajo del proyecto
+   * Terminar los flujos de trabajo del proyecto
 
    ![Opciones de eliminación de proyecto](assets/project-delete-options.png)
 1. Haga clic en **Eliminar** para eliminar el proyecto con las opciones seleccionadas.

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 42%
@@ -143,7 +143,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://business.adobe.com/es/)
+* [Soluciones](https://business.adobe.com/)
 
   ![Soluciones](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -215,7 +215,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-Hay varios medios de ayuda disponibles:
+Hay varios recursos de ayuda disponibles:
 
 * **Barra de herramientas de la consola**
 
@@ -293,7 +293,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista   &#x200B;](#list-view)
+* [Vista de lista   ](#list-view)
 
 >[!NOTE]
 >

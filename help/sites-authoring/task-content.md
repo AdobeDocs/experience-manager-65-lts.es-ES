@@ -7,14 +7,14 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 852aaf6e-acf3-4224-bf4c-c0913110abd4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 41%
 
 ---
-
 
 # Uso de tareas {#working-with-tasks}
 

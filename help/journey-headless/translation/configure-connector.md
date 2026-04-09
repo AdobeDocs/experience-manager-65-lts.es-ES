@@ -3,8 +3,9 @@ title: Configuración de la integración de traducción
 description: Aprenda a conectar AEM a un servicio de traducción.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 8f8f0e13-19ab-4324-a4de-98f0fbfe3882
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 92%

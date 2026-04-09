@@ -3,14 +3,14 @@ title: Proyectos
 description: Los proyectos le permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
-
 
 # Proyectos {#projects}
 
@@ -227,7 +227,7 @@ Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos as
 
 Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
 
-Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [&#x200B; al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
+Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [ al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
 
 ## Recursos adicionales {#additional-resources}
 

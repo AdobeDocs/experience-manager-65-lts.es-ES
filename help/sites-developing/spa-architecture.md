@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
@@ -222,7 +222,7 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 >
 >Dentro de AEM, no es necesario ejecutar los mecanismos de compilación de JavaScript ni ejecutar el propio JavaScript. AEM solo aloja los artefactos compilados de la aplicación SPA.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Para obtener una descripción general de cómo está estructurado un SPA simple en AEM y cómo funciona, consulte la guía de introducción para [React](/help/sites-developing/spa-getting-started-react.md) y [Angular](/help/sites-developing/spa-getting-started-angular.md).
 

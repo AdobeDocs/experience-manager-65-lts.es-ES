@@ -8,10 +8,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7164'
-ht-degree: 95%
+source-wordcount: '7136'
+ht-degree: 94%
 
 ---
 
@@ -101,9 +102,9 @@ Puede usar [patrones de archivo](../../forms/using/watched-folder-in-aem-forms.m
    * Archivos con nombres específicos; por ejemplo, data&#42; excluiría archivos y carpetas llamados data1, data2, etc.
    * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+      * &#42;.`[dD][Aa]`&#39;puerto&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -114,10 +115,10 @@ Para obtener más información sobre los patrones de archivo, consulte [Informac
 
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
 
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;.`[dD][Aa]`&#39;puerto&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -296,7 +297,7 @@ Si planea colocar los scripts en una ubicación personalizada, es probable que e
 1. Cree un usuario del sistema mediante programación o a través de la consola https://&#39;[server]:[port]&#39;/crx/explorer. También puede utilizar un usuario del sistema existente. Es importante trabajar con los usuarios del sistema aquí en lugar de con los usuarios normales.
 1. Proporcione permisos de lectura al usuario del sistema recién creado o existente en la ubicación personalizada donde se almacenan los scripts. Puede tener varias ubicaciones personalizadas. Proporcione al menos permisos de lectura a todas las ubicaciones personalizadas.
 1. En la consola de configuración de Felix (/system/console/configMgr), busque la asignación de usuario de servicio para las carpetas de inspección. Esta asignación es similar a “Mapping: adobe-aemds-core-watch-folder=...”.
-1. Haga clic en la asignación. Para la entrada “adobe-aemds-core-watch-folder:scripts=fd-service”, cambie fd-service por el ID del usuario del sistema personalizado. Haga clic en Guardar.
+1. Haga clic en la asignación. Para la entrada &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, cambie fd-service por el ID del usuario del sistema personalizado. Haga clic en Guardar.
 
 Ahora, puede utilizar la ubicación personalizada configurada para guardar los scripts.
 
@@ -513,7 +514,7 @@ La carpeta inspeccionada analiza la carpeta de entrada en cada intervalo de encu
 
 La restricción impide que la carpeta inspeccionada invoque nuevos trabajos cuando los trabajos anteriores no se completan. La carpeta inspeccionada detecta los trabajos en curso y procesa los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, la carpeta inspeccionada invoca solo tres trabajos más.
 
-* La carpeta inspeccionada depende del número de archivos presentes en la carpeta de fase para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de fase, la carpeta inspeccionada no invoca más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos paralizados, la carpeta inspeccionada solo invoca un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de fase. Cuando los trabajos están paralizados, el administrador puede finalizar el proceso en la página de administración Administración de procesos para que la carpeta inspeccionada mueva los archivos fuera de la carpeta de fase.
+* La carpeta inspeccionada depende del número de archivos presentes en la carpeta de fase para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de fase, la carpeta inspeccionada no invoca más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos paralizados, la carpeta inspeccionada solo invoca un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de fase. Cuando los trabajos están paralizados, el administrador puede terminar el proceso en la página de administración Administración de procesos para que la carpeta inspeccionada mueva los archivos fuera de la carpeta de fase.
 * Si el servidor de AEM Forms se desactiva antes de que la carpeta inspeccionada invoque los trabajos, el administrador puede sacar los archivos de la carpeta de fase. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 * Si el servidor de AEM Forms se está ejecutando pero la carpeta inspeccionada no se está ejecutando cuando el servicio Administrador de trabajos devuelve la llamada, lo que ocurre cuando los servicios no se inician en la secuencia ordenada, el administrador puede sacar los archivos de la carpeta de fase. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
@@ -567,9 +568,9 @@ Los administradores pueden especificar el tipo de archivo que puede invocar un s
 * Archivos con nombres específicos; por ejemplo, data.&#42;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &#42;.[dD][Aa]&#39;port&#39;
-   * &#42;.[Xx][Mm][Ll]
+   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * &#42;.`[dD][Aa]`&#39;puerto&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * El administrador puede definir el patrón de archivo de la carpeta de salida en la que desea almacenar los resultados. Para las carpetas de salida (resultado, conservar y error), el administrador puede especificar cualquiera de estos patrones de archivo:
 * %Y = año (completo)

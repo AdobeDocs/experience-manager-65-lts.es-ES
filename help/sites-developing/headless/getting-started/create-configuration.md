@@ -3,8 +3,9 @@ title: Creación de una Guía de inicio rápido de configuración sin encabezado
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 66%

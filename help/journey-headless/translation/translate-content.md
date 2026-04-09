@@ -3,8 +3,9 @@ title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%

@@ -3,8 +3,9 @@ title: Obtenga información sobre la definición de metadatos y etiquetado para 
 description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 93a5d272-893a-4d39-89eb-197c2fda3ad4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 83%
@@ -23,7 +24,7 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo usar l
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzados
 * **Objetivo**: introducir el uso de metadatos y el etiquetado para la creación de CMS sin encabezado.
 
 ## Adición de metadatos y etiquetas {#adding-metadata-and-tags}

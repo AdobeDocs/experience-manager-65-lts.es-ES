@@ -8,10 +8,11 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: b5fc6cf5-fffd-4ee9-91d4-d10e532c3a11
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 75%
 
 ---
@@ -48,11 +49,11 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 >
 >* Si la opción **xt_only** está habilitada para **not** en el inquilino de Adobe Target (clientcode), puede crear actividades **XT y A/B de** en AEM.
 >
->**Nota adicional:** **xt_only** opciones es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:** **xt_only** opciones es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede habilitar ni deshabilitar esta opción en AEM.
 
 >[!CAUTION]
 >
->Asegure el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Proteja el nodo de configuración de actividad **cq:ActivitySettings** en la instancia de publicación para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
 >Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obtener información detallada.
 
@@ -79,9 +80,9 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo de actividad: &#x200B;** El tipo de actividad: prueba A/B o segmentación de experiencias
+* **Tipo de actividad: **El tipo de actividad: prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
-* **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
+* **Experiencias:** Asignaciones entre los nombres de público y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
 * **Duración:** Período de tiempo en el que se aplica la actividad.
 * **Prioridad:** Prioridad relativa de la actividad. Cuando las actividades proporcionan contenido para los mismos segmentos de usuario, la actividad de la prioridad mayor prevalece por encima de la otra.
@@ -107,7 +108,7 @@ Para añadir una actividad, haga lo siguiente:
 1. Agregue una o varias experiencias a la actividad. Haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
 
-   1. Haga clic en **Seleccionar audiencia &#x200B;** y seleccione el segmento de destino de la experiencia.
+   1. Haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
    1. Haga clic en **Agregar experiencia**, escriba un nombre y haga clic en **Aceptar**.
 
    1. Haga clic en **Siguiente**.
@@ -200,7 +201,7 @@ Estas condiciones se aplican a las actividades de las instancias de publicación
 Cuando se sincroniza una actividad, se crea una campaña correspondiente en Adobe Target:
 
 * Las actividades de la instancia de publicación tienen el mismo nombre que la campaña de Adobe Target correspondiente.
-* Las actividades de la instancia de creación se corresponden con las campañas de Target que tienen el mismo nombre con el sufijo `_author`.
+* Las actividades de la instancia de autor se corresponden con las campañas de Target que tienen el mismo nombre con el sufijo `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 

@@ -8,8 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: dbcedca5-5228-4ad0-9ee1-d32b519e60bd
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 63%
@@ -109,7 +110,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Esta opción habilita la creación de páginas basada en la IU [clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
-* **Activar la página principal de los recursos**
+* **Habilitar la página principal de los recursos**
 
   Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de Assets para toda la organización.
 

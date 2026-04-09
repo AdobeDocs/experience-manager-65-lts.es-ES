@@ -3,10 +3,10 @@ title: Preguntas frecuentes
 description: Preguntas frecuentes sobre AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 9f9da819550b93d7a06b151962bf41751ecbc8b3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 

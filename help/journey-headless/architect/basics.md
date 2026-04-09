@@ -3,8 +3,9 @@ title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 94%
@@ -21,7 +22,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo modela
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: introduzca los conceptos de Modelado de contenido sin encabezado de CMS.
 
 ## Modelado de contenido con modelos de fragmento de contenido {#architect-content-fragment-models}
@@ -84,7 +85,7 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Lista desglosada
+* Enumeración
 * Etiquetas
 * Referencia de contenido
 * Referencia al fragmento

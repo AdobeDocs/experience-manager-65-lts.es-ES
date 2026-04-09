@@ -1,35 +1,36 @@
 ---
 title: Perspectiva de contenido
-description: La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO
+description: Content Insight proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Perspectiva de contenido{#content-insight}
 
-La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice Perspectiva de contenido para tomar decisiones sobre cómo modificar páginas o conocer cómo los cambios anteriores han cambiado el rendimiento. Para cada página que cree, puede abrir Perspectiva de contenido para analizar la página.
+Content Insight proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice Content Insight para tomar decisiones sobre cómo modificar páginas o para conocer cómo los cambios anteriores han cambiado el rendimiento. Para cada página que cree, puede abrir Content Insight para analizar la página.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de pantalla y a la orientación del dispositivo que está utilizando.
+El diseño de la página de Insight de contenido cambia para adaptarse a las dimensiones de pantalla y a la orientación del dispositivo que está utilizando.
 
 ## Datos del informe
 
-La página Perspectiva de contenido incluye informes que utilizan datos de Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
+La página Insight de contenido incluye informes que utilizan datos de Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
 
 * SiteCatalyst: Hay disponibles informes para las siguientes métricas:
 
-   * Page views
+   * Vistas de la página
    * Tiempo promedio empleado en la página
    * Orígenes
 
@@ -38,13 +39,13 @@ La página Perspectiva de contenido incluye informes que utilizan datos de Adobe
 
 Consulte [Abrir Analytics y Recommendations para una página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## Período de informe
+## Periodo de creación de informes
 
 Los informes muestran datos correspondientes a un período de tiempo que usted controla. Al ajustar el período de informe, los informes se actualizan automáticamente con los datos de ese período. Las indicaciones visuales indican el momento en el que cambiaron las versiones de la página, de modo que puede comparar el rendimiento de cada versión.
 
 >[!NOTE]
 >
->La cronología del panel de información de contenido está en `GMT`.
+>La cronología del tablero de Content Insight está en `GMT`.
 
 También puede especificar la granularidad de los datos del informe; por ejemplo, puede ver datos diarios, semanales, mensuales o anuales.
 

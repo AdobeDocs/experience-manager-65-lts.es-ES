@@ -3,9 +3,9 @@ title: Personalización y segmentación de contenido
 description: Descubra cómo Adobe Experience Manager 6.5 LTS puede crear contenido personalizado.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 36%
@@ -20,7 +20,7 @@ AEM proporciona un marco de herramientas para crear contenido dirigido y present
 
 ## Modo Targeting {#targeting-mode}
 
-[Contenido segmentado por el autor mediante el modo de Segmentación de AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
+[Contenido segmentado por el autor mediante el modo de Segmentación de AEM. ](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
 
 ## Actividades {#activities}
 

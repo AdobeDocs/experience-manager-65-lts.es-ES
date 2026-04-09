@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
@@ -29,9 +29,9 @@ En este documento se describen los pasos recomendados para cargar un SPA indepen
 Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
-* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
+* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
-   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
+   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}
@@ -378,4 +378,4 @@ El siguiente material de referencia puede resultar útil para comprender las SPA
 * [Introducción a SPA en AEM con React](spa-getting-started-react.md)
 * [Materiales de referencia de SPA (referencias de API)](spa-reference-materials.md)
 * [Modelo SPA y PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [Enrutamiento de modelo SPA](spa-routing.md)
+* [Enrutamiento de modelos de SPA](spa-routing.md)

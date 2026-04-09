@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 801364fc-0fde-49d0-a95f-963ed6db189b
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 5%
@@ -285,7 +285,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * **Opción 2:** Compartir estados de componentes mediante una biblioteca de estado como NgRx.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y extendiendo el componente contenedor.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Para obtener una guía paso a paso sobre cómo crear su propia SPA, consulte el [Tutorial de introducción al Editor de SPA de AEM - WKND Events](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es).
 

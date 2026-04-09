@@ -3,8 +3,9 @@ title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 94534336-1e1f-40eb-8364-9358c1420616
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 87%
@@ -77,7 +78,6 @@ En la IU **Configuración de traducción**, hay un número de opciones disponibl
    1. Haga clic en **Agregar**.
    1. Repita estos pasos para todos los campos que debe traducir.
    1. Haga clic en **Guardar**.
-
       ![Añadir propiedades](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.

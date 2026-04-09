@@ -1,23 +1,24 @@
 ---
-title: Creación para Headless con Adobe Experience Manager
-description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo crear contenido para su proyecto.
+title: Creación sin encabezado con Adobe Experience Manager
+description: Una introducción a las potentes y flexibles funciones headless de Adobe Experience Manager y cómo crear contenido para su proyecto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 4864d5e7-65e3-4309-9512-cde4a138e04c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Creación para usuarios sin encabezado con AEM: una introducción {#author-headless-introduction}
+# Creación para headless con AEM: una introducción {#author-headless-introduction}
 
-En esta parte del [Recorrido para autores de contenido sin encabezado de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM).
+En esta parte del [Recorrido para autores de contenido headless de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido headless con Adobe Experience Manager (AEM).
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: presentar los conceptos y la terminología relevantes para la creación sin encabezado.
 
 ## Sistema de administración de contenido (CMS) {#content-management-system}
@@ -32,7 +33,7 @@ Sin encabezado es un término utilizado para describir los sistemas que disocian
 
 Tradicionalmente, el contenido se gestionaba en un CMS y el mismo CMS era el encargado de mostrarlo en las páginas web.
 
-Ahora, sin encabezado significa que el conjunto de contenido se puede administrar en CMS y luego acceder a él una o más aplicaciones (independientes).
+Ahora, headless significa que su conjunto de contenidos puede ser administrado en el CMS y luego accedido por una, o más, aplicaciones (independientes).
 
 Esto quiere decir que el contenido puede enviarse a cualquier dispositivo, en una gran variedad de formatos. Esto hace que todo el proceso sea mucho más flexible, y también supone que no tiene que preocuparse por el diseño y el formato.
 
@@ -77,10 +78,10 @@ Ahora que ya conoce los conceptos y la terminología, el siguiente paso es [Apre
 
 ## Recursos adicionales {#additional-resources}
 
-* Recorrido para desarrolladores de AEM sin encabezado
+* Recorrido para desarrolladores de AEM headless
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
 
-* [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+* [Recorrido de arquitecto de contenido de AEM sin encabezado](/help/journey-headless/architect/overview.md)
 
 * [Recorrido de traducción de contenidos sin encabezado de AEM](/help/journey-headless/translation/overview.md)
 

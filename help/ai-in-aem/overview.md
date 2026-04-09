@@ -2,9 +2,9 @@
 title: IA en AEM 6.5 LTS
 description: Obtenga información sobre la IA en Adobe Experience Manager 6.5 LTS
 feature: Generative AI, AI Assistant, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin,Developer,User
 exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 45%

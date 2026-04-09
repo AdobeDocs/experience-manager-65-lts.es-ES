@@ -8,7 +8,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 66%

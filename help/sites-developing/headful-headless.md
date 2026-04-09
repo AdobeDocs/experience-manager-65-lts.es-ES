@@ -3,8 +3,9 @@ title: Modelos con encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: ba7f8ad9-807b-48d9-a4eb-da0a60d2494a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 88%
@@ -81,7 +82,7 @@ Existen diferentes herramientas disponibles en AEM según el nivel de integraci�
 
 * **Nivel 1:** los fragmentos de contenido y el [marco de trabajo de AEM sin encabezado](/help/sites-developing/headless/introduction.md) se pueden utilizar para enviar contenido AEM a la SPA.
 * **Nivel 2:** Además del nivel uno:
-   * [El componente RemotePage](/help/sites-developing/spa-remote-page.md) se puede utilizar para integrar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
+   * [El componente RemotePage](/help/sites-developing/spa-remote-page.md) se puede utilizar para incrustar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
    * Algunos puntos de la SPA también se pueden habilitar para [permitir la edición limitada en AEM.](/help/sites-developing/spa-edit-external.md)
 * **Nivel 3:** Además del nivel dos:
    * Se pueden habilitar zonas enteras de la SPA para permitir una edición completa en AEM.

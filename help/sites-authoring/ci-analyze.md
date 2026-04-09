@@ -1,6 +1,6 @@
 ---
 title: Análisis del rendimiento de la página
-description: Utilice la página Perspectiva de contenido para analizar el rendimiento de la página que está creando
+description: Utilice la página Insight de contenido para analizar el rendimiento de la página que está creando
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,17 +8,18 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 075c4150-e7e2-4374-afe0-31855bffe438
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Análisis del rendimiento de la página{#analyzing-page-performance}
 
-Abra la página [Perspectiva de contenido](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que está creando. Configure el periodo del informe para centrar el análisis.
+Abra la página [Insight de contenido](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que está creando. Configure el periodo del informe para centrar el análisis.
 
 ## Abrir Analytics y Recommendations para una página {#opening-analytics-and-recommendations-for-a-page}
 
@@ -40,15 +41,15 @@ Cambie los siguientes aspectos relacionados con el tiempo de los informes de an�
 * Período de tiempo para la creación del informe.
 * La granularidad de los datos.
 
-Las herramientas para cambiar los aspectos relacionados con el tiempo de los informes aparecen en la parte superior de la página Información del contenido. ![chlimage_1-126](assets/chlimage_1-126.png)
+Las herramientas para cambiar los aspectos relacionados con el tiempo de los informes aparecen en la parte superior de la página Insight de contenido. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### Modificación del período de informe {#changing-the-reporting-period-1}
 
-Cambie el periodo de informe de la página Perspectiva de contenido para enfocar el análisis de la actividad de la página a un periodo de tiempo específico. Al cambiar el período de informe, los informes se actualizan automáticamente. El área sombreada en el periodo de tiempo representa el periodo del informe. Las fechas del periodo de tiempo aumentan de izquierda a derecha.
+Cambie el periodo de informe de la página Insight de contenido para enfocar el análisis de la actividad de la página a un periodo de tiempo específico. Al cambiar el período de informe, los informes se actualizan automáticamente. El área sombreada en el periodo de tiempo representa el periodo del informe. Las fechas del periodo de tiempo aumentan de izquierda a derecha.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Para cambiar el período de informe de una página de perspectiva de contenido:
+Para cambiar el período de informe de una página de Insight de contenido:
 
 1. Si el periodo no aparece en la parte superior de la página, haga clic en el icono Alternar periodo de tiempo.
 

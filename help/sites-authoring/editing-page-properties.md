@@ -3,10 +3,10 @@ title: 'Edición de las propiedades de página  '
 description: Defina las propiedades necesarias para una página en Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 38%
@@ -89,13 +89,13 @@ Por ejemplo, si la URL de vanidad se establece en `welcome` para la página iden
 
 >[!CAUTION]
 >
->URL de vanidad:
+>URL mnemónica:
 >
 >* Debe ser único.
 >* No admiten patrones regex.
 >* No debe configurarse en una página existente.
 
-Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Agregar**: toque o haga clic para agregar una URL de vanidad.
 * **Quitar**: toque o haga clic para quitar una URL de vanidad.
@@ -106,7 +106,7 @@ Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Ha
 #### Configuración {#settings}
 
 * **Idioma**: el idioma de la página
-* **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
+* **Raíz del idioma**: si la página es la raíz de una copia de idioma, es necesario marcar esta opción
 * **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente
 * **Diseño** - Indica el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
 * **Alias**: especifica un alias que se usará con esta página

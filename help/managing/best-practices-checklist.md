@@ -3,9 +3,9 @@ title: La lista de comprobación
 description: Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y proporcionan un alto nivel de monitorización de su estado actual.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%

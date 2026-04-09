@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '4919'
-ht-degree: 2%
+source-wordcount: '4923'
+ht-degree: 4%
 
 ---
 
@@ -329,7 +329,7 @@ En esta sección se crean varios scripts que generan una parte del cuerpo de la 
 
 1. En CRXDE Lite, cree el archivo `left.jsp` en `/apps/mywebsite/components/contentpage`:
 
-   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear &#x200B;** luego **Crear archivo**.
+   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear **luego **Crear archivo**.
 
    1. En la ventana, escriba `left.jsp` como **Nombre** y haga clic en **Aceptar**.
 
@@ -1172,7 +1172,7 @@ En esta sección se describe cómo crear el script de imagen.
 
 1. Guarde los cambios.
 
-#### Creación del nodo Image cq:editConfig {#creating-the-image-cq-editconfig-node}
+#### Creando el nodo cq:editConfig de imagen {#creating-the-image-cq-editconfig-node}
 
 El tipo de nodo `cq:editConfig` le permite configurar ciertos comportamientos de los componentes al editar sus propiedades.
 
@@ -1197,7 +1197,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 
 | Nombre | Tipo | Valor  |
 |---|---|---|
-| aceptar | Cadena | image/(gif | jpeg | png) |
+| aceptar | Cadena | image/(gif\|jpeg\|png) |
 | grupos | Cadena | medios |
 | propertyName | Cadena | ./imageReference |
 
@@ -1530,6 +1530,6 @@ Para este componente, puede establecer varios parámetros tanto en el modo de ed
    ```
 
 1. Guarde los cambios.
-1. En el explorador, vuelva a cargar la página **&#x200B; productos &#x200B;**. Toda la página tiene el siguiente aspecto:
+1. En el explorador, vuelva a cargar la página ** productos **. Toda la página tiene el siguiente aspecto:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

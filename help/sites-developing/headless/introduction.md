@@ -3,11 +3,12 @@ title: Desarrollo sin encabezado para sitios de AEM 6.5
 description: Descubra cómo las potentes funciones sin encabezado de AEM 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntos para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 4eb42d3a-f869-4831-9aaf-58e7272bd1fe
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -52,7 +53,7 @@ AEM 6.5 es una herramienta flexible para el modelo de implementación sin encabe
 
 Hay varios recursos disponibles para que sus clientes empiecen a utilizar las funciones sin encabezado de AEM. Están pensados para diferentes casos de uso, pero todos proporcionan una visión general fiable de las funciones sin encabezado de AEM.
 
-| Recurso | Descripción | Tipo | Audiencia | EST Hora |
+| Recurso | Descripción | Tipo | Público | EST Hora |
 |---|---|---|---|---|
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **Para usuarios nuevos en las tecnologías AEM y sin encabezado**, es recomendable empezar aquí para ver una introducción completa a AEM y sus características sin encabezado, desde la teoría sobre esta tecnología hasta publicar su primer proyecto sin encabezado. | Guía  | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
 | [Guía de introducción sin encabezado](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuarios de AEM con experiencia** que necesiten un breve resumen de las funciones principales de AEM sin encabezado, se recomienda consultar esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores **con experiencia en AEM** | 20 minutos |

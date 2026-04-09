@@ -8,11 +8,12 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 5a962fd3-33bb-44df-a48d-416a04f393eb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
@@ -323,7 +324,7 @@ Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) d
 
 Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan versiones de su página:
 
-1. Seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 

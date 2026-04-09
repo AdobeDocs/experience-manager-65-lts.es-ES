@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '10487'
+source-wordcount: '10480'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
 
-   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
@@ -65,7 +65,6 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Previsualización y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
-
         [Previsualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](previewing-assets.md)
         [Ver representaciones de vídeo](video-renditions.md)
         [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
@@ -76,11 +75,9 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Trabajo con metadatos de vídeo
 
       * Vea las propiedades de una representación de vídeo codificada, como velocidad de fotogramas, velocidad de bits de audio y vídeo y códec:
-
         [Ver propiedades de representación de vídeo](video-renditions.md)
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
-
         [Editar propiedades de vídeo](manage-assets.md#editing-properties)
 
       * [Administración de metadatos para recursos digitales](metadata.md)
@@ -105,11 +102,9 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
    * Si utiliza un sistema de administración de contenido web de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
-
         [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante código incrustado en una página web:
-
         [Incrustar el visor de vídeo en una página web](embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).
@@ -145,7 +140,7 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten lo
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -161,7 +156,7 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -179,7 +174,7 @@ Al combinar en un solo reproductor lo siguiente:
 
 Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles, y garantiza una experiencia de vídeo optimizada.
 
-Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -326,7 +321,7 @@ En la tabla siguiente se describe cómo se traducen los resultados de la fórmul
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
 | 1,78 | 16:9 |
-| 0,56 | 09:16 |
+| 0,56 | 9:16 |
 
 Por ejemplo, un vídeo de 1440 de anchura × 1080 de altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
@@ -469,7 +464,7 @@ Especifique el intervalo de fechas inicial y final para el que desea obtener dat
 
 Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de HTML5 Viewer, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
 **Para ver informes de vídeo basados en un visor de vídeo que creó con el SDK de Dynamic Media HTML5 Viewer:**
 
@@ -775,7 +770,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
    | Opción | Descripción |
    |--- |--- |
    | Guardar como | Utilice el nombre de archivo predeterminado especificado en el campo de texto Guardar como o especifique su propio nombre. |
-   | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
+   | Crear una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
    | Correo electrónico | Utilice su programa de correo electrónico predeterminado para enviar el archivo .zip a una dirección de correo electrónico especificada. |
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el botón **[!UICONTROL Descargar]**, lo que impide que se descargue ningún archivo. |
 
@@ -801,7 +796,7 @@ Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm
 
 Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 
@@ -1121,7 +1116,7 @@ A continuación se muestra un ejemplo de la API anterior que utiliza servlets es
 
 >[!TAB Agregar dependencia en pom.xml]
 
-+++**Agregar dependencia en pom.xml**
++++**Agregar dependencia en pom.xml** 
 
 ```java
 dependency> 
@@ -1136,7 +1131,7 @@ dependency>
 
 >[!TAB Servlet de ejemplo]
 
-+++**Servlet de ejemplo**
++++**Servlet de ejemplo** 
 
 ```java
 @Component
@@ -1215,7 +1210,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Clase de respuesta para el servlet]
 
-+++**Clase de respuesta para el servlet**
++++**Clase de respuesta para el servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1245,7 +1240,7 @@ public abstract class VideoResponse {
 
 >[!TAB Archivo de constantes al que se hace referencia en el servlet]
 
-+++**Archivo de constantes al que se hace referencia en el servlet**
++++**Archivo de constantes al que se hace referencia en el servlet** 
 
 ```java
 public final class Constants { 
@@ -1264,7 +1259,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 Monte el servlet anterior mediante `servletContext`. El siguiente es un ejemplo de `servletContext`.
 

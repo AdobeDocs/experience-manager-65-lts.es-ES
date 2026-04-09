@@ -3,9 +3,9 @@ title: Glosario
 description: Este glosario enumera (por orden alfabético) los detalles de todos los documentos de entrega de la lista de comprobación del proyecto.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%

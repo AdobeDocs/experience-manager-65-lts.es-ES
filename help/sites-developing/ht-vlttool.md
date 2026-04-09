@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 46f191d9-b667-44e3-83e9-7988fffb0ecf
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -442,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para los vínculos de revisión (nombre, id), por ejemplo, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para vínculos de revisión (nombre, id), por ejemplo, `[CQ520_HF_%s`\|`%s]` |
 | `-v (--verbose)` | resultado detallado |
 | `-q (--quiet)` | imprime lo menos posible |
 | `<localPaths> [<localPaths> ...]` | ruta local |

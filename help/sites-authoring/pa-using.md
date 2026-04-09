@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '640'
 ht-degree: 5%
 
 ---
@@ -73,7 +74,7 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
+Abra [Insight de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
 1. En la barra de herramientas, haga clic en el icono Analytics and Recommendations.

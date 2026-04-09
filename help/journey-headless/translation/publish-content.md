@@ -3,8 +3,9 @@ title: Publicar contenido traducido
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 1543c167-ca69-4481-835f-932d93850a53
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%

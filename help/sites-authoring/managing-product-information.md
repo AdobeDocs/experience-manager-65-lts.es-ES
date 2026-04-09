@@ -7,20 +7,20 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
 
 ---
 
-
 # Integración de Creative Project y PIM {#creative-project-and-pim-integration}
 
 Si es un experto en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project en Adobe Experience Manager (AEM) para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
 
-Puede utilizar Creative Project para racionalizar las siguientes tareas en el flujo de trabajo de la sesión fotográfica:
+Puede utilizar Creative Project para optimizar las siguientes tareas del flujo de trabajo de la sesión fotográfica:
 
 * Generación de una solicitud de sesión fotográfica
 * Carga de una sesión fotográfica
@@ -194,7 +194,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![Ver lista de tomas](assets/chlimage_1-148a.png)
 
-   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product &#x200B;** y **Description**.
+   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product **y **Description**.
 
    ![Editar lista de tomas](assets/chlimage_1-149a.png)
 

@@ -9,7 +9,8 @@ docset: aem65
 role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 3%
@@ -185,7 +186,7 @@ Puede usar **[!UICONTROL Publicación rápida]** para casos de activación de re
 1. Seleccione una de las siguientes opciones en la lista de menú **[!UICONTROL Publicación rápida]**.
 
    | Opción Publicación rápida | Qué hace |
-   | --- | --- | 
+   | --- | --- |
    | Publicar en Experience Manager | Publica los recursos seleccionados inmediatamente en Experience Manager. |
    | Publicar en Brand Portal | Publica los recursos seleccionados inmediatamente en **[!UICONTROL Brand Portal]**.<br>Esta opción solo está disponible si la instancia de Experience Manager Assets ya tiene **[!UICONTROL Brand Portal]** configurado. |
    | Publicar en Dynamic Media | Publica los recursos seleccionados inmediatamente en Dynamic Media.<br>Se debe sincronizar un recurso con Dynamic Media. Si es necesario, asegúrate de que el **[!UICONTROL modo de sincronización]** en las propiedades de una carpeta ya esté establecido en **[!UICONTROL Sincronizar todo en este subárbol de carpetas con Dynamic Media]**. |
@@ -221,8 +222,8 @@ De forma opcional, puede utilizar estas casillas de verificación con el predica
    | --- | --- | --- |
    | Publicación | Inmediatamente o tras la activación | Publicado en Experience Manager y Dynamic Media. |
    | Publicación | Publicación selectiva | Publicado solo en Experience Manager. |
-   | Cancelar publicación | Inmediatamente o tras la activación | Publicación cancelada de Experience Manager y Dynamic Media. |
-   | Cancelar publicación | Publicación selectiva | Solo se ha cancelado la publicación de Experience Manager. |
+   | Cancelar la publicación | Inmediatamente o tras la activación | Publicación cancelada de Experience Manager y Dynamic Media. |
+   | Cancelar la publicación | Publicación selectiva | Solo se ha cancelado la publicación de Experience Manager. |
    | Publicar en Dynamic Media | Inmediatamente o tras la activación | No se ha publicado en Experience Manager, Dynamic Media o ambos. |
    | Publicar en Dynamic Media | Publicación selectiva | Publicado solo en Dynamic Media. |
    | Cancelar la publicación de Dynamic Media | Inmediatamente o tras la activación | No se ha cancelado la publicación de Experience Manager, Dynamic Media o ambos. |
@@ -244,9 +245,9 @@ De forma opcional, puede utilizar estas casillas de verificación con el predica
    | Inmediatamente o <br> tras la activación | Publicar en Dynamic Media | Ninguno |
    | Publicación selectiva | Publicación | Experience Manager |
    | Publicación selectiva | Publicar en Dynamic Media | Dynamic Media |
-   | Inmediatamente o <br> tras la activación | Cancelar publicación | Experience Manager y Dynamic Media |
+   | Inmediatamente o <br> tras la activación | Cancelar la publicación | Experience Manager y Dynamic Media |
    | Inmediatamente o <br> tras la activación | Cancelar la publicación de Dynamic Media | Ninguno |
-   | Publicación selectiva | Cancelar publicación | Experience Manager |
+   | Publicación selectiva | Cancelar la publicación | Experience Manager |
    | Publicación selectiva | Cancelar la publicación de Dynamic Media | Dynamic Media |
 
 1. En la página **[!UICONTROL Administrar publicación - Ámbito]**, realice una de las siguientes acciones:
@@ -267,7 +268,6 @@ Puede usar **[!UICONTROL Cronología]** con **[!UICONTROL Vista de tarjeta]**, *
 Cuando usa **[!UICONTROL Vista de lista]**, aparece una columna adicional para el estado de publicación de **[!UICONTROL Dynamic Media]**.
    * Una carpeta configurada para sincronizarse con Dynamic Media muestra la columna **[!UICONTROL Dynamic Media]** de forma predeterminada.
    * Una carpeta *no* configurada para sincronizarse con Dynamic Media no muestra la columna Dynamic Media.
-
      ![Vista de lista y cronología](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Solucionar problemas de publicación selectiva {#selective-publish-troubleshoot}

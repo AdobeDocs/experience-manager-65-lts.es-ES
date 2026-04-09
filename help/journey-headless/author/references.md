@@ -3,8 +3,9 @@ title: Obtenga información sobre el uso de referencias en fragmentos de conteni
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%
@@ -23,7 +24,7 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzado
 * **Objetivo**: introducir el uso de referencias para la creación de CMS sin encabezado. Qué tipos de referencias están disponibles y cuáles son sus propósitos:
 
    * Referencias de contenidos

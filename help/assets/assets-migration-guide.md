@@ -2,10 +2,11 @@
 title: Migración de recursos por lotes
 description: Describe cómo incluir recursos en  [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlas en instancias de publicación.
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Migration,Renditions,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b8328197-6d2a-493d-8098-db4f68f1fcb0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -30,7 +31,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >* Administrador de acciones rápidas de ACS Commons
 >* Flujo de trabajo sintético
 >
->Este software es de código abierto y está cubierto por la [Licencia de &#x200B;](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Migrar a [!DNL Experience Manager] {#migrating-to-aem}
 

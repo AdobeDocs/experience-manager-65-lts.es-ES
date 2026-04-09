@@ -3,9 +3,9 @@ title: Trabajo con versiones de páginas de contenido
 description: Crear, comparar y restaurar versiones de una página en Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 62%
@@ -36,7 +36,7 @@ Puede crear una versión de su recurso desde:
 * el [carril de escala de tiempo](#creating-a-new-version-timeline)
 * la opción [Crear](#creating-a-new-version-create-with-a-selected-resource) (cuando hay un recurso seleccionado)
 
-### Crear una nueva versión: línea de tiempo {#creating-a-new-version-timeline}
+### Crear una nueva versión: cronología {#creating-a-new-version-timeline}
 
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -171,7 +171,7 @@ Puede obtener una vista previa de una versión específica:
 
 1. Desplácese hasta mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**.
 1. Se muestran las versiones de la página. Seleccione la versión que desee previsualizar:
 
    ![Seleccione la versión que desea previsualizar](assets/screen-shot_2019-03-05at112505-1.png)
@@ -190,7 +190,7 @@ Para comparar una versión anterior con la página actual, haga lo siguiente:
 
 1. Desplácese hasta mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**.
 1. Se muestran las versiones de la página. Seleccione la versión que desea comparar:
 
    ![Versiones de página en la lista - seleccionar versión](assets/screen-shot_2019-03-05at112505-2.png)

@@ -8,8 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -118,7 +119,7 @@ Si la página está sujeta a varios flujos de trabajo, el número de los mismos 
 
 ## Marcador de posición de componente {#component-placeholder}
 
-El marcador de posición de componente es un indicador para mostrar la posición del componente cuando lo coloque (sobre el componente por el que pasa el ratón en ese momento).
+El marcador de posición de componente es un indicador para mostrar la posición del componente cuando lo coloque (el componente por encima del cual pasa el puntero en ese momento).
 
 * Al añadir un componente a la página (arrastrando desde el explorador de componentes):
 
@@ -234,11 +235,11 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
   ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
-* **Configurar**
+* **Configuración**
 
   [En función del tipo de componente](/help/sites-authoring/default-components.md), esto le permite editar y configurar las propiedades del componente. A menudo se abre un cuadro de diálogo.
 
-  ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configuración](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copiar**
 
@@ -499,7 +500,7 @@ Al editar contenido, puede obtener una vista previa de la página mediante el mo
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
 
-![Previsualizar](assets/chlimage_1-125.png)
+![Vista previa](assets/chlimage_1-125.png)
 
 ### Ver como aparece publicado {#view-as-published}
 

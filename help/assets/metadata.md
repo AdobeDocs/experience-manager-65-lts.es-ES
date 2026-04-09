@@ -4,10 +4,11 @@ description: Obtenga información acerca de los tipos de metadatos y cómo admin
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer,Leader
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dc231e6b-d656-4626-a800-ee66533b1c86
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 10%
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!-- Scope of metadata articles:
@@ -35,9 +36,9 @@ Los metadatos son información adicional sobre el recurso en el que se puede bus
 
 Se pueden utilizar los siguientes métodos para agregar metadatos a recursos digitales:
 
-* Para empezar, las aplicaciones nativas que crean recursos le agregan algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/es/acrobat/using/pdf-properties-metadata.html) a los archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede agregar los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [agregar metadatos de IPTC en Adobe Lightroom](https://helpx.adobe.com/es/lightroom-classic/help/metadata-basics-actions.html).
+* Para empezar, las aplicaciones nativas que crean recursos le agregan algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a los archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede agregar los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [agregar metadatos de IPTC en Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o mediante otra aplicación de edición de metadatos. Al cargar un recurso en Experience Manager, se procesan los metadatos. Por ejemplo, vea cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/es/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y ver el panel [etiquetas de [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
+* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o mediante otra aplicación de edición de metadatos. Al cargar un recurso en Experience Manager, se procesan los metadatos. Por ejemplo, vea cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y ver el panel [etiquetas de [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
 
 * En [!DNL Experience Manager Assets], puede agregar o editar manualmente metadatos de recursos en la página [!UICONTROL Propiedades].
 
@@ -115,7 +116,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    |:---|:---|
    | [!UICONTROL Tamaño de lote] | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | [!UICONTROL Separador de campos] | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
-   | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `|`. |
+   | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es \|. |
    | [!UICONTROL Iniciar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada está activa para el flujo de trabajo [!UICONTROL DAM Metadata WriteBack] (que escribe metadatos en los datos binarios de XMP). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | [!UICONTROL Nombre de columna de ruta de recursos] | Define el nombre de columna del archivo CSV con recursos. |
 
@@ -240,7 +241,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=es)
+>* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

@@ -3,8 +3,9 @@ title: Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin e
 description: Aprenda a utilizar la API de REST de Assets de AEM para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 41%
@@ -36,7 +37,6 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
    * El panel izquierdo le permite generar la consulta.
    * El panel derecho muestra los resultados.
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
-
      ![Editor de GraphiQL](assets/graphiql.png)
 
 1. Suponiendo que el modelo que hemos creado se llamara `person` con campos `firstName`, `lastName` y `position`, podemos generar una consulta sencilla para recuperar el contenido de nuestro fragmento de contenido.
@@ -67,7 +67,6 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
    * **Documentos** en la parte superior derecha de la página para mostrar la documentación en contexto que le ayudará a crear consultas que se adapten a sus propios modelos.
    * **Historial** en la barra de herramientas superior para mostrar consultas anteriores.
    * **Guardar como** y **Guardar** para guardar sus consultas, después de lo cual podrá enumerarlas y recuperarlas desde el panel **Consultas persistentes** y **Publicar**.
-
      ![Documentación de GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL permite consultas estructuradas que pueden dirigirse no solo a conjuntos de datos específicos u objetos de datos individuales, sino que también pueden proporcionar elementos específicos de los objetos, resultados anidados, compatibilidad con variables de consulta y mucho más.
