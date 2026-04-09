@@ -234,7 +234,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
+  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 

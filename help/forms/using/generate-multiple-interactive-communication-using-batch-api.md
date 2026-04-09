@@ -176,7 +176,7 @@ Puede invocar [la API por lotes](https://developer.adobe.com/experience-manager/
 Antes de implementar el servlet Java™, asegúrese de que tiene una comunicación interactiva y de que los archivos de datos correspondientes están listos. Siga estos pasos para poder crear e implementar el servlet Java™:
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de ejemplo que aparece a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
-1. [Creación e implementación de un proyecto AEM mediante Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) en la instancia de AEM.
+1. [Creación e implementación de un proyecto AEM mediante Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=es) en la instancia de AEM.
 1. Agregue [AEM Forms Client SDK versión 6.0.12 o posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) a la lista de dependencias del archivo POM de su proyecto de AEM. Por ejemplo,
 
    ```xml
@@ -327,7 +327,7 @@ Antes de implementar el servlet Java™, asegúrese de que tiene una comunicaci�
    * Cuando especifica la opción WEB, se genera un archivo JSON por cada registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
    * Al especificar las opciones PRINT y WEB, se generan los dos documentos PDF y un archivo JSON por registro.
 
-1. [Utilice maven para implementar el código actualizado en la instancia de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. [Utilice maven para implementar el código actualizado en la instancia de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=es).
 1. Para generar la comunicación interactiva, invoque la API por lotes. La opción PRINT de la API por lotes devuelve un flujo de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template). Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve un flujo de archivos PDF y archivos JSON.
 
 ### Rellenar previamente una plantilla web {#web-template}
@@ -363,4 +363,4 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
 
 >[!NOTE]
 >
->Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=es).

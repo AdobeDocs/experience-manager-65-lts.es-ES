@@ -88,7 +88,7 @@ Al activar la conversión de formato del explorador adjuntando `bfc=on` a la dir
 
 Puede desactivar Imágenes inteligentes adjuntando `bfc=off` a la dirección URL de la imagen.
 
-Consulte también [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
+Consulte también [bfc](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
 ### Acerca de la optimización de la proporción de píxeles del dispositivo (dpr) {#dpr}
 
@@ -255,7 +255,7 @@ Al crear el caso de soporte, especifique qué funciones de imágenes inteligente
 
       * Enumerar todos los dominios relevantes, como *`company.com`* o *`mycompany.scene7.com`*
       * Imágenes inteligentes admite dominios genéricos y personalizados.
-      * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
+      * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
 
          1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
          1. Busque el campo **[!UICONTROL Nombre de servidor publicado]** para confirmar su dominio.

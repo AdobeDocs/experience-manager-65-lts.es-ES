@@ -235,7 +235,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/es/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Subtítulos (en vivo) (1.2.4)          {#captions-live}
