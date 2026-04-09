@@ -297,7 +297,7 @@ Si edita contenido de destino, debe hacer clic en **Iniciar orientación** para 
    >Los administradores pueden decidir si esta configuración es necesaria en **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Para requerir que los usuarios introduzcan una ubicación, active la casilla de verificación **Forzar ubicación **.
+   >Para requerir que los usuarios introduzcan una ubicación, active la casilla de verificación **Forzar ubicación &#x200B;**.
 
 1. Seleccione la experiencia para la que desea crear la oferta.
 1. Cree la oferta:

@@ -194,7 +194,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![Ver lista de tomas](assets/chlimage_1-148a.png)
 
-   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product **y **Description**.
+   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product &#x200B;** y **Description**.
 
    ![Editar lista de tomas](assets/chlimage_1-149a.png)
 

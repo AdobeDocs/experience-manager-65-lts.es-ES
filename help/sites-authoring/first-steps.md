@@ -51,7 +51,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  ](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear una página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicación de una página {#publishing-a-page}
 

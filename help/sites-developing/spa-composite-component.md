@@ -163,7 +163,7 @@ A continuación, puede añadirlo a su SPA y recuperar su contenido.
     itemPath='root/responsivegrid' />
    ```
 
-1. Agregue el componente `wknd-spa/components/imagecard` creado a los componentes permitidos para el componente contenedor [ en la plantilla de página.](/help/sites-authoring/templates.md)
+1. Agregue el componente `wknd-spa/components/imagecard` creado a los componentes permitidos para el componente contenedor [&#x200B; en la plantilla de página.](/help/sites-authoring/templates.md)
 
 Ahora el componente `imagecard` se puede agregar directamente al contenedor en el editor de AEM.
 
@@ -181,4 +181,4 @@ Si el contenido existe en AEM, se puede incluir directamente en la SPA proporcio
 
 ![Ruta compuesta en la estructura del nodo](assets/composite-path.png)
 
-El componente `AEMCard` es el mismo que se definió [ en el caso de uso anterior.](#content-does-not-exist) Aquí el contenido definido en la ubicación anterior del proyecto de AEM se incluye en la SPA.
+El componente `AEMCard` es el mismo que se definió [&#x200B; en el caso de uso anterior.](#content-does-not-exist) Aquí el contenido definido en la ubicación anterior del proyecto de AEM se incluye en la SPA.

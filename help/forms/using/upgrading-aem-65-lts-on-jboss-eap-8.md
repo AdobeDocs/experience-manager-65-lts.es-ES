@@ -22,7 +22,7 @@ Esta guía proporciona instrucciones paso a paso para actualizar una instalació
 >
 >Este es un procedimiento de actualización esencial. Realice siempre primero esta actualización en un entorno que no sea de producción y realice copias de seguridad completas.
 >
-> ** REQUISITOS PREVIOS:** Es obligatorio realizar una copia de seguridad completa del sistema y un plan de reversión documentado antes de continuar.
+> **&#x200B; REQUISITOS PREVIOS:** Es obligatorio realizar una copia de seguridad completa del sistema y un plan de reversión documentado antes de continuar.
 
 ## Requisitos previos a la actualización
 

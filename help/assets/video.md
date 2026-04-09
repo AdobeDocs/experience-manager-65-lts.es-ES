@@ -51,7 +51,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
 
-   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
