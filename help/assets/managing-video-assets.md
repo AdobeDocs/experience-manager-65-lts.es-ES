@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 El formato de vídeo es una parte esencial de los recursos digitales de una organización. [!DNL Adobe Experience Manager] ofrece ofertas y características consolidadas para administrar todo el ciclo de vida de los recursos de vídeo después de su creación.
@@ -44,7 +44,7 @@ De manera predeterminada, [!DNL Assets] no permite cargar recursos que superen l
 Además de la configuración de [!DNL Assets], cambie las siguientes configuraciones para cargar recursos grandes:
 
 * Aumente el tiempo de caducidad del token. Consulte [!UICONTROL Servlet CSRF de Adobe Granite] en la consola web en `https://[aem_server]:[port]/system/console/configMgr`. Para obtener más información, consulte [Protección CSRF](/help/sites-developing/csrf-protection.md).
-* Aumente `receiveTimeout` en la configuración de Dispatcher. Para obtener más información, consulte [Configuración de Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Aumente `receiveTimeout` en la configuración de Dispatcher. Para obtener más información, consulte [Configuración de Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#renders-options).
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 1. In the upper-right corner of the video&#39;s properties page, click **[!UICONTROL Save and Close]**.
 1. On the toolbar, click **[!UICONTROL Quick Publish]**.
 
-   See also [Using Publication Management with Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
+   See also [Using Publication Management with Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=es).
 
    You can optionally verify the published video on your YouTube channel.
 
