@@ -33,7 +33,7 @@ Estas versiones nunca se depuran, por lo que el tamaño del repositorio aumenta 
 
 AEM incluye varios mecanismos para ayudarle a administrar el repositorio:
 
-* el administrador de versiones [](#version-manager)
+* el administrador de versiones [&#128279;](#version-manager)
 Esto se puede configurar para purgar versiones antiguas cuando se crean nuevas versiones.
 
 * la herramienta [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)

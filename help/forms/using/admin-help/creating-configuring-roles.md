@@ -80,7 +80,7 @@ Se pueden incluir las siguientes funciones predeterminadas adicionales, en funci
 
 **Administrador de AEM Forms Workspace:** Puede ver y modificar la configuración de la página de Workspace en la consola de administración
 
-***nota **: Flex Workspace está obsoleto para la versión de formularios de AEM.*
+***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios de AEM.*
 
 **Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 

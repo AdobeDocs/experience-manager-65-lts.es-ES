@@ -30,7 +30,7 @@ En la página Configuración de seguridad, puede realizar las siguientes tareas:
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-Una configuración de seguridad *1} controla la seguridad y los permisos de los archivos convertidos con esa configuración de seguridad.*
+Una configuración de seguridad *1&rbrace; controla la seguridad y los permisos de los archivos convertidos con esa configuración de seguridad.*
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de seguridad.
 1. Haga clic en Nuevo o en el nombre de una configuración de seguridad.

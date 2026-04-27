@@ -67,6 +67,6 @@ Los usuarios que tengan la función Administrador de PDFG o Usuario de PDFG pued
 
 1. En Instalación de impresora de red PDFG, haga clic en el vínculo. Cuando se le pida información de cuenta de usuario, especifique el nombre de usuario y la contraseña que utilizó en el paso 1 para iniciar sesión. Aparece un mensaje que indica que la impresora se ha instalado correctamente.
 
-   ***nota **: Si la contraseña del usuario cambia, los usuarios deben volver a instalar la impresora de red PDFG en sus equipos. No puede actualizar la contraseña desde la consola de administración.*
+   ***nota &#x200B;**: Si la contraseña del usuario cambia, los usuarios deben volver a instalar la impresora de red PDFG en sus equipos. No puede actualizar la contraseña desde la consola de administración.*
 
 1. Haga clic en Aceptar.
