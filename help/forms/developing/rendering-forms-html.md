@@ -1,6 +1,6 @@
 ---
 title: Procesar formularios como HTML
-description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Puede utilizar Java& trade; API y la API del servicio web para procesar formularios como HTML.
+description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Puede utilizar la API Java&trade; y la API del servicio web para procesar formularios como HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,10 +12,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4099'
-ht-degree: 0%
+source-wordcount: '4149'
+ht-degree: 1%
 
 ---
 
@@ -89,9 +89,9 @@ Puede diseñar formularios que se muevan entre páginas (paneles) llamando a los
 
 Se recomienda no asignar a las variables de script y a los campos de formulario los mismos nombres, como por ejemplo, elemento. Es posible que algunos exploradores web, como Internet Explorer, no inicialicen una variable con el mismo nombre que un campo de formulario, lo que provoca un error de secuencia de comandos. Se recomienda asignar nombres diferentes a los campos de formulario y a las variables de script.
 
-Al procesar formularios HTML que contengan funcionalidad de navegación de página y scripts de formulario (por ejemplo, supongamos que un script recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que el script del formulario esté en el evento form:calculate en lugar de form:readyevent.
+Al procesar formularios de HTML que contienen funcionalidad de navegación por páginas y scripts de formularios (por ejemplo, supongamos que un script recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que el script de formulario esté en el evento form:calculate en lugar de en el formulario:readyevent.
 
-Los scripts de formulario que se encuentran en el evento form:ready se ejecutan solo una vez durante la representación inicial del formulario y no se ejecutan para las recuperaciones de páginas posteriores. Por el contrario, el evento form: calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
+Los scripts de formulario que se encuentran en el evento form:ready se ejecutan solo una vez durante la representación inicial del formulario y no se ejecutan para las recuperaciones de páginas posteriores. Por el contrario, el evento form:calculate se ejecuta para cada navegación de página en la que se representa el formulario.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Para obtener información acerca de cómo firmar digitalmente un documento, vea 
 
 ## Procesar un formulario XHTML compatible con las directrices de accesibilidad {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
-Puede procesar un formulario de HTML completo que cumpla con las directrices de accesibilidad. Es decir, el formulario se procesará con las etiquetas de HTML HTML completas en lugar de procesarse en las etiquetas de cuerpo (no en una página de HTML completa).
+Puede procesar un formulario de HTML completo que cumpla con las directrices de accesibilidad. Es decir, el formulario se procesará con las etiquetas de HTML completas en lugar de procesarse en las etiquetas de cuerpo (no en una página de HTML completa).
 
 ## Validación de datos de formulario {#validating-form-data}
 

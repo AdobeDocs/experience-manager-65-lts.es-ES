@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -850,7 +850,7 @@ Para crear una aplicación cliente creada con Flex que pueda invocar el proceso 
 
 1. Inicie un nuevo proyecto de Flex.
 1. Incluya el archivo adobe-remoting-provider.swc en la ruta de clase del proyecto. (Consulte [Inclusión del archivo de biblioteca Flex de AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)).
-1. Cree una instancia de `mx:RemoteObject` mediante ActionScript o MXML. (Consulte [Creación de una instancia de mx:RemoteObject](/help/forms/developing/invoking-aem-forms-using-remoting.md))
+1. Cree una instancia de `mx:RemoteObject` mediante ActionScript o MXML. (Ver [Creación de una instancia de mx:RemoteObject](/help/forms/developing/invoking-aem-forms-using-remoting.md))
 1. Configure una instancia de `ChannelSet` para comunicarse con AEM Forms y asóciela a la instancia `mx:RemoteObject`. (Consulte [Crear un canal con AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md)).
 1. Llame al método `login` del ChannelSet o al método `setCredentials` del servicio para especificar el valor del identificador de usuario y la contraseña. (Consulte [Uso del inicio de sesión único](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Cree el origen de datos XML para pasar al proceso `FirstAppSolution/PreLoanProcess` creando una instancia XML. (Esta lógica de aplicación se muestra en el siguiente ejemplo de código).

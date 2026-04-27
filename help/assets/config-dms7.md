@@ -6,10 +6,10 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6494'
-ht-degree: 3%
+source-wordcount: '6659'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ El diagrama de arquitectura siguiente describe cómo funciona el modo Dynamic Me
 Con la nueva arquitectura, Experience Manager es responsable de los recursos de origen principales y sincroniza con Dynamic Media para el procesamiento y la publicación de recursos:
 
 1. Cuando el recurso de origen principal se carga en Experience Manager, se replica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
-(En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga es de 2 GB o menos. Para habilitar la carga de archivos de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
+(En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga es de 2 GB o menos. Para habilitar la carga de archivos de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. Una vez generadas las representaciones, Experience Manager puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se envían binarios de vuelta a la instancia de Experience Manager).
 1. Una vez que el contenido está listo para publicarse y aprobarse, el servicio Dynamic Media déclencheur el envío del contenido a los servidores de entrega y el almacenamiento en caché del contenido en la CDN (red de distribución de contenido).
 
@@ -43,7 +43,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 ## Habilitar Dynamic Media en el modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las ventajas de las funciones de Dynamic Media, debe habilitarlo.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las ventajas de las funciones de Dynamic Media, debe habilitarlo.
 
 >[!WARNING]
 >
@@ -75,17 +75,19 @@ Para migrar cualquier ajuste preestablecido y configuración de visor personaliz
 
 La instalación del paquete de funciones 18912 es *opcional*.
 
-El paquete de funciones 18912 permite realizar ingestas masivas de recursos mediante FTP, o migrar recursos desde Dynamic Media (modo híbrido) o Dynamic Media Classic a Dynamic Media (modo Scene7) en Experience Manager. Está disponible en [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
+El paquete de funciones 18912 permite realizar ingestas masivas de recursos mediante FTP, o migrar recursos desde Dynamic Media (modo híbrido) o Dynamic Media Classic a Dynamic Media (modo Scene7) en Experience Manager. Está disponible en [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consulte [Instalar paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md) para obtener más información.
 
 ## Crear una configuración de Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!--
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration in Cloud Services:** -->
+**To create a Dynamic Media Configuration in Cloud Services:**
+-->
 
 1. En el modo Autor de Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]** (no seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**), luego seleccione **[!UICONTROL Crear]**.
@@ -131,7 +133,7 @@ Consulte [Instalar paquete de funciones 18912 para la migración masiva de recur
 
         ![Casilla Replicar metadatos después de la publicación de Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicación selectiva]** Esta opción le permite controlar qué carpetas se publican en Dynamic Media. Permite utilizar funciones como Recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para su previsualización. Esos mismos recursos son *no* publicados en Dynamic Media para su publicación en el dominio público.<br>Puede establecer esta opción aquí en la **[!UICONTROL Configuración de nube de Dynamic Media]** o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en las **[!UICONTROL Propiedades]** de una carpeta.<br>Ver [Trabajo con publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).<br>Si más adelante cambia esta configuración o la cambia en el nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta se mantendrá tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
+      * **[!UICONTROL Publicación selectiva]** Esta opción le permite controlar qué carpetas se publican en Dynamic Media. Permite utilizar funciones como Recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para su previsualización. Esos mismos recursos son *no* publicados en Dynamic Media para su publicación en el dominio público.<br>Puede establecer esta opción aquí en la **[!UICONTROL Configuración de nube de Dynamic Media]** o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en las **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte [Trabajo con publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).<br>Si cambia esta configuración más adelante o la cambia más adelante en el nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta se mantendrá tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
 
    * **[!UICONTROL Servidor de vista previa segura]**: le permite especificar la ruta de la URL a su servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, Experience Manager puede acceder de forma segura a las representaciones remotas de Dynamic Media y previsualizarlas (no se envían binarios de vuelta a la instancia de Experience Manager).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda dejar esta configuración como se especifica.
@@ -141,7 +143,7 @@ A menos que tenga una disposición especial para utilizar el servidor de su prop
    * **[!UICONTROL Modo de sincronización de Dynamic Media]**
       * **[!UICONTROL Habilitada de forma predeterminada]**: la configuración se aplica a todas las carpetas de forma predeterminada a menos que marque una carpeta específicamente para su exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]**: la configuración no se aplicará a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Vea también [Trabajar con publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
+Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**anteriormente.* Consulte también [Trabajo con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Heredado]**: no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. Estado detallado de los programas heredados mediante información sobre herramientas.
          * **[!UICONTROL Habilitar para subcarpetas]**: incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluye todo en este subárbol de la sincronización con Dynamic Media.
@@ -155,15 +157,17 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Para obtener una vista previa segura del contenido de Dynamic Media antes de publicarlo, Experience Manager Author utiliza la validación basada en tokens y, por lo tanto, Experience Manager Author obtiene una vista previa del contenido de Dynamic Media de forma predeterminada. Sin embargo, puede &quot;lista de permitidos&quot; más direcciones IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción en Experience Manager, consulte [Configuración del programa de instalación de publicación de Dynamic Media para el servidor de imágenes: ficha Seguridad](/help/assets/dm-publish-settings.md#security-tab).
 
-Si desea personalizar aún más la configuración, como habilitar los permisos ACL (Access Control List), puede completar opcionalmente cualquiera de las tareas en [&#x200B; (Opcional) Configurar la configuración avanzada en Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si desea personalizar aún más la configuración, como habilitar los permisos ACL (Access Control List), puede completar opcionalmente cualquiera de las tareas en [ (Opcional) Configurar la configuración avanzada en Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-<!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+<!--
+1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * Select the **[!UICONTROL Security]** tab.
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 Ya ha terminado la configuración básica; está listo para usar el modo Dynamic Media - Scene7.
 
@@ -246,7 +250,7 @@ En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carg
 Si tiene intención de utilizar esta función, tenga en cuenta los siguientes requisitos previos y puntos:
 
 * Debe estar ejecutando Experience Manager 6.5 LTS en modo Dynamic Media - Scene7.
-* Esta característica de carga de gran tamaño solo es compatible con los clientes de [*Managed Services*](https://business.adobe.com/es/products/experience-manager/managed-services.html).
+* Esta característica de carga de gran tamaño solo es compatible con los clientes de [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
 * Asegúrese de que la instancia de Experience Manager esté configurada con el almacenamiento del blob de Amazon S3 o Microsoft® Azure.
 
   >[!NOTE]
@@ -465,7 +469,7 @@ Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. E
 
 **Para configurar el nombre predeterminado:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -478,43 +482,43 @@ Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. E
    >
    >Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares sean correctas. Verá los resultados de la expresión regular que está creando para cada elemento después de la línea Result. La expresión regular completa se puede ver en la parte inferior de la página.
 
-1. Expanda cada elemento según sea necesario e introduzca las convenciones de nomenclatura que desee utilizar.
-1. Si es necesario, realice una de las acciones siguientes:
+1. Expand each element as necessary and enter the naming conventions you want to use.
+1. As necessary, do any of the following:
 
-   * Seleccione **[!UICONTROL Add]** para agregar otra convención de nomenclatura para un elemento.
-   * Seleccione **[!UICONTROL Quitar]** para eliminar una convención de nomenclatura para un elemento.
+   * Select **[!UICONTROL Add]** to add another naming convention for an element.
+   * Select **[!UICONTROL Remove]** to delete a naming convention for an element.
 
 1. Realice una de las siguientes acciones:
 
-   * Seleccione **[!UICONTROL Guardar como]** y escriba un nombre para el ajuste preestablecido.
-   * Seleccione **[!UICONTROL Guardar]** si está editando un ajuste preestablecido existente.
+   * Select **[!UICONTROL Save As]** and type a name for the preset.
+   * Select **[!UICONTROL Save]** if you are editing an existing preset.
 
-##### Crear un ajuste preestablecido de conjunto de lotes
+##### Create a Batch Set Preset
 
-Dynamic Media utiliza ajustes preestablecidos de conjunto por lotes para organizar los recursos en conjuntos de imágenes (imágenes alternativas, opciones de color, giros 360) para su visualización en los visualizadores. Los ajustes preestablecidos del conjunto de lotes se ejecutan automáticamente junto con los procesos de carga de recursos en Dynamic Media.
+Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 
-Puede crear, editar y administrar los ajustes preestablecidos del conjunto de lotes. Existen dos formas de definiciones de ajustes preestablecidos de conjuntos de lotes: una para una convención de nombres predeterminada que puede configurar y otra para convenciones de nombres personalizadas que crea sobre la marcha.
+You can create, edit, and manage your batch set presets. There are two forms of batch set preset definitions: one for a default naming convention that you can set up, and one for custom-naming conventions that you create on the fly.
 
-Puede utilizar el método del campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método del código, que permite utilizar expresiones regulares. Al igual que en Nombres predeterminados, puede elegir Ver código al mismo tiempo que define en la Vista de formulario y utilizar expresiones regulares para crear sus definiciones. Como alternativa, puede desactivar cualquiera de las vistas para utilizar una o la otra exclusivamente.
+You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
-**Para crear un conjunto preestablecido de lotes:**
+**To create a Batch Set Preset:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-   Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
+   Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
 
-1. En la barra de navegación cerca de la parte superior de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Ajuste preestablecido de conjunto de lotes]**.
+1. On the navigation bar near the top of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Batch Set Preset]**.
 
-   **[!UICONTROL Ver formulario]**, tal como se establece en la esquina superior derecha de la página Detalles, es la vista predeterminada.
+   **[!UICONTROL View Form]**, as set in the upper-right corner of the Details page, is the default view.
 
-1. En el panel Lista de ajustes preestablecidos, seleccione **[!UICONTROL Agregar]** para activar los campos de definición en el panel Detalles en el lado derecho de la pantalla.
-1. En el panel Detalles, en el campo Nombre del ajuste preestablecido, escriba un nombre para el ajuste preestablecido.
-1. En el menú desplegable Tipo de conjunto de lotes, seleccione un tipo de ajuste preestablecido.
+1. In the Preset List panel, select **[!UICONTROL Add]** to activate the definition fields in the Details panel on the right-hand side of the screen.
+1. In the Details panel, in the Preset Name field, type a name for the preset.
+1. In the Batch Set Type drop-down menu, select a preset type.
 1. Realice una de las siguientes acciones:
 
-   * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Nombres predeterminados]**, expanda **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable Nombres de archivos, seleccione **[!UICONTROL Predeterminado]**.
+   * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, select **[!UICONTROL Default]**.
 
-   * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, expanda **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable Nombres de archivos, seleccione **[!UICONTROL Personalizado]**.
+   * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, select **[!UICONTROL Custom]**.
 
 1. En Orden de secuencia, defina el orden en el que se muestran las imágenes después de que el conjunto se agrupe en Dynamic Media.
 
@@ -555,7 +559,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 **Para crear un conjunto preestablecido de lotes para la generación automática de un conjunto de giros 2D:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -660,9 +664,11 @@ La cola de flujo de trabajo de Granite Transit se usa para el flujo de trabajo *
 
    Puede aumentar **[!UICONTROL Máximo de trabajos paralelos]** para admitir adecuadamente una carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinadas situaciones (es decir, una migración inicial o una carga masiva única), puede utilizar un valor elevado. Sin embargo, tenga en cuenta que el uso de un valor grande (como dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, pruebe y ajuste el valor en función de su caso de uso particular.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+<!--
+By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+-->
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

@@ -8,10 +8,11 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 83%
+source-wordcount: '1316'
+ht-degree: 77%
 
 ---
 
@@ -39,29 +40,31 @@ Cuando [crea o edita una comunicación interactiva existente](../../forms/using/
 
 **A.** Explorador de canales **B.** Explorador de contenido **C.** Explorador de propiedades **D.** Explorador de recursos **E.** Explorador de componentes **F.** Explorador de fuentes de datos: modelo de datos **G.** Explorador de fuentes de datos: contenido maestro
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 La barra lateral incluye lo siguiente:
 
 * **Explorador de canales**
 
-El Explorador de canales le permite alternar entre los canales impreso y web de la comunicación interactiva. Según el canal que haya seleccionado en el Explorador de canales, los exploradores, como Contenido y Componentes, muestran las opciones.
+El Explorador de canales le permite alternar entre los canales web y de impresión de la comunicación interactiva. Según el canal que haya seleccionado en el Explorador de canales, los exploradores, como Contenido y Componentes, muestran las opciones.
 
 * **Explorador de contenido**
-En el Explorador de contenido, puede ver la jerarquía de objetos del documento del canal seleccionado. El autor puede desplazarse a un componente específico al pulsar ese elemento en el árbol de objetos del formulario. El autor puede buscar objetos en el canal web y reorganizarlos desde este árbol.
+En el explorador de contenido, puede ver la jerarquía de objetos del documento del canal seleccionado. El autor puede desplazarse a un componente específico al pulsar ese elemento en el árbol de objetos del formulario. El autor puede buscar objetos en el canal web y reorganizarlos desde este árbol.
 
 * **Explorador de propiedades**
 
   Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos:
 Seleccione un componente, luego seleccione ![field-level](assets/field-level.png) > **Contenedor de documento** y luego seleccione ![cmppr](assets/cmppr.png).
 
-* **Explorador de recursos**
+* **Explorador de Assets**
 Segmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas o vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
 
 * **Explorador de componentes**
-Incluye los componentes que puede utilizar para crear los canales impreso y web de un documento. Puede arrastrar componentes hasta la comunicación interactiva para agregar elementos y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes que se muestran en el Explorador de componentes para los canales impreso y web:
+Incluye componentes que puede utilizar para crear los canales impreso y web de un documento. Puede arrastrar componentes hasta la comunicación interactiva para agregar elementos y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes que se muestran en el Explorador de componentes para los canales web y de impresión:
 
 | **Componente** | **Canal de impresión** | **Canal web** | **Funcionalidad** |
 |---|---|---|---|
@@ -91,7 +94,7 @@ Los puntos clave para trabajar con los componentes de las comunicaciones interac
    1. Seleccione para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
    1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
+   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
 
 ## Barra de herramientas de los componentes {#component-toolbar}
 
@@ -99,7 +102,7 @@ Los puntos clave para trabajar con los componentes de las comunicaciones interac
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: al seleccionar **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
+A.**Configurar**: al seleccione **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
 
 B.**Editar reglas**: cuando selecciona Editar reglas, aparece el Editor de reglas, en el que puede editar y crear reglas para el componente seleccionado. En el Editor de reglas, también puede seleccionar otros objetos de formulario (componentes) y editar/crear reglas para dichos objetos.
 
@@ -115,7 +118,7 @@ G. **Pegar**: permite pegar el componente cortado o copiado mediante las opcione
 
 H. **Grupo**: permite seleccionar varios componentes si desea cortar, copiar o pegar más de un componente a la vez.
 
-I. **Principal**: permite seleccionar el elemento principal de un componente.
+I. **Principal**: Permite seleccionar el elemento principal de un componente.
 
 J. **Ver expresión SOM:** permite ver la [expresión SOM](../../forms/using/using-som-expressions-adaptive-forms.md) del componente.
 
@@ -123,7 +126,7 @@ K: **Agrupar objetos en el panel:** permite agrupar los componentes en un panel 
 
 L. **Agregar panel secundario** (solo para paneles): permite agregar un panel secundario al panel.
 
-M: **Agregar barra de herramientas del panel** (solo para paneles): le permite añadir la barra de herramientas del componente Panel. Después, puede realizar más acciones en la barra de herramientas.
+M: **Agregar barra de herramientas del panel** (solo para paneles):Lets Cuando agregue la barra de herramientas del componente Panel. Después, puede realizar más acciones en la barra de herramientas.
 
 Además, la opción **Reemplazar** de la barra de herramientas permite reemplazar el componente existente con un componente alternativo. La opción no está disponible para el componente Panel.
 
@@ -131,7 +134,7 @@ Además, la opción **Reemplazar** de la barra de herramientas permite reemplaza
 
 La barra de herramientas Página de la parte superior proporciona opciones que le permiten previsualizar la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva al crearla y realizar los cambios correspondientes. En la barra de herramientas Página, verá lo siguiente:
 
-* Alternar panel lateral![&#x200B; alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
+* Alternar panel lateral![ alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
 * Información de la página ![información_de_la_página](assets/pageinformationad.png): permite ver las propiedades de la página.
 * Emulador ![regla](assets/ruler.png): permite emular el aspecto de la comunicación interactiva en diferentes tamaños de visualización, como tabletas y teléfonos.
 * Edición: permite seleccionar otros modos, como Edición, Estilo, Desarrollador y Diseño.

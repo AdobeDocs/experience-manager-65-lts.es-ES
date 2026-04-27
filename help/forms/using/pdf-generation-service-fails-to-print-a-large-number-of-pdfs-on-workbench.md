@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,10 @@ Cuando un cliente genera un gran número de PDF a través de servicios implement
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Esto se debe a que el número máximo de páginas en una solicitud de impresión está limitado a aproximadamente 1000 páginas en Windows. Cuando se genera una salida de impresión, es necesario cargar la plantilla y los datos en la memoria y el diseño resultante se crea en la memoria. Esto significa que el tamaño de la salida final tiene límites. El proceso que genera la salida de impresión es una tarea de 32 bits, lo que significa que está limitada a 2 GB de RAM en Windows <!--and 4 GB on UNIX-->.
 

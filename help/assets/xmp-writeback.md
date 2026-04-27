@@ -1,23 +1,23 @@
 ---
-title: Reescritura de XMP en representaciones
+title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura de XMP propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas específicas.
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 6%
+source-wordcount: '802'
+ht-degree: 7%
 
 ---
 
-# Reescritura de XMP en representaciones {#xmp-writeback-to-renditions}
+# Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 LTS | Este artículo |
 
 Esta característica de reescritura de XMP en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Assets o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.

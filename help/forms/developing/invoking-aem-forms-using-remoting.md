@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4604'
+source-wordcount: '4651'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Para invocar mediante programación los procesos de AEM Forms mediante Remoting,
 
 * *&lt;directorio_instalación>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  donde &lt;*install_directory*> es el directorio donde está instalado AEM Forms.
+  donde &lt;*install_directory*> es el directorio en el que está instalado AEM Forms.
 
 **Consulte también**
 
@@ -201,7 +201,7 @@ Para invocar un proceso de AEM Forms desde una aplicación creada con Flex, real
 >
 >En esta sección se explica cómo invocar un proceso de AEM Forms y cargar un documento cuando AEM Forms está configurado para cargar documentos no seguros. Para obtener información sobre cómo invocar procesos de AEM Forms y cargar documentos seguros, y cómo configurar AEM Forms para que acepte documentos seguros y no seguros, vea [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
-**Creando una instancia mx:RemoteObject**
+**Creando una instancia de mx:RemoteObject**
 
 Cree una instancia de `mx:RemoteObject` para invocar un proceso de AEM Forms creado en Workbench. Para crear una instancia de `mx:RemoteObject`, especifique los siguientes valores:
 
@@ -286,7 +286,7 @@ Los parámetros de salida de proceso de AEM Forms se deserializan en objetos Act
 
 Puede invocar el proceso `MyApplication/EncryptDocument` realizando los siguientes pasos:
 
-1. Cree una instancia de `mx:RemoteObject` mediante ActionScript o MXML. Consulte Creación de una instancia mx:RemoteObject.
+1. Cree una instancia de `mx:RemoteObject` mediante ActionScript o MXML. Consulte Creación de una instancia de mx:RemoteObject.
 1. Configure una instancia de `ChannelSet` para comunicarse con AEM Forms y asóciela a la instancia `mx:RemoteObject`. Consulte Creación de un canal a AEM Forms.
 1. Llame al método `login` del ChannelSet o al método `setCredentials` del servicio para especificar el valor del identificador de usuario y la contraseña. (Consulte [Uso del inicio de sesión único](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Rellene una instancia de `mx.rpc.livecycle.DocumentReference` con un documento de PDF no protegido para pasarlo al proceso `MyApplication/EncryptDocument`. (Vea [Pasar un documento como parámetro de entrada](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
@@ -624,7 +624,7 @@ Puede utilizar la consola de administración para especificar si los documentos 
 >[!NOTE]
 >
 >* Para configurar AEM Forms para que acepte documentos no seguros, seleccione la opción Permitir la carga de documentos no seguros desde aplicaciones de Flex. A continuación, reinicie una aplicación o servicio para asegurarse de que la configuración surta efecto.
->* Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
+> * Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 
 ### Inicio rápido: invocar un proceso de corta duración pasando un documento seguro mediante Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

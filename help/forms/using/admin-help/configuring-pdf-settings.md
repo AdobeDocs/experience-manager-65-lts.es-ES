@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7478'
 ht-degree: 0%
 
 ---
@@ -95,19 +95,19 @@ La configuración de PDF determina con precisión cómo se convierten los archiv
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración existente.
 1. En la página Nueva/Editar configuración de Adobe PDF, complete la información necesaria en estas secciones:
 
-[Opciones generales](configuring-pdf-settings.md#general-options)
+   [Opciones generales](configuring-pdf-settings.md#general-options)
 
-[Opciones de imágenes](configuring-pdf-settings.md#images-options)
+   [Opciones de imágenes](configuring-pdf-settings.md#images-options)
 
-[Opciones de fuentes](configuring-pdf-settings.md#fonts-options)
+   [Opciones de fuentes](configuring-pdf-settings.md#fonts-options)
 
-[Opciones de color](configuring-pdf-settings.md#color-options)
+   [Opciones de color](configuring-pdf-settings.md#color-options)
 
-[Opciones avanzadas](configuring-pdf-settings.md#advanced-options)
+   [Opciones avanzadas](configuring-pdf-settings.md#advanced-options)
 
-[Información sobre normas y opciones de conformidad](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Información sobre normas y opciones de conformidad](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Opciones de vista inicial](configuring-pdf-settings.md#initial-view-options)
+   [Opciones de vista inicial](configuring-pdf-settings.md#initial-view-options)
 
    Para ir a otra sección, haga clic en su vínculo en la página web o utilice los botones Next y Previous.
 

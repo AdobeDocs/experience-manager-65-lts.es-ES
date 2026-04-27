@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7c1023ac-9d52-49f8-8e92-20e2d9d7079b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
 
 # Ver estadísticas relacionadas con Work Manager {#view-statistics-related-to-work-manager}
 
-La pestaña Administrador de trabajo muestra estadísticas relacionadas con los elementos de Administrador de trabajo. Estos elementos de trabajo se encuentran en diferentes estados según su ubicación en proceso. (Vea [Estado (sólo para las categorías Predeterminado, Flujo de trabajo o Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Puede filtrar la información para ver sólo un subconjunto de los elementos mediante las distintas opciones disponibles (por ejemplo, Estado o Categoría). Puede ordenar los elementos de trabajo o trabajo resultantes (en orden ascendente o descendente) haciendo clic en uno de los encabezados de columna. Además, puede administrar los elementos de trabajo mediante las herramientas de operación que se muestran encima de la lista de elementos de trabajo.
+La pestaña Administrador de trabajo muestra estadísticas relacionadas con los elementos de Administrador de trabajo. Estos elementos de trabajo se encuentran en diferentes estados según su ubicación en proceso. (Consulte [Estado (solo para las categorías Predeterminada, Flujo de trabajo o Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)). Puede filtrar la información para ver solo un subconjunto de los elementos utilizando las distintas opciones disponibles (por ejemplo, Estado o Categoría). Puede ordenar los elementos de trabajo o trabajo resultantes (en orden ascendente o descendente) haciendo clic en uno de los encabezados de columna. Además, puede administrar los elementos de trabajo mediante las herramientas de operación que se muestran encima de la lista de elementos de trabajo.
 
 ## Filtrar los elementos de trabajo {#filter-the-work-items}
 
@@ -49,7 +49,7 @@ La pestaña Administrador de trabajo muestra estadísticas relacionadas con los 
 
 **Completado:** Muestra todos los elementos de trabajo que se ejecutaron correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al finalizar las devoluciones de llamada a los controladores de devolución de llamada. Puede eliminar estos elementos mediante la operación Eliminar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.)
 
-**Error:** muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.) Un vínculo Error en la columna Estado le permite acceder a los detalles del error.
+**Error:** muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.) Un vínculo Failure en la columna Status permite acceder a los detalles del error.
 
 **Desconocido:** Muestra todos los elementos de trabajo cuyo estado es desconocido.
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac3766c5-b741-4e65-8053-0c9cfd66a2f9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -36,4 +36,4 @@ Utilice tipos de variables simples (por ejemplo, string o int) y evite utilizar 
 
 Utilice el almacenamiento global de documentos (GDS) de forma eficaz. El directorio GDS del servidor de Forms se utiliza para almacenar, entre otras cosas, archivos que se pasan a servicios que forman parte de formularios AEM en procesos. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
 
-La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [Configuración general de los formularios AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.
+La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.

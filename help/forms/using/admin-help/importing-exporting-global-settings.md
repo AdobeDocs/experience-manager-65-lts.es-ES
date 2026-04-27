@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
@@ -146,4 +146,4 @@ Para definir el nombre personalizado:
 >
 >Para la aplicación Demo, el nombre para mostrar predeterminado es **Citizen**. Para una aplicación personalizada que cree, el nombre para mostrar predeterminado es **Cuenta de contexto del sistema**.
 >
->**client_inactiveTimeout:** Cuando un usuario permanece inactivo durante un período de tiempo específico, caduca la sesión de AEM Forms Workspace. Para habilitar la característica, agregue una entrada a la Configuración global &lt;client_inactiveTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_inactiveTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.
+>**client_inactiveTimeout:** Cuando un usuario permanece inactivo durante un período de tiempo específico, caduca la sesión de AEM Forms Workspace. Para habilitar la función, agregue una entrada a la Configuración global &lt;client_inactiveTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_inactiveTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.

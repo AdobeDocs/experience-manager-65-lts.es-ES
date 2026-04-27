@@ -8,9 +8,10 @@ content-type: reference
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1504'
 ht-degree: 4%
 
 ---
@@ -25,7 +26,7 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
 * Si no se proporciona ningún comando de formato en la dirección URL, la entrega de imágenes de Dynamic Media toma el valor predeterminado de JPG para la entrega.
-* JPG comprime en una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son más grandes que los archivos JPG.
+* JPG comprime a una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. Las compresiones PNG tienen una relación de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son más grandes que los archivos JPG.
 * JPG utiliza la compresión con pérdidas, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
 * JPG suele comprimir las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
 * Si las imágenes contienen transparencias, utilice PNG porque JPG no las admite.
@@ -47,8 +48,10 @@ El enfoque de imágenes es el aspecto más complejo del control de imágenes en 
 
 Documento técnico sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), que también se aplica a Experience Manager.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente las imágenes se enfocan utilizando un solo método o el otro, pero no ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
@@ -123,6 +126,6 @@ Si los resultados de enfoque siguen sin ser satisfactorios, aumente el radio en 
 
 A medida que experimenta, las siguientes sugerencias generales pueden resultar útiles para optimizar aún más el flujo de trabajo:
 
-* Pruebe diferentes parámetros en tiempo real directamente en una dirección URL.
-* Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
-* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque al ingerir. Para casos de uso avanzados en los que hay opciones para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html) puede ayudarle con información y prácticas recomendadas personalizadas.
+* Try out and test different parameters in real time, directly on a URL.
+* As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path calls these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
+* Experience Manager also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. For advanced use cases where there are options to tune and optimize rendering results, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) can help you with customized insight and best practices.

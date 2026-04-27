@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ Cree de forma dinámica un documento DDX y desmonte un documento de PDF mediante
    * Cree un objeto Java `DocumentBuilder` llamando al método `newDocumentBuilder` del objeto `DocumentBuilderFactory`.
    * Llame al método `newDocument` del objeto `DocumentBuilder` para crear una instancia de un objeto `org.w3c.dom.Document`.
    * Cree el elemento raíz del documento DDX invocando el método `createElement` del objeto `org.w3c.dom.Document`. Este método crea un objeto `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su método `setAttribute`. Finalmente, agregue el elemento al elemento header llamando al método `appendChild` del elemento header y pase el objeto del elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Cree el elemento `PDFsFromBookmarks` llamando al método `createElement` del objeto `Document`. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. Establezca un valor para el elemento `PDFsFromBookmarks` llamando a su método `setAttribute`. Anexe el elemento `PDFsFromBookmarks` al elemento `DDX` llamando al método `appendChild` del elemento DDX. Pase el objeto de elemento `PDFsFromBookmarks` como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:

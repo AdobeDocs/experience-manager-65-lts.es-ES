@@ -1,5 +1,5 @@
 ---
-title: Activar el inicio de sesión único en AEM Forms
+title: Habilitar el inicio de sesión único en AEM Forms
 description: Obtenga información sobre cómo habilitar el inicio de sesión único (SSO) mediante encabezados HTTP y SPNEGO.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
 
-# Activar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
+# Habilitar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
@@ -171,7 +171,7 @@ Si se obtiene acceso al servidor mediante el nombre del equipo, como https://lcs
 
 1. En el cuadro Dirección URL del explorador, escriba `about:config`
 
-   Aparecerá el cuadro de diálogo about:config - Mozilla Firefox.
+   Aparece el cuadro de diálogo about:config - Mozilla Firefox.
 
 1. En el cuadro Filtro, escriba `negotiate`
 1. En la lista que se muestra, haga clic en network.Negotiate-auth.trusted-uri y escriba uno de los siguientes comandos según corresponda para su entorno:

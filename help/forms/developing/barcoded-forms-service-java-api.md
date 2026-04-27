@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido (SOAP) de la API de comercio; Java&amp del servicio de Forms con códigos de barras
-description: Descubra cómo el servicio de Forms con códigos de barras Java& trade; API Quick Start (SOAP) en AEM Forms permite un procesamiento fluido de los códigos de barras.
+title: Inicio rápido (SOAP) de la API del servicio Java&trade de Forms con códigos de barras
+description: Descubra cómo el Inicio rápido (SOAP) de la API de Forms Service Java&trade; con códigos de barras en AEM Forms permite un procesamiento fluido de los códigos de barras.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: d1350be7-2204-4dc2-814b-4d9e3438a854
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio de Forms con códigos de barras:
 
-[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java™](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 

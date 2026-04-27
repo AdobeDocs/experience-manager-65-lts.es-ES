@@ -12,9 +12,9 @@ feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Esta sección utiliza archivos de ejemplo que pueden estar en la siguiente ubica
 
 &lt;*Directorio de instalación de Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
-donde &lt;*directorio de instalación*> es la ruta de instalación. A efectos de la aplicación cliente, el archivo Dynamic.xdp del pedido de compra se copió desde esta ubicación de instalación y se implementó en una aplicación de Forms denominada *Applications/FormsApplication*. El archivo Dynamic.xdp del pedido de compra se coloca en una carpeta denominada FormsFolder. Del mismo modo, los fragmentos se colocan en una carpeta denominada Fragmentos, como se muestra en la siguiente ilustración.
+donde *directorio de instalación*> es la ruta de instalación. A efectos de la aplicación cliente, el archivo Dynamic.xdp del pedido de compra se copió desde esta ubicación de instalación y se implementó en una aplicación de Forms denominada *Applications/FormsApplication*. El archivo Dynamic.xdp del pedido de compra se coloca en una carpeta denominada FormsFolder. Del mismo modo, los fragmentos se colocan en una carpeta denominada Fragmentos, como se muestra en la siguiente ilustración.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 

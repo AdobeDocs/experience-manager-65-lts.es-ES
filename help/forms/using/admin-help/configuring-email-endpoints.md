@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56dac3e2-e330-47c9-a32e-db947272a632
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3813'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Todos los extremos de correo electrónico se configuran con un nombre de usuario
 
 Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de ruta de archivo y de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa occidental [Windows] o UTF-8). Para obtener más información, consulte el documento *Instalación e implementación de formularios AEM Forms* para su servidor de aplicaciones.
 
-Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar las opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
+Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
 
 * Para configurar atributos que son comunes para todos los extremos de correo electrónico
 * Para proporcionar valores predeterminados para todos los extremos de correo electrónico
@@ -91,7 +91,7 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 **Patrón de dominio:** Patrón de nombre de dominio que se usa para filtrar correos electrónicos entrantes. Por ejemplo, si se utiliza adobe.com, solo se procesará el correo electrónico de adobe.com; se omitirá el correo electrónico de otros dominios.
 
-**Patrón de archivo:** Patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&ast;.dat, &ast;.xml), nombres específicos (data) y expresiones compuestas en el nombre y la extensión (.`[dD][aA]`&#39;puerto&#39;). El valor predeterminado es &ast;.&ast;.
+**Patrón de archivo:** Patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) y expresiones compuestas en el nombre y la extensión (.`[dD][aA]`&#39;port&#39;). El valor predeterminado es &amp;ast;.&amp;ast;.
 
 **Destinatarios de trabajo correctos:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente del trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
 
@@ -169,7 +169,7 @@ Utilice la siguiente configuración para configurar un extremo de correo electr�
 
 **Patrón de dominio:** Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo, si se utiliza adobe.com, solo se procesa el correo electrónico de adobe.com; se ignora el correo electrónico de otros dominios.
 
-**Patrón de archivo:** Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&ast;.dat, &ast;.xml), nombres específicos (data) o expresiones compuestas en el nombre y la extensión (&ast;).`[dD][aA]`&#39;puerto&#39;).
+**Patrón de archivo:** Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) o expresiones compuestas en el nombre y la extensión (&amp;ast;.`[dD][aA]`&#39;port&#39;).
 
 **Destinatarios de trabajo correctos:** Dirección de correo electrónico a la que se envían mensajes para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
@@ -237,7 +237,7 @@ El valor predeterminado es asíncrono.
 
 **Literal:** El correo electrónico utiliza el valor introducido en el campo tal como se muestra.
 
-**Variable:** Puede asignar una cadena a partir del asunto, cuerpo, encabezado o dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al escribir &ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al introducir &ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
+**Variable:** Puede asignar una cadena a partir del asunto, cuerpo, encabezado o dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al introducir &amp;ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al escribir &amp;ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
 
 **Asignaciones de parámetros de salida:** Se usó para configurar la salida del servicio y la operación. Los siguientes caracteres de los valores de asignación de parámetros de salida se expanden en el nombre del archivo adjunto:
 
@@ -247,7 +247,7 @@ El valor predeterminado es asíncrono.
 
 Cualquier aparición de la barra invertida (\) se reemplaza por %%.
 
-***nota &#x200B;**: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede usar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
+***nota **: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede usar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
 
 Los valores disponibles son los siguientes:
 

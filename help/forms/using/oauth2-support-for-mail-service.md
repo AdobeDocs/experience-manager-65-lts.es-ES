@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 5%
+source-wordcount: '1046'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier d
 
    >[!NOTE]
    >
-   > * Para **cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - multiusuario)** aplicación, Adobe recomienda usar una cuenta de trabajo en lugar de una cuenta de correo electrónico personal.
+   > * Para **cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - multiinquilino)** aplicación, Adobe recomienda usar una cuenta de trabajo en lugar de una cuenta de correo electrónico personal.
    > * **Sólo cuentas personales de Microsoft®** aplicación no admitida.
    > * Adobe recomienda usar la aplicación **Multi-tenant and personal Microsoft® account**.
 
@@ -118,7 +118,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
    > Para habilitar el servicio de autenticación oAuth 2.0, es obligatorio seleccionar **Si el servidor SMTP requiere autenticación (autenticación SMTP)**.
 
 1. Establecer **configuración de autenticación oAuth 2.0** como `True`.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Inicie sesión en **Workbench** y busque **Correo electrónico 1.0** desde **Selector de actividades**.
 1. Hay tres opciones disponibles en Correo electrónico 1.0 como:
@@ -145,7 +145,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
 1. Vaya a **Inicio** > **Servicios** > **Flujo de trabajo de formularios** > **Configuración del servidor** > **Configuración de correo electrónico**
 1. Para habilitar las notificaciones de tareas oAuth, seleccione la casilla de verificación **Habilitar oAuth**.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Haga clic en **Guardar** para guardar los detalles.
 
@@ -153,13 +153,13 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=es#create-an-email-endpoint-for-the-complete-task-service).
+   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar el extremo de correo electrónico {#configure_email_endpoint}
 
 1. Vaya a **Inicio** > **Servicios** > **Aplicación y servicios** > **Administración de extremos**
 1. Para configurar el extremo del correo electrónico, establezca **Configuración de autenticación oAuth 2.0** como `True`.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Haga clic en **Guardar** para guardar los detalles.
 
@@ -167,9 +167,9 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=es).
+   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 * Si el servicio de correo electrónico no funciona correctamente, intente volver a generar `Refresh Token` como se ha descrito anteriormente. El nuevo valor tarda unos minutos en implementarse.
 

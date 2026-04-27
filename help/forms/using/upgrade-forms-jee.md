@@ -11,10 +11,10 @@ feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 74%
+source-wordcount: '395'
+ht-degree: 66%
 
 ---
 
@@ -37,8 +37,8 @@ Realice el siguiente procedimiento para utilizar el programa de instalación com
 1. Consulte [Prepararse para actualizar a AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_es) para aprender y realizar las tareas que garantizan que la actualización se ejecute correctamente con un tiempo de inactividad mínimo en el servidor.
 1. Según el entorno y el servidor de aplicaciones existentes, elija uno de los siguientes documentos y siga las instrucciones.
 
-   * [Actualizar de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_es)
-   * [Actualizar de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_es)
-   * [Actualizar de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_es)
+   * [Actualización de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_es)
+   * [Actualización de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_es)
+   * [Actualización de AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_es)
 
 La actualización directa desde LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms a AEM 6.5 Forms no está disponible. Puede realizar una actualización intermedia a una o más versiones de LiveCycle o AEM Forms y, a continuación, actualizar a AEM 6.5 Forms. Para obtener la lista de versiones intermedias y las instrucciones de actualización correspondientes, consulte [Elegir una ruta de actualización](upgrade.md).

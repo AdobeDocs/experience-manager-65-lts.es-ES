@@ -8,9 +8,9 @@ feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
-source-git-commit: e591ed82228d38446409951a1ea495a93732f92e
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3915'
+source-wordcount: '4025'
 ht-degree: 15%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 LTS | Este artículo |
 
 
@@ -42,12 +42,12 @@ Para los autores de [!DNL Sites], los recursos remotos están disponibles como r
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* Para [!DNL Adobe Experience Manager] tipos de implementación, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 LTS [!DNL Assets] funciona con [!DNL Experience Manager] as a Cloud Service. Para obtener más información sobre cómo funciona esta funcionalidad en [!DNL Experience Manager] as a [!DNL Cloud Service], consulte [Assets conectado en Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=es).
+* Para [!DNL Adobe Experience Manager] tipos de implementación, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 LTS [!DNL Assets] funciona con [!DNL Experience Manager] as a Cloud Service. Para obtener más información sobre cómo funciona esta funcionalidad en [!DNL Experience Manager] as a [!DNL Cloud Service], consulte [Assets conectado en Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] en AMS | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] local |
   |---|---|---|---|
-  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible  |
-  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] en AMS** | Compatible | Compatible | Compatible  |
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible |
+  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] en AMS** | Compatible | Compatible | Compatible |
   | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] local** | No compatible | No compatible | No compatible |
 
 ### Formatos de archivo compatibles {#mimetypes}
@@ -104,7 +104,7 @@ Para configurar la conectividad de Connected Assets y la conectividad local [!DN
    1. Un **[!UICONTROL Título]** de la configuración.
    1. **[!UICONTROL Dirección URL del sitio remoto DAM]** es la dirección URL de la ubicación [!DNL Assets] con el formato `https://[assets_servername]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
-   1. En el campo **[!UICONTROL Punto de montaje]**, escriba la ruta de acceso local [!DNL Experience Manager] donde [!DNL Experience Manager] recupera los recursos. Por ejemplo, `remoteassets` carpeta. Los recursos que se recuperan de DAM se almacenan en esta carpeta en la implementación [!DNL Sites].
+   1. En el campo **[!UICONTROL Punto de montaje]**, escriba la ruta de acceso local [!DNL Experience Manager] donde [!DNL Experience Manager] recupera los recursos. Por ejemplo, la carpeta `remoteassets`. Los recursos que se recuperan de DAM se almacenan en esta carpeta en la implementación [!DNL Sites].
    1. **[!UICONTROL La dirección URL de sitios locales]** es la ubicación de la implementación [!DNL Sites]. La implementación [!DNL Assets] utiliza este valor para mantener las referencias a los recursos digitales recuperados por esta implementación [!DNL Sites].
    1. Credenciales de [!DNL Sites] usuario técnico.
    1. El valor del campo **[!UICONTROL Umbral de optimización de la transferencia binaria original]** especifica si los recursos originales (incluidas las representaciones) se transfieren sincrónica o no. Assets con un tamaño de archivo más pequeño se puede recuperar fácilmente, mientras que los recursos con un tamaño de archivo relativamente mayor se sincronizan mejor de forma asíncrona. El valor depende de las capacidades de red.
@@ -134,7 +134,7 @@ Para configurar la conectividad de Connected Assets y la conectividad local [!DN
    >
    >Todas las representaciones disponibles en la implementación remota se recuperan cuando los autores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. El flujo de trabajo [!UICONTROL DAM Update Asset] se activa y crea más representaciones. Estas representaciones solo están disponibles en la implementación local [!DNL Sites] y no en la implementación remota DAM.
 
-1. Agregue la implementación [!DNL Sites] como un origen permitido en la configuración CORS de la implementación [!DNL Assets]. Para obtener más información, consulte [comprender CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es).
+1. Agregue la implementación [!DNL Sites] como un origen permitido en la configuración CORS de la implementación [!DNL Assets]. Para obtener más información, consulte [comprender CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
 1. Configurar [compatibilidad con cookies del mismo sitio](/help/sites-administering/same-site-cookie-support.md).
 
@@ -173,7 +173,7 @@ En la implementación remota de [!DNL Assets], en [!UICONTROL modo de sincroniza
    * En [!DNL Sites] local, en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación [!DNL Sites] debe tener acceso de solo lectura a la cuenta [!DNL Dynamic Media].
    * En [!DNL Sites] local, en la opción **[!UICONTROL Publicar Assets]**, seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
 
-1. Habilitar compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es#dynamic-media). Esta característica permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local de [!DNL Sites].
+1. Habilitar compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta característica permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local de [!DNL Sites].
 
 ## Usar recursos remotos {#use-remote-assets}
 
@@ -316,7 +316,7 @@ Puede agregar recursos a la implementación de [!DNL Sites]; sin embargo, esos r
 
 * Para obtener información sobre el uso de los recursos, configure la funcionalidad [Assets Insight](/help/assets/asset-insights.md) en la instancia [!DNL Sites].
 
-* No puede arrastrar el recurso remoto al [cuadro de diálogo Configurar componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es#configure-dialog). Sin embargo, puede arrastrar el recurso remoto directamente al componente de imagen en la página de Sites sin hacer clic en **[!UICONTROL Configurar]**.
+* No puede arrastrar el recurso remoto al [cuadro de diálogo Configurar componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sin embargo, puede arrastrar el recurso remoto directamente al componente de imagen en la página de Sites sin hacer clic en **[!UICONTROL Configurar]**.
 
 ### Permisos y administración de recursos {#permissions-and-managing-assets}
 

@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6249'
 ht-degree: 0%
 
 ---
@@ -54,35 +54,35 @@ Cree o edite una configuración de tipo de archivo para especificar cómo admini
 
 1. Rellene la información necesaria en estas secciones:
 
-[Importar y exportar archivos de configuración del generador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importar y exportar archivos de configuración del generador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Configuración de exportación de Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
+   [Configuración de exportación de Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
 
-[Configuración de HTML a PDF](#html-to-pdf-settings)
+   [Configuración de HTML a PDF](#html-to-pdf-settings)
 
-[Flash de vídeos en la configuración de PDF](#flash-videos-to-pdf-settings)
+   [Flash de vídeos en la configuración de PDF](#flash-videos-to-pdf-settings)
 
-[Configuración de XPS a PDF](#xps-to-pdf-settings)
+   [Configuración de XPS a PDF](#xps-to-pdf-settings)
 
-[Configuración del optimizador de PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [Configuración del optimizador de PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Configuración de Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Configuración de Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Configuración de Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Configuración de Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Configuración del proyecto de Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Configuración del proyecto de Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Configuración de Microsoft Word (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Configuración de Microsoft Word (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Configuración de Microsoft Visio (sólo Windows)](#visio)
+   [Configuración de Microsoft Visio (sólo Windows)](#visio)
 
-[Configuración de Microsoft Publisher (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Configuración de Microsoft Publisher (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[Configuración de AutoCAD (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [Configuración de AutoCAD (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[Configuración de OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [Configuración de OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Configuración de otras aplicaciones (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Configuración de otras aplicaciones (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Para ir a otra sección, haga clic en su vínculo en la página web o use los botones **[!UICONTROL Siguiente]** o **[!UICONTROL Anterior]**.
 
@@ -128,7 +128,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) a PDF. El software OCR le permite buscar, corregir y copiar el texto en PDF.
 
-***nota &#x200B;**: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
+***nota **: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
 
 **Idioma principal de OCR:** Especifica el idioma que el motor de OCR utilizará para identificar los caracteres.
 
@@ -267,7 +267,7 @@ Para obtener instrucciones sobre cómo obtener acceso a esta configuración, con
 
    >[!NOTE]
    >
-   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**&#x200B;aún están completamente desincrustadas.*
+   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**aún están completamente desincrustadas.*
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Conservar sobreimpresión: fusiona el color de la ilustración transparente con 
 
 En la tabla siguiente se muestran los tipos comunes de impresoras y su resolución medida en ppp, su resolución de pantalla predeterminada medida en líneas por pulgada (lpp) y una resolución de remuestreo para imágenes medidas en píxeles por pulgada (ppi). Por ejemplo, si estuviera imprimiendo en una impresora láser de 600 ppp, escribiría 170 para la resolución con la que volver a muestrear las imágenes.
 
-**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes monocromas, en escala de grises y en color. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen. La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la regla de pantalla de línea en la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
+**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes monocromas, en escala de grises y en color. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen.La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la resolución de pantalla de línea a la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
 
 >[!NOTE]
 >

@@ -9,10 +9,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3151'
-ht-degree: 95%
+source-wordcount: '3215'
+ht-degree: 91%
 
 ---
 
@@ -22,23 +22,23 @@ ht-degree: 95%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Información general {#overview}
 
 Los formularios adaptables permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
-* **Uso del modelo de datos de formulario**
+* **Uso de un modelo de datos de formulario**
   La [integración de datos](../../forms/using/data-integration.md) permite integrar entidades y servicios de diferentes fuentes de datos en un modelo de datos de formulario que puede utilizar para crear formularios adaptables. Elija un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
 
 * **Usar una definición de esquema XML (XSD) o un esquema JSON**
-Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos del modelo de datos del Explorador de contenido al crear formularios adaptables.
+Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos de modelo de datos del Explorador de contenido al crear formularios adaptables.
 
-* **No usar ninguno o no usar un modelo de formulario**
+* **No se usa ninguno o no se usa un modelo de formulario**
 Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
 Para obtener más información sobre la creación de un formulario adaptable, consulte [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md).
@@ -75,21 +75,23 @@ La barra lateral le permite
 
 **A.** Explorador de contenido **B.** Explorador de propiedades **C.** Explorador de recursos **D.** Explorador de componentes
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barra lateral consta de los siguientes exploradores:
 
 * **Explorador de contenido**
-En el Explorador de contenido, puede ver lo siguiente:
+En el explorador de contenido, puede ver lo siguiente
 
-   * **Objetos del formulario**
+   * **Objetos de formulario**
 Muestra la jerarquía de objetos del formulario. El autor puede desplazarse a un componente específico del formulario al pulsar ese elemento en el árbol de objetos del formulario. El autor puede buscar objetos y reorganizarlos desde este árbol.
 
    * **Objetos del modelo de datos**
-Permite ver la jerarquía del modelo del formulario. 
-Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos del modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
+Permite ver la jerarquía del modelo del formulario.
+Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos de modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
 
 * **Explorador de propiedades**
 
@@ -153,10 +155,10 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
-   <td>Archivo adjunto</td>
+   <td>Adjuntar archivos</td>
    <td><p>Agrega un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario. Puede adjuntar varios archivos a un componente Archivo adjunto. También puede especificar el **[!UICONTROL Tamaño máximo de archivo]** y los **[!UICONTROL Tipos de archivo compatibles]** de los archivos adjuntos en el Explorador de propiedades del componente. </p> <p><strong> Nota: </strong><ul> <li> El componente no permite adjuntar archivos con un nombre de archivo que empiece por los caracteres (.), o que contenga los caracteres \ / : * ? " &lt; &gt; | ; % $, o nombres de archivo especiales reservados para el sistema operativo Windows, como nul, prn, con, lpt o com. </li> <li> Para adjuntar varios archivos a un componente Archivo adjunto abierto en el explorador Safari de Apple, seleccione y adjunte los archivos uno a uno. No puede seleccionar y adjuntar varios archivos a la vez.</li> <li>El componente Archivo adjunto es compatible con un conjunto predefinido de formatos de archivo en formularios adaptables habilitados para Adobe Sign. Para obtener más información, consulte <a href="https://helpx.adobe.com/es/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de archivo compatibles</a>. </li></ul></p> </td>
   </tr>
   <tr>
@@ -289,7 +291,7 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 
    1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
+   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
 
 * Algunos componentes de los formularios adaptables, como Correo electrónico y Teléfono, incluyen patrones de validación listos para usar. Sin embargo, puede especificar una validación personalizada actualizando el campo **[!UICONTROL Patrón de validación]** en el acordeón Patrones de las propiedades del componente. Consulte las descripciones de componentes de la tabla anterior para obtener más información sobre las validaciones predeterminadas.
 
@@ -344,7 +346,7 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: al seleccione **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral.  La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
+A.**Configurar**: al seleccione **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
 
 B.**Copiar**: Puede utilizar la opción Copiar para copiar un componente y pegarlo en otros lugares del formulario. Al pegar un componente, este recibirá un nombre de elemento nuevo, pero conservará las propiedades del componente copiado.
 
@@ -396,4 +398,4 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 * **barra de herramientas:** Un contenedor de formulario adaptable tiene asociada una barra de herramientas global que es global para el formulario. Esta barra de herramientas se puede agregar mediante la acción **[!UICONTROL Agregar barra de herramientas]** en la barra de edición, que permite a los autores agregar acciones, como Enviar, Guardar, Restablecer, etc.
 
-* **recursos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc).
+* **activos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc).

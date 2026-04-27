@@ -5,10 +5,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 0%
+source-wordcount: '2116'
+ht-degree: 3%
 
 ---
 
@@ -162,7 +162,7 @@ Para obtener más información, consulte [Replicación](/help/sites-deploying/re
 
 Consulte [Ajustes de configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener una lista de los distintos paquetes que son relevantes para la implementación del proyecto (enumerados según el paquete). No es necesario ajustar todas las configuraciones enumeradas, algunas se mencionan para ayudarle a comprender cómo funciona AEM.
 
-Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ### Configuración de LDAP {#configuring-ldap}
 
@@ -176,7 +176,7 @@ Para administrar usuarios en AEM (incluida la asignación de derechos de acceso)
 
 Dispatcher es la herramienta de Adobe Experience Manager para el almacenamiento en caché, el equilibrio de carga o ambos. Se puede utilizar con un servidor web de clase empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es) para obtener más información sobre la configuración.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obtener más información sobre la configuración.
 
 ### Configuración del conector de AEM LiveCycle {#configuring-aem-livecycle-connector}
 
@@ -202,9 +202,11 @@ Es posible configurar los vínculos visibles; consulte [Configuración de la con
 
 Consulte [Configuración del rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) para obtener más información.
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Almacén de datos compartidos {#shared-data-store}
 
@@ -265,7 +267,7 @@ El **Editor de texto enriquecido** (**RTE**) proporciona a los autores una ampli
 
 Consulte [Configuración del editor de texto enriquecido](/help/sites-administering/rich-text-editor.md) para obtener más información.
 
-### Configurar Deshacer para editar páginas {#configuring-undo-for-page-editing}
+### Configuración de Deshacer para editar páginas {#configuring-undo-for-page-editing}
 
 Existen varias propiedades que controlan el comportamiento de los comandos Deshacer y Rehacer para editar páginas. Se pueden configurar, consulte [Configuración de Deshacer para la edición de páginas](/help/sites-administering/config-undo.md) para obtener más información.
 

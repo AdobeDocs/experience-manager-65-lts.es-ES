@@ -1,5 +1,5 @@
 ---
-title: Crear y administrar conjuntos de directivas
+title: Crear y administrar conjuntos de políticas
 description: Los conjuntos de directivas se utilizan para agrupar directivas que tienen un propósito comercial común. Puede crear, editar y eliminar directivas en un conjunto de directivas.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7d975fe3-9444-4337-ba32-98a8cc2e03f3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
 
-# Crear y administrar conjuntos de directivas {#creating-and-managing-policy-sets}
+# Crear y administrar conjuntos de políticas {#creating-and-managing-policy-sets}
 
 >[!NOTE]
 > 

@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '18860'
+source-wordcount: '19156'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genere un documento de PDF.
 
@@ -261,7 +261,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -269,7 +269,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 
@@ -306,7 +306,7 @@ Cree un documento de PDF con la API de salida (servicio web):
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -340,7 +340,7 @@ Cree un documento de PDF con la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genere un documento de PDF.
 
@@ -358,11 +358,11 @@ Cree un documento de PDF con la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 
@@ -371,13 +371,13 @@ Cree un documento de PDF con la API de salida (servicio web):
    * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
-   Véase también
+   Ver también
 
-[Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
+   [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -387,7 +387,7 @@ Cree un documento de PDF con la API de salida (servicio web):
 
 Puede utilizar el servicio Output para crear un documento de PDF/A. Como PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Al igual que otras tareas del servicio Output, puede proporcionar un diseño de formulario y datos para combinarlos con uno para crear un documento de PDF/A.
 
-La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre ambos está relacionada con la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado.
+La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre ambos está relacionada con la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes están incrustadas en el documento PDF/A generado.
 
 Aunque PDF/A es el estándar para archivar documentos de PDF, no es obligatorio utilizar PDF/A para archivar si un documento estándar de PDF cumple los requisitos de su empresa. El propósito del estándar PDF/A es crear un archivo PDF que se pueda almacenar durante un largo periodo de tiempo y que cumpla los requisitos de conservación de documentos. Por ejemplo, una dirección URL no se puede incrustar en un PDF/A porque, con el tiempo, la dirección URL puede no ser válida.
 
@@ -564,7 +564,7 @@ Crear un documento de PDF/A mediante la API de salida (servicio web):
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -1088,7 +1088,7 @@ Cree un documento de PDF basado en fragmentos mediante la API del servicio de sa
 1. Cree un objeto Output y Assembler Client.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -1296,7 +1296,7 @@ Imprimir en un archivo mediante la API de salida (servicio web):
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -1513,7 +1513,7 @@ Después de recuperar un documento para imprimir, puede invocar el servicio Outp
 
 >[!NOTE]
 >
->Si utiliza una impresora de red y el mecanismo de acceso es SharedPrinter, debe especificar la ruta de red completa de la impresora.Envíe una secuencia de impresión a una impresora de red mediante la API de Java
+>Si utiliza una impresora de red y el mecanismo de acceso es SharedPrinter, debe especificar la ruta de red completa de la impresora.Enviar un flujo de impresión a una impresora de red mediante la API de Java
 
 Envíe un flujo de impresión a una impresora de red mediante la API de salida (Java):
 
@@ -1582,7 +1582,7 @@ Enviar un flujo de impresión a una impresora de red mediante la API de salida (
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -1877,7 +1877,7 @@ Cree varios archivos PDF mediante la API de salida (servicio web):
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -2109,7 +2109,7 @@ Cree reglas de búsqueda mediante la API de salida (servicio web):
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -2196,14 +2196,14 @@ Cree reglas de búsqueda mediante la API de salida (servicio web):
 
 ## Acoplar documentos PDF {#flattening-pdf-documents}
 
-Puede utilizar el servicio Output para transformar un documento interactivo de PDF en un PDF no interactivo. Un documento interactivo de PDF permite a los usuarios introducir o modificar datos de los campos del documento de PDF. El proceso de transformar un documento interactivo de PDF en un documento no interactivo de PDF se denomina *acoplamiento*. Cuando se aplana un documento de PDF, un usuario no puede modificar los datos de los campos del documento. Una razón para acoplar un documento de PDF es garantizar que no se puedan modificar los datos.
+Puede utilizar el servicio Output para transformar un documento interactivo de PDF en un PDF no interactivo. Un documento interactivo de PDF permite a los usuarios introducir o modificar datos de los campos del documento de PDF. El proceso de transformar un documento interactivo de PDF en un documento no interactivo de PDF se denomina *acoplamiento*. Cuando se aplana un documento de PDF, un usuario no puede modificar los datos de los campos del documento. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos.
 
 Puede acoplar los siguientes tipos de documentos de PDF:
 
 * Documentos interactivos de PDF XFA
 * Acrobat Forms
 
-Si se intenta acoplar un documento de PDF PDF que no es interactivo, se producirá una excepción.
+Si se intenta acoplar un documento de PDF que no es interactivo, se producirá una excepción.
 
 >[!NOTE]
 >
@@ -2323,7 +2323,7 @@ Acoplar un documento interactivo de PDF en un documento no interactivo de PDF me
 1. Cree un objeto Cliente de salida.
 
    * Cree un objeto `OutputServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
+   * Cree un objeto `OutputServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para utilizar MTOM.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `OutputServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:

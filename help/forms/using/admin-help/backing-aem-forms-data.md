@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Para obtener más información, consulte el artículo de la base de conocimiento
 * [Copia de seguridad y recuperación de Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
 * [Copia de seguridad y recuperación de MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Copia de seguridad y recuperación de Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
-* Copia de seguridad y recuperación de [DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
+* [Copia de seguridad y recuperación de DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 
 En estos artículos se proporciona orientación sobre las funciones básicas de la base de datos para la copia de seguridad y recuperación de datos. No están pensados como guías técnicas inclusivas de la función de copia de seguridad y recuperación de la base de datos de un proveedor específico. Describen los comandos necesarios para crear una estrategia de copia de seguridad de base de datos fiable para los datos de la aplicación AEM Forms.
 

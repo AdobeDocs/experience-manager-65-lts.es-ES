@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2131'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ DB2 tiene funcionalidades integradas para realizar copias de seguridad de una ba
 
 ### Oracle {#oracle}
 
-Utilice las copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte [Copia de seguridad de Oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información acerca de cómo realizar copias de seguridad y recuperar la base de datos de Oracle, visite estos sitios:
+Utilice las copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte [Copia De Seguridad De Oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información sobre la copia de seguridad y recuperación de la base de datos de Oracle, visite estos sitios:
 
 [Copia de seguridad y recuperación de Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica los conceptos de copia de seguridad y recuperación, así como las técnicas más comunes para usar Recovery Manager (RMAN) para realizar copias de seguridad, recuperación y creación de informes con más detalle, y proporciona más información acerca de cómo planear una estrategia de copia de seguridad y recuperación.
 
@@ -137,7 +137,7 @@ Para obtener más información, consulte [Copia de seguridad y restauración](ht
 
 ### MySQL {#mysql}
 
-Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario de MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) También hay disponible una herramienta de copia de seguridad en caliente para MySQL en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md).)
+Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario de MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Una herramienta de copia de seguridad en caliente para MySQL también está disponible en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

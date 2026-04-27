@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -27,15 +27,17 @@ Esta sección le explica cómo instalar Adobe Experience Manager (AEM) con un se
 
 Se describen los pasos de instalación de los siguientes servidores de aplicaciones:
 
-* [WebSphere](#websphere)
+* [WebSphere® 24.0.0.7](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
 * [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Consulte la documentación adecuada del servidor de aplicaciones para obtener más información sobre la instalación de aplicaciones web, las configuraciones de servidor y cómo iniciar y detener el servidor.
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+-->
 
 ## Descripción general {#general-description}
 
@@ -89,7 +91,7 @@ Para fines de demostración, puede ser adecuado instalar tanto la instancia de a
 1. Utilice una configuración de memoria más alta. Por ejemplo, las instancias predeterminadas de AEM utilizan `-Xmx3072m`
 1. Implementación de las dos aplicaciones web
 1. Después de la implementación, detenga las dos aplicaciones web
-1. Tanto en las instancias de autor como de publicación, asegúrese de que la propiedad `sling.properties` está establecida en `felix.service.urlhandlers` en el archivo `false`. (El valor predeterminado es que esté establecido en `true`).
+1. Tanto en las instancias de autor como de publicación, asegúrese de que la propiedad `felix.service.urlhandlers` está establecida en `false` en el archivo `sling.properties`. (El valor predeterminado es que esté establecido en `true`).
 1. Vuelva a iniciar las dos aplicaciones web.
 
 ## Procedimientos de instalación de Application Servers {#application-servers-installation-procedures}

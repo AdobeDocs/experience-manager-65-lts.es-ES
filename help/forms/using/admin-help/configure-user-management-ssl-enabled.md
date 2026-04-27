@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a97cb5a6-4097-4f2e-b932-cb858bd5681a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 5%
+source-wordcount: '282'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ Para que la sincronización funcione correctamente en LDAPS, los certificados LD
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. Cuando se le pida, escriba la contraseña. (Para Java, la contraseña predeterminada es `changeit`.) Aparece un mensaje que indica que el certificado se ha importado correctamente.
+1. Cuando se le pida, escriba la contraseña. (Para Java, la contraseña predeterminada es `changeit`). Aparece un mensaje que indica que el certificado se ha importado correctamente.
 1. Cuando se le pida, escriba `Yes` para confiar en el certificado.
 1. Habilite SSL en Administración de usuarios y, al configurar los valores del directorio, seleccione Sí para la opción SSL y cambie la configuración del puerto en consecuencia. El número de puerto predeterminado es 636.
 

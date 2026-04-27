@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 00d0576a5ea24efcfb40a2c9a44d596a5205f52c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1237'
 ht-degree: 2%
 
 ---
@@ -28,20 +28,20 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 ### Creación de un usuario de Linux o UNIX para WebSphere {#create-a-linux-or-unix-user-for-websphere}
 
 1. Inicie sesión como usuario raíz.
-1. Crear una usuario introduciendo el siguiente comando en un símbolo del sistema:
+1. Para crear un usuario, escriba el siguiente comando en el símbolo del sistema:
 
    * (Linux y Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
 
-1. Configure el contraseña de la nueva usuario introduciéndolo `passwd` en el símbolo del sistema.
-1. (Linux y Solaris) Crear un archivo de contraseña instantánea introduciéndolo `pwconv` (sin parámetros) en el símbolo del sistema.
+1. Establezca la contraseña del nuevo usuario escribiendo `passwd` en el símbolo del sistema.
+1. (Linux y Solaris) Cree un archivo de contraseña de instantánea introduciendo `pwconv` (sin parámetros) en el símbolo del sistema.
 
    >[!NOTE]
    >
-   >(Linux y Solaris) Para que funcione el registro de seguridad del sistema operativo local de WebSphere Application Server, debe existir un archivo de contraseña de instantánea. El archivo de contraseña de sombra generalmente se llama **/etc/shadow** y se basa en el archivo /etc/passwd. Si el archivo de contraseña de instantánea no existe, se produce un error después de habilitar la seguridad global y configurar el Registro de usuarios como sistema operativo local.
+   >(Linux y Solaris) Para que funcione el registro de seguridad del sistema operativo local de WebSphere Application Server, debe existir un archivo de contraseña de instantánea. El nombre del archivo de contraseña de instantánea suele ser **/etc/shadow** y se basa en el archivo /etc/passwd. Si el archivo de contraseña de instantánea no existe, se produce un error después de habilitar la seguridad global y configurar el Registro de usuarios como sistema operativo local.
 
-1. Abra el archivo grupo desde el directorio /etc en un editor de texto.
-1. añadir al grupo el usuario que creó en el `root` paso 2.
+1. Abra el archivo de grupo desde el directorio /etc en un editor de texto.
+1. Agregue el usuario que creó en el paso 2 al grupo `root`.
 1. Guarde y cierre el archivo.
 1. (UNIX con SSL habilitado) Inicie y detenga WebSphere como usuario raíz.
 
@@ -69,7 +69,7 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 1. En Seguridad administrativa, seleccione **Funciones de usuario administrativo**.
 1. Haga clic en Agregar y haga lo siguiente:
 
-   1. Escriba **&ast;** en el cuadro de búsqueda y haga clic en buscar.
+   1. Escriba **&amp;ast;** en el cuadro de búsqueda y haga clic en buscar.
    1. Haga clic en **Administrador** en los roles.
    1. Agregue el usuario recién creado a la función Asignado a y asígnelo al administrador.
 
@@ -103,19 +103,19 @@ Se pueden crear Truststore y keystore con la utilidad ikeyman o Admin Console. P
 1. Haga clic en **Certificado personal**.
 1. Si ya ha creado un repositorio de claves con ikeyman, su certificado aparecerá. De lo contrario, debe agregar un nuevo certificado autofirmado realizando los siguientes pasos:
 
-   1. Seleccione **Crear > certificado** autofirmado.
-   1. Especifique los valores adecuados en el formulario de certificado. Asegúrese de mantener Alias y nombre común como nombre de dominio completo de la máquina.
+   1. Seleccione **Crear > Certificado autofirmado**.
+   1. Especifique los valores adecuados en el formulario de certificado. Asegúrese de mantener Alias y un nombre común como nombre de dominio completo del equipo.
    1. Haga clic en **Aplicar**.
 
-1. Repita los pasos 2 a 10 para crear un almacén de confianza.
+1. Repita los pasos del 2 al 10 para crear un almacén de confianza.
 
-## Aplicar almacén de claves personalizado y almacén de confianza al servidor {#apply-custom-keystore-and-truststore-to-the-server}
+## Aplicar almacén de claves y almacén de confianza personalizados al servidor {#apply-custom-keystore-and-truststore-to-the-server}
 
 1. En la consola administrativa de WebSphere, seleccione **Seguridad > Certificado SSL y administración de claves**.
-1. Haga clic en Administrar **configuración** de seguridad de endpoints. Se abre el mapa de topología local.
-1. En Entrante, seleccione nodo secundario directo de nodos.
-1. En Artículos relacionados, seleccione **Configuraciones** SSL.
-1. Seleccione **NodeDeafultSSLSetting**.
+1. Haga clic en **Administrar configuración de seguridad de extremo**. Se abre el mapa de topología local.
+1. En Entrante, seleccione secundario directo de nodos.
+1. En Elementos relacionados, seleccione **configuraciones SSL**.
+1. Seleccione **NodeDefaultSSLSsetting**.
 1. En las listas desplegables nombre de almacén de confianza y nombre de almacén de claves, seleccione el almacén de confianza personalizado y el almacén de claves que ha creado.
 1. Haga clic en **Aplicar**.
 1. Guarde la configuración maestra.

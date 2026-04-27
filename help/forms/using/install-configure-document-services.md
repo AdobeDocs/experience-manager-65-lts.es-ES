@@ -6,10 +6,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10247'
-ht-degree: 47%
+source-wordcount: '10681'
+ht-degree: 46%
 
 ---
 
@@ -217,8 +217,10 @@ Antes de instalar Acrobat, revise estos requisitos esenciales. Debería tener:
 * Privilegios de administrador local en el equipo que ejecuta AEM Forms
 * Sistema operativo Windows de 64 bits
 * Conexión a Internet estable para activación de licencia
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+-->
 
 
 #### Flujo de trabajo de implementación y cronología
@@ -229,10 +231,10 @@ El proceso completo suele tardar entre 1 y 2 horas, según el entorno:
 |------|----------------|---------------|
 | &#x200B;1. Crear paquete FRL en Admin Console) | 15-20 minutos | [Acceso a Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
 | &#x200B;2. Conceder permisos de descarga | 5-10 minutos | [Acceso a Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
-| &#x200B;3. Desinstalar Acrobat anterior | 10-15 minutos | Acceso de administrador del servidor |
+| &#x200B;3. Desinstalar el Acrobat anterior | 10-15 minutos | Acceso de administrador del servidor |
 | &#x200B;4. Descargar e instalar Adobe Acrobat Pro | 10-15 minutos | Acceso de administrador del servidor |
 | &#x200B;5. Descargar e implementar el paquete FRL | 20-30 minutos | Acceso de administrador del servidor |
-| &#x200B;6. Verificar la instalación | 5-10 minutos | Acceso al servidor |
+| &#x200B;6. Verificar instalación | 5-10 minutos | Acceso al servidor |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
 
@@ -1058,7 +1060,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
 
-1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro sea estable.
+1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro sea estable.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
 
@@ -1150,7 +1152,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
    1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
    1. Descomprima `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Vaya al directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Ejecute el siguiente archivo por lotes:
+   1. Navegue hasta el directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -1362,7 +1364,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 
-Problemas de conversión de ++HTML a PDF
++++Problemas de conversión de HTML a PDF
 
 * Asegúrese de que los directorios de fuentes se agregan en la interfaz de usuario de la configuración de PDF Generator.
 
@@ -1387,7 +1389,7 @@ Problemas de conversión de ++HTML a PDF
   ```
 
 * Asegúrese de que las fuentes de IBM se copien en usr/share/fonts.
-* Asegúrese de que la corrección de vulnerabilidades fantasma glibc esté disponible en el equipo. Utilice su gestor de paquetes predeterminado para actualizar a la última versión de glibc. Incluye corrección de vulnerabilidades fantasma.
+* Asegúrese de que la corrección de vulnerabilidades fantasma glibc esté disponible en el equipo. Utilice su administrador de paquetes predeterminado para actualizar a la última versión de glibc. Incluye corrección de vulnerabilidades fantasma.
 * Asegúrese de que las últimas versiones de las bibliotecas lib curl, libcrypto y libssl de 32 bits estén instaladas en el sistema. Cree también enlaces simbólicos `/usr/lib/libcurl.so` (o libcurl.a para AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a para AIX®) y `/usr/lib/libssl.so` (o libssl.a para AIX®) que apunten a las últimas versiones (32 bits) de las bibliotecas correspondientes.
 
 * Realice los siguientes pasos para el proveedor de sockets SSL de IBM®:
@@ -1423,7 +1425,7 @@ Problemas de conversión de ++HTML a PDF
 
 +++
 
-+++Errores en la prueba de automatización
++++Errores de prueba de automatización
 
 * Realice al menos una conversión manual en Microsoft® Office y OpenOffice (con cada usuario) para asegurarse de que no aparece ningún cuadro de diálogo durante la conversión. Si aparece algún diálogo, descártelo. No debería aparecer ningún cuadro de diálogo de este tipo durante la conversión automatizada.
 
@@ -1433,7 +1435,7 @@ Problemas de conversión de ++HTML a PDF
 
 +++Errores en la conversión de varios usuarios
 
-* Compruebe los registros del servidor para comprobar si se están produciendo errores en las conversiones realizadas por un usuario en particular.(El Explorador de procesos puede ayudarle a comprobar el proceso de ejecución de distintos usuarios)
+* Compruebe los registros del servidor para comprobar si hay errores en la conversión de un usuario en particular. (El Explorador de procesos puede ayudarle a comprobar el proceso de ejecución de distintos usuarios)
 
 * Asegúrese de que el usuario configurado para el PDF Generator tiene derechos de administrador local.
 
@@ -1445,7 +1447,7 @@ Problemas de conversión de ++HTML a PDF
 
 +++
 
-+++La licencia de Adobe Acrobat instalada en el servidor de AEM Forms caduca
++++La licencia de Adobe Acrobat instalada en el servidor de AEM Forms caduca
 
 * Si tiene una licencia existente de Adobe Acrobat y esta ha caducado, [descargue la versión más reciente de Adobe Application Manager](https://helpx.adobe.com/es/creative-suite/kb/aam-troubleshoot-download-install.html) y migre el número de serie. Antes de [migrar el número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1456,7 +1458,6 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
          
          ```
-
      
    * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
@@ -1464,14 +1465,14 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
+     
+* Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++
 
 +++ El servidor de AEM Forms se encuentra en un entorno seguro o sin conexión, e Internet no está disponible para activar Acrobat.
 
-* Puede conectarse en un plazo de 7 días a partir del primer inicio del producto de Adobe para realizar la activación y el registro en línea o utilizar un dispositivo con acceso a Internet y el número de serie del producto para completar este proceso. Para obtener instrucciones detalladas, consulte [Activación sin conexión](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=es).
+* Puede conectarse en un plazo de 7 días a partir del primer inicio del producto de Adobe para realizar la habilitación y el registro en línea o utilizar un dispositivo con acceso a Internet y el número de serie del producto para completar este proceso. Para obtener instrucciones detalladas, consulte [Activación sin conexión](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=es).
 
 +++
 
@@ -1479,7 +1480,8 @@ Problemas de conversión de ++HTML a PDF
 
 Cuando el usuario intenta convertir archivos de Word o Excel a PDF en Microsoft Windows Server, se encuentra el siguiente error:
 
-*Mensaje de error del convertidor principal: ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
+*Mensaje de error del convertidor principal:
+ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
 
 Para resolver el problema, consulte [No se puede convertir el archivo de Word o Excel al PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 

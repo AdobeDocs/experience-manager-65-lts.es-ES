@@ -12,10 +12,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 0%
+source-wordcount: '1870'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Paso</p></th>
+   <th><p>Etapa</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -78,7 +78,7 @@ Para ilustrar el uso de una secuencia de comandos de diseño de formulario, esta
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.** Un campo denominado NumericField1 **B.** Un campo denominado NumericField2 **C.** Un campo denominado NumericField3
+**A.** Campo denominado NumericField1 **B.** Campo denominado NumericField2 **C.** Campo denominado NumericField3
 
 La sintaxis de la secuencia de comandos en este diseño de formulario es la siguiente:
 
@@ -129,8 +129,8 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 [Calcular datos de formulario mediante la API de Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcular datos de formulario mediante la API de servicio web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Procesando PDF forms interactivo](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Inicio rápido de la API del servicio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Procesamiento de PDF forms interactivo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Creación de aplicaciones web que procesan Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular datos de formulario mediante la API de Java {#calculate-form-data-using-the-java-api}
@@ -222,4 +222,4 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
    * Invoque el método `write` del objeto `javax.servlet.http.HttpServletResponse` para enviar la secuencia de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Ver también**
-[Invocar AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocando AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

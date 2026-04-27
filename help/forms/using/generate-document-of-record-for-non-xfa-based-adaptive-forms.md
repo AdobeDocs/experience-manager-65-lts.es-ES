@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4292'
-ht-degree: 86%
+source-wordcount: '4354'
+ht-degree: 85%
 
 ---
 
@@ -40,13 +40,13 @@ Al crear un formulario adaptable, puede seleccionar un modelo de formulario. Las
 * [Plantillas de formulario](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 Permite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento de registro como se ha descrito anteriormente.
 
-* [Esquema XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+* Esquema XML [](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Permite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
 
    * Asociar una plantilla XFA al documento de registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
    * Generar automáticamente un documento de registro
 
-* Ninguno
+* Ninguna
 Permite crear un formulario adaptable sin un modelo de formulario. El documento de registro se genera automáticamente para el formulario adaptable.
 
 Cuando seleccione un modelo de formulario, configure el documento de registro mediante las opciones disponibles en Configuración de la plantilla de un documento de registro. [Configuración de la plantilla de un documento de registro.](#document-of-record-template-configuration)
@@ -202,7 +202,7 @@ Las siguientes secciones describen cómo se muestran los elementos de formulario
 | Componente de formulario adaptable | Componente XFA correspondiente | Notas |
 | --- | --- | --- |
 | Imagen | Imagen | Los componentes TextDraw e Image, estén enlazados o no, siempre aparecen en el documento de registro de un formulario adaptable basado en XSD, a menos que se excluyan en la configuración del documento de registro. |
-| Texto | Texto  | |
+| Texto | Texto | |
 
 >[!NOTE]
 >
@@ -268,7 +268,7 @@ Siga los siguientes pasos para configurar un documento de registro para formular
 
 1. En la instancia de autor de AEM, haga clic en **Forms > Formularios y documentos.**
 1. Seleccione un formulario y haga clic en **Ver propiedades**.
-1. En la ventana Propiedades, seleccione **Modelo de formulario**.
+1. En la ventana Propiedades, seleccione **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
@@ -392,7 +392,7 @@ La configuración de del documento de registro de cada componente está disponib
    * **[!UICONTROL Posición]** > **[!UICONTROL En la página]** > Nombre de la página maestra: coloca el panel en la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
    * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente página]**: coloca el panel en la parte superior de la siguiente página. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
    * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la página]** > Nombre de la página maestra: coloca el panel en la parte superior de la página cuando se representa la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
-* **[!UICONTROL Paginación]** > **[!UICONTROL Después]**: determina qué área se rellenará después de colocar un panel. Los campos siguientes están disponibles en la sección **[!UICONTROL Después]**:
+* **[!UICONTROL Paginación]** > **[!UICONTROL Después]**: determina qué área se rellenará después de colocar un panel.Los campos siguientes están disponibles en la sección **[!UICONTROL Después]**:
    * **[!UICONTROL Después]** > **[!UICONTROL Continuar relleno principal]**: continúa combinando los datos de todos los objetos que quedan por rellenar en el panel principal.
    * **[!UICONTROL Después]** > **[!UICONTROL Ir a la siguiente área de contenido]**: comienza a rellenar la siguiente área de contenido después de colocar el panel.
    * **[!UICONTROL Después]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada después de colocar el panel.
@@ -450,8 +450,8 @@ Si la plantilla XDP personalizada que selecciona incluye varias páginas maestra
 
 Puede aplicar varias páginas maestras a un documento de registro aplicando diferentes páginas maestras a los componentes de un formulario adaptable. Utilice la sección [Paginación](#document-of-record-settings) de las propiedades del documento de registro para aplicar varias páginas maestras.
 
-A continuación, se muestra un ejemplo de cómo aplicar varias páginas maestras a un documento de registro:
-Carga una plantilla XDP que incluye cuatro páginas maestras en el servidor de [!DNL AEM Forms]. [!DNL AEM Forms] aplica las propiedades de la plantilla al documento de registro de forma predeterminada. [!DNL AEM Forms] también aplica las primeras propiedades de la página maestra de la plantilla al documento de registro.
+A continuación se muestra un ejemplo de cómo aplicar varias páginas maestras a un documento de registro:
+Carga una plantilla XDP que incluye cuatro páginas maestras en el servidor [!DNL AEM Forms]. [!DNL AEM Forms] aplica las propiedades de la plantilla al documento de registro de forma predeterminada. [!DNL AEM Forms] también aplica las primeras propiedades de la página maestra de la plantilla al documento de registro.
 
 Para aplicar las propiedades de la segunda página maestra a un panel y las propiedades de la tercera página maestra a los paneles siguientes, ejecute los pasos que aparecen a continuación:
 
@@ -461,7 +461,7 @@ Para aplicar las propiedades de la segunda página maestra a un panel y las prop
 AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
 1. Seleccione **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
-1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 >[!NOTE]
@@ -479,7 +479,7 @@ Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el 
 
 ## Usar un archivo XCI personalizado
 
-Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms as a Cloud Service has a master XCI file.-->: puede utilizar un archivo XCI personalizado para anular una o más propiedades predeterminadas especificadas en el archivo XCI existente. Por ejemplo, puede optar por incrustar una fuente en un documento o habilitar la propiedad etiquetada para todos los documentos. La siguiente tabla especifica las opciones de XCI:
+Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms as a Cloud Service has a master XCI file.--> Puede utilizar un archivo XCI personalizado para anular una o varias propiedades predeterminadas especificadas en el archivo XCI existente. Por ejemplo, puede optar por incrustar una fuente en un documento o habilitar la propiedad etiquetada para todos los documentos. La siguiente tabla especifica las opciones de XCI:
 
 | Opción XCI | Descripción |
 |--- |--- |
@@ -519,12 +519,14 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
-  
 -->
 
 ### Utilizar un archivo XCI personalizado en el entorno de desarrollo local de Forms
 
 1. Cargue el archivo XCI en su entorno de desarrollo local.
-1. Abra el administrador de configuración <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Abra el administrador de configuración <!--Cloud Service SDK-->.
+
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+
 1. Busque y abra la configuración del **[!UICONTROL canal web de comunicaciones interactivas y formularios adaptables]**.
 1. Especifique la ruta del archivo XCI y haga clic en **[!UICONTROL Guardar]**.

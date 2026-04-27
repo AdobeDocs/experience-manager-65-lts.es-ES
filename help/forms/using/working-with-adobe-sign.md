@@ -10,10 +10,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3e804a65-156c-40b5-b707-8f20f84a58e5
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3884'
-ht-degree: 93%
+source-wordcount: '4060'
+ht-degree: 90%
 
 ---
 
@@ -79,7 +79,7 @@ Configurar propiedades de formulario adaptables para [!DNL Adobe Sign] para un f
 
 Siga estos pasos para crear un formulario adaptable con firma habilitada:
 
-1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**. Aparece una lista de plantillas. Seleccione la plantilla y seleccione **[!UICONTROL Siguiente]**.
 1. En la pestaña **[!UICONTROL Básico]**:
 
@@ -97,7 +97,7 @@ Siga estos pasos para crear un formulario adaptable con firma habilitada:
 
    * Seleccione la opción **[!UICONTROL Generar documento de registro]**. Si utiliza la opción Documento de registro habilitada para el formulario adaptable, el documento enviado para firmar muestra todos los campos del formulario adaptable.
 
-1. Seleccione **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma, que se puede utilizar para agregar [!DNL Adobe Sign] campos.
+1. Seleccione **[!UICONTROL Crear.]** Se crea un formulario adaptable habilitado para firmar, que se puede usar para agregar [!DNL Adobe Sign] campos.
 
 #### Editar un formulario adaptable para [!DNL Adobe Sign] {#editafsign}
 
@@ -124,7 +124,7 @@ Realice los siguientes pasos para agregar campos a un formulario adaptable y per
 
    ![Bloque de firma](assets/sign_block_new.png)
 
-   De forma predeterminada, el bloque [!DNL Adobe Sign] no es visible en el formulario adaptable publicado. Solo se ve en los documentos de firma. Puede cambiar la visibilidad del bloque [!DNL Adobe Sign] en las propiedades del componente del bloque [!DNL Adobe Sign].
+   De forma predeterminada, el bloque [!DNL Adobe Sign] no es visible en el formulario adaptable publicado. Solo se ve en los documentos de firma. Puede cambiar la visibilidad de [!DNL Adobe Sign] Block en las propiedades del componente [!DNL Adobe Sign] Block.
 
    >[!NOTE]
    >
@@ -211,7 +211,7 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
    >
    >
 
-   * Campos de **[!DNL Adobe Sign]para rellenar o firmar:** seleccione campos de [!DNL Adobe Sign] para el firmante. Un formulario adaptable puede tener varios campos de [!DNL Adobe Sign]. Puede elegir habilitar campos específicos para un firmante. El campo muestra todos los bloques del bloque [!DNL Adobe Sign] disponibles. Al seleccionar un bloque, se seleccionan todos los campos del bloque. Puede utilizar el icono X para anular la selección de un campo.
+   * Campos de **[!DNL Adobe Sign]para rellenar o firmar:** seleccione campos de [!DNL Adobe Sign] para el firmante. Un formulario adaptable puede tener varios campos de [!DNL Adobe Sign]. Puede elegir habilitar campos específicos para un firmante. El campo muestra todos los bloques de [!DNL Adobe Sign] Block disponibles. Al seleccionar un bloque, se seleccionan todos los campos del bloque. Puede utilizar el icono X para anular la selección de un campo.
 
    ![signer-details](assets/signer-details.png)
 
@@ -223,9 +223,10 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
 Después de agregar campos de [!DNL Adobe Sign] a un formulario adaptable, habilite [!DNL Adobe Sign] en el contenedor de formularios, seleccione [!DNL Adobe Sign] Cloud Service y agregue [!DNL Adobe Sign] firmantes. Finalmente, seleccione una acción de envío adecuada para el formulario adaptable. Para obtener información detallada sobre las acciones de envío de los formularios adaptable, consulte [Configurar la acción de envío](../../forms/using/configuring-submit-actions.md).
 
-Además, el formulario adaptable habilitado [!DNL Adobe Sign] solo se envía después de que todos los firmantes firmen el formulario. Puede encontrar formularios parcialmente firmados en la sección Firma pendiente del Portal de Forms. [!DNL Adobe Sign] El servicio de configuración sigue encuestando el servidor [!DNL Adobe Sign] a [intervalos regulares](../../forms/using/adobe-sign-integration-adaptive-forms.md) para verificar el estado de las firmas. Si todos los firmantes completan la firma del formulario, se inicia el servicio de acción de envío y se envía el formulario. Si utiliza una acción de envío personalizada y el formulario utiliza [!DNL Adobe Sign], actualice la acción de envío personalizada para utilizar el servicio de acción de envío.
+Además, el formulario adaptable habilitado [!DNL Adobe Sign] solo se envía después de que todos los firmantes firmen el formulario. Puede encontrar formularios parcialmente firmados en la sección Firma pendiente del portal de formularios. [!DNL Adobe Sign] El servicio de configuración sigue encuestando el servidor [!DNL Adobe Sign] a [intervalos regulares](../../forms/using/adobe-sign-integration-adaptive-forms.md) para comprobar el estado de las firmas. Si todos los firmantes completan la firma del formulario, se inicia el servicio de acción de envío y se envía el formulario. Si utiliza una acción de envío personalizada y el formulario utiliza [!DNL Adobe Sign], actualice la acción de envío personalizada para utilizar el servicio de acción de envío.
 
-<!-- Remove when forms portal goes live
+<!--
+Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
@@ -306,7 +307,7 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
 
    >[!NOTE]
    >
-   >* Cuando arrastra y suelta el componente **[!UICONTROL Paso de firma]** al formulario, **[!UICONTROL ¿el firmante y quien rellena el formulario son la misma persona?La opción]** se configura automáticamente como **Sí**. Es necesario mantener el formulario en funcionamiento.
+   >* Al arrastrar y soltar el componente **[!UICONTROL Paso de firma]** en el formulario, **[!UICONTROL ¿El firmante y quien rellena el formulario son la misma persona?]** se establece automáticamente en **Sí**. Es necesario mantener el formulario en funcionamiento.
    >* Utilice el componente Paso de resumen después del componente Paso de firma para obtener la mejor experiencia. El paso Resumen envía el formulario de forma automática e inmediata después de completar la firma de un formulario en el componente Paso de firma. Si no utiliza el paso de resumen, se activa un envío automático solo después del intervalo establecido mediante el [Servicio de configuración de Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
    >
    >Algunas prácticas recomendadas son:
@@ -347,7 +348,7 @@ Ahora, la experiencia de firma de formularios en está lista. Puede obtener una 
 ### Errores del acuerdo de [!DNL Adobe Sign] {#adobe-sign-agreement-failures}
 
 **Problema**
-Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario adaptable, el servicio no consigue crear un acuerdo de [!DNL Adobe Sign] para el formulario adaptable subyacente.
+Cuando el servicio [!DNL Adobe Sign] está configurado para un formulario adaptable, el servicio no consigue crear un acuerdo de [!DNL Adobe Sign] para el formulario adaptable subyacente.
 
 **Resolución**
 
@@ -360,7 +361,7 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 ### El flujo de trabajo de AEM [!DNL Forms] configurado para un formulario adaptable habilitado para [!DNL Adobe Sign] no se inicia {#adobe-sign-aem-form-workflow-failures}
 
 **Problema**
-Cuando [!DNL Adobe Sign] está configurado para un formulario adaptable, el flujo de trabajo configurado con la opción Invocar flujo de trabajo de [!DNL Forms] no se inicia.
+Cuando [!DNL Adobe Sign] está configurado para un formulario adaptable, el flujo de trabajo configurado con la opción de flujo de trabajo Invocar [!DNL Forms] no se inicia.
 
 **Resolución**
 
@@ -370,5 +371,5 @@ Cuando [!DNL Adobe Sign] está configurado para un formulario adaptable, el fluj
 ## Artículos relacionados {#related-articles}
 
 * [Integrar Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Prácticas recomendadas para utilizar Adobe Sign con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
-* [Usar Adobe Sign con AEM Forms (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=es)
+* [Prácticas recomendadas para utilizar Adobe Sign con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+* [Uso de Adobe Sign con AEM Forms (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=es)

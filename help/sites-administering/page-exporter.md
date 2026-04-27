@@ -1,18 +1,18 @@
 ---
-title: El exportador de página
+title: El exportador de páginas
 description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager (AEM).
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1064'
+ht-degree: 1%
 
 ---
 
-# El exportador de página{#the-page-exporter}
+# El exportador de páginas{#the-page-exporter}
 
 Adobe Experience Manager (AEM) le permite exportar una página como una página web completa que incluye imágenes, `.js` y `.css` archivos.
 
@@ -110,7 +110,8 @@ Cuando la plantilla esté configurada, haga que esté disponible:
 
 La plantilla consiste en una estructura de nodos, ya que usa el [marco de trabajo de sincronización de contenido](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Cada nodo tiene una propiedad `type` que define una acción específica en el proceso de creación del archivo zip.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Se pueden utilizar los siguientes nodos para crear una plantilla de exportación:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Para cumplir algunos requisitos específicos, implemente un [controlador de actualización personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportación de una página mediante programación {#programmatically-exporting-a-page}
@@ -192,6 +194,6 @@ Para exportar una página mediante programación, puede usar el servicio OSGI [P
 
 El servlet enlazado al selector `export` y la extensión `zip` utilizan el servicio PageExporter.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Si tiene algún problema con la descarga del archivo zip, puede eliminar el nodo `/var/contentsync` del repositorio y volver a enviar la solicitud de exportación.

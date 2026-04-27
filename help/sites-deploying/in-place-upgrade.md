@@ -1,19 +1,19 @@
 ---
-title: Realización de una actualización in situ
+title: Realización de una actualización local
 description: Obtenga información sobre cómo realizar una actualización in situ para AEM 6.5 LTS.
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 0%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
-# Realización de una actualización in situ {#performing-an-in-place-upgrade}
+# Realización de una actualización local {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
@@ -47,7 +47,8 @@ Antes de ejecutar la actualización, hay que completar varios pasos. Consulte [A
 
 1. Si es necesario aplicar sling.properties personalizado, cree una nueva instancia local de AEM y recupere el archivo sling.properties de su directorio crx-quickstart/conf. Aplique los cambios personalizados necesarios a este archivo y, a continuación, cópielo en el directorio crx-quickstart/conf de la instancia de AEM que se está actualizando. Si no hay propiedades personalizadas, este paso se puede omitir.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 

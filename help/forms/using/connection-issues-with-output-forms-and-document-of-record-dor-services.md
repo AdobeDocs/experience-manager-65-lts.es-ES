@@ -10,10 +10,10 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: c84ba536-a78d-4cf9-a480-59cb18e41076
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 21%
+source-wordcount: '188'
+ht-degree: 52%
 
 ---
 
@@ -28,7 +28,7 @@ Después de instalar el paquete de servicio 19 de AEM Forms 6.5, al intentar usa
 Para resolver el problema:
 
 1. Detenga la instancia de AEM 6.5 Forms.
-1. Descargue e instale la versión de [64 bits de los paquetes redistribuibles de Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 y 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) en el equipo donde esté instalado AEM 6.5 Forms.
+1. Descargue e instale la [versión de 64 bits de los paquetes redistribuibles de Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 y 2022](https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) en el equipo donde esté instalado AEM 6.5 Forms.
 1. Reinicie el servidor de AEM Forms.
 
    >[!NOTE]

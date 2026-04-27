@@ -7,9 +7,9 @@ role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,8 @@ Una vez que el volumen temporal de alto rendimiento esté listo, establezca el p
 
 Adobe recomienda implementar [!DNL Experience Manager Assets] en Java 8 para obtener un rendimiento óptimo.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### Parámetros de JVM {#jvm-parameters}

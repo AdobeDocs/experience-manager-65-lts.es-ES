@@ -6,10 +6,10 @@ feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 4%
+source-wordcount: '926'
+ht-degree: 5%
 
 ---
 
@@ -41,38 +41,38 @@ La capacidad [!DNL Assets] de [!DNL Experience Manager] le permite hacer lo sigu
 
 La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Información general de los sitios](/help/sites-authoring/page-authoring.md) para obtener información detallada.
 
-### Administración de activos digitales frente a componente de imagen {#digital-asset-management-versus-image-component}
+### Digital Asset Management versus image component {#digital-asset-management-versus-image-component}
 
-Al determinar si colocar una imagen en el repositorio de DAM o utilizar un componente de imagen, tenga en cuenta el ciclo vital de la imagen:
+When determining whether to put an image into the DAM repository or use an image component, consider the image lifecycle:
 
-* Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente Imagen.
-* Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, utilice [!DNL Assets].
+* If the image has the same lifecycle as the page, use the Image component.
+* If the image has a separate life cycle, for example, if you use the image twice or outside WCM, use [!DNL Assets].
 
-## ¿Qué son los recursos digitales? {#what-are-digital-assets}
+## What are digital assets? {#what-are-digital-assets}
 
-Un recurso es un documento digital, una imagen, un vídeo o audio (o parte del mismo) que puede tener varias representaciones. También puede tener subrecursos, por ejemplo, capas en un archivo Photoshop, diapositivas en un archivo PowerPoint, páginas en un PDF o archivos en un ZIP.
+An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions. It can also have sub-assets, for example, layers in a Photoshop file, slides in a PowerPoint file, pages in a pdf, files in a ZIP.
 
-Un recurso es esencialmente un binario más metadatos más representaciones más recursos secundarios. Consulte la [Guía de rendimiento de DAM](/help/sites-deploying/assets-performance-sizing.md) para obtener información detallada.
+An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) for detailed information.
 
 >[!CAUTION]
 >
->Cargar o editar un gran volumen de recursos (especialmente imágenes) puede afectar el rendimiento de su implementación de [!DNL Experience Manager].
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
-### Terminología de [!DNL Experience Manager Assets] {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminology {#aem-assets-terminology}
 
-Cuando se trabaja con recursos digitales en [!DNL Experience Manager], es útil entender la siguiente terminología:
+When working with digital assets in [!DNL Experience Manager], it helps if you understand the following terminology:
 
-* **Colección**: una colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección del usuario (carpetas Lightbox).
+* **Collection**: A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
 
-* **Los metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes de forma predeterminada:
+* **Metadata** [!DNL Assets] have metadata; for example, author, expiry date, and DRM Information (Digital Rights Management). Metadata is under access control. [!DNL Assets] supports the following various common metadata schemata out of the box:
 
-   * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
-   * IPTC: incluido evento, modelo, ubicación, etc.
-   * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
+   * Dublin Core: including author, description, date, subject, and so on.
+   * IPTC: including event, model, location, and so on.
+   * WCM: including page properties, [!UICONTROL On Time] and [!UICONTROL Off Time], and so on.
 
-* **Etiquetado**: [!DNL Assets] se puede etiquetar y clasificar. Consulte [organización de recursos](/help/assets/organize-assets.md).
+* **Tagging**: [!DNL Assets] can be tagged and classified. See [organizing assets](/help/assets/organize-assets.md).
 
-* **Representaciones**: una representación es la representación binaria de un recurso. [!DNL Assets] siempre tiene una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones adicionales que se crean, por ejemplo, mediante pasos de flujo de trabajo personalizados o cuando se carga un recurso. Las representaciones pueden tener un tamaño diferente, con una resolución diferente, con una marca de agua agregada o cualquier otra característica modificada.
+* **Renditions**: A rendition is the binary representation of an asset. [!DNL Assets] always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example, by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
 
 * **Versiones**: el control de versiones crea una instantánea de los recursos digitales en un momento específico. Puede restaurar los recursos a versiones anteriores. Ver [versiones en [!DNL Assets]](manage-assets.md#asset-versioning).
 

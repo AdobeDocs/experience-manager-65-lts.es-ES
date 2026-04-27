@@ -7,9 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10038'
+source-wordcount: '10234'
 ht-degree: 3%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 En [!DNL Adobe Experience Manager Assets], puede hacer más que almacenar y administrar sus recursos. [!DNL Experience Manager] ofrece capacidades de administración de recursos de nivel empresarial. Puede editar y compartir recursos, ejecutar búsquedas avanzadas y crear varias representaciones de decenas de formatos de archivo compatibles. También puede administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y administrar metadatos, colaborar mediante anotaciones y mucho más.
@@ -47,7 +48,8 @@ No incluya caracteres especiales en las extensiones de los nombres de archivo de
 
 ## Carga de activos {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
@@ -56,7 +58,7 @@ Puede cargar varios tipos de recursos (incluidas imágenes, archivos PDF, archiv
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!IMPORTANT]
 >
@@ -102,7 +104,7 @@ Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no
 
 >[!CAUTION]
 >
->La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=es) y establece `timeout configuration` en menos del tiempo que tarda un recurso en cargarse, se producirá un tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
+>La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) y establece `timeout configuration` en menos del tiempo que tarda un recurso en cargarse, se producirá un tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
 >
 >Teniendo en cuenta el tiempo de espera de caducidad de la credencial, la latencia, el ancho de banda y las cargas simultáneas esperadas, el valor más alto que le permite asegurarse de que se selecciona lo siguiente:
 >
@@ -165,11 +167,11 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
->Para cargar recursos a través de FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las [!DNL Experience Manager] instancias de autor. Póngase en contacto con la [Atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General#support) para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalar paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
+>Para cargar recursos a través de FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las [!DNL Experience Manager] instancias de autor. Póngase en contacto con la [Atención al cliente de Adobe](https://experienceleague.adobe.com/es/home?support-solution=General#support) para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalar paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
 >
 >Si usa FTP para cargar recursos, se omitirá la configuración de carga especificada en [!DNL Experience Manager]. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
@@ -177,7 +179,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 1. Si elige un cliente FTP, inicie sesión en el servidor FTP con el nombre de usuario y la contraseña de FTP que recibió del correo electrónico de aprovisionamiento. En el cliente FTP, cargue archivos o carpetas en el servidor FTP.
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=es#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales e inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -207,17 +209,17 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 | Sobrescribir en cualquier carpeta, mismo nombre de base independientemente de la extensión | | Seleccione esta opción si desea que los archivos que cargue reemplacen a los archivos existentes con los mismos nombres. El nombre de esta opción podría ser diferente, según la configuración de **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]** > **[!UICONTROL Cargar a la aplicación]** > **[!UICONTROL Sobrescribir imágenes]**. |
 | Descomprimir archivos Zip o Tar al cargar | | |
 | Opciones de trabajo | | Haga clic en **[!UICONTROL Opciones de trabajo]** para poder abrir el cuadro de diálogo [!UICONTROL Opciones de trabajo de carga] y elegir las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos a partir de la página Configuración general de la aplicación. Para abrir esta página, elige **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]**. Seleccione la opción **[!UICONTROL Opciones de carga predeterminadas]** para abrir el cuadro de diálogo [!UICONTROL Opciones de carga de trabajo]. |
-| | Cuando  | Seleccione Una vez o Recurrente. Para definir un trabajo recurrente, elija una opción Repetir (Diario, Semanal, Mensual o Personalizado) para especificar cuándo desea que se repita el trabajo de carga por FTP. A continuación, especifique las opciones de programación según sea necesario. |
+| | Cuando | Seleccione Una vez o Recurrente. Para definir un trabajo recurrente, elija una opción Repetir (Diario, Semanal, Mensual o Personalizado) para especificar cuándo desea que se repita el trabajo de carga por FTP. A continuación, especifique las opciones de programación según sea necesario. |
 | | Incluir subcarpetas | Cargue todas las subcarpetas dentro de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que carga se especifican automáticamente en [!DNL Experience Manager Assets]. |
-| | Opciones de recorte | Para recortar manualmente desde los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y escribe 75 en los cuadros de texto Superior, Derecho, Inferior e Izquierdo, se recorta una media pulgada de cada lado.<br> Para recortar automáticamente los píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas de los píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortarlos de los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar Basado En** <ul><li>**Color** - Elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color del espacio en blanco que desea recortar.</li><li>**Transparencia**: elija la opción Transparencia.<br> **Tolerancia**: arrastre el control deslizante para especificar una tolerancia de 0 a 1. Para recortar basándose en el color, especifique 0 para recortar píxeles únicamente si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solamente si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Estas opciones de recorte no son destructivas. |
+| | Opciones de recorte | Para recortar manualmente desde los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y escribe 75 en los cuadros de texto Superior, Derecho, Inferior e Izquierdo, se recorta una media pulgada de cada lado.<br> Para recortar automáticamente los píxeles del espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas de los píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortarlos de los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar Basado En** <ul><li>**Color** - Elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color del espacio en blanco que desea recortar.</li><li>**Transparencia**: elija la opción Transparencia.<br> **Tolerancia**: arrastre el control deslizante para especificar una tolerancia de 0 a 1. Para recortar basándose en el color, especifique 0 para recortar píxeles únicamente si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solamente si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Estas opciones de recorte no son destructivas. |
 | | Opciones de perfil de color | Elija una conversión de color al crear los archivos optimizados que se utilizan para la entrega:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contienen información sobre el espacio de color; no hay conversión de color. Casi todas las imágenes de hoy en día tienen el perfil de color adecuado ya incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en un espacio de color sRGB (azul verde rojo estándar). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener el espacio de color original: conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza mediante los perfiles de color predeterminados configurados en la Configuración de publicación. Es posible que los perfiles de color no se alineen con el color en los archivos creados con esta opción. Por lo tanto, se recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizar de > A<br> Abre menús para que pueda elegir un espacio de color Convertir de y Convertir a. Esta opción avanzada anula cualquier información de color que esté incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que está enviando contengan datos de perfil de color incorrectos o que falten.</li></ul> |
-| | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Ver [Opciones de configuración para ediciones de imágenes al cargar](#setting-image-editing-options-at-upload). |
-| | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Ver [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar cómo se asignan los nombres a las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> plantillas no son compatibles con [!DNL Experience Manager].<br> Consulte [Configuración de las opciones de carga de Photoshop](#setting-photoshop-upload-options). |
-| | Opciones de PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, establecer la resolución y elegir un espacio de color.<br>No se admiten catálogos electrónicos en [!DNL Experience Manager]. <br> Consulte [Configuración de las opciones de carga de PDF](#setting-pdf-upload-options).<br>**Nota**: El número máximo de páginas de un PDF que se tendrán en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas (para todos los PDF) el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md). |
-| | Opciones de Illustrator | Puede rasterizar archivos de Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Ver [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opciones de vídeo | Puede transcodificar un archivo de vídeo seleccionando un ajuste preestablecido de vídeo.<br> Ver [Configuración de las opciones de carga de eVideo](#setting-evideo-upload-options). |
-| | Valores preestablecidos de conjunto por lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Ajustes preestablecidos de conjunto de lotes de Dynamic Media Classic.<br> Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Ver [Establecer ajustes preestablecidos de conjunto de lotes al cargar](#setting-batch-set-presets-at-upload). |
+| | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Ver [Opciones de configuración para ediciones de imagen al cargar](#setting-image-editing-options-at-upload). |
+| | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar cómo se asignan los nombres a las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> No se admiten plantillas en [!DNL Experience Manager].<br> Consulte [Configuración de las opciones de carga de Photoshop](#setting-photoshop-upload-options). |
+| | Opciones de PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, establecer la resolución y elegir un espacio de color.<br>Los catálogos electrónicos no son compatibles con [!DNL Experience Manager]. <br> Ver [Configuración de las opciones de carga de PDF](#setting-pdf-upload-options).<br>**Nota**: El número máximo de páginas de un PDF que se tendrán en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas (para todos los PDF) el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md). |
+| | Opciones de Illustrator | Puede rasterizar archivos Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opciones de vídeo | Puede transcodificar un archivo de vídeo eligiendo un ajuste preestablecido de vídeo.<br> Consulte [Configuración de las opciones de carga de eVideo](#setting-evideo-upload-options). |
+| | Valores preestablecidos de conjunto por lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Puede crear los ajustes preestablecidos en la página Ajustes de aplicación/Ajustes preestablecidos de conjunto por lotes de Dynamic Media Classic.<br> Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para generar conjuntos de imágenes y conjuntos de giros automáticamente](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte [Configuración de ajustes preestablecidos de conjunto de lotes al cargar](#setting-batch-set-presets-at-upload). |
 
 #### Definir opciones para las ediciones de imagen al cargar {#setting-image-editing-options-at-upload}
 
@@ -429,7 +431,7 @@ Para obtener una vista previa de un recurso mediante el teclado, siga estos paso
 
    * Número de veces que se vio o descargó el recurso
    * Canales/dispositivos a través de los cuales se ha utilizado el recurso
-   * Soluciones creativas en las que el recurso se ha utilizado recientemente
+   * Soluciones de Creative en las que el recurso se ha utilizado recientemente
 
    Para obtener más información, consulte [Assets Insights](/help/assets/asset-insights.md).
 
@@ -882,7 +884,7 @@ Puede crear versiones en [!DNL Experience Manager] en los siguientes casos:
 * Cargue un recurso con el mismo nombre de archivo que exista en la misma ubicación. Puede ser un recurso nuevo o una versión modificada del mismo recurso.
 * Edite una imagen en [!DNL Experience Manager] y guarde los cambios.
 * Editar los metadatos de un recurso.
-* Use la aplicación de escritorio [!DNL Experience Manager] para desproteger un recurso existente, editarlo y [cargar los cambios](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#edit-assets-upload-updated-assets).
+* Use la aplicación de escritorio [!DNL Experience Manager] para desproteger un recurso existente, editarlo y [cargar los cambios](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas procesadas de las mismas imágenes, por ejemplo, una representación en PNG de un archivo JPEG cargado.
 
@@ -957,4 +959,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html).

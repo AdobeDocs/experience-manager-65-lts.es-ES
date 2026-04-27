@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Por ejemplo, se configura un recordatorio de tarea para que se produzca tres dí
 
 >[!NOTE]
 >
->Al calcular fechas y horas mediante calendarios comerciales, los formularios AEM Forms utilizan la fecha y la hora del servidor en el que se está ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un recordatorio de tarea está programado para producirse a las 10:00 a. m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio está en la ciudad de Nueva York, recibirá el recordatorio a las 5:00 a. m. hora local.
+>Al calcular fechas y horas mediante calendarios comerciales, los formularios AEM Forms utilizan la fecha y la hora del servidor en el que se está ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un aviso de tarea está programado para realizarse a las 10:00 a.m. en un servidor que se ejecuta en Londres, pero el usuario que recibe el aviso está en la ciudad de Nueva York, el aviso se recibirá a las 5:00 a.m. hora local.
 
 ## Usar el calendario empresarial predeterminado {#using-the-default-business-calendar}
 
@@ -48,9 +48,9 @@ Si algunos usuarios de su organización tienen diferentes días no laborables, p
 
    La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. Para obtener más información sobre la configuración de dominios, consulte [Agregar dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para establecer la clave del calendario empresarial para estos usuarios, escriba una cadena en el campo Clave del calendario empresarial al agregar o editar un usuario en Administración de usuarios. (Consulte [Agregar y configurar usuarios](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) A continuación, asigne las claves del calendario empresarial (las cadenas) a los calendarios comerciales en el flujo de trabajo de formularios. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para establecer la clave del calendario empresarial para estos usuarios, escriba una cadena en el campo Clave del calendario empresarial al agregar o editar un usuario en Administración de usuarios. (Consulte [Agregar y configurar usuarios](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) A continuación, asigne las claves del calendario empresarial (las cadenas) a los calendarios empresariales del flujo de trabajo de Forms. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP, que Administración de usuarios sincroniza con la base de datos Administración de usuarios. Esto permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo &quot;país&quot; y desea asignar calendarios comerciales basados en el país donde se encuentra el usuario, especifique el nombre del campo &quot;país&quot; en el campo Clave de calendario empresarial al especificar la configuración de usuario para el directorio. (Consulte [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo &quot;país&quot; en el directorio LDAP) a los calendarios empresariales del flujo de trabajo de formularios. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP, que Administración de usuarios sincroniza con la base de datos Administración de usuarios. Esto permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo &quot;país&quot; y desea asignar calendarios comerciales basados en el país donde se encuentra el usuario, especifique el nombre del campo &quot;país&quot; en el campo Clave de calendario empresarial al especificar la configuración de usuario para el directorio. (Consulte [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo &quot;país&quot; en el directorio LDAP) a los calendarios comerciales en el flujo de trabajo de Forms. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. En el flujo de trabajo de Forms, defina un calendario para cada conjunto de usuarios que compartan los mismos días no laborables. (Consulte [Crear o actualizar un calendario empresarial](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. En el flujo de trabajo de Forms, asigne las claves del calendario empresarial o las pertenencias de grupo de cada calendario. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -79,7 +79,7 @@ Si su organización contiene diferentes conjuntos de usuarios con diferentes dí
 
    Si selecciona esta opción, un evento que se produce antes del intervalo de tiempo especificado se mueve al principio del intervalo de tiempo y un evento que se produce después de que el intervalo de tiempo se mueva a la hora de inicio del siguiente día laborable.
 
-   Por ejemplo, considere una situación en la que a un usuario se le asigna una tarea a las 2 de la madrugada de un martes y el recordatorio de esa tarea se establece en dos días hábiles. Sin horario laboral, el recordatorio ocurriría a las 2:00 am del jueves. Si el horario laboral es de 8:00 a.m. a 5:00 p.m., el recordatorio se inserta a las 8:00 a.m. del jueves. Sin horario laboral, si se creó un evento de recordatorio a las 18:00 del martes, el recordatorio se produciría después del horario laboral del jueves. Con el horario laboral establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se produciría a las 8:00 a.m. del viernes.
+   Por ejemplo, piense en una situación en la que a un usuario se le asigna una tarea a las 2:00 de la mañana de un martes y el recordatorio de dicha tarea se establece en dos días hábiles. Sin horario laboral, el recordatorio se produciría a las 2:00 a.m. del jueves. Si el horario laboral está establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se insertará a las 8:00 a.m. del jueves. Sin horario laboral, si se creó un evento de recordatorio a las 6:00 pm del martes, el recordatorio se produciría después del horario laboral del jueves. Con el horario laboral establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se produciría a las 8:00 a.m. del viernes.
 
 1. En el calendario de la izquierda, haga doble clic en cualquier otro día que no sea laborable, como los festivos. No se pueden seleccionar días del pasado. Los días no laborables que seleccione aparecerán en una lista a la derecha, con la fecha apareciendo dos veces en una línea. Seleccione la fecha de la izquierda para escribir el nombre o la descripción del día no laborable.
 

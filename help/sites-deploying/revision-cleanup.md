@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5139'
-ht-degree: 0%
+source-wordcount: '5313'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Cada actualización del repositorio crea una revisión de contenido. Como result
 
 Con AEM 6.3 y versiones posteriores, se introdujo una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. En comparación con la Limpieza de revisión sin conexión, en la que hay que cerrar la instancia de AEM, la Limpieza de revisión en línea se puede ejecutar mientras la instancia de AEM está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
-**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=es) para ver una introducción y cómo usar la Limpieza de revisión en línea.
+**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para ver una introducción y cómo usar la Limpieza de revisión en línea.
 
 El proceso de limpieza de revisión consta de tres fases: **estimación**, **compactación** y **limpieza**. La estimación determina si se debe ejecutar la siguiente fase (compactación) o no en función de la cantidad de basura que se pueda recolectar. Durante la fase de compactación, los segmentos y los archivos tar se vuelven a escribir sin tener en cuenta el contenido no utilizado. A continuación, la fase de limpieza elimina los segmentos antiguos, incluida la basura que puedan contener. El modo sin conexión generalmente puede recuperar más espacio porque el modo en línea debe tener en cuenta el conjunto de trabajo de AEM, que evita que se recopilen segmentos adicionales.
 
@@ -38,7 +38,7 @@ También puede leer la [documentación oficial de Oak](https://jackrabbit.apache
 
 ### ¿Cuándo utilizar la Limpieza de revisión en línea y cuándo la Limpieza de revisión sin conexión? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Limpieza de revisión en línea es la forma recomendada de realizar la limpieza de revisión.** Limpieza de revisión sin conexión solo debe usarse de forma excepcional, por ejemplo, antes de migrar al nuevo formato de almacenamiento o si el Servicio de atención al cliente de Adobe le solicita que lo haga.
+**Limpieza de revisión en línea es la forma recomendada de realizar la limpieza de revisión.** La limpieza de revisión sin conexión solo debe utilizarse de forma excepcional, por ejemplo, antes de migrar al nuevo formato de almacenamiento o si el Servicio de atención al cliente de Adobe le solicita que lo haga.
 
 ## Cómo ejecutar la limpieza de revisión en línea {#how-to-run-online-revision-cleanup}
 
@@ -100,7 +100,7 @@ Además, tenga en cuenta que:
 * **La compactación completa** es más efectiva, pero también tiene un mayor impacto en las operaciones normales del sistema. Por lo tanto, está previsto que se utilice fuera de los días hábiles.
 * Tanto la compactación de cola como la compactación completa deben programarse para ejecutarse durante las horas de menor actividad.
 
-### Solución de problemas {#troubleshooting}
+### Resolución de problemas {#troubleshooting}
 
 Cuando utilice los nuevos modos de compactación, tenga en cuenta lo siguiente:
 
@@ -332,7 +332,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
    <td><p>No es necesaria una comprobación de integridad del repositorio después de la Limpieza de revisión en línea. </p> <p>Sin embargo, puede realizar las siguientes acciones para comprobar el estado del repositorio después de la limpieza:</p>
     <ul>
      <li>Una <a href="/help/sites-deploying/consistency-check.md" target="_blank">comprobación de recorrido</a> del repositorio</li>
-     <li>Utilice la herramienta oak-run después de que se haya completado el proceso de limpieza para comprobar las incoherencias. Para obtener más información sobre cómo hacerlo, consulte la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentación de Apache.</a> No necesita cerrar AEM para ejecutar la herramienta.</li>
+     <li>Utilice la herramienta oak-run después de que se haya completado el proceso de limpieza para comprobar las incoherencias. Para obtener más información sobre cómo hacerlo, consulte la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentación de Apache.</a> No es necesario cerrar AEM para ejecutar la herramienta.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -380,7 +380,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>Según la comprobación de estado y las entradas de registro, Limpieza de revisiones en línea no se ha completado correctamente tres veces seguidas. ¿Qué se necesita para completar correctamente la limpieza de revisión en línea?</strong></td>
-   <td>Puede realizar varios pasos para encontrar y solucionar el problema:<br />
+   <td>Puede realizar varios pasos para buscar y solucionar el problema:<br />
     <ul>
      <li>Primero, compruebe las entradas de registro <br /> </li>
      <li>Según la información de los registros, realice las acciones adecuadas:
@@ -409,7 +409,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
     <ol>
      <li>Una aplicación que elude los mecanismos de acceso recomendados (como Sling y la API JCR) y utiliza una API/SPI de nivel inferior para acceder al repositorio y, a continuación, supera el tiempo de retención de un segmento. Es decir, mantiene una referencia a una entidad más larga que el tiempo de retención permitido por Limpieza de revisión en línea (de forma predeterminada, 24 horas). Este caso es transitorio y no provoca daños en los datos. Para recuperarse, la herramienta oak-run debe utilizarse para confirmar la naturaleza transitoria de la excepción (la comprobación oak-run no debe notificar ningún error). Para ello, la instancia debe desconectarse y reiniciarse después.</li>
      <li>Un evento externo dañó los datos del disco. Esto puede ser un error de disco, espacio insuficiente en disco o una modificación accidental de los archivos de datos necesarios. En este caso, la instancia debe desconectarse y repararse mediante la comprobación de oak-run. Para obtener más información sobre cómo realizar la comprobación de oak-run, lea la siguiente <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentación de Apache</a>.</li>
-     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
+     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -420,7 +420,8 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
 
 El error.log es detallado si hay incidentes durante el proceso de limpieza de revisión en línea. La siguiente matriz tiene como objetivo explicar los mensajes más comunes y proporcionar posibles soluciones:
 
-<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!--
+| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -428,7 +429,8 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message does not mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+-->
 
 <table style="table-layout:auto">
  <tbody>
@@ -436,7 +438,7 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
     <th>Fase</th>
     <th>Mensajes de registro</th>
     <th>Explicación</th>
-    <th>Siguientes pasos</th>
+    <th>Próximos pasos</th>
   </tr>  
   <tr>
     <td>Estimación</td>
@@ -446,7 +448,7 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
   </td>
   </tr>
   <tr>
-    <td>N/D</td>
+    <td>N/A</td>
     <td>#2 de GC TarMK: estimación interrumpida: ${REASON}. Omitiendo la compactación.</td>
     <td>La fase de estimación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de estimación: no hay suficiente memoria o espacio en disco en el sistema host.</td>
     <td>Depende de la razón dada.</td>
@@ -460,14 +462,14 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
   </td>
   </tr>
    <tr>
-    <td>N/D</td>
-    <td>#2 de TarMK GC: compactación cancelada: ${REASON}.</td>
+    <td>N/A</td>
+    <td>#2 de GC TarMK: compactación cancelada: ${REASON}.</td>
     <td>La fase de compactación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de compactación: no hay suficiente memoria o espacio en disco en el sistema host. Además, la compactación también se puede cancelar apagando el sistema o cancelándolo explícitamente a través de interfaces administrativas como la ventana de mantenimiento dentro del tablero de operaciones.</td>
     <td>Depende de la razón dada.</td>
   </td>
   </tr>
   <tr>
-    <td>N/D</td>
+    <td>N/A</td>
     <td>TarMK GC #2: error de compactación en 32.902 min (1974140 ms), después de 5 ciclos.</td>
     <td>Este mensaje no significa que haya un error irrecuperable, sino que solo esa compactación se ha terminado después de algunos intentos. Lea también <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">el párrafo siguiente.</a></td>
     <td>Lea la siguiente <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">documentación de Oak</a> y la última pregunta de la sección Ejecución de la limpieza de revisión en línea.</a></td>
@@ -529,7 +531,7 @@ La herramienta oak-run introduce varias funciones que pretenden aumentar el rend
 
 La lista incluye varios parámetros de línea de comandos, como se describe a continuación:
 
-* **-mmap.** Puede establecer esto como verdadero o falso. Si se establece en true, se utiliza el acceso asignado a la memoria. Si se establece en false, se utiliza el acceso a archivos. Si no se especifica, el acceso asignado a memoria se utiliza en sistemas de 64 bits y el acceso a archivos se utiliza en sistemas de 32 bits. En Windows, el acceso regular a archivos siempre se aplica y esta opción se ignora. **Este parámetro ha reemplazado el parámetro -Dtar.memoryMapped.**
+* **-mmap.** Puede establecerlo como verdadero o falso. Si se establece en true, se utiliza el acceso asignado a la memoria. Si se establece en false, se utiliza el acceso a archivos. Si no se especifica, el acceso asignado a memoria se utiliza en sistemas de 64 bits y el acceso a archivos se utiliza en sistemas de 32 bits. En Windows, el acceso regular a archivos siempre se aplica y esta opción se ignora. **Este parámetro ha reemplazado el parámetro -Dtar.memoryMapped.**
 
 * **-Dupdate.limit**. Define el umbral para el vaciado de una transacción temporal en disco. El valor predeterminado es 10000.
 
@@ -537,9 +539,9 @@ La lista incluye varios parámetros de línea de comandos, como se describe a co
 
 * **-Dcompaction-progress-log**. El número de nodos compactados que se registran. El valor predeterminado es 150000, lo que significa que los primeros nodos compactados 150000 se registran durante la operación. Utilícelo con el siguiente parámetro documentado a continuación.
 
-* **-Dtar.PersistCompactionMap.** Establezca este parámetro en true para utilizar espacio en disco en lugar de memoria de montón para la persistencia de mapa de compactación. Requiere la herramienta oak-run **versiones 1.4** y superiores. Para obtener más información, consulte la pregunta 3 en la sección [Preguntas más frecuentes sobre la limpieza de revisiones sin conexión](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parámetro se ha quitado en la versión 1.6 de Oak y no tiene ningún efecto.**
+* **-Dtar.PersistCompactionMap.** Establezca este parámetro en true para utilizar espacio en disco en lugar de memoria de montón para la persistencia del mapa de compactación. Requiere la herramienta oak-run **versiones 1.4** y superiores. Para obtener más información, consulte la pregunta 3 en la sección [Preguntas más frecuentes sobre la limpieza de revisiones sin conexión](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parámetro se ha quitado en la versión 1.6 de Oak y no tiene ningún efecto.**
 
-* **: forzar.** Forzar la compactación e ignorar una versión de almacén de segmentos no coincidente.
+* **—force.** Forzar la compactación e ignorar una versión de almacén de segmentos no coincidente.
 
 >[!CAUTION]
 >

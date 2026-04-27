@@ -1,5 +1,5 @@
 ---
-title: Configuración de una cuenta de alias de empresa de Dynamic Media
+title: Configuración de una cuenta de alias de compañía de Dynamic Media
 description: Obtenga información sobre cómo configurar una cuenta de alias de compañía en Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: administering
@@ -8,15 +8,18 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a058b4ba-8351-4c5f-87be-566620fb8876
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: '684'
+ht-degree: 2%
 
 ---
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+hide: true
+hidefromtoc: yes
+-->
 
 # Acerca de la configuración de una cuenta de alias de empresa de Dynamic Media {#about-dm-alias-acct}
 

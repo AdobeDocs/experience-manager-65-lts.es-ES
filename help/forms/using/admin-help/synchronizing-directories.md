@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Puede configurar Administración de usuarios para que compruebe periódicamente 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema.
 1. En Expresión cron de finalizador de sincronización, introduzca una expresión cron que represente el intervalo en el que Administración de usuarios reintenta las sincronizaciones fallidas. El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 
-   El valor predeterminado es 0 0/13 &ast; ? &ast; , lo que significa que la comprobación se realiza cada 13 minutos.
+   El valor predeterminado es 0 0/13 &amp;ast; ? &amp;ast; , lo que significa que la comprobación se realiza cada 13 minutos.
 
 ## Sincronizar directorios manualmente {#manually-synchronize-directories}
 
@@ -93,7 +93,7 @@ Puede configurar Administración de usuarios para que compruebe periódicamente 
 1. Programar sincronización:
 
    * Para habilitar la sincronización automática diariamente, en Planificador, seleccione Ocurre. Seleccione Cada día de la lista y escriba la hora en formato de 24 horas en el cuadro correspondiente. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro Expresión cron.
-   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione Cron Expression y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronícelo a la 1:30 a.m. del último viernes del mes.
+   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione Cron Expression y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronícelo a las 1:30 a.m. del último viernes del mes.
 
 El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 

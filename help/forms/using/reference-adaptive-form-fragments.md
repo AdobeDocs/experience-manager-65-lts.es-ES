@@ -7,9 +7,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 98ca5aa6-f801-4940-a458-a8e698ff2842
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
@@ -41,9 +42,11 @@ Incluye campos para especificar la dirección de correo. Los campos disponibles 
 
 ![Fragmento Dirección](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Información de contacto {#contact-information}
 
@@ -51,13 +54,15 @@ Incluye campos para capturar el número de teléfono y la dirección de correo e
 
 ![Fragmento Información de contacto](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Información de la tarjeta de crédito {#credit-card-information}
 
-Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos. 
+Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos.
 [![Fragmento de información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Empleo actual {#current-employment}
@@ -66,9 +71,11 @@ Incluye campos para capturar detalles sobre el empleo actual, como el estado lab
 
 ![Fragmento Empleo actual](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Información sobre familiares dependientes {#dependents-information}
 
@@ -76,9 +83,11 @@ Incluye campos para especificar información sobre uno o más familiares dependi
 
 ![Fragmento Información sobre familiares dependientes](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Historial laboral {#employment-history}
 
@@ -86,9 +95,11 @@ Incluye campos para capturar el historial laboral. Permite agregar varias organi
 
 ![Fragmento Historial laboral](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Ingresos y gastos {#income-expenditure}
 
@@ -96,9 +107,11 @@ Incluye campos para capturar el flujo de efectivo y los gastos mensuales. Los fo
 
 ![Fragmento Ingresos y gastos](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nombre {#name}
 
@@ -106,9 +119,11 @@ Incluye campos para especificar el título, el nombre, el primer apellido y el s
 
 ![Fragmento Nombre](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Términos y condiciones {#terms-conditions}
 
@@ -116,9 +131,11 @@ Especifica los términos y condiciones que deben aceptar los usuarios antes de e
 
 ![Fragmento Términos y condiciones](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Términos y condiciones con firma manuscrita {#terms-conditions-with-scribble}
 
@@ -126,6 +143,8 @@ Especifica los términos y condiciones que deben aceptar y firmar los usuarios a
 
 ![Términos y condiciones con firma manuscrita](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

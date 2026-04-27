@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido (SOAP) de la API del servicio DocConverter Java& trade
-description: Obtenga información sobre cómo convertir un documento en un documento de PDF/A y administrar la conformidad mediante Java& trade; API Quick Start (SOAP).
+title: Inicio rápido (SOAP) de la API del servicio DocConverter Java&trade
+description: Obtenga información sobre cómo convertir un documento en un documento de PDF/A y administrar la conformidad mediante el Inicio rápido de la API de Java&trade; (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b42303c4-e328-4c57-8ff5-9f214b6c3acd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio DocConverter.
 
-[Inicio rápido (modo SOAP): Determinación del cumplimiento de PDF/A mediante Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Inicio rápido (modo SOAP): Determinación del cumplimiento de PDF/A mediante la API de Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante la API de Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 

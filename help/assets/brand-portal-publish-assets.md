@@ -10,10 +10,11 @@ feature: Brand Portal
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 40%
+source-wordcount: '432'
+ht-degree: 43%
 
 ---
 
@@ -66,9 +67,9 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
+1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**.
 
 1. Especifique un **[!UICONTROL título de flujo de trabajo]** en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Publicar más tarde]**.
 
@@ -86,6 +87,6 @@ Ahora, inicie sesión en Brand Portal para ver si los recursos publicados están
 
 1. Cambie a la vista de lista ![Vista de lista](assets/list-view.svg) para ver el estado de publicación actual del recurso.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![estado del informe generado](assets/report-status.JPG)

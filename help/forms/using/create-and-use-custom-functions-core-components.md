@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3394'
-ht-degree: 5%
+source-wordcount: '3508'
+ht-degree: 6%
 
 ---
 
@@ -61,8 +61,8 @@ Las funciones personalizadas son esencialmente bibliotecas de cliente que se agr
 
 >[!NOTE]
 >`[functionName]` es el nombre de la función. No se permiten espacios.
->&#x200B;>`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
->&#x200B;>Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
+>`<Function Name>` es el nombre para mostrar de la función en el editor de reglas de Forms adaptable.
+>Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis.
 
 #### Parámetro
 
@@ -356,7 +356,7 @@ O
 
 ### Crear una biblioteca de cliente con el tipo de archivo del proyecto de AEM{#create-client-library-archetype}
 
-Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Si tiene un proyecto existente <!--and have already the project structure as shown in the image below,-->, puede agregar directamente [funciones personalizadas](#create-add-custom-function) a su proyecto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -381,8 +381,8 @@ Para agregar una nueva carpeta de biblioteca de cliente al [directorio del proye
 
 Agregue lo siguiente a la carpeta de biblioteca de cliente agregada:
 
-* El archivo `.content.xml` 
-* El archivo `js.txt` 
+* El archivo `.content.xml`
+* El archivo `js.txt`
 * `js` carpeta
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
@@ -573,7 +573,7 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Compatibilidad con funciones asincrónicas en funciones personalizadas {#support-of-async-functions}
 
@@ -634,7 +634,8 @@ Objetos de campo hace referencia a los componentes o elementos individuales de u
 >
 > `param {scope} globals` debe ser el último parámetro y no se mostrará en el editor de reglas de un formulario adaptable.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,7 +655,8 @@ Objetos de campo hace referencia a los componentes o elementos individuales de u
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Vamos a aprender cómo las funciones personalizadas utilizan los objetos globales y de campo con la ayuda de un formulario `Contact Us` que utiliza diferentes casos de uso.
 

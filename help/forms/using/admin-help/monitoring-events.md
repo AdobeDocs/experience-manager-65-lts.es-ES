@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cee9cce0-becd-4822-ac37-094d564f2289
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Puede buscar eventos en la página Eventos usando una combinación de criterios 
 **Usuarios:** pueden ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciban y utilicen. Estas opciones de búsqueda están disponibles:
 
 **Eventos relacionados
-para mí:** Los usuarios pueden encontrar eventos para cualquier documento protegido por directivas que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
+para mí:** Los usuarios pueden encontrar eventos para cualquier documento protegido por una directiva que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
 
 **Eventos relacionados con mis documentos:** Los usuarios pueden encontrar todos los eventos relacionados con sus propios documentos protegidos por directivas. Los usuarios ven los eventos que generan todas las personas que administran sus documentos.
 

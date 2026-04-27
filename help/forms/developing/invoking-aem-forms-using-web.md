@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ca620313-8c2c-44e6-9f29-0d91dc9f6e03
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9814'
+source-wordcount: '9975'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ Puede utilizar JAX-WS para convertir un WSDL de servicio de Forms en clases de p
     ant -buildfile "build.xml" wsdl
    ```
 
-   Coloque el script de generación ANT en el directorio C:\Program Files\Java\jaxws-ri\bin. La secuencia de comandos escribe los archivos JAVA en .Carpeta /classes. El script genera archivos JAVA que pueden invocar el servicio.
+   Coloque el script de generación ANT en el directorio C:\Program Files\Java\jaxws-ri\bin. El script escribe los archivos JAVA en la carpeta ./classes. El script genera archivos JAVA que pueden invocar el servicio.
 
 1. Empaquete los archivos JAVA en un archivo JAR. Si está trabajando en Eclipse, siga estos pasos:
 

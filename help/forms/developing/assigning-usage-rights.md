@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3973'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Puede realizar estas tareas mediante el servicio de extensiones de Acrobat Reade
 
 ## Aplicar derechos de uso a documentos de PDF {#applying-usage-rights-to-pdf-documents}
 
-Puede aplicar derechos de uso a documentos de PDF mediante la API de cliente Java y el servicio web de extensiones de Acrobat Reader DC. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos activados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
+Puede aplicar derechos de uso a documentos de PDF mediante la API de cliente Java y el servicio web de extensiones de Acrobat Reader DC. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos habilitados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Aplique derechos de uso a un documento de PDF mediante la API de extensiones de 
 
 [Aplicar derechos de uso a documentos de PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Inicio rápido (modo SOAP):Aplicar derechos de uso mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Inicio rápido (modo SOAP):Applying derechos de uso mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -1,23 +1,24 @@
 ---
-title: Assets Insights
+title: Información de recursos
 description: Descubra cómo la funcionalidad Assets Insights le permite rastrear las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas de Adobe.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6f6cb4fb-d9c7-4f44-b4ba-adcad74f3a59
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 8%
+source-wordcount: '797'
+ht-degree: 18%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Información de recursos {#asset-insights}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 La función Assets Insights le permite realizar un seguimiento de las valoraciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas de Adobe. Ayuda a obtener perspectivas sobre su rendimiento y popularidad.
@@ -26,7 +27,7 @@ La función Assets Insights le permite realizar un seguimiento de las valoracion
 
 Para que [!DNL Assets] Insights capture estadísticas de uso de imágenes de un sitio web, debe incluir el código incrustado de la imagen en el código del sitio web.
 
-Para permitir que Assets Insights muestre las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de Assets Insights](/help/assets/configure-asset-insights.md). Para usar esta característica en una instalación On-Premise, adquiera la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Ver [descripción del producto de Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Para permitir que la información de los recursos muestre las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de Assets Insights](/help/assets/configure-asset-insights.md). Para usar esta característica en una instalación On-Premise, adquiera la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Ver [descripción del producto de Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

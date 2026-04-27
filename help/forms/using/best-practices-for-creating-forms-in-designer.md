@@ -6,9 +6,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1a4df932f0933e9644b40eb5d02900231b6a48c6
+exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -510,8 +511,8 @@ Recomendaciones para el uso de colores:
    * 2.2 Asegúrese de que las combinaciones de colores de primer plano y de fondo ofrezcan suficiente contraste cuando las vea alguien con deficiencias de color o cuando las vea en una pantalla en blanco y negro. [Prioridad 2 para imágenes, Prioridad 3 para texto] (P2).
 * WCAG 2.0
    * 1.4.1 Uso del color: el color no se utiliza como el único medio visual para transmitir información, indicar una acción, pedir una respuesta o distinguir un elemento visual. (Nivel A)
-   * 1.4.3 Contraste (mínimo): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto para lo siguiente: (Nivel AA)
-   * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto para lo siguiente: (Nivel AAA)
+   * 1.4.3 Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto por lo siguiente: (Nivel AA)
+   * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto por lo siguiente: (Nivel AAA)
 
 
 ## Proporcionar celdas de encabezado para las tablas{#provide-heading-cells}
@@ -597,7 +598,7 @@ Los campos inteligentes pueden ser una forma eficaz de facilitar el rellenado de
 
 Puede utilizar la paleta Accesibilidad para asignar funciones a objetos en función de para qué se utiliza el objeto. Estas funciones se pueden aplicar para crear encabezados en diferentes niveles.
 
-![Especificando un rol de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
+![Especificar un rol de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
 Figura 15: **Especificación de una función de encabezado en la paleta Accesibilidad**
 
 Siga estos pasos para crear un encabezado en el formulario:

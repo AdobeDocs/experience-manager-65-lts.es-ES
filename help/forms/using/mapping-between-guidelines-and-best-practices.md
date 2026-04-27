@@ -6,10 +6,11 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7d082f5d-9c10-47a7-95d3-f2219c4b139c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3366'
-ht-degree: 1%
+source-wordcount: '4362'
+ht-degree: 5%
 
 ---
 
@@ -85,11 +86,11 @@ Las siguientes secciones asignan las directrices Section 508 y WCAG a las práct
 | [2.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | Asegúrese de que las combinaciones de colores de primer plano y de fondo ofrezcan suficiente contraste cuando las vea alguien con deficiencias de color o cuando las vea en una pantalla en blanco y negro. [Prioridad 2 para imágenes, Prioridad 3 para texto]. | 2.8 Usar el color de forma responsable | |
 | [3.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-markup) | Cuando exista un lenguaje de marcado adecuado, utilice marcado en lugar de imágenes para transmitir información. | <ul><li>2.1 Mantener los formularios simples y fáciles de usar</li><li> 2.1.1 Evitar mover, parpadear o parpadear contenido</li> <li>2.2 Configurar las propiedades del formulario para generar información de accesibilidad Utilice siempre texto real en lugar de imágenes de texto.</li> | |
 | [3.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar) | Crear documentos que validen gramáticas formales publicadas. | | PDF forms debe coincidir con la especificación de PDF publicada para poder procesarse en Adobe Reader. |
-| [3,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | Utilice hojas de estilo para controlar el diseño y la presentación. | No aplicable | |
-| [3,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units) | Utilice unidades relativas en lugar de absolutas en los valores de atributo del lenguaje de marcado y en los valores de propiedad de la hoja de estilos. | No aplicable | |
-| [3,5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings) | Utilice elementos de encabezado para transmitir la estructura del documento y utilizarlos según las especificaciones. | 2.10 Proporcionar una estructura de formulario navegable | |
-| [3,6](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-list-structure) | Marcar listas y elementos de lista correctamente. | 2.10.3 Listas de marcado Marcar contenido basado en listas como listas utilizando las funciones Lista y Elemento de lista. | |
-| [3,7](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | Marcar las comillas. No utilice comillas dobles para efectos de formato como la sangría. | No aplicable | |
+| [3.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | Utilice hojas de estilo para controlar el diseño y la presentación. | No aplicable | |
+| [3.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units) | Utilice unidades relativas en lugar de absolutas en los valores de atributo del lenguaje de marcado y en los valores de propiedad de la hoja de estilos. | No aplicable | |
+| [3.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings) | Utilice elementos de encabezado para transmitir la estructura del documento y utilizarlos según las especificaciones. | 2.10 Proporcionar una estructura de formulario navegable | |
+| [3.6](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-list-structure) | Marcar listas y elementos de lista correctamente. | 2.10.3 Listas de marcado Marcar contenido basado en listas como listas utilizando las funciones Lista y Elemento de lista. | |
+| [3.7](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | Marcar las comillas. No utilice comillas dobles para efectos de formato como la sangría. | No aplicable | |
 | [5.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout) | No utilice tablas para el diseño a menos que la tabla tenga sentido cuando esté linealizada. De lo contrario, si la tabla no tiene sentido, proporcione un equivalente alternativo (que puede ser una versión linealizada). | No hay técnicas específicas de LiveCycle | No hay razón para utilizar tablas para el diseño en formularios de LiveCycle. En su lugar, utilice la paleta Diseño para colocar los campos del formulario en un patrón de cuadrícula. Utilice una tabla únicamente cuando utilice funciones específicas de la tabla, como encabezados de tabla. |
 | [5.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout) | Si se utiliza una tabla para el diseño, no utilice ningún marcado estructural con el fin de aplicar formato visual. | No hay técnicas específicas de LiveCycle | |
 | [6.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | Para scripts y applets, asegúrese de que los controladores de eventos son independientes del dispositivo de entrada. | 2.7 Garantizar que los controles del formulario sean accesibles mediante el teclado | |
@@ -97,7 +98,7 @@ Las siguientes secciones asignan las directrices Section 508 y WCAG a las práct
 | [7.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking) | Hasta que los agentes de usuario permitan a los usuarios controlar los parpadeos, evite que el contenido parpadee (es decir, cambie la presentación a una velocidad normal, como activar y desactivar). | 2.1 Mantener los formularios simples y fáciles de usar | |
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | Hasta que los agentes de usuario permitan a los usuarios congelar el contenido en movimiento, evite el movimiento en las páginas. | 2.1 Mantener los formularios simples y fáciles de usar | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | Hasta que los agentes de usuario permitan detener la actualización, no cree páginas de actualización automática de forma periódica. | No aplicable | |
-| [7,5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | Hasta que los agentes de usuario permitan detener el redireccionamiento automático, no utilice el marcado para redireccionar las páginas automáticamente. En su lugar, configure el servidor para realizar redirecciones. | No aplicable | |
+| [7.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | Hasta que los agentes de usuario permitan detener el redireccionamiento automático, no utilice el marcado para redireccionar las páginas automáticamente. En su lugar, configure el servidor para realizar redirecciones. | No aplicable | |
 | [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | Hacer que los elementos programáticos, como scripts y applets, sean accesibles directamente o compatibles con las tecnologías de asistencia [Prioridad 1 si la funcionalidad es importante y no se presenta en ninguna otra parte; de lo contrario, Prioridad 2.] | 2.11 Evitar scripts disruptivos | |
 | [9.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | Asegúrese de que cualquier elemento que tenga su propia interfaz pueda funcionar de forma independiente del dispositivo. | 2.7 Garantizar que los controles del formulario sean accesibles mediante el teclado | |
 | [9.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo. | 2.7 Garantizar que los controles del formulario sean accesibles mediante el teclado | |

@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 04700c18-c5fe-45c3-b9ad-16d4b427d65e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 2%
+source-wordcount: '1779'
+ht-degree: 1%
 
 ---
 

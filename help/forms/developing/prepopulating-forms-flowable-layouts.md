@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3513'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Paso</p></th>
+   <th><p>Etapa</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -104,7 +104,7 @@ El diagrama siguiente muestra un ejemplo de un formulario de pedido de compra. L
 
 ### Consideraciones del diseño del formulario {#form-design-considerations}
 
-Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_es).
+Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Explicación de los subgrupos de datos {#understanding-data-subgroups}
 
@@ -264,7 +264,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups)).
+   * Agregue todos los elementos restantes al elemento header repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle del origen de datos XML llamando al método `createElement` del objeto `Document`. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. A continuación, anexe el elemento detail al elemento raíz llamando al método `appendChild` del objeto `root` y pase el objeto detail element como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -340,7 +340,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups)).
+   * Agregue todos los elementos restantes al elemento header repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle del origen de datos XML llamando al método `createElement` del objeto `Document`. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. A continuación, anexe el elemento detail al elemento raíz llamando al método `appendChild` del objeto `root` y pase el objeto detail element como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`

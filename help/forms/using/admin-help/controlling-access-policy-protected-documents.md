@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 553c0a95-26e9-4d2c-b53d-846861c6a1d7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Puede utilizar la compatibilidad con la Página 0 (Documento envolvente) para pe
 Utilice los siguientes procesos en Workbench:
 
 **Proteger
-Documento con portada:** protege un documento de PDF con la directiva especificada y agrega una portada al documento
+Documento con portada:** Protege un documento de PDF con la directiva especificada y agrega una portada al documento
 
 **Extraer documento protegido:** Extrae el documento de PDF protegido por directivas del documento de PDF con portada
 

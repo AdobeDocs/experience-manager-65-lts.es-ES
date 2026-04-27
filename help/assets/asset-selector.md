@@ -6,10 +6,11 @@ feature: Asset Management,Metadata,Search
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9ee9e034-ac69-4c3b-b050-7e829c830bcd
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->El [selector de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=es) se llamaba [selector de recursos](https://helpx.adobe.com/es/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Experience Manager].
+>El [selector de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) se llamaba [selector de recursos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Experience Manager].
 
 El selector de recursos le permite examinar, buscar y filtrar recursos en [!DNL Adobe Experience Manager] Assets. También puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Para personalizar la interfaz del selector de recursos, puede iniciarla con parámetros de solicitud compatibles. Estos parámetros establecen el contexto del selector de recursos para un escenario en particular.
 
@@ -33,7 +34,7 @@ Puede integrar cualquier página web (independientemente de si forma parte del c
 
 Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el selector de recursos en un contexto concreto:
 
-| Nombre | Valores | Ejemplos | Función |
+| Nombre | Valores | Ejemplo | Función |
 |---|---|---|---|
 | sufijo de recurso (B) | Ruta de la carpeta como sufijo de recurso en la dirección URL:`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | Para iniciar el selector de recursos con una carpeta particular seleccionada, por ejemplo, con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la dirección URL debe tener el formato: `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images` | Si necesita que se seleccione una carpeta concreta al iniciar el selector de recursos, pásela como sufijo de recurso. |
 | modo | individual, múltiple | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | En el modo múltiple, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
@@ -62,4 +63,4 @@ Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el s
 
 >[!MORELIKETHIS]
 >
->* [Selector de recursos de Micro-Frontend en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=es)
+>* [Selector de recursos de Micro-Frontend en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

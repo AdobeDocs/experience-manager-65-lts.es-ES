@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 1%
+source-wordcount: '1234'
+ht-degree: 0%
 
 ---
 
@@ -122,7 +122,7 @@ Le animo a que siga explorando los dos archivos de muestra de PDF.  Puede genera
 
 * [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [Conflicto de hash](https://en.wikipedia.org/wiki/Hash_collision)
-* [Mesa arco iris](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Colisión de hash](https://en.wikipedia.org/wiki/Hash_collision)
+* [Mesa Rainbow](https://en.wikipedia.org/wiki/Rainbow_table)
 * [Página de inicio del proyecto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* [página principal del proyecto jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* [Página de inicio del proyecto jsSHA2](https://anmar.eu.org/projects/jssha2/)

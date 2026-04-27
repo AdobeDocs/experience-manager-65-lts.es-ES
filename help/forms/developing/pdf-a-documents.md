@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2382'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ El servicio DocConverter puede convertir documentos de PDF en documentos PDA/A. 
 
 ## Conversión de documentos a documentos de PDF/A {#converting-documents-to-pdf-a-documents}
 
-Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Dado que PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.  Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
+Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Dado que PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo. Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
 
 La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, A y B. La principal diferencia entre los dos es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad B. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado. En este momento, solo se admite PDF/A-1b en la validación (y conversión).
 

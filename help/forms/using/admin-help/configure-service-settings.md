@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10836'
+source-wordcount: '10923'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Puede usar la página Administración de servicios para establecer la configurac
 
 ## Configuración del servicio Auditar flujo de trabajo {#audit-workflow-service-settings}
 
-Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espacio en el sistema de archivos de Forms Server, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
+Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Para ahorrar espacio en el sistema de archivos del servidor de Forms, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** El número máximo de grabaciones almacenadas. Cuando se almacena el número máximo, la grabación más antigua se elimina del sistema de archivos cuando se crea una nueva grabación. Esta propiedad es útil si tiende a crear muchas grabaciones y desea quitar automáticamente las antiguas. El valor predeterminado es 50.
 
@@ -76,11 +76,11 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 El servicio Bridge de migración central (`CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge le permiten reutilizar los siguientes recursos centrales en los formularios de AEM:
 
-* diseño de plantilla (&ast;.ifd)
-* plantillas de salida (&ast;.mdf)
-* archivos de datos (archivos &ast;.dat)
-* archivos de preámbulo (archivos &ast;.pre)
-* archivos de definición de datos (&ast;.tdf)
+* diseño de plantilla (&amp;ast;.ifd)
+* plantillas de salida (&amp;ast;.mdf)
+* archivos de datos (archivos &amp;ast;.dat)
+* archivos de preámbulo (archivos &amp;ast;.pre)
+* archivos de definición de datos (&amp;ast;.tdf)
 
 La siguiente configuración está disponible para el servicio Bridge de migración central.
 
@@ -216,7 +216,7 @@ Las siguientes configuraciones están disponibles para el servicio de correo ele
 
 ## Configuración del servicio de cifrado {#encryption-service-settings}
 
-El servicio Encryption (`EncryptionService`) permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
+El servicio Encryption (`EncryptionService`) permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está cifrado con un certificado, el usuario debe descifrar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrarlo.
 
 Los siguientes ajustes están disponibles para el servicio Encryption.
 
@@ -271,7 +271,7 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 **Habilitar conversiones de AutoCAD basadas en Acrobat (solo Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
 
 **Expresiones Regulares Para Averiguar La Oferta Especial Prohibida
-Caracteres en el nombre de usuario (sólo Windows):** Especifica caracteres que interfieren con las operaciones de Export PDF y Optimizar PDF cuando aparecen en el nombre de un usuario.
+Caracteres en el nombre de usuario (sólo Windows):** Especifica caracteres que interfieren con las operaciones de Export PDF y Optimizar PDF cuando los caracteres aparecen en el nombre de un usuario.
 
 **Tamaño del grupo ImageToPDF:** El tamaño del grupo del convertidor predeterminado (Java puro) de imagen a PDF en el servicio Generate PDF. Esta opción controla el número máximo de conversiones simultáneas de imagen a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
@@ -581,7 +581,7 @@ Productos Adobe:** Si se selecciona esta opción, la firma creada con la versió
 **Opción de tiempo de comprobación:** Especifica la hora de verificación del certificado de un firmante. El valor predeterminado es Proteger hora actual u otra hora.
 
 **Usar información de revocación archivada en la firma durante
-Validación:** Especifica si la información de revocación archivada con la firma se usa para la comprobación de revocación. El valor predeterminado es True.
+Validación:** Especifica si la información de revocación archivada con la firma se utiliza para la comprobación de revocación. El valor predeterminado es True.
 
 **Usar Información De Validación Almacenada En El Documento Para
 Validación de firmas:** Si se selecciona esta opción, se utiliza la información de validación (incluida la información de revocación y de marca de tiempo) incrustada en el documento para validar firmas. El valor predeterminado es True.
@@ -698,7 +698,7 @@ Validación de firmas:** Si se selecciona esta opción, se utiliza la informaci�
 
 ## Configuración del servicio de carpetas inspeccionadas {#watched-folder-service-settings}
 
-El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) No es invocado por aplicaciones cliente externas ni se utiliza en procesos creados en Workbench.
+El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)). Las aplicaciones cliente externas no lo invocan ni lo utilizan en los procesos creados en Workbench.
 
 Las siguientes configuraciones están disponibles para el servicio de carpetas inspeccionadas.
 

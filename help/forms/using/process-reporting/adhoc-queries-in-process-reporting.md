@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7380be9a-7f5c-46df-97f8-6309daa2a566
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 96%
 
 ---
@@ -242,7 +242,7 @@ Puede ver los detalles de un proceso o tarea específico de AEM Forms:
    * ID de formulario
    * Fecha de creación del formulario
    * Hora de la actualización del formulario
-   * URL de la plantilla del formulario
+   * URL de la plantilla de formulario
 
    **Panel inferior derecho:** muestra los siguientes detalles del historial de procesos de la tarea seleccionada:
 

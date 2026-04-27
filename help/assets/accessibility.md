@@ -5,9 +5,9 @@ feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1933'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,8 @@ Las características principales de [!DNL Assets] son más accesibles que antes 
 
 Muchos elementos de la interfaz de usuario en los que se puede hacer clic o que se pueden llevar a cabo acciones con un puntero también se pueden utilizar con un teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar las acciones adecuadas. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para almacenar en déclencheur un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y almacenarlos en déclencheur mediante el teclado. Por ejemplo, los usuarios pueden abrir la cronología de un recurso en el lado izquierdo de la interfaz de usuario. Busque el control de interfaz de usuario con un teclado y seleccione `Return`, y seleccione `Alt + 2` método abreviado de teclado.
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -111,7 +112,8 @@ Después de iniciar sesión, los usuarios de DAM pueden navegar dentro de la int
 
 Si un usuario expande la opción de ayuda o perfil de usuario desde el menú, el lector de pantalla anuncia la opción o el estado adecuado. Si un usuario amplía la opción de perfil de usuario, las opciones disponibles se pueden seleccionar mediante un teclado. Por ejemplo, un administrador puede suplantar a un usuario diferente. Si un usuario busca una cadena de la opción [!UICONTROL Ayuda], un narrador anuncia &quot;Buscando en la Ayuda&quot; para indicar que hay una búsqueda en curso.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -122,7 +124,8 @@ Si un usuario expande la opción de ayuda o perfil de usuario desde el menú, el
 
 En la interfaz de usuario de [!DNL Assets], los usuarios pueden utilizar el teclado para examinar los recursos digitales en el repositorio de DAM y obtener una vista previa o descargar un recurso. Los usuarios también pueden ver las representaciones generadas, cambiar de vista y revisar la cronología, el historial de versiones, los comentarios y las referencias. Además, los usuarios pueden ver y administrar metadatos.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -148,7 +151,8 @@ Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la acc
 * Los comentarios de un recurso están disponibles en la cronología del recurso. Es accesible si se accede al carril izquierdo mediante un teclado o un método abreviado de teclado.
 * Se puede acceder a la [!UICONTROL configuración de vista] en [!DNL Experience Manager] mediante un teclado. Los usuarios pueden desplazarse por los tamaños de tarjeta disponibles mediante las teclas de dirección y seleccionar y tabular para desplazarse por otros elementos de la vista Configuración de vista existente y establecerlos.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -191,7 +195,8 @@ Al filtrar los resultados de búsqueda:
 
 ## Compartir recursos {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Al compartir recursos, las siguientes funcionalidades mejoran la accesibilidad:

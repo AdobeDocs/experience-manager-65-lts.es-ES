@@ -6,10 +6,11 @@ role: User, Admin
 feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 7%
+source-wordcount: '1440'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Dado que [!DNL Adobe Experience Manager Assets] está completamente integrado con la plataforma [!DNL Experience Manager], puede administrar de manera eficiente la información de caducidad y los estados de los recursos. También puede asociar la información de licencias con los recursos.
@@ -47,7 +48,7 @@ También puede ver el estado de caducidad de los recursos en el carril **[!UICON
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Assets Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
+   Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 

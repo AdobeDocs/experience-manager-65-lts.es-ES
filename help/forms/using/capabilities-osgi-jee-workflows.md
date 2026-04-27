@@ -8,16 +8,16 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '959'
 ht-degree: 96%
 
 ---
 
 # Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en los flujos de trabajo de OSGi y JEE de AEM Forms {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## Bandeja de entrada de AEM y espacio de trabajo HTML  {#aem-inbox-and-html-workspace}
+## Bandeja de entrada de AEM y espacio de trabajo HTML {#aem-inbox-and-html-workspace}
 
 Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo de AEM centrados en Forms en OSGi. Por su parte, HTML Workspace permite ejecutar y supervisar flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en la bandeja de entrada de AEM para flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para flujos de trabajo JEE de AEM Forms.
 
@@ -30,7 +30,7 @@ Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujo
   </tr>
   <tr>
    <td>Iniciar un proceso, tarea o aplicación de formulario<br /> </td>
-   <td>Compatible<br /> </td>
+   <td>Compatibilidad<br /> </td>
    <td>Compatible<br /> </td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@ Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujo
   <tr>
    <td>Reasignar tareas</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Archivos adjuntos de nivel de campo para formularios adaptables</td>
@@ -81,17 +81,17 @@ Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujo
   <tr>
    <td>Colas (cola personal compartida, Reclamar tareas de la cola)</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Notificación fuera de la oficina</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
     <tr>
    <td>Personalizar elementos de la interfaz de usuario</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Asignar una tarea a varios usuarios</td>
@@ -110,7 +110,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Capacidades</td>
    <td>Flujos de trabajo AEM centrados en Forms en OSGi<br /> </td>
-   <td>Flujos de trabajo JEE de AEM Forms </td>
+   <td>Flujos de trabajo JEE de AEM Forms</td>
   </tr>
   <tr>
    <td>Formularios adaptables</td>
@@ -120,7 +120,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Integración con otras soluciones de AEM</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Firma manuscrita</td>
@@ -135,27 +135,27 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Definir la prioridad de la tarea</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Tiempo de espera de una tarea después de la fecha de vencimiento</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Bucles dentro del flujo de trabajo</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Selección dinámica de un usuario asignado </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Usar metadatos personalizados</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Firma electrónica (Adobe Sign)</td>
@@ -180,27 +180,27 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Integración con Administración de correspondencia</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
    <tr>
    <td>Portales, SIN ESPERA </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
    <tr>
    <td>Variables para almacenar datos </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
-   <td>OR, Y División</td>
+   <td>División O, Y</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Avatar del usuario</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Enviar un correo electrónico al final del flujo de trabajo</td>
@@ -210,7 +210,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Llamar a un servicio web desde un flujo de trabajo</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Firma digital</td>
@@ -250,32 +250,32 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Aplicación de formularios adaptables</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
-   <td>Servicio Assembler </td>
+   <td>Servicio Assembler</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Servicio Generador de PDF</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Servicio de Forms</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Servicio de salida</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Seguro de documento</td>
    <td>Compatible</td>
-   <td>Compatible  </td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Ejecutar script</td>
@@ -285,7 +285,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Assembler</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>  
   <tr>
    <td>Formularios HTML5, formularios PDF interactivos, Conjunto de formularios</td>
@@ -300,7 +300,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Firma digital</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Categorías de puntos de inicio</td>
@@ -396,7 +396,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
 1. Los servicios de documentos nativos de AEM Forms están disponibles para los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms. El flujo de trabajo de AEM utiliza servicios de documentos nativos para flujos de trabajo AEM centrados en Forms en los flujos de trabajo OSGi y JEE de AEM Forms (Process Management).
 1. Los flujos de trabajo JEE de AEM Forms solo pueden procesar un formulario adaptable. No admite la representación de un formulario adaptable como documento PDF.
 1. Los flujos de trabajo JEE de AEM Forms no tienen un paso independiente para Adobe Sign. Se necesita un formulario adaptable habilitado para Adobe Sign para los flujos de trabajo JEE de AEM Forms. Para obtener más información, consulte [Documentación de Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Puede usar el paso [Invocar el servicio del modelo de datos del formulario](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) paso para invocar un servicio web y publicar o recuperar datos de una aplicación de terceros.
+1. Puede usar el paso [Invocar el servicio del modelo de datos de formulario](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) paso para invocar un servicio web y publicar o recuperar datos de una aplicación de terceros.
 1. Puede usar el paso [Enviar correo electrónico](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) para enviar correos electrónicos.
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
@@ -409,18 +409,18 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
  <tbody>
   <tr>
    <td><p><strong>Acciones</strong></p> </td>
-   <td><p><strong>Bandeja de entrada de AEM</strong></p> </td>
+   <td><p><strong>Bandeja de entrada AEM</strong></p> </td>
    <td><p><strong>Aplicación de AEM Forms</strong></p> </td>
   </tr>
   <tr>
    <td><p>Iniciar una aplicación de formulario</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
   <tr>
    <td><p>Enviar tareas</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
   <tr>
    <td><p>Delegar tareas</p> </td>
@@ -435,17 +435,17 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
   <tr>
    <td><p>Agregar archivos adjuntos de nivel de tarea</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
   <tr>
    <td><p>Visualizar archivos adjuntos en el nivel de tarea</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
   <tr>
    <td><p>Agregar archivos adjuntos de nivel de campo</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
   <tr>
    <td><p>Visualizar la vista de calendario</p> </td>
@@ -455,7 +455,7 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
   <tr>
    <td><p>Adición de comentarios</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible </p> </td>
+   <td><p>Compatible</p> </td>
   </tr>
  </tbody>
 </table>

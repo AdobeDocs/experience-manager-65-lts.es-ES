@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3943'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Familiaridad con Adobe Experience Manager (AEM) Forms en servidores de aplicacio
 
 ## Nivel de usuario {#user-level}
 
-Avanzado 
+Avanzado
 
 Un clúster de AEM Forms en JEE es una topología diseñada para permitir que AEM Forms en JEE sea resistente al error de un clúster. También permite a la topología escalar la capacidad del sistema más allá de las capacidades de un solo nodo. Un clúster combina varios nodos en un único sistema lógico que comparte datos y permite que las transacciones abarquen varios nodos en su ejecución. Un clúster es la forma más general de escalar AEM Forms en JEE, ya que se puede admitir cualquier combinación de servicios que administren cualquier combinación de cargas de trabajo. Un clúster de AEM Forms en JEE no es necesariamente la mejor opción para todos los tipos de implementaciones y, una arquitectura de equilibrio de carga de servidor no agrupada puede ser apropiada.
 
@@ -228,7 +228,7 @@ Referencias:
 
 * [Servicios empresariales de alta disponibilidad mediante clústeres JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Clústeres que usan Oracle WebLogic Server](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Clústeres de Oracle WebLogic Server-Using](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### ¿Cómo puedo comprobar si JBoss® se está agrupando correctamente? {#check-jboss-clustering}
 

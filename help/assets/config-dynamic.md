@@ -6,9 +6,9 @@ role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '7607'
+source-wordcount: '8118'
 ht-degree: 2%
 
 ---
@@ -24,25 +24,14 @@ ht-degree: 2%
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 y 1.1
 >* Los siguientes cifrados débiles en TLS 1.2:
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`> `TLS_RSA_WITH_AES_256_GCM_SHA384`> `TLS_RSA_WITH_AES_256_CBC_SHA256`> `TLS_RSA_WITH_AES_256_CBC_SHA`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_AES_128_GCM_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
-<!-- FOR ABOVE - CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 
 Dynamic Media-Hybrid debe estar habilitado y configurado para su uso. Según su caso de uso, Dynamic Media tiene varias [configuraciones admitidas](#supported-dynamic-media-configurations).
@@ -68,42 +57,42 @@ Más información sobre cómo trabajar con [video](/help/assets/video.md) en Dyn
 >
 >Están documentados en [Supervisar y mantener su instancia de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
-La publicación y el envío híbridos son una función central de Dynamic Media, además de Adobe Experience Manager. La publicación híbrida permite entregar recursos de Dynamic Media, como imágenes, conjuntos y vídeos, desde la nube en lugar de desde los nodos de publicación de Experience Manager.
+Hybrid publishing and delivery is a core feature of the Dynamic Media addition to Adobe Experience Manager. Hybrid publishing lets you deliver Dynamic Media assets, such as images, sets, and video, from the cloud instead of from the Experience Manager publish nodes.
 
-Otros contenidos, como los visualizadores de Dynamic Media, las páginas del sitio y el contenido estático, se siguen mostrando desde los nodos de publicación de Experience Manager.
+Other content, such as Dynamic Media viewers, Site pages, and static content continue to be served from the Experience Manager publish nodes.
 
-Si es cliente de Dynamic Media, debe utilizar la entrega híbrida como mecanismo de entrega para todo el contenido de Dynamic Media.
+If you are a customer of Dynamic Media, you are required to use hybrid delivery as the delivery mechanism for all Dynamic Media content.
 
-## Arquitectura de publicación híbrida para vídeos {#hybrid-publishing-architecture-for-videos}
+## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-506](assets/chlimage_1-428.png)
 
-## Arquitectura de publicación híbrida para imágenes {#hybrid-publishing-architecture-for-images}
+## Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
-## Configuraciones de Dynamic Media admitidas {#supported-dynamic-media-configurations}
+## Supported Dynamic Media Configurations {#supported-dynamic-media-configurations}
 
-Las tareas de configuración que siguen hacen referencia a los siguientes términos:
+The configuration tasks that follow reference the following terms:
 
-| **Término** | **Dynamic Media habilitado** | **Descripción** |
+| **Term** | **Dynamic Media Enabled** | **Descripción** |
 |---|---|---|
-| Nodo Autor de Experience Manager | Marca de verificación blanca en un círculo verde | Nodo de autor que se implementa en las instalaciones o a través de Managed Services. |
-| Nodo Publicación de Experience Manager | &quot;X&quot; blanca en un cuadrado rojo. | Nodo de publicación que se implementa en las instalaciones o a través de Managed Services. |
-| Nodo de publicación del servicio de imágenes | Marca de verificación blanca en un círculo verde. | Nodo de publicación que se ejecuta en centros de datos administrados por Adobe. Hace referencia a la URL del servicio de imágenes. |
+| Experience Manager Author node | White check mark in a green circle | The author node that you deploy to On-Premise or through Managed Services. |
+| Experience Manager Publish node | White &quot;X&quot; in a red square. | The publish node that you deploy to On-Premise or through Managed Services. |
+| Image Service Publish node | White check mark in a green circle. | The publish node that you run on Data Centers that are managed by Adobe. Refers to the image service URL. |
 
-Puede elegir implementar Dynamic Media solo para imágenes, solo para vídeo o tanto para imágenes como para vídeo. Para determinar los pasos para configurar Dynamic Media para su escenario específico, consulte la siguiente tabla.
+You can choose to implement Dynamic Media only for imaging, only for video, or for both imaging and video. To determine the steps for configuring Dynamic Media for your specific scenario, see the following table.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Escenario</strong></td>
-   <td ><strong>Cómo funciona</strong></td>
+   <td ><strong>How it Works</strong></td>
    <td><strong>Pasos de configuración</strong></td>
   </tr>
   <tr>
-   <td>Distribuya SOLO imágenes en producción</td>
-   <td>Las imágenes se envían a través de servidores en centros de datos de todo el mundo de Adobe y, a continuación, una CDN las almacena en caché para obtener un rendimiento escalable y un alcance global.</td>
+   <td>Deliver ONLY images in production</td>
+   <td>Images are delivered through servers in Adobe's worldwide data centers and then cached by a CDN for scalable performance and global reach.</td>
    <td>
     <ol>
      <li>En el nodo <strong>author</strong> de Experience Manager, <a href="#enabling-dynamic-media">habilite Dynamic Media</a>.</li>
@@ -163,7 +152,7 @@ Puede elegir implementar Dynamic Media solo para imágenes, solo para vídeo o t
 
 ## Habilitar Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las características de Dynamic Media, debe habilitar Dynamic Media utilizando el modo de ejecución de `dynamicmedia` como lo haría, por ejemplo, en el modo de ejecución de `publish`. Antes de habilitar, asegúrese de revisar [los requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está deshabilitado de forma predeterminada. Para aprovechar las características de Dynamic Media, debe habilitar Dynamic Media utilizando el modo de ejecución de `dynamicmedia` como lo haría, por ejemplo, en el modo de ejecución de `publish`. Antes de habilitar, asegúrese de revisar [los requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
@@ -206,7 +195,7 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
    >
    >Ejemplo de nombre de archivo de registro de Image Server: `ImageServer-57346-2020-07-25.log`
    >
-   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media a través de `/is/image` y `/is/content`.
+   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: El registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media mediante `/is/image` y `/is/content`.
    >
    >Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Descargar completo** que se genera desde la página `system/console/status-Bundlelist`; cuando llame a la atención al cliente si tiene un problema de Dynamic Media, anexe ambos registros al problema.
 
@@ -604,7 +593,7 @@ Por ejemplo, para ver el ajuste preestablecido de Analytics en el nodo Autor, pu
       trackingServer=aemvideodal.d2.sc.omtrdc.net
      ```
 
-   * **Compruebe el ajuste preestablecido de Video Analytics mediante la herramienta de informes de vídeo en Experience Manager**
+   * **Compruebe el ajuste preestablecido de Video Analytics con la herramienta Informes de vídeo en Experience Manager**
 Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
@@ -709,7 +698,7 @@ Si usa Dynamic Media para (1) imágenes en producción *o* (2) imágenes y víde
    <td>El "filter-video" incorporado hará lo siguiente:
     <ul>
      <li>Incluya representaciones de vídeo proxy, miniaturas de vídeo/imagen de póster, metadatos (en representaciones de vídeo y vídeo principales) para replicación (cualquier representación que comience por <strong>cqdam</strong>).</li>
-     <li>Excluya de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> <strong>Nota:</strong> Las representaciones de vídeo proxy no contienen binarios, sino propiedades de nodo. Por lo tanto, no afecta al tamaño del repositorio del editor.</li>
+     <li>Excluir de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> <strong>Nota:</strong> Las representaciones de vídeo proxy no contienen binarios, sino propiedades de nodo. Por lo tanto, no afecta al tamaño del repositorio del editor.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -846,7 +835,7 @@ Para establecer la configuración del servidor de imágenes de Dynamic Media:
    | Propiedad | Valor predeterminado | Descripción |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | Número de puerto que se utilizará para la comunicación con el proceso de ImageServer. De forma predeterminada, el puerto libre se detecta automáticamente. |
-   | `AllowRemoteAccess.name` | *`empty`* | Permitir o impedir el acceso remoto al proceso de ImageServer. Si es false, el servidor de imágenes solo escucha en localhost.<br> La configuración del externalizador predeterminado que señala al host local debe especificar el dominio o la dirección IP reales de la instancia de VM específica. El motivo es que el host local apunta al sistema principal de la VM.<br>Los dominios o direcciones IP de la VM deben tener una entrada de archivo host para que pueda resolverse por sí misma. |
+   | `AllowRemoteAccess.name` | *`empty`* | Permitir o impedir el acceso remoto al proceso de ImageServer. Si es false, el servidor de imágenes solo escucha en localhost.<br> La configuración del externalizador predeterminado que apunta al host local debe especificar el dominio o la dirección IP reales de la instancia de VM específica. El motivo es que el host local apunta al sistema principal de la VM.<br>Los dominios o las direcciones IP de la VM deben tener una entrada de archivo de host para que pueda resolverse por sí mismo. |
    | `MaxRenderRgnPixels` | 16 MP | Tamaño máximo en megapíxeles que se procesa. |
    | `MaxMessageSize` | 16 MB | Tamaño máximo del mensaje en megabytes que se envía. |
    | `RandomAccessUrlTimeout` | 20 | Valor de tiempo de espera del tiempo en segundos que el servidor de imágenes espera a que el JCR responda a una solicitud de mosaico de intervalo. |
@@ -889,14 +878,14 @@ Configuración de tabla de manifiesto y sus valores predeterminados:
 
 | Propiedad | Valor predeterminado | Descripción |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | Color de fondo predeterminado. Valor de RGB que se utiliza para rellenar las áreas de la imagen de respuesta que no contengan datos de imagen reales. Consulte también [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
-| `defaultpix` | `300,300` | Tamaño de vista predeterminado. El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que la solicitud especifique el tamaño de vista por medio de wid=, hei= o scl=.<br>Se especifica como dos números enteros, 0 o más, separados por una coma. Ancho y alto en píxeles. Cualquiera de los dos valores, o ambos, se puede establecer en 0 para mantenerlos sin restricciones. No se aplica a solicitudes anidadas o incrustadas.<br>Consulte también [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=es#image-serving-api) en la API del servicio de imágenes.<br>Sin embargo, normalmente utiliza un ajuste preestablecido de visualizador o de imagen para entregar el recurso. La opción predeterminada solo se aplica a un recurso que no utiliza un ajuste preestablecido de visualizador o de imagen. |
-| `defaultthumbpix` | `100,100` | Tamaño de miniatura predeterminado. Se usa en lugar del atributo::DefaultPix para solicitudes de miniaturas (`req=tmb`).<br>El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas. Esta acción es verdadera si una solicitud de miniatura (`req=tmb`) no especifica el tamaño explícitamente ni el tamaño de vista explícitamente con `wid=`, `hei=` o `scl=`.<br>Se especifica como dos números enteros, 0 o más, separados por una coma. Ancho y alto en píxeles. Cualquiera de los dos valores, o ambos, se puede establecer en 0 para mantenerlos sin restricciones.<br>No se aplica a solicitudes anidadas/incrustadas.<br>Consulte también [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
-| `expiration` | `36000000` | Duración predeterminada de la caché del cliente. Proporciona un intervalo de caducidad predeterminado en el caso de que el valor de catálogo::Expiration no sea válido en un registro de catálogo determinado.<br>Número real, 0 o superior. Número de milisegundos hasta la caducidad desde que se generaron los datos de respuesta. Si se establece en 0, la imagen de respuesta siempre caducará inmediatamente, lo que deshabilita el almacenamiento en caché del cliente. De forma predeterminada, este valor se establece en 10 horas, lo que significa que si se publica una imagen nueva, la imagen antigua tarda 10 horas en abandonar la caché del usuario. Póngase en contacto con Asistencia al cliente si necesita borrar la caché antes.<br>Consulte también [Caducidad](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=es) en la API del servicio de imágenes. |
-| `jpegquality` | `80` | Atributos de codificación de JPEG predeterminados. Especifica los atributos predeterminados para las imágenes de respuesta de JPEG.<br>Número entero e indicador, separados por una coma. El primer valor está en el rango 1.. 100 y define la calidad. El segundo valor puede ser 0 para un comportamiento normal o 1 para desactivar la disminución de resolución de cromaticidad de RGB empleada por los codificadores JPEG.<br>Consulte también [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
-| `maxpix` | `2000,2000` | Límite de tamaño de imagen de respuesta. Anchura y altura máximas para la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud genera una imagen de respuesta cuya anchura o altura sea mayor que el atributo::MaxPix.<br>Vea también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=es#image-serving-api) en la API de servicio de imágenes. |
-| `resmode` | `SHARP2` | Modo de remuestreo predeterminado. Especifica los atributos predeterminados de remuestreo e interpolación que se utilizarán para escalar los datos de imagen.<br>Se usa cuando `resMode=` no se especifica en una solicitud.<br>Los valores permitidos incluyen `BILIN`, `BICUB` o `SHARP2`.<br>Enumeración. Establezca como 2 para `bilin`, 3 para `bicub` o 4 para el modo de interpolación `sharp2`. Use `sharp2` para obtener mejores resultados.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=es#image-serving-api) en la API de servicio de imágenes. |
-| `resolution` | `72` | Resolución de objeto predeterminada. Proporciona una resolución de objeto predeterminada en el caso de que el valor de catálogo::Resolution no sea válido en un registro de catálogo determinado.<br>Número real, mayor que 0. Normalmente se expresa como píxeles por pulgada, pero también puede expresarse en otras unidades, como píxeles por metro.<br>Consulte también [Resolución](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
+| `bkgcolor` | `FFFFFF` | Color de fondo predeterminado. Valor de RGB que se utiliza para rellenar las áreas de la imagen de respuesta que no contengan datos de imagen reales. Consulte también [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) en la API del servicio de imágenes. |
+| `defaultpix` | `300,300` | Tamaño de vista predeterminado. El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que la solicitud especifique el tamaño de vista explícitamente con wid=, hei= o scl=.<br>Especificado como dos números enteros, 0 o mayores, separados por una coma. Ancho y alto en píxeles. Cualquiera de los dos valores, o ambos, se puede establecer en 0 para mantenerlos sin restricciones. No se aplica a solicitudes anidadas o incrustadas.<br>Consulte también [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) en la API del servicio de imágenes.<br>Sin embargo, normalmente usa un ajuste preestablecido de visor o de imagen para entregar el recurso. La opción predeterminada solo se aplica a un recurso que no utiliza un ajuste preestablecido de visualizador o de imagen. |
+| `defaultthumbpix` | `100,100` | Tamaño de miniatura predeterminado. Se usa en lugar del atributo::DefaultPix para las solicitudes de miniaturas (`req=tmb`).<br>El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas. Esta acción es verdadera si una solicitud de miniatura (`req=tmb`) no especifica el tamaño de forma explícita y no especifica el tamaño de vista explícitamente usando `wid=`, `hei=` o `scl=`.<br>Especificado como dos números enteros, 0 o más, separados por una coma. Ancho y alto en píxeles. Cualquiera de los dos valores, o ambos, se puede establecer en 0 para mantenerlos sin restricciones.<br>No se aplica a solicitudes anidadas/incrustadas.<br>Consulte también [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) en la API del servicio de imágenes. |
+| `expiration` | `36000000` | Duración predeterminada de la caché del cliente. Proporciona un intervalo de caducidad predeterminado en el caso de que el valor de catálogo::Expiration no sea válido en un registro de catálogo determinado.<br>Número real, 0 o superior. Número de milisegundos hasta la caducidad desde que se generaron los datos de respuesta. Si se establece en 0, la imagen de respuesta siempre caducará inmediatamente, lo que deshabilita el almacenamiento en caché del cliente. De forma predeterminada, este valor se establece en 10 horas, lo que significa que si se publica una imagen nueva, la imagen antigua tarda 10 horas en abandonar la caché del usuario. Póngase en contacto con Asistencia al cliente si necesita borrar la caché antes.<br>Consulte también [Caducidad](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) en la API del servicio de imágenes. |
+| `jpegquality` | `80` | Atributos de codificación de JPEG predeterminados. Especifica los atributos predeterminados para las imágenes de respuesta de JPEG.<br>Número entero e indicador, separados por una coma. El primer valor está en el rango 1.. 100 y define la calidad. El segundo valor puede ser 0 para un comportamiento normal o 1 para desactivar la disminución de resolución de cromaticidad de RGB empleada por los codificadores JPEG.<br>Consulte también [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) en la API del servicio de imágenes. |
+| `maxpix` | `2000,2000` | Límite de tamaño de imagen de respuesta. Anchura y altura máximas para la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud genera una imagen de respuesta cuya anchura o altura sea mayor que el atributo::MaxPix.<br>Vea también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) en la API del servicio de imágenes. |
+| `resmode` | `SHARP2` | Modo de remuestreo predeterminado. Especifica los atributos predeterminados de remuestreo e interpolación que se utilizarán para escalar los datos de imagen.<br>Se usa cuando `resMode=` no se especifica en una solicitud.<br>Los valores permitidos incluyen `BILIN`, `BICUB` o `SHARP2`.<br>Enum. Establezca como 2 para `bilin`, 3 para `bicub` o 4 para el modo de interpolación `sharp2`. Use `sharp2` para obtener mejores resultados.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) en la API de servicio de imágenes. |
+| `resolution` | `72` | Resolución de objeto predeterminada. Proporciona una resolución de objeto predeterminada en el caso de que el valor de catálogo::Resolution no sea válido en un registro de catálogo determinado.<br>Número real, mayor que 0. Normalmente se expresa como píxeles por pulgada, pero también puede expresarse en otras unidades, como píxeles por metro.<br>Consulte también [Resolución](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) en la API del servicio de imágenes. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Estos valores representan una instantánea del tiempo de reproducción del vídeo y se pasan a [encoding.com](https://www.encoding.com/). Consulte [Acerca de la miniatura de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) para obtener más información. |
 
 ## Configuración de la administración de color de Dynamic Media {#configuring-dynamic-media-color-management}
@@ -911,9 +900,9 @@ Puede configurar la administración de color de Dynamic Media y los ajustes pree
 
 Los casos de uso avanzados podrían utilizar un modificador `icc=` de configuración manual para seleccionar explícitamente un perfil de color de salida:
 
-* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es)
+* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es)
+* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
@@ -961,58 +950,58 @@ Después de instalar el paquete de funciones, configure los perfiles de color pr
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=es">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color predeterminado de RGB.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=es">iccprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color CMYK predeterminado.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=es">iccprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color gris predeterminado.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=es">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color predeterminado de RGB utilizado para las imágenes de RGB que no tienen un perfil de color incrustado</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=es">iccprofilesrccmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color CMYK predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=es">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>Cadena</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color gris predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=es">iccblackpointcompensación</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensación</a></td>
    <td>Booleano</td>
    <td>Verdadero</td>
    <td>Especifica si la compensación del punto negro se realiza durante la corrección de color. Adobe recomienda que esta configuración esté activada.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=es">icoditera</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">icoditera</a></td>
    <td>Booleano</td>
    <td>Falso</td>
    <td>Especifica si el tramado se realiza durante la corrección de color.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=es">iccrenderIntent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderIntent</a></td>
    <td>Cadena</td>
    <td>relativo</td>
-   <td><p>Especifica la intención de procesamiento. Los valores aceptables son: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recomienda <strong>relativo </strong><i></i>como valor predeterminado.</p> </td>
+   <td><p>Especifica la intención de procesamiento. Los valores aceptables son: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recomienda <strong>relativo </strong><i></i> como valor predeterminado.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1225,28 +1214,28 @@ Consulte [Entrega de Dynamic Media Assets](/help/assets/delivering-dynamic-media
   </tr>
   <tr>
    <td>Copiar una URL de visor</td>
-   <td><p>El cuadro de diálogo Copiar URL muestra una URL similar a la siguiente (la URL solo es para fines de demostración):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>Donde <code>PUBLISHNODE</code> hace referencia al nodo de publicación normal de Experience Manager y <code>IMAGESERVICEPUBLISHNODE</code> hace referencia a la URL del servicio de imágenes.</p> <p>Consulte también <a href="/help/assets/delivering-dynamic-media-assets.md">Entrega de Dynamic Media Assets</a>.</p> </td>
+   <td><p>El cuadro de diálogo Copiar URL muestra una URL similar a la siguiente (la URL solo es para fines de demostración):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Donde <code>PUBLISHNODE</code> hace referencia al nodo de publicación normal de Experience Manager y <code>IMAGESERVICEPUBLISHNODE</code> hace referencia a la URL del servicio de imágenes.</p> <p>Consulte también <a href="/help/assets/delivering-dynamic-media-assets.md">Entrega de Dynamic Media Assets</a>.</p> </td>
   </tr>
   <tr>
    <td>Copiar el código incrustado de un visor</td>
    <td><p>El cuadro de diálogo Copiar código incrustado muestra un fragmento de código similar al siguiente (el ejemplo de código es solo para fines de demostración):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Donde <code>PUBLISHNODE</code> hace referencia al nodo de publicación normal de Experience Manager y <code>IMAGESERVICEPUBLISHNODE</code> hace referencia a la URL del servicio de imágenes.</p> <p>Consulte también <a href="/help/assets/delivering-dynamic-media-assets.md">Entrega de Dynamic Media Assets</a>.</p> </td>
   </tr>
  </tbody>

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 0%
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 1. Haga clic en Nueva asignación de certificado y, en la lista Para emisor, seleccione el alias de certificado según se ha configurado en Administración de almacén de confianza.
 1. Asigne uno de los atributos del certificado al atributo de un usuario. Por ejemplo, puede asignar el nombre común del certificado al ID de inicio de sesión del usuario.
 
-   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de User Management es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular que especifique debe ajustarse a la especificación de Java regex.
+   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de administración de usuarios es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular especificada debe ajustarse a la especificación regex de Java.
 
    Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se usa con el método `java.util.regex.Matcher.replaceAll()`. El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) debe especificarse en consecuencia.
 
@@ -62,7 +62,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
    Puede utilizar los siguientes caracteres en la regex:
 
    * . (cualquier carácter)
-   * &ast; (0 o más ocurrencias)
+   * &amp;ast; (0 o más ocurrencias)
    * () (especifique el grupo entre corchetes)
    * \ (se utiliza para convertir un carácter regex en un carácter normal)
    * $n (se usa para hacer referencia al grupo nth)
@@ -71,21 +71,21 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&ast;) \(Authentication\)
+     **Regex:** (.&amp;ast;) \(Autenticación\)
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
    * Para extraer &quot;Pink Alex&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
      Pedido personalizado: $2 $1 (devuelve el segundo grupo, concatenado al primer grupo, capturado por el carácter de espacio en blanco)
 
    * Para extraer &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Para obtener más información sobre el uso de expresiones regulares, consulte [Tutorial de Java sobre expresiones regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

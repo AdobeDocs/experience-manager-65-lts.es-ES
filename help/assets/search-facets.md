@@ -1,14 +1,15 @@
 ---
-title: Facetas de búsqueda para filtrar los resultados
-description: Crear, modificar y usar facetas de búsqueda en  [!DNL Adobe Experience Manager].
+title: Search facets to filter search results
+description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Admin, Developer
 feature: Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2645d78b-e678-4ade-b707-5301cc2b3e75
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2437'
 ht-degree: 16%
 
 ---
@@ -17,31 +18,31 @@ ht-degree: 16%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
-Una implementación de [!DNL Adobe Experience Manager Assets] en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo si solo usa las capacidades de búsqueda genéricas de [!DNL Experience Manager].
+An enterprise-wide deployment of [!DNL Adobe Experience Manager Assets] has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of [!DNL Experience Manager].
 
-Utilice las facetas de búsqueda en el panel Filtros para añadir más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda añaden varias dimensiones (predicados) que permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
+Use search facets in the Filters panel to add more granularity to your search experience and make the search functionality more efficient and versatile. Search facets add multiple dimensions (predicates) that enable you to perform more intricate searches. The Filters panel includes a few standard facets. You can also add custom search facets.
 
-En resumen, las facetas de búsqueda le permiten buscar recursos de varias formas en lugar de en un único orden taxonómico predeterminado. Puede explorar en profundidad fácilmente el nivel de detalle deseado para lograr una búsqueda más enfocada.
+In summary, search facets let you search for assets in multiple ways rather than in a single, pre-determined, taxonomic order. You can easily drill down to the desired level of detail for a more focused search.
 
-Por ejemplo, si está buscando una imagen, puede elegir si desea un mapa de bits o una imagen vectorial. Puede reducir aún más el ámbito de la búsqueda especificando el tipo MIME de la imagen. Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo, PDF o MS Word.
+For example, if you are looking for an image, you can choose whether you want a bitmap or a vector image. You can reduce the scope of search further by specifying the MIME type for the image. Similarly, when searching for documents, you can specify the format, for example, PDF or MS Word.
 
-## Añadir un predicado {#adding-a-predicate}
+## Add a predicate {#adding-a-predicate}
 
-Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formulario de búsqueda subyacente mediante predicados. Para mostrar más o diferentes facetas, agregue predicados al formulario predeterminado o utilice un formulario personalizado que incluya las facetas que elija.
+The search facets that appear in the Filters panel are defined in the underlying search form using predicates. To display more or different facets, you add predicates to the default form or use a custom form that includes facets of your choice.
 
-Para las búsquedas de texto completo, agregue el predicado **[!UICONTROL Fulltext]** al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad en particular. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
+For full-text searches, add the **[!UICONTROL Fulltext]** predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
-1. Haga clic en el logotipo de [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
-1. En la página [!UICONTROL Buscar en Forms], seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego haga clic en **[!UICONTROL Editar]** ![editar icono](assets/do-not-localize/aemassets_edit.png).
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. From the [!UICONTROL Search Forms] page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    >[!NOTE]
    >
-   >Para usar la funcionalidad de búsqueda de carpetas del carril de búsqueda de administración de [!DNL Assets] preconfigurado de una versión anterior, realice estos pasos:
+   >To use the folder search functionality from the pre-configured [!DNL Assets] Admin Search Rail from an earlier version, perform these steps:
    >
-   >1. Vaya a `/conf/global/settings/dam/search/facets/assets/jcr:content/items` en CRXDE.
+   >1. Navigate to `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
    >1. Elimine el nodo `type`.
    >1. Desde la ruta de acceso `/libs/settings/dam/search/facets/assets/jcr:content/items`, copie los nodos `asset`, `directory`, `typeor`, `excludepaths` y `searchtype` en la ruta de acceso mencionada en el paso 1.
    >1. Guarde los cambios.
@@ -84,7 +85,7 @@ La propiedad `jcr:title` es un nombre descriptivo para la opción que se muestra
 
 Al seleccionar una opción, la búsqueda se realiza en función de la propiedad `value` del nodo de opción y sus nodos secundarios, si los hay. El árbol completo bajo el nodo de opción se atraviesa y la propiedad `value` de cada nodo secundario se combina mediante una operación OR para formar la consulta de búsqueda.
 
-Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la búsqueda de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff* `jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
+Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la consulta de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff*`jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
 
 ![La propiedad Value de un tipo de archivo, tal como se ve en CRXDE, se usa para que funcionen las consultas de búsqueda](assets/filetype-value-property.png)
 
@@ -164,17 +165,17 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
 
 | Nombre de predicado | Descripción | Propiedades |
 |---|---|---|
-| [!UICONTROL Texto Completo] | Predicado de búsqueda para realizar una búsqueda de texto completo en todo un nodo de recursos. Se asigna con el operador jcr:contains. Puede especificar una ruta relativa si desea realizar una búsqueda de texto completo en una parte específica del nodo del recurso. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
+| [!UICONTROL Texto Completo] | Predicado de búsqueda para realizar una búsqueda de texto completo en todo un nodo de recursos. Está asignado con el operador jcr:contains. Puede especificar una ruta relativa si desea realizar una búsqueda de texto completo en una parte específica del nodo del recurso. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Navegador de rutas] | Predicado de búsqueda para buscar recursos en carpetas y subcarpetas en una ruta raíz preconfigurada | <ul><li>Marcador de posición</li><li>Ruta raíz</li><li>Descripción</li></ul> |
 | [!UICONTROL Ruta] | Utilícelo para filtrar los resultados según la ubicación. Puede especificar diferentes rutas como opciones. | <ul><li>Etiqueta</li><li>Ruta</li><li>Descripción</li></ul> |
-| [!UICONTROL Estado de publicación] | Predicado de búsqueda para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
+| [!UICONTROL Estado de la publicación] | Predicado de búsqueda para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha relativa] | Predicado de búsqueda para buscar recursos en función de la fecha relativa de su creación. Por ejemplo, puede configurar opciones, como hace 2 meses, hace 3 semanas, etc. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Fecha relativa</li></ul> |
 | [!UICONTROL Intervalo] | Predicado de búsqueda para buscar recursos que se encuentren dentro de un rango especificado. En el panel Buscar, puede especificar los valores mínimo y máximo del rango. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Intervalo de fecha] | Predicado de búsqueda para buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización mediante selectores de fechas. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Texto de intervalo (desde)</li><li>Texto de intervalo (hasta)</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha] | Predicado de búsqueda para una búsqueda de recursos basada en un control deslizante y basada en una propiedad de fecha. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Tamaño de archivo] | Predicado de búsqueda para buscar recursos en función de su tamaño. Es un predicado basado en deslizadores en el que se seleccionan las opciones del deslizador desde un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio CRXDE. El tamaño de archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta</li><li>Descripción</li></ul> |
 | [!UICONTROL Última modificación del recurso] | Predicado de búsqueda para buscar recursos modificados recientemente | <ul><li>Nombre de la propiedad</li><li>Valor de propiedad</li><li>Descripción</li></ul> |
-| [!UICONTROL Estado de publicación] | Busque predicados para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
+| [!UICONTROL Estado de la publicación] | Busque predicados para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Clasificación] | Predicado de búsqueda para buscar recursos en función de su clasificación promedio | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta de opción</li><li>Descripción</li></ul> |
 | [!UICONTROL Estado de caducidad] | Predicado de búsqueda para buscar recursos en función de su estado de caducidad | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Oculto] | Predicado de búsqueda que define una propiedad de campo oculto para buscar recursos | <ul><li>Nombre de la propiedad</li><li>Valor de propiedad</li><li>Descripción</li></ul> |
@@ -201,7 +202,7 @@ Si no se le ha asignado una función de administrador, aquí encontrará una lis
 | ------------------- | ---------------------------------------------------------------- |
 | [!UICONTROL Editar] | Permisos de lectura y escritura en el nodo `/apps` en CRXDE |
 | [!UICONTROL Eliminar] | Permisos de lectura, escritura y eliminación en el nodo `/apps` en CRXDE |
-| [!UICONTROL Previsualizar] | Permisos de lectura, escritura y eliminación en el nodo `/var/dam/content` en CRXDE. Además, permisos de lectura y escritura en el nodo `/apps`. |
+| [!UICONTROL Vista previa] | Permisos de lectura, escritura y eliminación en el nodo `/var/dam/content` en CRXDE. Además, permisos de lectura y escritura en el nodo `/apps`. |
 
 >[!MORELIKETHIS]
 >

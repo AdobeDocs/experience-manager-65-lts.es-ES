@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5955deb0-9d1c-4b61-a202-41ef03a23cf8
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ En la tabla siguiente se describe la manipulación de cinco archivos de ejemplo 
    <td><p>vaciar</p></td>
   </tr>
   <tr>
-   <td><p>Escenario</p></td>
+   <td><p>Ensayo</p></td>
    <td><p>vaciar</p></td>
    <td><p>archivo1</p></td>
    <td><p>file2</p></td>

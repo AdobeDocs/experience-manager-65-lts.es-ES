@@ -7,10 +7,11 @@ role: User
 feature: Collections,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 14%
+source-wordcount: '2199'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 14%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Una colección es un conjunto de recursos dentro de [!DNL Adobe Experience Manager Assets]. Utilice las colecciones para compartir recursos entre los usuarios. El conjunto puede ser una colección estática o dinámica basada en los resultados de búsqueda.
@@ -185,7 +186,7 @@ Puede buscar colecciones desde la consola Colecciones. Cuando busca con palabras
 
 Si busca colecciones desde el nivel superior, solo se devuelven colecciones individuales en los resultados de búsqueda. Se excluyen [!DNL Assets] o carpetas dentro de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
-## Buscar en colecciones {#searching-within-collections}
+## Búsqueda dentro de colecciones {#searching-within-collections}
 
 En la consola Colecciones, haga clic en una colección para abrirla.
 

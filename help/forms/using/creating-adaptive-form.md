@@ -6,9 +6,9 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2057'
 ht-degree: 93%
 
 ---
@@ -37,7 +37,7 @@ Siga estos pasos para crear un formulario adaptable.
    >
    >Para una instalación predeterminada, el inicio de sesión es `admin` y la contraseña es `admin`.
 
-1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
+1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
 1. Aparecerá una opción para seleccionar una plantilla. Para obtener más información sobre las plantillas, consulte [Plantillas de formularios adaptables](creating-adaptive-form.md#p-adaptive-form-templates-p). Seleccione una plantilla para seleccionarla y haga clic en Siguiente.
 1. Aparecerá la opción “Agregar propiedades”. Especifique los valores para los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
 
@@ -63,7 +63,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 1. Seleccione **[!UICONTROL Abrir]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También mostrará la barra lateral para personalizar el formulario recién creado según las necesidades.
 
-   En base al tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA, el esquema XML o JSON asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En base al tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA, el esquema XML o JSON asociados se muestran en la pestaña **[!UICONTROL Objetos de modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
    Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios adaptables](introduction-forms-authoring.md).
 
@@ -73,7 +73,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 ## Crear un formulario adaptable basado en un modelo de datos de formulario {#fdm}
 
-La integración de datos de [[!DNL Experience Manager Forms] &#x200B;](data-integration.md) permite integrar varias fuentes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Están enlazados a los respectivas fuentes de datos y se utilizan para rellenar previamente un formulario y escribir los datos enviados en las fuentes de datos respectivas. También puede llamar a servicios configurados en un modelo de datos de formulario mediante reglas de formularios adaptables.
+La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) permite integrar varias fuentes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos de modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos de modelo de datos para la creación de formularios. Están enlazados a los respectivas fuentes de datos y se utilizan para rellenar previamente un formulario y escribir los datos enviados en las fuentes de datos respectivas. También puede llamar a servicios configurados en un modelo de datos de formulario mediante reglas de formularios adaptables.
 
 Para utilizar un modelo de datos de formulario para crear un formulario adaptable haga lo siguiente:
 
@@ -95,7 +95,8 @@ Para utilizar un modelo de datos de formulario para crear un formulario adaptabl
 
 Puede cambiar el propósito de plantillas de formulario XFA para crear formularios adaptables. Para cambiar el propósito, cargue y asocie una plantilla de formulario XFA con un formulario adaptable. Los elementos de la plantilla de formulario (formulario XFA) están disponibles para utilizarlas en el buscador de contenido en el momento de creación de los formularios adaptables. Desde el buscador de contenido, puede arrastrar y soltar los elementos de la plantilla de formulario en el formulario.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -109,11 +110,12 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+-->
 
 ## Crear un formulario adaptable basado en un esquema XML o JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto del modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
+Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto de modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
 
 Consulte los siguientes documentos para saber cómo diseñar esquemas XML o JSON para crear formularios adaptables.
 

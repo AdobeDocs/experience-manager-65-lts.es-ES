@@ -10,9 +10,9 @@ hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7605'
+source-wordcount: '7800'
 ht-degree: 90%
 
 ---
@@ -144,7 +144,7 @@ Esta sección describe las técnicas que puede utilizar durante el proceso de in
   </tr> 
   <tr> 
    <td><p>Configuración de seguridad del sistema operativo</p> </td> 
-   <td><p>Si necesita utilizar codificación XML de 192 o 256 bits en plataformas Solaris, asegúrese de instalar <code>pkcs11_softtoken_extra.so</code> en lugar de <code>pkcs11_softtoken.so</code>.</p> </td> 
+   <td><p>Si necesita utilizar cifrado XML de 192 o 256 bits en plataformas Solaris, asegúrese de instalar <code>pkcs11_softtoken_extra.so</code> en lugar de <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -264,7 +264,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 1. Inicie el servidor de AEM Forms.
 1. Escriba la siguiente URL en un explorador para probar el cambio y asegurarse de que ya no funciona.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloqueo del acceso remoto al Almacén de confianza**
 
@@ -357,7 +357,7 @@ En Oracle, la cuenta de la base de datos utilizada solo necesita los privilegios
 
 #### Configuración de la seguridad integrada de SQL Server en Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para agregar `integratedSecurity=true` a la URL de conexión, como se muestra en este ejemplo:
+1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para agregar `integratedSecurity=true` a la dirección URL de conexión, como se muestra en este ejemplo:
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -715,7 +715,7 @@ Cuando instala Document Services por primera vez, la lista Referentes permitido
 
 **Administración de la lista Referentes permitidos**
 
-Puede administrar la lista Referente permitidos desde la interfaz de User Management en la consola de administración. La interfaz de User Management proporciona la funcionalidad para crear, editar o eliminar la lista. Consulte la sección * [Prevención de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de la *ayuda de Administración* para obtener más información sobre cómo trabajar con la lista Referentes permitidos.
+Puede administrar la lista Referente permitidos desde la interfaz de User Management en la consola de administración. La interfaz de User Management proporciona la funcionalidad para crear, editar o eliminar la lista. Consulte la sección *[Prevención de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de la *ayuda de Administración* para obtener más información sobre cómo trabajar con la lista Referentes permitidos.
 
 **Administración de las listas Excepciones de referentes permitidos y URI permitidos**
 
@@ -734,7 +734,7 @@ Consulte la *Referencia de las API de AEM Forms en JEE* para obtener más infor
 
 Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para las excepciones de referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta de acceso absoluta (por ejemplo, `/index.html`) o relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
 
-EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del área de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
+EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del espacio de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
 
 ```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
@@ -822,7 +822,7 @@ Al configurar una arquitectura de red segura como se describe en la sección ant
  <thead> 
   <tr> 
    <th><p>Protocolo</p> </th> 
-   <th><p>Uso</p> </th> 
+   <th><p>Utilizar</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -898,7 +898,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
 
 >[!NOTE]
 >
->De forma predeterminada, el servidor expone varios MBeans de JMX en el área de nombres de adobe.com. Solo se expone la información que resulta útil para la monitorización del estado del servidor. Sin embargo, para evitar la divulgación de información, debe evitar que los llamadores de una red que no es de confianza busquen los MBeans de JMX y accedan a las métricas de estado.
+>De forma predeterminada, el servidor expone varios MBeans de JMX en el espacio de nombres de adobe.com. Solo se expone la información que resulta útil para la monitorización del estado del servidor. Sin embargo, para evitar la divulgación de información, debe evitar que los llamadores de una red que no es de confianza busquen los MBeans de JMX y accedan a las métricas de estado.
 
 **Puerto de JBoss**
 
@@ -906,7 +906,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
  <thead> 
   <tr> 
    <th><p>Función</p> </th> 
-   <th><p>Puerto </p> </th> 
+   <th><p>Puerto</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -927,7 +927,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
  <thead> 
   <tr> 
    <th><p>Función</p> </th> 
-   <th><p>Puerto </p> </th> 
+   <th><p>Puerto</p> </th> 
   </tr> 
  </thead> 
  <tbody>

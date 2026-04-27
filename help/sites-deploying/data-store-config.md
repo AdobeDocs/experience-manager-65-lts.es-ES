@@ -8,10 +8,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3345'
-ht-degree: 1%
+source-wordcount: '3508'
+ht-degree: 2%
 
 ---
 
@@ -156,7 +156,7 @@ Una vez descargado, puede instalar y configurar el conector S3 de la siguiente m
 
    Copie todo el contenido de la ubicación anterior en `<aem-install>/crx-quickstart/install.`
 
-1. Si AEM ya está configurado para trabajar con el almacenamiento Tar o MongoDB, quite los archivos de configuración existentes de la carpeta ***&lt;aem-install>***/*crx-quickstart*/*install* antes de continuar. Los archivos que deben eliminarse son los siguientes:
+1. Si AEM ya está configurado para trabajar con el almacenamiento Tar o MongoDB, elimine los archivos de configuración existentes de la carpeta ***&lt;aem-install>***/*crx-quickstart*/*install* antes de continuar. Los archivos que deben eliminarse son los siguientes:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -165,7 +165,7 @@ Una vez descargado, puede instalar y configurar el conector S3 de la siguiente m
 
    * `jcr_root/libs/system/config`
 
-   hasta
+   a
 
    * `<aem-install>/crx-quickstart/install`
 
@@ -223,7 +223,7 @@ Puede utilizar el archivo de configuración con las opciones detalladas a contin
 >
 >El conector S3 admite la autenticación de usuario IAM y la autenticación de función IAM. Para usar la autenticación de rol IAM, omita los valores `accessKey` y `secretKey` del archivo de configuración. El conector S3 tendrá de forma predeterminada la [función IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) asignada a la instancia.
 
-| Clave | Descripción | Predeterminado | Requerido |
+| Clave | Descripción | Predeterminado | Necesario |
 | --- | --- | --- | --- |
 | accessKey | ID de clave de acceso para el usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
 | secretKey | Clave de acceso secreta del usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
@@ -246,7 +246,7 @@ Puede utilizar el archivo de configuración con las opciones detalladas a contin
 | uploadThreads | El número de subprocesos de carga utilizados para las cargas asincrónicas. | 10 | No. |
 | writeThreads | El número de subprocesos simultáneos utilizados para escribir a través de S3 Transfer Manager. | 10 | No. |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -338,9 +338,9 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 
 1. Cree estos dos archivos dentro de la carpeta `crx-quickstart`:
 
-   * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*configuración*
+   * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
 
-   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*configuración*
+   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    Una vez creados los archivos, agregue las opciones de configuración según sea necesario.
 
@@ -400,7 +400,7 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 
 ## Almacén de datos de Azure {#azure-data-store}
 
-AEM se puede configurar para almacenar datos en el servicio de almacenamiento de Azure de Microsoft®. Utiliza el PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para la configuración.
+AEM se puede configurar para que almacene datos en el servicio de almacenamiento Azure de Microsoft®. Utiliza el PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para la configuración.
 
 Para habilitar la funcionalidad del almacén de datos de Azure, se debe descargar e instalar un paquete de funciones que contenga el conector de Azure. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) y descargue la versión más reciente de las versiones 1.9.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
@@ -435,7 +435,7 @@ Puede utilizar el archivo de configuración con las siguientes opciones:
 
 * azureSas=&quot;&quot;: en la versión 1.6.3 del conector, se agregó compatibilidad con la firma de acceso compartido (SAS) de Azure. **Si existen credenciales de SAS y de almacenamiento en el archivo de configuración, SAS tiene prioridad.** Para obtener más información acerca de SAS, consulte la [documentación oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Asegúrese de que el carácter &quot;=&quot; tiene un carácter de escape similar a &quot;\=&quot;.
 
-* azureBlobEndpoint=&quot;&quot;: El extremo del blob de Azure. Por ejemplo, https://&lt;storage-account>.blob.core.windows.net.
+* azureBlobEndpoint=&quot;&quot;: El extremo de Azure Blob. Por ejemplo, https://&lt;storage-account>.blob.core.windows.net.
 * accessKey=&quot;&quot;: nombre de la cuenta de almacenamiento. Para obtener más información acerca de las credenciales de autenticación de Microsoft® Azure, consulte la [documentación oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: La clave de acceso de almacenamiento. Asegúrese de que el carácter &quot;=&quot; tiene un carácter de escape similar a &quot;\=&quot;.
@@ -471,7 +471,7 @@ El proceso de recolección de elementos no utilizados del almacén de datos se u
 
 Para ejecutar la recolección de elementos no utilizados del almacén de datos:
 
-1. Ir a la consola JMX en *https://&lt;serveraddress:port>/system/console/jmx*
+1. Vaya a la consola JMX en *https://&lt;serveraddress:port>/system/console/jmx*
 1. Buscando **RepositoryManagement.** Cuando encuentre el MBean del Administrador de repositorios, haga clic en él para que aparezcan las opciones disponibles.
 1. Desplácese hasta el final de la página y haga clic en el vínculo **startDataStoreGC(boolean markOnly)**.
 1. En el siguiente cuadro de diálogo, escriba `false` para el parámetro `markOnly` y, a continuación, haga clic en **Invocar**:

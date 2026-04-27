@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ AEM ha utilizado durante mucho tiempo el principal de las superposiciones y la f
 
 Para que sea más seguro y fácil para los clientes comprender qué áreas de **/libs** son seguras de usar y superponer, el contenido de **/libs** se ha clasificado con los siguientes mixins:
 
-* **Public (granite:PublicArea)**: define un nodo como público para que se pueda superponer, heredar ( `sling:resourceSuperType`) o utilizar directamente ( `sling:resourceType`). Los nodos debajo de /libs marcados como Public son seguros para actualizar con la adición de un Paquete de compatibilidad. En general, los clientes solo deben utilizar nodos marcados como Public.
+* **Público (granite:PublicArea)**: define un nodo como público para que se pueda superponer, heredar ( `sling:resourceSuperType`) o usar directamente ( `sling:resourceType`). Los nodos debajo de /libs marcados como Public son seguros para actualizar con la adición de un Paquete de compatibilidad. En general, los clientes solo deben utilizar nodos marcados como Public.
 
-* **Abstracto (granite:AbstractArea)**: define un nodo como abstracto. Los nodos se pueden superponer o heredar ( `sling:resourceSupertype`), pero no se pueden usar directamente ( `sling:resourceType`).
+* **Abstracto (granito:AbstractArea)**: define un nodo como abstracto. Los nodos se pueden superponer o heredar ( `sling:resourceSupertype`), pero no se pueden usar directamente ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)**: Define un nodo como final. Los nodos clasificados como finales no se deben superponer ni heredar. Los nodos finales se pueden usar directamente mediante `sling:resourceType`. Los subnodos bajo el nodo final se consideran internos de forma predeterminada.
+* **Final (granite:FinalArea)**: define un nodo como final. Los nodos clasificados como finales no se deben superponer ni heredar. Los nodos finales se pueden usar directamente mediante `sling:resourceType`. Los subnodos bajo el nodo final se consideran internos de forma predeterminada.
 
 * ***Interno (granite:InternalArea)*** *- *Define un nodo como interno. Los nodos clasificados como internos no deben superponerse, heredarse ni utilizarse directamente. Estos nodos solo están pensados para la funcionalidad interna de AEM
 
@@ -86,7 +86,7 @@ Las mezclas aplicadas en CRXDE Lite muestran nodos y árboles de contenido que e
 
 AEM 6.5 se envía con una comprobación de estado para alertar a los clientes de si el contenido superpuesto o referenciado se utiliza de una manera incoherente con la clasificación de contenido.
 
-La **&#x200B; Comprobación de acceso al contenido de Sling/Granite** es una nueva comprobación de estado que supervisa el repositorio para ver si el código del cliente accede incorrectamente a los nodos protegidos en AEM.
+La** Comprobación de acceso al contenido de Sling/Granite** es una nueva comprobación de estado que supervisa el repositorio para ver si el código del cliente accede incorrectamente a los nodos protegidos en AEM.
 
 Esto explora **/apps** y, por lo general, tarda varios segundos en completarse.
 

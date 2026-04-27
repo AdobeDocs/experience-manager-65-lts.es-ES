@@ -1,5 +1,5 @@
 ---
-title: Agregar, activar, modificar o eliminar puntos finales
+title: Agregar, habilitar, modificar o eliminar puntos finales
 description: Obtenga información sobre cómo agregar, habilitar, modificar y quitar extremos.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
 
-# Agregar, activar, modificar o eliminar puntos finales {#adding-enabling-modifying-or-removing-endpoints}
+# Agregar, habilitar, modificar o eliminar puntos finales {#adding-enabling-modifying-or-removing-endpoints}
 
 >[!NOTE]
 > 
@@ -37,13 +37,13 @@ Los extremos solo se pueden agregar a los servicios. Un extremo no puede existir
 1. En la lista de la pestaña Puntos finales, seleccione el tipo de punto de conexión que desea agregar y haga clic en Agregar.
 1. Según el tipo de extremo, configure opciones de extremo adicionales.
 
-[Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Haga clic en Agregar.
 

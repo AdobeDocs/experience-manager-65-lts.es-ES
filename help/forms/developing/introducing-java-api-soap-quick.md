@@ -1,5 +1,5 @@
 ---
-title: Introducción a Java&trade; API QuickStart
+title: Introducción a Java&trade; QuickStart de API
 description: Descubra cómo se pueden realizar las operaciones de AEM Forms mediante la API de AEM Forms Java&trade; con establecimiento inflexible de tipos y habilitada con la conexión de SOAP.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---

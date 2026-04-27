@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ En la página Configuración de seguridad, puede realizar las siguientes tareas:
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-Una configuración de seguridad *1&rbrace; controla la seguridad y los permisos de los archivos convertidos con esa configuración de seguridad.*
+Una configuración de seguridad *1} controla la seguridad y los permisos de los archivos convertidos con esa configuración de seguridad.*
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de seguridad.
 1. Haga clic en Nuevo o en el nombre de una configuración de seguridad.
@@ -117,14 +117,14 @@ Campos:** Permite que los usuarios rellenen formularios y agreguen firmas digita
 Campos de firma:** permite a los usuarios rellenar formularios y agregar firmas digitales y comentarios.
 
 **Diseño De Página, Retoque, Rellenado De Campos De Formulario Y Firma
-Campos de firma existentes:** permite a los usuarios insertar, rotar o eliminar páginas y crear marcadores o imágenes en miniatura, rellenar formularios y agregar firmas digitales. Esta opción no permite a los usuarios crear campos de formulario. Esta opción solo está disponible si se selecciona un nivel de cifrado bajo (Acrobat 3.0).
+Campos de firma existentes:** Permite a los usuarios insertar, rotar o eliminar páginas y crear marcadores o imágenes en miniatura, rellenar formularios y agregar firmas digitales. Esta opción no permite a los usuarios crear campos de formulario. Esta opción solo está disponible si se selecciona un nivel de cifrado bajo (Acrobat 3.0).
 
 **Cualquiera excepto Extraer páginas:** Permite a los usuarios cambiar el documento utilizando cualquier método en la Lista de permitidos Cambios, excepto quitar páginas.
 
 **Habilitar la copia de texto, imágenes y otro contenido:** Permite a los usuarios seleccionar y copiar el contenido del documento de PDF. También permite a las utilidades que necesitan acceder al contenido de un archivo PDF, como Acrobat Catalog, acceder a dicho contenido. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
 
 **Habilitar El Acceso De Texto De Los Dispositivos Reader De Pantalla Para
-Con deficiencias visuales:** permite a los usuarios con deficiencias visuales leer el documento usando lectores de pantalla. Sin embargo, los usuarios no pueden copiar ni extraer el contenido del documento. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
+Con deficiencias visuales:** permite que los usuarios con deficiencias visuales lean el documento con lectores de pantalla. Sin embargo, los usuarios no pueden copiar ni extraer el contenido del documento. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
 
 ## Eliminar una configuración de seguridad {#delete-a-security-setting}
 

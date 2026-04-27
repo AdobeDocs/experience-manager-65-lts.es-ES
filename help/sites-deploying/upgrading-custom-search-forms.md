@@ -1,5 +1,5 @@
 ---
-title: Actualización de Forms de búsqueda personalizada
+title: Actualización de formularios de búsqueda personalizados
 description: Este artículo detalla los ajustes necesarios después de una actualización para que funcionen los formularios de búsqueda personalizados.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
+source-wordcount: '1796'
+ht-degree: 3%
 
 ---
 
-# Actualización de Forms de búsqueda personalizada{#upgrading-custom-search-forms}
+# Actualización de formularios de búsqueda personalizados{#upgrading-custom-search-forms}
 
 En AEM 6.2, la ubicación donde se almacenan los Forms de búsqueda personalizados en el repositorio ha cambiado. Al realizar la actualización, se les trasladará de su ubicación en 6.1 en:
 
@@ -36,7 +36,7 @@ A menos que se indique lo contrario, la mayoría de los ajustes que deben realiz
 
 Puede cambiar la propiedad haciendo lo siguiente:
 
-1. Abra CRXDE Lite yendo a `https://server:port/crx/de/index.jsp`
+1. Abra CRXDE Lite; para ello, vaya a `https://server:port/crx/de/index.jsp`
 1. Vaya a la ubicación del nodo que debe ajustarse, como se especifica en la lista de [Forms de búsqueda personalizada](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) que aparece a continuación.
 1. Haga clic en el nodo. En el panel de propiedades derecho, haga clic en y modifique la propiedad **sling:resourceType**.
 1. Finalmente, guarde los cambios presionando el botón **Guardar todo**.
@@ -95,7 +95,7 @@ En AEM 6.1, el predicado de texto completo estándar formaba parte del formulari
  <tbody>
   <tr>
    <td>Nodos en el formulario de búsqueda predeterminado en 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>ruta</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso en 6.1</p> </td>

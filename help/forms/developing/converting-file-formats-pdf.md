@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7942'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Convertir un documento de Microsoft Word en un documento de PDF mediante la API 
 1. Cree un cliente Generate PDF.
 
    * Cree un objeto `GeneratePDFServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
+   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita usar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `GeneratePDFServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -368,7 +368,7 @@ Convierta contenido de HTML en un documento de PDF mediante la API Generate PDF 
 1. Cree un cliente Generate PDF.
 
    * Cree un objeto `GeneratePDFServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
+   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita usar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `GeneratePDFServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -519,7 +519,7 @@ Conversión de un documento de PDF en un archivo RTF mediante la API Generate PD
 1. Cree un cliente Generar PDF.
 
    * Cree un objeto `GeneratePDFServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita utilizar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
+   * Cree un objeto `GeneratePDFServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). No necesita usar el atributo `lc_version`. Sin embargo, especifique `?blob=mtom`.
    * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `GeneratePDFServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -628,12 +628,12 @@ En esta tabla se muestra el tipo de información utilizada para imprimir formato
   </tr>
   <tr>
    <td><p>Instrucciones del cuadro de diálogo específico de la aplicación</p></td>
-   <td><p>Especifica cómo responder a los cuadros de diálogo específicos de la aplicación. </p><p>El archivo que contiene esta información es appmon.<i>`[nombre de aplicación]`</i>.dialog.<i>`[locale]`</i>.xml (por ejemplo, appmon.word.en_US.xml).</p></td>
+   <td><p>Especifica cómo responder a los cuadros de diálogo específicos de la aplicación. </p><p>El archivo que contiene esta información es appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (por ejemplo, appmon.word.en_US.xml).</p></td>
    <td><p>No modifique este archivo. </p><p>Para agregar instrucciones de cuadro de diálogo para una nueva aplicación nativa, vea <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Crear o modificar un archivo XML de cuadro de diálogo adicional para una aplicación nativa</a>.</p></td>
   </tr>
   <tr>
    <td><p>Instrucciones adicionales del cuadro de diálogo específico de la aplicación </p></td>
-   <td><p>Especifica las invalidaciones y adiciones a las instrucciones del cuadro de diálogo específico de la aplicación. La sección presenta un ejemplo de dicha información. </p><p>El archivo que contiene esta información es appmon.<i>`[nombre de aplicación]`</i>.add.<i>`[locale]`</i>.xml. Un ejemplo es appmon.add.en_US.xml.</p></td>
+   <td><p>Especifica las invalidaciones y adiciones a las instrucciones del cuadro de diálogo específico de la aplicación. La sección presenta un ejemplo de dicha información. </p><p>El archivo que contiene esta información es appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Un ejemplo es appmon.add.en_US.xml.</p></td>
    <td><p>Los archivos de este tipo se pueden crear y modificar mediante una aplicación de edición XML. (Consulte <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creación o modificación de un archivo XML de diálogo adicional para una aplicación nativa</a>.) </p><p><strong>Importante</strong>: cree instrucciones adicionales de cuadro de diálogo específicas de la aplicación para cada aplicación nativa que admitirá el servidor. </p></td>
   </tr>
  </tbody>
@@ -685,8 +685,8 @@ Un archivo XML de *diálogo* especifica cómo responde el servicio Generate PDF 
 
 Cuando el sistema o la aplicación nativa muestra un cuadro de diálogo que no está controlado por el archivo XML de script que se está ejecutando, el servicio Generate PDF busca los archivos XML de diálogo en este orden y se detiene cuando encuentra una coincidencia:
 
-* ¡Applón!`[appname]`.adicional.`[locale]`.xml
-* ¡Applón!`[appname]`.`[locale]`.xml (no modifique este archivo).
+* appmon.`[appname]`.additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml (No modifique este archivo).
 * appmon.global.`[locale]`.xml (no modifique este archivo).
 
 Si el servicio Generate PDF encuentra una coincidencia para el cuadro de diálogo, lo descarta enviándole la pulsación de tecla u otra acción especificada para el cuadro de diálogo. Si las instrucciones del cuadro de diálogo especifican un mensaje de anulación, el servicio Generate PDF finaliza el trabajo que se está ejecutando y genera un mensaje de error. Este mensaje de anulación se especificaría en el elemento `abortMessage` de la gramática XML del script.
@@ -733,7 +733,7 @@ Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe vol
 1. Con una herramienta como WinZip o WinRAR, abra el archivo adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar > adobe-appmondata.jar.
 1. Agregue los archivos XML de cuadro de diálogo y secuencia de comandos al archivo appmondata.jar o modifique los archivos XML existentes en este archivo. (Vea [Crear o modificar un archivo XML de script para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)y [Crear o modificar un archivo XML de cuadro de diálogo adicional para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Con una herramienta como WinZip o WinRAR, abra adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. Agregue los archivos XML de cuadro de diálogo y secuencia de comandos al archivo appmondata.jar o modifique los archivos XML existentes en este archivo. (Consulte [Creación o modificación de un archivo XML de script para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)y [Creación o modificación de un archivo XML de cuadro de diálogo adicional para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Después de agregar los archivos XML al archivo adobe-appmondata.jar, coloque el nuevo archivo adobe-appmondata.jar en el archivo adobe-generatepdf-dsc.jar.
+1. Agregue los archivos XML de cuadro de diálogo y secuencia de comandos al archivo appmondata.jar o modifique los archivos XML existentes en este archivo. (Vea [Crear o modificar un archivo XML de script para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)y [Crear o modificar un archivo XML de cuadro de diálogo adicional para una aplicación nativa](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Después de agregar los archivos XML al archivo adobe-appmondata.jar, coloque el nuevo archivo adobe-appmondata.jar en el archivo adobe-generatepdf-dsc.jar.
 1. Si agregó compatibilidad con un formato de archivo nativo adicional, cree una variable de entorno del sistema que proporcione la ruta de acceso de la aplicación (vea [Creación de una variable de entorno para localizar la aplicación nativa](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application).)
 
 **Para volver a implementar el componente GeneratePDF**

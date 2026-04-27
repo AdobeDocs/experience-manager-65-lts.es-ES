@@ -1,5 +1,5 @@
 ---
-title: Procesar formularios con derechos activados
+title: Procesar formularios con derechos habilitados
 description: Utilice el servicio Forms para procesar formularios a los que se les han aplicado derechos de uso. Puede procesar formularios con derechos activados mediante la API de Java y la API de servicio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 4%
 
 ---
 
-# Procesar formularios con derechos activados {#rendering-rights-enabled-forms}
+# Procesar formularios con derechos habilitados {#rendering-rights-enabled-forms}
 
 El servicio Forms puede procesar formularios a los que se les han aplicado derechos de uso. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Las Forms a las que se les han aplicado derechos de uso se denominan formularios con derechos activados. Un usuario que abre un formulario con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese formulario.
 
@@ -182,6 +182,6 @@ Procesar un formulario con derechos activados mediante la API de Forms (servicio
 
 **Consulte también**
 
-[Procesar formularios con derechos activados](#rendering-rights-enabled-forms)
+[Procesar formularios con derechos habilitados](#rendering-rights-enabled-forms)
 
 [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

@@ -9,10 +9,11 @@ docset: aem65
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9c1c92e094f4d49881876aad4554c783825e5c3d
+exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -97,7 +98,8 @@ Servicio para configurar la lista de exclusión de principales que no deben vers
 
   Al habilitar el servicio, se inicia RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

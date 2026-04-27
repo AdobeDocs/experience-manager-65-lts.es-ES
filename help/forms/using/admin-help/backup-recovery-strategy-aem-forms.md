@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1523'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Después de identificar cómo se utilizan los formularios AEM, determine de qué
 >
 >Al igual que con cualquier otro aspecto de la implementación de los formularios AEM, la estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en la producción, para garantizar que toda la solución funcione según lo esperado sin perder datos.
 
-Adobe Experience Manager (AEM) es una parte integral de los formularios AEM. Por lo tanto, también debe realizar una copia de seguridad de AEM sincronizada con la copia de seguridad de los formularios de AEM, ya que la solución y los servicios de Administración de correspondencia, como el administrador de formularios, se basan en datos almacenados en la parte de AEM de los formularios de AEM.Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de AEM de forma que se garantice que el GDS y el AEM (repositorio) se correlacionan con las referencias de la base de datos.Los directorios de la base de datos, el GDS, el AEM y el directorio raíz de almacenamiento de contenido deben restaurarse en un equipo con el mismo nombre DNS que el original.
+Adobe Experience Manager (AEM) es una parte integral de los formularios AEM. Por lo tanto, también debe realizar una copia de seguridad de AEM sincronizada con la copia de seguridad de los formularios de AEM, ya que la solución y los servicios de Administración de correspondencia, como el administrador de formularios, se basan en los datos almacenados en la parte de AEM de los formularios de AEM.Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de AEM de forma que se garantice que el GDS y el AEM (repositorio) se correlacionen con las referencias de la base de datos.Los directorios de la base de datos, GDS, AEM y Raíz de almacenamiento de contenido deben restaurarse en un equipo con el mismo nombre DNS que el original.
 
 ## Tipos de copias de seguridad {#types-of-backups}
 
@@ -111,6 +111,6 @@ Use el script `LCSetGDS` de la carpeta `[*aem-forms root]*\sdk\misc\Foundation\S
 
 >[!NOTE]
 >
->Esta circunstancia es la única en la que debería usar esta secuencia de comandos para cambiar la ubicación de GDS. Para cambiar la ubicación de GDS mientras se ejecuta AEM Forms, utilice la consola de administración. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.)*
+>Esta circunstancia es la única en la que debería usar esta secuencia de comandos para cambiar la ubicación de GDS. Para cambiar la ubicación de GDS mientras se ejecuta AEM Forms, utilice la consola de administración. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
 Después de establecer la ruta de acceso de GDS, inicie el servidor de Forms en modo de mantenimiento y utilice la consola de administración para actualizar las rutas de acceso restantes del sistema de archivos para el nuevo nodo. Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de AEM.

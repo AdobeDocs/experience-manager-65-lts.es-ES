@@ -1,5 +1,5 @@
 ---
-title: Evaluación de la complejidad de la actualización con Pattern Detector
+title: Evaluación de la complejidad de la actualización con el detector de patrones
 description: Aprenda a utilizar Pattern Detector para evaluar la complejidad de la actualización.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 4%
 
 ---
 
-# Evaluación de la complejidad de la actualización con Pattern Detector
+# Evaluación de la complejidad de la actualización con el detector de patrones
 
 ## Información general {#overview}
 
@@ -44,13 +44,13 @@ Puede utilizar varios métodos para comprobar el resultado de Pattern Detector:
 
 * **A través de la consola Felix Inventory:**
 
-1. Vaya a la consola web de AEM al navegar a *https://serveraddress:serverport/system/console/configMgr*
+1. Vaya a la consola web de AEM y navegue hasta *https://serveraddress:serverport/system/console/configMgr*
 1. Seleccione **Estado - Detector de patrones** como se muestra en la siguiente imagen:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **A través de una interfaz JSON normal o basada en texto reactivo**
-* **A través de una interfaz de líneas JSON reactiva, &#x200B;** que genera un documento JSON independiente en cada línea.
+* **A través de una interfaz de líneas JSON reactiva, **que genera un documento JSON independiente en cada línea.
 
 Ambos métodos se detallan a continuación:
 
@@ -111,7 +111,7 @@ Con la salida:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_es"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ Actualmente, Pattern Detector permite comprobar lo siguiente:
 * Sobreutilización de tipos de recursos y supertipos de Sling (con superposiciones de contenido de ruta de búsqueda)
 * definiciones de índices Oak (compatibilidad)
 * Paquetes VLT (uso excesivo)
-* rep: Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)
+* compatibilidad de nodos rep:User (en el contexto de la configuración de OAuth)
 
 >[!NOTE]
 >
