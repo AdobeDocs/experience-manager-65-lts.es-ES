@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
-source-wordcount: '7427'
-ht-degree: 100%
+source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+workflow-type: tm+mt
+source-wordcount: '7603'
+ht-degree: 97%
 
 ---
 
@@ -573,7 +573,6 @@ En esta sección se enumeran las características y funciones que se han elimina
 | Código abierto | `org.apache.jackrabbit.api` paquetes se han exportado ahora desde el paquete `org.apache.jackrabbit.oak-jackrabbit-api`. | No se requiere ningún cambio. | 6.5 LTS GA |
 | Código abierto | `com.github.jknack.handlebars` no es compatible | Elija la [versión](https://mvnrepository.com/artifact/com.github.jknack/handlebars) pertinente. | 6.5 LTS GA |
 
-
 ## Problemas conocidos {#known-issues}
 
 ### AEM Forms
@@ -596,6 +595,18 @@ Planifique el tiempo de inactividad de la instancia al aplicarla. Para la compac
 > * Para cualquier operación de `oak-run`, use el Jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Inicie AEM estableciendo la propiedad del sistema `oak.compaction.legacy=true`.
+
+### Los comentarios JSON ya no son compatibles con Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
+
+Este problema afecta a los desarrolladores y administradores de paquetes OSGi que implementan paquetes que utilizan `Sling-Initial-Content` con archivos JSON.
+
+A partir de AEM 6.5 LTS SP2, los archivos JSON utilizados en `Sling-Initial-Content` paquetes ya no aceptan comentarios (`//` o `/* */`). En versiones anteriores de AEM se aceptaban comentarios porque el proveedor `javax.json` era indulgente al respecto. AEM 6.5 LTS SP2 actualizó `org.apache.sling.jcr.contentloader` a la versión 2.6.0, lo que cambió el analizador JSON a `jakarta.json`. Aunque la especificación [JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) no define sintaxis para comentarios, versiones anteriores de AEM los aceptaron debido a la indulgencia del proveedor `javax.json`. El proveedor `jakarta.json` no ofrece esta extensión.
+
+El error es silencioso: los nodos de contenido no se cargan durante la activación del paquete y no aparece ningún error al instalador. Si falta contenido inesperadamente después de actualizar a SP2, compruebe los registros del instalador OSGi para ver si hay errores de análisis de JSON. Para identificar los paquetes afectados, busque `//` o `/* */` dentro de los archivos JSON enumerados en `Sling-Initial-Content` encabezados de manifiesto.
+
+>[!CAUTION]
+>
+> Elimine todos los comentarios de los archivos JSON en sus paquetes de `Sling-Initial-Content` para evitar errores de carga de contenido después de actualizar a AEM 6.5 LTS SP2.
 
 ### Instale los índices Oak necesarios para las API headless de Sites{#site-headless-api}
 
