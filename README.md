@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARCHIVADO
 
-Este repositorio se ha migrado a <https://github.com/Adobe-Enterprise-Docs/experience-manager-65-lts.en>.
+Este repositorio se ha migrado a <https://github.com/Adobe-Enterprise-Docs/experience-manager-65-lts.es-ES>.
