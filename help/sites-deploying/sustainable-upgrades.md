@@ -5,9 +5,8 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%

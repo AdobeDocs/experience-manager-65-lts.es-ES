@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
 hide: true
-hidefromtoc: true
 exl-id: 0140d0a1-9a8f-4e77-8053-fd03592e967a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 14%

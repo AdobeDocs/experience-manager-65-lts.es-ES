@@ -5,9 +5,8 @@ feature: Adaptive Forms,Document Services
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a28b084e-ec74-4c05-a90c-d447792faa41
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

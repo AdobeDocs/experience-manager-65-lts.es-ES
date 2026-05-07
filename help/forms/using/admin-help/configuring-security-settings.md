@@ -9,9 +9,8 @@ feature: PDF Generator,Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 0%

@@ -5,9 +5,8 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 hide: true
-hidefromtoc: true
 exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 5%
