@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Además de esto, observe las siguientes directrices para el proceso de copia de 
 
 * Realice una copia de seguridad del directorio GDS mediante un sistema operativo disponible o una utilidad de copia de seguridad de terceros. (Consulte [Ubicación de GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Realice una copia de seguridad del directorio raíz de almacenamiento de contenido mediante un sistema operativo disponible o una copia de seguridad y una utilidad de terceros. (Consulte [Ubicación raíz del almacenamiento de contenido (entorno independiente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Ubicación raíz del almacenamiento de contenido (entorno en clúster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Copia de seguridad   instancias de autor y publicación (copia de seguridad del repositorio crx).
+* Hacer una copia de seguridad de las instancias de autor y publicación (copia de seguridad del repositorio crx).
 
   Para realizar una copia de seguridad del entorno de la solución Administración de correspondencia, realice los pasos en las instancias de autor y publicación que se describen en [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 

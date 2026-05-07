@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 1%
@@ -244,7 +243,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genere un documento de PDF.
 
@@ -261,7 +260,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -269,7 +268,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 
@@ -340,7 +339,7 @@ Cree un documento de PDF con la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Firmar digitalmente documentos de PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genere un documento de PDF.
 
@@ -358,11 +357,11 @@ Cree un documento de PDF con la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 

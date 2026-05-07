@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 62d31b00-be95-4502-9e97-3ce563192de2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 4%
@@ -34,12 +33,12 @@ La recopilación de estadísticas del sistema que rellenan el Monitor de estado 
   <tr>
    <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Activar o desactivar el subproceso Monitor de estado</p></td>
-   <td><p>verdadero</p></td>
+   <td><p>true</p></td>
   </tr>
   <tr>
    <td><p>adobe.cache.statistics-enabled</p></td>
    <td><p>Activar o desactivar el almacenamiento en caché de Gemfire</p></td>
-   <td><p>verdadero</p></td>
+   <td><p>true</p></td>
   </tr>
   <tr>
    <td><p>adobe.healthmonitor.refresh-interval</p></td>

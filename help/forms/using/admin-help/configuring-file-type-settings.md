@@ -8,9 +8,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6249'
 ht-degree: 0%
@@ -128,7 +127,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) a PDF. El software OCR le permite buscar, corregir y copiar el texto en PDF.
 
-***nota &#x200B;**: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
+***nota **: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
 
 **Idioma principal de OCR:** Especifica el idioma que el motor de OCR utilizará para identificar los caracteres.
 
@@ -267,7 +266,7 @@ Para obtener instrucciones sobre cómo obtener acceso a esta configuración, con
 
    >[!NOTE]
    >
-   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**&#x200B;aún están completamente desincrustadas.*
+   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**aún están completamente desincrustadas.*
 
    >[!NOTE]
    >

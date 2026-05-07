@@ -9,9 +9,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 1d2adc53-498f-43f5-b664-0b9dd864b9a1
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 4%
@@ -53,7 +52,7 @@ Los documentos de PDF que PDF Generator crea en Acrobat 5.0 o posterior contiene
 
 Los metadatos del documento contienen, entre otras cosas, información que también aparece en la ficha Descripción del cuadro de diálogo Propiedades del documento de Acrobat. Los cambios realizados en la ficha Descripción se reflejan en los metadatos del documento. Los metadatos del documento se pueden ampliar y modificar mediante productos de terceros.
 
-Adobe Extensible Metadata Platform (XMP) proporciona a las aplicaciones de Adobe un marco XML común que estandariza la creación, el procesamiento y el intercambio de metadatos de documentos en los flujos de trabajo de publicación. Puede guardar e importar el código fuente XML de metadatos del documento en formato XMP, lo que facilita el uso compartido de metadatos entre varios documentos. Para obtener más información sobre los archivos de XMP, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/es/products/xmp/) y [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) proporciona a las aplicaciones de Adobe un marco XML común que estandariza la creación, el procesamiento y el intercambio de metadatos de documentos en los flujos de trabajo de publicación. Puede guardar e importar el código fuente XML de metadatos del documento en formato XMP, lo que facilita el uso compartido de metadatos entre varios documentos. Para obtener más información sobre los archivos de XMP, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) y [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 Puede crear archivos de XMP en Acrobat.
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 1%
@@ -62,7 +61,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
    Puede utilizar los siguientes caracteres en la regex:
 
    * . (cualquier carácter)
-   * &ast; (0 o más ocurrencias)
+   * &amp;ast; (0 o más ocurrencias)
    * () (especifique el grupo entre corchetes)
    * \ (se utiliza para convertir un carácter regex en un carácter normal)
    * $n (se usa para hacer referencia al grupo nth)
@@ -71,21 +70,21 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&ast;) \(Autenticación\)
+     **Regex:** (.&amp;ast;) \(Autenticación\)
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Autenticación\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
    * Para extraer &quot;Pink Alex&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Autenticación\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
      Pedido personalizado: $2 $1 (devuelve el segundo grupo, concatenado al primer grupo, capturado por el carácter de espacio en blanco)
 
    * Para extraer &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Para obtener más información sobre el uso de expresiones regulares, consulte [Tutorial de Java sobre expresiones regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

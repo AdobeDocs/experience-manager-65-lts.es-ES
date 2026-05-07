@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -161,7 +160,7 @@ Sin el aprovisionamiento Just-In-Time, cuando un usuario se autentica correctame
 1. Para crear un dominio, haga clic en Nuevo dominio empresarial o Nuevo dominio híbrido. Para editar un dominio existente, haga clic en el nombre del dominio.
 1. Seleccione Habilitar aprovisionamiento Just In Time.
 
-   ***nota &#x200B;**: Si falta la casilla de verificación Habilitar aprovisionamiento justo a tiempo, haga clic en Inicio > Configuración > Administración de usuarios > Configuración > Atributos avanzados del sistema y, a continuación, haga clic en Recargar.*
+   ***nota **: Si falta la casilla de verificación Habilitar aprovisionamiento justo a tiempo, haga clic en Inicio > Configuración > Administración de usuarios > Configuración > Atributos avanzados del sistema y, a continuación, haga clic en Recargar.*
 
 1. Agregar proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un creador de identidad y un proveedor de asignación registrados. (Consulte [Configuración de proveedores de autenticación](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Guarde el dominio.

@@ -3,11 +3,11 @@ title: Habilitar la alternancia de funciones para integrar las funciones de pion
 description: La alternancia de funciones es una funcionalidad de AEM que permite a los administradores habilitar nuevas funciones en un entorno de tiempo de ejecución.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 7%
+source-wordcount: '298'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 La alternancia de funciones es una funcionalidad de AEM que permite a los administradores habilitar o deshabilitar funciones específicas de forma dinámica. Esta funcionalidad es especialmente útil para administrar **las características de los primeros usuarios** y **las características de la versión preliminar** sin que sea necesario realizar implementaciones o cambios importantes en la base de código. Garantiza flexibilidad y control sobre las funciones accesibles en un entorno de AEM.
 
-## Activar alternancia de función {#enable-feature-toggle-65}
+## Activar conmutador de función {#enable-feature-toggle-65}
 
 Se pueden configurar cambios de características para los usuarios que las adoptaron por primera vez o nuevas características a través de la **consola web de AEM** siguiendo los pasos a continuación:
 

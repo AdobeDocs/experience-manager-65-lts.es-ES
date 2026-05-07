@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 0%
@@ -77,7 +76,7 @@ Puede configurar Administración de usuarios para que compruebe periódicamente 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema.
 1. En Expresión cron de finalizador de sincronización, introduzca una expresión cron que represente el intervalo en el que Administración de usuarios reintenta las sincronizaciones fallidas. El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 
-   El valor predeterminado es 0 0/13 &ast; ? &ast; , lo que significa que la comprobación se realiza cada 13 minutos.
+   El valor predeterminado es 0 0/13 &amp;ast; ? &amp;ast; , lo que significa que la comprobación se realiza cada 13 minutos.
 
 ## Sincronizar directorios manualmente {#manually-synchronize-directories}
 

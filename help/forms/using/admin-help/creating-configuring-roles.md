@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 0%
@@ -80,7 +79,7 @@ Se pueden incluir las siguientes funciones predeterminadas adicionales, en funci
 
 **Administrador de AEM Forms Workspace:** Puede ver y modificar la configuración de la página de Workspace en la consola de administración
 
-***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios de AEM.*
+***nota **: Flex Workspace está obsoleto para la versión de formularios de AEM.*
 
 **Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 

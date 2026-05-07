@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 2%
@@ -69,7 +68,7 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 1. En Seguridad administrativa, seleccione **Funciones de usuario administrativo**.
 1. Haga clic en Agregar y haga lo siguiente:
 
-   1. Escriba **&ast;** en el cuadro de búsqueda y haga clic en buscar.
+   1. Escriba **&amp;ast;** en el cuadro de búsqueda y haga clic en buscar.
    1. Haga clic en **Administrador** en los roles.
    1. Agregue el usuario recién creado a la función Asignado a y asígnelo al administrador.
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 4%
@@ -76,11 +75,11 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 El servicio Bridge de migración central (`CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge le permiten reutilizar los siguientes recursos centrales en los formularios de AEM:
 
-* diseño de plantilla (&ast;.ifd)
-* plantillas de salida (&ast;.mdf)
-* archivos de datos (archivos &ast;.dat)
-* archivos de preámbulo (archivos &ast;.pre)
-* archivos de definición de datos (&ast;.tdf)
+* diseño de plantilla (&amp;ast;.ifd)
+* plantillas de salida (&amp;ast;.mdf)
+* archivos de datos (archivos &amp;ast;.dat)
+* archivos de preámbulo (archivos &amp;ast;.pre)
+* archivos de definición de datos (&amp;ast;.tdf)
 
 La siguiente configuración está disponible para el servicio Bridge de migración central.
 

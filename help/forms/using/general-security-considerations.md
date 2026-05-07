@@ -6,12 +6,11 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 hide: true
-hidefromtoc: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 82%

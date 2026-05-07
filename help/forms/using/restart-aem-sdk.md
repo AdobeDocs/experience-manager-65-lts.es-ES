@@ -5,9 +5,8 @@ role: Admin, Developer, User
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 solution: Experience Manager, Experience Manager Forms
 hide: true
-hidefromtoc: true
 exl-id: 68935045-89b1-4219-b111-88a4600200df
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%

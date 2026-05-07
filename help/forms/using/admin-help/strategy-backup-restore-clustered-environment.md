@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 1%
@@ -131,7 +130,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en el nodo.
    1. Elimine el .lock en el nodo, si existe.
    1. Elimine el repository/system.id en el nodo, si existe.
-   1. Elimine los archivos &ast;&ast;/listener.properties en el nodo, si existe.
+   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en el nodo, si existe.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
@@ -161,7 +160,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
    1. Elimine el archivo clusterNode/revision.log en todos los nodos del clúster.
    1. Elimine el .lock en todos los nodos del clúster, si existe.
    1. Elimine todos los nodos de clúster de repository/system.id, si existen.
-   1. Elimine los archivos &ast;&ast;/listener.properties en todos los nodos del clúster, si los hay.
+   1. Elimine los archivos &amp;ast;&amp;ast;/listener.properties en todos los nodos del clúster, si los hay.
    1. Restaure repository/cluster_node.id para nodos de clúster individuales.
 
 >[!NOTE]
