@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 12%
+source-wordcount: '3086'
+ht-degree: 13%
 
 ---
 
@@ -181,7 +181,7 @@ Adobe Experience Manager es compatible con la ejecución en una máquina virtual
 
 Para un entorno nativo de la nube, revise la última oferta de la línea de productos de AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) para obtener más información.
 
-Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/es/products/experience-manager/managed-services.html?aemClk=t).
+Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, almacenamiento del blob de Azure o AWS S3.
 
@@ -408,6 +408,7 @@ Para Windows x86:
 
 >[!NOTE]
 >
+>* PDF Generator admite Microsoft® Office 2024.
 >* El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >* PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
 >* PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
