@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 01fa9744-775e-4185-aba5-e132011b1b89
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
 workflow-type: tm+mt
 source-wordcount: '5734'
 ht-degree: 81%
@@ -496,11 +496,11 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--
-In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+   <!--
+   In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
    ![Radio button values from rule editor](assets/radio-button-values.png)
--->
+   -->
 
 1. En el campo **[!UICONTROL Escriba una cadena]** en la regla, seleccione **Casado** del menú desplegable.
 

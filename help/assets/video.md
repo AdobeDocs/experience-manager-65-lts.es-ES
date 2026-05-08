@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
 workflow-type: tm+mt
-source-wordcount: '10812'
+source-wordcount: '10723'
 ht-degree: 2%
 
 ---
@@ -811,20 +811,20 @@ Consulte [Proporcionar contenido estático (que no es de imagen)](https://experi
    Hay muchos sitios web que ofrecen herramientas y servicios gratuitos y de primera calidad que puede utilizar para crear archivos de subtítulos/subtítulos WebVTT fuera de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[Creador de subtítulos WebVTT](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-Para obtener los mejores resultados, utilice la herramienta en Internet Explorer 9 o posterior, Google Chrome o Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-En la herramienta, en el campo **[!UICONTROL Introducir URL del archivo de vídeo]**, pegue la URL copiada del archivo de vídeo y, a continuación, haga clic en **[!UICONTROL Cargar]**. Consulte [Obtener una URL para un recurso](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obtener la URL del propio archivo de vídeo, que puede pegar en el campo **[!UICONTROL Introducir URL del archivo de vídeo]**. Internet Explorer, Chrome o Safari pueden reproducir el vídeo de forma nativa.
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo `.vtt`.
+   Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo `.vtt`.
 
->[!NOTE]
->
->Para ofrecer compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree `.vtt` archivos y llamadas independientes para cada idioma que desee admitir.
+   >[!NOTE]
+   >
+   >Para ofrecer compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree `.vtt` archivos y llamadas independientes para cada idioma que desee admitir.
 
-Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que al archivo de vídeo y anexarlo con la configuración regional de idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que al archivo de vídeo y anexarlo con la configuración regional de idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
 1. En Experience Manager, cargue el archivo de subtítulos WebVTT en DAM.
 1. Vaya al recurso de vídeo *publicado* que desee asociar con el archivo de rótulo que ha cargado.
