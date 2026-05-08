@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 12%
+source-wordcount: '3086'
+ht-degree: 13%
 
 ---
 
@@ -408,6 +408,7 @@ Para Windows x86:
 
 >[!NOTE]
 >
+>* PDF Generator admite Microsoft® Office 2024.
 >* El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >* PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
 >* PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
