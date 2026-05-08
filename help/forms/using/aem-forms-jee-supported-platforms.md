@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 30ac3d2e81e859244684339a028d7d9db470eefe
+source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3184'
 ht-degree: 53%
 
 ---
@@ -382,12 +382,12 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
   </tr>
 
 <tr>
-   <td>Microsoft® Office 2021 Professional Plus, licencias por volumen y venta minorista</td>
+   <td>Microsoft® Office 2024 Professional Plus, licencias por volumen y venta minorista</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT<br>
 
@@ -398,16 +398,15 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 
 >[!NOTE]
 >
->- PDF Generator admite Microsoft® Office 2024.
 >- El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
->- PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
->- PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
->- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
+>- PDF Generator requiere Adobe Acrobat Pro DC de 32 bits y Microsoft® Office Professional Plus para realizar la conversión.
+>- La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
+>- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia por cualquier motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 >- PDF Generator no admite Microsoft® Office 365.
 >- Las conversiones de PDF Generator para OpenOffice son compatibles con Windows y Linux®.
 >- Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
->- El servicio PDF Generator no es compatible con Microsoft® Windows 11
-
+>- PDF Generator no admite Microsoft® Windows 11.
+>- La compatibilidad con Microsoft® Office 2021 Professional Plus ya no se utiliza.
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
