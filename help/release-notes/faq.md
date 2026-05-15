@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe sigue profundamente comprometida con la seguridad y estabilidad de las apl
 
 ## Soy cliente On-Premise, ¿qué sucede si no actualizo a AEM 6.5 LTS?
 
-AEM 6.5 LTS incluye importantes actualizaciones de seguridad y estabilidad, incluida la compatibilidad con Oracle Java 17 y Java 21. Aunque Adobe seguirá admitiendo AEM 6.5 durante al menos los próximos 2 años, se recomienda que las organizaciones empiecen a planificar una actualización a 6.5 LTS.
+AEM 6.5 LTS incluye importantes actualizaciones de seguridad y estabilidad, incluida la compatibilidad con Oracle Java 17 y Java 21. Se recomienda que las organizaciones planifiquen una actualización a 6.5 LTS. Adobe seguirá siendo compatible con AEM 6.5 hasta el 28 de febrero de 2027. Consulte la [hoja de ruta](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) para obtener más detalles.
 
 ## ¿Se verán afectadas mis personalizaciones e integraciones existentes si actualizo a AEM 6.5 LTS?
 
