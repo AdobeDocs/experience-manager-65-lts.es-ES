@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
-source-wordcount: '7581'
-ht-degree: 97%
+source-wordcount: '7695'
+ht-degree: 95%
 
 ---
 
@@ -595,6 +595,16 @@ Planifique el tiempo de inactividad de la instancia al aplicarla. Para la compac
 > * Para cualquier operación de `oak-run`, use el Jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Inicie AEM estableciendo la propiedad del sistema `oak.compaction.legacy=true`.
+
+### Falta el paquete `com.adobe.granite.apicontroller` en AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
+
+Falta el paquete `com.adobe.granite.apicontroller` en AEM 6.5 LTS SP2. Este paquete controla cómo se resuelven los paquetes OSGi y puede evitar que se resuelvan en otros paquetes, lo que resulta útil para limitar las API expuestas.
+
+Instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip) para usar esta funcionalidad.
+
+>[!NOTE]
+>
+> Después de instalar la revisión, compruebe el estado del paquete de todos los paquetes instalados para asegurarse de que la configuración predeterminada de `com.adobe.granite.apicontroller` no haya introducido restricciones de resolución no deseadas que podrían afectar a las implementaciones personalizadas existentes.
 
 ### Los comentarios JSON ya no son compatibles con Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
