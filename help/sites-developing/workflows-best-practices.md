@@ -1,21 +1,18 @@
 ---
-title: Prácticas recomendadas de flujo de trabajo
+title: Prácticas recomendadas de flujos de trabajo
 description: Conozca las prácticas recomendadas para trabajar con flujos de trabajo en Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 89d325b300cdbfb6c812755c1b777334468310dd
+exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
+source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1948'
 ht-degree: 1%
 
 ---
 
-# Prácticas recomendadas de flujo de trabajo{#workflow-best-practices}
+# Prácticas recomendadas de flujos de trabajo{#workflow-best-practices}
 
 Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM).
 
@@ -37,7 +34,7 @@ Las ventajas pueden incluir:
 
 * Reducción en el tiempo de procesamiento del flujo de trabajo de hasta el 10 %.
 * Reduzca considerablemente el crecimiento del repositorio.
-* No se requieren más flujos de trabajo CRUD para purgar.
+* No es necesario purgar más flujos de trabajo CRUD.
 * Además, reduce el número de archivos TAR que se van a compactar.
 
 >[!CAUTION]
@@ -242,14 +239,14 @@ Guardar una sesión:
 * Dentro de un proceso de flujo de trabajo, si `WorkflowSession` se está utilizando para modificar el repositorio, no guarde explícitamente la sesión: el flujo de trabajo guardará la sesión cuando se complete.
 * No se debe llamar a `Session.Save` desde un paso del flujo de trabajo:
 
-   * se recomienda adaptar la sesión jcr del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
-   * no se recomienda que un paso de proceso cree su propia sesión jcr.
+   * se recomienda adaptar la sesión JCR del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
+   * no se recomienda que un paso de proceso cree su propia sesión JCR.
 
 * Al eliminar los ahorros innecesarios, puede reducir la sobrecarga y, por lo tanto, hacer que los flujos de trabajo sean más eficientes.
 
 >[!CAUTION]
 >
->Si, a pesar de las recomendaciones aquí, crea su propia sesión jcr, se debe guardar.
+>Si, a pesar de las recomendaciones aquí, crea su propia sesión JCR, se debe guardar.
 
 ### Minimizar el número/ámbito de los lanzadores {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +282,7 @@ Otro ejemplo sería un flujo de trabajo que procese varios nodos, cree un paquet
 
 Al diseñar un modelo del flujo de trabajo, tiene la opción de habilitar el avance del controlador en los pasos del flujo de trabajo. Como alternativa, puede agregar código al paso del flujo de trabajo para determinar qué paso se debe ejecutar a continuación y, a continuación, ejecutarlo.
 
-Se recomienda utilizar el avance del controlador, ya que ofrece un mejor rendimiento.
+Se recomienda utilizar controladores avanzados, ya que ofrece un mejor rendimiento.
 
 ### Fases del flujo de trabajo {#workflow-stages}
 
@@ -338,4 +335,4 @@ Para obtener más información, consulte lo siguiente:
 * [Uso de flujos de trabajo](/help/sites-authoring/workflows.md)
 * [Administración de flujos de trabajo](/help/sites-administering/workflows.md)
 * [Desarrollo y ampliación de flujos de trabajo](/help/sites-developing/workflows.md)
-* [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md)
+* [Optimización de rendimiento](/help/sites-deploying/configuring-performance.md)
