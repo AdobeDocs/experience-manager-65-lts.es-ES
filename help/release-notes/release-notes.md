@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
 source-wordcount: '7695'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -610,9 +610,9 @@ Instale la revisión de [Distribución de software](https://experience.adobe.com
 
 Este problema afecta a los desarrolladores y administradores de paquetes OSGi que implementan paquetes que utilizan `Sling-Initial-Content` con archivos JSON.
 
-A partir de AEM 6.5 LTS SP2, los archivos JSON utilizados en `Sling-Initial-Content` paquetes ya no aceptan comentarios (`//` o `/* */`). En versiones anteriores de AEM se aceptaban comentarios porque el proveedor `javax.json` era indulgente al respecto. AEM 6.5 LTS SP2 actualizó `org.apache.sling.jcr.contentloader` a la versión 2.6.0, lo que cambió el analizador JSON a `jakarta.json`. Aunque la especificación [JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) no define sintaxis para comentarios, versiones anteriores de AEM los aceptaron debido a la indulgencia del proveedor `javax.json`. El proveedor `jakarta.json` no ofrece esta extensión.
+A partir de AEM 6.5 LTS SP2, los archivos JSON utilizados en paquetes de `Sling-Initial-Content` ya no aceptan comentarios (`//` o `/* */`). En versiones anteriores de AEM se aceptaban comentarios porque el proveedor `javax.json` era flexible al respecto. AEM 6.5 LTS SP2 actualizó `org.apache.sling.jcr.contentloader` a la versión 2.6.0, lo que cambió el analizador JSON a `jakarta.json`. Aunque la especificación [JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) no define una sintaxis para los comentarios, las versiones anteriores de AEM los aceptaban debido a la flexibilidad del proveedor `javax.json`. El proveedor `jakarta.json` no ofrece esta extensión.
 
-El error es silencioso: los nodos de contenido no se cargan durante la activación del paquete y no aparece ningún error al instalador. Si falta contenido inesperadamente después de actualizar a SP2, compruebe los registros del instalador OSGi para ver si hay errores de análisis de JSON. Para identificar los paquetes afectados, busque `//` o `/* */` dentro de los archivos JSON enumerados en `Sling-Initial-Content` encabezados de manifiesto.
+El error es silencioso: los nodos de contenido no se cargan durante la activación del paquete sin que se muestre ningún error al instalador. Si falta contenido inesperadamente después de actualizar a SP2, compruebe los registros del instalador OSGi para ver si hay errores de análisis de JSON. Para identificar los paquetes afectados, busque `//` o `/* */` dentro de los archivos JSON enumerados en los encabezados de manifiesto de `Sling-Initial-Content`.
 
 >[!CAUTION]
 >
