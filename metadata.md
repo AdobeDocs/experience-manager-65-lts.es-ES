@@ -5,7 +5,9 @@ git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.en
 index: true
 type: Documentation
 solution: Experience Manager, Experience Manager 6.5 LTS
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: ae206583-dab1-444b-b978-a37aad4a988c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
 usetq: true
 landing-page-name: experience-manager-lts
 landing-page-breadcrumb-title: AEM 6.5 LTS
