@@ -8,13 +8,14 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
   - id: ae206583-dab1-444b-b978-a37aad4a988c
+usetq: true
 landing-page-name: experience-manager-lts
 landing-page-breadcrumb-title: AEM 6.5 LTS
 version: Experience Manager 6.5 LTS
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: 428e70cc3df183dfcfe566bd733f4d86d9ff7b91
+source-git-commit: 934301c6c517f5dddc438ee6bc06a8fbcf3d036b
 workflow-type: tm+mt
 source-wordcount: 93
 ht-degree: 2%
