@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo definir e implementar áreas de no
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 8%
@@ -29,11 +29,11 @@ Las áreas de nombres se pueden utilizar para denotar el ámbito y la intención
 
 Las áreas de nombres personalizadas se administran en [scripts de inicialización de repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e implementan como configuraciones OSGi en el paquete de configuración del proyecto (por ejemplo, `ui.config`).
 
-## Recursos
+## Recursos {#resources}
 
 + [Documentación de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## Código
+## Código {#code}
 
 El siguiente código se usa para configurar un área de nombres `wknd`.
 
