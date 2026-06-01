@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
-ht-degree: 53%
+source-wordcount: '3156'
+ht-degree: 54%
 
 ---
 
@@ -80,10 +80,10 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 
 >[!NOTE]
 >
->Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
->En el caso de nuevas instalaciones, siempre que sea factible, se recomienda implementar AEM Forms en la pila moderna de OSGi para utilizar las últimas innovaciones en relación con el Forms adaptable adaptable para comunicaciones interactivas móviles multicanal e integraciones de datos back-end mediante el modelo de datos de formulario.
+>Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, Adobe Experience Manager Enterprise Platform se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
+>En el caso de nuevas instalaciones, siempre que sea factible, se recomienda implementar AEM Forms en la pila moderna de OSGi para utilizar las últimas innovaciones en relación con Forms adaptable para comunicaciones interactivas móviles multicanal e integraciones de datos back-end mediante el modelo de datos de formulario.
 >
->Adobe reconoce que los usuarios existentes deben seguir implementando AEM Forms en la pila JEE. En estos casos, Adobe requiere la implementación de AEM Forms JEE en la infraestructura admitida, tal como se describe en esta documentación. Si actualiza a formularios AEM 6.5 y utiliza una plataforma no compatible en la versión anterior de AEM Forms, puede ponerse en contacto con el servicio de asistencia de Adobe para obtener ayuda sobre la actualización a una plataforma compatible.
+>Adobe reconoce que los usuarios existentes deben seguir implementando AEM Forms en la pila JEE. En estos casos, Adobe requiere la implementación de AEM Forms JEE en la infraestructura admitida, tal como se describe en esta documentación. Si actualiza a Forms AEM 6.5 y utiliza una plataforma no compatible en la versión anterior de AEM Forms, puede ponerse en contacto con el servicio de soporte de Adobe para obtener ayuda sobre la actualización a una plataforma compatible.
 
 ### Máquinas virtuales Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -272,6 +272,11 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 de 64 bits</p> </td>
+   <td>E: Se espera que funcione</td>
+   <td><p>Service Pack y actualizaciones críticas</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 de 64 bits</p> </td>
    <td>E: Se espera que funcione</td>
    <td><p>Service Pack y actualizaciones críticas</p> </td>
   </tr>
@@ -494,6 +499,10 @@ Para conocer los requisitos adicionales, consulte:
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
+   <td><p>Microsoft® Windows® 11 (Enterprise, Pro, Basic)</p> <p>Versión de 64 bits</p> <p> </p> </td>
+   <td>Service Packs y actualizaciones críticas</td>
+  </tr>
+  <tr>
    <td>Servidor Microsoft® Windows® 2022</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
@@ -624,7 +633,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_es) .
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
 
@@ -654,7 +663,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -737,7 +746,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -806,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/es/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
