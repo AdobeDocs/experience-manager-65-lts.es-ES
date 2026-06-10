@@ -621,7 +621,7 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 
 ## Otra configuración de la aplicación (sólo Windows) {#other-applications-settings-windows-only}
 
-No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/es_ES/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker de Adobe: `pmd, pm6, p65, pm`

@@ -78,7 +78,7 @@ Puede seguir los siguientes pasos para personalizar el texto y el aspecto de la 
    </DDX>
    ```
 
-   Para obtener información sobre cómo personalizar el aspecto, el texto y la alineación de la marca de agua, consulte Agregar y eliminar marcas de agua y fondos en el documento [Servicio de Assembler y referencia DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
+   Para obtener información sobre cómo personalizar el aspecto, el texto y la alineación de la marca de agua, consulte Agregar y eliminar marcas de agua y fondos en el documento [Servicio de Assembler y referencia DDX](https://help.adobe.com/es_ES/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

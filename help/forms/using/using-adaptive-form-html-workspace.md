@@ -84,4 +84,4 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
    >Para obtener más información sobre la creación de un formulario adaptable, consulte [Crear un formulario adaptable](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Para obtener más información sobre cómo crear un proceso, consulte [Crear y administrar procesos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Para obtener más información sobre cómo crear un proceso, consulte [Crear y administrar procesos](https://help.adobe.com/es_ES/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

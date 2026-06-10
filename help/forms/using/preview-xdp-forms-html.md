@@ -110,7 +110,7 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
 
 Designer permite obtener una vista previa y probar el formulario con datos XML de ejemplo. Se recomienda probar el formulario con frecuencia con datos de ejemplo para asegurarse de que el formulario se procesa correctamente.
 
-Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 La prueba del formulario mediante una fuente de datos de ejemplo garantiza que los datos y los campos se asignen y que los subformularios repetibles se repitan como se esperaba. Puede crear un diseño de formulario equilibrado que proporcione el espacio adecuado para que cada objeto muestre los datos combinados.
 
