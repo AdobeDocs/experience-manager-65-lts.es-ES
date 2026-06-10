@@ -67,7 +67,7 @@ Puede usar la API de Java `applyUsageRights` para aplicar derechos de uso a docu
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Especifica un objeto de tipo <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. El objeto usageRights representa derechos individuales que pueden aplicarse a un documento PDF protegido por políticas.</p> </td>
+   <td><p>Especifica un objeto de tipo <a href="https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. El objeto usageRights representa derechos individuales que pueden aplicarse a un documento PDF protegido por políticas.</p> </td>
   </tr>
  </tbody>
 </table>

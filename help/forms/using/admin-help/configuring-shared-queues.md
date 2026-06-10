@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurar colas compartidas{#configuring-shared-queues}
 
-Las colas compartidas permiten configurar y administrar las colas de usuario de forma eficaz. Una cola de usuarios son simplemente todas las tareas asignadas a un usuario. Vea [Listas de tareas pendientes](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obtener más información. Puede asignar, anular la asignación y reasignar colas de usuario según sus necesidades organizativas. Puede administrar colas compartidas de dos formas:
+Las colas compartidas permiten configurar y administrar las colas de usuario de forma eficaz. Una cola de usuarios son simplemente todas las tareas asignadas a un usuario. Vea [Listas de tareas pendientes](https://help.adobe.com/es_ES/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obtener más información. Puede asignar, anular la asignación y reasignar colas de usuario según sus necesidades organizativas. Puede administrar colas compartidas de dos formas:
 
 **Administrar El Acceso A Un Usuario**
 

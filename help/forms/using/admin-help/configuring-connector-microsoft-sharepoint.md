@@ -40,7 +40,7 @@ El conector para Microsoft SharePoint permite la comunicación entre los formula
 
 ## Servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 
-El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Siga estos pasos para especificar la configuración de `MSSharePointConfigService`:
+El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html). Siga estos pasos para especificar la configuración de `MSSharePointConfigService`:
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de servicios.
 1. Navegue por la lista de servicios y haga clic en `MSSharePointConfigService`.

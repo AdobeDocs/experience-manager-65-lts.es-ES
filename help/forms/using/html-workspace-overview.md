@@ -24,7 +24,7 @@ Para obtener más información, consulte [Introducción al espacio de trabajo de
 
 ## Primeros pasos {#getting-familiar}
 
-Para familiarizarse con el proceso completo de creación de una aplicación de Forms para automatizar un proceso empresarial, realice el tutorial. Puede crear, administrar y probar una aplicación mediante Workbench, Designer y AEM Forms Workspace después de completar el tutorial. Para obtener más información sobre la implementación, consulte [Creación de la primera aplicación de AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Para familiarizarse con el proceso completo de creación de una aplicación de Forms para automatizar un proceso empresarial, realice el tutorial. Puede crear, administrar y probar una aplicación mediante Workbench, Designer y AEM Forms Workspace después de completar el tutorial. Para obtener más información sobre la implementación, consulte [Creación de la primera aplicación de AEM Forms](https://help.adobe.com/es_ES/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Información general funcional {#functional-overview}
 
