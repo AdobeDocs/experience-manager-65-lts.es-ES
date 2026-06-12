@@ -4,9 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4984'
+source-wordcount: '5053'
 ht-degree: 51%
 
 ---
@@ -69,7 +70,7 @@ Para obtener más información sobre la API de GraphQL, consulte las siguientes 
 
 La implementación de GraphQL para AEM se basa en la biblioteca Java™ estándar de GraphQL. Consulte:
 
-* [graphQL.org: Java](https://graphql.org/code/#java)
+* [graphQL.org - Java](https://graphql.org/code/#java)
 
 * [GraphQL Java™ en GitHub](https://github.com/graphql-java)
 
@@ -89,7 +90,7 @@ GraphQL utiliza lo siguiente:
 * **[Punto de conexión de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#graphql-aem-endpoint)**
    * La ruta en AEM que responde a las consultas de GraphQL y proporciona acceso a los esquemas de GraphQL.
 
-   * Consulte [Activación del punto de conexión de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) para obtener más información.
+   * Consulte [Habilitación del punto de conexión de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) para obtener más información.
 
 Consulte la [Introducción a GraphQL (GraphQL.org)](https://graphql.org/learn/) para obtener información detallada, incluidas las [Prácticas recomendadas](https://graphql.org/learn/best-practices/).
 
@@ -117,7 +118,7 @@ AEM proporciona funciones para convertir consultas (ambos tipos) a [Consultas pe
 
 No se recomiendan las consultas GraphQL que utilizan peticiones POST, ya que no se almacenan en caché, por lo que en una instancia predeterminada, Dispatcher está configurado para bloquear dichas consultas.
 
-Aunque GraphQL también admite solicitudes de GET, estas solicitudes pueden alcanzar límites (por ejemplo, la longitud de la URL) que se pueden evitar utilizando consultas persistentes.
+Aunque GraphQL también admite solicitudes GET, estas solicitudes pueden alcanzar límites (por ejemplo, la longitud de la dirección URL) que se pueden evitar utilizando consultas persistentes.
 
 Consulte [Habilitar el almacenamiento en caché de consultas persistentes](#enable-caching-persisted-queries) para obtener más información.
 
@@ -258,7 +259,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Número |  `Float`, `[Float]` | Se utiliza para mostrar números de coma flotante y números regulares |
 | Booleano |  `Boolean` |  Se utiliza para mostrar casillas de verificación → instrucciones simples verdaderas/falsas |
 | Fecha y hora | `Calendar` |  Se utiliza para mostrar la fecha y la hora en formato ISO 8086. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Lista desglosada |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
+| Enumeración |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  `[String]` |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  `String` |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
 | Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, al que se hace referencia directamente desde la matriz <br><br>Multicampo, con varios tipos a los que se hace referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, a la que se hace referencia desde la matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
@@ -705,9 +706,9 @@ query {
 
 El tipo de consulta `...Paginated` reutiliza la mayoría de las funciones de tipo de consulta `...List` (filtrado, clasificación), pero en lugar de usar argumentos `offset`/`limit`, emplea los argumentos `first`/`after` definidos por [la especificación de las conexiones del cursor de GraphQL](https://relay.dev/graphql/connections.htm). Puede encontrar una introducción menos formal en la [Introducción a GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: los primeros `n` artículos que se van a devolver.
+* `first`: los `n` primeros elementos que se van a devolver.
 El valor predeterminado es `50`.
-El número máximo es `100`.
+El máximo es `100`.
 * `after`: el cursor que determina el comienzo de la página solicitada. El elemento representado por el cursor no se incluye en el conjunto de resultados. El cursor de un elemento está determinado por el campo `cursor` de la estructura `edges`.
 
 Por ejemplo, mostrar la página de resultados que contiene hasta cinco aventuras, empezando por el elemento de cursor dado en la lista de resultados *completa*:
@@ -1091,8 +1092,9 @@ Preguntas que han surgido:
 
 1. **P**: “*¿En qué se diferencia la API de GraphQL para AEM de la API Generador de consultas?*”
 
-   * **R**: “*La API de GraphQL de AEM ofrece control total sobre la salida JSON y es un estándar en la industria para consultar contenido.
-En el futuro, AEM planea invertir en la API de AEM GraphQL.*&quot;
+   * **A**:
+&quot;*La API GraphQL de AEM ofrece control total sobre la salida JSON y es un estándar en la industria para consultar contenido.
+En el futuro, AEM tiene previsto invertir en la API de AEM GraphQL.*&quot;
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 

@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo personalizar los componentes princ
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 11%
+source-wordcount: '2662'
+ht-degree: 14%
 
 ---
 
@@ -56,7 +57,7 @@ Clona el [proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y luego
 
 1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Adobe Commerce. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
+   Hay que ver que el escaparate esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
 
    ![Tienda configurada con tema de Venia](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -64,7 +65,7 @@ Clona el [proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y luego
 
 El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
 
-1. Vaya hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Vaya a la **Página principal** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Inserte un nuevo componente **teaser de productos** en el contenedor del diseño principal de la página.
 
@@ -477,7 +478,7 @@ En este punto está funcionando la lógica de cuándo mostrar el distintivo **Ec
 
    ![Implementación final de distintivo ecológico](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Felicitaciones {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Ha personalizado su primer componente de AEM CIF. Descargue los [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
@@ -489,9 +490,9 @@ Revise la funcionalidad del distintivo **Nuevo** que ya se ha implementado en el
 
 ## Recursos adicionales {#additional-resources}
 
-- [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
-- [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
-- [Personalización de los componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
+- [Arquetipo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+- [Componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personalizar los componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalización de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es)
 - [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 - [Uso del selector de productos y categorías de CIF](use-cif-pickers.md)

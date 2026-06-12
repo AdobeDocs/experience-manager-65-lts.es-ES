@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 53%
+source-wordcount: '1909'
+ht-degree: 52%
 
 ---
 
@@ -225,10 +225,10 @@ Si necesita este tipo de flexibilidad para su proyecto, continúe con la parte o
 
 * Caché de CDN
 
-   * [Controlar una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
+   * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
 
    * Configurando la [reescritura de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*buscar reescritura de CDN*)
 
 * [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
-* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales para contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

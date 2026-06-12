@@ -9,10 +9,11 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: adf65e7f-9984-40e8-99e3-fadce08bb44e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 78%
+source-wordcount: '450'
+ht-degree: 75%
 
 ---
 
@@ -40,7 +41,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   <tr>
    <td>Combinación de datos</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Imágenes</td>
@@ -54,7 +55,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   </tr>
   <tr>
    <td>Encabezados/pies de página </td>
-   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y los pies de página aparecen solo una vez. Sin embargo, puede configurarlos en el diseño para que aparezcan en varios sitios de la vista previa de los formularios móviles.<br /> </td>
+   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y pies de página aparecerán solo una vez. Sin embargo, puede configurarlos en el diseño para que aparezcan en varios sitios de la vista previa de los formularios móviles.<br /> </td>
    <td>Compatible.</td>
   </tr>
   <tr>
@@ -75,7 +76,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   <tr>
    <td>Compatibilidad con idiomas de derecha a izquierda </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
  </tbody>
 </table>

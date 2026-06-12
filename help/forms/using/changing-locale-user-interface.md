@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 61%
+source-wordcount: '559'
+ht-degree: 59%
 
 ---
 
@@ -79,7 +80,7 @@ Para localizar las imágenes, realice los siguientes pasos:
 
 1. Realice todos los cambios semánticos enumerados en el artículo [Personalizar el espacio de trabajo](../../forms/using/introduction-customizing-html-workspace.md).
 1. Navegue hasta la carpeta *js/runtime/utilidad* y abra el archivo *usersession.js* para editarlo.
-1. Busque el código que aparece en el bloque de código original y agregue la condición *lang !== &#39;nw&#39;* a al enunciado if:
+1. Busque el código que aparece en el bloque de código original y agregue la condición *lang !== &#39;nw&#39;* a la instrucción if:
 
    ```javascript
    // Orignal code
