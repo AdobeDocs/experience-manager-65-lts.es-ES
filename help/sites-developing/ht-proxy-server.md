@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e33640ba-6039-4057-8942-b4faa9b2e250
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 0%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +103,7 @@ Muestra el número de bytes que pasaron entre el cliente (`C`) y el servidor (`S
 
 Por ejemplo, considere una página que produzca el siguiente código cuando se solicite:
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Por ejemplo, considere un documento HTML simple en el repositorio en
 

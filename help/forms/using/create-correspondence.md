@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 82%
+source-wordcount: '3848'
+ht-degree: 80%
 
 ---
 
@@ -57,7 +57,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    >[!NOTE]
    >
-   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Introducir datos {#enterdata}
 
@@ -225,7 +225,7 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
 
 1. Edite los módulos de contenido, según sea necesario, en la pestaña Contenido. Para centrar la atención en el módulo de contenido relevante en la jerarquía de contenido, puede seleccionar la línea o el párrafo correspondiente en la vista previa de la carta o seleccionar el módulo de contenido directamente en la jerarquía de contenido.
 
-   Por ejemplo, la línea “Para permitirnos acceder...” está seleccionada en el gráfico de abajo y el módulo de contenido correspondiente está seleccionado en la pestaña Contenido.
+   Por ejemplo, la línea &quot;Para permitirnos acceder...&quot; está seleccionado en el siguiente gráfico y el módulo de contenido correspondiente está seleccionado en la pestaña Contenido.
 
    Al pulsar Resaltar los módulos seleccionados en el contenido ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), puede deshabilitar o habilitar la funcionalidad para resaltar el módulo de contenido en la pestaña Contenido cuando se pulsa el texto, el párrafo o el campo de datos correspondiente en la vista previa de la carta.
 
@@ -285,7 +285,7 @@ Estas instancias solo se pueden guardar cuando la carta se ve en la instancia de
 
 Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos en las instancias de autor y publicación para habilitar la función Guardar como borrador:
 
-Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para transferir las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* para publicar instancias, deshabilite el componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para deshabilitar el componente, haga lo siguiente:
+Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para transferir las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* a la instancia de publicación, deshabilite el componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para deshabilitar el componente, haga lo siguiente:
 
 1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager. La URL predeterminada es `http://author-server:port/system/console/components`
 
@@ -295,13 +295,13 @@ Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplic
 
 ![Instancia de autor](/help/forms/using/assets/replicationproperties.png)
 
-Para habilitar la función Guardar como borrador, reemplace la URL existente en [!UICONTROL URL de autor de VersionRestoreManager] por la URL de la instancia de autor. Para reemplazar la dirección URL, haga lo siguiente:
+Para habilitar la función Guardar como borrador, reemplace la URL existente en [!UICONTROL URL del autor de VersionRestoreManager] por la URL de la instancia de autor. Para reemplazar la dirección URL, haga lo siguiente:
 
 1. En la instancia de publicación, abra la [!UICONTROL Configuración de la consola web de Adobe Manager]. La URL predeterminada es `https://publish-server:port/system/console/configMgr`
 
 1. Busque y abra el componente **[!UICONTROL Administración de correspondencia: Instancia de autor Versión Restaurar configuraciones]**.
 
-1. Busque el campo **[!UICONTROL URL de autor de VersionRestoreManager]** y especifique la URL para la instancia de autor.
+1. Busque el campo **[!UICONTROL URL del autor de VersionRestoreManager]** y especifique la URL para la instancia de autor.
 
 1. Haga clic en Guardar.
 
@@ -371,7 +371,7 @@ Para obtener más información sobre la compatibilidad con scripts en formulario
 
 De forma predeterminada, la interfaz de usuario de Crear correspondencia utiliza HTML o formularios móviles para obtener la vista previa de la carta. La vista previa de formularios móviles no presenta problemas de representación en ningún explorador, ya que utiliza el complemento nativo del explorador y no requiere complementos adicionales. Puede cambiar el modo de vista previa de la carta a PDF. Sin embargo, las restricciones del explorador pueden crear problemas para diferentes características de la vista previa interactiva PDF de la carta.
 
-Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para cambiar el modo de vista previa de la carta, complete los siguientes pasos:
 

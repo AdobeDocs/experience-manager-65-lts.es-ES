@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo personalizar los componentes princ
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 11%
+source-wordcount: '2662'
+ht-degree: 14%
 
 ---
 
@@ -56,7 +57,7 @@ Clona el [proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y luego
 
 1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Adobe Commerce. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
+   Hay que ver que el escaparate esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
 
    ![Tienda configurada con tema de Venia](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -64,7 +65,7 @@ Clona el [proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y luego
 
 El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
 
-1. Vaya hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Vaya a la **Página principal** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Inserte un nuevo componente **teaser de productos** en el contenedor del diseño principal de la página.
 
@@ -183,7 +184,7 @@ A continuación, amplíe la lógica empresarial del teaser de productos implemen
 
 Los modelos Sling se implementan como Java™ y se pueden encontrar en el módulo **core** del proyecto generado.
 
-Use [el IDE de su elección](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es#set-up-the-development-ide) para importar el proyecto Venia. Las capturas de pantalla utilizadas provienen del [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es&#microsoft-visual-studio-code).
+Use [el IDE de su elección](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar el proyecto Venia. Las capturas de pantalla utilizadas provienen del [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. En su IDE, vaya al módulo **core** a: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -325,7 +326,7 @@ Este es un nuevo método para encapsular la lógica que indica si el producto ti
 
 Una extensión común de los componentes de AEM es modificar el marcado que genera el componente. Esto se realiza anulando la [secuencia de comandos HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) que utiliza el componente para representar su marcado. El lenguaje de plantilla HTML (HTL) es un lenguaje de plantilla ligero que los componentes de AEM utilizan para representar dinámicamente el marcado basado en contenido creado, lo que permite reutilizar los componentes. El teaser de productos, por ejemplo, se puede reutilizar una y otra vez para mostrar diferentes productos.
 
-En este caso, desea renderizar un titular sobre el teaser para indicar que el producto es &quot;Respetuoso con el medio ambiente&quot; basado en un atributo personalizado. El patrón de diseño para [personalizar el marcado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es#customizing-the-markup) de un componente es estándar para todos los componentes de AEM, no solo para los componentes principales de AEM CIF.
+En este caso, desea renderizar un titular sobre el teaser para indicar que el producto es &quot;Respetuoso con el medio ambiente&quot; basado en un atributo personalizado. El patrón de diseño para [personalizar el marcado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de un componente es estándar para todos los componentes de AEM, no solo para los componentes principales de AEM CIF.
 
 >[!NOTE]
 >
@@ -345,7 +346,7 @@ En este caso, desea renderizar un titular sobre el teaser para indicar que el pr
        componentGroup="Venia - Commerce"/>
    ```
 
-   La definición del componente para el componente teaser de productos en este proyecto está arriba. Observe la propiedad `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este es un ejemplo de creación de un [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es#create-proxy-components). En lugar de copiar y pegar todas las secuencias de comandos HTL del teaser de productos de los componentes principales de AEM CIF, puede usar `sling:resourceSuperType` para heredar toda la funcionalidad.
+   La definición del componente para el componente teaser de productos en este proyecto está arriba. Observe la propiedad `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este es un ejemplo de creación de un [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). En lugar de copiar y pegar todas las secuencias de comandos HTL del teaser de productos de los componentes principales de AEM CIF, puede usar `sling:resourceSuperType` para heredar toda la funcionalidad.
 
 1. Abra el archivo `productteaser.html`. Esta es una copia del archivo `productteaser.html` del [teaser de productos CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -385,7 +386,7 @@ En este caso, desea renderizar un titular sobre el teaser para indicar que el pr
 
    Al llamar a un método del modelo Sling en HTL, la parte `get` y `is` del método se borra y la primera letra se convierte a minúsculas. Así que `isShowBadge()` se convierte en `.showBadge` y `isEcoFriendly` se convierte en `.ecoFriendly`. En función del valor booleano devuelto por `.isEcoFriendly()`, determina si se muestra `<span>Eco Friendly</span>`.
 
-   Para obtener más información acerca de `data-sly-test` y otras instrucciones de bloque HTL, consulte [Especificación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=es).
+   Para obtener más información acerca de `data-sly-test` y otras instrucciones de bloque HTL, consulte [Especificación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Guarde los cambios e implemente las actualizaciones en AEM con sus habilidades con Maven, desde un terminal de línea de comandos:
 
@@ -477,7 +478,7 @@ En este punto está funcionando la lógica de cuándo mostrar el distintivo **Ec
 
    ![Implementación final de distintivo ecológico](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Felicitaciones {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Ha personalizado su primer componente de AEM CIF. Descargue los [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
@@ -489,9 +490,9 @@ Revise la funcionalidad del distintivo **Nuevo** que ya se ha implementado en el
 
 ## Recursos adicionales {#additional-resources}
 
-- [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
-- [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
-- [Personalización de los componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
+- [Arquetipo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+- [Componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personalizar los componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalización de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es)
 - [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 - [Uso del selector de productos y categorías de CIF](use-cif-pickers.md)

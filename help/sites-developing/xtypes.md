@@ -11,7 +11,7 @@ role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
 source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '6205'
 ht-degree: 0%
 
 ---
@@ -282,7 +282,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
 * `datepicker`
 
-  [Selector de fecha CQ.Ext.Date](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   Un selector de fechas emergente. La clase [DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) utiliza esta clase para permitir examinar y seleccionar fechas válidas.
 
@@ -308,7 +308,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Una pequeña clase auxiliar para crear un [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) configurado con un [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) y [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) para facilitar la interacción con un [proveedor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)CQ.Ext.Direct[&#x200B; del lado del servidor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+  Una pequeña clase auxiliar para crear un [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) configurado con un [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) y [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) para facilitar la interacción con un [proveedor[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) del lado del servidor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 * `displayfield`
 

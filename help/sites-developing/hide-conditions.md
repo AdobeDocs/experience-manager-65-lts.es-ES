@@ -8,16 +8,17 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b96517c1-e0b9-4ccd-9ac2-f9e56a812382
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
 # Uso de Ocultar condiciones {#using-hide-conditions}
 
-Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configure el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=es) en el [editor de plantillas](/help/sites-authoring/templates.md) y decida deshabilitar las opciones para generar la lista basada en páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que, cuando se represente el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
+Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configure el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) en el [editor de plantillas](/help/sites-authoring/templates.md) y decida deshabilitar las opciones para generar la lista basada en páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que, cuando se represente el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
 
 ## Información general {#overview}
 
@@ -53,9 +54,9 @@ Al definir la expresión Hide, tenga en cuenta lo siguiente:
 * Los valores son de solo lectura.
 * Las funciones (si es necesario) deben limitarse a un conjunto determinado proporcionado por el servicio.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-Se pueden encontrar ejemplos de condiciones de ocultación en AEM y en los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=es).
+Se pueden encontrar ejemplos de condiciones de ocultación en AEM y en los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [Con el editor de plantillas](/help/sites-authoring/templates.md), el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Pueden habilitarse o deshabilitarse opciones como permitir que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc.
 

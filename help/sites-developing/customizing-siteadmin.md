@@ -1,5 +1,5 @@
 ---
-title: Personalización de la consola Sitios web (IU clásica)
+title: Personalización de la consola de sitios web (IU clásica)
 description: La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 445cb8c3-e0c4-44f8-a140-9e7215e3b73a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
-# Personalización de la consola Sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
+# Personalización de la consola de sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
 
 ## Adición de una columna personalizada a la consola Sitios web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
@@ -114,12 +115,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. Por ejemplo, cuando se desplaza a la carpeta `/content/geometrixx`, se envía la siguiente solicitud al servidor de AEM para crear la consola:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Para asegurarse de que el nuevo servicio se está ejecutando después de haber implementado el paquete que lo contiene:
 
 1. Dirija el explorador a la siguiente dirección URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La respuesta debe mostrar las nuevas propiedades como se indica a continuación:
 

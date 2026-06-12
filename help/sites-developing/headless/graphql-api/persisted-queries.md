@@ -7,14 +7,14 @@ role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
 source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1390'
 ht-degree: 85%
 
 ---
 
 # Consultas persistentes de GraphQL {#persisted-queries-caching}
 
-Las consultas persistentes son consultas de GraphQL que se crean y almacenan en el servidor de Adobe Experience Manager (AEM). Las consultas persistentes pueden solicitarlas las aplicaciones cliente con una petición GET. La respuesta de una solicitud de GET se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de la aplicación cliente solicitante. Esto difiere de las consultas estándar de GraphQL, que se ejecutan mediante peticiones POST en las que la respuesta no se puede almacenar en caché fácilmente.
+Las consultas persistentes son consultas de GraphQL que se crean y almacenan en el servidor de Adobe Experience Manager (AEM). Las consultas persistentes pueden solicitarlas las aplicaciones cliente con una petición GET. La respuesta de una petición GET se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de la aplicación cliente solicitante. Esto difiere de las consultas estándar de GraphQL, que se ejecutan mediante peticiones POST en las que la respuesta no se puede almacenar en caché fácilmente.
 
 <!--
 >[!NOTE]
@@ -31,7 +31,7 @@ Las consultas persistentes siempre deben utilizar el punto de conexión relacion
 * La configuración global y el punto de conexión
 La consulta tiene acceso a todos los modelos de fragmentos de contenido.
 * Configuraciones de sitios específicas y puntos de conexión
-La creación de una consulta persistente para una configuración de sitios específica requiere un punto de conexión específico de configuración de sitios correspondiente (para proporcionar acceso a los modelos de fragmentos de contenido relacionados).
+La creación de una consulta persistente para una configuración de Sites específica requiere un punto de conexión específico de configuración de Sites correspondiente (para proporcionar acceso a los modelos de fragmentos de contenido relacionados).
 Por ejemplo, para crear una consulta persistente específica para la configuración de WKND Sites, se debe crear de antemano una configuración de sitios específica de WKND y un punto de conexión específico de WKND.
 
 >[!NOTE]
@@ -353,7 +353,7 @@ El `cache-control` se puede configurar en el momento de la creación (PUT) o má
 
 ### Administración de la caché con una configuración OSGi {#cache-osgi-configration}
 
-Para administrar la caché globalmente, puede [configurar las opciones de OSGi](/help/sites-deploying/configuring-osgi.md) para la **configuración del servicio de consultas persistentes**. De lo contrario, esta configuración de OSGi usa los [valores predeterminados para las instancias de publicación](#publish-instances).
+Para administrar la caché globalmente, puede [configurar la configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para la **Configuración del Servicio de consultas persistente**. De lo contrario, esta configuración de OSGi usa los [valores predeterminados para las instancias de publicación](#publish-instances).
 
 >[!NOTE]
 >

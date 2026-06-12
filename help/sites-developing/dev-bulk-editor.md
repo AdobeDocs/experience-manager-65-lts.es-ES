@@ -1,5 +1,5 @@
 ---
-title: Desarrollo del editor en bloque
+title: Desarrollo del editor masivo
 description: El etiquetado permite clasificar y organizar el contenido
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
-# Desarrollo del editor en bloque{#developing-the-bulk-editor}
+# Desarrollo del editor masivo{#developing-the-bulk-editor}
 
 En esta sección se describe cómo desarrollar la herramienta Editor por lotes y cómo ampliar el componente Lista de productos, que se basa en el Editor por lotes.
 
@@ -399,7 +400,7 @@ Se pueden configurar todas las partes del editor en bloque. En la tabla siguient
    <td>Configuración del widget del panel de búsqueda</td>
   </tr>
   <tr>
-   <td>rejilla</td>
+   <td>Cuadrícula</td>
    <td>Configuración del widget de cuadrícula</td>
   </tr>
   <tr>
@@ -516,7 +517,7 @@ En el ejemplo anterior, la columna de selección contiene solo casillas de verif
 
 **Posición forzada**
 
-Los metadatos de posición forzada forcedPosition le permiten especificar dónde se coloca la columna dentro de la cuadrícula: 0 es el primer lugar y &lt;número de columnas>-1 es la última posición. Se ignora cualquier otro valor.
+Los metadatos de posición forzada forcedPosition le permiten especificar dónde se coloca la columna dentro de la cuadrícula: 0 es el primer lugar y &lt;número de columnas>-1 es la última posición. Se omite cualquier otro valor.
 
 En el ejemplo anterior, la columna de selección es la primera columna como forcedPosition=&quot;0&quot;.
 
