@@ -7,8 +7,8 @@ role: Admin,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 61%
+source-wordcount: '1915'
+ht-degree: 60%
 
 ---
 
@@ -32,7 +32,7 @@ La siguiente lista de comprobación tiene como objetivo ayudarle a optimizar la 
 
 Se recomienda encarecidamente el uso de consultas GraphQL persistentes.
 
-Las consultas persistentes de GraphQL ayudan a reducir el rendimiento de la ejecución de consultas mediante la red de entrega de contenido (CDN). Las aplicaciones cliente solicitan consultas persistentes con solicitudes de GET para la ejecución rápida habilitada para Edge.
+Las consultas persistentes de GraphQL ayudan a reducir el rendimiento de la ejecución de consultas mediante la red de entrega de contenido (CDN). Las aplicaciones cliente solicitan consultas persistentes con solicitudes GET para la ejecución rápida habilitada para Edge.
 
 **Referencia adicional**
 
@@ -185,7 +185,7 @@ GraphQL en AEM admite dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Se usa para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
-Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
+Para usarlo, debe proporcionar la posición del primer elemento que se va a devolver (el `offset`) y el número de elementos que se van a devolver (el `limit` o el tamaño de página).
 
 * [paginación basada en cursor](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (representada por `first`y `after`)
 Esto proporciona un ID único para cada elemento; también conocido como cursor.
@@ -338,6 +338,6 @@ Modifique únicamente los fragmentos de contenido y sus recursos mediante la IU 
 
 ### Prueba de consultas {#test-your-queries}
 
-Procesar consultas de GraphQL es similar a procesar consultas de búsqueda, y es significativamente más complejo que las solicitudes simples de API de todo el contenido de GET.
+Procesar consultas de GraphQL es similar a procesar consultas de búsqueda, y es significativamente más complejo que las solicitudes de API simples de GET-all-content.
 
 Planificar, probar y optimizar cuidadosamente las consultas en un entorno controlado que no sea de producción es clave para el éxito posterior cuando se utiliza en producción.
