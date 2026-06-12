@@ -358,7 +358,7 @@ A continuación se detallan los posibles problemas junto con las resoluciones:
    * Si esto no resuelve el problema y persisten las excepciones de `AsyncIndexUpdate`:
 
       1. [Reindexe](#how-to-re-index) el índice erróneo
-      1. Presentar también un ticket de [Soporte técnico de Adobe](https://helpx.adobe.com/support.html)
+      1. Presentar también un ticket de [Soporte técnico de Adobe](https://helpx.adobe.com/es/support.html)
 
 ### Cómo reindexar {#how-to-re-index}
 
