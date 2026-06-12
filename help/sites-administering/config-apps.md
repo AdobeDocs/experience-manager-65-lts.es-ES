@@ -25,7 +25,7 @@ Adobe Experience Manager Apps permite actualizar el contenido de la OTA de la ap
 Para configurar el servicio de filtro referente:
 
 * Abra la consola Apache Felix (**Configuraciones**) en:
-* https://<server>:<port_number>/system/console/configMgr
+* https://&lt;server>:<port_number>/system/console/configMgr
 * Inicie sesión como administrador.
 * En el menú **Configuraciones**, seleccione: *Filtro de referente de Apache Sling*
 * Marque el campo Permitir vacío para poder permitir encabezados de referente vacíos o que falten.

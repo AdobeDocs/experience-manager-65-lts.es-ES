@@ -54,7 +54,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 Es importante tener en cuenta los siguientes puntos antes de comenzar:
 
-* La creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles)
+* La creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. &#x200B;](#roles)
 
 ### Funciones {#roles}
 
@@ -456,7 +456,7 @@ En modo **Structure** del editor de plantillas:
 
   Para quitar una configuración, haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-  Para quitar una configuración, haga clic en el botón** Delete**.
+  Para quitar una configuración, haga clic en el botón **&#x200B; Delete**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -474,7 +474,7 @@ En modo **Structure** del editor de plantillas:
 
   >[!NOTE]
   >
-  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 

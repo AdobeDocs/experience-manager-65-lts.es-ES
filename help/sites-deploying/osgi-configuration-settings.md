@@ -334,7 +334,7 @@ Nombres de cookies que podrían contener un ID de usuario.
 * **Nombres de parámetros**
 Nombres de los parámetros de solicitud que pueden proporcionar el ID de usuario.
 
-* Mapa de usuario de ****
+* Mapa de usuario de **&#x200B;**
 Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por uno diferente en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario `admin` aparece a ambos lados del mapa, se omite la asignación. El carácter &quot;=&quot; debe tener un carácter de escape &quot;\&quot; inicial.
 
 * **Formato**
