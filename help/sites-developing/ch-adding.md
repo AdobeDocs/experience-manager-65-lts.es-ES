@@ -1,17 +1,18 @@
 ---
-title: Adición de ContextHub a las páginas y acceso a las tiendas
+title: Adición de ContextHub a páginas y acceso a almacenes
 description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a2b32ec3-ff1b-47e0-b346-53a5db5ae27f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '925'
+ht-degree: 1%
 
 ---
 
-# Adición de ContextHub a las páginas y acceso a las tiendas {#adding-contexthub-to-pages-and-accessing-stores}
+# Adición de ContextHub a páginas y acceso a almacenes {#adding-contexthub-to-pages-and-accessing-stores}
 
 Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub.
 

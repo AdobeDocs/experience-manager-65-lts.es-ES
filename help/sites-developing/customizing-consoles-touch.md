@@ -12,8 +12,8 @@ role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 0%
+source-wordcount: '684'
+ht-degree: 1%
 
 ---
 
@@ -151,7 +151,6 @@ Para personalizar las columnas en la vista de lista:
 1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Propiedad `pageInfoProviderType`.
 
    Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.

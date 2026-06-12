@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: cf067a359d9f1fbe46e1614d91ce55bf3ee5bf18
+exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6108'
 ht-degree: 0%
 
 ---
@@ -170,7 +171,7 @@ Puede implementar este paquete en tiempo de ejecución o agregarlo a la aplicaci
 Una vez implementada la caché, el portlet almacena en caché el contenido de la instancia de publicación. La caché del portlet se puede invalidar con un vaciado de Dispatcher desde AEM. Para configurar el portlet para que utilice su propia caché:
 
 1. Configure un agente de replicación en el autor que se dirija al servidor del portal.
-1. Suponiendo que el servidor de portal se ejecute en el host **localhost**, **puerto 8080 &#x200B;** y que la aplicación web del portlet de AEM esté montada en el contexto **cqportlet**, la dirección URL para vaciar la caché es `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilice GET como método.
+1. Suponiendo que el servidor de portal se ejecute en el host **localhost**, **puerto 8080** y que la aplicación web del portlet de AEM esté montada en el contexto **cqportlet**, la dirección URL para vaciar la caché es `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilice GET como método.
    **Nota:** En lugar de usar un parámetro de solicitud, puede enviar un encabezado http denominado **Ruta**.
 
 #### Vaciar la caché mediante el agente de replicación {#flushing-the-cache-via-replication-agent}
@@ -214,7 +215,7 @@ Para configurar un agente de replicación para el portal:
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. En el campo **Método HTTP**, escriba **GET**.
-1. En el campo **Encabezados HTTP**, haga clic en **+** para agregar una nueva entrada y escriba **Ruta: {path}**.
+1. En el campo **Encabezados HTTP**, haga clic en **+** para agregar una nueva entrada y escriba **Ruta:{path}**.
 1. Si es necesario, haga clic en la ficha **Proxy** e introduzca la información de proxy al agente.
 1. Haga clic en **Aceptar** para guardar los cambios.
 1. Para probar la conexión, haga clic en el vínculo **Probar conexión**. Aparece un mensaje de registro que indica si la prueba de replicación se realizó correctamente. Por ejemplo:
@@ -388,7 +389,7 @@ Para abrir la página de administración del sitio web o editar una página desd
    </LoginModule>
    ```
 
-1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** en el menú desplegable.
+1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** del menú desplegable.
 1. Edite el parámetro **URL Root Path** para que contenga únicamente el valor único **/**.
 
 ### Privilegios {#privileges}
@@ -399,7 +400,7 @@ Algunas funciones del portlet están protegidas por privilegios. El usuario actu
 * &quot;prefs&quot; : si el usuario tiene este privilegio, se le permite ver o cambiar las preferencias del portlet.
 * &quot;cq-author:edit&quot; : Con este privilegio, el usuario puede invocar la vista de edición del contenido.
 * &quot;cq-author:preview&quot; : Con este privilegio, el usuario puede ver la vista previa.
-* &quot;cq-author:siteadmin&quot; : Con este privilegio, se permite al usuario abrir siteadmin en AEM.
+* &quot;cq-author:siteadmin&quot; : Con este privilegio, el usuario puede abrir el administrador del sitio dentro de AEM.
 
 El mejor método para administrar los privilegios es utilizar las funciones de portal y asignarles funciones. Esto se puede hacer mediante una configuración OSGi. El &quot;Administrador de privilegios de Day Portal Director&quot; se puede configurar con un conjunto de funciones para cada privilegio. Si el usuario tiene uno de los roles, el usuario tiene el privilegio correspondiente.
 
@@ -443,7 +444,7 @@ META-INF/MANIFEST.MF
 /com/day/cq/portlet/toolbar/layout/toolbar.css
 ```
 
-La carpeta META-INF contiene el archivo MANIFEST.MF requerido por OSGi para identificarlo como un paquete. Aparece de la siguiente manera:
+La carpeta META-INF contiene el archivo MANIFEST.MF necesario para que OSGi lo identifique como un paquete. Aparece de la siguiente manera:
 
 ```xml
 Manifest-Version: 1.0
@@ -489,7 +490,7 @@ La vista de administración tiene cuatro botones: Editar, pestaña Sitios web, A
 | Cadena de marcador | Descripción |
 |---|---|
 | {buttonEdit} | El marcador de posición se reemplazó con el botón **Editar**, que abre una nueva ventana con la página actual en el modo de edición de AEM. |
-| {buttonWebsites} | Marcador de posición, reemplazado por un botón que abre la pestaña Sitios web de AEM WCM. |
+| {buttonWebsites tab} | Marcador de posición, reemplazado por un botón que abre la pestaña Sitios web de AEM WCM. |
 | {buttonRefresh} | Actualiza la vista actual. |
 | {buttonBack} | Vuelve a cambiar el portlet a la vista de publicación. |
 

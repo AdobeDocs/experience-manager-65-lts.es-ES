@@ -11,7 +11,7 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '5053'
+source-wordcount: '5215'
 ht-degree: 17%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 17%
 >
 >Además, puede revisar un artículo de la Base de conocimiento sobre [consejos para el ajuste del rendimiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
-Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes. Aunque este valor varía según la solicitud, se puede definir un valor de objetivo promedio. Una vez demostrado que este valor es alcanzable y mantenible, puede utilizarse para monitorizar el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
+Uno de los principales problemas es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes. Aunque este valor varía según la solicitud, se puede definir un valor de objetivo promedio. Una vez demostrado que este valor es alcanzable y mantenible, puede utilizarse para monitorizar el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
 
 Los tiempos de respuesta que busca son diferentes en los entornos de creación y publicación, y reflejan las diferentes características de la audiencia de destino:
 

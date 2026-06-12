@@ -7,12 +7,12 @@ role: User,Admin,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '582'
 ht-degree: 80%
 
 ---
 
-# Diferencias de página  {#page-diff}
+# Diferencias de página{#page-diff}
 
 ## Introducción {#introduction}
 
@@ -35,7 +35,7 @@ La comparación de diferencias en paralelo permite comparar lo siguiente:
 
 Consulte los temas respectivos sobre cómo iniciar la comparación de diferencias dentro de esos contextos.
 
-### Presentación de diferencias   {#presentation-of-differences}
+### Presentación de diferencias {#presentation-of-differences}
 
 Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
 
@@ -64,7 +64,7 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 >
 >Al comparar las copias de idioma, el resaltado está desactivado, ya que en una traducción todo cambia y el resaltado no proporcionará ninguna ventaja.
 
-### Pantalla completa y salida   {#fullscreen-and-exiting}
+### Pantalla completa y salida {#fullscreen-and-exiting}
 
 Para centrarse en un contenido determinado, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del explorador.
 
@@ -80,7 +80,7 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
-## Restricciones   {#limitations}
+## Restricciones {#limitations}
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 

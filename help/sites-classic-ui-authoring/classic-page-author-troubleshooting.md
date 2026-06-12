@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: be4397d1-0680-4b44-bdd2-825b521a44d6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -42,7 +43,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Aquí hay varias posibilidades:
    * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Añada `?` al final de la URL de la página. Por ejemplo:
+   * Agregar `?` al final de la dirección URL de la página. Por ejemplo:
 
      `http://localhost:4502/sites.html/content?`
 

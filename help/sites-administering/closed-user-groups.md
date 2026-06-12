@@ -12,8 +12,8 @@ role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6654'
-ht-degree: 0%
+source-wordcount: '6780'
+ht-degree: 1%
 
 ---
 
@@ -819,7 +819,7 @@ El modelo de autorización de CUG permite activar individualmente la gestión de
 
 En la nueva evaluación de configuración predeterminada de AEM de las políticas de CUG, solo se activa con el modo de ejecución &quot;publicar&quot;. Consulte los detalles de la configuración predeterminada [desde AEM 6.3](#default-configuration-since-aem) para obtener más información. Esto se puede comprobar comparando las políticas efectivas para una ruta determinada con las políticas almacenadas en el contenido. Las políticas efectivas solo se mostrarán en caso de que la evaluación de permisos para CUG esté habilitada.
 
-Como se explicó anteriormente, las políticas de control de acceso de CUG ahora siempre se almacenan en el contenido, pero la evaluación de los permisos efectivos que resultan de esas políticas solo se aplicará si **Evaluación de CUG habilitada** está activada en la consola del sistema en la configuración de Apache Jackrabbit Oak **CUG.** De manera predeterminada, solo está habilitado con el modo de ejecución &quot;publicar&quot;.
+Como se explicó anteriormente, las políticas de control de acceso de CUG ahora siempre se almacenan en el contenido, pero la evaluación de los permisos efectivos que resultan de esas políticas solo se aplicará si **Evaluación de CUG habilitada** está activada en la consola del sistema en la configuración de Apache Jackrabbit Oak **CUG.** De forma predeterminada, solo está habilitado con el modo de ejecución &quot;publicar&quot;.
 
 ### Diferencias Con Respecto A La Autenticación {#differences-with-regards-to-authentication}
 

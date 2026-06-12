@@ -9,7 +9,7 @@ role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1410'
 ht-degree: 3%
 
 ---
@@ -309,7 +309,7 @@ Puede haber ocasiones en que sea necesario anidar cuadrículas adaptables para s
 
 Cuando no pueda evitar utilizar cuadrículas adaptables anidadas, asegúrese de lo siguiente:
 
-* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tienen la propiedad `layout = responsiveGrid`.
+* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tiene la propiedad `layout = responsiveGrid`.
 * No mezcle la propiedad `layout = simple` en la jerarquía de contenedor.
 
 Esto incluye todos los contenedores estructurales de la plantilla de página.

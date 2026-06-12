@@ -8,10 +8,11 @@ content-type: reference
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +39,7 @@ Especifique el mismo nombre de atributo para ambos servicios. El atributo está 
 
 Para configurar el SSO de una instancia de AEM, configure el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+1. Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
@@ -84,8 +85,7 @@ Para configurar el SSO de una instancia de AEM, configure el [Controlador de aut
 >* `disp_iis.ini`
 >* IIS
 >
->En el conjunto `disp_iis.ini`:
->(consulte [instalación de Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es#microsoft-internet-information-server) para obtener información detallada)
+>En el conjunto `disp_iis.ini`:>(consulte [instalación de Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es#microsoft-internet-information-server) para obtener información detallada)
 >
 >* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
@@ -105,7 +105,7 @@ Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, 
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Para una solicitud de cookie (mediante la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 

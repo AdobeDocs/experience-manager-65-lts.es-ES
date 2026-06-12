@@ -1,5 +1,5 @@
 ---
-title: Herramienta Servidor Proxy (proxy.jar)
+title: Herramienta de servidor proxy (proxy.jar)
 description: Obtenga información acerca de la herramienta de servidor proxy (proxy.jar) en Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
 
-# Herramienta Servidor Proxy (proxy.jar){#proxy-server-tool-proxy-jar}
+# Herramienta de servidor proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
@@ -115,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que esta entrada proviene del cliente (es una solicitud de una página web)
 * 0 es el número de conexión (el contador de conexión comienza en 0)
 * #00000 el desplazamiento en la secuencia de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* [GET &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
+* [GET &lt;??>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 

@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4f36487c-45a2-4c18-b3cc-bb9284d68f49
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '154'
+ht-degree: 18%
 
 ---
 
@@ -21,10 +22,10 @@ Adobe Experience Manager Apps permite actualizar el contenido de la OTA de la ap
 
 ## Configuración de un encabezado de referente vacío {#configuring-empty-referrer-header}
 
-Para configurar el servicio del filtro de referente:
+Para configurar el servicio de filtro referente:
 
 * Abra la consola Apache Felix (**Configuraciones**) en:
-* https://&lt;server>:&lt;port_number>/system/console/configMgr
+* https://&lt;server>:<port_number>/system/console/configMgr
 * Inicie sesión como administrador.
 * En el menú **Configuraciones**, seleccione: *Filtro de referente de Apache Sling*
 * Marque el campo Permitir vacío para poder permitir encabezados de referente vacíos o que falten.

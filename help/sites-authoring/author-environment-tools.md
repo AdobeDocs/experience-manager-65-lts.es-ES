@@ -12,14 +12,14 @@ role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 47%
+source-wordcount: '2223'
+ht-degree: 46%
 
 ---
 
 # Creación: entorno y herramientas{#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
 ## Administración del sitio {#managing-your-site}
 
@@ -43,7 +43,7 @@ Puede editar una página con el editor de páginas. Por ejemplo:
 >
 >Si lo desea, puede omitir el recorrido y repetirlo en cualquier momento seleccionando una de las opciones del menú **Información de página**.
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
@@ -52,7 +52,7 @@ Al editar una página, se puede acceder a la **Ayuda** desde los siguientes punt
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes   {#components-browser}
+## Navegador de componentes {#components-browser}
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación adecuada y editarse para añadir contenido.
 
@@ -288,7 +288,7 @@ Por ejemplo, cuando sea apropiado, **Información de la página** también tiene
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Al editar una página existen varios modos que permiten realizar diferentes acciones:
 
@@ -304,7 +304,7 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 
 * [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp): le permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite echar un vistazo rápido al estado de la Live Copy y de los componentes que se han heredado o no.
-* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido. 
+* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido.
 
 * [Anotar:](/help/sites-authoring/annotations.md) se utiliza para añadir o ver anotaciones en la página.
 
@@ -324,7 +324,7 @@ Puede acceder a ellas mediante los iconos de la esquina superior derecha. El ico
 
 A menudo, durante la creación es necesario seleccionar otro recurso, como al definir un vínculo a otra página o recurso o al seleccionar una imagen. Para poder seleccionar una ruta con facilidad, los [campos de ruta](/help/sites-authoring/author-environment-tools.md#path-fields) ofrecen la opción de completado automático y el [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) permite una selección más sólida.
 
-### Campos de rutas   {#path-fields}
+### Campos de rutas {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información acerca de cómo usar y editar componentes, vea [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 
