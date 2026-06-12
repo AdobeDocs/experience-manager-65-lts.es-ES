@@ -8,10 +8,11 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3073'
-ht-degree: 0%
+source-wordcount: '3107'
+ht-degree: 3%
 
 ---
 
@@ -181,14 +182,14 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
    <td><p>Evite asignar derechos de acceso usuario por usuario. Esto se debe a varios motivos:</p>
     <ul>
      <li>Hay muchos más usuarios que grupos, por lo que los grupos simplifican la estructura.</li>
-     <li>Los grupos ayudan a proporcionar una visión general de todas las cuentas.</li>
+     <li>Los grupos ayudan a proporcionar información general de todas las cuentas.</li>
      <li>La herencia es más sencilla con los grupos.</li>
      <li>Los usuarios van y vienen. Los grupos son a largo plazo.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><i>Sea positivo</i></td>
-   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso del principal del grupo (siempre que sea posible). Evite utilizar una instrucción Deny.</p> <p>Las entidades de seguridad de grupo se evalúan en orden, tanto dentro de la jerarquía como en orden dentro de una sola lista de control de acceso.</p> </td>
+   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso del principal del grupo (siempre que sea posible). Evite utilizar una instrucción Denegar.</p> <p>Las entidades de seguridad de grupo se evalúan en orden, tanto dentro de la jerarquía como en orden dentro de una sola lista de control de acceso.</p> </td>
   </tr>
   <tr>
    <td><i>Manténgalo simple</i></td>
@@ -200,7 +201,7 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
   </tr>
   <tr>
    <td><i>Usuarios/grupos predeterminados</i></td>
-   <td>Actualice siempre Usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad.</td>
+   <td>Actualice siempre los usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad.</td>
   </tr>
  </tbody>
 </table>
@@ -511,7 +512,7 @@ Los siguientes privilegios están disponibles para seleccionarlos al agregar una
    <td>Es un privilegio agregado que contiene todos los demás privilegios predefinidos.</td>
   </tr>
   <tr>
-   <td><strong>Avanzado </strong></td>
+   <td><strong>Avanzado</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -560,7 +561,7 @@ Los siguientes privilegios están disponibles para seleccionarlos al agregar una
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Elimine un nodo.</td>
+   <td>Quitar un nodo.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>

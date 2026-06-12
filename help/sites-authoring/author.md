@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 32%
+source-wordcount: '430'
+ht-degree: 30%
 
 ---
 
@@ -69,14 +69,14 @@ Por lo general, el entorno de publicación se encuentra dentro de la zona desmil
 >
 >Lamentablemente, a veces se produce una superposición en la terminología utilizada. Esto puede ocurrir con:
 >
->* **Publicar o cancelar la publicación**
->  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>* **Publicar / Cancelar publicación**
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los usuarios en su entorno de publicación.
 >
->* **Activar o desactivar**
+>* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar o replicación**
->  Son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
+>* **Replicar/Replicación**
+>  Estos son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
 
 #### Dispatcher {#dispatcher}

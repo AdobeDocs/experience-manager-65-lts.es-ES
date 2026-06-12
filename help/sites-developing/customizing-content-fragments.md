@@ -10,8 +10,8 @@ role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 1%
+source-wordcount: '2826'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,6 @@ Los fragmentos de contenido con contenido estructurado (es decir, basados en un 
 * Todo el contenido se almacena en el nodo `jcr:content/data` del recurso:
 
    * Los datos del elemento se almacenan en el subnodo principal:
-
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación:
@@ -91,7 +90,7 @@ por ejemplo, `jcr:content/data/myvariation`
    * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento:
 por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
 
-* Los metadatos y el contenido asociado se almacenan debajo de `jcr:content/metadata`
+* Los metadatos y el contenido asociado se almacenan a continuación `jcr:content/metadata`
 Excepto el título y la descripción, que no se consideran metadatos tradicionales y se almacenan en `jcr:content`
 
 #### Asignación de fragmentos de contenido simples a Assets {#mapping-simple-content-fragments-to-assets}
@@ -130,7 +129,7 @@ Para obtener más información, consulte [Fragmento de contenido: eliminar consi
 
 >[!CAUTION]
 >
->Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 
 Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, como cualquier otro tipo de recurso. AEM proporciona el componente principal [**Fragmento de contenido**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) - un componente [que le permite incluir fragmentos de contenido en sus páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal **Fragmento de contenido**.
 
@@ -382,7 +381,7 @@ Se pueden adaptar las siguientes opciones:
 
 ### Advertencias {#caveats}
 
-Cabe señalar que:
+Cabe señalar lo siguiente:
 
 * La API se implementa para proporcionar la funcionalidad admitida por la interfaz de usuario de.
 * La API completa está diseñada para **no** mantener los cambios automáticamente (a menos que se indique lo contrario en el JavaDoc de la API). Por lo tanto, siempre tendrá que asignar el solucionador de recursos de la solicitud correspondiente (o el solucionador que esté utilizando).
@@ -411,7 +410,7 @@ Consulte lo siguiente:
 
 Se inicia una sesión de edición cuando el usuario abre un fragmento de contenido en una de las páginas del editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
 
-### Requisitos  {#requirements}
+### Requisitos {#requirements}
 
 Los requisitos para controlar una sesión de edición son:
 

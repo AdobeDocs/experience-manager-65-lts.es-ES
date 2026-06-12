@@ -83,7 +83,7 @@ Para invocar mediante programación los procesos de AEM Forms mediante Remoting,
 
 * *&lt;directorio_instalación>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  donde &lt;*install_directory*> es el directorio en el que está instalado AEM Forms.
+  donde &lt;*install_directory*> es el directorio donde está instalado AEM Forms.
 
 **Consulte también**
 

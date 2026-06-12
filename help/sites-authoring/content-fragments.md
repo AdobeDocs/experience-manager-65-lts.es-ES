@@ -12,8 +12,8 @@ role: User,Admin,Developer
 exl-id: 5bde6c78-84bc-48f5-b06f-1c4282eaf5c1
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 64%
+source-wordcount: '1158'
+ht-degree: 65%
 
 ---
 
@@ -64,7 +64,7 @@ Los fragmentos de contenido permiten lo siguiente:
    * Puede confiar en que el contenido multimedia asociado se seleccione en función de la relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página       {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla.
 
@@ -134,7 +134,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Gestionar encabezados como sus propios párrafos**
 
-### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permite [editar y administrar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md).
 
@@ -142,7 +142,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento puede afectar a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Añadir contenido intermedio       {#adding-in-between-content}
+### Añadir contenido intermedio {#adding-in-between-content}
 
 Cuando se agrega un fragmento de contenido específico a la página, aparece un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -164,7 +164,7 @@ Para el contenido intermedio puede hacer lo siguiente:
 >
 >También puede [insertar recursos visuales (imágenes) en el propio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo anterior.
+>Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente.
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ Para el contenido intermedio puede hacer lo siguiente:
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 >
 
-### Uso de contenido asociado       {#using-associated-content}
+### Uso de contenido asociado {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos están disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 
