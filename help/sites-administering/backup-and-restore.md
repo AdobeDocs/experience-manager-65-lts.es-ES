@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3150a605-f735-4187-ad69-a6fe330dcd4e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -191,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->También se puede activar una copia de seguridad [&#x200B; con los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
+>También se puede activar una copia de seguridad [ con los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
 
 ### Copia de seguridad de instantáneas del sistema {#filesystem-snapshot-backup}
 

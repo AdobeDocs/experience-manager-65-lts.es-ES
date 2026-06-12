@@ -12,7 +12,7 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
+source-wordcount: '5796'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Es probable que su compañía tenga una directiva de copia de seguridad que uste
 * volumen de datos; la capacidad puede ser ocasionalmente un problema, al igual que el tiempo para realizar la copia de seguridad.
 * si la copia de seguridad se puede realizar mientras los usuarios están en línea y, si es posible, cuál es el impacto en el rendimiento.
 * la distribución geográfica de los usuarios; es decir, ¿cuándo es el mejor momento para realizar copias de seguridad (para minimizar el impacto)?
-* su directiva de recuperación ante desastres; ¿Existen directrices sobre dónde se deben almacenar los datos de copia de seguridad (por ejemplo, fuera del sitio y en un medio específico)?
+* su política de recuperación ante desastres; ¿existen directrices sobre dónde deben almacenarse los datos de copia de seguridad (por ejemplo, fuera del sitio y en un medio específico)?
 
-A menudo, se toma un copia de seguridad completo a intervalos regulares (por ejemplo, diariamente, semanalmente o mensualmente), con copias de seguridad incrementales en el medio (por ejemplo, cada hora, día o semana).
+A menudo, se realiza una copia de seguridad completa a intervalos regulares (por ejemplo, diaria, semanal o mensual), con copias de seguridad incrementales intermedias (por ejemplo, por hora, diaria o semanal).
 
 >[!CAUTION]
 >
@@ -61,16 +61,16 @@ A menudo, se toma un copia de seguridad completo a intervalos regulares (por eje
 
 ### Copia de seguridad de la instalación del software {#backing-up-your-software-installation}
 
-Después de la instalación o cambios significativos en la configuración, cree un copia de seguridad de la instalación del software.
+Después de la instalación o de realizar cambios importantes en la configuración, cree una copia de seguridad de la instalación del software.
 
-Para llevar a cabo este tarea, [haga una copia de seguridad de todo su repositorio](#backing-up-your-repository) y luego:
+Para realizar esta tarea, [haga una copia de seguridad de todo el repositorio](#backing-up-your-repository) y, a continuación:
 
-1. Parada AEM.
-1. Atrás todo `<cq-installation-dir>` desde su sistema de archivos.
+1. Detenga AEM.
+1. Haga una copia de seguridad de todo el(la) `<cq-installation-dir>` desde su sistema de archivos.
 
 >[!CAUTION]
 >
->Si está utilizando un servidor aplicación terceros, es posible que haya carpetas adicionales en una ubicación diferente y que también se deba realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre cómo instalar servidores de aplicaciones.
+>Si utiliza un servidor de aplicaciones de terceros, las carpetas adicionales pueden estar en una ubicación diferente y también se debe realizar una copia de seguridad de las mismas. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre cómo instalar servidores de aplicaciones.
 
 >[!CAUTION]
 >
@@ -121,7 +121,7 @@ Para purgar versiones de un sitio web, siga estos pasos:
 
    ![Configuración de purga de versiones](assets/version-purge-configuration.png)
 
-   * **Purgar rutas**
+   * **Rutas de depuración**
 Establezca la ruta de inicio del contenido que se va a purgar; por ejemplo, `/content/wknd`.
 
      >[!CAUTION]
@@ -154,7 +154,7 @@ Establezca la antigüedad máxima de la versión en días (para cada nodo) que d
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->Los nodos purgados no se pueden revertir sin restaurar el repositorio. Cuide su configuración realizando siempre un simulacro antes de purgar.
+>Los nodos purgados no se pueden revertir sin restaurar el repositorio. Tenga cuidado con la configuración realizando siempre una ejecución en seco antes de purgar.
 
 #### Ejecución en seco: Análisis de la consola {#analyzing-the-console}
 
@@ -168,22 +168,22 @@ El proceso enumera todos los nodos que se han procesado. Durante el proceso, un 
 
 * `ignore (no version)`: el nodo no tiene ninguna versión y se omite durante el proceso.
 
-* `retained`: la nodo no se depura.
+* `retained`: el nodo no se ha purgado.
 * `purged`: el nodo se ha purgado.
 
 Además, la consola proporciona información útil sobre las versiones:
 
 * `V 1.0`: el número de versión.
-* `V 1.0.1`&#42;: la estrella indica que la versión es la versión actual (base) y que no se puede depurar.
+* `V 1.0.1`&#42;: el asterisco indica que la versión es la versión actual (base) y no se puede purgar.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la fecha de la versión.
 
-En el ejemplo siguiente:
+En el siguiente ejemplo:
 
-* Las **[!DNL Shirts]** versiones se depuran porque su antigüedad es superior a dos días.
-* Las **[!DNL Tonga Fashions!]** versiones se depuran porque su número de versiones es mayor que 5.
+* Las versiones de **[!DNL Shirts]** se purgan porque su antigüedad es mayor de dos días.
+* Las versiones de **[!DNL Tonga Fashions!]** se purgan porque su número de versiones es mayor que 5.
 
-![Versión_global_captura de pantalla](assets/global_version_screenshot.png)
+![captura de pantalla_versión_global](assets/global_version_screenshot.png)
 
 ## Trabajar con registros de auditoría y archivos de registro {#working-with-audit-records-and-log-files}
 
@@ -224,13 +224,13 @@ Las acciones de moderación se registran aquí.
    * `error.log`
 Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=es)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
    * `request.log`
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=es)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
 
    * `stderr.log`
@@ -249,7 +249,7 @@ Información de diario de revisión.
 
 >[!NOTE]
 >
->Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar &#x200B;** completo&quot; generado desde la página **system/console/status-Bundlelist &#x200B;**. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
+>Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar ** completo&quot; generado desde la página **system/console/status-Bundlelist **. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
 
 ### Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
@@ -272,7 +272,7 @@ Los niveles de registro son los siguientes:
 | 0 | Error grave | La acción ha fallado y el instalador no puede continuar. |
 |---|---|---|
 | 1 | Error | La acción ha fallado. La instalación continúa, pero una parte de AEM WCM no se instaló correctamente y no funciona. |
-| 2 | Advertencia | La acción se ha realizado correctamente pero ha encontrado problemas. AEM Gestión de contenidos web puede o no funcionar correctamente. |
+| 2 | Advertencia | La acción se realizó correctamente pero se encontraron problemas. AEM WCM puede funcionar o no correctamente. |
 | 3 | Información | La acción se ha realizado correctamente. |
 
 ### Crear un archivo de registro personalizado {#create-a-custom-log-file}
@@ -281,9 +281,9 @@ Los niveles de registro son los siguientes:
 >
 >Al trabajar con Adobe Experience Manager, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
-En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. En la repositorio, realice lo siguiente:
+En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. En el repositorio, haga lo siguiente:
 
-1. Si no existe, cree una carpeta de configuración ( `sling:Folder`) para su proyecto `/apps/<project-name>/config`.
+1. Si no existe, cree una carpeta de configuración (`sling:Folder`) para el proyecto `/apps/<project-name>/config`.
 1. En `/apps/<project-name>/config`, cree un nodo para la nueva [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Nombre: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
@@ -296,13 +296,13 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    >[!NOTE]
    >
-   >Aunque no es un requisito técnico, es recomendable hacer `<identifier>` único.
+   >Aunque no es un requisito técnico, se recomienda hacer que `<identifier>` sea único.
 
 1. Establezca las siguientes propiedades en este nodo:
 
    * Nombre: `org.apache.sling.commons.log.file`
 
-     Tipo: String
+     Tipo: cadena
 
      Valor: especifique el archivo de registro; por ejemplo, `logs/myLogFile.log`
 
@@ -336,7 +336,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >
    >`org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
    >
-   >{0} Marca de tiempo de tipo `java.util.Date`
+   >`java.util.Date` Marca de tiempo de tipo {0}
    >
    >{1} el marcador de registro
    >
@@ -424,16 +424,16 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >`org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro estableciendo:
    >
    >* un tamaño de archivo máximo
-   >* un cronograma de fecha y hora
+   >* una programación de fecha y hora
    >
-   >para indicar cuándo se crea un archivo nuevo (y se cambia el nombre del archivo existente según el patrón de nombre).
+   >para indicar cuándo se crea un nuevo archivo (y el nombre del archivo existente cambia según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como número de bytes, o puede agregar uno de los indicadores de tamaño: `KB`, `MB` o `GB` (se omite el uso de mayúsculas y minúsculas).
    >* Se puede especificar una programación de hora/fecha como un patrón `java.util.SimpleDateFormat`. Define el período de tiempo después del cual se gira el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
    >
-   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria de registros).
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para la rotación diaria del registro).
    >
-   >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando se produce el primer mensaje de registro posterior a esta fecha para ser preciso), .. /logs/error.log se renombra a .. /logs/error.log.2010-01-20. El registro del 21 de enero se genera en (nuevo y vacío) .. /logs/error.log hasta que se da la vuelta al cambio de día.
+   >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esta fecha sea preciso), ../logs/error.log cambia el nombre a ../logs/error.log.2010-01-20. El registro del 21 de enero se genera en (un nuevo y vacío) ../logs/error.log hasta que se renueva al siguiente cambio de día.
    >
    >| `'.'yyyy-MM` | Rotación al comienzo de cada mes |
    >|---|---|
@@ -509,8 +509,8 @@ Para supervisar un agente de replicación:
 
    * Compruebe si el agente está activado.
    * Consulte el objetivo de cualquier replicación.
-   * Ver si el cola de replicación está activo (habilitado).
-   * Compruebe si hay elementos en el cola.
+   * Ver si la cola de replicación está activa (habilitada).
+   * Ver si hay algún elemento en la cola.
    * **Actualizar** o **Borrar** para actualizar la visualización de las entradas de la cola. Al hacerlo, puede ver los elementos que entran y salen de la cola.
    * **Ver registro** para acceder al registro de cualquier acción por parte del agente de replicación.
    * **Probar conexión** a la instancia de destino.
@@ -520,9 +520,9 @@ Para supervisar un agente de replicación:
    >
    >No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
    >
-   >Si se realiza una prueba de replicación para una cola de Bandeja de salida, los elementos anteriores a la replicación del prueba se vuelven a procesar con cada replicación inversa.
+   >Si se realiza una prueba de replicación para una cola de Bandeja de salida, los elementos anteriores a la replicación de prueba se vuelven a procesar con cada replicación inversa.
    >
-   >Si tales elementos existen en una cola, se pueden encontrar con el siguiente consulta XPath JCR y deben eliminarse.
+   >Si estos elementos existen en cola, se pueden encontrar con la siguiente consulta JCR XPath y deben eliminarse.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -532,11 +532,11 @@ De nuevo, puede desarrollar una solución para detectar todos los agentes de rep
 
 [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) es un proceso interactivo que recibe el enfoque durante el desarrollo. Después de la implementación, se revisa después de intervalos o eventos específicos.
 
-Los métodos utilizados al recopilar información para la optimización también se pueden utilizar para el monitoreo continuo.
+Los métodos utilizados al recopilar información para la optimización también se pueden utilizar para la monitorización continua.
 
 >[!NOTE]
 >
->También se pueden consultar configuraciones específicas [disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
+>También se pueden comprobar [configuraciones específicas disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
 A continuación se enumeran los problemas comunes de rendimiento que se producen, junto con propuestas sobre cómo detectarlos y contrarrestarlos.
 
@@ -572,9 +572,9 @@ Toda esta información debe obtenerse, ordenarse y analizarse antes de optimizar
    * compruebe si algo (relacionado con el sistema) ha cambiado en un espacio de tiempo adecuado y si alguno de estos cambios podría haber afectado al rendimiento
    * haga preguntas como:
 
-      * ¿El problema solo ocurre en momentos específicos?
-      * ¿El problema solo ocurre en páginas específicas?
-      * ¿Otras solicitudes se ven afectadas?
+      * ¿el problema solo se produce en momentos específicos?
+      * ¿el problema solo se produce en páginas específicas?
+      * ¿se ven afectadas otras solicitudes?
 
    * recopile la mayor cantidad de información posible para compararla con su conocimiento del sistema en circunstancias normales:
 
@@ -619,7 +619,7 @@ Algunas de estas herramientas dependen del sistema operativo.
   <tr>
    <td>Apache Bench</td>
    <td>Identifique las fugas de memoria y analice selectivamente el tiempo de respuesta.</td>
-   <td><p>el uso básico es:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Consulte <a href="#apache-bench">Apache Bench</a> y la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">página de comando man ab</a> para obtener información detallada.</p> </td>
+   <td><p>el uso básico es:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Consulte <a href="#apache-bench">Apache Bench</a> y la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es">página de comando man ab</a> para obtener información detallada.</p> </td>
   </tr>
   <tr>
    <td>Análisis de búsqueda</td>
@@ -686,7 +686,7 @@ El registro de solicitudes registra cada solicitud realizada, junto con la respu
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Al sumar todas las entradas de GET dentro de períodos específicos (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en el sitio web.
+Al sumar todas las entradas de GET en períodos específicos (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en el sitio web.
 
 #### Monitorización de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -805,7 +805,7 @@ Concatenar los archivos individuales `request.log` si debe realizar esta operaci
 
 ### Apache Bench {#apache-bench}
 
-Para minimizar el impacto de los casos especiales (como la recolección de elementos no utilizados), se recomienda usar una herramienta como `apachebench` (por ejemplo, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) para obtener más documentación) para ayudar a identificar las pérdidas de memoria y analizar selectivamente el tiempo de respuesta.
+Para minimizar el impacto de los casos especiales (como la recolección de elementos no utilizados), se recomienda usar una herramienta como `apachebench` (por ejemplo, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es) para obtener más documentación) para ayudar a identificar las pérdidas de memoria y analizar selectivamente el tiempo de respuesta.
 
 Apache Bench se puede utilizar de la siguiente manera:
 
@@ -905,7 +905,7 @@ Se recomienda que cada proyecto incluya `html comments` para el rendimiento del 
 El comando de herramienta `jconsole` está disponible con el JDK.
 
 1. Inicie la instancia de AEM.
-1. Ejecutar `jconsole.`
+1. Ejecute `jconsole.`
 1. Seleccione su instancia de AEM y **Connect**.
 
 1. Desde la aplicación `Local`, haga doble clic en `com.day.crx.quickstart.Main`; la Información general se muestra como predeterminada:
@@ -1064,9 +1064,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 >Consulte también los siguientes artículos para obtener más información:
 >
->* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
->* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
->* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
+>* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### CPU al 100 % {#cpu-at}
@@ -1086,7 +1086,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1104,7 +1104,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
-   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
+   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 

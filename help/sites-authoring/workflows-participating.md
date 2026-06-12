@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 73%
+source-wordcount: '1534'
+ht-degree: 72%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 73%
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo. El usuario recibe una notificación y puede realizar las acciones adecuadas:
 
-* [Visualización de notificaciones &#x200B;](#notifications-of-available-workflow-actions)
-* [Finalización de una etapa de participante &#x200B;](#completing-a-participant-step)
-* [Delegación de una etapa de participante &#x200B;](#delegating-a-participant-step)
-* [Realización de una etapa hacia atrás en una etapa de participante &#x200B;](#performing-step-back-on-a-participant-step)
-* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Visualización de la carga útil del flujo de trabajo (varios recursos) &#x200B;](#viewing-the-workflow-payload-multiple-resources)
+* [Visualización de notificaciones](#notifications-of-available-workflow-actions)
+* [Finalización de una etapa de participante](#completing-a-participant-step)
+* [Delegación de una etapa de participante](#delegating-a-participant-step)
+* [Realización de una etapa hacia atrás en una etapa de participante](#performing-step-back-on-a-participant-step)
+* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas)](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Visualización de la carga útil del flujo de trabajo (varios recursos)](#viewing-the-workflow-payload-multiple-resources)
 
 ## Notificaciones de acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
@@ -110,7 +110,7 @@ También puede utilizar la cronología para completar y avanzar un paso:
 
 1. Seleccione **Asignar** para confirmar la acción.
 
-### Delegación de una etapa de participante  {#delegating-a-participant-step}
+### Delegación de una etapa de participante {#delegating-a-participant-step}
 
 Si se le ha asignado un paso, pero por cualquier motivo no puede realizar ninguna acción, puede delegar el paso a otro usuario o grupo.
 
@@ -188,7 +188,7 @@ Utilice el siguiente procedimiento para retroceder:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
-1. Seleccione **Retroceder** para abrir el cuadro de diálogo. 
+1. Seleccione **Retroceder** para abrir el cuadro de diálogo.
 
 1. Especifique el **Paso anterior** y agregue un **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -217,7 +217,7 @@ También puede utilizar la cronología para retroceder a un paso anterior:
 
 1. Seleccione **Restablecer** para confirmar la acción.
 
-### Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas)  {#opening-a-workflow-item-to-view-details-and-take-actions}
+### Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
 Vea los detalles del elemento de trabajo del flujo de trabajo y realice las acciones adecuadas.
 
@@ -250,7 +250,7 @@ Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
-1. Seleccione **Abrir** para abrir las pestañas de información. 
+1. Seleccione **Abrir** para abrir las pestañas de información.
 
 1. Si es necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **Aceptar** (o **Cancelar**).
 1. Utilice las opciones **Guardar** o **Cancelar** para salir.
@@ -260,12 +260,12 @@ Para abrir un elemento de flujo de trabajo y ver los detalles:
 Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 1. Abra la [página para editarla](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Seleccione **Ver detalles** de la barra de estado para abrir las pestañas de información. 
+1. Seleccione **Ver detalles** de la barra de estado para abrir las pestañas de información.
 
 1. Si es necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **Aceptar** (o **Cancelar**).
 1. Utilice las opciones **Guardar** o **Cancelar** para salir.
 
-### Visualización de la carga útil del flujo de trabajo (varios recursos)  {#viewing-the-workflow-payload-multiple-resources}
+### Visualización de la carga útil del flujo de trabajo (varios recursos) {#viewing-the-workflow-payload-multiple-resources}
 
 Puede ver los detalles de la carga útil asociada con la instancia de flujo de trabajo. Inicialmente, se muestran los recursos del paquete y luego puede explorar en profundidad para mostrar las páginas individuales.
 
@@ -273,7 +273,7 @@ Para ver la carga útil y los recursos de la instancia del flujo de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
-1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo. 
+1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo.
 
    Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de recursos** para añadir nuevas entradas.
 

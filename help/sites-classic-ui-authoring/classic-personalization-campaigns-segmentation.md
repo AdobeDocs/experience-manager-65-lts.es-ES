@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f3755499-472b-4eb9-bc98-7918b77f7ab0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 49%
 
 ---
@@ -41,7 +42,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
+**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar el abono a un segmento específico.
 
 **Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
@@ -58,7 +59,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 * Ingresos
 * Tamaño de familia
 * Estado civil
-* Sexo
+* Género
 * Lugar de residencia
 
 **Características derivadas**
@@ -69,7 +70,7 @@ Por ejemplo, la combinación de la dirección URL de referencia (como caracterí
 
 **Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 
-**Página teaser**: Una página de teaser se dirige a una audiencia específica. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
+**Página teaser**: Una página de teaser se dirige a un público específico. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
 
 **Campaña**: Una campaña es una colección de páginas de teaser y de páginas de marketing por correo electrónico como, por ejemplo, newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 

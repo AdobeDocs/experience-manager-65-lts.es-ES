@@ -1,5 +1,5 @@
 ---
-title: Recopilación de datos almacenados desechables
+title: Recopilación de datos desechables almacenados
 description: Obtenga información sobre cómo configurar la recolección de elementos no utilizados del almacén de datos para liberar espacio en disco.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
 
-# Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+# Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en que existen varios recursos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento del mantenimiento del sistema de archivos y la copia de seguridad.
 

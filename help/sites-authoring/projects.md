@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1366'
+ht-degree: 31%
 
 ---
 
@@ -104,7 +104,7 @@ En el mosaico **Recursos**, puede recopilar todos los recursos que utilice para 
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Puede cargar recursos directamente en el mosaico.
+Los recursos se cargan directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 
@@ -227,7 +227,7 @@ Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos as
 
 Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
 
-Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [&#x200B; al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
+Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [ al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
 
 ## Recursos adicionales {#additional-resources}
 

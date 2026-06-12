@@ -12,8 +12,8 @@ role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
 source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 0%
+source-wordcount: '1203'
+ht-degree: 1%
 
 ---
 
@@ -123,7 +123,7 @@ En caso de que los paquetes personalizados no cambien al estado activo, lo más 
 
 También es mejor comprobar si el cambio que ha causado el problema fue necesario y revertirlo si no lo es. Compruebe también si el aumento de versión del paquete de exportación se ha aumentado más de lo necesario, siguiendo un control de versiones semántico estricto.
 
-### Analizando error.log y upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Análisis de error.log y upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 En la mayoría de los casos, es necesario consultar los registros para detectar errores y encontrar la causa del problema. Sin embargo, con las actualizaciones, también es necesario monitorizar los problemas de dependencia, ya que es posible que los paquetes antiguos no se actualicen correctamente.
 

@@ -7,7 +7,7 @@ role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -102,9 +102,9 @@ Estas carpetas son del tipo `nt:folder` y deben contener el paquete apropiado.
 
 Si ha definido configuraciones para varios modos de ejecución, debe definir cuál se utilizará al iniciar. Existen varios métodos para especificar qué modo de ejecución utilizar; el orden de resolución es el siguiente:
 
-1. [propiedades del sistema (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [propiedades del sistema (`-D`)](#using-a-system-property-in-the-start-script)
+1. [El archivo `sling.properties`](#using-the-sling-properties-file)
+1. [Opción `-r`](#using-the-r-option)
 1. [Detección de nombres de archivo](#filename-detection-renaming-the-jar-file)
 
 Cuando use un servidor de aplicaciones, también puede [definir el modo de ejecución en web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

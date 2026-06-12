@@ -7,8 +7,8 @@ role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '993'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +50,7 @@ Para obtener más información, consulte los recursos adicionales a continuació
 #### ¿Cómo se auditan las funcionalidades de AEM, como los intentos de inicio de sesión y los cambios de ACL o de permisos? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM ha introducido la capacidad de registrar cambios administrativos para mejorar la resolución de problemas y la auditoría. De manera predeterminada, la información se registra en el archivo `error.log`. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente.
-Para redirigir el resultado a un archivo de registro independiente, vea [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
+Para redirigir el resultado a un archivo de registro independiente, consulte [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### ¿Cómo se habilita SSL de forma predeterminada? {#how-to-enable-ssl-by-default}
 
@@ -68,7 +68,7 @@ Además, si los desarrolladores desean exportar un árbol de componentes, tambi�
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling :: Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling :: Modelos Sling](https://sling.apache.org/documentation/bundles/models.html?lang=es)
 
 #### ¿Cómo deshabilitar la ventana emergente de la encuesta de AEM 6.4? {#how-to-disable-aem-survey-pop-up}
 
@@ -105,7 +105,7 @@ AEM proporciona varios mecanismos para permitirle personalizar las consolas y la
 
 #### ¿Cuál es la diferencia entre los componentes basados en CoralUI 2 y CoralUI 3? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Se crea un nuevo conjunto de componentes Sling de Granite UI Foundation para Coral3 y se encuentra en [/libs/granite/ui/components/coral/foundation.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html): hay un conjunto para los componentes basados en CoralUI 2 y un conjunto para los basados en CoralUI 3. El nuevo conjunto no será solo una copia y pegado del conjunto antiguo, sino que se limpiará (por ejemplo, optimizando, eliminando la función obsoleta). Por lo tanto, se recomienda que una página solo utilice un conjunto basado en CoralUI 3 o en CoralUI 2.
+Se crea un nuevo conjunto de componentes Sling de Granite UI Foundation para Coral3 y se encuentra en [/libs/granite/ui/components/coral/foundation.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Hay un conjunto para los componentes basados en CoralUI 2 y un conjunto para los basados en CoralUI 3. El nuevo conjunto no será solo una copia y pegado del conjunto antiguo, sino que se limpiará (por ejemplo, optimizando, eliminando la función obsoleta). Por lo tanto, se recomienda que una página solo utilice un conjunto basado en CoralUI 3 o en CoralUI 2.
 
 Para obtener más información en detalle, consulte [Guía de migración para CoralUI 3-based](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 

@@ -9,9 +9,10 @@ docset: aem65
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6016'
 ht-degree: 2%
 
 ---
@@ -155,7 +156,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
 
    >[!NOTE]
    >
-   >Se crea un nuevo MBean JMX para cada nueva configuración de la comprobación de estado compuesta de Apache Sling.**
+   >Se crea un nuevo MBean JMX para cada nueva configuración de la comprobación de estado compuesta de Apache Sling**.
 
 1. Por último, la entrada de la comprobación de estado compuesta que se ha creado debe agregarse en los nodos de configuración del tablero de operaciones. El procedimiento es el mismo que con las comprobaciones de estado individuales: se debe crear un nodo de tipo **nt:unstructured** en `/apps/settings/granite/operations/hc`. La propiedad resource del nodo está definida por el valor de **hc.media.name** en la configuración OSGI.
 
@@ -296,7 +297,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
   </tr>
   <tr>
    <td>Comprobaciones de seguridad</td>
-   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales solucionan problemas diferentes de la lista de comprobación de seguridad disponible en la página de documentación de <a href="/help/sites-administering/security-checklist.md">Lista de comprobación de seguridad.</a> La comprobación es útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=securitycheck,type=HealthCheck</a></p> </td>
+   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales resuelven problemas diferentes de la lista de comprobación de seguridad disponible en la <a href="/help/sites-administering/security-checklist.md">página de documentación Lista de comprobación de seguridad.</a> La comprobación resulta útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=securitycheck,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Paquetes activos</td>
@@ -315,7 +316,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
     </ul> <p>El umbral <code>minimum.code.cache.size</code> se puede configurar. Para obtener más información sobre el error, consulte <a href="https://bugs.java.com/bugdatabase/"> y luego busque el identificador de error 8012547</a>.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Errores de ruta de búsqueda de medios</td>
+   <td>Errores de ruta de búsqueda de recursos</td>
    <td><p>Comprueba si hay recursos en la ruta de acceso <code>/apps/foundation/components/primary</code> y:</p>
     <ul>
      <li>devuelve un valor de tipo Warn si hay nodos secundarios en <code>/apps/foundation/components/primary</code></li>
@@ -354,7 +355,7 @@ La interfaz de usuario de mensajes de registro muestra todos los mensajes de ERR
 
 Los mensajes de registro utilizan un anexador de registro en memoria y, por lo tanto, no están relacionados con los archivos de registro. Otra consecuencia es que al cambiar los niveles de registro en esta interfaz de usuario no se cambia la información que se registra en los archivos de registro tradicionales. Añadir y eliminar registradores en esta interfaz de usuario solo afecta al registrador de memoria. Además, el cambio de las configuraciones del registrador se refleja en el futuro del en el registrador de memoria. Las entradas que ya están registradas y ya no son relevantes no se eliminan, pero entradas similares no se registran en el futuro.
 
-Puede configurar lo que se registra proporcionando configuraciones del registrador desde el botón del engranaje superior izquierdo de la interfaz de usuario. Aquí puede agregar, quitar o actualizar las configuraciones del registrador. Una configuración del registrador está compuesta por un **nivel de registro** (WARN / INFO / DEBUG) y un **nombre de filtro**. El **nombre de filtro** tiene la función de filtrar el origen de los mensajes de registro que se registran. Alternativamente, si un registrador debe capturar todos los mensajes de registro para el nivel especificado, el nombre del filtro debe ser &quot;**root**&quot;. Déclencheur Al establecer el nivel de un registrador, se capturan todos los mensajes con un nivel igual o superior al especificado.
+Puede configurar lo que se registra proporcionando configuraciones del registrador desde el botón del engranaje superior izquierdo de la interfaz de usuario. Aquí puede agregar, quitar o actualizar las configuraciones del registrador. Una configuración del registrador está compuesta por un **nivel de registro** (WARN / INFO / DEBUG) y un **nombre de filtro**. El **nombre de filtro** tiene la función de filtrar el origen de los mensajes de registro que se registran. Alternativamente, si un registrador debe capturar todos los mensajes de registro para el nivel especificado, el nombre del filtro debe ser &quot;**root**&quot;. Al establecer el nivel de un registrador, se capturan todos los mensajes con un nivel igual o superior al especificado.
 
 Por ejemplo:
 
@@ -451,7 +452,7 @@ Al marcar la casilla **Incluir tiempo de ejecución** antes de ejecutar la consu
 
 El propósito del Administrador de índices es facilitar la administración de índices, como el mantenimiento de índices o la visualización de su estado.
 
-Se puede acceder a él desde **Herramientas - Operaciones - Diagnóstico &#x200B;** desde la pantalla de bienvenida y, a continuación, haciendo clic en el botón **Administrador de índices**.
+Se puede acceder a él desde **Herramientas - Operaciones - Diagnóstico** desde la pantalla de bienvenida y, a continuación, haciendo clic en el botón **Administrador de índices**.
 
 También se puede obtener acceso a él directamente desde esta dirección URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -494,7 +495,7 @@ Las siguientes tareas están disponibles en el tablero de operaciones:
 1. La tarea de mantenimiento **Purga del proyecto**, ubicada en el menú **Ventana de mantenimiento semanal**; con la opción **Agregar**.
 1. La tarea de mantenimiento **Purgar tareas ad hoc**, ubicada en el menú **Ventana de mantenimiento semanal**; con la opción **Agregar**.
 
-El horario predeterminado para la ventana de mantenimiento diario es de 2:00 a.m. a 5:00 a.m. Las tareas configuradas para ejecutarse en la ventana de mantenimiento semanal se ejecutan entre la 1 y las 2 de la madrugada los sábados.
+El horario predeterminado para la ventana de mantenimiento diario es de 2:00 a.m. a 5:00 a.m. Las tareas configuradas para ejecutarse en la ventana de mantenimiento semanal se ejecutan entre las 1:00 y las 2:00 a.m. los sábados.
 
 También puede configurar los horarios pulsando el icono de engranaje en cualquiera de las dos tarjetas de mantenimiento:
 
@@ -519,7 +520,7 @@ Aunque la tarea de mantenimiento se desarrolló para reducir la basura de revisi
 
 Puede acceder a la tarea Limpieza de binarios de Lucene desde: **AEM > Herramientas > Operaciones > Mantenimiento > Ventana de mantenimiento diario > Limpieza de binarios de Lucene**.
 
-### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+### Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Para obtener más información sobre la recolección de elementos no utilizados del almacén de datos, consulte la página de documentación de [Recopilación de elementos no utilizados del almacén de datos](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -612,19 +613,19 @@ Las tareas de mantenimiento personalizadas se pueden implementar como servicios 
    <td>granite.maintenance.name</td>
    <td>Un nombre único para la tarea: el nombre se utiliza para hacer referencia a la tarea y es solo un nombre simple.</td>
    <td>MyMaintenanceTask</td>
-   <td>Requerido</td>
+   <td>Necesario</td>
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
    <td>Título mostrado para esta tarea</td>
    <td>Mi tarea de mantenimiento especial</td>
-   <td>Requerido</td>
+   <td>Necesario</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Tema único de la tarea de mantenimiento.<br /> La administración de trabajos de Apache Sling inicia un trabajo con exactamente este tema para ejecutar la tarea de mantenimiento y, a medida que la tarea se registra para este tema, se ejecuta.<br />: el tema debe comenzar con <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>Tema único de la tarea de mantenimiento.<br /> La administración de trabajos de Apache Sling inicia un trabajo con exactamente este tema para ejecutar la tarea de mantenimiento y, a medida que la tarea se registra para este tema, se ejecuta.<br /> El tema debe comenzar con <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
-   <td>Requerido</td>
+   <td>Necesario</td>
   </tr>
  </tbody>
 </table>
@@ -659,7 +660,7 @@ El **Panel de información general del sistema** muestra información general de
 
 >[!NOTE]
 >
->También puedes [ver este vídeo](https://video.tv.adobe.com/v/40159?captions=spa) para ver una introducción al Panel de información general del sistema.
+>También puedes [ver este vídeo](https://video.tv.adobe.com/v/21340) para ver una introducción al Panel de información general del sistema.
 
 ### Cómo Acceder A {#how-to-access}
 
@@ -810,7 +811,7 @@ También puede descargar un archivo de `JSON` que resuma la información del pan
      <li>Recuentos de flujos de trabajo: número de flujos de trabajo en un estado determinado (si los hay):
       <ul>
        <li>corriente</li>
-       <li>error</li>
+       <li>fallido(s)</li>
        <li>suspendido</li>
        <li>abortado</li>
       </ul> </li>
@@ -825,7 +826,7 @@ También puede descargar un archivo de `JSON` que resuma la información del pan
    <td>Trabajos de Sling</td>
    <td><p>Recuentos de trabajos de Sling: número de trabajos en un estado determinado (si los hay):</p>
     <ul>
-     <li>error</li>
+     <li>fallido(s)</li>
      <li>en cola</li>
      <li>cancelado</li>
      <li>activo</li>
@@ -834,14 +835,14 @@ También puede descargar un archivo de `JSON` que resuma la información del pan
     <ul>
      <li>el usuario debe investigar cuando haya trabajos en estados inesperados o con recuentos altos.</li>
     </ul> </td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Número aproximado de nodos</td>
    <td><p>Número estimado de:</p>
     <ul>
      <li>páginas</li>
-     <li>activos</li>
+     <li>recursos</li>
      <li>etiquetas</li>
      <li>autorizables</li>
      <li>número total de nodos <br /> </li>

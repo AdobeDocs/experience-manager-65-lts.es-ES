@@ -7,8 +7,8 @@ role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 97%
 
 ---
 
@@ -104,7 +104,7 @@ Para obtener más información, consulte lo siguiente:
 
 * [Adobe Target: Información general de privacidad](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=es)
 
-* [Flujo de trabajo de privacidad de datos de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es)
+* [Flujo de trabajo de privacidad de datos Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es)
 
 ## AEM Forms {#aem-forms}
 

@@ -4,10 +4,11 @@ description: Comprenda las configuraciones de AEM y cómo administran la configu
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73230415-078c-4933-8521-bc18e5490103
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 4%
+source-wordcount: '1505'
+ht-degree: 5%
 
 ---
 
@@ -40,7 +41,7 @@ Se pueden crear configuraciones para muchas funciones diferentes dentro de AEM.
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Plantillas editables](/help/sites-authoring/templates.md)
 
-### Ejemplos {#administrator-example}
+### Ejemplo {#administrator-example}
 
 Por ejemplo, un administrador puede crear dos configuraciones para Plantillas editables.
 
@@ -74,7 +75,7 @@ Es sencillo crear una configuración en AEM mediante el Explorador de configurac
 1. Haga clic en **Crear**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
 
-   ![Crear configuración](assets/configuration-create.png)
+   ![Creación de configuración](assets/configuration-create.png)
 
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
@@ -127,7 +128,7 @@ Aunque el administrador y los usuarios de [pueden considerar las configuraciones
 
 El contenido hace referencia a su configuración asociada mediante una propiedad `cq:conf`. AEM realiza una búsqueda basada en el contenido y su propiedad `cq:conf` contextual para encontrar la configuración adecuada.
 
-### Ejemplos {#developer-example}
+### Ejemplo {#developer-example}
 
 Para este ejemplo, supongamos que tiene código de aplicación interesado en la configuración de DAM.
 

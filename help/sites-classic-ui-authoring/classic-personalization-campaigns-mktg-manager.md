@@ -7,7 +7,7 @@ role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
 source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Aquí puede administrar sus posibles clientes. Puede crear o importar posibles c
 Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 * **[Listas](#lists)**
-Aquí puede administrar sus listas (de posibles clientes).**Nota:** Adobe no planea mejorar más esta capacidad.
+Aquí puede administrar sus listas (de posibles clientes).**Nota:** Adobe no planea mejorar aún más esta capacidad.
 Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 * **[Campañas](#campaigns)**

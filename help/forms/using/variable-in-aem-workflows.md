@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 93%
+source-wordcount: '2127'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html).
 
 Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. Entonces, puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable. También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
 
@@ -39,7 +39,7 @@ Las variables son una extensión de la interfaz [MetaDataMap](https://developer.
 Las variables se crean mediante la sección Variables disponible en la barra de tareas del modelo de flujo de trabajo. Las variables del flujo de trabajo de AEM admiten los siguientes tipos de datos:
 
 * **Tipos de datos primitivos**: Largo, Doble, Booleano, Fecha y Cadena
-* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
+* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Utilice las siguientes API en el script ECMA para recuperar los valores de varia
 | Modelo de datos de formulario | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Necesita el [Paquete de complementos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos variables Documento y Modelo de datos de formulario.  
+Necesita el [Paquete de complementos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para los tipos de datos variables Documento y Modelo de datos de formulario.
 
 **Ejemplo**
 
@@ -266,8 +266,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Almacenar datos confidenciales de usuarios fuera de JCR mediante variables de flujo de trabajo {#jcr-independent-persistance}
 
-Los datos procesados con Forms Workflow pueden contener datos confidenciales del usuario, como información de identificación personal e información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Usar variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] proporciona la API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables de flujo de trabajo en almacenes de Azure Blob externos. Para obtener más información sobre el uso de la API, consulte [Usar variables de flujo de trabajo para parametrizar datos confidenciales y almacenarlos en almacenes de datos externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Los datos procesados con Forms Workflow pueden contener datos confidenciales del usuario, como información de identificación personal e información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] proporciona la API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables de flujo de trabajo en almacenes de blob de Azure externos. Para obtener más información sobre el uso de la API, consulte [Uso de variables de flujo de trabajo para parametrizar datos confidenciales y almacenarlos en almacenes de datos externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Editar una variable {#edit-a-variable}
 

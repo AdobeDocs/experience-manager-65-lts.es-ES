@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7136'
-ht-degree: 94%
+source-wordcount: '7066'
+ht-degree: 92%
 
 ---
 
@@ -95,14 +95,14 @@ Puede configurar las siguientes propiedades para una carpeta inspeccionada.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Indica si el mecanismo de caducidad debe activarse solo cuando se restringe la carpeta del reloj. El mecanismo es más relevante para las carpetas de inspección restringidas, ya que un pequeño número de archivos que permanecen en estado sin procesar (debido a errores intermitentes en el trabajo/flujo de trabajo) pueden bloquear el procesamiento de todo el lote cuando se habilita la restricción. Si esta propiedad se mantiene como True (predeterminada), el mecanismo de caducidad no se activa para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como False, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
 
 * **pollInterval (Long)**: Intervalo en segundos para analizar la carpeta inspeccionada para obtener información. A menos que la configuración Restringir esté habilitada, el intervalo de encuesta debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información. El valor del intervalo de encuesta debe ser mayor o igual a uno.
-* **excludeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que utiliza una carpeta inspeccionada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recoge la carpeta inspeccionada. Esto evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es nulo.
+* **excludeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que usa una carpeta inspeccionada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recoge la carpeta inspeccionada. Esto evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es nulo.
 Puede usar [patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) para excluir:
 
    * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * Archivos con nombres específicos; por ejemplo, data&#42; excluiría archivos y carpetas llamados data1, data2, etc.
    * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-      * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+      * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
       * &#42;.`[dD][Aa]`&#39;puerto&#39;
       * &#42;.`[Xx][Mm][Ll]`
 
@@ -115,7 +115,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Informac
 
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
       * &#42;.`[dD][Aa]`&#39;puerto&#39;
       * &#42;.`[Xx][Mm][Ll]`
@@ -182,7 +182,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 Junto con las propiedades de configuración de la carpeta inspeccionada que se enumeran anteriormente, también puede especificar parámetros de configuración personalizados. Los parámetros personalizados se pasan al código de procesamiento de archivos. Permite que el código cambie su comportamiento en función del valor del parámetro. Para especificar un parámetro:
 
 1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración de la carpeta inspeccionada.
-1. Agregue un parámetro de propiedad&lt;property_name> al nodo de configuración de la carpeta inspeccionada. El tipo de propiedad solo puede ser Boolean, Date, Decimal, Double, Long y String. Puede especificar propiedades de uno o varios valores.
+1. Agregue un parámetro de propiedad.&lt;property_name> al nodo de configuración de la carpeta inspeccionada. El tipo de propiedad solo puede ser Boolean, Date, Decimal, Double, Long y String. Puede especificar propiedades de uno o varios valores.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Un servicio es una implementación personalizada de la interfaz `com.adobe.aemfd
 
 #### Implementación personalizada de la interfaz ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración del contexto, procesa las entradas y agrega el resultado de nuevo al
+La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración del contexto, procesa las entradas y agrega el resultado de nuevo a
 contexto. ProcessorContext tiene las siguientes API:
 
 * **getWatchFolderId**: Devuelve el ID de la carpeta inspeccionada.
@@ -568,7 +568,7 @@ Los administradores pueden especificar el tipo de archivo que puede invocar un s
 * Archivos con nombres específicos; por ejemplo, data.&#42;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
    * &#42;.`[dD][Aa]`&#39;puerto&#39;
    * &#42;.`[Xx][Mm][Ll]`
 
