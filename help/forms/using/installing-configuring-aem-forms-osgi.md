@@ -10,8 +10,8 @@ feature: Adaptive Forms,AEM Forms on OSGi
 exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 97%
+source-wordcount: '1962'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
-1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` y el registro sea estable.
+1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` y el registro sea estable.
 
    >[!NOTE]
    >
@@ -214,7 +214,7 @@ Realice los siguientes pasos para configurar la caché de los formularios adapta
 
 #### Configuración de la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
 
-Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar una instancia de AEM Forms, agregue los certificados al almacén de confianza de Java de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
+Puede habilitar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar una instancia de AEM Forms, agregue los certificados al almacén de confianza de Java de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
@@ -243,5 +243,5 @@ AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Clou
 Ha configurado un entorno para utilizar las capacidades de AEM Forms Data Capture. Ahora, los siguientes pasos para utilizar esta capacidad son:
 
 * [Creación de su primer formulario adaptable](/help/forms/using/create-your-first-adaptive-form.md)
-* [Creación de su primer formulario PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
+* [Creación de su primer formulario de PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introducción a los formularios HTML5](/help/forms/using/introduction.md)

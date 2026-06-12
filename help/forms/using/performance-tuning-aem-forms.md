@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 69%
+source-wordcount: '804'
+ht-degree: 68%
 
 ---
 
@@ -42,7 +42,7 @@ Es posible que la configuración de caché predeterminada de AEM Forms no sea l
 * **Tamaño de caché** (en términos de número de formularios): según los requisitos
 * **Tamaño máximo del objeto**: según los requisitos
 
-![Configuraciones de Mobile Forms &#x200B;](assets/snap.png)
+![Configuraciones de Mobile Forms ](assets/snap.png)
 
 >[!NOTE]
 >
@@ -95,8 +95,8 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. El objetivo de las 
    >
    >Para Linux®, el valor predeterminado `APACHE_HOME` es `/etc/httpd/`.
 
-1. Configure el proxy en el puerto 4502 de CRX.
-Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
+1. Configure el proxy en el puerto 4502 de crx.
+Agregue la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/

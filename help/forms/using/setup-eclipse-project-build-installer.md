@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 81%
+source-wordcount: '728'
+ht-degree: 77%
 
 ---
 
@@ -49,8 +49,8 @@ La siguiente imagen muestra la estructura de la carpeta `adobe-lc-mobileworkspac
 Establezca las siguientes variables de entorno antes de iniciar el proceso de generación para la aplicación de AEM Forms:
 
 * Establezca la variable de entorno JAVA_HOME en la ubicación del software JDK en el sistema de archivos local. Por ejemplo, C:\Program Files\Java\jdk1.8.0_181
-* Configure la variable de entorno `ANDROID_SDK_ROOT` del sistema a la ubicación del SDK para Android. Por ejemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Configure la variable de entorno del sistema `Path` para incluir las ubicaciones de carpetas platform-tools y tools para Android. Por ejemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools and C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Configure la variable de entorno `ANDROID_SDK_ROOT` del sistema a la ubicación del SDK para Android. Por ejemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Configure la variable de entorno del sistema `Path` para incluir las ubicaciones de carpetas platform-tools y tools para Android. Por ejemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools and C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Creación de una aplicación estándar de AEM Forms {#set-up-the-xcode-project}
 

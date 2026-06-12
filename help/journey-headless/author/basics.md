@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 75%
+source-wordcount: '1653'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +29,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo crear 
 
 ## Gestión básica {#basic-handling}
 
-Antes de comprender los fragmentos de contenido, aquí tiene una muy rápida introducción al uso de AEM.Aunque nada sustituye realmente la experiencia de iniciar sesión e intentar utilizar el sistema.
+Antes de familiarizarse con los fragmentos de contenido, le presentamos una introducción (muy) rápida al uso de AEM....pero nada reemplaza realmente la experiencia de iniciar sesión e intentar utilizar el sistema.
 
 ### Autor y publicación {#author-preview-publish}
 
@@ -193,8 +193,8 @@ De acuerdo. Esta sección puede parecer un poco extraña, pero cuando abra el Ed
 
 * **Modelos de fragmentos de contenido**
 
-  Aparecerá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También se trata de un vínculo que conduce al editor de modelos.
-Los modelos de fragmento de contenido son vitales para los fragmentos de contenido, ya que definen la estructura que se utiliza. Sin embargo, crearlos y editarlos es, normalmente, responsabilidad de otra persona, el arquitecto de contenido.
+  Verá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También es un vínculo que le lleva al editor de modelos.
+Los modelos de fragmentos de contenido son realmente vitales para los fragmentos de contenido, ya que definen la estructura que utiliza. Sin embargo, crearlos y editarlos es (por lo general) responsabilidad de otra persona, el Arquitecto de contenido.
 
   >[!NOTE]
   >
@@ -204,7 +204,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
   Este es bastante obvio, ya que es una pestaña en el editor.
 
-  Los fragmentos de contenido han estado disponibles en AEM desde hace ya varias versiones. En un principio, se pusieron a disposición para el uso “tradicional” cuando se creaban páginas.Se siguen utilizando en este contexto. Esto puede implicar la asociación de recursos (por ejemplo, imágenes) que, aunque no estén incrustados en el fragmento, deben estar disponibles para el autor al crear una página.
+  Los fragmentos de contenido han estado disponibles en AEM desde hace ya varias versiones. Originalmente estaban disponibles para su uso &quot;tradicional&quot; al crear páginas.... y aún se utilizan en este contexto. Esto puede implicar la asociación de recursos (por ejemplo, imágenes) que, aunque no estén incrustados en el fragmento, deben estar disponibles para el autor al crear una página.
 
 * **Vista previa**
 

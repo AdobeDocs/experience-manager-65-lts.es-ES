@@ -1,6 +1,6 @@
 ---
 title: Configurar el proyecto Android&trade; studio y crear la aplicación Android&trade;
-description: Pasos para configurar el proyecto Android&trade; Studio y crear el instalador para la aplicación Adobe Experience Manager (AEM) Forms
+description: Pasos para configurar el proyecto Android&trade; Studio y crear el instalador para la aplicación Forms de Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '589'
 ht-degree: 65%
 
 ---

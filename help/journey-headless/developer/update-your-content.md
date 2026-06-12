@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 322f08c7-f13a-473f-8c59-1050b2e6c2f5
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 87%
+source-wordcount: '1108'
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ Este artículo se basa en estos aspectos básicos para que pueda comprender cóm
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzados
 * **Objetivo**: aprender a utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido.
    * Presentar la API HTTP de AEM Assets.
    * Presentar y comentar la compatibilidad de los fragmentos de contenido en la API.
@@ -331,7 +331,7 @@ Debe continuar con su recorrido sin encabezado de AEM revisando el documento [C�
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 * [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Explicación de CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=es)
-* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=es)
+* [Vídeo: Desarrollo de CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=es)
 * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Tutoriales para contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

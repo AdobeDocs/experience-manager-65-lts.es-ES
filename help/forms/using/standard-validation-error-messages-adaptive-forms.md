@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 93%
+source-wordcount: '2318'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html).
 
 
 AEM Forms proporciona controladores de éxito y de error predeterminados para los envíos de formularios. También proporciona una función para personalizar las funciones del controlador de errores. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo. Los controladores son funciones del lado del cliente que se ejecutan en función de la respuesta del servidor. Cuando se invoca un servicio externo mediante las API, los datos se transmiten al servidor para su validación, lo que devuelve una respuesta al cliente con información sobre el evento de éxito o error del envío. La información se pasa en forma de parámetros al controlador correspondiente para ejecutar la función. Un controlador de errores ayuda a administrar y mostrar los errores o problemas de validación encontrados.
@@ -182,7 +182,7 @@ Puede ver el valor de dataRef en la ventana **[!UICONTROL Propiedades]** de un c
 
 Antes de usar el controlador de error personalizado en un Forms adaptable:
 
-* Conocimientos básicos para [crear una función personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=es#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
+* Conocimientos básicos para [crear una función personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
 
@@ -203,8 +203,8 @@ Con el editor de reglas, se puede hacer lo siguiente:
 
 ### Añadir la función del controlador de errores predeterminado {#add-default-errror-handler}
 
-Se admite un controlador de errores predeterminado para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
-Para comprender cómo utilizar un controlador de errores predeterminado con la acción [Invocar servicio del editor de reglas](/help/forms/using/rule-editor.md#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usaremos un controlador de errores predeterminado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.  Para añadir un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
+Se admite un controlador de error predeterminado para mostrar mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
+Para comprender cómo usar un controlador de error predeterminado usando la acción [Invocar servicio](/help/forms/using/rule-editor.md#invoke) del Editor de reglas, tome un ejemplo de un formulario adaptable simple con dos campos, **Id. de animal doméstico** y **Nombre de animal doméstico** y use un controlador de error predeterminado en el campo **Id. de animal doméstico** para comprobar si hay varios errores devueltos por el extremo REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para agregar un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
 
 1. Abra el formulario adaptable en el modo de creación, seleccione cualquier componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Crear]**.
@@ -231,7 +231,7 @@ Puede añadir una función del controlador de errores personalizado para realiza
 
 Además de las acciones mencionadas, los controladores de errores predeterminados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
 
-El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación ayuda a identificar la función de controlador de error especificada en el archivo `.js`.
+El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación identifica la función de controlador de errores especificada en el archivo `.js`.
 
 Para comprender cómo crear y utilizar un controlador de errores personalizado con la acción [Invocar servicio del editor de reglas](/help/forms/using/rule-editor.md#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usar un controlador de errores personalizado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.
 
@@ -240,7 +240,7 @@ Para añadir y utilizar un controlador de errores personalizado en un formulario
 1. [Crear un controlador de errores personalizado](#create-custom-error-message)
 1. [Utilice el Editor de reglas para configurar el controlador de errores personalizado](#use-custom-error-handler)
 
-#### &#x200B;1. Crear un controlador de errores personalizado {#create-custom-error-message}
+#### &#x200B;1. Crear un controlador de error personalizado {#create-custom-error-message}
 
 Para crear una función de error personalizada, realice los siguientes pasos:
 
@@ -265,8 +265,8 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 La estructura de carpetas creada tiene este aspecto:
 
    ![Estructura de carpetas de la biblioteca de cliente creada](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. Haga doble clic en el archivo `functions.js` para abrir el editor. El archivo contiene el código del controlador de errores personalizado.
-Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
+1. Haga doble clic en el archivo `functions.js` para abrir el editor. El archivo contiene el código del controlador de error personalizado.
+Añadamos el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript
        /**
@@ -300,7 +300,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
 
 Ahora, vamos a comprender cómo configurar y utilizar un controlador de errores personalizado mediante el servicio Invocar del Editor de reglas de AEM Forms.
 
-#### &#x200B;2. Utilizar el Editor de reglas para configurar el controlador de errores personalizado {#use-custom-error-handler}
+#### &#x200B;2. Utilice el Editor de reglas para configurar el controlador de errores personalizado {#use-custom-error-handler}
 
 Antes de implementar el controlador de error personalizado en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la **[!UICONTROL Categoría de biblioteca del cliente]** corresponda con el nombre especificado en la opción de categorías del archivo `.content.xml`.
 

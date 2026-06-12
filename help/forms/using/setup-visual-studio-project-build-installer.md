@@ -9,7 +9,7 @@ role: User, Developer
 exl-id: c2e9200f-a4b7-46fc-9dde-425329e5365d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '953'
 ht-degree: 95%
 
 ---
@@ -101,7 +101,7 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
 
    El directorio Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contiene los cuatro componentes principales:
 
-   1. El archivo `.appx` 
+   1. El archivo `.appx`
    1. El certificado (actualmente es un certificado firmado automátiamente por Apache Cordova)
    1. La carpeta de dependencias
    1. El archivo PowerShell (extensión .ps1)

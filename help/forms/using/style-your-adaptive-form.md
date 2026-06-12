@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 54%
+source-wordcount: '2174'
+ht-degree: 55%
 
 ---
 
@@ -19,7 +19,7 @@ Aprenda a crear una temática personalizada, aplicar estilo a componentes indivi
 
 ![imagen a pantalla completa](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Información sobre el tutorial  {#about-the-tutorial}
 
@@ -251,7 +251,7 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
       <td><b>Valor</b></td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -480,7 +480,7 @@ Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible 
 9. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`.
 10. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
 11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código incrustado junto con la dirección URL.
-    ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Guarde los cambios.
 
 >[!NOTE]
