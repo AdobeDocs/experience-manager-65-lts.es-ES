@@ -7,8 +7,8 @@ role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 78%
+source-wordcount: '1999'
+ht-degree: 75%
 
 ---
 
@@ -53,7 +53,7 @@ Para crear una variable,
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
-1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
+1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado mediante una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
 Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
@@ -86,7 +86,7 @@ Para agregar asignaciones entre variables, haga lo siguiente:
 1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, seleccione el paso y seleccione el icono ![Configurar indicado por una llave inglesa.](assets/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
-1. Asigne más variables para poder crear una expresión significativa. Seleccione el icono ![Guardar indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios.
+1. Asigne más variables para poder crear una expresión significativa. Seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios.
 
 ### Ejemplo 1: Consultar una variable XML para establecer el valor de una variable en cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -135,13 +135,13 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 El paso Ir a, OR Split y todos los pasos del flujo de trabajo de AEM Forms admiten variables.
 
-#### Paso OR Split {#or-split-step}
+#### Paso División O {#or-split-step}
 
-OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
 Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
-Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso OR Split, consulte [Paso OR Split](/help/sites-developing/workflows-step-ref.md#or-split).
+Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso División O, consulte [Paso División O](/help/sites-developing/workflows-step-ref.md#or-split).
 
 En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [ejemplo 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) para establecer el valor de la variable **totalvalue**. La rama 1 está activa si el valor de la variable **totalvalue** es mayor que 50 000. Del mismo modo, puede definir una regla para que la rama 2 se active si el valor de la variable **totalvalue** es menor que 50 000.
 
@@ -153,7 +153,7 @@ Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](/help/fo
 
 El **Paso Goto** le permite especificar el siguiente paso que se ejecutará en el modelo de flujo de trabajo, según el resultado de una expresión de enrutamiento.
 
-De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
+De forma similar al paso División O, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
 
 Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Ir a, consulte [Paso Ir a](/help/sites-developing/workflows-step-ref.md#goto-step).
 
@@ -242,4 +242,4 @@ Para eliminar una variable,
 
 1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
 1. Seleccione el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Seleccione el icono ![Listo&quot; indicado por un símbolo de marca de verificación.](assets/Done_Icon.png) para confirmar y eliminar la variable.
+1. Seleccione ![Icono Listo indicado por un símbolo de marca de verificación.](assets/Done_Icon.png) para confirmar y eliminar la variable.

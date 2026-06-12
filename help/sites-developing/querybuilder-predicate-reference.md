@@ -11,7 +11,7 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -382,7 +382,7 @@ Admite la extracción de facetas. Proporciona bloques para cada valor de propied
 
 * **profundidad**
 
-  Varios niveles comodín por debajo de los cuales puede existir la propiedad y la ruta relativa. Por ejemplo, `property=size depth=2` comprueba el nodo y su tamaño, node/&ast;/size y node/&ast;/&ast;/size.
+  Varios niveles comodín por debajo de los cuales puede existir la propiedad y la ruta relativa. Por ejemplo, `property=size depth=2` comprueba el nodo y su tamaño, node/&amp;ast;/size y node/&amp;ast;/&amp;ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 

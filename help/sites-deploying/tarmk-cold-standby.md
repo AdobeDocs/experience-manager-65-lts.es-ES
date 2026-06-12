@@ -12,7 +12,7 @@ role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
 source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Además, puede especificar las instancias de espera a las que se permite conecta
 >
 >El PID del almacén de nodos de segmentos y el servicio de almacén en espera ha cambiado en AEM 6.3 en comparación con las versiones anteriores de la siguiente manera:
 >
->* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* desde org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >Realice los ajustes de configuración necesarios para que reflejen este cambio.

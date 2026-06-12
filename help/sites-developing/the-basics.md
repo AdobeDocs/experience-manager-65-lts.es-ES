@@ -1,5 +1,5 @@
 ---
-title: Conceptos principales de AEM
+title: Componentes principales de AEM
 description: Una visión general de los conceptos principales de cómo está estructurado Adobe Experience Manager (AEM) y cómo desarrollarlo, incluidos conceptos básicos como JCR, Sling, OSGi, Dispatcher, flujos de trabajo y MSM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 0%
+source-wordcount: '3366'
+ht-degree: 1%
 
 ---
 
-# Conceptos principales de AEM {#aem-core-concepts}
+# Componentes principales de AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://devel
 
 El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; se usa para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -174,7 +174,7 @@ En el ejemplo anterior, si `sling:resourceType` es `hr/jobs`, para:
 
 * Solicitudes GET/HEAD y direcciones URL que terminan en .html (tipos de solicitud predeterminados, formato predeterminado)
 
-  La secuencia de comandos es /apps/hr/jobs/jobs.esp; la última sección de sling:resourceType forma el nombre del archivo.
+  El script es /apps/hr/jobs/jobs.esp; la última sección del sling:resourceType forma el nombre del archivo.
 
 * Solicitudes POST (todos los tipos de solicitud excepto GET/HEAD, el nombre del método debe estar en mayúsculas)
 
@@ -196,7 +196,7 @@ En el ejemplo anterior, si `sling:resourceType` es `hr/jobs`, para:
 
   El script es `/apps/hr/jobs/jobs.print.esp`; el selector se agrega al nombre del script.
 
-* Si no se define sling:resourceType:
+* Si no se ha definido ningún sling:resourceType, entonces:
 
    * la ruta de contenido se utiliza para buscar un script adecuado (si el ResourceTypeProvider basado en la ruta está activo).
 
@@ -276,16 +276,16 @@ En Sling, no se puede llamar directamente a los scripts, ya que esto rompería e
 
 Si llama a la representación (la secuencia de comandos) directamente, oculta el recurso dentro de la secuencia de comandos, por lo que el marco de trabajo (Sling) ya no sabe nada de él. Por lo tanto, se pierden ciertas funciones:
 
-* administración automática de métodos http distintos de GET, incluidos:
+* gestión automática de métodos http distintos de GET, incluidos:
 
-   * POST, PUT, DELETE que se gestiona con una implementación predeterminada de sling
+   * POST, PUT y DELETE, que se gestionan con una implementación predeterminada de sling
    * el script `POST.jsp` en su ubicación sling:resourceType
 
 * su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de vital importancia para el desarrollo a gran escala
 
 ### API de Sling {#sling-api}
 
-Utiliza el paquete de API de Sling, org.apache.sling.&ast; y bibliotecas de etiquetas.
+Utiliza el paquete de API de Sling, org.apache.sling.&amp;ast;, y las bibliotecas de etiquetas.
 
 ### Hacer referencia a elementos existentes mediante sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -299,7 +299,7 @@ Para ello, utilice el comando sling:include(&quot;/&lt;path>/&lt;resource>&quot;
 %><sling:include resourceType="geometrixx/components/image/img"/><%
 ```
 
-## OSGI {#osgi}
+## OSGi {#osgi}
 
 OSGi define una arquitectura para desarrollar e implementar aplicaciones y bibliotecas modulares (también se conoce como Sistema de módulos dinámicos para Java™). Los contenedores OSGi le permiten dividir la aplicación en módulos individuales (que son archivos jar con información meta adicional y llamados paquetes en la terminología OSGi) y administrar las dependencias cruzadas entre ellos con:
 
@@ -385,7 +385,7 @@ Define el componente de página utilizado para procesar la página y el contenid
 
 **Página** Una página es una &#39;instancia&#39; de una plantilla.
 
-Una página tiene un nodo de jerarquía de tipo cq:Page y un nodo de contenido de tipo cq:PageContent. La propiedad sling:resourceType del nodo de contenido señala al componente de página utilizado para procesar la página.
+Una página tiene un nodo de jerarquía de tipo cq:Page y un nodo de contenido de tipo cq:PageContent. La propiedad sling:resourceType del nodo de contenido señala al componente Página utilizado para procesar la página.
 
 Por ejemplo, para obtener el nombre de la página actual, puede utilizar el siguiente código en el script:
 
