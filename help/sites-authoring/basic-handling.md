@@ -143,7 +143,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://business.adobe.com/)
+* [Soluciones](https://business.adobe.com/es/)
 
   ![Soluciones](do-not-localize/screen_shot_2018-03-23at103552.png)
 

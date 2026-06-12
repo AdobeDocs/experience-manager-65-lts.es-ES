@@ -64,7 +64,7 @@ Por ejemplo, se puede superponer la siguiente ubicación dentro de la estructura
 
 >[!NOTE]
 >
->Consulte el artículo de la Base de conocimiento [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-16935) para obtener más sugerencias y herramientas.
 
 ## Personalización de la Vista Predeterminada para una Consola {#customizing-the-default-view-for-a-console}
 
