@@ -7,10 +7,11 @@ topic-tags: document_services
 feature: Document Services,Assembler
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1f6263f5-e4fb-44c2-a1d2-6046e9d69a48
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 95%
+source-wordcount: '412'
+ht-degree: 89%
 
 ---
 
@@ -133,8 +134,8 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 La ejecución del servicio ConvertPDF desde un flujo de trabajo es similar a la ejecución desde JSP/Servlet.
 
 La única diferencia es que al ejecutar el servicio desde JSP/Servlet el objeto de documento recupera automáticamente una instancia del objeto ResourceResolver del objeto ResourceResolverHelper. Este mecanismo automático
-no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza
-el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
+no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Document utiliza
+ha proporcionado el objeto ResourceResolver para leer el contenido del repositorio.
 
 El siguiente proceso de flujo de trabajo de ejemplo convierte el documento de entrada en un documento PostScript. El código se escribe en ECMAScript y el documento se pasa como carga útil de flujo de trabajo:
 
