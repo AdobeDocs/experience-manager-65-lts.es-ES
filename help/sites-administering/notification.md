@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 8%
+source-wordcount: '2175'
+ht-degree: 12%
 
 ---
 
@@ -34,11 +34,11 @@ Cuando se notifica a un usuario, este recibe un correo electrónico en el idioma
 
 >[!NOTE]
 >
->Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+>Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ## Configuración del servicio de correo {#configuring-the-mail-service}
 
-Para que AEM pueda enviar correos electrónicos, el **servicio Day CQ Mail** debe estar configurado correctamente. Puede ver la configuración en la consola web. Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Para que AEM pueda enviar correos electrónicos, el **servicio Day CQ Mail** debe estar configurado correctamente. Puede ver la configuración en la consola web. Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 Se aplican las siguientes restricciones:
 
@@ -206,7 +206,7 @@ subject=<text_1>
 >
 >Encontrará más información sobre el formato de plantilla en el [javadocs del método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-El método `${payload.path.open}` revela la ruta a la carga útil del elemento de trabajo. Por ejemplo, para una página en Sites, entonces `payload.path.open` sería similar a `/bin/wcmcommand?cmd=open&path=…`.; no tiene el nombre del servidor, por lo que la plantilla antepone `${host.prefix}`.
+El método `${payload.path.open}` revela la ruta a la carga útil del elemento de trabajo. Por ejemplo, para una página en Sites, entonces `payload.path.open` sería similar a `/bin/wcmcommand?cmd=open&path=…`.; esto es sin el nombre del servidor, por lo que la plantilla antepone esto a `${host.prefix}`.
 
 Se pueden utilizar las siguientes variables dentro de la plantilla de correo electrónico:
 
@@ -327,7 +327,7 @@ Una vez configurada, la configuración debería ser similar a la siguiente:
 
 ![Ventana de configuración del proveedor de Oauth2 de SMTP del distribuidor CQ Mailer](assets/oauth-smtpprov2.png)
 
-Ahora, active los componentes de OAuth. Para ello:
+Ahora, active los componentes de OAuth. Para ello, haga lo siguiente:
 
 1. Vaya a la consola Componentes visitando esta dirección URL: `http://serveraddress:serverport/system/console/components`
 1. Busque los siguientes componentes
@@ -416,7 +416,7 @@ Una vez configurada, la configuración debería ser similar a la siguiente:
 
 ![La configuración completa de OAuth2 de SMTP de CQ Mailer](assets/oauth-outlook-smptconfig.png)
 
-Ahora, active los componentes de OAuth. Para ello:
+Ahora, active los componentes de OAuth. Para ello, haga lo siguiente:
 
 1. Vaya a la consola Componentes visitando esta dirección URL: `http://serveraddress:serverport/system/console/components`
 1. Busque los siguientes componentes
