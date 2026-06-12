@@ -204,11 +204,11 @@ Seleccione el tipo de barra de herramientas: párrafo, alineación o lista
 
 Barra de herramientas de edición de fuentes
 
-![Barra de herramientas de alineación ](assets/alignmenttoolbar.png)
+![Barra de herramientas de alineación &#x200B;](assets/alignmenttoolbar.png)
 
 Barra de herramientas de alineación
 
-![Barra de herramientas de lista ](do-not-localize/listingtoolbar.png)
+![Barra de herramientas de lista &#x200B;](do-not-localize/listingtoolbar.png)
 
 Barra de herramientas de lista
 
