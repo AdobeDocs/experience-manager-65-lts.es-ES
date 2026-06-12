@@ -592,7 +592,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en** CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
+* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en **&#x200B; CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
