@@ -8,10 +8,11 @@ topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4110e3d5-7242-459b-b249-637b5bf3472d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 92%
+source-wordcount: '3948'
+ht-degree: 91%
 
 ---
 
@@ -1279,12 +1280,12 @@ FormCalc es un lenguaje específico de XFA para crear una lógica y unos cálcul
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta cada vez que transcurre el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto de intervalo está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para finalizar la ejecución periódica, pase el objeto de intervalo devuelto a clearInterval.</td>
+   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta cada vez que transcurre el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto de intervalo está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para terminar la ejecución periódica, pase el objeto de intervalo devuelto a clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta una sola vez, después de que transcurra el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto timeout está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para cancelar el evento timeout, pase el objeto timeout devuelto a clearTimeOut.</td>
+   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta una sola vez, después de que transcurra el periodo.El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto timeout está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para cancelar el evento timeout, pase el objeto timeout devuelto a clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>

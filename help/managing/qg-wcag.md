@@ -7,8 +7,8 @@ role: Developer,Leader,User
 exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 91%
 
 ---
 
@@ -40,14 +40,14 @@ Por lo tanto, comprender los objetivos de WCAG 2.1 y cómo se estructuran las di
 
 La intención de WCAG 2.1 es proporcionar directrices que:
 
-* Son **neutrales tecnológicamente:**
-es decir, las directrices que pueden aplicarse a una amplia gama de formatos de contenido web, no solo a HTML. Por lo tanto, WCAG 2.1 puede cubrir el contenido generado o provisto por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras.
+* No dependen de la tecnología **:**
+Es decir, directrices que se pueden aplicar a una amplia gama de formatos de contenido web, no solo a HTML. Por lo tanto, WCAG 2.1 puede cubrir el contenido generado o provisto por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras.
 
 * Son **comprobables:**
 Cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté de acuerdo en general con que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito.
 
-* Apoyar la **implementación contextual y priorizada:**
-Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
+* Apoyar implementación contextual y priorizada de **:**
+Las directrices WCAG 2.1 tienen prioridad en relación con el posible impacto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.1.
 
@@ -69,7 +69,7 @@ WCAG 2.1 consta de cuatro principios fundamentales para el diseño accesible, a 
 Para obtener más detalles:
 * Cada **principio** consiste en una o más **directrices**.
 
-* Las guías están redactadas como instrucciones, que son positivas (haga esto...) o negativas (no haga esto...).
+* Las directrices están redactadas como instrucciones, que son positivas (haga esto...) o negativo (no haga esto...).
 * Las directrices se numeran de 1.1 a 4.1, donde el primer número corresponde al principio superior.
 * Cada directriz consta de uno o más **criterios de éxito**.
 * Los criterios de éxito se escriben como afirmaciones, que son `True` o `False` para una página web determinada.
@@ -86,12 +86,12 @@ Si bien WCAG 2.1 es un documento estable y no cambiará, la mayoría de estos re
 ### Recursos WCAG 2.1 {#wcag-resources}
 
 Esta lista no pretende ser exhaustiva, sino que presenta una introducción a los recursos disponibles:
-* [Esquema de todos los documentos relacionados con el Grupo de Trabajo sobre el Cambio Climático](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Esquema de todos los documentos relacionados con WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Resumen de los diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Directrices de accesibilidad del contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
 * [Novedades en WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
 * [Guía de referencia rápida para Cómo cumplir con WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
-* [Preguntas frecuentes sobre WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
+* [Preguntas más frecuentes sobre WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
 
 ### Novedades de WCAG 2.1 {#what-is-new}

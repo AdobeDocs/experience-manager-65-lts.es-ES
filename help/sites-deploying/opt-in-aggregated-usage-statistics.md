@@ -12,7 +12,7 @@ role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
 source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '323'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-Puede mejorar Adobe Experience Cloud enviando estadísticas de Adobe sobre cómo interactúa con Adobe Experience Manager (AEM). Esta información no contiene datos sobre los usuarios que visitan el sitio de su empresa y solo se utiliza para ayudar a Adobe a ofrecer una experiencia mejor a sus usuarios.
+Puede ayudar a mejorar Adobe Experience Cloud enviando estadísticas de Adobe sobre cómo interactúa con Adobe Experience Manager (AEM). Esta información no contiene datos sobre los usuarios que visitan el sitio de su empresa y solo se utiliza para ayudar a Adobe a ofrecer una experiencia mejor a sus usuarios.
 
 Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario táctil o la consola web.
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 4%
+source-wordcount: '1491'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,7 @@ Cuando asocia una página web con un marco de trabajo, este realiza el seguimien
 
 ### Cuenta de Adobe Analytics {#adobe-analytics-account}
 
-Para realizar un seguimiento de los datos de AEM en Adobe Analytics, debe tener una cuenta de Adobe Experience Cloud Adobe Analytics válida.
+Para realizar un seguimiento de los datos de AEM en Adobe Analytics, debe tener una cuenta de Adobe Analytics de Adobe Experience Cloud válida.
 
 La cuenta de Adobe Analytics debe:
 
@@ -45,9 +45,9 @@ La cuenta de Adobe Analytics debe:
 
 Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesión en Adobe Analytics. Mediante cualquiera de las siguientes acciones:
 
-* [Iniciar sesión en Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
+* [Inicio de sesión de Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
-* [Iniciar sesión en Adobe Analytics](https://sc.omniture.com/login/)
+* [Inicio de sesión en Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuración de AEM para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -183,7 +183,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 1. Seleccione **Guardar y cerrar**.
 1. Para activar la página y cualquier configuración o archivo conectado, **[publique](/help/sites-authoring/publishing-pages.md)** la página.
 1. El paso final es visitar la página en la instancia de publicación y buscar una palabra clave (por ejemplo, berenjena) usando el componente **Search**.
-1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es).
+1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics mediante una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es).
 1. Utilizando el ejemplo proporcionado, la llamada debe contener el valor introducido (es decir, berenjena) en eVar7 y la lista de eventos debe contener event3.
 
 ### Vistas de la página {#page-views}

@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
-ht-degree: 0%
+source-wordcount: '4372'
+ht-degree: 1%
 
 ---
 
@@ -377,7 +377,7 @@ A continuación se detallan los posibles problemas junto con las resoluciones:
 
   por ejemplo,
 
-  [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
+  [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Name%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
 #### Reindexación de índices de propiedades de Lucene {#re-indexing-lucene-property-indexes}
 

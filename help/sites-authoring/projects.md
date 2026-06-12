@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1366'
+ht-degree: 31%
 
 ---
 
@@ -104,7 +104,7 @@ En el mosaico **Recursos**, puede recopilar todos los recursos que utilice para 
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Puede cargar recursos directamente en el mosaico.
+Los recursos se cargan directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 

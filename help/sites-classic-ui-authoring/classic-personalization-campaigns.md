@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 86fe233e-b3fb-432e-861e-8134df2744e4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
-
 
 # Administración de campañas{#campaign-management}
 
@@ -24,13 +24,13 @@ Permite organizar las campañas de marketing en la web, el correo electrónico y
 
 Este documento describe los distintos elementos que componen las campañas. Encontrará información más detallada en los siguientes documentos:
 
-* [Teasers and Strategies](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+* [Teasers y estrategias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Páginas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Trabajar con el administrador de campañas de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [Uso de Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Comprensión de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [Configuración de su campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La administración de campañas se compone de varios elementos:
 
@@ -41,10 +41,9 @@ En Adobe Experience Manager (AEM), las marcas son la unidad de nivel superior y 
 Una campaña es una colección de **experiencias** individuales.
 
 * **Experiencias**
-El contenido enfocado forma las distintas experiencias que se presentan al visitante en **puntos de contacto**. Hay varios tipos de experiencia disponibles:
+El contenido enfocado forma las distintas experiencias que se presentan al visitante en **Puntos de contacto**. Hay varios tipos de experiencia disponibles:
 
    * **Teasers**
-
      [Páginas teaser / Párrafos](#teasers) se usan para dirigir a visitantes específicos **Segmentos** a contenido que se centra en sus intereses.
 
      Las páginas teaser pueden:

@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -196,7 +197,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Configuración del sitio remoto DAM</td>
   </tr>
   <tr>
-   <td>Medios</td>
+   <td>Recursos</td>
    <td> </td>
   </tr>
   <tr>
@@ -205,7 +206,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Medios del desarrollador</td>
+   <td>Recursos del desarrollador</td>
   </tr>
   <tr>
    <td>Implementación</td>
@@ -387,7 +388,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Proporciona acceso a los importadores y a diversos datos de productos.</td>
   </tr>
   <tr>
-   <td>DAM  </td>
+   <td>DAM </td>
    <td>Acceso a varias opciones.</td>
   </tr>
   <tr>
@@ -403,7 +404,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>No hay ninguna funcionalidad activa relacionada con esta entrada.</td>
   </tr>
   <tr>
-   <td>Envíos de formularios</td>
+   <td>Envío de formularios</td>
    <td>La lista de envíos de formularios recibidos.</td>
   </tr>
   <tr>
