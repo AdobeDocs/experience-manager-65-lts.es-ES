@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 63%
+source-wordcount: '2497'
+ht-degree: 62%
 
 ---
 
@@ -85,7 +85,7 @@ Al crear una página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
-   * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar. 
+   * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar.
    * Este campo es obligatorio.
 
 * **[Nombre](#name)**:
@@ -105,7 +105,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Al definir un nombre de página, se recomienda que sea lo más corto y expresivo posible para que el lector pueda entenderlo con facilidad. Para obtener más información, consulte la [guía de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) para el elemento de `title`.
 >
->Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
+>Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
 Al crear una página, AEM [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y el JCR.
 
@@ -130,7 +130,7 @@ Si proporciona solo una página **Title** al crear una página, AEM deriva la p�
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&#42;ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc-c-.html |
 
 #### Nombre {#name}
 
@@ -152,19 +152,22 @@ La plantilla define la estructura de una página, incluida una imagen en miniatu
 
 AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
-* **Título** El título se muestra en la página web resultante.
+* **Título**
+El título se muestra en la página web resultante.
 
-* **Nombre** Se utiliza al dar nombre a la página.
+* **Nombre**
+Se utiliza al dar nombre a la página.
 
-* **Plantilla** Una lista de plantillas disponibles para usar durante la generación de la nueva página.
+* **Plantilla**
+Una lista de plantillas disponibles para usar al generar la nueva página.
 
 >[!NOTE]
 >
->Si así se ha configurado en la instancia, los [autores de plantillas podrán crear plantillas con el editor de plantillas](/help/sites-authoring/templates.md).  
+>Si así se ha configurado en la instancia, los [autores de plantillas podrán crear plantillas con el editor de plantillas](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 
-Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una serie de [componentes predeterminados](/help/sites-authoring/default-components-console.md) que proporcionan funcionalidad completa. Estos incluyen:
+Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una serie de [componentes predeterminados](/help/sites-authoring/default-components-console.md) que proporcionan funcionalidad completa. Entre estas características se incluyen:
 
 * Texto
 * Imagen
@@ -225,7 +228,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    ![caop-05](assets/caop-05.png)
 
-1. Utilice **Crear** para completar el proceso y crear la nueva página. El cuadro de diálogo de confirmación le preguntará si desea **abrir** la página inmediatamente o volver a la consola (**Listo**): 
+1. Utilice **Crear** para completar el proceso y crear la nueva página. El cuadro de diálogo de confirmación le preguntará si desea **abrir** la página inmediatamente o volver a la consola (**Listo**):
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -262,7 +265,7 @@ Después de crear una página o desplazarse a una página existente (en la conso
 >
 >Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página    {#copying-and-pasting-a-page}
+### Copiar y pegar una página {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
@@ -410,13 +413,13 @@ El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los t
    * **Eliminar** para confirmar la acción:
 
       * Si la página no tiene referencias, se eliminará la página.
-      * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **Una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+      * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >
 >Si una página ya se ha publicado, se cancela su publicación automáticamente antes de eliminarla.
 
-### Bloquear una página   {#locking-a-page}
+### Bloquear una página {#locking-a-page}
 
 Puede [bloquear/desbloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) desde una consola o al editar una página individual. La información sobre las páginas bloqueadas también se muestra en ambas ubicaciones.
 

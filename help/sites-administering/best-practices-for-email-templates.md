@@ -13,7 +13,7 @@ exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1106'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 >
 >Este artículo se aplica a los componentes de base obsoletos basados en los componentes de correo electrónico de AEM.
 >
->Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
+>Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 

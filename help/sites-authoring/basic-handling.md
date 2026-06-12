@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2919'
+source-wordcount: '2951'
 ht-degree: 42%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base. 
+>* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base.
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM. En particular cuando [usa las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [edita páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
@@ -43,11 +43,11 @@ Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#
 
 >[!NOTE]
 >
->Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sites**.
+>Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**.
 >
 >Para empezar, haga clic en **Sitios**.
 
-### Navegación de productos    {#product-navigation}
+### Navegación de productos {#product-navigation}
 
 Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. Haga clic aquí para obtener una buena descripción general de la gestión básica de AEM.
 
@@ -71,12 +71,12 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* **[Navegación](/help/sites-authoring/basic-handling.md#navigation-panel)**: se representa mediante una brújula   
+* **[Navegación](/help/sites-authoring/basic-handling.md#navigation-panel)**: se representa mediante una brújula
 * **[Herramientas](/help/sites-authoring/basic-handling.md#tools-panel)**: se representan con un martillo
 
 A continuación, se describen las opciones disponibles en estos paneles.
 
-### Panel de navegación    {#navigation-panel}
+### Panel de navegación {#navigation-panel}
 
 El panel Navegación proporciona acceso a las consolas de AEM:
 
@@ -143,7 +143,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://business.adobe.com/es/)
+* [Soluciones](https://business.adobe.com/)
 
   ![Soluciones](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -213,7 +213,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   ![Pasar al contenido principal](assets/bh-30.png)
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 Hay varios recursos de ayuda disponibles:
 
@@ -268,7 +268,7 @@ Las acciones disponibles en la barra de herramientas cambian para reflejar las a
 
 El modo de [seleccionar un recurso](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depende de la vista.
 
-Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto sucede, aparecen opciones adicionales. Al tocar o hacer clic en los puntos suspensivos (los tres puntos o **...**), se abre un selector desplegable con el resto de las acciones. Por ejemplo, después de seleccionar una página en la consola **Sitios**: 
+Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto sucede, aparecen opciones adicionales. Tocando o haciendo clic en los puntos suspensivos (los tres puntos o **...**) abre un selector desplegable que contiene todas las acciones restantes. Por ejemplo, después de seleccionar una página en la consola **Sitios**:
 
 ![Barra de herramientas de acciones](assets/bh-12.png)
 
@@ -276,7 +276,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas    {#quick-actions}
+## Acciones rápidas {#quick-actions}
 
 En [Vista de tarjeta](#cardviewquickactions), ciertas acciones están disponibles como iconos de acción rápida y en la barra de herramientas. Los iconos de acción rápida están disponibles para un único elemento a la vez, con lo que no es necesario preseleccionarlos.
 
@@ -293,13 +293,13 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista   &#x200B;](#list-view)
+* [Vista de lista](#list-view)
 
 >[!NOTE]
 >
 >De forma predeterminada, AEM Assets no muestra las representaciones originales de los recursos de la IU como miniaturas en ninguna de las vistas. Si es administrador, puede utilizar superposiciones para configurar AEM Assets de modo que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos    {#selecting-resources}
+### Selección de recursos {#selecting-resources}
 
 La selección de un recurso específico depende de una combinación de la vista y el dispositivo:
 
@@ -337,7 +337,7 @@ La selección de un recurso específico depende de una combinación de la vista 
     </ul> </td>
   </tr>
   <tr>
-   <td>Vista de lista   </td>
+   <td>Vista de lista</td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la miniatura</li>
@@ -440,7 +440,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista    {#list-view}
+### Vista de lista {#list-view}
 
 ![Vista de lista](assets/bh-19.png)
 

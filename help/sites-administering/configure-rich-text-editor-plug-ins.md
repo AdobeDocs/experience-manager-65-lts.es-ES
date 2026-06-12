@@ -1,5 +1,5 @@
 ---
-title: Configuración de los complementos del Editor de texto enriquecido
+title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
@@ -8,12 +8,12 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4381'
+source-wordcount: '4463'
 ht-degree: 2%
 
 ---
 
-# Configuración de los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
+# Configuración de los complementos del editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
 Las funcionalidades de RTE están disponibles a través de una serie de complementos, cada uno con la propiedad features. Puede configurar la propiedad features para activar o desactivar una o varias funciones RTE. Este artículo describe cómo configurar específicamente los complementos RTE.
 
@@ -270,7 +270,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
    * **Nombre** `cssName`
    * **Tipo** `String`
-   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
 1. Agregue la propiedad `text` al mismo nodo; esto define el texto mostrado en el cuadro de selección:
 
@@ -455,12 +455,10 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
-
      **Tipo** `Long`
      **Value** representa [Unicode](https://unicode.org/) (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
-
      **Tipo** `Long`
      **Valor**: la representación [Unicode](https://unicode.org/) (decimal) del último carácter del intervalo
 
@@ -500,8 +498,8 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
    >* **Tipo** `String[]`
    >
    >* **Valor** uno o ambos de los siguientes, según sea necesario:
-   >* `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-   >* `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
+   >   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   >   * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para que pueda hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el nodo `table`, cree los siguientes nodos nuevos (según sea necesario):
@@ -572,7 +570,7 @@ Una instalación estándar de AEM incluye los diccionarios de inglés americano 
 1. Realice una de las siguientes acciones para buscar un diccionario del idioma que haya elegido:
 
    * Busque el diccionario del idioma que haya elegido. En la página del diccionario, busque el vínculo a la página web de origen o del autor original. Busque los archivos de diccionario para v2.x en una página de este tipo.
-   * Busque los archivos de diccionario v2.x en [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Busque archivos de diccionario v2.x en [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
 1. Descargue el archivo con las definiciones de ortografía. Extraiga el contenido del archivo en su sistema de archivos.
 
@@ -688,13 +686,13 @@ Para configurar cómo se añaden los vínculos en AEM desde otro programa, defin
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Matriz de **protocolos** válidos. Los protocolos admitidos son `http://`, `https://`, `file://` y `mailto:`.
 

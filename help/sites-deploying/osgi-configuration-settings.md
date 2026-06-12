@@ -12,8 +12,8 @@ role: Admin
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3247'
-ht-degree: 0%
+source-wordcount: '3170'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 >Asegúrese de configurar lo siguiente:
 >
 >**Nombre de usuario** y **Contraseña**, las credenciales para acceder a la propia consola de administración web de Apache Felix.
->La contraseña debe cambiarse después de la instalación inicial para garantizar la [seguridad](/help/sites-administering/security-checklist.md) de su instancia.
+>Debe cambiarse la contraseña después de la instalación inicial para garantizar la [seguridad](/help/sites-administering/security-checklist.md) de su instancia.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Ciertas configuraciones pueden afectar al rendimiento. Deshabilite esta configur
 
 **Instalador JCR de Apache Sling**: estos parámetros probablemente no necesitan configuración, pero pueden ser útiles para saberlo al desarrollar o depurar. Por ejemplo, las carpetas de instalación pueden ser útiles para proteger o desproteger, o crear un paquete.
 
-* **Nombre de las carpetas de instalación regexp** y **Profundidad máxima de jerarquía de las carpetas de instalación**: especifique dónde y a qué profundidad se buscan los recursos que se van a instalar en las carpetas del repositorio. Cuando se usa un comodín (como en ).&#42;/instalación) se buscan todas las coincidencias apropiadas, por ejemplo, `/libs/sling/install` y `/libs/cq/core/install`.
+* **Nombre de las carpetas de instalación regexp** y **Profundidad máxima de jerarquía de las carpetas de instalación**: especifique dónde y a qué profundidad se buscan los recursos que se van a instalar en las carpetas del repositorio. Cuando se usa un comodín (como en .&#42;/install), se buscan todas las coincidencias adecuadas, por ejemplo, `/libs/sling/install` y `/libs/cq/core/install`.
 
 * **Ruta de búsqueda**, lista de rutas en las que jcrinstall busca los recursos que se van a instalar, junto con un número que indica el factor de ponderación para esa ruta.
 
@@ -126,7 +126,7 @@ En particular para las instancias de producción:
 
 * deshabilitar **Generar información de depuración**
 * deshabilitar **Mantener Java generado™**
-* deshabilitar **contenido asignado**
+* deshabilitar **Contenido asignado**
 * deshabilitar **Mostrar fragmentos de Source**
 
 >[!NOTE]
@@ -179,9 +179,9 @@ Ver [Registro de AEM](/help/sites-deploying/configure-logging.md) y [Registro de
 
 El servicio de filtro de referente es un servicio OSGi que le permite configurar lo siguiente:
 
-* qué métodos http se deben filtrar
+* qué métodos HTTP se deben filtrar
 * si se permite un encabezado de referente vacío
-* y una lista de servidores que se permitirán además del host de servidor.
+* y una lista de servidores permitidos, además del host de servidor.
 
 Consulte la [Lista de comprobación de seguridad - Problemas con la falsificación de solicitudes entre sitios](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obtener más información.
 
@@ -244,9 +244,9 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 * Para instancias de producción:
 
    * habilitar **Minify** (para eliminar los caracteres CRLF y de espacio en blanco).
-   * habilite **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
-   * deshabilitar **Depuración**
-   * deshabilitar **Intervalos**
+   * habilitar **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
+   * deshabilitar **Depurar**
+   * deshabilitar **Temporización**
 
 * Para el desarrollo de JS (especialmente cuando se activa la depuración/depuración):
 
@@ -257,7 +257,7 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 
 >[!CAUTION]
 >
->Al cambiar la configuración de **Minify** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=es) para obtener detalles.
+>Al cambiar la configuración de **Minify** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) para obtener detalles.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ Hay varias propiedades de configuración disponibles:
 Ruta de acceso para la que está activo este controlador de autenticación. Si este parámetro se deja vacío, el controlador de autenticación se desactiva. Por ejemplo, la ruta / hace que el controlador de autenticación se utilice para todo el repositorio.
 
 * **Clasificación del servicio**
-El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un valor `int` en el cual los valores más altos designan una prioridad más alta.
+El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un valor `int` en el que los valores más altos designan una prioridad más alta.
 El valor predeterminado es `0`.
 
 * **Nombres de encabezado**
@@ -334,11 +334,11 @@ Nombres de cookies que podrían contener un ID de usuario.
 * **Nombres de parámetros**
 Nombres de los parámetros de solicitud que pueden proporcionar el ID de usuario.
 
-* **Mapa de usuario**
+* Mapa de usuario de ****
 Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por uno diferente en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario `admin` aparece a ambos lados del mapa, se omite la asignación. El carácter &quot;=&quot; debe tener un carácter de escape &quot;\&quot; inicial.
 
 * **Formato**
-Indica el formato en el que se proporciona el ID de usuario. Utilice:
+Indica el formato en el que se proporciona el ID de usuario. Use:
 
    * `Basic` si el ID de usuario está codificado en el formato de autenticación HTTP Basic
    * `AsIs` si el ID de usuario se proporciona en texto sin formato o si se aplica cualquier valor de expresión regular debe usarse tal cual o cualquier expresión regular
@@ -351,7 +351,7 @@ Indica el formato en el que se proporciona el ID de usuario. Utilice:
 
 * **Modo WCM** para definir el modo predeterminado.
 * En una instancia de autor, este modo puede ser `edit`, `disable,preview` o `analytics`.
-Se puede acceder a los demás modos desde la barra de tareas o se puede utilizar el sufijo `?wcmmode=disabled` para emular un entorno de producción.
+Se puede acceder a los otros modos desde la barra de tareas o se puede utilizar el sufijo `?wcmmode=disabled` para emular un entorno de producción.
 
 * En una instancia de publicación, este modo debe establecerse en `disabled` para garantizar que no se pueda acceder a ningún otro modo.
 

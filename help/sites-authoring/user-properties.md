@@ -1,5 +1,5 @@
 ---
-title: 'Configuración del entorno de la cuenta  '
+title: Configuración del entorno de la cuenta
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: User,Admin,Developer
 exl-id: dbcedca5-5228-4ad0-9ee1-d32b519e60bd
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 63%
 
 ---
 
-# Configuración del entorno de la cuenta  {#configuring-your-account-environment}
+# Configuración del entorno de la cuenta{#configuring-your-account-environment}
 
 AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
@@ -39,7 +39,7 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 * [Mis preferencias](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * Especifique las distintas preferencias exclusivas al usuario 
+   * Especifique las distintas preferencias exclusivas al usuario
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -78,7 +78,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
   Define el color predeterminado que se utiliza para realizar anotaciones.
 
    * Haga clic en el bloque de colores para poder abrir el selector de muestras y seleccionar un color.
-   * Como alternativa, introduzca el código hexadecimal del color deseado en el campo. 
+   * Como alternativa, introduzca el código hexadecimal del color deseado en el campo.
 
 * **Presentación de fecha relativa**
 
@@ -87,13 +87,13 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
    * **Mostrar siempre la fecha exacta**: se muestra siempre la fecha exacta (nunca una fecha relativa).
-   * **1 día**: se muestra la fecha relativa para las fechas dentro de un día; de lo contrario, se muestra una fecha exacta. 
+   * **1 día**: se muestra la fecha relativa para las fechas dentro de un día; de lo contrario, se muestra una fecha exacta.
 
-   * **7 días (valor predeterminado)**: se muestra la fecha relativa para las fechas dentro de siete días; de lo contrario, se muestra una fecha exacta. 
+   * **7 días (valor predeterminado)**: se muestra la fecha relativa para las fechas dentro de siete días; de lo contrario, se muestra una fecha exacta.
 
-   * **1 mes**: se muestra la fecha relativa para las fechas dentro de un mes; de lo contrario, se muestra una fecha exacta. 
+   * **1 mes**: se muestra la fecha relativa para las fechas dentro de un mes; de lo contrario, se muestra una fecha exacta.
 
-   * **1 año**: se muestra la fecha relativa para las fechas dentro de un año; de lo contrario se muestra una fecha exacta. 
+   * **1 año**: se muestra la fecha relativa para las fechas dentro de un año; de lo contrario se muestra una fecha exacta.
 
    * **Mostrar siempre la fecha relativa**: las fechas exactas nunca se muestran, y solo se muestran fechas relativas.
 

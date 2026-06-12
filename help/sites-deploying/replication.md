@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 1%
+source-wordcount: '3230'
+ht-degree: 3%
 
 ---
 
@@ -105,15 +105,15 @@ Los siguientes agentes están disponibles en una instalación estándar de AEM:
 * [Agente predeterminado](#replication-author-to-publish)
 Se utiliza para replicar de Autor a Publicar.
 
-* Vaciado de Dispatcher
-Se utiliza para administrar la caché de Dispatcher. Consulte [Invalidación de la caché de Dispatcher desde el entorno de creación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidación de la caché de Dispatcher desde una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-a-publishing-instance) para obtener más información.
+* Vaciar Dispatcher
+Se utiliza para administrar la caché de Dispatcher. Consulte [Invalidación de la caché de Dispatcher desde el entorno de creación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidación de la caché de Dispatcher desde una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obtener más información.
 
 * [Replicación inversa](#configuring-reverse-replication)
 Se utiliza para replicar desde Publicar en Autor. La replicación inversa no se utiliza para funciones de Communities, como foros, blogs y comentarios. Se desactiva de forma efectiva, ya que la bandeja de salida no está activada. El uso de la replicación inversa requeriría una configuración personalizada.
 
 * Agente estático
 Se trata de un &quot;agente que almacena una representación estática de un nodo en el sistema de archivos&quot;.
-Por ejemplo, con la configuración predeterminada, las páginas de contenido y los recursos DAM se almacenan en `/tmp`, ya sea como HTML o en el formato de recurso adecuado. Consulte las fichas `Settings` y `Rules` para obtener la configuración.
+Por ejemplo, con la configuración predeterminada, las páginas de contenido y los recursos DAM se almacenan en `/tmp`, ya sea como HTML o en el formato de recurso adecuado. Consulte las fichas `Settings` y `Rules` para ver la configuración.
 Esto se solicitó para que cuando la página se solicite directamente desde el servidor de aplicaciones, se pueda ver el contenido. Es un agente especializado y (probablemente) no es necesario en la mayoría de los casos.
 
 ## Agentes de replicación: parámetros de configuración {#replication-agents-configuration-parameters}
@@ -205,7 +205,7 @@ Al configurar un agente de replicación desde la consola Herramientas, hay cuatr
 
   El protocolo especificado aquí (HTTP o HTTPS) determina el método de transporte.
 
-  Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede usar una dirección URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
+  Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede utilizar una URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
 
 * **Usuario**
 
@@ -352,7 +352,7 @@ Desde la pestaña Herramientas del entorno de creación, puede configurar los ag
 
 >[!NOTE]
 >
->Cuando un Dispatcher administra solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe agregar el encabezado PATH a la lista Dispatcher de encabezados de cliente. Consulte [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-http-headers-to-pass-through-clientheaders).
+>Cuando un Dispatcher administra solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe agregar el encabezado PATH a la lista Dispatcher de encabezados de cliente. Consulte [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Acceda a la ficha **Herramientas** en AEM.
@@ -425,7 +425,6 @@ Para configurar la replicación de contenido para una instancia de publicación 
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
-
         `https://localhost:4504/bin/receive`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
@@ -469,13 +468,12 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, todaví
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
-
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
       * Puede configurar otros parámetros según sea necesario.
 
-   Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede usar una dirección URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
+   Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede utilizar una URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
 
    >[!NOTE]
    >

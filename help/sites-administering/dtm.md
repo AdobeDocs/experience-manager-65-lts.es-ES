@@ -1,5 +1,5 @@
 ---
-title: Integración con Adobe Dynamic Tag Management
+title: Integración con la administración dinámica de etiquetas de Adobe
 description: Obtenga información sobre la integración con Adobe Dynamic Tag Management.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,16 +8,17 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 2%
+source-wordcount: '2210'
+ht-degree: 3%
 
 ---
 
-# Integración con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
+# Integración con la administración dinámica de etiquetas de Adobe {#integrating-with-adobe-dynamic-tag-management}
 
-Integre [Adobe Dynamic Tag Management](https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html) con AEM para que pueda usar sus propiedades web de Dynamic Tag Management para rastrear sitios de AEM. Dynamic Tag Management permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice Dynamic Tag Management para recopilar datos de uso para su sitio web de AEM y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
+Integre [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) con AEM para que pueda usar sus propiedades web de Dynamic Tag Management para rastrear sitios de AEM. Dynamic Tag Management permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice Dynamic Tag Management para recopilar datos de uso para su sitio web de AEM y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
 
 Antes de realizar la integración, cree la [propiedad web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) de Dynamic Tag Management que realiza el seguimiento del dominio del sitio de AEM. Las [opciones de alojamiento](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de la propiedad web deben estar configuradas para que pueda configurar AEM para acceder a las bibliotecas de Dynamic Tag Management.
 
@@ -85,7 +86,7 @@ Cree una configuración de nube para que la instancia de AEM pueda autenticarse 
 
 >[!NOTE]
 >
->Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en sus páginas cuando su propiedad web de DTM incluya la herramienta Adobe Analytics y también esté usando [Content Insight](/help/sites-authoring/content-insights.md). En su [configuración de Adobe Analytics Cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleccione la opción No incluir código de seguimiento.
+>Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en sus páginas cuando su propiedad web de DTM incluya la herramienta Adobe Analytics y también esté utilizando [Insight de contenido](/help/sites-authoring/content-insights.md). En su [configuración de Adobe Analytics Cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleccione la opción No incluir código de seguimiento.
 
 ### Configuración general {#general-settings}
 
@@ -162,7 +163,7 @@ Al alojar las bibliotecas de Dynamic Tag Management en AEM, AEM configura autom�
   </tr>
   <tr>
    <td>Expresión de programación</td>
-   <td>(Aparece y es necesario cuando se selecciona Habilitar el importador de encuestas). Una expresión cron que controla cuándo se descargan las bibliotecas de Dynamic Tag Management.</td>
+   <td>(Aparece y es necesario cuando se selecciona Habilitar el importador de encuestas). Expresión cron que controla cuándo se descargan las bibliotecas de Dynamic Tag Management.</td>
   </tr>
  </tbody>
 </table>
