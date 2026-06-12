@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 98%
+source-wordcount: '2298'
+ht-degree: 96%
 
 ---
 
@@ -95,7 +95,7 @@ La estructura XML de relleno previo y el XML enviado para los formularios adapta
 Prefill-Submit-Data-ContentPackage.zip
 
 [Obtener archivo](assets/prefill-submit-data-contentpackage.zip)
-Ejemplo que contiene datos de relleno previo y datos enviados
+Muestra que contiene datos de relleno previo y datos enviados
 
 ### Formularios adaptables basados en esquemas XML  {#xml-schema-af}
 
@@ -141,7 +141,7 @@ Para los campos cuyo modelo es un esquema XML, los datos se rellenan previamente
 >
 >Se recomienda no utilizar campos no enlazados en paneles enlazados (paneles no vacíos `bindRef` que se hayan creado al arrastrar componentes de la barra de tareas o de la pestaña Fuentes de datos). Podría causar la pérdida de los datos de estos campos independientes. Además, se recomienda que los nombres de los campos sean únicos en todo el formulario, especialmente para los campos independientes.
 
-#### Un ejemplo sin los envoltorios afData y afBoundData  {#an-example-without-afdata-and-afbounddata-wrapper}
+#### Un ejemplo sin los envoltorios afData y afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><config>
@@ -341,7 +341,7 @@ Otro buen ejemplo es un caso de uso en el que le gustaría rellenar previamente 
 prefill-page component.zip
 
 [Obtener archivo](assets/prefill-page-component.zip)
-Ejemplo de prefill.jsp en el componente de página
+Prefill.jsp de muestra en el componente de página
 
 ## Servicio de relleno previo personalizado de AEM Forms {#aem-forms-custom-prefill-service}
 
@@ -351,7 +351,7 @@ Puede utilizar el servicio de relleno previo personalizado para escenarios en lo
 
 El servicio de relleno previo es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en los paquetes de AEM Forms. Antes de empezar a crear el paquete, haga lo siguiente:
 
-* [Descargar el AEM Forms Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
+* [Descargar AEM Forms Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
 * Descargue el paquete de plantillas
 
 * Coloque el archivo de datos (datos de relleno previo) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \content del repositorio crx.

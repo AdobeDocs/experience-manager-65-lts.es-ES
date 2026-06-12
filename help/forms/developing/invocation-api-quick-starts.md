@@ -41,9 +41,9 @@ Los siguientes tutoriales rápidos están disponibles para invocar servicios de 
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Inicio rápido: invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Invocación de AEM Forms mediante codificación Base64</a> (proxy de servicio web Java)</p></td>

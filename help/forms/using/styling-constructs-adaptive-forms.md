@@ -7,9 +7,10 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0ecfd918-2c68-4085-8c6e-440499b84fc1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2378'
 ht-degree: 98%
 
 ---
@@ -866,7 +867,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-nav-bullet-border</code></p> </td>
-   <td><p>Color del borde de la viñeta del navegador del asistente (prefiriendo el pie de ilustración/etiqueta)</p> </td>
+   <td><p>Color del borde de la viñeta del navegador del asistente (que actúan como prefijo del pie de ilustración/etiqueta)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-progress-bg-color</code></p> </td>

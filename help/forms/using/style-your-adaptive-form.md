@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 54%
+source-wordcount: '2174'
+ht-degree: 55%
 
 ---
 
@@ -251,7 +251,7 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
       <td><b>Valor</b></td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 

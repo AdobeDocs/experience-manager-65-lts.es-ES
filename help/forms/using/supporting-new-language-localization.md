@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 87%
+source-wordcount: '848'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ Existen dos métodos para identificar la configuración regional del formulario 
 * observando los siguientes parámetros en el orden especificado:
 
    * Parámetro de solicitud `afAcceptLang`
-Para anular la configuración regional del explorador de los usuarios, puede pasar el `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
+Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
@@ -49,9 +49,9 @@ Para anular la configuración regional del explorador de los usuarios, puede pas
    * La configuración de idioma del usuario especificada en AEM.
 
    * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
-      * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`. 
+      * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`.
       * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
-      * Cambia el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y **[!UICONTROL Guardar]** la configuración.
+      * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
 Una vez identificada la configuración regional, el formulario adaptable selecciona el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario del idioma en el que se creó el formulario adaptable.
 
@@ -117,7 +117,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Cree un nodo `languages` `nt:unstructured` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale>`&#x200B;`de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 

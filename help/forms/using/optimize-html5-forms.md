@@ -8,10 +8,11 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1ab2fe5d-5fac-4a11-8d27-7c7607f98653
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -59,8 +60,8 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    >Cuando utiliza un proxy, se requieren los siguientes cambios de configuración:
    >
    >* Acceso: *https://&lt;server>:&lt;port>/system/console/configMgr*.
-   * Edite la configuración del Filtro de referente de Apache Sling.
-   * En Permitir hosts, añada la entrada para el servidor proxy.
+   >* Edite la configuración del Filtro de referente de Apache Sling.
+   >* En Permitir hosts, añada la entrada para el servidor proxy.
 
 1. Habilite la Compresión.
 
@@ -82,4 +83,4 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    </Location>
    ```
 
-1. Para acceder al servidor de AEM, utilice https://[Apache_server]:80.
+1. Para acceder al servidor de AEM, use https://[Apache_server]:80.

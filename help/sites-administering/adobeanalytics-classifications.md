@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 5%
 
 ---
@@ -111,7 +112,7 @@ Las propiedades incluyen lo siguiente:
    <td>Un nombre de clase de una implementación de SAINTransformer</td>
   </tr>
   <tr>
-   <td>correo electrónico</td>
+   <td>email</td>
    <td>Dirección de correo electrónico de notificación.</td>
   </tr>
   <tr>

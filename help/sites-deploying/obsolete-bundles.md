@@ -11,8 +11,8 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 8%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 Al actualizar a AEM 6.5 LTS, se desinstalarán automáticamente los siguientes paquetes, según la versión de Service Pack de AEM 6.5 en la que se haya realizado la actualización:
 
-* com.adobe.cq.social.cq-social-activitystreams
+* com.adobe.cq.social.cq-social-activity streams
 * com.adobe.cq.social.cq-social-as-provider
 * com.adobe.cq.social.cq-social-badging-api
 * com.adobe.cq.social.cq-social-badging-basic-impl
@@ -81,8 +81,8 @@ Al actualizar a AEM 6.5 LTS, se desinstalarán automáticamente los siguientes p
 * com.adobe.cq.screens.mq.activemq
 * com.adobe.cq.screens.mq.core
 * com.adobe.cq.screens
-* com.adobe.cq.screens.sessions
-* com.adobe.granite.socketio
+* com.adobe.cq.screens.session
+* com.adobe.granite.socket
 * org.apache.jackrabbit.jackrabbit-api (se ha sustituido por la versión más reciente org.apache.jackrabbit.oak-jackrabbit-api)
 * com.adobe.cq.commerce.cq-commerce-core
 * com.adobe.cq.commerce.cq-commerce-pim

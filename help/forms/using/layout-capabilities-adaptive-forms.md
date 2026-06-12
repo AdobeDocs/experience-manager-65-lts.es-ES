@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 23ca3bff-1a7e-48cc-83b7-b2ec8545cd00
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 98%
+source-wordcount: '1246'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Todos estos diseños de panel se definen en la siguiente ubicación:
 
 Un autor de formularios puede asociar un diseño a cada uno de los paneles de un formulario adaptable, incluido el panel raíz.
 
-Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`. 
+Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`.
 
 ![Lista de diseños de panel del panel raíz de un formulario adaptable](assets/layouts.png)
 

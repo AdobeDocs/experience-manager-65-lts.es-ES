@@ -1,13 +1,13 @@
 ---
 title: Instalar y configurar comunicaciones interactivas
-description: Instale y configure AEM Forms Interactive Communications para crear correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
+description: Instale y configure Comunicaciones interactivas de AEM Forms para crear correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
 source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1450'
 ht-degree: 84%
 
 ---
@@ -16,21 +16,21 @@ ht-degree: 84%
 
 ## Introducción {#introduction}
 
-AEM Form permite centralizar la creación, el ensamblado, la gestión y el envío de documentos seguros e interactivos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. Esta capacidad se denomina Interactive Communications. La capacidad está incluida en el paquete de complementos de AEM Forms. El paquete de complementos se implementa en una instancia de autor o de publicación de AEM.
+AEM Form permite centralizar la creación, el ensamblado, la gestión y el envío de documentos seguros e interactivos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. Esta capacidad se denomina Comunicaciones interactivas. La capacidad está incluida en el paquete de complementos de AEM Forms. El paquete de complementos se implementa en una instancia de autor o de publicación de AEM.
 
-Puede utilizar la capacidad Interactive Communications para producir comunicaciones en diferentes formatos; por ejemplo, en formato web y PDF. Puede integrar Interactive Communications con el flujo de trabajo de AEM para procesar y entregar la comunicación ensamblada a los clientes en el canal de su elección. Por ejemplo, para enviar una comunicación al usuario final por correo electrónico.
+Puede utilizar la capacidad Comunicación interactiva para producir comunicaciones en diferentes formatos; por ejemplo, en formato web y PDF. Puede integrar comunicaciones interactivas con el flujo de trabajo de AEM para procesar y entregar la comunicación ensamblada a los clientes en el canal de su elección. Por ejemplo, para enviar una comunicación al usuario final por correo electrónico.
 
-Si está actualizando desde una versión anterior y ya ha adquirido Administración de correspondencia, puede instalar el [paquete de compatibilidad](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) para seguir utilizándola. Para obtener información sobre las diferencias entre Interactive Communications y Administración de correspondencia, consulte [Información general sobre Interactive Communications](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+Si está actualizando desde una versión anterior y ya ha adquirido Administración de correspondencia, puede instalar el [paquete de compatibilidad](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) para seguir utilizándola. Para obtener información sobre las diferencias entre Comunicaciones interactivas y Administración de correspondencia, consulte [Información general sobre Comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms es una potente plataforma de clase empresarial. Interactive Communications es solo una de las capacidades de AEM Forms. Para obtener la lista completa de capacidades, consulte [Introducción a AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms es una potente plataforma de clase empresarial. La comunicación interactiva es solo una de las capacidades de AEM Forms. Para obtener la lista completa de capacidades, consulte [Introducción a AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Topología de implementación {#deployment-topology}
 
-El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Lo único que necesita es disponer al menos de una instancia de autor de AEM y otra de procesamiento para ejecutar la capacidad Interactive Communications. A continuación, encontrará una topología de carácter orientativo para ejecutar AEM Forms Interactive Communications, Administración de correspondencia, AEM Forms Data Capture y el flujo de trabajo centrado en Forms en las capacidades OSGi. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Lo único que necesita es disponer al menos de una instancia de autor de AEM y otra de procesamiento para ejecutar la capacidad Comunicaciones interactivas. A continuación, encontrará una topología de carácter orientativo para ejecutar Comunicaciones interactivas de AEM Forms, Administración de correspondencia, AEM Forms Data Capture y el flujo de trabajo centrado en Forms en las capacidades OSGi. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topología-recomendada](assets/recommended-topology.png)
 
-AEM Forms Interactive Communications ejecuta interfaces de usuario de administración, creación y agente en las instancias de autor de AEM Forms. Las instancias de publicación alojan la versión final de las comunicaciones interactivas que están listas para ser consumidas por los usuarios finales.
+Comunicaciones interactivas de AEM Forms ejecuta interfaces de usuario de administración, creación y agente en las instancias de autor de AEM Forms. Las instancias de publicación alojan la versión final de las comunicaciones interactivas que están listas para ser consumidas por los usuarios finales.
 
 ## Requisitos del sistema {#system-requirements}
 
@@ -39,7 +39,7 @@ Antes de empezar a instalar y configurar las capacidades de comunicación intera
 * Se ha implementado la infraestructura de hardware y software. Para obtener una lista detallada del hardware y el software compatibles, consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 * La ruta de instalación de la instancia de AEM no contiene espacios en blanco.
-* Se está ejecutando una instancia de AEM. En la terminología de AEM, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor en el modo Autor o Publicación. Se necesita al menos una instancia de AEM (de autor o de procesamiento) para ejecutar las capacidades Interactive Communications y Administración de correspondencia de AEM Forms:
+* Se está ejecutando una instancia de AEM. En la terminología de AEM, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor en el modo Autor o Publicación. Se necesita al menos una instancia de AEM (de autor o de procesamiento) para ejecutar las capacidades Comunicación interactiva y Administración de correspondencia de AEM Forms:
 
    * **Autor**: la instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
    * **Procesamiento:** una instancia de procesamiento es una instancia de [autor de AEM protegida](/help/forms/using/hardening-securing-aem-forms-environment.md). Puede configurar una instancia de autor y protegerla después de realizar la instalación.
@@ -84,7 +84,7 @@ Antes de empezar a instalar y configurar las capacidades de comunicación intera
 
 ## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
-El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene Interactive Communications de AEM Forms, Administración de correspondencia y otras capacidades. Siga estos pasos para instalar el paquete de complementos:
+El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene Comunicaciones interactivas de AEM Forms, Administración de correspondencia y otras capacidades. Siga estos pasos para instalar el paquete de complementos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
 1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
@@ -142,7 +142,7 @@ Siga estos pasos en todas las instancias de autor y publicación para incluir el
 
 #### Instalar el paquete de compatibilidad {#install-compatibility-package}
 
-Interactive Communications es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y piensa seguir utilizando cartas (Administración de correspondencia), instale el [paquete de compatibilidad de AEMFD](/help/forms/using/compatibility-package.md).
+La comunicación interactiva es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y piensa seguir utilizando cartas (Administración de correspondencia), instale el [paquete de compatibilidad de AEMFD](/help/forms/using/compatibility-package.md).
 
 El paquete de compatibilidad de AEMFD le permite utilizar los siguientes recursos de AEM 6.4 Forms, AEM 6.3 Forms y AEM 6.2 Forms en AEM 6.5 Forms:
 
@@ -165,23 +165,23 @@ Dispatcher es la herramienta de equilibrio de carga y almacenamiento en caché d
 
 1. Configure el servicio del Filtro de referente:
 
-   Inicie sesión en el Administrador de configuración de Apache Felix como administrador. La URL predeterminada del Administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr.  En el menú **Configuraciones**, seleccione la opción **Filtro de referente de Apache Sling**. En el campo Permitir hosts, escriba el nombre de host de Dispatcher para permitirlo como referente y haga clic en **Guardar**. El formato de la entrada es https://&#39;[server]:[port]&#39;.
+   Inicie sesión en el Administrador de configuración de Apache Felix como administrador. La URL predeterminada del Administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr. En el menú **Configuraciones**, seleccione la opción **Filtro de referente de Apache Sling**. En el campo Permitir hosts, escriba el nombre de host de Dispatcher para permitirlo como referente y haga clic en **Guardar**. El formato de la entrada es https://&#39;[server]:[port]&#39;.
 
 #### Integración con Adobe Target {#integrate-adobe-target}
 
 Es probable que los clientes abandonen una comunicación interactiva si la experiencia que ofrece no es atractiva. Aunque para los clientes resulta frustrante, también aumenta el volumen y el coste de la asistencia en su organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. AEM Forms es la solución a este problema.
 
-AEM Forms se integra con Adobe Target, una solución de Adobe Experience Cloud, para ofrecer experiencias del cliente personalizadas y atractivas en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms se integra con Adobe Target, una solución de Adobe Experience Cloud, para ofrecer experiencias de cliente personalizadas y atractivas en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### Configurar la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
 
-Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier instancia de AEM Forms, agregue los certificados al almacén de confianza de Java™ de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
+Puede habilitar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier instancia de AEM Forms, agregue los certificados al almacén de confianza de Java™ de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
 ## Pasos siguientes {#next-steps}
 
-Ha configurado un entorno para utilizar las capacidades Interactive Communications y Administración de correspondencia. Ahora, los pasos para utilizar esta capacidad son:
+Ha configurado un entorno para utilizar las capacidades Comunicación interactiva y Administración de correspondencia. Ahora, los pasos para utilizar esta capacidad son:
 
 * [Información general sobre Administración de correspondencia](/help/forms/using/interactive-communications-overview.md)
 
