@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2078'
 ht-degree: 7%
 
 ---
-
 
 # Configurar formularios de búsqueda{#configuring-search-forms}
 
@@ -148,7 +148,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Intervalo de fechas </td>
+   <td>Intervalo de fecha </td>
    <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
    <td>
     <ul>
@@ -197,7 +197,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Ruta de JSON</li>
+     <li>Ruta JSON</li>
      <li>Nombre de propiedad*</li>
      <li>Selección única</li>
      <li>Ruta de opción</li>
@@ -393,7 +393,7 @@ Si se selecciona, las opciones se representan como casillas de verificación que
 * **Nombres de propiedades de publicación y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* La &ast; de las etiquetas de campo de la ficha **Configuración** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
+* &ast; en las etiquetas de campo de la ficha **Settings** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 

@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: 5a962fd3-33bb-44df-a48d-416a04f393eb
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1558'
 ht-degree: 62%
 
 ---
@@ -47,7 +47,7 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 
 #### Creación de páginas {#page-authoring}
 
-* Vínculos de navegación 
+* Vínculos de navegación
 
    * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe [obtener una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
 
@@ -93,7 +93,7 @@ Para [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-
 
 1. Se abre el asistente que le guiará a través de la recopilación de la información necesaria cuando [cree su nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga las instrucciones que aparecen en pantalla.
 
-### Seleccionar su página para ejecutar acciones adicionales   {#selecting-your-page-for-further-action}
+### Seleccionar su página para ejecutar acciones adicionales {#selecting-your-page-for-further-action}
 
 Puede seleccionar una página para poder realizar acciones en ella. Si se selecciona una página, se actualizará automáticamente la barra de herramientas para que se muestren las acciones relevantes para ese recurso.
 
@@ -178,7 +178,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    >[!NOTE]
    >
-   >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, tendrá que actualizase la página. 
+   >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, tendrá que actualizase la página.
 
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
@@ -200,7 +200,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
    >
    >Para navegar usando vínculos en el contenido, debe usar [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Editar las Propiedades de la página   {#editing-the-page-properties}
+### Editar las Propiedades de la página {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-authoring/editing-page-properties.md):
 
@@ -252,7 +252,7 @@ Existen dos métodos principales para [publicar la página](/help/sites-authorin
 
   Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar y pegar o eliminar su página {#move-copy-and-paste-or-delete-your-page}
 
 Todas estas acciones pueden activarse del siguiente modo:
 
@@ -280,7 +280,7 @@ Todas estas acciones pueden activarse del siguiente modo:
    >
    >La opción Eliminar no se encuentra disponible como Acción rápida.
 
-### Bloquear y desbloquear su página  {#locking-your-page-then-unlocking}
+### Bloquear y desbloquear su página {#locking-your-page-then-unlocking}
 
 [Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
@@ -296,7 +296,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 [El acceso rápido a las referencias](/help/sites-authoring/author-environment-tools.md#references) a una página o desde una página está disponible en el carril Referencias.
 
-1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161210](assets/screen_shot_2018-03-21at161210.png)
 
@@ -306,11 +306,11 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia necesario para mostrar más detalles y (cuando corresponda) realizar más acciones.
 
-### Crear una versión de su página   {#creating-a-version-of-your-page}
+### Crear una versión de su página {#creating-a-version-of-your-page}
 
 Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) de la página:
 
-1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** con el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** con el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -324,7 +324,7 @@ Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) d
 
 Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan versiones de su página:
 
-1. Seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 

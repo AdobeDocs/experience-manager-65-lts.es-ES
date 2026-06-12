@@ -9,7 +9,7 @@ role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ Para su comodidad, puede copiar y pegar el siguiente código XML en el archivo p
 * Complemento Apache Felix Maven Bundle: Crea el paquete y el manifiesto
 * Complemento Apache Felix Maven SCR: Crea el archivo descriptor de componente y configura el encabezado de manifiesto del componente de servicio.
 
-**Nota:** En el momento de escribir este artículo, el complemento maven scr no es compatible con el complemento m2e para Eclipse. (Consulte [Error Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Para usar el IDE de Eclipse, instale Maven y use la interfaz de línea de comandos para realizar compilaciones.
+**Nota:** En el momento de escribir este artículo, el complemento maven scr no es compatible con el complemento m2e para Eclipse. (Consulte [Error Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Para utilizar el IDE de Eclipse, instale Maven y utilice la interfaz de la línea de comandos para realizar compilaciones.
 
 #### Archivo POM de ejemplo {#example-pom-file}
 

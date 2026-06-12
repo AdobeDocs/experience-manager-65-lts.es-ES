@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 39%
+source-wordcount: '1174'
+ht-degree: 38%
 
 ---
 
@@ -64,7 +64,7 @@ AEM viene precargado con cuatro tareas asignadas al grupo de usuarios &quot;admi
 * Habilitar recopilación de estadísticas de uso agregadas
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Apertura de la bandeja de entrada    {#opening-the-inbox}
+## Apertura de la bandeja de entrada {#opening-the-inbox}
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
@@ -232,7 +232,7 @@ Desde la bandeja de entrada puede crear las siguientes tareas:
 
 1. Seleccione **Enviar**.
 
-## Creación de un proyecto    {#creating-a-project}
+## Creación de un proyecto {#creating-a-project}
 
 Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projects.md) basado en esa tarea:
 
@@ -266,7 +266,7 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
 
 1. Seleccione **Crear** para confirmar la acción.
 
-## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
+## Filtrado de elementos en la bandeja de entrada AEM {#filtering-items-in-the-aem-inbox}
 
 Puede filtrar los elementos enumerados:
 

@@ -1,5 +1,5 @@
 ---
-title: Informes
+title: Creación de informes
 description: Aprenda a trabajar con los informes en Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
-# Informes {#reporting}
+# Creación de informes {#reporting}
 
 Para ayudarle a monitorizar y analizar el estado de su instancia, Adobe Experience Manager (AEM) proporciona una selección de informes predeterminados, que se pueden configurar para sus necesidades individuales:
 
@@ -261,7 +262,7 @@ Esta es una ubicación en la que se define el período para recopilar instantán
 
      Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)** (junto a **Editar** en el informe). **Cargar datos** carga los datos y actualiza los datos del informe que se muestran.
 
-* **Instantáneas**
+* **instantáneas**
 Puede definir la frecuencia con la que se crean las instantáneas, diariamente, por hora o en absoluto.
 
 ### Cargar datos {#load-data}
@@ -365,7 +366,7 @@ Para generar el informe, puede especificar lo siguiente:
 
   Opcional; predeterminada: en blanco
 
-* **Ejecutar a diario a las (hh:mm)**
+* **Ejecutar diariamente a las (hh:mm)**
 
   Especifique la hora a la que el informe se ejecutará automáticamente a diario.
 
@@ -428,7 +429,7 @@ Este informe proporciona información sobre todos los usuarios que han registrad
 * Dominio
 * Correo electrónico
 * Apellido
-* Sexo
+* Género
 * [Genérica](#generic-column)
 * Nombre dado
 * Información
@@ -533,7 +534,7 @@ Como no se permite ninguna configuración de informe en el entorno de publicaci�
 
 >[!CAUTION]
 >
->El acceso a estos informes puede ser un problema de seguridad; por lo tanto, Adobe recomienda configurar Dispatcher para que `/etc/reports` no esté disponible para los visitantes externos. Consulte la [Lista de comprobación de seguridad](security-checklist.md) para obtener más información.
+>El acceso a estos informes puede ser un problema de seguridad; por lo tanto, Adobe recomienda configurar Dispatcher para que `/etc/reports` no esté disponible para los visitantes externos. Consulte la [lista de comprobación de seguridad](security-checklist.md) para obtener más información.
 
 ## Permisos necesarios para ejecutar informes {#permissions-needed-for-running-reports}
 
