@@ -242,7 +242,7 @@ Para habilitar el servicio de relleno previo, especifique la configuración pred
 >La configuración del servicio de relleno previo es aplicable a los formularios adaptables, los formularios HTML5 y los conjuntos de formularios HTML5.
 
 1. Abra la **[!UICONTROL configuración de la consola web de Adobe Experience Manager]** usando la URL:\
-   https://<server>:<port>/system/console/configMgr
+   https://&lt;server>:&lt;port>/system/console/configMgr
 1. Busque y abra **[!UICONTROL Configuración predeterminada del servicio de relleno previo]**.
 
    ![Configuración de relleno previo](assets/prefill_config_new.png)
