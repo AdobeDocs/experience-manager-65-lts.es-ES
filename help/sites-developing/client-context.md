@@ -1,5 +1,5 @@
 ---
-title: Client Context en detalle
+title: Contexto de cliente en detalle
 description: Client Context representa una colección ensamblada dinámicamente de datos de usuario.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '2996'
 ht-degree: 1%
 
 ---
 
-# Client Context en detalle{#client-context-in-detail}
+# Contexto de cliente en detalle{#client-context-in-detail}
 
 >[!NOTE]
 >
@@ -301,7 +302,7 @@ El componente de almacén de contexto `/libs/cq/personalization/components/conte
 
 Para procesar datos de almacén mediante un componente genéricos, debe hacer lo siguiente:
 
-* Añada la etiqueta personalization:storeRendererTag al script JSP del componente para identificar el nombre del almacén de sesión.
+* Agregue la etiqueta personalization:storeRendererTag al script JSP del componente para identificar el nombre del almacén de sesión.
 * Implemente un método de procesamiento en la clase de almacén de sesiones.
 
 #### Identificación del almacén de sesiones de genericstore {#identifying-the-genericstore-session-store}
@@ -491,7 +492,7 @@ Cree una aplicación CQ y agregue el componente geoloc.
 
 1. Abra CRXDE Lite en el explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Haga clic con el botón derecho en la carpeta `/apps` y haga clic en Crear > Crear carpeta. Especifique un nombre de `myapp` y haga clic en Aceptar.
-1. Del mismo modo, debajo de `myapp`, cree una carpeta llamada `contextstores`. &quot;
+1. Del mismo modo, debajo de `myapp`, cree una carpeta denominada `contextstores`. &quot;
 1. Haga clic con el botón derecho en la carpeta `/apps/myapp/contextstores` y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad y haga clic en Siguiente:
 
    * Etiqueta: geoloc
@@ -521,7 +522,7 @@ El componente de almacén de contexto requiere un cuadro de diálogo de edición
 
 1. Agregue las siguientes propiedades al nodo:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | cls | Cadena | x-form-fieldset-description |
    | text | Cadena | El componente geoloc no requiere ninguna configuración. |

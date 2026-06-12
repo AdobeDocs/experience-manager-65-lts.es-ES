@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 51a2f4bb-5fca-48fa-855d-1d610a5eb7c0
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3263'
 ht-degree: 14%
 
 ---
@@ -60,16 +60,16 @@ TBD: Add some info about XD integration and possibly info about DA v2.0.
 
 | Caso práctico | [!DNL Adobe Asset Link] | Aplicación de escritorio de [!DNL Experience Manager] | Observaciones / Otras soluciones |
 |---|---|---|---|
-| Discover - browse DAM folders | Sí | [!DNL Experience Manager] Web interface and desktop actions | |
-| Discover - access DAM collections | Sí | [!DNL Experience Manager] Web interface and desktop actions | |
-| Discover - search for assets from DAM | Sí | [!DNL Experience Manager] Web interface and desktop actions | |
-| Use - open asset | Sí | Sí | [Open from Web interface](manage-assets.md#previewing-assets) or from Finder |
-| Use - place asset from DAM into a document | Yes - embedding | Yes - linking or embedding | [!DNL Experience Manager] desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
-| Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user&#39;s creative cloud storage account (synchronized by Creative Cloud app) by default. |
-| Edit - work in progress outside DAM | Yes - Asset available in user&#39;s Creative Cloud storage account synced to desktop. | Sí | |
-| Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Sí | |
-| Upload - single file | Yes - uploads current active document | Sí | [Upload via web interface](manage-assets.md#uploading-assets) |
-| Upload - multiple files / hierarchical folder structures | No | Sí | [Cargar a través de la interfaz web](manage-assets.md#uploading-assets) o a través de scripts personalizados o herramientas. |
+| Discover: examinar carpetas DAM | Sí | [!DNL Experience Manager] acciones de escritorio e interfaz web | |
+| Discover: acceso a colecciones DAM | Sí | [!DNL Experience Manager] acciones de escritorio e interfaz web | |
+| Discover: buscar recursos de DAM | Sí | [!DNL Experience Manager] acciones de escritorio e interfaz web | |
+| Uso: Abrir recurso | Sí | Sí | [Abrir desde la interfaz web](manage-assets.md#previewing-assets) o desde el Finder |
+| Uso: colocar un recurso de DAM en un documento | Sí: incrustación | Sí: vinculación o incrustación | La aplicación de escritorio [!DNL Experience Manager] proporciona acceso a los recursos como archivos en el sistema de archivos local. Estos vínculos en las aplicaciones nativas se representan mediante rutas locales. |
+| Editar: abrir para editar | Sí: acción de salida | Sí: Abrir acción (en el recurso compartido de red) | [Al desprotegerlo en AAL](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html), se guarda el recurso en la cuenta de almacenamiento de Creative Cloud del usuario (sincronizada por la aplicación de Creative Cloud) de forma predeterminada. |
+| Editar: trabajo en curso fuera de DAM | Sí, el recurso está disponible en la cuenta de almacenamiento de Creative Cloud del usuario sincronizada con el equipo de escritorio. | Sí | |
+| Editar: cambios de carga | Sí: [acción de protección](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) con comentario opcional | Sí | |
+| Cargar: un solo archivo | Sí: carga el documento activo actual | Sí | [Cargar mediante interfaz web](manage-assets.md#uploading-assets) |
+| Cargar: varios archivos/estructuras de carpetas jerárquicas | No | Sí | [Cargar a través de la interfaz web](manage-assets.md#uploading-assets) o a través de scripts personalizados o herramientas. |
 | Varios: usuario e inicio de sesión | Se reconoce el inicio de sesión único (SSO) de un usuario de Creative Cloud que haya iniciado sesión en la aplicación de escritorio de Creative Cloud | Usuario y credenciales de [!DNL Experience Manager] | Los usuarios de ambas soluciones se contabilizan en la cuota de usuarios de [!DNL Experience Manager]. |
 | Varios: red y acceso | Requiere acceso desde el escritorio del usuario a la implementación de [!DNL Experience Manager] en la red | Requiere acceso desde el escritorio del usuario a la implementación de [!DNL Experience Manager] en la red | [!DNL Adobe Asset Link] no comparte el entorno de proxy de red. |
 | Varios: migrar un gran número de recursos | No | No | [Guía de migración de Assets](assets-migration-guide.md) |

@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
+source-wordcount: '620'
+ht-degree: 54%
 
 ---
 
@@ -97,12 +98,12 @@ Las siguientes páginas proporcionan información más detallada sobre el desarr
 
 * [Componentes de AEM: conceptos básicos](/help/sites-developing/components-basics.md)
 * [Desarrollo de componentes de AEM](/help/sites-developing/developing-components.md)
-* [Desarrollo de componentes de AEM: ejemplos de código](/help/sites-developing/developing-components-samples.md)
+* [Desarrollo de componentes de AEM: muestras de código](/help/sites-developing/developing-components-samples.md)
 * [Configuración de varios editores locales](/help/sites-developing/multiple-inplace-editors.md)
 * [Modo de desarrollador](/help/sites-developing/developer-mode.md)
 * [Prueba de la IU](/help/sites-developing/hobbes.md)
 * [Componentes para fragmentos de contenido](/help/sites-developing/components-content-fragments.md)
-* [Obtener información de página en formato JSON](/help/sites-developing/pageinfo.md)
+* [Obtención de información de página en formato JSON](/help/sites-developing/pageinfo.md)
 * [Internacionalización de componentes](/help/sites-developing/i18n.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Uso de Ocultar condiciones](/help/sites-developing/hide-conditions.md)
@@ -111,4 +112,4 @@ Las siguientes páginas proporcionan información más detallada sobre el desarr
    * [Componentes de AEM (IU clásica)](/help/sites-developing/developing-components-classic.md)
    * [Uso y ampliación de widgets (IU clásica)](/help/sites-developing/widgets.md)
    * [Uso de xtypes (IU clásica)](/help/sites-developing/xtypes.md)
-   * [Desarrollo de Forms (IU clásica)](/help/sites-developing/developing-forms.md)
+   * [Desarrollo de formularios (IU clásica)](/help/sites-developing/developing-forms.md)

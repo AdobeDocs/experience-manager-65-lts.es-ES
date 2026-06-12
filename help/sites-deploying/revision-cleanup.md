@@ -380,7 +380,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>Según la comprobación de estado y las entradas de registro, Limpieza de revisiones en línea no se ha completado correctamente tres veces seguidas. ¿Qué se necesita para completar correctamente la limpieza de revisión en línea?</strong></td>
-   <td>Puede realizar varios pasos para buscar y solucionar el problema:<br />
+   <td>Puede realizar varios pasos para encontrar y solucionar el problema:<br />
     <ul>
      <li>Primero, compruebe las entradas de registro <br /> </li>
      <li>Según la información de los registros, realice las acciones adecuadas:

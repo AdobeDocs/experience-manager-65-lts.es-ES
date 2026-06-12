@@ -7,8 +7,8 @@ role: Admin,Developer
 exl-id: 4eb42d3a-f869-4831-9aaf-58e7272bd1fe
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 33%
+source-wordcount: '544'
+ht-degree: 36%
 
 ---
 
@@ -55,7 +55,7 @@ Hay varios recursos disponibles para que sus clientes empiecen a utilizar las fu
 
 | Recurso | Descripción | Tipo | Público | EST Hora |
 |---|---|---|---|---|
-| [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **Para usuarios nuevos en las tecnologías AEM y sin encabezado**, es recomendable empezar aquí para ver una introducción completa a AEM y sus características sin encabezado, desde la teoría sobre esta tecnología hasta publicar su primer proyecto sin encabezado. | Guía  | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
+| [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **Para usuarios nuevos en las tecnologías AEM y sin encabezado**, es recomendable empezar aquí para ver una introducción completa a AEM y sus características sin encabezado, desde la teoría sobre esta tecnología hasta publicar su primer proyecto sin encabezado. | Guía | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
 | [Guía de introducción sin encabezado](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuarios de AEM con experiencia** que necesiten un breve resumen de las funciones principales de AEM sin encabezado, se recomienda consultar esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores **con experiencia en AEM** | 20 minutos |
 | [Tutorial práctico de introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es) | **Si prefiere un enfoque práctico y está familiarizado con AEM**, este tutorial se adentra directamente en la creación de un proyecto sencillo sin encabezado. | Tutorial | Desarrolladores | 2 horas |
 | [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es) | Esta colección de recursos se proporciona para **nuevos** y **desarrolladores con experiencia**. | Colección de recursos | Desarrolladores | |

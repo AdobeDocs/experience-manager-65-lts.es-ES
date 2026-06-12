@@ -7,8 +7,8 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4819'
-ht-degree: 0%
+source-wordcount: '4940'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Antes de empezar a configurar o codificar el componente, debe preguntar lo sigui
 Antes de que se inicie una conversación seria sobre el desarrollo de componentes, debe saber qué interfaz de usuario utilizan los autores:
 
 * **IU táctil**
-  [La interfaz de usuario estándar](/help/sites-developing/touch-ui-concepts.md) se basa en la experiencia de usuario unificada de Adobe Experience Cloud, que usa las tecnologías subyacentes de [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+  [La interfaz de usuario estándar](/help/sites-developing/touch-ui-concepts.md) se basa en la experiencia de usuario unificada para Adobe Experience Cloud, que usa las tecnologías subyacentes de [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU clásica**
 Interfaz de usuario basada en la tecnología ExtJS obsoleta con AEM 6.4.
 
@@ -135,7 +135,7 @@ Se trata de una abstracción que ayuda a garantizar que, incluso cuando la apari
 
 ### Definición de componente {#component-definition}
 
-#### Conceptos básicos de componentes {#component-basics}
+#### Conceptos básicos de Component {#component-basics}
 
 La definición de un componente se puede desglosar de la siguiente manera:
 
@@ -184,7 +184,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * `cq:editConfig (cq:EditConfig)`: define las propiedades de edición del componente y permite que este aparezca en el Explorador de componentes o en Sidekick.
 
-     Nota: Si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el navegador de componentes o Sidekick, aunque cq:editConfig no exista.
+     Nota: si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el navegador de componentes o Sidekick, aunque cq:editConfig no exista.
 
    * `cq:childEditConfig (cq:EditConfig)`: controla los aspectos de la interfaz de usuario del autor para los componentes secundarios que no definen sus propios `cq:editConfig`.
    * IU táctil:
@@ -262,7 +262,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Grupo en el que se puede seleccionar el componente en el navegador de componentes (IU táctil) o Sidekick (IU clásica).<br /> Se utiliza un valor de <code>.hidden</code> para componentes que no están disponibles para su selección en la interfaz de usuario, como los sistemas de párrafos reales.</td>
+   <td>Grupo en el que se puede seleccionar el componente en el explorador de componentes (IU táctil) o Sidekick (IU clásica).<br /> Se utiliza un valor de <code>.hidden</code> para componentes que no están disponibles para su selección en la interfaz de usuario, como los sistemas de párrafos reales.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -337,7 +337,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Ruta a un nodo que se utilizará como plantilla de contenido cuando se añada el componente desde el Explorador de componentes o Sidekick. Debe ser una ruta absoluta, no relativa al nodo de componente.<br /> A menos que desee reutilizar contenido que ya está disponible en otra parte, esto no es obligatorio y <code>cq:template</code> es suficiente (ver a continuación).</td>
+   <td>Ruta a un nodo que se utilizará como plantilla de contenido cuando se añada el componente desde el Explorador de componentes o Sidekick. Debe ser una ruta de acceso absoluta, no relativa al nodo de componente.<br /> A menos que desee reutilizar contenido que ya se encuentra disponible en otro sitio, esto no es obligatorio y <code>cq:template</code> es suficiente (ver a continuación).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -629,9 +629,9 @@ En el ejemplo anterior, `model.text` es la variable que es verdadera solamente c
 
 Se puede ver un ejemplo de uso de esta plantilla en los componentes principales [, como en el componente Título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### Configuración con las propiedades cq:EditConfig {#configuring-with-cq-editconfig-properties}
+### Configuración con propiedades cq:EditConfig {#configuring-with-cq-editconfig-properties}
 
-### cq:acciones {#cq-actions}
+### cq:actions {#cq-actions}
 
 La propiedad `cq:actions` ( `String array`) define una o varias acciones que se pueden realizar en el componente. Los siguientes valores están disponibles para la configuración:
 
@@ -647,7 +647,7 @@ La propiedad `cq:actions` ( `String array`) define una o varias acciones que se 
   </tr>
   <tr>
    <td>-</td>
-   <td>Agrega un espaciador.<br /> solo visible en la IU clásica. La IU táctil no muestra acciones en un menú contextual, por lo que esto no es aplicable.</td>
+   <td>Agrega un espaciador.<br /> Solo visible en la IU clásica. La IU táctil no muestra acciones en un menú contextual, por lo que esto no es aplicable.</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
@@ -706,7 +706,7 @@ La propiedad `cq:layout` ( `String`) define cómo se puede editar el componente 
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>Se puede acceder a la edición por componentes mediante una barra de herramientas.<br /> Para uso avanzado, el objeto correspondiente del lado del cliente es: <code>CQ.wcm.EditBar</code>.</td>
+   <td>Se puede obtener acceso a la edición de componentes mediante una barra de herramientas.<br /> Para uso avanzado, el objeto correspondiente del lado del cliente es: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -729,7 +729,7 @@ La siguiente configuración agrega un botón de edición a la barra de edición 
 </jcr:root>
 ```
 
-### cq:dialogMode (solo para la IU clásica) {#cq-dialogmode-classic-ui-only}
+### cq:dialogMode (solo IU clásica) {#cq-dialogmode-classic-ui-only}
 
 El componente se puede vincular a un cuadro de diálogo de edición. La propiedad `cq:dialogMode` ( `String`) define cómo se abre el cuadro de diálogo del componente en la IU clásica. Los valores disponibles son los siguientes:
 
@@ -786,7 +786,7 @@ La propiedad `dialogLayout` define cómo se debe abrir un cuadro de diálogo de 
 * El usuario siempre puede alternar el modo de pantalla completa dentro del cuadro de diálogo.
 * No se aplica a la IU clásica.
 
-### Configurar con nodos secundarios cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurando con nodos secundarios cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
@@ -849,7 +849,7 @@ La siguiente configuración se toma del componente Descargar. Permite que cualqu
     </cq:dropTargets>
 ```
 
-### cq:actionConfigs (solo para la IU clásica) {#cq-actionconfigs-classic-ui-only}
+### cq:actionConfigs (solo IU clásica) {#cq-actionconfigs-classic-ui-only}
 
 El nodo `cq:actionConfigs` (tipo de nodo `nt:unstructured`) define una lista de nuevas acciones que se anexan a la lista definida por la propiedad `cq:actions`. Cada nodo secundario de `cq:actionConfigs` define una nueva acción mediante la definición de un widget.
 
@@ -966,7 +966,7 @@ El nodo `cq:listeners` (tipo de nodo `cq:EditListenersConfig`) define lo que suc
   </tr>
   <tr>
    <td><code>beforeinsert</code></td>
-   <td>El controlador se activa antes de insertar el componente.<br /> solo está operativo para la interfaz de usuario táctil.</td>
+   <td>El controlador se activa antes de que se inserte el componente.<br /> Solo funciona para la interfaz de usuario táctil.</td>
    <td> </td>
   </tr>
   <tr>

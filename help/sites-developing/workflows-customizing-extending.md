@@ -11,7 +11,7 @@ role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3611'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ La propiedad name de `cq:Widget` elementos especifica el nodo JCR que almacena e
 
 Por ejemplo, un campo de texto en un cuadro de diálogo es un nodo `cq:Widget` que tiene las siguientes propiedades:
 
-| Nombre | Tipo | Valor  |
+| Nombre | Tipo | Valor |
 |---|---|---|
 | `xtype` | `String` | `textarea` |
 | `name` | `String` | `./metaData/subject` |
@@ -530,7 +530,7 @@ Para utilizar la secuencia de comandos:
 1. Cree el script (por ejemplo, con CRXDE Lite) y guárdelo en el repositorio debajo de `//apps/workflow/scripts/`
 1. Para especificar un título que identifique el script en el cuadro de diálogo de edición del **Paso de proceso**, agregue las siguientes propiedades al nodo `jcr:content` del script:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nombre que aparecerá en el cuadro de diálogo de edición. |
@@ -647,7 +647,7 @@ function getParticipant() {
 1. Cree el script (por ejemplo, con CRXDE Lite) y guárdelo en el repositorio debajo de `//apps/workflow/scripts`
 1. Para especificar un título que identifique el script en el cuadro de diálogo de edición del **Paso de proceso**, agregue las siguientes propiedades al nodo `jcr:content` del script:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nombre que aparecerá en el cuadro de diálogo de edición. |

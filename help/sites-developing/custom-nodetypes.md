@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 5%
+source-wordcount: '1735'
+ht-degree: 6%
 
 ---
 
@@ -391,7 +391,7 @@ Define los oyentes (del lado del cliente) que se ejecutan en un evento de edici�
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## DAM  {#dam}
+## DAM {#dam}
 
 ### `dam:AssetContent` {#dam-assetcontent}
 
@@ -492,7 +492,7 @@ Configuración de encuesta.
 * `@prop source (String) mandatory` - URI de origen de datos. Requerido y no debe estar vacío.
 * `@prop target (String)`: ubicación de destino donde se almacenan los datos recuperados del origen de datos. Opcional y de forma predeterminada al nodo cq:PollConfig.
 * `@prop interval (Long)`: intervalo en segundos para sondear datos nuevos o actualizados del origen de datos. Opcional y el valor predeterminado es de 30 minutos (1800 segundos).
-* [Creando servicios de importador de datos personalizados para Adobe Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [Crear servicios de importador de datos personalizados para Adobe Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Definición**
 

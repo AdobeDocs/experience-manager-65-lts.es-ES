@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 82199140-e464-45a5-9c00-dda2d8efde74
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 En este documento se describe lo que necesita saber para planificar la prueba. Además, debe responder a estas preguntas antes de realizar las pruebas:
 
 * [¿Qué entornos de prueba se necesitarán?](/help/sites-developing/test-environments.md)
-* [Definición de los casos de prueba](/help/sites-developing/test-cases.md)
+* [Definición de casos de prueba](/help/sites-developing/test-cases.md)
 * [Pruebas: ¿cuándo y con quién?](/help/sites-developing/when-who.md)
 
 ## Antes de comenzar {#before-you-start}
