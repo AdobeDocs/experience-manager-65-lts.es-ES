@@ -69,7 +69,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -103,7 +103,7 @@ El diagrama siguiente muestra un ejemplo de un formulario de pedido de compra. L
 
 ### Consideraciones del diseño del formulario {#form-design-considerations}
 
-Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_es).
+Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Explicación de los subgrupos de datos {#understanding-data-subgroups}
 

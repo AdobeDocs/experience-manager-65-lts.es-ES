@@ -75,11 +75,11 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 El servicio Bridge de migración central (`CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge le permiten reutilizar los siguientes recursos centrales en los formularios de AEM:
 
-* diseño de plantilla (&ast;.ifd)
-* plantillas de salida (&ast;.mdf)
-* archivos de datos (archivos &ast;.dat)
-* archivos de preámbulo (archivos &ast;.pre)
-* archivos de definición de datos (&ast;.tdf)
+* diseño de plantilla (&amp;ast;.ifd)
+* plantillas de salida (&amp;ast;.mdf)
+* archivos de datos (archivos &amp;ast;.dat)
+* archivos de preámbulo (archivos &amp;ast;.pre)
+* archivos de definición de datos (&amp;ast;.tdf)
 
 La siguiente configuración está disponible para el servicio Bridge de migración central.
 
@@ -421,7 +421,7 @@ Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario s
 
 ## Ajustes del servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html).
+El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Los siguientes ajustes están disponibles para el servicio de configuración de Microsoft SharePoint:
 

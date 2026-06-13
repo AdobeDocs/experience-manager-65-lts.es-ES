@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: f1cea461-1d16-4944-b4c0-77be81b821e7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 93%
+source-wordcount: '2550'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html).
 
 
 El uso de tablas es una forma eficaz, simple y organizada de presentar datos complejos. Ayuda a los usuarios a identificar la información fácilmente y a proporcionar entradas en una disposición ordenada de filas y columnas. La mayoría de formularios de los servicios financieros y las organizaciones gubernamentales requieren tablas de datos grandes para poner números y realizar cálculos.
@@ -91,8 +91,8 @@ Puede ordenar los datos en función de cualquier columna de una tabla del formul
 La ordenación se puede aplicar a columnas de la tabla que contengan lo siguiente:
 
 * Texto estático
-* Propiedades del objeto del modelo de datos
-* Combinación de texto estático y propiedades del objeto del modelo de datos
+* Propiedades del objeto de modelo de datos
+* Combinación de texto estático y propiedades del objeto de modelo de datos
 
 Para aplicar la ordenación en columnas de la tabla, las celdas de la columna de la tabla deben contener cualquiera de los siguientes componentes: cuadro numérico, paso numérico, campo de entrada de fecha, selector de fecha, texto o cuadro de texto.
 
@@ -129,7 +129,7 @@ Puede definir el estilo de una tabla mediante el uso del modo Estilo de la barra
 
 1. En la barra de herramientas de la página, antes de Vista previa, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y el botón de edición ![edit-button](assets/edit-button.png). 
+1. En la barra lateral, seleccione la tabla y seleccione el botón de edición ![edit-button](assets/edit-button.png).
 Puede ver las propiedades de estilo en la barra lateral.
 
 ![Propiedades de estilo de una tabla](assets/style-table.png)

@@ -35,7 +35,7 @@ En la tabla siguiente se explican los pasos del diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -83,7 +83,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>

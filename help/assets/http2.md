@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
@@ -60,7 +61,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 La solicitud para cambiar a HTTP/2 se inicia automáticamente, pero no se realiza automáticamente.
 
-1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Ver [Abrir un ticket de asistencia](https://experienceleague.adobe.com/es?support-solution=General&lang=en&support-tab=home#support).
+1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Ver [Abrir un ticket de asistencia](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
 
    1. Proporcione la siguiente información en su solicitud de soporte:
 

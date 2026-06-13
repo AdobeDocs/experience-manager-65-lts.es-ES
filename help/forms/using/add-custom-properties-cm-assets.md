@@ -8,10 +8,11 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 248692f7-0718-4a12-9f82-24b4cef2b1e2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4434'
-ht-degree: 93%
+source-wordcount: '4415'
+ht-degree: 84%
 
 ---
 
@@ -92,7 +93,7 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 
    1. Haga clic en **Guardar todo**.
 
-1. Para ver la personalización, pase el ratón sobre un recurso (texto, lista, condición o fragmento de diseño) o una carta, haga clic en **Ver propiedades** y haga clic en **Editar**. El nuevo campo (Ubicación de los destinatarios) aparece en la pestaña Básico de las propiedades del recurso o la carta.
+1. Para ver la personalización, pase el puntero por encima de un recurso (texto, lista, condición o fragmento de diseño) o una carta, haga clic en **Ver propiedades** y haga clic en **Editar**. El nuevo campo (Ubicación de los destinatarios) aparece en la pestaña Básico de las propiedades del recurso o la carta.
 
    >[!NOTE]
    >
@@ -112,7 +113,8 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. En el nodo de superposición recién creado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commproperties/col1/items) cree un nodo para cada una de las propiedades (campos) para las que necesita crear una lista desplegable (aquí `geographicallocation`) del tipo nt:unstructured.
+1. En el nodo de superposición recién creado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commproperties/col1/items)
+Cree un nodo para cada una de las propiedades (campos) para las que necesita crear una lista desplegable (aquí `geographicallocation`) del tipo nt:unstructured.
 1. Agregue las siguientes propiedades al nodo (aquí geographicallocation) y haga clic en **Guardar todo**:
 
    <table>
@@ -120,7 +122,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>fieldLabel</td>
@@ -148,7 +150,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
 1. En el nodo de propiedades (aquí geographicallocation), agregue un nuevo nodo con el nombre `items`. Bajo el nodo de elemento, agregue un nodo para cada valor de la lista desplegable. Como práctica recomendada, agregue el primer nodo en blanco para que sirva como valor predeterminado de la lista desplegable y una opción para que el usuario no especifique ningún valor para el campo. Para agregar varias opciones o valores desplegables, repita los siguientes pasos:
 
    1. Haga clic con el botón derecho en el nodo de propiedades (aquí geographicallocation) y seleccione **Crear** > **Crear nodo**.
-   1. Escriba el nombre del campo como `item1,` mantenga el tipo como nt:unstructured y haga clic en **Aceptar**.
+   1. Escriba el nombre del campo como `item1,` conservar el tipo como nt:unstructured y haga clic en **Aceptar**.
    1. Agregue las siguientes propiedades al nodo recién creado (aquí item1) y haga clic en **Guardar todo**:
 
       <table>
@@ -156,7 +158,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
          <tr>
           <td><strong>Nombre</strong></td>
           <td><strong>Tipo</strong></td>
-          <td><strong>Valor </strong></td>
+          <td><strong>Valor</strong></td>
          </tr>
          <tr>
           <td>text</td>
@@ -272,7 +274,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor </strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
@@ -293,7 +295,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
 
    1. Haga clic en **Guardar todo**.
 
-1. Para crear un campo en la pestaña personalizada (aquí Destinatarios), agregue un nodo (aquí GeographicalLocation). Esta propiedad corresponde a la columna que ha creado. Siga estos pasos para crear el campo (para crear más campos/nodos, repita estos pasos).:
+1. Para crear un campo en la pestaña personalizada (aquí Destinatarios), agregue un nodo (aquí GeographicalLocation). Esta propiedad corresponde a la columna que ha creado. Siga estos pasos para crear el campo (para crear más campos/nodos, repita estos pasos):
 
    1. Haga clic con el botón derecho en el nodo Elementos y seleccione **Crear** > **Crear nodo**.
    1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
@@ -350,7 +352,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor </strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>path<br /> </td>
@@ -367,7 +369,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
 
    1. Haga clic en **Guardar todo**.
 
-1. Para ver la personalización, pase el ratón sobre el recurso correspondiente (aquí Carta), haga clic en Ver propiedades y, a continuación, haga clic en **Editar**. La nueva pestaña (Destinatarios) y el campo (Ubicación de los destinatarios) aparecen en la interfaz de usuario.
+1. Para ver la personalización, pase el puntero por encima del recurso correspondiente (aquí Carta), haga clic en Ver propiedades y, a continuación, haga clic en **Editar**. La nueva pestaña (Destinatarios) y el campo (Ubicación de los destinatarios) aparecen en la interfaz de usuario.
 
    >[!NOTE]
    >
@@ -467,7 +469,7 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor </strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
@@ -506,7 +508,7 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
       | renderReadOnly | Booleano | true |
       | sling:resourceType | Cadena | granite/ui/components/coral/foundation/form/textfield |
 
-1. Para ver la personalización, pase el ratón sobre el recurso correspondiente (aquí un texto), haga clic en Ver propiedades y, a continuación, haga clic en **Editar**. La nueva pestaña y campo (Ubicación de los destinatarios) aparecerán en la interfaz de usuario.
+1. Para ver la personalización, pase el puntero por encima del recurso correspondiente (aquí un texto), haga clic en Ver propiedades y, a continuación, haga clic en **Editar**. La nueva pestaña y campo (Ubicación de los destinatarios) aparecerán en la interfaz de usuario.
 
    >[!NOTE]
    >
@@ -524,7 +526,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las pestaña
 
 1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores, por carta. Para otros tipos de recursos, la ruta se indica en la siguiente tabla:
 
-   **Ruta:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
+   **Ruta de acceso:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
 
    **Ubicación:** /apps/
 
@@ -537,7 +539,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las pestaña
    | Texto | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | Lista | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | Condición | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
-   | Fragmento | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/tabs2/items/tab1/items |
+   | Fragmento | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/properties/items/tabs2/items/tab1/items |
    | Carta | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
 
 1. Haga clic en **Aceptar**. La estructura de carpetas se crea en la carpeta de aplicaciones.
@@ -555,7 +557,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las pestaña
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Valor </strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td>path</td>
@@ -623,7 +625,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor </strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>jcr:primaryType</td>
@@ -738,7 +740,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Valor </strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td>sling:orderBefore</td>
@@ -775,7 +777,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 
    1. Haga clic en **Guardar todo**.
 
-1. En la carpeta de agregados recién creada, agregue un nodo cm:resource. Y en cm:resource, agregue un nodo llamado include0.
+1. En la carpeta de agregados recién creada, agregue un nodo cm:resource. Y en cm:resource, agregue un nodo denominado include0.
 
    1. Haga clic con el botón derecho en la carpeta de agregados y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
 
@@ -797,7 +799,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor </strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>path</td>
@@ -838,7 +840,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 >
 >Si todavía no puede buscar, podría deberse a un problema de indexación. Para volver a indexar, vaya al siguiente nodo y cambie el valor de la propiedad “re-index” a true:
 >
->/oak:index/cmLucene” y cambie el valor de la propiedad
+>/oak:index/cmLucene&quot; y cambie el valor de la propiedad
 
 ## Cambie la vista predeterminada de la página de búsqueda {#change-default-view-of-the-search-page}
 
@@ -868,7 +870,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -914,7 +916,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -938,7 +940,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:resourceType<br /> </td>
@@ -955,7 +957,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>hideOnCreate<br /> </td>
@@ -972,7 +974,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor </strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>hideOnEdit<br /> </td>

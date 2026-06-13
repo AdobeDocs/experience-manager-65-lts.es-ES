@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
 source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 4%
+source-wordcount: '741'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ La incorporación de Contenido de AEM y Commerce es un proceso de dos pasos:
 
 ### Instale el complemento Contenido de AEM y Commerce para AEM 6.5 LTS {#install-add-on}
 
-Descargue e instale el complemento AEM Commerce para AEM 6.5 LTS desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
+Descargue e instale el complemento de AEM Commerce para AEM 6.5 LTS desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 
 Inicie e instale el paquete de servicio AEM 6.5 LTS necesario. Se recomienda instalar el último Service Pack disponible.
 
@@ -92,6 +92,6 @@ Para obtener configuraciones más complejas que utilicen varias estructuras de s
 
 ## Recursos adicionales {#additional-resources}
 
-- [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
-- [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
+- [Tienda de referencia de Venia en AEM](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuración de varias tiendas de Commerce](configuring/multi-store-setup.md)

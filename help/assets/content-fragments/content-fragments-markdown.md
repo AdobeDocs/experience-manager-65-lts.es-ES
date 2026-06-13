@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
 source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 86%
+source-wordcount: '523'
+ht-degree: 82%
 
 ---
 
@@ -130,7 +130,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 

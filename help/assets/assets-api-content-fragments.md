@@ -162,8 +162,8 @@ Si la API de REST de Assets se utiliza en un entorno sin requisitos de autentica
 >
 >Para obtener más información, consulte lo siguiente:
 >
->* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es)
->* [Vídeo: Desarrollo para CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es)
+>* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo: Desarrollo para CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
@@ -179,7 +179,7 @@ Para obtener más información sobre las funciones disponibles a través de la A
 
 ### Paginación {#paging}
 
-La API de REST de Assets admite la paginación (para solicitudes de GET) mediante los parámetros de URL:
+La API de REST de Assets admite la paginación (para solicitudes GET) mediante los parámetros de URL:
 
 * `offset`: el número de la primera entidad (secundaria) que se va a recuperar
 * `limit`: el número máximo de entidades devueltas
@@ -257,7 +257,7 @@ El contenido asociado no está expuesto actualmente.
 
 El uso puede variar en función de si utiliza un entorno de publicación o autor de AEM, junto con el caso de uso específico.
 
-* Se recomienda encarecidamente que la creación esté enlazada a una instancia de autor ([&#x200B; y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API &#x200B;](/help/assets/assets-api-content-fragments.md#limitations)).
+* Se recomienda encarecidamente que la creación esté enlazada a una instancia de autor ([ y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API ](/help/assets/assets-api-content-fragments.md#limitations)).
 * La entrega es posible desde ambos, ya que AEM sirve contenido solicitado solo en formato JSON.
 
    * El almacenamiento y el envío desde una instancia de autor de AEM deben ser suficientes para las aplicaciones de la biblioteca de medios, detrás del cortafuegos.
@@ -404,4 +404,4 @@ Consulte aquí las referencias detalladas de la API:
 Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
-* [Sesión de AEM Gem: OAuth](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sesión de AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
