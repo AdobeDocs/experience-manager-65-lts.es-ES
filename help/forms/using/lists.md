@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
 source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6895'
-ht-degree: 88%
+source-wordcount: '6828'
+ht-degree: 86%
 
 ---
 
@@ -133,7 +133,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
 Realice los siguientes pasos para crear un hipervínculo en un recurso de texto:
 
-1. Seleccione el texto o el objeto del modelo de datos en el Editor de texto.
+1. Seleccione el texto o el objeto de modelo de datos en el Editor de texto.
 
 2. Seleccione **[!UICONTROL Vínculo]**. Seleccione el campo **[!UICONTROL Texto alternativo]** para quitar el texto o nombre del objeto del modelo de datos existente.
 
@@ -220,8 +220,8 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
 * Al crear una lista, puede especificar un tipo, como, por ejemplo:
 * **Sin formato**: no se aplica ningún formato de estilo adicional a la lista.
 * **Con viñetas**: una lista con formato de viñeta simple.
-* **Numerado**: una lista numérica con las opciones Estándar (1, 2,...), Romano superior (I, II,...) y Romano inferior (i, ii,...).
-* **Con letras**: una lista alfabética con la opción de letras en minúsculas (a, b,...) y mayúsculas (A, B,...).
+* **Numerado**: Una lista numérica con las opciones Estándar (1,2,...), Romano superior (I, II,...) y Romano inferior (i, ii,...) números.
+* **Con letras**: Una lista alfabética con la opción de minúsculas (a,b,...) y mayúsculas (A, B,...) cartas.
 * **Personalizado**: puede crear cualquier tipo Numerado/Con letras y los valores de prefijo y sufijo que desee.
 
 1. Seleccione **Forms** > **Fragmentos de documento**.
@@ -265,7 +265,7 @@ Para cambiar el orden de los recursos dentro de la lista, seleccione y mantenga 
    * **Omitir estilo:** cuando se selecciona esta opción, el contenido omite las viñetas y la numeración en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos Imagen. Además, no es posible aplicar conjuntamente las opciones Omitir estilo, Compuesto e Ignorar estilo de lista al mismo módulo. Puede utilizar una de ellas si selecciona Agregar viñetas en ese módulo).
    * **Sangría:** puede cambiar el nivel de sangría de cada módulo/contenido seleccionado como parte de la lista. La sangría se especifica en términos de Niveles (empezando por cero), de forma que cada nivel de sangría corresponde a un relleno de 36 puntos.
    * **Compuesto:** Cuando se selecciona, la numeración compuesta se aplica como una combinación del estilo de la lista externa (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en el que aparece en la lista externa.
-   * **Ignorar estilo de lista:** si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada, y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista tienen su propio estilo de numeración.
+   * **Ignorar estilo de lista:** si la opción Numeración compuesta no está seleccionada, se habilita la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada, y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista tienen su propio estilo de numeración.
    * **Mantener con siguiente:** establece el salto de página de los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente del recurso de una lista en **Activado**, ese recurso y el siguiente permanecerán en la misma página. Eso significa que el contenido del recurso seleccionado y el del siguiente no se dividirán en varias páginas.
 
 1. Seleccione **Guardar**.
@@ -313,7 +313,7 @@ El Editor de condiciones permite especificar una condición predeterminada. Si e
 1. Para agregar un recurso a la condición, selecciónelo en la página Seleccionar Assets y seleccione **Listo**. Los recursos se agregan al panel Expresión.
 1. Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
-   * **Deshabilitar evaluación de varios resultados\Habilitar evaluación de varios resultados**: Cuando esta opción está habilitada (aparece como &quot;Habilitar evaluación...&quot;), todas las condiciones se evalúan, y el resultado es la suma de todas las condiciones True. Si esta opción está desactivada (aparece como &quot;Deshabilitar evaluación...&quot;), solo se evalúa la primera condición que resulta ser True, y se convierte en el resultado de la condición.
+   * **Deshabilitar evaluación de varios resultados\Habilitar evaluación de varios resultados**: Cuando esta opción está habilitada (aparece como &quot;Habilitar evaluación...&quot;), todas las condiciones se evalúan, y el resultado es la suma de todas las condiciones True. Si esta opción está desactivada (aparece como &quot;Deshabilitar varias...&quot;) a continuación, solo se evalúa la primera condición que resulta ser True, y se convierte en el resultado de la condición.
    * **Salto de página**: seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los módulos de las condiciones. Cuando esta opción no está seleccionada (![sin_salto](assets/nobreak.png)), si una condición se desborda hasta la siguiente página, toda la condición se pasa a esa página en lugar de insertar un salto de página en medio de la condición.
 
 1. Para cambiar el orden de los recursos dentro de la condición, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png)), y después arrástrelo y suéltelo. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
@@ -398,7 +398,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
 1. Seleccione la ficha **Tabla** y especifique la siguiente información para el diseño:
 
-   * **Configuración para**: seleccione la tabla que está configurando. El sufijo del nombre de tabla en la lista desplegable es (Estático) si la tabla es estática o (Dinámico) si la tabla es dinámica. Las tablas estáticas contienen un número fijo de filas. Las tablas estáticas pueden contener campos y áreas de destino. Estos campos y áreas de destino no se pueden enlazar a DDE repetitivos. Los datos enlazados a celdas de tabla determinan el número de filas de las tablas dinámicas.
+   * **Configuración para**: seleccione la tabla que está configurando.Como sufijo al nombre de tabla en la lista desplegable, se muestra (Estático) si la tabla es estática o (Dinámico) si la tabla es dinámica. Las tablas estáticas contienen un número fijo de filas. Las tablas estáticas pueden contener campos y áreas de destino. Estos campos y áreas de destino no se pueden enlazar a DDE repetitivos. Los datos enlazados a celdas de tabla determinan el número de filas de las tablas dinámicas.
 
    * **Filas**: seleccione el número de filas del diseño. El recuento de filas configurado debe ser mayor o igual que el recuento de filas original.
    * **Columnas**: seleccione el número de columnas del diseño. El recuento de columnas configurado debe ser mayor o igual que el recuento de columnas original.
@@ -492,7 +492,7 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
    ![Estructura del diccionario de datos](assets/dd.jpeg)
 
-[Obtener archivo](assets/exportpackage_1431709897770.cmp.zip)
+   [Obtener archivo](assets/exportpackage_1431709897770.cmp.zip)
 
 1. Cree dos XDP (fragmentos de diseño) en Designer: una tabla dinámica y una tabla estática. En ambos diseños:
 
@@ -501,12 +501,12 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
    También puede utilizar los XDP estáticos y dinámicos adjuntos a este paso.
 
-   Para obtener más información sobre cómo trabajar con fragmentos de diseño, consulte [Fragmentos de diseños](#layoutfragments).
-Para obtener más información sobre la creación de diseños, consulte [Ayuda de Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Para obtener más información sobre cómo trabajar con fragmentos de diseño, consulte [Fragmentos de diseño](#layoutfragments).
+Para obtener más información sobre el diseño de diseños, consulte [Ayuda de Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
-[Obtener archivo](assets/static.xdp.zip)
+   [Obtener archivo](assets/static.xdp.zip)
 
-[Obtener archivo](assets/dynamic.xdp.zip)
+   [Obtener archivo](assets/dynamic.xdp.zip)
 
 1. Cargue los XDP en AEM Forms.
 1. Cree un fragmento de diseño basado en el XDP dinámico. La pestaña Tabla de las propiedades muestra que la tabla es dinámica (campo Configuración para). El número de filas (1) y columnas (3) se deriva del fragmento de diseño o XDP.
@@ -519,7 +519,7 @@ Para obtener más información sobre la creación de diseños, consulte [Ayuda d
 
 1. Cree un fragmento de diseño basado en el XDP estático. La ficha Tabla de las propiedades muestra que la tabla es estática (campo Configuración para ). El número de filas (1) y columnas (3) se deriva del fragmento de diseño o XDP.
 
-   Aquí puede cambiar el número de columnas y filas. Según lo que elija en esta pantalla, el número de filas y columnas de la tabla estática permanecerán fijos en la carta que se crea con este diseño.
+   Aquí puede cambiar el número de columnas y filas. Según lo que elija en esta pantalla, el número de filas y columnas de una tabla estática permanecerán fijos en la carta que se crea con este diseño.
    [![Pantalla Creación de un fragmento de diseño](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Cree una carta utilizando ambos fragmentos de diseño. Cuando inserte el XDP dinámico en la carta, establezca el enlace de sus campos en los elementos de colección del diccionario de datos.

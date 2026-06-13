@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4746'
 ht-degree: 40%
 
 ---
@@ -94,7 +94,7 @@ Esta sección contiene información sobre la instalación del paquete de demostr
    ![Paquete de formularios de we gov](assets/wegov_forms_package.jpg)
 
 1. Permita que finalice el proceso de instalación.
-1. Vaya a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* para asegurarse de que la instalación se ha realizado correctamente.
+1. Vaya a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* para asegurarse de que la instalación se haya realizado correctamente.
 
 ### Desde un archivo ZIP local {#from-a-local-zip-file}
 
@@ -111,7 +111,7 @@ Esta sección contiene información sobre la instalación del paquete de demostr
    ![Instalación del paquete de Forms de WeGov](assets/wegov_forms_package-1.jpg)
 
 1. Permita que finalice el proceso de instalación.
-1. Vaya a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* para asegurarse de que la instalación se ha realizado correctamente.
+1. Vaya a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* para asegurarse de que la instalación se haya realizado correctamente.
 
 ### Instalación de nuevas versiones de paquetes {#installing-new-package-versions}
 
@@ -227,7 +227,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración en la nu
 
 **Referencias:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configuración de OData de Microsoft® Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md)
 1. [Configuración de Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Servicio en la nube de OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
@@ -383,7 +383,7 @@ Este paquete está preconfigurado para conectarse a Adobe Analytics. Se proporc
 Busque las credenciales de usuario para una cuenta de Adobe Analytics que el administrador de cuentas debe realizar para realizar las siguientes tareas.
 
 1. Vaya al portal de Adobe Experience Cloud.
-Inicie sesión con sus credenciales de administrador.
+Inicie sesión con sus credenciales de administrador
 1. Seleccione el icono de Adobe Analytics en el panel de control principal.
    ![Acceso rápido](assets/aftia-quick-access.jpg)
 1. Vaya a la pestaña Administración y seleccione el elemento Administración de usuarios (heredado).
@@ -777,8 +777,8 @@ Si desea exportar estos datos, haga clic en los tres botones a la derecha de la 
 
 ### Tema Ultramarino {#ultramarine-theme}
 
-El tema Ultramarino, de acceso público y mantenido por Adobe, está integrado en el archivo ZIP instalable
-`we-gov-forms.pkg.all-<version>.zip`. Este paquete se instala con CRX.
+El tema Ultramarino, de acceso público y mantenido por Adobe, está integrado en la
+Archivo ZIP instalable de `we-gov-forms.pkg.all-<version>.zip`. Este paquete se instala con CRX.
 
 Los usuarios del Administrador de paquetes pueden acceder al tema Ultramarino en AEM Forms navegando hasta **Forms** > **Temas** > **Temas de referencia** > **Ultramarino-Accesible**.
 

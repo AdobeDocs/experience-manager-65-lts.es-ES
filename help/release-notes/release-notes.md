@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7679'
+source-wordcount: '7660'
 ht-degree: 97%
 
 ---
@@ -155,7 +155,7 @@ La compatibilidad con eventos headless carecía de los eventos OSGi necesarios p
 
 * El RTE de fragmentos de contenido mostraba problemas visuales y de diseño después de los cambios recientes en el estilo de la IU. Service Pack 2 mejora el estilo del RTE para que la barra de herramientas y el área editable se procesen correctamente y sean legibles. El Editor de fragmentos de contenido ahora se alinea con la apariencia y el comportamiento del Editor de páginas. (SITES-38684)
 * Al eliminar los ámbitos de IMS del Selector de recursos de Polaris, se interrumpía la integración del fragmento de contenido con el punto final de entrega. Los autores experimentaban errores al abrir el selector de recursos remotos y seleccionar recursos. La actualización vuelve a añadir los ámbitos de IMS necesarios y restaura el acceso estable en el nivel de entrega. (SITES-35837)
-* El panel de contenido asociado ya no procesa un marcador de posición “indefinido” codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto de la IU traducido. (SITES-33675)
+* El panel Contenido asociado ya no procesa un marcador de posición &quot;indefinido&quot; codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto traducido de la interfaz de usuario. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * El Editor de fragmentos de contenido ahora muestra una etiqueta de pestaña General traducida en todas las configuraciones regionales. El editor reemplaza el texto de pestañas no localizado y elimina los ID internos de los títulos de las pestañas. (SITES-30715)
 * El Editor de fragmentos de contenido ahora muestra los nombres traducidos para los tipos de recursos permitidos. La lista de selección ya no combina cadenas internas y etiquetas de solo inglés cuando los autores configuran restricciones de referencia de contenido. (SITES-29699)

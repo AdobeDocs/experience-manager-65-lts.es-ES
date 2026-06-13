@@ -54,7 +54,7 @@ En la tabla siguiente se describe cada paso del proceso de autenticación.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -737,7 +737,7 @@ En la tabla siguiente se describen los pasos de este diagrama
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -863,7 +863,7 @@ En la tabla siguiente se describen los pasos de este diagrama
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>

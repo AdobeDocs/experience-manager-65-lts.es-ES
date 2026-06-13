@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 7%
+source-wordcount: '4537'
+ht-degree: 8%
 
 ---
 
@@ -88,7 +88,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
    <td><p>Muestre escenas 3D que le permitan girar, recorrer, ampliar o volver a centrar la cámara.</p> </td>
   </tr>
   <tr>
-   <td><strong>Zoom flotante </strong></td>
+   <td><strong>Zoom flotante</strong></td>
    <td><p>Muestra una segunda imagen del área ampliada junto a la imagen original. No hay controles que utilizar: los usuarios mueven la selección sobre el área que desean ver.</p> <p>Al determinar el uso completo del ancho de banda para este visor, tenga en cuenta que tanto la imagen principal como la imagen flotante se proporcionan en el visor. El tamaño de la imagen principal (anchura y altura del escenario) y el factor de zoom determinan el tamaño de la imagen flotante. Para evitar que el tamaño del archivo flotante se vuelva demasiado grande, equilibre estos dos valores: si tiene un tamaño de imagen principal grande, reduzca el valor Factor de zoom. (La Anchura flotante y la Altura flotante determinan el tamaño de la ventana flotante, pero no el tamaño de la imagen flotante que se suministra al visualizador).</p> <p>Por ejemplo, si el tamaño de la imagen principal es de 350 por 350 píxeles, con un factor de zoom de 3, la imagen flotante resultante es de 1050 por 1050 píxeles. Si el tamaño de la imagen principal es de 300 por 300 píxeles, con un factor de zoom de 4, la imagen flotante es de 1200 por 1200 píxeles. Según la configuración de calidad de JPEG (la configuración recomendada está entre 80 y 90), puede reducir el tamaño del archivo significativamente. Los factores de zoom recomendados son de 2,5 a 4, según el tamaño de la imagen principal.</p> </td>
   </tr>
   <tr>
@@ -139,8 +139,8 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
    <td><strong>Zoom vertical</strong></td>
    <td><p>El visor de zoom vertical le permite maximizar una experiencia de visualización de imágenes de producto para ofrecer a los usuarios la mejor representación de un producto. La ubicación vertical de las muestras hace lo siguiente:</p>
     <ul>
-     <li>Garantiza que las muestras estén "por encima del pliegue".<br/>: con las muestras horizontales, según el tamaño de pantalla de escritorio del usuario, no serán visibles hasta que el usuario se desplace hacia abajo en la página. Al colocar las muestras verticalmente en el visor, se garantiza que sean visibles independientemente del tamaño de pantalla del usuario.</li>
-     <li>Maximiza el tamaño de la imagen principal.<br />: con las muestras horizontales, es necesario reservar espacio en la página para asegurarse de que sean visibles. Este posicionamiento disminuyó el tamaño de la imagen principal. Sin embargo, con un diseño de muestra vertical, no es necesario asignar este espacio. De este modo, puede maximizar el tamaño de la imagen principal.</li>
+     <li>Garantiza que las muestras estén "por encima del pliegue".<br/> En el caso de las muestras horizontales, según el tamaño de pantalla de escritorio del usuario, no son visibles hasta que el usuario se desplaza hacia abajo por la página. Al colocar las muestras verticalmente en el visor, se garantiza que sean visibles independientemente del tamaño de pantalla del usuario.</li>
+     <li>Maximiza el tamaño de la imagen principal.<br /> Con las muestras horizontales, es necesario reservar espacio en la página para asegurarse de que sean visibles. Este posicionamiento disminuyó el tamaño de la imagen principal. Sin embargo, con un diseño de muestra vertical, no es necesario asignar este espacio. De este modo, puede maximizar el tamaño de la imagen principal.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -166,7 +166,7 @@ Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de
 >Ver [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
 >
 >Los nuevos ajustes preestablecidos de visualizador que cree y agregue deben activarse y publicarse.
->Consulte [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Publicar ajustes preestablecidos de visor](#publishing-viewer-presets).
+>Ver [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -336,7 +336,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
  <tbody>
   <tr>
    <td><strong>Gesto</strong></td>
-   <td><strong>Zoom flotante </strong></td>
+   <td><strong>Zoom flotante</strong></td>
    <td><strong>Zoom</strong></td>
    <td><strong>Giro</strong></td>
   </tr>
@@ -504,7 +504,7 @@ Al crear o editar un ajuste preestablecido de visualizador de vídeo interactivo
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos predeterminados de visualizador de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code>, y para cualquier ajuste preestablecido de visualizador de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización. Además, las miniaturas de los subsegmentos siguientes o anteriores no se <i>extraen para rellenar ningún punto vacío en el panel. </i> Es decir, conserva la visualización de muestras asignadas al segmento de vídeo concreto.</p> </td>
+   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos predeterminados de visualizador de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code>, y para cualquier ajuste preestablecido de visualizador de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización. Además, las miniaturas de los subsegmentos siguientes o anteriores no se <i>extraen para rellenar ningún punto vacío en el panel. </i>Es decir, conserva la visualización de muestras asignadas al segmento de vídeo concreto.</p> </td>
   </tr>
   <tr>
    <td>Continuo</td>
@@ -521,14 +521,14 @@ Cuando crea o edita un ajuste preestablecido de visualizador de vídeo interacti
 
 Si desactiva el **[!UICONTROL desplazamiento automático]** (desactive la casilla de verificación) en el ajuste preestablecido de visualizador, durante la reproducción del vídeo por parte del usuario, el panel solo muestra la primera imagen en miniatura durante toda la duración del vídeo. Sin embargo, un usuario puede desplazarse manualmente por las miniaturas utilizando los iconos de flecha arriba y abajo, si lo desea.
 
-Al activar (seleccionar) **[!UICONTROL Desplazamiento automático]** en el ajuste preestablecido de visualizador, durante la reproducción de vídeo, las imágenes en miniatura asignadas a un segmento de vídeo se desplazan hasta la vista al principio de un segmento. Sin embargo, hay instancias en las que ciertas miniaturas de un segmento se muestran el doble de tiempo que otras miniaturas antes o después de este segmento. Este comportamiento se produce porque el número de miniaturas de un segmento es mayor que el número visible en el panel y no se puede dividir de manera uniforme.
+Al habilitar (seleccionar) **[!UICONTROL Desplazamiento automático]** en el ajuste preestablecido de visualizador, durante la reproducción de vídeo, las imágenes en miniatura asignadas a un segmento de vídeo se desplazan hasta la vista al principio de un segmento. Sin embargo, hay instancias en las que ciertas miniaturas de un segmento se muestran el doble de tiempo que otras miniaturas antes o después de este segmento. Este comportamiento se produce porque el número de miniaturas de un segmento es mayor que el número visible en el panel y no se puede dividir de manera uniforme.
 
 Para ilustrar, supongamos que tiene un segmento de vídeo de 30 segundos. Además, hay un total de nueve miniaturas que se mostrarán durante los 30 segundos. El tamaño del explorador es tal que hay cuatro posiciones de miniaturas visibles en el panel de visualización. El segmento de tiempo del vídeo de 30 segundos se divide en tres subsegmentos. La siguiente tabla muestra el desglose de las miniaturas que se muestran para un subsegmento de tiempo determinado:
 
 | **Subsegmento de vídeo** | **Tiempo de subsegmento en segundos** | **Miniaturas visibles en el panel** |
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
-| 2 | De 10 a 20 | 4, 5, 6, 7 |
+| 2 | 10-20 | 4, 5, 6, 7 |
 | 3 | 20-30 | 6, 7, 8, 9 |
 
 El subsegmento de vídeo 3 no se extiende más allá de las miniaturas que se le han asignado. Observe también que las miniaturas 4, 6 y 7 son visibles en el panel el doble de tiempo que las otras miniaturas.

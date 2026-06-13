@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6920'
 ht-degree: 7%
 
 ---
@@ -423,7 +423,7 @@ Además, si esta solución de integración se utiliza con Experience Manager Sit
 * [!DNL Adobe Developer Console]: la integración se ha creado para las etiquetas de Experience Platform.
 * Nodo de creación de Experience Manager: configuración de IMS y configuración de nube de Experience Platform Tags.
 
-Como parte de la configuración, asegúrese de que tiene acceso a una empresa en Adobe Experience Cloud que ya tiene habilitadas las etiquetas Adobe Analytics y Experience Platform.
+Como parte de la configuración, asegúrese de que tiene acceso a una empresa de Adobe Experience Cloud que ya tiene habilitadas las etiquetas Adobe Analytics y Experience Platform.
 
 ## Configuración de Adobe Analytics para la integración {#configuring-adobe-analytics-for-the-integration}
 
@@ -437,7 +437,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
 **Para configurar Adobe Analytics para la integración:**
 
-1. Comience por acceder a Adobe Analytics desde la [página principal](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, seleccione el icono **[!UICONTROL Soluciones]** (una tabla de tres por tres puntos) cerca de la esquina superior derecha de la página y, a continuación, seleccione **[!UICONTROL Analytics]**.
+1. Comience por acceder a Adobe Analytics desde la [página de inicio](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, seleccione el icono **[!UICONTROL Soluciones]** (una tabla de tres por tres puntos) cerca de la esquina superior derecha de la página y, a continuación, seleccione **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -503,7 +503,7 @@ Después de configurar las etiquetas de Experience Platform, se configura lo sig
 
 **Para configurar las etiquetas de Experience Platform para la integración:**
 
-1. Comience por acceder a las etiquetas de Experience Platform desde la [página principal](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, seleccione el icono **[!UICONTROL Soluciones]** (tres por tres tablas de puntos) cerca de la esquina superior derecha de la página, y luego seleccione **[!UICONTROL Etiquetas]**.
+1. Comience por acceder a las etiquetas de Experience Platform desde la [página de inicio](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, seleccione el icono **[!UICONTROL Soluciones]** (tres por tres tablas de puntos) cerca de la esquina superior derecha de la página, y luego seleccione **[!UICONTROL Etiquetas]**.
 
    También puede [abrir etiquetas de Experience Platform directamente](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home).
 
@@ -716,7 +716,7 @@ La configuración de Experience Manager consta de los dos pasos principales sigu
 
    * En el encabezado **[!UICONTROL Seleccionar un rol para la API de etiquetas de Experience Platform]**, seleccione **[!UICONTROL Administrador]**.
 
-   * En el encabezado **[!UICONTROL Seleccione uno o varios perfiles de producto para la API de etiquetas de Experience Platform]**, seleccione el perfil de producto denominado **[!UICONTROL Etiquetas - &lt;your_company_name>]**.
+   * En el encabezado **[!UICONTROL Seleccione uno o varios perfiles de producto para la API de etiquetas de Experience Platform]**, seleccione el perfil de producto denominado **[!UICONTROL Etiquetas - &lt;nombre_de_su_empresa>]**.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
