@@ -139,10 +139,10 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU único, encontrado en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las zonas interactivas o los mapas de imagen solo necesitan campos SKU con valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -158,9 +158,9 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU e ID de categoría en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de mapa de imagen/punto interactivo son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
      <li><p>El SKU es <strong><code>305466</code></strong> y <code>categoryId</code> es <code>1100004</code>.</p> </li>
@@ -318,7 +318,7 @@ Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de los titulares del carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [&#x200B; (Opcional) Vista previa de los titulares del carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Publique el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página web.
