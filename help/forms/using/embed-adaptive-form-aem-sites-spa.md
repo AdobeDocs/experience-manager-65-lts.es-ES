@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2ac51487-42e0-4b8a-b224-2858f26e85ef
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1192'
+ht-degree: 91%
 
 ---
 
@@ -20,9 +21,9 @@ ht-degree: 94%
 
 ## Información general {#overview}
 
-AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y las comunicaciones interactivas incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
+AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y la comunicación interactiva incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
-En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [Componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
+En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
 
 Para obtener información sobre la incrustación de un formulario adaptable en una página de AEM Sites que no sea una SPA, consulte [Incrustar un formulario adaptable o una comunicación interactiva en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -35,7 +36,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva en una SP
 * La instancia de autor de AEM
 * [El paquete de complementos de AEM Forms 6.4.2](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) en la instancia de autor
 
-## Instalar el componente Contenedor de la SPA de AEM Forms  {#install-aem-forms-spa-container-component}
+## Instalar el componente Contenedor de la SPA de AEM Forms {#install-aem-forms-spa-container-component}
 
 Ejecute los siguientes pasos para instalar el componente Contenedor de la SPA de AEM Forms:
 
@@ -70,7 +71,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
 
    * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son **Formulario adaptable** y **Comunicación interactiva**
 
-   * **Ruta del recurso**: busque y seleccione el formulario adaptable que desea incrustar. El campo se rellena automáticamente si se inserta un formulario adaptable o una comunicación interactiva mediante el explorador de recursos.
+   * **Ruta del recurso**: busque y seleccione el formulario adaptable o comunicación interactiva que desea incrustar. El campo se rellena automáticamente si se inserta un formulario adaptable o una comunicación interactiva mediante el explorador de recursos.
    * **Canal** (Solo comunicación interactiva): seleccione el tipo de canal interactivo que desea incrustar. Las opciones son **Canal web** y **Canal de impresión**.
 
    * **Temática**: seleccione una temática que defina el estilo de los componentes del formulario adaptable o de la comunicación interactiva. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.

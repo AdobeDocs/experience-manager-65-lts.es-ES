@@ -1,6 +1,6 @@
 ---
 title: Incrustar un formulario adaptable o una comunicación interactiva en la página de AEM Sites
-description: Puede incrustar formularios adaptables en páginas de AEM Sites. Los usuarios pueden rellenar y enviar formularios sin salir de las páginas de Sites.
+description: Puede incrustar formularios adaptables en páginas de AEM Sites. Los usuarios pueden rellenar y enviar formularios sin salir de las páginas del sitio.
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 9d7f3c62-1b49-437c-9f61-1f0fc0156bdf
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 90%
+source-wordcount: '1188'
+ht-degree: 86%
 
 ---
 
@@ -28,17 +28,17 @@ Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cl
 
 ## Información general {#overview}
 
-AEM Forms permite a los desarrolladores de formularios incrustar sin problemas formularios adaptables en una página de AEM Sites o en una página web hospedada fuera de AEM. El formulario adaptable y las comunicaciones interactivas incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
+AEM Forms permite a los desarrolladores de formularios incrustar sin problemas formularios adaptables y comunicaciones interactivas en una página de AEM Sites o en una página web hospedada fuera de AEM. El formulario adaptable y las comunicaciones interactivas incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
 Para obtener información sobre la incrustación de un formulario adaptable en una página web externa, consulte [Incrustar formulario adaptable en una página web externa](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Puede agregar un formulario adaptable o una comunicación interactiva en la página de AEM Sites mediante los siguientes elementos:
 
-* **[Componente Contenedor de AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
-AEM Forms proporciona un componente que puede agregar a las páginas de Sites. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
+* **[Componente Contenedor de AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+AEM Forms proporciona un componente que puede agregar a las páginas del sitio. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
 
 * **[Explorador de recursos](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
-Todos los formularios y las comunicaciones interactivas que cree estarán disponibles en Recursos. Puede arrastrar y colocar el formulario como un recurso en su página.
+Todos los formularios y las comunicaciones interactivas que cree estarán disponibles en Assets. Puede arrastrar y colocar el formulario como un recurso en su página.
 
 ## Requisitos previos {#prerequisites}
 
@@ -63,7 +63,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
 1. En el cuadro de diálogo Editar contenedor de AEM Forms, especifique lo siguiente.
 
    * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son formulario adaptable y comunicación interactiva
-   * **Ruta del recurso**: busque y seleccione el formulario adaptable que desea incrustar. Se rellenará automáticamente si ha sacado el formulario del explorador de recursos.
+   * **Ruta del recurso**: busque y seleccione el formulario adaptable o comunicación interactiva que desea incrustar. Se rellenará automáticamente si ha sacado el formulario del explorador de recursos.
    * (Solo formulario adaptable) **Publicar envío**: seleccione la acción para habilitar el envío del formulario. Puede elegir mostrar un mensaje o una página de agradecimiento.
 
       * **Mensaje de agradecimiento**: escriba un mensaje con el editor de texto enriquecido para mostrarlo después del envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
@@ -81,7 +81,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
 Consideremos los siguientes escenarios para publicar un recurso incrustado (formulario adaptable o comunicación interactiva) en la página de AEM Sites:
 
 * Si publica la página de AEM Sites por primera vez y esta incluye un formulario adaptable o una comunicación interactiva incrustados, publique la página de Sites y el recurso incrustado.
-* Si ha modificado únicamente el formulario adaptable o la comunicación interactiva incrustados en una página de Sites ya publicada, publique el recurso original y los cambios se reflejarán en la página de Sites publicada. La página de Sites publicada incluye una referencia al recurso y no requiere que vuelva a publicar la página.
+* Si ha modificado únicamente el formulario adaptable o la comunicación interactiva incrustados en una página de del sitio ya publicada, publique el recurso original y los cambios se reflejarán en la página del sitio publicada. La página del sitio publicada incluye una referencia al recurso y no requiere que vuelva a publicar la página.
 * Si ha modificado la página de Sites y el formulario adaptable integrado o la comunicación interactiva, vuelva a publicar la página y el recurso incrustado.
 
 ## Modificar el formulario adaptable y la comunicación interactiva incrustados {#modifying-embedded-adaptive-form-and-interactive-communication}
@@ -95,7 +95,7 @@ Para modificar cualquier configuración o propiedad del formulario adaptable o d
 
 >[!NOTE]
 >
->Los cambios realizados en el formulario adaptable o comunicación interactiva originales se reflejarán automáticamente en el formulario incrustado. Sin embargo, vuelva a publicar el formulario adaptable, la comunicación interactiva o la página de Sites para reflejar los cambios en la página publicada.
+>Los cambios realizados en el formulario adaptable o comunicación interactiva originales se reflejarán automáticamente en el formulario incrustado. Sin embargo, vuelva a publicar el formulario adaptable, la comunicación interactiva o la página del sitio para reflejar los cambios en la página publicada.
 
 ## Consideraciones y prácticas recomendadas {#considerations-and-best-practices}
 

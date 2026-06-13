@@ -6,10 +6,11 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 89%
+source-wordcount: '4013'
+ht-degree: 88%
 
 ---
 
@@ -158,7 +159,7 @@ Analice cada carta para descubrir las partes que la componen. El especialista en
 
 * Condiciones en las que los usuarios comerciales, como los reguladores de reclamaciones o los trabajadores de casos, modifican el contenido o partes de la carta.
 * Los escenarios son narrativas que describen la experiencia del usuario, los requisitos y las ventajas de utilizar la solución Cartas.
-* Los escenarios también proporcionan: los conjuntos de aptitudes y herramientas que necesita para su proyecto.
+* Los escenarios también proporcionan :The conjuntos de aptitudes y herramientas que necesita para su proyecto.
 * Prácticas recomendadas para planificar la implementación. “Descripción general de la implementación de alto nivel.
 
 ## Ventajas de realizar el análisis {#benefits-of-performing-the-analysis}

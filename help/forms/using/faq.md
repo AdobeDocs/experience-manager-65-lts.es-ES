@@ -9,13 +9,13 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 97%
+source-wordcount: '1982'
+ht-degree: 95%
 
 ---
-
 
 # Preguntas más frecuentes sobre formularios HTML5{#frequently-asked-questions-faq-for-html-forms}
 
@@ -117,7 +117,7 @@ Existen preguntas más frecuentes (FAQ) sobre la presentación, la compatibilida
 
    Para los formularios PDF, Adobe Acrobat tiene un motor XTG integrado para crear objetos y estructuras de datos intermedias. Acrobat también se encarga del diseño y de los scripts.
 
-   Para los formularios HTML5, los exploradores no tienen ningún motor XTG incorporado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
+   Para los formularios HTML5, los exploradores no tienen ningún motor XTG integrado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
 
    El tamaño de la estructura intermedia depende del tamaño del XDP original y de los datos combinados con el XDP.
 
@@ -141,7 +141,7 @@ Existen preguntas más frecuentes (FAQ) sobre la presentación, la compatibilida
 1. ¿Cuál es el orden de lectura de la información del objeto y el pie de ilustración para los lectores de pantalla?
 
    Respuesta:
-   * Cuando están presentes tanto el pie de ilustración como la información del objeto, se lee solamente el pie de ilustración. Si el pie de ilustración no está disponible, se lee la información del objeto. También puede especificar la prioridad para la lectura en un XDP mediante Forms Designer 
+   * Cuando están presentes tanto el pie de ilustración como la información del objeto, se lee solamente el pie de ilustración. Si el pie de ilustración no está disponible, se lee la información del objeto. También puede especificar la prioridad para la lectura en un XDP mediante Forms Designer
    * Cuando pasa el ratón por encima de un elemento, se muestra la información del objeto. Si la información del objeto no está disponible, se muestra texto de voz. Si el texto de voz no está disponible, se muestra el nombre del campo.
 
 1. Cuando pasa el ratón por encima de un campo, se muestra la información del objeto. ¿Cómo deshabilitarlo?
@@ -176,7 +176,7 @@ Respuesta: El campo Fecha acepta el formato ISO, AAAA-MM-DD. Si especifica una f
 
 ### Crear scripts {#scripting}
 
-1. ¿Existen limitaciones en la implementación de JavaScript para HTML Forms?
+1. ¿Existen limitaciones en la implementación de JavaScript para formularios HTML?
 
    Respuesta:
 
@@ -218,4 +218,4 @@ Respuesta: El campo Fecha acepta el formato ISO, AAAA-MM-DD. Si especifica una f
 
 1. ¿Hay alguna palabra clave reservada en los formularios HTML5?
 
-   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de las [API de formularios HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comiencen con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Agregar un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`. 
+   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de las [API de formularios HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comiencen con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Agregar un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`.

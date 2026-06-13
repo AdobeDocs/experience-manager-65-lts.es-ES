@@ -8,10 +8,11 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a6793fdf-7ee8-4a54-91d8-635eb79ca702
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 61%
+source-wordcount: '928'
+ht-degree: 58%
 
 ---
 
@@ -52,8 +53,8 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 * Consideraciones para los formularios adaptables localizados:
    * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * [Deshabilite el uso de la configuración regional del explorador &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar explorador local]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar explorador local]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración local del explorador (explorador local). Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
+   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Habilitación del almacenamiento en caché en Dispatcher
 
@@ -127,7 +128,7 @@ Para habilitar y configurar el almacenamiento en caché de los formularios adapt
 
 El entorno de AEM está configurado para almacenar en la memoria caché los formularios adaptables. Almacena en la memoria caché todo tipo de formularios adaptables. Si necesita comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, vea [almacenar en caché el contenido protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es).
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Algunos formularios adaptables que contienen imágenes o vídeos no se invalidan automáticamente en la caché de Dispatcher {#videos-or-images-not-auto-invalidated}
 

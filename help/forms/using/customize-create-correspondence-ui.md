@@ -8,10 +8,11 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 31fad2a6-f6e8-4d9c-a2b2-6749635fcf9b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 60%
+source-wordcount: '1098'
+ht-degree: 55%
 
 ---
 
@@ -138,7 +139,7 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    Aparecerá el cuadro de diálogo Editar jcr:data.
 
-   A continuación, haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
+   Ahora haga clic en la carpeta newlogo.png, luego haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad llamada jcr:content.
 
 1. En el cuadro de diálogo Editar jcr:data, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 

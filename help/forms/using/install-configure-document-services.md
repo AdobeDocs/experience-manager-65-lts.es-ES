@@ -8,7 +8,7 @@ feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10632'
 ht-degree: 46%
 
 ---
@@ -1188,7 +1188,7 @@ Antes de configurar los certificados, asegúrese de que dispone de lo siguiente:
 
 * La contraseña de la clave privada proporcionada con el certificado.
 
-* El alias de la clave privada. Puede ejecutar el comando keytool de Java para ver el alias de la clave privada:
+* Alias de clave privada. Puede ejecutar el comando keytool de Java para ver el alias de la clave privada:
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * La contraseña del archivo del almacén de claves. Si utiliza el certificado de Extensiones de Reader de Adobe, la contraseña del archivo del almacén de claves siempre es la misma que la contraseña de la clave privada.

@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3352'
 ht-degree: 6%
 
 ---
@@ -538,7 +538,7 @@ Ahora, vamos a entender cómo configurar y utilizar una función personalizada u
 ## Usar una función personalizada en un formulario adaptable {#use-custom-functions}
 
 En un formulario adaptable, puede usar [funciones personalizadas dentro del editor de reglas](/help/forms/using/rule-editor-core-components.md).
-Agregue el siguiente código al archivo JavaScript (archivo `Function.js`) para calcular la edad en función de la fecha de nacimiento (DD-MM-AAAA). Cree una función personalizada como `calculateAge()` que tome la fecha de nacimiento como entrada y devuelva la edad:
+Agregue el siguiente código al archivo JavaScript (archivo `Function.js`) para calcular la edad según la fecha de nacimiento (DD-MM-AAAA). Cree una función personalizada como `calculateAge()` que tome la fecha de nacimiento como entrada y devuelva la edad:
 
 ```javascript
     /**

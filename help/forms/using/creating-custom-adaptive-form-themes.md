@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e9853779-e22c-484e-8480-8e724d584ab7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 56%
+source-wordcount: '800'
+ht-degree: 55%
 
 ---
 
@@ -42,8 +43,8 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 >
 >Si sigue estos pasos y usa los nombres, la plantilla resultante debería aparecer de forma similar a la siguiente captura de pantalla:
 
-![Captura de pantalla del formulario adaptable con la temática Forest](assets/thumbnail.png)
-**Figura:** *Ejemplo de la temática Forest*
+![Instantánea de formulario adaptable con temática de bosque](assets/thumbnail.png)
+**Figura:** *Muestra de tema de bosque*
 
 1. Crear un nodo de tipo `cq:ClientLibraryFolder` en el nodo `/apps`.
 
@@ -208,7 +209,7 @@ Después de crear una temática de formulario adaptable, realice los siguientes 
 
 1. Para incluir la temática creada en [para crear una temática de formulario adaptable](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), cree una página personalizada de tipo `cq:Component`.
 
-   Por ejemplo, `/apps/myAfCustomizations/myAfPages/forestPage`. 
+   Por ejemplo, `/apps/myAfCustomizations/myAfPages/forestPage`.
 
    1. Agregue una propiedad `sling:resourceSuperType` y establezca su valor como `fd/af/components/page/base`.
 
@@ -227,7 +228,7 @@ Después de crear una temática de formulario adaptable, realice los siguientes 
 
    1. **Opcional**: en la página personalizada, reemplace header.jsp, footer.jsp y body.jsp, según sea necesario.
 
-1. Cree una plantilla personalizada (por ejemplo: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) cuyo jcr:content apunta a la página personalizada creada en el paso anterior (por ejemplo: `myAfCustomizations/myAfPages/forestPage)`.
+1. Cree una plantilla personalizada (por ejemplo: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) cuyo jcr:content apunte a la página personalizada creada en el paso anterior (por ejemplo: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Captura de pantalla del repositorio CRX](assets/2-1.png)
 
