@@ -7,10 +7,11 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b73b3adc-e12c-47a8-9342-6214128b72ff
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 88%
+source-wordcount: '3826'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +25,7 @@ Un diccionario de datos es una representación independiente de metadatos que de
 
 El diccionario de datos está formado por elementos de tres tipos: elementos simples, compuestos y de colección. Los DDE simples son elementos primitivos como cadenas, números, fechas y valores booleanos que contienen información como un nombre de ciudad. Un DDE compuesto contiene otros DDE, que pueden ser de tipo primitivo, compuesto o de colección. Por ejemplo, una dirección que consta de una dirección de calle, ciudad, provincia, país y código postal. Una colección es una lista de DDE simples o compuestos similares. Por ejemplo, un cliente con varias ubicaciones o direcciones de facturación y envío distintas.
 
-Administración de correspondencia utiliza los datos del back end, del cliente o específicos del destinatario almacenados según la estructura del diccionario de datos para crear correspondencia destinada a diferentes clientes. Por ejemplo, se puede crear un documento con nombres descriptivos, como “Estimado {Nombre}”, “Sr. {Apellidos}”.
+Administración de correspondencia utiliza los datos del back end, del cliente o específicos del destinatario almacenados según la estructura del diccionario de datos para crear correspondencia destinada a diferentes clientes. Por ejemplo, se puede crear un documento con nombres descriptivos, como &quot;Estimado {First Name}&quot;,&quot;Sr. {Last Name}&quot;.
 
 Normalmente, los usuarios empresariales no necesitan conocer las representaciones de metadatos, como las clases XSD (esquema XML) y Java. Sin embargo, por lo general, requieren acceso a estas estructuras y atributos de datos para crear soluciones.
 
@@ -32,7 +33,7 @@ Normalmente, los usuarios empresariales no necesitan conocer las representacione
 
 1. Un autor [crea el diccionario de datos](#createdatadictionary) al cargar un esquema o desde cero.
 1. El autor crea cartas y comunicaciones interactivas basadas en el diccionario de datos y asociará sus elementos en cartas y comunicaciones interactivas siempre que sea necesario.
-1. Un autor puede descargar un archivo XML de datos de ejemplo, que se basa en el esquema de un diccionario de datos. El autor puede modificar el archivo XML de datos de ejemplo, que puede asociarse como datos de prueba con el diccionario de datos. Lo mismo se utiliza durante la vista previa de la carta.
+1. Un autor puede descargar un archivo XML de datos de muestra, que se basa en el esquema de un diccionario de datos. El autor puede modificar el archivo XML de datos de muestra, que puede asociarse como datos de prueba con el diccionario de datos. Lo mismo se utiliza durante la vista previa de la carta.
 1. Mientras [previsualiza una carta](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un autor elige previsualizar la carta con datos (vista previa personalizada). La carta se abrirá rellenada con los datos proporcionados por el autor. Se abrirá en la interfaz de Crear correspondencia. El agente que previsualiza esta carta puede modificar el contenido, los datos y los archivos adjuntos y puede enviar la carta final. Para obtener más información sobre la creación de cartas, consulte [Crear correspondencia](../../forms/using/create-letter.md).
 
 ## Requisitos previos {#prerequisite}
@@ -361,7 +362,7 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
   </tr>
   <tr>
    <td><p>xs:element where maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE de tipo: COLECCIÓN:<br /> se crea un nodo DDE junto al DDE de COLECCIÓN que captura información del nodo COLECCIÓN principal. Lo mismo se crea para ambas colecciones de tipos de datos simples/compuestos. Siempre que tenga una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos capturará los campos constitutivos en los elementos secundarios del DDE creados para capturar información de tipo.<br />: DDE (COLECCIÓN)<br />: DDE (COMPUESTO para información de tipo)<br />: DDE (CADENA) field1<br />: DDE (CADENA) field2<br /> <br /> </p> </td>
+   <td>DDE de tipo: COLECCIÓN:<br /> se crea un nodo DDE junto al DDE de COLECCIÓN que captura información del nodo COLECCIÓN principal. Lo mismo se crea para ambas colecciones de tipos de datos simples/compuestos. Siempre que tenga una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos capturará los campos constitutivos en los elementos secundarios del DDE creados para capturar información de tipo.<br /> - DDE (COLECCIÓN)<br /> - DDE(COMPUESTO para información de tipo)<br /> - DDE(CADENA) field1<br /> - DDE(CADENA) field2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -407,9 +408,9 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
  </tbody>
 </table>
 
-## Descargar un archivo de datos de ejemplo desde un diccionario de datos {#download-a-sample-data-file-from-a-data-dictionary}
+## Descargar un archivo de datos de muestra desde un diccionario de datos {#download-a-sample-data-file-from-a-data-dictionary}
 
-Una vez creado un diccionario de datos, puede descargarlo como un archivo de datos de ejemplo XML para crear entradas de texto en él.
+Una vez creado un diccionario de datos, puede descargarlo como un archivo de datos de muestra XML para crear entradas de texto en él.
 
 1. En la página Diccionarios de datos, seleccione **Seleccionar** y, a continuación, seleccione un diccionario de datos para seleccionarlo.
 1. Seleccione **Descargar datos XML de ejemplo.**

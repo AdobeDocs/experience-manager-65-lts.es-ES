@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 96%
+source-wordcount: '2779'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +27,7 @@ JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las
 
 * Al escribir expresiones, para acceder a campos y paneles, puede utilizar el nombre del campo o panel. Para acceder al valor de un campo, utilice la propiedad “value”. Por ejemplo, `field1.value`
 * Utilice nombres únicos para los campos y paneles de todo el formulario. Ayuda a evitar posibles conflictos con los nombres de campo utilizados al escribir expresiones.
-* Cuando escriba expresiones de varias líneas, utilice un punto y coma para finalizar un enunciado.
+* Cuando escriba expresiones de varias líneas, utilice un punto y coma para terminar un enunciado.
 
 ## Prácticas recomendadas para expresiones que implican un panel de repetición {#best-practices-for-expressions-involving-repeating-panel}
 
@@ -136,7 +137,7 @@ La expresión “validate” se utiliza para validar los campos mediante la expr
 
 **Se aplica a**: campos
 
-**Tipo de devolución**: La expresión devuelve un valor Booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido. 
+**Tipo de devolución**: La expresión devuelve un valor Boolean, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -158,7 +159,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:**Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -183,7 +184,7 @@ La expresión “step completion” se utiliza para evitar que un usuario vaya a
 
 **Tipo de devolución**: La expresión devuelve un valor Booleano, que representa si el panel actual es válido o no. **True** representa que el panel actual es válido y el usuario puede navegar hasta el siguiente panel.
 
-**Ejemplo**: En un formulario organizado en varios paneles, antes de navegar hasta el panel siguiente, se valida el panel actual. En estos casos, se utiliza la expresión “step completion”. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión “step completion” es:
+**Ejemplo**: en un formulario organizado en varios paneles, antes de navegar al siguiente panel, se valida el panel actual. En estos casos, se utiliza la expresión &quot;step completion&quot;. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validaciones en formularios adaptables {#validations-in-adaptive-form}
@@ -277,11 +278,11 @@ Como se ha mencionado anteriormente, los formularios adaptables permiten al auto
 Realice los siguientes pasos para crear un motivo personalizado para un tipo de campo específico y reutilizarlo para otros campos del mismo tipo:
 
 1. Navegue hasta CRXDE Lite de la instancia de autor.
-1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
+1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling::folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
 1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de fecha es *fd/af/components/formatter/guideDatepicker*.
+&quot;
 1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agrega una propiedad con un nombre (por ejemplo, `pattern1`) y establece su valor en el motivo que desees agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
    ![Crear motivos personalizados para campos en CrxDe](assets/creating-custom-patterns.png)

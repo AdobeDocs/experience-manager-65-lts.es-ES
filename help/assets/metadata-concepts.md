@@ -1,20 +1,21 @@
 ---
-title: Comprender los conceptos de metadatos
+title: Comprensión de los conceptos de metadatos
 description: Obtenga información acerca de la necesidad de y los tipos de metadatos que facilitan la categorización y organización de los recursos.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 16ab2e64-9c12-43ae-a8d2-f71e63899c68
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 7%
+source-wordcount: '2751'
+ht-degree: 9%
 
 ---
 
-# Comprender los conceptos de metadatos {#why-we-need-metadata}
+# Comprensión de los conceptos de metadatos {#why-we-need-metadata}
 
-Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficaz de los recursos.
+Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
 Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero que no están necesariamente contenidos en esa imagen. Algunos ejemplos de metadatos son los siguientes:
 
@@ -70,7 +71,7 @@ Existen varias formas de incrustar metadatos en los archivos. Se admite una sele
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe y otras empresas admiten el estándar XMP, ya que proporciona un modelo de contenido enriquecido. Los usuarios del estándar XMP y de [!DNL Experience Manager Assets] tienen una potente plataforma sobre la cual construir. Para obtener más información, consulte [XMP](https://www.adobe.com/es/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe y otras empresas admiten el estándar XMP, ya que proporciona un modelo de contenido enriquecido. Los usuarios del estándar XMP y de [!DNL Experience Manager Assets] tienen una potente plataforma sobre la cual construir. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -122,7 +123,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * CQ - Utilizado por [!DNL Experience Manager Assets].
 * DAM: Utilizado por [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] es una colección de herramientas para la administración de metadatos y archivos para los sistemas operativos Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/es/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR: [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto and MP - Microsoft Photo.
@@ -270,7 +271,7 @@ XMP permite agregar una propiedad `xml:lang` a las propiedades de texto para esp
 
 ## Trabajo con metadatos de IPTC {#support-for-iptc-metadata}
 
-Descubra cómo [!DNL Adobe Experience Manager Assets] admite los metadatos de IPTC, las clasificaciones de creativos y las palabras clave agregadas a los recursos mediante [!DNL Adobe Bridge] y otras [!DNL Adobe Creative Cloud] aplicaciones.
+Descubra cómo [!DNL Adobe Experience Manager Assets] admite los metadatos de IPTC, las clasificaciones de Creative y las palabras clave agregadas a los recursos a través de [!DNL Adobe Bridge] y otras [!DNL Adobe Creative Cloud] aplicaciones.
 
 [!DNL Adobe Experience Manager Assets] admite el estándar de metadatos de IPTC, que se utiliza ampliamente para describir recursos. De esta manera, [!DNL Assets] mejora la aceptación de sus imágenes entre diversas partes, incluidos fotógrafos, agencias creativas, bibliotecas, museos, etc.
 
@@ -289,13 +290,13 @@ La página Propiedades de los recursos ahora incluye pestañas independientes pa
 1. Edite las propiedades de metadatos de la extensión de IPTC según sea necesario.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]** para guardar los cambios.
 
-### Asistencia de clasificación creativa {#creative-rating-support}
+### Compatibilidad con clasificación Creative {#creative-rating-support}
 
-Además de mostrar las clasificaciones de usuarios individuales y las clasificaciones acumuladas, la página Propiedades ahora muestra las clasificaciones asignadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas
+Además de mostrar las clasificaciones de usuarios individuales y las clasificaciones acumuladas, la página Propiedades ahora muestra las clasificaciones asignadas a los recursos mediante Adobe Bridge y otras aplicaciones de Creative
 
 Estas clasificaciones están disponibles en la sección **[!UICONTROL Clasificación creativa]** de la pestaña **[!UICONTROL Avanzado]**.
 
-Esta clasificación es de solo lectura y oscila entre 1 y 5. Puede buscar recursos en función de su clasificación creativa en el panel Buscar.
+Esta clasificación es de solo lectura y oscila entre 1 y 5. Puede buscar recursos en función de su clasificación de Creative en el panel Buscar.
 
 Sin embargo, esta propiedad no está indizada actualmente para evitar conflictos con los cambios personalizados realizados por los usuarios.
 

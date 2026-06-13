@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
 source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2371'
 ht-degree: 59%
 
 ---
@@ -80,7 +80,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en v
 >
 >* **Los fragmentos de contenido** son contenido editorial que puede utilizarse para acceder a datos estructurados, como textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual o adicional.
 >
->* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >

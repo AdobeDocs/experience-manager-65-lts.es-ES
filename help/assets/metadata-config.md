@@ -10,7 +10,7 @@ exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos. [!DNL Adobe Experience Manager Assets] permite que los administradores configuren y personalicen la funcionalidad de metadatos para modificar la oferta predeterminada de Adobe.
+[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Esto facilita la categorización y organización de los recursos y ayuda al buscar un recurso específico. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos. [!DNL Adobe Experience Manager Assets] permite que los administradores configuren y personalicen la funcionalidad de metadatos para modificar la oferta predeterminada de Adobe.
 
 ## Editar esquema de metadatos {#metadata-schema}
 
@@ -120,7 +120,7 @@ Un perfil de metadatos le permite aplicar metadatos predeterminados a los recurs
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/es/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -280,7 +280,7 @@ Escriba valores de metadatos en los distintos campos y haga clic en **[!UICONTRO
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=es).
+>* [Importar y exportar metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Prácticas recomendadas para organizar los recursos digitales a fin de que utilicen perfiles de procesamiento](/help/assets/organize-assets.md).
 >* [reescritura de XMP](/help/assets/xmp-writeback.md).

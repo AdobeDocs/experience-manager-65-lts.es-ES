@@ -8,9 +8,10 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 197f0c6e-8319-453c-b082-183de1b7ba2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 90%
 
 ---
@@ -20,19 +21,19 @@ ht-degree: 90%
 Las plantillas de formulario XFA o XDP permiten crear lo siguiente:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Canal de impresión](/help/forms/using/web-channel-print-channel.md#printchannel) de [Interactive Communications](/help/forms/using/interactive-communications-overview.md)
+* [Canal de impresión](/help/forms/using/web-channel-print-channel.md#printchannel) de [comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de diseños
 
 Los XDP se diseñan en Adobe Forms Designer. Este artículo contiene detalles cómo diseñar los XDP para crear correspondencias/comunicaciones interactivas eficaces, como dónde utilizar los campos de formulario o las áreas de destino y cuándo usar fragmentos de diseño.
 
-## Creación de un diseño para cartas o para el canal de impresión de Interactive Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Creación de un diseño para cartas o para el canal de impresión de comunicaciones interactivas {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
 Un diseño define el diseño gráfico del canal de una carta o el canal de impresión de una comunicación interactiva. El diseño puede contener campos de formulario comunes, como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas de destino. Cree el diseño en Forms Designer y, al terminar, el especialista en aplicaciones la cargará en un servidor de AEM. Desde allí, puede seleccionar el diseño al crear una plantilla de correspondencia o el canal de impresión de una comunicación interactiva.
 
 ![Designer: crear un diseño](assets/claimsubrogationlayout.png)
 
-Siga estos pasos para crear diseños para cartas o el canal de impresión de Interactive Communications:
+Siga estos pasos para crear diseños para cartas o el canal de impresión de comunicaciones interactivas:
 
 1. Analice el diseño y determine el contenido que se repite en todas las páginas; normalmente, el encabezado y pie de página pertenecen a esta categoría. Este contenido se coloca en las páginas maestras del diseño. El contenido restante se coloca en las páginas del cuerpo del diseño. En las disposiciones generales de una póliza, el logotipo y la dirección de la compañía se pueden agregar al encabezado y al pie de página de la página maestra. Por ejemplo, los avisos de cancelación utilizan el mismo diseño.
 1. Al diseñar las páginas del cuerpo, divida el contenido de las páginas en secciones. Cada sección está diseñada como un subformulario incrustado en el propio diseño o como un diseño de fragmento. Si la sección contiene una tabla, modélela como un fragmento de diseño.
@@ -116,7 +117,7 @@ Utilice el componente Tabla de Forms Designer para crear fragmentos de diseño 
 
 >[!NOTE]
 >
->Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos del modelo de datos del formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
+>Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos de modelo de datos de formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
 
 Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP mediante Forms Designer:
 
@@ -129,13 +130,13 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
 
 1. Seleccione **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón secundario en los nombres de celda incluidos en el encabezado y en otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
 1. Haga clic en los campos de texto del encabezado de la tabla de la **vista Diseño** y cambie su nombre.
-1. Arrastre y suelte el componente **Campo de texto** de la **Biblioteca de objetos** en cada una de las celdas de la tabla en la **vista Diseño**. Realice este paso para poder enlazar las celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
+1. Arrastre y suelte el componente **Campo de texto** de la **Biblioteca de objetos** en cada una de las celdas de la tabla en la **vista Diseño**. Realice este paso para poder enlazar las celdas de tabla con los objetos de modelo de datos de formulario durante la creación de la comunicación interactiva.
 
    ![Campos de texto en una tabla](assets/text_fields_table_new.png)
 
-1. Seleccione el nombre de la fila en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento de datos**. Realice este paso para asegurarse de que si se crea un enlace entre las celdas de la tabla de esta fila con objetos del modelo de datos de formulario de tipo colección, la fila de la tabla se repetirá automáticamente para cada uno de los elementos de datos disponibles en la base de datos.
+1. Seleccione el nombre de la fila en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento de datos**. Realice este paso para asegurarse de que si se crea un enlace entre las celdas de la tabla de esta fila con objetos de modelo de datos de formulario de tipo colección, la fila de la tabla se repetirá automáticamente para cada uno de los elementos de datos disponibles en la base de datos.
 
-   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos del modelo de datos del formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
+   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos de modelo de datos de formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 
@@ -149,7 +150,7 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
 Una vez creada una plantilla XDP con el Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de comunicaciones interactivas.
 
 1. Seleccione **Forms** > **Formularios y documentos**.
-1. Seleccione **Crear** > **Carga de archivo**.
+1. Seleccione **Crear** > **Cargar archivo**.
 1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y seleccione **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
 ## Uso del esquema {#using-schema}
