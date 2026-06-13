@@ -1,5 +1,5 @@
 ---
-title: Ampliación del Administrador de varios sitios
+title: Ampliación del administrador de varios sitios
 description: Esta página le ayuda a ampliar las funcionalidades del Administrador de varios sitios
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2605'
 ht-degree: 1%
 
 ---
 
-# Ampliación del Administrador de varios sitios{#extending-the-multi-site-manager}
+# Ampliación del administrador de varios sitios{#extending-the-multi-site-manager}
 
 Esta página le ayuda a ampliar las funcionalidades del Administrador de varios sitios:
 
@@ -204,15 +204,12 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 1. Agregue las siguientes propiedades a este nodo:
    * **Nombre**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: Un título de identificación que aparecerá en la interfaz de usuario.
    * **Nombre**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: una descripción opcional.
    * **Nombre**: `cq:trigger`
-
      **Tipo**: `String`
      **Value**: [Déclencheur de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) que se va a usar. Seleccionar de:
       * `rollout`
@@ -257,7 +254,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir proyecto experiencemanager-java-msmrollout en GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
+* [Abra el proyecto experiencemanager-java-msmrollout en GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
 ### Creación del proyecto Maven {#create-the-maven-project}
@@ -551,7 +548,7 @@ Cree la configuración de despliegue de MSM que usa el `LiveActionFactory` que c
 
    * **Título**: Configuración de despliegue de ejemplo
    * **Nombre**: examplerolloutconfig
-   * **cq:déclencheur**: `publish`
+   * **cq:trigger**: `publish`
 
 ### Añadir la acción Live a la configuración de despliegue de ejemplo {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -685,7 +682,6 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
       * **Tipo**: `String`
 
       * **Value**: contiene el nombre de la propiedad en consideración (y es comparable al valor de la propiedad `name`; por ejemplo, vea
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuando se ha definido `cq-msm-lockable`, romper/cerrar la cadena interactuará con MSM de la siguiente manera:
