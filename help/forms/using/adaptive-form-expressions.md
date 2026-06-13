@@ -159,7 +159,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]

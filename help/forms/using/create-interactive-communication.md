@@ -96,7 +96,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
 
    Utilice la operación de deshacer para descartar la última acción realizada y la operación de rehacer para incorporar de nuevo la acción descartada. Por ejemplo, si ha insertado una imagen o ha creado un enlace de datos en una comunicación interactiva y necesita descartarlo, utilice la operación Deshacer.
 
-   ![Acciones Deshacer y Rehacer ](assets/undo_redo_actions_new.png)
+   ![Acciones Deshacer y Rehacer &#x200B;](assets/undo_redo_actions_new.png)
 
    Las opciones Deshacer y Rehacer se muestran en la barra de herramientas de la página de la interfaz de usuario de creación. La opción Deshacer solo se muestra después de realizar una acción. La opción Rehacer se muestra en la barra de herramientas de la página solo después de realizar una operación de deshacer. Estas acciones se restablecen al actualizar la página.
 
@@ -141,7 +141,7 @@ Además, cuando pasa el ratón sobre estos elementos, se muestra información de
 
 Es posible que a veces no se muestre una variable independiente utilizada en un fragmento de documento en la interfaz de creación. Puede deberse a una regla de texto en línea dentro de un fragmento de documento o si hay un fragmento de condición. En estos casos, la información del objeto, resaltada en azul, se mostrará como parte del fragmento de documento. La información sobre herramientas muestra el número de variables independientes utilizadas dentro de un fragmento de documento.
 
-![Variable sin enlazar ](assets/df_unbound_variable_new.png)
+![Variable sin enlazar &#x200B;](assets/df_unbound_variable_new.png)
 
 Seleccione el fragmento de documento, seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, seleccione **[!UICONTROL Propiedades]** de la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y objetos de modelo de datos]** enumera las variables, incluidas las variables ocultas y los objetos de modelo de datos utilizados en los fragmentos del documento. Utilice el icono ![editar](assets/edit.svg) (Editar) junto a cada variable u objeto de modelo de datos para editar las propiedades.
 
