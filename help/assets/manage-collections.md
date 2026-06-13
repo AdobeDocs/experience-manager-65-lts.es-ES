@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
 source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2170'
 ht-degree: 15%
 
 ---
@@ -117,7 +117,7 @@ Para crear una colección inteligente, siga los pasos:
 Puede agregar recursos a una colección que contenga una lista de recursos o carpetas a los que se hace referencia. Las colecciones inteligentes utilizan una consulta de búsqueda para rellenar recursos. Por lo tanto, las referencias estáticas a recursos y carpetas no son aplicables a ellos.
 
 1. En la interfaz de usuario de [!DNL A]Assets, seleccione el recurso y haga clic en **[!UICONTROL Agregar a la colección]** ![agregar a la colección](assets/do-not-localize/add-to-collection.png) desde la barra de herramientas.
-También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección]** de la interfaz. Agregue los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para agregar]**.
+También puede arrastrar el recurso al área **[!UICONTROL Colocar en la colección]** de la interfaz. Agregue los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para agregar]**.
 
 1. En la página **[!UICONTROL Agregar a colección]**, seleccione la colección a la que desea agregar el recurso.
 

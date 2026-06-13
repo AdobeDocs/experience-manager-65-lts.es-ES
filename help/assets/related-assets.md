@@ -5,18 +5,19 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b07a5ce-c438-4e5f-a14c-bf96b42c2a78
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
+source-wordcount: '644'
+ht-degree: 45%
 
 ---
 
 # Recursos relacionados {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] le permite relacionar recursos manualmente según las necesidades de su organización mediante la función de recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen/vídeo sobre un tema similar. Puede relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF generado a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
+[!DNL Adobe Experience Manager Assets] le permite relacionar recursos manualmente según las necesidades de su organización mediante la función de recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen o un vídeo sobre un tema similar. Puede relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF generado a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
 
-Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores u agencias y hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
+Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores o agencias y hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
 
 >[!NOTE]
 >
@@ -50,7 +51,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Haga clic en **[!UICONTROL Confirmar]**.
-1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Según la relación que haya elegido en el paso 3, el recurso relacionado se enumerará en una categoría adecuada de la sección **[!UICONTROL Relacionado]**. Por ejemplo, si el recurso que ha relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Source]**.
+1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Según la relación que haya elegido en el paso 3, el recurso relacionado se enumerará en una categoría adecuada de la sección **[!UICONTROL Relacionado]**. Por ejemplo, si el recurso que ha relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -62,7 +63,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Los recursos para los que quitó relaciones se eliminarán de la lista de recursos relacionados en la sección **[!UICONTROL Relacionados]**.
 
-## Traducir recursos relacionados {#translating-related-assets}
+## Traducción de recursos relacionados {#translating-related-assets}
 
 La creación de relaciones de origen/derivadas entre recursos mediante la función de recursos relacionados también es útil en los flujos de trabajo de traducción. Cuando ejecuta un flujo de trabajo de traducción en un recurso derivado, [!DNL Experience Manager Assets] recupera automáticamente cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con los recursos de origen y derivados. Por ejemplo, considere un escenario en el que la copia en inglés incluya un recurso derivado y su archivo de origen como se muestra.
 
