@@ -8,9 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2419'
 ht-degree: 2%
 
 ---
@@ -40,7 +41,7 @@ Consulte también [formatos 3D compatibles](/help/assets/assets-formats.md).
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D propietario que los dispositivos Safari y iOS pueden ver de forma nativa. |
+| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D patentado que los dispositivos Safari y iOS pueden ver de forma nativa. |
 
 >[!NOTE]
 >

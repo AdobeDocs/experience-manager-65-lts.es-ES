@@ -9,10 +9,11 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 654cf0fc-1a80-4764-8ce7-22d060e1f61a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -38,7 +39,7 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 ‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
@@ -101,7 +102,7 @@ Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Soluci
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
-Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
+Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
 
 Puede cargar imágenes para conjuntos de imágenes del mismo modo que [cargaría cualquier otro recurso en Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -131,7 +132,7 @@ Puede crear conjuntos de imágenes a través de la interfaz de usuario o de la A
 >[!NOTE]
 >
 >También puede crear conjuntos de imágenes automáticamente mediante [ajustes preestablecidos de conjuntos de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Importante: IPS (Image Production System) crea** conjuntos de lotes como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
+>**Importante:** IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 
 Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfanumérico. Puede reordenar u ordenar manualmente los recursos una vez añadidos.
 
@@ -143,7 +144,7 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 ‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
@@ -247,7 +248,6 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, seleccione **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
-
      >[!NOTE]
      >
      >Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.

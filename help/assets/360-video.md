@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
 source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -33,14 +33,14 @@ Consulte también [Administración de ajustes preestablecidos de visor](/help/as
 
 Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
 
-![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás.](assets/6_5_360videoiss_simplified.png)
+![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio ultraterrestre y la tierra y el sol detrás de ella.](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la Estación Espacial 360*
 
 ## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo de 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
-Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edit-360-vr-video.html).
+Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carga de recursos para utilizarlos con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -121,7 +121,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
    * Arrastre el puntero del ratón por el vídeo si desea modificar el ángulo de visualización de la escena estática.
    * Seleccione el botón **[!UICONTROL Reproducir]** del vídeo si desea que comience la reproducción. A medida que se reproduce el vídeo, arrastre el puntero del mouse (ratón) por el vídeo para modificar el ángulo de visualización.
 
-   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano &#x200B;](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
+   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
@@ -137,6 +137,6 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 Publique el vídeo 360 para poder utilizarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrada con una CDN para una entrega escalable y con buen rendimiento.
 
 Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
-Consulte también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Ver también [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Ver también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Consulte también [Vincular URL a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 Consulte también [Agregar recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).

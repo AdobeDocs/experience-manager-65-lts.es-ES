@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 48cdca14c4e993281ed8c0a4a364aebe7a4611ad
+exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4550'
 ht-degree: 3%
 
 ---
@@ -138,10 +139,10 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU único, encontrado en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las zonas interactivas o los mapas de imagen solo necesitan campos SKU con valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -157,9 +158,9 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU e ID de categoría en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de mapa de imagen/punto interactivo son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
      <li><p>El SKU es <strong><code>305466</code></strong> y <code>categoryId</code> es <code>1100004</code>.</p> </li>
@@ -273,7 +274,7 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
 
    Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. Añada más puntos interactivos o mapas de imagen según sea necesario.
 
-   Para eliminar un punto interactivo o un mapa de imagen, seleccione la pestaña **[!UICONTROL Acciones]**. En el encabezado **[!UICONTROL Mapas y zonas interactivas]**, del menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre del punto interactivo o del mapa de imagen que desea eliminar. Seleccione el icono **[!UICONTROL Papelera]** junto al menú y, a continuación, seleccione **[!UICONTROL Eliminar]**.
+   Para eliminar un punto interactivo o un mapa de imagen, seleccione la pestaña **[!UICONTROL Acciones]**. En el encabezado **[!UICONTROL Mapas y zonas interactivas]**, del menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre de la zona interactiva o del mapa de imagen que desea eliminar. Seleccione el icono **[!UICONTROL Papelera]** junto al menú y, a continuación, seleccione **[!UICONTROL Eliminar]**.
 
 1. En el campo de texto Nombre, escriba el nombre del punto interactivo o del mapa de imagen. Este nombre también aparece en la lista desplegable **[!UICONTROL Mapas y puntos interactivos]**. Proporcionar un nombre facilita la identificación del punto interactivo o el mapa de imagen si decide cambiarlo en el futuro.
 1. Realice una de las siguientes acciones en la ficha **[!UICONTROL Acciones]**:
@@ -292,7 +293,6 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
    * Seleccione **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
-
         >[!NOTE]
         >
         >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
@@ -306,7 +306,7 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
    * Seleccione **[!UICONTROL Fragmento de experiencia]**.
 
       * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
-Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
+Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
       * Especifique la anchura y altura del fragmento de experiencia tal como aparece en el banner.
 
@@ -318,7 +318,7 @@ Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [&#x200B; (Opcional) Vista previa de los titulares del carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de los titulares del carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Publique el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página web.
@@ -374,7 +374,7 @@ Puede usar Vista previa para ver cómo aparece el banner del carrusel para los c
 
 Cuando esté satisfecho con el titular del carrusel, puede publicarlo.
 Ver [Incrustación del visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Ver [URL de vinculación a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Consulte [Vinculación de direcciones URL a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Puede obtener una vista previa de los titulares de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visores]**.
@@ -387,7 +387,7 @@ Puede obtener una vista previa de los titulares de carrusel desde el Editor de c
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Seleccionar **[!UICONTROL vista previa]**.
+1. Seleccione **[!UICONTROL Vista previa]**.
 1. Seleccione las zonas interactivas o los mapas de imagen de la imagen para poder probar sus acciones asociadas.
 
 **Para obtener una vista previa de los titulares de carrusel de la lista de visores:**
