@@ -73,7 +73,7 @@ En la tabla siguiente se enumeran los archivos JAR necesarios para invocar los s
   <tr>
    <th><p>Archivo</p></th>
    <th><p>Descripción</p></th>
-   <th><p>Ubicación</p></th>
+   <th><p>Lugar de residencia</p></th>
   </tr>
  </thead>
  <tbody>
@@ -224,7 +224,7 @@ En la tabla siguiente se enumeran los archivos JAR que dependen del modo de cone
   <tr>
    <th><p>Archivo</p> </th>
    <th><p>Descripción</p> </th>
-   <th><p>Ubicación</p> </th>
+   <th><p>Lugar de residencia</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -252,7 +252,7 @@ En la tabla siguiente se enumeran los archivos JAR que dependen del modo de cone
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>si se invoca AEM Forms con el modo SOAP, incluya estos archivos JAR.</p> </td>
-   <td><p>&lt;<em>directorio de instalación</em>&gt;/sdk/client-libs/thirdparty</p> </td>
+   <td><p>&lt;<em>directorio de instalación</em>&gt;/sdk/client-libs/third-party</p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>

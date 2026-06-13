@@ -11,14 +11,15 @@ role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 98%
+source-wordcount: '1556'
+ht-degree: 97%
 
 ---
 
 # Introducción a la administración de formularios {#introduction-to-managing-forms}
 
-AEM [!DNL Forms] proporciona una interfaz de usuario simplificada pero potente para crear y administrar formularios, documentos, temas, cartas, fragmentos de documento, diccionarios de datos y recursos relacionados. Ayuda a administrar el ciclo de vida completo de los formularios, documentos y recursos relacionados, desde el escritorio de un desarrollador hasta su oferta en el servidor de un portal para usuarios finales. Puede usar la interfaz de usuario de AEM [!DNL Forms] para lo siguiente:
+AEM [!DNL Forms] proporciona una interfaz de usuario simplificada pero potente para crear y administrar formularios, documentos, temas, cartas, fragmentos de documento, diccionarios de datos y recursos relacionados. Ayuda a administrar el ciclo de vida completo de los formularios, documentos y recursos relacionados, desde el escritorio de un desarrollador hasta la oferta
+en un servidor de portal para usuarios finales. Puede usar la interfaz de usuario de AEM [!DNL Forms] para lo siguiente:
 
 * Acceder a los componentes de AEM [!DNL Forms]
 * Acceder a las configuraciones de AEM [!DNL Forms]
@@ -45,7 +46,7 @@ Forms y documentos proporcionan opciones para crear una comunicación interactiv
 
 El botón Crear es el punto de inicio del proceso de creación o carga de un recurso de AEM [!DNL Forms]. Proporciona opciones para crear:
 
-* Una **comunicación interactiva**: una comunicación interactiva es una correspondencia, un extracto o un documento digital personalizado, interactivo y compatible con el dispositivo, basado en HTML. Las comunicaciones interactivas son interactivas en su naturaleza y cambian su diseño automáticamente según el dispositivo y la configuración del usuario. Para obtener información detallada, consulte [Información general sobre comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
+* Una **comunicación interactiva**: una comunicación interactiva es una correspondencia, un extracto o un documento digital personalizado, interactivo y compatible con el dispositivo, basado en HTML. Las comunicaciones interactivas son adaptables por naturaleza y cambian su diseño automáticamente según el dispositivo y la configuración del usuario. Para obtener información detallada, consulte [Información general sobre comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Un **formulario adaptable:** un formulario adaptable es un formulario atractivo e interactivo. Puede crear un formulario adaptable para adaptarse de forma dinámica a las entradas del usuario añadiendo o eliminando secciones de formulario basadas en la respuesta del usuario, el dispositivo o el entorno de trabajo. El artículo [Introducción a la creación de formularios adaptables](../../forms/using/introduction-forms-authoring.md) proporciona información detallada sobre los formularios adaptables.
 
@@ -113,13 +114,13 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
 * **Cambiar vista:** puede hacer clic en los iconos del conmutador de vista ![Ver vista](assets/viewlist.png) o ![Ver tarjeta](assets/viewcard.png) para cambiar rápidamente entre la vista de lista y la vista de tarjeta. Para obtener más información sobre los componentes más comunes de la interfaz de usuario, consulte [Creación](/help/sites-authoring/author.md).
 * **Buscar:** La opción Búsqueda ![Búsqueda](assets/search.png) permite buscar y saltar rápidamente al contenido y las herramientas que necesita. Escriba el nombre del contenido o la capacidad del producto y selecciónelo entre las sugerencias; por ejemplo, escriba &quot;Documentos&quot; para buscar rápidamente y desplazarse hasta **[!UICONTROL Formularios y documentos]** o la consola Fragmentos de documento. Para obtener más información sobre la búsqueda, consulte el artículo [Búsqueda](/help/sites-authoring/search.md) de AEM 6.2.
 
-* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el ratón sobre un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
+* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el puntero por encima de un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
 
 >[!NOTE]
 >
 >Cuando un usuario realiza una búsqueda en cualquier consola de Formularios y documentos, el carril contiene únicamente **Filtros y opciones**. Puede usar Filtros y opciones para realizar búsquedas avanzadas.
 
-* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el ratón sobre un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
+* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el puntero por encima de un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
 
   ![Barra de herramientas Acciones en un formulario adaptable](assets/action_toolbar_new.png)
 

@@ -8,10 +8,11 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
-ht-degree: 99%
+source-wordcount: '2816'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +91,7 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 * Iniciar/Administrar revisión: una vez creado el conjunto de formularios, puede configurar su revisión haciendo clic en Iniciar revisión. Una vez iniciada la revisión de un conjunto de formularios, se muestra al usuario la opción Administrar revisión. En la pantalla Administrar revisión, puede actualizar o finalizar la revisión. En el caso de las revisiones que ha agregado, puede comprobar la revisión y agregar comentarios, si es necesario.
 * Eliminar: elimina todo el conjunto de formularios. Los formularios del conjunto de formularios eliminado permanecen en el repositorio.
 * Publicar/Cancelar publicación: esta funcionalidad publica o cancela la publicación del conjunto de formularios junto con todos los formularios que contiene y los recursos relacionados con estos formularios.
-* Vista previa: la vista previa ofrece dos opciones: Vista previa como HTML (sin datos) y ver una vista previa personalizada con datos de ejemplo.
+* Vista previa: la vista previa ofrece dos opciones: Vista previa como HTML (sin datos) y ver una vista previa personalizada con datos de muestra.
 * Ver/editar propiedades: puede ver o editar las propiedades de metadatos de un conjunto de formularios seleccionado.
 
 ![crear_conjunto_de_formularios3](assets/createformset3.png)
@@ -100,7 +101,7 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 Para editar un conjunto de formularios, haga lo siguiente:
 
 1. Seleccione Forms > Formularios y documentos.
-1. Busque el conjunto de formularios que desea editar. Pase el ratón sobre él y seleccione Editar (![icono Editar](assets/editicon.png)).
+1. Busque el conjunto de formularios que desea editar. Pase el puntero por encima de él y seleccione Editar (![icono Editar](assets/editicon.png)).
 1. En la página Configurar formularios, puede editar las siguientes opciones:
 
    * Orden del formulario
@@ -168,18 +169,18 @@ Por ejemplo, tiene tres formularios (formulario1, formulario2 y formulario3), en
 
 formulario1
 
-campo
-campodelformulario1
+field
+form1field
 
 formulario2
 
-campo
-campodelformulario2
+field
+form2field
 
 formulario3
 
-campo
-campodelformulario3
+field
+form3field
 
 Cada formulario tiene un campo de nombre común denominado &quot;campo&quot; y un campo de nombre único denominado &quot;campo de&lt;i>formulario&quot;.
 

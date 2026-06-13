@@ -8,10 +8,11 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2d2b3fb7-80f7-4b55-84c5-c10a03d2a4e1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 89%
+source-wordcount: '2678'
+ht-degree: 85%
 
 ---
 
@@ -54,7 +55,7 @@ Realice los siguientes pasos para agregar y configurar un gráfico en una comuni
 
 ## Configurar las propiedades del gráfico {#configure-chart-properties}
 
-Configurar las siguientes propiedades al crear gráficos para imprimir o para canales web:
+Configurar las siguientes propiedades al crear gráficos para canales web y de impresión:
 
 <table>
  <tbody>
@@ -79,8 +80,8 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
    <td>Impresa y web</td>
   </tr>
   <tr>
-   <td>Series &gt; Objeto del modelo de datos</td>
-   <td>Nombre del elemento de recopilación del modelo de datos de formulario para agregar varias series al gráfico.<br /> Elija una propiedad de objeto del modelo de datos del formulario principal para las propiedades trazadas en el eje X y en el eje Y para formar una serie significativa. El objeto del modelo de datos que enlace debe ser de tipo Número, Cadena o Fecha.</td>
+   <td>Series &gt; Objeto de modelo de datos</td>
+   <td>Nombre del elemento de colección del modelo de datos de formulario para agregar varias series al gráfico.<br /> Elija una propiedad de objeto del modelo de datos de formulario principal para las propiedades trazadas en los ejes X e Y para formar una serie significativa. El objeto de modelo de datos que enlace debe ser de tipo Número, Cadena o Fecha.</td>
    <td>Impresa y web</td>
   </tr>
   <tr>
@@ -94,8 +95,8 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
    <td>Impresa y web</td>
   </tr>
   <tr>
-   <td>Eje X &gt; Objeto del modelo de datos</td>
-   <td><p>Nombre del elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje X.</p> <p>Elija dos propiedades de tipo colección/matriz del mismo objeto del modelo de datos principal que tengan sentido en relación mutua para trazar en el eje X e Y de un gráfico. El objeto del modelo de datos que enlace debe ser de tipo Número, Cadena o Fecha.</p> </td>
+   <td>Eje X &gt; Objeto de modelo de datos</td>
+   <td><p>Nombre del elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje X.</p> <p>Elija dos propiedades de tipo colección/matriz del mismo objeto de modelo de datos principal que tengan sentido en relación mutua para trazar en el eje X e Y de un gráfico. El objeto de modelo de datos que enlace debe ser de tipo Número, Cadena o Fecha.</p> </td>
    <td>Impresa y web</td>
   </tr>
   <tr>
@@ -104,8 +105,8 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
    <td>Impresa y web</td>
   </tr>
   <tr>
-   <td>Eje Y &gt; Objeto del modelo de datos</td>
-   <td><p>Elemento de colección del modelo de datos de formulario que se va a trazar en el eje Y. En el canal Imprimir, el objeto del modelo de datos para el eje Y debe ser del tipo Número.</p> <p>Elija dos propiedades de tipo colección/matriz del mismo objeto del modelo de datos principal que tengan sentido en relación mutua para trazar en el eje X e Y de un gráfico. </p> </td>
+   <td>Eje Y &gt; Objeto de modelo de datos</td>
+   <td><p>Elemento de colección del modelo de datos de formulario que se va a trazar en el eje Y. En el canal Imprimir, el objeto de modelo de datos para el eje Y debe ser del tipo Número.</p> <p>Elija dos propiedades de tipo colección/matriz del mismo objeto de modelo de datos principal que tengan sentido en relación mutua para trazar en el eje X e Y de un gráfico. </p> </td>
    <td>Impresa y web</td>
   </tr>
   <tr>
@@ -163,13 +164,13 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
      <li><strong>Color de línea</strong>: disponible para gráficos de líneas, líneas y puntos y áreas para especificar el color de la línea del gráfico.</li>
      <li><strong>Color de punto</strong>: disponible para gráficos de puntos y líneas y puntos para especificar el color de los puntos del gráfico.<br /> </li>
      <li><strong>Color de área</strong>: disponible para gráficos de área para especificar el color del área bajo la línea del gráfico.</li>
-     <li><strong>Punto de referencia &gt; Tipo de enlace: </strong>disponible para gráficos de cuadrante para<strong> </strong>especificar el tipo de enlace para el punto de referencia. Utilice la propiedad de objeto de texto estático o modelo de datos para definir el valor del punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Tipo de enlace: </strong>disponible para gráficos de cuadrante para<strong> </strong>especificar el tipo de enlace para el punto de referencia. Utilice la propiedad de objeto de modelo de datos o de texto estático para definir el valor del punto de referencia.</li>
      <li><strong>Punto de referencia &gt; Eje X: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje X para el punto de referencia.</li>
      <li><strong>Punto de referencia &gt; Eje Y: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</li>
-     <li><strong>Punto de referencia &gt; Objeto del modelo de datos de la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario de la serie y el valor definidos en este campo para identificar la serie del punto de referencia.</li>
-     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto del modelo de datos que sea una entidad secundaria de la propiedad de objeto del modelo de datos definida para la serie.</li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierdo:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</li>
+     <li><strong>Punto de referencia &gt; Objeto del modelo de datos de la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina la propiedad del objeto de modelo de datos de formulario para identificar la serie del punto de referencia. </li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto de modelo de datos de formulario de la serie y el valor definidos en este campo para identificar la serie del punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina una propiedad de objeto de modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto de modelo de datos que sea una entidad secundaria de la propiedad de objeto de modelo de datos definida para la serie.</li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario del punto de referencia y el valor definidos en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierdo:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Superior derecho:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior derecho.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Inferior derecho: </strong>disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior derecho.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Inferior izquierdo: </strong>disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior izquierdo.</li>
@@ -242,7 +243,7 @@ La función ahora está disponible para usarla en el gráfico.
 
 ## Ejemplo 1: Salida de gráfico en imprimir y web {#chartoutputprintweb}
 
-En la pestaña Básico, se define el tipo de gráfico, las propiedades del modelo de datos del formulario de origen que contienen datos, las etiquetas que se van a trazar en el eje X y el eje Y del gráfico y, opcionalmente, la función estadística para calcular los valores para trazar en el gráfico.
+En la pestaña Básico, se define el tipo de gráfico, las propiedades del modelo de datos de formulario de origen que contienen datos, las etiquetas que se van a trazar en el eje X y el eje Y del gráfico y, opcionalmente, la función estadística para calcular los valores para trazar en el gráfico.
 
 Comprendamos en detalle la información mínima requerida en las propiedades básicas, con la ayuda de una instrucción de tarjeta generada mediante una comunicación interactiva. Imagine que quiere generar un gráfico para mostrar la cantidad de gastos diferentes en la instrucción. Quiere utilizar diferentes tipos de gráficos para la impresión y la salida web de la comunicación interactiva.
 
@@ -253,7 +254,7 @@ Para ello, especifique las siguientes propiedades:
 * **[!UICONTROL Nombre]**: especifique el nombre del gráfico.
 * **[!UICONTROL Tipo de gráfico]**: seleccione **Columna** de la lista desplegable.
 * **[!UICONTROL Título]**: especifique el tipo de gasto para el eje X y el importe de la transacción para el eje Y.
-* **[!UICONTROL Objetos del modelo de datos]**: seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) e Y (Importe de transacción).
+* **[!UICONTROL Objetos de modelo de datos]**: seleccione las propiedades del objeto de modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) e Y (Importe de transacción).
 
 ![Gráfico de columnas en el canal Imprimir de una comunicación interactiva](assets/sample_chart_print_column_new.png)
 
@@ -265,9 +266,9 @@ Para ello, especifique las siguientes propiedades:
 
 * **[!UICONTROL Nombre]**: especifique el nombre del gráfico.
 * **[!UICONTROL Tipo de gráfico]**: seleccione **[!UICONTROL Anillo]** de la lista desplegable.
-* **[!UICONTROL Objetos del modelo de datos]**: seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) e Y (Importe de transacción).
+* **[!UICONTROL Objetos de modelo de datos]**: seleccione las propiedades del objeto de modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) e Y (Importe de transacción).
 * **[!UICONTROL Radio interior]**: especifique el valor del Radio interior como 150 para especificar el radio (en píxeles) del círculo interior del gráfico.
-* **[!UICONTROL Información de objeto]**: utilice el formato predeterminado ${x}(${y}) para mostrar la información del objeto. La información del objeto se muestra de la siguiente manera: Tipo de gasto (Importe de transacción). Ejemplo: Débito de bitcoin (10 000).
+* **[!UICONTROL Información de objeto]** - Utilice el formato predeterminado ${x}(${y}) para mostrar la información de objeto. La información del objeto se muestra de la siguiente manera: Tipo de gasto (Importe de transacción). Ejemplo: Débito de bitcoin (10 000).
 
 ![Gráfico de anillo en el canal Web de una comunicación interactiva](assets/sample_chart_web_new.png)
 
@@ -305,8 +306,8 @@ Para ello, especifique las siguientes propiedades:
 * **Tipo de gráfico:** seleccione **Cuadrante** de la lista desplegable.
 
 * Seleccione la casilla de verificación **Varias series**.
-* **Objeto del modelo de datos**: especifique la propiedad del objeto del modelo de datos para la serie. La propiedad del objeto del modelo de datos para el nombre del banco es una propiedad principal de las propiedades del objeto del modelo de datos trazadas en los ejes X e Y.
-* **Objetos del modelo de datos:** seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Fecha de transacción) e Y (Importe de transacción).
+* **Objeto de modelo de datos**: especifique la propiedad del objeto de modelo de datos para la serie. La propiedad del objeto de modelo de datos para el nombre del banco es una propiedad principal de las propiedades del objeto de modelo de datos trazadas en los ejes X e Y.
+* **Objetos de modelo de datos:** seleccione las propiedades del objeto de modelo de datos para crear enlaces de datos para los ejes X (Fecha de transacción) e Y (Importe de transacción).
 * En el **Punto de referencia**, seleccione **Estático** como tipo de enlace.
 
 * Especifique los valores para los puntos de referencia del eje X y del eje Y.

@@ -7,10 +7,11 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 097d2854-c0ab-4932-a951-2b4639cbee27
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 77%
+source-wordcount: '1403'
+ht-degree: 79%
 
 ---
 
@@ -24,7 +25,7 @@ La condición es un fragmento de documento que puede incluir en una comunicació
 
 Ejemplos:
 
-* En la instrucción de extracto de la tarjeta de crédito, se indicará la cuota anual y la imagen de la tarjeta de crédito en función del tipo de tarjeta del cliente.
+* En la instrucción de extracto de la tarjeta de crédito, se mostrará la cuota anual y la imagen de la tarjeta de crédito en función del tipo de tarjeta del cliente.
 * En un recordatorio del seguro, se muestran cálculos de impuestos basados en el estado de los impuestos del cliente.
 
 Los recursos en las condiciones que se procesan en función de las reglas aplicadas y los valores aprobados para la regla. Las reglas de las condiciones pueden comprobar los valores en los siguientes tipos de datos:
@@ -75,10 +76,10 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
    **[A] Rechazar cambio.** Seleccione este icono para rechazar los cambios que puede haber realizado en el recurso y en la regla de la condición.
-   **[B] Aceptar cambio.** Seleccione este icono para aceptar los cambios realizados en el recurso y en la regla de la condición.
-   **[C] Duplicar recurso.** Seleccione este icono para crear una copia del recurso junto con la regla aplicada, si la hay, en la condición. A continuación, puede editar la regla y el recurso para los recursos duplicados. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto en particular.
+   **[B] aceptar cambio.** Seleccione este icono para aceptar los cambios realizados en el recurso y en la regla de la condición.
+   **[C] recurso duplicado.** Seleccione este icono para crear una copia del recurso junto con la regla aplicada, si existe, en la condición. A continuación, puede editar la regla y el recurso para los recursos duplicados. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto en particular.
    **[D] Mostrar vista previa.** Seleccione este icono para mostrar una vista previa del recurso en la página Crear/Editar condición.
-   **Reordenar “servidor”.**: seleccione y mantenga presionado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
+   Reordenar **&#39;servidor&#39;.** Seleccione y mantenga presionado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
 
    Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
