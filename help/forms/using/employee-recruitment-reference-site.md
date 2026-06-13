@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 238cf38b-31f3-4a0b-ad26-b93df2844195
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 90%
+source-wordcount: '1436'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 90%
 
 ## Información general {#overview}
 
-We.Finance es una organización que permite a los candidatos solicitar el empleo a través del portal de referencia. La organización también utiliza el portal para administrar la programación de entrevistas, la lista de preseleccionados y la comunicación interna de los candidatos. El sitio administra lo siguiente:
+We.Finance es una organización que permite a los candidatos solicitar el empleo a través del portal del sitio de referencia. La organización también utiliza el portal para administrar la programación de entrevistas, la lista de preseleccionados y la comunicación interna de los candidatos. El sitio administra lo siguiente:
 
 * Los candidatos que buscan y solicitan trabajos
 * La selección y preselección de candidatos

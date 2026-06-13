@@ -1302,7 +1302,7 @@ En la tabla siguiente se enumeran los pares de clave y valor necesarios al crear
 <table>
  <thead>
   <tr>
-   <th><p>Nombre de la clave</p></th>
+   <th><p>Nombre de clave</p></th>
    <th><p>Descripción</p></th>
    <th><p>Valor</p></th>
   </tr>
