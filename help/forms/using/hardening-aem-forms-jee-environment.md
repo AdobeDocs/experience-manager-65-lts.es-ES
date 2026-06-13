@@ -263,7 +263,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 1. Inicie el servidor de AEM Forms.
 1. Escriba la siguiente URL en un explorador para probar el cambio y asegurarse de que ya no funciona.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloqueo del acceso remoto al Almacén de confianza**
 
@@ -689,7 +689,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    1. Si es POST, el servidor de Forms realiza la comprobación del encabezado Referente.
-   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en true, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
+   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en True, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
 
 1. El servidor de Forms comprueba si el URI solicitado existe en la lista de permitidos:
 
@@ -708,7 +708,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 
 ### Administración del filtrado de referentes {#managing-referer-filtering}
 
-AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De manera predeterminada, el Filtro de referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
+AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De manera predeterminada, el filtro Referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
 
 Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con una dirección IP de 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
 
@@ -821,7 +821,7 @@ Al configurar una arquitectura de red segura como se describe en la sección ant
  <thead> 
   <tr> 
    <th><p>Protocolo</p> </th> 
-   <th><p>Utilizar</p> </th> 
+   <th><p>Uso</p> </th> 
   </tr> 
  </thead> 
  <tbody>

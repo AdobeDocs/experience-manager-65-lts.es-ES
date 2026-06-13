@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8a0b276a-6020-4f48-95ab-4e7270e42e44
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 87%
+source-wordcount: '2139'
+ht-degree: 86%
 
 ---
 
@@ -57,7 +58,7 @@ La temática Ultramarine-Accessible es de referencia. Muestra cómo corregir el 
 
 Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contraste de color, texto alternativo significativo para imágenes y etiquetas adecuadas para los controles del formulario para que un formulario adaptable sea accesible. Realice los siguientes pasos para hacer accesible el formulario adaptable existente:
 
-### 1. Aplique una temática accesible y realice correcciones adicionales
+### &#x200B;1. Aplicar una temática accesible y realizar correcciones adicionales
 
 Aplique la temática Ultramarine-Accessible al formulario adaptable existente. Para aplicar la temática, haga lo siguiente:
 
@@ -96,7 +97,7 @@ Después de aplicar una temática accesible, realice las siguientes correcciones
 
 1. Quite los campos de firma de las anotaciones, si los hubiera, en el formulario adaptable. Configure el formulario adaptable para usar Adobe Sign para conseguir una experiencia de firma digital perfecta.
 
-### 2. Proporcione etiquetas adecuadas para los controles del formulario {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Proporcionar las etiquetas adecuadas para los controles del formulario {#provide-proper-labels-for-form-controls}
 
 La etiqueta o el título de un componente identifica lo que representa el componente del formulario. Por ejemplo, el texto “Nombre” indica a los usuarios que deben introducir su nombre en un campo de texto. Para que los lectores de pantalla puedan acceder, la etiqueta está asociada programáticamente a un componente del formulario. Como alternativa, el control del formulario se configura con información de accesibilidad adicional.
 
@@ -126,7 +127,7 @@ Para utilizar la opción Accesibilidad, haga lo siguiente:
 >* El botón de opción y la casilla de verificación solo pueden tener dos opciones para la accesibilidad, a saber, Texto personalizado y Título.
 >* Para los formularios adaptables basados en XFA, la opción de accesibilidad se hereda de las opciones de accesibilidad establecidas en el XDP. La información del objeto de XDP se asigna a la descripción breve y el pie de ilustración se asigna al título. Las otras opciones funcionan tal cual.
 
-### 3. Proporcione equivalentes de texto para las imágenes {#provide-text-equivalents-for-images}
+### &#x200B;3. Proporcionar equivalentes de texto para las imágenes {#provide-text-equivalents-for-images}
 
 Las imágenes pueden ayudar a mejorar la comprensión de algunos usuarios. Sin embargo, para los usuarios que utilizan lectores de pantalla, las imágenes reducen la accesibilidad del formulario. Si decide utilizar imágenes, proporcione descripciones de texto para todas las imágenes.
 
@@ -136,7 +137,7 @@ Seleccione un componente de imagen y seleccione ![cmppr](assets/cmppr.png). En 
 
 ![Texto alternativo de una imagen](assets/image-properties.png)
 
-### 4. Proporcione suficiente contraste de color {#provide-sufficient-color-contrast}
+### &#x200B;4. Proporcionar suficiente contraste de color {#provide-sufficient-color-contrast}
 
 El diseño de accesibilidad implica considerar directrices adicionales para el uso del color. Los autores de formularios pueden utilizar colores para mejorar el aspecto de los formularios, resaltando los distintos componentes del formulario. Sin embargo, un uso inapropiado del color puede hacer que una forma sea difícil o imposible de leer para personas con capacidades diferentes.
 
@@ -146,7 +147,7 @@ Se recomienda utilizar la fuente y los colores de fondo predeterminados, conteni
 
 Consulte [Crear temáticas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y la temática para los formularios adaptables.
 
-### 5. Asegúrese de que los controles de formulario sean accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Asegúrese de que los controles del formulario son accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulario accesible se puede rellenar por completo utilizando solo el teclado o un dispositivo de entrada equivalente. Es posible que los usuarios con movilidad reducida o problemas de visión no tengan otra opción que utilizar el teclado y que muchos usuarios que pueden utilizar un ratón simplemente prefieran utilizar el teclado. Al permitir varios métodos de entrada no solo se crean formularios accesibles, sino que también se crean formularios que se adaptan mejor a las preferencias de todos los usuarios.
 

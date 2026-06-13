@@ -8,10 +8,11 @@ docset: aem65
 feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 78%
+source-wordcount: '1188'
+ht-degree: 68%
 
 ---
 
@@ -49,10 +50,10 @@ Haga lo siguiente para poder crear una plantilla personalizada para varios compo
 
    >[!NOTE]
    >
-   >El título puede ser diferente del nombre de nodo de sling:Folder que ha creado.
+   >El título puede ser diferente del nombre de nodo de sling:Folder que creó.
 
    La siguiente imagen muestra la configuración del componente Buscar y listar.
-   ![Crear una sling:Folder](assets/1.png)
+   ![Creando un sling:Folder](assets/1.png)
 
 1. Cree un archivo template.html en esta carpeta para que pueda servir como plantilla personalizada.
 1. Escriba la plantilla personalizada y utilice metadatos personalizados como se describe a continuación.
@@ -87,11 +88,11 @@ Forms Portal proporciona una sintaxis para que los marcadores de posición muest
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repeatable** a **true**.
 
-*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. El primero, con la clase CSS “__FP_boxes-container” funciona como un elemento de contenedor para los formularios que se enumeran. El segundo, con la clase CSS “__FP_boxes” es una plantilla para las entidades básicas, en este caso un formulario. El atributo **data-repeatable**&#x200B;presente en el elemento Div tiene el valor **true**.*
+*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. El primero, con la clase CSS “__FP_boxes-container” funciona como un elemento de contenedor para los formularios que se enumeran. El segundo, con la clase CSS “__FP_boxes” es una plantilla para las entidades básicas, en este caso un formulario. El atributo **data-repeatable**presente en el elemento Div tiene el valor **true**.*
 
-Cada marcador de posición tiene un conjunto exclusivo de metadatos predeterminados. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la **propiedad ${metadata_prop}**, en el lugar.
+Cada marcador de posición tiene un conjunto exclusivo de metadatos predeterminados. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **${metadata_prop}** al lugar.
 
-*En el ejemplo, la propiedad metadata se usa en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;y **ruta**&#x200B;de la manera prescrita.*
+*En el ejemplo, la propiedad metadata se usa en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y **ruta**de la manera prescrita.*
 
 ## Metadatos predeterminados {#out-of-the-box-metadata}
 
@@ -120,7 +121,7 @@ Compatibilidad con la localización, clasificación y uso de propiedades de conf
    *En el ejemplo analizado, los atributos `${localize-Apply}` y `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tabla, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
-Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el valor del encabezado “data-sortKey” es “título”. Haga clic en el encabezado para poder ordenar los valores de una columna en particular.
+Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, el valor del encabezado &quot;data-sortKey&quot; es &quot;título&quot;. Haga clic en el encabezado para poder ordenar los valores de una columna en particular.
 
 1. **Usar las propiedades de configuración**: el componente Buscar y listar tiene varias configuraciones que puede utilizar en la interfaz de usuario. Por ejemplo, para mostrar el texto de información del objeto HTML guardado a través del cuadro de diálogo de edición, utilice el atributo `${config-htmlLinkText}`. **Del mismo modo, para el texto de información del objeto PDF, utilice el atributo** `${config-pdfLinkText}`.
 
@@ -149,7 +150,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 
 *Nota:*
 
-1. Para la opción de eliminación de la sección Borradores del componente Borradores y envíos, asigne a la clase CSS el nombre “__FP_deleteDraft”. Además, incluya el atributo “DraftID” con el valor **${draftID}**, que es el ID borrador del borrador correspondiente.
+1. Para la opción de eliminación de la sección Borradores del componente Borradores y envíos, asigne a la clase CSS el nombre “__FP_deleteDraft”. Además, incluya el atributo &quot;DraftID&quot; con el valor **${draftID}**, que es el ID borrador del borrador correspondiente.
 
 1. Al crear vínculos para abrir borradores y envíos, puede especificar **${path}.html** como el valor del atributo **href** para la etiqueta de anclaje.
 
@@ -157,7 +158,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 
 **A**. Elemento Contenedor
 
-**B.** Metadatos de “ruta” con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
+**B.** Metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
 
 **C.** Atributo repetible de datos utilizado en la sección de la plantilla para cada formulario
 
@@ -170,7 +171,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 ## Sugerencias, trucos y problemas conocidos {#tips-tricks-and-known-issues}
 
 1. No utilice comillas simples (&#39;) en ninguna plantilla personalizada.
-1. Para los metadatos personalizados, almacene esta propiedad solamente en el nodo **jcr:content/metadata**. Si lo almacena en cualquier otro lugar, Forms Portal no podrá mostrar los metadatos.
+1. Para los metadatos personalizados, almacene esta propiedad únicamente en el nodo **jcr:content/metadata**. Si lo almacena en cualquier otro lugar, Forms Portal no podrá mostrar los metadatos.
 1. Asegúrese de que el nombre de cualquier metadato personalizado o existente no incluya dos puntos ( : ). Si es así, no se podrá mostrar en la interfaz de usuario.
 1. **data-repeatable** no tiene ningún significado para un componente **Vínculo**. Adobe recomienda evitar utilizar esta propiedad en la plantilla para un componente Vínculo.
 

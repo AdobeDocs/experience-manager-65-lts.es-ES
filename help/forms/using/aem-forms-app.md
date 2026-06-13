@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 95%
+source-wordcount: '2386'
+ht-degree: 91%
 
 ---
 
@@ -20,23 +20,24 @@ ht-degree: 95%
 
 ## Información general {#overview}
 
-La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
+La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si habilita el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
 
 El código fuente de la aplicación de AEM Forms está disponible para los clientes a través de la distribución de software. El paquete de código fuente de distribución de software está disponible de la siguiente manera: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 La aplicación de AEM Forms es compatible con dispositivos iOS, Android y Windows. Puede instalar la aplicación de AEM Forms para Android desde Google Play, iOS desde App Store y Windows desde Windows Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&hl=es)
+    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/es-es/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar y distribuir la aplicación en dispositivos iOS, Android o Windows, consulte [Personalizar, crear y distribuir la aplicación de AEM Forms](#customize-build-distribute).
 
 ## Requisitos previos {#prerequisites}
 
-La aplicación de AEM Forms requiere un servidor de AEM Forms. Los usuarios pueden procesar formularios que se creen en el servidor de AEM Forms, rellenarlos, guardarlos como borradores y enviarlos. La aplicación se conecta al servidor y obtiene de él los formularios habilitados. La aplicación de AEM Forms se sincroniza con el servidor y, en cuanto los formularios se carguen en la aplicación, los usuarios podrán trabajar sin conexión. Si la aplicación está sin conexión, los datos se guardarán en el dispositivo y se sincronizarán con el servidor cuando la aplicación esté en línea.
+La aplicación de AEM Forms requiere un servidor de AEM Forms. Los usuarios pueden procesar formularios que cree en AEM Forms
+servidor, rellénelos, guárdelos como borradores y envíelos. La aplicación se conecta al servidor y obtiene de él los formularios habilitados. La aplicación de AEM Forms se sincroniza con el servidor y, en cuanto los formularios se carguen en la aplicación, los usuarios podrán trabajar sin conexión. Si la aplicación está sin conexión, los datos se guardarán en el dispositivo y se sincronizarán con el servidor cuando la aplicación esté en línea.
 
 ### Aplicación de AEM Forms con servidores que utilizan AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
@@ -216,7 +217,7 @@ Para obtener más información sobre cómo distribuir la aplicación mediante MD
 
 Si actualiza a la última versión de la aplicación de AEM Forms, asegúrese de leer los siguientes puntos:
 
-* **Si ha instalado una versión anterior de la aplicación desde Play Store en Android**
+* **Si instaló una versión anterior de la aplicación desde Play Store en Android**
 Puede actualizar la aplicación directamente desde Play Store.
 
 * **Si la versión anterior de la aplicación se crea e instala con el código fuente (aplicable para iOS y Android)**:

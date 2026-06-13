@@ -8,10 +8,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 98%
+source-wordcount: '1288'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +52,7 @@ La siguiente tabla enumera la asociación entre las plantillas y el componente d
  <tbody>
   <tr>
    <td><p><strong>Plantilla</strong></p> </td>
-   <td><p><strong>Componente Página </strong></p> </td>
+   <td><p><strong>Componente Página</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -118,7 +119,7 @@ Realice los siguientes pasos para crear una plantilla personalizada, como simple
 
 La plantilla personalizada tiene el mismo estilo que la plantilla predeterminada porque hace referencia al componente de página /libs/fd/af/components/page/base. Puede encontrar la referencia del componente como la propiedad `sling:resourceType` definida en el nodo /apps/mycompany/templates/enrollment-template/jcr:content. Como base es un componente de producto principal, no modifique este componente.
 
-1. Navegue hasta el nodo /apps/mycompany/templates/enrollment-template/jcr:content y modifique el valor de la propiedad `sling:resourceType` a /apps/mycompany/components/page/enrollmentpage
+1. Vaya al nodo /apps/mycompany/templates/enrollment-template/jcr:content y modifique el valor de la propiedad `sling:resourceType` a /apps/mycompany/components/page/enrollmentpage
 1. Copie el nodo /libs/fd/af/components/page/base en la carpeta /apps/mycompany/components/page.
 
 1. Cambie el nombre del componente copiado a `enrollmentpage`.

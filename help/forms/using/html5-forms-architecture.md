@@ -9,10 +9,11 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 96%
+source-wordcount: '2002'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +31,7 @@ La funcionalidad de los formularios HTML5 se implementa como un paquete en la in
 
 Para obtener más información sobre el extremo REST y los parámetros de solicitud admitidos, consulte [Plantilla de formulario de renderización](/help/forms/using/rendering-form-template.md).
 
-Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo del perfil en función de la dirección URL de la solicitud. En este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de Forms. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
+Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo del perfil en función de la dirección URL de la solicitud. Desde este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de formularios. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
 
 Para obtener más información sobre la resolución de scripts de Sling, consulte [Hoja de características de Sling de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) o [Descomposición de la URL de Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -93,7 +94,7 @@ Los formularios de HTML5 utilizan el almacenamiento en caché para optimizar el 
   </tr>
   <tr>
    <td>Agresiva</td>
-   <td>Almacenar en caché el contenido HTML procesado<br /> Almacene en caché todos los artefactos almacenados en caché en el nivel conservador.<br /> <strong>Nota</strong>: Esta estrategia ofrece el mejor rendimiento, pero consume más memoria para almacenar los artefactos en caché.</td>
+   <td>Almacenar en caché el contenido procesado de HTML <br /> Almacene en caché todos los artefactos almacenados en caché en el nivel conservador.<br /> <strong>Nota</strong>: esta estrategia ofrece el mejor rendimiento, pero consume más memoria para almacenar los artefactos en caché.</td>
   </tr>
  </tbody>
 </table>
@@ -177,9 +178,9 @@ El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xf
 * **xfaforms.profile**: esta biblioteca contiene la implementación para el motor de diseño y los scripts XFA.
 
 Estas bibliotecas están modeladas como bibliotecas de cliente de CQ que aprovechan las capacidades de concatenación, minificación y compresión automáticas de las bibliotecas JavaScript del marco de CQ.
-Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación la biblioteca de cliente de CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación de CQ Clientlib](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
 Como se ha descrito anteriormente, el procesador de perfiles JSP llama al servicio Forms a través de una inclusión sling. Este JSP también establece varias opciones de depuración en función de la configuración de administración o los parámetros de solicitud.
 
-Los formularios HTML5 permiten a los desarrolladores crear un procesador de perfiles y perfiles para personalizar la apariencia de los formularios. Por ejemplo, los formularios HTML permiten a los desarrolladores integrar formularios en un panel o una sección &lt;div> de un portal HTML.
-Para obtener más información sobre la creación de perfiles personalizados, consulte [Creación de un perfil personalizado](/help/forms/using/custom-profile.md).
+Los formularios HTML5 permiten a los desarrolladores crear un procesador de perfiles y perfiles para personalizar el aspecto de los formularios. Por ejemplo, los formularios HTML Forms permiten a los desarrolladores integrar formularios en un panel o una sección &lt;div> de un portal de HTML existente.
+Para obtener más información sobre cómo crear perfiles personalizados, consulte [Crear un perfil personalizado](/help/forms/using/custom-profile.md).

@@ -7,8 +7,8 @@ role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
 source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4354'
-ht-degree: 85%
+source-wordcount: '4296'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Al crear un formulario adaptable, puede seleccionar un modelo de formulario. Las
 * [Plantillas de formulario](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 Permite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento de registro como se ha descrito anteriormente.
 
-* Esquema XML [&#128279;](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+* Esquema XML [](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Permite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
 
    * Asociar una plantilla XFA al documento de registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
@@ -268,7 +268,7 @@ Siga los siguientes pasos para configurar un documento de registro para formular
 
 1. En la instancia de autor de AEM, haga clic en **Forms > Formularios y documentos.**
 1. Seleccione un formulario y haga clic en **Ver propiedades**.
-1. En la ventana Propiedades, seleccione **Modelo de formulario**.
+1. En la ventana Propiedades, seleccione **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
@@ -426,7 +426,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
       * Horizontal
       * Igual que el formulario adaptable
      >[!NOTE]
-     > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
+     > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
@@ -458,11 +458,11 @@ Para aplicar las propiedades de la segunda página maestra a un panel y las prop
 1. Seleccione el panel al que aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Lugar]**.
 1. Seleccione **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
-AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
 1. Seleccione **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
-1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
-AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 >[!NOTE]
 >
