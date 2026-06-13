@@ -1,6 +1,6 @@
 ---
-title: Search facets to filter search results
-description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
+title: Facetas de búsqueda para filtrar los resultados
+description: Crear, modificar y usar facetas de búsqueda en  [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Admin, Developer
 feature: Search
@@ -21,28 +21,28 @@ ht-degree: 16%
 | AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
-An enterprise-wide deployment of [!DNL Adobe Experience Manager Assets] has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of [!DNL Experience Manager].
+Una implementación de [!DNL Adobe Experience Manager Assets] en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo si solo usa las capacidades de búsqueda genéricas de [!DNL Experience Manager].
 
-Use search facets in the Filters panel to add more granularity to your search experience and make the search functionality more efficient and versatile. Search facets add multiple dimensions (predicates) that enable you to perform more intricate searches. The Filters panel includes a few standard facets. You can also add custom search facets.
+Utilice las facetas de búsqueda en el panel Filtros para añadir más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda añaden varias dimensiones (predicados) que permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
-In summary, search facets let you search for assets in multiple ways rather than in a single, pre-determined, taxonomic order. You can easily drill down to the desired level of detail for a more focused search.
+En resumen, las facetas de búsqueda le permiten buscar recursos de varias formas en lugar de en un único orden taxonómico predeterminado. Puede explorar en profundidad fácilmente el nivel de detalle deseado para lograr una búsqueda más enfocada.
 
-For example, if you are looking for an image, you can choose whether you want a bitmap or a vector image. You can reduce the scope of search further by specifying the MIME type for the image. Similarly, when searching for documents, you can specify the format, for example, PDF or MS Word.
+Por ejemplo, si está buscando una imagen, puede elegir si desea un mapa de bits o una imagen vectorial. Puede reducir aún más el ámbito de la búsqueda especificando el tipo MIME de la imagen. Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo, PDF o MS Word.
 
-## Add a predicate {#adding-a-predicate}
+## Añadir un predicado {#adding-a-predicate}
 
-The search facets that appear in the Filters panel are defined in the underlying search form using predicates. To display more or different facets, you add predicates to the default form or use a custom form that includes facets of your choice.
+Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formulario de búsqueda subyacente mediante predicados. Para mostrar más o diferentes facetas, agregue predicados al formulario predeterminado o utilice un formulario personalizado que incluya las facetas que elija.
 
-For full-text searches, add the **[!UICONTROL Fulltext]** predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
+Para las búsquedas de texto completo, agregue el predicado **[!UICONTROL Fulltext]** al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad en particular. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
-1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the [!UICONTROL Search Forms] page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. Haga clic en el logotipo de [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
+1. En la página [!UICONTROL Buscar en Forms], seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego haga clic en **[!UICONTROL Editar]** ![editar icono](assets/do-not-localize/aemassets_edit.png).
 
    >[!NOTE]
    >
-   >To use the folder search functionality from the pre-configured [!DNL Assets] Admin Search Rail from an earlier version, perform these steps:
+   >Para usar la funcionalidad de búsqueda de carpetas del carril de búsqueda de administración de [!DNL Assets] preconfigurado de una versión anterior, realice estos pasos:
    >
-   >1. Navigate to `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
+   >1. Vaya a `/conf/global/settings/dam/search/facets/assets/jcr:content/items` en CRXDE.
    >1. Elimine el nodo `type`.
    >1. Desde la ruta de acceso `/libs/settings/dam/search/facets/assets/jcr:content/items`, copie los nodos `asset`, `directory`, `typeor`, `excludepaths` y `searchtype` en la ruta de acceso mencionada en el paso 1.
    >1. Guarde los cambios.

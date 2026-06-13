@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3441'
 ht-degree: 2%
 
 ---
@@ -340,7 +340,7 @@ Este encabezado indica lo siguiente:
 >
 >Si el valor de `X-Adobe-Smart-Imaging` es -1 y WebP aún se está entregando, Imágenes inteligentes estará activo. Sin embargo, las ventajas de tamaño no se calcularon debido a que la caché no está actualizada. Puede usar `cache=update` (solo una vez) en la dirección URL de la imagen para solucionar este problema.
 >Ejemplo de uso del modificador:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Para invalidar toda la caché, debe crear un caso de soporte.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Para invalidar toda la caché, debe crear un caso de compatibilidad.
 
 +++
 

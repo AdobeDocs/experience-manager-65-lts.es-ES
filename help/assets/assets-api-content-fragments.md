@@ -179,7 +179,7 @@ Para obtener más información sobre las funciones disponibles a través de la A
 
 ### Paginación {#paging}
 
-La API de REST de Assets admite la paginación (para solicitudes de GET) mediante los parámetros de URL:
+La API de REST de Assets admite la paginación (para solicitudes GET) mediante los parámetros de URL:
 
 * `offset`: el número de la primera entidad (secundaria) que se va a recuperar
 * `limit`: el número máximo de entidades devueltas
