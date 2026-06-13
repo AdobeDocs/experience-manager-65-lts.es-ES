@@ -154,7 +154,7 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
 1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
-1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: ]
+1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: &#x200B;]
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
