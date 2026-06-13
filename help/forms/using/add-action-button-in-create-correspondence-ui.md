@@ -99,7 +99,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
        </customAction>
    ```
 
-   ![etiqueta customAction ](assets/5_acmextensionsconfig_xml.png)
+   ![etiqueta customAction &#x200B;](assets/5_acmextensionsconfig_xml.png)
 
    La etiqueta modelExtension tiene un conjunto de etiquetas secundarias customAction que configuran la acción, los permisos y el aspecto del botón de acción. A continuación se muestra la lista de etiquetas de configuración customAction:
 
