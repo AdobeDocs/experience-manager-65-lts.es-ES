@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 7cc40eba821828dfce4188b10c117739dd74dd61
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '2860'
 ht-degree: 54%
 
 ---
@@ -27,24 +27,26 @@ Este documento enumera las plataformas de cliente y servidor compatibles con AEM
 
 >[!NOTE]
 >
->- Para obtener una lista completa de las excepciones a las plataformas de servidor compatibles, consulte [Excepciones a plataformas de servidor compatibles](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms en JEE solo admite versiones en inglés, francés, alemán y japonés de los sistemas operativos y aplicaciones compatibles.
 
 ### Política de actualización y asistencia
 
 #### Instalador completo
 
-- **Soporte de actualización para instaladores completos**: Se lanza un instalador completo con cada seis Service Pack de AEM. Las actualizaciones completas basadas en el instalador son compatibles a partir de AEM 6.5.23.0 solamente.
+- **Compatibilidad de actualización para instaladores completos**: solo se admiten actualizaciones completas basadas en el instalador a partir de AEM 6.5.23.0.
 
 - **Desaprobación y eliminación**: La compatibilidad con la plataforma se actualiza con cada versión completa del instalador. Cualquier software marcado como obsoleto en la matriz de la plataforma durante una versión completa del instalador tiene derecho a ser eliminado de la matriz de la plataforma admitida en una versión posterior del instalador completo, lo que indica el fin de la compatibilidad con el software.
 
+
+<!--
 #### Service Packs
 
-- **Cobertura del paquete de servicio**: Adobe proporciona soporte técnico para entornos de AEM Forms que utilizan cualquiera de los seis paquetes de servicio más recientes. Si la versión actual es anterior a los seis últimos Service Packs, Adobe recomienda encarecidamente actualizar a la versión más reciente para obtener un rendimiento, seguridad y compatibilidad óptimos.
+- **Service Pack Coverage**: Adobe provides technical support for AEM Forms environments using any of the latest six service packs. If your current version predates the last six service packs, Adobe strongly recommends upgrading to the latest version for optimal performance, security, and continuous support. 
 
-- **Directrices del instalador de parches**: Al usar los instaladores de parches para actualizar, es crucial comprobar que la versión del instalador completo subyacente no tenga más de dos versiones anteriores. Por ejemplo, durante la instalación del Service Pack 6.5.19.0, asegúrese de que la versión del instalador completo subyacente sea 6.5.18.0 o 6.5.12.0.
+- **Patch Installer Guidelines**: While using the patch installers to update, it's crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.19.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0. 
 
-- **Compatibilidad con la actualización de parches**: puede seguir actualizando al Service Pack más reciente, hasta que también esté actualizando a las plataformas compatibles más recientes. Por ejemplo, es posible actualizar del Service Pack 6.5.12.0 a 6.5.19.0, siempre que realice la transición a una combinación de plataforma compatible con 6.5.19.0.
+- **Patch Upgrade Support**: You can keep upgrading to the latest service pack, until you are upgrading to the most recent supported platforms also. For example, upgrading from service pack 6.5.12.0 to 6.5.19.0 is possible, provided that you transition to a platform combination supported for 6.5.19.0.
+-->
 
 ### Configuraciones recomendadas {#recommendedconfigurations}
 
@@ -82,8 +84,6 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 >
 >Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, Adobe Experience Manager Enterprise Platform se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
 >En el caso de nuevas instalaciones, siempre que sea factible, se recomienda implementar AEM Forms en la pila moderna de OSGi para utilizar las últimas innovaciones en relación con Forms adaptable para comunicaciones interactivas móviles multicanal e integraciones de datos back-end mediante el modelo de datos de formulario.
->
->Adobe reconoce que los usuarios existentes deben seguir implementando AEM Forms en la pila JEE. En estos casos, Adobe requiere la implementación de AEM Forms JEE en la infraestructura admitida, tal como se describe en esta documentación. Si actualiza a Forms AEM 6.5 y utiliza una plataforma no compatible en la versión anterior de AEM Forms, puede ponerse en contacto con el servicio de soporte de Adobe para obtener ayuda sobre la actualización a una plataforma compatible.
 
 ### Máquinas virtuales Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -301,7 +301,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 
 Además, tenga en cuenta los siguientes puntos a la hora de elegir software para Adobe AEM Forms en implementaciones JEE:
 
-- AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria especificada del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no es compatible a menos que se especifique lo contrario.
+- AEM Forms en JEE admite actualizaciones y paquetes de correcciones además de la versión principal y secundaria especificada del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no es compatible a menos que se especifique lo contrario.
 - Las instalaciones basadas en clústeres no admiten la persistencia de TarMK. Para obtener información sobre la persistencia admitida, consulte [Seleccionar un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms en JEE admite varios software de terceros según la [Directiva de soporte de software de terceros](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) de Adobe.
 - AEM Forms en plataformas de soporte JEE según la compatibilidad proporcionada por proveedores externos. Es posible que algunos proveedores externos no permitan algunas combinaciones. Por ejemplo, muchos proveedores no han certificado sus servidores de aplicaciones con Oracle. Como resultado, AEM Forms en JEE tampoco es compatible con estas combinaciones. Para asegurarse de elegir las versiones de software compatibles, compruebe la matriz de asistencia para los proveedores de terceros.
@@ -464,10 +464,9 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para conocer los requisitos adicionales, consulte:
-
-- [Requisitos del sistema para una implementación de AEM Forms de un solo servidor en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_es)
-- [Requisitos del sistema para una implementación de AEM Forms en clúster en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_es)
+>[!NOTE]
+>
+>Para ver los requisitos adicionales, consulte [Requisitos del sistema para una implementación de AEM Forms de un solo servidor en JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
 
 ### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -487,7 +486,7 @@ Para conocer los requisitos adicionales, consulte:
 
 >[!NOTE]
 >
->La familia de productos de Acrobat DC presenta dos tracks tanto para Acrobat como para Reader, que son productos diferentes: &quot;Classic&quot; y &quot;Continuous&quot;. Para obtener detalles y una comparación de ambas, vea [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>La familia de productos de Acrobat DC presenta dos tracks tanto para Acrobat como para Reader, que son productos diferentes: &quot;Classic&quot; y &quot;Continuous&quot;.
 
 ## Clientes compaitbles para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -580,7 +579,7 @@ Para conocer los requisitos adicionales, consulte:
 >Algunas excepciones relacionadas con el explorador para los escritorios son las siguientes:
 >
 >- Safari solo es compatible con Macintosh OS X.
->- Workspace es compatible con Safari 5.1 en Macintosh OS X 10.6 y 10.7 con Acrobat DC o versiones posteriores. Para obtener más información sobre la compatibilidad de Safari 5.1 con Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/es/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/es/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Workspace es compatible con Safari 5.1 en Macintosh OS X 10.6 y 10.7 con Acrobat DC o versiones posteriores.
 >- Safari no es compatible con la consola de administración.
 >- Administración de correspondencia no es compatible con Windows® Internet Explorer 9.0 para formularios AEM 6.1.
 >- El portal de Forms admite software de lector de pantalla JAWS 14.0 en Internet Explorer 11 para accesibilidad.
@@ -638,13 +637,13 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [AEM Forms 65 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
 
 Adobe es compatible con parches urgentes o recomendados que emitan proveedores de terceros en el momento de su lanzamiento, siempre que los proveedores de terceros garanticen la compatibilidad con versiones anteriores compatibles con AEM Forms en JEE. Adobe solo será compatible con parches publicados después del nivel mínimo de parches indicado en la documentación de AEM Forms en JEE.
 
-A veces, Adobe no admite actualizaciones de terceros que cambian la funcionalidad principal y, por lo tanto, no admite la compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones compatibles, consulte [Definiciones de parches compatibles](https://helpx.adobe.com/es/aem-forms/aem-forms-third-party-software-patch.html) para productos de proveedores específicos y los tipos de parches compatibles con Adobe.
+A veces, Adobe no admite actualizaciones de terceros que cambian la funcionalidad principal y, por lo tanto, no admite la compatibilidad total con versiones anteriores.
 
 En circunstancias que escapan al control de Adobe, los parches de terceros que afirman ser compatibles con versiones anteriores pueden tener un impacto negativo en los productos de Adobe o en los entornos de los clientes. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabaja con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas normales de soporte de Adobe o por terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione según lo documentado por el proveedor o con AEM Forms en JEE.
 
