@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo administrar proyectos de traducci�
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 901bd212-3daf-4b1e-a7c3-afb832959913
+source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 39%
+source-wordcount: '3546'
+ht-degree: 42%
 
 ---
 
@@ -39,13 +40,13 @@ Los proyectos y trabajos de traducción se crean con los flujos de trabajo de pr
 
 AEM detecta si se está creando un proyecto de traducción para la traducción inicial del contenido o para actualizar las copias de idioma ya traducidas. Cuando se crea un proyecto de traducción para una página y se indican las copias de idioma para las que se está traduciendo, AEM detecta si la página de origen ya existe en las copias de idioma de destino:
 
-* **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en el texto del idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en la copia del idioma.
+* **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en la copia de idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en la copia de idioma.
 * **La copia de idioma ya incluye la página:** AEM trata esta situación como una traducción actualizada. Se crea un lanzamiento, se añade una copia de la página a este y se incluye en el proyecto. Los lanzamientos permiten revisar las traducciones actualizadas antes de enviarlas a la copia de idioma:
 
    * Cuando la página traducida se importa a AEM, sobrescribe la página en el lanzamiento.
    * La página traducida sobrescribe la copia de idioma solo cuando se promociona el lanzamiento.
 
-Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma principal /content/geometrixx/en. No hay más páginas en la copia en francés.
+Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma principal /content/geometrixx/en. No hay más páginas en la copia de idioma en francés.
 
 * Se crea un proyecto de traducción para la página /content/geometrixx/en/products y todas las páginas secundarias, destinado a la copia en francés. Como la copia de idioma no incluye la página /content/geometrixx/fr/products, AEM copia inmediatamente la página /content/geometrixx/en/products y todas las páginas secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
 * Se crea un proyecto de traducción para la página /content/geometrixx/en y todas las páginas secundarias, destinado a la copia en francés. Como la copia de idioma incluye la página que corresponde con la página /content/geometrixx/en (la raíz del idioma), AEM copia la página /content/geometrixx/en y todas las secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
@@ -249,14 +250,14 @@ En la tabla siguiente se describe cada estado que puede tener un trabajo o eleme
 | Estado | Descripción |
 |---|---|
 | Borrador | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en estado BORRADOR cuando se crean. |
-| Enviado | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado se puede producir después de que se emita el comando Ámbito de la solicitud o Inicio. |
+| Enviado | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado se puede producir después de que el comando Ámbito de la solicitud o Inicio se emita. |
 | Previsión solicitada | Para el flujo de trabajo de traducción humana, los archivos del trabajo se han enviado al proveedor de traducción para que los examine. Este estado aparece después de que se emita el comando Ámbito de la solicitud. |
 | Previsión finalizada | El proveedor ha creado un ámbito para el trabajo de traducción. |
 | Asignado para traducción | El propietario del proyecto ha aceptado el ámbito. Este estado indica que el proveedor de traducción debe empezar a traducir los archivos del trabajo. |
 | Traducción en curso | Para un trabajo, la traducción de uno o más archivos del trabajo aún no está completa. Para un elemento del trabajo, el artículo se está traduciendo. |
 | Traducido | Para un trabajo, se ha completado la traducción de todos los archivos del trabajo. Para un artículo del trabajo, el artículo se traduce. |
 | Listo para revisión | El elemento del trabajo se traduce y el archivo se ha importado a AEM. |
-| Completado | El propietario del proyecto ha indicado que el contrato de traducción ha concluido. |
+| Completar | El propietario del proyecto ha indicado que el contrato de traducción ha concluido. |
 | Cancelar | Indica que el proveedor de traducción debe dejar de trabajar en un trabajo de traducción. |
 | Actualización de error | Se ha producido un error al transferir archivos entre AEM y el servicio de traducción. |
 | Estado desconocido | Se ha producido un error desconocido. |
@@ -376,7 +377,7 @@ Para comparar las copias de idioma con el idioma principal:
 1. En la consola **Sites**, vaya a la copia de idioma que desee comparar.
 1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)**.
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
-1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro &#x200B;** o **Comparar con anterior &#x200B;** si procede.
+1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro **o **Comparar con anterior **si procede.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -429,7 +430,7 @@ Si una página de origen ya traducida necesita [cambiarle el nombre o moverla](/
 
    ![copias de idioma de actualización](assets/translation-move-to.png)
 
-1. Haga clic en **Actualizar**. Se creará un [lanzamiento](/help/sites-authoring/launches-promoting.md).
+1. Haga clic en **Actualizar**. Se creará un [lanzamiento](/help/sites-authoring/launches-promoting.md).
 1. Vaya a la raíz de idioma necesaria y selecciónela.
 1. En el panel **Referencias**, seleccione **Inicios**.
 

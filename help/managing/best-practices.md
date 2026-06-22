@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 100%
+source-wordcount: '3275'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ La hoja de cálculo del **pulso del proyecto** proporciona información general 
 
 ## Estado por función {#status-by-role}
 
-La hoja de cálculo **Estado por función** muestra un desglose detallado del [**estado**, **calidad y **finalización**](#projectheartbeat) por **[fase](#phases-and-milestones)** y **[perfil](#persona)**.
+La hoja de cálculo **Estado por rol** muestra un desglose detallado de [**Salud**, **Calidad** y **Complejidad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 
@@ -234,7 +234,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
+  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 
@@ -271,7 +271,7 @@ Del mismo modo, las operaciones deben planificarse correctamente para garantizar
 
 * **Plan de recuperación**
 
-  Asegúrese de que dispone de un plan de recuperación. En caso de emergencia, debe estar disponible para garantizar el uso de AEM en la producción. Esto debe abarcar situaciones como copias de seguridad, restauraciones, conmutaciones por error y otras.
+  Asegúrese de que dispone de un plan de recuperación. En caso de emergencia, debe estar disponible para garantizar el uso de AEM en la producción. Esto debe cubrir situaciones como copias de seguridad, restauración, visitas en orden previsto y otras.
 
 ### Desarrollo {#development}
 
@@ -605,7 +605,8 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
    * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Prácticas recomendadas para la administración de SEO y URL](/help/managing/seo-and-url-management.md)
    * [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md)
-   * [Reglamento General de Protección de Datos](/help/managing/data-protection-and-privacy.md)* [Prácticas recomendadas de implementación y mantenimiento](/help/sites-deploying/best-practices.md)
+   * [Reglamento general de protección de datos](/help/managing/data-protection-and-privacy.md)
+* [Implementación y mantenimiento de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Administración de prácticas recomendadas](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
@@ -623,7 +624,7 @@ Además, las siguientes secciones de la documentación de AEM son de especial in
 
       * [Desarrollo: conceptos básicos](/help/sites-developing/the-basics.md)
       * [Conceptos de MSM](/help/sites-administering/msm.md)
-      * [Idioma de la plantilla HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
+      * [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 
 * Documentación relacionada
 
