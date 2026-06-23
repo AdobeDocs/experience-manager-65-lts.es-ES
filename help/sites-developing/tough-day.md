@@ -1,23 +1,24 @@
 ---
-title: Día difícil
+title: Tough Day
 description: La prueba de Día difícil simula la carga diaria de unos 1000 autores en el peor de los casos, con todas las operaciones en marcha al mismo tiempo.
 topic-tags: testing
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0360a8eb-d4ff-4225-9be3-fa375b5da971
+source-git-commit: b1edea6e0bc6fe2bad0d3e04390742a04cc3ca18
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 1%
+source-wordcount: '1838'
+ht-degree: 2%
 
 ---
 
-# Día difícil{#tough-day}
+# Tough Day{#tough-day}
 
 ## Qué es el Día Duro 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba. Puedes ver [esta grabación](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=es) para ver una presentación de la aplicación.
+&quot;Tough Day 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba.
 
 >[!CAUTION]
 >
@@ -353,7 +354,7 @@ Actualmente, el Día 2 difícil informa de nueve métricas de prueba que puede e
 | **Nombre** | **Descripción** |
 |---|---|
 | Marca de tiempo | Marca de tiempo de la última ejecución de prueba finalizada. |
-| Superado | Número de ejecuciones correctas. |
+| Superados | Número de ejecuciones correctas. |
 | Error | Número de ejecuciones fallidas. |
 | Min&#42; | La duración más baja de la ejecución de pruebas. |
 | Máx.&#42; | Duración máxima de la ejecución de la prueba. |
