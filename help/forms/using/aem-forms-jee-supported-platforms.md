@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: 2fa67ea63307e4e8da9bcef9e89b9c032e917bf1
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2860'
 ht-degree: 54%
 
 ---
@@ -244,17 +244,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td>Ubuntu 20.04</td>
+   <td>Ubuntu 22.04</td>
    <td>A: Compatible</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64 bits)</p> </td>
-   <td><p>A: Compatible</p> </td>
-   <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
-  </tr>
-  <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits)</td>
    <td><p>A: Compatible</p> </td>
    <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
   </tr>
@@ -278,11 +273,6 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
    <th><p><strong>Plataforma (versión base)</strong></p> </th>
    <th>Nivel de soporte</th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Microsoft® Windows® 10 de 64 bits</p> </td>
-   <td>E: Se espera que funcione</td>
-   <td><p>Service Pack y actualizaciones críticas</p> </td>
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 11 de 64 bits</p> </td>
@@ -642,7 +632,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [AEM Forms 65 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [AEM Forms 65 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
 
@@ -672,7 +662,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -755,7 +745,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -824,7 +814,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/es/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
