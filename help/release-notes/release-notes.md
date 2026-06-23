@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
+source-git-commit: d2484f59e701a30a9b8f62ab308b7e5993c53694
 workflow-type: tm+mt
-source-wordcount: '7683'
+source-wordcount: '7743'
 ht-degree: 96%
 
 ---
@@ -262,10 +262,6 @@ Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacio
 * En el vídeo de Dynamic Media, se ha añadido compatibilidad para seleccionar árabe en la lista desplegable de idioma de Subtítulos y pistas de audio, lo que permite a los autores administrar los subtítulos en árabe directamente en AEM. (ASSETS-61771)
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
-
-<!--
-#### Forms Designer
--->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -583,6 +579,7 @@ En esta sección se enumeran las características y funciones que se han elimina
 
 * En el Administrador de configuración, la inicialización de la base de datos falla durante Bootstrap en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se selecciona ningún módulo o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a adobe-livecycle-jboss.ear\lib resuelve el problema. (FORMS-24690)
 * En implementaciones de Forms JEE LTS Service Pack 2 que se ejecutan en el perfil WebSphere® Liberty, la funcionalidad de correo electrónico puede fallar. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Could not convert socket to TLS`. (FORMS-24692)
+* En Forms JEE LTS que se ejecuta en JBoss®, la funcionalidad relacionada con el correo electrónico puede sufrir un error. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Error IMAPProvider not a subtype`. Instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear) para resolver este problema. (FORMS-24892)
 
 ### Corrupción del repositorio durante la compactación en línea después de la compactación sin conexión (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 

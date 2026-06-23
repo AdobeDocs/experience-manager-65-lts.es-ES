@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7709'
 ht-degree: 67%
 
 ---
@@ -1096,6 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[El servicio PaperCapture no puede realizar OCR en los archivos PDF](/help/forms/using/papercapture-service-resolution.md)
       + [La ejecución de scripts falla en AEM Forms 6.5 LTS con JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [No se puede iniciar el controlador de dominio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [Mitigación de VULN-36128 y VULN-36120 para AEM Forms en JEE 6.5 LTS SP2](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + Documentación heredada {#legacy-documentation}
       + {hide-from-toc}[Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Comprimir y descomprimir archivos mediante un AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1282,7 +1283,7 @@ ht-degree: 67%
             + [Uso de contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=es)
             + [Metadatos: propiedades del fragmento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=es)
             + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=es)
-            + [Previsualización: representación JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
+            + [Previsualización: representación JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
          + API de entrega{#delivery-api}
             + [API HTTP de recursos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=es)
             + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=es)
