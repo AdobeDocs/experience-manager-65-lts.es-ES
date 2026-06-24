@@ -1283,7 +1283,7 @@ ht-degree: 67%
             + [Uso de contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=es)
             + [Metadatos: propiedades del fragmento](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=es)
             + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=es)
-            + [Previsualización: representación JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
+            + [Previsualización: representación JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
          + API de entrega{#delivery-api}
             + [API HTTP de recursos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=es)
             + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=es)
