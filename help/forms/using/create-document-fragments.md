@@ -7,10 +7,11 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 73%
+source-wordcount: '1689'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +27,7 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 * Lista: es un grupo de fragmentos de documento, que incluyen texto, listas, condiciones e imágenes.
 * Condición: las condiciones permiten definir qué contenido se incluye en la comunicación interactiva en función de los datos recibidos del modelo de datos de formulario.
 
-Este tutorial le guiará por los pasos para crear varios fragmentos de documento de texto basados en la anatomía proporcionada en la sección [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md). Al final de este tutorial, debería poder hacer lo siguiente:
+Este tutorial le guiará por los pasos para crear varios fragmentos de documento de texto basados en la anatomía proporcionada en la sección [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md). Al final de este tutorial, podrá hacer lo siguiente:
 
 * Crear fragmentos de documento
 * Crear variables
@@ -101,7 +102,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 1. Coloque el cursor junto al campo **Número de factura** y haga doble clic en la variable **InvoiceNumber** desde la pestaña **Variables** en el panel izquierdo.
 1. Coloque el cursor junto al campo **Período de facturación** y haga doble clic en la variable **Billperiod**.
 1. Coloque el cursor junto al campo **Fecha de factura** y haga doble clic en la variable **Fecha de factura**.
-1. Seleccione la pestaña **Objetos del modelo de datos** en el panel izquierdo.
+1. Seleccione la pestaña **Objetos de modelo de datos** en el panel izquierdo.
 1. Coloque el cursor junto al campo **Su plan** y haga doble clic en la propiedad **cliente** > **customerplan**.
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
@@ -149,7 +150,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
    * Código de estado: Tipo Número
    * Numberconnections: Tipo Número
 
-1. Seleccione la pestaña **Objetos del modelo de datos**, coloque el cursor en el panel derecho y haga doble clic en la propiedad **cliente** > **nombre**.
+1. Seleccione la pestaña **Objetos de modelo de datos**, coloque el cursor en el panel derecho y haga doble clic en la propiedad **cliente** > **nombre**.
 1. Pulse Entrar para mover el cursor a la línea siguiente y haga doble clic en la propiedad **cliente** > **dirección**.
 1. Cree texto estático para los siguientes campos mediante el panel derecho:
 
@@ -163,7 +164,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
    ![El cliente detalla el texto estático](assets/customer_details_static_text_new.png)
 
 1. Coloque el cursor junto al campo **Número de móvil** y haga doble clic en la propiedad **cliente** > **mobilenum**.
-1. Coloque el cursor junto al **Número de contacto alternativo** y haga doble clic en la propiedad **&#x200B; cliente** > **alternatemobilenumber**.
+1. Coloque el cursor junto al **Número de contacto alternativo** y haga doble clic en la propiedad **cliente** > **alternatemobilenumber**.
 1. Coloque el cursor junto al campo **Número de relación** y haga doble clic en la propiedad **cliente** > **relationshipnumber**.
 1. Seleccione la pestaña **Variables**, coloque el cursor junto al campo **Lugar de suministro** y haga doble clic en la variable **Placesupply**.
 1. Coloque el cursor junto al campo **Código de estado** y haga doble clic en la variable **Statecode**.
@@ -231,7 +232,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 1. Coloque el cursor junto al campo **Ajustes** y haga doble clic en la variable **Ajustes**.
 1. Coloque el cursor junto al campo **Importe adeudado** y haga doble clic en la variable **Amountdue**.
 1. Coloque el cursor junto al campo **Fecha de vencimiento** y haga doble clic en la variable **Duedate**.
-1. Seleccione la pestaña **Objetos del modelo de datos**, coloque el cursor junto al campo **Gastos del período de la factura actual** en el panel derecho y haga doble clic en la propiedad **facturas** > **usagecharges**.
+1. Seleccione la pestaña **Objetos de modelo de datos**, coloque el cursor junto al campo **Gastos del período de la factura actual** en el panel derecho y haga doble clic en la propiedad **facturas** > **usagecharges**.
 
    ![Resumen de la factura](assets/bill_summary_static_variables_new.png)
 
@@ -281,7 +282,7 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    ![Resumen de gastos](assets/summary_charges_static_new.png)
 
-1. Seleccione la pestaña **Objetos del modelo de datos**.
+1. Seleccione la pestaña **Objetos de modelo de datos**.
 1. Coloque el cursor junto al campo **Gastos de llamada** y haga doble clic en la propiedad **facturas** > **callcharges**.
 1. Coloque el cursor junto al campo **Gastos por llamadas de conferencia** y haga doble clic en la propiedad **facturas** > **confcallcharges**.
 1. Coloque el cursor junto al campo **Gastos por SMS** y haga doble clic en la propiedad **facturas** > **smscharge**.
