@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7770'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ La compatibilidad con eventos headless carecía de los eventos OSGi necesarios p
 
 * El RTE de fragmentos de contenido mostraba problemas visuales y de diseño después de los cambios recientes en el estilo de la IU. Service Pack 2 mejora el estilo del RTE para que la barra de herramientas y el área editable se procesen correctamente y sean legibles. El Editor de fragmentos de contenido ahora se alinea con la apariencia y el comportamiento del Editor de páginas. (SITES-38684)
 * Al eliminar los ámbitos de IMS del Selector de recursos de Polaris, se interrumpía la integración del fragmento de contenido con el punto final de entrega. Los autores experimentaban errores al abrir el selector de recursos remotos y seleccionar recursos. La actualización vuelve a añadir los ámbitos de IMS necesarios y restaura el acceso estable en el nivel de entrega. (SITES-35837)
-* El panel Contenido asociado ya no procesa un marcador de posición &quot;indefinido&quot; codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto traducido de la interfaz de usuario. (SITES-33675)
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* El panel de contenido asociado ya no procesa un marcador de posición “indefinido” codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto de la IU traducido. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * El Editor de fragmentos de contenido ahora muestra una etiqueta de pestaña General traducida en todas las configuraciones regionales. El editor reemplaza el texto de pestañas no localizado y elimina los ID internos de los títulos de las pestañas. (SITES-30715)
 * El Editor de fragmentos de contenido ahora muestra los nombres traducidos para los tipos de recursos permitidos. La lista de selección ya no combina cadenas internas y etiquetas de solo inglés cuando los autores configuran restricciones de referencia de contenido. (SITES-29699)
 
@@ -540,6 +539,7 @@ Se aconseja a los clientes que comprueben si utilizan la función o la capacidad
 
 | Área | Característica | Reemplazo | Versión (SP) |
 | --- | --- | --- | --- |
+| Sites | Resumen del texto del fragmento de contenido | No hay sustitución disponible. | |
 | Guía de inicio rápido | API de Mongo | Las API de Mongo ya están en desuso y se planea eliminarlas en futuras versiones. | 6.5 TS SP2 |
 | Sites | Compatibilidad con fragmentos de contenido en la API REST de AEM Assets | AEM 6.5 LTS SP2 proporciona OpenAPI modernas para la administración de modelos y fragmentos de contenido, por lo que los puntos finales de compatibilidad de fragmentos de contenido más antiguos en la API de REST de AEM Assets ya no se utilizan.<br>Adobe tiene la intención de mantener estos puntos finales más antiguos disponibles hasta que se anuncie el fin de la vida útil. Adobe no planea más mejoras para los puntos finales obsoletos. | 6.5 LTS SP2 |
 | Sites | [Editor de SPA](/help/sites-developing/spa-overview.md) | Los editores preferidos para administrar el contenido headless en AEM son:<br>- [El Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. | 6.5 LTS GA |
