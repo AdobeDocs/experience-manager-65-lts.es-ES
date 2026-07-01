@@ -5,10 +5,11 @@ keywords: Forms Microsoft Power Automate adaptable, enviar datos de Forms adapta
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e2c4cae6-67db-4531-b1e1-0a378d9800f2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 85%
+source-wordcount: '1233'
+ht-degree: 83%
 
 ---
 
@@ -37,10 +38,10 @@ Para conectar un formulario adaptable con Microsoft® Power Automate, es necesar
 
 Realice las siguientes acciones para conectar la instancia de autor de AEM Forms con Microsoft® Power Automate:
 
-1. [Crear un Microsoft](#ms-power-automate-application)
-1. [Crear Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Crear Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publicar Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Crear una aplicación de Microsoft® Azure Active Directory](#ms-power-automate-application)
+1. [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [Crear la configuración de nube de Microsoft® Power Automate Flow Service.](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [Publicar las configuraciones de nube de Microsoft® Power Automate Dataverse y Microsoft® Power Automate Flow Service](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Crear una aplicación de Microsoft® Azure Active Directory {#ms-power-automate-application}
 

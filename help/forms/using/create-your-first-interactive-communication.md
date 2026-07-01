@@ -7,10 +7,11 @@ topic-tags: interactive-communications, introduction
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 247ea068-6564-4b62-8449-a8800548106f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 98%
+source-wordcount: '1046'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +68,7 @@ Crear una anatomía para la comunicación interactiva con los siguientes modos d
 * Datos condicionales
 * Imágenes
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Paso 2: Crear un modelo de datos de formulario {#step-create-form-data-model}
 
@@ -79,14 +80,14 @@ Un modelo de datos de formulario permite conectar una comunicación interactiva 
 
 * Configurar la instancia de la base de datos (base de datos MySQL) como fuente de datos
 * Crear el modelo de datos de formulario con la base de datos MySQL como fuente de datos
-* Agregar objetos del modelo de datos al modelo de datos de formulario
+* Agregar objetos de modelo de datos al modelo de datos de formulario
 * Configurar servicios de lectura y escritura para el modelo de datos de formulario
-* Crear asociaciones entre los objetos del modelo de datos
-* Ver datos de ejemplo generados automáticamente
+* Crear asociaciones entre los objetos de modelo de datos
+* Ver datos de muestra generados automáticamente
 * Editar datos de muestra
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Paso 3: Crear fragmentos de documento {#step-create-document-fragments}
 
@@ -100,13 +101,13 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 * Crear variables
 * Crear y aplicar reglas
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Paso 4: Crear plantillas {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para los canales Imprimir y Web.
+Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para los canales web y de impresión.
 
 Las plantillas del canal Imprimir se crean en Adobe Forms Designer y se cargan en el servidor de AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
@@ -118,7 +119,7 @@ Las plantillas del canal Web se crean en AEM. Los autores y administradores de p
 * Cargar las plantillas XDP al servidor de AEM Forms
 * Crear y habilitar plantillas para el canal Web
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Paso 5: Crear una comunicación interactiva {#step-create-an-interactive-communication}
 
@@ -137,7 +138,7 @@ Las comunicaciones interactivas se pueden entregar a través de dos canales: Imp
 * Crear un gráfico en la versión web de la comunicación interactiva
 * Crear hipervínculos en la versión web de la comunicación interactiva
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## Paso 6: Publicar la comunicación interactiva {#step-publish-your-interactive-communication}
 

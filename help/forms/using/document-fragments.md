@@ -6,7 +6,8 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 568a1513-1de9-4f68-be09-f47cd5b30847
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Fragmentos de documento {#document-fragments}
 
-Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales puede componer comunicaciones/cartas interactivas. Los fragmentos del documento son de los siguientes tipos:
+Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales puede componer cartas/comunicaciones interactivas. Los fragmentos del documento son de los siguientes tipos:
 
 * **Texto**: un recurso de texto es un fragmento de contenido que consta de uno o más párrafos de texto. Un párrafo puede ser estático o dinámico.
 
