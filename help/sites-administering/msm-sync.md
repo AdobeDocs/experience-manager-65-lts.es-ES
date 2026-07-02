@@ -9,10 +9,11 @@ docset: aem65
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 25%
+source-wordcount: '2681'
+ht-degree: 28%
 
 ---
 
@@ -49,7 +50,7 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 ### Configuraciones de despliegue instaladas {#installed-rollout-configurations}
 
-En la tabla siguiente se enumeran las opciones de configuración de despliegue que se instalan con AEM. La tabla incluye las acciones de déclencheur y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de despliegue instaladas no cumplen con sus requisitos, puede [crear una configuración de despliegue](#creating-a-rollout-configuration).
+En la tabla siguiente se enumeran las opciones de configuración de despliegue que se instalan con AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de despliegue instaladas no cumplen con sus requisitos, puede [crear una configuración de despliegue](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -169,7 +170,7 @@ En la tabla siguiente se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como los vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
+   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -228,8 +229,7 @@ En la tabla siguiente se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Crea o actualiza recursos de producto dentro de un catálogo. Esta acción está pensada para utilizarse en una de las siguientes situaciones:
-    <ul>
+   <td>Crea o actualiza recursos de producto dentro de un catálogo. Esta acción está pensada para utilizarse en una de las siguientes situaciones:<ul>
      <li>Generación o despliegue de un catálogo (o sección de catálogo)</li>
      <li>Un usuario restaura la herencia de sincronización de un componente de producto.</li>
     </ul> </td>
@@ -266,7 +266,7 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes para que no afecten a los tipos de nodos y propiedades específicos. Por ejemplo, muchas propiedades y subnodos relacionados con el funcionamiento interno de AEM no deben incluirse en una Live Copy. Solo se debe copiar el contenido relevante para el usuario de la página.
 
-Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la tabla siguiente se enumeran las acciones de sincronización para las que se pueden especificar los nodos que se excluirán. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
@@ -299,7 +299,7 @@ En la tabla siguiente se describen las propiedades que se pueden configurar:
    <td>Expresión regular que coincide con las propiedades de página que se van a excluir de la acción de sincronización.</td>
   </tr>
   <tr>
-   <td><p>Tipos de nodos de Mixin ignorados</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
+   <td><p>Tipos de nodos de Mixin ignorados</p> <p>cq.wcm.msm.action.ignoreMixin</p> </td>
    <td>Disponible solo para la acción de actualización de contenido de CQ MSM. Expresión regular que coincide con los nombres de los tipos de nodos de mezcla que se van a excluir de la acción de sincronización.</td>
   </tr>
  </tbody>
@@ -331,7 +331,7 @@ Por ejemplo, si quiere que el **título** de la página se incluya en los cambio
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes relacionadas con la actualización de referencias.
 
-Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la siguiente tabla se enumeran las acciones de sincronización para las que se puede especificar la actualización de referencia. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
@@ -409,7 +409,7 @@ Las páginas secundarias de la página de modelo heredan la configuración. Al e
 
 Especifique una configuración de despliegue para utilizarla como predeterminada del sistema. Para especificar el valor predeterminado, configure el servicio OSGi:
 
-* **Administrador de relaciones activas de CQ WCM por día**
+* Administrador de relaciones dinámicas de CQ WCM de **día**
 el PID de servicio es `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure el servicio mediante la [consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo de repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
