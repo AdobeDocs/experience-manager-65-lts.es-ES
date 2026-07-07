@@ -12,8 +12,8 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 1%
+source-wordcount: '2613'
+ht-degree: 2%
 
 ---
 
@@ -72,14 +72,14 @@ Si es necesario reindexar en repositorios grandes, especialmente cuando se utili
 
 Los índices se configuran como nodos en el repositorio bajo el nodo **Oak:index**.
 
-El tipo del nodo de índice debe ser **oak:QueryIndexDefinition.** Hay varias opciones de configuración disponibles para cada indizador como propiedades de nodo. Para obtener más información, consulte los detalles de configuración de cada tipo de indizador a continuación.
+El tipo del nodo de índice debe ser **oak:QueryIndexDefinition.** Hay varias opciones de configuración disponibles para cada indexador como propiedades de nodo. Para obtener más información, consulte los detalles de configuración de cada tipo de indizador a continuación.
 
 ### El índice de propiedades {#the-property-index}
 
 El índice de propiedades es útil para consultas que tienen restricciones de propiedad pero no son de texto completo. Se puede configurar siguiendo el siguiente procedimiento:
 
 1. Abra CRXDE yendo a `http://localhost:4502/crx/de/index.jsp`
-1. Cree un nodo en **oak:index**
+1. Crear un nodo en **oak:index**
 1. Asigne un nombre al nodo **PropertyIndex** y establezca el tipo de nodo en **oak:QueryIndexDefinition**
 1. Establezca las siguientes propiedades para el nuevo nodo:
 
@@ -94,7 +94,7 @@ El índice de propiedades tiene las siguientes opciones de configuración:
 
 * La propiedad **type** especifica el tipo de índice y, en este caso, debe establecerse en **property**
 
-* La propiedad **propertyNames** indica la lista de propiedades almacenadas en el índice. En caso de que falte, el nombre del nodo se utiliza como valor de referencia del nombre de propiedad. En este ejemplo, la propiedad **jcr:uuid**, cuyo trabajo es exponer el identificador único (UUID) de su nodo, se agrega al índice.
+* La propiedad **propertyNames** indica la lista de propiedades almacenadas en el índice. En caso de que falte, el nombre del nodo se utiliza como valor de referencia del nombre de propiedad. En este ejemplo, la propiedad **jcr:uuid** cuyo trabajo es exponer el identificador único (UUID) de su nodo se agrega al índice.
 
 * El indicador **unique** que, si se establece en **true** agrega una restricción de unicidad en el índice de propiedad.
 
@@ -429,7 +429,7 @@ Si el índice está configurado en una ubicación diferente, cambie la ruta seg�
 
 #### Salida de MBean {#mbean-output}
 
-A veces resulta útil proporcionar el resultado de los MBeans relacionados con índices para la depuración. Para ello:
+A veces resulta útil proporcionar el resultado de los MBeans relacionados con índices para la depuración. Para ello, haga lo siguiente:
 
 1. Vaya a la consola JMX en:
    `https://serveraddress:port/system/console/jmx`

@@ -1,6 +1,6 @@
 ---
 title: API del Generador de consultas
-description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone a través de una API de Java& trade; y una API de REST.
+description: La funcionalidad del Asset Share Query Builder se expone a través de una API de Java&trade; y una API de REST.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,7 +13,7 @@ role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2350'
 ht-degree: 0%
 
 ---

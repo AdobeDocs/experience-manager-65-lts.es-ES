@@ -1,5 +1,5 @@
 ---
-title: Configuración de la campaña
+title: Configuración de su campaña
 description: La configuración de una nueva campaña requiere la creación de una marca que contenga sus campañas, la creación de una campaña que incluya experiencias y la definición final de las propiedades de la nueva campaña.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cf510635-6cbf-4f2b-b289-7ad31978c608
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 0%
+source-wordcount: '2219'
+ht-degree: 1%
 
 ---
 
-# Configuración de la campaña{#setting-up-your-campaign}
+# Configuración de su campaña{#setting-up-your-campaign}
 
 La configuración de una nueva campaña incluye los siguientes pasos (genéricos):
 
@@ -151,8 +152,7 @@ Si tiene experiencias existentes, puede agregar un punto de contacto directament
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes).
->Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
+>Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 En AEM MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas, por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellene los posibles clientes).
 
@@ -253,7 +253,7 @@ Para agregar posibles clientes a listas preexistentes:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. En el menú **Herramientas**, seleccione **Agregar a lista....** Se abre la ventana **Agregar a la lista**.
+1. En el menú **Herramientas**, seleccione **Agregar a lista....**. Se abrirá la ventana **Agregar a lista**.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -299,8 +299,7 @@ Para eliminar posibles clientes existentes en el MCM, seleccione la casilla de v
 
 >[!NOTE]
 >
->Adobe no planea mejorar esta capacidad (administración de listas).
->Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
+>Adobe no planea mejorar esta capacidad (administración de listas).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista. Las listas son visibles en el MCM, ya sea en el panel o haciendo clic en **Listas**. Ambos le proporcionan el nombre de la lista y el número de miembros.
 

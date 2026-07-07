@@ -8,9 +8,10 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 7ca50e97a42edc4eefd296ada88c19a1c598b08c
+exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2481'
 ht-degree: 84%
 
 ---
@@ -23,7 +24,7 @@ Puede mover formularios y recursos relacionados, temas, diccionarios de datos, f
 
 La interfaz de usuario de AEM Forms permite exportar recursos desde una instancia de AEM descargándolos como paquete de CRX de AEM o archivos binarios. A continuación, puede importar el paquete CRX de AEM descargado o el archivo binario en otra instancia de AEM.
 
-Todos los recursos admiten la exportación y la importación mediante la interfaz de usuario de AEM Forms, excepto las plantillas de formulario adaptable y las directivas de contenido de formulario adaptable. Por lo tanto, al exportar un formulario adaptable desde la interfaz de usuario de AEM Forms, la plantilla del formulario adaptable y las directivas de contenido relacionadas no se exportan automáticamente como el resto de recursos relacionados.
+Todos los recursos admiten la exportación y la importación mediante la interfaz de usuario de AEM Forms, excepto las plantillas de formulario adaptable y las directivas de contenido de formulario adaptable. Por lo tanto, al exportar un formulario adaptable desde la interfaz de usuario de AEM Forms, la plantilla de formulario adaptable y las directivas de contenido relacionadas no se exportan automáticamente como el resto de recursos relacionados.
 
 Para estos tipos de recursos, debe utilizar el Administrador de paquetes de AEM para crear un paquete CRX en el servidor de AEM fuente e instalar el paquete en el servidor de destino. Para obtener información sobre cómo crear e instalar paquetes, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
@@ -36,11 +37,9 @@ Para descargar recursos de formularios y documentos:
 1. Seleccione los recursos de los formularios y seleccione el icono **Descargar**.
 1. En Descargar recursos, elija una de las siguientes opciones y seleccione **Descargar**.
 
-   * **Descargar como paquete de CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. Cualquier recurso de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), conjuntos de formularios, plantillas de formulario, documentos de PDF y recursos (XSD, XFS e imágenes), se puede descargar como paquete desde la interfaz de usuario de AEM Forms.
-La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
+   * **Descargar como paquete de CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. Cualquier recurso de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), conjuntos de formularios, plantillas de formulario, documentos de PDF y recursos (XSD, XFS e imágenes), se puede descargar como paquete desde la interfaz de usuario de AEM Forms.La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip. 
-No puede descargar formularios adaptables, comunicaciones interactivas, fragmentos de formularios adaptables, temas ni conjuntos de formularios con la opción **Descargar recursos como archivos binarios**. Para descargar estos recursos, debe utilizar la opción **Descargar como paquete CRX**.
+   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip.No puede descargar formularios adaptables, comunicaciones interactivas, fragmentos de formularios adaptables, temas ni conjuntos de formularios con la opción **Descargar recursos como archivos binarios**. Para descargar estos recursos, debe utilizar la opción **Descargar como paquete CRX**.
 
    Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
@@ -89,12 +88,11 @@ Para cargar una temática:
 
 1. En Experience Manager, vaya a **Forms > Temas**.
 1. En la página Temáticas, haga clic en **Crear > Cargar archivo**.
-1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**. 
-La temática cargada está disponible en la página de temáticas.
+1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**.La temática cargada está disponible en la página de temáticas.
 
 1. Inicie sesión en la instancia de AEM Forms.
 1. Seleccione el icono de Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navegación ![icono de brújula](assets/compass.png)> Forms> Temas.
-1. Haga clic en **Crear** > **Cargar archivo**. En la solicitud de carga de archivos, examine y seleccione un paquete de temas del equipo y haga clic en **Cargar**. El tema se cargará.
+1. Haga clic en **Crear** > **Cargar archivo**. En la indicación de carga de archivos, examine y seleccione un paquete de temas del equipo y haga clic en **Cargar**. El tema se cargará.
 
 ## Importar y exportar recursos en Administración de correspondencia {#import-and-export-assets-in-correspondence-management}
 
@@ -206,7 +204,7 @@ Para crear una carpeta, complete los siguientes pasos:
 
 1. Se muestra una nueva carpeta con el título que haya definido en la ubicación actual de la lista de recursos.
 
-   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
+   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero por encima del icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
 
    Puede seleccionar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 

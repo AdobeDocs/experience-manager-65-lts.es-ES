@@ -4,9 +4,10 @@ description: Obtenga información sobre cómo crear y sincronizar Live Copies en
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 32184455f3c74605a11c20152cf9c8879101a5c2
+exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4204'
 ht-degree: 40%
 
 ---

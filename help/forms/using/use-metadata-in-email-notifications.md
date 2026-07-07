@@ -6,10 +6,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +22,7 @@ Puede utilizar metadatos en una plantilla de correo electrónico para rellenar d
 
 ![Plantilla de correo electrónico predeterminada](assets/default_email_template_metadata_new.png)
 
-Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y la clave se reemplaza por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el siguiente ejemplo de código, “$ {workitem_title} ” es una clave. Se reemplaza con el valor “Loan-Request” en el tiempo de ejecución.
+Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y la clave se reemplaza por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el siguiente ejemplo de código, &quot;$ {workitem_title}&quot; es una clave. Se reemplaza con el valor “Loan-Request” en el tiempo de ejecución.
 
 ```html
 subject=Task Assigned - ${workitem_title}
