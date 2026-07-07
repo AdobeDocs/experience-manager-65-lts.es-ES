@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 3%
 
 ---
 
@@ -147,12 +147,12 @@ El usuario autorizado se utiliza en el paso 3 para configurar la distribución d
 
 ![Agregar ventana ACL](assets/chlimage_1-21.png)
 
-Véase también
+Ver también
 
 * [Administración de derechos de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Solución de problemas de la sección [Modificar excepción de operación durante el procesamiento de respuesta](#modify-operation-exception-during-response-processing).
 
-### &#x200B;3. Adobe Granite Distribution - Proveedor secreto de transporte con contraseña cifrada {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite Distribution - Proveedor de secreto de transporte con contraseña cifrada {#adobegraniteencpasswrd}
 
 **Configurar permisos**
 
@@ -303,11 +303,9 @@ Si el ID de Sling de una instancia de publicación coincide con el ID de Sling d
    * busque y elimine el archivo de nombre *sling.id.file*
 
       * por ejemplo, en un sistema Linux®:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * por ejemplo, en un sistema Windows:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. inicio de la instancia de publicación
@@ -339,7 +337,7 @@ Para que las actualizaciones se sincronicen correctamente, es necesario modifica
 
 * administración de directivas:
 
-   * para sobrescribir los nodos rep:policy existentes con otros nuevos, agregue un tercer filtro de paquetes:
+   * para sobrescribir los nodos existentes de rep:policy con nuevos, agregue un tercer filtro de paquetes:
 
       * `/home/users|+.*/rep:policy`
 
@@ -363,7 +361,7 @@ Por diseño, los datos de usuario creados en el entorno de publicación no apare
 
 Cuando se usa la consola [Administración de usuarios y seguridad](/help/sites-administering/security.md) para agregar nuevos usuarios en el entorno de publicación, la sincronización de usuarios sincroniza los nuevos usuarios y su pertenencia a grupos con otras instancias de publicación, si es necesario. La sincronización de usuarios también sincroniza los grupos de usuarios creados mediante la consola de seguridad.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Cómo quitar la sincronización de usuarios sin conexión {#how-to-take-user-sync-offline}
 
@@ -421,7 +419,7 @@ En la lista se incluye una dirección URL para cada instancia de publicación qu
 
 ### Configuración añadida incorrectamente {#configuration-improperly-added}
 
-Cuando la sincronización de usuarios no funciona, el problema más común es que se *agregaron* configuraciones adicionales. En su lugar, la configuración *existente *predeterminada debería haberse *editado*.
+Cuando la sincronización de usuarios no funciona, el problema más común es que se *agregaron* configuraciones adicionales. En su lugar, la configuración *existente* predeterminada debería haberse *editado*.
 
 A continuación, se muestran vistas de cómo deben aparecer las configuraciones predeterminadas editadas en la consola web. Si aparece más de una instancia, la configuración añadida debería eliminarse.
 
@@ -453,7 +451,7 @@ Si lo siguiente es visible en el registro:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-A continuación, compruebe que la sección [2. Se siguió correctamente al usuario autorizado de creación &#x200B;](#createauthuser).
+A continuación, compruebe que la sección [2. Se siguió correctamente al usuario autorizado de creación ](#createauthuser).
 
 En esta sección se describe la creación de un usuario autorizado, que existe en todas las instancias de publicación, y su identificación en la configuración OSGi del &quot;Proveedor secreto&quot; en Autor. De manera predeterminada, el usuario es `admin`.
 
@@ -481,7 +479,7 @@ Como miembro del grupo `administrators`, el usuario autorizado debe tener los si
 
 Si el ID de Sling coincide entre dos o más instancias de publicación, se produce un error en la sincronización de grupos de usuarios.
 
-Consulte la sección [9. ID único de Sling &#x200B;](#unique-sling-id)
+Consulte la sección [9. ID único de Sling ](#unique-sling-id)
 
 ### Sincronización manual de usuarios y grupos de usuarios {#manually-syncing-users-and-user-groups}
 

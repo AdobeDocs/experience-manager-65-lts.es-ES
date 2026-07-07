@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 88%
+source-wordcount: '1323'
+ht-degree: 87%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 88%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html).
 
 
 ![imagen a pantalla completa](do-not-localize/data-integration.png)
 
-La integración de datos de AEM Forms permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables y comunicaciones interactivas. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
+La integración de datos de AEM Forms permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables y comunicaciones interactivas. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los servicios y objetos de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
 
 * [Integración de datos de AEM Forms](../../forms/using/data-integration.md)
 * [Configurar fuentes de datos](../../forms/using/configure-data-sources.md)
@@ -60,7 +60,7 @@ Puede crear [formularios adaptables](../../forms/using/creating-adaptive-form.md
 
    ![create-af-3](assets/create-af-3.png)
 
-Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Objetos del modelo de datos]** del Explorador de contenido en el Editor de formularios adaptables.
+Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Objetos de modelo de datos]** del Explorador de contenido en el Editor de formularios adaptables.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Al enviar el formulario, los datos del objeto de modelo de datos configurado se 
 
 ![data-submission](assets/data-submission.png)
 
-También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto del modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
+También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto de modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.

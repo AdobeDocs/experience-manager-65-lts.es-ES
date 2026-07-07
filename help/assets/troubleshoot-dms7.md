@@ -1,5 +1,5 @@
 ---
-title: 'Solución de problemas de Dynamic Media: modo Scene7'
+title: Resolución de problemas de Dynamic Media, modo Scene7
 description: Obtenga información sobre cómo solucionar problemas y resolver problemas de instalación, configuración y generales en Dynamic Media cuando se ejecuta en modo Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,14 +10,15 @@ role: User, Admin
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 1%
 
 ---
 
-# Solución de problemas de Dynamic Media: modo Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Resolución de problemas de Dynamic Media, modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 En el siguiente documento se describe la solución de problemas de Dynamic Media que ejecuta el modo de ejecución **dynamicmedia_scene7**.
 
@@ -254,8 +255,7 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. Busque el paquete de visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
 1. Seleccione **Reinstalar**.
 1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo Configuración de Dynamic Media - S7.
-1. No realice cambios, seleccione **Guardar**.
-Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
+1. No realice cambios, seleccione **Guardar**.Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
 
 ### Problema: La previsualización de imagen no se carga en la creación de ajustes preestablecidos de visualizador {#image-preview-not-loading}
 
