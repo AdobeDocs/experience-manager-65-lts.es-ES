@@ -459,7 +459,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
    * **Para usar el servidor predeterminado**:
-(Predeterminado) Utilice la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65)).
+(Predeterminado) Utilice la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)).
 
    * **Para usar el valor personalizado**:
 Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.

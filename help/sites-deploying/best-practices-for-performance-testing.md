@@ -74,7 +74,7 @@ La documentación de [Monitorización del rendimiento](/help/sites-deploying/mon
 
 **Modo de desarrollador en la IU táctil**
 
-Una de las nuevas funciones de la IU táctil de AEM 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+Una de las nuevas funciones de la IU táctil de AEM 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=es).
 
 **Uso del archivo log.jar para leer los registros de solicitud**
 
