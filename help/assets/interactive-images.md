@@ -9,9 +9,10 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: e4be0056-1e19-41a8-8d8c-be65999b562d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4435'
 ht-degree: 1%
 
 ---
@@ -44,14 +45,11 @@ El tutorial ayuda a ilustrar los pasos de integración de imágenes interactivas
 
 Pasos de las imágenes interactivas:
 
-1. **(Opcional) Identificar variables de puntos interactivos**: Si utiliza Experience Manager Assets y Dynamic Media de forma independiente, comience identificando las variables dinámicas utilizadas en la implementación de Quickview existente. A continuación, puede introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificar variables de puntos interactivos](#optional-identifying-hotspot-variables).
-Sin embargo, si utiliza Adobe Experience Manager Sites, Adobe Experience Manager eCommerce o ambos, este paso no es necesario.
+1. **(Opcional) Identificar variables de puntos interactivos**: Si utiliza Experience Manager Assets y Dynamic Media de forma independiente, comience identificando las variables dinámicas utilizadas en la implementación de Quickview existente. A continuación, puede introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificar variables de puntos interactivos](#optional-identifying-hotspot-variables).Sin embargo, si utiliza Adobe Experience Manager Sites, Adobe Experience Manager eCommerce o ambos, este paso no es necesario.
 
-1. **(opcional): cree un ajuste preestablecido de visualizador de imágenes interactivas**. Personalice la imagen gráfica que se usa para representar las zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imágenes interactivas si desea utilizar el ajuste preestablecido de visualizador de imágenes interactivas predeterminado denominado `Shoppable_Banner` en su lugar.
-Consulte [(Opcional) Crear un ajuste preestablecido de visualizador de imágenes interactivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(opcional): cree un ajuste preestablecido de visualizador de imágenes interactivas**. Personalice la imagen gráfica que se usa para representar las zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imágenes interactivas si desea utilizar el ajuste preestablecido de visualizador de imágenes interactivas predeterminado denominado `Shoppable_Banner` en su lugar.Consulte [(Opcional) Crear un ajuste preestablecido de visualizador de imágenes interactivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Cargar un titular de imagen**: cargue titulares de imagen que desee hacer interactivos.
-Ver [Cargar un titular de imagen](#uploading-an-image-banner).
+1. **Cargar un titular de imagen**: cargue titulares de imagen que desee hacer interactivos.Ver [Cargar un titular de imagen](#uploading-an-image-banner).
 
 1. **Agregar puntos interactivos a un titular de imagen**: agregue uno o más puntos interactivos a un titular de imagen y asocie cada uno con una acción como un hipervínculo, una vista rápida o un fragmento de experiencia. Después de agregar zonas interactivas, terminará esta tarea publicando la imagen interactiva.
 
@@ -97,11 +95,9 @@ A continuación, el método consiste en visitar diferentes áreas del sitio web 
 
 Normalmente no es necesario utilizar herramientas de depuración especializadas. Los navegadores web modernos cuentan con inspectores web que hacen un trabajo adecuado. A continuación se muestran algunos ejemplos de exploradores web que incluyen inspectores web:
 
-* Para ver todas las solicitudes HTTP salientes en Google Chrome, presione F12 para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Red.
-En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Red.
+* Para ver todas las solicitudes HTTP salientes en Google Chrome, presione F12 para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Red.En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Red.
 
-* En Firefox, puede activar el complemento Firebug pulsando F12 y utilizando su pestaña Red, o bien puede utilizar la herramienta Inspector integrada y su pestaña Red.
-En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Inspector.
+* En Firefox, puede activar el complemento Firebug pulsando F12 y utilizando su pestaña Red, o bien puede utilizar la herramienta Inspector integrada y su pestaña Red.En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Inspector.
 
 Cuando la monitorización de red está activada en el navegador, almacene en déclencheur la vista rápida en la página.
 
@@ -295,8 +291,7 @@ Consulte [&#x200B; (Opcional) Vista previa de imágenes interactivas](#optional-
 
    * Seleccione **[!UICONTROL Fragmento de experiencia]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
-Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
+      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
       * Especifique la anchura y altura del fragmento de experiencia tal como desea que aparezca en el titular.
 
@@ -321,10 +316,7 @@ Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
 Puede usar Vista previa para ver una representación de cómo aparece la imagen interactiva a los clientes y probar los puntos interactivos de la imagen para asegurarse de que se comportan según lo esperado.
 
-Cuando esté satisfecho con la imagen interactiva, puede publicarla.
-Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Ver [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
-Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Cuando esté satisfecho con la imagen interactiva, puede publicarla.Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).Ver [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Para obtener una vista previa de imágenes interactivas:**
 
@@ -345,11 +337,9 @@ Si es cliente de Experience Manager Sites, puede agregar la imagen interactiva a
 
 Si es cliente independiente de Experience Manager Assets, puede añadir manualmente la imagen interactiva al sitio web como se describe en esta sección.
 
-1. Copie el código incrustado de la imagen interactiva publicada.
-Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+1. Copie el código incrustado de la imagen interactiva publicada.Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
 
-1. Añada el código incrustado copiado en la ubicación deseada dentro de la página web.
-El código incrustado copiado se configura para un entorno interactivo, de modo que se ajusta automáticamente al área asignada.
+1. Añada el código incrustado copiado en la ubicación deseada dentro de la página web.El código incrustado copiado se configura para un entorno interactivo, de modo que se ajusta automáticamente al área asignada.
 
 **Ejemplo**
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 85%
+source-wordcount: '2029'
+ht-degree: 84%
 
 ---
 
@@ -46,7 +47,7 @@ Cuando prepara la comunicación interactiva mediante la interfaz de usuario del 
 
 ### Introducir datos {#enter-data}
 
-1. En la pestaña Datos, introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de la plantilla de impresión (XDP), según los requisitos. Complete todos los campos obligatorios marcados con un asterisco (*) para habilitar el botón **Enviar**.
+1. En la pestaña Datos, introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de la plantilla de impresión (XDP), según los requisitos. Rellene todos los campos obligatorios marcados con un asterisco (*) para habilitar el botón **Enviar**.
 
    Seleccione un valor de campo de datos en la vista previa de la comunicación interactiva para resaltar el campo de datos correspondiente en la pestaña Datos o a la inversa.
 
@@ -177,7 +178,7 @@ Adobe recomienda ejecutar estas instrucciones de forma secuencial para guardar c
 
 ### Habilitar la función Guardar como borrador {#before-save-as-draft}
 
-La función Guardar como borrador no está activada de forma predeterminada. Siga los siguientes pasos para habilitar la función:
+La función Guardar como borrador no está habilitada de forma predeterminada. Siga los siguientes pasos para habilitar la función:
 
 1. Implemente la interfaz de proveedor de servicios (SPI) de [ccrDocumentInstance](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
@@ -327,10 +328,10 @@ La siguiente tabla explica la implementación de ejemplo de la SPI de `ccrDocume
    </tr>
   <tr>
    <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si esta contiene un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
-   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Actualizar como método de entrada y guarda el estado del borrador de la comunicación en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Actualizar como método de entrada y guarda el estado del borrador de la comunicación interactiva en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
-   <td><p>La API para la operación GET comprueba si la comunicación interactiva contiene un ID de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>La API para la operación GET comprueba si la comunicación interactiva contiene un ID de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación interactiva.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
    <td><p>El servicio mySQLDataBaseServiceCRUD verifica Get como método de entrada y recupera los datos de la comunicación interactiva en función del ID de borrador.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
