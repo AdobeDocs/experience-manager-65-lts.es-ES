@@ -4,9 +4,10 @@ description: Obtenga información sobre cómo crear y sincronizar Live Copies en
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 32184455f3c74605a11c20152cf9c8879101a5c2
+exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4204'
 ht-degree: 40%
 
 ---
@@ -92,7 +93,7 @@ Puede crear una Live Copy de cualquier página:
 La única diferencia es que la disponibilidad del comando **Despliegue** en las páginas de origen/modelo depende de si una configuración de modelo hace referencia al origen:
 
 * Si crea la Live Copy a partir de una página de origen a la que se hace referencia **is** en una configuración de modelo, el comando Despliegue estará disponible en las páginas de origen/modelo.
-* Si crea la Live Copy a partir de una página de origen a la que no se hace referencia **1&rbrace; en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.**
+* Si crea la Live Copy a partir de una página de origen a la que no se hace referencia **1} en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.**
 
 Para crear una Live Copy:
 

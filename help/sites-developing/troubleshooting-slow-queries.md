@@ -8,9 +8,10 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 42ad741e-49d6-4acb-a45c-0a6750f6fdbb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -47,7 +48,7 @@ En AEM 6.3, de forma predeterminada, cuando se alcanza un recorrido de 100 000, 
 
 #### Durante el desarrollo {#during-development}
 
-Explique **todas** las consultas y asegúrese de que sus planes de consulta no contengan la explicación **/&ast; traverse** en ellas. Ejemplo de plan de consulta de recorrido:
+Explique **todas** las consultas y asegúrese de que sus planes de consulta no contengan la explicación **/&amp;ast; traverse** en ellas. Ejemplo de plan de consulta de recorrido:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -71,9 +72,9 @@ Explique todas las consultas y asegúrese de que se resuelven en un índice ajus
 
 #### Por ejemplo, el valor predeterminado `cqPageLucene` no tiene una regla de índice para `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
-Antes de añadir la regla de índice cq:tags
+Antes de agregar la regla de índice cq:tags
 
-* **cq:etiquetas Regla de índice**
+* **cq:tags Regla de índice**
 
    * No existe de forma predeterminada
 
@@ -93,7 +94,7 @@ Esta consulta se resuelve en el índice `cqPageLucene`, pero como no existe ning
 
 Después de agregar la regla de índice cq:tags
 
-* **cq:etiquetas Regla de índice**
+* **cq:tags Regla de índice**
 
   ```js
   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
@@ -119,7 +120,7 @@ Cuando se realiza una consulta con la restricción `jcr:content/cq:tags`, el ín
 
 Más restricciones de consulta reducen los conjuntos de resultados aptos y optimizan aún más la optimización de la consulta.
 
-Del mismo modo, sin una regla de índice adicional para la propiedad `cq:tags`, incluso una consulta de texto completo con una restricción de `cq:tags` no funcionaría correctamente, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción de cq:tags se filtraría después de ella.
+Del mismo modo, sin una regla de índice adicional para la propiedad `cq:tags`, incluso una consulta de texto completo con una restricción de `cq:tags` no funcionaría correctamente, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción en cq:tags se filtraría después de ella.
 
 Otra causa del filtrado posterior a los índices son las Listas de control de acceso, que a menudo se pierden durante el desarrollo. Intente asegurarse de que la consulta no devuelva rutas que puedan ser inaccesibles para el usuario. Esto se puede hacer mediante una mejor estructura de contenido y proporcionando restricciones de ruta relevantes en la consulta.
 
@@ -312,7 +313,7 @@ El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta má
      p.guessTotal=100
      ```
 
-   En los casos en los que la ejecución de consultas es rápida pero el número de resultados es grande, la página `guessTotal` es una optimización crítica para las consultas del Generador de consultas.
+   En los casos en los que la ejecución de la consulta es rápida pero el número de resultados es grande, p. `guessTotal` es una optimización crítica para las consultas del Generador de consultas.
 
    `p.guessTotal=100` indica a Query Builder que solo recopile los primeros 100 resultados. Y, para establecer un indicador booleano que indique si existe al menos un resultado más (pero no cuántos más, ya que el recuento de este número resulta en lentitud). Esta optimización sobresale en los casos de uso de paginación o carga infinita, donde solo se muestra un subconjunto de resultados de forma incremental.
 
@@ -363,7 +364,7 @@ El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta má
 1. Combine manualmente la definición generada en el índice de propiedades de Lucene existente de forma aditiva. Tenga cuidado de no eliminar las configuraciones existentes, ya que pueden utilizarse para satisfacer otras consultas.
 
    1. Busque el índice de propiedades de Lucene existente que cubre cq:Page (mediante el Administrador de índices). En este caso, `/oak:index/cqPageLucene`.
-   1. Identifique el delta de configuración entre la definición de índice optimizada (Paso #4) y el índice existente (/oak:index/cqPageLucene), y agregue las configuraciones que faltan del índice optimizado a la definición de índice existente.
+   1. Identifique la diferencia de configuración entre la definición de índice optimizada (Paso #4) y el índice existente (/oak:index/cqPageLucene), y agregue las configuraciones que faltan del índice optimizado a la definición de índice existente.
    1. Según las Prácticas recomendadas de reindexación de AEM, se debe realizar una actualización o reindexar en orden, en función de si el contenido existente podría verse afectado por este cambio de configuración de índice.
 
 ## Crear un nuevo índice {#create-a-new-index}
