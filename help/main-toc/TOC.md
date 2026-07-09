@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 LTS para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
+source-git-commit: 860d8acb94370142bf47d0e03c554b69c0902222
 workflow-type: tm+mt
-source-wordcount: '7710'
-ht-degree: 67%
+source-wordcount: '7797'
+ht-degree: 66%
 
 ---
 
@@ -441,9 +441,13 @@ ht-degree: 67%
       + [Flujo de trabajo de instalación y actualización para AEM Forms en JEE](/help/forms/using/aem-forms-jee-installation-upgrade-documentation.md)
       + Instalar AEM Forms en JEE {#jee-installation}
          + [Plataformas compatibles con AEM Forms en JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
+         + [Preparación para la instalación de AEM Forms (un solo servidor)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
          + [Instalación e implementación de AEM Forms 6.5 LTS en JEE mediante JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
          + [Instalación e implementación de AEM Forms en JEE para JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf)
-         + [Preparación para la instalación de AEM Forms (un solo servidor)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+         + [Instalación e implementación de AEM Forms en JEE para el perfil de WebSphere Liberty](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-websphere.pdf)
+         + [Preparación para la instalación de AEM Forms (servidor de clústeres)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-cluster.pdf)
+         + [Configurar AEM Forms en JEE en el clúster de JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
+         + [Configuración de AEM Forms en JEE en el clúster de perfiles de WebSphere Liberty](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-websphere.pdf)
          + [Guía de configuración del almacén de credenciales de base de datos (modo independiente)](/help/forms/using/database-credentials-store-setup-guide-standalone-mode.md)
          + [Configuración del almacén de credenciales de base de datos (basado en Elytron)](/help/forms/using/database-credential-store-setup-elytron-based.md)
          + [Configuración de autenticación de nodo secundario (basado en Elytron)](/help/forms/using/secondary-node-authentication-setup-elytron-based.md)
@@ -464,7 +468,6 @@ ht-degree: 67%
          + [Conectar AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
          + {hide-from-toc}[Configuración de AEM Forms para enviar datos de formulario a un proceso de AEM Forms en JEE](/help/forms/using/submit-form-data-livecycle-process.md)
          + [Aplicación de escritorio para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-         + [Configurar AEM Forms en JEE en el clúster de JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
    + Actualizar AEM Forms {#upgrade-aem-forms}
       + [Rutas de actualización disponibles](/help/forms/using/upgrade.md)
       + Actualizar AEM Forms en OSGi {#aem-forms-osgi-upgrade}
@@ -473,9 +476,10 @@ ht-degree: 67%
          + [Migrar recursos y documentos de AEM Forms](/help/forms/using/migration-utility.md)
          + [Actualización de AEM 6.5 LTS en JBoss EAP 8 (Windows)](/help/forms/using/upgrading-aem-65-lts-on-jboss-eap-8.md)
       + Actualizar AEM Forms en JEE {#aem-forms-jee-upgrade}
+         + [Preparación para actualizar AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
          + [Actualizar a AEM Forms 6.5 LTS en JEE para JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
          + [Actualizar a AEM Forms en JEE para JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf)
-         + [Preparación para actualizar AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
+         + [Actualizar a AEM Forms en JEE para el perfil de WebSphere Liberty](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-websphere.pdf)
    + Administrar AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms en grupos y privilegios de OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Crear carpetas nuevas para aplicar categorías a los formularios](/help/forms/using/creating-new-folders-categorize-forms.md)
