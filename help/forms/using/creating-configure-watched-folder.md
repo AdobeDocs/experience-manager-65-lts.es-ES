@@ -7,10 +7,11 @@ topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 94%
+source-wordcount: '1859'
+ht-degree: 89%
 
 ---
 
@@ -73,7 +74,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
    * **Eliminar archivos clasificados con tiempo de espera agotado al acelerarlos**: si está habilitado, el mecanismo **Tiempo de espera agotado: archivos clasificados después** se activará solo cuando se active la restricción para la carpeta vigilada.
    * **Analizar carpeta de entrada después de cada:** especifique el intervalo de tiempo, en segundos, para buscar entradas en la carpeta vigilada. A menos que el ajuste Aceleración esté habilitado, el intervalo de sondeo debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor del intervalo debe ser mayor o igual a uno.
    * **Patrón de exclusión de archivos**: especifique una lista delimitada por punto y coma (;) de patrones que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con el patrón especificado se analizará para su procesamiento. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Patrón de archivo de inclusión**: especifique una lista delimitada por punto y coma (;) de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&ast;, todos los archivos y carpetas que coincidan con input&ast; se recogerán. El valor predeterminado es &ast; e indica todos los archivos y carpetas. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Patrón de archivo de inclusión**: especifique una lista delimitada por punto y coma (;) de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&ast;, se recogerán todos los archivos y carpetas que coincidan con input&ast;. El valor predeterminado es &ast; e indica todos los archivos y carpetas. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Tiempo de espera:** especifique el tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
      Esta configuración es útil para asegurarse de que todo el contenido del archivo o la carpeta se copia en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&ast;60 &ast;1000 milisegundos. Este intervalo evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
