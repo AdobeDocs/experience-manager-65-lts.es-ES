@@ -44,7 +44,7 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 
 >[!NOTE]
 >
->El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto: >[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto: >[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=es)
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 
@@ -68,7 +68,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * La estructura permite definir los componentes y el contenido de la plantilla.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 
-     * Si está creando una plantilla en una carpeta personalizada fuera del contenido de muestra de `We.Retail`, puede elegir Componentes básicos o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+     * Si está creando una plantilla en una carpeta personalizada fuera del contenido de muestra de `We.Retail`, puede elegir Componentes básicos o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es).
 
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes se pueden volver a desbloquear y bloquear para que pueda definir el contenido inicial.
