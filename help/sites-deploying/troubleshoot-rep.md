@@ -12,8 +12,8 @@ role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
    1. Haga clic en &quot;Herramientas&quot; en el menú superior.
    1. Haga clic en el botón de lupa.
    1. Seleccione &quot;XPath&quot; como Tipo.
-   1. En el cuadro &quot;Consulta&quot;, escriba esta consulta /jcr:root/var/eventing/jobs/element(&#42;,slingevent:Job) ordenar por @slingevent:created
+   1. En el cuadro &quot;Consulta&quot;, escriba esta consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent:created
    1. Haga clic en Buscar.
    1. En los resultados, los elementos principales son los últimos trabajos de eventos de Sling. Haga clic en cada una de ellas y busque las réplicas atascadas que coincidan con lo que aparece en la parte superior de la cola.
 
@@ -70,7 +70,7 @@ A veces resulta útil configurar todos los registros de replicación para que se
    * Archivo de registro: logs/replication.log
    * Registrador: com.day.cq.replication
 
-1. Si sospecha que el problema está relacionado con eventos/trabajos de sling de alguna manera, también puede agregar este paquete Java™ en categorías:org.apache.sling.event
+1. Si sospecha que el problema está relacionado con eventos/trabajos de sling de alguna manera, también puede agregar este paquete Java™ en las categorías:org.apache.sling.event
 
 ## Pausa de cola del agente de replicación  {#pausing-replication-agent-queue}
 

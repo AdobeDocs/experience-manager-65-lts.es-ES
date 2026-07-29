@@ -1,5 +1,5 @@
 ---
-title: Editor por lotes
+title: El editor masivo
 description: Aprenda a utilizar el Editor por lotes para una edición eficaz cuando el contexto de la página visual no sea necesario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 14aa70236c24a0fda8f1beb0103950cd34975842
+exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
-
-# Editor por lotes{#the-bulk-editor}
+# El editor masivo{#the-bulk-editor}
 
 El editor en bloque permite una edición eficaz cuando el contexto de la página visual no es necesario, ya que le permite:
 
@@ -76,7 +76,7 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Ruta de acceso raíz</td>
-   <td>Indica la ruta raíz que busca el editor en masa.<br /> Por ejemplo, <code>/content/geometrixx/en</code>. El editor en lotes busca en todos los nodos secundarios.</td>
+   <td>Indica la ruta de acceso raíz que busca el editor en masa.<br /> Por ejemplo, <code>/content/geometrixx/en</code>. El editor en lotes busca en todos los nodos secundarios.</td>
   </tr>
   <tr>
    <td>Parámetros de consulta</td>
@@ -121,7 +121,7 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 * **ruta de acceso:** solo busca nodos debajo de esta ruta de acceso. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
 * **tipo:** solo devuelve nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
 * **ordenar:** ordenar el resultado por las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
-* **límite:** limita el número de resultados usando un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un `interval:limit:10..` o `limit:..20` abierto
+* **límite:** limita el número de resultados usando un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un `interval:limit:10..` abierto o `limit:..20`
 Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, `limit:10` (devuelve los primeros diez resultados).
 
 ### Exportación de contenido {#exporting-content}

@@ -9,13 +9,13 @@ docset: aem65
 feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: bc00baf14235e6b77fe79ea7a8e149c6d69b10b5
+exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 0%
+source-wordcount: '1639'
+ht-degree: 1%
 
 ---
-
 
 # Marco de trabajo de etiquetado de AEM {#aem-tagging-framework}
 
@@ -35,7 +35,7 @@ Para etiquetar contenido y utilizar la infraestructura de etiquetado de AEM:
 * El nodo de contenido etiquetado `NodeType` debe incluir el mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * [`TagID`](#tagid) se agrega a la propiedad [`cq:tags`](#tagged-content-cq-tags-property) del nodo de contenido y se resuelve en un nodo de tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
 
-## Etiquetas : cq:Tipo de nodo de etiqueta  {#tags-cq-tag-node-type}
+## Etiquetas: cq:Tag tipo de nodo  {#tags-cq-tag-node-type}
 
 La declaración de una etiqueta se captura en el repositorio en un nodo de tipo `cq:Tag`.
 
@@ -128,7 +128,7 @@ Una práctica típica incluye:
 * Permite a los usuarios/autores acceder a todas las áreas de nombres que deben poder leerlas (principalmente todas).
 * Permitir que los usuarios o los autores escriban en aquellas áreas de nombres en las que los usuarios o los autores deben poder definir libremente las etiquetas (agregue un nodo en `/content/cq:tags/some_namespace`)
 
-## Contenido etiquetable : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenido etiquetable: cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Para que los desarrolladores de aplicaciones adjunten el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) debe incluir el mixin `cq:Taggable` o el mixin `cq:OwnerTaggable`.
 
@@ -163,7 +163,7 @@ Las definiciones esenciales para los tipos de nodo incluidos en AEM son las sigu
     mixin
 ```
 
-## Contenido etiquetado: cq:tags (propiedad) {#tagged-content-cq-tags-property}
+## Contenido etiquetado: propiedad cq:tags {#tagged-content-cq-tags-property}
 
 La propiedad `cq:tags` es una matriz `String` que se usa para almacenar uno o más TagID cuando los autores o visitantes del sitio los aplican al contenido. La propiedad solo tiene significado cuando se agrega a un nodo que se define con el mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 
@@ -177,14 +177,14 @@ A continuación se describen los efectos que se producen en el repositorio al mo
 
 * Cuando una etiqueta A se mueve o se combina con la etiqueta B en `/content/cq:tags`:
 
-   * La etiqueta A no se ha eliminado y obtiene la propiedad `cq:movedTo`.
-   * La etiqueta B se crea (si se ha producido un movimiento) y obtiene una propiedad `cq:backlinks`.
+  * La etiqueta A no se ha eliminado y obtiene la propiedad `cq:movedTo`.
+  * La etiqueta B se crea (si se ha producido un movimiento) y obtiene una propiedad `cq:backlinks`.
 
 * `cq:movedTo` señala a la etiqueta B.
 
-   * Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualiza esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
+  * Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualiza esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
 
-   * Un valor especial para la propiedad `cq:movedTo` es `nirvana`. Se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` que deben conservarse.
+  * Un valor especial para la propiedad `cq:movedTo` es `nirvana`. Se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` que deben conservarse.
 
   >[!NOTE]
   >
@@ -204,13 +204,13 @@ A continuación se describen los efectos que se producen en el repositorio al mo
 
 * La lectura de una propiedad `cq:tags` de un nodo de contenido implica la siguiente resolución:
 
-   1. Si no hay ninguna coincidencia en `/content/cq:tags`, no se devuelve ninguna etiqueta.
+  1. Si no hay ninguna coincidencia en `/content/cq:tags`, no se devuelve ninguna etiqueta.
 
-   1. Si la etiqueta tiene una propiedad `cq:movedTo` establecida, se sigue el identificador de etiqueta al que se hace referencia.
+  1. Si la etiqueta tiene una propiedad `cq:movedTo` establecida, se sigue el identificador de etiqueta al que se hace referencia.
 
-      * Este paso se repite siempre que la etiqueta seguida tenga la propiedad `cq:movedTo`.
+     * Este paso se repite siempre que la etiqueta seguida tenga la propiedad `cq:movedTo`.
 
-   1. Si la etiqueta seguida no tiene una propiedad `cq:movedTo`, se leerá la etiqueta.
+  1. Si la etiqueta seguida no tiene una propiedad `cq:movedTo`, se leerá la etiqueta.
 
 * Para publicar el cambio cuando se haya movido o combinado una etiqueta, se debe replicar el nodo `cq:Tag` y todos sus backlinks. Esto se realiza automáticamente cuando la etiqueta se activa en la consola de administración de etiquetas.
 

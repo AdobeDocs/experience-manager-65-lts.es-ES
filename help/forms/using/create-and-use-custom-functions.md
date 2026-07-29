@@ -3,10 +3,11 @@ title: Crear y agregar funciones personalizadas en un formulario adaptable
 description: AEM Forms admite funciones personalizadas que permiten a los usuarios crear y utilizar sus propias funciones dentro del editor de reglas.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 38%
+source-wordcount: '910'
+ht-degree: 36%
 
 ---
 
@@ -54,9 +55,9 @@ Asegúrese de que la función personalizada que escriba esté acompañada de `js
 
 Etiquetas `jsdoc` compatibles:
 
-* **Sintaxis**
-privada: `@private`
-una función privada no se incluye como función personalizada.
+* **Privado**
+Sintaxis: `@private`
+Una función privada no se incluye como función personalizada.
 
 * **Sintaxis**
 de nombre: `@name funcName <Function Name>`
@@ -64,39 +65,39 @@ O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `func
   `funcName` es el nombre de la función (no se permiten espacios).
   `<Function Name>` es el nombre para mostrar de la función.
 
-* **Sintaxis**
-de abonado: `@memberof namespace`
-adjunta un área de nombres a la función.
+* **Miembro**
+Sintaxis: `@memberof namespace`
+Adjunta un área de nombres a la función.
 
-* **Sintaxis**
-de parámetro: `@param {type} name <Parameter Description>`
-O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+* **Parámetro**
+Sintaxis: `@param {type} name <Parameter Description>`
+También puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
-   1. cadena
-   2. número
-   3. booleano
-   4. ámbito
+  1. cadena
+  2. número
+  3. booleano
+  4. ámbito
 
   El ámbito se utiliza para hacer referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Sintaxis**
-de tipo de retorno: `@return {type}`
-O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
+* **Tipo de valor devuelto**
+Sintaxis: `@return {type}`
+También puede usar `@returns {type}`.
+Agrega información sobre la función, como su objetivo.
+  {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
-   1. cadena
-   1. número
-   1. booleano
+  1. cadena
+  1. número
+  1. booleano
 
   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
 
-* **Esta**
-sintaxis: `@this currentComponent`
+* **Esto**
+Sintaxis: `@this currentComponent`
 
   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 
