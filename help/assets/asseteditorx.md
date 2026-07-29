@@ -1,18 +1,19 @@
 ---
-title: Ampliar editor de recursos
+title: Ampliación del editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del Editor de recursos mediante componentes personalizados.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a74c52bc-f639-4fc2-90e5-bac24fbb9ade
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '694'
 ht-degree: 12%
 
 ---
 
-# Ampliar editor de recursos {#extending-asset-editor}
+# Ampliación del editor de recursos {#extending-asset-editor}
 
 El editor de recursos es la página que se abre cuando se hace clic en un recurso encontrado a través del uso compartido de recursos, lo que permite al usuario editar aspectos del recurso, como metadatos, miniaturas, títulos y etiquetas.
 

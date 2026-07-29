@@ -8,9 +8,10 @@ content-type: reference
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 26cc4d84-ed76-44c7-a4e9-73ed48009568
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4976'
 ht-degree: 2%
 
 ---
@@ -270,9 +271,9 @@ Inicializa el almacén.
 * **nombre:** El nombre del almacén.
 * **config:** Un objeto que contiene propiedades de configuración:
 
-   * eventDeferring: El valor predeterminado es 32.
-   * evento: el objeto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) para este almacén. El valor predeterminado es el objeto ContextHub.eventing que utiliza.
-   * persistence: el objeto ContextHub.Utils.Persistence de este almacén. El valor predeterminado es el objeto ContextHub.persistence.
+  * eventDeferring: El valor predeterminado es 32.
+  * evento: el objeto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) para este almacén. El valor predeterminado es el objeto ContextHub.eventing que utiliza.
+  * persistence: el objeto ContextHub.Utils.Persistence de este almacén. El valor predeterminado es el objeto ContextHub.persistence.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -302,7 +303,7 @@ Opcionalmente, puede evitar que se active el evento `data`.
 * **key:** (String) El nombre de la clave que se va a quitar.
 * **options:** (objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
 
-   * silencioso: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
+  * silencioso: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
 
 **Devuelve**
 
@@ -375,7 +376,7 @@ Los datos del evento incluyen el nombre del almacén, la clave, el valor anterio
 * **key:** (String) El nombre de la clave.
 * **options:** (objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
 
-   * silencioso: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
+  * silencioso: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
 
 * **valor:** (objeto) valor que se va a asociar con la clave.
 
@@ -404,16 +405,16 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
 
 * **serviceConfig:** Un objeto que contiene las siguientes propiedades:
 
-   * host: (cadena) nombre del servidor o dirección IP.
-   * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
-   * params: Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
-   * path: (String) Ruta al servicio.
-   * port: (número) número de puerto del servicio.
-   * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
+  * host: (cadena) nombre del servidor o dirección IP.
+  * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, el objeto {callback: &quot;ContextHub.Callbacks.*Object.name*} se agrega al objeto service.params.
+  * params: Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
+  * path: (String) Ruta al servicio.
+  * port: (número) número de puerto del servicio.
+  * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
 
-      * automático: //
-      * true: https://
-      * false: https://
+    * automático: //
+    * true: https://
+    * false: https://
 
 * **invalidación:** (booleano). Un valor de `true` hace que la configuración del servicio existente se reemplace por las propiedades de `serviceConfig`. Un valor de `false` hace que las propiedades de configuración del servicio existentes se combinen con las propiedades de `serviceConfig`.
 
@@ -434,16 +435,16 @@ Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El 
 Un objeto con las siguientes propiedades:
 
 * **host:** (cadena) El nombre del servidor o la dirección IP.
-* **jsonp:** (booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
+* **jsonp:** (booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, el objeto {callback: &quot;ContextHub.Callbacks.*Object.name*} se agrega al objeto service.params.
 
 * **parámetros:** parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
 * **ruta de acceso:** (cadena) Ruta de acceso al servicio.
 * **puerto:** (número) El número de puerto del servicio.
 * **secure:** (String o Boolean) Determina el protocolo que se va a usar para la dirección URL del servicio:
 
-   * automático: //
-   * true: https://
-   * false: https://
+  * automático: //
+  * true: https://
+  * false: https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -466,24 +467,24 @@ inicializa el objeto ContextHub.Store.JSONPStore.
 * **nombre:** (cadena) El nombre del almacén.
 * **config:** (objeto) Un objeto que contiene la propiedad del servicio. El objeto JSONPStore utiliza las propiedades del objeto `service` para construir la dirección URL del servicio JSONP:
 
-   * eventDeferring: 32.
-   * Evento: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es el objeto `ContextHub.eventing`.
-   * persistence: el objeto ContextHub.Utils.Persistence de este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
-   * service: (objeto)
+  * eventDeferring: 32.
+  * Evento: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es el objeto `ContextHub.eventing`.
+  * persistence: el objeto ContextHub.Utils.Persistence de este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
+  * service: (objeto)
 
-      * host: (cadena) nombre del servidor o dirección IP.
-      * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es verdadero, el objeto `{callback: "ContextHub.Callbacks.*Object.name*}` se agrega a `service.params`.
-      * params: Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres y valores de parámetro son los nombres y valores de las propiedades de objeto, respectivamente.
-      * path: (String) Ruta al servicio.
-      * port: (número) número de puerto del servicio.
-      * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
+    * host: (cadena) nombre del servidor o dirección IP.
+    * jsonp: (Boolean) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es verdadero, el objeto `{callback: "ContextHub.Callbacks.*Object.name*}` se agrega a `service.params`.
+    * params: Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres y valores de parámetro son los nombres y valores de las propiedades de objeto, respectivamente.
+    * path: (String) Ruta al servicio.
+    * port: (número) número de puerto del servicio.
+    * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
 
-         * automático: //
-         * true: https://
-         * false: https://
+      * automático: //
+      * true: https://
+      * false: https://
 
-      * timeout: (número) cantidad de tiempo de espera para que el servicio JSONP responda antes de que se agote el tiempo de espera, en milisegundos.
-      * ttl: Cantidad mínima de tiempo en milisegundos que transcurre entre llamadas al servicio JSONP. (Consulte la función [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
+    * timeout: (número) cantidad de tiempo de espera para que el servicio JSONP responda antes de que se agote el tiempo de espera, en milisegundos.
+    * ttl: Cantidad mínima de tiempo en milisegundos que transcurre entre llamadas al servicio JSONP. (Consulte la función [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -579,10 +580,10 @@ Devuelve todas las cookies que tienen claves que coinciden con un filtro.
 
 * (Opcional) **filtro:** Criterios para claves de cookies coincidentes. Para devolver todas las cookies, no especifique ningún valor. Se admiten los siguientes tipos:
 
-   * Cadena: La cadena se compara con la clave de la cookie.
-   * Matriz: cada elemento de la matriz es un filtro.
-   * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
-   * Una función: Una función que prueba una clave de cookie para detectar una coincidencia. La función debe tomar la clave de cookie como parámetro y devolver true si la prueba confirma una coincidencia.
+  * Cadena: La cadena se compara con la clave de la cookie.
+  * Matriz: cada elemento de la matriz es un filtro.
+  * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
+  * Una función: Una función que prueba una clave de cookie para detectar una coincidencia. La función debe tomar la clave de cookie como parámetro y devolver true si la prueba confirma una coincidencia.
 
 **Devuelve**
 
@@ -620,10 +621,10 @@ Devuelve una matriz de claves de cookies existentes que coinciden con un filtro.
 
 * **filtro:** criterios para claves de cookies coincidentes. Se admiten los siguientes tipos:
 
-   * Cadena: La cadena se compara con la clave de la cookie.
-   * Matriz: cada elemento de la matriz es un filtro.
-   * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
-   * Una función: Una función que prueba una clave de cookie para detectar una coincidencia. La función debe tomar la clave de cookie como parámetro y devolver `true` si la prueba confirma una coincidencia.
+  * Cadena: La cadena se compara con la clave de la cookie.
+  * Matriz: cada elemento de la matriz es un filtro.
+  * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
+  * Una función: Una función que prueba una clave de cookie para detectar una coincidencia. La función debe tomar la clave de cookie como parámetro y devolver `true` si la prueba confirma una coincidencia.
 
 **Devuelve**
 
@@ -665,9 +666,9 @@ Crea una cookie de la clave y el valor dados y agrega la cookie al documento act
 * **valor:** Una cadena que contiene el valor de la cookie.
 * **options:** (opcional) un objeto que contiene cualquiera de las siguientes propiedades que configuran los atributos de la cookie:
 
-   * caduca: un valor `date` o `number` que especifica cuándo caduca la cookie. Un valor de fecha especifica la hora absoluta de caducidad. Un número (en días) establece la hora de caducidad para la hora actual más el número. El valor predeterminado es `undefined`.
-   * seguro: un valor `boolean` que especifica el atributo `Secure` de la cookie. El valor predeterminado es `false`.
-   * ruta: un valor `String` que usar como atributo `Path` de la cookie. El valor predeterminado es `undefined`.
+  * caduca: un valor `date` o `number` que especifica cuándo caduca la cookie. Un valor de fecha especifica la hora absoluta de caducidad. Un número (en días) establece la hora de caducidad para la hora actual más el número. El valor predeterminado es `undefined`.
+  * seguro: un valor `boolean` que especifica el atributo `Secure` de la cookie. El valor predeterminado es `false`.
+  * ruta: un valor `String` que usar como atributo `Path` de la cookie. El valor predeterminado es `undefined`.
 
 **Devuelve**
 

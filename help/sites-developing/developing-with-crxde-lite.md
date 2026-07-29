@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2053'
 ht-degree: 4%
 
 ---
@@ -28,7 +29,7 @@ Se recomienda CRXDE Lite cuando no tiene acceso directo al servidor de AEM. O bi
 >[!NOTE]
 >
 >A partir de AEM 6.5.5.0, el acceso anónimo de CRXDE Lite ya no es posible.
->Los usuarios se redirigen a la pantalla de inicio de sesión.
+>Los usuarios son redirigidos a la pantalla de inicio de sesión.
 
 
 >[!NOTE]
@@ -71,7 +72,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Panel de edición</td>
-   <td><p><strong>Página de inicio</strong>: le permite buscar contenido o documentación y acceder a recursos para desarrolladores (documentación, blog para desarrolladores, base de conocimiento) y asistencia (página de inicio y centro de asistencia de Adobe).<br /> </p> <p>Haga doble clic en un archivo en el panel <strong>Explorador</strong> para que pueda mostrar su contenido. Por ejemplo, un archivo .jsp o .java. A continuación, puede modificarla y guardar los cambios.</p> <p>Una vez editado un archivo en el panel <strong>Editar</strong>, las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar...</strong>: no buscar ni reemplazar.<br /> <br /> Al hacer doble clic en la línea de estado del panel <strong>Editar</strong>, se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda escribir un número de línea específico al que dirigirse.<br /> </td>
+   <td><p><strong>Página de inicio</strong>: le permite buscar contenido o documentación y acceder a recursos para desarrolladores (documentación, blog para desarrolladores, base de conocimiento) y asistencia (página de inicio y centro de asistencia de Adobe).<br /> </p> <p>Haga doble clic en un archivo en el panel <strong>Explorador</strong> para que pueda mostrar su contenido. Por ejemplo, un archivo .jsp o .java. A continuación, puede modificarla y guardar los cambios.</p> <p>Una vez editado un archivo en el panel <strong>Editar</strong>, las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en el árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar...</strong>: no buscar ni reemplazar.<br /> <br /> Al hacer doble clic en la línea de estado del panel <strong>Editar</strong>, se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda especificar un número de línea específico al que dirigirse.<br /> </td>
   </tr>
   <tr>
    <td>Pestaña Propiedades <br /> </td>

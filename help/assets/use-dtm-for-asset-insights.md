@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5c0bb817-28d5-47d4-bc4c-47aaa76a8421
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ Adobe Dynamic Tag Management es una herramienta que activa sus herramientas de m
 
 >[!CAUTION]
 >
->La DTM de Adobe está en desuso a favor de [!DNL Adobe Experience Platform] y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda [usar [!DNL Adobe Experience Platform] para las perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=es).
+>La DTM de Adobe está en desuso a favor de [!DNL Adobe Experience Platform] y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda [usar [!DNL Adobe Experience Platform] para las perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Siga estos pasos para habilitar Assets Insights mediante DTM.
 

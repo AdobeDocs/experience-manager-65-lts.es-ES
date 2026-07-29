@@ -1,5 +1,5 @@
 ---
-title: Tipos de módulos de IU de ContextHub de muestra
+title: Tipos de módulos de IU de muestra de ContextHub
 description: ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 523d8bf9-b925-4c09-8452-bb3a31489dd1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 0%
+source-wordcount: '1190'
+ht-degree: 2%
 
 ---
 
-# Tipos de módulos de IU de ContextHub de muestra {#sample-contexthub-ui-module-types}
+# Tipos de módulos de IU de muestra de ContextHub {#sample-contexthub-ui-module-types}
 
 ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones. Se proporciona la siguiente información:
 
@@ -54,20 +55,20 @@ Configure el módulo de la interfaz de usuario contexthub.base mediante un objet
 * **storeMapping:** una asignación de clave/almacén. Utilice la clave de las plantillas de Handlebar para acceder a los datos de tienda de ContextHub asociados.
 * **lista:** Una matriz de elementos que se mostrarán como una lista en una ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya popTemplate. El valor es una matriz de objetos con las siguientes claves:
 
-   * Título: el texto que se mostrará para este elemento
-   * image: (opcional) dirección URL de una imagen que se debe mostrar a la izquierda
-   * icon: (opcional) una clase de icono de CUI que se debe mostrar a la izquierda; se ignora si se especifica una imagen
-   * selected: (Opcional) un valor booleano que especifica si este elemento se debe mostrar como seleccionado (true=selected). De forma predeterminada, los elementos seleccionados aparecen en negrita. Usar una propiedad `listType` para configurar otras apariencias (ver a continuación).
+  * Título: el texto que se mostrará para este elemento
+  * image: (opcional) dirección URL de una imagen que se debe mostrar a la izquierda
+  * icon: (opcional) una clase de icono de CUI que se debe mostrar a la izquierda; se ignora si se especifica una imagen
+  * selected: (Opcional) un valor booleano que especifica si este elemento se debe mostrar como seleccionado (true=selected). De forma predeterminada, los elementos seleccionados aparecen en negrita. Usar una propiedad `listType` para configurar otras apariencias (ver a continuación).
 
 * **listType:** estilo que se va a usar para los elementos de la lista emergente. Utilice uno de los siguientes valores:
 
-   * marca de verificación
-   * casilla de verificación
-   * radio
+  * marca de verificación
+  * checkbox
+  * radio
 
 * **popoverTemplate:** Una plantilla Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo UI. Si incluye este elemento, no incluya el elemento `list`.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 El ejemplo siguiente configura un módulo de interfaz de usuario contexthub.base para mostrar información de un almacén de [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate). El elemento `template` muestra cómo obtener datos del almacén utilizando la clave que establece el elemento `storeMapping`.
 

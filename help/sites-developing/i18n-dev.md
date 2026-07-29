@@ -1,6 +1,6 @@
 ---
 title: Internacionalización de cadenas de IU
-description: Las API Java&trade; y JavaScript permiten internacionalizar cadenas
+description: Las API de Java&trade; y JavaScript permiten internacionalizar cadenas
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,8 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
