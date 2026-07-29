@@ -235,7 +235,7 @@ Para crear una carpeta, haga lo siguiente:
 
 Una vez creadas las carpetas de plantilla (ya sea mediante CRXDE o con el Explorador de configuración), se deben definir ACL para los grupos adecuados para las carpetas de plantilla para garantizar la seguridad adecuada.
 
-Las carpetas de plantillas para la implementación de referencia [`We.Retail` ](/help/sites-developing/we-retail.md) se pueden usar como ejemplo.
+Las carpetas de plantillas para la implementación de referencia [`We.Retail` &#x200B;](/help/sites-developing/we-retail.md) se pueden usar como ejemplo.
 
 #### El grupo de autores de plantillas {#the-template-authors-group}
 
