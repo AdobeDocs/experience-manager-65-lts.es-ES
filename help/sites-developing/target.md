@@ -198,7 +198,7 @@ El script JSP de este componente genera llamadas a la API de JavaScript de Targe
 
 El archivo mbox.js predeterminado que se usa para crear mboxes se encuentra en /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para utilizar un archivo mbox.js de cliente, agregue el archivo a la configuración de la nube de Target. Para agregar el archivo, el archivo mbox.js debe estar disponible en el sistema de archivos.
 
-Por ejemplo, si desea utilizar el [servicio Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html), debe descargar mbox.js para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) y [antes de la implementación](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
+Por ejemplo, si desea utilizar el [servicio Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es), debe descargar mbox.js para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=es) y [antes de la implementación](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=es).
 
 >[!NOTE]
 >
