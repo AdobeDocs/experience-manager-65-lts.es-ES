@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 3%
+source-wordcount: '1296'
+ht-degree: 4%
 
 ---
 
@@ -233,7 +234,7 @@ Por ejemplo, para deshabilitar el direccionamiento para los componentes de títu
 >
 >Si no utiliza la DTM, envía una confirmación de pedido a Adobe Target.
 
-Para realizar un seguimiento del rendimiento del sitio web, envíe información de compra desde la página de confirmación de pedido a Adobe Target. (Consulte [Crear un mbox de orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) y [Mbox de confirmación de pedido: añadir parámetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=es)) Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de mbox es `orderConfirmPage` y usa los siguientes nombres de parámetro específicos:
+Para realizar un seguimiento del rendimiento del sitio web, envíe información de compra desde la página de confirmación de pedido a Adobe Target. (Consulte [Crear un mbox de orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) y [mbox de confirmación de pedido: agregar parámetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de MBox es `orderConfirmPage` y utiliza los siguientes nombres de parámetro específicos:
 
 * productPurchasedId: Una lista de ID que identifican los productos comprados.
 * orderId: ID del pedido.
