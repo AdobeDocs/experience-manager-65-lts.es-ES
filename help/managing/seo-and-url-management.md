@@ -7,8 +7,8 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 100%
+source-wordcount: '3746'
+ht-degree: 98%
 
 ---
 
@@ -36,53 +36,53 @@ A continuación se ofrecen algunas sugerencias generales para crear las URL para
 
 * Utilice guiones para separar palabras.
 
-   * Nombre las páginas utilizando guiones (-) como separadores.
-   * Evite utilizar mayúsculas y minúsculas, guiones bajos y espacios.
+  * Nombre las páginas utilizando guiones (-) como separadores.
+  * Evite utilizar mayúsculas y minúsculas, guiones bajos y espacios.
 
 * Evite el uso de parámetros de consulta siempre que sea posible. Si es necesario, limítelos a dos o menos.
 
-   * Utilice la estructura de directorio para indicar la arquitectura de la información, cuando esté disponible.
-   * Si no se puede utilizar una estructura de directorio, utilice selectores de Sling en la URL, en lugar de cadenas de consulta. Además del valor SEO que proporcionan, los selectores de Sling también permiten que las páginas se puedan almacenar en caché en Dispatcher.
+  * Utilice la estructura de directorio para indicar la arquitectura de la información, cuando esté disponible.
+  * Si no se puede utilizar una estructura de directorio, utilice selectores de Sling en la URL, en lugar de cadenas de consulta. Además del valor SEO que proporcionan, los selectores de Sling también permiten que las páginas se puedan almacenar en caché en Dispatcher.
 
 * Cuanto más fácil de leer sea una URL para el ojo humano, mejor. Incluir palabras clave en la URL aumenta el valor.
 
-   * Si se utilizan selectores en una página, se prefieren los selectores que proporcionan un valor semántico.
-   * Si un ser humano no puede leer su URL, un motor de búsqueda tampoco podrá.
-   * Por ejemplo:
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
+  * Si se utilizan selectores en una página, se prefieren los selectores que proporcionan un valor semántico.
+  * Si un ser humano no puede leer su URL, un motor de búsqueda tampoco podrá.
+  * Por ejemplo:
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
 
 * Evite los subdominios siempre que sea posible, ya que los motores de búsqueda los tratarán como entidades diferentes, lo cual fragmentará el valor SEO del sitio.
 
-   * En su lugar, utilice subrutas de primer nivel. Por ejemplo, en lugar de `es.mybrand.com/home.html`, utilice `www.mybrand.com/es/home.html`.
+  * En su lugar, utilice subrutas de primer nivel. Por ejemplo, en lugar de `es.mybrand.com/home.html`, utilice `www.mybrand.com/es/home.html`.
 
-   * Planifique la jerarquía de contenido para que coincida con el modo en que se presentará el contenido siguiendo esta guía.
+  * Planifique la jerarquía de contenido para que coincida con el modo en que se presentará el contenido siguiendo esta guía.
 
 * La eficacia de las palabras clave en las URL disminuye a medida que aumenta la longitud de la URL y la posición de la palabra clave. En otras palabras, cuanto más corto, mejor.
 
-   * Utilice las técnicas y funciones para acortar URL de AEM para eliminar elementos innecesarios en la URL.
-   * Por ejemplo, `mybrand.com/en/myPage.html` se prefiere en lugar de `mybrand.com/content/my-brand/en/myPage.html`.
+  * Utilice las técnicas y funciones para acortar URL de AEM para eliminar elementos innecesarios en la URL.
+  * Por ejemplo, `mybrand.com/en/myPage.html` se prefiere en lugar de `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Utilice URL canónicas.
 
-   * Cuando se puede servir una URL desde diferentes rutas o con diferentes parámetros o selectores, asegúrese de utilizar una `rel=canonical` etiqueta en la página.
+  * Cuando se puede servir una URL desde diferentes rutas o con diferentes parámetros o selectores, asegúrese de utilizar una `rel=canonical` etiqueta en la página.
 
-   * Incluya direcciones URL canónicas en el código de la plantilla de AEM.
+  * Incluya direcciones URL canónicas en el código de la plantilla de AEM.
 
 * Haga coincidir las URL con los títulos de las páginas siempre que sea posible.
 
-   * Se debe alentar a los autores de contenido a que sigan esta práctica.
+  * Se debe alentar a los autores de contenido a que sigan esta práctica.
 
 * Admita la función de no distinguir mayúsculas de minúsculas en las solicitudes de URL.
 
-   * Configure Dispatcher para que vuelva a escribir todas las solicitudes entrantes en minúsculas.
-   * Capacite a los autores de contenido para crear todas las páginas con letras minúsculas.
+  * Configure Dispatcher para que vuelva a escribir todas las solicitudes entrantes en minúsculas.
+  * Capacite a los autores de contenido para crear todas las páginas con letras minúsculas.
 
 * Asegúrese de que cada página solo se proporcione desde un protocolo.
 
-   * A veces, los sitios se proporcionan desde `http` hasta que un usuario llega a una página con un formulario de cierre de compra o de inicio de sesión, por ejemplo, cuando cambia a `https`. Al establecer vínculos desde esta página, el usuario puede volver a las páginas de `http` y acceder a ellas a través de `https`, el motor de búsqueda las rastrea como dos páginas diferentes.
+  * A veces, los sitios se proporcionan desde `http` hasta que un usuario llega a una página con un formulario de cierre de compra o de inicio de sesión, por ejemplo, cuando cambia a `https`. Al establecer vínculos desde esta página, el usuario puede volver a las páginas de `http` y acceder a ellas a través de `https`, el motor de búsqueda las rastrea como dos páginas diferentes.
 
-   * Actualmente, Google prefiere las páginas `https` a las `http`. Ayudan a facilitar las cosas al servir el sitio completo a través de `https`.
+  * Actualmente, Google prefiere las páginas `https` a las `http`. Ayudan a facilitar las cosas al servir el sitio completo a través de `https`.
 
 ### Configuración de servidor {#server-configuration}
 
@@ -90,7 +90,7 @@ En cuanto a la configuración del servidor, puede realizar los siguientes pasos 
 
 * Utilice un archivo `robots.txt` para bloquear el rastreo de cualquier contenido que no se deba indexar.
 
-   * Bloquee **todo** el rastreo en los entornos de prueba.
+  * Bloquee **todo** el rastreo en los entornos de prueba.
 
 * Al lanzar un nuevo sitio con URL actualizadas, implemente redirecciones 301 para asegurarse de que no se pierda la clasificación SEO existente.
 * Incluya un icono de favoritos para el sitio.
@@ -220,7 +220,8 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 En una instalación estándar de AEM:
 
 * para la configuración OSGi
-  **Apache Sling Resource Resolver Factory**( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Fábrica de Apache Sling Resource Resolver**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propiedad
   **Ubicación de asignación** ( `resource.resolver.map.location`)
@@ -241,7 +242,7 @@ A continuación se muestra un ejemplo de cómo se produce este problema:
 
 1. Dispatcher almacena en la caché la respuesta en `/my-page.html` y le devuelve la respuesta al usuario.
 1. Un autor de contenido cambia esta página y la activa.
-1. El agente de vaciado de Dispatcher envía una solicitud de anulación para `/content/my-brand/my-page`**.** Dado que Dispatcher no tiene una página en caché en esta ruta, el contenido antiguo permanece en caché y queda obsoleto.
+1. El agente de vaciado de Dispatcher envía una solicitud de invalidación para `/content/my-brand/my-page`**.** Dado que Dispatcher no tiene una página en la caché en esta ruta, el contenido antiguo permanece en la caché y está obsoleto.
 
 Existen maneras de configurar reglas de vaciado de Dispatcher personalizadas que asignarán la URL más corta a la URL más larga para invalidar la caché.
 
@@ -249,7 +250,7 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
 
 1. **Reglas de SlingResourceResolver**
 
-   Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar la resolución de recursos de Sling:
+   Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
@@ -461,7 +462,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página.  Consulte la interfaz [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
+Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte la interfaz [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 
