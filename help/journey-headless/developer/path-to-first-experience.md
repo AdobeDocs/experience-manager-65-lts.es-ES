@@ -4,10 +4,11 @@ description: En esta parte del Recorrido para desarrolladores de AEM sin encabez
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 36a20b73-9277-4619-8103-80a3f900459d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 91%
+source-wordcount: '2023'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +36,7 @@ Este documento le ayudará a comprender los pasos necesarios para implementar su
 * Conocer qué herramientas y configuraciones de AEM son necesarias.
 * Conocer las prácticas recomendadas para que su recorrido sin encabezado sea fluido, mantenga la eficiencia de la generación de contenido y asegurarse de que el contenido se entregue rápidamente.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido para desarrolladores de AEM Headless, [Introducción a AEM Headless](getting-started.md), y de haber hecho lo siguiente:
 
@@ -106,8 +107,8 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Si tiene restricciones de acceso, intente alinear su modelo de contenido con los requisitos de acceso.
 * Cuando tiene requisitos de acceso, deben dirigir su jerarquía de contenido. Agrupe el contenido que edita el mismo grupo de personas.
 * Agrupe contenido similar en una carpeta.
-   * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
-   * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
+  * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
+  * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
 * La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. Entonces el profesional no tiene que elegir una ubicación, solo necesita proporcionar un nombre para comenzar a editar la referencia nueva.
 
 ### Creación de contenido {#authoring}

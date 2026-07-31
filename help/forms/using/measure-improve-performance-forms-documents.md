@@ -8,9 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c99920d-d424-4a69-b7cc-a5e99257c923
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1295'
 ht-degree: 94%
 
 ---
@@ -37,7 +38,7 @@ AEM Forms se integra con las soluciones de [Adobe Marketing Cloud](https://ww
 
 Vamos a ver con más detalle cómo medir el rendimiento y mejorar las tasas de conversión de los formularios.
 
-### Audiencia objetivo {#target-audience}
+### Público destinatario {#target-audience}
 
 * Usuarios y analistas empresariales responsables de las estrategias de marketing y éxito
 * Personal de TI encargado de la configuración y el mantenimiento de la infraestructura y las soluciones
@@ -65,7 +66,7 @@ Para obtener información más detallada sobre las interacciones de los clientes
 1. Cree la configuración de Cloud Service en AEM.
 1. Cree el marco de Cloud Service en AEM.
 1. Configure el servicio de configuración de AEM Forms Analytics en AEM.
-1. Active el análisis en el formulario de AEM.
+1. Habilite el análisis en el formulario de AEM.
 
 Para ver los pasos detallados, consulte [Configuración de análisis e informes para formularios adaptables](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -75,9 +76,9 @@ Para crear y ejecutar pruebas A/B en los formularios adaptables, configure Targe
 
 #### Paso 2: Ver el informe de análisis {#step-view-analytics-report-br}
 
-A medida que sus clientes acceden a los formularios en los que ha activado Analytics e interactúan con ellos, sus interacciones se capturan en bases de datos de Analytics de alta seguridad. Los clientes segmentan las bases de datos, y es posible acceder a ellas a través de conexiones seguras.
+A medida que sus clientes acceden a los formularios en los que ha habilitado Analytics e interactúan con ellos, sus interacciones se capturan en bases de datos de Analytics de alta seguridad. Los clientes segmentan las bases de datos, y es posible acceder a ellas a través de conexiones seguras.
 
-Puede ver los informes de los formularios en los que ha activado el análisis y analizar los datos en AEM. Para ver el informe:
+Puede ver los informes de los formularios en los que ha habilitado el análisis y analizar los datos en AEM. Para ver el informe:
 
 1. En el servidor de AEM, vaya a **Forms > Formularios y documentos**.
 1. Seleccione el formulario en el que desea realizar el informe de análisis.
