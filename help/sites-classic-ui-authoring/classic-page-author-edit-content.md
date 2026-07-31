@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: be81e33d-8e37-4a57-bcc1-78e968c64641
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
+source-wordcount: '1843'
+ht-degree: 19%
 
 ---
 
@@ -28,7 +29,7 @@ El contenido se añade empleando los [componentes](/help/sites-classic-ui-author
 >
 >Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
 
-## Sidekick {#sidekick}
+## Barra de tareas {#sidekick}
 
 La barra de tareas es una herramienta clave al crear páginas. Flota al crear una página, por lo que siempre es visible.
 
@@ -41,7 +42,7 @@ Hay varias pestañas e iconos disponibles, entre ellos:
 * Flujo de trabajo
 * Modos
 * Andamiaje
-* Client Context
+* Contexto de cliente
 * Sitios web
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
@@ -120,7 +121,7 @@ Para editar un párrafo existente, realice una de las siguientes acciones:
 
 * **Haga clic con el botón derecho** en el párrafo y haga clic en **Editar**.
 
-* **Haga clic** dos veces en el párrafo (un doble clic lento) para entrar al modo de edición local. Podrá editar directamente el texto de la página, en lugar de hacerlo desde una ventana de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y se guardarán automáticamente.
+* **Haga clic** dos veces en el párrafo (un doble clic lento) para entrar al modo de edición local. Podrá editar directamente el texto de la página, en lugar de hacerlo dentro de la ventana de un cuadro de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y estos se guardarán automáticamente.
 
 ## Mover un componente {#moving-a-component}
 
@@ -225,7 +226,7 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
 Para ediciones a mayor escala de la misma frase, una opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** le permite buscar y reemplazar varias instancias de una cadena, dentro de una sección del sitio web.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página {#locking-a-page}
 
 AEM le permite bloquear páginas para que nadie más pueda cambiar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
 
@@ -303,4 +304,4 @@ Los campos de formulario que representan los componentes de formulario no están
 
 >[!NOTE]
 >
->Se requieren permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.
+>Se necesitan permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.

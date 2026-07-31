@@ -1,17 +1,18 @@
 ---
-title: Recorrido para desarrolladores de AEM sin encabezado
+title: Recorrido para desarrolladores de AEM headless
 description: Documentación de CMS de AEM sin encabezado. Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus funcionalidades y cómo utilizarlas en su primer proyecto de desarrollo.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1425c1b4-3c47-47ff-b2ef-408e889ddb34
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 74%
+source-wordcount: '1248'
+ht-degree: 75%
 
 ---
 
-# Recorrido para desarrolladores de AEM sin encabezado {#aem-headless-developer-journey}
+# Recorrido para desarrolladores de AEM headless {#aem-headless-developer-journey}
 
 Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus funcionalidades y cómo utilizarlas en su primer proyecto de desarrollo sin encabezado. Este recorrido le proporciona toda la documentación sin encabezado de AEM que necesita para desarrollar su primera aplicación sin encabezado.
 
@@ -37,7 +38,7 @@ Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin en
 >
 >Si prefiere **aprender haciendo** y tiene interés por la tecnología, visite los tutoriales de AEM sin encabezado, que están organizados por API y marco de trabajo y están disponibles en la sección [Recursos adicionales](#additional-resources) al final de este documento.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el desarrollador y expone los requisitos, pasos y enfoque de un proyecto de AEM sin encabezado desde la perspectiva del desarrollador. El recorrido define las personas adicionales con las que el desarrollador debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el del desarrollador.
 
@@ -45,7 +46,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 
 | Grupo de usuarios | Descripción | Función en este recorrido |
 |---|---|---|
-| Desarrollador (audiencia de destino) | Tiene experiencia en el desarrollo de aplicaciones sin encabezado que consumen contenido de diferentes fuentes | Audiencia de destino de este recorrido |
+| Desarrollador (público destinatario) | Tiene experiencia en el desarrollo de aplicaciones sin encabezado que consumen contenido de diferentes fuentes | Público destinatario de este recorrido |
 | Autor de contenido | Crea y gestiona contenido que se suministra sin encabezado | Los autores de contenido crean contenido que el desarrollador entrega sin encabezado. |
 | Administrador | Gestiona la configuración base de AEM | El desarrollador trabaja con el administrador para realizar los cambios de configuración necesarios para el desarrollo. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin encabezado y define la estructura de estos datos | Los desarrolladores trabajan con el arquitecto de contenido para comprender la estructura de los datos y los requisitos para ofrecerlos sin encabezado. |
@@ -62,7 +63,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 |---|---|---|
 | 0 | Recorrido para desarrolladores de AEM sin encabezado | Este documento |
 | 1 | [Obtenga información acerca del desarrollo sin encabezado de CMS](learn-about.md) | Obtenga información sobre la tecnología sin encabezado y cuándo utilizarla. |
-| 2 | [Introducción a AEM Headless](getting-started.md) | Aprenda sobre los requisitos previos de AEM sin encabezado |
+| 2 | [Introducción a AEM sin encabezado](getting-started.md) | Aprenda sobre los requisitos previos de AEM sin encabezado |
 | 3 | [Ruta hacia la primera experiencia al usar AEM sin encabezado](path-to-first-experience.md) | Configurar su entorno de desarrollo y aprender a integrar una aplicación sencilla con AEM sin encabezado |
 | 4 | [Cómo modelar el contenido](model-your-content.md) | Aprenda a modelar la estructura de contenido. A continuación, observe esa estructura para Adobe Experience Manager (AEM) mediante los modelos de fragmentos de contenido y los fragmentos de contenido, para reutilizarla en todos los canales. |
 | 5 | [Cómo acceder al contenido a través de las API de entrega de AEM](access-your-content.md) | Aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido. |
@@ -94,6 +95,6 @@ Como tal, los recorridos están diseñados para mantenerse por sí mismos. Sin e
 * [Recorrido para arquitectos Headless](/help/journey-headless/architect/overview.md): Empiece aquí para ver una introducción a las potentes y flexibles funciones headless de Adobe Experience Manager y cómo diseñar contenido para su proyecto.
 * [Documentación técnica de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es): si ya tiene una comprensión sólida de las tecnologías AEM y sin encabezado, puede que desee consultar directamente nuestros documentos técnicos detallados.
 
-   * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+  * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

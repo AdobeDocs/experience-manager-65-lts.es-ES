@@ -4,10 +4,11 @@ description: En esta parte del Recorrido para desarrolladores de AEM sin encabez
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 36a20b73-9277-4619-8103-80a3f900459d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 91%
+source-wordcount: '2023'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +36,7 @@ Este documento le ayudará a comprender los pasos necesarios para implementar su
 * Conocer qué herramientas y configuraciones de AEM son necesarias.
 * Conocer las prácticas recomendadas para que su recorrido sin encabezado sea fluido, mantenga la eficiencia de la generación de contenido y asegurarse de que el contenido se entregue rápidamente.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido para desarrolladores de AEM Headless, [Introducción a AEM Headless](getting-started.md), y de haber hecho lo siguiente:
 
@@ -106,8 +107,8 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Si tiene restricciones de acceso, intente alinear su modelo de contenido con los requisitos de acceso.
 * Cuando tiene requisitos de acceso, deben dirigir su jerarquía de contenido. Agrupe el contenido que edita el mismo grupo de personas.
 * Agrupe contenido similar en una carpeta.
-   * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
-   * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
+  * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
+  * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
 * La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. Entonces el profesional no tiene que elegir una ubicación, solo necesita proporcionar un nombre para comenzar a editar la referencia nueva.
 
 ### Creación de contenido {#authoring}
@@ -147,7 +148,7 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece una amplia descripción de la tecnología sin encabezado, cómo sirve AEM el contenido sin encabezado y cómo puede traducirlo.
 * [Desarrollo sin encabezado para AEM Sites](/help/sites-developing/headless/introduction.md): una introducción rápida para orientar al desarrollador sin encabezado de AEM con las características necesarias
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
-* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/es?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
+* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
 * [Guía de introducción sin encabezado](/help/sites-developing/headless/introduction.md#getting-started): Una introducción rápida a las funciones sin encabezado de AEM para usuarios que ya conocen AEM.
 * [Crear modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
