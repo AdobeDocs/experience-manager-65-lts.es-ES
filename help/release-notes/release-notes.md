@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
+source-git-commit: d61a24e1d493063283466b3a769eee14649282e6
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 95%
+source-wordcount: '7783'
+ht-degree: 90%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 [!DNL Experience Manager] 6.5 LTS, SP2 incluye nuevas funciones, mejoras clave solicitadas por el cliente y correcciones de errores. También incluye mejoras de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad inicial de 6.5 LTS en marzo de 2025. [Instale este Service Pack](#install-update) en 6.5 LTS.
 
-## Función principal y mejora
+## Funciones y mejoras clave
 
 **AEM Sites**
 
@@ -53,7 +53,7 @@ AEM 6.5 LTS SP2 ahora incluye OpenAPI para [administración de modelos y fragmen
 
 * Experiencia del usuario mejorada en el editor de reglas visuales. Esta actualización incluye lo siguiente:
 
-  * Volver a cargar automáticamente la vista de resumen después de guardar para mostrar el estado actualizado de la regla
+  * Para mostrar el estado actualizado de la regla, la vista de resumen se vuelve a cargar automáticamente después de guardarla
 
   * Mostrar los botones “Añadir”/“Eliminar” y permitir alternarlos, en lugar de ocultarlos
 
@@ -63,7 +63,7 @@ AEM 6.5 LTS SP2 ahora incluye OpenAPI para [administración de modelos y fragmen
 
 * Se ha añadido compatibilidad de la notación de objetos de JavaScript (JSON) con etiquetas de espacio de nombres en formularios adaptables. Esta mejora permite a los usuarios gestionar las estructuras de datos JSON de forma más eficaz, lo que mejora la integración de datos y las capacidades de procesamiento. (FORMS-22519)
 
-* Se ha añadido el botón Descargar documento de registro (DoR) / Envío de formularios como opción predeterminada en el editor de reglas. Esta optimización permite a los clientes utilizar la función downloadDoR sin escribir código personalizado, lo que mejora la facilidad de uso y la eficacia. (FORMS-21263)
+* Se ha añadido la opción Descargar documento de registro (DoR) / Envío de formulario como botón estándar en el editor de reglas. Esta optimización permite a los clientes utilizar la función downloadDoR sin escribir código personalizado, lo que mejora la facilidad de uso y la eficacia. (FORMS-21263)
 
 * Se ha añadido compatibilidad de la notación de objetos de JavaScript (JSON) con etiquetas de espacio de nombres en formularios adaptables. Esta optimización permite a los usuarios rellenar previamente los formularios de forma más precisa y eficaz, lo que mejora la integración de los datos y reduce los errores de entrada manual. (FORMS-10883)
 
@@ -77,7 +77,7 @@ AEM 6.5 LTS SP2 ahora incluye OpenAPI para [administración de modelos y fragmen
 
 * El componente Texto perdía el enfoque del teclado cuando los autores pasaban el ratón por los elementos del Explorador de componentes durante la edición. Esto interrumpía la escritura y activaba un error de accesibilidad en WCAG 3.2.1. La corrección evita que el estilo de desplazamiento desplace el enfoque y mantiene el componente Texto enfocado durante la interacción del Explorador de componentes. (SITES-35370)
 * Se ha corregido la administración de enfoque en el campo de texto enriquecido Descripción, que bloqueaba la navegación hacia delante con el tabulador. Los usuarios se quedaban atascados en el RTE porque el componente dependía de un comando de teclado no estándar para cambiar el enfoque, lo que interrumpía la navegación esperada en el cuadro de diálogo. El cambio aplica la interacción estándar con el teclado y conserva la secuenciación lógica de tabulación en todo el cuadro de diálogo. (SITES-35228)
-* Se ha corregido un problema en el editor de Sites que interrumpía el comportamiento esperado durante la creación de la página y provocaba una interacción incoherente del componente. Los autores experimentaban respuestas de IU poco fiables que interferían con las tareas de edición estándar y reducían la eficacia del flujo de trabajo. La actualización perfecciona la lógica del editor subyacente y restaura una interacción estable y predecible entre los componentes afectados. (SITES-35227)
+* Se ha corregido un problema en el editor de Sites que interrumpía el comportamiento esperado durante la creación de la página y provocaba una interacción incoherente del componente. Los autores experimentaban respuestas de IU poco fiables que interferían con las tareas de edición estándar y reducían la eficacia del flujo de trabajo. La actualización mejora la lógica del editor y restaura una interacción estable y predecible entre los componentes afectados. (SITES-35227)
 * Una regresión bloqueaba el selector de recursos en el editor de páginas e impedía que se cargara en escenarios específicos de edición de páginas. Los creadores ahora pueden abrir y utilizar el selector de recursos con normalidad al elegir o examinar los recursos mientras editan una página. Este cambio restaura el acceso coherente a los flujos de trabajo de selección de recursos que interrumpían los errores de carga. (SITES-35226)
 * Se ha eliminado un problema en el editor de Sites que provocaba un comportamiento incoherente durante la interacción de la página y afectaba a los flujos de trabajo de creación estándar. El defecto provocaba respuestas de IU inesperadas que interferían con la configuración del componente y las actualizaciones de contenido. La actualización estabiliza la funcionalidad afectada y restaura la ejecución fiable de las acciones de edición en todas las páginas. (SITES-35225)
 * Se ha eliminado un defecto en la interfaz de creación con Sites que provocaba un comportamiento incoherente durante la edición de la página y afectaba a los flujos de trabajo normales. Los autores experimentaban respuestas de IU inesperadas que interferían con la interacción de los componentes y las actualizaciones de contenido. La actualización estabiliza la funcionalidad afectada y restaura un comportamiento fiable y predecible en los escenarios de edición. (SITES-35224)
@@ -100,8 +100,8 @@ AEM 6.5 LTS SP2 ahora incluye OpenAPI para [administración de modelos y fragmen
 * Se han corregido problemas de diseño modal de búsqueda con una anchura de 320 píxeles. El contenido modal ahora se refleja claramente y evita la superposición con el directorio del árbol. Los usuarios pueden ver los resultados y navegar por el directorio sin controles ocultos. (SITES-25246)
 * El texto modal de búsqueda ya no se recorta después de aumentar el espaciado del texto. El diseño del directorio de árbol ahora mantiene una separación clara, por lo que las etiquetas y las entradas permanecen legibles. Los usuarios ahora pueden completar la búsqueda y la navegación sin superposición ni texto de corte. (SITES-25245)
 * Al activar Anotar, ahora se mueve el enfoque del teclado al contenido de la anotación, no al botón Salir de anotación. El orden de tabulación sigue una secuencia lógica y mantiene accesibles los controles relacionados sin navegación inversa. (SITES-25241)
-* A los vínculos Establecer fecha y Salir de Deformación de tiempo les faltaba un indicador de enfoque visible durante la navegación con teclado. La IU ahora representa un estilo de enfoque distinto y de alto contraste para que los usuarios puedan identificar el vínculo activo de un vistazo. (SITES-25232)
-* El encabezado Modal del teaser ya no impide que los usuarios de teclado muevan el cuadro de diálogo. Los controles de teclado ahora permiten las acciones de recoger, mover y soltar, lo que mejora la facilidad de uso del lector de pantalla y la operabilidad general. (SITES-25226)
+* A los vínculos Establecer fecha y Salir de Deformación de tiempo les faltaba un indicador de enfoque visible durante la navegación con teclado. La interfaz de usuario ahora representa un estilo de enfoque distinto y de alto contraste para que los usuarios puedan identificar fácilmente el vínculo activo. (SITES-25232)
+* El encabezado Modal del teaser ya no impide que los usuarios de teclado muevan el cuadro de diálogo. Los controles de teclado ahora permiten las acciones de seleccionar, mover y soltar, lo que mejora la facilidad de uso del lector de pantalla y la operabilidad general. (SITES-25226)
 * AEM ahora utiliza una etiqueta accesible significativa para el botón Información de modal del teaser. Los lectores de pantalla anuncian un nombre de acción claro, en lugar de la cadena de texto alternativo predeterminada del icono. (SITES-25223)
 * Los lectores de pantalla ahora anuncian la acción correcta cuando los usuarios activan el botón Editar. NVDA ya no informa de “Previsualizar botón pulsado”, lo que provocaba comentarios engañosos y confusión durante la navegación con teclado. (SITES-25208)
 * Al expandir el carril izquierdo, ahora se mueve el enfoque del teclado al primer control del carril izquierdo. La secuencia de tabulación ya no salta a la barra de herramientas secundaria ni llega a la lista intermedia, por lo que los usuarios del teclado pueden llegar al contenido del carril izquierdo sin navegación inversa. (SITES-24998)
@@ -144,7 +144,7 @@ La compatibilidad con eventos headless carecía de los eventos OSGi necesarios p
 
 #### [!DNL Content Fragments]: administración{#sites-admin-65-lts-sp2}
 
-* Se ha ajustado la administración de componentes en la interfaz de creación de Sites para detener el comportamiento irregular durante las actualizaciones de página. El defecto provocaba respuestas impredecibles del editor, que interferían con las modificaciones rutinarias del contenido y reducían la eficacia del flujo de trabajo. La actualización alinea la lógica del editor con los patrones de interacción esperados y ofrece un rendimiento fiable durante las actividades de creación. (SITES-35078) CRÍTICO
+* Se ha ajustado la administración de componentes en la interfaz de creación de Sites para detener el comportamiento irregular durante las actualizaciones de página. El defecto provocaba respuestas impredecibles del editor, que interferían con las modificaciones rutinarias del contenido y reducían la eficacia del flujo de trabajo. La actualización alinea la lógica del editor con los patrones de interacción esperados y proporciona un rendimiento fiable durante las actividades de creación. (SITES-35078) CRÍTICO
 
 * Una regresión interrumpía la vista de lista de la consola de Assets para los fragmentos de contenido y activaba un error durante el procesamiento de la lista. La actualización corrige la lógica de vista de lista después de la eliminación de información de previsualización y restaura una salida de lista estable. La consola ahora muestra los fragmentos de contenido sin errores y mantiene las interacciones de lista utilizables. (SITES-38683)
 * El Editor de fragmentos de contenido ahora localiza la etiqueta Etiquetas. El editor también localiza la etiqueta Colecciones, de modo que el texto de la IU coincide con la configuración regional seleccionada. (SITES-977)
@@ -157,7 +157,7 @@ La compatibilidad con eventos headless carecía de los eventos OSGi necesarios p
 
 * El RTE de fragmentos de contenido mostraba problemas visuales y de diseño después de los cambios recientes en el estilo de la IU. Service Pack 2 mejora el estilo del RTE para que la barra de herramientas y el área editable se procesen correctamente y sean legibles. El Editor de fragmentos de contenido ahora se alinea con la apariencia y el comportamiento del Editor de páginas. (SITES-38684)
 * Al eliminar los ámbitos de IMS del Selector de recursos de Polaris, se interrumpía la integración del fragmento de contenido con el punto final de entrega. Los autores experimentaban errores al abrir el selector de recursos remotos y seleccionar recursos. La actualización vuelve a añadir los ámbitos de IMS necesarios y restaura el acceso estable en el nivel de entrega. (SITES-35837)
-* El panel Contenido asociado ya no procesa un marcador de posición &quot;indefinido&quot; codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto traducido de la interfaz de usuario. (SITES-33675)
+* El panel de contenido asociado ya no procesa un marcador de posición “indefinido” codificado. El Editor de fragmentos de contenido ahora resuelve ese texto mediante recursos de localización, de modo que los editores ven el texto de la IU traducido. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * El Editor de fragmentos de contenido ahora muestra una etiqueta de pestaña General traducida en todas las configuraciones regionales. El editor reemplaza el texto de pestañas no localizado y elimina los ID internos de los títulos de las pestañas. (SITES-30715)
 * El Editor de fragmentos de contenido ahora muestra los nombres traducidos para los tipos de recursos permitidos. La lista de selección ya no combina cadenas internas y etiquetas de solo inglés cuando los autores configuran restricciones de referencia de contenido. (SITES-29699)
@@ -209,15 +209,15 @@ Un error en el conmutador de funciones informaba de forma errónea sobre el esta
 #### Lanzamientos{#sites-launches-65-lts-sp2}
 
 * La cronología de Sites mostraba texto en inglés codificado durante la promoción de Lanzamiento: “Versión creada ... antes de promocionar el lanzamiento”. La actualización reemplaza la cadena codificada por la gestión de mensajes localizados. La cronología ahora muestra texto localizado y alinea la entrada con el comportamiento de localización estándar de AEM. (SITES-39157)
-* El ámbito de la promoción de Lanzamiento se desviaba cuando los autores promocionaban una subsección mediante Promocionar la página actual y sus páginas secundarias. AEM también promocionaba páginas no relacionadas y provocaba modificaciones inesperadas en el sitio en directo. La corrección corrige el cálculo del ámbito de Lanzamiento de modo que solo se promocione el subárbol seleccionado. (SITES-38315)
+* El ámbito de la promoción de Lanzamiento se desviaba cuando los autores promocionaban una subsección mediante Promocionar la página actual y sus páginas secundarias. AEM también promocionaba páginas no relacionadas y provocaba modificaciones inesperadas en el sitio en directo. La corrección corrige el cálculo del ámbito de Launch de modo que solo se promocione el subárbol seleccionado. (SITES-38315)
 * Los fragmentos de contenido dentro de los lanzamientos no participaron en el índice `damAssetLucene`, y los resultados de búsqueda y la eficacia de las consultas eran limitados. Este cambio añade las rutas de fragmentos de contenido de Lanzamiento a la definición del índice. Las consultas personalizadas y de búsqueda ahora encuentran fragmentos de contenido en `/content/launches`. (SITES-35634)
 * La IU de lanzamientos mostraba controles de Lanzamiento de fragmentos de contenido aunque el producto no muestre Lanzamientos de fragmentos de contenido en la IU táctil. Este cambio elimina las rutas de código de Lanzamiento de fragmentos de contenido de cq-launches-content y ajusta el filtrado de listas de Lanzamiento. Los autores ahora ven opciones de Lanzamiento de página coherentes sin entradas de Lanzamiento de fragmentos de contenido. (SITES-35633)
 * Inicio rápido de AEM 6.5 LTS carecía de los paquetes de lanzamientos y requisitos previos necesarios, lo que bloqueaba la habilitación de OpenAPI de Lanzamientos. La actualización incorpora paquetes de Lanzamientos y dependencias requeridas, como compatibilidad con métricas, actualizaciones de DAM-cfm y configuración de colas. Las API de Lanzamiento ahora se ejecutan en inicio rápido de 6.5 LTS con los componentes de tiempo de ejecución necesarios presentes. (SITES-35297)
-* El empaquetado de Lanzamientos de CF incluía nuevas versiones de dependencias y bibliotecas de GraphQL innecesarias, lo que complicaba la integración de AEM 6.5 LTS. Este cambio alinea las versiones de dependencias con la línea de base de AEM 6.5 LTS y elimina las dependencias de GraphQL no utilizadas. La resolución del paquete ahora permanece coherente y el inicio de los Lanzamientos de CF permanece estable. (SITES-35295)
-* Lanzamientos de AEM ahora ejecuta una canalización Jenkins exclusiva para la rama 6.5 LTS. La canalización se ejecuta todas las noches y genera y envía alertas de error por correo electrónico. Esta configuración aumenta la cobertura de las pruebas y detecta las regresiones de forma temprana. (SITES-35293)
+* El empaquetado de los lanzamientos de fragmentos de contenido extrajo versiones más nuevas de dependencias y bibliotecas de GraphQL innecesarias, lo que complicó la integración de AEM 6.5 LTS. Este cambio alinea las versiones de dependencias con la línea de base de AEM 6.5 LTS y elimina las dependencias de GraphQL no utilizadas. La resolución del paquete ahora permanece coherente y el inicio de los lanzamientos de fragmentos de contenido permanece estable. (SITES-35295)
+* Lanzamientos de AEM ahora ejecuta una canalización Jenkins exclusiva para la rama 6.5 LTS. La canalización se ejecuta todas las noches y genera y envía alertas de error por correo electrónico. Esta configuración aumenta la cobertura de las pruebas e identifica las regresiones de forma temprana. (SITES-35293)
 * AEM 6.5 LTS ahora envía un paquete de API de Lanzamiento actualizado con las versiones de artefactos alineadas. El paquete rastrea la línea de código principal mientras mantiene la versión correcta de la versión 6.5 LTS. Esta actualización estabiliza el consumo de la API de Lanzamientos en la pila de 6.5 LTS. (SITES-35292)
 * AEM 6.5 LTS ahora incluye un paquete launches-core actualizado con las versiones de dependencia alineadas. La actualización añade la administración de launches-core para los tipos de datos UUID de fragmento y UUID de referencia. El procesamiento de Lanzamiento ahora mantiene un comportamiento coherente en los flujos de trabajo de Lanzamientos y Fragmentos de contenido. (SITES-35290)
-* Se ha refinado el editor de Sites para resolver comportamientos incoherentes que interrumpían los flujos de trabajo normales de creación de páginas. Los autores se encontraban con una interacción de componentes inesperada que interfería con las actualizaciones de contenido y reducía la fiabilidad de la edición. El cambio restaura la administración coherente del estado de la IU y garantiza la ejecución predecible de las acciones de creación en los escenarios afectados. (SITES-35138)
+* Para resolver comportamientos incoherentes que interrumpían los flujos de trabajo normales de creación de páginas, se refinó el editor de Sites. Los autores se encontraban con una interacción de componentes inesperada que interfería con las actualizaciones de contenido y reducía la fiabilidad de la edición. El cambio restaura la administración coherente del estado de la IU y garantiza la ejecución predecible de las acciones de creación en los escenarios afectados. (SITES-35138)
 * La edición de Lanzamientos ahora muestra texto de error localizado, en lugar de la cadena codificada `Provided path is not a launch`. La IU ahora procesa la mensajería traducida en varios idiomas cuando Editar recibe una ruta de lanzamiento no válida. (SITES-33360)
 * AEM 6.5 LTS ahora incluye el trabajo de puerto lateral de OpenAPI de Lanzamientos. La actualización iguala los paquetes de API de Lanzamientos, los paquetes de contenido y los artefactos de inicio rápido necesarios, además de habilitar los escenarios de OpenAPI de Lanzamientos de fragmentos de contenido con validación de CI estable. (SITES-32050)
 * La IU de Lanzamientos ahora localiza la etiqueta Plantilla anulada. Los detalles de anulación de la plantilla ahora muestran el texto traducido, en lugar de una cadena solo en inglés. (SITES-29525)
@@ -253,7 +253,7 @@ El texto de estado de la plantilla se mostraba en vertical en **Herramientas** >
 
 ### [!DNL Assets]{#assets-65-lts-sp2}
 
-Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacios. La lógica de cliente de Relacionar actualizada ahora gestiona correctamente las rutas que contienen espacios y evita errores de origen `undefined` durante la selección de la relación. El cuadro de diálogo Relacionar ahora se abre y guarda las relaciones sin bloqueos de IU ni indicadores de carga. Los usuarios de DAM pueden relacionar, derivar y desrelacionar recursos sin cambiar el nombre de los archivos. (ASSETS-56418)
+Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacios. La lógica de cliente de Relacionar actualizada ahora gestiona correctamente las rutas que contienen espacios y evita errores de origen `undefined` durante la selección de la relación. El cuadro de diálogo Relacionar ahora se abre y guarda las relaciones sin bloqueos de IU ni indicadores de carga. Los usuarios de DAM pueden crear, derivar y eliminar relaciones de recursos sin cambiar el nombre de los archivos. (ASSETS-56418)
 
 #### [!DNL Dynamic Media]{#assets-dm-65-lts-sp2}
 
@@ -275,12 +275,12 @@ Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacio
 * Los usuarios experimentaban problemas de accesibilidad con el documento de registro (DoR)/PDF de envío, en los que los campos de formulario vacíos no se etiquetaban como elementos de formulario. Esto causaba dificultades para los lectores de pantalla, lo que afectaba a la capacidad de los usuarios con discapacidades a la hora de navegar y completar formularios de forma eficaz. (FORMS-21989)
 * Los usuarios experimentaban un problema por el que las notas al pie de los componentes dentro de un subpanel no se mostraban durante la carga del formulario. Esto ocurría cuando el elemento con la nota al pie era el último componente de la página. (FORMS-21925)
 * Los usuarios experimentaban problemas al seleccionar componentes en el editor de AEM Forms. Al navegar entre pestañas y volver a la primera, algunos contenedores se volvían inseleccionables, lo que impedía una fácil identificación e interacción. (FORMS-21814)
-* Los usuarios experimentaban una vulnerabilidad de seguridad en el panel de formularios adaptables. En concreto, se identificó un problema de ejecución de scripts en sitios múltiples (XSS) en el archivo startpointcontrol.js, que podía llegar a permitir la ejecución de scripts malintencionados. (FORMS-20679)
+* Los usuarios experimentaban una vulnerabilidad de seguridad en el panel de formularios adaptables. Específicamente, se identificó un problema de ejecución de scripts en sitios múltiples (XSS) en el archivo startpointcontrol.js, que permite ejecutar scripts malintencionados. (FORMS-20679)
 * En implementaciones de clúster LTS de AEM Forms 6.5 en JBoss® EAP 8, los archivos `domain/configuration/domain_oracle.xml`, `domain_mysql.xml` y `domain_mssql.xml` ya no contienen una etiqueta `<security>` duplicada que producía un XML no válido e impedía que se iniciara el controlador de dominio. (FORMS-24687)
-* En el modo llave en mano, la actualización del puerto de base de datos ahora se aplica correctamente durante la instalación nueva y la actualización. En el modo de instalación nueva, los usuarios pueden seleccionar entre todos los puertos disponibles y, en el modo de actualización, se hace referencia correctamente al puerto de base de datos actualizado en lc_turnkey.xml durante el proceso de actualización. (FORMS-24689)
-* Al configurar JBoss® EAP 8.0 en Linux®, los scripts de shell modificados en Windows ya no causan errores `/bin/sh^M: bad interpreter or $'\r': command not found` por los extremos de línea CRLF. (FORMS-24688)
+* En el modo llave en mano, la actualización del puerto de base de datos ahora se aplica correctamente durante la instalación nueva y la actualización. En el modo de instalación nueva, los usuarios seleccionan entre todos los puertos disponibles y, en el modo de actualización, se hace referencia correctamente al puerto de base de datos actualizado en lc_turnkey.xml durante la actualización. (FORMS-24689)
+* Al configurar JBoss® EAP 8.0 en Linux®, los scripts de shell modificados en Windows ya no causan /bin/sh^M: intérprete incorrecto o $&#39;\r&#39;: el comando no encontró errores debido a los extremos de la línea CRLF. (FORMS-24688)
 * En implementaciones de Forms JEE LTS que se ejecutan en JBoss® EAP 8, la IU de Extensiones de Reader puede fallar con un error interno del servidor. (FORMS-24894)
-* En Linux®, los usuarios experimentaban problemas de tiempo de ejecución o implementación cuando el Administrador de configuración JEE LTS de Forms se ejecutaba con un valor `OSFileSetIntendedFor` no establecido o incorrecto en `configurationManager/config/solcomp/LFS_Foundation.properties`, lo que impedía que la configuración se adaptara correctamente para Linux®. Después de la instalación y antes de ejecutar Configuration Manager, establezca `OSFileSetIntendedFor=Linux` en ese archivo. (FORMS-24741)
+* En Linux®, los usuarios experimentaban problemas de tiempo de ejecución o implementación cuando el Administrador de configuración JEE LTS de Forms se ejecutaba con un `OSFileSetIntendedFor` sin configurar o incorrecto. Establezca el valor en `configurationManager/config/solcomp/LFS_Foundation.properties`, lo que impide que la configuración se ajuste correctamente a Linux®. Después de la instalación y antes de ejecutar Configuration Manager, establezca `OSFileSetIntendedFor=Linux` en ese archivo. (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -308,7 +308,7 @@ Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacio
 #### Apache Felix {#foundation-apachefelix-65-lts-sp2}
 
 * La seguridad de acceso a recursos de Sling ahora se ejecuta en la versión 1.1.2. ResourceAccessSecurityImpl ya no produce una ClassCastException durante la inicialización cuando se registran varios servicios ResourceAccessGateHandler. La inicialización ahora se completa de forma fiable y evita errores de inicio en entornos con varios controladores. (NPR-42750)
-* La consola JMX y la consola web ahora envían un `Content-Type: text/css header` para los recursos CSS de la consola. La comprobación MIME estricta ya no bloquea la carga de la hoja de estilos, por lo que la IU `/system/console/jmx` se procesa con un estilo normal. (GRANITE-63677)
+* La consola JMX y la consola web ahora envían un encabezado Content-Type: text/css para los recursos CSS de la consola. La comprobación MIME estricta ya no bloquea la carga de la hoja de estilos, por lo que la IU `/system/console/jmx` se procesa con un estilo normal. (GRANITE-63677)
 * AEM ahora evita entradas ACL duplicadas para el grupo `contributor` en el `WEB-INF/resources/provisioning/model.txt` generado. La salida WAR ahora contiene un bloque ACL coherente, lo que evita confundir las diferencias de permisos durante la revisión. (GRANITE-63269)
 * AEM ya no borra la configuración de lista de bloqueados y lista de permitidos del firewall de deserialización durante las operaciones de actualización del paquete. La lógica de registro de filtros actualizada mantiene la instancia activa del cortafuegos alineada con la configuración guardada, de modo que la protección permanece activada sin reiniciar. (GRANITE-61382)
 * La consola web de Felix ya no genera errores `NullPointerException` intermitentes durante el acceso `/system/console`. El tratamiento actualizado de ServiceTracker evita un estado de rastreador nulo. El inicio de sesión y la navegación en la consola permanecen estables durante las solicitudes repetidas y la validación automatizada. (GRANITE-61042)
@@ -323,9 +323,9 @@ Relacionar de Assets ahora funciona para nombres de archivo que incluyen espacio
 #### Content distribution{#foundation-content-distribution-65-lts-sp2}
 -->
 
-#### CRX {#foundation-crx-65-lts-sp2}
+#### Adobe CRX {#foundation-crx-65-lts-sp2}
 
-CRXDE Lite ya no muestra una pestaña en blanco cuando abre un archivo JSP después de una actualización de Service Pack. AEM ahora incluye el código principal CodeMirror y el código de complemento coincidentes, lo que evita el error grave del explorador y mantiene el editor utilizable. (GRANITE-64333)
+CRXDE Lite ya no muestra una pestaña en blanco cuando abre un archivo JSP después de una actualización de Service Pack. AEM ahora incluye código principal CodeMirror y código de complemento coincidentes, lo que evita el error grave del explorador y garantiza que el editor siga funcionando. (GRANITE-64333)
 
 #### Granite{#foundation-granite-65-lts-sp2}
 
@@ -366,9 +366,9 @@ El Service Pack 2 de AEM 6.5 LTS requiere el conector S3 1.60.10 o posterior. La
       Estas configuraciones antiguas utilizan propiedades como `whitelist.name` y `whitelist.bundles`.
 
   * Sling sigue proporcionando compatibilidad con versiones anteriores parciales para los PID obsoletos, pero no los utiliza para nuevas configuraciones. En su lugar, utilice los PID `LoginAdminAllowList.*` más recientes.
-  * No ejecute configuraciones de lista de permitidos obsoletas y nuevas al mismo tiempo. Las configuraciones mixtas pueden crear ambigüedad y producir un comportamiento no deseado. Cuando migre a AEM 6.5 LTS SP2, quite por completo los PID obsoletos.
+  * No ejecute configuraciones de lista de permitidos obsoletas y nuevas al mismo tiempo. Las configuraciones mixtas pueden crear ambigüedad y producir un comportamiento no deseado. Cuando migre a AEM 6.5 LTS SP2, elimine los PID obsoletos.
 
-  **Lo que debería hacer**
+  **Qué hacer**
 
   1. Busque configuraciones de lista de permitidos que utilicen PID `LoginAdminWhitelist*`.
   1. Sustitúyalos por los nuevos PID adecuados:
@@ -462,7 +462,7 @@ Consulte también [Actualizar la versión de AEM Uber Jar](/help/sites-deploying
 Se aplica a: clientes de AEM 6.5 LTS (On-Premise) que instalan el Service Pack 2 (SP2). SP2 se suministra como un archivo JAR de inicio rápido.
 
 **Por qué es importante esta práctica de actualización**
-SP2 for AEM 6.5 LTS se envía como un archivo JAR de inicio rápido en lugar de como un archivo ZIP para instalarlo a través del administrador de paquetes. Los clientes locales se actualizan reemplazando el JAR de Quickstart, descomprimiéndolo y reiniciándolo. Este método es coherente con el procedimiento de actualización in situ de Adobe.
+SP2 for AEM 6.5 LTS se envía como un archivo JAR de inicio rápido en lugar de como un archivo ZIP para instalarlo a través del administrador de paquetes. Los clientes On-Premise actualizan reemplazando el JAR de Quickstart, desempaquetándolo y reiniciándolo. Este método es coherente con el procedimiento de actualización estándar de Adobe.
 
 **Flujo de actualización recomendado (autor o publicación)**
 
@@ -481,7 +481,7 @@ SP2 for AEM 6.5 LTS se envía como un archivo JAR de inicio rápido en lugar de 
 1. Cambie el nombre del JAR descomprimido para que coincida con la función y el puerto, por ejemplo `cq-author-4502.jar` o `cq-publish-4503.jar`.
 1. Inicie AEM y confirme la actualización en la interfaz de usuario (Ayuda > Acerca de) y en los registros.
 
-**Buena higiene**
+**Prácticas recomendadas**
 
 * Ejecute la actualización en entornos de prueba o inferiores antes de la producción.
 * Realice una copia de seguridad completa y restaurable (repositorio más cualquier almacén de datos externo) antes de empezar.
@@ -550,7 +550,7 @@ Se aconseja a los clientes que comprueben si utilizan la función o la capacidad
 
 En esta sección se enumeran las características y funciones que se han eliminado de AEM 6.5 LTS. Las versiones anteriores tenían estas funciones marcadas como en desuso.
 
-* Se ha eliminado la compatibilidad con RDBMK para la persistencia del repositorio de CRX.
+* Se ha eliminado la compatibilidad con RDBMK para la persistencia del repositorio de Adobe CRX.
 * En entornos agrupados, MongoMK es ahora la única opción admitida para la persistencia del repositorio.
 
 | Área | Característica | Reemplazo | Versión (SP) |
@@ -579,8 +579,8 @@ En esta sección se enumeran las características y funciones que se han elimina
 ### AEM Forms
 
 * En el Administrador de configuración, la inicialización de la base de datos falla durante Bootstrap en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se selecciona ningún módulo o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a adobe-livecycle-jboss.ear\lib resuelve el problema. (FORMS-24690)
-* En implementaciones de Forms JEE LTS Service Pack 2 que se ejecutan en el perfil WebSphere® Liberty, la funcionalidad de correo electrónico puede fallar. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Could not convert socket to TLS`. (FORMS-24692)
-* En Forms JEE LTS que se ejecuta en JBoss®, la funcionalidad relacionada con el correo electrónico puede sufrir un error. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Error IMAPProvider not a subtype`. Instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear) para resolver este problema. (FORMS-24892)
+* En implementaciones de Forms JEE LTS Service Pack 2 que se ejecutan en el perfil WebSphere® Liberty, la funcionalidad de correo electrónico falla. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Could not convert socket to TLS`. (FORMS-24692)
+* En Forms JEE LTS que se ejecuta en JBoss®, la funcionalidad relacionada con el correo electrónico falla. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Error IMAPProvider not a subtype`. Para resolver este problema, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear). (FORMS-24892)
 
 ### Corrupción del repositorio durante la compactación en línea después de la compactación sin conexión (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -600,11 +600,11 @@ Planifique el tiempo de inactividad de la instancia al aplicarla. Para la compac
 
 Falta el paquete `com.adobe.granite.apicontroller` en AEM 6.5 LTS SP2. Este paquete controla cómo se resuelven los paquetes OSGi y puede evitar que se resuelvan en otros paquetes, lo que resulta útil para limitar las API expuestas.
 
-Instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip) para usar esta funcionalidad.
+Para usar esta funcionalidad, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip).
 
 >[!NOTE]
 >
-> Después de instalar la revisión, compruebe el estado del paquete de todos los paquetes instalados para asegurarse de que la configuración predeterminada de `com.adobe.granite.apicontroller` no haya introducido restricciones de resolución no deseadas que podrían afectar a las implementaciones personalizadas existentes.
+> Para asegurarse de que la configuración predeterminada de `com.adobe.granite.apicontroller` no introduce restricciones de resolución no deseadas que afecten a las implementaciones personalizadas existentes, compruebe el estado del paquete de todos los paquetes instalados después de instalar la revisión.
 
 ### Los comentarios JSON ya no son compatibles con Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
@@ -616,20 +616,20 @@ El error es silencioso: los nodos de contenido no se cargan durante la activaci�
 
 >[!CAUTION]
 >
-> Elimine todos los comentarios de los archivos JSON en sus paquetes de `Sling-Initial-Content` para evitar errores de carga de contenido después de actualizar a AEM 6.5 LTS SP2.
+> Para evitar errores en la carga de contenido después de actualizar a AEM 6.5 LTS SP2, quite todos los comentarios de los archivos JSON en los paquetes de `Sling-Initial-Content`.
 
 ### Instale los índices Oak necesarios para las API headless de Sites{#site-headless-api}
 
 Algunas API que se trasladaron a Sites headless requieren índices Oak adicionales para una funcionalidad completa.
 
-Instale el paquete `cq-dam-cfm-indices` para utilizar las siguientes características:
+Para utilizar las siguientes características, instale el paquete `cq-dam-cfm-indices`:
 
 * Lista de modelos de fragmento de contenido
 * Lista de fragmentos de contenido
 * API de búsqueda
 * Flujos de trabajo
 
-Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-dam-cfm-indices-1.1.2.zip) del portal de distribución de software de Adobe.
+Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) del portal de distribución de software de Adobe.
 
 ### Error de conexión de Dispatcher con la función solo SSL (corregido en AEM 6.5 LTS SP1 y posterior){#ssl-only-feature}
 
@@ -637,7 +637,7 @@ Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.co
 >
 > Este problema solo está presente en la versión de AEM 6.5 LTS GA.
 
-Al habilitar la función Solo SSL en las implementaciones de AEM, existe un problema conocido que afecta a la conectividad entre las instancias de Dispatcher y AEM. Después de habilitar esta función, las comprobaciones de estado pueden fallar y la comunicación entre las instancias de Dispatcher y AEM puede verse interrumpida. Este problema se produce específicamente cuando los clientes intentan conectarse a través de `https + IP` desde Dispatcher a instancias de AEM. Está relacionado con problemas de validación de SNI (Indicación de nombre de servidor).
+Al habilitar la función Solo SSL en las implementaciones de AEM, existe un problema conocido que afecta a la conectividad entre las instancias de Dispatcher y AEM. Después de habilitar esta función, las comprobaciones de estado fallan y la comunicación entre las instancias de Dispatcher y AEM se interrumpe. Este problema se produce específicamente cuando los clientes intentan conectarse a través de `https + IP` desde Dispatcher a instancias de AEM. Está relacionado con problemas de validación de SNI (Indicación de nombre de servidor).
 
 **Impacto**
 
@@ -655,7 +655,7 @@ Al habilitar la función Solo SSL en las implementaciones de AEM, existe un prob
 
 **Solución**
 
-Si tiene este problema, póngase en contacto con Atención al cliente de Adobe. Hay disponible una revisión [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) para resolver este problema. No intente habilitar las funciones Solo SSL hasta que aplique la revisión necesaria.
+Si tiene este problema, póngase en contacto con el servicio de atención al cliente de Adobe. Hay disponible una revisión [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) para resolver este problema. No intente habilitar las funciones Solo SSL hasta que aplique la revisión necesaria.
 
 ## Paquetes OSGI y paquetes de contenido incluidos{#osgi-bundles-and-content-packages-included}
 
