@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5754'
+source-wordcount: '5811'
 ht-degree: 6%
 
 ---
@@ -87,7 +87,7 @@ De manera predeterminada, la búsqueda [!DNL Experience Manager] combina los té
 * `woman-running`
 
 Sin embargo, la consulta `woman -running` devuelve recursos sin `running` en sus metadatos.
-Usar etiquetas inteligentes agrega una cláusula `OR` adicional para buscar cualquiera de los términos de búsqueda como etiquetas inteligentes aplicadas. En una consulta de búsqueda de este tipo también aparece un recurso etiquetado con `woman` o `running` que usa etiquetas inteligentes. Por lo tanto, los resultados de búsqueda son una combinación de:
+Usar etiquetas inteligentes agrega una cláusula `OR` adicional para buscar cualquiera de los términos de búsqueda como etiquetas inteligentes aplicadas. Un recurso etiquetado con `woman` o `running` que usa etiquetas inteligentes también aparece en dicha consulta de búsqueda. Por lo tanto, los resultados de búsqueda son una combinación de:
 
 * Assets con las palabras clave `woman` y `running` en los metadatos (comportamiento predeterminado).
 
