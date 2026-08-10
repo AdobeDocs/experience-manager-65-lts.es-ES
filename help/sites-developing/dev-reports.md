@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 0%
+source-wordcount: '5298'
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ Para los informes estándar entregados con AEM:
 
 * Estos informes se basan en el marco de informes:
 
-   * [Informe sobre componentes](/help/sites-administering/reporting.md#component-report)
-   * [Informe de actividad de la página](/help/sites-administering/reporting.md#page-activity-report)
-   * [Informe del usuario](/help/sites-administering/reporting.md#user-report)
-   * [Informe de instancia de flujo de trabajo](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [Informe sobre componentes](/help/sites-administering/reporting.md#component-report)
+  * [Informe de actividad de la página](/help/sites-administering/reporting.md#page-activity-report)
+  * [Informe del usuario](/help/sites-administering/reporting.md#user-report)
+  * [Informe de instancia de flujo de trabajo](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * Los siguientes informes se basan en principios individuales y, por lo tanto, no se pueden ampliar:
 
-   * [Uso del disco](/help/sites-administering/reporting.md#disk-usage)
-   * [Comprobación de estado](/help/sites-administering/reporting.md#health-check)
-   * [Informe de flujo de trabajo](/help/sites-administering/reporting.md#workflow-report)
+  * [Uso del disco](/help/sites-administering/reporting.md#disk-usage)
+  * [Comprobación de estado](/help/sites-administering/reporting.md#health-check)
+  * [Informe de flujo de trabajo](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Para los informes estándar entregados con AEM:
 >  `P:<name> = <value>` : describe una propiedad `<name>` que debe establecerse en el valor de `<value>`.
 >
 >* La sangría muestra las dependencias jerárquicas entre los nodos.
->* Elementos separados por | indica una lista de posibles elementos; por ejemplo, tipos o nombres; por ejemplo, `String|String[]` significa que la propiedad puede ser String o String[].
+>* Elementos separados por | indica una lista de elementos posibles; por ejemplo, tipos o nombres; por ejemplo, `String|String[]` significa que la propiedad puede ser String o String[].
 >
 >* `[]` representa una matriz; como String[] o una matriz de nodos como en [Query Definition](#query-definition).
 >
@@ -112,15 +112,15 @@ La consulta:
 
 * Por lo general consta de:
 
-   * Una ruta raíz.
+  * Una ruta raíz.
 
-     Esto especifica el subárbol del repositorio que se va a buscar.
+    Esto especifica el subárbol del repositorio que se va a buscar.
 
-     Para minimizar el impacto en el rendimiento, se recomienda restringir (intentar) la consulta a un subárbol específico del repositorio. La ruta de acceso raíz puede estar predefinida en la [plantilla de informe](#report-template) o establecida por el usuario en el cuadro de diálogo [Configuración (editar)](#configuration-dialog).
+    Para minimizar el impacto en el rendimiento, se recomienda restringir (intentar) la consulta a un subárbol específico del repositorio. La ruta de acceso raíz puede estar predefinida en la [plantilla de informe](#report-template) o establecida por el usuario en el cuadro de diálogo [Configuración (editar)](#configuration-dialog).
 
-   * [Uno o más criterios](#query-definition).
+  * [Uno o más criterios](#query-definition).
 
-     Se imponen para producir el conjunto de resultados (inicial); incluyen, por ejemplo, restricciones en el tipo de nodo o restricciones de propiedad.
+    Se imponen para producir el conjunto de resultados (inicial); incluyen, por ejemplo, restricciones en el tipo de nodo o restricciones de propiedad.
 
 **El punto clave aquí es que cada nodo devuelto en el conjunto de resultados de la consulta se utiliza para generar una sola fila en el informe (por lo que se requiere una relación 1:1).**
 
@@ -222,7 +222,7 @@ N:apps
                         N:<columnname> [cq:Component]  // column base component
 ```
 
-### Componente Página  {#page-component}
+### Componente Página {#page-component}
 
 Una página de informe debe utilizar `sling:resourceType` de `/libs/cq/reporting/components/reportpage`.
 
@@ -314,68 +314,68 @@ N:charting
 
   Contiene definiciones de los gráficos activos.
 
-   * `active`
+  * `active`
 
-     Como se pueden definir varias configuraciones, puede utilizarlas para definir cuáles están activas actualmente. Se definen mediante una matriz de nodos (no hay una convención de nombres obligatoria para estos nodos, pero los informes estándar suelen utilizar `0`, `1`. `x`), cada una con la siguiente propiedad:
+    Como se pueden definir varias configuraciones, puede utilizarlas para definir cuáles están activas actualmente. Se definen mediante una matriz de nodos (no hay una convención de nomenclatura obligatoria para estos nodos, pero los informes estándar suelen utilizar `0`, `1`.. `x`), cada uno con la siguiente propiedad:
 
-      * `id`
+    * `id`
 
-        Identificación de los gráficos activos. Debe coincidir con el identificador de uno de los gráficos `definitions`.
+      Identificación de los gráficos activos. Debe coincidir con el identificador de uno de los gráficos `definitions`.
 
 * `definitions`
 
   Define los tipos de gráficos que pueden estar disponibles para el informe. La configuración de `active` especifica el `definitions` que se va a usar.
 
-  Las definiciones se especifican mediante una matriz de nodos (también con frecuencia denominados `0`, `1`. `x`), cada una con las siguientes propiedades:
+  Las definiciones se especifican mediante una matriz de nodos (de nuevo denominados con frecuencia `0`, `1`.. `x`), cada uno de los cuales tiene las siguientes propiedades:
 
-   * `id`
+  * `id`
 
-     La identificación del gráfico.
+    La identificación del gráfico.
 
-   * `type`
+  * `type`
 
-     Tipo de gráfico disponible. Seleccionar de:
+    Tipo de gráfico disponible. Seleccionar de:
 
-      * `pie`
-Gráfico circular. Generado solo a partir de datos actuales.
+    * `pie`
+      Gráfico circular. Generado solo a partir de datos actuales.
 
-      * `lineseries`
-Serie de líneas (puntos de conexión que representan las instantáneas reales). Generado solo a partir de datos históricos.
+    * `lineseries`
+      Serie de líneas (puntos de conexión que representan las instantáneas reales). Generado solo a partir de datos históricos.
 
-   * Hay propiedades adicionales disponibles, según el tipo de gráfico:
+  * Hay propiedades adicionales disponibles, según el tipo de gráfico:
 
-      * para el tipo de gráfico `pie`:
+    * para el tipo de gráfico `pie`:
 
-         * `maxRadius` (`Double/Long`)
+      * `maxRadius` ( `Double/Long`)
 
-           El radio máximo permitido para el gráfico circular; por lo tanto, el tamaño máximo permitido para el gráfico (sin leyenda). Se omite si se define `fixedRadius`.
+        El radio máximo permitido para el gráfico circular; por lo tanto, el tamaño máximo permitido para el gráfico (sin leyenda). Se omite si se define `fixedRadius`.
 
-         * `minRadius` (`Double/Long`)
+      * `minRadius` ( `Double/Long`)
 
-           Radio mínimo permitido para el gráfico circular. Se omite si se define `fixedRadius`.
+        Radio mínimo permitido para el gráfico circular. Se omite si se define `fixedRadius`.
 
-         * `fixedRadius` (`Double/Long`)
-Define un radio fijo para el gráfico circular.
+      * `fixedRadius` ( `Double/Long`)
+        Define un radio fijo para el gráfico circular.
 
-      * para el tipo de gráfico [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+    * para el tipo de gráfico [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` (`Boolean`)
+      * `totals` ( `Boolean`)
 
-           True si se debe mostrar una línea adicional que muestre **Total**.
-predeterminado: `false`
+        True si se debe mostrar una línea adicional que muestre **Total**.
+        predeterminado: `false`
 
-         * `series` (`Long`)
+      * `series` ( `Long`)
 
-           Número de líneas/series que se mostrarán.
-predeterminado: `9` (también es el máximo permitido)
+        Número de líneas/series que se mostrarán.
+        predeterminado: `9` (también es el máximo permitido)
 
-         * `hoverLimit` (`Long`)
+      * `hoverLimit` ( `Long`)
 
-           Número máximo de instantáneas agregadas (puntos mostrados en cada línea horizontal, que representan valores distintos) para las que se mostrarán ventanas emergentes. Es decir, cuando el usuario pasa el ratón sobre un valor distinto o la etiqueta correspondiente en la leyenda del gráfico.
+        Número máximo de instantáneas agregadas (puntos mostrados en cada línea horizontal, que representan valores distintos) para las que se mostrarán ventanas emergentes. Es decir, cuando el usuario pasa el ratón sobre un valor distinto o la etiqueta correspondiente en la leyenda del gráfico.
 
-           predeterminado: `35` (es decir, no se muestran ventanas emergentes si se aplican más de 35 valores distintos a la configuración del gráfico actual).
+        predeterminado: `35` (es decir, no se muestran ventanas emergentes si se aplican más de 35 valores distintos a la configuración del gráfico actual).
 
-           Hay un límite adicional de diez ventanas emergentes que se pueden mostrar en paralelo (se pueden mostrar varias ventanas emergentes cuando se pasa el ratón sobre los textos de la leyenda).
+        Hay un límite adicional de diez ventanas emergentes que se pueden mostrar en paralelo (se pueden mostrar varias ventanas emergentes cuando se pasa el ratón sobre los textos de la leyenda).
 
 ### Cuadro de diálogo Configuración {#configuration-dialog}
 
@@ -462,8 +462,8 @@ Además, se puede definir una ruta raíz para el informe:
 
   Se puede especificar mediante:
 
-   * la [plantilla de informe](#report-template) (como valor fijo o como valor predeterminado para el cuadro de diálogo de configuración).
-   * el usuario (con este parámetro)
+  * la [plantilla de informe](#report-template) (como valor fijo o como valor predeterminado para el cuadro de diálogo de configuración).
+  * el usuario (con este parámetro)
 
 ## Componente de base de columna {#column-base-component}
 
@@ -530,8 +530,8 @@ N:definitions
 
   El extractor de valores correspondiente (que está en control aquí):
 
-   * Comprueba si hay una propiedad jcr:lastModified disponible y, si es así, utilícela.
-   * Si no hay ninguna propiedad jcr:lastModified disponible, se utiliza el contenido de jcr:created en su lugar.
+  * Comprueba si hay una propiedad jcr:lastModified disponible y, si es así, utilícela.
+  * Si no hay ninguna propiedad jcr:lastModified disponible, se utiliza el contenido de jcr:created en su lugar.
 
 * `subPath`
 
@@ -598,81 +598,81 @@ N:definitions
 
   Define la resolución que se va a utilizar. Están disponibles las siguientes soluciones:
 
-   * `const`
+  * `const`
 
-     Asigna valores a otros valores; por ejemplo, se usa para resolver constantes como `en` a su valor equivalente `English`.
+    Asigna valores a otros valores; por ejemplo, se usa para resolver constantes como `en` a su valor equivalente `English`.
 
-   * `default`
+  * `default`
 
-     Resolución predeterminada. Este es un solucionador ficticio que no resuelve nada.
+    Resolución predeterminada. Este es un solucionador ficticio que no resuelve nada.
 
-   * `page`
+  * `page`
 
-     Resuelve un valor de ruta de acceso en la ruta de acceso de la página adecuada; más precisamente, en el nodo `jcr:content` correspondiente. Por ejemplo, `/content/.../page/jcr:content/par/xyz` se ha resuelto en `/content/.../page/jcr:content`.
+    Resuelve un valor de ruta de acceso en la ruta de acceso de la página adecuada; más precisamente, en el nodo `jcr:content` correspondiente. Por ejemplo, `/content/.../page/jcr:content/par/xyz` se ha resuelto en `/content/.../page/jcr:content`.
 
-   * `path`
+  * `path`
 
-     Resuelve un valor de ruta anexando opcionalmente una subruta y tomando el valor real de una propiedad del nodo (definido por `resolverConfig`) en la ruta de acceso resuelta. Por ejemplo, se puede resolver un(a) `path` de `/content/.../page/jcr:content` en el contenido de la propiedad `jcr:title`, lo que significaría que se ha resuelto una ruta de acceso de página en el título de la página.
+    Resuelve un valor de ruta anexando opcionalmente una subruta y tomando el valor real de una propiedad del nodo (definido por `resolverConfig`) en la ruta de acceso resuelta. Por ejemplo, se puede resolver un(a) `path` de `/content/.../page/jcr:content` en el contenido de la propiedad `jcr:title`, lo que significaría que se ha resuelto una ruta de acceso de página en el título de la página.
 
-   * `pathextension`
+  * `pathextension`
 
-     Resuelve un valor anteponiendo una ruta y tomando el valor real de una propiedad del nodo en la ruta resuelta. Por ejemplo, un valor `de` puede ir precedido de una ruta de acceso como `/libs/wcm/core/resources/languages`, tomando el valor de la propiedad `language`, para resolver el código de país `de` con la descripción de idioma `German`.
+    Resuelve un valor anteponiendo una ruta y tomando el valor real de una propiedad del nodo en la ruta resuelta. Por ejemplo, un valor `de` puede ir precedido de una ruta de acceso como `/libs/wcm/core/resources/languages`, tomando el valor de la propiedad `language`, para resolver el código de país `de` con la descripción de idioma `German`.
 
 * `resolverConfig`
 
   Proporciona definiciones para la resolución. Las opciones disponibles dependen de `resolver` seleccionado:
 
-   * `const`
+  * `const`
 
-     Utilice las propiedades para especificar las constantes que desea resolver. El nombre de la propiedad define la constante que se va a resolver; el valor de la propiedad define el valor resuelto.
+    Utilice las propiedades para especificar las constantes que desea resolver. El nombre de la propiedad define la constante que se va a resolver; el valor de la propiedad define el valor resuelto.
 
-     Por ejemplo, una propiedad con **Name**= `1` y **Value** `=One` resuelve 1 en One.
+    Por ejemplo, una propiedad con **Name**= `1` y **Value** `=One` resuelve 1 en One.
 
-   * `default`
+  * `default`
 
-     No hay ninguna configuración disponible.
+    No hay ninguna configuración disponible.
 
-   * `page`
+  * `page`
 
-      * `propertyName` (opcional)
+    * `propertyName` (opcional)
 
-        Define el nombre de la propiedad que debe utilizarse para resolver el valor. Si no se especifica, se usa el valor predeterminado de *jcr:title* (el título de la página); para la resolución de `page`, esto significa que primero la ruta de acceso se resuelve en la ruta de acceso de la página y después se resuelve en el título de la página.
+      Define el nombre de la propiedad que debe utilizarse para resolver el valor. Si no se especifica, se usa el valor predeterminado de *jcr:title* (el título de la página); para la resolución de `page`, esto significa que primero la ruta de acceso se resuelve en la ruta de acceso de la página y después se resuelve en el título de la página.
 
-   * `path`
+  * `path`
 
-      * `propertyName` (opcional)
+    * `propertyName` (opcional)
 
-        Especifica el nombre de la propiedad que debe utilizarse para resolver el valor. Si no se especifica, se usará el valor predeterminado de `jcr:title`.
+      Especifica el nombre de la propiedad que debe utilizarse para resolver el valor. Si no se especifica, se usará el valor predeterminado de `jcr:title`.
 
-      * `subPath` (opcional)
+    * `subPath` (opcional)
 
-        Esta propiedad se puede utilizar para especificar un sufijo que se anexará a la ruta antes de resolver el valor.
+      Esta propiedad se puede utilizar para especificar un sufijo que se anexará a la ruta antes de resolver el valor.
 
-   * `pathextension`
+  * `pathextension`
 
-      * `path` (obligatorio)
+    * `path` (obligatorio)
 
-        Define la ruta que se va a anteponer.
+      Define la ruta que se va a anteponer.
 
-      * `propertyName` (obligatorio)
+    * `propertyName` (obligatorio)
 
-        Define la propiedad en la ruta de acceso resuelta donde se encuentra el valor real.
+      Define la propiedad en la ruta de acceso resuelta donde se encuentra el valor real.
 
-      * `i18n` (opcional; tipo booleano)
+    * `i18n` (opcional; tipo booleano)
 
-        Determina si el valor resuelto debe *internacionalizarse* (es decir, mediante los servicios de internacionalización de [CQ5](/help/sites-administering/tc-manage.md)).
+      Determina si el valor resuelto debe *internacionalizarse* (es decir, mediante los servicios de internacionalización de [CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
   El preprocesamiento es opcional y se puede enlazar (por separado) a las fases de procesamiento *apply* o *applyAfter*:
 
-   * `apply`
+  * `apply`
 
-     La fase inicial de preprocesamiento ([paso 3 en la representación de la cola de procesamiento](#processing-queue)).
+    La fase inicial de preprocesamiento ([paso 3 en la representación de la cola de procesamiento](#processing-queue)).
 
-   * `applyAfter`
+  * `applyAfter`
 
-     Se aplicará después del preprocesamiento ([paso 9 en la representación de la cola de procesamiento](#processing-queue)).
+    Se aplicará después del preprocesamiento ([paso 9 en la representación de la cola de procesamiento](#processing-queue)).
 
 #### Resoluciones {#resolvers}
 
@@ -693,7 +693,7 @@ N:data
 
 **Página**
 
-Resuelve un valor de ruta en la propiedad jcr:description del nodo jcr:content (secundario) de la página correspondiente.
+Resuelve un valor de ruta de acceso a la propiedad jcr:description en el nodo jcr:content (secundario) de la página correspondiente.
 
 Ver `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
 
@@ -784,23 +784,23 @@ Un reemplazo de ejemplo se puede desglosar como:
 
 * Para el nodo `definitions/data/preprocessing/apply` con las dos propiedades siguientes:
 
-   * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+  * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
+  * `replace`: `$1`
 
 * Una cadena que llega como:
 
-   * `/content/geometrixx/en/services/jcr:content/par/text`
+  * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * Se divide en cuatro secciones:
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+  * `$1` - `(.*)` - `/content/geometrixx/en/services`
+  * `$2` - `(/jcr:content)` - `/jcr:content`
+  * `$3` - `(/|$)` - `/`
+  * `$4` - `(.*)` - `par/text`
 
 * Y se reemplazó con la cadena representada por `$1`:
 
-   * `/content/geometrixx/en/services`
+  * `/content/geometrixx/en/services`
 
 #### Preprocesamiento: tipos de datos para materias {#preprocessing-data-type-formatters}
 
@@ -814,17 +814,17 @@ Actualmente, los formateadores de tipo de datos disponibles son:
 
   Formador de tipo de datos:
 
-   * `duration`
+  * `duration`
 
-     La duración es el lapso de tiempo entre dos fechas definidas. Por ejemplo, el inicio y el final de una acción de flujo de trabajo que tardó una hora, empezando el 13/2/11 a las 11:23h y finalizando una hora más tarde el 13/2/11 a las 12:23h.
+    La duración es el lapso de tiempo entre dos fechas definidas. Por ejemplo, el inicio y el final de una acción de flujo de trabajo que tardó una hora, empezando el 13/2/11 a las 11:23h y finalizando una hora más tarde el 13/2/11 a las 12:23h.
 
-     Convierte un valor numérico (interpretado como milisegundos) en una cadena de duración; por ejemplo, `30000` tiene el formato * `30s`.*
+    Convierte un valor numérico (interpretado como milisegundos) en una cadena de duración; por ejemplo, `30000` tiene el formato * `30s`.*
 
-   * `datedelta`
+  * `datedelta`
 
-     Los datos son el lapso de tiempo entre una fecha pasada y una &quot;ahora&quot; (por lo que tienen un resultado diferente si el informe se ve en un momento posterior).
+    Los datos son el lapso de tiempo entre una fecha pasada y una &quot;ahora&quot; (por lo que tienen un resultado diferente si el informe se ve en un momento posterior).
 
-     Convierte el valor numérico (interpretado como una diferencia horaria en días) en una cadena de fecha relativa. Por ejemplo, 1 tiene el formato de hace un día.
+    Convierte el valor numérico (interpretado como una diferencia horaria en días) en una cadena de fecha relativa. Por ejemplo, 1 tiene el formato de hace un día.
 
 El ejemplo siguiente define el formato `datedelta` para los agregados `min` y `max`:
 
@@ -867,18 +867,18 @@ N:definitions
 
   Las siguientes opciones están disponibles como opciones estándar:
 
-   * `string`
-   * `number`
-   * `int`
-   * `date`
-   * `diff`
-   * `timeslot`
+  * `string`
+  * `number`
+  * `int`
+  * `date`
+  * `diff`
+  * `timeslot`
 
-     Se utiliza para extraer partes de una fecha necesaria para la agregación (por ejemplo, agrupar por año para obtener los datos agregados de cada año).
+    Se utiliza para extraer partes de una fecha necesaria para la agregación (por ejemplo, agrupar por año para obtener los datos agregados de cada año).
 
-   * `sortable`
+  * `sortable`
 
-     Se utiliza para valores que utilizan valores diferentes (tomados de propiedades diferentes) para ordenarlos y mostrarlos.
+    Se utiliza para valores que utilizan valores diferentes (tomados de propiedades diferentes) para ordenarlos y mostrarlos.
 
   Además, cualquiera de los anteriores puede definirse como de varios valores; por ejemplo, `string[]` define una matriz de cadenas.
 
@@ -886,16 +886,16 @@ N:definitions
 
   Un tipo puede (opcionalmente) tomar un parámetro. Por ejemplo, `timeslot:year` extrae el año de un campo de fecha. Tipos con sus parámetros:
 
-   * `timeslot` - Los valores son comparables a las constantes correspondientes de `java.utils.Calendar`.
+  * `timeslot` - Los valores son comparables a las constantes correspondientes de `java.utils.Calendar`.
 
-      * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+    * `timeslot:year` - `Calendar.YEAR`
+    * `timeslot:month-of-year` - `Calendar.MONTH`
+    * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
+    * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
+    * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
+    * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
+    * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
+    * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
 * `groupable`
 
@@ -905,77 +905,77 @@ N:definitions
 
   Definiciones de filtros.
 
-   * `filterType`
+  * `filterType`
 
-     Los filtros disponibles son:
+    Los filtros disponibles son:
 
-      * `string`
+    * `string`
 
-        Un filtro basado en cadenas.
+      Un filtro basado en cadenas.
 
-   * `id`
+  * `id`
 
-     Identificador de filtro.
+    Identificador de filtro.
 
-   * `phase`
+  * `phase`
 
-     Fases disponibles:
+    Fases disponibles:
 
-      * `raw`
+    * `raw`
 
-        El filtro se aplica a los datos sin procesar.
+      El filtro se aplica a los datos sin procesar.
 
-      * `preprocessed`
+    * `preprocessed`
 
-        El filtro se aplica a los datos preprocesados.
+      El filtro se aplica a los datos preprocesados.
 
-      * `resolved`
+    * `resolved`
 
-        El filtro se aplica a los datos resueltos.
+      El filtro se aplica a los datos resueltos.
 
 * `aggregates`
 
   Definiciones agregadas.
 
-   * `text`
+  * `text`
 
-     Nombre textual del agregado. Si no se especifica `text`, entonces toma la descripción predeterminada del agregado. Por ejemplo, `minimum` se usa para el agregado `min`.
+    Nombre textual del agregado. Si no se especifica `text`, entonces toma la descripción predeterminada del agregado. Por ejemplo, `minimum` se usa para el agregado `min`.
 
-   * `type`
+  * `type`
 
-     Tipo agregado. Los agregados disponibles son:
+    Tipo agregado. Los agregados disponibles son:
 
-      * `count`
+    * `count`
 
-        Cuenta el número de filas.
+      Cuenta el número de filas.
 
-      * `count-nonempty`
+    * `count-nonempty`
 
-        Cuenta el número de filas no vacías.
+      Cuenta el número de filas no vacías.
 
-      * `min`
+    * `min`
 
-        Proporciona el valor mínimo.
+      Proporciona el valor mínimo.
 
-      * `max`
+    * `max`
 
-        Proporciona el valor máximo.
+      Proporciona el valor máximo.
 
-      * `average`
+    * `average`
 
-        Proporciona el valor promedio.
+      Proporciona el valor promedio.
 
-      * `sum`
+    * `sum`
 
-        Proporciona la suma de todos los valores.
+      Proporciona la suma de todos los valores.
 
-      * `median`
+    * `median`
 
-        Proporciona el valor medio.
+      Proporciona el valor medio.
 
-      * `percentile95`
+    * `percentile95`
 
-        Utiliza el percentil 95 de todos los valores.
+      Utiliza el percentil 95 de todos los valores.
 
 ### Valores predeterminados de columna {#column-default-values}
 
@@ -1028,11 +1028,11 @@ Para convertir una columna en genérica:
 
   Ver `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * Los campos del cuadro de diálogo deben hacer referencia a los mismos nombres que la propiedad del componente correspondiente, incluida su ruta.
+  * Los campos del cuadro de diálogo deben hacer referencia a los mismos nombres que la propiedad del componente correspondiente, incluida su ruta.
 
-     Por ejemplo, si desea que el tipo de la columna genérica se pueda configurar a través del cuadro de diálogo, utilice un campo con el nombre `./definitions/type`.
+    Por ejemplo, si desea que el tipo de la columna genérica se pueda configurar a través del cuadro de diálogo, utilice un campo con el nombre `./definitions/type`.
 
-   * Las propiedades definidas mediante la interfaz de usuario o el cuadro de diálogo tienen prioridad sobre las definidas en el componente `columnbase`.
+  * Las propiedades definidas mediante la interfaz de usuario o el cuadro de diálogo tienen prioridad sobre las definidas en el componente `columnbase`.
 
 * Defina Editar configuración.
 
@@ -1044,13 +1044,13 @@ Para convertir una columna en genérica:
 
   Las propiedades disponibles para una columna genérica son:
 
-   * `jcr:title` - nombre de columna
-   * `definitions/aggregates` - agregados
-   * `definitions/filters` - filtros
-   * `definitions/type`: el tipo de columna (que debe definirse en el cuadro de diálogo, ya sea mediante un selector/cuadro combinado o un campo oculto)
-   * `definitions/data/resolver` y `definitions/data/resolverConfig` (pero no `definitions/data/preprocessing` ni `.../clientFilter`): la resolución y configuración
-   * `definitions/queryBuilder`: la configuración del generador de consultas
-   * `defaults/aggregate`: el agregado predeterminado
+  * `jcr:title` - nombre de columna
+  * `definitions/aggregates` - agregados
+  * `definitions/filters` - filtros
+  * `definitions/type`: el tipo de columna (que debe definirse en el cuadro de diálogo, ya sea mediante un selector/cuadro combinado o un campo oculto)
+  * `definitions/data/resolver` y `definitions/data/resolverConfig` (pero no `definitions/data/preprocessing` ni `.../clientFilter`): la resolución y configuración
+  * `definitions/queryBuilder`: la configuración del generador de consultas
+  * `defaults/aggregate`: el agregado predeterminado
 
   Si hay una nueva instancia de la columna genérica en **Informe de usuarios**, las propiedades definidas con el cuadro de diálogo se mantienen en:
 
@@ -1385,7 +1385,7 @@ Ahora se puede crear una instancia del nuevo informe:
 
 En esta sección se describen las opciones de configuración avanzadas de los servicios OSGi que implementan el marco de informes.
 
-Se pueden ver mediante el menú Configuration de la consola web (disponible en `http://localhost:4502/system/console/configMgr`, por ejemplo). Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Se pueden ver mediante el menú Configuration de la consola web (disponible en `http://localhost:4502/system/console/configMgr`, por ejemplo). Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ### Servicio básico (configuración de informes de CQ por día) {#basic-service-day-cq-reporting-configuration}
 

@@ -13,8 +13,8 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3200'
-ht-degree: 0%
+source-wordcount: '3540'
+ht-degree: 2%
 
 ---
 
@@ -132,15 +132,15 @@ Para obtener información detallada, consulte:
 
 * IU de Coral
 
-   * Proporciona una IU coherente en todas las soluciones de nube
-   * [Conceptos de la IU táctil de AEM: interfaz de usuario de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guía de Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Proporciona una IU coherente en todas las soluciones de nube
+  * [Conceptos de la IU táctil de AEM: interfaz de usuario de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Guía de Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Granite UI
 
-   * Proporciona marcado de la IU de Coral envuelto en componentes de Sling para crear consolas y cuadros de diálogo de IU
-   * [Conceptos de la interfaz de usuario táctil de AEM: Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Proporciona marcado de la IU de Coral envuelto en componentes de Sling para crear consolas y cuadros de diálogo de IU
+  * [Conceptos de la interfaz de usuario táctil de AEM: Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Cuadros de diálogo para la IU táctil:
 * Utilice el marco de trabajo de Granite UI.
 * contiene una estructura de nodos que describe los campos del cuadro de diálogo.
 
-   * estos nodos son `nt:unstructured` con la propiedad `sling:resourceType` requerida.
+  * estos nodos son `nt:unstructured` con la propiedad `sling:resourceType` requerida.
 
 Un ejemplo de estructura de nodos puede ser:
 
@@ -229,7 +229,7 @@ Para ver un ejemplo, consulte:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Ampliación (herencia) de un campo {#extending-inheriting-from-a-field}
 
@@ -267,7 +267,7 @@ Para ver un ejemplo, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Oyentes en la estructura de contenido {#listeners-in-the-content-structure}
 
@@ -306,7 +306,7 @@ Para ver ejemplos, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -385,28 +385,28 @@ Se puede configurar este comportamiento y la relación de recurso a componente n
 
    * `assetGroup`:
 
-      * Tipo: `String`
-      * Valor: el grupo al que pertenece el recurso relacionado; por ejemplo, `media`
+     * Tipo: `String`
+     * Valor: el grupo al que pertenece el recurso relacionado; por ejemplo, `media`
 
    * `assetMimetype`:
 
-      * Tipo: `String`
-      * Valor: el tipo MIME del recurso relacionado; por ejemplo, `image/*`
+     * Tipo: `String`
+     * Valor: el tipo MIME del recurso relacionado; por ejemplo, `image/*`
 
    * `droptarget`:
 
-      * Tipo: `String`
-      * Valor: el destino de colocación; por ejemplo, `image`
+     * Tipo: `String`
+     * Valor: el destino de colocación; por ejemplo, `image`
 
    * `resourceType`:
 
-      * Tipo: `String`
-      * Valor: el recurso de componente relacionado; por ejemplo, `foundation/components/image`
+     * Tipo: `String`
+     * Valor: el recurso de componente relacionado; por ejemplo, `foundation/components/image`
 
    * `type`:
 
-      * Tipo: `String`
-      * Valor: el tipo, por ejemplo, `Images`
+     * Tipo: `String`
+     * Valor: el tipo, por ejemplo, `Images`
 
 Para ver ejemplos, consulte:
 
@@ -418,7 +418,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir proyecto aem-project-archetype en GitHub](https://github.com/adobe/aem-project-archetype)
+* [Abra el proyecto aem-project-archetype en GitHub](https://github.com/adobe/aem-project-archetype)
 * Descargar el proyecto como [archivo ZIP](https://github.com/adobe/aem-project-archetype/archive/master.zip)
 
 >[!NOTE]
@@ -444,22 +444,22 @@ Al migrar un componente diseñado para utilizarlo con la IU clásica a un compon
 
 * HTL
 
-   * El uso de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) no es obligatorio, pero si el componente necesita actualizarse, es un momento ideal para considerar la [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+  * El uso de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) no es obligatorio, pero si el componente necesita actualizarse, es un momento ideal para considerar la [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componentes
 
-   * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que use funciones específicas de la IU clásica
-   * Complemento RTE; para obtener más información, consulte [Configuración del editor de texto enriquecido](/help/sites-administering/rich-text-editor.md).
-   * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funciones específicas de la IU clásica
+  * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que use funciones específicas de la IU clásica
+  * Complemento RTE; para obtener más información, consulte [Configuración del editor de texto enriquecido](/help/sites-administering/rich-text-editor.md).
+  * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funciones específicas de la IU clásica
 
 * Cuadros de diálogo
 
-   * Cree un cuadro de diálogo para utilizarlo en la interfaz de usuario táctil. Sin embargo, por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásico cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
-   * Se proporcionan [herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md) para ayudarle a ampliar los componentes existentes.
-   * [Asignar ExtJS a componentes de Granite UI](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) proporciona una visión general conveniente de los xtype y tipos de nodo de ExtJS con sus tipos de recursos de Granite UI equivalentes.
-   * Personalizando campos, para obtener más información, consulte la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
-   * Migrar de vtypes a [Validación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Con oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+  * Cree un cuadro de diálogo para utilizarlo en la interfaz de usuario táctil. Sin embargo, por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásico cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
+  * Se proporcionan [herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md) para ayudarle a ampliar los componentes existentes.
+  * [Asignar ExtJS a componentes de Granite UI](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) proporciona una visión general conveniente de los xtype y tipos de nodo de ExtJS con sus tipos de recursos de Granite UI equivalentes.
+  * Personalizando campos, para obtener más información, consulte la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+  * Migrar de vtypes a [Validación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Con oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
 
 ### Migrando código cq:listener {#migrating-cq-listener-code}
 

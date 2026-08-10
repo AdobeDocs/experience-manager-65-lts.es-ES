@@ -7,7 +7,7 @@ role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Seleccione la plantilla requerida para su sitio y, a continuación, confirme con
 
    * la subcarpeta `content`, que es la raíz de una serie de subcarpetas que reflejan la ruta de acceso a la página en el repositorio
 
-      * dentro de esta estructura se encuentra el archivo html de la página seleccionada (`<page-name>.html`)
+     * dentro de esta estructura se encuentra el archivo html de la página seleccionada (`<page-name>.html`)
 
    * otros recursos (`.js` archivos, `.css` archivos, imágenes, etc.) se encuentran según la configuración de la plantilla de exportación
 
@@ -119,16 +119,16 @@ Se pueden utilizar los siguientes nodos para crear una plantilla de exportación
 * `page`
 El nodo de página se utiliza para copiar el HTML de página en el archivo zip. Tiene las siguientes características:
 
-   * Un nodo obligatorio.
-   * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
-   * Definido con la propiedad `Name`establecida en `page`.
-   * El tipo de nodo es `nt:unstructured`
+  * Un nodo obligatorio.
+  * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
+  * Definido con la propiedad `Name`establecida en `page`.
+  * El tipo de nodo es `nt:unstructured`
 
   El nodo `page` tiene las siguientes propiedades:
 
-   * Una propiedad `type` establecida con el valor `pages`.
+  * Una propiedad `type` establecida con el valor `pages`.
 
-   * No tiene una propiedad `path`, ya que la ruta de acceso de la página actual se copia dinámicamente en la configuración.
+  * No tiene una propiedad `path`, ya que la ruta de acceso de la página actual se copia dinámicamente en la configuración.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ El nodo de reescritura define cómo se reescriben los vínculos en la página ex
 * `design`
 El nodo de diseño se utiliza para copiar el diseño utilizado para la página exportada. Tiene las siguientes características:
 
-   * Opcional.
-   * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
-   * Definido con la propiedad `Name` establecida en `design`.
-   * Tipo de nodo `nt:unstructured`.
+  * Opcional.
+  * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
+  * Definido con la propiedad `Name` establecida en `design`.
+  * Tipo de nodo `nt:unstructured`.
 
   El nodo `design` tiene las siguientes propiedades:
 
-   * Una propiedad `type` establecida en el valor `copy`.
+  * Una propiedad `type` establecida en el valor `copy`.
 
-   * No tiene una propiedad `path`, ya que la ruta de acceso de la página actual se copia dinámicamente en la configuración.
+  * No tiene una propiedad `path`, ya que la ruta de acceso de la página actual se copia dinámicamente en la configuración.
 
 * `generic`
 Se utiliza un nodo genérico para copiar recursos como archivos clientlibs `.js` o `.css` en el archivo zip. Tiene las siguientes características:
 
-   * Opcional.
-   * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
-   * No hay un nombre específico.
-   * Tipo de nodo `nt:unstructured`.
-   * Tiene una propiedad `type` y propiedades relacionadas `type`. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * Opcional.
+  * Se encuentra por debajo de `/etc/contentsync/templates/<mysite>`.
+  * No hay un nombre específico.
+  * Tipo de nodo `nt:unstructured`.
+  * Tiene una propiedad `type` y propiedades relacionadas `type`. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Por ejemplo, el siguiente nodo de configuración copia los archivos de `mysite.clientlibs.js` en el archivo zip:
 

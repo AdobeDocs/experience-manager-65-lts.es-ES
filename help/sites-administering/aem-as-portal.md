@@ -12,7 +12,7 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6108'
+source-wordcount: '6116'
 ht-degree: 0%
 
 ---
@@ -389,7 +389,7 @@ Para abrir la página de administración del sitio web o editar una página desd
    </LoginModule>
    ```
 
-1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** del menú desplegable.
+1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** en el menú desplegable.
 1. Edite el parámetro **URL Root Path** para que contenga únicamente el valor único **/**.
 
 ### Privilegios {#privileges}
@@ -776,7 +776,7 @@ Para configurar el portlet:
    * **URL base del autor**: URL base de la instancia de autor de AEM.
    * **URL de base de publicación**: URL de base para la instancia de publicación de AEM.
    * **El autor se usa como publicación**: ¿la instancia del autor se usa como publicación?
-instancia de (para desarrollo)?
+     instancia de (para desarrollo)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
