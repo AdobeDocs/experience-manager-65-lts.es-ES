@@ -112,9 +112,9 @@ La interfaz y las clases incluyen:
 * Interfaz `com.day.cq.dam.api.handler.AssetHandler`: esta interfaz describe el servicio que agrega compatibilidad con tipos MIME específicos. Añadir un tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * Clase `com.day.cq.dam.core.AbstractAssetHandler`: esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad utilizada comúnmente.
 * Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
-   * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona la funcionalidad utilizada comúnmente, además de la funcionalidad utilizada comúnmente para la extracción de subrecursos.
-   * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupe de la mayoría de las cosas y proporcione un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
-   * Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si ha heredado de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en true.
+  * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona la funcionalidad utilizada comúnmente, además de la funcionalidad utilizada comúnmente para la extracción de subrecursos.
+  * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupe de la mayoría de las cosas y proporcione un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
+  * Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si ha heredado de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en true.
 
 Se deben implementar los siguientes métodos:
 
@@ -124,7 +124,7 @@ Se deben implementar los siguientes métodos:
 
 Esta es una plantilla de ejemplo:
 
-package my.own.stuff; /&ast; &ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementar las partes relevantes }
+package my.own.stuff; /&amp;ast; &amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementar las partes relevantes }
 
 La interfaz y las clases incluyen:
 
