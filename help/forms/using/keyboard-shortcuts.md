@@ -30,16 +30,16 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 | Guardar los cambios en el Explorador de propiedades del componente de formulario adaptable seleccionado | Ctrl + S | Comando +S |
 | Editar la regla del componente de formulario adaptable seleccionado | Ctrl + Alt + Intro | Comando + Alt + Retorno |
 | Alternar entre Vista previa y el modo seleccionado actualmente (por ejemplo, Edición y Andamiaje) | Ctrl + Mayús + M | Ctrl + Mayús + M* |
-| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&amp;ast; |
-| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&amp;ast; |
+| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&ast; |
+| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&ast; |
 | Seleccionar varios componentes | Mayús + clic | Mayús + clic |
 | Copiar el componente seleccionado | Ctrl-C | Ctrl + C* |
-| Cortar los componentes seleccionados. El componente cortado no desaparece hasta que se pega en la nueva ubicación. | Ctrl-X | Ctrl-X&amp;ast; |
+| Cortar los componentes seleccionados. El componente cortado no desaparece hasta que se pega en la nueva ubicación. | Ctrl-X | Ctrl-X&ast; |
 | Pegar componentes | Ctrl + V | Ctrl + V |
-| Eliminar componentes seleccionados | Ctrl + Supr | Ctrl + Supr&amp;ast; |
-| Eliminar componentes seleccionados | Ctrl + Retroceso | Ctrl + Retroceso&amp;ast; |
+| Eliminar componentes seleccionados | Ctrl + Supr | Ctrl + Supr&ast; |
+| Eliminar componentes seleccionados | Ctrl + Retroceso | Ctrl + Retroceso&ast; |
 | Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + N | Ctrl + B* |
-| Poner en cursiva el texto mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl +I | Ctrl + I&amp;ast; |
+| Poner en cursiva el texto mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl +I | Ctrl + I&ast; |
 | Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + U | Ctrl + U* |
 
 >[!NOTE]
@@ -60,9 +60,9 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 |---|---|---|
 | Abrir el Explorador de propiedades del componente seleccionado en una temática | Alt + Intro | Alt + Retorno |
 | Cerrar el Explorador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando + Alt + W |
-| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&amp;ast; |
-| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&amp;ast; |
-| Guardar los cambios en el Explorador de propiedades del componente seleccionado en un tema | Ctrl + S | Ctrl + S&amp;ast; |
+| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&ast; |
+| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&ast; |
+| Guardar los cambios en el Explorador de propiedades del componente seleccionado en un tema | Ctrl + S | Ctrl + S&ast; |
 
 >[!NOTE]
 >

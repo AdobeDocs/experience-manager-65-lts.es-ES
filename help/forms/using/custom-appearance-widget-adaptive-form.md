@@ -130,9 +130,9 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">{
+   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
+      &rbrace;</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
