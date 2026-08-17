@@ -136,7 +136,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
