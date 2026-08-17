@@ -7,10 +7,11 @@ topic-tags: author, correspondence-management
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 12d27b12-5093-4513-919a-b70f189020d2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 71%
+source-wordcount: '1208'
+ht-degree: 68%
 
 ---
 
@@ -28,22 +29,22 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 | Cerrar el Explorador de propiedades del componente de formulario adaptable seleccionado | Ctrl + Alt + W | Comando + Alt + W |
 | Guardar los cambios en el Explorador de propiedades del componente de formulario adaptable seleccionado | Ctrl + S | Comando +S |
 | Editar la regla del componente de formulario adaptable seleccionado | Ctrl + Alt + Intro | Comando + Alt + Retorno |
-| Alternar entre Vista previa y el modo seleccionado actualmente (por ejemplo, Edición y Andamiaje) | Ctrl + Mayús + M | Ctrl + Mayús + M* |
-| Deshacer el último cambio | Ctrl + Z | Ctrl + Z* |
-| Rehacer el último cambio | Ctrl + Y | Ctrl + Y* |
+| Alternar entre Vista previa y el modo seleccionado actualmente (por ejemplo, Edición y Andamiaje) | Ctrl + Mayús + M | Ctrl + Mayús + M* |
+| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&amp;ast; |
+| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&amp;ast; |
 | Seleccionar varios componentes | Mayús + clic | Mayús + clic |
-| Copiar el componente seleccionado | Ctrl-C | Ctrl-C* |
-| Cortar los componentes seleccionados. El componente cortado no desaparece hasta que se pega en la nueva ubicación. | Ctrl-X | Ctrl-X* |
+| Copiar el componente seleccionado | Ctrl-C | Ctrl + C* |
+| Cortar los componentes seleccionados. El componente cortado no desaparece hasta que se pega en la nueva ubicación. | Ctrl-X | Ctrl-X&amp;ast; |
 | Pegar componentes | Ctrl + V | Ctrl + V |
-| Eliminar componentes seleccionados | Ctrl + Supr | Ctrl + Suprimir* |
-| Eliminar componentes seleccionados | Ctrl + Retroceso | Ctrl + Retroceso* |
-| Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + N | Ctrl + B* |
-| Poner en cursiva el texto mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl +I | Ctrl + I* |
-| Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + U | Ctrl + U* |
+| Eliminar componentes seleccionados | Ctrl + Supr | Ctrl + Supr&amp;ast; |
+| Eliminar componentes seleccionados | Ctrl + Retroceso | Ctrl + Retroceso&amp;ast; |
+| Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + N | Ctrl + B* |
+| Poner en cursiva el texto mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl +I | Ctrl + I&amp;ast; |
+| Poner el texto en negrita mientras se usa el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + U | Ctrl + U* |
 
 >[!NOTE]
 >
->Los métodos abreviados marcados con &quot;&ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+>Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 >[!NOTE]
 >
@@ -59,13 +60,13 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 |---|---|---|
 | Abrir el Explorador de propiedades del componente seleccionado en una temática | Alt + Intro | Alt + Retorno |
 | Cerrar el Explorador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando + Alt + W |
-| Deshacer el último cambio | Ctrl + Z | Ctrl + Z* |
-| Rehacer el último cambio | Ctrl + Y | Ctrl + Y* |
-| Guardar los cambios en el Explorador de propiedades del componente seleccionado en un tema | Ctrl + S | Ctrl + S* |
+| Deshacer el último cambio | Ctrl + Z | Ctrl + Z&amp;ast; |
+| Rehacer el último cambio | Ctrl + Y | Ctrl + Y&amp;ast; |
+| Guardar los cambios en el Explorador de propiedades del componente seleccionado en un tema | Ctrl + S | Ctrl + S&amp;ast; |
 
 >[!NOTE]
 >
->Los métodos abreviados marcados con &quot;&ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+>Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 ## Explorador de contenido  {#contentbrowser}
 

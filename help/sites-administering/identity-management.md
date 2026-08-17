@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 006e91327d15dd4dd0482230d6ad8535e924698e
+exl-id: 70a5429a-e805-49f6-9c2c-28720d9674ae
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
-
 
 # Administración de identidades{#identity-management}
 
@@ -190,7 +190,7 @@ En una instalación estándar (de autor o publicación), todos tienen acceso de 
 
 Estos derechos de acceso se definen mediante la siguiente ACL comodín:
 
-/home todos permitir jcr:leer rep:glob = &#42;/perfil&#42;
+/home todos permitir jcr:read rep:glob = &#42;/perfil&#42;
 
 Esto permite:
 

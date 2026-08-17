@@ -8,10 +8,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c8745d19-139a-4cea-982a-537bc1dd207d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 96%
+source-wordcount: '1744'
+ht-degree: 95%
 
 ---
 
@@ -129,9 +130,9 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> <code class="code">&lbrace;
+   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Este ejemplo muestra que <code>blur</code> es un evento HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
+      }</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

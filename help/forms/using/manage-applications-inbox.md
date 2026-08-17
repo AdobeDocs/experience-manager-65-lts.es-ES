@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 87%
+source-wordcount: '1091'
+ht-degree: 88%
 
 ---
 
@@ -136,7 +136,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -148,4 +148,4 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
 
 1. [Cree un índice de propiedades y establézcalo en true](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Después de configurar índices en CRX DE o implementar mediante un paquete, vuelva a indexar el repositorio.
+1. Después de configurar los índices en CRX DE o implementar mediante un paquete, vuelva a indexar el repositorio.
