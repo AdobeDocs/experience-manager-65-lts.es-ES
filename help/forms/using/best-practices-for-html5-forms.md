@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
 source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1440'
 ht-degree: 96%
 
 ---
@@ -56,7 +56,7 @@ Los formularios HTML5 pueden contener campos impulsados por datos (tablas y subf
 * Utilice scripts XFA para lograr que la navegación por páginas muestre campos impulsados por datos (tablas y subformularios). En la navegación por páginas, solo se muestran datos específicos en una página. Limita la operación paint del explorador a los campos que se muestran a la vez y facilita el desplazamiento por el formulario. Además, los usuarios de los dispositivos móviles solo están interesados en un subconjunto de datos. Le ayuda a ofrecer una buena experiencia de usuario y a reducir el tiempo necesario para cargar los datos necesarios. Se obtienen dos soluciones por el precio de una.  Tenga en cuenta también que la navegación por páginas no está disponible de forma predeterminada. Puede utilizar scripts XFA para desarrollar la navegación por páginas.
 
 * Evalúe la combinación de varias columnas de solo lectura en una sola columna. Reduce la memoria necesaria para mostrar el formulario. Además, evite mostrar las columnas que no requieran ninguna entrada de los usuarios.
-* Evaluar la división del formulario basado en datos en un [conjunto de formularios](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html), si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios. Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. Para obtener más información, consulte [Conjunto de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
+* Evaluar la división del formulario basado en datos en un [conjunto de formularios](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html), si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios.  Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. Para obtener más información, consulte [Conjunto de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Poder de dos para Documentos de registro (DOR) {#power-of-two-for-document-of-record-dor}
 
@@ -70,9 +70,9 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 * [Prácticas recomendadas para crear contenido](/help/sites-authoring/best-practices.md)
 * [Prácticas recomendadas para la administración de AEM](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas para desarrollar soluciones](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas para usar formularios adaptables &#x200B;](/help/forms/using/adaptive-forms-best-practices.md)
+* [Prácticas recomendadas para usar formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 
 Puede imprimir la siguiente tarjeta (haga clic en tarjeta para descargar una versión de alta resolución) y mantenerla en su escritorio para una referencia rápida:
-[![Tarjeta de referencia rápida de las prácticas recomendadas de HTMLForms 5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Tarjeta de referencia rápida de las prácticas recomendadas de HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

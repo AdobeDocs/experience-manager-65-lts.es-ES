@@ -11,8 +11,8 @@ role: Admin
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 5%
+source-wordcount: '387'
+ht-degree: 24%
 
 ---
 
@@ -28,9 +28,9 @@ Las siguientes áreas tienen documentación disponible sobre la implementación 
 
 Para conocer las prácticas recomendadas sobre la administración, el desarrollo o la creación, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
+* [Administración de prácticas recomendadas](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
+* [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
 
 En las tablas siguientes se describen y vinculan documentos específicos.
 
@@ -86,16 +86,16 @@ Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
   <tr>
    <td>Utilizar Dispatcher con una CDN</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a></td>
-   <td>Una red de entrega de contenido (CDN), como Akamai Edge Delivery o Amazon Cloud Front, ofrece contenido desde una ubicación cercana al usuario final.</td>
+   <td>Una red de distribución de contenido (CDN), como Akamai Edge Delivery o Amazon Cloud Front, ofrece contenido desde una ubicación cercana al usuario final.</td>
   </tr>
   <tr>
    <td>Optimización de rendimiento</td>
    <td><a href="/help/sites-deploying/configuring-performance.md">Optimización de rendimiento</a></td>
-   <td>Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes.</td>
+   <td>Uno de los principales problemas es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes.</td>
   </tr>
   <tr>
    <td>Pruebas de rendimiento</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Prácticas recomendadas para las pruebas de rendimiento</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Prácticas recomendadas para pruebas de rendimiento</a></td>
    <td>Describe las prácticas recomendadas para ejecutar pruebas de rendimiento en una implementación de AEM.<br /> </td>
   </tr>
  </tbody>

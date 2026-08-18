@@ -8,14 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0dd160d5-6a08-4c11-92d2-a5a75fc47dba
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 23%
+source-wordcount: '766'
+ht-degree: 22%
 
 ---
 
-# Edición de las propiedades de página  {#editing-page-properties}
+# Edición de las propiedades de página{#editing-page-properties}
 
 Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas podrían estar conectadas a una Live Copy, mientras que otras no lo están y la información de la Live Copy estará disponible según corresponda.
 
@@ -35,13 +36,13 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección:
 
-   * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
-   * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
+  * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
+  * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
 
-     La nueva etiqueta se creará cuando pulse Intro. La nueva etiqueta se muestra en un cuadro, con una pequeña estrella a la derecha que indica que es una etiqueta nueva.
+    La nueva etiqueta se creará cuando pulse Intro. La nueva etiqueta se muestra en un cuadro, con una pequeña estrella a la derecha que indica que es una etiqueta nueva.
 
-   * Con la funcionalidad desplegable puede seleccionar etiquetas existentes.
-   * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección; esto se puede utilizar para quitar esa etiqueta de esta página.
+  * Con la funcionalidad desplegable puede seleccionar etiquetas existentes.
+  * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección; esto se puede utilizar para quitar esa etiqueta de esta página.
 
 * **Ocultar en navegación**
 
@@ -83,16 +84,16 @@ Las propiedades se distribuyen entre varias pestañas:
 
   >[!CAUTION]
   >
-  >URL de vanidad:
+  >URL mnemónica:
   >
   >* debe ser único, por lo que debe tener cuidado de que el valor no lo esté utilizando otra página.
   >* no admiten patrones regex.
 
 * **Redirigir URL de vanidad**
 
-  Indica si desea que la página use la URL de vanidad.
+  Indica si desea que la página use la URL mnemónica.
 
-### Avanzado  {#advanced}
+### Avanzado {#advanced}
 
 * **Idioma**
 
@@ -130,19 +131,19 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Especifique una configuración de exportación.
 
-### Miniatura    {#thumbnail}
+### Miniatura {#thumbnail}
 
 * **Miniatura de página**
 
   Muestra la miniatura de la página. Puede hacer lo siguiente:
 
-   * **Generar vista previa**
+  * **Generar vista previa**
 
-     Genere una previsualización de la página para utilizarla como miniatura.
+    Genere una previsualización de la página para utilizarla como miniatura.
 
-   * **Cargar imagen**
+  * **Cargar imagen**
 
-     Cargue una imagen para utilizarla como miniatura.
+    Cargue una imagen para utilizarla como miniatura.
 
 ### Cloud Services {#cloud-services}
 
@@ -156,7 +157,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permisos   {#permissions}
+### Permisos {#permissions}
 
 * **Permisos** (IU táctil optimizada)
 
@@ -168,17 +169,17 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Defina propiedades para una página de modelo en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy    {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
   Defina propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio    {#site-structure}
+### Estructura del sitio {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
 
-## Edición de las propiedades de página   {#editing-page-properties-2}
+## Edición de las propiedades de página {#editing-page-properties-2}
 
 ### Edición de propiedades de página para una página específica {#editing-page-properties-for-a-specific-page}
 

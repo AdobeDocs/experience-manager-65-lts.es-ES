@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 077dfd55-0193-41ff-97c0-9f6be978cc9f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -99,8 +100,8 @@ Para generar los subrecursos, realice una de las siguientes acciones:
 * Nuevos recursos: El flujo de trabajo [!UICONTROL DAM Update Assets] se ejecuta en cualquier nuevo recurso que se haya cargado en [!DNL Experience Manager]. Los subrecursos se generan automáticamente para los nuevos recursos de varias páginas.
 * Recursos de varias páginas existentes: ejecute manualmente el flujo de trabajo [!UICONTROL DAM Update Assets] siguiendo uno de estos pasos:
 
-   * Seleccione un recurso y haga clic en [!UICONTROL Cronología] para abrir el panel izquierdo. También puede usar el método abreviado de teclado `alt + 3`. Haga clic en [!UICONTROL Iniciar flujo de trabajo], seleccione [!UICONTROL Recurso de actualización DAM], haga clic en [!UICONTROL Iniciar] y haga clic en [!UICONTROL Continuar].
-   * Seleccione un recurso y haga clic en [!UICONTROL Crear] > [!UICONTROL Flujo de trabajo] en la barra de herramientas. En el cuadro de diálogo emergente, seleccione el flujo de trabajo [!UICONTROL Recurso de actualización DAM], haga clic en [!UICONTROL Iniciar] y haga clic en [!UICONTROL Continuar].
+  * Seleccione un recurso y haga clic en [!UICONTROL Cronología] para abrir el panel izquierdo. También puede usar el método abreviado de teclado `alt + 3`. Haga clic en [!UICONTROL Iniciar flujo de trabajo], seleccione [!UICONTROL Recurso de actualización DAM], haga clic en [!UICONTROL Iniciar] y haga clic en [!UICONTROL Continuar].
+  * Seleccione un recurso y haga clic en [!UICONTROL Crear] > [!UICONTROL Flujo de trabajo] en la barra de herramientas. En el cuadro de diálogo emergente, seleccione el flujo de trabajo [!UICONTROL Recurso de actualización DAM], haga clic en [!UICONTROL Iniciar] y haga clic en [!UICONTROL Continuar].
 
 Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo **[!UICONTROL DAM Analizar documentos de Word]**. Genera un componente `cq:Page` a partir del contenido del documento de Microsoft Word. Se hace referencia a las imágenes extraídas del documento desde el componente `cq:Page`. Estas imágenes se extraen incluso si la generación de subrecursos está desactivada.
 

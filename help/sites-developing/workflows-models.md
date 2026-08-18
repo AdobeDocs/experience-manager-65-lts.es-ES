@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 4%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 4%
 >
 >Para usar la IU clásica, consulte la [documentación de AEM 6.3](https://helpx.adobe.com/es/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
 
-Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos. 
+Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos.
 
 Cuando un usuario inicia un flujo de trabajo, se inicia una instancia; este es el modelo de tiempo de ejecución correspondiente, creado al [sincronizar](#sync-your-workflow-generate-a-runtime-model) los cambios.
 
@@ -38,7 +39,7 @@ Este paso está configurado para asignar un elemento de trabajo al iniciador del
 Para crear un flujo de trabajo con el editor:
 
 1. Abra la consola **Modelos de flujo de trabajo**; a través de **Herramientas**, **Flujo de trabajo**, **Modelos** o, por ejemplo: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
-1. Seleccione **Crear** y luego **Crear modelo**.
+1. Seleccione **Crear** y, a continuación, **Crear modelo**.
 1. Aparecerá el cuadro de diálogo **Agregar modelo de flujo de trabajo**. Escriba **Title** y **Name** (opcional) antes de seleccionar **Listo**.
 1. El nuevo modelo aparece en la consola **Modelos de flujo de trabajo**.
 1. Seleccione el nuevo flujo de trabajo y luego use [**Editar** para abrirlo y configurarlo](#editinganexistingworkflow):
@@ -84,9 +85,9 @@ Cuando abra un [modelo predeterminado o heredado](/help/sites-developing/workflo
 * El navegador de pasos no está disponible (lado izquierdo).
 * Hay una acción **Edit** disponible en la barra de herramientas (lado derecho).
 * Inicialmente, el modelo y sus propiedades se presentan en modo de solo lectura como:
-   * Los flujos de trabajo predeterminados están en `/libs`
-   * Los flujos de trabajo heredados están en `/etc`
-Si selecciona **Editar**:
+  * Los flujos de trabajo predeterminados están en `/libs`
+  * Los flujos de trabajo heredados están en `/etc`
+    Si selecciona **Editar**:
 * tomar una copia del flujo de trabajo en `/conf`
 * Hacer que el explorador de Pasos esté disponible
 * permite realizar cambios
@@ -252,7 +253,7 @@ Para definir **Stages** para su flujo de trabajo:
    | Etapa 3 | Revisión |
    | Etapa 4 | Aprobar |
    | Etapa 5 | Aprobar |
-   | Etapa 6 | Completado |
+   | Etapa 6 | Completar |
 
 1. Confirme los cambios con **Sync** (barra de herramientas del editor) para generar el modelo de tiempo de ejecución.
 
@@ -414,7 +415,6 @@ Para definir una regla OR, siga este procedimiento:
    * Defina esto como **Ruta predeterminada** al establecer **Value** en `true`.
 
    * Como **regla**, establezca la ruta en el script. Por ejemplo:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,7 +424,6 @@ Para definir una regla OR, siga este procedimiento:
 1. Edite las propiedades de **la rama 2** de **OR Split**.
 
    * Como **regla**, establezca la ruta en el otro script. Por ejemplo:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Establezca las propiedades de los pasos individuales en cada rama. Asegúrese de que **Usuario/Grupo** esté configurado.

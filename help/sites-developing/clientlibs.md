@@ -12,8 +12,8 @@ role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
 source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
+source-wordcount: '2898'
+ht-degree: 3%
 
 ---
 
@@ -165,7 +165,7 @@ A continuación, establezca la propiedad `allowProxy` de `foo` en true.
 
 1. Abra CRXDE Lite en un explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Seleccione la carpeta donde desea ubicar la carpeta de la biblioteca de cliente y haga clic en **Crear > Crear nodo**.
-1. Escriba un nombre para el archivo de biblioteca y en la lista Tipo seleccione `cq:ClientLibraryFolder`. Haz clic en **Aceptar** y luego haz clic en **Guardar todo**.
+1. Escriba un nombre para el archivo de biblioteca y en la lista Tipo seleccione `cq:ClientLibraryFolder`. Haga clic en **Aceptar** y luego en **Guardar todo**.
 1. Para especificar la categoría o categorías a las que pertenece la biblioteca, seleccione el nodo `cq:ClientLibraryFolder`, agregue la siguiente propiedad y, a continuación, haga clic en **Guardar todo**:
 
    * Nombre: categories
@@ -206,7 +206,7 @@ Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar depe
 
 * **Nombre:** dependencias
 * **Tipo:** Cadena[]
-* **Valores:** El valor de la propiedad categories del nodo cq:ClientLibraryFolder del que depende la carpeta de biblioteca actual.
+* **Valores:** El valor de la propiedad categories del nodo cq:ClientLibraryFolder del que depende la carpeta de la biblioteca actual.
 
 Por ejemplo, / `etc/clientlibs/myclientlibs/publicmain` depende de la biblioteca `cq.jquery`. El JSP que hace referencia a la biblioteca de cliente principal genera HTML que incluye el siguiente código:
 
@@ -446,7 +446,7 @@ El componente `dumplibs` incluye un selector de prueba que muestra el código fu
 
    * Abra la siguiente URL en el explorador web (utilice un host y un puerto diferentes según sea necesario):
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    La página predeterminada muestra el resultado de las etiquetas sin valor para el atributo categories.
 
