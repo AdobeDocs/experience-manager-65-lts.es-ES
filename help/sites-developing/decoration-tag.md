@@ -4,10 +4,11 @@ description: Cuando se procesa un componente de una página web, se puede genera
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 085192a0-0415-4861-8bea-a66cd50d9487
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -18,8 +19,8 @@ Cuando se procesa un componente de una página web, se puede generar un elemento
 * Un componente solo se puede editar cuando se envuelve con un elemento HTML.
 * El elemento envolvente se utiliza para aplicar clases de HTML que proporcionan:
 
-   * información de diseño
-   * información de estilo
+  * información de diseño
+  * información de estilo
 
 Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos. El procesamiento de la etiqueta de decoración y cómo se realiza se define mediante la combinación de dos factores, en los que se sumergirá esta página:
 
@@ -42,9 +43,9 @@ Se pueden aplicar las siguientes propiedades y nodos a los componentes para cont
 
 * **`cq:htmlTag`nodo :** Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
 
-   * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta HTML personalizada que se usará para ajustar los componentes en lugar del elemento DIV predeterminado.
-   * **`class {String}`:** Esto se puede usar para especificar nombres de clase css que se agregarán al contenedor.
-   * Se agregarán otros nombres de propiedades como atributos de HTML con el mismo valor de cadena proporcionado.
+  * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta HTML personalizada que se usará para ajustar los componentes en lugar del elemento DIV predeterminado.
+  * **`class {String}`:** Esto se puede usar para especificar nombres de clase css que se agregarán al contenedor.
+  * Se agregarán otros nombres de propiedades como atributos de HTML con el mismo valor de cadena proporcionado.
 
 ## Controles de script {#script-controls}
 

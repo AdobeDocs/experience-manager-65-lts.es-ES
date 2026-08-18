@@ -7,8 +7,8 @@ role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
 source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 100%
+source-wordcount: '1253'
+ht-degree: 95%
 
 ---
 
@@ -20,29 +20,29 @@ Los factores básicos que debe considerar son los siguientes (en este orden):
 
 * **Velocidad de red**
 
-   * Latencia de red
-   * Ancho de banda disponible
+  * Latencia de red
+  * Ancho de banda disponible
 
 * **Velocidad de cómputo**
 
-   * Eficiencia del almacenamiento en caché
-   * Tráfico esperado
-   * Complejidad de plantillas, aplicaciones y componentes
-   * Autores simultáneos
-   * Complejidad de la operación de creación (edición de contenido simple, despliegue de MSM, etc.)
+  * Eficiencia del almacenamiento en caché
+  * Tráfico esperado
+  * Complejidad de plantillas, aplicaciones y componentes
+  * Autores simultáneos
+  * Complejidad de la operación de creación (edición de contenido simple, despliegue de MSM, etc.)
 
 * **Rendimiento de E/S**
 
-   * Rendimiento y eficacia del almacenamiento de archivos o bases de datos
+  * Rendimiento y eficacia del almacenamiento de archivos o bases de datos
 
 * **Disco duro**
 
-   * al menos dos o tres veces superior al tamaño del repositorio
+  * al menos dos o tres veces superior al tamaño del repositorio
 
 * **Memoria**
 
-   * Tamaño del sitio web (número de objeto de contenido, páginas y usuarios)
-   * Número de usuarios/sesiones activos al mismo tiempo
+  * Tamaño del sitio web (número de objeto de contenido, páginas y usuarios)
+  * Número de usuarios/sesiones activos al mismo tiempo
 
 ## Arquitectura {#architecture}
 
@@ -53,17 +53,17 @@ En una configuración de proyecto típica, tiene varios entornos en los que se p
 * **Entorno de desarrollo**
 Para desarrollar nuevas funciones o realizar cambios significativos. La práctica recomendada es trabajar con un entorno de desarrollo por desarrollador (instalaciones locales en sus sistemas personales).
 
-* **Entorno de pruebas del autor**
+* **Entorno de prueba del autor**
 Para comprobar los cambios. El número de entornos de prueba puede variar según los requisitos del proyecto (por ejemplo, separados para control de calidad, pruebas de integración o pruebas de aceptación del usuario).
 
-* **Entorno de pruebas de publicación**
-Sobre todo para probar casos de uso de colaboración social o la interacción entre la creación y varias instancias de publicación.
+* **Entorno de prueba de publicación**
+Principalmente para probar casos de uso de colaboración social o la interacción entre el autor y varias instancias de publicación.
 
 * **Entorno de producción de creación**
 Para que los autores editen el contenido.
 
 * **Entorno de producción de publicación**
-Para servir el contenido publicado.
+Para servir contenido publicado.
 
 Además, los entornos pueden variar, desde un sistema de un solo servidor que ejecute AEM y un servidor de aplicaciones, hasta un conjunto de gran escala de instancias agrupadas de varios servidores y CPU. Adobe recomienda que utilice un equipo independiente para cada sistema de producción y que no ejecute otras aplicaciones en estos equipos.
 
