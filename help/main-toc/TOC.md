@@ -7,9 +7,9 @@ user-guide-description: Utilice la documentación de Adobe Experience Manager 6.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 6770d1b4e9b169aabc8af023d92364c1336bd9f2
+source-git-commit: da9de2298544a342a34ff91815732017c1b24299
 workflow-type: tm+mt
-source-wordcount: '7797'
+source-wordcount: '7798'
 ht-degree: 66%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 66%
 + Notas de la versión {#release-notes}
   + [Actual](/help/release-notes/release-notes.md)
   + Notas de la versión anteriores {#service-pack}
+    + [6.5.2](/help/release-notes/previous/6-5-2-lts.md)
     + [6.5.1](/help/release-notes/previous/6-5-1-lts.md)
     + [GA](/help/release-notes/previous/ga.md)
   + [Preguntas frecuentes](/help/release-notes/faq.md)
