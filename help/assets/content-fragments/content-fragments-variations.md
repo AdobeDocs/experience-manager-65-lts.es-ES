@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2078'
+ht-degree: 57%
 
 ---
 
@@ -18,8 +18,8 @@ Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituen
 
 Desde la ficha **Variaciones**, puede hacer lo siguiente:
 
-* [Introducir el contenido](#authoring-your-content) para el fragmento,
-* [Crear y administrar variaciones](#managing-variations) del contenido **Principal**,
+* [Escriba el contenido](#authoring-your-content) del fragmento
+* [Crear y administrar variaciones](#managing-variations) del contenido **Principal**
 
 Realizar una serie de acciones diferentes en función del tipo de datos que se esté editando; por ejemplo:
 
@@ -30,8 +30,6 @@ Realizar una serie de acciones diferentes en función del tipo de datos que se e
 * [Cargar contenido](#uploading-content)
 
 * [Ver estadísticas clave](#viewing-key-statistics) (acerca del texto multilínea)
-
-* [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
 
@@ -51,22 +49,22 @@ Puede hacer lo siguiente:
 
 * Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
-   * para los campos **Texto multilínea**, también puede abrir el [editor de pantalla completa](#full-screen-editor) para:
+  * para los campos **Texto multilínea**, también puede abrir el [editor de pantalla completa](#full-screen-editor) para:
 
-      * seleccione el [Formato](#formats)
-      * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
-      * acceder a una amplia gama de [acciones](#actions)
+    * seleccione el [Formato](#formats)
+    * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
+    * acceder a una amplia gama de [acciones](#actions)
 
-   * Para los campos **Referencia de fragmento**, la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, según la definición del modelo.
+  * Para los campos **Referencia de fragmento**, la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, según la definición del modelo.
 
 * Asigne **Etiquetas** a la variación actual; las etiquetas se pueden agregar, actualizar y eliminar
 
-   * Las [etiquetas](/help/sites-authoring/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden usar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+  * Las [etiquetas](/help/sites-authoring/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden usar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
 
-      * La búsqueda de una etiqueta devuelve el fragmento, con la variación de etiqueta resaltada.
-      * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
+    * La búsqueda de una etiqueta devuelve el fragmento, con la variación de etiqueta resaltada.
+    * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
 
-     Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+    Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
   >[!NOTE]
   >
@@ -101,8 +99,6 @@ También están disponibles las siguientes acciones (para todas los [formatos](#
 
 * [Sincronizar con Principal](#synchronizing-with-master) (al editar una variación)
 
-* [Resumir texto](#summarizing-text)
-
 ### Formatos {#formats}
 
 Las opciones para editar texto multilínea dependen del formato seleccionado:
@@ -130,10 +126,10 @@ La edición de texto enriquecido le permite dar formato:
 * Estilo de párrafo: Párrafo, Encabezado 1/2/3
 * [Insertar recurso](#inserting-assets-into-your-fragment)
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
-   * Búsqueda
-   * Buscar/Reemplazar
-   * Corrector ortográfico
-   * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Búsqueda
+  * Buscar/Reemplazar
+  * Corrector ortográfico
+  * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Insertar fragmento de contenido](#inserting-content-fragment-into-your-fragment); disponible cuando su campo **Texto de varias líneas** está configurado con **Permitir referencia a fragmento**.
 
 Las [acciones](#actions) también son accesibles desde el editor de pantalla completa.
@@ -216,60 +212,6 @@ Por ejemplo:
 ### Carga de contenido {#uploading-content}
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto preparado en un editor externo y añadirlo directamente al fragmento.
-
-### Texto de resumen {#summarizing-text}
-
-El texto de resumen está diseñado para ayudar a los usuarios a reducir la longitud de su texto a un número predefinido de palabras, manteniendo al mismo tiempo los puntos clave y el significado general.
-
->[!NOTE]
->
->A un nivel más técnico, el sistema mantiene las frases que califica como que proporcionan la *mejor relación entre densidad y singularidad de la información* según algoritmos específicos.
-
->[!CAUTION]
->
->El fragmento de contenido debe tener una carpeta de idioma válida (código ISO) como antecesor; se utiliza para determinar el modelo de idioma que se va a utilizar.
->
->Por ejemplo, `en/` como en la siguiente ruta:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->El inglés está disponible de forma predeterminada.
->
->Otros idiomas están disponibles como Paquetes de modelo de idioma desde Uso compartido de paquetes:
->
->* [Francés(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemán(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Español(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Seleccione **Principal** o la variación requerida.
-1. Abra el editor de pantalla completa.
-
-1. Seleccione **Resumir texto** en la barra de herramientas.
-
-   ![resumen](assets/cfm-variations-05.png)
-
-1. Especifique el número de palabras objetivo y seleccione **Inicio**:
-1. El texto original se muestra en paralelo con el resumen propuesto:
-
-   * Las frases que se eliminen se resaltan en rojo y se tachan.
-   * Haga clic en cualquier frase resaltada si desea mantenerla en el contenido resumido.
-   * Haga clic en cualquier frase no resaltada si desea eliminarla.
-
-1. Seleccione **Resumen** para confirmar los cambios.
-
-1. El texto original se muestra en paralelo con el resumen propuesto:
-
-   * Las frases que se eliminen se resaltan en rojo y se tachan.
-   * Haga clic en cualquier frase resaltada si desea mantenerla en el contenido resumido.
-   * Haga clic en cualquier frase no resaltada si desea eliminarla.
-   * Se muestran las estadísticas de resumen: **Real** y **Objetivo**-
-   * Puede **Previsualizar** los cambios.
-
-   ![comparación de resumen](assets/cfm-variations-06.png)
 
 ### Anotación de un fragmento de contenido {#annotating-a-content-fragment}
 
@@ -468,7 +410,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Principal**&#x200B;a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincroniza el elemento actual de la variación.
 >

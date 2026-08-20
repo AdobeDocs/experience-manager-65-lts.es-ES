@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -530,7 +530,6 @@ Se aconseja a los clientes que comprueben si utilizan la función o la capacidad
 
 | Área | Característica | Reemplazo | Versión (SP) |
 | --- | --- | --- | --- |
-| Sites | Resumen del texto del fragmento de contenido | No hay sustitución disponible. | |
 | Guía de inicio rápido | API de Mongo | Las API de Mongo ya están en desuso y se planea eliminarlas en futuras versiones. | 6.5 TS SP2 |
 | Sites | Compatibilidad con fragmentos de contenido en la API REST de AEM Assets | AEM 6.5 LTS SP2 proporciona OpenAPI modernas para la administración de modelos y fragmentos de contenido, por lo que los puntos finales de compatibilidad de fragmentos de contenido más antiguos en la API de REST de AEM Assets ya no se utilizan.<br>Adobe tiene la intención de mantener estos puntos finales más antiguos disponibles hasta que se anuncie el fin de la vida útil. Adobe no planea más mejoras para los puntos finales obsoletos. | 6.5 LTS SP2 |
 | Sites | [Editor de SPA](/help/sites-developing/spa-overview.md) | Los editores preferidos para administrar el contenido headless en AEM son:<br>- [El Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. | 6.5 LTS GA |
@@ -545,6 +544,7 @@ En esta sección se enumeran las características y funciones que se han elimina
 
 | Área | Característica | Reemplazo | Versión (SP) |
 | --- | --- | --- | --- |
+| Sites | Resumen del texto del fragmento de contenido | No hay sustitución disponible. | SP3 DE 6,5 LTS |
 | Comercio | AEM CIF Classic no es compatible. | Migre a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluciones | Social/Communities no es compatible. | No hay sustitución disponible. | 6.5 LTS GA |
 | Screens | Screens no se admiten. | No hay sustitución disponible. | 6.5 LTS GA |
