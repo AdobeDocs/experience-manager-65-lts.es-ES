@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ UberJar para AEM 6.5 LTS SP3 usa AEM 6.5 LTS UberJar versión 6.6.3. Puede recup
 
 Para compilar con las API públicas, utilice lo siguiente:
 
-    &quot;xml
-    &lt;dependencies>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>apis&lt;/classifier>
-    &lt;scope>proporcionado&lt;/scope>
-    &lt;/dependencies>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Si su código también depende de API obsoletas, agregue lo siguiente:
 
-    &quot;xml
-    &lt;dependencies>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>deprecated-apis&lt;/classifier>
-    &lt;scope>proporcionado&lt;/scope>
-    &lt;/dependencies>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Consulte también [Actualizar la versión de AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -462,10 +462,10 @@ SP2 for AEM 6.5 LTS se envía como un archivo JAR de inicio rápido en lugar de 
 1. En el directorio de instalación de AEM (fuera de `crx-quickstart/`), reemplace el JAR de inicio rápido anterior por el JAR del SP3.
 1. Descomprima el archivo JAR:
 
-       &quot;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &quot;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    (Ajuste los indicadores de pila según sea necesario).
 
 1. Cambie el nombre del JAR descomprimido para que coincida con la función y el puerto, por ejemplo `cq-author-4502.jar` o `cq-publish-4503.jar`.
