@@ -10,10 +10,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
 workflow-type: tm+mt
-source-wordcount: '5796'
-ht-degree: 0%
+source-wordcount: '5865'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 0%
 Una vez implementadas las instancias de AEM, debe monitorizar y mantener su funcionamiento, rendimiento e integridad.
 
 Un factor clave aquí es que para reconocer posibles problemas, debe saber cómo se ve y se comporta su sistema en condiciones normales. La mejor manera de conseguir esta capacidad es supervisar el sistema y recopilar información a lo largo del tiempo.
+
+>[!NOTE]
+>
+>Las directrices de esta página se aplican a implementaciones autoadministradas (locales). Si ejecuta AEM en Adobe Managed Services, la telemetría de aplicaciones e infraestructura se recopila por usted y está disponible a través de Observability Insights, que proporciona una vista alojada de los entornos de producción y no producción. Para obtener más información, consulte [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
 
 | Comprobación | Consideraciones | Comentario/acciones |
 |---|---|---|
@@ -122,7 +126,7 @@ Para purgar versiones de un sitio web, siga estos pasos:
    ![Configuración de purga de versiones](assets/version-purge-configuration.png)
 
    * **Rutas de depuración**
-Establezca la ruta de inicio del contenido que se va a purgar; por ejemplo, `/content/wknd`.
+     Establezca la ruta de inicio del contenido que se va a purgar; por ejemplo, `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -132,17 +136,17 @@ Establezca la ruta de inicio del contenido que se va a purgar; por ejemplo, `/co
 
    * **Purgar versiones de forma recursiva**
 
-      * Anule la selección si solo desea depurar el nodo definido por la ruta.
-      * Seleccione si desea depurar el nodo definido por la ruta y sus descendientes.
+     * Anule la selección si solo desea depurar el nodo definido por la ruta.
+     * Seleccione si desea depurar el nodo definido por la ruta y sus descendientes.
 
    * **Número máximo de versiones**
-Establezca el número máximo de versiones (para cada nodo) que desea conservar. Dejar vacío para no utilizar esta configuración.
+     Establezca el número máximo de versiones (para cada nodo) que desea conservar. Dejar vacío para no utilizar esta configuración.
 
    * **Número mínimo de versiones**
-Establezca el número mínimo de versiones (para cada nodo) que desea conservar. Dejar vacío para no utilizar esta configuración.
+     Establezca el número mínimo de versiones (para cada nodo) que desea conservar. Dejar vacío para no utilizar esta configuración.
 
    * **Página de versión máxima**
-Establezca la antigüedad máxima de la versión en días (para cada nodo) que desea mantener. Dejar vacío para no utilizar esta configuración.
+     Establezca la antigüedad máxima de la versión en días (para cada nodo) que desea mantener. Dejar vacío para no utilizar esta configuración.
 
    Luego **Guardar**.
 
@@ -215,41 +219,41 @@ Hay varios archivos de registro en el servidor de archivos donde instaló AEM:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-Todas las solicitudes de acceso al WCM de AEM y al repositorio se registran aquí.
+  * `access.log`
+    Todas las solicitudes de acceso al WCM de AEM y al repositorio se registran aquí.
 
-   * `audit.log`
-Las acciones de moderación se registran aquí.
+  * `audit.log`
+    Las acciones de moderación se registran aquí.
 
-   * `error.log`
-Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
+  * `error.log`
+    Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=es)
-Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+    Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
-   * `request.log`
-Cada solicitud de acceso se registra aquí junto con la respuesta.
+  * `request.log`
+    Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=es)
-Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+    Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
 
-   * `stderr.log`
-Contiene mensajes de error, de distinto nivel de gravedad, generados durante el inicio. De manera predeterminada, el nivel de registro está establecido en `Warning` ( `WARN`)
+  * `stderr.log`
+    Contiene mensajes de error, de distinto nivel de gravedad, generados durante el inicio. De manera predeterminada, el nivel de registro está establecido en `Warning` ( `WARN`)
 
-   * `stdout.log`
-Contiene mensajes de registro que indican eventos durante el inicio.
+  * `stdout.log`
+    Contiene mensajes de registro que indican eventos durante el inicio.
 
-   * `upgrade.log`
-Proporciona un registro de todas las operaciones de actualización que se ejecutan desde los paquetes `com.day.compat.codeupgrade` y `com.adobe.cq.upgradesexecutor`.
+  * `upgrade.log`
+    Proporciona un registro de todas las operaciones de actualización que se ejecutan desde los paquetes `com.day.compat.codeupgrade` y `com.adobe.cq.upgradesexecutor`.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-Información de diario de revisión.
+  * `journal.log`
+    Información de diario de revisión.
 
 >[!NOTE]
 >
->Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar &#x200B;** completo&quot; generado desde la página **system/console/status-Bundlelist &#x200B;**. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
+>Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar ** completo&quot; generado desde la página **system/console/status-Bundlelist **. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
 
 ### Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
@@ -312,9 +316,9 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
      Valor: especifique los servicios OSGi para los que el registrador va a registrar mensajes; por ejemplo, todos los siguientes:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * Nombre: `org.apache.sling.commons.log.level`
 
@@ -324,13 +328,13 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Configure los demás parámetros según sea necesario:
 
-      * Nombre: `org.apache.sling.commons.log.pattern`
+     * Nombre: `org.apache.sling.commons.log.pattern`
 
-        Tipo: `String`
+       Tipo: `String`
 
-        Value: especifique el patrón del mensaje de registro según sea necesario; por ejemplo,
+       Value: especifique el patrón del mensaje de registro según sea necesario; por ejemplo,
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -407,17 +411,17 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Configure los demás parámetros según sea necesario:
 
-      * Nombre: `org.apache.sling.commons.log.file.number`
+     * Nombre: `org.apache.sling.commons.log.file.number`
 
-        Tipo: `Long`
+       Tipo: `Long`
 
-        Valor: especifique el número de archivos de registro que desea conservar; por ejemplo, `5`
+       Valor: especifique el número de archivos de registro que desea conservar; por ejemplo, `5`
 
-      * Nombre: `org.apache.sling.commons.log.file.size`
+     * Nombre: `org.apache.sling.commons.log.file.size`
 
-        Tipo: `String`
+       Tipo: `String`
 
-        Valor: especifique lo necesario para controlar la rotación de archivos por tamaño/fecha; por ejemplo, `'.'yyyy-MM-dd`
+       Valor: especifique lo necesario para controlar la rotación de archivos por tamaño/fecha; por ejemplo, `'.'yyyy-MM-dd`
 
    >[!NOTE]
    >
@@ -564,19 +568,19 @@ Toda esta información debe obtenerse, ordenarse y analizarse antes de optimizar
 
 * Antes de experimentar un problema de rendimiento:
 
-   * recopilar la mayor cantidad de información posible para adquirir un buen conocimiento práctico del sistema en circunstancias normales.
+  * recopilar la mayor cantidad de información posible para adquirir un buen conocimiento práctico del sistema en circunstancias normales.
 
 * Cuando experimenta un problema de rendimiento:
 
-   * intente replicarlo con un navegador web estándar (o preferiblemente más), en un cliente diferente que sepa que tiene un buen rendimiento general o en el propio servidor (si es posible)
-   * compruebe si algo (relacionado con el sistema) ha cambiado en un espacio de tiempo adecuado y si alguno de estos cambios podría haber afectado al rendimiento
-   * haga preguntas como:
+  * intente replicarlo con un navegador web estándar (o preferiblemente más), en un cliente diferente que sepa que tiene un buen rendimiento general o en el propio servidor (si es posible)
+  * compruebe si algo (relacionado con el sistema) ha cambiado en un espacio de tiempo adecuado y si alguno de estos cambios podría haber afectado al rendimiento
+  * haga preguntas como:
 
-      * ¿el problema solo se produce en momentos específicos?
-      * ¿el problema solo se produce en páginas específicas?
-      * ¿se ven afectadas otras solicitudes?
+    * ¿el problema solo se produce en momentos específicos?
+    * ¿el problema solo se produce en páginas específicas?
+    * ¿se ven afectadas otras solicitudes?
 
-   * recopile la mayor cantidad de información posible para compararla con su conocimiento del sistema en circunstancias normales:
+  * recopile la mayor cantidad de información posible para compararla con su conocimiento del sistema en circunstancias normales:
 
 ### Herramientas para monitorizar y analizar el rendimiento {#tools-for-monitoring-and-analyzing-performance}
 
@@ -710,15 +714,15 @@ Este registro tiene una línea por solicitud o respuesta:
 * Una flecha que indica si es una solicitud (flecha que señala a la derecha) o una respuesta (flecha a la izquierda).
 * Para las solicitudes, la línea contiene:
 
-   * el método (normalmente, GET, HEAD o POST)
-   * la página solicitada
-   * el protocolo
+  * el método (normalmente, GET, HEAD o POST)
+  * la página solicitada
+  * el protocolo
 
 * Para las respuestas, la línea contiene:
 
-   * el código de estado (200 significa &quot;correcto&quot;, 404 significa &quot;página no encontrada&quot;)
-   * el tipo MIME
-   * el tiempo de respuesta
+  * el código de estado (200 significa &quot;correcto&quot;, 404 significa &quot;página no encontrada&quot;)
+  * el tipo MIME
+  * el tiempo de respuesta
 
 Mediante pequeños scripts, puede extraer la información necesaria del archivo de registro y combinar las estadísticas que desee. Desde estas estadísticas, puede ver qué páginas o tipos de páginas son lentos y si el rendimiento general es satisfactorio.
 
@@ -1064,9 +1068,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 >Consulte también los siguientes artículos para obtener más información:
 >
->* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
->* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
->* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
+>* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### CPU al 100 % {#cpu-at}
@@ -1086,7 +1090,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+  * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1094,17 +1098,17 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 
 * Si ha deshabilitado la recopilación de información de depuración, puede configurarse en varias ubicaciones, incluidas las siguientes:
 
-   * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Administrador de bibliotecas CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [Administrador de bibliotecas CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
-   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
+  * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 
