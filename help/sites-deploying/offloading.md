@@ -1,5 +1,5 @@
 ---
-title: Descargando trabajos
+title: Descarga de trabajos
 description: Obtenga información sobre cómo configurar y utilizar instancias de AEM en una topología para realizar tipos específicos de procesamiento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2393'
 ht-degree: 1%
 
 ---
 
-# Descargando trabajos{#offloading-jobs}
+# Descarga de trabajos{#offloading-jobs}
 
 ## Introducción {#introduction}
 
@@ -208,7 +208,7 @@ Con Experience Manager se instalan varias implementaciones de JobConsumer. Los t
 | Tema de trabajo | PID de servicio | Descripción |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Se instala con Apache Sling. Procesa los trabajos que genera el administrador de eventos OSGi para garantizar la compatibilidad con versiones anteriores. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilice la consola web o un nodo `sling:OsgiConfig` para configurar las siguient
 
 | Nombre de propiedad en la consola web | ID de OSGi | Descripción |
 |---|---|---|
-| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
+| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
 | Lista de bloqueados del tema | job.consumermanager.blacklist | Lista de temas que el servicio JobManager local no procesa. |
 
 ## Creación De Agentes De Replicación Para Descargar {#creating-replication-agents-for-offloading}

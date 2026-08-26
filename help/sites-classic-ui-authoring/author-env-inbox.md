@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2f760a0e-bee3-4803-b0db-6e1137396600
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +81,7 @@ Para suscribirse a las notificaciones:
    * Activated: cuando se activa una página.
    * Desactivado: cuando se desactiva una página.
    * Deleted (syndication): cuando una página se ha eliminado o replicado, es decir, cuando se replica una acción de eliminación realizada en una página.
-Cuando se elimina o mueve una página, se replica automáticamente una acción de eliminación: la página se elimina en la instancia de origen en la que se realizó la acción de eliminación y en la instancia de destino definida por los agentes de replicación.
+     Cuando se elimina o mueve una página, se replica automáticamente una acción de eliminación: la página se elimina en la instancia de origen en la que se realizó la acción de eliminación y en la instancia de destino definida por los agentes de replicación.
 
    * Modificado: cuando se modifica una página.
    * Creado: cuando se crea una página.
@@ -92,8 +93,8 @@ Cuando se elimina o mueve una página, se replica automáticamente una acción d
    * Haga clic en **Agregar** para agregar una fila nueva a la tabla.
    * Haga clic en la celda de tabla **Path** e introduzca la ruta de acceso, por ejemplo, `/content/docs`.
 
-   * Para recibir notificaciones de todas las páginas que pertenecen al subárbol, establezca **¿Exacto?** a **No**.
-Para que solo se le notifique por las acciones en la página definida por la ruta, establezca **¿Exacto?** a **Sí**.
+   * Para recibir notificaciones de todas las páginas que pertenecen al subárbol, establezca **Exact?** a **No**.
+     Para que solo se le notifiquen las acciones de la página definida por la ruta de acceso, establezca **Exact?** a **Sí**.
 
    * Para permitir la regla, establezca **Rule** en **Allow**. Si se establece en **Denegar**, la regla se deniega, pero no se elimina y se puede permitir más adelante.
 
