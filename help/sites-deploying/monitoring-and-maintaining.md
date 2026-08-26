@@ -25,7 +25,7 @@ Un factor clave aquí es que para reconocer posibles problemas, debe saber cómo
 
 >[!NOTE]
 >
->Las directrices de esta página se aplican a implementaciones autoadministradas (locales). Si ejecuta AEM en Adobe Managed Services, la telemetría de aplicaciones e infraestructura se recopila por usted y está disponible a través de Observability Insights, que proporciona una vista alojada de los entornos de producción y no producción. Para obtener más información, consulte [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
+>Las directrices de esta página se aplican a implementaciones autoadministradas (locales). Si ejecuta AEM en Adobe Managed Services, la telemetría de aplicaciones e infraestructura se recopila por usted y está disponible a través de Observability Insights, que proporciona una vista alojada de los entornos de producción y no producción. Para obtener más información, consulte [Observability Insights](https://experienceleague.adobe.com/es/docs/ams-observability-insights/content/overview).
 
 | Comprobación | Consideraciones | Comentario/acciones |
 |---|---|---|
@@ -228,13 +228,13 @@ Hay varios archivos de registro en el servidor de archivos donde instaló AEM:
   * `error.log`
     Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=es)
     Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
   * `request.log`
     Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=es)
     Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
 
   * `stderr.log`
@@ -1068,9 +1068,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 >Consulte también los siguientes artículos para obtener más información:
 >
->* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
 >
 
 ### CPU al 100 % {#cpu-at}
@@ -1090,7 +1090,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-  * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+  * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1108,7 +1108,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
-  * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+  * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 
