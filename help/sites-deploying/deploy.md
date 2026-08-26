@@ -1,19 +1,14 @@
 ---
 title: Implementación y mantenimiento
 description: Obtenga información sobre cómo empezar a instalar AEM.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: deploying
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
+source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 11%
+source-wordcount: '1437'
+ht-degree: 10%
 
 ---
 
@@ -23,20 +18,20 @@ En esta página encontrará:
 
 * [Conceptos básicos](#basic-concepts)
 
-   * [¿Qué es AEM?](#what-is-aem)
-   * [Implementaciones habituales](#typical-deployment-scenarios)
+  * [¿Qué es AEM?](#what-is-aem)
+  * [Implementaciones habituales](#typical-deployment-scenarios)
 
-      * [On-Premise](#on-premise)
-      * [Managed Services con Cloud Manager](#managed-services-using-cloud-manager)
+    * [On-Premise](#on-premise)
+    * [Managed Services con Cloud Manager](#managed-services-using-cloud-manager)
 
 * [Introducción](#getting-started)
 
-   * [Requisitos previos](#prerequisites)
-   * [Obtención del software](#getting-the-software)
-   * [Instalación local predeterminada](#default-local-install)
-   * [Instalaciones de creación y publicación](#author-and-publish-installs)
-   * [Directorio de instalación desempaquetado](#unpacked-install-directory)
-   * [Inicio y detención](#starting-and-stopping)
+  * [Requisitos previos](#prerequisites)
+  * [Obtención del software](#getting-the-software)
+  * [Instalación local predeterminada](#default-local-install)
+  * [Instalaciones de creación y publicación](#author-and-publish-installs)
+  * [Directorio de instalación desempaquetado](#unpacked-install-directory)
+  * [Inicio y detención](#starting-and-stopping)
 
 Una vez que se haya familiarizado con estos conceptos básicos, encontrará información más avanzada y detallada en las siguientes subpáginas:
 
@@ -107,7 +102,7 @@ Puede instalar AEM en servidores de su entorno corporativo. Las instancias de in
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-<i>Se anunciará próximamente.</i>
+Para implementaciones de Adobe Managed Services, los entornos de AEM se implementan y administran mediante [Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction). Para supervisar el rendimiento de las aplicaciones y el estado de la infraestructura en los entornos de producción y de no producción, vea [Observability Insights](https://experienceleague.adobe.com/es/docs/ams-observability-insights/content/overview).
 
 ## Introducción {#getting-started}
 
@@ -265,7 +260,7 @@ AEM se inicia y redirige automáticamente el explorador web a la página adecuad
 Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/first-steps.md)
-* [Administración &#x200B;](/help/sites-administering/home.md)
+* [Administración](/help/sites-administering/home.md)
 * [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
