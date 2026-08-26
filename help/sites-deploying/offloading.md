@@ -208,7 +208,7 @@ Con Experience Manager se instalan varias implementaciones de JobConsumer. Los t
 | Tema de trabajo | PID de servicio | Descripción |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Se instala con Apache Sling. Procesa los trabajos que genera el administrador de eventos OSGi para garantizar la compatibilidad con versiones anteriores. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilice la consola web o un nodo `sling:OsgiConfig` para configurar las siguient
 
 | Nombre de propiedad en la consola web | ID de OSGi | Descripción |
 |---|---|---|
-| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
+| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
 | Lista de bloqueados del tema | job.consumermanager.blacklist | Lista de temas que el servicio JobManager local no procesa. |
 
 ## Creación De Agentes De Replicación Para Descargar {#creating-replication-agents-for-offloading}
