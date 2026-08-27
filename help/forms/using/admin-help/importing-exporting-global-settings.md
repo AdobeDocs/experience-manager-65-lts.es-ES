@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Puede importar y exportar definiciones de plantillas de búsqueda y configuraci�
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 Por ejemplo, puede pasar de un entorno de desarrollo a un entorno de producción exportando las definiciones de plantillas de búsqueda y la configuración global de un entorno e importándolas en el otro.
 
@@ -71,7 +71,7 @@ Puede modificar el archivo de configuración global; sin embargo, los únicos va
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 El archivo de configuración global de Workspace incluye la siguiente configuración:
 
@@ -145,4 +145,4 @@ Para definir el nombre personalizado:
 >
 >Para la aplicación Demo, el nombre para mostrar predeterminado es **Citizen**. Para una aplicación personalizada que cree, el nombre para mostrar predeterminado es **Cuenta de contexto del sistema**.
 >
->**client_inactiveTimeout:** Cuando un usuario permanece inactivo durante un período de tiempo específico, caduca la sesión de AEM Forms Workspace. Para habilitar la función, agregue una entrada a la Configuración global &lt;client_inactiveTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_inactiveTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.
+>**client_inactiveTimeout:** Cuando un usuario permanece inactivo durante un período de tiempo específico, caduca la sesión de AEM Forms Workspace. Para habilitar la característica, agregue una entrada a la Configuración global &lt;client_inactiveTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_inactiveTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.

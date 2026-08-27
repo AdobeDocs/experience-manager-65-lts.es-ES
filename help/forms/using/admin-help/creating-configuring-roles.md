@@ -10,7 +10,7 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Se pueden incluir las siguientes funciones predeterminadas adicionales, en funci
 
 **Administrador de AEM Forms Workspace:** Puede ver y modificar la configuración de la página de Workspace en la consola de administración
 
-***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios de AEM.*
+***nota **: Flex Workspace está obsoleto para la versión de formularios AEM.*
 
 **Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 
@@ -97,7 +97,7 @@ Se pueden incluir las siguientes funciones predeterminadas adicionales, en funci
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 ## Crear una función {#create-a-role}
 
