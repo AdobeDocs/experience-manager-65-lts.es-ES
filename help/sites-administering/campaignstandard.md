@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fbc73503-efa3-480b-bdc6-9f997c3f3474
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1824'
 ht-degree: 1%
 
 ---
-
 
 # Integración de AEM 6.5 con Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
@@ -30,13 +30,13 @@ Esta integración permite utilizar AEM y Adobe Campaign Standard de forma indepe
 
 La configuración de la integración entre AEM y Adobe Campaign Standard requiere varios pasos en ambas soluciones.
 
-1. [Configure las variables &#x200B;](#aemserver-user)
-1. [Compruebe el &#x200B;](#resource-type-filter)
+1. [Configurar el usuario `aemserver` en Campaign](#aemserver-user)
+1. [Verificar `AEMResourceTypeFilter` en Campaign](#resource-type-filter)
 1. [Creación de una plantilla de envíos de correo electrónico específica de AEM en Campaign](#aem-email-delivery-template)
 1. [Configuración de la integración de Campaign en AEM](#campaign-integration)
 1. [Configuración de la replicación en la instancia de publicación de AEM](#replication)
 1. [Configuración del externalizador de AEM](#externalizer)
-1. [Configure las variables &#x200B;](#campaign-remote-user)
+1. [Configuración del usuario `campaign-remote` en AEM](#campaign-remote-user)
 1. [Configuración de la cuenta externa de AEM en Campaign](#acc-external-user)
 
 Este documento le guía en detalle por cada uno de estos pasos.
@@ -44,7 +44,7 @@ Este documento le guía en detalle por cada uno de estos pasos.
 ## Requisitos previos {#prerequisites}
 
 * Acceso de administrador a Adobe Campaign Standard
-   * Si necesita más detalles sobre cómo configurar Adobe Campaign Standard, consulte la [documentación de Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=es)
+  * Si necesita más detalles sobre cómo configurar Adobe Campaign Standard, consulte la [documentación de Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=es)
 * Acceso de administrador a AEM
 
 ## Configuración del usuario de aemserver en Campaign {#aemserver-user}
@@ -241,7 +241,7 @@ Cuando [creó una plantilla de envíos de correo electrónico específica de AEM
 
 ¡Enhorabuena! ¡Ha completado la integración entre AEM y Adobe Campaign Standard!
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Con Adobe Campaign Classic y AEM configurados, la integración ya está completa.
 

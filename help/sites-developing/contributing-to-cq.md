@@ -8,10 +8,11 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1197dc8e-7fbe-4f74-942b-3aa9fafc07ac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 0%
+source-wordcount: '2738'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +40,7 @@ En el nivel más alto, debería comprender bien lo siguiente:
 * Notación de objetos de JavaScript (JSON)
 * el modelo de objetos de documento
 * Interacciones con estado frente a sin estado
-* [Identificadores uniformes de recursos](https://www.ietf.org/rfc/rfc2396.txt)
+* [Identificadores de recursos uniformes](https://www.ietf.org/rfc/rfc2396.txt)
 * Cookies del explorador
 * y otros conceptos modernos de desarrollo web
 
@@ -177,6 +178,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Almacenamiento Tar (TarMK)**: TarMK es el sistema de persistencia predeterminado en AEM. Aunque AEM se puede configurar para utilizar un sistema de persistencia diferente (como MongoDB), TarMK tiene ciertas ventajas en el sentido de que está optimizado para el rendimiento de casos de uso típicos de JCR (por lo tanto, es rápido), utiliza un formato de datos estándar en la industria y se puede realizar una copia de seguridad rápida y fácilmente.
 
-**Plantilla**: en AEM, una plantilla especifica un tipo particular de página. Define la estructura de una página (a la vez que especifica una imagen en miniatura y varias propiedades). Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto.
+**Plantilla**: en AEM, una plantilla especifica un tipo particular de página. Define la estructura de una página (a la vez que especifica una imagen en miniatura y varias propiedades). Por ejemplo, puede tener plantillas independientes para páginas de producto, mapas del sitio e información de contacto.
 
 **Flujo de trabajo**: el sistema de flujo de trabajo de AEM permite la creación de procesos automatizados que involucran páginas o recursos.

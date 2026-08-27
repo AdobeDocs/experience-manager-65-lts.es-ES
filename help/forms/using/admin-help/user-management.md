@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 5a87e340-053b-4b72-99a0-df14d7bf304c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -59,4 +59,4 @@ Los usuarios con ciertos tipos de privilegios de administrador no pueden acceder
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
