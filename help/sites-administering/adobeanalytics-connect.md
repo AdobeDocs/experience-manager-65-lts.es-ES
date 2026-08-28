@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1582'
 ht-degree: 9%
 
 ---
@@ -84,6 +84,10 @@ Use la consola web [para configurar el paquete OSGi](/help/sites-deploying/confi
 
 >[!CAUTION]
 >
+>La API [Adobe Analytics 1.4 ha llegado al final de su vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, ya no se admiten las configuraciones de Adobe Analytics que utilizan credenciales de usuario (nombre de usuario y contraseña).
+
+>[!CAUTION]
+>
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
 >Ahora se debe usar el complemento [ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es).
@@ -150,21 +154,21 @@ Comience por abrir el panel. Presione la flecha hacia abajo situada junto a **Se
 
 * **Servidor de seguimiento**
 
-   * contiene la dirección URL utilizada para enviar llamadas de Adobe Analytics
+  * contiene la dirección URL utilizada para enviar llamadas de Adobe Analytics
 
-      * `cname` - toma como valor predeterminado *Nombre de compañía* de la cuenta de Adobe Analytics
-      * `d1` - corresponde al centro de datos al que se envía la información (`d1`, `d2` o `d3`)
-      * `sc.omtrdc.net` - nombre de dominio
+    * `cname` - toma como valor predeterminado *Nombre de compañía* de la cuenta de Adobe Analytics
+    * `d1` - corresponde al centro de datos al que se envía la información (`d1`, `d2` o `d3`)
+    * `sc.omtrdc.net` - nombre de dominio
 
 * **Servidor de seguimiento seguro**
 
-   * Tiene los mismos segmentos que el servidor de seguimiento
-   * Se usa para enviar datos desde páginas seguras (`https://`)
+  * Tiene los mismos segmentos que el servidor de seguimiento
+  * Se usa para enviar datos desde páginas seguras (`https://`)
 
 * **Espacio de nombres del visitante**
 
-   * El área de nombres determina la primera parte de la dirección URL de seguimiento.
-   * Por ejemplo, si se cambia el espacio de nombres a **CNAME**, las llamadas realizadas a Adobe Analytics se parecerán a **CNAME.d1.omtrdc.net** en lugar del predeterminado.
+  * El área de nombres determina la primera parte de la dirección URL de seguimiento.
+  * Por ejemplo, si se cambia el espacio de nombres a **CNAME**, las llamadas realizadas a Adobe Analytics se parecerán a **CNAME.d1.omtrdc.net** en lugar del predeterminado.
 
 ## Asociación de una página a un marco de trabajo de Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
