@@ -8,14 +8,21 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 96%
+source-wordcount: '1611'
+ht-degree: 92%
 
 ---
 
 # Analytics con el marco de trabajo de Cloud Service {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>El panel de Analytics para AEM Forms está obsoleto. Ya no puede ver informes de análisis dentro de AEM Forms. Para ver los datos de análisis de los formularios, utilice la IU de Adobe Analytics.
+>
+>Además, la API [Adobe Analytics 1.4 ha llegado al final de su vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, ya no se admiten las configuraciones de Adobe Analytics que utilizan credenciales de usuario (nombre de usuario y contraseña).
 
 AEM Forms se integra con Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
@@ -176,14 +183,14 @@ Un marco de trabajo de Adobe Analytics es un conjunto de asignaciones entre vari
 
 Ahora puede habilitar Analytics para formularios y generar un informe de Analytics.
 
-## Activar Analytics para un formulario o documento {#enabling-analytics-for-a-form-or-document}
+## Habilitar Analytics para un formulario o documento {#enabling-analytics-for-a-form-or-document}
 
 1. Inicie sesión en el Portal de AEM en `https://[hostname]:'port'`.
 1. Haga clic en **Forms > Formularios y documentos**, seleccione un formulario o documento y haga clic en **Habilitar Analytics**. El análisis está habilitado.
 
-   ![Activar Analytics para un formulario o documento](assets/enable-analytics-1.png)
+   ![Habilitar Analytics para un formulario o documento](assets/enable-analytics-1.png)
 
-   Activar Analytics para un formulario
+   Habilitar Analytics para un formulario
 
    **A.** Botón Habilitar Analytics **B.** Formulario seleccionado
 
