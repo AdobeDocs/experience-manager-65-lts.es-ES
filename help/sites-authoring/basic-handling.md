@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 3c506169fb7857e8bbcf20881bae3ac22eeb5fd4
 workflow-type: tm+mt
-source-wordcount: '2951'
-ht-degree: 42%
+source-wordcount: '3057'
+ht-degree: 41%
 
 ---
 
@@ -143,7 +143,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://business.adobe.com/es/)
+* [Soluciones](https://business.adobe.com/)
 
   ![Soluciones](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -241,11 +241,11 @@ Hay varios recursos de ayuda disponibles:
 
   Desde la consola **Herramientas**, también puede obtener acceso a los **recursos** externos:
 
-   * **Documentación**
-Ver la documentación de Web Experience Management.
+  * **Documentación**
+    Ver la documentación de Web Experience Management.
 
-   * **Recursos para desarrolladores**
-Recursos y descargas para desarrolladores
+  * **Recursos para desarrolladores**
+    Recursos y descargas para desarrolladores
 
   >[!NOTE]
   >
@@ -396,29 +396,31 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
 * Puede desplazarse hacia arriba y hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
 
-   * El nombre del recurso y las comillas angulares se resaltan al pulsarlas o hacer clic en ellas.
+  * El nombre del recurso y las comillas angulares se resaltan al pulsarlas o hacer clic en ellas.
 
-     ![Vista de columna](assets/bh-17.png)
+    ![Vista de columna](assets/bh-17.png)
 
-   * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
-   * Si hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
+  * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
+  * Si hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
 
 * Al tocar o hacer clic en la miniatura, se selecciona el recurso.
 
-   * Cuando se selecciona, se superpone una marca de verificación en la miniatura y el nombre del recurso también se resalta.
-   * Los detalles del recurso seleccionado se muestran en la última columna.
-   * La barra de herramientas de acciones está disponible.
+  * Cuando se selecciona, se superpone una marca de verificación en la miniatura y el nombre del recurso también se resalta.
+  * Los detalles del recurso seleccionado se muestran en la última columna.
+  * La barra de herramientas de acciones está disponible.
 
-     ![Vista de columna](assets/bh-18.png)
+    ![Vista de columna](assets/bh-18.png)
 
   Cuando se selecciona una página en la vista de columna, la página seleccionada se muestra en la última columna junto con los siguientes detalles:
 
-   * Título de la página
-   * Nombre de la página (parte de la dirección URL de la página)
-   * Plantilla en la que se basa la página
-   * Detalles de modificación
-   * Idioma de la página
-   * Detalles de publicación
+  * Título de la página
+  * Nombre de la página (parte de la dirección URL de la página)
+  * Plantilla en la que se basa la página
+  * Detalles de modificación
+  * Idioma de la página
+  * Detalles de publicación
+  * [Tiempo de activación/desactivación de la página](/help/sites-authoring/editing-page-properties.md#on-off-time) (si está establecido)
+
 
 ### Vista de tarjeta {#card-view}
 
@@ -426,13 +428,13 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
 * La vista de tarjeta muestra tarjetas de información para cada elemento del nivel actual. Proporcionan información como la siguiente:
 
-   * Una representación visual del contenido de la página.
-   * El título de la página.
-   * Fechas importantes (como la de la última modificación o la última publicación).
-   * La página está bloqueada, oculta o forma parte de una Live Copy.
-   * Si procede, cuando tenga que realizar una acción como parte de un flujo de trabajo.
+  * Una representación visual del contenido de la página.
+  * El título de la página.
+  * Fechas importantes (como la de la última modificación o la última publicación).
+  * La página está bloqueada, oculta o forma parte de una Live Copy.
+  * Si procede, cuando tenga que realizar una acción como parte de un flujo de trabajo.
 
-      * Los marcadores que indican las acciones requeridas pueden estar relacionados con las entradas de su [Bandeja de entrada](/help/sites-authoring/inbox.md).
+    * Los marcadores que indican las acciones requeridas pueden estar relacionados con las entradas de su [Bandeja de entrada](/help/sites-authoring/inbox.md).
 
 * Las [acciones rápidas](#quick-actions) también están disponibles en esta vista, como la selección y acciones comunes como la edición.
 
@@ -451,26 +453,31 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
   ![Vista de lista - Seleccionar todo](assets/bh-20.png)
 
-   * Cuando se seleccionan todos los elementos de la lista, esta casilla de verificación aparece activada.
+  * Cuando se seleccionan todos los elementos de la lista, esta casilla de verificación aparece activada.
 
-      * Para anular la selección de todo, haga clic en la casilla de verificación.
+    * Para anular la selección de todo, haga clic en la casilla de verificación.
 
-   * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
+  * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
 
-      * Para seleccionar todo, haga clic en la casilla de verificación.
-      * Para anular la selección de todo, vuelva a hacer clic en la casilla de verificación.
+    * Para seleccionar todo, haga clic en la casilla de verificación.
+    * Para anular la selección de todo, vuelva a hacer clic en la casilla de verificación.
 
 * Seleccione las columnas que se mostrarán con la opción **Ver configuración** ubicada debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
-   * **Nombre**: nombre de la página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia, independientemente del idioma
-   * **Modificado**: fecha de la última modificación y de la última modificación del usuario
-   * **Publicado**: estado de publicación
-   * **Plantilla**: plantilla en la que se basa la página
-   * **Flujo de trabajo**: flujo de trabajo aplicado actualmente a la página. Hay más información disponible cuando pasa el ratón sobre o abre Cronología.
+  * **Nombre**: nombre de la página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia, independientemente del idioma
+  * **Modificado**: fecha de la última modificación y de la última modificación del usuario
+    * La entrada de columna se identificará con un icono de advertencia si la página se ha actualizado desde la última publicación.
+    * ![Modificado desde la última publicación](assets/modified.png)
+  * **Publicado**: estado de publicación
+    * La entrada de columna se mostrará con un icono de reloj si la página tiene [horas de activación y desactivación](/help/sites-authoring/editing-page-properties.md#on-time) establecidas.
+    * Pase el ratón sobre el icono para obtener más información.
+    * ![Tiempo de activación/desactivación establecido](assets/on-off-time.png)
+  * **Plantilla**: plantilla en la que se basa la página
+  * **Flujo de trabajo**: flujo de trabajo aplicado actualmente a la página. Hay más información disponible cuando pasa el ratón sobre o abre Cronología.
 
-   * **Análisis de la página**
-   * **Visitantes únicos**
-   * **Tiempo empleado en la página**
+  * **Análisis de la página**
+  * **Visitantes únicos**
+  * **Tiempo empleado en la página**
 
   ![Configuración de vista - Configurar columnas](assets/bh-21.png)
 
@@ -530,25 +537,27 @@ La columna de cronología le permite:
 
 * [Ver varios eventos](#timelineviewevents) relacionados con el elemento seleccionado.
 
-   * Los tipos de eventos se pueden seleccionar desde la lista desplegable:
+  * Los tipos de eventos se pueden seleccionar desde la lista desplegable:
 
-      * [Comentarios](#timelineaddingandviewingcomments)
-      * Anotaciones
-      * Actividades
-      * [Lanzamientos](/help/sites-authoring/launches.md)
-      * [Versiones](/help/sites-authoring/working-with-page-versions.md)
-      * [Flujos de trabajo](/help/sites-authoring/workflows-applying.md)
+    * [Comentarios](#timelineaddingandviewingcomments)
+    * Anotaciones
+    * Actividades que incluyen ediciones y publicaciones
+      * Si la página tiene [horas de activación/desactivación](/help/sites-authoring/editing-page-properties.md#on-off-time) establecidas y la hora actual está fuera de la ventana de tiempo de activación/desactivación, puede mostrarse una actividad Page Invalid (Página no válida).
+      * Esto solo indica que la página está fuera de su ventana de validez, no necesariamente que se cancele la publicación.
+    * [Lanzamientos](/help/sites-authoring/launches.md)
+    * [Versiones](/help/sites-authoring/working-with-page-versions.md)
+    * [Flujos de trabajo](/help/sites-authoring/workflows-applying.md)
 
-         * excepto [flujos de trabajo transitorios](/help/sites-developing/workflows.md#transient-workflows) porque no se guardó ninguna información de historial para estos
+      * excepto [flujos de trabajo transitorios](/help/sites-developing/workflows.md#transient-workflows) porque no se guardó ninguna información de historial para estos
 
-      * y Mostrar todo
+    * y Mostrar todo
 
 * [Agregar o ver comentarios](#timelineaddingandviewingcomments) sobre el elemento seleccionado. El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Escribir un comentario seguido de Retorno registra el comentario. Se muestra cuando se selecciona **Comentarios** o **Mostrar todo**.
 
 * Determinadas consolas tienen funciones adicionales. Por ejemplo, en la consola Sitios puede hacer lo siguiente:
 
-   * [Guardar una versión](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [Iniciar un flujo de trabajo](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [Guardar una versión](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
+  * [Iniciar un flujo de trabajo](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Se puede acceder a estas opciones mediante las comillas angulares que aparecen junto al campo **Comentario**.
 
@@ -564,8 +573,8 @@ Se puede acceder a estas opciones mediante las comillas angulares que aparecen j
 * [Copias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referencias de contenido:
 
-   * Vínculos directos de otras páginas a la página seleccionada
-   * Contenido que el componente de referencia extrae de la página seleccionada, que entrega a esta o ambas
+  * Vínculos directos de otras páginas a la página seleccionada
+  * Contenido que el componente de referencia extrae de la página seleccionada, que entrega a esta o ambas
 
 ![bh-28](assets/bh-28.png)
 
