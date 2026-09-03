@@ -5,18 +5,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 36%
+source-wordcount: '570'
+ht-degree: 28%
 
 ---
+
 
 # Personalización y segmentación de contenido {#personalization}
 
 ## Personalización y segmentación de contenido {#personalization-and-content-targeting}
 
 AEM proporciona un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas.
+
+>[!NOTE]
+>
+>El modo de Orientación y el componente de Orientación de AEM clásico utilizan la integración de AEM Target basada en ContextHub. Por lo tanto, las páginas que dependen exclusivamente del AEP Web SDK no representarán el componente de segmentación clásica de AEM. [Consulte la documentación para desarrolladores para obtener más información.](/help/sites-developing/target.md)
 
 ## Modo Targeting {#targeting-mode}
 
@@ -30,7 +35,7 @@ Por ejemplo, el catálogo de productos We.Retail incluye teasers que destacan lo
 
 Las actividades también identifican el [motor de segmentación](/help/sites-authoring/personalization.md#targeting-engine) que utilizan sus páginas.
 
-Use la [consola Actividades](/help/sites-authoring/activitylib.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Use la [consola Actividades](/help/sites-authoring/activitylib.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [cree contenido de destino.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Experiencias {#experiences}
 
@@ -48,7 +53,7 @@ Una oferta es contenido que aparece en una ubicación de una página para una ex
 
 Por ejemplo, la página para mujeres del sitio web de muestra de We.Retail puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y de mujeres menores de 30 años.
 
-Use la consola [Ofertas](/help/sites-authoring/offerlib.md) para crear ofertas que pueda usar en varias experiencias. Cree ofertas de un solo uso o agregue ofertas desde una biblioteca de ofertas al [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Use la consola [Ofertas](/help/sites-authoring/offerlib.md) para crear ofertas que pueda usar en varias experiencias. Cree ofertas de un solo uso o agregue ofertas desde una biblioteca de ofertas al [crear contenido de destino.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Motor de segmentación {#targeting-engine}
 
@@ -63,6 +68,6 @@ AEM proporciona un motor de segmentación integrado que procesa las solicitudes 
 El motor de segmentación de Adobe Target hace que la información recopilada de las visitas a la página sean rastreadas en Adobe Target.
 
 * Al utilizar este motor de segmentación, se usan los segmentos importados de Adobe Target para definir los públicos para las experiencias.
-* Las actividades que utilizan el motor de Adobe Target se [sincronizan con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Las actividades que usan el motor de Adobe Target están [sincronizadas con Target.](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
 
-Puede utilizar este motor cuando se haya [integrado con Adobe Target](/help/sites-administering/opt-in.md).
+Puede usar este motor cuando se haya [integrado con Adobe Target.](/help/sites-administering/opt-in.md)
