@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1332'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,7 @@ Antes de comenzar la actualización, es importante realizar estas tareas de mant
 * [Definiciones de índice](#index-definitions)
 * [Garantizar suficiente espacio en disco](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [Copia de seguridad completa de AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Comprobar si hay copias de seguridad anteriores a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [Generar el archivo quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configurar depuración de flujo de trabajo y registro de auditoría](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Instalar, configurar y ejecutar las tareas previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -46,6 +47,18 @@ Al ejecutar la actualización, asegúrese de que haya suficiente espacio en disc
 ## Copia de seguridad completa de AEM {#fully-back-up-aem}
 
 Se debe realizar una copia de seguridad completa de AEM antes de comenzar la actualización. Asegúrese de realizar una copia de seguridad del repositorio, la instalación de la aplicación, el almacén de datos y las instancias de Mongo si corresponde. Para obtener más información sobre cómo hacer copias de seguridad y restaurar una instancia de AEM, consulte [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
+
+## Comprobar si hay copias de seguridad anteriores a la actualización {#check-stale-pre-upgrade-backups}
+
+Antes de una actualización, AEM realiza una copia de seguridad de ciertas rutas (como `/etc/tags`) en `/var/upgrade/PreUpgradeBackup/<timestamp>` y luego las restaura una vez que se completa la actualización. Cada nodo de copia de seguridad tiene una propiedad de estado de combinación: `INIT` significa que la copia de seguridad se creó pero nunca se volvió a combinar, mientras que `COMPLETED` significa que la combinación finalizó correctamente.
+
+Si una copia de seguridad de una actualización anterior (por ejemplo, de 6.4 a 6.5) queda en estado `INIT`, la última actualización (de 6.5 a 6.5 LTS) restaura esa copia de seguridad antigua sin combinar. Esto puede volver a introducir de forma silenciosa contenido obsoleto o obsoleto que ya no coincide con el estado actual del repositorio, lo que provoca problemas inesperados una vez completada la actualización.
+
+Para evitarlo, antes de iniciar la actualización:
+
+1. Usando CRXDE Lite (`/crx/de/index.jsp`), compruebe la instancia de origen de los nodos preexistentes bajo `/var/upgrade/PreUpgradeBackup/`.
+2. Inspeccione la propiedad de estado de combinación de cada nodo de copia de seguridad encontrado.
+3. Si se encuentra un nodo en el estado `INIT` de una actualización anterior, revise su contenido y límpielo (elimínelo o combínelo explícitamente) antes de continuar. Al hacerlo, se asegura de que la actualización cree una copia de seguridad nueva y precisa en lugar de restaurar silenciosamente datos antiguos.
 
 ## Generar el archivo quickstart.properties {#generate-quickstart-properties}
 

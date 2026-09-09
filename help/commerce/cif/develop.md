@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 18%
+source-wordcount: '880'
+ht-degree: 26%
 
 ---
 
@@ -27,13 +27,13 @@ El desarrollo de proyectos de AEM Commerce basados en Commerce integration frame
 
 ## Desarrollo local para AEM Commerce {#local}
 
-Se recomienda un entorno de desarrollo local para trabajar con proyectos de CIF.
+Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos CIF.
 
 >[!NOTE]
 >
->Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo local de AEM para AEM Commerce mediante CIF con enfoque para AEM 6.5 (LTS). Si usa AEM as a Cloud Service, consulte la [documentación de AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo local de AEM para AEM Commerce mediante CIF (con enfoque para AEM 6.5 LTS). Si usa AEM as a Cloud Service, consulte la [documentación de AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
-El complemento AEM Commerce para AEM, conocido como complemento CIF, también está disponible para el desarrollo local y se proporciona como paquete AEM. Se puede descargar del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) como paquete de funciones.
+El complemento de AEM Commerce para AEM, conocido como complemento de CIF, también está disponible para el desarrollo local y se proporciona como paquete de AEM. Se puede descargar del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) como paquete de funciones.
 
 ### Software necesario
 
@@ -163,5 +163,5 @@ Vaya a http://localhost:4502/system/console/configMgr y cree una configuración 
 
 ## Recursos adicionales
 
-- [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
-- [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
+- [Tienda de referencia de Venia en AEM](https://github.com/adobe/aem-cif-guides-venia)

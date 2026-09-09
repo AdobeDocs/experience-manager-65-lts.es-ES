@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 88be03c6-2342-4441-836d-f13b8cdfd629
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 88%
+source-wordcount: '891'
+ht-degree: 87%
 
 ---
 
@@ -49,7 +49,7 @@ Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para
 
 ## Beneficios del CIF {#cif-benefits}
 
-CIF proporciona componentes básicos predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
+CIF proporciona componentes principales comerciales predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
 
 El complemento CIF introduce el contexto del producto en Experience Manager y proporciona herramientas de creación, como una consola de producto y selectores de producto/categoría, que permiten al experto en marketing crear y ofrecer experiencias de compra en Experience Manager sin depender del desarrollador. Las ventajas incluyen las siguientes:
 
@@ -74,8 +74,8 @@ Conecte el ecosistema (por ejemplo, la solución de comercio) con Experience Clo
 CIF admite clientes con patrones de integración estandarizados basados en prácticas recomendadas. Esto ayuda a los clientes a tener éxito hoy y tener la flexibilidad para crecer con el cliente y adaptarse a los requisitos futuros:
 
 * Elimina los desafíos típicos relacionados con las integraciones de catálogos de productos que pueden producirse. Por ejemplo:
-   * Problemas de rendimiento con mayor volumen o complejidad del catálogo
-   * No tener acceso a los datos clasificados
-   * Necesidad de experiencias y datos de productos en tiempo real
+  * Problemas de rendimiento con mayor volumen o complejidad del catálogo
+  * No tener acceso a los datos clasificados
+  * Necesidad de experiencias y datos de productos en tiempo real
 * La creciente madurez digital hace necesaria la administración de la experiencia. CIF incluye capacidades de administración de experiencia de producto que se pueden incorporar gradualmente sin necesidad de un esfuerzo adicional en TI.
 * Listo para el omnicanal: CIF admite una variedad de tecnologías de puntos de contacto (del lado del servidor, híbridas, del lado del cliente) con patrones, aceleradores y componentes principales.
