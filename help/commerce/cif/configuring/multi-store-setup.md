@@ -32,7 +32,7 @@ Para conectar un sitio de AEM y los componentes principales de AEM CIF también 
 
 ## Configuración {#configuration}
 
-1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
 
 2. Asegúrese de que funcione la conexión entre AEM y Adobe Commerce.
 
@@ -58,7 +58,7 @@ Para conectar un sitio de AEM y los componentes principales de AEM CIF también 
 
 ## Recursos adicionales
 
-* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
 * [Componentes principales de AEM CIF: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Uso del Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Uso del Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=es)
 * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
