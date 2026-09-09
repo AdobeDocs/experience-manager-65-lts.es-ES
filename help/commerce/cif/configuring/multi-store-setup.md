@@ -22,7 +22,7 @@ Los componentes principales de AEM CIF se pueden utilizar en varias estructuras 
 
 Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la tienda Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32819/?captions=spa&quality=12)
 
 Las funciones de administración de varios sitios de AEM de Live Copy y de copia de idioma se utilizan con Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
