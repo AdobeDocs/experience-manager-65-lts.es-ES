@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 69%
-
 ---
-
 
 # Creación de contenido segmentado mediante el modo Segmentación {#authoring-targeted-content-using-targeting-mode}
 
