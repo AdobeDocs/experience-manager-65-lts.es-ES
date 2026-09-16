@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
+source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
 workflow-type: tm+mt
-source-wordcount: '7575'
-ht-degree: 23%
-
+source-wordcount: '7277'
+ht-degree: 22%
 ---
-
 
 # Notas de la versión actuales de Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
 
@@ -618,30 +616,6 @@ En esta sección se enumeran las características y funciones que se han elimina
 * En el Administrador de configuración, la inicialización de la base de datos falla durante Bootstrap en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se selecciona ningún módulo o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a Adobe-livecycle-jboss.ear\lib resuelve el problema. (FORMS-24690)
 * En implementaciones de Forms JEE LTS Service Pack 2 que se ejecutan en el perfil WebSphere® Liberty, la funcionalidad de correo electrónico falla. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Could not convert socket to TLS`. (FORMS-24692)
 * En Forms JEE LTS que se ejecuta en JBoss®, la funcionalidad relacionada con el correo electrónico falla. Al intentar utilizar las características de correo electrónico, el servidor registra un error: `Error IMAPProvider not a subtype`. Para resolver este problema, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear). (FORMS-24892)
-
-### Corrupción del repositorio durante la compactación en línea después de la compactación sin conexión (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
-
-Los usuarios pueden experimentar daños en el repositorio durante la compactación en línea si la compactación sin conexión se ejecutó antes en el repositorio JCR. Se puede producir un `SegmentNotFoundException` (SNFE) en este escenario y puede provocar daños en el repositorio.
-
-Para resolver el problema, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Dado que la revisión incluye un paquete `oak-segment-tar` de bajo nivel, la instancia se reinicia después de la instalación.
-
-Planifique el tiempo de inactividad de la instancia al aplicarla. Para la compactación sin conexión, use el Jar [`oak-run` correspondiente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar), también disponible en Distribución de software.
-
->[!NOTE]
->
-> * Para cualquier operación de `oak-run`, use el Jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
->
-> * Inicie AEM estableciendo la propiedad del sistema `oak.compaction.legacy=true`.
-
-### Falta el paquete `com.adobe.granite.apicontroller` en AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
-
-Falta el paquete `com.adobe.granite.apicontroller` en AEM 6.5 LTS SP2. Este paquete controla cómo se resuelven los paquetes OSGi y puede evitar que se resuelvan en otros paquetes, lo que resulta útil para limitar las API expuestas.
-
-Para usar esta funcionalidad, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip).
-
->[!NOTE]
->
-> Para asegurarse de que la configuración predeterminada de `com.adobe.granite.apicontroller` no introduce restricciones de resolución no deseadas que afecten a las implementaciones personalizadas existentes, compruebe el estado del paquete de todos los paquetes instalados después de instalar la revisión.
 
 ### Los comentarios JSON ya no son compatibles con Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
