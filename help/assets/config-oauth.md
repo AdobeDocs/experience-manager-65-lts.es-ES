@@ -25,7 +25,7 @@ Consulte [configuración de servicios de contenido inteligente](#integrate-adobe
 
 >[!NOTE]
 >
->Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&support-tab=home?lang=es#support).
+>Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&support-tab=home?lang=es#support).
 
 ## Configuración de OAuth para los usuarios de AMS existentes {#oauth-config-new-ams-users}
 
@@ -42,7 +42,7 @@ Una configuración de OAuth requiere los siguientes requisitos previos:
 
 ### Configuración de OAuth para los usuarios de AMS y OnPrem existentes {#steps-config-oauth-onprem}
 
-El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&support-tab=home?lang=es#support).
+El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&support-tab=home?lang=es#support).
 
 1. Agregar o actualizar las siguientes propiedades en `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -124,7 +124,7 @@ Un certificado público permite autenticar el perfil en Adobe Developer Console.
 
    >[!NOTE]
    >
-   >La URL proporcionada como [!UICONTROL URL de servicio] no es accesible a través del explorador y genera un error 404. La configuración funciona correctamente con el mismo valor del parámetro [!UICONTROL Service URL]. Para ver el estado general del servicio y el programa de mantenimiento, consulte [https://status.adobe.com](https://status.adobe.com).
+   >La URL proporcionada como [!UICONTROL URL de servicio] no es accesible a través del explorador y genera un error 404. La configuración funciona correctamente con el mismo valor del parámetro [!UICONTROL Service URL]. Para ver el estado general del servicio y el programa de mantenimiento, consulte [https://status.adobe.com/es-es](https://status.adobe.com/es-es).
 
 1. Haga clic en **[!UICONTROL Descargar certificado público para la integración de OAuth]** y descargue el archivo de certificado público `AEM-SmartTags.crt`. Además, ya no es necesario cargar este certificado en Adobe Developer Console.
 
@@ -184,4 +184,4 @@ Para configurar la integración, use los valores de los campos [!UICONTROL ID. D
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Configurar el etiquetado inteligente](config-smart-tagging.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
