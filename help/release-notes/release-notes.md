@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
+source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
 workflow-type: tm+mt
 source-wordcount: '7277'
-ht-degree: 22%
+ht-degree: 21%
 ---
 
 # Notas de la versión actuales de Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
@@ -532,7 +532,7 @@ Para conocer los requisitos de configuración, consulte las [instrucciones de in
 
 >[!NOTE]
 >
-> Si está actualizando directamente a LTS SP1 desde SP antiguos de 6.5, siga las instrucciones que se dan para la [actualización](/help/sites-deploying/upgrade.md) de 6.5 a 6.5 LTS GA.
+> Si está actualizando directamente a LTS SP3 desde SPs antiguos de 6.5, siga las instrucciones dadas para 6.5 a 6.5 LTS GA [actualizar](/help/sites-deploying/upgrade.md).
 
 
 Para obtener instrucciones detalladas, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md), ya que la misma documentación se aplica a las actualizaciones del Service Pack de LTS.
