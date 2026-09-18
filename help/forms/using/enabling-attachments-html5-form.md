@@ -25,7 +25,7 @@ Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De
    | multiSelect | true o false (true de forma predeterminada) |
    | fileSizeLimit | Número en MB (2 MB de forma predeterminada). Por ejemplo, 5. |
    | buttonText | Texto del botón de la ventana emergente (“Adjuntar” de forma predeterminada) |
-   | aceptar | lista separada por comas de los tipos de archivo que se van a aceptar (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; de forma predeterminada) |
+   | aceptar | lista separada por comas de los tipos de archivo que se van a aceptar (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; de forma predeterminada) |
 
    Por ejemplo:
 
