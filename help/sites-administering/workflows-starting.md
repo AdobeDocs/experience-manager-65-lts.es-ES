@@ -8,25 +8,24 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a8b1fab9-1a63-4f99-87e1-48f6167e9953
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '820'
 ht-degree: 3%
-
 ---
-
 # Inicio de flujos de trabajo{#starting-workflows}
 
 Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 
 * Manualmente:
 
-   * De un [modelo de flujo de trabajo](#workflow-models).
-   * Usando un paquete de flujo de trabajo para [procesamiento por lotes](#workflow-packages-for-batch-processing).
+  * De un [modelo de flujo de trabajo](#workflow-models).
+  * Usando un paquete de flujo de trabajo para [procesamiento por lotes](#workflow-packages-for-batch-processing).
 
 * Automáticamente:
 
-   * En respuesta a cambios de nodo; [usando un lanzador](#workflows-launchers).
+  * En respuesta a cambios de nodo; [usando un lanzador](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 >
 >* [Aplicar flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/es/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Proyectos de traducción](/help/sites-administering/tc-manage.md)
 >
 
@@ -64,7 +63,7 @@ Se puede crear un lanzador para cualquier nodo. Sin embargo, los cambios en cier
 * `/var/mobile`
 * `/var/statistics`
 
-   * Excepción: los cambios en los nodos por debajo de `/var/statistics/tracking` *do* hacen que se inicien los flujos de trabajo.
+  * Excepción: los cambios en los nodos por debajo de `/var/statistics/tracking` *do* hacen que se inicien los flujos de trabajo.
 
 La instalación estándar incluye varias definiciones. Se utilizan para tareas de colaboración social y administración de activos digitales:
 
@@ -121,9 +120,9 @@ Un paquete de flujo de trabajo:
 
      El tipo de evento que inicia el flujo de trabajo:
 
-      * Creado
-      * Modificado
-      * Eliminado
+     * Creado
+     * Modificado
+     * Eliminado
 
    * **Tipo de nodo**
 
@@ -163,8 +162,8 @@ Un paquete de flujo de trabajo:
 
      Controla si el lanzador del flujo de trabajo está activado:
 
-      * Seleccione **Habilitar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
-      * Seleccione **Deshabilitar** cuando el flujo de trabajo no deba ejecutarse (ni siquiera cuando se cumplan las propiedades de configuración).
+     * Seleccione **Habilitar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
+     * Seleccione **Deshabilitar** cuando el flujo de trabajo no deba ejecutarse (ni siquiera cuando se cumplan las propiedades de configuración).
 
    * **Lista de exclusión**
 
@@ -172,8 +171,8 @@ Un paquete de flujo de trabajo:
 
      Esta propiedad del lanzador es una lista de elementos separados por comas: &quot;
 
-      * `property-name` ignora cualquier evento `jcr` que se haya activado en el nombre de propiedad especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora cualquier evento que contenga `*<someValue*`> `user-data` establecido a través de la API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignora cualquier evento `jcr` que se haya activado en el nombre de propiedad especificado. &quot;
+     * `event-user-data:<*someValue*>` ignora cualquier evento que contenga `*<someValue*`> `user-data` establecido a través de la API [`ObservationManager`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por ejemplo:
 

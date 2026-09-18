@@ -8,14 +8,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fdd889d-0984-457e-9b12-b55a4593a573
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 78%
-
+source-wordcount: '706'
+ht-degree: 79%
 ---
-
-# Usar un formulario adaptable en el espacio de trabajo HTML {#using-an-adaptive-form-in-html-workspace}
+# Usar un formulario adaptable en el espacio de trabajo HTML{#using-an-adaptive-form-in-html-workspace}
 
 AEM Forms en JEE permite utilizar un formulario adaptable en HTML Workspace.
 
@@ -84,4 +83,4 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
    >Para obtener más información sobre la creación de un formulario adaptable, consulte [Crear un formulario adaptable](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Para obtener más información sobre cómo crear un proceso, consulte [Crear y administrar procesos](https://help.adobe.com/es_ES/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Para obtener más información sobre cómo crear un proceso, consulte [Crear y administrar procesos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

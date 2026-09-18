@@ -1,5 +1,5 @@
 ---
-title: Configuración del seguimiento de vínculos para Adobe Analytics
+title: Configuración de Seguimiento de vínculos para Adobe Analytics
 description: Obtenga información acerca de la configuración del seguimiento de vínculos para SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,15 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d9318173-c598-4de0-bbbe-2c094da8afa6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
-
-
-# Configuración del seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Configuración de Seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Cuando los usuarios hacen clic en vínculos en páginas del sitio web, puede capturar información relacionada en Adobe Analytics. Por ejemplo, utilice el seguimiento de vínculos para conocer cómo interactúan los usuarios con el sitio, realizar un seguimiento de las descargas de archivos y realizar un seguimiento de los vínculos de salida.
 
@@ -140,7 +138,7 @@ s.linkTrackVars= 'prop4';
 
 ## Ejemplo de configuración de seguimiento de vínculos {#example-link-tracking-configuration}
 
-Realice los siguientes procedimientos para explorar el comportamiento de seguimiento de vínculos de la integración de Adobe Analytics. Los procedimientos muestran los resultados de [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=es).
+Realice los siguientes procedimientos para explorar el comportamiento de seguimiento de vínculos de la integración de Adobe Analytics. Los procedimientos muestran los resultados de [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 ### Configuración general {#general-configuration}
 

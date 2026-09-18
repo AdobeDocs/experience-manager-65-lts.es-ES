@@ -8,13 +8,12 @@ content-type: reference
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3c207bfd-5d40-4355-8710-a620f0d66399
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 18%
-
 ---
-
 # Conflictos de despliegue de MSM{#msm-rollout-conflicts}
 
 Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre en la rama del modelo y en una rama de Live Copy dependiente.
@@ -47,7 +46,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una nueva página `b`, 
 
   Una página creada manualmente en la rama de Live Copy; con una página secundaria, `lc-level-1`.
 
-   * Se activó al publicar como `/b`, junto con la página secundaria.
+  * Se activó al publicar como `/b`, junto con la página secundaria.
 
 **Antes del despliegue**
 
@@ -93,7 +92,7 @@ AEM proporciona lo siguiente:
 
 * El [controlador de conflictos predeterminado](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers).
 * Mecanismo de clasificación de servicios que permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
@@ -113,13 +112,13 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
 
   Se mueve (dentro de la Live Copy) a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
 
-   * `lc-level-1` no se mueve.
+  * `lc-level-1` no se mueve.
 
 * modelo: `/b`
 
   Se despliega en la página de Live Copy `/b`.
 
-   * `bp-level-1` se ha implementado en la Live Copy.
+  * `bp-level-1` se ha implementado en la Live Copy.
 
 **Después del despliegue**
 
@@ -159,11 +158,11 @@ Los controladores de conflicto personalizados pueden tener lo siguiente:
 * Desarrollado/configurado según sus necesidades; por ejemplo, puede desarrollar un controlador para que la página de Live Copy tenga prioridad.
 * Diseñado para configurarse con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
 
-   * **Clasificación del servicio**:
+  * **Clasificación del servicio**:
 
-     Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
+    Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
 
-     El valor predeterminado es 0.
+    El valor predeterminado es 0.
 
 ### Comportamiento Cuando Se Desactiva La Gestión De Conflictos {#behavior-when-conflict-handling-deactivated}
 

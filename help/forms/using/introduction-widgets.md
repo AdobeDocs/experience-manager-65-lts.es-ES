@@ -7,13 +7,12 @@ topic-tags: customization
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9d80bc0a-f2b0-4b27-9417-639531cb8415
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
-
+source-wordcount: '1165'
+ht-degree: 96%
 ---
-
 # Marco de aspecto para formularios adaptables y HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 Los formularios (formularios adaptables y formularios HTML5) utilizan las bibliotecas de [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) y [Underscore.js](https://underscorejs.org/) para el aspecto y los scripts. Los formularios también utilizan la arquitectura de los [widgets de la interfaz de usuario](https://jqueryui.com/) **de jQuery** para todos los elementos interactivos (como campos y botones) del formulario. Esta arquitectura permite al desarrollador de formularios utilizar un completo conjunto de widgets y complementos de jQuery disponibles en Forms. También puede implementar lógica específica del formulario al capturar datos de usuarios, como restricciones de leadDigits/trailDigits o la implementación de cláusulas de imagen. Los desarrolladores de formularios pueden crear y utilizar funciones personalizadas para mejorar la experiencia de captura de datos y hacerla más fácil de usar.
@@ -99,19 +98,19 @@ Para interactuar con el marco de formulario, un widget activa una serie de event
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>Este evento se activa cada vez que el campo está enfocado. Permite que el script de "entrada" se ejecute en el campo. La sintaxis para activar el evento es<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>Este evento se activa cada vez que el campo está enfocado. Permite que el script de "entrada" se ejecute en el campo. La sintaxis para activar el evento es <br /> (widget)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su script de "salida". La sintaxis para activar el evento es<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su script de "salida". La sintaxis para activar el evento es <br /> (widget)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>Este suceso se activa para permitir que el motor ejecute el script de "cambio" escrito en el campo. La sintaxis para activar el evento es<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>Este suceso se activa para permitir que el motor ejecute el script de "cambio" escrito en el campo. La sintaxis para activar el evento es <br /> (widget)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>Este evento se activa cada vez que se hace clic en el campo. Permite al motor ejecutar el script de "clic" escrito en el campo. La sintaxis para activar el evento es<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>Este evento se activa cada vez que se hace clic en el campo. Permite al motor ejecutar el script de "clic" escrito en el campo. La sintaxis para activar el evento es <br /> (widget)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>

@@ -8,13 +8,12 @@ topic-tags: page-authoring, introduction
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ac0a308-42fe-498e-abd8-37aa1bc6daca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
-
+source-wordcount: '412'
+ht-degree: 8%
 ---
-
 # Primeros pasos para los autores{#first-steps-for-authors}
 
 Esta sección le ofrece una descripción general de las tareas principales que utilizará al [empezar a crear contenido](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
@@ -52,7 +51,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 * [Cortar/copiar/pegar un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Bloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publicación de una página {#publishing-a-page}

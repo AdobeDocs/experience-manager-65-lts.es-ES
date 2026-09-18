@@ -1,5 +1,5 @@
 ---
-title: Herramientas de prueba y seguimiento
+title: Herramientas de pruebas y seguimiento
 description: AEM proporciona un marco de trabajo para probar la interfaz de usuario de los componentes y un mecanismo para probar y depurar componentes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4aa0f10d-e915-4ad2-a886-080ed8b9b10f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
-
+source-wordcount: '293'
+ht-degree: 5%
 ---
-
-# Herramientas de prueba y seguimiento{#testing-and-tracking-tools}
+# Herramientas de pruebas y seguimiento{#testing-and-tracking-tools}
 
 ## Pruebas {#testing}
 

@@ -1,5 +1,5 @@
 ---
-title: Añadir el seguimiento de Adobe Analytics a los componentes
+title: Adición de seguimiento de Adobe Analytics a componentes
 description: Aprenda a añadir el seguimiento de Adobe Analytics a los componentes de Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 0%
-
+source-wordcount: '1279'
+ht-degree: 2%
 ---
-
-# Añadir el seguimiento de Adobe Analytics a los componentes{#adding-adobe-analytics-tracking-to-components}
+# Adición de seguimiento de Adobe Analytics a componentes{#adding-adobe-analytics-tracking-to-components}
 
 ## Inclusión del módulo Adobe Analytics en un componente de página {#including-the-adobe-analytics-module-in-a-page-component}
 
@@ -438,6 +437,6 @@ El módulo de comercio electrónico proporciona varios componentes que generan d
 
 #### Limitación del tamaño de las llamadas de seguimiento {#limiting-the-size-of-tracking-calls}
 
-Por lo general, los exploradores web limitan el tamaño de las solicitudes de GET. Dado que los valores de producto y SKU de CQ son rutas de repositorio, las matrices de productos que incluyen varios valores pueden superar el límite de tamaño de solicitud. Por lo tanto, los componentes deben limitar el número de elementos en la matriz `product` de cada `CQ_Analytics.record function`. Cree varias funciones si el número de elementos que debe rastrear puede superar el límite.
+Por lo general, los exploradores web limitan el tamaño de las solicitudes GET. Dado que los valores de producto y SKU de CQ son rutas de repositorio, las matrices de productos que incluyen varios valores pueden superar el límite de tamaño de solicitud. Por lo tanto, los componentes deben limitar el número de elementos en la matriz `product` de cada `CQ_Analytics.record function`. Cree varias funciones si el número de elementos que debe rastrear puede superar el límite.
 
 Por ejemplo, el componente de comercio electrónico `submitorder` limita a cuatro el número de elementos `product` de una llamada. Cuando el carro contiene más de cuatro productos, genera varias funciones `CQ_Analytics.record`.

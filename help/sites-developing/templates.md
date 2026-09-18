@@ -9,13 +9,12 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 0%
-
+source-wordcount: '901'
+ht-degree: 2%
 ---
-
 # Plantillas{#templates}
 
 Las plantillas se utilizan en distintos puntos de AEM:
@@ -44,9 +43,9 @@ Las ventajas de las plantillas editables:
 
 * Se han introducido para permitirle definir lo siguiente para cualquier página creada con la plantilla:
 
-   * la estructura
-   * el contenido inicial
-   * políticas de contenido
+  * la estructura
+  * el contenido inicial
+  * políticas de contenido
 
 * Una vez creada la nueva página, se mantiene una conexión dinámica entre la página y la plantilla. Esta conexión significa que los cambios en la estructura de la plantilla se reflejan en cualquier página creada con esa plantilla; los cambios en el contenido inicial no se reflejan.
 * Utiliza directivas de contenido (editadas desde el editor de plantillas) para mantener las propiedades de diseño (no utiliza el modo Diseño en el editor de páginas).
@@ -129,4 +128,3 @@ Para limitar qué plantillas se pueden usar para crear páginas secundarias en u
 Puede usar la propiedad `cq:allowedTemplates` en el nodo `jcr:content` de la plantilla para aplicar esta configuración a todas las páginas recién creadas que usen esta plantilla.
 
 Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar las propiedades `allowedParents/allowedChildren` en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.
-

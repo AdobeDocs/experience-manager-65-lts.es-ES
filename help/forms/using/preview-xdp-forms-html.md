@@ -7,13 +7,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 82%
-
+source-wordcount: '807'
+ht-degree: 83%
 ---
-
 # Generar previsualización HTML5 de un formulario XDP{#generate-html-preview-of-an-xdp-form}
 
 Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación de un formulario en PDF, también se puede obtener una vista previa de la representación de un formulario en HTML5. Puede usar la pestaña **Vista previa de HTML** para obtener una vista previa del formulario tal como aparecería en un explorador.
@@ -36,13 +35,13 @@ Para permitir que Designer genere una vista previa HTML de los formularios XDP, 
 
    * AEM Forms en JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms en OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -53,7 +52,7 @@ Para permitir que Designer genere una vista previa HTML de los formularios XDP, 
 
 ### Desactivación del modo protegido {#disable-protected-mode}
 
-El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activado de forma predeterminada. Manténgalo activado para los entornos de producción. Puede desactivarlo para un entorno de desarrollo para previsualizar formularios HTML5 en Designer. Siga los siguientes pasos para desactivarlo:
+El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede desactivarlo para un entorno de desarrollo para previsualizar formularios HTML5 en Designer. Siga los siguientes pasos para desactivarlo:
 
 1. Inicie sesión en la consola web de AEM como administrador.
 
@@ -73,20 +72,20 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
    * **Número de puerto HTTP**: el puerto del servidor de AEM. El valor predeterminado es 4502.
    * **Contexto de la vista previa HTML:** la ruta del perfil para procesar formularios XFA. Los siguientes perfiles predeterminados se utilizan para obtener una vista previa del formulario en Designer. Sin embargo, también puede especificar la ruta a un perfil personalizado.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms en OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms en OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms en JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms en JEE)
 
    * **Contexto de Forms Manager:** la ruta del contexto en el que se implementa la interfaz de usuario de Forms Manager. Los valores predeterminados son:
 
-      * `/aem/forms` (AEM Forms en OSGi)
-      * `/lc/forms` (AEM Forms en JEE)
+     * `/aem/forms` (AEM Forms en OSGi)
+     * `/lc/forms` (AEM Forms en JEE)
 
    >[!NOTE]
    >
    >Asegúrese de que el servidor de AEM Forms esté operativo. La vista previa HTML conecta con el servidor CRX para *generar* una vista previa.
 
-   ![Opciones de AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 
@@ -106,11 +105,11 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
    >
    >Para probar la experiencia real del usuario final, visualice una vista previa de los formularios en exploradores externos (Google Chrome, Microsoft Edge, Mozilla Firefox, etc.). Cada explorador utiliza un motor independiente para procesar HTML, por lo que puede haber algunas diferencias entre la vista previa de un formulario en Designer y en el explorador externo.
 
-## Obtener una vista previa de un formulario mediante datos de ejemplo {#to-preview-a-form-using-sample-data}
+## Obtener una vista previa de un formulario mediante datos de muestra {#to-preview-a-form-using-sample-data}
 
 Designer permite obtener una vista previa y probar el formulario con datos XML de ejemplo. Se recomienda probar el formulario con frecuencia con datos de ejemplo para asegurarse de que el formulario se procesa correctamente.
 
-Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 La prueba del formulario mediante una fuente de datos de ejemplo garantiza que los datos y los campos se asignen y que los subformularios repetibles se repitan como se esperaba. Puede crear un diseño de formulario equilibrado que proporcione el espacio adecuado para que cada objeto muestre los datos combinados.
 

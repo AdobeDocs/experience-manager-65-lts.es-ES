@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3d4ff4d1-aab6-47b9-9804-2a0f3438332d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 91%
-
 ---
-
 # Componente Borradores y envíos{#drafts-and-submissions-component}
 
 El componente Borradores y envíos enumera todos los formularios que están en estado de borrador y los que ya se han enviado. El componente tiene secciones independientes (pestañas) para formularios en borrador y enviados. Los usuarios solo pueden ver los formularios en borrador y los enviados.
@@ -93,7 +92,7 @@ Siga estos pasos para agregar y configurar el componente Borradores y envíos:
 
 ## Personalizar el almacenamiento {#customizing-the-storage}
 
-Cuando se utiliza la acción de envío del portal de formularios o se activa la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
+Cuando se utiliza la acción de envío del portal de formularios o se habilita la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
 
 El portal de Forms permite almacenar datos en el repositorio local de AEM, en el repositorio remoto de AEM o en una base de datos. AEM Forms permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borradores y envíos en el almacenamiento que elija. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 

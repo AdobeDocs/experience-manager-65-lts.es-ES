@@ -5,13 +5,12 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bda2f261-a755-40b9-bd4d-c783f7f7a4b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 74%
-
+source-wordcount: '257'
+ht-degree: 73%
 ---
-
 # Traducción de contenido para sitios multilingües {#translating-content-for-multilingual-sites}
 
 Automatice la traducción del contenido de la página, los activos y el contenido generado por el usuario para crear y mantener sitios web multilingües. Para automatizar los flujos de trabajo de traducción, se integran los proveedores de servicios de traducción con AEM y se crean proyectos para traducir contenido a varios idiomas. AEM admite flujos de trabajo de traducción automática y humana.
@@ -34,6 +33,6 @@ Si el proveedor de servicios de traducción no proporciona un conector para la i
 >
 >El usuario debe ser miembro del grupo de administradores de proyectos para utilizar las funciones de copia de idioma.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 La página [Prácticas recomendadas de traducción](/help/sites-administering/tc-bp.md) contiene información importante sobre la implementación.

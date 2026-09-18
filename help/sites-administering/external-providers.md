@@ -9,14 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73f40fd7-69b9-436c-b6b4-a7d6bfbaae6f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
-
+source-wordcount: '451'
+ht-degree: 3%
 ---
-
-
 # Analytics con proveedores externos {#analytics-with-external-providers}
 
 Analytics puede proporcionarle información importante e interesante sobre el uso que se le da a su sitio web.
@@ -73,7 +71,7 @@ Para la configuración básica:
 
 1. Haga clic en + para agregar una nueva configuración mediante el cuadro de diálogo. Como mínimo, asigne un nombre, por ejemplo, Google Analytics:
 
-   ![Crear configuración](assets/analytics_addconfig.png)
+   ![Creación de configuración](assets/analytics_addconfig.png)
 
 1. Haga clic en **Crear**, el cuadro de diálogo del fragmento se abrirá inmediatamente. Pegue el fragmento de código de JavaScript correspondiente en el campo:
 

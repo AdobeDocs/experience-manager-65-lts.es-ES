@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 10764131-21e9-4c1c-b9d1-e878cc927fb6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 59%
-
 ---
-
 # Acceder y cumplimentar formularios publicados{#accessing-and-filling-published-forms}
 
 En una configuración de implementación del portal centrado en formularios, el desarrollo de los formularios y del portal son dos actividades distintas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y controlar los envíos. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
@@ -31,7 +30,7 @@ Navegue hasta la página publicada del portal de Forms. Para obtener más inform
 
 El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de publicación del servidor de AEM. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
-![Página de ejemplo del portal de formularios &#x200B;](assets/forms-portal-page.png)
+![Página de ejemplo del portal de formularios ](assets/forms-portal-page.png)
 
 Página de ejemplo del portal de Forms
 

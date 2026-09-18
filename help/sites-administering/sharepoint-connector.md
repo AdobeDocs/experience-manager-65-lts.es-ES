@@ -8,13 +8,12 @@ content-type: reference
 docset: aem65
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 3%
 ---
-
 # Conector de SharePoint{#sharepoint-connector}
 
 Este artículo incluye detalles sobre el conector JCR de Adobe para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0.
@@ -71,12 +70,12 @@ El conector admite lo siguiente:
 
 * Versiones de AEM:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versiones de Microsoft SharePoint:
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * Si necesita soporte para implementaciones personalizadas del conector (OEM, requisitos especiales, métodos de autenticación personalizados), póngase en contacto con la oficina de Adobe de su región.
 
@@ -86,7 +85,7 @@ El conector admite lo siguiente:
 
 ### Instalación estándar {#standard-installation}
 
-Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es#software-distribution).
+Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
 #### Integración con AEM {#integrating-with-aem}
@@ -193,7 +192,7 @@ En particular, están disponibles los siguientes tipos de autenticación:
 * Reclamaciones básicas
 * Argumentos basados en Forms
 
-El conector JCR de AEM para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (sugerida por Microsoft), que funciona en los siguientes modos:
+El conector JCR de AEM para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (sugerida por Microsoft), que funciona de los siguientes modos:
 
 * **Autenticación básica/NTLM**: El conector intenta conectarse primero mediante la autenticación básica. Si no está disponible, cambia a la autenticación basada en NTLM.
 * **Autenticación basada en Forms**: Sharepoint valida a los usuarios basándose en las credenciales que los usuarios escriben en un formulario de inicio de sesión (normalmente una página web). El sistema emite un token para solicitudes autenticadas que contiene una clave para restablecer la identidad en solicitudes posteriores.

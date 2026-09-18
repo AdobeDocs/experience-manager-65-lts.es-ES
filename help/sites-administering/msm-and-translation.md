@@ -8,38 +8,37 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Multi Site Manager, Language Copy
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 325089d0-9310-4219-b0e3-9645c3189d37
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
-
+source-wordcount: '370'
+ht-degree: 40%
 ---
-
 # Traducción y Administrador de varios sitios {#msm-and-translation}
 
 Las siguientes herramientas de administración están disponibles para administrar sitios web y páginas:
 
 * El Administrador de varios sitios (MSM) le permite usar el mismo contenido del sitio en varias ubicaciones, a la vez que permite variaciones:
 
-   * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
+  * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
 
 * La traducción permite automatizar la traducción del contenido de la página, los activos y el contenido generado por el usuario para crear y mantener sitios web multilingües:
 
-   * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
+  * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
 
 * Estas dos características se pueden combinar para adaptarse a los sitios web que son [Multinacionales y Multilingües](#multinational-and-multilingual-sites).
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
-Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
+Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado de Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
 
 * [Traducir](/help/sites-administering/translation.md) el sitio principal a diferentes idiomas.
 
 * Use [Administrador de varios sitios](/help/sites-administering/msm.md) para lo siguiente:
 
-   * Reutilice el contenido del sitio principal y las traducciones para crear sitios destinados a otros países y culturas.
-   * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal > ramas en inglés en sitios de países, francés principal > ramas en francés en sitios de países.
-   * Cuando sea necesario, desasocie elementos de las Live Copies para añadir detalles de localización.
+  * Reutilice el contenido del sitio principal y las traducciones para crear sitios destinados a otros países y culturas.
+  * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal > ramas en inglés en sitios de países, francés principal > ramas en francés en sitios de países.
+  * Cuando sea necesario, desasocie elementos de las Live Copies para añadir detalles de localización.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 

@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d2d17d2c-b82f-4a7b-8ff1-0c226626412a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '194'
 ht-degree: 56%
-
 ---
-
 # Minificación de los archivos JavaScript {#minification-of-the-javascript-files}
 
 La minificación elimina del código fuente los caracteres redundantes, como los espacios en blanco, las líneas nuevas y los comentarios. Esto mejora el rendimiento al reducir el tamaño del código. Aunque la minificación no afecta a la funcionalidad, reduce la legibilidad del código.

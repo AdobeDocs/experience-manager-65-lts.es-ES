@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0c72fe67-13da-4eac-8cd6-8699e546f8f4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
-
+source-wordcount: '196'
+ht-degree: 94%
 ---
-
 # Visualizar el avatar del usuario {#displaying-the-user-avatar}
 
 El avatar del usuario que haya iniciado sesión se mostrará en la esquina superior derecha de AEM Forms Workspace. Además, los avatares de los informes directos de la jerarquía organizativa se mostrarán en la vista Administrador. Puede configurar AEM Forms Workspace para que elija las imágenes de usuario de la base de datos, por ejemplo, del servidor LDAP.

@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 933ef22f-d023-44d2-8ec0-4bb47a46bba3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 6%
-
+source-wordcount: '533'
+ht-degree: 13%
 ---
-
 # Prácticas recomendadas{#best-practices}
 
 Las prácticas recomendadas describen cómo desarrollar, administrar o utilizar AEM de la manera más eficiente y eficaz posible. Esta lista cada vez más extensa de temas incluye diversas áreas de AEM.
@@ -26,7 +25,7 @@ Las siguientes áreas tienen documentación disponible sobre las prácticas reco
 
 Para conocer las prácticas recomendadas sobre la creación, la implementación, el mantenimiento o el desarrollo, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
+* [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
 * [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 
@@ -75,7 +74,7 @@ La administración y creación del contenido del sitio web tiene algunas prácti
   <tr>
    <td>Cumplimiento del RGPD</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">Cumplimiento del RGPD de AEM Sites</a></td>
-   <td>El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. AEM Sites es compatible con el RGPD. Esta página guía a los clientes a través de los procedimientos para gestionar las solicitudes de RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.</td>
+   <td>El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. AEM Sites es compatible con el RGPD. Esta página guía a los clientes a través de los procedimientos para tratar las solicitudes del RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.</td>
   </tr>
   <tr>
    <td>Defina la interfaz de usuario predeterminada para su instancia.</td>

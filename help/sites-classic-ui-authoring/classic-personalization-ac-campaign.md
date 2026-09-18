@@ -1,5 +1,5 @@
 ---
-title: Uso de Adobe Campaign 6.1 y Adobe Campaign Standard
+title: Uso de Adobe Campaign Classic 6.1 y Adobe Campaign Standard
 description: Puede crear contenido de correo electrónico en AEM y procesarlo en correos electrónicos de Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: df3c15e0-549b-449f-9f50-bb40e1740159
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 0%
-
+source-wordcount: '1194'
+ht-degree: 3%
 ---
-
-# Uso de Adobe Campaign 6.1 y Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
+# Uso de Adobe Campaign Classic 6.1 y Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 Puede crear contenido de correo electrónico en AEM y procesarlo en correos electrónicos de Adobe Campaign. Para ello, debe:
 

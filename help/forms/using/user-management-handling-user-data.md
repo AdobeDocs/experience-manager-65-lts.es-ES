@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f673798-7557-4cba-96b5-2f326e7e73a9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 72%
-
 ---
-
 # Administrar usuarios de Forms | Administración de datos de usuario {#forms-user-management-handling-user-data}
 
 La administración de usuarios es un componente JEE de AEM Forms que permite crear, administrar y autorizar a los usuarios de AEM Forms para que accedan a AEM Forms. La administración de usuarios utiliza los dominios como directorios para obtener información del usuario. Se admiten los siguientes tipos de dominio:

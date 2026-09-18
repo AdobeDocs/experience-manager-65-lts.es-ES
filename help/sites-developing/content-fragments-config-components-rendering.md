@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4ed9232f-0e31-43bb-9f7d-3b351557288f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
 Hay varios [servicios avanzados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recurso de dichos componentes deben darse a conocer al marco de trabajo de fragmentos de contenido.
@@ -72,7 +71,7 @@ La configuración de OSGi es:
    <td>Descripción</td>
   </tr>
   <tr>
-   <td><strong>Tipo de medio</strong></td>
+   <td><strong>Tipo de recurso</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
    <td>El tipo de recurso que se va a registrar; por ejemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
@@ -129,7 +128,7 @@ Para algunas funciones (por ejemplo, para procesar solo un intervalo de párrafo
 >
 >Esto puede cambiar en los hitos 6.5 posteriores.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
 Por ejemplo, consulte lo siguiente (en una instancia de AEM predeterminada):
 

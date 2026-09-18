@@ -1,6 +1,6 @@
 ---
 title: Lanzamientos
-description: Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se activará más adelante. Al crear un lanzamiento, se especifica un título y la página de origen.
+description: Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se habilitará más adelante. Al crear un lanzamiento, se especifica un título y la página de origen.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,13 +8,12 @@ topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7f1b25dd-c58b-4c83-a8f3-2b60dcd478bf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 45%
-
+source-wordcount: '185'
+ht-degree: 43%
 ---
-
 # Lanzamientos{#launches}
 
 Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura.

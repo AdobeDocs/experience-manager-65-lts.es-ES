@@ -1,17 +1,16 @@
 ---
 title: Proteger un documento en nombre de otro usuario
-description: Descubra cómo AEM Forms Document Security Java& trade; SDK ofrece API para una cuenta de usuario a fin de proteger un documento en nombre de otro usuario.
+description: Descubra cómo AEM Forms Document Security Java&trade; SDK ofrece API para una cuenta de usuario a fin de proteger un documento en nombre de otro usuario.
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 56280931-c88b-46ea-bee6-f5a5494d715a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 53%
-
 ---
-
 # Proteger un documento en nombre de otro usuario {#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java™ SDK proporciona API que permiten a una cuenta de usuario proteger un documento en nombre de otro usuario sin obtener permisos para editar el documento. Puede utilizar las API en un proceso de flujo de trabajo o programáticamente como un servicio de documentos. Las nuevas API son:

@@ -1,5 +1,5 @@
 ---
-title: Configuración de segmentación
+title: Configuración de la segmentación
 description: Obtenga información sobre cómo configurar la segmentación para AEM Campaign.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bd75453e-8d3f-466e-b573-653eb68429cf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
-
-
-# Configuración de segmentación {#configuring-segmentation}
+# Configuración de la segmentación {#configuring-segmentation}
 
 >[!NOTE]
 >

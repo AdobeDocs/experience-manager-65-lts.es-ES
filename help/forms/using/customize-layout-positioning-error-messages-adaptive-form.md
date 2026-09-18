@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9347f22a-166f-4403-9ca9-c29139384b2b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 56%
-
 ---
-
 # Personalizar la presentación y la colocación de los mensajes de error de un formulario adaptable{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 Puede personalizar la presentación y la posición de los mensajes de error de un formulario adaptable. Puede realizar las siguientes personalizaciones:
@@ -44,8 +43,7 @@ Con AEM Forms, ahora puede crear una temática y aplicarla al formulario. El edi
 
 Cree una temática con el Editor de temáticas para personalizar la presentación de todos los campos del formulario. Después de crear una temática, realice los siguientes pasos para aplicarla a un formulario:
 
-1. Abra el formulario en modo de edición. 
-
+1. Abra el formulario en modo de edición.
 1. En el modo de edición, seleccione un componente y, a continuación, ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable** y ![cmppr](assets/cmppr.png).
 1. En la barra lateral, en Temática de formulario adaptable, seleccione la temática que ha creado con el Editor de temáticas.
 

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e0986f82-a049-44d4-bf4c-e2f020315ce5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 96%
-
 ---
-
 # Visualizar componentes basados en la plantilla utilizada{#displaying-components-based-on-the-template-used}
 
 Cuando un autor de formularios crea un formulario adaptable mediante una [plantilla](../../forms/using/template-editor.md), el autor del formulario puede ver y utilizar componentes específicos basados en la política de plantillas. Puede especificar una política de contenido de plantilla que le permita elegir un grupo de componentes que el autor del formulario verá en el momento de crear el formulario.

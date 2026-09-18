@@ -1,5 +1,5 @@
 ---
-title: Crear asignaciones de formularios personalizadas
+title: Creación de asignaciones de formularios personalizadas
 description: Al crear una tabla personalizada en Adobe Campaign, es posible que desee crear un formulario en AEM que se asigne a esa tabla personalizada
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
-
+source-wordcount: '538'
+ht-degree: 5%
 ---
-
-# Crear asignaciones de formularios personalizadas{#creating-custom-form-mappings}
+# Creación de asignaciones de formularios personalizadas{#creating-custom-form-mappings}
 
 Al crear una tabla personalizada en Adobe Campaign, es posible que desee crear un formulario en AEM que se asigne a esa tabla personalizada.
 
@@ -30,7 +29,7 @@ Debe tener instalado lo siguiente:
 
 Consulte [Integración de AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
-## Crear asignaciones de formularios personalizadas {#creating-custom-form-mappings-2}
+## Creación de asignaciones de formularios personalizadas {#creating-custom-form-mappings-2}
 
 Para crear asignaciones de formularios personalizadas, debe seguir estos pasos de alto nivel, que se describen en detalle en las secciones siguientes:
 
@@ -119,7 +118,7 @@ Ahora puede enviar el formulario y validar en Adobe Campaign si los valores se h
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 **&quot;Tipo no válido para el valor &#39;02/02/2015&#39; del elemento &#39;@eventdate&#39; (documento de tipo &#39;Event ([adb:event])&#39;)&quot;**
 

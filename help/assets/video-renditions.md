@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 solution: Experience Manager, Experience Manager Assets
 feature: Video
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: da33f43b-7375-46f1-a80f-c1891fd90312
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 0%
-
+source-wordcount: '249'
+ht-degree: 3%
 ---
-
 # Representaciones de vídeo {#video-renditions}
 
 Adobe Experience Manager Assets genera representaciones de vídeo para recursos de vídeo de varios formatos, incluidos OGG, FLV, etc.

@@ -7,13 +7,12 @@ topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b9b989e3-f204-4929-a03a-857cbb786185
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 97%
-
+source-wordcount: '1537'
+ht-degree: 94%
 ---
-
 # Ejemplo para integrar el componente Borradores y envíos con la base de datos {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Información general sobre el ejemplo {#sample-overview}
@@ -36,15 +35,15 @@ Realice los siguientes pasos en todas las instancias de autor y publicación par
 
    Paquete de muestra para la integración de bases de datos
 
-[Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Vaya a al Administrador de paquetes de AEM en https://[*host*]:[*port*]/crx/packmgr/.
 1. Haga clic en **[!UICONTROL Cargar paquete]**.
 
 1. Busque y seleccione el paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** y haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic en la opción **[!UICONTROL Instalar]** que aparece junto al paquete para instalarlo.
-1. Vaya a la página de **[!UICONTROL configuración de la consola web de AEM]**
-en https://[*host*]:[*port*]/system/console/configMgr.
+1. Ir a la configuración de la consola web de **[!UICONTROL AEM]**
+página en https://[*host*]:[*port*]/system/console/configMgr.
 1. Haga clic para abrir **[!UICONTROL Configuración de borradores y envíos del portal de formularios]** en el modo Edición.
 
 1. Especifique los valores de las propiedades tal como se describe en la siguiente tabla:
@@ -303,7 +302,7 @@ La implementación de ejemplo ya está configurada. Puede utilizarla para ver un
 Realice los siguientes pasos en todas las instancias de autor y publicación para instalar el archivo mysql-connector-java-5.1.39-bin.jar:
 
 1. Vaya a `https://'[server]:[port]'/system/console/depfinder` y busque el paquete com.mysql.jdbc.
-1. En la columna Exportado por, compruebe si el paquete lo exporta algún otro paquete.
+1. En la columna Exportado por, compruebe si el paquete fue exportado por algún otro paquete.
 
    Continúe si el paquete no se exporta mediante ningún paquete.
 
@@ -329,7 +328,7 @@ La implementación de la base de datos del portal de formularios utiliza tablas 
 Siga los siguientes pasos para crear [una biblioteca cliente](/help/sites-developing/clientlibs.md) y utilizar el script:
 
 1. Inicie sesión en CRXDE y vaya a /etc/clientlibs/.
-1. Cree un nodo de tipo **cq:ClientLibraryFolder** y proporcione un nombre para él. Por ejemplo, `validation`.
+1. Cree un nodo de tipo **cq:ClientLibraryFolder** y proporcione su nombre. Por ejemplo, `validation`.
 
    Haga clic en **[!UICONTROL Guardar todo]**.
 
@@ -411,12 +410,12 @@ Siga los siguientes pasos para crear [una biblioteca cliente](/help/sites-develo
 
    * **[!UICONTROL multiopción:]** Habilitado
 
-1. Vaya a `/libs/fd/af/runtime/clientlibs/guideRuntime` y añada el valor `fp.validation` a la propiedad embed.
+1. Vaya a `/libs/fd/af/runtime/clientlibs/guideRuntime` y añada el valor `fp.validation` a la propiedad de incrustación.
 
-1. Vaya a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA y añada el valor `fp.validation` a la propiedad embed.
+1. Vaya a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA y añada el valor `fp.validation` a la propiedad de incrustación.
 
    >[!NOTE]
    >
    >Si está utilizando bibliotecas de cliente personalizadas en lugar de las bibliotecas de cliente guideRuntime y guideRuntimeWithXfa, utilice el nombre de categoría para incrustar la biblioteca de cliente creada en este procedimiento en las bibliotecas personalizadas cargadas durante la ejecución.
 
-1. Haga clic en **[!UICONTROL Guardar todo.]** A partir de ahora, cuando el nombre de archivo tiene más de 150 caracteres (incluyendo la extensión), se muestra un mensaje.
+1. Haga clic en **[!UICONTROL Guardar todo.]** Ahora, cuando el nombre de archivo tiene más de 150 caracteres (incluida la extensión), se muestra un mensaje.

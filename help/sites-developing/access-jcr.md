@@ -1,6 +1,6 @@
 ---
 title: Cómo acceder mediante programación al JCR de AEM
-description: Puede modificar mediante programación nodos y propiedades ubicados dentro del repositorio de AEM, que forma parte de Adobe Experience Cloud
+description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte de Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0b375003-183d-4007-b1a1-0c48607745d1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '603'
 ht-degree: 2%
-
 ---
-
 # Cómo acceder mediante programación al JCR de AEM{#how-to-programmatically-access-the-aem-jcr}
 
 Puede modificar mediante programación los nodos y las propiedades ubicados en el repositorio de Adobe CQ, que forma parte de Adobe Experience Cloud. Para acceder al repositorio de CQ, utilice la API de repositorio de contenido Java™ (JCR). Puede utilizar la API JCR de Java™ para crear, reemplazar, actualizar y eliminar contenido (CRUD) ubicado en el repositorio de Adobe CQ. Para obtener más información acerca de la API JCR de Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).

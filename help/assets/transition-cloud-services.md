@@ -4,13 +4,12 @@ description: Aplique servicios de nube de traducción a carpetas en Adobe Experi
 role: Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cbe4f479-a287-412e-ab8b-98c310bb49b5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 42%
-
+source-wordcount: '398'
+ht-degree: 48%
 ---
-
 # Aplicación de servicios de nube de traducción a carpetas {#applying-translation-cloud-services-to-folders}
 
 [!DNL Adobe Experience Manager] le permite aprovechar los servicios de traducción basados en la nube que le ofrece el proveedor de traducción que elija para garantizar que los recursos se traduzcan según sus necesidades.
@@ -35,7 +34,7 @@ La aplicación de servicios de nube de traducción directamente a la carpeta de 
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. El servicio de traducción se aplica a la carpeta.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo.El servicio de traducción se aplica a la carpeta.
 
 ## Aplicar conector de traducción personalizado  {#applying-custom-translation-connector}
 

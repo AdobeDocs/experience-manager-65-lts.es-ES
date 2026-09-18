@@ -5,13 +5,12 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2975'
 ht-degree: 1%
-
 ---
-
 # Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
 
 El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar el contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto de WYSIWYG.
@@ -87,8 +86,8 @@ La funcionalidad está disponible a través de una serie de complementos, cada u
 
 * Una propiedad de `features`:
 
-   * Se utiliza para activar o desactivar la funcionalidad básica de ese complemento
-   * Esto se puede configurar mediante un procedimiento estandarizado
+  * Se utiliza para activar o desactivar la funcionalidad básica de ese complemento
+  * Esto se puede configurar mediante un procedimiento estandarizado
 
 * Si procede, propiedades y opciones adicionales que requieran una configuración especializada.
 
@@ -175,9 +174,9 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 
 >[!NOTE]
 >
->El componente de texto [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento.
+>El componente de texto [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento.
 >
->Para obtener más información, consulte la sección [Configuración de la interfaz de usuario RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, y [Creación de plantillas de página](/help/sites-authoring/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=es).
+>Para obtener más información, consulte la sección [Configuración de la interfaz de usuario RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, y [Creación de plantillas de página](/help/sites-authoring/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -253,7 +252,7 @@ Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de 
 * Si la configuración de interfaz de usuario del RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las directivas de contenido.
 
-Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es#the-text-component-and-the-rich-text-editor).
+Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar la asignación entre los iconos y comandos de la barra de herramientas {#iconstoolbar}
 
@@ -324,8 +323,8 @@ En particular, para ver los complementos y las opciones relacionadas disponibles
 * El componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido). Para conocer todos los parámetros disponibles para el formulario de texto enriquecido, consulte las Opciones de configuración.
 * El componente RichText proporciona una amplia gama de funcionalidades mediante los complementos enumerados en [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada complemento:
 
-   * consulte las Características para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
-   * Consulte las Opciones de configuración para todos los parámetros disponibles para obtener una configuración detallada del complemento correspondiente
+  * consulte las Características para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
+  * Consulte las Opciones de configuración para todos los parámetros disponibles para obtener una configuración detallada del complemento correspondiente
 
 * También hay disponible más información sobre las reglas de HTML para vínculos.
 
@@ -383,5 +382,4 @@ Compruebe también que el código de implementación de varios campos y la estru
 
 **La configuración disponible para los administradores no está disponible para los autores**
 
-Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
-
+Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).

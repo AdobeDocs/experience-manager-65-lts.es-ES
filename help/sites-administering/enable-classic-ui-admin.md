@@ -1,5 +1,5 @@
 ---
-title: Admin Console
+title: Admin Consoles
 description: Aprenda a utilizar las Admin Consoles disponibles en Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9cc6e4b6-7170-4c9a-a2c0-6ba4603cfd17
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 0%
-
+source-wordcount: '238'
+ht-degree: 2%
 ---
-
-
-# Admin Console{#admin-consoles}
+# Admin Consoles{#admin-consoles}
 
 De forma predeterminada, la capacidad de cambiar a la IU clásica mediante Admin Consoles está desactivada. Por lo tanto, ya no se muestran los iconos emergentes que se veían al pasar el ratón por encima de ciertos iconos de la consola, lo que permitía el acceso a la IU clásica.
 

@@ -1,5 +1,5 @@
 ---
-title: Habilitar CRXDE Lite en AEM
+title: Habilitación de CRXDE Lite en AEM
 description: Obtenga información sobre cómo habilitar CRXDE Lite en Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 109ab777-c7be-4725-8b91-c4e5d6a735ab
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
-
+ht-degree: 6%
 ---
-
-# Habilitar CRXDE Lite en AEM{#enabling-crxde-lite-in-aem}
+# Habilitación de CRXDE Lite en AEM{#enabling-crxde-lite-in-aem}
 
 Para garantizar que las instalaciones de AEM sean lo más seguras posible, la lista de comprobación de seguridad recomienda [deshabilitar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) en entornos de producción.
 
@@ -78,4 +77,4 @@ También puede habilitar CRXDE Lite mediante cURL ejecutando (ambos) estos dos c
 Para obtener más información sobre las funciones de seguridad de AEM 6, consulte las siguientes páginas:
 
 * [La lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
-* [Ejecución de AEM en el modo Producción lista](/help/sites-administering/production-ready.md)
+* [Ejecución de AEM en el modo listo para la producción](/help/sites-administering/production-ready.md)

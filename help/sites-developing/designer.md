@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 6605deda-99b8-4447-b62d-a1a50c4eed30
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # Diseños y Designer{#designs-and-the-designer}
 
 >[!CAUTION]
@@ -43,7 +42,7 @@ Los diseños se almacenan en `/apps/<your-project>`. La ruta de acceso al diseñ
 >
 >Todos los cambios realizados en una página en modo de diseño se mantienen debajo del nodo de diseño del sitio y se aplican automáticamente a todas las páginas que tienen el mismo diseño.
 
-## Lo que necesita {#what-you-will-need}
+## Lo que necesitará {#what-you-will-need}
 
 Para realizar su diseño necesitará:
 

@@ -1,5 +1,5 @@
 ---
-title: Ejecución de AEM en el modo Producción lista
+title: Ejecución de AEM en el modo listo para la producción
 description: Obtenga información sobre cómo ejecutar AEM en el modo Producción lista.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 99724bd6-41b4-4491-9958-1f5d9e1f5050
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
-
+source-wordcount: '383'
+ht-degree: 7%
 ---
-
-# Ejecución de AEM en el modo Producción lista{#running-aem-in-production-ready-mode}
+# Ejecución de AEM en el modo listo para la producción{#running-aem-in-production-ready-mode}
 
 Con AEM 6.1, Adobe introduce el nuevo modo de ejecución de `"nosamplecontent"`, que tiene como objetivo automatizar los pasos necesarios para preparar una instancia de AEM para su implementación en un entorno de producción.
 

@@ -1,5 +1,5 @@
 ---
-title: Añadir funciones de Dynamic Media Classic a las páginas
+title: Adición de características de Dynamic Media Classic a las páginas
 description: Cómo añadir funciones y componentes de Dynamic Media Classic a una página en Adobe Experience Manager.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +9,13 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 0%
-
+source-wordcount: '2902'
+ht-degree: 3%
 ---
-
-# Añadir funciones de Dynamic Media Classic a las páginas {#adding-scene-features-to-your-page}
+# Adición de características de Dynamic Media Classic a las páginas {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución hospedada para administrar, mejorar, publicar y entregar recursos de medios enriquecidos en pantallas e impresoras web, móviles, de correo electrónico y conectadas a Internet.
 
@@ -73,7 +72,7 @@ Una vez que estén disponibles en el modo **[!UICONTROL Diseño]**, podrá agreg
 >
 >Si está creando y desarrollando visores personalizados y está utilizando el buscador de contenido, debe agregar explícitamente el parámetro `allowfullscreen`.
 
-### Aviso de fin de vida útil para el visor Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil de los visores Flash {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Dynamic Media Classic dejará de ser compatible con la plataforma de visor Flash.
 
@@ -176,13 +175,13 @@ El componente Dynamic Media Classic **[!UICONTROL Image]** le permite agregar fu
 
 **[!UICONTROL Enfoque]** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [Prácticas recomendadas de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options) y [Prácticas recomendadas de enfoque](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificadores de URL]**: puede cambiar los efectos de imagen si proporciona comandos de imagen de Dynamic Media Classic adicionales. Estos comandos se describen en [Ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y en [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
+**[!UICONTROL Modificadores de URL]**: puede cambiar los efectos de imagen si proporciona comandos de imagen de Dynamic Media Classic adicionales. Estos comandos se describen en [Ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y en [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Puntos de interrupción]**: si el sitio web responde, desea ajustar los puntos de interrupción. Los puntos de interrupción deben estar separados por comas ( , ).
 
 ### Plantilla de imagen {#image-template}
 
-[Las plantillas de imagen de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=es) son contenido de Photoshop con capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para mejorar la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
+[Las plantillas de imagen de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) son contenido de Photoshop con capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para mejorar la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
 
 Seleccione **[!UICONTROL Editar]** si desea configurar el componente. Puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic](#settings-common-to-all-scene-components) y otras opciones que se describen en esta sección.
 
@@ -328,7 +327,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >
 >* En la IU clásica, también puedes buscar **Flash** y **FXG**. No se admite el filtrado para estos tipos en la IU táctil optimizada.
 >
->* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (sólo &ast;.mp4) y la codificada.
+>* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &amp;ast;.mp4) y la codificada.
 >* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha agregado una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 

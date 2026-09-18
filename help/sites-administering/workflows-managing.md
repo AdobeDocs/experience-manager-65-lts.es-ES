@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 4%
-
 ---
-
 # Administración del acceso a los flujos de trabajo{#managing-access-to-workflows}
 
 Configure ACL según las cuentas de usuario para permitir (o deshabilitar) el inicio y la participación en flujos de trabajo.
@@ -26,13 +25,13 @@ Se pueden llevar a cabo acciones sobre flujos de trabajo si:
 * está trabajando con la cuenta `admin`
 * la cuenta se ha asignado al grupo predeterminado `workflow-users`:
 
-   * este grupo posee todos los privilegios necesarios para que los usuarios realicen acciones de flujo de trabajo.
-   * cuando la cuenta está en este grupo, solo tiene acceso a los flujos de trabajo que ha iniciado.
+  * este grupo posee todos los privilegios necesarios para que los usuarios realicen acciones de flujo de trabajo.
+  * cuando la cuenta está en este grupo, solo tiene acceso a los flujos de trabajo que ha iniciado.
 
 * la cuenta se ha asignado al grupo predeterminado `workflow-administrators`:
 
-   * este grupo posee todos los privilegios necesarios para que sus usuarios privilegiados monitoricen y administren flujos de trabajo.
-   * cuando la cuenta está en este grupo, tiene acceso a todos los flujos de trabajo.
+  * este grupo posee todos los privilegios necesarios para que sus usuarios privilegiados monitoricen y administren flujos de trabajo.
+  * cuando la cuenta está en este grupo, tiene acceso a todos los flujos de trabajo.
 
 >[!NOTE]
 >
@@ -105,7 +104,7 @@ A continuación, puede agregar una ACL a la propia carpeta.
 
    >[!NOTE]
    >
-   >Al igual que con [Aplicar una ACL para el modelo de flujo de trabajo específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), puede incluir una rep:glob para limitar el acceso a un flujo de trabajo específico.
+   >Al igual que con [Aplicar una ACL para el modelo de flujo de trabajo específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), puede incluir un rep:glob para limitar el acceso a un flujo de trabajo específico.
 
    ![wf-110](assets/wf-110.png)
 

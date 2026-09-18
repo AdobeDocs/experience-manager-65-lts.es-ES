@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dad8b6d4-a2d9-4913-a5bc-02cb6ad38b11
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 90%
-
+source-wordcount: '369'
+ht-degree: 89%
 ---
-
 # Cambiar los estilos predeterminados de los formularios HTML5{#changing-default-styles-of-html-forms}
 
 Los formularios HTML5 se procesan con las funciones HTML5 y el estilo del formulario procesado se realiza con CSS. El aspecto predeterminado de los formularios HTML5 es similar a su representación en PDF. Los desarrolladores pueden utilizar CSS personalizadas para cambiar el aspecto predeterminado de los formularios HTML5.

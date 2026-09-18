@@ -5,16 +5,15 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 17898ee854df1141272b207f96cebe69c325f12c
+exl-id: b89e2899-35b9-4105-bfa5-ca21dc6f4e14
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 44%
-
+source-wordcount: '1289'
+ht-degree: 45%
 ---
-
 # Configuración del marco de trabajo de integración de traducción{#configuring-the-translation-integration-framework}
 
-El marco de trabajo de integración de traducciones se integra con los servicios de traducción de terceros para organizar la traducción de contenido de AEM.
+El marco de trabajo de integración de traducciones se conecta con los servicios de traducción de terceros para organizar la traducción de contenido de AEM.
 
 * Conéctese a su proveedor de servicios de traducción.
 * Cree una configuración del marco de trabajo de integración de traducción.

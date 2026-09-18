@@ -4,13 +4,12 @@ description: Consulte cómo puede ver y editar las propiedades de metadatos de l
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 36b6b48b-411c-4ce5-932d-22557cfa0c13
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 79%
-
 ---
-
 # Metadatos: propiedades del fragmento {#metadata-fragment-properties}
 
 Consulte cómo puede utilizar el editor de fragmentos de contenido para ver y editar las propiedades de metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
@@ -34,8 +33,8 @@ Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
    * **Título**
    * **Descripción**
    * **Etiquetas**
-      * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
-Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+     * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+       Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
      >[!NOTE]
      >

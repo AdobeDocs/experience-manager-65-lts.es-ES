@@ -8,13 +8,12 @@ discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 96%
-
+source-wordcount: '657'
+ht-degree: 91%
 ---
-
 # Crear un perfil personalizado para formularios HTML5 {#creating-a-custom-profile-for-html-forms}
 
 Un perfil es un nodo de recursos en [Apache Sling](https://sling.apache.org/). Representa la versión personalizada del servicio de representación de formularios HTML5. Puede utilizar el servicio de representación de formularios HTML5 para personalizar el aspecto, el comportamiento y las interacciones de los formularios HTML5. Existe un nodo de perfil en la carpeta `/content` en el repositorio JCR. Puede colocar el nodo directamente debajo de la carpeta `/content` o cualquier subcarpeta de la carpeta `/content`.
@@ -63,7 +62,7 @@ Para crear un perfil personalizado, realice los siguientes pasos:
 
 1. Copie el nodo predeterminado y péguelo en una carpeta diferente (*/content/profiles*) con el nombre *hrform*.
 
-1. Seleccione el nodo nuevo, *hrform* y agregue una propiedad de cadena: *sling:resourceType* con valor: *hrform/demo*.
+1. Seleccione el nuevo nodo *hrform* y agregue una propiedad de cadena: *sling:resourceType* con valor: *hrform/demo*.
 
 1. Haga clic en Guardar todo en el menú de la barra de herramientas para guardar los cambios.
 

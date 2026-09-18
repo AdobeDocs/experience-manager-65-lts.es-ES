@@ -4,13 +4,12 @@ description: Obtenga información sobre cómo habilitar determinadas funcionalid
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b526cd3a-9b04-403a-a6f4-6abe973aaeac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 45%
-
 ---
-
 # Fragmentos de contenido: explorador de configuración{#content-fragments-configuration-browser}
 
 Obtenga información sobre cómo habilitar determinadas funcionalidades de fragmentos de contenido en el explorador de configuración para utilizar las potentes funciones de entrega sin encabezado de Adobe Experience Manager (AEM).

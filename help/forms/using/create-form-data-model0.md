@@ -7,13 +7,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 83%
-
+source-wordcount: '2796'
+ht-degree: 79%
 ---
-
 # Tutorial: Crear un modelo de datos de formulario en AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -22,7 +21,7 @@ Este tutorial es un paso en la serie [Crear su primera comunicación interactiva
 
 ## Información sobre el tutorial {#about-the-tutorial}
 
-El módulo de integración de datos de AEM Forms le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
+El módulo de integración de datos de AEM Forms le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar servicios y objetos de modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto de modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto de modelo de datos.
 
 Para obtener más información sobre la integración y el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -38,19 +37,19 @@ El modelo de datos de formulario tiene un aspecto similar al siguiente:
 
 ![Modelo de datos de formulario](assets/form_data_model_callouts_new.png)
 
-**A.** Fuentes de datos configuradas **B.** Esquemas de fuentes de datos **C.** Servicios disponibles **D.** Objetos del modelo de datos **E.** Servicios configurados
+**A.** Fuentes de datos configuradas **B.** Esquemas de fuentes de datos **C.** Servicios disponibles **D.** Objetos de modelo de datos **E.** Servicios configurados
 
 ## Requisitos previos {#prerequisites}
 
 Antes de empezar, asegúrese de que dispone de lo siguiente:
 
-* Una base de datos MySQL con datos de ejemplo como se indica en la sección [Configurar la base de datos](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
+* Una base de datos MySQL con datos de muestra como se indica en la sección [Configurar la base de datos](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
 * Un paquete OSGi para el controlador JDBC MySQL como se explica en [Empaquetar un controlador de base de datos JDBC](https://helpx.adobe.com/es/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Paso 1: Configurar la base de datos {#step-set-up-the-database}
 
 Una base de datos es esencial para crear una comunicación interactiva. Este tutorial utiliza una base de datos para mostrar el Modelo de datos de formulario y las capacidades de persistencia de las comunicaciones interactivas. Configurar una base de datos que contenga tablas de cliente, de facturas y de llamadas.
-La siguiente imagen ilustra datos de ejemplo para la tabla de clientes:
+La siguiente imagen ilustra datos de muestra para la tabla de clientes:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
@@ -112,7 +111,7 @@ La tabla **facturas** incluye los detalles de la factura, como la fecha y el per
 
 ## Paso 2: Configurar la base de datos MySQL como fuente de datos {#step-configure-mysql-database-as-data-source}
 
-Puede configurar distintos tipos de fuentes de datos para crear un modelo de datos de formulario. Para este tutorial, configurará la base de datos MySQL que está configurada y contiene datos de ejemplo. Para obtener información sobre otras fuentes de datos compatibles y cómo configurarlas, consulte [Integración de datos de AEM Forms](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/data-integration.html).
+Puede configurar distintos tipos de fuentes de datos para crear un modelo de datos de formulario. Para este tutorial, configurará la base de datos MySQL que está configurada y contiene datos de muestra. Para obtener información sobre otras fuentes de datos compatibles y cómo configurarlas, consulte [Integración de datos de AEM Forms](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/data-integration.html).
 
 Haga lo siguiente para configurar la base de datos MySQL:
 
@@ -171,13 +170,13 @@ Para crear el modelo de datos de formulario, haga lo siguiente:
 
 La configuración del modelo de datos de formulario incluye lo siguiente:
 
-* [Agregar objetos y servicios del modelo de datos](#add-data-model-objects-and-services)
-* [Crear propiedades secundarias calculadas para el objeto del modelo de datos](#create-computed-child-properties-for-data-model-object)
-* [Agregar asociaciones entre objetos del modelo de datos](#add-associations-between-data-model-objects)
-* [Editar propiedades del objeto del modelo de datos](#edit-data-model-object-properties)
-* [Configurar servicios para objetos del modelo de datos](#configure-services)
+* [Agregar servicios y objetos de modelo de datos](#add-data-model-objects-and-services)
+* [Crear propiedades secundarias calculadas para el objeto de modelo de datos](#create-computed-child-properties-for-data-model-object)
+* [Agregar asociaciones entre objetos de modelo de datos](#add-associations-between-data-model-objects)
+* [Editar propiedades del objeto de modelo de datos](#edit-data-model-object-properties)
+* [Configurar servicios para objetos de modelo de datos](#configure-services)
 
-### Agregar objetos y servicios del modelo de datos {#add-data-model-objects-and-services}
+### Agregar servicios y objetos de modelo de datos {#add-data-model-objects-and-services}
 
 1. En la instancia de autor de AEM, navegue hasta **Formularios** > **Integraciones de datos**. La dirección URL predeterminada es [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. El modelo de datos de formulario **FDM_Create_First_IC** creado anteriormente se muestra aquí. Selecciónelo y seleccione **Editar**.
@@ -186,36 +185,37 @@ La configuración del modelo de datos de formulario incluye lo siguiente:
 
    ![Fuente de datos MYSQL para FDM](assets/mysql_fdm_new.png)
 
-1. Expanda el árbol de fuentes de datos **MySQL**. Seleccione los siguientes objetos y servicios del modelo de datos del esquema **teleca**:
+1. Expanda el árbol de fuentes de datos **MySQL**. Seleccione los siguientes servicios y objetos de modelo de datos del esquema **teleca**:
 
-   * **Objetos del modelo de datos**:
+   * **Objetos de modelo de datos**:
 
-      * facturas
-      * llamadas
-      * cliente
+     * facturas
+     * llamadas
+     * cliente
 
    * **Servicios:**
 
-      * conseguir
-      * actualizar
+     * conseguir
+     * actualizar
 
    Seleccione **Agregar selección** para agregar los objetos y servicios seleccionados al modelo de datos de formulario.
 
-   ![Seleccionar servicios de objetos del modelo de datos](assets/select_data_model_object_services_new.png)
+   ![Seleccionar servicios de objetos de modelo de datos](assets/select_data_model_object_services_new.png)
 
-   Los objetos del modelo de datos de facturas, llamadas y clientes se muestran en el panel derecho de la pestaña **Modelo**. Los servicios conseguir y actualizar se muestran en la pestaña **Servicios**.
+   Los objetos de modelo de datos de facturas, llamadas y clientes se muestran en el panel derecho de la pestaña **Modelo**. Los servicios conseguir y actualizar se muestran en la pestaña **Servicios**.
 
-   ![Objetos del modelo de datos](assets/data_model_objects_new.png)
+   ![Objetos de modelo de datos](assets/data_model_objects_new.png)
 
-### Crear propiedades secundarias calculadas para el objeto del modelo de datos {#create-computed-child-properties-for-data-model-object}
+### Crear propiedades secundarias calculadas para el objeto de modelo de datos {#create-computed-child-properties-for-data-model-object}
 
-Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos del formulario.
+Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos de formulario.
 
-En función del caso de uso, cree la propiedad informática secundaria **usagecharges** en el objeto del modelo de datos **facturas** mediante la siguiente expresión matemática:
+En función del caso de uso, cree la propiedad informática secundaria **usagecharges** en el objeto de modelo de datos **facturas** mediante la siguiente expresión matemática:
 
-* gastos de uso = gastos por llamada + gastos por llamada de conferencia + gastos por SMS + gastos por Internet móvil + itinerancia nacional + internacional + VAS (todas estas propiedades existen en el objeto del modelo de datos Facturas) Para obtener más información sobre la propiedad informática secundaria **usagecharges**, consulte [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md).
+* gastos de uso = gastos por llamada + gastos por llamada de conferencia + gastos por SMS + gastos por Internet móvil + itinerancia nacional + internacional + VAS (todas estas propiedades existen en el objeto del modelo de datos facturas)
+Para obtener más información sobre la propiedad informática secundaria **usagecharges**, consulte [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md).
 
-Ejecute los siguientes pasos para crear propiedades informáticas secundarias para el objeto del modelo de datos Facturas:
+Ejecute los siguientes pasos para crear propiedades informáticas secundarias para el objeto de modelo de datos Facturas:
 
 1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos **bills** para seleccionarlo y seleccione **Crear propiedad secundaria**.
 1. En el panel **Crear propiedad secundaria**:
@@ -236,25 +236,25 @@ Ejecute los siguientes pasos para crear propiedades informáticas secundarias pa
 
    La siguiente imagen representa la expresión matemática en el editor de reglas:
 
-   ![Regla de gastos de uso &#x200B;](assets/usage_charges_rule_all_new.png)
+   ![Regla de gastos de uso ](assets/usage_charges_rule_all_new.png)
 
-1. Seleccione **Listo**.  La regla se crea en el Editor de reglas.
+1. Seleccione **Listo**. La regla se crea en el Editor de reglas.
 1. Seleccione **Cerrar** para cerrar la ventana Editor de reglas.
 
-### Agregar asociaciones entre objetos del modelo de datos {#add-associations-between-data-model-objects}
+### Agregar asociaciones entre objetos de modelo de datos {#add-associations-between-data-model-objects}
 
-Una vez definidos los objetos del modelo de datos, puede crear asociaciones entre ellos. La asociación puede ser de uno a uno o de uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación uno a varios y se representa con 1:n en la línea que conecta los objetos del modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
+Una vez definidos los objetos de modelo de datos, puede crear asociaciones entre ellos. La asociación puede ser de uno a uno o de uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación uno a varios y se representa con 1:n en la línea que conecta los objetos del modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
 
-Cuando se agregan objetos del modelo de datos asociados en una fuente de datos a un modelo de datos de formulario, sus asociaciones se retienen y se muestran como conectadas mediante líneas de flecha.
+Cuando se agregan objetos de modelo de datos asociados en una fuente de datos a un modelo de datos de formulario, sus asociaciones se retienen y se muestran como conectadas mediante líneas de flecha.
 
-En función del caso de uso, cree las siguientes asociaciones entre los objetos del modelo de datos:
+En función del caso de uso, cree las siguientes asociaciones entre los objetos de modelo de datos:
 
-| Asociación | Objetos del modelo de datos |
+| Asociación | Objetos de modelo de datos |
 |---|---|
-| 1:n | customer:calls (se pueden asociar varias llamadas a un cliente en una factura mensual) |
-| 1:1 | customer:bills (una factura está asociada a un cliente para un mes en particular) |
+| 1:n | cliente:calls (se pueden asociar varias llamadas a un cliente en una factura mensual) |
+| 1:1 | cliente:bills (una factura está asociada a un cliente para un mes en particular) |
 
-Siga estos pasos para crear asociaciones entre objetos del modelo de datos:
+Siga estos pasos para crear asociaciones entre objetos de modelo de datos:
 
 1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos **customer** para seleccionarlo y seleccione **Agregar asociación**. Se abrirá el panel de propiedades de **Agregar asociación**.
 1. En el panel **Agregar asociación**:
@@ -266,14 +266,14 @@ Siga estos pasos para crear asociaciones entre objetos del modelo de datos:
 
    * Seleccione **conseguir** de la lista desplegable **Servicio**.
 
-   * Seleccione **Add** para vincular el objeto del modelo de datos **customer** al objeto del modelo de datos **calls** mediante una propiedad. En función del caso de uso, el objeto del modelo de datos de llamadas debe estar vinculado a la propiedad número móvil del objeto del modelo de datos del cliente. Se abrirá el cuadro de diálogo **Agregar argumento**.
+   * Seleccione **Add** para vincular el objeto del modelo de datos **customer** al objeto del modelo de datos **calls** mediante una propiedad. En función del caso de uso, el objeto de modelo de datos de llamadas debe estar vinculado a la propiedad número móvil del objeto de modelo de datos del cliente. Se abrirá el cuadro de diálogo **Agregar argumento**.
 
    ![Agregar asociación](assets/add_association_new.png)
 
 1. En el cuadro de diálogo **Agregar argumento**:
 
-   * Seleccione **mobilenum** de la lista desplegable **Nombre**. La propiedad Número móvil es una propiedad común que está disponible en los objetos del modelo de datos Cliente y Llamadas. Como resultado, se utiliza para crear una asociación entre los objetos del modelo de datos Cliente y Llamadas.
-Para cada número móvil disponible en el objeto del modelo de datos Cliente, hay varios registros de llamada disponibles en la tabla Llamadas.
+   * Seleccione **mobilenum** de la lista desplegable **Nombre**. La propiedad Número móvil es una propiedad común que está disponible en los objetos de modelo de datos Cliente y Llamadas. Como resultado, se utiliza para crear una asociación entre los objetos de modelo de datos Cliente y Llamadas.
+     Para cada número móvil disponible en el objeto de modelo de datos Cliente, hay varios registros de llamada disponibles en la tabla Llamadas.
 
    * Especifique un título y una descripción opcionales para el argumento.
    * Seleccione **cliente** de la lista desplegable **Enlace a**.
@@ -288,7 +288,7 @@ Para cada número móvil disponible en el objeto del modelo de datos Cliente, ha
 
    ![Agregar asociación de argumentos](assets/add_argument_association_new.png)
 
-1. Seleccione **Listo** para crear una asociación 1:n entre los objetos del modelo de datos Cliente y Llamadas.
+1. Seleccione **Listo** para crear una asociación de tipo 1:n entre los objetos del modelo de datos Cliente y Llamadas.
 
    Una vez que haya creado una asociación entre los objetos del modelo de datos Cliente y Llamadas, cree una asociación 1:1 entre los objetos del modelo de datos Cliente y Facturas.
 
@@ -301,7 +301,7 @@ Para cada número móvil disponible en el objeto del modelo de datos Cliente, ha
    * Seleccione **facturas** de la lista desplegable **Objeto del modelo**.
 
    * Seleccione **conseguir** de la lista desplegable **Servicio**. La propiedad **billplan**, que es la clave principal de la tabla Facturas, ya está disponible en la sección **Argumentos**.
-Los objetos del modelo de datos Facturas y Cliente se vinculan mediante las propiedades billplan (facturas) y customerplan (cliente), respectivamente. Cree un enlace entre estas propiedades para recuperar los detalles del plan para cualquier cliente disponible en la base de datos MySQL.
+     Los objetos de modelo de datos Facturas y Cliente se vinculan mediante las propiedades billplan (facturas) y customerplan (cliente), respectivamente. Cree un enlace entre estas propiedades para recuperar los detalles del plan para cualquier cliente disponible en la base de datos MySQL.
 
    * Seleccione **cliente** de la lista desplegable **Enlace a**.
 
@@ -311,13 +311,13 @@ Los objetos del modelo de datos Facturas y Cliente se vinculan mediante las prop
 
    ![Agregar asociación a Ciente y Facturas](assets/add_association_customer_bills_new.png)
 
-   La siguiente imagen muestra las asociaciones entre los objetos del modelo de datos y las propiedades utilizadas para crear asociaciones entre ellos:
+   La siguiente imagen muestra las asociaciones entre los objetos de modelo de datos y las propiedades utilizadas para crear asociaciones entre ellos:
 
    ![fdm_groups](assets/fdm_associations.gif)
 
-### Editar propiedades del objeto del modelo de datos {#edit-data-model-object-properties}
+### Editar propiedades del objeto de modelo de datos {#edit-data-model-object-properties}
 
-Después de crear asociaciones entre Cliente y otros objetos del modelo de datos, edite las propiedades de Cliente para definir la propiedad en función de la cual se recuperarán los datos del objeto del modelo de datos. En función del caso de uso, Número móvil se utiliza como propiedad para recuperar datos del objeto del modelo de datos Cliente.
+Después de crear asociaciones entre Cliente y otros objetos de modelo de datos, edite las propiedades de Cliente para definir la propiedad en función de la cual se recuperarán los datos del objeto de modelo de datos. En función del caso de uso, Número móvil se utiliza como propiedad para recuperar datos del objeto de modelo de datos Cliente.
 
 1. Seleccione la casilla de verificación de la parte superior del objeto del modelo de datos **customer** para seleccionarlo y seleccione **Editar propiedades**. Se abrirá el panel **Editar propiedades**.
 1. Especifique **cliente** como el **Objeto del modelo de nivel superior**.
@@ -340,10 +340,10 @@ Después de crear asociaciones entre Cliente y otros objetos del modelo de datos
    ![Configurar servicios](assets/configure_services_customer_new.png)
 
 1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos **calls** para seleccionarlo y seleccione **Editar propiedades**. Se abrirá el panel **Editar propiedades**.
-1. Desactive el **Objeto del modelo de nivel superior** para el objeto del modelo de datos **llamadas**.
+1. Desactive el **Objeto del modelo de nivel superior** para el objeto de modelo de datos **llamadas**.
 1. Seleccione **Listo**.
 
-   Repita los pasos 8 a 10 para configurar las propiedades del objeto del modelo de datos **facturas**.
+   Repita los pasos 8 a 10 para configurar las propiedades del objeto de modelo de datos **facturas**.
 
 ### Configurar servicios {#configure-services}
 
@@ -369,9 +369,9 @@ Después de crear asociaciones entre Cliente y otros objetos del modelo de datos
 
    ![Actualizar propiedades del servicio](assets/update_service_properties_new.png)
 
-## Paso 5: Probar el modelo y los servicios de datos de formulario {#step-test-form-data-model-and-services}
+## Paso 5: Probar el modelo de datos de formulario y los servicios {#step-test-form-data-model-and-services}
 
-Puede probar el objeto y los servicios del modelo de datos para comprobar que está configurado correctamente.
+Puede probar los servicios y el objeto de modelo de datos para comprobar que el modelo de datos de formulario esté configurado correctamente.
 
 Haga lo siguiente para ejecutar la prueba:
 
@@ -381,7 +381,7 @@ Haga lo siguiente para ejecutar la prueba:
 
    Los detalles del cliente asociados con la propiedad mobilenum especificada se recuperarán y se mostrarán en la sección Salida como se muestra a continuación. Cierre el cuadro de diálogo.
 
-   ![Probar modelo de datos &#x200B;](assets/test_data_model_new.png)
+   ![Probar modelo de datos ](assets/test_data_model_new.png)
 
 1. Vaya a la pestaña **Servicios**.
 1. Seleccione el servicio **get** y seleccione el servicio **Test.**
@@ -391,14 +391,14 @@ Haga lo siguiente para ejecutar la prueba:
 
    ![Probar servicio](assets/test_service_new.png)
 
-### Editar y guardar datos de ejemplo {#edit-and-save-sample-data}
+### Editar y guardar datos de muestra {#edit-and-save-sample-data}
 
-El editor del modelo de datos de formulario permite generar datos de ejemplo para todas las propiedades de objetos del modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario. Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de ejemplo.
+El editor del modelo de datos de formulario permite generar datos de ejemplo para todas las propiedades de objetos del modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario. Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de muestra.
 
-Para generar, editar y guardar datos de ejemplo, haga lo siguiente:
+Para generar, editar y guardar datos de muestra, haga lo siguiente:
 
-1. En la página del modelo de datos de formulario, seleccione **Editar datos de ejemplo**. Genera y muestra los datos de ejemplo en la ventana Editar datos de ejemplo.
+1. En la página del modelo de datos de formulario, seleccione **Editar datos de ejemplo**. Genera y muestra los datos de muestra en la ventana Editar datos de muestra.
 
    ![Editar datos de muestra](assets/edit_sample_data_new.png)
 
-1. En la ventana **Editar datos de ejemplo**, edite los datos según sea necesario y seleccione **Guardar**. Cierre la ventana.
+1. En la ventana **Editar datos de muestra**, edita los datos, según sea necesario, y selecciona **Guardar**. Cierre la ventana.

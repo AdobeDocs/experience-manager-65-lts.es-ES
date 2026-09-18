@@ -4,13 +4,12 @@ description: Revise estas consideraciones importantes antes de definir las polí
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1460872b-415f-4392-a480-c442790fd0d9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 79%
-
 ---
-
 # Fragmentos de contenido: Eliminar consideraciones {#content-fragments-delete-considerations}
 
 Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
@@ -71,15 +70,15 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 
 * Para los nodos o carpetas del fragmento de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * Para la variable `jcr:content`nodo de todos los fragmentos de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`
 
 * Para todos los nodos siguientes `jcr:content` de todos los fragmentos de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
 
 Estos privilegios de `remove` deben ser [administrados mediante Listas de control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 

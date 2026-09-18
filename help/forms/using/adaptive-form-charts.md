@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2045'
 ht-degree: 6%
-
 ---
-
 # Gráficos de formulario adaptable {#af-charts}
 
 ![Hero_Image](assets/charts_hero_image.jpg)
@@ -62,7 +61,7 @@ En la pestaña Básico, puede configurar las siguientes propiedades:
 * **Eje Y > Usar función**: especifica la función estadística que se utilizará para calcular los valores en el eje Y. En el ejemplo, se añade la cantidad gastada en cada categoría y el valor calculado se traza en el eje Y. Por lo tanto, seleccione Suma de la lista desplegable Usar función. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
 * **Posición de leyenda**: especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior.
 * **Mostrar leyenda**: muestra una leyenda para el gráfico cuando está habilitado.
-* **Información de objeto**: especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas(5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no es aplicable a los gráficos de líneas y áreas.
+* **Información de objeto**: especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas(5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no se aplica a los gráficos de líneas y áreas.
 * **Configuraciones específicas de gráficos**: además de las configuraciones comunes, está disponible la siguiente configuración específica de gráficos:
 * **Radio interior**: disponible para gráficos de anillo para especificar el radio (en píxeles) del círculo interior del gráfico.
 * **Color de línea**: disponible para gráficos de líneas, líneas y puntos y áreas para especificar el valor hexadecimal del color de la línea del gráfico.

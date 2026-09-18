@@ -7,13 +7,12 @@ topic-tags: customization
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 79f0c1e7-6345-4cfb-8186-3ecca82cac44
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
-
 ---
-
 # Personalizar el seguimiento de eventos de formulario {#customizing-form-event-tracking}
 
 De serie, los siguientes eventos se rastrean en un formulario adaptable habilitado para análisis:

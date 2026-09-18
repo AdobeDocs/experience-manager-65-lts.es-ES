@@ -7,18 +7,17 @@ topic-tags: publish
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9eaf253f-628b-4d80-bb83-388c5afcc457
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 100%
-
+source-wordcount: '56'
+ht-degree: 69%
 ---
-
 # Ayuda de Forms Designer {#form-designer-help}
 
-[Using Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-[Designer Quick Start Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-[Designer Samples](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
-[Designer Scripting Basics](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
-[Designer Scripting Reference](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
-[Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
+[Uso de Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+[Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+[Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+[Conceptos básicos de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
+[Referencia de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
+[Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)

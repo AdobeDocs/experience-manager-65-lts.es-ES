@@ -4,13 +4,12 @@ description: Aprenda a utilizar las API de servicios de documentos para firmar, 
 feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6439'
+source-wordcount: '6510'
 ht-degree: 93%
-
 ---
-
 # Usar AEM Document Services mediante programación  {#using-aem-document-services-programmatically}
 
 Los ejemplos de este documento le ayudarán a comprender y utilizar Servicios de documentos de AEM en AEM Forms en un entorno OSGi. Para obtener ejemplos de AEM Forms en un entorno JEE, consulte
@@ -1063,7 +1062,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
+   <td>Incluye los argumentos necesarios para cifrar un documento PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -1370,7 +1369,7 @@ Además, las listas de revocación de certificados (CRL) proporcionan informaci�
 
 **Aplicar derechos de uso a documentos PDF**
 
-Puede aplicar derechos de uso a documentos PDF mediante la API de cliente Java y el servicio web de ampliación de Reader. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos activados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
+Puede aplicar derechos de uso a documentos PDF mediante la API de cliente Java y el servicio web de ampliación de Reader. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos habilitados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
 
 Antes de poder ampliar un documento PDF con un certificado, Reader debe asegurarse de agregar el certificado al repositorio de claves de AEM.
 
@@ -1440,7 +1439,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
+   <td>Incluye los argumentos necesarios para cifrar un documento PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -5123,5 +5122,3 @@ void tag(File inputFile) throws Exception
     }
 }
 ```
-
-

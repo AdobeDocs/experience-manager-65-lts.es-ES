@@ -4,13 +4,12 @@ description: En esta parte del recorrido para desarrolladores de contenido de AE
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4e472116-2af8-4e8a-b915-fe3a58a68514
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 65%
-
 ---
-
 # Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado {#put-it-all-together}
 
 Esta página tiene como objetivo proporcionar directrices sobre cómo configurar un proyecto de desarrollo local con la nueva SDK sin encabezado de AEM. Manténgase atento a más detalles una vez que el SDK esté disponible públicamente.

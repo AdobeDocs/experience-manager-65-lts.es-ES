@@ -1,5 +1,5 @@
 ---
-title: Implementación de la nomenclatura de páginas del lado del servidor para Analytics
+title: Implementación de asignación de nombres a páginas del lado del servidor para Analytics
 description: Adobe Analytics utiliza la propiedad s.pageName para identificar las páginas de forma exclusiva y asociar los datos recopilados para las páginas
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
-
+source-wordcount: '866'
+ht-degree: 1%
 ---
-
-# Implementación de la nomenclatura de páginas del lado del servidor para Analytics{#implementing-server-side-page-naming-for-analytics}
+# Implementación de asignación de nombres a páginas del lado del servidor para Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics utiliza la propiedad `s.pageName` para identificar las páginas de forma única y asociar los datos que se recopilan para las páginas. Normalmente, se realizan las siguientes tareas en AEM para asignar un valor a esta propiedad que AEM envía a Analytics:
 
@@ -23,7 +22,7 @@ Adobe Analytics utiliza la propiedad `s.pageName` para identificar las páginas 
 
 * Diseñe el componente de página para que incluya la variable CQ que asigne a la propiedad `s.pageName`. (Consulte [Implementación del seguimiento de Adobe Analytics para componentes personalizados](/help/sites-developing/extending-analytics-components.md)).
 
-Para exponer los datos de los informes de Analytics en la consola Sitios y en la perspectiva de contenido, AEM requiere el valor de la propiedad `s.pageName` para cada página. La API de Java de AEM Analytics define la interfaz `AnalyticsPageNameProvider` que implementa para proporcionar a la consola Sitios y a las Perspectivas de contenido el valor de la propiedad `s.pageName`. El servicio `AnaltyicsPageNameProvider` resuelve la propiedad pageName en el servidor con fines de generación de informes, ya que se puede establecer dinámicamente usando JavaScript en el cliente con fines de seguimiento.
+Para exponer los datos de los informes de Analytics en la consola Sitios y en Insight de contenido, AEM requiere el valor de la propiedad `s.pageName` para cada página. La API de Java de AEM Analytics define la interfaz `AnalyticsPageNameProvider` que implementa para proporcionar a la consola Sitios y a las Perspectivas de contenido el valor de la propiedad `s.pageName`. El servicio `AnaltyicsPageNameProvider` resuelve la propiedad pageName en el servidor con fines de generación de informes, ya que se puede establecer dinámicamente usando JavaScript en el cliente con fines de seguimiento.
 
 ## El servicio de proveedor de nombres de páginas predeterminado de Analytics {#the-default-analytics-page-name-provider-service}
 
@@ -41,7 +40,7 @@ El servicio `DefaultPageNameProvider` determina cuál de estas variables CQ se a
 
 * `pagedata.navTitle`: el servicio usa `page.getNavigationTitle()`
 
-El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
+El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
 
 Si no asigna una variable CQ a la propiedad `s.pageName` en el marco de trabajo, el valor de `s.pageName` se genera a partir de la ruta de acceso de la página. Por ejemplo, la página con la ruta de acceso `/content/geometrixx/en` usa el valor `content:geometrixx:en` para `s.pageName`.
 
@@ -74,7 +73,7 @@ Por ejemplo, un componente de página personalizado puede incluir una propiedad 
 
 ### Implementación de un servicio de proveedor de nombres de páginas de Analytics {#implementing-an-analytics-page-name-provider-service}
 
-Implemente la interfaz `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como servicio OSGi para personalizar la lógica que recupera el valor de propiedad `s.pageName`. El análisis de página de Sites y la perspectiva de contenido utilizan el servicio para recuperar datos de informes de Analytics.
+Implemente la interfaz `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como servicio OSGi para personalizar la lógica que recupera el valor de propiedad `s.pageName`. Los análisis de página de Sites y Content Insight utilizan el servicio para recuperar datos de informes de Analytics.
 
 La interfaz AnalyticsPageNameProvider define dos métodos que debe implementar:
 

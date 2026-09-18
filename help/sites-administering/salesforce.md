@@ -9,14 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 68003650-76d7-40b3-860b-70454c13211e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 0%
-
+source-wordcount: '1596'
+ht-degree: 5%
 ---
-
-
 # Integración con Salesforce {#integrating-with-salesforce}
 
 Al integrar Salesforce con Adobe Experience Manager (AEM), se proporcionan funciones de administración de posibles clientes y se utilizan las funciones existentes proporcionadas de forma predeterminada por Salesforce. Puede configurar AEM para que publique posibles clientes en Salesforce y cree componentes que accedan a los datos directamente desde Salesforce.
@@ -46,7 +44,7 @@ Para configurar AEM para que se integre con Salesforce:
 
 >[!CAUTION]
 >
->Instale el paquete de integración [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) antes de continuar con el procedimiento. Para obtener más información sobre cómo trabajar con paquetes, consulte la página [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md#package-share).
+>Instale el paquete de integración [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) antes de continuar con el procedimiento. Para obtener más información sobre cómo trabajar con paquetes, consulte la página [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md#package-share).
 
 1. En AEM, vaya a **Cloud Services**. En Servicios de terceros, haga clic en **Configurar ahora** en **Salesforce**.
 
@@ -227,7 +225,7 @@ AEM se envía con un componente de búsqueda de muestra que busca posibles clien
 
 Para utilizar este componente:
 
-1. Desplácese hasta la página en la que desee utilizar esta configuración. Abra las propiedades de la página y seleccione **Cloud Services.** Haz clic en **Agregar servicios** y selecciona **Salesforce**, la configuración adecuada, y haz clic en **Aceptar**.
+1. Desplácese hasta la página en la que desee utilizar esta configuración. Abra las propiedades de la página y seleccione **Cloud Services.** Haga clic en **Agregar servicios**, seleccione **Salesforce** y la configuración adecuada, y haga clic en **Aceptar**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

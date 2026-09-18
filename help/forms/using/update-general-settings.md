@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 735e4c4a-6580-4698-a1bf-75c4b1e47b5b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 92%
-
 ---
-
 # Actualizar la configuración general{#updating-general-settings}
 
 La configuración general de la aplicación de AEM Forms le permite especificar configuraciones, como recuperar archivos adjuntos, modo sin conexión, pantalla de aterrizaje, categoría predeterminada y frecuencia de guardado automático.
@@ -49,9 +48,9 @@ Puede realizar los siguientes cambios en la configuración de su aplicación.
 * **Pantalla de aterrizaje**: Para establecer la ubicación de inicio ([pantalla Inicio](../../forms/using/home-screen.md)) para la aplicación.
 Opciones disponibles:
 
-   * Formularios
-   * Tareas
-   * Favoritos
+  * Formularios
+  * Tareas
+  * Favoritos
 
 * **Categoría predeterminada**: Permite seleccionar la categoría de formularios que se va a mostrar en la pantalla de inicio. Al seleccionar Todos, puede ver todos los formularios en la pantalla de inicio. Las categorías se rellenan en función de los formularios cargados en la aplicación. Los formularios están disponibles en la aplicación en función de la configuración de formulario especificada en el servidor de AEM Forms.
 

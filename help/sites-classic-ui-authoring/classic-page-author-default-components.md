@@ -1,6 +1,6 @@
 ---
 title: Componentes
-description: AEM incluye una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
+description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,13 +9,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 23%
-
+source-wordcount: '200'
+ht-degree: 34%
 ---
-
 # Componentes{#components}
 
 Adobe Experience Manager (AEM) incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles cuando [edita una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) y se agrupan por área funcional principal (es decir, grupo de componentes) para ayudar a filtrar.

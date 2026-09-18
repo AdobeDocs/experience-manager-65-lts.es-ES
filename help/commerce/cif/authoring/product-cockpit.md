@@ -4,13 +4,12 @@ description: Uso de la cabina de productos, que proporciona una visión general 
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c3a8c33d-2ae7-4a90-862f-3f7faf7b4eb0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 # Product Cockpit {#product-cockpit}
 
 ## Información general {#overview}
@@ -75,7 +74,7 @@ Al hacer clic en el icono de propiedades de un producto o categoría, se abre la
 
 ### Fichas de Commerce {#tabs}
 
-Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incl. variantes) son datos de solo lectura en AEM, ya que el sistema de registro es el backend de commerce. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
+Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incluidas las variantes) son datos de solo lectura en AEM, ya que el sistema de registro es el servidor comercial. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
 
 ![propiedades de catálogo](/help/commerce/cif/assets/catalog-properties.png)
 

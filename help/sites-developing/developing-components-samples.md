@@ -1,5 +1,5 @@
 ---
-title: 'Desarrollo de componentes de AEM: ejemplos de código'
+title: 'Desarrollo de componentes de AEM: muestras de código'
 description: En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 879f11eb-0d47-43a7-9a64-53cefd851cf4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 2%
-
+source-wordcount: '244'
+ht-degree: 8%
 ---
-
-# Desarrollo de componentes de AEM: ejemplos de código{#developing-aem-components-code-samples}
+# Desarrollo de componentes de AEM: muestras de código{#developing-aem-components-code-samples}
 
 En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para AEM.
 
@@ -41,12 +40,12 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-authoring-dialog-fields-customization en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Abra el proyecto aem-authoring-dialog-fields-customization en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Descargar el proyecto como [archivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Este ejemplo de código está relacionado con la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+>Este ejemplo de código está relacionado con la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## Recursos relacionados {#related-resources}
 

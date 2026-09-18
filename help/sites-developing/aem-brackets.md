@@ -1,5 +1,5 @@
 ---
-title: Extensión de AEM Brackets
+title: Extensión de AEM para Brackets
 description: Aprenda a utilizar la extensión de Adobe Experience Manager para corchetes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 103b6fde-e001-4332-9927-5cdf2acbc40c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
-# Extensión de AEM Brackets{#aem-brackets-extension}
+# Extensión de AEM para Brackets{#aem-brackets-extension}
 
 ## Información general {#overview}
 
@@ -69,7 +68,7 @@ El proyecto debe contener al menos:
 
 1. una carpeta `jcr_root` (por ejemplo, `myproject/jcr_root`)
 
-1. un archivo de `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del archivo de `filter.xml`, vea la [definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. un archivo de `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del archivo de `filter.xml`, vea la [definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html?lang=es).
 
 En el menú **Archivo** de Brackets, elija **Abrir carpeta...** y elija la carpeta `jcr_root` o la carpeta del proyecto principal.
 

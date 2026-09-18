@@ -8,16 +8,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 988e986f-8e0b-48a2-a529-9c0f931131b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '288'
 ht-degree: 97%
-
 ---
-
 # Visualizar datos adicionales en la lista de tareas pendientes{#displaying-additional-data-in-todo-list}
 
-De forma predeterminada, la lista Tareas pendientes de AEM Forms Workspace muestra el nombre y la descripción de la tarea. Sin embargo, puede agregar otra información, como la fecha de creación o la fecha límite. También puede agregar iconos y cambiar el estilo de la pantalla.
+De forma predeterminada, la lista Tareas pendientes de AEM Forms Workspace muestra el nombre para mostrar de la tarea y su descripción. Sin embargo, puede agregar otra información, como la fecha de creación o la fecha límite. También puede agregar iconos y cambiar el estilo de la pantalla.
 
 ![Un vistazo a la pestaña Tareas pendientes del espacio de trabajo HTML que muestra la configuración predeterminada](assets/html-todo-list.png)
 

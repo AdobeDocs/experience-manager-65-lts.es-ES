@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cd36d432-ad42-41be-abcf-f74ef2e42544
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 0%
-
+source-wordcount: '471'
+ht-degree: 3%
 ---
-
 # Integración con ExactTarget{#integrating-with-exacttarget}
 
 La integración de Adobe Experience Manager (AEM) con Exact Target permite administrar y enviar los correos electrónicos creados en AEM mediante Exact Target. También le permite utilizar las funciones de administración de posibles clientes de Exact Target mediante formularios AEM en páginas de AEM.
@@ -65,7 +64,7 @@ Para crear una configuración de ExactTarget en Herramientas:
 
 1. En la página de bienvenida, haga clic en **Herramientas**. O bien, vaya directamente a `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Services** y después **ExactTarget**.
-1. Haga clic en **Nuevo** para abrir la ventana **Crear página &#x200B;**.
+1. Haga clic en **Nuevo** para abrir la ventana **Crear página **.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

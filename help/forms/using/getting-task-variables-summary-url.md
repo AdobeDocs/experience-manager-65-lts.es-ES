@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1cd2aae7-306f-4f7a-b4d2-e8c64827c09a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 96%
-
+source-wordcount: '432'
+ht-degree: 92%
 ---
-
 # Obtener variables de tarea en la URL de resumen {#getting-task-variables-in-summary-url}
 
 La página Resumen muestra información relacionada con las tareas. Este artículo describe cómo reutilizar la información relacionada con las tareas en la página Resumen.
@@ -67,7 +66,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
       Las claves de esta asignación deben ser las mismas que las establecidas en el procesador de HTML del paso anterior.
 
-      Asimismo, agregue una clave **sling:resourceType** con el valor **Employees/PtoApplication** a la asignación.
+      Además, agregue una clave **sling:resourceType** con el valor **Employees/PtoApplication** en el mapa.
 
    1. Utilice el subproceso **storeContent** del servicio **ContentRepositoryConnector** en el proceso **Crear resumen de PTO**. Este subproceso crea un nodo CRX.
 
@@ -75,7 +74,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
       * **Ruta de carpeta**: la ruta en la que se crea el nuevo nodo CRX. Establezca la ruta como **/content**.
       * **Nombre del nodo**: asigne la variable de entrada nodeName a este campo. Es una cadena de nombre de nodo única.
-      * **Tipo de nodo**: establezca el tipo como **nt:unstructured**. La salida de este proceso es nodePath. nodePath es la ruta CRX del nodo recién creado. ndoePath es la salida final del proceso **Crear resumen de PTO**.
+      * **Tipo de nodo**: defina el tipo como **nt:unstructured**. La salida de este proceso es nodePath. nodePath es la ruta CRX del nodo recién creado. ndoePath es la salida final del proceso **Crear resumen de PTO**.
 
    1. Pase los datos de formulario enviados (**employeeName**, **employeeID**, **ptoReason** y **totalDays**) como entrada al nuevo proceso **Crear resumen de PTO**. Tome la salida como **ptoSummaryNodePath**.
 

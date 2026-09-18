@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1334d04b-8e73-487c-aa87-531f00f1d5f2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 0%
-
+source-wordcount: '514'
+ht-degree: 1%
 ---
-
 # Configuración de componentes en el modo Diseño{#configuring-components-in-design-mode}
 
 Cuando se instala una instancia de AEM de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas.

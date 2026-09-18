@@ -7,13 +7,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 532f5e23-876d-477c-a8ab-94b6ae1656df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1914'
 ht-degree: 75%
-
 ---
-
 # Tutorial: Crear comunicaciones interactivas {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -77,14 +76,14 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** de la lista desplegable **Tipo de gráfico**.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
    1. Seleccione la variable **Frecuencia** de la lista desplegable **Función**.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
    1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
 1. Vaya a la pestaña **Recursos** y aplique el filtro para mostrar solo los fragmentos de diseño en el panel izquierdo. Arrastre y suelte el fragmento de diseño **table_lf** hasta el área de destino **Llamadas desglosadas**.
 1. Seleccione el campo de texto en la columna **Fecha** y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
-1. Seleccione **Objeto del modelo de datos** de la lista desplegable **Tipo de enlace** y seleccione **llamadas** > **calldate**. Seleccione ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
+1. Seleccione **Objeto de modelo de datos** de la lista desplegable **Tipo de enlace** y seleccione **llamadas** > **calldate**. Seleccione ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
 
    Del mismo modo, cree un enlace con **calltime**, **callnumber**, **callduration** y **callcharges** para campos de texto en las columnas **Tiempo**, **Número**, **Duración** y **Gastos** respectivamente.
 
@@ -140,15 +139,15 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** de la lista desplegable **Tipo de gráfico**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
 
    1. Seleccione la variable **Frecuencia** de la lista desplegable **Función**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
 
    1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-1. Seleccione la pestaña **Fuentes de datos** del panel izquierdo y arrastre y suelte el objetos del modelo de datos **llamadas** en el área de destino **Llamadas desglosadas**. Todas las propiedades del objeto del modelo de datos **llamadas** se mostrarán como columnas de tabla en el área de destino **Llamadas desglosadas** en el panel derecho.
+1. Seleccione la pestaña **Fuentes de datos** del panel izquierdo y arrastre y suelte el objeto de modelo de datos **llamadas** en el área de destino **Llamadas desglosadas**. Todas las propiedades del objeto de modelo de datos **llamadas** se mostrarán como columnas de tabla en el área de destino **Llamadas desglosadas** en el panel derecho.
 
    En función del caso de uso, se requieren las columnas Fecha de la llamada, Hora de la llamada, Número de la llamada, Duración de la llamada y Gastos de la llamada en la tabla.
 
@@ -197,7 +196,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
 ## Crear comunicaciones interactivas para Imprimir y Web con sincronización automática {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
-También puede crear una comunicación interactiva si habilita la sincronización automática entre los canales Imprimir y Web. Para habilitar la sincronización automática, seleccione la opción Imprimir como principal al crear la comunicación interactiva. Al seleccionar la opción Imprimir como principal, se garantiza que el contenido, la herencia y el enlace de datos del canal Web se deriven del canal Imprimir. También garantiza que los cambios realizados en el canal Imprimir se reflejen en el canal Web.
+También puede crear una comunicación interactiva si habilita la sincronización automática entre los canales web y de impresión. Para habilitar la sincronización automática, seleccione la opción Imprimir como principal al crear la comunicación interactiva. Al seleccionar la opción Imprimir como principal, se garantiza que el contenido, la herencia y el enlace de datos del canal Web se deriven del canal Imprimir. También garantiza que los cambios realizados en el canal Imprimir se reflejen en el canal Web.
 
 Siga estos pasos para derivar el contenido del canal Web mediante el canal Imprimir:
 

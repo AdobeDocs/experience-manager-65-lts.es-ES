@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2fd45cb4-33e0-47b0-a4cc-4ae039b78e36
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 38%
-
+source-wordcount: '115'
+ht-degree: 29%
 ---
+# Métodos abreviados de teclado para las consolas{#keyboard-shortcuts-for-consoles}
 
-# Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
-
-Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -40,7 +39,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
   <tr>
    <td>Consola</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (en la página requerida)</td>
-   <td>Abrir página en una nueva ventana.<br /> <strong>Nota:</strong> esto está operativo si las <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades de usuario</a> están configuradas como Ventana única; si Varias ventanas, este es el comportamiento predeterminado.</td>
+   <td>Abrir página en ventana nueva.<br /> <strong>Nota:</strong> esto está operativo si las <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">propiedades de usuario</a> están configuradas en una sola ventana; si varias ventanas, este es el comportamiento predeterminado.</td>
   </tr>
  </tbody>
 </table>

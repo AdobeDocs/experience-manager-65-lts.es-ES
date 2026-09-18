@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 006e91327d15dd4dd0482230d6ad8535e924698e
+exl-id: a27cd5c7-c0ea-4b94-9d54-95b47671fb44
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 6%
-
+source-wordcount: '251'
+ht-degree: 12%
 ---
-
 # Integración con servicios de terceros{#integrating-with-third-party-services}
 
 Con AEM, puede integrar con los siguientes productos no incluidos en Adobe de forma predeterminada:

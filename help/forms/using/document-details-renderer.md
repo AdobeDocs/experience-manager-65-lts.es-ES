@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e1612298-721d-499c-96c9-fd4418725106
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '675'
 ht-degree: 62%
-
 ---
-
 # Detalles del documento para el procesador {#document-details-for-renderer}
 
 ## Introducción {#introduction}

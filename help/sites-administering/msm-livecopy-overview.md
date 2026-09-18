@@ -8,22 +8,21 @@ content-type: reference
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 32184455f3c74605a11c20152cf9c8879101a5c2
+exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 31%
-
 ---
-
 # Información general de la consola de Live Copy{#live-copy-overview-console}
 
 La **Información general de Live Copy** le permite:
 
 * Ver/administrar la herencia en un sitio:
 
-   * Ver el árbol de modelo y la estructura correspondiente de Live Copy, junto con su estado de herencia
-   * Cambiar el estado de la herencia; por ejemplo, suspender, reanudar
-   * Ver las propiedades de modelo y Live Copy
+  * Ver el árbol de modelo y la estructura correspondiente de Live Copy, junto con su estado de herencia
+  * Cambiar el estado de la herencia; por ejemplo, suspender, reanudar
+  * Ver las propiedades de modelo y Live Copy
 
 * Realizar acciones de despliegue
 
@@ -78,11 +77,11 @@ Cuando selecciona una página de modelo, están disponibles las siguientes accio
 
 * Editar
 
-   * Abra la página de modelo para editarla.
+  * Abra la página de modelo para editarla.
 
 * [Despliegue](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Realice un despliegue para insertar los cambios de origen en la Live Copy.
+  * Realice un despliegue para insertar los cambios de origen en la Live Copy.
 
 ### Acciones para una página de Live Copy {#actions-for-a-live-copy-page}
 
@@ -92,31 +91,31 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 * Editar
 
-   * Abra la página Live Copy para editarla.
+  * Abra la página Live Copy para editarla.
 
 * [Estado de la relación](#relationship-status)
 
-   * Ver información sobre el estado y la herencia.
+  * Ver información sobre el estado y la herencia.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
+  * Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 
 * [Restablecer](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Restablezca una página de Live Copy para eliminar todas las cancelaciones de herencia y devuélvala al mismo estado que la página de origen.
+  * Restablezca una página de Live Copy para eliminar todas las cancelaciones de herencia y devuélvala al mismo estado que la página de origen.
 
 * [Suspender](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Desactiva temporalmente la relación activa entre una Live Copy y su página de modelo.
+  * Desactiva temporalmente la relación activa entre una Live Copy y su página de modelo.
 
 * [Reanudar](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Reanudar permite restablecer una relación suspendida.
+  * Reanudar permite restablecer una relación suspendida.
 
 * [Desasociar](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Elimina permanentemente la relación activa entre una Live Copy y su página de modelo.
+  * Elimina permanentemente la relación activa entre una Live Copy y su página de modelo.
 
 ## Estado de la relación {#relationship-status}
 

@@ -4,14 +4,12 @@ description: JBoss EAP 8 utiliza Elytron para habilitar la comunicación segura 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 3%
-
 ---
-
-
 # Configuración de autenticación de nodo secundario (basado en Elytron)
 
 ## Configuración de la autenticación del nodo secundario mediante Elytron
@@ -229,4 +227,3 @@ Confirme el registro correcto mediante los registros del controlador de host en 
 * **Opción 2** habilita una seguridad más sólida mediante una contraseña personalizada del almacén de credenciales.
 * La configuración debe completarse **solo en nodos secundarios**.
 * La configuración del nodo principal se reutiliza automáticamente en todo el dominio.
-

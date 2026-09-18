@@ -9,14 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 2%
 ---
-
-
 # Marketing por correo electrónico{#e-mail-marketing}
 
 >[!NOTE]
@@ -36,7 +34,7 @@ Además, AEM le permite administrar la funcionalidad de la newsletter, lo que in
 
 En este documento se describen los conceptos básicos para crear boletines informativos en AEM. Para obtener información más detallada sobre cómo trabajar con el marketing por correo electrónico, consulte los siguientes documentos:
 
-* [Creación de una página de aterrizaje de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Creación de una página de destino de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Publicación de un correo electrónico para proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Seguimiento de correos electrónicos rechazados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
@@ -71,26 +69,26 @@ En este documento se describen los conceptos básicos para crear boletines infor
 
    ![Cuadro de diálogo de propiedades de página](assets/mcm_newnewsletterdialog.png)
 
-   * **De Nombre**
-Nombre que debe aparecer como remitente de la newsletter.
+   * **De nombre**
+     Nombre que debe aparecer como remitente de la newsletter.
 
-   * **Dirección desde**
-Dirección de correo que debe aparecer como remitente de la newsletter.
+   * **Dirección De**
+     Dirección de correo que debe aparecer como remitente de la newsletter.
 
    * **Asunto**
-Asunto de la newsletter.
+     Asunto de la newsletter.
 
-   * **Responder A**
-Dirección de correo que enviará las respuestas de la newsletter enviada.
+   * **Responder a**
+     Dirección de correo que enviará las respuestas de la newsletter enviada.
 
    * **Descripción**
-Descripción de la newsletter.
+     Descripción de la newsletter.
 
-   * **A Tiempo**
-El tiempo de activación para enviar la newsletter.
+   * **A tiempo**
+     El tiempo de activación para enviar la newsletter.
 
    * **Lista de destinatarios predeterminada**
-Lista predeterminada que debe recibir la newsletter.
+     Lista predeterminada que debe recibir la newsletter.
 
    Se pueden actualizar en una etapa posterior desde el cuadro de diálogo **Propiedades...**.
 

@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 41989afc-48a1-4c93-a2af-1b95e5219c4d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 88%
-
 ---
-
 # Integrar Form Bridge con el portal personalizado para formularios HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge es una API de HTML5 Forms Bridge que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).

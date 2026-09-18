@@ -1,5 +1,5 @@
 ---
-title: Desarrollo y diferencia de página
+title: Desarrollo y diferencias de página
 description: Aprenda a desarrollar y utilizar la función de diferencia de página en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 10%
-
+source-wordcount: '385'
+ht-degree: 12%
 ---
-
-# Desarrollo y diferencia de página{#developing-and-page-diff}
+# Desarrollo y diferencias de página{#developing-and-page-diff}
 
 ## Descripción general de funciones {#feature-overview}
 
@@ -44,19 +43,19 @@ Sin embargo, hay algunas limitaciones que el desarrollador debe tener en cuenta.
 
 * Esta función utiliza clases CSS que no están separadas por espacios de nombres al producto de AEM. Si se incluyen en la página otras clases CSS personalizadas o clases CSS de terceros con los mismos nombres, la visualización de la diferencia puede verse afectada.
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * Dado que la comparación de diferencias es del lado del cliente y se ejecuta al cargar la página, no se contabilizará ningún ajuste en el DOM después de ejecutar el servicio de comparación de diferencias del lado del cliente. Esto puede afectar a
 
-   * Componentes que utilizan AJAX para incluir contenido
-   * Aplicaciones de una sola página
-   * Componentes basados en JavaScript que manipulan el DOM tras la interacción del usuario.
+  * Componentes que utilizan AJAX para incluir contenido
+  * Aplicaciones de una sola página
+  * Componentes basados en JavaScript que manipulan el DOM tras la interacción del usuario.
 
 >[!NOTE]
 >
->La comparación de diferencias de página solo funciona para los componentes que tienen nodos cq:editConfig válidos.
+>La comparación de diferencia de página solo funciona para los componentes que tienen nodos cq:editConfig válidos.

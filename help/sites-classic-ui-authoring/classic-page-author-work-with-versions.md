@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
-# Uso de versiones de página  {#working-with-page-versions}
+# Uso de versiones de página{#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
@@ -100,7 +99,7 @@ Para comparar la versión actual de la página con una versión anterior:
 
 1. En Sidekick, seleccione la subpestaña **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para mostrar la versión actual.
 
-## Deformación de tiempo   {#timewarp}
+## Deformación de tiempo {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
@@ -169,8 +168,8 @@ Si desea ver la cronología del documento:
 1. Seleccione y mueva (mantenga pulsada y arrastre) la línea de tiempo para desplazarse por la línea de tiempo del documento.
 
    * Todas las líneas indican versiones publicadas.
-Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
-En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde. La línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
+     Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
+     En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde. La línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

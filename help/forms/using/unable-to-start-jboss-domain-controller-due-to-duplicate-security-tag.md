@@ -4,14 +4,12 @@ description: En implementaciones de clúster LTS de AEM Forms 6.5.1 mediante JBo
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
-
 ---
-
-
 # No se puede iniciar el controlador de dominio JBoss
 
 ## Problema
@@ -28,9 +26,9 @@ Esto causa una **configuración XML no válida**, lo que da como resultado **err
 * **Servidor de aplicaciones:** JBoss EAP 8.x
 * **Archivos de configuración:**
 
-   * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
 
 ## Pasos para solucionar problemas
 

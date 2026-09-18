@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 90a44cab-3ecf-4a71-95d4-e8ce2d996980
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 77%
-
 ---
-
 # Registrar flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
 
 Los pasos de Forms Workflow proporcionan registros detallados para depurar convenientemente los problemas relacionados con los flujos de trabajo. Habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
@@ -80,7 +79,7 @@ Haga lo siguiente para poder habilitar el registro de depuración para los flujo
 
 1. Vaya al Administrador de configuración de la consola web de AEM en:
 
-   https://&#39;[server]:[puerto]&#39;/system/console/configMgr
+   https://'[server]:[puerto]'/system/console/configMgr
 
 1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Compatibilidad de registros]**.
 1. Seleccione **[!UICONTROL Agregar nuevo registrador.]**

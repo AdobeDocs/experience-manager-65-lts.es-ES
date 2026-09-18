@@ -7,13 +7,12 @@ topic-tags: developer-reference
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 46a0ca88-0014-400f-b56f-30afb847e30f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 95%
-
 ---
-
 # API de Form Bridge para formularios HTML5 {#form-bridge-apis-for-html-forms}
 
 Puede utilizar las API de Form Bridge para abrir un canal de comunicación entre los formularios HTML5 basados en XFA y las aplicaciones. Las API de Form Bridge proporcionan una API de **Connect** para crear la conexión.
@@ -58,8 +57,8 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada**:
 
-   * **handler**: la función que se ejecuta después de conectar Form Bridge.
-   * **context**: el objeto en el que se establece el contexto (este) de la función *handler*.
+  * **handler**: la función que se ejecuta después de conectar Form Bridge.
+  * **context**: el objeto en el que se establece el contexto (este) de la función *handler*.
 
 * **Salida**: ninguna.
 * **Error**: ninguno.
@@ -68,13 +67,13 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **options:** un objeto JavaScript que contiene las siguientes propiedades:
+  * **options:** un objeto JavaScript que contiene las siguientes propiedades:
 
-      * **Error**: la función del controlador de errores.
-      * **success**: la función del controlador de éxito. Esta función pasa a un objeto que contiene XML en la propiedad *data*.
-      * **context**: el objeto en el que se establece el contexto (este) de la función *success*.
-      * **validationChecker**: la función a la que se llama para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
-      * **formState**: el estado JSON del formulario XFA para el que se debe devolver un XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
+    * **Error**: la función del controlador de errores.
+    * **success**: la función del controlador de éxito. Esta función pasa a un objeto que contiene XML en la propiedad *data*.
+    * **context**: el objeto en el que se establece el contexto (este) de la función *success*.
+    * **validationChecker**: la función a la que se llama para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
+    * **formState**: el estado JSON del formulario XFA para el que se debe devolver un XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
 
 * **Salida:** ninguna.
 * **Error:** ninguno.
@@ -83,42 +82,42 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **configName:** el nombre de la configuración que desea anular.
+  * **configName:** el nombre de la configuración que desea anular.
 
-      * **widgetConfig:** permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente forma:
+    * **widgetConfig:** permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente forma:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
+      *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** permite al usuario anular el comportamiento predeterminado al procesar solo la primera página. La configuración se anula de la siguiente forma:
+    * **pagingConfig:** permite al usuario anular el comportamiento predeterminado al procesar solo la primera página. La configuración se anula de la siguiente forma:
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+      *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig:** permite al usuario anular el nivel de registro, desactivar el registro de una categoría, mostrar la consola de registros o realizar el envío al servidor. La configuración se puede anular de la siguiente forma:
+    * **LoggingConfig:** permite al usuario anular el nivel de registro, desactivar el registro de una categoría, mostrar la consola de registros o realizar el envío al servidor. La configuración se puede anular de la siguiente forma:
 
-     ```javascript
-     formBridge.registerConfig{
-       "LoggerConfig" : {
-     {
-     "on":`<true *| *false>`,
-     "category":`<array of categories>`,
-     "level":`<level of categories>`, "
-     type":`<"console"/"server"/"both">`
-     }
-       }
-     ```
+    ```javascript
+    formBridge.registerConfig{
+      "LoggerConfig" : {
+    {
+    "on":`<true *| *false>`,
+    "category":`<array of categories>`,
+    "level":`<level of categories>`, "
+    type":`<"console"/"server"/"both">`
+    }
+      }
+    ```
 
-      * **SubmitServiceProxyConfig:** permita que los usuarios registren los servicios proxy de envío y registrador.
+    * **SubmitServiceProxyConfig:** permita que los usuarios registren los servicios proxy de envío y registrador.
 
-        ```javascript
-        window.formBridge.registerConfig("submitServiceProxyConfig",
-        {
-        "submitServiceProxy" : "`<submitServiceProxy>`",
-        "logServiceProxy": "`<logServiceProxy>`",
-        "submitUrl" : "`<submitUrl>`"
-        });
-        ```
+      ```javascript
+      window.formBridge.registerConfig("submitServiceProxyConfig",
+      {
+      "submitServiceProxy" : "`<submitServiceProxy>`",
+      "logServiceProxy": "`<logServiceProxy>`",
+      "submitUrl" : "`<submitUrl>`"
+      });
+      ```
 
-   * **config:** el valor de la configuración.
+  * **config:** el valor de la configuración.
 
 * **Salida:** el objeto que contiene el valor original de la configuración en la propiedad *data*.
 
@@ -128,7 +127,7 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **fieldArray:** la matriz de expresiones Som para los campos que desea ocultar.
+  * **fieldArray:** la matriz de expresiones Som para los campos que desea ocultar.
 
 * **Salida:** ninguna.
 * **Error:** ninguno.
@@ -137,7 +136,7 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **fieldArray:** la matriz de expresiones Som para los campos que se van a mostrar.
+  * **fieldArray:** la matriz de expresiones Som para los campos que se van a mostrar.
 
 * **Salida:** ninguna.
 * **Error:** ninguno.
@@ -159,12 +158,12 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **Options:** un objeto JavaScript que contiene las siguientes propiedades:
+  * **Options:** un objeto JavaScript que contiene las siguientes propiedades:
 
-      * **Error**: la función del controlador de errores.
-      * **success**: la función del controlador de éxito.
-      * **context**: El objeto en el que se establece el contexto (este) de la función *success*.
-      * **formState**: el estado JSON del formulario. El formulario se restaura al estado JSON.
+    * **Error**: la función del controlador de errores.
+    * **success**: la función del controlador de éxito.
+    * **context**: El objeto en el que se establece el contexto (este) de la función *success*.
+    * **formState**: el estado JSON del formulario. El formulario se restaura al estado JSON.
 
 * **Salida:** ninguna.
 * **Error:** ninguno.
@@ -179,8 +178,8 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:**
 
-   * **som:** la matriz que contiene las expresiones Som del campo. La expresión Som para establecer el valor de los campos.
-   * **value:** la matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una matriz **som**. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
+  * **som:** la matriz que contiene las expresiones Som del campo. La expresión Som para establecer el valor de los campos.
+  * **value:** la matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una matriz **som**. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
 
 * **Salida:** ninguna.
 * **Error:** inicia una excepción si hay una expresión Som incorrecta
@@ -209,8 +208,8 @@ if(a.errors) {
 
 * **Entrada:**
 
-   * **som:** la matriz que contiene las expresiones Som de los campos.
-   * **property**: el nombre de la propiedad cuyo valor es obligatorio.
+  * **som:** la matriz que contiene las expresiones Som de los campos.
+  * **property**: el nombre de la propiedad cuyo valor es obligatorio.
 
 * **Salida:** el objeto que contiene el resultado como matriz en la propiedad *data*.
 
@@ -220,9 +219,9 @@ if(a.errors) {
 
 * **Entrada:**
 
-   * **som:** la matriz que contiene las expresiones Som de los campos cuyo valor debe establecerse.
-   * **property**: la propiedad cuyo valor debe establecerse.
-   * **value:** la matriz que contiene los valores de la propiedad dada para los campos especificados en las expresiones Som.
+  * **som:** la matriz que contiene las expresiones Som de los campos cuyo valor debe establecerse.
+  * **property**: la propiedad cuyo valor debe establecerse.
+  * **value:** la matriz que contiene los valores de la propiedad dada para los campos especificados en las expresiones Som.
 
 * **Salida:** ninguna.
 * **Error:** ninguno.

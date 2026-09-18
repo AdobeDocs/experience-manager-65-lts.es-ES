@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 1%
-
+source-wordcount: '1091'
+ht-degree: 2%
 ---
-
 # Desarrollo de AEM: directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Directrices para el uso de plantillas y componentes {#guidelines-for-using-templates-and-components}
@@ -62,21 +61,21 @@ Por ejemplo:
 
   Esto implicaba superponer una definición de componente:
 
-   * Cree una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
+  * Cree una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
 
-      * Por ejemplo, para personalizar la copia del componente Texto:
+    * Por ejemplo, para personalizar la copia del componente Texto:
 
-         * de `/libs/foundation/components/text`
-         * hasta `/apps/myProject/components/text`
+      * de `/libs/foundation/components/text`
+      * hasta `/apps/myProject/components/text`
 
 * [Personalizar páginas mostradas por el Controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Este caso implica la superposición de un servlet:
 
-   * En el repositorio, copie uno o más scripts predeterminados:
+  * En el repositorio, copie uno o más scripts predeterminados:
 
-      * de `/libs/sling/servlet/errorhandler/`
-      * hasta `/apps/sling/servlet/errorhandler/`
+    * de `/libs/sling/servlet/errorhandler/`
+    * hasta `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -111,7 +110,7 @@ Para procesar contenido, utilice el acceso de navegación al árbol de contenido
 >Si usa el [Generador de consultas](/help/sites-developing/querybuilder-api.md), usará Consultas JCR, ya que el Generador de consultas genera Consultas JCR bajo el capó.
 >
 
-## Consideraciones de seguridad {#security-considerations}
+## Consideraciones sobre la seguridad {#security-considerations}
 
 >[!NOTE]
 >

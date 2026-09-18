@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1a11407d-7261-4f1a-bcb9-4c06b8277af4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 0%
-
+source-wordcount: '947'
+ht-degree: 1%
 ---
-
 # Administración de suscripciones{#managing-subscriptions}
 
 >[!NOTE]
@@ -56,7 +55,7 @@ Para crear un formulario de registro y configurarlo para suscripciones a las lis
    >
    >El cuadro de diálogo puede variar según el proveedor de servicios de correo electrónico.
 
-1. En la pestaña **Formulario**, seleccione la página de agradecimiento a la que desee que vayan los usuarios una vez enviado el formulario (si se deja en blanco, el formulario se volverá a mostrar tras el envío). Haga clic en **Aceptar**. Aparece un componente **ID de correo electrónico** en el formulario, que le permite crear un formulario en el que los usuarios pueden enviar sus direcciones de correo electrónico para suscribirse o cancelar la suscripción a una lista de correo.
+1. En la pestaña **Formulario**, seleccione la página de agradecimiento a la que desee que vayan los usuarios una vez enviado el formulario (si se deja en blanco, el formulario se volverá a mostrar tras el envío). Haga clic en **OK**. Aparece un componente **ID de correo electrónico** en el formulario, que le permite crear un formulario en el que los usuarios pueden enviar sus direcciones de correo electrónico para suscribirse o cancelar la suscripción a una lista de correo.
 1. Agregue el componente de botón **Enviar** desde la sección **Formulario** de la barra de tareas.
 
    El formulario está listo. Publique la página configurada en los pasos anteriores junto con la página **gracias** en la instancia de publicación. Cualquier suscriptor potencial que visite la página puede rellenar el formulario y suscribirse a la lista proporcionada en la configuración.
@@ -104,7 +103,7 @@ Para configurar un correo electrónico de respuesta automática para un suscript
 1. **Seleccionar clasificación** (esta clasificación se usa para enviar el correo electrónico).
 1. Seleccione la página **Gracias** (la página a la que se dirige a los usuarios cuando envían el formulario).
 
-   En la pestaña **Formulario**, seleccione la página de agradecimiento a la que desee que vayan los usuarios una vez que envíen el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haga clic en **Aceptar**.
+   En la pestaña **Formulario**, seleccione la página de agradecimiento a la que desee que vayan los usuarios una vez que envíen el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haga clic en **OK**.
 
 1. Exporte las claves del autor para publicarlas.
 1. Agregue el componente de botón **Enviar** desde la sección **Formulario** de la barra de tareas.

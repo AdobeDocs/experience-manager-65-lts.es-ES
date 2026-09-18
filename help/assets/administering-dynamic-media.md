@@ -6,16 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 1%
-
+source-wordcount: '264'
+ht-degree: 3%
 ---
-
 # Configuración de Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 >[!NOTE]
 >
@@ -29,7 +28,7 @@ Si está administrando Dynamic Media, los siguientes temas le interesan:
 * [Configurar Dynamic Media - Modo híbrido](config-dynamic.md) - Use esta configuración si ya es cliente de Dynamic Media y actualiza Experience Manager.
 * [Administrar ajustes preestablecidos de imagen](managing-image-presets.md)
 * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
-* [Solución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
+* [Resolución de problemas de Dynamic Media, modo Scene7](troubleshoot-dms7.md)
 
 Consulte también los temas siguientes:
 
@@ -41,5 +40,3 @@ Consulte también los temas siguientes:
 >**Si está actualizando:**
 >
 >* Una vez que Experience Manager esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si está en una instancia actualizada de Experience Manager y es nuevo en Dynamic Media, debe volver a procesar los recursos para habilitarlos para Dynamic Media.
-
-

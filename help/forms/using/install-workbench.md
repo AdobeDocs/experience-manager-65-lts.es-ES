@@ -6,13 +6,12 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 3a7b80b1-4b3e-400c-8753-c4453c0d79b3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 65%
-
+source-wordcount: '2301'
+ht-degree: 63%
 ---
-
 # Instalación de Workbench {#install-workbench}
 
 Este documento contiene instrucciones para instalar y configurar AEM Forms Workbench. El programa de instalación también instala Forms Designer.
@@ -75,7 +74,7 @@ Esta sección describe los requisitos de hardware y software y las plataformas c
 
 ### Requisitos mínimos de hardware y software {#minimum-hardware-software-requirements}
 
-**Workbench**
+**Área de trabajo**
 Se recomiendan los siguientes requisitos mínimos:
 Espacio en disco para la instalación:
 * 680 MB solo para Workbench.
@@ -99,7 +98,7 @@ Espacio en disco para la instalación:
 
 ### Plataformas compatibles {#supported-platforms}
 
-Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_es).
+Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
@@ -114,8 +113,8 @@ La siguiente tabla contiene una lista completa de los posibles escenarios de ins
   </tr>
   <tr>
    <td><p>Acrobat Pro o Acrobat Pro Extended (incluye Designer)</p> </td>
-   <td><p>Ninguna.<br /> 
-La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
+   <td><p>Ninguno.<br /> 
+La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
 En el mismo sistema pueden coexistir distintas versiones de Designer, por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
 <br /></p> </td>
   </tr>
@@ -213,7 +212,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 
 1. Abra una ventana del Símbolo del sistema, vaya a [Workbench_HOME]/workbench/jre/bin y luego escriba el siguiente comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-donde:
+   donde:
    * `changeit` es la contraseña predeterminada para el almacén de claves cacerts.
    * certname es el certificado seleccionado en el paso 1.
    * Por ejemplo, el alias que elija para el certificado. Este valor se puede cambiar.
@@ -257,8 +256,8 @@ En el caso de los documentos no pasivados en los que el nombre de archivo y la r
 * En el caso de las plantillas de entrada no pasivadas, el almacenamiento en caché depende de la raíz de contenido y del nombre de archivo a partir del cual se generó el documento.
 La misma caché solo se utiliza para solicitudes con la misma raíz de contenido y el mismo nombre de archivo de plantilla.
 Las siguientes prácticas recomendadas garantizan que la caché no crezca constantemente al pasar plantillas generadas dinámicamente al servicio Forms:
-   * Elimine el UUID o pase el mismo UUID en todas las plantillas generadas dinámicamente.
-   * Genere el documento desde bytes de plantilla o desde el mismo nombre de archivo en disco.
+  * Elimine el UUID o pase el mismo UUID en todas las plantillas generadas dinámicamente.
+  * Genere el documento desde bytes de plantilla o desde el mismo nombre de archivo en disco.
 
 ### Desinstalación de Workbench {#uninstalling-workbench}
 

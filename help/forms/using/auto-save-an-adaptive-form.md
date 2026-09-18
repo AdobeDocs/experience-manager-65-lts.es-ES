@@ -6,13 +6,12 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4b6497a2-a505-471e-bf06-b385a5684de8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '770'
 ht-degree: 97%
-
 ---
-
 # Guardado automático de un formulario adaptable {#auto-save-an-adaptive-form}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -26,7 +25,7 @@ Puede configurar un formulario adaptable para que empiece a guardar automáticam
 
 ## Habilitar el guardado automático para un formulario adaptable {#enable-autosave-for-an-adaptive-form}
 
-Para un formulario adaptable, la opción de guardado automático no está activada de forma predeterminada. Puede activar la opción de guardado automático desde la sección **Guardar automáticamente** en las propiedades de un formulario adaptable. La sección **Guardar automáticamente** también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
+Para un formulario adaptable, la opción de guardado automático no está habilitada de forma predeterminada. Puede habilitar la opción de guardado automático desde la sección **Guardar automáticamente** en las propiedades de un formulario adaptable. La sección **Guardar automáticamente** también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
 
 1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente, luego seleccione ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardar automáticamente]**, **[!UICONTROL habilite]** la opción Guardar automáticamente.
@@ -36,7 +35,7 @@ Para un formulario adaptable, la opción de guardado automático no está activa
    * **[!UICONTROL En base a tiempo:]** seleccione esta opción para comenzar a guardar el contenido en función de un intervalo de tiempo específico.
    * **[!UICONTROL En base a eventos:]** seleccione esta opción para comenzar a guardar el contenido en función de cuándo se activa un evento.
 
-   Cuando selecciona un activador, se activará el cuadro Configuración de estrategia. El cuadro Configuración de estrategia le permite:
+   Cuando selecciona un activador, se habilitará el cuadro Configuración de estrategia. El cuadro Configuración de estrategia le permite:
 
    * Especificar un intervalo de tiempo si selecciona el activador **[!UICONTROL En base a tiempo]**.
    * Especificar un nombre de evento si selecciona el activador **[!UICONTROL En base a eventos]**.

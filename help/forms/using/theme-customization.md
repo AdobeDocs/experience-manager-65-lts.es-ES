@@ -8,13 +8,12 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5765b456-c6e8-4498-ade0-b36c95aadd71
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '240'
 ht-degree: 89%
-
 ---
-
 # Personalizar temáticas {#theme-customization}
 
 Puede personalizar el código HTML y el archivo CSS para ofrecer a la aplicación AEM Forms una apariencia específica de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o puntos de inicio. El ejemplo siguiente indica las instrucciones para cambiar:
@@ -29,7 +28,7 @@ Puede personalizar el código HTML y el archivo CSS para ofrecer a la aplicació
 
    * Si utiliza un dispositivo iOS, abra `Capture.xcodeproj` en Xcode.
    * Si utiliza un dispositivo Android, abra el proyecto de Android en Eclipse.
-   * Para Windows, abra `MWSWindows.sln` en Visual Studio.
+   * Si utiliza un dispositivo Windows, abra `MWSWindows.sln` en Visual Studio.
 
 1. Vaya a la carpeta de plantillas.
 

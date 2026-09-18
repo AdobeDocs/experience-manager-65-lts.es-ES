@@ -6,13 +6,12 @@ topic-tags: develop, Configuration
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1021fbb4-a12a-4758-8f36-dc9ad73681cd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 72%
-
 ---
-
 # Configurar Microsoft Dynamics 365 para el flujo de trabajo de la hipoteca de vivienda del sitio de referencia We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Aprenda a utilizar los servicios de Microsoft® Dynamics 365 mediante formularios adaptables en el flujo de trabajo de las hipotecas del sitio de referencia de We.Finance

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 0%
-
+source-wordcount: '1817'
+ht-degree: 1%
 ---
-
 # Configuración del seguimiento de vídeo para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Hay varios métodos disponibles para el seguimiento de eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y Segundos heredados.
@@ -138,7 +137,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -226,7 +225,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Esta es la **primera llamada**&#x200B;a Adobe Analytics que contiene los siguientes valores:*
+*Esta es la **primera llamada**a Adobe Analytics que contiene los siguientes valores:*
 
 * *prop1 y eVar1 para eventdata.a.media.name,*
 * *props2-4, junto con eVar2 y eVar3 que contienen contentType (vídeo) y segmento (1:O:1-4)*
@@ -234,7 +233,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Esta es la **tercera llamada**&#x200B;realizada a Adobe Analytics:*
+*Esta es la **tercera llamada**realizada a Adobe Analytics:*
 
 * *prop1 y eVar1 contienen a.media.name;*
 * *evento1 porque se ha visto un segmento*
@@ -273,7 +272,7 @@ eventdata.events.milestoneXX
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -321,7 +320,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    ![hitos1](assets/lmilestones1.png)
 
-   *La variable **pev3**&#x200B;enviada en la llamada contiene la siguiente información:*
+   *La variable **pev3**enviada en la llamada contiene la siguiente información:*
 
    * *Nombre* - El nombre del archivo de vídeo (*film.avi*)
 
@@ -337,7 +336,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
 ## Segundos heredados {#legacy-seconds}
 
-Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
+Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
 
 1. Establezca el desplazamiento de pista en cualquier número de segundos,
 
@@ -382,4 +381,4 @@ Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analyt
 
 **Referencias utilizadas en este tutorial:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

@@ -8,27 +8,26 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d2f5fc90-7047-4a45-9c82-996f0da60782
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 65%
-
+source-wordcount: '620'
+ht-degree: 58%
 ---
-
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte de Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar la relevancia del contenido mediante el direccionamiento y efectuando mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea. AEM ha adoptado el flujo de trabajo de direccionamiento que se utiliza en Adobe Target Standard. Si utiliza Target, estará familiarizado con el entorno de edición de direccionamiento en AEM.
+Como parte de Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar la relevancia del contenido mediante el direccionamiento y efectuando mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de público sobre la marcha (basados en el comportamiento) y automatizar la segmentación del contenido y las experiencias en línea. AEM ha adoptado el flujo de trabajo de direccionamiento que se utiliza en Adobe Target Standard. Si utiliza Target, estará familiarizado con el entorno de edición de direccionamiento en AEM.
 
 Integre los AEM Sites con Adobe Target para personalizar el contenido de sus páginas:
 
 * Implemente la segmentación de contenido.
-* Utilice las audiencias de Target para crear experiencias personalizadas.
+* Utilice los públicos de Target para crear experiencias personalizadas.
 * Envíe datos de contexto a Target cuando los visitantes interactúen con las páginas.
 * Rastree las tasas de conversión.
 
 Para integrarse con Target, realice las siguientes tareas:
 
-1. [Realizar tareas previas](/help/sites-administering/target-requirements.md): regístrese en Adobe Target y configure ciertos aspectos de la instancia de autor de AEM. Su cuenta de Adobe Target debe tener permisos de nivel **aprobador &#x200B;**&quot; como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
+1. [Realizar tareas previas](/help/sites-administering/target-requirements.md): regístrese en Adobe Target y configure ciertos aspectos de la instancia de autor de AEM. Su cuenta de Adobe Target debe tener permisos de nivel **aprobador **&quot; como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
 
 1. O bien, haga lo siguiente:
 
@@ -51,7 +50,7 @@ Para integrarse con Target, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->Asegure el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Proteja el nodo de configuración de actividad **cq:ActivitySettings** en la instancia de publicación para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
 >Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) para obtener información detallada.
 
@@ -67,7 +66,7 @@ La integración de AEM con Adobe Target requiere conocimientos de Adobe Target, 
 
 * Adobe Target (consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=es)).
 * Consola de AEM Activities (consulte [Administración de actividades](/help/sites-authoring/activitylib.md)).
-* AEM Audiences (consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md)).
+* AEM Audiences (consulte [Administración de públicos](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

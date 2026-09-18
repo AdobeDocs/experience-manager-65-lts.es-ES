@@ -4,13 +4,12 @@ description: Obtenga información sobre cómo configurar manualmente la integrac
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a83de8a787f0e446d4d231fdffbf37a11dfd9c53
+exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Configuración manual de la integración con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Puede modificar las configuraciones del asistente de inclusión que realizó al utilizar el asistente o puede integrarlas manualmente con Adobe Target sin utilizar el asistente.
@@ -51,7 +50,7 @@ Los siguientes valores de propiedad se utilizan en la configuración de nube de 
 >* Mejores opciones de implementación para aplicaciones de una sola página
 >* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=es -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propiedades de Target Framework aprovisionadas {#provisioned-target-framework-properties}
 
@@ -103,7 +102,7 @@ Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclus
 
 >[!NOTE]
 >
->El archivo de la biblioteca de Target [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/) es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
+>El archivo de la biblioteca de Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
 >
 >AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
 >
@@ -114,7 +113,7 @@ Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclus
 >
 >Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=es -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Creación de una configuración de Target Cloud {#creating-a-target-cloud-configuration}
 
@@ -219,7 +218,7 @@ Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia d
 
 ### Asociación de actividades con la configuración de nube de Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la configuración de la nube de Target para poder reflejar las actividades en [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=es).
+Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la configuración de la nube de Target para poder reflejar las actividades en [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -230,7 +229,7 @@ Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la con
 >
 >* Si la opción **xt_only** está habilitada para **not** en el inquilino de Adobe Target (clientcode), puede crear actividades **XT y A/B de** en AEM.
 >
->**Nota adicional:** La opción **xt_only** es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:** La opción **xt_only** es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede habilitar ni deshabilitar esta opción en AEM.
 
 ### Asociación del marco de trabajo de Target con el sitio {#associating-the-target-framework-with-your-site}
 

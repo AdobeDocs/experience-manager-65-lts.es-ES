@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9d1501db-3e0a-4bb8-bec0-5e69dcf7fa37
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 8%
-
+source-wordcount: '104'
+ht-degree: 13%
 ---
-
 # Ofertas de Target{#target-offers}
 
 ## Creación de una experiencia de oferta de Test&amp;Target {#creating-a-test-target-offer-experience}

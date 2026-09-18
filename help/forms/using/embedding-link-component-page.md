@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a6ae1633-63a8-4364-b298-bc569459a136
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '412'
 ht-degree: 97%
-
 ---
-
 # Incrustar un componente de vínculo en una página{#embedding-link-component-in-a-page}
 
 ## Requisitos previos {#prerequisites}
@@ -55,6 +54,6 @@ Siga estos pasos para agregar un componente Vínculo a la página:
 * Asegúrese de seleccionar PDF como tipo de procesamiento si la ruta especificada en Ruta de formulario apunta a un documento que tiene PDF como formato de procesamiento permitido.
 * La dirección URL de envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:
 
-   1. La dirección URL de envío incrustada en el formulario (en el botón de envío) tiene la prioridad más alta.
-   1. La dirección URL de envío que se menciona en el Administrador de Forms tiene la prioridad media.
-   1. Enviar URL mencionada en el portal de formularios tiene la prioridad más baja.
+  1. La dirección URL de envío incrustada en el formulario (en el botón de envío) tiene la prioridad más alta.
+  1. La dirección URL de envío que se menciona en el Administrador de Forms tiene la prioridad media.
+  1. Enviar URL mencionada en el portal de formularios tiene la prioridad más baja.

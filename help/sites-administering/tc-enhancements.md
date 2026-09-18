@@ -6,13 +6,12 @@ content-type: reference
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
-
 # Mejoras de traducción{#translation-enhancements}
 
 Esta página presenta mejoras y ampliaciones progresivas de las funciones de administración de traducciones de AEM.
@@ -79,8 +78,8 @@ Para usar esta función, haga lo siguiente:
 
 * Configure un sistema de administración de etiquetas para su uso con AEM.
 * El conector debe implementar el método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
-   * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
+  * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
+  * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
 
 Las actualizaciones de la memoria de traducción se pueden interceptar y enviar a un destino personalizado, en los casos en que se utilice una memoria de traducción propia.
 

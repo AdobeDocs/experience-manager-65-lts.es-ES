@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
-# Publicar páginas{#publishing-pages}
+# Publicación de páginas{#publishing-pages}
 
 Después de crear y revisar el contenido en el entorno de creación, debe publicarlo en su sitio web público (el entorno de publicación).
 
@@ -28,13 +27,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
->* **Publicar o cancelar la publicación**
+>* **Publicar/Cancelar publicación**
 >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
->* **Activar o desactivar**
+>* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar o replicación**
+>* **Replicar/replicación**
 >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
 

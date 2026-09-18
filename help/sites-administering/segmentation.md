@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e024c456-1d50-4ff2-bfb6-aca1cca31632
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 61%
-
+source-wordcount: '1763'
+ht-degree: 62%
 ---
-
 # Configuración de la segmentación con ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -242,8 +241,8 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
-      * Se puede modificar si es necesario.
+     * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
+     * Se puede modificar si es necesario.
 
    ![Crear carpeta](assets/contexthub-create-folder.png)
 
@@ -254,7 +253,6 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede hacer clic en los encabezados de columna para ajustar la ordenación.
-
      ![La nueva carpeta](assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
@@ -338,4 +336,4 @@ Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento 
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos, y [Creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md) acerca del uso de audiencias y segmentos para segmentar contenido.
+Los segmentos se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Administración de públicos](/help/sites-authoring/managing-audiences.md) para obtener más información sobre públicos y segmentos, y [Creación de contenido objetivo](/help/sites-authoring/content-targeting-touch.md) acerca del uso de públicos y segmentos para segmentar contenido.

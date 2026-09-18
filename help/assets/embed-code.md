@@ -8,13 +8,12 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b98729d3-111a-446b-915a-ca85b3cd75f0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 20%
-
 ---
-
 # Incrustar Dynamic Media Video, el visualizador de imágenes o el visualizador dimensional en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
@@ -39,7 +38,7 @@ Ver [Entregar imágenes optimizadas para un sitio adaptable](responsive-site.md)
 
 1. Vaya al vídeo o recurso de imagen *publicado* cuyo código incrustado desee copiar.
 
-   Recuerde que el código incrustado solo está disponible para copiar *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
+   Recuerde que el código incrustado solo está disponible para copiar *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de imagen o de visualizador.
 
    Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 

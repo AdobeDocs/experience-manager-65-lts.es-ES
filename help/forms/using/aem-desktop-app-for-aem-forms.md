@@ -8,18 +8,17 @@ noindex: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b1c4808-8f41-47e5-b936-f017c29dbd3f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '484'
 ht-degree: 47%
-
 ---
-
 # Aplicación de escritorio de Adobe Experience Manager (AEM) para AEM Forms {#aem-desktop-app-for-aem-forms}
 
 La aplicación de escritorio de AEM le permite asignar el repositorio de recursos de Adobe Experience Manager (AEM) y los archivos binarios de AEM Forms a un directorio de red del sistema. Puede ver los recursos sincronizados y los archivos binarios en un explorador de archivos y usar varias aplicaciones para editar los archivos como desee. Además de ver los archivos, también puede crear, cargar y eliminar los archivos binarios. También puede abrir, editar y guardar archivos directamente desde el software. Por ejemplo, puede abrir y editar directamente un archivo XDP desde Designer. Los cambios que realice en los recursos localmente se reflejarán en el repositorio de AEM Assets y en la interfaz de usuario de AEM Forms.
 
-Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=es).
+Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 
 ## Recursos de AEM Forms compatibles con la aplicación de escritorio de AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 
@@ -37,7 +36,7 @@ La aplicación de escritorio de AEM utiliza el protocolo WebDAV en Microsoft® W
 1. En la instancia de autor, haga clic en ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas]** ![hammer](assets/hammer.png) **[!UICONTROL > Implementación > Operaciones> Consola Web]**. La consola web se abre en una nueva ventana.
 1. En la ventana Consola web, busque y abra la opción **[!UICONTROL Configuración del complemento FormsManager]**.
 1. En el cuadro de diálogo Configuración del complemento FormsManager, anule la selección de **[!UICONTROL Sincronizar recursos asincrónicamente]** y haga clic en **[!UICONTROL Guardar]**.
-1. Reinicie AEM Forms Server. Después del reinicio, el servidor de AEM Forms está habilitado para aceptar y compartir contenido con la aplicación de escritorio de AEM.
+1. Reinicie el servidor de AEM Forms. Después del reinicio, el servidor de AEM Forms está habilitado para aceptar y compartir contenido con la aplicación de escritorio de AEM.
 1. Abra la aplicación y conéctese al servidor de AEM Forms.
 
    >[!NOTE]

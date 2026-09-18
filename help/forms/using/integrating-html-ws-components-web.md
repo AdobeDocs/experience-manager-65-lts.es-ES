@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 62f70650-71bc-4c16-a947-f3a137ffc4df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 94%
-
+source-wordcount: '342'
+ht-degree: 86%
 ---
-
 # Integración de componentes de AEM Forms Workspace en aplicaciones web {#integrating-aem-forms-workspace-components-in-web-applications}
 
 Puede utilizar los [componentes](/help/forms/using/description-reusable-components.md) de AEM Forms Workspace en su propia aplicación web. La siguiente implementación de ejemplo utiliza componentes de un paquete dev de AEM Forms Workspace instalado en una instancia CRX™ para crear una aplicación web. Personalice la siguiente solución para adaptarla a sus necesidades específicas. La implementación de ejemplo reutiliza los componentes `UserInfo`, `FilterList` y `TaskList` en un portal web.
@@ -40,7 +39,7 @@ Puede utilizar los [componentes](/help/forms/using/description-reusable-componen
        });
    ```
 
-1. Cree un nodo en /content con el nombre `sampleApplication` y el tipo `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo Cadena y valor `sampleApplication`. En la Lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` para permitir privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication`, agregar una entrada para `PERM_WORKSPACE_USER` para permitir privilegios jcr:read.
+1. Cree un nodo en /content con el nombre `sampleApplication` y el tipo `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo Cadena y valor `sampleApplication`. En la Lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication`, agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read.
 1. En `/apps/sampleApplication/wscomponents/js/registry.js`, actualice las rutas de `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para los valores de plantilla.
 1. En el archivo JSP de la página de inicio del portal, añada el siguiente código en `/apps/sampleApplication/GET.jsp` para incluir los componentes necesarios en el portal.
 

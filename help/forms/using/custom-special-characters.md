@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f4f563ed-ccdd-49f6-885d-48f97a958a8e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '652'
 ht-degree: 63%
-
 ---
-
 # Caracteres especiales personalizados en la Administración de correspondencia{#custom-special-characters-in-correspondence-management}
 
 ## Información general {#overview}
@@ -73,7 +72,7 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
 
 1. Asegúrese de que el nodo **[!UICONTROL textEditorConfig]** tiene las siguientes propiedades y valores:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | cmConfigurationType | Cadena | cmTextEditorConfiguration |
    | cssPath | Cadena | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
@@ -90,7 +89,7 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
  <tbody>
   <tr>
    <td><strong>Para...</strong></td>
-   <td><strong>Complete los siguientes pasos </strong></td>
+   <td><strong>Complete los siguientes pasos</strong></td>
   </tr>
   <tr>
    <td>Agregue un caracter especial personalizado</td>

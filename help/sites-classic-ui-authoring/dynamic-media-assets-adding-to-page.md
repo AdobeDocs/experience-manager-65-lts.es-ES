@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 163c1f4e-7d90-44dd-84e7-9f02a9508783
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 2%
-
+source-wordcount: '1708'
+ht-degree: 3%
 ---
-
 # Adición de recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
 Para agregar la funcionalidad Dynamic Media a los recursos que uses en tus sitios web, puedes agregar el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** directamente en la página. Active el modo **[!UICONTROL Diseño]** y habilite los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y medios interactivos son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones disponibles cambian en consecuencia.
@@ -92,7 +91,7 @@ Esta opción solo está disponible si ve conjuntos de imágenes, conjuntos de gi
 
 Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Modificadores de imagen]**: puede cambiar los efectos de imagen si proporciona comandos de imagen adicionales. Estos comandos se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y en la [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
+**[!UICONTROL Modificadores de imagen]**: puede cambiar los efectos de imagen si proporciona comandos de imagen adicionales. Estos comandos se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y en la [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -138,7 +137,7 @@ Puede editar la siguiente configuración de [!UICONTROL Advanced] haciendo clic 
 
 En Experience Manager 6.2, al instalar [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se envía a través de una conexión SSL segura (HTTPS) o de una conexión no segura (HTTP). De forma predeterminada, el protocolo de entrega de vídeo se hereda automáticamente del protocolo de la página web en la que se incorpora. Si la página web se carga a través de HTTPS, el vídeo también se envía a través de HTTPS. Y a la inversa, si la página web está en HTTP, el vídeo se envía a través de HTTP. Normalmente, este comportamiento predeterminado funciona correctamente y no es necesario realizar ningún cambio en la configuración. Sin embargo, puede anular este comportamiento predeterminado. Anexe `VideoPlayer.ssl=on` al final de la ruta de acceso de una dirección URL o a la lista de otros parámetros de configuración del visor en un fragmento de código incrustado. Cualquiera de las acciones fuerza la entrega de vídeo segura.
 
-Para obtener más información sobre la entrega de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl` en la ruta de la URL, consulte [Entrega de vídeo seguro](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=es) en la Guía de referencia de visores. Además del visualizador de vídeo, hay una entrega de vídeo segura disponible para el visualizador de medios mixtos y el visualizador de vídeo interactivo.
+Para obtener más información sobre la entrega de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl` en la ruta de la URL, consulte [Entrega de vídeo seguro](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visualizador de vídeo, hay una entrega de vídeo segura disponible para el visualizador de medios mixtos y el visualizador de vídeo interactivo.
 
 ### Componente de medios interactivo {#interactive-media-component}
 

@@ -9,18 +9,17 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 96%
-
+source-wordcount: '652'
+ht-degree: 94%
 ---
-
 # Compatibilidad con cláusula de imagen para formularios HTML5 {#picture-clause-support-for-html-forms}
 
 Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado de símbolos numéricos, texto y fecha. Se admiten las siguientes expresiones de cláusula de imagen:
 
-* category(locale){picture-subscription} | category(locale){picture-subscription} | category(locale){picture-subscription}
+* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -36,7 +35,7 @@ Expresión admitida para la cláusula de imagen de fecha:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{símbolos de la cláusula de imagen de fecha}
+* fecha{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -115,7 +114,7 @@ Las expresiones compatibles con la cláusula de imagen numérica de los **formul
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{símbolos de la cláusula de imagen numérica}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -206,7 +205,7 @@ Las expresiones compatibles con la cláusula de imagen numérica de los **formul
 
 Los formularios HTML5 admiten las siguientes expresiones de cláusula de imagen de texto:
 
-* text{símbolos de la cláusula de imagen de texto}
+* text{text Picture clause symbols}
 
 | **Símbolo** | **Interpretación** |
 |---|---|

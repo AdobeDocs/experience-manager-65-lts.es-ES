@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 41799183-ef5a-4990-bd7b-7b58cafe3960
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 51%
-
+source-wordcount: '220'
+ht-degree: 44%
 ---
-
 # Configurar el entorno para la aplicación de AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Para crear e implementar la aplicación de AEM Forms necesita el hardware, el software y las licencias siguientes:
@@ -32,7 +31,7 @@ Para crear e implementar la aplicación de AEM Forms necesita el hardware, el so
 * iOS SDK 8.4 o superior
 * Versión de Xcode: Xcode 6.4 para OS X o superior
 * Pertenencia al programa iOS Developer Enterprise
-* Certificado empresarial para la distribución de aplicaciones internas de iOS 
+* Certificado empresarial para la distribución de aplicaciones internas de iOS
 * Apple iPad con iOS 8.4 o posterior
 
 ## Para dispositivos Android™ {#for-android-devices}
@@ -43,4 +42,4 @@ Para crear e implementar la aplicación de AEM Forms necesita el hardware, el so
 
 >[!NOTE]
 >
->adobe-lc-mobileworkspace-src.zip contiene PhoneGap SDK 5.0. Asegúrese de que el SDK de PhoneGap no esté preinstalado.
+>adobe-lc-mobileworkspace-src.zip contiene PhoneGap SDK 5.0. Asegúrese de que PhoneGap SDK no esté preinstalado.

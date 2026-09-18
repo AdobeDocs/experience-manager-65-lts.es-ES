@@ -1,5 +1,5 @@
 ---
-title: Cómo desarrollar proyectos de AEM con IntelliJ IDEA
+title: Cómo desarrollar proyectos AEM con IntelliJ IDEA
 description: Aprenda a utilizar IntelliJ IDEA para desarrollar proyectos de Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4def21ee-d7de-45a8-a7df-062dd2d1a3ba
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
-
+source-wordcount: '663'
+ht-degree: 4%
 ---
-
-# Cómo desarrollar proyectos de AEM con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Cómo desarrollar proyectos AEM con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Información general {#overview}
 

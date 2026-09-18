@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: abdb803b-a770-4f4b-8788-45d067341e0f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 5%
-
+source-wordcount: '2564'
+ht-degree: 7%
 ---
-
 # Componentes de Adobe Campaign{#adobe-campaign-components}
 
 Al integrar con Adobe Campaign, tiene componentes disponibles para cuando trabaja con boletines informativos y con formularios. Ambos se describen en este documento.
@@ -82,7 +81,7 @@ Cuando se carga una imagen, puede configurar lo siguiente:
 * **Mapa**
 Para asignar una imagen, seleccione Mapa. Puede especificar cómo desea crear el mapa de imagen (rectángulo, polígono, etc.) y hacia dónde debe apuntar el área.
 
-* **Recortar**
+* **Recorte**
 Seleccione Recortar para recortar una imagen. Utilice el ratón para recortar la imagen.
 
 * **Rotar**
@@ -99,7 +98,7 @@ Título de la imagen.
 * **Texto alternativo**
 Texto alternativo que se puede utilizar al crear contenido accesible.
 
-* **Vincular A**
+* **Vincular a**
 Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
 * **Descripción**
@@ -175,20 +174,20 @@ Arrastre una imagen desde el buscador de contenido o haga clic para buscar una i
 * **Propiedades de imagen** (**Propiedades de imagen avanzadas**)
 Permite especificar lo siguiente:
 
-   * **Título**
-Título del bloque; se muestra con el ratón.
+  * **Título**
+    Título del bloque; se muestra con el ratón.
 
-   * **Texto alternativo**
-Texto alternativo que se mostrará si no se puede mostrar la imagen.
+  * **Texto alternativo**
+    Texto alternativo que se mostrará si no se puede mostrar la imagen.
 
-   * **Vínculo a**
-Cree un vínculo a recursos u otras páginas dentro del sitio web.
+  * **Vincular a**
+    Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
-   * **Descripción**
-Una descripción de la imagen.
+  * **Descripción**
+    Una descripción de la imagen.
 
-   * **Tamaño**
-Establece la altura y anchura de la imagen.
+  * **Tamaño**
+    Establece la altura y anchura de la imagen.
 
 >[!NOTE]
 >
@@ -266,7 +265,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Campo de opción (Campaign)</p> </td>
    <td><p>byte con valores asociados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Género</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campaign)</p> </td>
@@ -300,7 +299,7 @@ Solo muestra el valor, si hay uno
 
 Puede configurar lo siguiente:
 
-* **Asignación**
+* Asignación de ****
 Seleccione un campo de personalización de Adobe Campaign, si corresponde.
 
 * **Clave de reconciliación**

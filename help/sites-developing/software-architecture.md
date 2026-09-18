@@ -8,18 +8,17 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7252a473-160a-412d-a9cb-393493426d68
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 0%
-
 ---
-
 # Arquitectura de software{#software-architecture}
 
 ## Diseño para actualizaciones {#design-for-upgrades}
 
-Al ampliar los comportamientos predeterminados, es importante tener en cuenta las actualizaciones. Aplique siempre las personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para ampliar el comportamiento predeterminado. Aunque pueden ser necesarias algunas modificaciones para admitir una nueva versión de AEM, esta no debe sobrescribir las personalizaciones si se sigue esta práctica.
+Al ampliar los comportamientos predeterminados, es importante tener en cuenta las actualizaciones. Aplique siempre las personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o use sling:resourceSuperType para ampliar el comportamiento predeterminado. Aunque pueden ser necesarias algunas modificaciones para admitir una nueva versión de AEM, esta no debe sobrescribir las personalizaciones si se sigue esta práctica.
 
 ### Reutilizar plantillas y componentes siempre que sea posible {#reuse-template-and-components-when-possible}
 

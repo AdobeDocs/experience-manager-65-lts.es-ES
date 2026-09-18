@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 19930920-ffa5-4cfc-a564-ae004320e143
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 14%
-
+source-wordcount: '229'
+ht-degree: 24%
 ---
-
 # Configuración del entorno de cuenta{#configuring-your-account-environment}
 
 Adobe Experience Manager (AEM) permite configurar la cuenta y ciertos elementos del entorno de creación.
@@ -25,9 +24,9 @@ Si usa la [configuración de cuenta](#account-settings) y las [preferencias de u
 * **Barra de herramientas de edición**
 Seleccione si desea tener la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona los botones **Copiar**, **Cortar**, **Pegar**, **Eliminar** para usarlos con los componentes de párrafo de esa página:
 
-   * Mostrar si es necesario (predeterminado)
-   * Mostrar siempre
-   * Mantener oculto
+  * Mostrar si es necesario (predeterminado)
+  * Mostrar siempre
+  * Mantener oculto
 
 * **Suplantar como**
 La funcionalidad de [Suplantar como](/help/sites-administering/security.md#impersonating-another-user) permite que un usuario trabaje en nombre de otro usuario.
@@ -38,10 +37,10 @@ El idioma que se utilizará para la interfaz de usuario del entorno de creación
 * **Administración de ventanas**
 Seleccione una de estas opciones:
 
-   * Varias ventanas (predeterminado)
-Las páginas se abren en una nueva ventana.
-   * Ventana única
-Las páginas se abren en la ventana actual.
+  * Varias ventanas (predeterminado)
+    Las páginas se abren en una nueva ventana.
+  * Ventana única
+    Las páginas se abren en la ventana actual.
 
 ## Configuración de la cuenta {#account-settings}
 

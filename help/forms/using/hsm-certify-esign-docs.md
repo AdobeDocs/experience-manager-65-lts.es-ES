@@ -8,13 +8,12 @@ topic-tags: document_services
 feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 74%
-
 ---
-
 # Usar HSM para firmar o certificar documentos digitalmente {#use-hsm-to-digitally-sign-or-certify-documents}
 
 Los módulos de seguridad de hardware (HSM) y los tokens electrónicos son dispositivos informáticos dedicados, protegidos y resistentes a la manipulación diseñados para administrar, procesar y almacenar claves digitales de forma segura. Estos dispositivos están conectados directamente a un equipo o a un servidor de red.

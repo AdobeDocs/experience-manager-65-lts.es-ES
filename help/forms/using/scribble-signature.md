@@ -9,13 +9,12 @@ docset: aem65
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b364d618-57fa-4e43-a1cd-049b7313e6a6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 96%
-
 ---
-
 # Usar la firma manuscrita en formularios HTML5{#using-scribble-signature-in-html-forms}
 
 Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es ser compatibles con firmas. Garabatear (escribir con un lápiz o un dedo) se está convirtiendo en una forma aceptada de firmar formularios en dispositivos móviles. Los formularios HTML5 y Forms Designer ahora habilitan la opción de tener un campo de firma de anotaciones en el formulario. Cuando el formulario se procesa en el explorador, se puede iniciar sesión en estos campos con un lápiz, ratón o contacto.
@@ -101,4 +100,4 @@ Haga clic en el icono **Pinceles** para mostrar una lista de los tamaños de plu
 Para eliminar las firmas del formulario, haga lo siguiente:
 
 * (Dispositivos móviles) Presione durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, seleccione **Sí**.
-* (Escritorio) Pase el ratón sobre el campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.
+* (Escritorio) Pase el puntero por encima del campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e452c343-3bba-4774-b153-c5ba05f24362
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 0%
-
+source-wordcount: '3578'
+ht-degree: 2%
 ---
-
 # Añadir funciones de Dynamic Media Classic (Scene7) a la página{#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución hospedada para administrar, mejorar, publicar y entregar recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
@@ -147,7 +146,7 @@ Una vez que estén disponibles en el modo Diseño, puede agregar los componentes
 >
 >Si está creando y desarrollando visores S7 personalizados y está utilizando el buscador de contenido, debe agregar explícitamente el parámetro `allowfullscreen`.
 
-### Aviso de fin de vida útil para el visor Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil de los visores Flash {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejará de ofrecer asistencia oficial para la plataforma de visor Flash.
 

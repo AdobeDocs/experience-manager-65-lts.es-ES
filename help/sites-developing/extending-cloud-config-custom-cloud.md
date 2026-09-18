@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 5%
-
+source-wordcount: '404'
+ht-degree: 7%
 ---
-
 # Creación de un Cloud Service personalizado{#creating-a-custom-cloud-service}
 
 El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros como, por ejemplo, Google Analytics, Chartbeat, etc. Los servicios en la nube se heredan de las páginas principales a las secundarias con la capacidad de interrumpir la herencia en cualquier nivel.
@@ -82,12 +81,12 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Tipo**: `cq:Dialog`
    * **Propiedades**:
 
-      * **Nombre**: `title`
-      * **Tipo**: `String`
-      * **Valor**: `Google Analytics Config`
-      * **Nombre**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `dialog`
+     * **Nombre**: `title`
+     * **Tipo**: `String`
+     * **Valor**: `Google Analytics Config`
+     * **Nombre**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `dialog`
 
 1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
@@ -95,9 +94,9 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Tipo**: `cq:Widget`
    * **Propiedades**:
 
-      * **Nombre**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `tabpanel`
+     * **Nombre**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `tabpanel`
 
 1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
@@ -110,9 +109,9 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Tipo**: `cq:Panel`
    * **Propiedades**:
 
-      * **Nombre**: `title`
-      * **Tipo**: `String`
-      * **Valor**: `Config`
+     * **Nombre**: `title`
+     * **Tipo**: `String`
+     * **Valor**: `Config`
 
 1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
@@ -120,23 +119,23 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Tipo**: `nt:unstructured`
    * **Propiedades**:
 
-      * **Nombre**: `fieldLabel`
-      * **Tipo**: Cadena
-      * **Valor**: ID de cuenta
+     * **Nombre**: `fieldLabel`
+     * **Tipo**: Cadena
+     * **Valor**: ID de cuenta
 
-      * **Nombre**: `fieldDescription`
-      * **Tipo**: `String`
-      * **Valor**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **Nombre**: `fieldDescription`
+     * **Tipo**: `String`
+     * **Valor**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Nombre**: `name`
-      * **Tipo**: `String`
-      * **Valor**: `./accountID`
-      * **Nombre**: `validateOnBlur`
-      * **Tipo**: `String`
-      * **Valor**: `true`
-      * **Nombre**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `textfield`
+     * **Nombre**: `name`
+     * **Tipo**: `String`
+     * **Valor**: `./accountID`
+     * **Nombre**: `validateOnBlur`
+     * **Tipo**: `String`
+     * **Valor**: `true`
+     * **Nombre**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `textfield`
 
 1. Copie `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` a `/apps/acs/analytics/components/googleanalyticspage/body.jsp` y cambie `libs` a `apps` en la línea 34 y convierta la referencia de script en la línea 79 en una ruta de acceso completa.
 1. Crear una plantilla en `/apps/acs/analytics/templates/`:
