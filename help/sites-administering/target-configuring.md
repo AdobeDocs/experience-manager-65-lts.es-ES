@@ -4,13 +4,12 @@ description: Obtenga información sobre cómo configurar manualmente la integrac
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a83de8a787f0e446d4d231fdffbf37a11dfd9c53
+exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Configuración manual de la integración con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Puede modificar las configuraciones del asistente de inclusión que realizó al utilizar el asistente o puede integrarlas manualmente con Adobe Target sin utilizar el asistente.
@@ -103,7 +102,7 @@ Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclus
 
 >[!NOTE]
 >
->El archivo de la biblioteca de Target [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/) es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
+>El archivo de la biblioteca de Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
 >
 >AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
 >
@@ -230,7 +229,7 @@ Asocie sus [actividades de AEM](/help/sites-authoring/activitylib.md) con la con
 >
 >* Si la opción **xt_only** está habilitada para **not** en el inquilino de Adobe Target (clientcode), puede crear actividades **XT y A/B de** en AEM.
 >
->**Nota adicional:** La opción **xt_only** es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:** La opción **xt_only** es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede habilitar ni deshabilitar esta opción en AEM.
 
 ### Asociación del marco de trabajo de Target con el sitio {#associating-the-target-framework-with-your-site}
 

@@ -7,13 +7,12 @@ topic-tags: document_services
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 92%
-
 ---
-
 # Iniciar las API de Document Services desde el flujo de trabajo de AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
@@ -37,9 +36,9 @@ El flujo de trabajo Invocar DDX requiere los siguientes documentos de entrada:
 
 * **DDX**: es una entrada obligatoria para el paso de flujo de trabajo Invocar DDX, y se puede especificar seleccionando una de las siguientes opciones en la lista desplegable de la entrada DDX.
 
-   * *Relativo a carga útil*: el archivo de entrada DDX es relativo a la carpeta de carga útil del elemento de flujo de trabajo.
-   * *Usar carga útil*: la carga útil del elemento de flujo de trabajo se utiliza como documento DDX de entrada.
-   * *Ruta absoluta*: la ruta absoluta del documento DDX en el repositorio CRX.
+  * *Relativo a carga útil*: el archivo de entrada DDX es relativo a la carpeta de carga útil del elemento de flujo de trabajo.
+  * *Usar carga útil*: la carga útil del elemento de flujo de trabajo se utiliza como documento DDX de entrada.
+  * *Ruta absoluta*: la ruta absoluta del documento DDX en el repositorio CRX.
 
 * **Crear mapa a partir de carga útil**: cuando se selecciona, todos los documentos de la carpeta de carga útil se agregan al mapa del documento de entrada para la API `invoke` en Assembler. El nombre de nodo de cada documento se utiliza como clave en el mapa.
 
@@ -49,7 +48,7 @@ El flujo de trabajo Invocar DDX requiere los siguientes documentos de entrada:
 
 La pestaña Opciones de entorno le permite establecer varias opciones de procesamiento para la API de invocación.
 
-* *Nivel de registro de trabajo*: especifica el nivel de registro para los registros de procesamiento.
+* *Nivel de registro del trabajo*: especifica el nivel de registro para los registros de procesamiento.
 * *Validar solo*: comprueba la validez del DDX de entrada.
 
 * *Fallo al producirse el error*: especifica si la llamada al servicio Assembler debe fallar en caso de error. El valor predeterminado es False.
@@ -61,7 +60,7 @@ En función del DDX de entrada, la API de invocación puede producir varios docu
 1. *Guardar salida en carga útil*: guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en el caso de que esta sea un archivo.
 1. *Mapa del documento de salida*: le permite especificar explícitamente dónde guardar cada documento de salida agregando una entrada por documento. Cada entrada especifica el documento y la ubicación de guardado. Un documento de salida puede sobrescribir la carga útil o guardarse en la carpeta de carga útil. Resulta útil cuando hay varios documentos de salida.
 
-1. *Registro de trabajo*: especifica dónde guardar el documento de registro de trabajo, lo que resulta útil para solucionar errores.
+1. *Registro del trabajo*: especifica dónde guardar el documento de registro de trabajo, lo que resulta útil para solucionar errores.
 
 ### Flujo de trabajo Convertir a PDF/A {#convert-to-pdf-a-workflow}
 
@@ -89,7 +88,7 @@ Las opciones de conversión permiten especificar opciones que modifican el proce
 * *Firmas*: especifica cómo se deben procesar las firmas del documento de entrada durante la conversión.
 * *Espacio de color*: especifica el espacio de color predefinido que se utilizará para el documento PDF/A de salida.
 * *Verificar* conversión: especifica si el documento PDF/A convertido debe verificarse para que sea compatible con el estándar PDF/A después de la conversión.
-* *Nivel de registro de trabajo*: especifica el nivel de registro que se utilizará para procesar los registros.
+* *Nivel de registro del trabajo*: especifica el nivel de registro que se utilizará para procesar los registros.
 
 * *Esquema de extensión de metadatos*: especifica la ruta del esquema de extensión de metadatos que se utilizará para las propiedades XMP de los metadatos del documento PDF.
 

@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 90521ad8-703e-402b-81dd-4c06f5894358
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 57%
-
+source-wordcount: '323'
+ht-degree: 58%
 ---
-
 # Integración con Adobe Sign | Gestión de datos de usuario {#integration-with-adobe-sign-handling-user-data}
 
 [!DNL AEM Forms] se integra con [!DNL &#x200B; Adobe Sign] para permitir flujos de trabajo de firma electrónica en formularios adaptables para procesar formularios o acuerdos para flujos de trabajo legales, de ventas, nóminas y administración de recursos humanos. Permite la firma de un solo usuario y de varios, flujos de trabajo de firma secuenciales y simultáneos, la firma de formularios como un usuario anónimo o con la sesión iniciada, y múltiples formas de autenticar a los usuarios.

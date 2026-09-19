@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 456bcdf5-3d43-43d8-b243-70095e0cf58c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
-
+source-wordcount: '868'
+ht-degree: 2%
 ---
-
 # Integración con Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/es/products/marketing-cloud/main.html) incluye potentes productos de optimización de sitios web y análisis web que ofrecen datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. Ofrece una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de la perspectiva del cliente para optimizar los esfuerzos de adquisición, conversión y retención del cliente y la creación y distribución de contenido.
+[Adobe Experience Cloud](https://business.adobe.com/es/products/marketing-cloud/main.html) incluye potentes productos de optimización de sitios web y análisis web que ofrecen datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. Ofrece una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de insight del cliente para optimizar los esfuerzos de adquisición, conversión y retención de clientes y la creación y distribución de contenido.
 
 Con Adobe Experience Manager (AEM), puede integrarse fácilmente con los siguientes productos de Adobe Experience Cloud:
 
@@ -79,7 +78,7 @@ Además, puede ver los recursos de Adobe Experience Manager publicados en Dynami
 
 Para obtener más información sobre cómo Adobe Experience Manager se integra con Dynamic Media Classic, consulte la [Documentación sobre la integración con Dynamic Media Classic](/help/sites-administering/scene7.md).
 
-## Integración con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
+## Integración con la administración dinámica de etiquetas de Adobe {#integrating-with-adobe-dynamic-tag-management}
 
 [Adobe Dynamic Tag Management](https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html) proporciona a los especialistas en mercadotecnia herramientas intuitivas para administrar rápida y fácilmente un número ilimitado de etiquetas de Adobe y de terceros. Dispone de más control y flexibilidad para optimizar prácticamente cualquier elemento en línea, al tiempo que reduce la dependencia de los recursos de TI.
 

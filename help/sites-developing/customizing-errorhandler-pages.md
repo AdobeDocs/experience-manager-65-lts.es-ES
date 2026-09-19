@@ -1,5 +1,5 @@
 ---
-title: Personalizar páginas mostradas por el controlador de error
+title: Personalización de páginas mostradas por el controlador de errores
 description: Adobe Experience Manager incluye un controlador de error estándar para administrar errores HTTP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 0%
-
+source-wordcount: '545'
+ht-degree: 3%
 ---
-
-# Personalizar páginas mostradas por el controlador de error{#customizing-pages-shown-by-the-error-handler}
+# Personalización de páginas mostradas por el controlador de errores{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager (AEM) viene con un controlador de error estándar para administrar errores HTTP; por ejemplo, mostrando:
 
@@ -76,8 +75,8 @@ Cuando el procesamiento de solicitudes resulta en una excepción, el marco de Ap
 * registra la excepción
 * devuelve:
 
-   * el código de respuesta HTTP 500
-   * el seguimiento de pila de excepciones
+  * el código de respuesta HTTP 500
+  * el seguimiento de pila de excepciones
 
   en el cuerpo de la respuesta.
 

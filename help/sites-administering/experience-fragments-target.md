@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 39473f0a-e4ee-4372-a0ea-ccf5d32501b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Exportación de fragmentos de experiencias a Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Puede exportar [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) creados en Adobe Experience Manager (AEM) a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
@@ -186,12 +185,12 @@ Para evitar estas situaciones, haga lo siguiente:
 
   El mensaje de error de AEM no impide que el usuario elimine (a la fuerza) el fragmento de experiencia. Si se elimina el fragmento de experiencia:
 
-   * La oferta de Target con el fragmento de experiencia de AEM puede mostrar un comportamiento no deseado
+  * La oferta de Target con el fragmento de experiencia de AEM puede mostrar un comportamiento no deseado
 
-      * Es probable que la oferta se siga procesando, ya que el HTML del fragmento de experiencia se insertó en Target
-      * Puede que cualquier referencia en el fragmento de experiencia no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
+    * Es probable que la oferta se siga procesando, ya que el HTML del fragmento de experiencia se insertó en Target
+    * Puede que cualquier referencia en el fragmento de experiencia no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
 
-   * Es imposible realizar más modificaciones en el fragmento de experiencia, ya que el fragmento de experiencia ya no existe en AEM.
+  * Es imposible realizar más modificaciones en el fragmento de experiencia, ya que el fragmento de experiencia ya no existe en AEM.
 
 
 ## Eliminación de ClientLibs de fragmentos de experiencias exportados a Target {#removing-clientlibs-from-fragments-exported-target}
@@ -226,7 +225,7 @@ El selector `nocloudconfigs` se define mediante HTL y se puede superponer copiá
 
 El selector `atoffer` se aplica después del procesamiento mediante [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Se puede utilizar para eliminar las bibliotecas de cliente.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Para este propósito, vamos a ilustrar cómo hacerlo con `nocloudconfigs`.
 

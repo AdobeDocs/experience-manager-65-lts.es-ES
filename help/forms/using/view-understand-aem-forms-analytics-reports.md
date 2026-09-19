@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b38fac48-04e7-4f10-930d-60107658a1f1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 96%
-
+source-wordcount: '1082'
+ht-degree: 94%
 ---
-
 # Ver y comprender los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
@@ -62,7 +61,7 @@ AEM Forms muestra los informes de análisis del formulario y de cada panel del f
 
 ![Informe de resumen de un formulario adaptable](assets/analyticsdashboard_callout.png)
 
-**A.** Conversiones **B.** Resumen de nivel de formulario **C.** Resumen a nivel de panel **D.** Exploradores de visitantes: filtro **E.** SO de los visitantes: filtro **F.** Idioma de los visitantes: filtro
+**A.** Conversiones **B.** Resumen de nivel de formulario **C.** Resumen de nivel de panel **D.** Exploradores de visitantes: filtro **E.** SO de los visitantes: filtro **F.** Idioma de los visitantes: filtro
 
 De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede ver los informes de los últimos 15 días, el último mes, etc., o especificar un intervalo de fechas.
 

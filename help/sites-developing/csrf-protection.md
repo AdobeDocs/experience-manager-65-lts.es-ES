@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d6bd4028-56c9-4e09-9bba-1199a41b41b8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 6%
 ---
-
 # El marco de protección CSRF{#the-csrf-protection-framework}
 
 Además del Filtro de referente de Apache Sling, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataque.
@@ -25,7 +24,7 @@ El marco de trabajo utiliza tokens para garantizar que la solicitud del cliente 
 >
 >No hay tokens en las instancias de publicación para usuarios anónimos.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 ### Dependencias {#dependencies}
 

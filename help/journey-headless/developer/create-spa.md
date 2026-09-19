@@ -4,13 +4,12 @@ description: En esta continuación opcional del Recorrido para desarrolladores d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 71b7f46de3619605c8a5aedc496cfb85ed582f59
+exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # Creación de aplicaciones de una sola página (SPA) con AEM {#create-spa}
 
 En esta continuación opcional del [Recorrido para desarrolladores sin encabezado de AEM](overview.md), aprenderá cómo Adobe Experience Manager (AEM) puede combinar la entrega sin encabezado con las funciones tradicionales de CMS full-stack y cómo puede crear SPA editables utilizando el marco de trabajo del Editor de SPA de AEM, así como integrar SPA externas, habilitando las capacidades de edición según sea necesario.
@@ -123,7 +122,7 @@ Consulte los [recursos adicionales](#additional-resources) para profundizar en l
 A continuación se muestran algunos recursos adicionales que profundizan en algunos conceptos mencionados en este documento.
 
 * [Con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md): una descripción de los diferentes modelos de entrega disponibles en AEM.
-* [Introducción y tutorial de SPA.](/help/sites-developing/spa-walkthrough.md): una buena introducción a las SPA en AEM
+* [Introducción y tutorial de SPA.](/help/sites-developing/spa-walkthrough.md) - Una buena introducción a las SPA en AEM
 * [Desarrollo de las SPA para AEM](/help/sites-developing/spa-architecture.md): directrices sobre cómo desarrollar las SPA para AEM
 * [Información general del editor de SPA](/help/sites-developing/spa-overview.md): detalles del funcionamiento del editor de SPA.
 * [Documentos de referencia de SPA](/help/sites-developing/spa-reference-materials.md): referencias de la API de JavaScript y vínculos a los proyectos de GitHub de SPA en AEM de código abierto

@@ -8,13 +8,12 @@ topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # Participación en flujos de trabajo{#participating-in-workflows}
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
@@ -33,9 +32,9 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
   Los usuarios que están disponibles para la delegación dependen de quién haya sido asignado el elemento de trabajo:
 
-   * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
-   * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
-   * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
+  * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
+  * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
+  * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
 
 * **Retroceder**
 
@@ -68,7 +67,7 @@ Después de realizar la acción indicada, puede completar el elemento de trabajo
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Delegación de una etapa de participante  {#delegating-a-participant-step}
+### Delegación de una etapa de participante {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo.
 

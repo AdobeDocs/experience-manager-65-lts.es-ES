@@ -1,5 +1,5 @@
 ---
-title: Creación de Adobe Campaign Forms en AEM
+title: Creación de formularios de Adobe Campaign en AEM
 description: AEM permite crear y utilizar formularios que interactúen con Adobe Campaign en el sitio web. Se pueden insertar campos específicos en los formularios y asignarlos a la base de datos de Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: 3a39c4ba-353a-41ee-bfe6-e7eb4323f170
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 1%
 ---
-
-# Creación de Adobe Campaign Forms en AEM{#creating-adobe-campaign-forms-in-aem}
+# Creación de formularios de Adobe Campaign en AEM{#creating-adobe-campaign-forms-in-aem}
 
 AEM permite crear y utilizar formularios que interactúen con Adobe Campaign en el sitio web. Se pueden insertar campos específicos en los formularios y asignarlos a la base de datos de Adobe Campaign.
 

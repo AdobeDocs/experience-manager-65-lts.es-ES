@@ -8,13 +8,12 @@ content-type: reference
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 16798533-855d-4f14-8edb-edba79818dbf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 4%
-
+source-wordcount: '1300'
+ht-degree: 7%
 ---
-
 # Vinculación de URL en la aplicación web {#linking-urls-to-your-web-application}
 
 Sus sitios web y aplicaciones acceden a los servicios de Dynamic Media mediante llamadas URL. Después de publicar un recurso, Dynamic Media activa una cadena URL que hace referencia al recurso. Puede pegar estas direcciones URL en un explorador web para probarlas.
@@ -55,7 +54,7 @@ Existen varias formas de obtener una cadena URL. Sin embargo, los pasos siguient
 
 1. Vaya al recurso *publicado* cuya URL de ajuste preestablecido de imagen o URL de ajuste preestablecido de visualizador desee copiar y seleccione el recurso para abrirlo.
 
-   Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
+   Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de imagen o de visualizador.
 
    Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
@@ -111,9 +110,9 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        Por ejemplo, `https://aem.com/is/content/adobe/image.gif`.
+       Por ejemplo, `https://aem.com/is/content/adobe/image.gif`.
 
    * Seleccione **[!UICONTROL Recurso]** > **[!UICONTROL Representaciones dinámicas]** y, a continuación, seleccione una representación dinámica del recurso estático y copie la dirección URL.
 

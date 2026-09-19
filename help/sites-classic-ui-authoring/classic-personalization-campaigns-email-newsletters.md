@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 2%
-
+source-wordcount: '1135'
+ht-degree: 4%
 ---
-
 # Publicación de un correo electrónico para proveedores de servicios de correo electrónico{#publishing-an-email-to-email-service-providers}
 
 Puede publicar boletines en servicios de correo electrónico como ExactTarget y Silverpop Engage. En este documento se describe cómo configurar AEM para que publique una newsletter en estos servicios de correo electrónico.

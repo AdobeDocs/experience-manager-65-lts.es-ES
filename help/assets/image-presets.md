@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Presets
 role: User,Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f4d3a5f1-9348-433f-9c9f-84075a7ab912
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 3%
-
+source-wordcount: '346'
+ht-degree: 4%
 ---
-
 # Aplicar ajustes preestablecidos de imagen de Dynamic Media {#applying-image-presets}
 
 Los ajustes preestablecidos de imagen permiten que los recursos entreguen dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Puede elegir un ajuste preestablecido al exportar imágenes. El ajuste preestablecido redistribuye las imágenes según las especificaciones especificadas por el administrador.

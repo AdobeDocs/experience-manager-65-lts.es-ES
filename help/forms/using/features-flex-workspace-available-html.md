@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 183d1a10-ae09-4aa7-b528-9b9a05d6cf1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '222'
 ht-degree: 100%
-
 ---
-
 # Funciones de espacio de trabajo de Flex no disponibles en AEM Forms Workspace {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 AEM Forms Workspace es un espacio de trabajo completamente nuevo. A continuación se indican algunas de las funciones del espacio de trabajo basado en Flex que no están disponibles en AEM Forms Workspace.

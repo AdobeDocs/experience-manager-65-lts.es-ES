@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 674e6e03-0c34-4dbb-b0b2-d8f1e65547d7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 95%
-
 ---
-
 # Obtener documentos XDP y PDF en AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Información general {#overview}
@@ -49,8 +48,7 @@ Puede cargar los tipos de recursos compatibles de forma individual o como un arc
 
    >[!NOTE]
    >
-   >Para un archivo ZIP, se muestran las rutas relativas de todos los recursos compatibles. Los recursos que no sean compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente. 
-
+   >Para un archivo ZIP, se muestran las rutas relativas de todos los recursos compatibles. Los recursos que no sean compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente.
 
    ![Cuadro de diálogo Cargar al cargar un formulario XFA](assets/upload-scr.png)
 

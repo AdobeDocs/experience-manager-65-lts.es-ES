@@ -7,13 +7,12 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f698980d-d6f9-435d-853f-4d2827640aaf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '604'
 ht-degree: 62%
-
 ---
-
 # API para acceder a instancias de carta {#apis-to-access-letter-instances}
 
 ## Información general {#overview}

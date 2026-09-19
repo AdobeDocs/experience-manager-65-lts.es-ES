@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1b6c09f7-6f89-4fe9-8217-bf1a301bf9cb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 96%
-
+source-wordcount: '2168'
+ht-degree: 89%
 ---
-
 # Descripción de los objetos JSON de AEM Forms Workspace {#aem-forms-workspace-json-object-description}
 
 A continuación, se describen los objetos JSON utilizados en AEM Forms Workspace.
@@ -40,7 +39,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
    <td>ID de categoría<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Descripción<br type="_moz" /> </td>
+   <td>description<br type="_moz" /> </td>
    <td>F</td>
    <td>Descripción de la categoría<br type="_moz" /> </td>
   </tr>
@@ -192,7 +191,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad más alta<br /> 2 = Prioridad alta<br /> 3 = Prioridad Normal<br /> 4 = Prioridad baja<br /> 5 = Prioridad más baja<br /> </td>
+   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad más alta<br /> 2 = Prioridad alta<br /> 3 = Prioridad normal<br /> 4 = Prioridad baja<br /> 5 = Prioridad más baja<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -237,7 +236,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>status<br /> </td>
    <td>F</td>
-   <td>1 = Creada (la tarea se ha creado desde el punto de inicio).<br /> 2 = Creada y guardada (la tarea se ha creado desde el punto de inicio y se ha guardado).<br /> 3 = Asignada (la tarea se ha asignado al usuario una vez iniciado el proceso).<br /> 4 = Asignada y guardada (la tarea se ha asignado y guardado).<br /> 100 = Completada (la tarea se ha completado).<br /> 101 = Con fecha límite (la tarea ha alcanzado la fecha límite).<br /> 102 = Terminada<br /> </td>
+   <td>1 = Creada (la tarea se ha creado desde el punto de inicio)<br /> 2 = Creada y guardada (la tarea se ha creado desde el punto de inicio y se ha guardado)<br /> 3 = Asignada (la tarea se ha asignado al usuario una vez iniciado el proceso)<br /> 4 = Asignada y guardada (la tarea se ha asignado y guardado).<br /> 100 = Completada (la tarea se ha completado)<br /> 101 = Con fecha límite (la tarea ha alcanzado la fecha límite).<br /> 102 = Terminado<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -411,7 +410,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>type</td>
    <td>F</td>
-   <td>Contiene el tipo de la cola.<br /> 0 - Cola de usuario<br /> 1. Cola compartida<br /> 2. Cola de grupo<br type="_moz" /> </td>
+   <td>Contiene el tipo de la cola.<br /> 0 - Cola de usuario.<br /> 1. Cola compartida.<br /> 2. Cola de grupo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -524,7 +523,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Finalizado<br /> 4 = Terminado<br /> 5 = Finalización<br /> 6 = Suspendido<br /> 7 = Suspender<br /> 8 = Sin suspensión<br type="_moz" /> </td>
+   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Completándose<br /> 4 = Terminado<br /> 5 = Terminándose<br /> 6 = Suspendido<br /> 7 = Suspendiéndose<br /> 8 = Sin suspensión<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -605,7 +604,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Asignación inicial<br /> 1 = Reenviada (la tarea se ha reenviado al propietario actual de la tarea)<br /> 2 = Devuelta (el propietario anterior de la tarea ha devuelto la tarea a su propietario actual)<br /> 3 = Reclamada (la tarea ha sido reclamada por el propietario actual de la tarea)<br /> 4 = Escalación (la tarea se ha asignado al propietario actual de la tarea después de la escalación)<br /> 5 = Administrador asignado (el administrador ha asignado la tarea a su propietario actual)<br /> 6 = Consultada (Se ha consultado la tarea a su propietario actual)<br type="_moz" /> </td>
+   <td>0 = Asignación inicial <br /> 1 = Reenviada (la tarea se ha reenviado al propietario actual de la tarea)<br /> 2 = Devuelta (el propietario anterior de la tarea ha devuelto la tarea a su propietario actual)<br /> 3 = Reclamada (la tarea ha sido reclamada por el propietario actual de la tarea)<br /> 4 = Escalación (la tarea se ha asignado al propietario actual de la tarea después de la escalación)<br /> 5 = Administrador asignado (el administrador ha asignado la tarea a su propietario actual)<br /> 6 = Consultada (Se ha consultado la tarea a su propietario actual)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -701,7 +700,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
    <td>El nombre del usuario que agregó el archivo adjunto.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Descripción<br type="_moz" /> </td>
+   <td>description<br type="_moz" /> </td>
    <td>F</td>
    <td>La descripción del archivo adjunto.<br type="_moz" /> </td>
   </tr>
@@ -807,7 +806,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>El valor es True si el usuario está fuera de la oficina<br type="_moz" /> </td>
+   <td>El valor es True si el usuario está fuera de la oficina.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>

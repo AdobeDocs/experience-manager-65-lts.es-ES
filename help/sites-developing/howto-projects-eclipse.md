@@ -1,5 +1,5 @@
 ---
-title: Cómo desarrollar proyectos de AEM con Eclipse
+title: Cómo desarrollar proyectos AEM con Eclipse
 description: Esta guía describe cómo utilizar Eclipse para desarrollar proyectos basados en AEM
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 951e436c-adf4-4277-895f-383aaef17940
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 0%
-
+source-wordcount: '448'
+ht-degree: 4%
 ---
-
-# Cómo desarrollar proyectos de AEM con Eclipse{#how-to-develop-aem-projects-using-eclipse}
+# Cómo desarrollar proyectos AEM con Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
 En esta guía se describe cómo utilizar Eclipse para desarrollar proyectos basados en AEM.
 

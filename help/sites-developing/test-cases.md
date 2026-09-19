@@ -1,5 +1,5 @@
 ---
-title: Definición de los casos de prueba
+title: Definición de casos de prueba
 description: Los casos de prueba deben basarse en los casos de uso y en la especificación de requisitos detallada
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 29943019-6ff2-440e-8cf8-4b92b0408021
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
-
+source-wordcount: '532'
+ht-degree: 2%
 ---
-
-# Definición de los casos de prueba{#defining-your-test-cases}
+# Definición de casos de prueba{#defining-your-test-cases}
 
 Los casos de prueba deben basarse en lo siguiente:
 
@@ -96,12 +95,12 @@ Asegúrese de que el sitio web sigue estando disponible cuando se apaga un servi
 * **Clústeres**
 Se utiliza para proporcionar lo siguiente:
 
-   * **Conmutación por error**
-Si falla un servidor, los demás servidores del clúster se harán cargo del procesamiento.
+  * **Conmutación por error**
+    Si falla un servidor, los demás servidores del clúster se harán cargo del procesamiento.
 
-   * **Rendimiento**
-Equilibrio de carga con conmutación por error completa aumenta el rendimiento de un clúster.
-Cuando se utiliza para un proyecto de cliente, el clúster debe probarse para confirmar el funcionamiento correcto de la configuración.
+  * **Rendimiento**
+    Equilibrio de carga con conmutación por error completa aumenta el rendimiento de un clúster.
+    Cuando se utiliza para un proyecto de cliente, el clúster debe probarse para confirmar el funcionamiento correcto de la configuración.
 
 ## Prueba de software de terceros {#testing-third-party-software}
 

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Correspondence Management
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 475e3c95-913d-49ee-8245-b88b967f9b7e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 100%
-
 ---
-
 # Publicar y cancelar la publicación de formularios y documentos{#publishing-and-unpublishing-forms-and-documents}
 
 AEM Forms le permite crear, publicar y cancelar la publicación de formularios fácilmente. Para obtener más información sobre AEM Forms, consulte [Introducción a la administración de formularios](../../forms/using/introduction-managing-forms.md).
@@ -47,12 +46,12 @@ Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y pe
 * Otras configuraciones de Cloud Services solo se activan si el usuario tiene permisos de administrador.
 * Personalizaciones. Entre ellas se incluyen, entre otras:
 
-   * Diseños personalizados
-   * Aspectos personalizados
-   * Archivo CSS: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
-   * Categoría de biblioteca de cliente: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
-   * Cualquier otra biblioteca de cliente que se pueda incluir como parte de la plantilla del formulario adaptable.
-   * Rutas de diseño
+  * Diseños personalizados
+  * Aspectos personalizados
+  * Archivo CSS: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
+  * Categoría de biblioteca de cliente: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
+  * Cualquier otra biblioteca de cliente que se pueda incluir como parte de la plantilla de formulario adaptable.
+  * Rutas de diseño
 
 ## Estados de los recursos {#asset-states}
 
@@ -70,7 +69,7 @@ Un recurso puede tener los siguientes estados:
    1. Mueve el puntero sobre un recurso y selecciona **[!UICONTROL Publicar]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Realiza una de las siguientes acciones y, a continuación, selecciona Publicar:
 
-      * Si está en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
+      * Si estás en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
       * Si está en la vista de lista, seleccione la casilla de verificación de un recurso. Se selecciona el recurso.
       * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
@@ -143,7 +142,7 @@ Siga estos pasos para programar la fecha y la hora de publicación y cancelació
 
       * Si estás en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
 
-      * Si está en la vista de lista, pasa el puntero sobre un recurso y selecciona ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
+      * Si está en la vista de lista, pase el puntero por encima de un recurso y seleccione ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
 
       * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).

@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d6aa0ff8-01b8-48ef-93f3-59edb9cd50bd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # Extracción de cadenas para traducir{#extracting-strings-for-translating}
 
 Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesiten traducción. El complemento Maven extrae cadenas a un archivo XLIFF que envía para su traducción. Las cadenas se extraen de las siguientes ubicaciones:

@@ -9,13 +9,12 @@ docset: aem65
 feature: Brand Portal
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b67df215-6ef9-461a-bfb8-f5b5ece8451b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '568'
 ht-degree: 34%
-
 ---
-
 # Publicar carpetas en Brand Portal{#publish-folders-to-brand-portal}
 
 Como administrador de Assets de Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha u hora posterior) para su organización. Sin embargo, primero debe integrar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
@@ -54,8 +53,8 @@ Si realiza las modificaciones posteriores al recurso o la carpeta originales en 
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
-   1. Confirme la selección en **Ámbito**. Haga clic en **Siguiente**. 
+   1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**.
+   1. Confirme la selección en **Ámbito**. Haga clic en **Siguiente**.
    1. Especifique un título de flujo de trabajo en **Flujos de trabajo**. Haga clic en **Publicar más tarde**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
@@ -88,7 +87,7 @@ Tiene la opción de cancelar la publicación de carpetas desde Brand Portal ráp
 
    1. En la barra de herramientas, seleccione **Administrar publicación**.
    1. En **Acción**, seleccione **Cancelar la publicación de Brand Portal** y en **Programación**, seleccione **Más tarde**.
-   1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
+   1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**.
    1. Confirme la selección en **Ámbito** y haga clic en **Siguiente**.
    1. Especifique un **título de flujo de trabajo** en **Flujos de trabajo**. Haga clic en **Cancelar publicación más tarde.**
 

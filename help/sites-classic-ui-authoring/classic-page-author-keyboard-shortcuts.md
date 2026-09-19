@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7a908b05-3c45-4d02-bb84-7786339485cd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 15%
-
+source-wordcount: '308'
+ht-degree: 17%
 ---
-
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
 Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en el [uso de las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
@@ -93,7 +92,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forzar el menú contextual predeterminado (explorador).<br /> <strong>Nota:</strong> Los menús contextuales de AEM solo se producen en la IU clásica.</td>
+   <td>Forzar menú contextual predeterminado (explorador).<br /> <strong>Nota:</strong> Los menús contextuales de AEM solo se producen en la IU clásica.</td>
   </tr>
   <tr>
    <td> </td>

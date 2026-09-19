@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4c456045-dbd1-491a-a136-3995ae51e629
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
-
 ---
-
 # Seguimiento de procesos {#tracking-processes}
 
 En la página Seguimiento, puede buscar procesos activos o completados que haya iniciado o en los que haya participado y ver los detalles del proceso. Los detalles del proceso muestran las tareas, asignaciones y formularios que formaban parte del proceso. También puede iniciar nuevos procesos utilizando los datos de formulario de un proceso que haya iniciado anteriormente.

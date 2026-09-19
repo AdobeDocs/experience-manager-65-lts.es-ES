@@ -1,5 +1,5 @@
 ---
-title: Sugerencias de codificación
+title: Sugerencias de programación
 description: Conozca algunas sugerencias para codificar las prácticas recomendadas en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e431a240-45a2-4222-b854-32b90e5cd100
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
-# Sugerencias de codificación{#coding-tips}
+# Sugerencias de programación{#coding-tips}
 
 ## Utilice etiquetas o HTL tanto como sea posible {#use-taglibs-or-htl-as-much-as-possible}
 

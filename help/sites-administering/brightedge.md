@@ -1,5 +1,5 @@
 ---
-title: Integración con el Optimizador de contenido de BrightEdge
+title: Integración con el optimizador de contenido de BrightEdge
 description: Obtenga información sobre la integración de AEM con el Optimizador de contenido de BrightEdge.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fbc55cbd-c754-44f8-8159-72cedc60e137
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 0%
-
+source-wordcount: '500'
+ht-degree: 4%
 ---
-
-# Integración con el Optimizador de contenido de BrightEdge{#integrating-with-brightedge-content-optimizer}
+# Integración con el optimizador de contenido de BrightEdge{#integrating-with-brightedge-content-optimizer}
 
 Cree una configuración de nube de BrightEdge para que AEM pueda conectarse con las credenciales de su cuenta de BrightEdge. Puede crear varias configuraciones si utiliza varias cuentas.
 

@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a9152ba8-3c59-4a20-b164-7a57f10d9ea4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Proxy de servicio de formularios HTML5{#html-forms-service-proxy}
 
 El proxy de servicio de formularios HTML5 es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud *submissionServiceProxy*.
@@ -23,7 +22,7 @@ El proxy de servicio de formularios HTML5 es una configuración para registrar u
 
 El proxy de servicio elimina lo siguiente:
 
-* El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío “/content/xfaforms/submission/default” para los usuarios de formularios HTML5. Expone servidores de AEM a una audiencia no deseada más amplia.
+* El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío “/content/xfaforms/submission/default” para los usuarios de formularios HTML5. Expone servidores de AEM a un público no deseado más amplio.
 * La URL del servicio está incrustada en el modelo de tiempo de ejecución del formulario. No es posible cambiar la ruta de la URL del servicio.
 * El envío es un proceso de dos pasos. Para enviar los datos del formulario, el envío requiere al menos dos recorridos para el servidor. Por lo tanto, aumenta la carga en el servidor.
 * Los formularios HTML5 envían datos en la solicitud POST en lugar de en la solicitud PDF. Para el flujo de trabajo que incluye formularios PDF y HTML5, se requieren dos métodos diferentes de procesamiento de los envíos.

@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 3%
-
+source-wordcount: '441'
+ht-degree: 7%
 ---
-
 # Prácticas recomendadas{#best-practices}
 
 ## Prácticas recomendadas para desarrolladores: Introducción {#best-practices-for-developers-getting-started}
@@ -26,11 +25,11 @@ Antes de iniciar el proyecto de desarrollo de AEM, revise primero estas práctic
 * [Prácticas de desarrollo](/help/sites-developing/development-practices.md)
 * [Arquitectura de contenido](/help/sites-developing/content-architecture.md)
 * [Arquitectura de software](/help/sites-developing/software-architecture.md)
-* [Sugerencias de codificación](/help/sites-developing/coding-tips.md)
+* [Sugerencias de programación](/help/sites-developing/coding-tips.md)
 * [Problemas de código](/help/sites-developing/code-pitfalls.md)
 * [Interacción JCR](/help/sites-developing/jcr-integration.md)
 * [Paquetes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Prácticas recomendadas para la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es)
+* [Prácticas recomendadas de API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es)
 
 ### Información adicional sobre prácticas recomendadas {#additional-best-practices-information}
 
@@ -43,8 +42,8 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 Para conocer las prácticas recomendadas sobre la administración, la implementación, el mantenimiento o la creación, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
+* [Administración de prácticas recomendadas](/help/sites-administering/administer-best-practices.md)
+* [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
 * [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}

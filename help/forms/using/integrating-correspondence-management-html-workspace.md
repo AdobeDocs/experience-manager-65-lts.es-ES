@@ -7,13 +7,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b383fa80-1643-41f3-bc6c-176727fea688
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 80%
-
+source-wordcount: '642'
+ht-degree: 77%
 ---
-
 # Integración de aplicaciones de terceros en AEM Forms Workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms Workspace admite la administración de las actividades de asignación y finalización de tareas en formularios y documentos. Estos formularios y documentos pueden ser formularios XDP, formularios de Flex® o guías (obsoletos) que se han procesado en los formatos XDP, PDF, HTML o Flex.
@@ -100,7 +99,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM W
    ```
 
    [Obtener archivo](assets/dscsample.zip)
-Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configurar el servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Descargar DSC: Hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configurar el servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    En el cuadro de diálogo Definir actividad, seleccione la actividad adecuada, como getLetterInstanceInfo, y haga clic en **Aceptar**.
 

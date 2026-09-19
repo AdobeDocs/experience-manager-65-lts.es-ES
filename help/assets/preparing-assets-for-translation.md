@@ -5,13 +5,12 @@ contentOwner: AG
 role: User, Admin
 feature: Projects
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: de9f266b-a167-4eba-be2c-8f6a0457265f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 4%
 ---
-
 # Preparación de recursos para su traducción {#preparing-assets-for-translation}
 
 Recursos multilingües: recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma y se traducen a otros idiomas para su uso en proyectos multilingües.

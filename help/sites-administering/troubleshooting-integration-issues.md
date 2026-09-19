@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 1%
-
+source-wordcount: '1102'
+ht-degree: 2%
 ---
-
 # Solución de problemas de integración{#troubleshooting-integration-issues}
 
 ## Sugerencias generales de resolución de problemas {#general-troubleshooting-tips}
@@ -60,14 +59,14 @@ Para obtener más información acerca de la creación de servicios de importador
 
 ### El cierre tarda mucho tiempo debido al importador de encuestas {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics se ha diseñado teniendo en cuenta un mecanismo de herencia. Normalmente, habilita Analytics para un sitio al agregar una referencia a una configuración de Analytics en la pestaña de propiedades de página [Cloud Services](/help/sites-developing/extending-cloud-config.md). A continuación, la configuración se hereda automáticamente a todas las páginas secundarias sin necesidad de volver a hacer referencia a ella a menos que una página requiera una configuración diferente. Al agregar una referencia a un sitio, también se crean automáticamente varios nodos (12 para AEM 6.3 y versiones anteriores o 6 para AEM 6.4   y posterior) del tipo `cq;PollConfig` que crea una instancia de los importadores de encuestas utilizados para importar datos de Analytics en AEM. Como resultado:
+Analytics se ha diseñado teniendo en cuenta un mecanismo de herencia. Normalmente, habilita Analytics para un sitio al agregar una referencia a una configuración de Analytics en la pestaña de propiedades de página [Cloud Services](/help/sites-developing/extending-cloud-config.md). A continuación, la configuración se hereda automáticamente a todas las páginas secundarias sin necesidad de volver a hacer referencia a ella a menos que una página requiera una configuración diferente. Al agregar una referencia a un sitio, también se crean automáticamente varios nodos (12 para AEM 6.3 y versiones anteriores o 6 para AEM 6.4 y versiones posteriores) del tipo `cq;PollConfig` que crea una instancia de los importadores de encuestas utilizados para importar datos de Analytics en AEM. Como resultado:
 
 * Tener muchas páginas que hacen referencia a Analytics lleva a una gran cantidad de importadores de encuestas.
 * Además, copiar y pegar páginas con una referencia a una configuración de Analytics provoca una duplicación de los importadores de encuestas.
 
 #### Solución {#solution-1}
 
-En primer lugar, analizar [error.log](/help/sites-deploying/configure-logging.md) puede ofrecerle alguna perspectiva sobre la cantidad de importadores de encuestas activos o registrados. Por ejemplo:
+En primer lugar, analizar [error.log](/help/sites-deploying/configure-logging.md) podría proporcionarle insight sobre la cantidad de importadores de encuestas activos o registrados. Por ejemplo:
 
 ```
 # Count PollingImporter entries
@@ -99,11 +98,11 @@ Para solucionar el problema, puede probar lo siguiente:
 * Volver a publicar las configuraciones encontradas en `/etc/cloudservices/dynamictagmanagement`
 * Compruebe las ACL en `/etc/cloudservices`. Las ACL deben ser:
 
-   * permitir; jcr:read; webservice-support-servicelibfinder
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
+  * permitir; jcr:read; webservice-support-servicelibfinder
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
 
 Para obtener más información sobre la administración de ACL, lea la página [Administración de usuarios y seguridad](/help/sites-administering/security.md#permissions-in-aem).
 

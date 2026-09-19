@@ -5,13 +5,12 @@ topic-tags: security
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8232d8a9-6df4-45f9-8924-7328a55093cb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 77%
-
+source-wordcount: '232'
+ht-degree: 78%
 ---
-
 # Compatibilidad con cookies de SameSite para AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
 Desde la versión 80, Chrome y posterior Safari, introdujeron un nuevo modelo para la seguridad de las cookies. Este modo está diseñado para introducir controles de seguridad en torno a la disponibilidad de cookies en sitios de terceros, a través de una configuración denominada `SameSite`. Para obtener información más detallada, consulte este artículo [web.dev - cookies SameSite explicadas](https://web.dev/samesite-cookies-explained/).

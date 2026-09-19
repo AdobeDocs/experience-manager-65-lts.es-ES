@@ -1,6 +1,6 @@
 ---
 title: Gestión básica
-description: Información general sobre la administración básica al utilizar el entorno de creación de Adobe Experience Manager. Utiliza la consola Sitios como base.
+description: Información general sobre la administración básica al utilizar el entorno de creación de Adobe Experience Manager. Utiliza la consola de Sites como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -8,18 +8,17 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 4%
-
+source-wordcount: '1188'
+ht-degree: 5%
 ---
-
 # Gestión básica{#basic-handling}
 
 >[!NOTE]
 >
->* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base. 
+>* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base.
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y otras adicionales en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM. En particular cuando [usa las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edita páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
@@ -53,7 +52,7 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Lanzamientos</strong></td>
-   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; lo cual le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: en la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Inicios.</i></td>
+   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; lo que le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: en la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Inicios.</i></td>
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
@@ -102,7 +101,7 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 En varias consolas (por ejemplo, sitios web), hay disponible un botón **Ayuda**. Al hacer clic en **Ayuda**, se abre Package Share o el sitio de documentación.
 
@@ -116,10 +115,10 @@ La consola **Sitios web** enumera las páginas de contenido en una estructura de
 
 * Al hacer clic en el nombre de página en el panel izquierdo, se hace lo siguiente:
 
-   * Muestra las páginas secundarias del panel derecho
-   * Expande la estructura en el panel izquierdo.
+  * Muestra las páginas secundarias del panel derecho
+  * Expande la estructura en el panel izquierdo.
 
-     Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
+    Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
 
 * Al hacer doble clic en el nombre de la página (panel izquierdo), se expande el árbol, aunque este efecto no es tan obvio cuando se abre la página al mismo tiempo.
 
@@ -157,7 +156,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
-   <td>Miniatura   </td>
+   <td>Miniaturas</td>
    <td>Muestra una miniatura para la página.</td>
   </tr>
   <tr>

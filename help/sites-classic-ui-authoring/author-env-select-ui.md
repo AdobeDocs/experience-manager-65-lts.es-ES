@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 781b580a-e4d1-419e-afb1-884c8fb634b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 0%
-
+source-wordcount: '199'
+ht-degree: 3%
 ---
-
 # Selección de la IU{#selecting-your-ui}
 
 Dado que la IU táctil reemplaza a la IU clásica, el usuario o el administrador de la instancia de AEM debe tomar una decisión activa para seguir utilizándola. Dado que la IU clásica ya no se mantiene, no hay forma de que el usuario autor simplemente cambie de la IU clásica a la equivalente en la IU táctil.

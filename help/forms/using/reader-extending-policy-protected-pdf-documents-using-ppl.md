@@ -8,13 +8,12 @@ topic-tags: document_services
 feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b1430a30-313f-4efc-85c5-ccb914923031
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '828'
 ht-degree: 97%
-
 ---
-
 # Ampliar documentos PDF protegidos por políticas utilizando la Biblioteca de Protección Portátil mediante Reader {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Familiarícese con los conceptos de Document Security, Extensiones de Reader y el lenguaje de programación Java para ampliar los documentos de PDF protegidos por directivas de Document Security mediante Reader.
@@ -43,7 +42,7 @@ Puede realizar las siguientes tareas con el servicio Extensiones de Reader:
 
 ### Aplicar derechos de uso a un documento PDF protegido por políticas de Document Security {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
-Puede usar la API de Java `applyUsageRights` para aplicar derechos de uso a documentos PDF protegidos por políticas. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos activados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
+Puede usar la API de Java `applyUsageRights` para aplicar derechos de uso a documentos PDF protegidos por políticas. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos habilitados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
 
 **Sintaxis:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 

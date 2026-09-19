@@ -1,6 +1,6 @@
 ---
 title: Exportador JSON para servicios de contenido
-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
+description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir.
 contentOwner: User
 content-type: reference
 topic-tags: components
@@ -8,13 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8c66b978-872e-4f5e-8f64-1e2dfb7d7dde
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 23%
-
+source-wordcount: '453'
+ht-degree: 43%
 ---
-
 # Exportador JSON para servicios de contenido{#json-exporter-for-content-services}
 
 Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web.
@@ -81,15 +80,15 @@ Consulte también lo siguiente:
 
 * API HTTP de recursos
 
-   * [API HTTP de recursos](/help/assets/mac-api-assets.md)
+  * [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
 * Modelos Sling:
 
-   * [Modelos Sling: asociando una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+  * [Modelos Sling: asociación de una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html?lang=es#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM con JSON:
 
-   * [Obtener información de página en formato JSON](/help/sites-developing/pageinfo.md)
+  * [Obtención de información de página en formato JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentación relacionada {#related-documentation}
 
@@ -99,6 +98,6 @@ Para obtener más información, consulte:
 
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
-* [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
+* [Habilitación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
 
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)

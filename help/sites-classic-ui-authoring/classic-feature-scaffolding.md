@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # Andamiaje{#scaffolding}
 
 A veces, es posible que tenga que crear un gran conjunto de páginas que compartan estructura pero que tengan contenido diferente. A través de la interfaz estándar de Adobe Experience Manager (AEM), debe crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
@@ -90,7 +89,7 @@ Observe la propiedad name de este campo. Tiene el valor
 
 `./jcr:content/par/text/text`
 
-Es el nombre de la propiedad en la que se escribirá el contenido de este campo cuando se utilice el andamio para crear una página. La propiedad se indica como una ruta relativa desde el nodo que representa la página que se va a crear. Especifica el texto de la propiedad, debajo del texto del nodo, que está debajo de la parte del nodo, que es a su vez un elemento secundario del nodo jcr:content debajo del nodo de la página.
+Es el nombre de la propiedad en la que se escribirá el contenido de este campo cuando se utilice el andamio para crear una página. La propiedad se indica como una ruta relativa desde el nodo que representa la página que se va a crear. Especifica el texto de la propiedad, debajo del texto del nodo, que está debajo de la parte del nodo, que es en sí misma un elemento secundario del nodo jcr:content debajo del nodo de la página.
 
 Define la ubicación del almacenamiento de contenido para el texto que se introduce en este campo. Sin embargo, también es necesario especificar dos características más para este contenido:
 

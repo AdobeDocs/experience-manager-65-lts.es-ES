@@ -8,18 +8,17 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1fb07518-1343-4b8d-aba0-8ec5235c5c1c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 100%
-
+source-wordcount: '351'
+ht-degree: 99%
 ---
-
 # Rellenar de manera dinámica listas desplegables {#dynamically-populating-drop-down-lists}
 
 ## Requisitos previos {#prerequisites}
 
-* [Crear paquetes OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&amp;CID=RedirectAEMCommunityKautuk)
+* [Creación de paquetes OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&CID=RedirectAEMCommunityKautuk)
 * [Desarrollar componentes de AEM](/help/sites-developing/components.md)
 * [Crear formularios adaptables](../../forms/using/creating-adaptive-form.md)
 * [Crear formularios adaptables en el modo Autor](../../forms/using/introduction-forms-authoring.md)
@@ -148,7 +147,7 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
 
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
-1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/).  Implemente el mismo archivo en el servidor.
+1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
 1. Cree un formulario adaptable y agregue dos listas desplegables, País y Estado. La lista País puede incluir nombres de países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
 
    Añada los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue un script para rellenarla en función del nombre del país de la lista País.

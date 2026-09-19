@@ -8,13 +8,12 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 55d4f34c-6766-48b7-86a1-689901e8871f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 0%
-
+source-wordcount: '718'
+ht-degree: 1%
 ---
-
 # Consola web{#web-console}
 
 La consola web de Adobe Experience Manager (AEM) se basa en [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
@@ -64,8 +63,8 @@ Hay dos tipos de configuraciones disponibles en las listas desplegables de esta 
 * **Configuraciones**
 Permite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser las siguientes:
 
-   * estándar e integral para AEM; estos son obligatorios; si se eliminan, los valores vuelven a la configuración predeterminada.
-   * instancias creadas a partir de Configuraciones de fábrica; estas instancias las crea el usuario, la eliminación elimina la instancia.
+  * estándar e integral para AEM; estos son obligatorios; si se eliminan, los valores vuelven a la configuración predeterminada.
+  * instancias creadas a partir de Configuraciones de fábrica; estas instancias las crea el usuario, la eliminación elimina la instancia.
 
 * **Configuraciones de fábrica**
 Permite crear una instancia del objeto de funcionalidad requerido.

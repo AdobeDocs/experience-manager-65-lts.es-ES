@@ -1,5 +1,5 @@
 ---
-title: Añadir funciones de Dynamic Media Classic a las páginas
+title: Adición de características de Dynamic Media Classic a las páginas
 description: Cómo añadir funciones y componentes de Dynamic Media Classic a una página en Adobe Experience Manager.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +9,13 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 0%
-
+source-wordcount: '2902'
+ht-degree: 3%
 ---
-
-# Añadir funciones de Dynamic Media Classic a las páginas {#adding-scene-features-to-your-page}
+# Adición de características de Dynamic Media Classic a las páginas {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución hospedada para administrar, mejorar, publicar y entregar recursos de medios enriquecidos en pantallas e impresoras web, móviles, de correo electrónico y conectadas a Internet.
 
@@ -73,7 +72,7 @@ Una vez que estén disponibles en el modo **[!UICONTROL Diseño]**, podrá agreg
 >
 >Si está creando y desarrollando visores personalizados y está utilizando el buscador de contenido, debe agregar explícitamente el parámetro `allowfullscreen`.
 
-### Aviso de fin de vida útil para el visor Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil de los visores Flash {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Dynamic Media Classic dejará de ser compatible con la plataforma de visor Flash.
 
@@ -328,7 +327,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >
 >* En la IU clásica, también puedes buscar **Flash** y **FXG**. No se admite el filtrado para estos tipos en la IU táctil optimizada.
 >
->* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (sólo &ast;.mp4) y la codificada.
+>* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &ast;.mp4) y la codificada.
 >* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha agregado una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 

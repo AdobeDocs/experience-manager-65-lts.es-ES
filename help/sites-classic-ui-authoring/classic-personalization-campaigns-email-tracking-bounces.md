@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
 # Seguimiento de correos electrónicos rechazados{#tracking-bounced-emails}
 
 >[!NOTE]
@@ -63,7 +62,7 @@ Para configurar el importador de fuentes para el seguimiento de correos electró
 
    Permite establecer marcas para buscar.
 
-   `imap.flag.SEEN`: establecer falso para mensaje nuevo/no visto, verdadero para mensajes ya leídos
+   `imap.flag.SEEN`:Set falso para mensaje nuevo/no visto, verdadero para mensajes ya leídos
 
    Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para obtener la lista completa de indicadores.
 

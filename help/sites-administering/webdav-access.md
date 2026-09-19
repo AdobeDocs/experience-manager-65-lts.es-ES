@@ -1,5 +1,5 @@
 ---
-title: Acceso a WebDAV
+title: Acceso de WebDAV
 description: Obtenga información sobre cómo acceder a Adobe Experience Manager mediante WebDAV.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7aa0e3b3-69de-4991-a1c8-06c9de5404c4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 0%
-
+source-wordcount: '1123'
+ht-degree: 2%
 ---
-
-# Acceso a WebDAV{#webdav-access}
+# Acceso de WebDAV{#webdav-access}
 
 Para conectarse a AEM mediante WebDAV con KDE:
 
@@ -102,7 +101,7 @@ Se proporcionan instrucciones sobre cómo conectar los siguientes sistemas opera
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux®](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 

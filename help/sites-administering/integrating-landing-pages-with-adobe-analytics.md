@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
-
+source-wordcount: '380'
+ht-degree: 5%
 ---
-
 # Integración de páginas de destino con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrado la solución de páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a acción (CTA):
+AEM ha integrado la solución de páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de call-to-action (CTA):
 
 1. Componente Clic
 1. Componente Vínculo gráfico
@@ -30,7 +29,7 @@ Adobe recomienda que revise la [integración existente de AEM y Adobe Analytics]
 
 ## Componentes disponibles para asignación {#components-available-for-mapping}
 
-En AEM, los componentes de **Llamada a la acción** - **ClickThroughLink** y **GraphicalLink** - que se muestran aquí en la barra de tareas, se pueden asignar a variables de Adobe Analytics.
+En AEM, los componentes de **Call to action** - **ClickThroughLink** y **GraphicalLink** - que se muestran aquí en la barra de tareas, se pueden asignar a variables de Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -39,7 +38,7 @@ En AEM, los componentes de **Llamada a la acción** - **ClickThroughLink** y **G
 Para asignar componentes de página de aterrizaje a Adobe Analytics:
 
 1. Después de crear la configuración de Adobe Analytics y de crear un marco de trabajo, seleccione el grupo de informes adecuado en el menú desplegable. Esto hace que se recuperen las variables de Adobe Analytics y se muestren en el buscador de contenido.
-1. Arrastre y suelte los componentes de llamada a la acción (CTA) de la barra de tareas en el área de asignación situada en medio de la página, según corresponda.
+1. Arrastre y suelte los componentes de Call to action (CTA) de la barra de tareas en el área de asignación situada en medio de la página, según corresponda.
 
 <table>
  <tbody>

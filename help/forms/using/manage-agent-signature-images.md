@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3081dedf-ba92-4205-af67-930524719e60
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 96%
-
+source-wordcount: '689'
+ht-degree: 89%
 ---
-
 # Administrar imágenes de firma del agente{#manage-agent-signature-images}
 
 ## Información general {#overview}
@@ -65,11 +64,11 @@ También puede anular la función personalizada predeterminada para definir su p
 
    1. Haga doble clic en la propiedad **jcr:content**, establezca su tipo como **nt:resource** y, a continuación, haga clic en la marca de verificación verde para guardar la entrada.
 
-      Si la propiedad no está presente, cree primero una propiedad con el nombre jcr:content.
+      Si la propiedad no está presente, cree primero una propiedad denominada jcr:content.
 
-      ![propiedad jcr:content &#x200B;](assets/3_jcrcontentntresource.png)
+      ![jcr:content propiedad](assets/3_jcrcontentntresource.png)
 
-      Entre las subpropiedades de jcr:content está jcr:data, el cual se muestra atenuado. Haga doble clic en jcr:data. La propiedad se vuelve editable y aparece el botón Elegir archivo en la entrada. Haga clic en **Elegir archivo** y seleccione el archivo de imagen que desee utilizar como logotipo. No es necesario que el archivo de imagen tenga una extensión.
+      Entre las subpropiedades de jcr:content se encuentra jcr:data, que está atenuado. Haga doble clic en jcr:data. La propiedad se vuelve editable y aparece el botón Elegir archivo en la entrada. Haga clic en **Elegir archivo** y seleccione el archivo de imagen que desee utilizar como logotipo. No es necesario que el archivo de imagen tenga una extensión.
 
       ![Datos JCR](assets/5_jcrdata.png)
 

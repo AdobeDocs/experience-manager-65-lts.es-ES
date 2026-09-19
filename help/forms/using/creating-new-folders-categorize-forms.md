@@ -7,13 +7,12 @@ topic-tags: forms-manager
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 98%
-
 ---
-
 # Crear carpetas nuevas para aplicar categorías a los formularios {#create-new-folders-to-categorize-forms}
 
 Puede organizar mejor los recursos mediante carpetas. Dado que AEM Forms admite varios tipos de recursos (plantillas de formulario, PDF, documentos, recursos y formularios adaptables, con varios metadatos), puede utilizar carpetas para clasificar los formularios según los criterios deseados.
@@ -45,7 +44,7 @@ Puede crear una carpeta en AEM Forms de una de las siguientes maneras:
 
    Se muestra una nueva carpeta con el título que haya definido en la ubicación actual de la lista de recursos.
 
-   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
+   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero por encima del icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
 
 ### Editar el título de la carpeta {#edit-the-folder-title-br}
 

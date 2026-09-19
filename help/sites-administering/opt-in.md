@@ -1,5 +1,5 @@
 ---
-title: Inclusión en Adobe Analytics y Adobe Target
+title: Inscripción en Adobe Analytics y Adobe Target
 description: Obtenga información sobre cómo adherirse a Adobe Analytics y Adobe Target.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d872078f-3aa0-4abe-ac2a-74a1cd47b219
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 9%
 ---
-
-# Inclusión en Adobe Analytics y Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# Inscripción en Adobe Analytics y Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM cuenta con un procedimiento de inclusión para ayudarle a integrar con Adobe Analytics y Adobe Target. Esta opción está disponible de forma predeterminada, como una tarea precargada asignada al grupo de usuarios del administrador.
 
@@ -179,9 +178,9 @@ Los parámetros que envíe dependerán de lo siguiente:
 
 * Si desea usar el archivo **marketingcloud.properties** con todas las credenciales necesarias, debe enviar los siguientes parámetros:
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=ruta de acceso a una página de AEM para adjuntar las configuraciones creadas de Cloud Services
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=ruta de acceso a una página de AEM para adjuntar las configuraciones creadas de Cloud Services
 
   Por ejemplo, una solicitud de pliegue que cree configuraciones de Analytics y Target y las adjunte a la página de we.retail sería:
 
@@ -190,17 +189,17 @@ Los parámetros que envíe dependerán de lo siguiente:
   ```
 
 * Si no desea usar el archivo **marketingcloud.properties**, debe enviar las credenciales y los parámetros. Por ejemplo:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=path to an AEM page to attachment the created cloud services configs; se pueden definir varias rutas
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * path=path to an AEM page to attachment the created cloud services configs; se pueden definir varias rutas
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   En este caso, la solicitud de pliegue que crea las configuraciones de Analytics y Target y las adjunta a la página web de venta minorista sería la siguiente:
 

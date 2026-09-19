@@ -4,13 +4,12 @@ description: La función de páginas de aterrizaje permite importar rápida y f�
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: ecb0dc4f1e443bc529468d0918642572135e361b
+exl-id: 827e5440-6451-41be-b565-c2fb7668b3da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 1%
-
+source-wordcount: '3376'
+ht-degree: 2%
 ---
-
 # Páginas de destino{#landing-pages}
 
 La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente a una página de AEM. Un desarrollador web puede preparar HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página. La funcionalidad es útil para crear páginas de aterrizaje de marketing que solo estén activas durante un tiempo limitado y que necesiten crearse rápidamente.
@@ -76,8 +75,8 @@ Para que las partes de HTML que se importan puedan editarse en AEM, puede asigna
 * Imagen, para imágenes que deben hacerse intercambiables
 * Llamadas a la acción:
 
-   * Vínculo de pulsación
-   * Vínculo gráfico
+  * Vínculo de pulsación
+  * Vínculo gráfico
 
 * Formulario de posible cliente de CTA para recopilar información del usuario
 * Sistema de párrafos (Parsys), para permitir que se añada cualquier componente o se convierta el componente anterior
@@ -114,11 +113,11 @@ El siguiente es un ejemplo de un componente de imagen en una página de aterriza
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Llamada a acción (CTA) {#call-to-action-cta}
+#### Call to action (CTA) {#call-to-action-cta}
 
 Un diseño de página de aterrizaje puede tener varios vínculos, algunos de los cuales pueden denominarse &quot;Llamadas a la acción&quot;.
 
-La llamada a la acción (CTA) se utiliza para conseguir que el visitante realice acciones inmediatas en la página de aterrizaje, como &quot;Suscribirse ahora&quot;, &quot;Ver este vídeo&quot;, &quot;Solo tiempo limitado&quot;, etc.
+Call to action (CTA) se utiliza para que el visitante tome medidas inmediatas en la página de aterrizaje, como &quot;Suscribirse ahora&quot;, &quot;Ver este vídeo&quot;, &quot;Solo tiempo limitado&quot;, etc.
 
 * Vínculo de pulsación: Permite añadir un vínculo de texto que, cuando se hace clic, lleva al visitante a una URL de destino.
 * Vínculo gráfico: le permite añadir una imagen que, cuando se hace clic, lleva al visitante a una dirección URL de destino.
@@ -127,7 +126,7 @@ Ambos componentes de CTA tienen opciones similares. El vínculo Pulsación tiene
 
 #### Vínculo de pulsación {#click-through-link}
 
-Este componente de CTA se puede utilizar para agregar un vínculo de texto en la página de aterrizaje. Se puede hacer clic en ese vínculo para llevar al usuario a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
+Este componente de CTA se puede utilizar para agregar un vínculo de texto en la página de aterrizaje. Se puede hacer clic en ese vínculo para llevar al usuario a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Call to action&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -152,7 +151,7 @@ El siguiente es un ejemplo de vínculo de pulsación:
 
 #### Vínculo gráfico {#graphical-link}
 
-Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo **Llamada a la acción**.
+Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo **Call to action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -175,7 +174,7 @@ A continuación se muestra un ejemplo de vínculo gráfico:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Formulario de cliente potencial de llamada a la acción (CTA) {#call-to-action-cta-lead-form}
+### Formulario de posible cliente de call to action (CTA) {#call-to-action-cta-lead-form}
 
 Un formulario de posible cliente es un formulario que se utiliza para recopilar información del perfil de un visitante o posible cliente. Esta información se puede almacenar y utilizar más adelante para realizar un marketing eficaz basado en la información. Esta información generalmente incluye título, nombre, correo electrónico, fecha de nacimiento, dirección, interés, etc. Forma parte del grupo **Formulario de posibles clientes de CTA**.
 
@@ -226,7 +225,7 @@ Indica el tamaño y el estilo de los campos.
 
 #### Componentes de formulario de posibles clientes {#lead-form-components}
 
-En la siguiente sección se describen los componentes disponibles para los formularios de posibles clientes con llamadas a la acción.
+En la siguiente sección se describen los componentes disponibles para los formularios de Call-to-action.
 
 **Acerca de** permite que los usuarios agreguen información.
 
@@ -306,13 +305,13 @@ Si está validando el formulario completo, incluya también una de las siguiente
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* **Mostrar botón de envío**
+* **Mostrar botón Enviar**
 Indica si se debe mostrar o no un botón Enviar.
 
 * **Nombre de envío**
 Un identificador si utiliza varios botones de envío en un formulario.
 
-* **Título de envío**
+* **Enviar título**
 Nombre que aparece en el botón, como Enviar o Enviar.
 
 * **Mostrar botón Restablecer**
@@ -392,7 +391,7 @@ Si tiene preparado el paquete de diseño, los pasos siguientes describen cómo i
 
 El diseño y los activos de una página de aterrizaje suelen ser creados por un diseñador, posiblemente en una agencia, con herramientas a las que están acostumbrados, como Adobe Photoshop o Adobe Dreamweaver. Cuando se completa el diseño, el diseñador envía un archivo zip con todos los recursos a marketing. A continuación, el contacto de marketing es responsable de soltar el archivo zip en AEM y publicar el contenido.
 
-Además, es posible que el diseñador tenga que realizar modificaciones en la página de aterrizaje después de importarla editando o eliminando contenido y configurando los componentes de llamada a la acción. Por último, el experto en marketing debe obtener una vista previa de la página de aterrizaje y, a continuación, activar la campaña para asegurarse de que se publique la página de aterrizaje.
+Además, es posible que el diseñador tenga que realizar modificaciones en la página de aterrizaje después de importarla editando o eliminando contenido y configurando los componentes de call-to-action. Por último, el experto en marketing debe obtener una vista previa de la página de aterrizaje y, a continuación, activar la campaña para asegurarse de que se publique la página de aterrizaje.
 
 En esta sección se describe cómo realizar las siguientes acciones:
 
@@ -442,7 +441,7 @@ Para agregar componentes a la página de aterrizaje, arrastre y suelte los compo
 
 >[!NOTE]
 >
->Si un componente de la página de aterrizaje no se puede editar, debe volver a importar el archivo zip después de [modificar el archivo HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa que durante la importación, los elementos no editables no se convirtieron en componentes de AEM.
+>Si un componente de la página de aterrizaje no se puede editar, deberá volver a importar el archivo zip después de [modificar el archivo HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Esto significa que durante la importación, las partes no editables no se convirtieron en componentes de AEM.
 
 ### Eliminación de una página de aterrizaje {#deleting-a-landing-page}
 

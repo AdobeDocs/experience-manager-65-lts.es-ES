@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
-
+ht-degree: 88%
 ---
-
 # Configurar el planificador de sincronización {#configuring-the-synchronization-scheduler}
 
 De forma predeterminada, el programador de sincronización se ejecuta cada tres minutos para sincronizar todos los recursos modificados y actualizados en el repositorio mediante LiveCycle Workbench 11. Las aplicaciones que contienen formularios y recursos serán visibles en la interfaz de usuario de AEM Forms una vez finalizado el proceso de sincronización.
@@ -51,7 +50,7 @@ Puede usar la opción **Sincronizar recursos del repositorio** para sincronizar 
 
 Puede crear aplicaciones nuevas en el diseñador de flujos de trabajo (Área de trabajo de LiveCycle).
 
-Si la aplicación recién creada y alguna carpeta en /content/dam/formsanddocuments tienen un nombre igual, se producirá el error “*Ya existe un recurso con el mismo nombre que esta aplicación en el nivel raíz.*” está registrado.
+Si la aplicación recién creada y una carpeta en /content/dam/formsanddocuments tienen un nombre idéntico, se producirá el error &quot;*Ya existe un recurso con el mismo nombre que esta aplicación en el nivel raíz.*&quot; está registrado.
 
 Para resolver el conflicto, cambie el nombre de la aplicación y sincronice manualmente los recursos.
 

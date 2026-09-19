@@ -9,13 +9,12 @@ role: User, Admin
 mini-toc-levels: 3
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a54d39c3-e3eb-4d09-b79e-b5284e6e3f0b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 1%
-
+source-wordcount: '1606'
+ht-degree: 2%
 ---
-
 # Vídeo {#video}
 
 Adobe Experience Manager Assets permite la administración centralizada de recursos de vídeo, donde puede cargar vídeos directamente en Assets para su codificación automática en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Assets para la creación de páginas.
@@ -137,7 +136,7 @@ La siguiente tabla proporciona una comparación de alto nivel de las funciones c
 | Extensibilidad | Sí | No |
 | Vídeo móvil | Sí | Sí |
 
-### Configuración de {#setting-up}
+### Configurar {#setting-up}
 
 #### Creación de perfiles de vídeo {#creating-video-profiles}
 

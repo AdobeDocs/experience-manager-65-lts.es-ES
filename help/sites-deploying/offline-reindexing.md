@@ -4,13 +4,12 @@ description: Aprenda a utilizar la metodología de reindexación sin conexión p
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 076db19026a0992725062ec9965ff6c1cb84333e
+exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 0%
-
+source-wordcount: '1230'
+ht-degree: 1%
 ---
-
 # Reindexación sin conexión para AEM {#offline-reindexing-for-aem}
 
 ## Introducción {#introduction}

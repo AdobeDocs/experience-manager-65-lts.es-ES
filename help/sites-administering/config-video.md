@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
-
+source-wordcount: '534'
+ht-degree: 1%
 ---
-
 # Configuración del componente de vídeo {#configure-the-video-component}
 
 El [componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un recurso de vídeo predefinido y listo para usar en su página.

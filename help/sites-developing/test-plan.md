@@ -1,5 +1,5 @@
 ---
-title: Compilar el plan de prueba
+title: Compilación del plan de prueba
 description: Los casos de prueba individuales se combinan en el plan de prueba
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b2dfc8fb-7bc4-4b5e-8c8f-1463fdc18e50
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 0%
-
+source-wordcount: '194'
+ht-degree: 4%
 ---
-
-# Compilar el plan de prueba{#compiling-your-test-plan}
+# Compilación del plan de prueba{#compiling-your-test-plan}
 
 Los casos de prueba individuales se fusionarán en el plan de prueba, que también define lo siguiente:
 

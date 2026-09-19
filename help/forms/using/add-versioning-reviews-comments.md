@@ -3,13 +3,12 @@ title: Agregue versiones, comentarios y anotaciones al formulario adaptable de A
 description: Utilice los componentes principales del formulario adaptable de AEM para agregar comentarios, anotaciones y versiones a un formulario adaptable.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 5d30b61ae31c71640e82923c65ba07c0e828be41
+exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 51%
-
+source-wordcount: '616'
+ht-degree: 52%
 ---
-
 # Versiones, revisión y comentarios de un formulario adaptable
 
 <span class="preview">Esta característica no está habilitada de manera predeterminada. Puede escribir desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a la función.</span>
@@ -55,7 +54,7 @@ Los autores de formularios pueden comparar dos versiones diferentes de un formul
 
 ## Añadir comentarios {#add-comments}
 
-Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios.  Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y añada un **[!UICONTROL Comentario]** al formulario.
+Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios. Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y añada un **[!UICONTROL Comentario]** al formulario.
 
 >[!NOTE]
 > Cuando se usan comentarios en los componentes principales de los formularios adaptables, como se ha indicado anteriormente, la funcionalidad del formulario [agregar revisores a los formularios](/help/forms/using/create-reviews-forms.md) está deshabilitada.

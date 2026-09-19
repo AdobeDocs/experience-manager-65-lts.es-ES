@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2fcb0241-8018-4bdd-b89d-44b8fc063ff3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '348'
 ht-degree: 78%
-
 ---
-
 # Administrar tareas en una jerarquía organizativa mediante la vista Administrador{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 En AEM Forms Workspace, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la pestaña Tareas pendientes de AEM Forms Workspace. Las acciones compatibles con las tareas de los informes directos son las siguientes:

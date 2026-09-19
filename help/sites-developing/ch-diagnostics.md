@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dbb03624-90f4-421c-b8f3-d6056426e504
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
-
 ---
-
 # Diagnóstico de ContextHub {#contexthub-diagnostics}
 
 ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub. Para abrir la página, vaya a la página `contexthub.diagnostics.html` de la instancia de autor de AEM, por ejemplo:

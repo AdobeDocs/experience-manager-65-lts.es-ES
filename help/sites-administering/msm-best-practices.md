@@ -5,13 +5,12 @@ topic-tags: site-features, best-practices
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 907ed679-5a91-4581-b0ab-ed550586da71
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 34%
-
+source-wordcount: '1624'
+ht-degree: 36%
 ---
-
 # Prácticas recomendadas de MSM{#msm-best-practices}
 
 ## General {#general}
@@ -19,7 +18,7 @@ ht-degree: 34%
 MSM es un marco de trabajo configurable para automatizar la implementación de contenido. Las implementaciones suelen incluir partes importantes de un sitio web y abarcan organizaciones y áreas geográficas. Por lo tanto, es muy recomendable planificar las implementaciones de MSM con el cuidado con que planifica el sitio web:
 
 * Planifique con cuidado la **estructura y los flujos de contenido** antes de iniciar la implementación.
-* **Mantenga al mínimo la cantidad de Live Copies.** El procesamiento de Live Copies es una tarea que requiere muchos recursos. Cuantas más Live Copies haya en el sistema, más rendimiento se verá afectado: desde el procesamiento de índices internos de Live Copy, pasando por operaciones de Live Copy como despliegues, hasta operaciones de interfaz de usuario como mostrar relaciones de Live Copy en el carril Referencias de administración de sitios. La práctica recomendada es crear Live Copies de sitios o ramas de un sitio, donde las relaciones de Live Copy se heredan en las páginas del sitio o rama. Evite crear Live Copies individuales para páginas de un sitio o rama cuando toda la estructura se pueda convertir en una Live Copy.
+* **Mantenga al mínimo la cantidad de Live Copies.** Procesar Live Copies es una tarea que requiere muchos recursos. Cuantas más Live Copies haya en el sistema, más rendimiento se verá afectado: desde el procesamiento de índices internos de Live Copy, pasando por operaciones de Live Copy como despliegues, hasta operaciones de interfaz de usuario como mostrar relaciones de Live Copy en el carril Referencias de administración de sitios. La práctica recomendada es crear Live Copies de sitios o ramas de un sitio, donde las relaciones de Live Copy se heredan en las páginas del sitio o rama. Evite crear Live Copies individuales para páginas de un sitio o rama cuando toda la estructura se pueda convertir en una Live Copy.
 * **Personalice tanto como sea necesario, pero tan poco como sea posible.** Aunque MSM admite un alto grado de personalización (por ejemplo, configuraciones de despliegue), la práctica recomendada normalmente para el rendimiento, la fiabilidad y la actualización del sitio web es minimizar la personalización.
 * Establezca un modelo de **gobernanza** desde el principio, y capacite a los usuarios debidamente para garantizar el éxito. Una práctica recomendada desde el punto de vista de la gobernanza es **minimizar la autoridad que tienen los productores de contenido local** para asignar o conectar contenido a otros usuarios locales y a sus respectivas Live Copies. Esto se debe a que las herencias encadenadas no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
 
@@ -94,9 +93,9 @@ A continuación se indican algunas consideraciones que se deben tener en cuenta 
 
   Ayuda a evitar:
 
-   * adición manual de idiomas en el modelo (por debajo del primer nivel)
-   * añadir contenido manualmente directamente debajo de la raíz del idioma,
-   * no provoca que se transfiera automáticamente este nuevo contenido a live copy durante el despliegue.
+  * adición manual de idiomas en el modelo (por debajo del primer nivel)
+  * añadir contenido manualmente directamente debajo de la raíz del idioma,
+  * no provoca que se transfiera automáticamente este nuevo contenido a live copy durante el despliegue.
 
 ## MSM y sitios web multilingües {#msm-and-multilingual-websites}
 
@@ -104,18 +103,18 @@ MSM puede ayudar en la creación de sitios web multilingües de dos maneras:
 
 * Al crear formatos de idiomas.
 
-   * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta que:
+  * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta que:
 
-      * MSM le permite cancelar la herencia en el nivel de página o componente. Esto ayuda a evitar sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en el siguiente despliegue.
-      * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
+    * MSM le permite cancelar la herencia en el nivel de página o componente. Esto ayuda a evitar sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en el siguiente despliegue.
+    * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
 
-        Consulte a su proveedor de servicios de traducción para obtener más información.
+      Consulte a su proveedor de servicios de traducción para obtener más información.
 
-      * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con el marco de trabajo de integración de traducción listo para usar de AEM.
+    * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con el marco de trabajo de integración de traducción listo para usar de AEM.
 
 * Al desplegar contenido desde maestros de idiomas.
 
-   * Por ejemplo, desde el francés, que es el idioma principal, a sitios específicos de países como Francia/Francia, Canadá/Francia, Suiza/Francia.
+  * Por ejemplo, desde el francés, que es el idioma principal, a sitios específicos de países como Francia/Francia, Canadá/Francia, Suiza/Francia.
 
 Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) y [Prácticas recomendadas de traducción](/help/sites-administering/tc-bp.md).
 
@@ -129,9 +128,9 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de fuente
 
 * **Mover** páginas a un modelo **no** hará que las páginas correspondientes se muevan a Live Copies después del despliegue con la configuración de despliegue estándar:
 
-   * El motivo de este comportamiento es que mover una página incluye implícitamente eliminar una página. Esto podría provocar un comportamiento inesperado al publicar, ya que al eliminar páginas en el autor se desactiva automáticamente el contenido correspondiente al publicar. Esto también puede tener un efecto colateral en elementos relacionados, como vínculos, marcadores, etc.
-   * La herencia de contenido en las respectivas páginas de Live Copy se actualiza para reflejar la nueva ubicación de sus fuentes en el modelo.
-   * Para mover completamente una página de un modelo a Live Copies, tenga en cuenta las siguientes prácticas recomendadas:
+  * El motivo de este comportamiento es que mover una página incluye implícitamente eliminar una página. Esto podría provocar un comportamiento inesperado al publicar, ya que al eliminar páginas en el autor se desactiva automáticamente el contenido correspondiente al publicar. Esto también puede tener un efecto colateral en elementos relacionados, como vínculos, marcadores, etc.
+  * La herencia de contenido en las respectivas páginas de Live Copy se actualiza para reflejar la nueva ubicación de sus fuentes en el modelo.
+  * Para mover completamente una página de un modelo a Live Copies, tenga en cuenta las siguientes prácticas recomendadas:
 
 >[!NOTE]
 >
@@ -139,25 +138,25 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de fuente
 
 * Cree una configuración de despliegue personalizada:
 
-   * Esta nueva configuración debe incluir la acción:
+  * Esta nueva configuración debe incluir la acción:
 
-     `PageMoveAction`
+    `PageMoveAction`
 
-     No agregue otras acciones a esta configuración.
+    No agregue otras acciones a esta configuración.
 
 * Coloque la nueva configuración:
 
-   * Para desplegar completamente la página, mueva mientras elimina las páginas respectivas en su antigua ubicación en Live Copy:
+  * Para desplegar completamente la página, mueva mientras elimina las páginas respectivas en su antigua ubicación en Live Copy:
 
-      * Coloque la configuración recién creada antes de la configuración de despliegue estándar.
+    * Coloque la configuración recién creada antes de la configuración de despliegue estándar.
 
-        La configuración de despliegue estándar se encarga de eliminar las páginas en su ubicación antigua.
+      La configuración de despliegue estándar se encarga de eliminar las páginas en su ubicación antigua.
 
-   * Para desplegar la página, mueva las páginas mientras mantiene las respectivas en su antigua ubicación en las Live Copies (básicamente duplicando el contenido):
+  * Para desplegar la página, mueva las páginas mientras mantiene las respectivas en su antigua ubicación en las Live Copies (básicamente duplicando el contenido):
 
-      * Coloque la configuración recién creada después de la configuración de despliegue estándar.
+    * Coloque la configuración recién creada después de la configuración de despliegue estándar.
 
-        Esto garantizará que no se elimine contenido en la Live Copy ni se desactive de la publicación.
+      Esto garantizará que no se elimine contenido en la Live Copy ni se desactive de la publicación.
 
 ## Personalización de despliegues {#customizing-rollouts}
 
@@ -176,8 +175,8 @@ Al usar el [activador de despliegue](/help/sites-administering/msm-sync.md#rollo
 
 * El resultado del despliegue puede diferir del esperado, ya que:
 
-   * No se puede especificar el orden de los eventos de modificación resultantes.
-   * La arquitectura basada en eventos no puede garantizar la secuencia de eventos transferidos al administrador de despliegue.
+  * No se puede especificar el orden de los eventos de modificación resultantes.
+  * La arquitectura basada en eventos no puede garantizar la secuencia de eventos transferidos al administrador de despliegue.
 
 * El uso de una configuración de despliegue de este tipo podría provocar conflictos de confirmación si se producen actualizaciones simultáneas del mismo recurso.
 
@@ -194,6 +193,6 @@ Recuerde lo siguiente:
 Esta y las siguientes páginas tratan sobre los problemas relacionados:
 
 * [Creación y sincronización de Live Copies](/help/sites-administering/msm-livecopy.md)
-* [Información general de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
+* [Información general de la consola de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configuración de la sincronización de Live Copy](/help/sites-administering/msm-sync.md)
 * [Conflictos de despliegue de MSM](/help/sites-administering/msm-rollout-conflicts.md)

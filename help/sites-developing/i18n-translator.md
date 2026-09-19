@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a8f03f31dd636ee239cfc6f2b67a7573216cf0fe
+exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 1%
-
+source-wordcount: '2344'
+ht-degree: 2%
 ---
-
 # Uso de Translator para administrar diccionarios{#using-translator-to-manage-dictionaries}
 
 AEM proporciona una consola para administrar las distintas traducciones de textos utilizados en la interfaz de usuario del componente. Esta consola está disponible en
@@ -177,11 +176,11 @@ La barra de búsqueda situada en la parte inferior de la herramienta Traductor p
 * **Filtrar por texto:** Un patrón que coincida con la cadena, comentario o traducciones en inglés. En la tabla solo aparecen los elementos que coinciden con todo o parte del patrón.
 * **Cambios: Cualquiera, Modificado, Nuevo, Eliminado:** Mostrar elementos que se han cambiado y no se han guardado.
 
-   * Cualquiera: muestra los elementos que se han modificado, añadido o eliminado.
-   * Modificado: mostrar los elementos modificados.
-   * Nuevo: mostrar los elementos añadidos.
-   * Eliminados: muestra los elementos que se van a eliminar.
-   * Varias selecciones: muestra los elementos que tienen todas las propiedades seleccionadas.
+  * Cualquiera: muestra los elementos que se han modificado, añadido o eliminado.
+  * Modificado: mostrar los elementos modificados.
+  * Nuevo: mostrar los elementos añadidos.
+  * Eliminados: muestra los elementos que se van a eliminar.
+  * Varias selecciones: muestra los elementos que tienen todas las propiedades seleccionadas.
 
 * **Tiene comentario**: mostrar elementos que tienen comentarios para los traductores.
 * **Faltan traducciones:** Mostrar elementos en los que al menos un idioma no tiene traducción.
@@ -291,8 +290,8 @@ Utilice el siguiente procedimiento para añadir o quitar idiomas.
    * **Tipo**: `Multi-String`
    * **Valor**: la lista de idiomas que desea mostrar. Por ejemplo:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >

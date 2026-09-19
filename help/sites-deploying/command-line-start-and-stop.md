@@ -1,5 +1,5 @@
 ---
-title: Inicio y parada de la línea de comandos
+title: Inicio y detención de la línea de comandos
 description: Obtenga información sobre cómo iniciar y detener Adobe Experience Manager desde la línea de comandos.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ff94f750-c193-438b-8be0-fcd7a40cead4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 4%
 ---
-
-# Inicio y parada de la línea de comandos{#command-line-start-and-stop}
+# Inicio y detención de la línea de comandos{#command-line-start-and-stop}
 
 ## Iniciar Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
 
@@ -90,8 +89,8 @@ Para detener AEM, siga uno de estos procedimientos:
 
 * Según la plataforma que utilice:
 
-   * Si inició AEM desde un script o desde la línea de comandos, presione **Ctrl+C** para apagar el servidor.
-   * Si ha utilizado el script de inicio en UNIX®, debe utilizar el script de detención para detener AEM.
+  * Si inició AEM desde un script o desde la línea de comandos, presione **Ctrl+C** para apagar el servidor.
+  * Si ha utilizado el script de inicio en UNIX®, debe utilizar el script de detención para detener AEM.
 
 * Si inició AEM haciendo doble clic en el archivo jar, haga clic en el botón **Activar** de la ventana de inicio (el botón cambia a **Desactivar**) para apagar el servidor.
 

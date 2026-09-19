@@ -4,13 +4,12 @@ description: Obtenga información sobre cómo actualizar instancias de AEM imple
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b3c4e946a3f235fa0e3a0945f1ad692ee195e3ef
+exl-id: a9f7494e-4a09-4999-9164-c369e0989886
+source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # Pasos de actualización para las instalaciones del servidor de aplicaciones (Tomcat: actualización local) {#upgrade-steps-for-application-server-installations-tomcat-inplace}
 
 >[!NOTE]

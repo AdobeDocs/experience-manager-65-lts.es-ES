@@ -7,13 +7,12 @@ topic-tags: document_services
 feature: Document Services,Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1e7aa0fa-4440-42fb-8e0b-3c757568b78f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
-
+source-wordcount: '687'
+ht-degree: 96%
 ---
-
 # Servicio de Forms {#forms-service}
 
 ## Información general {#overview}
@@ -53,5 +52,5 @@ El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una
 Estas son las ventajas de utilizar fragmentos:
 
 * **Reutilización de contenido**: puede reutilizar contenido en diferentes diseños de formulario. Para reutilizar rápidamente partes del mismo contenido en varios formularios, cree un fragmento. Copiar o volver a crear el contenido lleva más tiempo. El uso de fragmentos también garantiza que el contenido y el aspecto de las partes de un diseño de formulario que se utilizan con frecuencia sean coherentes en todos los formularios de referencia.
-* **Actualizaciones globales**: puede realizar cambios globales en varios formularios modificando un archivo una única vez. Puede cambiar el contenido, los objetos de script, los enlaces de datos, el diseño o los estilos de un fragmento. Los cambios se reflejarán en todos los formularios XDP que hagan referencia a ese fragmento.
+* **Actualizaciones globales**: puede realizar cambios globales en varios formularios modificando un archivo una única vez. Puede cambiar el contenido, los objetos de script, los enlaces de datos, el diseño o los estilos de un fragmento. Todos los formularios XDP que hacen referencia al fragmento reflejan los cambios.
 * **Creación de formularios compartidos**: puede compartir la creación de formularios entre varios recursos. Los desarrolladores de formularios con conocimientos de scripts u otras funciones avanzadas de AEM Forms Designer pueden desarrollar y compartir fragmentos que utilizan scripts y propiedades dinámicas. Los diseñadores de formularios pueden utilizar los fragmentos para diseñar formularios. Asimismo, pueden utilizar fragmentos para asegurarse de que todas las partes de un formulario tienen un aspecto y una funcionalidad coherentes en todos los formularios.

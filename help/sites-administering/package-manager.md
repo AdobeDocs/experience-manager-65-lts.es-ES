@@ -1,5 +1,5 @@
 ---
-title: El administrador de paquetes
+title: Administrador de paquetes
 description: Conozca los conceptos básicos de la administración de paquetes de AEM con el Administrador de paquetes.
 feature: Administering
 role: Admin
@@ -8,15 +8,13 @@ topic-tags: content
 content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3576'
 ht-degree: 2%
-
 ---
-
-
-# El administrador de paquetes {#working-with-packages}
+# Administrador de paquetes {#working-with-packages}
 
 Los paquetes permiten importar y exportar el contenido del repositorio. Puede utilizar paquetes para instalar contenido nuevo, instalar funcionalidad nueva, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio.
 
@@ -32,7 +30,7 @@ Un paquete también contiene metainformación de Vault, incluidas las definicion
 >
 >Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. No incluyen ninguna versión anterior del contenido que AEM mantiene en el repositorio.
 
-## El administrador de paquetes {#package-manager}
+## Administrador de paquetes {#package-manager}
 
 El Administrador de paquetes administra los paquetes en la instalación de AEM. Una vez que [haya asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager), podrá usar el Administrador de paquetes para diversas acciones, como configurar, generar, descargar e instalar los paquetes.
 
@@ -64,8 +62,8 @@ El Administrador de paquetes se divide en cuatro áreas funcionales principales:
 * **Panel de navegación izquierdo**: este panel le permite filtrar y ordenar la lista de paquetes.
 * **Lista de paquetes**: esta es la lista de paquetes de su instancia filtrados y ordenados por selecciones en el panel de navegación izquierdo.
 * **Registro de actividad**: este panel se minimiza al principio y se amplía para detallar la actividad del Administrador de paquetes, como cuándo se crea o instala un paquete. Hay botones adicionales en la pestaña Registro de actividad para:
-   * **Borrar registro**
-   * **Mostrar/Ocultar**
+  * **Borrar registro**
+  * **Mostrar/Ocultar**
 * **Barra de herramientas**: La barra de herramientas contiene botones de actualización para el panel de navegación izquierdo y la lista de paquetes, así como botones para buscar, crear y cargar paquetes.
 
 ![IU del Administrador de paquetes](assets/package-manager-ui.png)
@@ -128,7 +126,7 @@ El cuadro de diálogo **Configuración del paquete** está disponible a través 
 | Grupo | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar uno existente |
 | Versión | Texto que se utilizará para la versión |
 | Descripción | Una breve descripción del paquete que permite el marcado de HTML para dar formato |
-| Miniatura    | El icono que aparece con la lista de paquetes |
+| Miniaturas | El icono que aparece con la lista de paquetes |
 
 #### Miniaturas de paquetes {#thumbnails}
 
@@ -174,7 +172,7 @@ Al crear reglas, defina una expresión regular (también conocida como regex, re
 | include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluirá otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
-Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a generarse para actualizar su contenido en función de las nuevas definiciones de filtro.
+Los filtros de paquetes se definen con mayor frecuencia cuando [crea el paquete por primera vez.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
@@ -182,7 +180,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea
 
 >[!TIP]
 >
->Para obtener información básica, consulte la [Documentación de Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html).
+>Para obtener información básica, consulte la [Documentación de Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html?lang=es).
 
 ### Dependencias {#dependencies}
 
@@ -243,7 +241,7 @@ Se pueden realizar muchas acciones en un paquete.
 
    ![Nuevo paquete](assets/new-package.png)
 
-1. Haga clic en **Editar** para definir el contenido del [paquete.](#package-contents) Haz clic en **Guardar** cuando hayas terminado de editar la configuración.
+1. Haga clic en **Editar** para definir el [contenido del paquete.](#package-contents) Haga clic en **Guardar** cuando termine de editar la configuración.
 
 1. Ahora puede [compilar](#building-a-package) su paquete.
 

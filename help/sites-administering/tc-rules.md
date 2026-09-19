@@ -5,13 +5,12 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 575be4c4fd05ec0a48ca7fdea67e13ce8eca0789
+exl-id: ab876224-22bd-4fd7-b609-bd5703715932
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 61%
-
+source-wordcount: '1136'
+ht-degree: 63%
 ---
-
 # Identificación del contenido a traducir{#identifying-content-to-translate}
 
 Las reglas de traducción identifican el contenido que se debe traducir para páginas, componentes y recursos que se incluyen en proyectos de traducción o que se excluyen de ellos. Cuando se traduce una página o un recurso, AEM extrae ese contenido para que se pueda enviar al servicio de traducción.
@@ -58,13 +57,13 @@ Cada uno de estos elementos `node` tiene las siguientes características:
 * El atributo `path` contiene la ruta al nodo raíz de la rama a la que se aplican las reglas.
 * Los elementos secundarios `property` identifican las propiedades del nodo que se deben traducir para todos los tipos de recursos:
 
-   * El atributo `name` contiene el nombre de la propiedad.
-   * El atributo opcional `translate` es igual a `false` si la propiedad no está traducida. El valor predeterminado es `true`. Este atributo es útil cuando se anulan reglas anteriores.
+  * El atributo `name` contiene el nombre de la propiedad.
+  * El atributo opcional `translate` es igual a `false` si la propiedad no está traducida. El valor predeterminado es `true`. Este atributo es útil cuando se anulan reglas anteriores.
 
 * Los elementos secundarios `node` identifican las propiedades del nodo que se deben traducir para tipos de recursos específicos:
 
-   * El atributo `resourceType` contiene la ruta que se resuelve en el componente que implementa el tipo de recurso.
-   * Los elementos secundarios `property` identifican la propiedad del nodo que se debe traducir. Utilice este nodo del mismo modo que los elementos secundarios `property` para reglas de nodo.
+  * El atributo `resourceType` contiene la ruta que se resuelve en el componente que implementa el tipo de recurso.
+  * Los elementos secundarios `property` identifican la propiedad del nodo que se debe traducir. Utilice este nodo del mismo modo que los elementos secundarios `property` para reglas de nodo.
 
 La siguiente regla de ejemplo hace que el contenido de todas las propiedades `text` se traduzca para todas las páginas debajo del nodo `/content`. La regla es efectiva para cualquier componente que almacene contenido en una propiedad `text`, como el componente Texto base y el componente Imagen base.
 
@@ -188,7 +187,7 @@ En la IU, puede marcar o desmarcar **Heredar** en la pestaña **Propiedades**.
 
 En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
-**updateDestinationLanguage**: este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, jcr:idioma. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
+**updateDestinationLanguage**: este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, jcr:language. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
 En la interfaz de usuario, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**, pero para las propiedades específicas que tienen códigos de idioma como valor.
 

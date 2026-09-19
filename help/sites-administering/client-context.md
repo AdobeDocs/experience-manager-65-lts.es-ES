@@ -1,5 +1,5 @@
 ---
-title: Client Context
+title: Contexto de cliente
 description: Aprenda a utilizar Client Context para ver información sobre la página actual y el visitante en Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 976512a9-5edf-4d55-82c0-24fe97dc71a1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
-
-# Client Context{#client-context}
+# Contexto de cliente{#client-context}
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: Teasers and Strategies
+title: Teasers y estrategias
 description: Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento específico de la población de visitantes a contenido centrado en sus intereses. Uno o más teasers están definidos para una campaña específica.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3232ccb0-dd4c-4457-9467-cdad788f977c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 2%
-
+source-wordcount: '1203'
+ht-degree: 3%
 ---
-
-# Teasers and Strategies{#teasers-and-strategies}
+# Teasers y estrategias{#teasers-and-strategies}
 
 Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento específico de la población de visitantes a contenido centrado en sus intereses. Uno o más teasers están definidos para una campaña específica.
 
@@ -110,7 +109,7 @@ Y usamos las siguientes definiciones de teaser:
 
 Entonces, si aplicamos esto a un visitante donde:
 
-* **S1**, **S2 y &#x200B;** S6** se resolvieron correctamente
+* **S1**, **S2 y** S6** se resolvieron correctamente
 
 * la etiqueta **marketing** tiene tres visitas
 * la etiqueta **business** tiene seis visitas
@@ -244,10 +243,10 @@ Después de crear la marca y la campaña, puede crear y configurar la experienci
 1. Edite el componente teaser para añadir lo siguiente:
 
    * **Ruta de campaña**
-Ruta a la página de campaña que contiene la página de teaser individual; los segmentos determinan exactamente qué teaser se muestra.
+     Ruta a la página de campaña que contiene la página de teaser individual; los segmentos determinan exactamente qué teaser se muestra.
 
    * **[Estrategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Método utilizado para la selección cuando varios segmentos se resuelven correctamente.
+     Método utilizado para la selección cuando varios segmentos se resuelven correctamente.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

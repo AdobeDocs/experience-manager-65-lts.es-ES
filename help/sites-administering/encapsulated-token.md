@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con tokens encapsulados
+title: Compatibilidad con tókenes encapsulados
 description: Obtenga información acerca de la compatibilidad con tokens encapsulados en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 43d9effbe842c8114e31b2b27d6b9f60fc398d64
+exl-id: f33950b1-6164-4e02-b666-50af84647852
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 0%
-
+source-wordcount: '783'
+ht-degree: 7%
 ---
-
 # Compatibilidad con tokens encapsulados{#encapsulated-token-support}
 
 ## Introducción {#introduction}
@@ -75,7 +74,7 @@ Para replicar la clave en todas las instancias, debe:
 
    El archivo `bundle.info` dentro de cada carpeta identificará el nombre del paquete.
 
-1. Vaya a la carpeta de datos. Por ejemplo:
+1. Navegue hasta la carpeta de datos. Por ejemplo:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 

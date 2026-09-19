@@ -1,5 +1,5 @@
 ---
-title: Personalizar Adobe Analytics Framework
+title: Personalización del marco de trabajo de Adobe Analytics
 description: Obtenga información sobre cómo personalizar el marco de trabajo de Adobe Analytics para Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6a32bd9d-268d-4d03-b495-47ec6660c138
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
-# Personalizar Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
+# Personalización del marco de trabajo de Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
 El marco de Adobe Analytics determina la información de la que se realiza un seguimiento con Adobe Analytics. Para personalizar el marco predeterminado, utilice JavaScript para agregar un seguimiento personalizado, integrar complementos de Adobe Analytics y cambiar la configuración general dentro del marco utilizado para el seguimiento.
 

@@ -4,13 +4,12 @@ description: Obtenga información sobre el uso del Asistente para copia de idiom
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 218b4778-86be-4752-8cdf-37705563be13
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 22%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
 # Asistente para copia de idioma{#language-copy-wizard}
 
 El asistente de copia de idioma es una experiencia guiada para crear e instrumentar la estructura de contenido multilingüe. Ahora es mucho más sencillo y rápido crear una copia de idioma.

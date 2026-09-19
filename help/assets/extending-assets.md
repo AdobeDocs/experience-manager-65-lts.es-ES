@@ -1,17 +1,16 @@
 ---
-title: Personalizar y ampliar  [!DNL Assets]
+title: Personalizar y ampliar [!DNL Assets]
 description: Conozca las formas en que puede personalizar y ampliar Asset Share y el Editor de recursos, que presenta a los usuarios una interfaz y un conjunto de funcionalidades específicamente adaptados.
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d4826314-a714-47b2-bf4d-029dc47982ce
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
-
+source-wordcount: '252'
+ht-degree: 1%
 ---
-
 # Personalizar y ampliar [!DNL Assets] {#customizing-and-extending-assets}
 
 El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Adobe Enterprise Manager utilizan para buscar, ver y manipular los recursos digitales del repositorio.
@@ -20,7 +19,7 @@ Como desarrollador de [!DNL Experience Manager], puede personalizar y ampliar el
 
 Los siguientes aspectos de la funcionalidad se pueden personalizar o mejorar:
 
-* [Ampliar editor de recursos](asseteditorx.md)
+* [Ampliación del editor de recursos](asseteditorx.md)
 * [Ampliar búsqueda de Assets](searchx.md)
 * [Procesar Assets mediante controladores de medios y flujos de trabajo](media-handlers.md)
 * [Integrar Assets con el flujo de actividad](extending-activity-stream.md)

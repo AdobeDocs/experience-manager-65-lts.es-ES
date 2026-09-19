@@ -7,13 +7,12 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9d55b4de-fee6-49ef-9c76-37f1ca525115
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '535'
 ht-degree: 100%
-
 ---
-
 # Trabajar en modo sin conexión {#working-in-the-offline-mode}
 
 El modo sin conexión de la aplicación de AEM Forms le permite trabajar sin problemas aunque la aplicación esté sin conexión. Puede abrir, actualizar y enviar un formulario sin necesidad de conectividad de red.

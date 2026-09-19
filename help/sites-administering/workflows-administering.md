@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
-
+source-wordcount: '1015'
+ht-degree: 63%
 ---
-
 # Administración de instancias de flujo de trabajo{#administering-workflow-instances}
 
 La consola de flujo de trabajo proporciona varias herramientas para administrar instancias de flujo de trabajo a fin de garantizar que se ejecuten según lo esperado.
@@ -68,7 +67,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Seleccione un elemento específico y, a continuación, utilice **Finalizar**, **Suspender** o **Reanudar**, según proceda; confirmación o más detalles:
+1. Seleccione un elemento específico y, a continuación, utilice **Terminar**, **Suspender** o **Reanudar**, según proceda; confirmación o más detalles:
 
    ![wf-97-1](assets/wf-97-1.png)
 
@@ -83,7 +82,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >
    >El estado de anulación se considera una terminación satisfactoria, ya que ocurre como resultado de la acción del usuario; por ejemplo:
    >
-   >* uso de la acción **Finalizar**
+   >* uso de la acción **Terminar**
    >* cuando se elimina (se fuerza) una página sujeta a un flujo de trabajo, este finaliza
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
@@ -104,7 +103,7 @@ Muestra detalles del historial del flujo de trabajo.
 * **Finalizar**: finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
 * **Finalizar y reintentar** - Similar a **Finalizar** excepto que se inicia una nueva instancia de flujo de trabajo usando la carga útil, el título y la descripción originales.
 
-Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
+Para investigar los errores y luego reanudar o terminar el flujo de trabajo más tarde, siga estos pasos:
 
 1. Mediante la Navegación, seleccione **Herramientas** y, luego, **Flujo de trabajo**.
 1. Seleccione **Errores** para que pueda mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
@@ -188,7 +187,7 @@ Los datos procesados por flujos de trabajo se almacenan en el almacenamiento pro
 
 En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no persisten en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-La propiedad *userMetadataPersistenceEnabled* se almacena en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+La propiedad *userMetadataPersistenceEnabled* se almacena en el nodo *jcr:content* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 

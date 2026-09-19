@@ -7,13 +7,12 @@ topic-tags: customization
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dd04ad5a-d750-4e27-8d49-97a728791fe9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 47%
-
+source-wordcount: '272'
+ht-degree: 48%
 ---
-
 # Personalizar los servicios de datos Borradores y envíos {#customizing-draft-and-submission-data-services}
 
 ## Información general {#overview}

@@ -7,13 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: da668935-9d16-49e1-8e7a-772fc4040c1d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 83%
-
+source-wordcount: '307'
+ht-degree: 84%
 ---
-
 # Configurar una solución de Administración de correspondencia {#configuring-a-correspondence-management-solution}
 
 ## Definir la URL de instancia de autor para VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -22,7 +21,7 @@ Siga los siguientes pasos para definir un URL de instancia de autor para la rest
 
 1. Vaya a *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
 1. Busque y haga clic en el icono **[!UICONTROL Editar]** junto a la configuración **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. En el campo **[!UICONTROL URL de autor de VersionRestoreManager]** especifique la dirección URL de la instancia de autor de VersionRestoreManager.
+1. En el campo **[!UICONTROL URL del autor de VersionRestoreManager]** especifique la dirección URL de la instancia de autor de VersionRestoreManager.
 
    **Cadena de URL**:
 
@@ -30,7 +29,7 @@ Siga los siguientes pasos para definir un URL de instancia de autor para la rest
 
    >[!NOTE]
    >
-   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la URL del equilibrador de carga en el campo **[!UICONTROL URL de autor de VersionRestoreManager]**.
+   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la URL del equilibrador de carga en el campo **[!UICONTROL URL del autor de VersionRestoreManager]**.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 

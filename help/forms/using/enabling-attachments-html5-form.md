@@ -1,5 +1,5 @@
 ---
-title: Activar archivos adjuntos en un formulario HTML5
+title: Habilitar archivos adjuntos en un formulario HTML5
 description: De forma predeterminada, la compatibilidad con los archivos adjuntos de los formularios HTML5 está deshabilitada.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,13 @@ discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dcc82582-0637-44ce-a2b4-68077cbc2200
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
-
+ht-degree: 94%
 ---
-
-# Activar archivos adjuntos en un formulario HTML5 {#enabling-attachments-for-an-html-form}
+# Habilitar archivos adjuntos en un formulario HTML5 {#enabling-attachments-for-an-html-form}
 
 Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De forma predeterminada, la compatibilidad con los archivos adjuntos está deshabilitada. Para habilitar la compatibilidad de datos adjuntos, haga lo siguiente:
 
@@ -26,7 +25,7 @@ Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De
    | multiSelect | true o false (true de forma predeterminada) |
    | fileSizeLimit | Número en MB (2 MB de forma predeterminada). Por ejemplo, 5. |
    | buttonText | Texto del botón de la ventana emergente (“Adjuntar” de forma predeterminada) |
-   | aceptar | lista separada por comas de los tipos de archivo que se van a aceptar (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; de manera predeterminada) |
+   | aceptar | lista separada por comas de los tipos de archivo que se van a aceptar (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; de forma predeterminada) |
 
    Por ejemplo:
 

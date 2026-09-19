@@ -1,5 +1,5 @@
 ---
-title: Configurar la página para la edición masiva de propiedades de página
+title: Configuración de la página para la edición masiva de las propiedades de página
 description: La edición masiva de propiedades de página permite editar las propiedades de varias páginas a la vez
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ba0a378-0b52-40bd-8dab-32490594558e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
-
+source-wordcount: '419'
+ht-degree: 9%
 ---
-
-# Configurar la página para la edición masiva de propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuración de la página para la edición masiva de las propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [La edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) le permite editar las propiedades de varias páginas a la vez.
 

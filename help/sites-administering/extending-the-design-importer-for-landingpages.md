@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: baf8bbbf4d3c27117a620d0ee0c799b8cc37582f
+exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
-
+source-wordcount: '3524'
+ht-degree: 1%
 ---
-
 # Ampliación y configuración del importador de diseños para páginas de destino{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 En esta sección se describe cómo configurar y, si lo desea, ampliar el importador de diseños para páginas de aterrizaje. El trabajo con páginas de aterrizaje después de la importación se cubre en [páginas de aterrizaje.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -113,7 +112,7 @@ En la siguiente sección se describe cómo editar el archivo HTML para convertir
 
 Antes de realizar la importación, tenga en cuenta las siguientes limitaciones:
 
-### No se conserva ningún atributo como class o id aplicado en la etiqueta &lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### No se conserva ningún atributo como clase o id aplicado en la etiqueta &lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Si se aplica algún atributo como id o class en la etiqueta body por ejemplo, `<body id="container">`, no se conservará después de la importación. Por lo tanto, el diseño que se esté importando no debería tener dependencias en los atributos aplicados en la etiqueta `<body>`.
 
@@ -234,9 +233,9 @@ Si se intenta la conversión de un componente con una etiqueta `<img>` con un sr
 
 Sin embargo, en caso contrario, las imágenes de URL absolutas son compatibles con las etiquetas img que no forman parte del div Componente de imagen.
 
-### Componentes de llamada a la acción {#call-to-action-components}
+### Componentes de call-to-action {#call-to-action-components}
 
-Puede marcar parte de la página de aterrizaje para importarla como un &quot;componente editable de llamada a la acción&quot;; estos componentes importados se pueden editar después de importar la página de aterrizaje. AEM incluye los siguientes componentes de CTA:
+Puede marcar parte de la página de aterrizaje para importarla como un &quot;componente editable de Call to action&quot;; estos componentes importados de call-to-action se pueden editar después de importar la página de aterrizaje. AEM incluye los siguientes componentes de CTA:
 
 * Vínculo de pulsación: Permite añadir un vínculo de texto que, cuando se hace clic, lleva al visitante a una URL de destino.
 * Vínculo gráfico: le permite añadir una imagen que, cuando se hace clic, lleva al visitante a una dirección URL de destino.
@@ -275,7 +274,7 @@ Este componente se puede utilizar en cualquier aplicación independiente o se pu
 
 #### Vínculo gráfico {#graphical-link}
 
-Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
+Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Call to action&quot;.
 
 Propiedades compatibles
 
@@ -322,9 +321,9 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 **Funciones compatibles**
 
 * Campos de posibles clientes predefinidos: nombre, apellido, dirección, dob, sexo, acerca de, userId, emailId, botón de envío están disponibles en la barra de tareas. Basta con arrastrar y soltar el componente necesario en el formulario de posible cliente.
-* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, asignarles un nombre y diseñarlos según los requisitos.
+* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede agregar campos adicionales utilizando los campos de formulario cq:form o cta lead, asignarles un nombre y diseñarlos de acuerdo con los requisitos.
 * Asigne campos de formulario de posibles clientes con nombres predefinidos específicos de formularios de posibles clientes de CTA, por ejemplo, - firstName para el nombre en el formulario de posibles clientes, etc.
-* Los campos que no están asignados al formulario principal se asignan a los componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
+* Los campos que no están asignados al formulario de posibles clientes se asignan a componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
 * El usuario puede proporcionar el título con la etiqueta &quot;label&quot; y puede proporcionar estilo utilizando el atributo de estilo &quot;class&quot; (solo disponible para componentes de formulario de posibles clientes de CTA).
 * La página de agradecimiento y la lista de suscripción se pueden proporcionar como un parámetro oculto del formulario (presente en el index.htm) o se pueden agregar o editar desde la barra de edición de Inicio del formulario de posibles clientes
 
@@ -334,7 +333,7 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 
 * Las restricciones como - obligatorio se pueden proporcionar desde la configuración de edición de cada uno de los componentes.
 
-Etiqueta de HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí, &quot;firstName&quot; está asignado al nombre del formulario principal, y así sucesivamente, excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
+Etiqueta de HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí &quot;firstName&quot; está asignado al nombre del formulario de posible cliente, etc., excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -418,11 +417,11 @@ Además de especificar si los componentes importados son componentes editables d
 
 ### Configuración de propiedades de página mediante la extracción de metadatos definidos en HTML importado {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-El importador de diseños extraerá y conservará los metadatos siguientes declarados en el encabezado de la HTML importada como propiedad &quot;jcr:description&quot;:
+El importador de diseños extraerá y conservará los metadatos siguientes declarados en el encabezado de HTML importado como la propiedad &quot;jcr:description&quot;:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-El importador de diseños extraerá y conservará el atributo de idioma establecido en la etiqueta HTML como la propiedad &quot;jcr:language&quot;
+El importador de diseños extraerá y conservará el atributo de idioma establecido en la etiqueta de HTML como la propiedad &quot;jcr:language&quot;
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -460,7 +459,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 |---|---|---|
 | E + F | un elemento F precedido inmediatamente por un elemento E | [Combinador adyacente del mismo nivel](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un elemento F precedido de un elemento E | [Combinador general del mismo nivel](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:raíz | un elemento E, raíz del documento | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | un elemento E, raíz del documento | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-child(n) | un elemento E, el número n secundario de su elemento principal | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | un elemento E, el número n secundario de su elemento principal, contando desde el último | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | un elemento E, el número n del mismo nivel de su tipo | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
@@ -493,7 +492,7 @@ En la tabla siguiente se describen brevemente las propiedades:
   <tr>
    <td>Importador de diseños de página de aterrizaje</td>
    <td>Extraer filtro</td>
-   <td>La lista de expresiones regulares que se utilizarán para filtrar archivos de extracción. <br />: se excluyen de la extracción las entradas zip que coincidan con cualquiera de los patrones especificados</td>
+   <td>La lista de expresiones regulares que se utilizarán para filtrar archivos de extracción. <br /> Las entradas zip que coincidan con cualquiera de los patrones especificados se excluirán de la extracción</td>
   </tr>
   <tr>
    <td>Generador de páginas de aterrizaje</td>
@@ -513,7 +512,7 @@ En la tabla siguiente se describen brevemente las propiedades:
   <tr>
    <td>Preprocesador de entrada de página de aterrizaje</td>
    <td>Patrón de búsqueda </td>
-   <td>El patrón que se va a buscar en el contenido de la entrada del archivo. Esta expresión regular coincide con la entrada de contenido línea a línea. Tras la coincidencia, el texto coincidente se reemplaza con el patrón de reemplazo especificado.<br /> <br /> Consulte la nota siguiente con respecto a las limitaciones actuales del preprocesador de entrada de página de aterrizaje.</td>
+   <td>El patrón que se va a buscar en el contenido de la entrada del archivo. Esta expresión regular coincide con la entrada de contenido línea a línea. Tras la coincidencia, el texto coincidente se reemplaza con el patrón de reemplazo especificado.<br /> <br /> Consulte la nota siguiente sobre las limitaciones actuales del preprocesador de entrada de página de aterrizaje.</td>
   </tr>
   <tr>
    <td> </td>
@@ -536,7 +535,7 @@ En la tabla siguiente se describen brevemente las propiedades:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Al importar el paquete de diseño, pueden producirse varios errores, que se describen en esta sección.
 

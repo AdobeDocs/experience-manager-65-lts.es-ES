@@ -8,19 +8,18 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 907e3702-a71b-4e25-b52b-f33cbb43009a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 95%
-
+source-wordcount: '554'
+ht-degree: 89%
 ---
-
 # Integrar AEM Forms Workspace con el servidor de Microsoft Office SharePoint{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- Requisitos**
 
-**Conocimientos previos**
-Para poder agregar AEM Forms Workspace al servidor de SharePoint, debe tener acceso al servidor de SharePoint con los privilegios correspondientes y conocer la URL para acceder a Workspace. Los siguientes pasos se basan en el supuesto de que está familiarizado con SharePoint Server. Para obtener más información acerca de los elementos Web del servidor de SharePoint, vea Elementos Web en los servicios de Windows SharePoint.
+**Conocimientos previos requeridos**
+Para poder agregar AEM Forms Workspace al servidor de SharePoint, debe tener acceso al servidor de SharePoint con los privilegios adecuados y conocer la URL para acceder a Workspace. Los siguientes pasos se basan en el supuesto de que está familiarizado con SharePoint Server. Para obtener más información acerca de los elementos Web del servidor de SharePoint, vea Elementos Web en los servicios de Windows SharePoint.
 
 **Nivel de usuario**
 Inicio

@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '864'
 ht-degree: 1%
-
 ---
-
 # Controlador de autenticación SAML 2.0{#saml-authentication-handler}
 
 AEM se envía con un controlador de autenticación [SAML](https://saml.xml.org/saml-specifications). Este controlador admite el protocolo de solicitud de autenticación [SAML](https://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) mediante el enlace `HTTP POST`.
@@ -85,13 +84,13 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 **Agregar a grupos** Indica si un usuario debe agregarse automáticamente a los grupos de CRX después de la autenticación correcta.
 
-**Pertenencia a grupo** El nombre del saml:Atributo que contiene una lista de grupos de CRX a los que este usuario debe agregarse.
+**Pertenencia a grupo** El nombre del saml:Attribute que contiene una lista de grupos de CRX a los que este usuario debe agregarse.
 
 ## Agregar el certificado IdP al almacén de confianza de AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
 Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Para que esto funcione, debe proporcionar al menos el certificado público del IdP en el repositorio. Para ello, debe:
 
-1. Ir a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
+1. Vaya a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Presione el vínculo **[!UICONTROL Crear TrustStore]**
 1. Escriba la contraseña de TrustStore y presione **[!UICONTROL Guardar]**.
 1. Haz clic en **[!UICONTROL Administrar almacén de confianza]**.
@@ -130,7 +129,7 @@ Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Pa
 
 ## Configuración de un registrador para SAML {#configure-a-logger-for-saml}
 
-Puede configurar un registrador para depurar cualquier problema que pueda surgir por una configuración incorrecta de SAML. Para ello:
+Puede configurar un registrador para depurar cualquier problema que pueda surgir por una configuración incorrecta de SAML. Para ello, haga lo siguiente:
 
 1. Va a la consola web, en *http://localhost:4502/system/console/configMgr*
 1. Busque y haga clic en la entrada **Configuración del registrador de Apache Sling**

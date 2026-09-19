@@ -5,13 +5,12 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 003ca1f1-5653-4b6c-a63f-ad5196adf3f2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '731'
 ht-degree: 1%
-
 ---
-
 # Usar PDF Rasterizer {#using-pdf-rasterizer}
 
 Cuando se cargan archivos PDF o AI de gran tamaño y gran cantidad de contenido en [!DNL Adobe Experience Manager Assets], es posible que la biblioteca predeterminada no genere un resultado preciso. La biblioteca PDF Rasterizer de Adobe puede generar un resultado más fiable y preciso en comparación con el resultado de una biblioteca predeterminada. Adobe recomienda utilizar la biblioteca PDF Rasterizer para los siguientes casos:

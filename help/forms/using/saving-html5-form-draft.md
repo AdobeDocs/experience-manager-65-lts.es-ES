@@ -8,13 +8,12 @@ discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d03ea16d-0012-4f14-982a-70e2803ea211
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 95%
-
 ---
-
 # Guardar un formulario HTML5 como borrador {#saving-an-html-form-as-a-draft}
 
 Se puede guardar un formulario HTML5 como borrador y seguir rellenándolo en una fase posterior. El portal de formularios permite a cualquier usuario guardar y restaurar un formulario HTML5. Para habilitar la funcionalidad Guardar como borrador, agregue las siguientes configuraciones al nodo de perfil:
@@ -50,7 +49,7 @@ Para habilitar la funcionalidad Guardar como borrador para los [perfiles persona
 
 ## Almacenar y listar borradores {#drafts-storage-and-listing}
 
-Después de activar la función Guardar como borrador en un formulario; cuando se guarde el formulario, aparecerá en la lista [Componente Borradores y envíos](/help/forms/using/draft-submission-component.md). Puede recuperar y comenzar a rellenar el formulario guardado desde el componente Borradores y envíos.
+Después de habilitar la función Guardar como borrador en un formulario; cuando se guarde el formulario, aparecerá en la lista [Componente Borradores y envíos](/help/forms/using/draft-submission-component.md). Puede recuperar y comenzar a rellenar el formulario guardado desde el componente Borradores y envíos.
 
 Para habilitar la lista de formularios para el componente Borradores y envíos, agregue la siguiente propiedad al nodo de perfil:
 

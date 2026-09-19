@@ -1,5 +1,5 @@
 ---
-title: Estrategia de copia de seguridad para usuarios de Connector para EMC Documentum&reg;
+title: Estrategia de copia de seguridad para usuarios de Connector para Documentum&reg; de EMC
 description: Consulte cómo crear una estrategia de copia de seguridad para los usuarios de Connector for EMC Documentum&reg;.
 contentOwner: admin
 content-type: reference
@@ -8,13 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 019e1a9b-c26c-429f-8153-fceeb85f7096
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
-
 ---
-
 # Estrategia de copia de seguridad para usuarios de Connector para Documentum® de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
 
 Si tiene instalado Connector para EMC Documentum®, además de las instrucciones de este capítulo, la estrategia de copia de seguridad y recuperación debe incluir la copia de seguridad (o recuperación) del equipo en el que está instalado el sistema ECM. (Consulte la documentación de ECM Documentum®).

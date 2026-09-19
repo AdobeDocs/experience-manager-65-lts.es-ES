@@ -8,21 +8,20 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 62%
-
+source-wordcount: '242'
+ht-degree: 61%
 ---
-
 # Configurar AEM DS{#configuring-aem-ds-settings}
 
 Este artículo describe cómo configurar el **Servicio de configuración de AEM DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En Administración de correspondencia
 
-   * Para configurar el flujo de trabajo de AEM Forms
-   * Al utilizar el portal de Forms para el guardado remoto del borrador/envío
+  * Para configurar el flujo de trabajo de AEM Forms
+  * Al utilizar el portal de Forms para el guardado remoto del borrador/envío
 
 * En formularios adaptables, para casos en los que se envía un formulario adaptable desde una instancia de publicación
 
