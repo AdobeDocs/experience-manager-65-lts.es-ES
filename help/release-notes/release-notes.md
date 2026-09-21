@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '7277'
+source-wordcount: '7674'
 ht-degree: 21%
 ---
 
@@ -303,14 +303,16 @@ El historial de promociones de Launch ahora muestra texto localizado en la crono
 
 >[!NOTE]
 >
-> Ya está disponible el paquete de servicio 3 (SP3) de AEM Forms 6.5 LTS para implementaciones OSGi. Incluye correcciones de errores, mejoras de seguridad y mejoras. **AEM Forms 6.5 LTS Service Pack 3 (SP3) para implementaciones JEE se lanzará más adelante.**
+> AEM Forms 6.5 LTS Service Pack 3 (SP3) ya está disponible para implementaciones OSGi y JEE. Incluye correcciones de errores, mejoras de seguridad y mejoras.
 
 #### Mejoras {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360: se ha agregado compatibilidad de PDF Generator (PDFG) con Microsoft Office 2024.
+* FORMS-24360: se ha agregado compatibilidad de PDF Generator (PDFG) con Microsoft Office 2024. Esto se aplica tanto a las implementaciones OSGi como JEE.
 * FORMS-24949: se ha agregado compatibilidad con el agente de Forms Builder en AEM Forms 6.5 LTS. Esta acción realiza una copia de seguridad de las API HTTP de Forms Manager y de las API HTTP de la inteligencia artificial aplicada al formulario (GenAI) que requiere el agente.
 * FORMS-25180: se ha agregado el valor `daysUntilSigningDeadline` a la interfaz de usuario de AEM Forms, para que los autores puedan mostrar a los destinatarios cuántos días quedan para que finalice el plazo de firma de Adobe Sign.
-* FORMS-25182: PDF Generator (PDFG) ahora admite conversiones de documentos con varios subprocesos cuando se configura con una sola cuenta de usuario.
+* FORMS-25182, FORMS-25181: PDF Generator (PDFG) ahora admite conversiones de documentos con varios subprocesos cuando se configura con una sola cuenta de usuario. Esto se aplica tanto a las implementaciones OSGi como JEE.
+* FORMS-27595: se ha agregado un atributo **Descripción del perfil del usuario** para las marcas de agua dinámicas en AEM Forms Document Security, de modo que las marcas de agua puedan incluir la descripción del perfil del usuario.
+* WebSphere® Liberty Profile (WLP) ahora es compatible con Microsoft® SQL Server, además de Oracle Database.
 
 #### Problemas solucionados {#forms-fixed-issues-65-lts-sp3}
 
@@ -339,6 +341,25 @@ El historial de promociones de Launch ahora muestra texto localizado en la crono
 * FORMS-26763: en Designer, el formato de negrita en los hipervínculos dentro de un objeto de texto estático se perdía después de cualquier edición en el texto. El formato en negrita sobrevive a las ediciones.
 * FORMS-26817: al hacer clic en Restablecer en un formulario adaptable, se borra la imagen configurada por el autor en el componente Imagen y se deja una imagen rota, mientras que otros campos se restablecen correctamente. Restablecer ahora mantiene la imagen configurada.
 * FORMS-26852: en la interfaz de usuario del agente, un campo de fecha y hora mostraba la fecha un día antes que el valor almacenado. El campo ahora muestra la fecha correcta.
+* FORMS-26733, FORMS-26734: Se ha actualizado Apache Log4j a la versión 2.25.5.
+
+Los siguientes problemas se han corregido para AEM Forms en JEE en el paquete de servicio 3 de 6.5 LTS:
+
+* FORMS-27585: en AEM Forms en JEE, PDF forms basado en XFA que llama a `submitForm()` no mostraba el resultado del envío en Adobe Reader (ni en Acrobat cuando el script llamó a `closeDoc()`). El resultado del envío ahora se muestra correctamente.
+* FORMS-25998: en AEM Forms en JEE, al registrar los certificados de clave privada del Módulo de seguridad de hardware (HSM) se produjo un error con un `IllegalAccessError` en Java 21 al probar la conectividad HSM en la consola de administración. El registro del certificado de clave privada de HSM ahora funciona.
+* FORMS-24993: en AEM Forms en JEE, al cargar un WSDL en el paso para invocar el servicio web, se produjo un error con `SAXException` (&quot;Fin de archivo prematuro&quot;). Los WSDL ahora se cargan correctamente.
+* FORMS-24518: en AEM Forms en JEE (JBoss), la aplicación web Extensiones de Reader devolvió &quot;Error al procesar la solicitud&quot; después de una nueva instalación debido a un URI de etiqueta JSTL heredado. La aplicación web Reader Extensions ahora se carga.
+* FORMS-27495: en AEM Forms en JEE, PDF Generator no convertía archivos de Excel (`.xlsx`) cuando el modo de usuario único estaba habilitado y las conversiones se bloqueaban indefinidamente. Las conversiones de Excel ahora se completan en el modo de un solo usuario.
+* FORMS-27098: en AEM Forms en JEE, no se pudo iniciar sesión en `/lc` como administrador debido a la puerta de autenticación de SOAP SDK (`/sdk`). El inicio de sesión del administrador ahora se realiza correctamente.
+* FORMS-25869: en AEM Forms en JEE, PDF Generator incorpora una corrección actualizada del motor de conversión para mejorar la fiabilidad de la conversión.
+
+**Instalar AEM Forms 6.5 LTS SP3 en JEE**
+
+Para instalar AEM Forms 6.5 LTS SP3 en JEE, complete estos pasos en orden:
+
+1. Instale el Service Pack utilizando el programa de instalación de AEM Forms 6.5 LTS SP3 JEE para su servidor de aplicaciones (descargue desde [versiones de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)), siguiendo el procedimiento de instalación estándar de AEM Forms en JEE.
+1. Actualice al instalador de AEM Forms Workbench más reciente (disponible en la misma página de [versiones de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
+1. Si su proyecto utiliza la biblioteca de cliente de SDK `adobe-livecycle-client.jar`, actualícela en la ruta de clase del proyecto. La versión más reciente está disponible en `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problemas conocidos {#forms-known-issues-65-lts-sp3}
 
@@ -347,8 +368,6 @@ No se ha informado de ningún problema conocido en esta versión.
 #### Correcciones de seguridad {#forms-security-fixes-65-lts-sp3}
 
 Esta versión resuelve las vulnerabilidades de seguridad de AEM Forms, incluidas varias correcciones de scripts en sitios múltiples (XSS), una corrección de falsificación de solicitudes del lado del servidor (SSRF), una corrección de entidades externas XML (XXE) y actualizaciones de bibliotecas de terceros.
-
-<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
 
 
 
