@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 45%
-
+source-wordcount: '1089'
+ht-degree: 11%
 ---
-
 # Revisiones de Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 Este artículo enumera las correcciones esenciales implementadas para solucionar problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms 6.5 LTS.
@@ -29,6 +27,59 @@ Este artículo enumera las correcciones esenciales implementadas para solucionar
     <td><strong>Fecha</strong></td>
     <td><strong>Vínculo de descarga de revisión (vínculo de distribución de software de AEM)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>21 de septiembre de 2026</strong><br>
+      <em>Se aplica a:</em> implementaciones JEE del paquete de servicio 2 de AEM Forms 6.5 LTS (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>Para instalar esta revisión, complete estos pasos en orden:</strong></p>
+    <p><strong>Paso 1: Instalar el parche</strong></p>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-jboss.zip">revisión para AEM Forms 6.5 LTS SP2 en Windows para el servidor JEE de JBoss</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-jboss.tar.gz">revisión para AEM Forms 6.5 LTS SP2 en Linux para el servidor JEE de JBoss</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-weblogic.zip">revisión para AEM Forms 6.5 LTS SP2 en Windows para el servidor JEE de Weblogic</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-weblogic.tar.gz">revisión para AEM Forms 6.5 LTS SP2 en Linux para el servidor JEE de Weblogic</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-websphere.zip">Revisión para AEM Forms 6.5 LTS SP2 en Windows para el servidor JEE de Websphere</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-websphere.tar.gz">revisión para AEM Forms 6.5 LTS SP2 en Linux para el servidor JEE de Websphere</a></li>
+    </ul>
+    <p>Instale el parche mediante el procedimiento de instalación del parche estándar de AEM Forms en JEE. <!-- TODO: link to the 6.5 LTS JEE patch installation instructions once available --></p>
+    <p><strong>Paso 2: Instalar el paquete de corrección de vulnerabilidades</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/SP2LTSBundles_VULN-36670.zip">Paquete de correcciones de vulnerabilidades para AEM Forms 6.5 LTS SP2</a></li>
+    </ul>
+    <ol>
+    <li>Abra la consola OSGi en <code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>.</li>
+    <li>Haga clic en <strong>Instalar/actualizar</strong>.</li>
+    <li>Seleccione las casillas de verificación <strong>Iniciar paquete</strong> y <strong>Actualizar paquetes</strong>.</li>
+    <li>Haga clic en <strong>Elegir archivo</strong> y, a continuación, cargue el paquete descargado.</li>
+    <li>Espere hasta que el registro se establezca y el paquete se muestre como <strong>Activo</strong>.</li>
+    </ol>
+    <p><strong>Paso 3: Actualización del instalador de AEM Forms Workbench</strong></p>
+    <p>Debe actualizar al instalador de AEM Forms Workbench más reciente. Descárguelo del <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/fd/workbench/6-5-0-20260902-1-45/Workbench_DVD.zip">instalador de AEM Forms Workbench</a>.</p>
+    <p><strong>Paso 4: Actualización de archivos de biblioteca de cliente (desarrolladores)</strong></p>
+    <p>Este parche incluye una actualización importante de la biblioteca de cliente de SDK <code>adobe-livecycle-client.jar</code> (consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Inclusión de archivos de biblioteca Java de AEM Forms</a>). Si el proyecto usa este archivo JAR, actualice <code>adobe-livecycle-client.jar</code> en la ruta de clase del proyecto después de instalar la revisión. La versión más reciente está disponible en <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
+    <p>La revisión es acumulativa, por lo que puede aplicarla en AEM Forms 6.5 LTS Service Pack 2 o en un Service Pack anterior sin instalar primero el Service Pack 2.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26818</b> Después de actualizar Apache Shiro a la versión 2.1.0, AEM Forms en JEE no arranca con <code>NoClassDefFoundError</code> para el administrador de seguridad de Shiro. Esta revisión restaura el arranque correcto.</li>
+    <li><b>FORMS-26819</b> AEM Forms en JEE falla con el error "no se encontró la clase" para <code>org.owasp.esapi.reference.JavaLogFactory</code>. Esta revisión resuelve la clase que falta.</li>
+    <li><b>FORMS-26584, FORMS-26589</b> Después de actualizar a AEM Forms 6.5 LTS, se quitan los extremos de TaskManager. Esta revisión restaura los extremos de TaskManager.</li>
+    <li><b>FORMS-26569</b> En JEE, el paso MergeEars del Administrador de configuración falla con un error de declaración DOCTYPE (<code>ALC-LCM-010-200</code>) debido al generador de XML seguro. Este hotfix permite completar el paso MergeEars.</li>
+    <li>Faltan <b>FORMS-25063</b> registros de nivel de aplicación en las implementaciones de IBM WebSphere Liberty. Esta revisión restaura el registro en el nivel de aplicación.</li>
+    <li><b>FORMS-24892</b> En JBoss, el correo electrónico falla con "IMAPProvider no es un subtipo". Esta revisión restaura la funcionalidad de correo electrónico en JBoss.</li>
+    <li><b>FORMS-24692</b> En el perfil Liberty de WebSphere (WLP), el correo electrónico produce el error "No se pudo convertir el socket a TLS". Esta revisión restaura el correo electrónico a través de TLS en WLP.</li>
+    <li><b>FORMS-26688</b> actualiza la biblioteca Gibson a la versión 6.0.29665850.</li>
+    <li><b>FORMS-25222</b> respalda las mejoras de validación de aserción de SAML.</li>
+    <li><b>FORMS-26733, FORMS-26734</b> Se ha actualizado Apache Log4j a la versión 2.25.5.</li>
+    <li>Este hotfix también incluye correcciones de seguridad.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
