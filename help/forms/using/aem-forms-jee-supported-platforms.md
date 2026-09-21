@@ -9,13 +9,11 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2949'
 ht-degree: 54%
-
 ---
-
 
 # Plataformas compatibles con AEM Forms en JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -82,8 +80,8 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 
 >[!NOTE]
 >
->Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, Adobe Experience Manager Enterprise Platform se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
->En el caso de nuevas instalaciones, siempre que sea factible, se recomienda implementar AEM Forms en la pila moderna de OSGi para utilizar las últimas innovaciones en relación con Forms adaptable para comunicaciones interactivas móviles multicanal e integraciones de datos back-end mediante el modelo de datos de formulario.
+>Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
+>En el caso de nuevas instalaciones, siempre que sea factible, se recomienda implementar AEM Forms en la pila moderna de OSGi para utilizar las últimas innovaciones en relación con el Forms adaptable adaptable para comunicaciones interactivas móviles multicanal e integraciones de datos back-end mediante el modelo de datos de formulario.
 
 ### Máquinas virtuales Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -225,7 +223,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
 
 >[!NOTE]
 >
->WebSphere® Liberty Profile (WLP) solo es compatible con la base de datos de Oracle y IBM® Sumeru JDK 21.
+>WebSphere® Liberty Profile (WLP) solo es compatible con Oracle Database o Microsoft® SQL Server y IBM® Sumeru JDK 21.
 
 ### Sistemas operativos del servidor {#server-operating-systems}
 
@@ -288,7 +286,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 
 1. El repositorio de CRX admite la persistencia de tipo TarMK y MongoDB.
 1. AEM Forms en JEE no es compatible con el control de acceso basado en roles JBoss® (RBAC).
-1. AEM Forms en JEE admite WebSphere® Perfil de libertad (WLP) solo con la base de datos de Oracle y IBM® Sumeru JDK 21.
+1. AEM Forms en JEE admite WebSphere® Perfil de libertad (WLP) solo con Oracle Database o Microsoft® SQL Server y IBM® Sumeru JDK 21.
 
 <!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -671,7 +669,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-<!--## Revision History {#revision-history}-->
+## Historial de revisiones {#revision-history}
+
+- 6.5 LTS SP3 (septiembre de 2026)
+  - **Compatibilidad añadida**: WebSphere® Liberty Profile (WLP) ahora se admite con Microsoft® SQL Server, además de Oracle Database.
 
 <!--
 
