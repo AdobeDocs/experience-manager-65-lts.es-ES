@@ -7,13 +7,11 @@ user-guide-description: Utilice la documentación de Adobe Experience Manager 6.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: da9de2298544a342a34ff91815732017c1b24299
+source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
 workflow-type: tm+mt
-source-wordcount: '7798'
+source-wordcount: '7804'
 ht-degree: 66%
-
 ---
-
 # Documentación de Adobe Experience Manager 6.5 LTS {#content}
 
 + Notas de la versión {#release-notes}
@@ -35,7 +33,7 @@ ht-degree: 66%
   + [Creación de un grupo de usuarios cerrado](/help/sites-administering/cug.md)
   + [Mitigación de problemas de serialización en AEM](/help/sites-administering/mitigating-serialization-issues.md)
   + [Sincronización de usuarios](/help/sites-administering/sync.md)
-  + [Compatibilidad con tókenes encapsulados](/help/sites-administering/encapsulated-token.md)
+  + [Compatibilidad con tokens encapsulados](/help/sites-administering/encapsulated-token.md)
   + [Inicio de sesión único](/help/sites-deploying/single-sign-on.md)
   + [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md)
   + [SSL predeterminado](/help/sites-administering/ssl-by-default.md)
@@ -1103,6 +1101,7 @@ ht-degree: 66%
     + [La ejecución de scripts falla en AEM Forms 6.5 LTS con JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
     + [No se puede iniciar el controlador de dominio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
     + [Mitigación de vulnerabilidades de falsificación de solicitudes del lado del servidor (SSRF) para AEM Forms en JEE 6.5 LTS SP2](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+    + [AEM Forms bloquea las solicitudes HTTP válidas](/help/forms/troubleshooting/aem-forms-blocks-valid-http-requests.md)
   + Documentación heredada {#legacy-documentation}
     + {hide-from-toc}[Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
     + {hide-from-toc}[Comprimir y descomprimir archivos mediante un AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
