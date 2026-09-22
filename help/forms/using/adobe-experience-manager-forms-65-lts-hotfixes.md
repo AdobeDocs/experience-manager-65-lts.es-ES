@@ -15,7 +15,7 @@ ht-degree: 11%
 Este artículo enumera las correcciones esenciales implementadas para solucionar problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms 6.5 LTS.
 
 
-Este artículo se aplica a AEM Forms 6.5 LTS. Para implementaciones de AEM 6.5 (no LTS), consulte [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
+Este artículo se aplica a AEM Forms 6.5 LTS. Para implementaciones de AEM 6.5 (no LTS), consulte [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
