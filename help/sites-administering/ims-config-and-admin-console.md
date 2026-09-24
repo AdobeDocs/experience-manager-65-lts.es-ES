@@ -1,6 +1,6 @@
 ---
-title: Autenticación IMS de Adobe y  [!DNL Admin Console] compatibilidad con Adobe Experience Manager Managed Services
-description: Aprenda a utilizar  [!DNL Admin Console]  en Adobe Experience Manager.
+title: Autenticación IMS de Adobe y compatibilidad con [!DNL Admin Console] para Adobe Experience Manager Managed Services
+description: Aprenda a utilizar [!DNL Admin Console] en Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,11 +11,9 @@ role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 6%
-
+source-wordcount: '1702'
+ht-degree: 10%
 ---
-
 # Autenticación IMS de Adobe y compatibilidad con [!DNL Admin Console] para AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -118,7 +116,7 @@ Las características principales de esta versión son la capacidad de asignar di
 
 Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 
-[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
