@@ -1,17 +1,15 @@
 ---
-title: Migración al complemento de AEM Commerce integration framework (CIF)
-description: Migración al complemento AEM Commerce integration framework (CIF) desde una versión antigua.
+title: Migración al complemento AEM Commerce Integration Framework (CIF)
+description: Migración al complemento AEM Commerce Integration Framework (CIF) desde una versión antigua.
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
 source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 4%
-
+source-wordcount: '320'
+ht-degree: 5%
 ---
-
 # Guía de migración para el complemento de Experience Manager {#cif-migration}
 
 Esta guía ayuda a identificar las áreas que debe actualizar para la migración de complementos de Experience Manager.
@@ -30,7 +28,7 @@ El complemento de CIF no admite la importación de datos del catálogo de produc
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento open-source](https://business.adobe.com/es/products/magento/open-source.html).
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Experiencias del catálogo de productos con el procesamiento en AEM
 

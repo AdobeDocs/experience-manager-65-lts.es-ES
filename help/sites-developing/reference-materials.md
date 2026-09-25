@@ -13,11 +13,9 @@ role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
 source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 3%
-
+source-wordcount: '323'
+ht-degree: 4%
 ---
-
 # Guías de API {#api-guides}
 
 Adobe Experience Manager (AEM) proporciona varias API para desarrollar aplicaciones y ampliar AEM. La siguiente lista proporciona la documentación de las API compatibles con AEM:
@@ -26,8 +24,8 @@ Adobe Experience Manager (AEM) proporciona varias API para desarrollar aplicacio
 * [Documentación de la API de Granite UI (táctil)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 * [Guía de Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Documentación de la API de widgets (IU clásica)](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [Referencia de la API de JavaScript del marco de prueba de IU](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
-* [Referencia de la API de JavaScript principal del editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [Referencia de API de JavaScript del marco de prueba de IU](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
+* [Referencia de la API de Editor Core JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 Editor de aplicaciones de una sola página (SPA) de AEM Referencia de la API de JavaScript de SDK:
 
@@ -40,9 +38,9 @@ API de entrega y administración de contenido de AEM:
 
 * Componentes principales (JSON)
 
-   * [Exportador JSON](/help/sites-developing/json-exporter.md)
-   * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
-   * Consulte la sección [Componentes en la Guía del usuario en desarrollo](/help/sites-developing/getting-started.md) para obtener más información
+  * [Exportador JSON](/help/sites-developing/json-exporter.md)
+  * [Habilitación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
+  * Consulte la sección [Componentes en la Guía del usuario en desarrollo](/help/sites-developing/getting-started.md) para obtener más información
 
 * **Assets**: la API HTTP de Assets permite las operaciones crear, leer, actualizar y eliminar (CRUD) en Assets, incluidos binarios, metadatos, representaciones y comentarios. Ver [API HTTP de AEM Assets](/help/assets/mac-api-assets.md)
 

@@ -9,11 +9,9 @@ role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1940'
 ht-degree: 95%
-
 ---
-
 # Crear y utilizar fragmentos de Formularios adaptables en un formulario adaptable basado en componentes principales {#adaptive-form-fragments}
 
 ## Se aplica a {#applies-to}
@@ -42,7 +40,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 1. Inicie sesión en una instancia de AEM Forms en https://[*hostname*]:[*port*]/aem/forms.html.
 1. Haga clic en **Crear > fragmento de formulario adaptable**.
 1. Especifique el título, el nombre, la descripción y las etiquetas del fragmento. Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
-1. Seleccione una plantilla de formulario. Puede crear un fragmento de formulario para componentes principales basados en Formularios adaptables o en componentes de base basados en Formularios adaptables.
+1. Seleccione una plantilla de formulario. Puede crear un fragmento de formulario para formularios adaptables basados en componentes principales o formularios adaptables basados en componentes de base.
    * Para crear un fragmento de formulario para formularios basados en componentes principales, seleccione una plantilla basada en componentes principales.
    * Para crear un fragmento de formulario para formularios basados en componentes de base, seleccione una plantilla Componentes de base. Por ejemplo, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
 
@@ -116,7 +114,7 @@ Puede crear fragmentos de formulario adaptable anidados, lo que significa que pu
 
 ### Uso de un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
-Puede utilizar un fragmento de formulario basado en esquemas y no basado en esquema varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario.  Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
+Puede utilizar un fragmento de formulario basado en esquemas y no basado en esquema varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario. Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
 
 ![usar varios fragmentos en formularios adaptables](assets/using-multiple-fragment-af.gif)
 
@@ -163,7 +161,7 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
    <td><p>Proporciona opciones para obtener una vista previa del fragmento como HTML o una vista previa personalizada mediante la combinación de datos de un archivo XML con el fragmento. Para obtener más información, consulte <a>Previsualizar un formulario</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Iniciar revisión/Administrar revisión</p> </td>
+   <td><p>Iniciar revisión y Administrar revisión</p> </td>
    <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. Para obtener más información, consulte <a>Crear y administrar revisiones</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -208,4 +206,4 @@ Fragmentos de formulario adaptable de referencia que puede utilizar para crear e
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

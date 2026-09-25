@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 40%
-
+source-wordcount: '2092'
+ht-degree: 41%
 ---
-
 # Crear o personalizar una temática de formulario adaptable {#introduction-to-theme}
 
 ## Se aplica a {#applies-to}
@@ -30,11 +28,11 @@ En AEM Forms 6.5, una temática es una biblioteca de cliente de AEM que se utili
 
 El entorno de AEM 6.5 proporciona los temas que se enumeran a continuación para los componentes principales basados en Forms adaptable:
 
-* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
-* [Tema de atención médica](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Tema de atención sanitaria](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -56,9 +54,9 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los componentes principales basados en Forms adaptable.
 
-* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -77,7 +75,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * [Habilitar los componentes principales de Forms adaptable](/help/forms/using/enable-adaptive-forms-core-components.md) para su entorno.
 
-* Instale la última versión de Apache Maven [.Apache Maven &#x200B;](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
 * Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM proporciona bibliotecas de cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
@@ -113,9 +111,9 @@ Los ejemplos proporcionados en el documento se basan en el tema **Lienzo**, pero
 
 Para clonar una temática para componentes principales basados en formularios adaptables, elija una de las siguientes temáticas:
 
-* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
 Siga estas instrucciones para clonar una temática:
 
@@ -290,7 +288,7 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 1. Inicie sesión en la instancia de autor local de AEM.
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Haga clic en **Crear** > **Formularios adaptables**. 
+1. Haga clic en **Crear** > **Formularios adaptables**.
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. Aparecerá **Agregar propiedades**
 1. Especifique **Name** para el formulario adaptable.
 
@@ -342,4 +340,4 @@ Para eliminar temas no utilizados o no deseados:
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
