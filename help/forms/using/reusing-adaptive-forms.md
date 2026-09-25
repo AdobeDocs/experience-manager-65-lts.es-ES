@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: 37637d7a-cbf3-4fe7-8506-0b4116a01808
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 96%
-
+source-wordcount: '638'
+ht-degree: 93%
 ---
-
 # Reutilizar formularios adaptables {#reusing-adaptive-forms}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -63,7 +61,7 @@ Si pega el formulario en la misma carpeta o existe otro archivo con el mismo nom
 
 Después de hacer clic en el icono Pegar ![aem6forms_paste](assets/aem6forms_paste.png), este se volverá a ocultar. Solo puede utilizar la opción Pegar una vez simultáneamente. Para volver a crear una copia del mismo recurso, cópielo de nuevo.
 
-### Cambiar el contenido del formulario adaptable nuevo  {#change-contents-of-new-adaptive-form}
+### Cambiar el contenido del formulario adaptable nuevo {#change-contents-of-new-adaptive-form}
 
 El contenido de un formulario adaptable pegado se puede cambiar mediante los siguientes métodos para diferenciarlo del formulario copiado:
 

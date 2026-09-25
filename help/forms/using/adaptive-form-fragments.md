@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 74%
-
+source-wordcount: '2463'
+ht-degree: 75%
 ---
-
 # Fragmentos de formularios adaptables{#adaptive-form-fragments}
 
 ## Se aplica a {#applies-to}
@@ -107,7 +105,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Modelo de formulario**: en función del modelo de formulario para el formulario adaptable, este campo muestra el **Esquema XML**, la **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
    * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
-Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos de formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz del modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
+     Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos de formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz del modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
 
    * **XSD Ref**: solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
 
@@ -232,7 +230,7 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
    <td><p>Proporciona opciones para obtener una vista previa del fragmento como HTML o una vista previa personalizada mediante la combinación de datos de un archivo XML con el fragmento. Para obtener más información, consulte <a href="/help/forms/using/previewing-forms.md" target="_blank">Previsualizar un formulario</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Iniciar revisión/Administrar revisión</p> </td>
+   <td><p>Iniciar revisión y Administrar revisión</p> </td>
    <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. Para obtener más información, consulte <a href="../../forms/using/create-reviews-forms.md" target="_blank">Crear y administrar revisiones</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

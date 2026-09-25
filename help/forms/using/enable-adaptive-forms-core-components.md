@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 47%
-
+source-wordcount: '1057'
+ht-degree: 49%
 ---
-
 # Habilitar los componentes principales de Forms adaptable en AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 ## Se aplica a {#applies-to}
@@ -161,5 +159,5 @@ Cuando los componentes principales de formularios adaptables se habilitan para s
 
 * [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Crear temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Crear temáticas para los componentes principales basados en formularios adaptables](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)

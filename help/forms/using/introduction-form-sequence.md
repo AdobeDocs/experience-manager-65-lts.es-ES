@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: 5455facf-ed09-4266-a43a-61eef3ecc33e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 54%
-
+source-wordcount: '633'
+ht-degree: 53%
 ---
-
 # Introducción a la secuencia de formulario de varios pasos{#introduction-to-multi-step-form-sequence}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
@@ -47,8 +45,8 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
 
    * **Firma electrónica**: contiene el componente **Firma**, que se puede utilizar en un formulario adaptable basado en XFA. Proporciona los siguientes servicios de firma:
 
-      * Servicios de firma electrónica de Adobe Document Cloud
-      * Firma manuscrita
+     * Servicios de firma electrónica de Adobe Document Cloud
+     * Firma manuscrita
 
    * **Confirmación**: contiene el componente **Resumen** que muestra un mensaje que confirma el envío del formulario una vez que el usuario lo ha firmado y llega al paso Confirmación (Resumen) de la secuencia. Los autores pueden configurar el texto del componente Resumen, mostrar un mensaje de agradecimiento, mostrar un vínculo al PDF generado, etc.
 

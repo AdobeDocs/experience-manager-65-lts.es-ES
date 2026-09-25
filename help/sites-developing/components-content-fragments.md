@@ -13,11 +13,9 @@ role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1004'
+ht-degree: 5%
 ---
-
 # Componentes para fragmentos de contenido{#components-for-content-fragments}
 
 ## Componentes para la creación de fragmentos {#components-for-fragment-authoring}
@@ -81,21 +79,21 @@ Para ilustrar esto, tenga en cuenta lo siguiente:
 * Instancia de un fragmento de contenido compuesto por tres párrafos
 * Y que parte del contenido ya se ha insertado después del segundo párrafo
 
-   * Esto significa que el contenido se almacena en el segundo parsys.
+  * Esto significa que el contenido se almacena en el segundo parsys.
 
 Básicamente, si la estructura de párrafos de esta instancia cambia (al cambiar la variación, el elemento o el intervalo de párrafos mostrados), podría afectar al contenido intermedio que se muestra cuando se reproduce el contenido del fragmento de contenido:
 
 * Se edita y se añade otro párrafo antes del segundo párrafo:
 
-   * El contenido intermedio se muestra después del párrafo recién creado (el segundo parsys ahora contiene el párrafo recién creado).
+  * El contenido intermedio se muestra después del párrafo recién creado (el segundo parsys ahora contiene el párrafo recién creado).
 
 * Se edita y se elimina el segundo párrafo:
 
-   * El contenido intermedio se muestra después del párrafo que antes era el tercero (el segundo parsys ahora contiene el tercer párrafo anterior).
+  * El contenido intermedio se muestra después del párrafo que antes era el tercero (el segundo parsys ahora contiene el tercer párrafo anterior).
 
 * Está configurado para que solo se muestre el primer párrafo:
 
-   * No se muestra el contenido intermedio (el segundo parsys ya no se procesa debido a la nueva configuración).
+  * No se muestra el contenido intermedio (el segundo parsys ya no se procesa debido a la nueva configuración).
 
 ### Personalización del componente Fragmento de contenido {#customizing-the-content-fragment-component}
 
@@ -104,9 +102,9 @@ Para utilizar el componente de fragmento de contenido listo para usar como model
 * Reutilice el script de procesamiento HTL y su POJO asociado para poder ver cómo se implementa la función de contenido intermedio.
 * Reutilizar el nodo de fragmento de contenido: `cq:editConfig`
 
-   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se usan para almacenar en déclencheur eventos JS. Estos eventos se controlan en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
-   * Los `cq:dropTargets` están configurados para admitir el arrastre de recursos de fragmentos de contenido.
-   * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor local de fragmentos está definido en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` y permite abrir mediante un vínculo rápido el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
+  * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se usan para almacenar en déclencheur eventos JS. Estos eventos se controlan en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
+  * Los `cq:dropTargets` están configurados para admitir el arrastre de recursos de fragmentos de contenido.
+  * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor local de fragmentos está definido en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` y permite abrir mediante un vínculo rápido el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Reescritura de recursos antes del procesamiento {#asset-rewriting-before-rendering}
 
