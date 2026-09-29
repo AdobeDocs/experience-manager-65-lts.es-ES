@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5405'
-ht-degree: 0%
-
+source-wordcount: '5545'
+ht-degree: 1%
 ---
-
 # Integración de Adobe Experience Manager con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
@@ -199,8 +208,8 @@ Puede cargar recursos mediante la funcionalidad Assets (administración de recur
 * Los tipos de recursos de Dynamic Media Classic que Experience Manager Assets aún no admite deben agregarse a un sitio web de Experience Manager directamente desde Dynamic Media Classic, a través del explorador de contenido de Dynamic Media Classic. Por ejemplo, plantillas de imagen.
 * Para los tipos de recursos compatibles con Experience Manager Assets y Dynamic Media Classic, la decisión de cómo cargarlos depende de lo siguiente:
 
-   * Dónde se encuentran los recursos hoy Y
-   * La importancia de administrarlos en un repositorio común
+  * Dónde se encuentran los recursos hoy Y
+  * La importancia de administrarlos en un repositorio común
 
 Supongamos que los recursos ya están en Dynamic Media Classic y que administrarlos en un repositorio común no es importante. En ese caso, la exportación de los recursos a Experience Manager Assets solo para sincronizarlos de nuevo con Dynamic Media Classic para su entrega es una ida y vuelta innecesaria. Adobe recomienda mantener los recursos en un único repositorio y sincronizarlos con Dynamic Media Classic solo para su envío.
 
@@ -525,7 +534,7 @@ Puede configurar la carpeta bajo demanda en la que se cargan los recursos en Dyn
 1. Seleccione la configuración en Dynamic Media Classic.
 1. Para abrir la configuración, seleccione **[!UICONTROL Editar]**.
 
-1. Seleccione la ficha **[!UICONTROL Avanzadas]**. En el campo **[!UICONTROL Carpeta ad hoc]**, puede modificar la carpeta **Ad hoc**. De manera predeterminada, es el **nombre_de_la_compañía/CQ5_adhoc**.
+1. Seleccione la pestaña **[!UICONTROL Avanzadas]**. En el campo **[!UICONTROL Carpeta ad hoc]**, puede modificar la carpeta **Ad hoc**. De manera predeterminada, es el **nombre_de_la_compañía/CQ5_adhoc**.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
 
@@ -602,8 +611,8 @@ Si tiene problemas para integrar Experience Manager con Dynamic Media Classic, c
 * Asegúrese de haber configurado Cloud Services para Habilitar la carga automática y de haber actualizado y guardado el flujo de trabajo de recursos DAM para incluir la carga de Dynamic Media Classic.
 * Al cargar una imagen en una subcarpeta de la carpeta de destino de Dynamic Media Classic, asegúrese de realizar una de las siguientes acciones:
 
-   * Asegúrese de que los nombres de todos los recursos, independientemente de la ubicación, sean únicos. De lo contrario, el recurso de la carpeta de destino principal se eliminará y solo permanecerá el recurso de la subcarpeta.
-   * Cambie cómo Dynamic Media Classic sobrescribe los recursos en el área Configuración de la cuenta de Dynamic Media Classic. No configure Dynamic Media Classic para que sobrescriba recursos independientemente de la ubicación si utiliza recursos con el mismo nombre en subcarpetas.
+  * Asegúrese de que los nombres de todos los recursos, independientemente de la ubicación, sean únicos. De lo contrario, el recurso de la carpeta de destino principal se eliminará y solo permanecerá el recurso de la subcarpeta.
+  * Cambie cómo Dynamic Media Classic sobrescribe los recursos en el área Configuración de la cuenta de Dynamic Media Classic. No configure Dynamic Media Classic para que sobrescriba recursos independientemente de la ubicación si utiliza recursos con el mismo nombre en subcarpetas.
 
 **Si las carpetas o los recursos eliminados no están sincronizados entre Dynamic Media Classic y Experience Manager:**
 
