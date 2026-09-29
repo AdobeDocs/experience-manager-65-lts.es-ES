@@ -5,9 +5,25 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a5cba7da93b1915126223a7de2f9fc8198e5f08
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
 workflow-type: tm+mt
-source-wordcount: '7586'
+source-wordcount: '7622'
 ht-degree: 21%
 ---
 
@@ -363,7 +379,7 @@ Para instalar AEM Forms 6.5 LTS SP3 en JEE, complete estos pasos en orden:
 
 #### Problemas conocidos {#forms-known-issues-65-lts-sp3}
 
-No se ha informado de ningún problema conocido en esta versión.
+* En **AEM Forms en JEE 6.5 LTS SP3**, la conversión de **archivos PostScript (PS), EPS y PRN a PDF** puede fallar. El proceso nativo `PsToPdfSvc` puede finalizar inesperadamente, lo que provoca que el trabajo de conversión falle con errores como `ALC-PDG-003-011` y `ALC-PDG-001-028`. Póngase en contacto con Asistencia al cliente de Adobe para obtener ayuda. (FORMS-28152)
 
 #### Correcciones de seguridad {#forms-security-fixes-65-lts-sp3}
 
