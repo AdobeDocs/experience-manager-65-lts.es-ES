@@ -35,7 +35,7 @@ Aprenda a crear una temática personalizada, aplicar estilo a componentes indivi
 
 ![imagen a pantalla completa](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Información sobre el tutorial  {#about-the-tutorial}
 
