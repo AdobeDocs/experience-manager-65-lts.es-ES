@@ -8,7 +8,22 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 94%
@@ -87,79 +102,79 @@ página en https://[*host*]:[*port*]/system/console/configMgr.
 1. La conexión a la base de datos se puede realizar mediante la fuente de datos agrupada de la conexión de Apache Sling.
 1. Para utilizar la conexión de Apache Sling, busque y haga clic en la **[!UICONTROL Fuente de datos obtenida de una conexión Apache Sling]** para abrirla en el modo de edición en la configuración de la consola web. Especifique los valores de las propiedades tal como se describe en la siguiente tabla:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propiedad</strong></td>
-   <td><strong>Valor</strong></td>
-  </tr>
-  <tr>
-   <td>Nombre de la fuente de datos</td>
-   <td><p>Un nombre de fuente de datos para filtrar los controladores del grupo de fuentes de datos</p> <p><strong>Nota: </strong><em>La implementación de ejemplo utiliza el portal de formularios como nombre de la fuente de datos.</em></p> </td>
-  </tr>
-  <tr>
-   <td>Clase de controlador JDBC</td>
-   <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
-   <td>URI de conexión JDBC<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
-   <td>Nombre de usuario</td>
-   <td>Un nombre de usuario para autenticar y realizar acciones en tablas de base de datos</td>
-  </tr>
-  <tr>
-   <td>Contraseña</td>
-   <td>La contraseña asociada al nombre de usuario</td>
-  </tr>
-  <tr>
-   <td>Aislamiento de transacciones</td>
-   <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
-   <td>Máximo de conexiones activas</td>
-   <td>1000</td>
-  </tr>
-  <tr>
-   <td>Conexiones máximas inactivas</td>
-   <td>100</td>
-  </tr>
-  <tr>
-   <td>Conexiones mínimas inactivas</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Tamaño inicial</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Espera máxima</td>
-   <td>100 000</td>
-  </tr>
-  <tr>
-   <td>Prueba a la vista previa</td>
-   <td>Comprobado</td>
-  </tr>
-  <tr>
-   <td>Prueba mientras está inactiva</td>
-   <td>Comprobado</td>
-  </tr>
-  <tr>
-   <td>Consulta de validación</td>
-   <td>Los valores de ejemplo son SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
-   <td>Tiempo de espera de consulta de validación</td>
-   <td>10 000</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Propiedad</strong></td>
+    <td><strong>Valor</strong></td>
+    </tr>
+    <tr>
+    <td>Nombre de la fuente de datos</td>
+    <td><p>Un nombre de fuente de datos para filtrar los controladores del grupo de fuentes de datos</p> <p><strong>Nota: </strong><em>La implementación de ejemplo utiliza el portal de formularios como nombre de la fuente de datos.</em></p> </td>
+    </tr>
+    <tr>
+    <td>Clase de controlador JDBC</td>
+    <td>com.mysql.jdbc.Driver</td>
+    </tr>
+    <tr>
+    <td>URI de conexión JDBC<br /> </td>
+    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
+    </tr>
+    <tr>
+    <td>Nombre de usuario</td>
+    <td>Un nombre de usuario para autenticar y realizar acciones en tablas de base de datos</td>
+    </tr>
+    <tr>
+    <td>Contraseña</td>
+    <td>La contraseña asociada al nombre de usuario</td>
+    </tr>
+    <tr>
+    <td>Aislamiento de transacciones</td>
+    <td>READ_COMMITTED</td>
+    </tr>
+    <tr>
+    <td>Máximo de conexiones activas</td>
+    <td>1000</td>
+    </tr>
+    <tr>
+    <td>Conexiones máximas inactivas</td>
+    <td>100</td>
+    </tr>
+    <tr>
+    <td>Conexiones mínimas inactivas</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Tamaño inicial</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Espera máxima</td>
+    <td>100 000</td>
+    </tr>
+    <tr>
+    <td>Prueba a la vista previa</td>
+    <td>Comprobado</td>
+    </tr>
+    <tr>
+    <td>Prueba mientras está inactiva</td>
+    <td>Comprobado</td>
+    </tr>
+    <tr>
+    <td>Consulta de validación</td>
+    <td>Los valores de ejemplo son SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+    </tr>
+    <tr>
+    <td>Tiempo de espera de consulta de validación</td>
+    <td>10 000</td>
+    </tr>
+    </tbody>
+    </table>
 
->[!NOTE]
->
->* El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de que lo ha aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
->* Asigne instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de autor y publicación.
+   >[!NOTE]
+   >
+   >* El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de que lo ha aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
+   >* Asigne instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de autor y publicación.
 
 1. Deje el resto de las configuraciones tal como están y haga clic en **[!UICONTROL Guardar]**.
 

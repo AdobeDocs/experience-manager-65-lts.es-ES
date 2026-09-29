@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -137,7 +148,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -225,7 +236,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Esta es la **primera llamada**&#x200B;a Adobe Analytics que contiene los siguientes valores:*
+*Esta es la **primera llamada**a Adobe Analytics que contiene los siguientes valores:*
 
 * *prop1 y eVar1 para eventdata.a.media.name,*
 * *props2-4, junto con eVar2 y eVar3 que contienen contentType (vídeo) y segmento (1:O:1-4)*
@@ -233,7 +244,7 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Esta es la **tercera llamada**&#x200B;realizada a Adobe Analytics:*
+*Esta es la **tercera llamada**realizada a Adobe Analytics:*
 
 * *prop1 y eVar1 contienen a.media.name;*
 * *evento1 porque se ha visto un segmento*
@@ -272,7 +283,7 @@ eventdata.events.milestoneXX
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es).
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -291,26 +302,26 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    Además, la información enviada a Adobe Analytics es menos personalizable; solo hay 3 variables disponibles para la asignación:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+   >[!NOTE]
+   >
+   >Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a las props 1 a 3
 
@@ -320,7 +331,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    ![hitos1](assets/lmilestones1.png)
 
-   *La variable **pev3**&#x200B;enviada en la llamada contiene la siguiente información:*
+   *La variable **pev3**enviada en la llamada contiene la siguiente información:*
 
    * *Nombre* - El nombre del archivo de vídeo (*film.avi*)
 
@@ -336,7 +347,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
 ## Segundos heredados {#legacy-seconds}
 
-Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
+Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se activan cada N-ésimo segundo, donde N se especifica en el campo Track offset.
 
 1. Establezca el desplazamiento de pista en cualquier número de segundos,
 
@@ -348,26 +359,26 @@ Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analyt
 
    La información enviada a Adobe Analytics es menos personalizable. Solo hay 3 variables disponibles para la asignación:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>La variable asignada a esta acción contiene el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>La variable asignada a esta acción contiene el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+   >[!NOTE]
+   >
+   >Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a prop1, prop2 y prop3
 
@@ -381,4 +392,4 @@ Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analyt
 
 **Referencias utilizadas en este tutorial:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
