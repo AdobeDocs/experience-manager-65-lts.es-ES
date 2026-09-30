@@ -20,9 +20,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 4%
 ---
 # Acerca de la seguridad de los documentos {#about-document-security}
@@ -259,7 +259,7 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
   El uso de conjuntos de directivas facilita la asignación y administración de directivas relacionadas a usuarios específicos de una organización o departamento. Por ejemplo, los conjuntos de políticas independientes para el departamento de finanzas y recursos humanos pueden ayudar a administrar y aplicar fácilmente las políticas relacionadas a los documentos designados para los departamentos correspondientes.
 
-* **Use un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica según una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
+* **Use un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica según una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
 
   * Proporcionar control de acceso centralizado a los documentos de su organización.
 
@@ -267,7 +267,7 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
   * Utilice un mecanismo de control de acceso que utilice el sistema de gestión de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por una directiva, puede utilizar el proceso de evaluación de directivas estándar. También puede utilizar el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
 
-  Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, vea [Crear controladores de autorización externos](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, vea [Crear controladores de autorización externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantener los conjuntos de directivas en un número limitado:** Varios factores conducen al crecimiento constante de directivas y conjuntos de directivas. Algunos factores comunes son:
 
@@ -283,4 +283,4 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
   >[!NOTE]
   >
-  >Puede usar la API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.
+  >Puede usar la API [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.

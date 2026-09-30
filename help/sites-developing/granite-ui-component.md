@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
 ---
 # Creación de un nuevo componente de campo de IU de Granite{#creating-a-new-granite-ui-field-component}
@@ -37,7 +37,7 @@ La interfaz de usuario de Granite proporciona una serie de componentes diseñado
 
 >[!NOTE]
 >
->Para obtener información detallada sobre los campos, consulte la [documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Para obtener información detallada sobre los campos, consulte la [documentación de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilice el marco de trabajo Granite UI Foundation para desarrollar o ampliar componentes de Granite. Tiene dos elementos:
 
@@ -59,7 +59,7 @@ El componente genérico de Granite UI `field` está compuesto por dos archivos d
 * `init.jsp`: administra el procesamiento genérico; el etiquetado, la descripción y proporciona el valor de formulario que necesita al procesar el campo.
 * `render.jsp`: aquí es donde se realiza la representación real del campo, que debe anularse para el campo personalizado; incluido por `init.jsp`.
 
-Consulte la [documentación de Granite UI - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) para obtener detalles.
+Consulte la [documentación de Granite UI - Campo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) para obtener detalles.
 
 Para ver ejemplos, consulte:
 

@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 1%
 ---
 # Componentes de Adobe Experience Manager (AEM): Conceptos básicos{#aem-components-the-basics}
@@ -210,7 +210,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
 El icono o la abreviatura del componente se define mediante las propiedades JCR del componente cuando el desarrollador lo crea. Estas propiedades se evalúan en el siguiente orden y se utiliza la primera propiedad válida encontrada.
 
-1. `cq:icon`: propiedad de cadena que señala a un icono estándar en la [biblioteca de la interfaz de usuario de Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) que se mostrará en el explorador de componentes
+1. `cq:icon`: propiedad de cadena que señala a un icono estándar en la [biblioteca de la interfaz de usuario de Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) que se mostrará en el explorador de componentes
    * Utilice el valor del atributo HTML del icono Coral.
 1. `abbreviation`: propiedad de cadena para personalizar la abreviatura del nombre del componente en el explorador de componentes
    * La abreviatura debe estar limitada a dos caracteres.
@@ -601,7 +601,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en **&#x200B; CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
+* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en** CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1042,7 +1042,7 @@ El siguiente ejemplo equivale a la configuración de `REFRESH_INSERTED`:
 
 >[!NOTE]
 >
->En la IU clásica, para ver qué parámetros se pueden usar en los controladores, consulte la sección de eventos `before<action>` y `after<action>` de la documentación del widget [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) y [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
+>En la IU clásica, para ver qué parámetros se pueden usar en los controladores, consulte la sección de eventos `before<action>` y `after<action>` de la documentación del widget [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) y [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Con la siguiente configuración, la página se actualiza después de eliminar, editar, insertar o mover el componente:
 

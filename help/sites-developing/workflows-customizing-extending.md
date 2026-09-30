@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3619'
 ht-degree: 1%
 ---
 # Ampliación de la funcionalidad del flujo de trabajo{#extending-workflow-functionality}
@@ -85,9 +85,9 @@ El componente `/libs/cq/workflow/components/model/step` es el antecesor común m
 
 Los siguientes objetos están disponibles (según el tipo de paso) en los scripts ECMA:
 
-* [elemento de trabajo](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) elemento de trabajo
-* [WorkflowSession](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [WorkflowData](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* [elemento de trabajo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) elemento de trabajo
+* [WorkflowSession](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [WorkflowData](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args`: matriz con argumentos de proceso.
 
 * `sling`: para acceder a otros servicios de osgi.
@@ -266,7 +266,7 @@ Bajo el nodo `cq:Component`, agregue un nodo `cq:EditConfig`. Debajo de esto, ag
 
 Puede utilizar los metadatos del flujo de trabajo para conservar la información necesaria durante la duración del flujo de trabajo y entre pasos. Un requisito común de los pasos del flujo de trabajo es mantener los datos para un uso futuro o recuperar los datos persistentes de pasos anteriores.
 
-Los metadatos del flujo de trabajo se almacenan en un objeto [`MetaDataMap`](#metadatamaps). La API de Java proporciona el método [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para devolver un objeto [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que proporciona el objeto `MetaDataMap` apropiado. Este objeto `WorkflowData` `MetaDataMap` está disponible para el servicio OSGi o el script ECMA de un componente de paso.
+Los metadatos del flujo de trabajo se almacenan en un objeto [`MetaDataMap`](#metadatamaps). La API de Java proporciona el método [`Workflow.getWorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para devolver un objeto [`WorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que proporciona el objeto `MetaDataMap` apropiado. Este objeto `WorkflowData` `MetaDataMap` está disponible para el servicio OSGi o el script ECMA de un componente de paso.
 
 #### Java {#java}
 
@@ -671,8 +671,8 @@ function getParticipant() {
 >
 >Los siguientes pasos del proceso de flujo de trabajo aceptan paquetes de flujo de trabajo para la activación masiva de páginas:
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 Puede desarrollar pasos del flujo de trabajo que obtengan los recursos del paquete y los procesen. Los siguientes miembros del paquete `com.day.cq.workflow.collection` proporcionan acceso a los paquetes de flujo de trabajo:
@@ -841,7 +841,7 @@ Una manera sencilla de empezar a crear su propio paso personalizado es copiar un
 
    * `cq:icon`
 
-     Se usa para especificar un [icono de Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) para el paso.
+     Se usa para especificar un [icono de Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) para el paso.
 
    * `componentGroup`
 

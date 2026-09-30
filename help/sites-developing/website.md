@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5032'
+source-wordcount: '5034'
 ht-degree: 4%
 ---
 # Crear un sitio web con todas las funciones (JSP){#create-a-fully-featured-website-jsp}
@@ -532,9 +532,9 @@ En este ejercicio, Sling hace coincidir estas direcciones URL con el script /app
 
 1. Copie el código siguiente en `navimage.png.java.`El código amplía la clase AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
    * La página principal del recurso se extrae del objeto ImageContext. A continuación, se obtienen el título y el subtítulo de la página.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) se usa para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) se usa para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -1539,6 +1539,6 @@ Para este componente, puede establecer varios parámetros tanto en el modo de ed
    ```
 
 1. Guarde los cambios.
-1. En el explorador, vuelva a cargar la página **&#x200B; productos &#x200B;**. Toda la página tiene el siguiente aspecto:
+1. En el explorador, vuelva a cargar la página ** productos **. Toda la página tiene el siguiente aspecto:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

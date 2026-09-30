@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 1%
 ---
 # Superposiciones{#overlays}
@@ -35,7 +35,7 @@ En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` 
 
 Desde AEM 6.0, se han realizado cambios en la implementación y el uso de las superposiciones:
 
-* AEM 6.0 y posteriores: para superposiciones relacionadas con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (es decir, la IU táctil)
+* AEM 6.0 y posteriores: para superposiciones relacionadas con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (es decir, la IU táctil)
 
   * Método
 
@@ -66,13 +66,13 @@ Desde AEM 6.0, se han realizado cambios en la implementación y el uso de las su
 
 >[!CAUTION]
 >
->La [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden usar con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Esto significa que la creación de una superposición con una estructura de esqueleto solo es adecuada para la IU táctil estándar.
+>La [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden usar con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Esto significa que la creación de una superposición con una estructura de esqueleto solo es adecuada para la IU táctil estándar.
 >
 >Las superposiciones de otras áreas (incluida la IU clásica) implican copiar el nodo adecuado y toda la subestructura y, a continuación, realizar los cambios necesarios.
 
 Las superposiciones son el método recomendado para muchos cambios, como [configurar las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [crear la categoría de selección en el explorador de recursos del panel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizado al crear páginas). Se requieren como sigue:
 
-* ***No* realice cambios en la rama `/libs`**&#x200B;Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
+* ***No* realice cambios en la rama `/libs`**Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
 
   * actualice en su instancia
   * aplicar una revisión

@@ -27,9 +27,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1005'
 ht-degree: 5%
 ---
 # Componentes para fragmentos de contenido{#components-for-content-fragments}
@@ -46,7 +46,7 @@ Consulte la [API de administración de fragmentos de contenido - del lado del cl
 
 >[!CAUTION]
 >
->Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 >
 >Esta sección detalla el componente original enviado para su uso con fragmentos de contenido (**Fragmento de contenido** en el grupo **General**).
 
@@ -145,4 +145,4 @@ La configuración predeterminada utiliza los siguientes transformadores:
 * `transformer-cfm-parfilter`: elimina los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
 * `transformer-cfm-assetprocessor`: se utiliza internamente para recuperar una lista de los recursos incrustados en el fragmento
 
-El proceso de representación se expone a través de [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) y los componentes personalizados lo pueden utilizar (por ejemplo), si es necesario.
+El proceso de representación se expone a través de [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) y los componentes personalizados lo pueden utilizar (por ejemplo), si es necesario.

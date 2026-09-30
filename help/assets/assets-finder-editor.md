@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 2%
@@ -196,7 +196,7 @@ The following predicates are available:
 | **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
 | **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, for example, tiff:ImageLength and the user can then enter a value, for example, 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
-For more information, see the [predicate Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 

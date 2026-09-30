@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2209'
 ht-degree: 1%
 ---
 # Conceptos de la IU táctil de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
@@ -205,7 +205,7 @@ Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizadas para
 
 ### Componentes de Granite UI Foundation {#granite-ui-foundation-components}
 
-Los [componentes básicos de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
+Los [componentes básicos de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
 
 * Botón
 * Hipervínculo
@@ -250,19 +250,19 @@ Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, 
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo de nodo** | **Tipo de recurso de IU de Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componentes de administración de Granite UI {#granite-ui-administration-components}
 
-Los [componentes de administración de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) se basan en los componentes básicos para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
+Los [componentes de administración de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) se basan en los componentes básicos para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
 
 * Barra de navegación global
 * Carril (esqueleto)

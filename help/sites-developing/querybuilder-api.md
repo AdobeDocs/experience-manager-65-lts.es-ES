@@ -11,22 +11,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 # API del Generador de consultas{#query-builder-api}
 
 La funcionalidad de [Asset Share Query Builder](/help/assets/assets-finder-editor.md) se expone a través de una API Java™ y una API REST. Esta sección describe estas API.
 
-El generador de consultas del lado del servidor ( [`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) acepta una descripción de consulta, crea y ejecuta una consulta XPath, opcionalmente filtra el conjunto de resultados y también extrae facetas, si lo desea.
+El generador de consultas del lado del servidor ( [`QueryBuilder`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) acepta una descripción de consulta, crea y ejecuta una consulta XPath, opcionalmente filtra el conjunto de resultados y también extrae facetas, si lo desea.
 
-La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la función `jcr:contains()` en XPath.
+La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la función `jcr:contains()` en XPath.
 
-Para cada tipo de predicado, hay un componente de evaluador ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo controlar ese predicado específico para XPath, filtrado y extracción de facetas. Es fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
+Para cada tipo de predicado, hay un componente de evaluador ([`PredicateEvaluator`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo controlar ese predicado específico para XPath, filtrado y extracción de facetas. Es fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
 
 La API de REST proporciona acceso a las mismas funciones a través de HTTP con respuestas enviadas en JSON.
 
@@ -36,11 +34,11 @@ La API de REST proporciona acceso a las mismas funciones a través de HTTP con r
 
 ## Sesión de Gem {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=es) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos de Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos de Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
 
 >[!NOTE]
 >
->Sesión de AEM Gem [Busque fácilmente formularios con el generador de consultas de AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=es) para obtener una descripción detallada del generador de consultas.
+>Sesión de AEM Gem [Busque fácilmente formularios con el generador de consultas de AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obtener una descripción detallada del generador de consultas.
 
 ## Consultas de muestra {#sample-queries}
 
@@ -136,13 +134,13 @@ De forma predeterminada, el Generador de consultas también proporcionaría el n
 
 Por ejemplo, la IU de puede adaptar el siguiente enfoque:
 
-* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) o el total en la respuesta querybuilder.json) menores o iguales a 100;
+* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) o el total en la respuesta querybuilder.json) menores o iguales a 100;
 * Establezca `guessTotal` en 100 mientras realiza la llamada al Generador de consultas.
 
 * La respuesta puede tener el siguiente resultado:
 
-   * `total=43`, `more=false` - Indica que el número total de visitas es 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede usar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que el número total de visitas es mayor que 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede usar esto para mostrar un texto como **&quot;se encontraron más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarán el límite de `guessTotal`, así como los parámetros `offset` y `limit`.
+  * `total=43`, `more=false` - Indica que el número total de visitas es 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede usar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
+  * `total=100`, `more=true` - Indica que el número total de visitas es mayor que 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede usar esto para mostrar un texto como **&quot;se encontraron más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarán el límite de `guessTotal`, así como los parámetros `offset` y `limit`.
 
 `guessTotal` debe usarse en casos en los que la interfaz de usuario necesite utilizar desplazamiento infinito para evitar que el Generador de consultas determine el recuento exacto de visitas.
 
@@ -360,9 +358,9 @@ p.nodedepth=5
 
 Para obtener más predicados, consulte la [página de referencia de predicados de Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
 
-También puede comprobar el [Javadoc para las `PredicateEvaluator` clases](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
+También puede comprobar el [Javadoc para las `PredicateEvaluator` clases](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
 
-El prefijo del nombre de clase (por ejemplo, &quot;`similar`&quot; en [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se utilizará en la consulta (en minúsculas).
+El prefijo del nombre de clase (por ejemplo, &quot;`similar`&quot; en [`SimilarityPredicateEvaluator`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se utilizará en la consulta (en minúsculas).
 
 Para estas propiedades principales, puede acortar la consulta y utilizar &quot; `similar=/content/en`&quot; en lugar de la variante completa &quot; `similar.similar=/content/en`&quot;. El formulario completo debe utilizarse para todas las propiedades no principales de una clase.
 
@@ -438,13 +436,13 @@ Las consultas se pueden almacenar en el repositorio para poder utilizarlas más 
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Al utilizar el método [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), el elemento `Query` dado se almacena en el repositorio como un archivo o como una propiedad según el valor del argumento `createFile`. El siguiente ejemplo muestra cómo guardar un(a) `Query` en la ruta de acceso `/mypath/getfiles` como archivo:
+Al utilizar el método [`QueryBuilder#storeQuery`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), el elemento `Query` dado se almacena en el repositorio como un archivo o como una propiedad según el valor del argumento `createFile`. El siguiente ejemplo muestra cómo guardar un(a) `Query` en la ruta de acceso `/mypath/getfiles` como archivo:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Se puede cargar cualquier consulta previamente almacenada desde el repositorio mediante el método [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
+Se puede cargar cualquier consulta previamente almacenada desde el repositorio mediante el método [`QueryBuilder#loadQuery`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -476,12 +474,12 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 * Habilite los registros DEBUG para que QueryBuilder obtenga una consulta XPath subyacente y explicable
 
-   * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
+  * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 
 * Después de habilitar DEBUG para la clase anterior, los registros muestran el XPath generado por el Generador de consultas.
 * Copie la consulta XPath de la entrada de registro de la consulta QueryBuilder asociada, por ejemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Pegue la consulta XPath en [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obtener el plan de consulta
 
@@ -495,12 +493,12 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 * Habilite los registros DEBUG para que QueryBuilder obtenga una consulta XPath subyacente y explicable
 
-   * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
+  * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 
 * Después de habilitar DEBUG para la clase anterior, los registros muestran el XPath generado por el Generador de consultas.
 * Copie la consulta XPath de la entrada de registro de la consulta QueryBuilder asociada, por ejemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Pegue la consulta XPath en [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obtener el plan de consulta
 
@@ -567,10 +565,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descripción** |
 |---|---|
-| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder básico y API de consulta |
-| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | API de resultados |
-| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
-| [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Contenedores (incluidos en las facetas) |
-| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Evaluadores de predicados |
-| [com.day.cq.search.facets.extractores](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
-| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Escritor de visitas de resultados JSON para el servlet Querybuilder (/bin/querybuilder.json) |
+| [com.day.cq.search](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder básico y API de consulta |
+| [com.day.cq.search.result](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | API de resultados |
+| [com.day.cq.search.facets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
+| [com.day.cq.search.facets.buckets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Contenedores (incluidos en las facetas) |
+| [com.day.cq.search.eval](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Evaluadores de predicados |
+| [com.day.cq.search.facets.extractores](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
+| [com.day.cq.search.writer](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Escritor de visitas de resultados JSON para el servlet Querybuilder (/bin/querybuilder.json) |

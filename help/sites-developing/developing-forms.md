@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 2%
 ---
 # Desarrollo de formularios (IU clásica){#developing-forms-classic-ui}
@@ -324,7 +324,7 @@ Cuando la configuración Mostrar/Ocultar no es válida, la configuración solo s
 
 ### Desarrollo de scripts para su uso con Forms {#developing-scripts-for-use-with-forms}
 
-Para obtener más información sobre los elementos de API que se pueden usar al escribir scripts, consulte los [javadocs relacionados con formularios](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Para obtener más información sobre los elementos de API que se pueden usar al escribir scripts, consulte los [javadocs relacionados con formularios](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Puede utilizarlo para acciones como llamar a un servicio antes de enviar el formulario y cancelar el servicio si falla:
 

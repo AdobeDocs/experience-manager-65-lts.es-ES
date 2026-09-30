@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '790'
 ht-degree: 4%
 ---
 # Prueba de la IU{#testing-your-ui}
@@ -39,7 +39,7 @@ El marco de prueba de AEM utiliza Hobbes.js, una biblioteca de prueba escrita en
 
 >[!NOTE]
 >
->Consulte la [documentación](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
+>Consulte la [documentación](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
 
 ## Estructura de las pruebas {#structure-of-tests}
 
@@ -112,7 +112,7 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 El siguiente procedimiento lo guía durante la creación y ejecución de un grupo de pruebas con [contenido de We.Retail](/help/sites-developing/we-retail.md), pero puede modificar fácilmente la prueba para que utilice una página web diferente.
 
-Para obtener información detallada sobre cómo crear sus propios grupos de pruebas, consulte la [documentación de la API de Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Para obtener información detallada sobre cómo crear sus propios grupos de pruebas, consulte la [documentación de la API de Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Abra CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Haga clic con el botón derecho en la carpeta `/etc/clientlibs` y haga clic en **Crear > Crear carpeta**. Escriba `myTests` para el nombre y haga clic en **Aceptar**.

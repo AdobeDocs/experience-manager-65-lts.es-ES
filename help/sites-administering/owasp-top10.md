@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 5%
 ---
 # OWASP Top 10{#owasp-top}
@@ -74,7 +74,7 @@ Los datos confidenciales, como las credenciales de terceros, se almacenan en for
 
 ## &#x200B;8. Error al restringir el acceso a URL {#failure-to-restrict-url-access}
 
-El repositorio permite la configuración de [privilegios específicos (según lo especificado por JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo en cualquier ruta de acceso, mediante entradas de control de acceso. El repositorio aplica las restricciones de acceso.
+El repositorio permite la configuración de [privilegios específicos (según lo especificado por JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo en cualquier ruta de acceso, mediante entradas de control de acceso. El repositorio aplica las restricciones de acceso.
 
 ## &#x200B;9. Protección insuficiente de la capa de transporte {#insufficient-transport-layer-protection}
 

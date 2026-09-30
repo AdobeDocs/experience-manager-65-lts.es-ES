@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2449'
 ht-degree: 2%
 ---
 # Desarrollo de componentes de Adobe Experience Manager (AEM) (IU clásica){#developing-aem-components-classic-ui}
@@ -101,7 +101,7 @@ Existen tres métodos para acceder al contenido en AEM WCM:
 
 * Mediante el objeto `currentPage` introducido en `global.jsp`:
 
-  El objeto `currentPage` es una instancia de una página (consulte [API de AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La clase de página proporciona algunos métodos para tener acceso al contenido.
+  El objeto `currentPage` es una instancia de una página (consulte [API de AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La clase de página proporciona algunos métodos para tener acceso al contenido.
 
   Ejemplo: `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ Para desarrollar nuevos componentes para AEM basados en componentes existentes, 
    >
    >Un componente para:
    >
-   >* La IU táctil usa componentes de [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-   >* La IU clásica utiliza [widgets de ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* La IU táctil usa componentes de [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+   >* La IU clásica utiliza [widgets de ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >

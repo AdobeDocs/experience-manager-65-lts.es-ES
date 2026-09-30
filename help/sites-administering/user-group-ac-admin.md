@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 3%
 ---
 # Administración de derechos de usuario, grupo y acceso{#user-group-and-access-rights-administration}
@@ -72,7 +72,7 @@ CRX permite configurar los derechos de acceso para las cuentas de usuario y de g
 
 >[!NOTE]
 >
->CRX implementa [control de acceso según lo definido por JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [control de acceso según lo definido por JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Una instalación estándar de un repositorio de CRX está configurada para utilizar listas de control de acceso basadas en recursos. Esta es una posible implementación del control de acceso JSR-283 y una de las implementaciones presentes con Jackrabbit.
 
@@ -503,7 +503,7 @@ Se pueden seleccionar las políticas para:
 
 ### Privilegios {#privileges}
 
-Los siguientes privilegios están disponibles para seleccionarlos al agregar una entrada de control de acceso (consulte la [API de seguridad](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obtener información detallada):
+Los siguientes privilegios están disponibles para seleccionarlos al agregar una entrada de control de acceso (consulte la [API de seguridad](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obtener información detallada):
 
 <table>
  <tbody>

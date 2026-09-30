@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '684'
 ht-degree: 11%
 ---
 # Migración a la IU táctil{#migration-to-the-touch-ui}
@@ -125,7 +125,7 @@ Los cuadros de diálogo son un factor importante a la hora de migrar los compone
 
   * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esto tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
-* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md) (con la IU táctil)
 
@@ -152,10 +152,10 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 Para obtener información completa sobre el desarrollo de AEM, consulte la recopilación de recursos en:
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/getting-started.md)
-* [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentación de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriales y vídeos de AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [Gems de AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=es)
+* [Gems de AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
