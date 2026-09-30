@@ -43,7 +43,7 @@ Antes de agregar cualquier informe personalizado, realice el siguiente procedimi
 
 ## Uso de la interfaz de REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) antes de realizar los siguientes pasos:
+La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es) antes de realizar los siguientes pasos:
 
 1. Vaya a la URL `https://'[server]:[port]'/lc/bin/querybuilder.json`.
 1. Cree una consulta basada en la estructura y las propiedades del nodo de almacenamiento de Process Reporting.
@@ -60,7 +60,7 @@ La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share�
 
 ## Creación de un servicio mediante la API de Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
+El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es).
 
 1. Cree un servicio OSGi con las anotaciones adecuadas. Para acceder a QueryBuilder, utilice:
 
