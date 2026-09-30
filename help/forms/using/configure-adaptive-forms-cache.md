@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: a6793fdf-7ee8-4a54-91d8-635eb79ca702
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 58%
-
 ---
-
 # Configurar la caché de los formularios adaptables {#configure-adaptive-forms-cache}
 
 Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de los formularios adaptables almacena únicamente el contenido de HTML y la estructura JSON de un formulario adaptable sin guardar los datos rellenados previamente. Esto contribuye a reducir el tiempo necesario para procesar un formulario adaptable en el cliente. Está diseñada específicamente para formularios adaptables.
@@ -51,10 +67,10 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 * Cuando desarrolle componentes personalizados, mantenga deshabilitada la memoria caché de los formularios adaptables en el servidor utilizado para el desarrollo.
 * Las URL sin extensión no se almacenan en caché. Por ejemplo, las URL con el patrón `/content/forms/[folder-structure]/[form-name].html` se almacenan en la caché, y el almacenamiento en la caché ignora las URL con el patrón `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Para esto, utilice una URL con extensiones para aprovechar las ventajas del almacenamiento en caché.
 * Consideraciones para los formularios adaptables localizados:
-   * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [Deshabilite el uso de la configuración regional del explorador &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
+  * [Deshabilite el uso de la configuración regional del explorador &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
+  * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
+  * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Habilitación del almacenamiento en caché en Dispatcher
 

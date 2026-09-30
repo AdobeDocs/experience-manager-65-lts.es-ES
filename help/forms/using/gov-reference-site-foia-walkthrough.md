@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a2f79634-6eca-479a-89d7-e1ef2e4a6e6d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 55%
-
 ---
-
 # Tutorial del sitio de referencia de We.Gov para el cumplimiento de la ley FOIA {#we-gov-reference-site-foia-walkthrough}
 
 ## Escenario del sitio de referencia para el cumplimiento de la Ley de Libertad de Información {#reference-site-freedom-of-information-act-scenario}
@@ -36,7 +54,7 @@ El escenario incluye las siguientes personas:
 
 ## Sarah inicia la solicitud de información en virtud de la ley FOIA. {#sarah-initiates-request-for-information-under-foia}
 
-En virtud de la Ley de Libertad de Información, Sarah solicita una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios de 2013 a 2016. Sarah presenta esta solicitud en la Oficina de Políticas de Información del Departamento de Justicia, y también indica que está dispuesta a pagar un máximo de 100 dólares en concepto de gastos de impresión y envío.
+En virtud de la Ley de Libertad de Información, Sarah solicita una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios de 2013 a 2016. Sarah presenta esta solicitud en la Oficina de Políticas de Información del Departamento de Justicia, y también indica que está dispuesta a pagar un máximo de 100 USD por los costes de impresión y envío.
 
 ### Funcionamiento {#how-it-works}
 
@@ -50,7 +68,7 @@ Sarah hace clic en **Solicitar**. En la página del formulario de solicitud de l
 
 * **Organismo:** Sarah especifica que el organismo al que ha dirigido la solicitud es la Oficina de Políticas de Información del Departamento de Justicia.
 
-* **Pagará hasta**: Sarah especifica que está preparada para pagar hasta 100 dólares en concepto de gastos de impresión y envío.
+* **Pagará hasta**: Sarah especifica que está dispuesta a pagar hasta un máximo de 100 USD por los gastos de impresión y envío.
 * **Describir la solicitud en detalle**: Sarah especifica &quot;Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016&quot;.
 
 ![Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016](assets/sarahfiosform.png)

@@ -1,19 +1,35 @@
 ---
 title: Digital Rights Management de recursos
-description: Obtenga información sobre cómo administrar los estados de caducidad de los recursos y la información de los recursos con licencia en  [!DNL Experience Manager].
+description: Obtenga información sobre cómo administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: bbc7b67e-ac49-47fe-8657-97e42c72f200
+    internal-label: Digital rights management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 8%
-
 ---
-
 # Digital Rights Management para recursos {#digital-rights-management-in-assets}
 
 | Versión | Vínculo del artículo |

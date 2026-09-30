@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Crear aplicaciones web que procesen Forms {#creating-web-applications-thatrenders-forms}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -54,7 +71,7 @@ Esta sección utiliza archivos de ejemplo que pueden estar en la siguiente ubica
 
 &lt;*Directorio de instalación de Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
-donde *directorio de instalación*> es la ruta de instalación. A efectos de la aplicación cliente, el archivo Dynamic.xdp del pedido de compra se copió desde esta ubicación de instalación y se implementó en una aplicación de Forms denominada *Applications/FormsApplication*. El archivo Dynamic.xdp del pedido de compra se coloca en una carpeta denominada FormsFolder. Del mismo modo, los fragmentos se colocan en una carpeta denominada Fragmentos, como se muestra en la siguiente ilustración.
+donde &lt;*directorio de instalación*> es la ruta de instalación. A efectos de la aplicación cliente, el archivo Dynamic.xdp del pedido de compra se copió desde esta ubicación de instalación y se implementó en una aplicación de Forms denominada *Applications/FormsApplication*. El archivo Dynamic.xdp del pedido de compra se coloca en una carpeta denominada FormsFolder. Del mismo modo, los fragmentos se colocan en una carpeta denominada Fragmentos, como se muestra en la siguiente ilustración.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 

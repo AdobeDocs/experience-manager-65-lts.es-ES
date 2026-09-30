@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 84%
-
 ---
-
 # Importar y exportar recursos a AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
 Puede mover formularios y recursos relacionados, temas, diccionarios de datos, fragmentos de documento y cartas entre distintas instancias de AEM Forms. Este movimiento es necesario al migrar sistemas o mover formularios de un servidor en funcionamiento a un servidor de producción. En el caso de aquellos recursos para los que se admite la carga y la importación a través de la interfaz de usuario de AEM Forms, se recomienda usar esta interfaz para realizar las exportaciones y las importaciones. No se recomienda utilizar el administrador de paquetes de AEM para exportar o importar estos recursos.
@@ -37,9 +53,11 @@ Para descargar recursos de formularios y documentos:
 1. Seleccione los recursos de los formularios y seleccione el icono **Descargar**.
 1. En Descargar recursos, elija una de las siguientes opciones y seleccione **Descargar**.
 
-   * **Descargar como paquete de CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. Cualquier recurso de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), conjuntos de formularios, plantillas de formulario, documentos de PDF y recursos (XSD, XFS e imágenes), se puede descargar como paquete desde la interfaz de usuario de AEM Forms.La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
+   * **Descargar como paquete de CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. Cualquier recurso de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), conjuntos de formularios, plantillas de formulario, documentos de PDF y recursos (XSD, XFS e imágenes), se puede descargar como paquete desde la interfaz de usuario de AEM Forms.
+     La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip.No puede descargar formularios adaptables, comunicaciones interactivas, fragmentos de formularios adaptables, temas ni conjuntos de formularios con la opción **Descargar recursos como archivos binarios**. Para descargar estos recursos, debe utilizar la opción **Descargar como paquete CRX**.
+   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip.
+     No puede descargar formularios adaptables, comunicaciones interactivas, fragmentos de formularios adaptables, temas ni conjuntos de formularios con la opción **Descargar recursos como archivos binarios**. Para descargar estos recursos, debe utilizar la opción **Descargar como paquete CRX**.
 
    Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
@@ -88,7 +106,8 @@ Para cargar una temática:
 
 1. En Experience Manager, vaya a **Forms > Temas**.
 1. En la página Temáticas, haga clic en **Crear > Cargar archivo**.
-1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**.La temática cargada está disponible en la página de temáticas.
+1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**.
+La temática cargada está disponible en la página de temáticas.
 
 1. Inicie sesión en la instancia de AEM Forms.
 1. Seleccione el icono de Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navegación ![icono de brújula](assets/compass.png)> Forms> Temas.

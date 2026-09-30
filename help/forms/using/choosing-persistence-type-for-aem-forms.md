@@ -9,13 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 8ddfc767-08a5-4045-86a7-97150e028a14
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '347'
 ht-degree: 96%
-
 ---
-
 # Seleccionar un tipo de persistencia para una instalación de AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 Elija bien un tipo de persistencia. Le ayudará a crear un entorno de AEM Forms eficiente y escalable.
@@ -40,13 +54,13 @@ La siguiente tabla muestra todos los tipos de persistencia admitidos, así como 
    <th><strong>Configuración independiente</strong></th>
    <td>Compatibilidad<br /> </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <th><strong>Configuración del clúster</strong></th>
    <td>No compatible</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <th><strong>Coste de licencia</strong></th>

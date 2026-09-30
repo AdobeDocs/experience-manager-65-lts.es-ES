@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
 # Guía de configuración del almacén de credenciales de base de datos (modo independiente)
 
 ## Información general
@@ -44,11 +52,11 @@ Antes de ejecutar estos scripts, asegúrese de lo siguiente:
    - Los scripts utilizan `embed-server`, lo que requiere que se detenga el servidor
    - Si JBoss se está ejecutando, los scripts fallarán
    - Compruebe si JBoss se está ejecutando:
-      - Windows: comprobar el Administrador de tareas para el proceso `java.exe`
-      - Linux: `ps aux | grep jboss` o `ps aux | grep java`
+     - Windows: comprobar el Administrador de tareas para el proceso `java.exe`
+     - Linux: `ps aux | grep jboss` o `ps aux | grep java`
    - Detener JBoss si se ejecuta:
-      - Pulse `Ctrl+C` en el terminal donde se está ejecutando JBoss
-      - O matar el proceso manualmente
+     - Pulse `Ctrl+C` en el terminal donde se está ejecutando JBoss
+     - O matar el proceso manualmente
 
 2. **Tiene lista la contraseña de la base de datos**
 
@@ -82,10 +90,10 @@ Descargue el script `create-elytron-cred-standalone.bat` del [Portal de distribu
 - Crea un almacén de credenciales en: `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - Modifica temporalmente el archivo de configuración para habilitar la creación del almacén de credenciales
 - Agrega los siguientes alias con la contraseña de la base de datos:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaura el archivo de configuración a su estado original
 - Comprueba que todos los alias se hayan agregado correctamente
 
@@ -107,10 +115,10 @@ Descargue el script `create-elytron-cred-standalone.sh` del [Portal de distribuc
 - Crea un almacén de credenciales en: `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - Modifica temporalmente el archivo de configuración para habilitar la creación del almacén de credenciales
 - Agrega los siguientes alias con la contraseña de la base de datos:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaura el archivo de configuración a su estado original
 - Comprueba que todos los alias se hayan agregado correctamente
 
@@ -224,7 +232,7 @@ ERROR Unable to load credential store - Invalid password
 **Solución:**
 Compruebe que la contraseña de `standalone.conf.bat` / `standalone.conf` (Paso 2) coincide con la contraseña utilizada al crear el almacén de credenciales (Paso 1).
 
-**Para corregir:**
+**Para Solucionar:**
 Edite `standalone.conf.bat` / `standalone.conf` y actualice la contraseña:
 
 ```

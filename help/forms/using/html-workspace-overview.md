@@ -5,13 +5,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '996'
 ht-degree: 97%
-
 ---
-
 # Usar AEM Forms Workspace{#working-with-aem-forms-workspace}
 
 ## Introducción {#introduction}
@@ -129,4 +147,4 @@ Puede personalizar la mayor parte de la interfaz y las principales funcionalidad
 
 En cada nuevo proceso, los formularios XDP se representan de forma predeterminada en formato PDF en los equipos de escritorio y en formato HTML en las tabletas. Siempre es posible procesar un formulario XDP en formato HTML. Para obtener más información, consulte [Nuevos servicios de renderización y envío](/help/forms/using/new-render-submit-service.md).
 
-La funcionalidad [Mobile Forms](/help/forms/using/introduction.md), que funciona con [perfiles](/help/forms/using/custom-profile.md), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario de HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.
+La funcionalidad [Mobile Forms](/help/forms/using/introduction.md), que funciona con [perfiles](/help/forms/using/custom-profile.md), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f1141b8c-12a2-44a0-8c15-b614398b5174
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 6%
-
 ---
-
 # Prueba de plantillas editables en We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Con las plantillas editables, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. Un tipo de usuario avanzado, que se denomina autor de plantillas, ahora puede crear plantillas. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el autor de la plantilla tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
@@ -57,10 +66,10 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
    * Seleccione una política existente o cree una política para el contenedor
    * Defina las funciones disponibles para el autor de la página al utilizar este componente, como
 
-      * Fuentes de pegado permitidas
-      * Opciones de formato
-      * Estilos de párrafo permitidos
-      * Caracteres especiales permitidos
+     * Fuentes de pegado permitidas
+     * Opciones de formato
+     * Estilos de párrafo permitidos
+     * Caracteres especiales permitidos
 
    Muchos componentes basados en los componentes principales permiten la configuración de opciones en el nivel de componente a través de las plantillas editables, lo que elimina la necesidad de que los desarrolladores los personalicen.
 

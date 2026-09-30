@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 0%
-
+source-wordcount: '2476'
+ht-degree: 1%
 ---
-
 
 # Edición de un SPA externo en Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -30,8 +44,8 @@ Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
 * Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
-   * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
-   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
+  * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
+  * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}
@@ -166,7 +180,7 @@ Veamos una página de ejemplo en la que es necesario agregar texto del proyecto 
 
    * `pagePath`: página que contiene el nodo, en el ejemplo `/content/wknd-spa-react/us/en/home`
    * `itemPath`: ruta de acceso al nodo dentro de la página, en el ejemplo `root/responsivegrid/text`
-      * Consta de los nombres de los elementos que contienen la página.
+     * Consta de los nombres de los elementos que contienen la página.
 
    ![Ruta de acceso del nodo](assets/external-spa-path.png)
 
@@ -260,9 +274,9 @@ Existen varios requisitos para agregar componentes de hoja virtual y algunas lim
 * El nodo de página proporcionado en la ruta de acceso de `pagePath` debe existir en el proyecto de AEM.
 * El nombre del nodo que se va a crear debe proporcionarse en `itemPath`.
 * El componente se puede crear en cualquier nivel.
-   * Si se proporciona un `itemPath='text_20'` en el ejemplo anterior, el nuevo nodo se creará directamente debajo de la página, es decir, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+  * Si se proporciona un `itemPath='text_20'` en el ejemplo anterior, el nuevo nodo se creará directamente debajo de la página, es decir, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * La ruta de acceso al nodo donde se crea un nuevo nodo debe ser válida cuando se proporcione a través de `itemPath`.
-   * En este ejemplo, `root/responsivegrid` debe existir para que el nuevo nodo `text_20` pueda crearse allí.
+  * En este ejemplo, `root/responsivegrid` debe existir para que el nuevo nodo `text_20` pueda crearse allí.
 * Solo se admite la creación de componentes de hoja. El contenedor y la página virtuales serán compatibles en versiones futuras.
 
 ### Contenedores virtuales {#virtual-containers}
@@ -297,8 +311,8 @@ Existen varios requisitos para agregar contenedores virtuales y algunas limitaci
 
 * La directiva para determinar qué componentes se pueden agregar se heredará del contenedor principal.
 * El elemento principal inmediato del contenedor que se va a crear ya debe existir en AEM.
-   * Si el contenedor `root/responsivegrid` ya existe en el contenedor de AEM, se puede crear un nuevo contenedor proporcionando la ruta de acceso `root/responsivegrid/newContainer`.
-   * Sin embargo `root/responsivegrid/newContainer/secondNewContainer` no es posible.
+  * Si el contenedor `root/responsivegrid` ya existe en el contenedor de AEM, se puede crear un nuevo contenedor proporcionando la ruta de acceso `root/responsivegrid/newContainer`.
+  * Sin embargo `root/responsivegrid/newContainer/secondNewContainer` no es posible.
 * Solo se puede crear virtualmente un nuevo nivel de componente a la vez.
 
 ## Personalizaciones adicionales {#additional-customizations}
@@ -355,9 +369,9 @@ Para habilitar la edición dentro de AEM para este SPA de ejemplo, se requieren 
    ![Asistente de enrutamiento](assets/external-spa-router-helper.png)
 
    * El asistente de `toAEMPath` proporcionado por `@adobe/cq-spa-page-model-manager` se puede usar para esto. Transforma la ruta proporcionada para el enrutamiento de modo que incluya partes específicas de AEM cuando la aplicación está abierta en una instancia de AEM. Acepta tres parámetros:
-      * La ruta necesaria para el enrutamiento
-      * URL de origen de la instancia de AEM donde se edita la SPA
-      * La raíz del proyecto en AEM tal como se determinó en el primer paso
+     * La ruta necesaria para el enrutamiento
+     * URL de origen de la instancia de AEM donde se edita la SPA
+     * La raíz del proyecto en AEM tal como se determinó en el primer paso
 
    * Estos valores se pueden configurar como variables de entorno para una mayor flexibilidad.
 
@@ -374,7 +388,7 @@ El componente RemotePage espera que la implementación proporcione un manifiesto
 El siguiente material de referencia puede resultar útil para comprender las SPA en el contexto de AEM.
 
 * [El arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
-* [El proyecto de SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
+* [El proyecto SPA de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
 * [Introducción a SPA en AEM con React](spa-getting-started-react.md)
 * [Materiales de referencia de SPA (referencias de API)](spa-reference-materials.md)
 * [Modelo SPA y PageModelManager](spa-blueprint.md#pagemodelmanager)

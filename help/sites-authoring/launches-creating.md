@@ -10,13 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
 exl-id: 18c32ec9-9f6d-4c6e-9790-dc911baa1d75
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 78%
-
+source-wordcount: '1098'
+ht-degree: 77%
 ---
-
 # Crear lanzamientos{#creating-launches}
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se habilitará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
@@ -41,12 +59,12 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
 
    * **Lanzamientos**:
 
-      1. Seleccione **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
+     1. Seleccione **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
 
    * **Sites**:
 
-      1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
-      1. A continuación, seleccione **Crear lanzamiento** para abrir el asistente.
+     1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
+     1. A continuación, seleccione **Crear lanzamiento** para abrir el asistente.
 
    >[!NOTE]
    >
@@ -75,7 +93,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
 
    * **Incluir páginas secundarias**:
 
-      * Especifique si desea crear un lanzamiento con o sin las páginas secundarias.  De forma predeterminada, se incluyen estas subpáginas.
+     * Especifique si desea crear un lanzamiento con o sin las páginas secundarias.  De forma predeterminada, se incluyen estas subpáginas.
 
    Continúe con **Siguiente**.
 
@@ -164,8 +182,8 @@ Puede clonar un lanzamiento desde la [consola de lanzamientos](/help/sites-autho
 
 * Para seleccionar el lanzamiento, toque o haga clic en la miniatura.
 * Aparecerá la barra de herramientas. Seleccione Clonar.
-   * El clon se crea y se muestra en la consola.
-   * El **Título de lanzamiento** indicará que es un clon. Puede actualizar el título editando la [Configuración de lanzamiento](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propiedades**).
+  * El clon se crea y se muestra en la consola.
+  * El **Título de lanzamiento** indicará que es un clon. Puede actualizar el título editando la [Configuración de lanzamiento](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propiedades**).
 
 ## Eliminación de un lanzamiento {#deleting-a-launch}
 

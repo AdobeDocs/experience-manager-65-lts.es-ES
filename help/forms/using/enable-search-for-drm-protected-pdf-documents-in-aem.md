@@ -5,13 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '728'
 ht-degree: 98%
-
 ---
-
 # Habilitar AEM para buscar documentos PDF protegidos mediante Seguridad de documentos{#enable-aem-to-search-document-security-protected-pdf-documents}
 
 La búsqueda de AEM puede buscar y localizar AEM Assets y realizar búsquedas de texto en varios formatos de documento de uso común, como archivos de texto sin formato, documentos de Microsoft Office y documentos PDF. También puede ampliar la búsqueda nativa para realizar búsquedas de texto completo en [documentos PDF protegidos con seguridad de documentos de AEM](../../forms/using/admin-help/document-security.md). Para permitir que AEM realice búsquedas de texto completo en dichos documentos, realice los siguientes pasos:
@@ -23,22 +36,22 @@ La búsqueda de AEM puede buscar y localizar AEM Assets y realizar búsquedas de
 
 * Si utiliza AEM Forms en OSGi:
 
-   * Instale el [Paquete del indexador de seguridad de documentos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) en el servidor de AEM Forms.
+  * Instale el [Paquete del indexador de seguridad de documentos de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) en el servidor de AEM Forms.
 
-   * Asegúrese de que haya AEM Forms en el servidor JEE en funcionamiento y de que la seguridad de los documentos esté instalada en AEM Forms correspondiente del servidor JEE. Necesita AEM Forms del servidor JEE para indexar el documento protegido.
+  * Asegúrese de que haya AEM Forms en el servidor JEE en funcionamiento y de que la seguridad de los documentos esté instalada en AEM Forms correspondiente del servidor JEE. Necesita AEM Forms del servidor JEE para indexar el documento protegido.
 
 * Si solo utiliza AEM Forms en el servidor JEE, el paquete del indexador ya estará instalado.
 * Asegúrese de que todos los paquetes estén en funcionamiento. Si no todos los paquetes están activos, espere hasta que todos los paquetes estén en funcionamiento.
 
-   * Para AEM Forms en OSGi, los paquetes se enumeran en https://&#39;[servidor]:[puerto]&#39;/system/console/bundles.
-   * Para AEM Forms en JEE, los paquetes se enumeran en https://&#39;[servidor]:[puerto]&#39;/[context-path]/system/console/bundles. Por ejemplo, https://localhost:8080/lc/system/console/bundles.
+  * Para AEM Forms en OSGi, los paquetes se enumeran en https://&#39;[servidor]:[puerto]&#39;/system/console/bundles.
+  * Para AEM Forms en JEE, los paquetes se enumeran en https://&#39;[servidor]:[puerto]&#39;/[context-path]/system/console/bundles. Por ejemplo, https://localhost:8080/lc/system/console/bundles.
 
 * Agregue el paquete *sun.util.calendar* a la lista de permitidos. Para agregar el paquete a la lista de permitidos, realice los siguientes pasos:
 
-   1. Abra la consola web de AEM. La dirección URL es https://&#39;[servidor]:[puerto]&#39;/system/console/configMgr.
-   1. Localice y abra **Configuración del firewall de deserialización**.
+  1. Abra la consola web de AEM. La dirección URL es https://&#39;[servidor]:[puerto]&#39;/system/console/configMgr.
+  1. Localice y abra **Configuración del firewall de deserialización**.
 
-   1. Agregue el paquete sun.util.calendar al campo Allowlisted classes o Paquete de prefijos y haga clic en **Guardar**.
+  1. Agregue el paquete sun.util.calendar al campo Allowlisted classes o Paquete de prefijos y haga clic en **Guardar**.
 
 ### Establezca una conexión segura entre las pilas de AEM Forms JEE y OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 

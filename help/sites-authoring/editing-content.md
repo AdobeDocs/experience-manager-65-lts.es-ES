@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3030'
 ht-degree: 46%
-
 ---
-
 # Edición del contenido de una página{#editing-page-content}
 
 Una vez creada la página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
@@ -164,7 +177,7 @@ Puede agregar un componente mediante el cuadro **Arrastrar componentes aquí** d
 
 1. El componente seleccionado se añade en la parte inferior de la página. [Edite](#editmovecopypastedelete) el componente como sea necesario.
 
-### Inserción de un componente mediante el navegador de recursos   {#inserting-a-component-using-the-assets-browser}
+### Inserción de un componente mediante el navegador de recursos {#inserting-a-component-using-the-assets-browser}
 
 También puede agregar un componente a la página arrastrando un recurso desde el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser). Esto crea automáticamente un componente del tipo adecuado (y que contiene el recurso).
 
@@ -269,9 +282,9 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
   Esto pega el componente del portapapeles en la página. El hecho de que el original permanezca depende de si ha utilizado copiar o cortar.
 
-   * Puede pegar componentes en la misma página o en otra distinta.
-   * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
-   * La acción Pegar solo se muestra si hay contenido en el portapapeles.
+  * Puede pegar componentes en la misma página o en otra distinta.
+  * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
+  * La acción Pegar solo se muestra si hay contenido en el portapapeles.
 
   ![Pegar](assets/screen_shot_2018-03-22at113553.png)
 
@@ -310,7 +323,7 @@ Existen dos métodos para añadir o editar contenido en los componentes:
 * Abra el [diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#draganddropintocomponent) desde el explorador de recursos para añadir contenido directamente.
 
-### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
+### Cuadro de diálogo de edición de contenido {#component-edit-dialog}
 
 Puede abrir un componente para editar el contenido mediante el icono [Editar (lápiz) de la barra de herramientas](#edit-configure-copy-cut-delete-paste) del componente.
 
@@ -456,7 +469,7 @@ Si la página se basa en una [plantilla estática](/help/sites-authoring/templat
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Estado de Live Copy   {#live-copy-status}
+## Estado de Live Copy {#live-copy-status}
 
 El [modo de la página de estado de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite echar un vistazo rápido al estado de Live Copy y a los componentes que se han heredado o no.
 
@@ -471,7 +484,7 @@ Por ejemplo:
 
 Las [anotaciones](/help/sites-authoring/annotations.md) permiten que los revisores y otros autores realicen comentarios sobre el contenido. A menudo se utilizan para la revisión y validación.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 
@@ -506,7 +519,7 @@ Durante la creación, el modo de vista previa está disponible mediante el icono
 
 La opción **Ver tal y como aparece publicado** está disponible en el menú [información de la página](/help/sites-authoring/author-environment-tools.md#page-information). Esto abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparece cuando se publica.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página {#locking-a-page}
 
 AEM permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando debe congelar una página durante un corto tiempo.
 
@@ -514,15 +527,15 @@ Las páginas se pueden bloquear desde:
 
 * consola **Sitios**
 
-   1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Seleccione el icono de bloqueo.
+  1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Seleccione el icono de bloqueo.
 
   ![Icono de candado](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
-   1. Para abrir el menú, seleccione el icono **Información de la página**.
-   1. Seleccione la opción **bloquear página**.
+  1. Para abrir el menú, seleccione el icono **Información de la página**.
+  1. Seleccione la opción **bloquear página**.
 
 Una vez bloqueada, se actualiza la información de la vista de la consola y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
 

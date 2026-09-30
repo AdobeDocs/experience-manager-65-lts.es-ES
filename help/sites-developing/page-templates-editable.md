@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7831c056-86f8-41c1-bc45-5e9829bc54bc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3063'
+source-wordcount: '3077'
 ht-degree: 6%
-
 ---
-
 # Plantillas de página: editables {#page-templates-editable}
 
 Las plantillas editables se han introducido en:
@@ -44,7 +53,8 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 
 >[!NOTE]
 >
->El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto: >[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=es)
+>El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto:
+>[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=es)
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 

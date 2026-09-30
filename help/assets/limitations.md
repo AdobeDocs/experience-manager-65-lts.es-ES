@@ -9,13 +9,35 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5aa07827-8483-4a99-9197-a17485226a13
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+  - id: e2dc1259-9034-40fc-a518-b92a34fe6642
+    internal-label: Image sets
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+  - id: fb5874db-3110-450a-b647-a5c2ce139bef
+    internal-label: eCatalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 8%
-
 ---
-
 # Limitaciones de Dynamic Media
 
 Las secciones siguientes describen las limitaciones de Dynamic Media.
@@ -67,17 +89,17 @@ A partir del 30 de abril de 2024, Adobe Dynamic Media dejará de ser compatible 
 * SSL 3.0
 * TLS (Transport Layer Security) 1.0 y 1.1
 * Los siguientes cifrados débiles en TLS 1.2:
-   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-   * `TLS_RSA_WITH_AES_256_GCM_SHA384`
-   * `TLS_RSA_WITH_AES_256_CBC_SHA256`
-   * `TLS_RSA_WITH_AES_256_CBC_SHA`
-   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-   * `TLS_RSA_WITH_AES_128_GCM_SHA256`
-   * `TLS_RSA_WITH_AES_128_CBC_SHA256`
-   * `TLS_RSA_WITH_AES_128_CBC_SHA`
-   * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-   * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-   * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-   * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+  * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+  * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+  * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+  * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+  * `TLS_RSA_WITH_AES_256_CBC_SHA`
+  * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+  * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+  * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+  * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+  * `TLS_RSA_WITH_AES_128_CBC_SHA`
+  * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+  * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+  * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+  * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`

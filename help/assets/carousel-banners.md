@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4676'
 ht-degree: 3%
-
 ---
-
 # Titulares de carrusel{#carousel-banners}
 
 Los titulares de carrusel permiten a los especialistas en marketing impulsar la conversión creando fácilmente contenido promocional giratorio interactivo y entregándolo en cualquier pantalla.
@@ -85,7 +99,7 @@ Para ayudarle a ponerse en marcha rápidamente con titulares de carrusel:
 
    * [Agregar un banner de carrusel a la página del sitio web](#adding-a-carousel-banner-to-your-website-page) Puede agregar la URL del banner de carrusel o el código incrustado que ha copiado en la página del sitio web.
 
-      * [Integrar el titular del carrusel con una vista rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Si utiliza un sistema de administración de contenido web de terceros, debe integrar el nuevo banner de carrusel con la implementación de Quickview existente en su sitio web.
+     * [Integrar el titular del carrusel con una vista rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Si utiliza un sistema de administración de contenido web de terceros, debe integrar el nuevo banner de carrusel con la implementación de Quickview existente en su sitio web.
 
    * [Agregar un banner de carrusel al sitio web en Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página en Experience Manager mediante el componente de medios interactivos.
 
@@ -281,23 +295,23 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
 
    * Seleccione **[!UICONTROL Quickview]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, seleccione la marca de verificación en la esquina superior derecha de la página para poder volver al editor de banners de carrusel.
-      * Si no es cliente de Experience Manager Sites
+     * Si es cliente de Experience Manager Sites, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, seleccione la marca de verificación en la esquina superior derecha de la página para poder volver al editor de banners de carrusel.
+     * Si no es cliente de Experience Manager Sites
 
-         * Consulte [Identificar variables de puntos interactivos](#identifying-hotspot-and-image-map-variables) si desea definir estas variables.
-         * A continuación, introduzca manualmente el valor SKU. En el campo de texto Valor de SKU, escriba la SKU del producto (unidad de stock), que es un identificador único para cada producto o servicio distinto que ofrece. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida para que el sistema sepa que debe asociar el punto interactivo tocado con la vista rápida de una SKU en particular.
-         * (Opcional) Si hay otras variables dentro de la vista rápida que debe usar para identificar aún más un producto, seleccione **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, category=Mens es una variable agregada.
+       * Consulte [Identificar variables de puntos interactivos](#identifying-hotspot-and-image-map-variables) si desea definir estas variables.
+       * A continuación, introduzca manualmente el valor SKU. En el campo de texto Valor de SKU, escriba la SKU del producto (unidad de stock), que es un identificador único para cada producto o servicio distinto que ofrece. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida para que el sistema sepa que debe asociar el punto interactivo tocado con la vista rápida de una SKU en particular.
+       * (Opcional) Si hay otras variables dentro de la vista rápida que debe usar para identificar aún más un producto, seleccione **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, category=Mens es una variable agregada.
 
-         * Consulte [Trabajar con selectores](/help/assets/working-with-selectors.md) para obtener más información.
+       * Consulte [Trabajar con selectores](/help/assets/working-with-selectors.md) para obtener más información.
 
    * Seleccione **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
-        >[!NOTE]
-        >
-        >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+     * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
+       >[!NOTE]
+       >
+       >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
-      * Si es cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
+     * Si es cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador (opción predeterminada recomendada) o en la misma pestaña.
 
@@ -305,16 +319,16 @@ Consulte también [Agregar mapas de imagen](/help/assets/image-maps.md).
 
    * Seleccione **[!UICONTROL Fragmento de experiencia]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
-Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
+     * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
+       Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
-      * Especifique la anchura y altura del fragmento de experiencia tal como aparece en el banner.
+     * Especifique la anchura y altura del fragmento de experiencia tal como aparece en el banner.
 
-        >[!NOTE]
-        >
-        >Las herramientas de uso compartido de medios sociales del titular del carrusel no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia.
-        >
-        >Para solucionar este problema, cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+       >[!NOTE]
+       >
+       >Las herramientas de uso compartido de medios sociales del titular del carrusel no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia.
+       >
+       >Para solucionar este problema, cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -374,7 +388,7 @@ Puede usar Vista previa para ver cómo aparece el banner del carrusel para los c
 
 Cuando esté satisfecho con el titular del carrusel, puede publicarlo.
 Ver [Incrustación del visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Consulte [Vinculación de direcciones URL a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Ver [URL de vinculación a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Puede obtener una vista previa de los titulares de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visores]**.

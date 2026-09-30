@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 1%
-
 ---
-
 # Conceptos de la IU táctil de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) cuenta con una interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación, que está diseñada para funcionar tanto en dispositivos táctiles como de escritorio.
@@ -28,24 +37,24 @@ Adobe Experience Manager (AEM) cuenta con una interfaz de usuario táctil con [d
 La IU táctil incluye lo siguiente:
 
 * El encabezado de grupo indica que:
-   * Muestra el logotipo
-   * Proporciona un vínculo a la navegación global
-   * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Experience Cloud, Notificaciones y Configuración de usuario.
+  * Muestra el logotipo
+  * Proporciona un vínculo a la navegación global
+  * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Experience Cloud, Notificaciones y Configuración de usuario.
 * El carril izquierdo (se muestra cuando es necesario y se puede ocultar), que puede mostrar:
-   * Escala de cronología
-   * Referencias
-   * Filtros
+  * Escala de cronología
+  * Referencias
+  * Filtros
 * El encabezado de navegación, que de nuevo distingue entre contextos y puede mostrar:
-   * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
-   * Selección para el carril izquierdo
-   * Rutas de exploración
-   * Acceso a **Crear** acciones apropiadas
-   * Ver selecciones
+  * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
+  * Selección para el carril izquierdo
+  * Rutas de exploración
+  * Acceso a **Crear** acciones apropiadas
+  * Ver selecciones
 * El área de contenido que:
-   * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
-   * Puede tener el formato solicitado, por ejemplo, columna, tarjeta o lista
-   * Utiliza un diseño interactivo (la pantalla cambia de tamaño automáticamente según el tamaño del dispositivo o la ventana)
-   * Utiliza desplazamiento infinito (no más paginación, todos los elementos se muestran en una ventana)
+  * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
+  * Puede tener el formato solicitado, por ejemplo, columna, tarjeta o lista
+  * Utiliza un diseño interactivo (la pantalla cambia de tamaño automáticamente según el tamaño del dispositivo o la ventana)
+  * Utiliza desplazamiento infinito (no más paginación, todos los elementos se muestran en una ventana)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

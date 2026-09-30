@@ -1,18 +1,27 @@
 ---
-title: Configurar  [!DNL Workfront for Experience Manager enhanced connector]
-description: Configurar  [!DNL Workfront for Experience Manager enhanced connector]
+title: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
+description: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 1%
-
 ---
-
 # Configuración de [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Versión | Vínculo del artículo |
@@ -123,23 +132,23 @@ Este paso del flujo de trabajo permite que un usuario asigne una propiedad a un 
 
 * El `workfront-field` puede ser
 
-   * Campo de formulario personalizado identificado con el prefijo `DE:`.
-   * Campo editable identificado por su nombre. Los nombres de campo se encuentran en [[!DNL Workfront] Explorador de API](https://experience.workfront.com/s/api-explorer).
+  * Campo de formulario personalizado identificado con el prefijo `DE:`.
+  * Campo editable identificado por su nombre. Los nombres de campo se encuentran en [[!DNL Workfront] Explorador de API](https://experience.workfront.com/s/api-explorer).
 
 * El(la) `aem-mapped-property` puede ser:
 
-   * Un valor literal. Deben ir entre comillas.
-   * Una propiedad de AEM. Esta referencia debe ser relativa a la carga útil del flujo de trabajo.
-   * Un valor con nombre. Estos deben ir entre corchetes.
-   * Una concatenación de los tres elementos anteriores. Especifíquelo usando `{+}`.
-   * Una modificación de los tres elementos anteriores al rodear el valor con `{replace(<value>,"old-char","new-char")}`.
+  * Un valor literal. Deben ir entre comillas.
+  * Una propiedad de AEM. Esta referencia debe ser relativa a la carga útil del flujo de trabajo.
+  * Un valor con nombre. Estos deben ir entre corchetes.
+  * Una concatenación de los tres elementos anteriores. Especifíquelo usando `{+}`.
+  * Una modificación de los tres elementos anteriores al rodear el valor con `{replace(<value>,"old-char","new-char")}`.
 
 * Algunos ejemplos son:
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuración para asignar la propiedad](/help/assets/assets/wf-map-property-config.png)
 

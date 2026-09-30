@@ -9,13 +9,31 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 92%
-
+source-wordcount: '2096'
+ht-degree: 94%
 ---
-
 # Plantillas de formulario adaptable{#adaptive-form-templates}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -49,7 +67,7 @@ Después de crear una carpeta, ábrala y haga lo siguiente para crear una planti
 1. En la consola Plantilla, seleccione **Crear** dentro de la carpeta que ha creado.
 1. En la sección Elegir tipo de plantilla, seleccione **Plantilla de formulario adaptable** y seleccione **Siguiente**.
 
-1. En la sección Detalles de plantilla, proporcione un Título de plantilla y seleccione **Crear**.
+1. En la sección Detalles de la plantilla, escriba un Título de plantilla y seleccione **Crear**.
 Puede proporcionar una descripción y una miniatura que pueda ver cuando seleccione la plantilla creada en el momento de la creación del formulario.
 
 1. Seleccione **Listo** para volver a la consola o seleccione **Abrir** para abrir la plantilla en el editor.
@@ -61,13 +79,13 @@ Cuando abra una plantilla para editarla, verá los siguientes componentes del ed
 * **Barra de herramientas de página**
 Contiene las siguientes opciones:
 
-   * **Alternar: panel lateral**: permite mostrar u ocultar la barra lateral.
-   * **Información de la página**: permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
-   * **Emulador**: permite simular y personalizar la apariencia de distintos dispositivos.
-   * **Selector de capa:** Permite cambiar la capa.
-Puede elegir la capa **Estructura** o **Contenido inicial**. La capa Estructura permite agregar y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
+  * **Alternar: panel lateral**: permite mostrar u ocultar la barra lateral.
+  * **Información de la página**: permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
+  * **Emulador**: permite simular y personalizar la apariencia de distintos dispositivos.
+  * **Selector de capa:** permite cambiar la capa.
+    Puede elegir la capa **Estructura** o **Contenido inicial**. La capa Estructura permite agregar y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
 
-   * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
+  * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
 
 * **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
@@ -117,7 +135,7 @@ Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccio
 Cuando se selecciona la opción Contenido inicial, el contenedor de formulario adaptable de la plantilla se abrirá como un formulario adaptable para su edición. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar una temática y enviar acciones.
 
 Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenido inicial**.
-![Capa de contenido inicial en el editor de plantillas](assets/initial-content-layer.png)
+![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
 
 La capa de contenido inicial en el Editor de plantillas muestra el contenedor del formulario adaptable seleccionado para especificar propiedades.
 
@@ -168,7 +186,7 @@ Al crear una plantilla, esta se agrega como borrador. Habilite la plantilla para
 1. Vaya a **Adobe Experience Manager > Herramientas > Plantillas** y abra la carpeta en la que ha creado la plantilla.
 
 1. La plantilla que ha creado se marcará como borrador.
-1. Seleccione la plantilla y seleccione **Habilitar** en la barra de herramientas.
+1. Seleccione la plantilla y seleccione **Habilitar** en la barra de herramientas.
 Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando se le pida que elija una plantilla.
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}
@@ -201,5 +219,5 @@ Siga estos pasos para mostrar y ocultar plantillas:
 ## Recomendaciones {#recommendations}
 
 * Cuando modifique las propiedades del formulario en el editor de plantillas, no utilice la propiedad BindReference.
-* Si desea agregar un punto de interrupción, créelo cuando cree una plantilla de formulario adaptable.
-Para obtener más información sobre los puntos de interrupción, vea [Diseño adaptable](/help/sites-authoring/responsive-layout.md).
+* Si desea agregar un punto de ruptura, créelo cuando cree una plantilla de formulario adaptable.
+Para obtener más información sobre los puntos de ruptura, consulte [Diseño adaptable](/help/sites-authoring/responsive-layout.md).

@@ -5,13 +5,29 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ee4c2482-9595-5bc0-b9be-c0c6f02eba50
+    internal-label: Asset Processing
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 1%
-
 ---
-
 # Biblioteca de transcodificación de imágenes {#imaging-transcoding-library}
 
 La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes propietaria que puede realizar funciones principales de administración de imágenes, como las siguientes:

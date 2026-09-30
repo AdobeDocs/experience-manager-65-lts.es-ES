@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1576'
 ht-degree: 82%
-
 ---
-
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
 Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
@@ -1245,11 +1257,11 @@ Esta consulta busca lo siguiente:
 Esta consulta de muestra busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de esa ruta, todos los formatos de contenido:
-      * HTML
-      * Markdown
-      * Texto sin formato
-      * JSON
+  * dentro de esa ruta, todos los formatos de contenido:
+    * HTML
+    * Markdown
+    * Texto sin formato
+    * JSON
 
 **Consulta de muestra**
 
@@ -1275,7 +1287,7 @@ Esta consulta de muestra busca lo siguiente:
 Esta consulta de muestra busca lo siguiente:
 
 * para un solo fragmento de contenido
-   * detalles del modelo de fragmento de contenido subyacente
+  * detalles del modelo de fragmento de contenido subyacente
 
 **Consulta de muestra**
 
@@ -1299,7 +1311,7 @@ Esta consulta de muestra busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de esa ruta, la ruta y el autor del fragmento al que se hace referencia (anidado)
+  * dentro de esa ruta, la ruta y el autor del fragmento al que se hace referencia (anidado)
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ Esta consulta busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con Referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article`
+  * con Referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article`
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ Esta consulta busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` y `Adventure`
+  * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` y `Adventure`
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ Hay dos tipos de consulta:
 Estas consultas buscan:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de contenido a otros fragmentos
+  * con referencias de contenido a otros fragmentos
 
 #### Consulta de muestra para varios fragmentos de contenido con referencias recuperadas previamente {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ La siguiente consulta devuelve todos los `attachments`, un campo específico (su
 Esta consulta busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `bookmark` en una ruta específica
-   * dentro de él, referencias en línea RTE
+  * dentro de él, referencias en línea RTE
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ Esta consulta busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de esa ruta, los datos relacionados con la variación: `variation1`
+  * dentro de esa ruta, los datos relacionados con la variación: `variation1`
 
 **Consulta de muestra**
 
@@ -1657,7 +1669,7 @@ Para las consultas de muestra, utilice los siguientes modelos de contenido y sus
 
 * [Compañía](#model-company)
 -> [Persona](#model-person)
--> [Premio](#model-award)
+    -> [Premio](#model-award)
 
 * [Ciudad](#model-city)
 

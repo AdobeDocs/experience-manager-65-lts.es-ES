@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '985'
 ht-degree: 0%
-
 ---
-
 # Indexación mediante el Jar ejecutado por Oak {#indexing-via-the-oak-run-jar}
 
 Oak-run admite todos los casos de uso de indexación en la línea de comandos sin tener que operar desde el nivel JMX. Las ventajas del enfoque oak-run son:
@@ -92,11 +101,11 @@ Ejecute este proceso solo con una instancia de AEM del clúster.
 
 * **Consideraciones de espera en frío (TarMK)**
 
-   * No hay consideraciones especiales para el modo de espera en frío; las instancias de espera en frío se sincronizan como de costumbre.
+  * No hay consideraciones especiales para el modo de espera en frío; las instancias de espera en frío se sincronizan como de costumbre.
 
 * **Granjas de publicación de AEM (las granjas de publicación de AEM siempre deben ser TarMK)**
 
-   * Para la granja de servidores de publicación, debe realizarse para todos los pasos O ejecutar en una sola publicación. A continuación, clone la configuración para otros (tomando todas las precauciones habituales al clonar instancias de AEM; sling.id: debe vincularse a algo aquí).
+  * Para la granja de servidores de publicación, debe realizarse para todos los pasos O ejecutar en una sola publicación. A continuación, clone la configuración para otros (tomando todas las precauciones habituales al clonar instancias de AEM; sling.id: debe vincularse a algo aquí).
 
 ### Reindexación en línea para TarMK {#onlinere-indexingfortarmk}
 

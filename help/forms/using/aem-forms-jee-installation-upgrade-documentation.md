@@ -10,13 +10,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: AEM Forms on JEE,AEM Forms Upgrade
 exl-id: 67a96376-412e-4065-b7af-fbb720a4720a
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
-
 ---
-
 # Flujo de trabajo de instalación y actualización para AEM Forms en JEE {#aem-forms-jee-installation-upgrade-documentation}
 
 ## Se aplica a {#applies-to}

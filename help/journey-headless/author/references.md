@@ -5,13 +5,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer,User,Leader
 exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
-
+source-wordcount: '724'
+ht-degree: 92%
 ---
-
 # Obtenga información sobre el uso de referencias en fragmentos de contenido {#author-headless-references}
 
 ## La historia hasta ahora {#story-so-far}
@@ -27,10 +47,10 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
 * **Público**: avanzado
 * **Objetivo**: introducir el uso de referencias para la creación de CMS sin encabezado. Qué tipos de referencias están disponibles y cuáles son sus propósitos:
 
-   * Referencias de contenidos
-   * Referencias de recursos/medios
-   * Referencias a fragmentos
-   * Referencias Ad hoc desde dentro de un bloque de texto
+  * Referencias de contenidos
+  * Referencias de recursos/medios
+  * Referencias a fragmentos
+  * Referencias Ad hoc desde dentro de un bloque de texto
 
 ## Qué son las referencias {#what-are-references}
 
@@ -61,14 +81,14 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todos son personas, cada uno definido como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 
 * Mi compañía: compañía
-   * CEO: persona
-   * Empleado(s): persona
-      * Premio(s) personal(es): premio
+  * CEO: persona
+  * Empleado(s): persona
+    * Premio(s) personal(es): premio
 
 Y esto es solo para empezar. Según la complejidad, un premio podría ser específico de una compañía, o una compañía podría tener su oficina principal en una ciudad específica.
 
@@ -111,22 +131,22 @@ Ahora que ha aprendido acerca de referencias y estructuras en los fragmentos de 
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
-   * [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Aplicación de la configuración a la carpeta Recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Aplicación de la configuración a la carpeta Recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Guías de introducción
-   * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
 

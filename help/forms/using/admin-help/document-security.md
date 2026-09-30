@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 4%
-
 ---
-
 # Acerca de la seguridad de los documentos {#about-document-security}
 
 La seguridad de los documentos garantiza que solo los usuarios autorizados puedan utilizar los documentos. Con Document Security, puede distribuir de forma segura cualquier tipo de información guardada en un formato compatible. Los formatos de archivo admitidos son:
@@ -71,15 +83,15 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 
   Los usuarios con esta función tienen acceso a toda la configuración de seguridad de los documentos de la consola de administración. Estos permisos están asociados a la función:
 
-   * Administrar configuración
-   * Administrar directiva
-   * Administrar conjuntos de directivas
-   * Administración de documentos
-   * Administrar editores de documentos
-   * Administrar usuarios invitados y locales
-   * Ver eventos
-   * Delegar
-   * Invitar a usuarios externos
+  * Administrar configuración
+  * Administrar directiva
+  * Administrar conjuntos de directivas
+  * Administración de documentos
+  * Administrar editores de documentos
+  * Administrar usuarios invitados y locales
+  * Ver eventos
+  * Delegar
+  * Invitar a usuarios externos
 
   **Administrador de seguridad de documentos**
 
@@ -93,12 +105,12 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 
   Los usuarios con esta función pueden utilizar la sección Document Security de la consola de administración para editar las directivas de otros usuarios y crear, editar y eliminar conjuntos de directivas. Cuando un administrador de conjuntos de directivas crea un conjunto de directivas, puede asignarle un coordinador. Estos permisos están asociados a la función:
 
-   * Administrar directiva
-   * Administrar conjuntos de directivas
-   * Administración de documentos
-   * Administrar editores de documentos
-   * Ver eventos
-   * Delegar
+  * Administrar directiva
+  * Administrar conjuntos de directivas
+  * Administración de documentos
+  * Administrar editores de documentos
+  * Ver eventos
+  * Delegar
 
   >[!NOTE]
   >
@@ -108,9 +120,9 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 
   Los usuarios con esta función pueden realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas web de Document Security relevantes. Estos permisos están asociados a la función:
 
-   * Administrar usuarios invitados y locales
-   * Invitar a usuarios externos
-   * Acceso a páginas web de usuarios finales
+  * Administrar usuarios invitados y locales
+  * Invitar a usuarios externos
+  * Acceso a páginas web de usuarios finales
 
   >[!NOTE]
   >
@@ -120,8 +132,8 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 
   Los usuarios con esta función pueden invitar a usuarios. Estos permisos están asociados a la función:
 
-   * Invitar a usuarios externos
-   * Acceso a páginas web de usuarios finales
+  * Invitar a usuarios externos
+  * Acceso a páginas web de usuarios finales
 
   **Usuario final de Document Security**
 
@@ -249,25 +261,25 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
 * **Use un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica según una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
 
-   * Proporcionar control de acceso centralizado a los documentos de su organización.
+  * Proporcionar control de acceso centralizado a los documentos de su organización.
 
-   * Controle el acceso a los documentos protegidos por directivas determinando dinámicamente si un usuario puede acceder a un documento protegido por directivas. Por ejemplo, decide dinámicamente si un usuario puede imprimir un documento protegido por una directiva.
+  * Controle el acceso a los documentos protegidos por directivas determinando dinámicamente si un usuario puede acceder a un documento protegido por directivas. Por ejemplo, decide dinámicamente si un usuario puede imprimir un documento protegido por una directiva.
 
-   * Utilice un mecanismo de control de acceso que utilice el sistema de gestión de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por una directiva, puede utilizar el proceso de evaluación de directivas estándar. También puede utilizar el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
+  * Utilice un mecanismo de control de acceso que utilice el sistema de gestión de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por una directiva, puede utilizar el proceso de evaluación de directivas estándar. También puede utilizar el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
 
   Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, vea [Crear controladores de autorización externos](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantener los conjuntos de directivas en un número limitado:** Varios factores conducen al crecimiento constante de directivas y conjuntos de directivas. Algunos factores comunes son:
 
-   * Aumento de los roles de usuario, departamentos y documentos dentro de una organización durante un periodo.
-   * Los departamentos de una organización trabajan de forma aislada y mantienen un control estricto de las políticas específicas de cada departamento. Esto lleva a políticas idénticas dentro de una organización.
+  * Aumento de los roles de usuario, departamentos y documentos dentro de una organización durante un periodo.
+  * Los departamentos de una organización trabajan de forma aislada y mantienen un control estricto de las políticas específicas de cada departamento. Esto lleva a políticas idénticas dentro de una organización.
 
   Adobe recomienda mantener al mínimo el número de directivas y conjuntos de directivas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para mantener el número al mínimo:
 
-   * Crear directivas reutilizables. Estas políticas se pueden compartir en varios departamentos.
-   * Considere la posibilidad de crear conjuntos de directivas para toda la organización, si algunas directivas se aplican a varios departamentos en lugar de un conjunto de directivas individual para cada departamento.
-   * Directivas relacionadas con grupos en un conjunto de directivas. No cree un conjunto de directivas distinto para cada directiva.
-   * Utilice un autorizador externo para controlar dinámicamente los permisos de usuario.
+  * Crear directivas reutilizables. Estas políticas se pueden compartir en varios departamentos.
+  * Considere la posibilidad de crear conjuntos de directivas para toda la organización, si algunas directivas se aplican a varios departamentos en lugar de un conjunto de directivas individual para cada departamento.
+  * Directivas relacionadas con grupos en un conjunto de directivas. No cree un conjunto de directivas distinto para cada directiva.
+  * Utilice un autorizador externo para controlar dinámicamente los permisos de usuario.
 
   >[!NOTE]
   >

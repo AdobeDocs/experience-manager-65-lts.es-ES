@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 1%
-
 ---
-
 # Supervisión y mantenimiento de la instancia de Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Una vez implementadas las instancias de AEM, debe monitorizar y mantener su funcionamiento, rendimiento e integridad.

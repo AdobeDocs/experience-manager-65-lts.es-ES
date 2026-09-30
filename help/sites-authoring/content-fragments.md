@@ -10,13 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
 exl-id: 5bde6c78-84bc-48f5-b06f-1c4282eaf5c1
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 65%
-
 ---
-
 # Creación de páginas con fragmentos de contenido{#page-authoring-with-content-fragments}
 
 Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md).
@@ -42,27 +60,27 @@ Los fragmentos de contenido permiten lo siguiente:
 
 * **Estrategia de campañas y marketing**
 
-   * Revise el contenido a través de fragmentos de contenido administrados de forma centralizada.
+  * Revise el contenido a través de fragmentos de contenido administrados de forma centralizada.
 
 * **Creative Pro**
 
-   * Seguimiento de recursos creativos mediante colecciones asociadas con fragmentos de contenido.
+  * Seguimiento de recursos creativos mediante colecciones asociadas con fragmentos de contenido.
 
 * **Redactores**
 
-   * Escriba en el editor de fragmentos de contenido de AEM.
-   * Puede crear variaciones de contenido.
-   * Puede asociar contenido relevante con el fragmento de contenido.
-   * Puede utilizar el control de versiones/flujo de trabajo.
-   * Puede compartir fragmentos de contenido.
-   * Puede administrar traducciones de forma centralizada.
+  * Escriba en el editor de fragmentos de contenido de AEM.
+  * Puede crear variaciones de contenido.
+  * Puede asociar contenido relevante con el fragmento de contenido.
+  * Puede utilizar el control de versiones/flujo de trabajo.
+  * Puede compartir fragmentos de contenido.
+  * Puede administrar traducciones de forma centralizada.
 
 * **Productores y gestores de recorridos**
 
-   * Seleccione fragmentos y variaciones predefinidos con la creación en AEM.
-   * Puede confiar en que el fragmento y el contenido asociado estarán siempre actualizados, ya que los redactores y creativos realizan sus actualizaciones en fragmentos y activos administrados de forma centralizada.
-   * Puede confiar en que el contenido multimedia asociado se seleccione en función de la relevancia.
-   * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
+  * Seleccione fragmentos y variaciones predefinidos con la creación en AEM.
+  * Puede confiar en que el fragmento y el contenido asociado estarán siempre actualizados, ya que los redactores y creativos realizan sus actualizaciones en fragmentos y activos administrados de forma centralizada.
+  * Puede confiar en que el contenido multimedia asociado se seleccione en función de la relevancia.
+  * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
 ## Adición de un fragmento de contenido a la página {#adding-a-content-fragment-to-your-page}
 
@@ -107,14 +125,14 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Modo de visualización**:
 
-   * **Elemento de texto único**
+  * **Elemento de texto único**
 
-   * **Elemento múltiple**
+  * **Elemento múltiple**
 
 * **Elemento**
 
-   * El **Principal** predeterminado siempre está disponible.
-   * Hay una selección disponible si el fragmento se creó con una plantilla adecuada.
+  * El **Principal** predeterminado siempre está disponible.
+  * Hay una selección disponible si el fragmento se creó con una plantilla adecuada.
 
   >[!NOTE]
   >
@@ -122,15 +140,15 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Variación**
 
-   * El **Principal** predeterminado siempre está disponible.
-   * Hay disponible una selección si se crearon variaciones para el fragmento.
+  * El **Principal** predeterminado siempre está disponible.
+  * Hay disponible una selección si se crearon variaciones para el fragmento.
 
 * **Párrafos**: especifique el intervalo de párrafos que desea incluir:
 
-   * **Todos**
-   * **Rango**: por ejemplo, `1`, `3-5` o `9-*`
+  * **Todos**
+  * **Rango**: por ejemplo, `1`, `3-5` o `9-*`
 
-      * **Gestionar encabezados como sus propios párrafos**
+    * **Gestionar encabezados como sus propios párrafos**
 
 * **Gestionar encabezados como sus propios párrafos**
 

@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1082'
 ht-degree: 1%
-
 ---
-
 # Preguntas frecuentes sobre AEM {#aem-faqs}
 
 Conozca las respuestas a algunos problemas de solución de problemas y configuración de AEM.
@@ -50,7 +59,7 @@ Para obtener más información, consulte los recursos adicionales a continuació
 #### ¿Cómo se auditan las funcionalidades de AEM, como los intentos de inicio de sesión y los cambios de ACL o de permisos? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM ha introducido la capacidad de registrar cambios administrativos para mejorar la resolución de problemas y la auditoría. De manera predeterminada, la información se registra en el archivo `error.log`. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente.
-Para redirigir el resultado a un archivo de registro independiente, consulte [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
+Para redirigir el resultado a un archivo de registro independiente, vea [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### ¿Cómo se habilita SSL de forma predeterminada? {#how-to-enable-ssl-by-default}
 

@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 3a529a82-e2fd-423c-96c1-a5accc87775e
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 53%
-
+source-wordcount: '410'
+ht-degree: 59%
 ---
-
 # Paquete de compatibilidad{#compatibility-package}
 
 ## Información general {#overview}
@@ -52,24 +66,24 @@ Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y
 
 * Recursos de Administración de correspondencia de AEM 6.4 y anteriores:
 
-   * [Cartas](../../forms/using/create-letter.md)
-   * [Diccionarios de datos](/help/forms/using/data-dictionary.md)
-   * Fragmentos de documento
+  * [Cartas](../../forms/using/create-letter.md)
+  * [Diccionarios de datos](/help/forms/using/data-dictionary.md)
+  * Fragmentos de documento
 
 * Plantillas de formularios adaptables obsoletas:
 
-   * /libs/fd/af/templates/blankTemplate2
-   * /libs/fd/af/templates/simpleEnrollmentTemplate
-   * /libs/fd/af/templates/simpleEnrollmentTemplate2
-   * /libs/fd/af/templates/surveyTemplate
-   * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
+  * /libs/fd/af/templates/blankTemplate2
+  * /libs/fd/af/templates/simpleEnrollmentTemplate
+  * /libs/fd/af/templates/simpleEnrollmentTemplate2
+  * /libs/fd/af/templates/surveyTemplate
+  * /libs/fd/af/templates/surveyTemplate2
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate2
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * Páginas obsoletas de formularios adaptables:
 
-   * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenrollment
-   * /libs/fd/afaddon/components/page/advancedenrollment
+  * /libs/fd/af/components/page/survey
+  * /libs/fd/af/components/page/tabbedenrollment
+  * /libs/fd/afaddon/components/page/advancedenrollment

@@ -7,13 +7,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 88%
-
 ---
-
 # Crear carta {#create-letter}
 
 ## Flujo de trabajo de Administración de correspondencia {#correspondence-management-workflow}
@@ -152,10 +165,10 @@ Analice cada carta para descubrir las partes que la componen. El especialista en
 * ¿Con qué frecuencia cambia la plantilla de correspondencia? ¿Se actualizará anualmente, trimestralmente o solo cuando cambie una legislación en particular? ¿Qué tipo de cambios se esperan? ¿Se trata de un cambio para corregir errores tipográficos, un cambio de diseño, agregar más campos, agregar más párrafos, etc.?
 * Al planificar sus necesidades de correspondencia, prepare la lista de nuevas plantillas de correspondencia. Para cada plantilla de correspondencia, necesita lo siguiente:
 
-   * Cláusulas de texto, imágenes y tablas
-   * Valores de datos de sistemas back-end
-   * El diseño y los diseños de fragmentos de correspondencia
-   * El orden en el que aparece el contenido en la carta y las reglas para la inclusión y exclusión de contenido
+  * Cláusulas de texto, imágenes y tablas
+  * Valores de datos de sistemas back-end
+  * El diseño y los diseños de fragmentos de correspondencia
+  * El orden en el que aparece el contenido en la carta y las reglas para la inclusión y exclusión de contenido
 
 * Condiciones en las que los usuarios comerciales, como los reguladores de reclamaciones o los trabajadores de casos, modifican el contenido o partes de la carta.
 * Los escenarios son narrativas que describen la experiencia del usuario, los requisitos y las ventajas de utilizar la solución Cartas.
@@ -420,7 +433,7 @@ Los siguientes valores de la tabla
    <td>Sí</td> 
    <td>Sí</td> 
    <td>Sí<br /> </td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
    <td>N/D<br /> </td> 
   </tr> 
   <tr> 

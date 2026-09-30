@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas de índices Oak
+title: Solución de problemas de índices de Oak
 description: Obtenga información sobre cómo identificar si la indexación es lenta, encontrar la causa y resolver el problema.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 0%
-
+source-wordcount: '1501'
+ht-degree: 2%
 ---
-
-# Solución de problemas de índices Oak{#troubleshooting-oak-indexes}
+# Solución de problemas de índices de Oak{#troubleshooting-oak-indexes}
 
 ## Reindexación lenta  {#slow-re-indexing}
 
@@ -66,8 +75,8 @@ En circunstancias excepcionales, el grupo de subprocesos utilizado para administ
    * Vaya a la consola web de AEM OSGi>Estado>Planificador de Sling o a https://&lt;host>:&lt;port>/system/console/status-slingscheduler (por ejemplo, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
    * Compruebe que existen las siguientes entradas de grupo:
 
-      * ApacheSlingoak
-      * ApacheSlingdefault
+     * ApacheSlingoak
+     * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -94,7 +103,7 @@ La reindexación se puede considerar &quot;completamente atascada&quot; bajo dos
 
 * La reindexación es lenta, hasta el punto de que no se informa de ningún progreso significativo en los archivos de registro con respecto al número de nodos atravesados.
 
-   * Por ejemplo, si no hay mensajes en el transcurso de una hora o si el progreso es tan lento que tarda una semana o más en finalizar.
+  * Por ejemplo, si no hay mensajes en el transcurso de una hora o si el progreso es tan lento que tarda una semana o más en finalizar.
 
 * La reindexación se bloquea en un bucle interminable si aparecen excepciones repetidas en los archivos de registro (por ejemplo, `OutOfMemoryException`) en el subproceso de indexación. La repetición de una o más excepciones en el registro indica que Oak intenta indexar lo mismo repetidamente, pero falla en el mismo problema.
 
@@ -105,26 +114,26 @@ Para identificar y corregir un proceso de reindexación atascado, haga lo siguie
    * Recopile 5 minutos del volcado de hilos, un volcado de hilos cada 2 segundos.
    * [Establecer nivel de depuración y registros para los anexadores](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * Recopilar datos del MBean `IndexStats` asincrónico:
 
-      * Vaya a la consola web de AEM OSGi>Principal>JMX>IndexStat>asíncrona
+     * Vaya a la consola web de AEM OSGi>Principal>JMX>IndexStat>asíncrona
 
-        o ve a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       o ve a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Utilice el modo de consola [oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) para recopilar los detalles de lo que existe bajo el nodo * `/:async`*.
    * Recopile una lista de puntos de comprobación del repositorio mediante el MBean `CheckpointManager`:
 
-      * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
+     * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-        o ve a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       o ve a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Después de recopilar toda la información descrita en el paso 1, reinicie AEM.
 
    * El reinicio de AEM puede solucionar el problema si hay una carga simultánea alta (desbordamiento de la cola de observación o algo similar).
-   * Si un reinicio no soluciona el problema, abre un problema con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support) y proporciona toda la información recopilada en el paso 1.
+   * Si un reinicio no soluciona el problema, abre un problema con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) y proporciona toda la información recopilada en el paso 1.
 
 ## Anulación segura de la reindexación asíncrona {#safely-aborting-asynchronous-re-indexing}
 
@@ -140,8 +149,8 @@ Para anular la reindexación de forma segura, siga estos pasos:
    * Vaya al MBean IndexStats adecuado a través de la consola JMX en AEM OSGi Web Console>Main>JMX o https://&lt;host>:&lt;port>/system/console/jmx (por ejemplo, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
    * Abra el MBean IndexStats en función de la ruta de reindexación que desee detener ( `async`, `async-reindex` o `fulltext-async`)
 
-      * Para identificar el carril adecuado y, por lo tanto, la instancia de MBean IndexStats, observe la propiedad &quot;async&quot; de Oak Indexes. La propiedad &quot;async&quot; contiene el nombre de ruta: `async`, `async-reindex` o `fulltext-async`.
-      * El carril también está disponible si accede al Administrador de índices de AEM en la columna &quot;Asíncrona&quot;. Para acceder al Administrador de índices, vaya a Operaciones>Diagnóstico>Administrador de índices.
+     * Para identificar el carril adecuado y, por lo tanto, la instancia de MBean IndexStats, observe la propiedad &quot;async&quot; de Oak Indexes. La propiedad &quot;async&quot; contiene el nombre de ruta: `async`, `async-reindex` o `fulltext-async`.
+     * El carril también está disponible si accede al Administrador de índices de AEM en la columna &quot;Asíncrona&quot;. Para acceder al Administrador de índices, vaya a Operaciones>Diagnóstico>Administrador de índices.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -150,15 +159,15 @@ Para anular la reindexación de forma segura, siga estos pasos:
 
    * Al reindexar un índice **existing**, establezca la propiedad reindex en false
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * De lo contrario, para un índice **new**, ya sea:
 
-      * Establezca la propiedad type como disabled
+     * Establezca la propiedad type como disabled
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * o elimine la definición del índice por completo
+     * o elimine la definición del índice por completo
 
    Confirme los cambios en el repositorio cuando se hayan completado.
 

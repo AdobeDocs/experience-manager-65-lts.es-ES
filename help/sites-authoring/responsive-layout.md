@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 62%
-
+source-wordcount: '1823'
+ht-degree: 61%
 ---
-
 # Diseño adaptable{#responsive-layout}
 
 AEM le permite tener un diseño interactivo para sus páginas mediante el componente **Contenedor de diseño**.
@@ -31,7 +44,7 @@ El contenedor de diseño:
 * Proporciona un ajuste horizontal a la cuadrícula, junto con la capacidad de colocar componentes en la cuadrícula en paralelo y definir cuándo deben contraerse o redistribuirse.
 * Utiliza puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) para permitirle definir el comportamiento del contenido necesario para la orientación o los dispositivos relacionados.
 
-   * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en dispositivos específicos.
+  * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en dispositivos específicos.
 
 * Se puede anidar para permitir el control de columnas.
 
@@ -77,10 +90,10 @@ AEM permite definir diseños en función del ancho del dispositivo:
 * El emulador permite emular estos diseños en una amplia gama de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
 
-   * Definen efectivamente la anchura máxima (en píxeles) de cualquier dispositivo que utilice un diseño específico.
-   * Normalmente, los puntos de interrupción son válidos para una selección de dispositivos, en función del ancho de sus pantallas.
-   * El alcance de un punto de interrupción se extiende hacia la izquierda hasta el siguiente punto de interrupción.
-   * No puede seleccionar específicamente un punto de interrupción; al seleccionar el dispositivo y la orientación se selecciona automáticamente el punto de interrupción adecuado.
+  * Definen efectivamente la anchura máxima (en píxeles) de cualquier dispositivo que utilice un diseño específico.
+  * Normalmente, los puntos de interrupción son válidos para una selección de dispositivos, en función del ancho de sus pantallas.
+  * El alcance de un punto de interrupción se extiende hacia la izquierda hasta el siguiente punto de interrupción.
+  * No puede seleccionar específicamente un punto de interrupción; al seleccionar el dispositivo y la orientación se selecciona automáticamente el punto de interrupción adecuado.
 
 El dispositivo **Escritorio** no tiene una anchura específica y está relacionado con el punto de interrupción predeterminado (por ejemplo, todo lo que está por encima del último punto de interrupción configurado).
 
@@ -199,13 +212,13 @@ El modo **Diseño** puede iniciarse de dos formas.
 
 * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-authoring/author-environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
 
-   * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
-   * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
+  * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
+  * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 
 * Al [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
-   * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
+  * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
+  * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
 
 En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
@@ -219,17 +232,17 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
 * Haga clic en un componente de contenido y la barra de herramientas le permite:
 
-   * **Principal**
+  * **Principal**
 
-     Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
+    Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
 
-   * **Flotar a una línea nueva**
+  * **Flotar a una línea nueva**
 
-     El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
+    El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
 
-   * **Ocultar componente**
+  * **Ocultar componente**
 
-     El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
+    El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -237,33 +250,34 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
-   * **Principal**: seleccione el componente principal.
+  * **Principal**: seleccione el componente principal.
 
-     ![Principal](do-not-localize/screen_shot_2018-03-23at090823.png)
+    ![Principal](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes ocultos** - Mostrar todos los componentes o los componentes individuales. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+  * **Mostrar componentes ocultos** - Mostrar todos los componentes o los componentes individuales. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
 
-     ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
+    ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Revertir diseño de punto de interrupción**: volver al diseño predeterminado. Esto significa que no se aplicará ningún diseño personalizado.
+  * **Revertir diseño de punto de interrupción**: volver al diseño predeterminado. Esto significa que no se aplicará ningún diseño personalizado.
 
-     ![Diseño del punto de interrupción del servidor](do-not-localize/screen_shot_2018-03-23at091013.png)
+    ![Diseño del punto de interrupción del servidor](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
+  * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
 
-     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Ocultar componente**: oculte el componente actual.
+  * **Ocultar componente**: oculte el componente actual.
 
-     ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
+    ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-     >[!NOTE]
-     >
-     >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
+    >[!NOTE]
+    >
+    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
+  * **Mostrar componentes**
+    Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
 
-     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
 

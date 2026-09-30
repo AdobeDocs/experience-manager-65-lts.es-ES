@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: c44ecbb4-a883-4468-bddc-55964485529b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '780'
 ht-degree: 3%
-
 ---
-
 # Creación de un grupo de usuarios cerrado{#creating-a-closed-user-group}
 
 Los grupos cerrados de usuarios (CUG) se utilizan para limitar el acceso a páginas específicas que residen en un sitio de Internet publicado. Estas páginas requieren que los miembros asignados inicien sesión y proporcionen credenciales de seguridad.
@@ -81,7 +93,7 @@ Para aplicar el CUG a una o varias páginas:
    1. Activar la casilla de verificación **Habilitar**.
 
    1. Agregue la ruta a su **página de inicio de sesión**.
-Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión estándar.
+      Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión estándar.
 
    ![CUG agregado](assets/cug-authentication-requirement.png)
 
@@ -134,7 +146,8 @@ Configure la administración de [sesión en el archivo dispatcher.any](https://e
 
 >[!NOTE]
 >
->Cuando una granja de servidores de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja de servidores no se almacenan en caché. Para almacenar en caché páginas que estén fuera de CUG, cree una segunda granja en dispatcher.any>que administre las páginas que no sean de CUG.
+>Cuando una granja de servidores de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja de servidores no se almacenan en caché. Para almacenar en caché las páginas que están fuera de CUG, cree una segunda granja en dispatcher.any
+>que gestiona las páginas que no son de CUG.
 
 1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-secure-sessions-sessionmanagement) definiendo `/directory`; por ejemplo:
 

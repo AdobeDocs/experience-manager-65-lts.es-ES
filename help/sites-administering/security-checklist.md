@@ -10,13 +10,27 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 98%
-
+source-wordcount: '3048'
+ht-degree: 99%
 ---
-
 # Lista de comprobación de seguridad {#security-checklist}
 
 Esta sección trata sobre los pasos a seguir para garantizar que su instalación de AEM sea segura cuando se implemente. La lista de comprobación debe aplicarse de arriba a abajo.
@@ -87,7 +101,7 @@ Para obtener más información sobre cómo cambiar la contraseña de la consola 
 Cambie la contraseña utilizada para acceder a la consola web. Use una [configuración de OSGI](/help/sites-deploying/configuring-osgi.md) para actualizar las siguientes propiedades de la **consola de administración de Apache Felix de OSGi**:
 
 * **Nombre de usuario** y **Contraseña**, las credenciales para acceder a la propia consola de administración web de Apache Felix.
-La contraseña debe cambiarse *después de* la instalación inicial para garantizar la seguridad de su instancia.
+La contraseña debe cambiarse *después* de la instalación inicial para garantizar la seguridad de su instancia.
 
 >[!NOTE]
 >
@@ -95,7 +109,7 @@ La contraseña debe cambiarse *después de* la instalación inicial para garanti
 
 **Para cambiar la contraseña de administrador de la consola web de OSGi**:
 
-1. Con el menú **Herramientas**, **Operaciones**, abra la **consola web** y vaya a la sección **Configuración**.
+1. Mediante el menú **Herramientas**, **Operaciones**, abra **Consola web** y vaya a la sección **Configuración**.
 Por ejemplo, en `<server>:<port>/system/console/configMgr`.
 1. Vaya a la entrada de **Consola de administración Apache Felix de OSGi** y ábrala.
 1. Cambie el **nombre de usuario** y la **contraseña**.
@@ -225,27 +239,27 @@ Se debe cambiar la configuración especificada para cada uno de los servicios si
 
 * [Administrador de biblioteca Adobe Granite HTML](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * habilitar **Minify** (para eliminar los caracteres CRLF y de espacio en blanco).
-   * habilitar **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
-   * deshabilitar **Depurar**
-   * deshabilitar **Temporización**
+  * habilitar **Minify** (para eliminar los caracteres CRLF y de espacio en blanco).
+  * habilitar **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
+  * deshabilitar **Depurar**
+  * deshabilitar **Temporización**
 
 * [Filtro de depuración de CQ WCM por día](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * desmarcar **Habilitar**
+  * desmarcar **Habilitar**
 
 * [Filtro WCM CQ de día](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * solo en la publicación, establecer **Modo WCM** en “deshabilitado”
+  * solo en la publicación, establecer **Modo WCM** en “deshabilitado”
 
 * [Controlador Apache Sling JavaScript](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * deshabilitar **Generar información de depuración**
+  * deshabilitar **Generar información de depuración**
 
 * [Controlador Sling JSP Script](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * deshabilitar **Generar información de depuración**
-   * deshabilitar **Contenido asignado**
+  * deshabilitar **Generar información de depuración**
+  * deshabilitar **Contenido asignado**
 
 Consulte [Configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -266,9 +280,9 @@ Un ataque de denegación de servicio (DoS) es un intento de hacer que un recurso
 
   Por ejemplo, `.../en.html` también se puede solicitar como:
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   Dispatcher almacena en caché todas las variaciones válidas (por ejemplo, devuelve una respuesta `200` y están configuradas para almacenarse en caché), lo que finalmente genera un sistema de archivos completo y ningún servicio para solicitudes adicionales.
 

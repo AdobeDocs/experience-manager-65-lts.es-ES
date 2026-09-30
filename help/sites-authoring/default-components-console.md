@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: e19f9c2b-dc69-4077-a038-d8eb25a1ad6a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '283'
 ht-degree: 43%
-
 ---
-
 # Consola Componentes{#components-console}
 
 La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
@@ -26,7 +39,7 @@ Se puede acceder a él desde **Herramientas >** **General >** **Componentes**. E
 
 ## Búsqueda {#searching}
 
-Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel **Buscar** para buscar o para filtrar los componentes: 
+Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel **Buscar** para buscar o para filtrar los componentes:
 
 ![captura de pantalla_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
@@ -40,14 +53,14 @@ Para ver los detalles de un componente específico, haga clic en el recurso requ
 
   En la pestaña Propiedades puede:
 
-   * Consulte las propiedades generales del componente.
-   * Ver cómo se ha definido el icono [o la abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
+  * Consulte las propiedades generales del componente.
+  * Ver cómo se ha definido el icono [o la abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
 
-      * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
+    * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
 
-   * Ver **Tipo de recurso** y **Supertipo de recurso** (si están definidos) para el componente.
+  * Ver **Tipo de recurso** y **Supertipo de recurso** (si están definidos) para el componente.
 
-      * Al hacer clic en el supertipo de recurso, accederá a ese componente.
+    * Al hacer clic en el supertipo de recurso, accederá a ese componente.
 
   >[!NOTE]
   >
@@ -63,7 +76,7 @@ Para ver los detalles de un componente específico, haga clic en el recurso requ
 
   >[!CAUTION]
   >
-  >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse. 
+  >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse.
 
 * **Documentación**
 

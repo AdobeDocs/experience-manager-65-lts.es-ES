@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '721'
 ht-degree: 1%
-
 ---
-
 # Selección de la IU{#selecting-your-ui}
 
 La IU táctil de Adobe Experience Manager (AEM) es la IU estándar. Sin embargo, puede haber ocasiones en que el usuario desee cambiar a la [IU clásica](/help/sites-classic-ui-authoring/classicui.md). Existen varias opciones para hacerlo.
@@ -21,7 +34,7 @@ Hay varias ubicaciones en las que puede definir qué interfaz de usuario se va a
 * [Configuración de la interfaz de usuario predeterminada para su instancia](#configuring-the-default-ui-for-your-instance)
 Esto establece la interfaz de usuario predeterminada para mostrar al iniciar sesión el usuario. El usuario puede anular esto y seleccionar una interfaz de usuario diferente para su cuenta o sesión actual.
 
-* [Creando IU clásica para tu cuenta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+* [Configuración de la creación de IU clásica para su cuenta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
 Esto establece que la interfaz de usuario sea la predeterminada al editar páginas, aunque el usuario puede anularla y seleccionar una interfaz de usuario diferente para su cuenta o sesión actual.
 
 * [Cambiando a la IU clásica para la sesión actual](#switching-to-classic-ui-for-the-current-session)
@@ -103,21 +116,21 @@ El sistema puede anular la configuración definida por un usuario o un administr
 
 * Al crear páginas:
 
-   * Se fuerza el uso del editor clásico al acceder a la página con `cf#` en la dirección URL. Por ejemplo:
-     `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  * Se fuerza el uso del editor clásico al acceder a la página con `cf#` en la dirección URL. Por ejemplo:
+    `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Se fuerza el uso del editor táctil al usar `/editor.html` en la URL o al usar un dispositivo táctil. Por ejemplo:
-     `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+  * Se fuerza el uso del editor táctil al usar `/editor.html` en la URL o al usar un dispositivo táctil. Por ejemplo:
+    `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Cualquier forzamiento es temporal y solo es válido para la sesión del explorador
 
-   * Se establece un conjunto de cookies en función de si se utiliza táctil (`editor.html`) o clásico (`cf#`).
+  * Se establece un conjunto de cookies en función de si se utiliza táctil (`editor.html`) o clásico (`cf#`).
 
 * Al abrir páginas a través de `siteadmin`, se comprueba la existencia de lo siguiente:
 
-   * La cookie
-   * Una preferencia de usuario
-   * Si no existe ninguna de estas definiciones, toma como valor predeterminado las definiciones establecidas en la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **servicio de modo de interfaz de usuario de creación de WCM** (`AuthoringUIMode`).
+  * La cookie
+  * Una preferencia de usuario
+  * Si no existe ninguna de estas definiciones, toma como valor predeterminado las definiciones establecidas en la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **servicio de modo de interfaz de usuario de creación de WCM** (`AuthoringUIMode`).
 
 >[!NOTE]
 >

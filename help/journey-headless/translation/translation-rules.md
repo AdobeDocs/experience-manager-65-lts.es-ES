@@ -5,13 +5,37 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin,Developer,User,Leader
 exl-id: 94534336-1e1f-40eb-8364-9358c1420616
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '845'
 ht-degree: 87%
-
 ---
-
 # Configuración de las reglas de traducción {#configure-translation-rules}
 
 Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
@@ -41,9 +65,9 @@ Las reglas de traducción identifican el contenido que se incluye en los proyect
 Las reglas de traducción incluyen la siguiente información:
 
 * Ruta del contenido al que se aplica la regla
-   * La regla también se aplica a los descendientes del contenido
+  * La regla también se aplica a los descendientes del contenido
 * Nombres de las propiedades que contienen el contenido que se va a traducir
-   * La propiedad puede ser específica para un tipo de recurso específico o para todos los tipos de recurso
+  * La propiedad puede ser específica para un tipo de recurso específico o para todos los tipos de recurso
 
 Debido a que los Modelos de fragmento de contenido, que definen la estructura de los Fragmentos de contenido, son únicos para su propio proyecto, es vital configurar reglas de traducción para que AEM sepa qué elementos de los modelos de contenido hay que traducir.
 

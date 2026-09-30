@@ -5,13 +5,25 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4204'
 ht-degree: 40%
-
 ---
-
 # Creación y sincronización de Live Copies{#creating-and-synchronizing-live-copies}
 
 Puede crear una Live Copy a partir de una página o configuración de modelo y, a continuación, puede administrar la herencia y la sincronización.
@@ -181,9 +193,9 @@ Las propiedades de una página Live Copy muestran la siguiente información sobr
 * **Estado**: El estado de sincronización de Live Copy. El estado incluye si la Live Copy está actualizada con el origen y cuándo se produjo la última sincronización y quién realizó la sincronización.
 * **Configuración**:
 
-   * Si la página sigue estando sujeta a la herencia de Live Copy.
-   * Si la configuración se hereda de la página principal.
-   * Cualquier configuración de despliegue que utilice Live Copy.
+  * Si la página sigue estando sujeta a la herencia de Live Copy.
+  * Si la configuración se hereda de la página principal.
+  * Cualquier configuración de despliegue que utilice Live Copy.
 
 Para ver las propiedades:
 
@@ -426,20 +438,20 @@ En una Live Copy existente, puede cambiar la profundidad de una página; es deci
 
 * Cambio a una Live Copy superficial:
 
-   * Tendrá un efecto inmediato y no es reversible.
+  * Tendrá un efecto inmediato y no es reversible.
 
-      * Las páginas secundarias se separan explícitamente de la Live Copy. No se pueden conservar más modificaciones en tareas secundarias si se deshacen.
+    * Las páginas secundarias se separan explícitamente de la Live Copy. No se pueden conservar más modificaciones en tareas secundarias si se deshacen.
 
-      * Eliminará cualquier descendiente `LiveRelationships`incluso si hay `LiveCopies` anidados.
+    * Eliminará cualquier descendiente `LiveRelationships`incluso si hay `LiveCopies` anidados.
 
 * Cambio a una Live Copy profunda:
 
-   * Las páginas secundarias no se tocan.
-   * Para ver el efecto del conmutador, puede ejecutar un despliegue, las modificaciones de contenido se aplican según la configuración de este.
+  * Las páginas secundarias no se tocan.
+  * Para ver el efecto del conmutador, puede ejecutar un despliegue, las modificaciones de contenido se aplican según la configuración de este.
 
 * Cambie a una Live Copy superficial y, a continuación, vuelva a una profunda:
 
-   * Todos los elementos secundarios de la Live Copy (antes) superficial se tratan como si se hubieran creado manualmente y, por lo tanto, se alejan utilizando `[oldname]_msm_moved name`.
+  * Todos los elementos secundarios de la Live Copy (antes) superficial se tratan como si se hubieran creado manualmente y, por lo tanto, se alejan utilizando `[oldname]_msm_moved name`.
 
 Para especificar o cambiar la profundidad:
 
@@ -613,16 +625,16 @@ Hay implicaciones sobre dónde dentro del árbol que utiliza **Desasociar**:
 
   Cuando esta operación se realiza en una subpágina (o rama) dentro de una Live Copy:
 
-   * la relación activa se elimina para esa subpágina (o rama)
-   * y las páginas (sub) en la rama de live copy se tratan como si se hubieran creado manualmente.
+  * la relación activa se elimina para esa subpágina (o rama)
+  * y las páginas (sub) en la rama de live copy se tratan como si se hubieran creado manualmente.
 
   *Sin embargo*, las páginas secundarias siguen estando sujetas a la relación activa de la rama principal, por lo que un nuevo despliegue de las páginas de modelo:
 
-   1. Cambie el nombre de las páginas separadas:
+  1. Cambie el nombre de las páginas separadas:
 
-      * Esto se debe a que MSM los considera como páginas creadas manualmente que causan un conflicto, ya que tienen el mismo nombre que las páginas de Live Copy que intenta crear.
+     * Esto se debe a que MSM los considera como páginas creadas manualmente que causan un conflicto, ya que tienen el mismo nombre que las páginas de Live Copy que intenta crear.
 
-   1. Cree una página (Live Copy) con el nombre original, que contenga los cambios del despliegue.
+  1. Cree una página (Live Copy) con el nombre original, que contenga los cambios del despliegue.
 
   >[!NOTE]
   >

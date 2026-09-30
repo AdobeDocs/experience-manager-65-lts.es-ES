@@ -1,18 +1,29 @@
 ---
-title: Prácticas recomendadas para supervisar  [!DNL Assets] implementación
-description: Prácticas recomendadas para supervisar el entorno y el rendimiento de su implementación de  [!DNL Adobe Experience Manager] después de implementarla.
+title: Prácticas recomendadas para supervisar la implementación de [!DNL Assets]
+description: Prácticas recomendadas para supervisar el entorno y el rendimiento de su implementación de [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
 role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1704'
 ht-degree: 1%
-
 ---
-
 # Prácticas recomendadas para supervisar la implementación de [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Desde el punto de vista de [!DNL Experience Manager Assets], la monitorización debe incluir la observación y la creación de informes sobre los siguientes procesos y tecnologías:
@@ -143,51 +154,51 @@ Las comprobaciones de estado disponibles en el [tablero de operaciones](/help/si
 Estas son algunas comprobaciones de estado listas para usar que son útiles para monitorizar:
 
 * Comprobaciones del sistema
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * Instancias: un autor, todos los servidores de publicación
-   * Umbral de alarma: cuando el estado no es OK
-   * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o CRÍTICA. Compruebe el atributo de registro para obtener más información sobre la causa del problema.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * Instancias: un autor, todos los servidores de publicación
+  * Umbral de alarma: cuando el estado no es OK
+  * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o CRÍTICA. Compruebe el atributo de registro para obtener más información sobre la causa del problema.
 
 * Cola de replicación
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * Instancias: un autor, todos los servidores de publicación
-   * Umbral de alarma: cuando el estado no es OK
-   * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o CRÍTICA. Compruebe el atributo de registro para obtener más información sobre la cola que provocó el problema.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * Instancias: un autor, todos los servidores de publicación
+  * Umbral de alarma: cuando el estado no es OK
+  * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o CRÍTICA. Compruebe el atributo de registro para obtener más información sobre la cola que provocó el problema.
 
 * Rendimiento de la respuesta
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * Instancias: todos los servidores
-   * Duración de la alarma: cuando el estado no es OK
-   * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o ESTADO CRÍTICO. Compruebe el atributo de registro para obtener más información sobre la cola que provocó el problema.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * Instancias: todos los servidores
+  * Duración de la alarma: cuando el estado no es OK
+  * Definición de alarma: el estado de una de las métricas es ADVERTENCIA o ESTADO CRÍTICO. Compruebe el atributo de registro para obtener más información sobre la cola que provocó el problema.
 
 * Rendimiento de consultas
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * Instancias: un autor, todos los servidores de publicación
-   * Umbral de alarma: cuando el estado no es OK
-   * Definición de alarma: una o más consultas que se ejecutan lentamente en el sistema. Consulte el atributo de registro para obtener más información sobre las consultas que causaron el problema.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * Instancias: un autor, todos los servidores de publicación
+  * Umbral de alarma: cuando el estado no es OK
+  * Definición de alarma: una o más consultas que se ejecutan lentamente en el sistema. Consulte el atributo de registro para obtener más información sobre las consultas que causaron el problema.
 
 * Paquetes activos
 
-   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * Instancias: todos los servidores
-   * Umbral de alarma: cuando el estado no es OK
-   * Definición de alarma: presencia de paquetes OSGi inactivos o sin resolver en el sistema. Consulte el atributo de registro para obtener más información sobre los paquetes que causaron el problema.
+  * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * Instancias: todos los servidores
+  * Umbral de alarma: cuando el estado no es OK
+  * Definición de alarma: presencia de paquetes OSGi inactivos o sin resolver en el sistema. Consulte el atributo de registro para obtener más información sobre los paquetes que causaron el problema.
 
 * Errores de registro
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * Instancias: todos los servidores
-   * Umbral de alarma: cuando el estado no es OK
-   * Definición de alarma: hay errores en los archivos de registro. Compruebe el atributo de registro para obtener más información sobre la causa del problema.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * Instancias: todos los servidores
+  * Umbral de alarma: cuando el estado no es OK
+  * Definición de alarma: hay errores en los archivos de registro. Compruebe el atributo de registro para obtener más información sobre la causa del problema.
 
 ## Problemas y resoluciones comunes  {#common-issues-and-resolutions}
 

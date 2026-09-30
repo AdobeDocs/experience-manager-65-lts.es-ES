@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 6c99920d-d424-4a69-b7cc-a5e99257c923
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 94%
-
 ---
-
 # Medir y mejorar la eficacia y la conversión de formularios{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## El reto {#the-challenge-br}
@@ -32,7 +48,7 @@ Para maximizar el ROI, las organizaciones deben monitorizar cómo sus clientes i
 
 ## La solución {#the-solution}
 
-AEM Forms se integra con las soluciones de [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) soluciones [Adobe Analytics](https://www.adobe.com/es/marketing-cloud/web-analytics.html) y [Adobe Target](https://www.adobe.com/es/marketing-cloud/testing-targeting.html), lo cual le permite supervisar y analizar el rendimiento de los formularios, así como experimentar e identificar la experiencia que proporciona una mejor tasa de conversión.
+AEM Forms se integra con las soluciones de [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) soluciones [Adobe Analytics](https://www.adobe.com/es/marketing-cloud/web-analytics.html) y [Adobe Target](https://www.adobe.com/es/marketing-cloud/testing-targeting.html), lo cual le permite monitorizar y analizar el rendimiento de los formularios, así como experimentar e identificar la experiencia que proporciona una mejor tasa de conversión.
 
 ## El flujo de trabajo {#the-workflow}
 

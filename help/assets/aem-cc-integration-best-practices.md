@@ -1,6 +1,6 @@
 ---
 title: Integración con las prácticas recomendadas de Adobe Creative Cloud
-description: Prácticas recomendadas para integrar [!DNL Adobe Experience Manager] con [!DNL Adobe Creative Cloud] para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
+description: Prácticas recomendadas para integrar [!DNL Adobe Experience Manager] con [!DNL Adobe Creative Cloud] a fin de optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,35 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 51a2f4bb-5fca-48fa-855d-1d610a5eb7c0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3390'
 ht-degree: 14%
-
 ---
-
 # Prácticas recomendadas de integración de [!DNL Adobe Experience Manager] y [!DNL Creative Cloud] {#aem-and-creative-cloud-integration-best-practices}
 
 | Versión | Vínculo del artículo |

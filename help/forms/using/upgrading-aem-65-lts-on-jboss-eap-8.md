@@ -2,7 +2,12 @@
 title: Actualización de AEM 6.5 LTS en JBoss EAP 8 (Windows)
 description: Esta guía proporciona instrucciones paso a paso para actualizar una instalación existente de Adobe Experience Manager (AEM) 6.5 LTS de JBoss EAP 7.4 a JBoss EAP 8 en Windows, mediante JDK 21.
 exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
-source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 2%

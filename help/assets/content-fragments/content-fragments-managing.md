@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 75%
-
 ---
-
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
 Aprenda a utilizar la consola de Assets para administrar los fragmentos de contenido de AEM, la base del contenido sin encabezado.
@@ -59,7 +71,7 @@ El método para crear un fragmento de contenido es el siguiente:
 
    * [Modelo](/help/assets/content-fragments/content-fragments-models.md): se usa para crear un fragmento que requiere contenido estructurado; por ejemplo, el modelo **Aventura**
 
-      * Se muestran todos los modelos disponibles.
+     * Se muestran todos los modelos disponibles.
 
    Después de la selección, usa **Siguiente** para continuar.
 
@@ -69,23 +81,23 @@ El método para crear un fragmento de contenido es el siguiente:
 
    * **Básico**
 
-      * **Título**
+     * **Título**
 
-        El título del fragmento.
+       El título del fragmento.
 
-        Obligatorio.
+       Obligatorio.
 
-      * **Descripción**
+     * **Descripción**
 
-      * **Etiquetas**
+     * **Etiquetas**
 
    * **Avanzado**
 
-      * **Nombre**
+     * **Nombre**
 
-        El nombre; se utiliza para formar la dirección URL.
+       El nombre; se utiliza para formar la dirección URL.
 
-        Obligatorio; se derivará automáticamente del título, pero se puede actualizar.
+       Obligatorio; se derivará automáticamente del título, pero se puede actualizar.
 
 1. Seleccione **Crear** para completar la acción y, a continuación, **Abra** el fragmento para editarlo o vuelva a la consola pulsando **Listo**.
 
@@ -105,17 +117,17 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 * **Descargar**
 
-   * Guarde el fragmento como archivo ZIP; puede definir si desea incluir elementos, variaciones o metadatos.
+  * Guarde el fragmento como archivo ZIP; puede definir si desea incluir elementos, variaciones o metadatos.
 
 * **Crear**
 * **Cierre de compra**
 * **Propiedades**
 
-   * Permite ver o editar los metadatos del fragmento.
+  * Permite ver o editar los metadatos del fragmento.
 
 * **Editar**
 
-   * Le permite [abrir el fragmento para editar contenido](/help/assets/content-fragments/content-fragments-variations.md) junto con sus elementos, variaciones, contenido asociado y metadatos.
+  * Le permite [abrir el fragmento para editar contenido](/help/assets/content-fragments/content-fragments-variations.md) junto con sus elementos, variaciones, contenido asociado y metadatos.
 
 * **Administrar etiquetas**
 * **A la colección**
@@ -191,17 +203,17 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
 * Debajo del nombre del fragmento puede ver el nombre del [Modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) que se utiliza para crear el fragmento actual:
 
-   * El nombre también es un vínculo que abre el editor de modelos.
+  * El nombre también es un vínculo que abre el editor de modelos.
 
 * Ver el estado del fragmento; por ejemplo, información sobre cuándo se creó, modificó o publicó.
 
 * **Guardar** proporciona acceso a la opción **Guardar y cerrar**.
 
 * Los tres puntos (**...**) proporciona acceso a acciones adicionales:
-   * **Actualizar referencias de página**
-      * Esto actualiza cualquier referencia de página.
-   * **[Publicación rápida](#publishing-and-referencing-a-fragment)**
-   * **[Administrar publicación](#publishing-and-referencing-a-fragment)**
+  * **Actualizar referencias de página**
+    * Esto actualiza cualquier referencia de página.
+  * **[Publicación rápida](#publishing-and-referencing-a-fragment)**
+  * **[Administrar publicación](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ El editor tiene varias opciones:
 
 * **Guardar** y **Guardar y cerrar**
 
-   * **Guardar** guardará los cambios más recientes y permanecerá en el editor.
-   * **Guardar y cerrar** guardará los cambios más recientes y cerrará el editor.
+  * **Guardar** guardará los cambios más recientes y permanecerá en el editor.
+  * **Guardar y cerrar** guardará los cambios más recientes y cerrará el editor.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-assets.md#t
 * Ver información sobre versiones, comentarios y anotaciones
 * Acciones para las versiones
 
-   * **[Revertir a esta versión](#reverting-to-a-version)** (seleccione un fragmento existente y, a continuación, una versión específica)
+  * **[Revertir a esta versión](#reverting-to-a-version)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
-   * **[Comparar con actual](#comparing-fragment-versions)** (seleccione un fragmento existente y, a continuación, una versión específica)
+  * **[Comparar con actual](#comparing-fragment-versions)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
-   * Agregue una **Etiqueta** o un **Comentario** (seleccione un fragmento existente y, a continuación, una versión específica)
+  * Agregue una **Etiqueta** o un **Comentario** (seleccione un fragmento existente y, a continuación, una versión específica)
 
-   * **Guardar como versión** (seleccione un fragmento existente y, a continuación, la flecha hacia arriba en la parte inferior de la cronología)
+  * **Guardar como versión** (seleccione un fragmento existente y, a continuación, la flecha hacia arriba en la parte inferior de la cronología)
 
 * Acciones para anotaciones
 
-   * **Eliminar**
+  * **Eliminar**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ Se mostrarán una al lado de la otra, donde:
 
 * Se resaltan todas las diferencias
 
-   * Texto eliminado en rojo
-   * Texto insertado en verde
-   * Texto reemplazado en azul
+  * Texto eliminado en rojo
+  * Texto insertado en verde
+  * Texto reemplazado en azul
 
 * El icono de pantalla completa permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
 * Puede **Revertir** a la versión específica

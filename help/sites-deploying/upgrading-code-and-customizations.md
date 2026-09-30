@@ -11,13 +11,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # Actualización de código y personalizaciones{#upgrading-code-and-customizations}
 
 Al planificar una actualización, se deben investigar y abordar las siguientes áreas de una implementación.
@@ -130,7 +139,7 @@ A continuación, se muestran áreas críticas de cualquier implementación de AE
   </tr>
   <tr>
    <td>Autenticación, seguridad y permisos</td>
-   <td>Deben validarse todos los mecanismos de autenticación como LDAP/SAML.Los permisos y grupos de <br /> deben probarse en los niveles Author y Publish<br />.</td>
+   <td>Cualquier mecanismo de autenticación como LDAP/SAML debe validarse.<br /> Los permisos y grupos deben probarse en los niveles Author y Publish<br />.</td>
   </tr>
   <tr>
    <td>Consultas</td>

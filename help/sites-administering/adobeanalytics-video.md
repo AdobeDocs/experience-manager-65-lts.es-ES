@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -291,26 +302,26 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    Además, la información enviada a Adobe Analytics es menos personalizable; solo hay 3 variables disponibles para la asignación:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+   >[!NOTE]
+   >
+   >Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a las props 1 a 3
 
@@ -348,26 +359,26 @@ Al utilizar el método **&#x200B; legacy seconds**, las llamadas de Adobe Analyt
 
    La información enviada a Adobe Analytics es menos personalizable. Solo hay 3 variables disponibles para la asignación:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>La variable asignada a esta acción contiene el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>La variable asignada a esta acción contiene el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+   >[!NOTE]
+   >
+   >Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a prop1, prop2 y prop3
 

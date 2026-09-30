@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # Configuración del asistente de IA en AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
@@ -22,7 +36,7 @@ Para utilizar el Asistente de IA en AEM (Adobe Experience Manager), es obligator
 
 Si desea controlar quién puede acceder al conocimiento del producto, envíe un correo electrónico a [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) desde la dirección de correo electrónico asociada a su Adobe ID. Adobe puede habilitar el control de acceso a nivel de usuario. Cuando está habilitado, el administrador puede otorgar acceso a nivel de usuario siguiendo los pasos que se describen a continuación.
 
-Si ha solicitado el control de acceso a nivel de usuario, su organización debe adherirse a esta opción a través de Adobe Admin Console.Un administrador de productos crea (o elige) un grupo de usuarios y le concede el nuevo permiso “Asistente de IA”. Cualquier persona añadida a ese grupo accede instantáneamente al asistente de IA en AEM.Si el objetivo es la disponibilidad en toda la compañía, el administrador simplemente asigna todos los usuarios a ese grupo.
+Si ha solicitado el control de acceso a nivel de usuario, su organización debe adherirse a esta opción a través de Adobe Admin Console. Un administrador de productos crea (o elige) un grupo de usuarios y le concede el nuevo permiso “Asistente de IA”. Cualquier persona añadida a ese grupo accede instantáneamente al asistente de IA en AEM. Si el objetivo es la disponibilidad en toda la compañía, el administrador simplemente asigna todos los usuarios a ese grupo.
 
 Desde la perspectiva de un empleado, el proceso es sencillo: identifique al administrador de productos de Adobe Experience Manager en su organización y solicite que le añadan al grupo de usuarios con la IA habilitada. Una vez que aparezca en ese grupo, el icono del Asistente se mostrará automáticamente la próxima vez que inicie sesión.
 
@@ -59,7 +73,7 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
    | Campo de texto | Valor sugerido |
    | --- | --- |
-   | Nombre de perfil del producto  | `AI Assistant in AEM` (o su nombre descriptivo preferido) |
+   | Nombre de perfil del producto | `AI Assistant in AEM` (o su nombre descriptivo preferido) |
    | Nombre para mostrar (opcional) | `AI Assistant` |
    | Descripción (opcional) | `Product profile for managing AI Assistant in AEM access` |
    | Notificación | Configurar en función de las preferencias de su organización |

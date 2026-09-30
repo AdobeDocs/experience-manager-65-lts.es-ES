@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 3%
-
 ---
-
 # Actualización de formularios de búsqueda personalizados{#upgrading-custom-search-forms}
 
 En AEM 6.2, la ubicación donde se almacenan los Forms de búsqueda personalizados en el repositorio ha cambiado. Al realizar la actualización, se les trasladará de su ubicación en 6.1 en:
@@ -156,13 +165,13 @@ El estado de página se ha reemplazado por dos predicados de propiedad de opcion
 * Quitar el nodo `pagestatuspredicate`
 * Copiar nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Copiar nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Asegúrese de establecer la propiedad `listOrder` para el nodo `analyticspredicate` en &quot;**8**&quot;. Esto es necesario para evitar conflictos.
 

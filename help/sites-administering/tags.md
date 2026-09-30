@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 5%
-
+source-wordcount: '1771'
+ht-degree: 4%
 ---
-
 # Administración de etiquetas {#administering-tags}
 
 Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Se pueden considerar como palabras clave o etiquetas (metadatos) que permiten encontrar el contenido más rápidamente como resultado de una búsqueda.
@@ -34,22 +43,22 @@ Algunas de las funciones de las etiquetas en AEM incluyen:
 * La restricción principal para las etiquetas recién creadas es que deben ser únicas dentro de un área de nombres específica.
 * El título de una etiqueta no debe incluir caracteres de separación de rutas de etiquetas (ni se mostrarán si están presentes)
 
-   * dos puntos `:`: delimita la etiqueta de área de nombres
-   * barra diagonal `/`: delimita las etiquetas secundarias
+  * dos puntos `:`: delimita la etiqueta de área de nombres
+  * barra diagonal `/`: delimita las etiquetas secundarias
 
 * Los autores y visitantes del sitio pueden aplicar las etiquetas. Independientemente de su creador, todas las formas de etiquetas están disponibles para su selección, tanto al asignarlas a una página como al buscar.
 * Los miembros del grupo &quot;administradores de etiquetas&quot; y los miembros que tienen derechos de modificación sobre `/content/cq:tags` pueden crear etiquetas y modificar su taxonomía.
 
-   * Una etiqueta que contiene etiquetas secundarias se denomina etiqueta contenedora
-   * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja
-   * Un área de nombres de etiqueta es una etiqueta de hoja o una etiqueta contenedora
+  * Una etiqueta que contiene etiquetas secundarias se denomina etiqueta contenedora
+  * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja
+  * Un área de nombres de etiqueta es una etiqueta de hoja o una etiqueta contenedora
 
 * El [componente de búsqueda](https://helpx.adobe.com/es/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
 * El [componente Teaser](https://helpx.adobe.com/es/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
 * Si el etiquetado es un aspecto importante del contenido
 
-   * asegúrese de empaquetar las etiquetas con las páginas que las utilizan
-   * asegúrese de que [permisos de etiquetas](#setting-tag-permissions) habiliten el acceso de lectura
+  * asegúrese de empaquetar las etiquetas con las páginas que las utilizan
+  * asegúrese de que [permisos de etiquetas](#setting-tag-permissions) habiliten el acceso de lectura
 
 ## Consola de etiquetado {#tagging-console}
 
@@ -63,9 +72,9 @@ Para acceder a la consola de etiquetado:
 * iniciar sesión con privilegios administrativos
 * desde la navegación global
 
-   * seleccionar **`Tools`**
-   * seleccionar **`General`**
-   * seleccionar **`Tagging`**
+  * seleccionar **`Tools`**
+  * seleccionar **`General`**
+  * seleccionar **`Tagging`**
 
 ![administrar_etiquetas_mediante_thetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -246,30 +255,30 @@ Los permisos de etiqueta son [&#39;seguros (de forma predeterminada)&#39;](/help
 
 * en la instancia de autor
 
-   * iniciar sesión con privilegios administrativos
-   * acceder a la [consola de seguridad](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+  * iniciar sesión con privilegios administrativos
+  * acceder a la [consola de seguridad](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * por ejemplo, vaya a http://localhost:4502/useradmin
+    * por ejemplo, vaya a http://localhost:4502/useradmin
 
-   * en el panel izquierdo, seleccione el grupo (o usuario) para el que se debe otorgar [permiso de lectura](/help/sites-administering/security.md#permissions)
-   * en el panel derecho, busque el **Path &#x200B;** to the Tag Namespace
+  * en el panel izquierdo, seleccione el grupo (o usuario) para el que se debe otorgar [permiso de lectura](/help/sites-administering/security.md#permissions)
+  * en el panel derecho, busque el **Path &#x200B;** to the Tag Namespace
 
-      * por ejemplo, `/content/cq:tags/mycommunity`
+    * por ejemplo, `/content/cq:tags/mycommunity`
 
-   * seleccione `checkbox` en la columna **Leer**
-   * seleccionar **Guardar**
+  * seleccione `checkbox` en la columna **Leer**
+  * seleccionar **Guardar**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * asegúrese de que todas las instancias de publicación tengan los mismos permisos
 
-   * un enfoque consiste en [crear un paquete](/help/sites-administering/package-manager.md#package-manager) del área de nombres en Author
+  * un enfoque consiste en [crear un paquete](/help/sites-administering/package-manager.md#package-manager) del área de nombres en Author
 
-      * en la ficha `Advanced`, para `AC Handling` seleccione `Overwrite`
+    * en la ficha `Advanced`, para `AC Handling` seleccione `Overwrite`
 
-   * replicar el paquete
+  * replicar el paquete
 
-      * elija `Replicate` del administrador de paquetes
+    * elija `Replicate` del administrador de paquetes
 
 ## Administración de etiquetas en diferentes idiomas {#managing-tags-in-different-languages}
 

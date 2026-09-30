@@ -1,19 +1,30 @@
 ---
 title: Facetas de búsqueda para filtrar los resultados
-description: Crear, modificar y usar facetas de búsqueda en  [!DNL Adobe Experience Manager].
+description: Crear, modificar y utilizar facetas de búsqueda en [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Admin, Developer
 feature: Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2645d78b-e678-4ade-b707-5301cc2b3e75
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 16%
-
 ---
-
 # Facetas de búsqueda {#search-facets}
 
 | Versión | Vínculo del artículo |

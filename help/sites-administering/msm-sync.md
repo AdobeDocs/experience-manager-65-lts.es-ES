@@ -10,13 +10,25 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 28%
-
 ---
-
 # Configuración de la sincronización de Live Copy{#configuring-live-copy-synchronization}
 
 Realice las siguientes tareas para controlar cómo y cuándo se sincronizan las Live Copies con su contenido de origen.
@@ -229,7 +241,8 @@ En la tabla siguiente se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Crea o actualiza recursos de producto dentro de un catálogo. Esta acción está pensada para utilizarse en una de las siguientes situaciones:<ul>
+   <td>Crea o actualiza recursos de producto dentro de un catálogo. Esta acción está pensada para utilizarse en una de las siguientes situaciones:
+    <ul>
      <li>Generación o despliegue de un catálogo (o sección de catálogo)</li>
      <li>Un usuario restaura la herencia de sincronización de un componente de producto.</li>
     </ul> </td>

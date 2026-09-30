@@ -6,17 +6,34 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 hide: true
+removedfrom6.5.2025: 'yes'
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 82%
-
 ---
-
 # Consideraciones generales de seguridad para AEM Forms en JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Este artículo proporciona información introductoria que le ayudará a prepararse para proteger su entorno de AEM Forms. Incluye información sobre los requisitos previos de AEM Forms en JEE, el sistema operativo, el servidor de aplicaciones y la seguridad de la base de datos. Revise esta información antes de seguir bloqueando el entorno.

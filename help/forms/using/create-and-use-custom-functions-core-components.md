@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3352'
+source-wordcount: '3533'
 ht-degree: 6%
-
 ---
-
 # Funciones personalizadas en los componentes principales de Forms adaptable
 
 Este artículo describe la creación de funciones personalizadas con el componente principal del formulario adaptable más reciente, que tienen las funciones más recientes, como las siguientes:
@@ -74,17 +84,17 @@ El **Parámetro** es una lista de argumentos utilizados por funciones personaliz
 
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
-   * string: Representa un solo valor de cadena.
-   * number: representa un solo valor numérico.
-   * boolean: Representa un solo valor booleano (true o false).
-   * string[]: Representa una matriz de valores de cadena.
-   * number[]: representa una matriz de valores numéricos.
-   * boolean[]: Representa una matriz de valores booleanos.
-   * date: representa un solo valor de fecha.
-   * date[]: representa una matriz de valores de fecha.
-   * array: representa una matriz genérica que contiene valores de varios tipos.
-   * object: representa un objeto de formulario pasado a una función personalizada en lugar de pasar su valor directamente.
-   * ámbito: representa el objeto global, que contiene variables de solo lectura como instancias de formulario, instancias de campo de destino y métodos para realizar modificaciones de formulario dentro de las funciones personalizadas. Se declara como el último parámetro en las anotaciones de JavaScript y no es visible para el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario. Para obtener más información sobre el objeto Globals y cómo utilizarlo, [haga clic aquí](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * string: Representa un solo valor de cadena.
+  * number: representa un solo valor numérico.
+  * boolean: Representa un solo valor booleano (true o false).
+  * string[]: Representa una matriz de valores de cadena.
+  * number[]: representa una matriz de valores numéricos.
+  * boolean[]: Representa una matriz de valores booleanos.
+  * date: representa un solo valor de fecha.
+  * date[]: representa una matriz de valores de fecha.
+  * array: representa una matriz genérica que contiene valores de varios tipos.
+  * object: representa un objeto de formulario pasado a una función personalizada en lugar de pasar su valor directamente.
+  * ámbito: representa el objeto global, que contiene variables de solo lectura como instancias de formulario, instancias de campo de destino y métodos para realizar modificaciones de formulario dentro de las funciones personalizadas. Se declara como el último parámetro en las anotaciones de JavaScript y no es visible para el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario. Para obtener más información sobre el objeto Globals y cómo utilizarlo, [haga clic aquí](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 El tipo de parámetro es **no distingue entre mayúsculas y minúsculas** y no se permiten espacios en el nombre del parámetro.
 
@@ -538,7 +548,7 @@ Ahora, vamos a entender cómo configurar y utilizar una función personalizada u
 ## Usar una función personalizada en un formulario adaptable {#use-custom-functions}
 
 En un formulario adaptable, puede usar [funciones personalizadas dentro del editor de reglas](/help/forms/using/rule-editor-core-components.md).
-Agregue el siguiente código al archivo JavaScript (archivo `Function.js`) para calcular la edad según la fecha de nacimiento (DD-MM-AAAA). Cree una función personalizada como `calculateAge()` que tome la fecha de nacimiento como entrada y devuelva la edad:
+Agregue el siguiente código al archivo JavaScript (archivo `Function.js`) para calcular la edad en función de la fecha de nacimiento (DD-MM-AAAA). Cree una función personalizada como `calculateAge()` que tome la fecha de nacimiento como entrada y devuelva la edad:
 
 ```javascript
     /**
@@ -985,9 +995,9 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
 
 * El usuario debe asegurarse de que el componente principal [y la versión de especificación estén configurados en la última versión](https://github.com/adobe/aem-core-forms-components/tree/release/650). Sin embargo, para los proyectos y formularios AEM existentes, hay que seguir algunos pasos adicionales:
 
-   * Para el proyecto de AEM, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto.
+  * Para el proyecto de AEM, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto.
 
-   * En el caso de los formularios existentes, si los controladores de envío personalizados no funcionan correctamente, el usuario debe abrir y guardar la regla `submitForm` en el botón **Enviar** mediante el Editor de reglas. Esta acción reemplaza la regla existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` en el formulario.
+  * En el caso de los formularios existentes, si los controladores de envío personalizados no funcionan correctamente, el usuario debe abrir y guardar la regla `submitForm` en el botón **Enviar** mediante el Editor de reglas. Esta acción reemplaza la regla existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` en el formulario.
 
 
 * Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. Para comprobar la lista de funciones personalizadas, puede desplazarse al archivo `error.log` en busca del error. En caso de error, la lista de funciones personalizadas aparece vacía:
@@ -1003,9 +1013,9 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
 * `parameter type` y `return type` no admiten `None`.
 
 * Las funciones que no se admiten en la lista de funciones personalizadas son:
-   * Funciones del generador
-   * Funciones asíncronas/de espera
-   * Definiciones de método
-   * Métodos de clase
-   * Parámetros predeterminados
-   * Parámetros REST
+  * Funciones del generador
+  * Funciones asíncronas/de espera
+  * Definiciones de método
+  * Métodos de clase
+  * Parámetros predeterminados
+  * Parámetros REST

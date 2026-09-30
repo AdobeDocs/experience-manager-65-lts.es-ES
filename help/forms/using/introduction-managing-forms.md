@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 97%
-
 ---
-
 # Introducción a la administración de formularios {#introduction-to-managing-forms}
 
 AEM [!DNL Forms] proporciona una interfaz de usuario simplificada pero potente para crear y administrar formularios, documentos, temas, cartas, fragmentos de documento, diccionarios de datos y recursos relacionados. Ayuda a administrar el ciclo de vida completo de los formularios, documentos y recursos relacionados, desde el escritorio de un desarrollador hasta la oferta
@@ -56,8 +70,8 @@ El botón Crear es el punto de inicio del proceso de creación o carga de un rec
 
 * Una **carpeta:** la interfaz de usuario de AEM [!DNL Forms] utiliza carpetas para organizar los recursos. Admite dos tipos de carpetas:
 
-   * **Carpeta general:** estas carpetas se utilizan para los recursos creados en la interfaz de usuario de AEM [!DNL Forms]. Este tipo de carpetas no tiene una estructura de carpetas estricta. Puede cambiar el nombre de las carpetas, crear subcarpetas y utilizarlas para almacenar formularios adaptables, comunicaciones interactivas, fragmentos de formulario adaptable, plantillas de formulario (XDP), formularios PDF, documentos y recursos relacionados.
-   * **Carpeta de Forms Workflow:** las carpetas de Forms Workflow se crean cuando los procesos de Workbench (archivos de LiveCycle) se migran y sincronizan con la interfaz de usuario de AEM [!DNL Forms]. No se puede cambiar el nombre de estas carpetas, ni crear subcarpetas, comunicaciones interactivas o fragmentos de formulario adaptable en ellas. Tampoco se permite eliminar una carpeta de versiones, crear y cargar un formulario adaptable, un fragmento de formulario adaptable o una comunicación interactiva en paralelo a la carpeta de versiones.
+  * **Carpeta general:** estas carpetas se utilizan para los recursos creados en la interfaz de usuario de AEM [!DNL Forms]. Este tipo de carpetas no tiene una estructura de carpetas estricta. Puede cambiar el nombre de las carpetas, crear subcarpetas y utilizarlas para almacenar formularios adaptables, comunicaciones interactivas, fragmentos de formulario adaptable, plantillas de formulario (XDP), formularios PDF, documentos y recursos relacionados.
+  * **Carpeta de Forms Workflow:** las carpetas de Forms Workflow se crean cuando los procesos de Workbench (archivos de LiveCycle) se migran y sincronizan con la interfaz de usuario de AEM [!DNL Forms]. No se puede cambiar el nombre de estas carpetas, ni crear subcarpetas, comunicaciones interactivas o fragmentos de formulario adaptable en ellas. Tampoco se permite eliminar una carpeta de versiones, crear y cargar un formulario adaptable, un fragmento de formulario adaptable o una comunicación interactiva en paralelo a la carpeta de versiones.
 
   ![carpetas](assets/folders.png)
 
@@ -107,8 +121,8 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
 
 * **Carril izquierdo:** puede hacer clic en el icono en forma de carril izquierdo ![carril_izquierdo_png](assets/railleftpng.png) para mostrar las capacidades Cronología y Referencias de AEM [!DNL Forms].
 
-   * **Cronología:** puede agregar y ver los comentarios de un recurso que esté disponible para su revisión en la cronología. Para obtener instrucciones detalladas, consulte [Creación y administración de revisiones para recursos de formularios](../../forms/using/create-reviews-forms.md).
-   * **Referencias:** un recurso de AEM [!DNL Forms] se puede usar en varios recursos de AEM [!DNL Forms]. Por ejemplo, un fragmento de documento se puede utilizar en varias cartas. Referencias es una lista de los recursos (otros formularios o recursos) en los que se utiliza el recurso seleccionado, y también la lista de otros recursos que utiliza ese recurso.
+  * **Cronología:** puede agregar y ver los comentarios de un recurso que esté disponible para su revisión en la cronología. Para obtener instrucciones detalladas, consulte [Creación y administración de revisiones para recursos de formularios](../../forms/using/create-reviews-forms.md).
+  * **Referencias:** un recurso de AEM [!DNL Forms] se puede usar en varios recursos de AEM [!DNL Forms]. Por ejemplo, un fragmento de documento se puede utilizar en varias cartas. Referencias es una lista de los recursos (otros formularios o recursos) en los que se utiliza el recurso seleccionado, y también la lista de otros recursos que utiliza ese recurso.
 
 * **Rutas de exploración:** una ruta de exploración representa el título de la consola o carpeta actual. Puede hacer clic en la opción Ruta de exploración para desplazarse por el nivel de las carpetas superiores de la jerarquía.
 * **Cambiar vista:** puede hacer clic en los iconos del conmutador de vista ![Ver vista](assets/viewlist.png) o ![Ver tarjeta](assets/viewcard.png) para cambiar rápidamente entre la vista de lista y la vista de tarjeta. Para obtener más información sobre los componentes más comunes de la interfaz de usuario, consulte [Creación](/help/sites-authoring/author.md).

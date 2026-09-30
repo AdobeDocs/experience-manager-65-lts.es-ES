@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 8%
-
+source-wordcount: '4661'
+ht-degree: 7%
 ---
-
 # Administrar ajustes preestablecidos de visor{#managing-viewer-presets}
 
 Un ajuste preestablecido de visualizador es una colección de configuraciones que determinan cómo ven los usuarios los recursos de medios enriquecidos en las pantallas de sus equipos y dispositivos móviles. Si es administrador, puede crear ajustes preestablecidos de visualizador. Las opciones de configuración están disponibles para una matriz de opciones de configuración de visualizador. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
@@ -166,7 +180,7 @@ Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de
 >Ver [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
 >
 >Los nuevos ajustes preestablecidos de visualizador que cree y agregue deben activarse y publicarse.
->Ver [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
+>Consulte [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Publicar ajustes preestablecidos de visor](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -464,9 +478,9 @@ Por ejemplo, para el tipo *VideoPlayer*, en **[!UICONTROL Modificadores]** > **[
    * **[!UICONTROL dash]**: los vídeos se transmiten solo como dash. Sin embargo, en dispositivos Safari/iOS, debe seleccionar **[!UICONTROL hls]** como tipo en su lugar.
    * **[!UICONTROL hls]**: los vídeos se transmiten solo como hls.
    * **[!UICONTROL auto]**: práctica recomendada. La creación de flujos DASH y HLS está optimizada para el almacenamiento. Por lo tanto, Adobe recomienda que siempre seleccione **[!UICONTROL auto]** como tipo de reproducción. Los vídeos se transmiten como guión, hls o progresivo, como en el siguiente orden de reproducción:
-      * Si el navegador admite DASH, primero se utiliza la transmisión por secuencias DASH.
-      * Si el explorador no admite DASH, se utiliza la transmisión por secuencias de HLS en segundo lugar.
-      * Si el navegador no es compatible con DASH o HLS, se utiliza la reproducción progresiva en último lugar.
+     * Si el navegador admite DASH, primero se utiliza la transmisión por secuencias DASH.
+     * Si el explorador no admite DASH, se utiliza la transmisión por secuencias de HLS en segundo lugar.
+     * Si el navegador no es compatible con DASH o HLS, se utiliza la reproducción progresiva en último lugar.
 
 1. En el menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione un componente cuyos comportamientos desee cambiar.
 

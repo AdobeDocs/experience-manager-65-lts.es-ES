@@ -9,7 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 4%
@@ -61,42 +74,42 @@ El componente **Herramientas de correo electrónico** para ExactTarget puede agr
 
 1. Seleccione una opción del menú **Opciones**:
 
-<table>
- <tbody>
-  <tr>
-   <td>Dirección física de envío (obligatoria)</td>
-   <td>Este componente inserta la dirección de correo física de la organización en el correo electrónico.</td>
-  </tr>
-  <tr>
-   <td>Centro de perfiles (obligatorio)</td>
-   <td>El centro de perfiles es una página web en la que los suscriptores pueden introducir y mantener la información personal que mantiene sobre ellos.</td>
-  </tr>
-  <tr>
-   <td>Ver correo electrónico como página Web</td>
-   <td>Este componente permite al usuario ver el correo electrónico como una página web.</td>
-  </tr>
-  <tr>
-   <td>Política de privacidad</td>
-   <td>Este componente inserta el vínculo a la directiva de privacidad en el correo electrónico.<br /> </td>
-  </tr>
-  <tr>
-   <td>Centro de cancelación de suscripciones</td>
-   <td>Da la opción al usuario de cancelar la suscripción a su lista de correo.</td>
-  </tr>
-  <tr>
-   <td>Centro de suscripciones</td>
-   <td>Un centro de suscripciones es una página web en la que un suscriptor puede controlar los mensajes que recibe de su organización.</td>
-  </tr>
-  <tr>
-   <td>Seguimiento de aperturas de correo electrónico</td>
-   <td>Componente oculto que le permite utilizar la característica de seguimiento ExactTarget.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Dirección física de envío (obligatoria)</td>
+      <td>Este componente inserta la dirección de correo física de la organización en el correo electrónico.</td>
+   </tr>
+   <tr>
+      <td>Centro de perfiles (obligatorio)</td>
+      <td>El centro de perfiles es una página web en la que los suscriptores pueden introducir y mantener la información personal que mantiene sobre ellos.</td>
+   </tr>
+   <tr>
+      <td>Ver correo electrónico como página Web</td>
+      <td>Este componente permite al usuario ver el correo electrónico como una página web.</td>
+   </tr>
+   <tr>
+      <td>Política de privacidad</td>
+      <td>Este componente inserta el vínculo a la directiva de privacidad en el correo electrónico.<br /> </td>
+   </tr>
+   <tr>
+      <td>Centro de cancelación de suscripciones</td>
+      <td>Da la opción al usuario de cancelar la suscripción a su lista de correo.</td>
+   </tr>
+   <tr>
+      <td>Centro de suscripciones</td>
+      <td>Un centro de suscripciones es una página web en la que un suscriptor puede controlar los mensajes que recibe de su organización.</td>
+   </tr>
+   <tr>
+      <td>Seguimiento de aperturas de correo electrónico</td>
+      <td>Componente oculto que le permite utilizar la característica de seguimiento ExactTarget.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->El menú desplegable **Opciones** solo se rellena si se aplica la configuración de ExactTarget al correo electrónico. Consulte [Aplicación de la configuración del servicio de correo electrónico a la configuración del correo electrónico](#applying-e-mail-service-configuration-to-e-mail-settings) para obtener más información.
+   >[!NOTE]
+   >
+   >El menú desplegable **Opciones** solo se rellena si se aplica la configuración de ExactTarget al correo electrónico. Consulte [Aplicación de la configuración del servicio de correo electrónico a la configuración del correo electrónico](#applying-e-mail-service-configuration-to-e-mail-settings) para obtener más información.
 
 1. Publique el correo electrónico en ExactTarget.
 

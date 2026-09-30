@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 9%
-
 ---
-
 # Conectarse a Adobe Analytics y crear marcos {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 Para realizar un seguimiento de los datos web de sus páginas de AEM en Adobe Analytics, cree una configuración de servicios de Adobe Analytics Cloud y un marco de trabajo de Adobe Analytics:

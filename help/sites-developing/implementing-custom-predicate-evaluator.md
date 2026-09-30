@@ -1,5 +1,5 @@
 ---
-title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
+title: Implementación de un evaluador de predicados personalizado para Query Builder
 description: El Generador de consultas es una forma sencilla de consultar el repositorio de contenido
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: 4e98bff0-c1e9-5ae2-adfb-81189dc510c5
+    internal-label: Query Builder
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '818'
+ht-degree: 2%
 ---
-
-# Implementación de un evaluador de predicados personalizado para el Generador de consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementación de un evaluador de predicados personalizado para Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 En esta sección se describe cómo ampliar [Query Builder](/help/sites-developing/querybuilder-api.md) implementando un evaluador de predicados personalizado.
 
@@ -44,7 +57,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub.
 
-* [Abrir proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Abra el proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### Evaluador de predicados en detalle {#predicate-evaluator-in-detail}
@@ -149,30 +162,30 @@ El proyecto `cq-search` contiene la clase abstracta `AbstractPredicateEvaluator`
 
    El siguiente fragmento muestra las diferencias en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
-```
-@@ -19,8 +19,11 @@
-  */
- package com.adobe.aem.docs.search;
+   ```
+   @@ -19,8 +19,11 @@
+     */
+   package com.adobe.aem.docs.search;
+   
+   +import org.apache.felix.scr.annotations.Component;
+   +
+   import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   
+   +@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+   public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   
+   }
+   ```
 
-+import org.apache.felix.scr.annotations.Component;
-+
- import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
-+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
- public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   >[!NOTE]
+   >
+   >`factory` debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/` y termine con el nombre de su `PredicateEvaluator` personalizado.
 
- }
-```
-
-[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
-
->[!NOTE]
->
->`factory` debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/` y termine con el nombre de su `PredicateEvaluator` personalizado.
-
->[!NOTE]
->
->El nombre de `PredicateEvaluator` es el nombre del predicado, que se utiliza al crear consultas.
+   >[!NOTE]
+   >
+   >El nombre de `PredicateEvaluator` es el nombre del predicado, que se utiliza al crear consultas.
 
 1. Anular:
 

@@ -7,13 +7,27 @@ feature: Link Sharing,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ac7ff784-d331-4437-940f-9ea3ce122f8b
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 7%
-
 ---
-
 # Compartir recurso como vínculo {#asset-link-sharing}
 
 | Versión | Vínculo del artículo |
@@ -114,8 +128,8 @@ Cuando se descargan recursos desde el vínculo compartido mediante la caracterí
 
 * Si desea compartir vínculos de su implementación de autor de [!DNL Experience Manager] con entidades externas, asegúrese de exponer únicamente las siguientes direcciones URL que se usan para compartir vínculos, solo para solicitudes de `GET`. Bloquear otras direcciones URL por motivos de seguridad.
 
-   * `http://[aem_server]:[port]/linkshare.html`
-   * `http://[aem_server]:[port]/linksharepreview.html`
-   * `http://[aem_server]:[port]/linkexpired.html`
+  * `http://[aem_server]:[port]/linkshare.html`
+  * `http://[aem_server]:[port]/linksharepreview.html`
+  * `http://[aem_server]:[port]/linkexpired.html`
 
   En la interfaz de [!DNL Experience Manager], obtenga acceso a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Abra la configuración de **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Dominios]** con los valores mencionados en `local`, `author` y `publish`. Para las propiedades `local` y `author`, proporcione la dirección URL para las instancias local y Author, respectivamente. Si ejecuta una sola instancia de autor de [!DNL Experience Manager], utilice el mismo valor para las propiedades `local` y `author`. Para instancias de publicación, proporcione la dirección URL de la instancia de publicación [!DNL Experience Manager].

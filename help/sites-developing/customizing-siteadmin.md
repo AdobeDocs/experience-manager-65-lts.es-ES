@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 445cb8c3-e0c4-44f8-a140-9e7215e3b73a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '816'
 ht-degree: 1%
-
 ---
-
 # Personalización de la consola de sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
 
 ## Adición de una columna personalizada a la consola Sitios web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -139,7 +148,7 @@ El último paso consiste en adaptar la estructura de nodos de la consola de admi
    * Quitar **pageText**
 
    * Establecer **pathRegex** en `/content/geometrixx(/.*)?`
-Esto hace que la configuración de cuadrícula esté activa para todos los sitios web de Geometrixx.
+     Esto hace que la configuración de cuadrícula esté activa para todos los sitios web de Geometrixx.
 
    * Establecer **storeProxySuffix** en `.pages.json`
 
@@ -147,9 +156,9 @@ Esto hace que la configuración de cuadrícula esté activa para todos los sitio
 
    * Para activar la funcionalidad de MSM, agregue los siguientes parámetros MSM a la propiedad de varias cadenas **storeReaderFields**:
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+     * **msm:isSource**
+     * **msm:isInBlueprint**
+     * **msm:isLiveCopy**
 
 1. Agregue un nodo `starred` (de tipo **nt:unstructured**) debajo de `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con las siguientes propiedades:
 

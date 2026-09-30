@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 1%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # Modo de desarrollador{#developer-mode}
 
 Al editar páginas en Adobe Experience Manager (AEM), hay disponibles varios [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui), incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
@@ -82,8 +91,8 @@ Muestra un árbol de componentes que:
 * Muestra el tiempo de cálculo del lado del servidor para procesar el componente.
 * Permite expandir el árbol y seleccionar componentes específicos dentro de él. La selección proporciona acceso a los detalles del componente, como:
 
-   * Ruta del repositorio
-   * Vínculos a scripts (a los que se accede en CRXDE Lite)
+  * Ruta del repositorio
+  * Vínculos a scripts (a los que se accede en CRXDE Lite)
 
 * Los componentes seleccionados (en el flujo de contenido, indicados por un borde azul) se resaltarán en el árbol de contenido (y a la inversa).
 
@@ -99,19 +108,19 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 * **Ver detalles**: un vínculo a una lista que muestra:
 
-   * todos los scripts de componente utilizados para procesar el componente.
-   * la ruta de contenido del repositorio para este componente específico.
+  * todos los scripts de componente utilizados para procesar el componente.
+  * la ruta de contenido del repositorio para este componente específico.
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar script**: un vínculo que:
 
-   * abre el script del componente en CRXDE Lite.
+  * abre el script del componente en CRXDE Lite.
 
 * Al expandir una entrada de componente (cabeza de flecha), también se puede mostrar:
 
-   * La jerarquía dentro del componente seleccionado.
-   * Tiempos de procesamiento para el componente seleccionado de forma aislada, cualquier componente individual anidado en él y el total combinado.
+  * La jerarquía dentro del componente seleccionado.
+  * Tiempos de procesamiento para el componente seleccionado de forma aislada, cualquier componente individual anidado en él y el total combinado.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

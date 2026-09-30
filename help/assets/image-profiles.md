@@ -9,13 +9,27 @@ feature: Image Profiles
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 73a35073-fbcb-4908-981c-f3d254dffaec
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3063'
+source-wordcount: '3098'
 ht-degree: 4%
-
 ---
-
 # Perfiles de imagen de Dynamic Media {#image-profiles}
 
 Al cargar imágenes, puede recortar automáticamente la imagen al cargar aplicando un perfil de imagen a la carpeta.
@@ -61,9 +75,9 @@ Hay dos opciones de recorte de imagen entre las que elegir: Recorte de píxeles 
 
 | Opción | Cuándo se usa | Descripción |
 | --- | --- | --- |
-| Recorte de píxeles | Recorte masivo de imágenes basado únicamente en dimensiones. | Para usar esta opción, selecciona **[!UICONTROL Recorte de píxeles]** de la lista desplegable Opciones de recorte.<br><br>Para recortar desde los lados de una imagen, escriba el número de píxeles que desea recortar desde cualquier lado o cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.<br><br>Un recorte de píxeles de perfil de imagen se procesa de la siguiente manera:<br>· Los valores son Superior, Inferior, Izquierda y Derecha.<br>· La parte superior izquierda se considera `0,0` y el recorte de píxeles se calcula a partir de ahí.<br>· Punto de inicio del recorte: izquierda es X y superior es Y<br>· Cálculo horizontal: dimensión de píxel horizontal de la imagen original menos izquierda y luego menos derecha.<br>· Cálculo vertical: altura de píxel vertical menos Superior y luego menos Inferior.<br><br>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Utilice valores: Superior=250, Inferior=500, Izquierda=300, Derecha=700.<br><br>Desde el recorte superior izquierdo (300.250) utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000.2250). |
+| Recorte de píxeles | Recorte masivo de imágenes basado únicamente en dimensiones. | Para usar esta opción, selecciona **[!UICONTROL Recorte de píxeles]** de la lista desplegable Opciones de recorte.<br><br>Para recortar desde los lados de una imagen, escriba el número de píxeles que desea recortar desde cualquier lado o cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.<br><br>El recorte de píxeles del perfil de imagen se procesa de la siguiente manera:<br>· Los valores son Superior, Inferior, Izquierda y Derecha.<br>· La parte superior izquierda se considera `0,0` y el recorte de píxeles se calcula a partir de ahí.<br>· Punto de inicio del recorte: La izquierda es X y la superior es Y<br>· Cálculo horizontal: dimensión de píxel horizontal de la imagen original menos Izquierda y luego menos Derecha.<br>· Cálculo vertical: altura de píxel vertical menos Superior y, a continuación, menos Inferior.<br><br>Por ejemplo, suponga que tiene una imagen de 40000000000000 píxeles. Utilice valores: Superior=250, Inferior=500, Izquierda=300, Derecha=700.<br><br>Del recorte Superior izquierdo (300.250) con el espacio de relleno de (4000-300-700, 3000-250-500 o 3000.2250). |
 | Recorte inteligente | Recorte masivo de imágenes en función de su punto focal visual. | Smart Crop utiliza el poder de la inteligencia artificial en Adobe AI para automatizar rápidamente el recorte masivo de imágenes. El recorte inteligente detecta y recorta automáticamente el punto focal de cualquier imagen para capturar el punto de interés deseado, independientemente del tamaño de la pantalla.</p> <p>Para usar Recorte inteligente, selecciona **[!UICONTROL Recorte inteligente]** en la lista desplegable Opciones de recorte y, a la derecha de Recorte de imagen adaptable, habilita (activa) la función.</p> <p>Los tamaños de punto de interrupción predeterminados de Grande, Medium y Pequeño generalmente abarcan toda la gama de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y banners. Si lo desea, puede editar los nombres predeterminados de Grande, Medium y Pequeño.</p> <p>Para agregar más puntos de interrupción, seleccione **[!UICONTROL Agregar recorte]** para eliminar un recorte, seleccione el icono Basura. |
-| Muestra de color e imagen | Bulk genera una muestra de imagen para cada imagen. | **Nota**: la muestra inteligente no se admite en Dynamic Media Classic.<br><br>Busque y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.<br><br>Para usar muestras de color e imagen, seleccione **[!UICONTROL Recorte inteligente]** en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Color y muestra de imagen, habilite (active) la función. Introduzca un valor en píxeles en los cuadros de texto Anchura y Altura.<br><br>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Utilice su propio componente de visualización para procesar la muestra en el sitio. (La excepción a esta regla son los titulares de carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los titulares de carrusel).<br><br>**Uso de muestras de imagen**<br> La dirección URL de las muestras de imagen es sencilla. Es:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>donde `:Swatch` se anexa a la solicitud de recurso.<br><br>**Uso de muestras de color**<br> Para usar muestras de color, realice una solicitud `req=userdata` con lo siguiente:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>y aquí está la URL `req=userdata` correspondiente del recurso de muestra:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La respuesta de `req=userdata` es la siguiente:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>También puede solicitar una respuesta de `req=userdata` en formato XML o JSON, como en los siguientes ejemplos de URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** Cree su propio componente WCM para solicitar una muestra de color y analizar el atributo `SmartSwatchColor`, representado por un Valor hexadecimal de RGB de 24 bits.<br><br>Consulte también [`userdata` en la Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
+| Muestra de color e imagen | Bulk genera una muestra de imagen para cada imagen. | **Nota**: Dynamic Media Classic no admite muestras inteligentes.<br><br>Busque y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.<br><br>Para usar muestras de color e imagen, seleccione **[!UICONTROL Recorte inteligente]** en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Color y muestra de imagen, habilite (active) la función. Introduzca un valor en píxeles en los cuadros de texto Anchura y Altura.<br><br>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Utilice su propio componente de visualización para procesar la muestra en el sitio. (La excepción a esta regla son los titulares de carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los titulares de carrusel.)<br><br>**Uso de muestras de imagen**<br> La dirección URL de las muestras de imagen es sencilla. Es:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>donde `:Swatch` se anexa a la solicitud de recurso.<br><br>**Uso de muestras de color**<br> Para usar muestras de color, realice una solicitud `req=userdata` con lo siguiente:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>y aquí está la URL `req=userdata` correspondiente del recurso de muestra:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La respuesta de `req=userdata` es la siguiente:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>También puede solicitar una respuesta de `req=userdata` en formato XML o JSON, como en los siguientes ejemplos de URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** Cree su propio componente WCM para solicitar una muestra de color y analizar el atributo `SmartSwatchColor`, representado por un Valor hexadecimal de RGB de 24 bits.<br><br>Consulte también [`userdata` en la Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Máscara de enfoque {#unsharp-mask}
 
@@ -222,7 +236,7 @@ Vuelva a ejecutar el recorte inteligente para generar los recortes adicionales d
 **Para editar el recorte inteligente o la muestra inteligente de varias imágenes:**
 
 1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a una carpeta que tenga aplicado un recorte inteligente o un perfil de imagen de muestra inteligente.
-1. En la carpeta, seleccione el icono **[!UICONTROL Más acciones]** (...) y luego seleccione **[!UICONTROL Recorte inteligente]**.
+1. En la carpeta, seleccione **[!UICONTROL Más acciones]** (...) y luego seleccione **[!UICONTROL Recorte inteligente]**.
 
 1. En la página **[!UICONTROL Editar recortes inteligentes]**, realice una de las siguientes acciones:
 
@@ -240,15 +254,15 @@ Vuelva a ejecutar el recorte inteligente para generar los recortes adicionales d
 
    * Cambie el tamaño del cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
-      * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
-      * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
+     * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
+     * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
 
      ![Cambiar el tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png)
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
-      * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el cuadro de recorte a una nueva ubicación.
-      * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestra inteligente a una nueva ubicación.
+     * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el cuadro de recorte a una nueva ubicación.
+     * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestra inteligente a una nueva ubicación.
 
      ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
 

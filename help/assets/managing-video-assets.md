@@ -1,19 +1,28 @@
 ---
 title: Administrar recursos de vídeo
-description: Cargar, previsualizar, anotar y publicar recursos de vídeo en  [!DNL Adobe Experience Manager].
+description: Cargar, previsualizar, anotar y publicar recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: User
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5614'
 ht-degree: 8%
-
 ---
-
 # Administrar recursos de vídeo {#manage-video-assets}
 
 | Versión | Vínculo del artículo |
@@ -261,7 +270,7 @@ A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de
 1. En la página Crear configuración de YouTube, en Configuración de plataforma de Google Cloud, en el campo **[!UICONTROL Nombre de aplicación]**, introduzca el ID de proyecto de Google.
 
    Especificó el ID del proyecto al establecer inicialmente la configuración de Google Cloud anteriormente.
-Deje abierta la página Crear configuración de YouTube; en un momento, volverá a ella.
+   Deje abierta la página Crear configuración de YouTube; en un momento, volverá a ella.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -309,7 +318,7 @@ Deje abierta la página Crear configuración de YouTube; en un momento, volverá
 1. En el cuadro de diálogo Configuración de cuenta de YouTube, en el campo **[!UICONTROL Nombre de la aplicación]**, introduzca el ID del proyecto de Google.
 
    Especificó el identificador de proyecto al [establecer inicialmente la configuración de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings) antes.
-Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá a él en un momento.
+   Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá a él en un momento.
 
 1. Con un editor de texto sin formato, abra el archivo JSON que descargó y guardó anteriormente en la tarea Configuración de Google Cloud.
 1. Seleccione y copie todo el texto JSON.
@@ -360,19 +369,19 @@ Para automatizar la configuración de las propiedades predeterminadas de YouTube
 1. En el lado derecho de la página, en la ficha **[!UICONTROL Configuración]**, haga lo siguiente:
 
    * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+     Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
    * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee usar (como Personas y blogs o Ciencia y tecnología).
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+     Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
 1. En el encabezado Publicación de YouTube, seleccione **[!UICONTROL Privacidad de YouTube]**.
 1. En el lado derecho de la página, en la ficha **[!UICONTROL Configuración]**, haga lo siguiente:
 
    * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+     Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
    * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar. Observe que las Opciones se agrupan en pares de dos. El campo inferior del par es el valor predeterminado que desea copiar, como público, no incluido en la lista o privado.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+     Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
 1. Cerca de la esquina superior derecha de la página Editor de esquemas de metadatos, haga clic en **[!UICONTROL Cancelar]**.
 1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo de Experience Manager y, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.

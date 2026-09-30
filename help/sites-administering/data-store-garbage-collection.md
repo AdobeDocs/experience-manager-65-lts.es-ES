@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
-
 ---
-
 # Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en que existen varios recursos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento del mantenimiento del sistema de archivos y la copia de seguridad.

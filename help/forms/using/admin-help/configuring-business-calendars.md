@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1949'
 ht-degree: 0%
-
 ---
-
 # Configurar calendarios comerciales {#configuring-business-calendars}
 
 *Los calendarios comerciales* definen los días laborables y no laborables (por ejemplo, los feriados legales, los fines de semana y los días de cierre de la empresa) de su organización. Al utilizar los calendarios comerciales, los formularios AEM Forms omiten los días no laborables al realizar determinados cálculos de fechas. En Workbench, puede especificar si desea utilizar calendarios comerciales para eventos asociados a usuarios, como recordatorios de tareas, plazos y escalaciones, o para acciones no asociadas a usuarios, como Eventos de temporizador y el Servicio de espera.
@@ -25,7 +40,7 @@ Por ejemplo, se configura un recordatorio de tarea para que se produzca tres dí
 
 >[!NOTE]
 >
->Al calcular fechas y horas mediante calendarios comerciales, los formularios AEM Forms utilizan la fecha y la hora del servidor en el que se está ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un aviso de tarea está programado para realizarse a las 10:00 a.m. en un servidor que se ejecuta en Londres, pero el usuario que recibe el aviso está en la ciudad de Nueva York, el aviso se recibirá a las 5:00 a.m. hora local.
+>Al calcular fechas y horas mediante calendarios comerciales, los formularios AEM Forms utilizan la fecha y la hora del servidor en el que se está ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un recordatorio de tarea está programado para producirse a las 10:00 a. m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio está en la ciudad de Nueva York, recibirá el recordatorio a las 5:00 a. m. hora local.
 
 ## Usar el calendario empresarial predeterminado {#using-the-default-business-calendar}
 
@@ -78,7 +93,7 @@ Si su organización contiene diferentes conjuntos de usuarios con diferentes dí
 
    Si selecciona esta opción, un evento que se produce antes del intervalo de tiempo especificado se mueve al principio del intervalo de tiempo y un evento que se produce después de que el intervalo de tiempo se mueva a la hora de inicio del siguiente día laborable.
 
-   Por ejemplo, piense en una situación en la que a un usuario se le asigna una tarea a las 2:00 de la mañana de un martes y el recordatorio de dicha tarea se establece en dos días hábiles. Sin horario laboral, el recordatorio se produciría a las 2:00 a.m. del jueves. Si el horario laboral está establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se insertará a las 8:00 a.m. del jueves. Sin horario laboral, si se creó un evento de recordatorio a las 6:00 pm del martes, el recordatorio se produciría después del horario laboral del jueves. Con el horario laboral establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se produciría a las 8:00 a.m. del viernes.
+   Por ejemplo, considere una situación en la que a un usuario se le asigna una tarea a las 2 de la madrugada de un martes y el recordatorio de esa tarea se establece en dos días hábiles. Sin horario laboral, el recordatorio ocurriría a las 2:00 am del jueves. Si el horario laboral es de 8:00 a.m. a 5:00 p.m., el recordatorio se inserta a las 8:00 a.m. del jueves. Sin horario laboral, si se creó un evento de recordatorio a las 18:00 del martes, el recordatorio se produciría después del horario laboral del jueves. Con el horario laboral establecido de 8:00 a.m. a 5:00 p.m., el recordatorio se produciría a las 8:00 a.m. del viernes.
 
 1. En el calendario de la izquierda, haga doble clic en cualquier otro día que no sea laborable, como los festivos. No se pueden seleccionar días del pasado. Los días no laborables que seleccione aparecerán en una lista a la derecha, con la fecha apareciendo dos veces en una línea. Seleccione la fecha de la izquierda para escribir el nombre o la descripción del día no laborable.
 

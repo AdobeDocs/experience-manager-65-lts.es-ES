@@ -5,13 +5,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10723'
+source-wordcount: '10731'
 ht-degree: 2%
-
 ---
-
 # Vídeo en Dynamic Media {#video}
 
 En esta sección se describe el trabajo con vídeo en Dynamic Media.
@@ -33,23 +44,23 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Cree su propio perfil de codificación de vídeo. O bien, puede usar el perfil predefinido _Codificación de vídeo adaptable_ que se incluye con Dynamic Media.
 
-      * [Crear un perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * La resolución de codificación de vídeo de salida máxima es de 8.192 × 4.320 o 4.320 × 8.192,md.
-      * Más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
+     * [Crear un perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+     * La resolución de codificación de vídeo de salida máxima es de 8.192 × 4.320 o 4.320 × 8.192,md.
+     * Más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
 
    * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
 
-      * [Aplicar un perfil de vídeo a las carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-      * Más información sobre [Prácticas recomendadas para organizar los recursos digitales con el fin de usar perfiles de procesamiento](/help/assets/organize-assets.md).
-      * Más información sobre [Organizar recursos digitales](/help/assets/organize-assets.md).
+     * [Aplicar un perfil de vídeo a las carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+     * Más información sobre [Prácticas recomendadas para organizar los recursos digitales con el fin de usar perfiles de procesamiento](/help/assets/organize-assets.md).
+     * Más información sobre [Organizar recursos digitales](/help/assets/organize-assets.md).
 
    * Cargue los vídeos de origen principales en las carpetas. Al añadir vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo que haya asignado a la carpeta.
 
-      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
-      * La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384.
-      * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
-      * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
-      * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
+     * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
+     * La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384.
+     * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
+     * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+     * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
 
    * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
@@ -57,55 +68,55 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Organizar, examinar y buscar recursos de vídeo
 
-      * [Organizar recursos digitales](/help/assets/organize-assets.md)
-Obtenga más información acerca de [Prácticas recomendadas para organizar los recursos digitales con el fin de usar perfiles de procesamiento](organize-assets.md)
+     * [Organizar recursos digitales](/help/assets/organize-assets.md)
+       Obtenga más información acerca de [Prácticas recomendadas para organizar los recursos digitales con el fin de usar perfiles de procesamiento](organize-assets.md)
 
-      * [Buscar recursos de vídeo](search-assets.md#custompredicates) o [Buscar recursos](/help/assets/search-assets.md)
+     * [Buscar recursos de vídeo](search-assets.md#custompredicates) o [Buscar recursos](/help/assets/search-assets.md)
 
    * Previsualización y publicación de recursos de vídeo
 
-      * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
-        [Previsualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](previewing-assets.md)
-        [Ver representaciones de vídeo](video-renditions.md)
-        [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
+     * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
+       [Previsualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](previewing-assets.md)
+       [Ver representaciones de vídeo](video-renditions.md)
+       [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
 
-      * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
-      * [Publicar recursos](publishing-dynamicmedia-assets.md)
+     * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
+     * [Publicar recursos](publishing-dynamicmedia-assets.md)
 
    * Trabajo con metadatos de vídeo
 
-      * Vea las propiedades de una representación de vídeo codificada, como velocidad de fotogramas, velocidad de bits de audio y vídeo y códec:
-        [Ver propiedades de representación de vídeo](video-renditions.md)
+     * Vea las propiedades de una representación de vídeo codificada, como velocidad de fotogramas, velocidad de bits de audio y vídeo y códec:
+       [Ver propiedades de representación de vídeo](video-renditions.md)
 
-      * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
-        [Editar propiedades de vídeo](manage-assets.md#editing-properties)
+     * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
+       [Editar propiedades de vídeo](manage-assets.md#editing-properties)
 
-      * [Administración de metadatos para recursos digitales](metadata.md)
-      * [Esquemas de metadatos](metadata-schemas.md)
+     * [Administración de metadatos para recursos digitales](metadata.md)
+     * [Esquemas de metadatos](metadata-schemas.md)
 
    * Revise, apruebe y anote vídeos, y mantenga un control total de las versiones
 
-      * [Anotar vídeos](managing-video-assets.md#annotate-video-assets) o [Anotar recursos](manage-assets.md#annotating)
+     * [Anotar vídeos](managing-video-assets.md#annotate-video-assets) o [Anotar recursos](manage-assets.md#annotating)
 
-      * [Crear una versión](manage-assets.md#asset-versioning)
-      * [Aplicar flujos de trabajo a recursos](assets-workflow.md) o ver [Iniciar un flujo de trabajo en un recurso](manage-assets.md#starting-a-workflow-on-an-asset)
+     * [Crear una versión](manage-assets.md#asset-versioning)
+     * [Aplicar flujos de trabajo a recursos](assets-workflow.md) o ver [Iniciar un flujo de trabajo en un recurso](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Revisar recursos de carpeta](bulk-approval.md)
-      * [Proyectos](../sites-authoring/projects.md)
+     * [Revisar recursos de carpeta](bulk-approval.md)
+     * [Proyectos](../sites-authoring/projects.md)
 
 1. **Publique sus vídeos de Dynamic Media** mediante uno de los procedimientos siguientes:
 
    * Si utiliza Adobe Experience Manager como sistema de administración de contenido web, puede agregar vídeos directamente a las páginas web.
 
-      * [Agregar vídeos a sus páginas web](adding-dynamic-media-assets-to-pages.md).
+     * [Agregar vídeos a sus páginas web](adding-dynamic-media-assets-to-pages.md).
 
    * Si utiliza un sistema de administración de contenido web de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
-      * Integrar vídeo con URL:
-        [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
+     * Integrar vídeo con URL:
+       [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
-      * Integración de vídeo mediante código incrustado en una página web:
-        [Incrustar el visor de vídeo en una página web](embed-code.md).
+     * Integración de vídeo mediante código incrustado en una página web:
+       [Incrustar el visor de vídeo en una página web](embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).
 
@@ -133,8 +144,8 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten lo
 
 * Cargue vídeos en varios formatos compatibles y codifíquelos en MP4 H.264 para reproducirlos en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
-   * Cuando se genera un conjunto de vídeos adaptable, incluye vídeos MP4.
-   * **Nota**: Los vídeos principales/de origen no se agregan a un conjunto de vídeos adaptable.
+  * Cuando se genera un conjunto de vídeos adaptable, incluye vídeos MP4.
+  * **Nota**: Los vídeos principales/de origen no se agregan a un conjunto de vídeos adaptable.
 
 * Subtítulos de vídeo en todos los visores de vídeo de HTML5.
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
@@ -148,8 +159,8 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 * Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeos de Dynamic Media, incluidos los siguientes:
 
-   * Visores de vídeo únicos.
-   * Visores de medios mixtos que combinan contenido de vídeo e imagen.
+  * Visores de vídeo únicos.
+  * Visores de medios mixtos que combinan contenido de vídeo e imagen.
 
 * Configure reproductores de vídeo para satisfacer sus necesidades de marca.
 * Integre vídeo en su sitio web, sitio móvil o aplicación móvil con una URL simple o código incrustado.
@@ -321,9 +332,9 @@ En la tabla siguiente se describe cómo se traducen los resultados de la fórmul
 | Resultado de fórmula | Proporción de aspecto |
 |--- |--- |
 | 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 Por ejemplo, un vídeo de 1440 de anchura × 1080 de altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
@@ -453,10 +464,10 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 1. En la página Informes de vídeo, realice una de las siguientes acciones:
 
    * Cerca de la esquina superior derecha, selecciona el icono **Actualizar informe de vídeo**.
-Utilice Actualizar solo si la fecha de finalización del informe es el día actual. Al hacerlo, se asegura de ver el seguimiento de vídeo que se ha producido desde la última vez que se ejecutó el informe.
+     Utilice Actualizar solo si la fecha de finalización del informe es el día actual. Al hacerlo, se asegura de ver el seguimiento de vídeo que se ha producido desde la última vez que se ejecutó el informe.
 
    * Cerca de la esquina superior derecha, seleccione el icono **Selector de fecha**.
-Especifique el intervalo de fechas inicial y final para el que desea obtener datos de vídeo y, a continuación, seleccione **[!UICONTROL Ejecutar informe]**.
+     Especifique el intervalo de fechas inicial y final para el que desea obtener datos de vídeo y, a continuación, seleccione **[!UICONTROL Ejecutar informe]**.
 
    El cuadro de grupo Métricas principales identifica varias mediciones agregadas de todos los *vídeos publicados* en el sitio.
 
@@ -962,15 +973,15 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dyna
 
    * Para utilizar un fotograma del vídeo como nueva miniatura:
 
-      * En la barra de herramientas, seleccione **[!UICONTROL Seleccionar fotograma del vídeo]**.
-      * Seleccione el botón Reproducir y, a continuación, el botón Pausa del fotograma que desea capturar como nueva miniatura del vídeo.
+     * En la barra de herramientas, seleccione **[!UICONTROL Seleccionar fotograma del vídeo]**.
+     * Seleccione el botón Reproducir y, a continuación, el botón Pausa del fotograma que desea capturar como nueva miniatura del vídeo.
 
    * Para utilizar un recurso de imagen como nueva miniatura:
 
-      * En la barra de herramientas, seleccione **[!UICONTROL Seleccionar miniatura de Assets]**.
-      * Seleccionar **[!UICONTROL Seleccionar miniatura]**.
-      * Vaya a un recurso de imagen previamente cargado y publicado que desee utilizar. El recurso cambia de tamaño automáticamente para servir como imagen en miniatura del vídeo.
-      * Seleccione el recurso de imagen y luego seleccione **[!UICONTROL Seleccionar]**.
+     * En la barra de herramientas, seleccione **[!UICONTROL Seleccionar miniatura de Assets]**.
+     * Seleccionar **[!UICONTROL Seleccionar miniatura]**.
+     * Vaya a un recurso de imagen previamente cargado y publicado que desee utilizar. El recurso cambia de tamaño automáticamente para servir como imagen en miniatura del vídeo.
+     * Seleccione el recurso de imagen y luego seleccione **[!UICONTROL Seleccionar]**.
 
 1. En la página Cambiar miniatura, seleccione **[!UICONTROL Guardar cambio]**.
 1. En la página Propiedades del vídeo, en la esquina superior derecha, selecciona **[!UICONTROL Guardar y cerrar]**.
@@ -1105,11 +1116,11 @@ La API devuelve un valor nulo si hay errores. Las excepciones se registran en lo
 
 * Se registra un(a) `IllegalArgumentException` para cualquiera de los siguientes elementos:
 
-   * El parámetro `resource` pasado es nulo.
-   * El parámetro `resource` pasado no es un vídeo.
-   * El parámetro `manifestType` pasado es nulo.
-   * El parámetro `onlyIfPublished` se pasó como true, pero el vídeo no se publicó.
-   * El vídeo no se ha introducido con un conjunto de vídeos adaptable de Dynamic Media.
+  * El parámetro `resource` pasado es nulo.
+  * El parámetro `resource` pasado no es un vídeo.
+  * El parámetro `manifestType` pasado es nulo.
+  * El parámetro `onlyIfPublished` se pasó como true, pero el vídeo no se publicó.
+  * El vídeo no se ha introducido con un conjunto de vídeos adaptable de Dynamic Media.
 
 * `IOException` se registra cuando hay un problema al conectarse a Dynamic Media.
 * `UnsupportedOperationException` se registra cuando se pasa un parámetro `manifestType` que es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con el formato DASH.

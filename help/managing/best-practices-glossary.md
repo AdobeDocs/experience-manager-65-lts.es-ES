@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
-
+source-wordcount: '7022'
+ht-degree: 99%
 ---
-
 # Glosario{#glossary}
 
 Este glosario enumera (por orden alfabético) los detalles de todos los documentos de entrega de la [lista de comprobación del proyecto](/help/managing/best-practices-checklist.md).
@@ -104,8 +120,8 @@ Asegúrese de que su equipo esté formado por personal con la formación adecuad
 
 * al menos un desarrollador principal certificado por AEM
 * al menos un arquitecto certificado por AEM
-* al menos el 75 % de los desarrolladores certificados por AEM;
-esto permite a los desarrolladores certificados asesorar a los desarrolladores júnior y garantiza el intercambio de conocimientos y la transparencia
+* al menos el 75 % de los desarrolladores cuenta con la certificación AEM;
+esto permite a los desarrolladores certificados asesorar a los desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
 
 ### Diagrama de arquitectura {#architecture-diagram}
 
@@ -202,8 +218,8 @@ Los KPI empresariales definen valores mensurables que demuestran la eficacia con
 
 Un documento de requisitos empresariales (BRD, por sus siglas en inglés) detalla la solución empresarial para un proyecto, al tiempo que proporciona una especificación clara de las necesidades y expectativas empresariales del cliente. El BRD también distingue entre la solución empresarial y la solución técnica.
 
-Al examinar la solución empresarial, el BRD debe responder a la pregunta:
-“¿Qué quiere hacer el negocio?”
+Al examinar la solución empresarial, el BERD debe responder a la pregunta:
+&quot;¿Qué quiere hacer el negocio?&quot;
 
 ### Aprobación empresarial de cualquier ajuste necesario en la solución o arquitectura identificado y alineado con las expectativas de ROI y KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -353,10 +369,10 @@ Las personalizaciones o revisiones aplicadas deben documentarse, ya que pueden a
 * AEM se puede personalizar en gran medida para adaptarse a las necesidades empresariales. Cualquier personalización que pueda afectar a la actualización debe documentarse por completo. Por ejemplo, cualquier cambio importante en la interfaz de usuario (IU) de AEM.
 * Cualquier actualización necesaria para la solución actual debe documentarse por completo; estas pueden incluir:
 
-   * paquetes de correcciones acumulativas (CFP)
-   * Service Packs (SP)
-   * revisiones
-   * actualizaciones
+  * paquetes de correcciones acumulativas (CFP)
+  * Service Packs (SP)
+  * revisiones
+  * actualizaciones
 
 ### Informe de pruebas de aceptación del usuario diarias {#daily-user-acceptance-test-report}
 

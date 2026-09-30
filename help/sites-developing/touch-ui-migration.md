@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 11%
-
 ---
-
 # Migración a la IU táctil{#migration-to-the-touch-ui}
 
 A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocida como *IU táctil*). Se alinea con Adobe Experience Cloud y con las directrices generales de la interfaz de usuario de Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada orientada al escritorio conocida como *IU clásica*.
@@ -114,7 +123,7 @@ Los cuadros de diálogo son un factor importante a la hora de migrar los compone
 * [Migración desde un componente clásico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md): para ayudarle a convertir los cuadros de diálogo de sus componentes de la IU clásica a la IU táctil
 
-   * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esto tiene una funcionalidad limitada y no se recomienda a largo plazo.
+  * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esto tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
 * [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md)

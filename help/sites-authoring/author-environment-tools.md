@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 46%
-
 ---
-
 # Creación: entorno y herramientas{#authoring-the-environment-and-tools}
 
 El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
@@ -86,17 +99,17 @@ El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
   Los componentes se representan mediante los siguientes elementos:
 
-   * Nombre del componente
-   * Grupo de componentes (en gris)
-   * Icono o abreviatura
+  * Nombre del componente
+  * Grupo de componentes (en gris)
+  * Icono o abreviatura
 
-      * Los iconos de los componentes estándar son monocromos.
-      * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
+    * Los iconos de los componentes estándar son monocromos.
+    * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
 
   Desde la barra de herramientas superior del explorador **Components**, puede hacer lo siguiente:
 
-   * Filtrar componentes por su nombre.
-   * Restringir la visualización a un grupo específico mediante la selección desplegable.
+  * Filtrar componentes por su nombre.
+  * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
   Para obtener una descripción más detallada del componente, puede hacer clic en el icono de información situado junto al componente en el explorador **Componentes** (si está disponible). Por ejemplo, para el **contenedor de diseños**:
 
@@ -124,11 +137,11 @@ Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicació
 
 * Un componente existente del tipo adecuado.
 
-   * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
+  * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
 
 * Un [marcador de posición](/help/sites-authoring/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo apropiado.
 
-   * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
+  * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ Desde la barra de herramientas superior del explorador de recursos, puede filtra
 * Tipo de recurso, como imágenes, manuscritos, documentos, vídeos, páginas, párrafos y productos
 * Características del recurso como Orientación (vertical, horizontal, cuadrado) y Estilo (color, monocromo, escala de grises)
 
-   * Disponible solo para determinados tipos de recursos
+  * Disponible solo para determinados tipos de recursos
 
 El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
@@ -238,7 +251,7 @@ Seleccione el tipo de referencia adecuado para obtener más información. En det
 
 * **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** una de esas páginas cuando selecciona un vínculo específico.
 
-   * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente; por ejemplo, desde el componente Lista.
+  * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente; por ejemplo, desde el componente Lista.
 
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 

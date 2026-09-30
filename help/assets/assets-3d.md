@@ -9,13 +9,26 @@ feature: 3D Assets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # Uso de recursos 3D en Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media le permite cargar, gestionar, ver y distribuir recursos 3D como experiencias envolventes.
@@ -36,12 +49,12 @@ Dynamic Media admite los siguientes formatos 3D.
 
 Consulte también [formatos 3D compatibles](/help/assets/assets-formats.md).
 
-| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo de MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D patentado que los dispositivos Safari y iOS pueden ver de forma nativa. |
+| USDZ | Archivo Zip de Universal Scene Description | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D patentado que los dispositivos Safari y iOS pueden ver de forma nativa. |
 
 >[!NOTE]
 >
@@ -68,19 +81,19 @@ Consulte [ConfigurE Servicios de nube de Dynamic Media](/help/assets/config-dms7
 
    * Organización y búsqueda de recursos 3D
 
-      * [Organizar recursos digitales](/help/assets/organize-assets.md#organize-digital-assets).
-      * [Buscar recursos 3D](/help/assets/search-assets.md).
-      * [Use predicados personalizados para filtrar los resultados de búsqueda](/help/assets/search-assets.md#custompredicates).
+     * [Organizar recursos digitales](/help/assets/organize-assets.md#organize-digital-assets).
+     * [Buscar recursos 3D](/help/assets/search-assets.md).
+     * [Use predicados personalizados para filtrar los resultados de búsqueda](/help/assets/search-assets.md#custompredicates).
 
    * Ver recursos 3D
 
-      * [Ver e interactuar con recursos 3D](#viewing-three-d-assets).
-      * [Administrar el ajuste preestablecido de visualizador dimensional](/help/assets/managing-viewer-presets.md).
+     * [Ver e interactuar con recursos 3D](#viewing-three-d-assets).
+     * [Administrar el ajuste preestablecido de visualizador dimensional](/help/assets/managing-viewer-presets.md).
 
    * Trabajo con metadatos de recursos 3D
 
-      * [Administrar metadatos de recursos digitales](/help/assets/metadata.md).
-      * [Esquemas de metadatos](/help/assets/metadata-schemas.md).
+     * [Administrar metadatos de recursos digitales](/help/assets/metadata.md).
+     * [Esquemas de metadatos](/help/assets/metadata-schemas.md).
 
 1. **Publicar recursos 3D**
 
@@ -152,7 +165,7 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
    * Eliminar `/editor.html` de la dirección URL de la página en el explorador.
 
    ![Recurso 3D que se muestra dentro del componente de medios 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Un recurso 3D completamente interactivo tal como se muestra en el modo **[!UICONTROL Vista previa]**.
+   Un recurso 3D completamente interactivo tal como se muestra en el modo **[!UICONTROL Vista previa]**.
 
 1. En el modo **[!UICONTROL Vista previa]**, realice una de las acciones siguientes:
 
@@ -171,7 +184,7 @@ Dynamic Media incluye un componente de Dynamic Media 3D Media que puede utilizar
 
 * [Añadir el componente Medios 3D a la plantilla de página](#adding-three-d-media-component-to-page-template)
 * [Adición del componente Medios 3D a una página web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Opcional: configuración del componente de medios en 3D](#configuring-the-three-d-component)
+  * [Opcional: configuración del componente de medios en 3D](#configuring-the-three-d-component)
 * [Asignar un recurso 3D al componente de medios 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Añadir el componente Medios 3D a la plantilla de página {#adding-three-d-media-component-to-page-template}

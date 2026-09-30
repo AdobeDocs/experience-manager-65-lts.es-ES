@@ -5,13 +5,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4296'
-ht-degree: 84%
-
+source-wordcount: '4354'
+ht-degree: 85%
 ---
-
 # Generar documento de registro para formularios adaptables o fragmentos de formularios adaptables {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -43,8 +59,8 @@ Permite seleccionar una plantilla XFA para el formulario adaptable. Al seleccion
 * Esquema XML [&#128279;](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Permite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
 
-   * Asociar una plantilla XFA al documento de registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
-   * Generar automáticamente un documento de registro
+  * Asociar una plantilla XFA al documento de registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
+  * Generar automáticamente un documento de registro
 
 * Ninguna
 Permite crear un formulario adaptable sin un modelo de formulario. El documento de registro se genera automáticamente para el formulario adaptable.
@@ -268,7 +284,7 @@ Siga los siguientes pasos para configurar un documento de registro para formular
 
 1. En la instancia de autor de AEM, haga clic en **Forms > Formularios y documentos.**
 1. Seleccione un formulario y haga clic en **Ver propiedades**.
-1. En la ventana Propiedades, seleccione **Modelo de formulario**.
+1. En la ventana Propiedades, seleccione **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
@@ -385,23 +401,23 @@ La configuración de del documento de registro de cada componente está disponib
 * **Excluir título del documento de registro:** al establecer la propiedad, se excluye el título del panel o la tabla del documento de registro. Aplicable solo para paneles y tablas.
 * **Excluir descripción del documento de registro:** al establecer la propiedad, se excluye la descripción del panel o la tabla del documento de registro. Aplicable solo para paneles y tablas.
 * **[!UICONTROL Paginación]** > **[!UICONTROL Posición]**: determina la posición seleccionada para el panel.
-   * **[!UICONTROL Posición]** > **[!UICONTROL Después del anterior]**: coloca el panel después del objeto anterior en el panel principal.
-   * **[!UICONTROL Posición]** > **[!UICONTROL En el área de contenido]** > Nombre del área de contenido: coloca el panel en el área de contenido especificada.
-   * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente área de contenido]**: coloca el panel en la parte superior de la siguiente área de contenido.
-   * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior del área de contenido]** > Nombre del área de contenido: coloca el panel en la parte superior del área de contenido especificada.
-   * **[!UICONTROL Posición]** > **[!UICONTROL En la página]** > Nombre de la página maestra: coloca el panel en la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
-   * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente página]**: coloca el panel en la parte superior de la siguiente página. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
-   * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la página]** > Nombre de la página maestra: coloca el panel en la parte superior de la página cuando se representa la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
+  * **[!UICONTROL Posición]** > **[!UICONTROL Después del anterior]**: coloca el panel después del objeto anterior en el panel principal.
+  * **[!UICONTROL Posición]** > **[!UICONTROL En el área de contenido]** > Nombre del área de contenido: coloca el panel en el área de contenido especificada.
+  * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente área de contenido]**: coloca el panel en la parte superior de la siguiente área de contenido.
+  * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior del área de contenido]** > Nombre del área de contenido: coloca el panel en la parte superior del área de contenido especificada.
+  * **[!UICONTROL Posición]** > **[!UICONTROL En la página]** > Nombre de la página maestra: coloca el panel en la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
+  * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente página]**: coloca el panel en la parte superior de la siguiente página. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
+  * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la página]** > Nombre de la página maestra: coloca el panel en la parte superior de la página cuando se representa la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
 * **[!UICONTROL Paginación]** > **[!UICONTROL Después]**: determina qué área se rellenará después de colocar un panel.Los campos siguientes están disponibles en la sección **[!UICONTROL Después]**:
-   * **[!UICONTROL Después]** > **[!UICONTROL Continuar relleno principal]**: continúa combinando los datos de todos los objetos que quedan por rellenar en el panel principal.
-   * **[!UICONTROL Después]** > **[!UICONTROL Ir a la siguiente área de contenido]**: comienza a rellenar la siguiente área de contenido después de colocar el panel.
-   * **[!UICONTROL Después]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada después de colocar el panel.
-   * **[!UICONTROL Después]** > **[!UICONTROL Ir a la página siguiente]**: comienza a rellenar la página siguiente después de colocar el panel.
-   * **[!UICONTROL Después]** > **[!UICONTROL Ir a la página]** > Nombre de la página: comienza a rellenar la página especificada después de colocar el panel.
+  * **[!UICONTROL Después]** > **[!UICONTROL Continuar relleno principal]**: continúa combinando los datos de todos los objetos que quedan por rellenar en el panel principal.
+  * **[!UICONTROL Después]** > **[!UICONTROL Ir a la siguiente área de contenido]**: comienza a rellenar la siguiente área de contenido después de colocar el panel.
+  * **[!UICONTROL Después]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada después de colocar el panel.
+  * **[!UICONTROL Después]** > **[!UICONTROL Ir a la página siguiente]**: comienza a rellenar la página siguiente después de colocar el panel.
+  * **[!UICONTROL Después]** > **[!UICONTROL Ir a la página]** > Nombre de la página: comienza a rellenar la página especificada después de colocar el panel.
 * **[!UICONTROL Paginación]** > **[!UICONTROL Desbordamiento]**: define el desbordamiento de un panel o una tabla que ocupa varias páginas. Los campos siguientes están disponibles en la sección **[!UICONTROL Desbordamiento]**:
-   * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ninguno]**: comienza a rellenar la página siguiente. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
-   * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada.
-   * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ir a la página]** > Nombre de la página: comienza a rellenar la página especificada.
+  * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ninguno]**: comienza a rellenar la página siguiente. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
+  * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada.
+  * **[!UICONTROL Desbordamiento]** > **[!UICONTROL Ir a la página]** > Nombre de la página: comienza a rellenar la página especificada.
 
   >[!NOTE]
   >
@@ -412,21 +428,21 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 **Configuración del nivel de formulario**
 
 * **[!UICONTROL BÁSICO]**
-   * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
-     ![texto alternativo](image.png)
-   * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
-   * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
-   * **Incluir campos no enlazados en el documento de registro:** Al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
-   * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos del [!UICONTROL documento de registro] al enviar el formulario. Cuando habilita [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir esos campos del [!UICONTROL Documento de registro]
+  * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
+    ![texto alternativo](image.png)
+  * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
+  * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
+  * **Incluir campos no enlazados en el documento de registro:** Al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
+  * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos del [!UICONTROL documento de registro] al enviar el formulario. Cuando habilita [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir esos campos del [!UICONTROL Documento de registro]
 * **[!UICONTROL PROPIEDADES DEL CAMPO DE FORMULARIO]**
-   * Si marca la opción **Para el componente Casilla de verificación y Botón de radio, mostrar solo los valores seleccionados**, se generará la salida del documento de registro (DoR) con solo los valores seleccionados.
-   * Puede seleccionar Separador para varios valores seleccionados o puede elegir cualquier otro tipo de separador.
-   * Alineación de opciones
-      * Vertical
-      * Horizontal
-      * Igual que el formulario adaptable
-     >[!NOTE]
-     > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
+  * Si marca la opción **Para el componente Casilla de verificación y Botón de radio, mostrar solo los valores seleccionados**, se generará la salida del documento de registro (DoR) con solo los valores seleccionados.
+  * Puede seleccionar Separador para varios valores seleccionados o puede elegir cualquier otro tipo de separador.
+  * Alineación de opciones
+    * Vertical
+    * Horizontal
+    * Igual que el formulario adaptable
+    >[!NOTE]
+    > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
@@ -458,11 +474,11 @@ Para aplicar las propiedades de la segunda página maestra a un panel y las prop
 1. Seleccione el panel al que aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Lugar]**.
 1. Seleccione **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
-AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
 1. Seleccione **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
-1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
-AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 >[!NOTE]
 >

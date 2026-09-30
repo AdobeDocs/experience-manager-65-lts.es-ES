@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 75%
-
+source-wordcount: '2267'
+ht-degree: 71%
 ---
-
 # Generar varias comunicaciones interactivas mediante la API por lotes {#use-batch-api-to-generate-multiple-ic}
 
 Puede utilizar la API por lotes para generar varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin ningún tipo de datos. La API por lotes combina datos con una plantilla para generar una comunicación interactiva. La API resulta muy útil a la hora de producir comunicaciones interactivas de forma masiva, como facturas telefónicas y extractos de tarjetas de crédito para varios clientes.
@@ -155,7 +169,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
       |--- |--- |--- |
       | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, /content/dam/formsanddocuments/testsample/mediumic. Es una propiedad obligatoria. |
       | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es un [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booleano | Establezca el valor en True. El valor predeterminado es false. Cuando el valor se establece en true, la API por lotes lee los datos del modelo de datos de formulario configurado y los cumplimenta en la comunicación interactiva. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. |
+      | usePrefillService | Booleano | Establezca el valor en True. El valor predeterminado es False. Cuando el valor se establece en true, la API por lotes lee los datos del modelo de datos de formulario configurado y los cumplimenta en la comunicación interactiva. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. |
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
@@ -338,27 +352,27 @@ Cuando establece batchType para procesar el canal web, la API genera un archivo 
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Ejemplo**
-Si el archivo JSON se encuentra en `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`.
+Si su archivo JSON se encuentra en `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Después, la siguiente URL del nodo de publicación muestra el canal web de la comunicación interactiva:
+A continuación, la siguiente URL del nodo de publicación muestra el canal web de la comunicación interactiva
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Además de guardar los datos en el sistema de archivos, los archivos JSON se almacenan en el repositorio CRX, el sistema de archivos o el servidor web. También es posible acceder a los datos mediante el servicio de relleno previo OSGI. La sintaxis para combinar datos mediante varios protocolos es:
 
-* **Protocolo CRX**
+* **protocolo CRX**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocolo de archivo**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **Protocolo del servicio de relleno previo**
+* **Protocolo de servicio de relleno previo**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
   SERVICE_NAME hace referencia al nombre del servicio de relleno previo de OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
 
   IDENTIFIER se refiere a cualquier metadato que requiera el servicio de relleno previo OSGI para recuperar los datos. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
-* **Protocolo HTTP**
+* **protocolo HTTP**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 90%
-
 ---
-
 # Flujo de trabajo centrado en Forms en OSGi: referencia de los pasos {#forms-centric-workflow-on-osgi-step-reference}
 
 ## Se aplica a {#applies-to}
@@ -66,25 +82,25 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Para las tareas completadas, procese el formulario adaptable como:** cuando se marca una tarea como completada, puede procesar el formulario adaptable como un formulario adaptable de solo lectura o un documento PDF. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para procesar el formulario adaptable como documento de registro.
 * **Rellenado previamente:** los siguientes campos sirven como entradas para la tarea:
 
-   * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
+  * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
 
-   * **Seleccionar datos adjuntos de entrada mediante:** los archivos adjuntos disponibles en la ubicación se adjuntarán al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar los archivos adjuntos almacenados en una variable del tipo ArrayList of Document. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
+  * **Seleccionar datos adjuntos de entrada mediante:** los archivos adjuntos disponibles en la ubicación se adjuntarán al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar los archivos adjuntos almacenados en una variable del tipo ArrayList of Document. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
-      * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Documento, JSON o Modelo de datos de formulario. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
-      * **Elegir un servicio de rellenado previo personalizado:** selecciona el servicio de rellenado previo para recuperar los datos y rellenar previamente el documento del canal Web de comunicación interactiva o la interfaz de usuario de agente.
-      * **Utilizar el servicio de rellenado previo de la comunicación interactiva seleccionada arriba:** utilice esta opción para utilizar el servicio de rellenado previo de la comunicación interactiva definida en la lista desplegable Usar comunicación interactiva.
-      * **Asignar atributos de solicitud:** utilice la sección Asignar atributos de solicitud para definir el [nombre y el valor del atributo de solicitud](../../forms/using/work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.\
-        Las opciones de asignación de atributos de solicitud y servicio de prellenado solo estarán disponibles si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento de canal Web de comunicación interactiva en la lista desplegable Tipo.
+    * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Documento, JSON o Modelo de datos de formulario. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
+    * **Elegir un servicio de rellenado previo personalizado:** selecciona el servicio de rellenado previo para recuperar los datos y rellenar previamente el documento del canal Web de comunicación interactiva o la interfaz de usuario de agente.
+    * **Utilizar el servicio de rellenado previo de la comunicación interactiva seleccionada arriba:** utilice esta opción para utilizar el servicio de rellenado previo de la comunicación interactiva definida en la lista desplegable Usar comunicación interactiva.
+    * **Asignar atributos de solicitud:** utilice la sección Asignar atributos de solicitud para definir el [nombre y el valor del atributo de solicitud](../../forms/using/work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.\
+      Las opciones de asignación de atributos de solicitud y servicio de prellenado solo estarán disponibles si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento de canal Web de comunicación interactiva en la lista desplegable Tipo.
 
 * **Información enviada:** los siguientes campos sirven como ubicaciones de salida para la tarea:
 
-   * **Guardar archivo de datos de salida mediante:** Guarde el archivo de datos (.json,. xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
-   * **Guardar archivos adjuntos mediante:** guarda los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos mediante una ruta relativa a la carga útil o almacenarla en una variable de matriz con un tipo de datos documento.
-   * **Guardar documento de registro mediante:** ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable con un tipo de datos Doc. Si selecciona **Relativo a la carga útil**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo estará disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
+  * **Guardar archivo de datos de salida mediante:** Guarde el archivo de datos (.json,. xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
+  * **Guardar archivos adjuntos mediante:** guarda los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos mediante una ruta relativa a la carga útil o almacenarla en una variable de matriz con un tipo de datos documento.
+  * **Guardar documento de registro mediante:** ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable con un tipo de datos Doc. Si selecciona **Relativo a la carga útil**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo estará disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
-   * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Documento, JSON o Modelo de datos de formulario. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
-   * **Guardar el documento PDF mediante:** guarda el documento PDF mediante una ruta relativa a la carga útil o lo almacena en una variable del tipo de datos Document. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
-   * **Guardar plantilla de diseño mediante:** guarda la plantilla de diseño mediante una ruta relativa a la carga útil o la almacena en una variable de tipo de datos Document. La variable [plantilla de diseño](../../forms/using/layout-design-details.md) hace referencia a un archivo XDP que crea con Forms Designer. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
+  * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Documento, JSON o Modelo de datos de formulario. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
+  * **Guardar el documento PDF mediante:** guarda el documento PDF mediante una ruta relativa a la carga útil o lo almacena en una variable del tipo de datos Document. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
+  * **Guardar plantilla de diseño mediante:** guarda la plantilla de diseño mediante una ruta relativa a la carga útil o la almacena en una variable de tipo de datos Document. La variable [plantilla de diseño](../../forms/using/layout-design-details.md) hace referencia a un archivo XDP que crea con Forms Designer. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
 
 * **Usuario asignado > Asignar opciones:** especifica el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante el script del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
 * **Selector de participantes:** la opción estará disponible cuando la opción **Dinámicamente a un usuario o grupo** esté seleccionada en el campo Asignar opciones. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo.
@@ -105,8 +121,8 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Plantilla de correo electrónico HTML**: seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en el repositorio CRX.
 * **Permitir delegación en:** la bandeja de entrada de AEM proporciona una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Se le permite delegar dentro del mismo grupo o al usuario del flujo de trabajo de otro grupo. Si la tarea está asignada a un único usuario y la opción **Permitir la delegación a los miembros del grupo de asignados** está seleccionada, no es posible delegar la tarea a otro usuario o grupo.
 * **Compartir configuración:** la bandeja de entrada de AEM proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
-   * Cuando la opción **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** está seleccionada, el usuario puede hacer clic en la tarea y compartirla con otro usuario de AEM.
-   * Cuando la opción **Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada** esté seleccionada y los usuarios compartan sus elementos de la bandeja de entrada o permitan que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción mencionada previamente se compartirán con otros usuarios.
+  * Cuando la opción **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** está seleccionada, el usuario puede hacer clic en la tarea y compartirla con otro usuario de AEM.
+  * Cuando la opción **Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada** esté seleccionada y los usuarios compartan sus elementos de la bandeja de entrada o permitan que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción mencionada previamente se compartirán con otros usuarios.
 
 * **Acciones > Acciones predeterminadas:** las acciones Enviar, Guardar y Restablecer están disponibles por defecto. De forma predeterminada, todas estas acciones están habilitadas.
 * **Variable de ruta:** nombre de la variable de ruta. La variable de ruta captura las acciones personalizadas que selecciona un usuario en la bandeja de entrada de AEM.
@@ -256,14 +272,14 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los sigu
 * **Servicio:** lista de los servicios que proporciona el modelo de datos de formulario seleccionado.
 * **Entrada para servicios > Proporcionar datos de entrada mediante metadatos literales, variables o de flujo de trabajo, y un archivo JSON**: un servicio puede tener varios argumentos. Seleccione la opción para obtener el valor de los argumentos de servicio de una propiedad de metadatos de flujo de trabajo, un objeto JSON o una variable, o indique directamente el valor en el cuadro de texto proporcionado:
 
-   * **Literal:** utilice la opción cuando conozca el valor exacto que desea especificar. Por ejemplo, srose@we.info.
-   * **Variable:** utilice la opción para recuperar el valor almacenado en una variable.
-   * **Recuperar a partir de metadatos de flujo de trabajo:** utilice la opción cuando el valor que desea utilizar se guarde en una propiedad de metadatos de flujo de trabajo. Por ejemplo, emailAddress.
-   * **[!UICONTROL Relativo a la carga útil]**: utilice la opción para recuperar el archivo adjunto guardado en una ruta relativa a la carga útil. Seleccione la opción y especifique el nombre de la carpeta que incluye el archivo adjunto o especifique el nombre del archivo adjunto en el cuadro de texto.
+  * **Literal:** utilice la opción cuando conozca el valor exacto que desea especificar. Por ejemplo, srose@we.info.
+  * **Variable:** utilice la opción para recuperar el valor almacenado en una variable.
+  * **Recuperar a partir de metadatos de flujo de trabajo:** utilice la opción cuando el valor que desea utilizar se guarde en una propiedad de metadatos de flujo de trabajo. Por ejemplo, emailAddress.
+  * **[!UICONTROL Relativo a la carga útil]**: utilice la opción para recuperar el archivo adjunto guardado en una ruta relativa a la carga útil. Seleccione la opción y especifique el nombre de la carpeta que incluye el archivo adjunto o especifique el nombre del archivo adjunto en el cuadro de texto.
 
-     Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
-   * **Notación de puntos JSON:** utiliza la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo estará disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
-   * **Asignar campos de entrada desde la entrada JSON:** especifica la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
+    Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
+  * **Notación de puntos JSON:** utiliza la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo estará disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
+  * **Asignar campos de entrada desde la entrada JSON:** especifica la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
 
 * **Entrada para servicios > Proporcionar datos de entrada mediante una variable o un archivo JSON:** seleccione la opción para obtener valores para todos los argumentos de un archivo JSON guardado en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
 * **Seleccionar el documento JSON de entrada mediante:** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta de acceso del archivo JSON puede ser **relativa a la carga útil** o una ruta de acceso **absoluta.** También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
@@ -427,23 +443,23 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Formato de impresora]**: valor del formato de impresión que especifica el idioma de descripción de la página que se utilizará, cuando no se proporcione un archivo XDC, para generar el flujo de salida. Si proporciona un valor literal, seleccione uno de estos valores:
 
-   * **[!UICONTROL PCL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para PCL.
-   * **[!UICONTROL PostScript personalizado]**: utilice la opción para especificar un archivo XDC personalizado para PostScript.
-   * **[!UICONTROL ZPL personalizado]**: use la opción para especificar un archivo XDC personalizado para ZPL.
-   * **[!UICONTROL Color genérico PCL (5c)]**: utilice un PCL de color genérico (5c).
-   * **[!UICONTROL PostScript genérico Level3]**: utilice PostScript de nivel 3 genérico.
-   * **[!UICONTROL ZPL 300 DPI]**: utilice ZPL 300 DPI. Se utiliza zpl300.xdc.
-   * **[!UICONTROL ZPL 600 DPI]**: utilice ZPL 600 DPI. Se utiliza el archivo zpl600.xdc.
-   * **[!UICONTROL IPL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para IPL.
-   * **[!UICONTROL IPL 300 DPI]**: utilice IPL 300 DPI. Se utiliza ipl300.xdc.
-   * **[!UICONTROL IPL 400 DPI]**: utilice IPL 400 DPI. Se utiliza el archivo ipl400.xdc.
-   * **[!UICONTROL TPCL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para TPCL.
-   * **[!UICONTROL TPCL 305 DPI]**: utilice TPCL 300 DPI. Se utiliza el archivo tpcl305.xdc.
-   * **[!UICONTROL PCL 600 DPI]**: utilice TPCL 600 DPI. Se utiliza el archivo tpcl600.xdc.
-   * **[!UICONTROL DPL personalizado]**: utilice la opción para especificar un DPL de archivo XDC personalizado.
-   * **[!UICONTROL DPL300DPI]**: utilice DPL 300 DPI. Se utiliza el archivo dpl300.xdc.
-   * **[!UICONTROL DPL406DPI]**: utilice DPL 400 DPI. Se utiliza el dpl406.xdc.
-   * **[!UICONTROL DPL600DPI]**: utilice DPL 600 DPI. Se utiliza el dpl600.xdc.
+  * **[!UICONTROL PCL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para PCL.
+  * **[!UICONTROL PostScript personalizado]**: utilice la opción para especificar un archivo XDC personalizado para PostScript.
+  * **[!UICONTROL ZPL personalizado]**: use la opción para especificar un archivo XDC personalizado para ZPL.
+  * **[!UICONTROL Color genérico PCL (5c)]**: utilice un PCL de color genérico (5c).
+  * **[!UICONTROL PostScript genérico Level3]**: utilice PostScript de nivel 3 genérico.
+  * **[!UICONTROL ZPL 300 DPI]**: utilice ZPL 300 DPI. Se utiliza zpl300.xdc.
+  * **[!UICONTROL ZPL 600 DPI]**: utilice ZPL 600 DPI. Se utiliza el archivo zpl600.xdc.
+  * **[!UICONTROL IPL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para IPL.
+  * **[!UICONTROL IPL 300 DPI]**: utilice IPL 300 DPI. Se utiliza ipl300.xdc.
+  * **[!UICONTROL IPL 400 DPI]**: utilice IPL 400 DPI. Se utiliza el archivo ipl400.xdc.
+  * **[!UICONTROL TPCL personalizado]**: utilice la opción para especificar un archivo XDC personalizado para TPCL.
+  * **[!UICONTROL TPCL 305 DPI]**: utilice TPCL 300 DPI. Se utiliza el archivo tpcl305.xdc.
+  * **[!UICONTROL PCL 600 DPI]**: utilice TPCL 600 DPI. Se utiliza el archivo tpcl600.xdc.
+  * **[!UICONTROL DPL personalizado]**: utilice la opción para especificar un DPL de archivo XDC personalizado.
+  * **[!UICONTROL DPL300DPI]**: utilice DPL 300 DPI. Se utiliza el archivo dpl300.xdc.
+  * **[!UICONTROL DPL406DPI]**: utilice DPL 400 DPI. Se utiliza el dpl406.xdc.
+  * **[!UICONTROL DPL600DPI]**: utilice DPL 600 DPI. Se utiliza el dpl600.xdc.
 
 **Propiedades de salida**
 
@@ -458,15 +474,15 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **Para usar el servidor predeterminado**:
-(Predeterminado) Utilice la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)).
+  * **Para usar el servidor predeterminado**:
+    (Predeterminado) Utilice la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)).
 
-   * **Para usar el valor personalizado**:
-Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+  * **Para usar el valor personalizado**:
+    Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copias]**: valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 
 * **[!UICONTROL Impresión a doble cara]**: valor de Paginación que especifica si se utiliza la impresión a doble o a una sola cara. Las impresoras compatibles con PostScript y PCL utilizan este valor. Si proporciona un valor literal, seleccione uno de estos valores:
-   * **[!UICONTROL Borde largo a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde largo.
-   * **[!UICONTROL Borde corto a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde corto.
-   * **[!UICONTROL Simple]**: utiliza la impresión a una sola cara.
+  * **[!UICONTROL Borde largo a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde largo.
+  * **[!UICONTROL Borde corto a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde corto.
+  * **[!UICONTROL Simple]**: utiliza la impresión a una sola cara.

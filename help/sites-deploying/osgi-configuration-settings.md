@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3170'
+source-wordcount: '3330'
 ht-degree: 2%
-
 ---
-
 # Ajustes de configuración de OSGi{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de AEM. Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
@@ -63,7 +72,7 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 >Asegúrese de configurar lo siguiente:
 >
 >**Nombre de usuario** y **Contraseña**, las credenciales para acceder a la propia consola de administración web de Apache Felix.
->Debe cambiarse la contraseña después de la instalación inicial para garantizar la [seguridad](/help/sites-administering/security-checklist.md) de su instancia.
+>La contraseña debe cambiarse después de la instalación inicial para garantizar la [seguridad](/help/sites-administering/security-checklist.md) de su instancia.
 
 >[!NOTE]
 >
@@ -104,7 +113,7 @@ Ciertas configuraciones pueden afectar al rendimiento. Deshabilite esta configur
 
 * para instancias de producción:
 
-   * deshabilitar **Generar información de depuración**
+  * deshabilitar **Generar información de depuración**
 
 **Instalador JCR de Apache Sling**: estos parámetros probablemente no necesitan configuración, pero pueden ser útiles para saberlo al desarrollar o depurar. Por ejemplo, las carpetas de instalación pueden ser útiles para proteger o desproteger, o crear un paquete.
 
@@ -243,17 +252,17 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 
 * Para instancias de producción:
 
-   * habilitar **Minify** (para eliminar los caracteres CRLF y de espacio en blanco).
-   * habilitar **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
-   * deshabilitar **Depurar**
-   * deshabilitar **Temporización**
+  * habilitar **Minify** (para eliminar los caracteres CRLF y de espacio en blanco).
+  * habilitar **Gzip** (para permitir que se comprima y se acceda a los archivos con una solicitud).
+  * deshabilitar **Depurar**
+  * deshabilitar **Temporización**
 
 * Para el desarrollo de JS (especialmente cuando se activa la depuración/depuración):
 
-   * deshabilitar **Minificar**
-   * habilite **Debug** para separar los archivos para depurarlos y usarlos con el error de activación.
-   * habilita **Tiempo** si estás interesado en el tiempo.
-   * habilite la consola **Debug** para ver los mensajes de registro de la consola JS.
+  * deshabilitar **Minificar**
+  * habilite **Debug** para separar los archivos para depurarlos y usarlos con el error de activación.
+  * habilita **Tiempo** si estás interesado en el tiempo.
+  * habilite la consola **Debug** para ver los mensajes de registro de la consola JS.
 
 >[!CAUTION]
 >
@@ -321,8 +330,8 @@ Hay varias propiedades de configuración disponibles:
 * **Ruta**
 Ruta de acceso para la que está activo este controlador de autenticación. Si este parámetro se deja vacío, el controlador de autenticación se desactiva. Por ejemplo, la ruta / hace que el controlador de autenticación se utilice para todo el repositorio.
 
-* **Clasificación del servicio**
-El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un valor `int` en el que los valores más altos designan una prioridad más alta.
+* Clasificación del servicio **&#x200B;**
+El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un valor `int` en el cual los valores más altos designan una prioridad más alta.
 El valor predeterminado es `0`.
 
 * **Nombres de encabezado**
@@ -340,8 +349,8 @@ Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud 
 * **Formato**
 Indica el formato en el que se proporciona el ID de usuario. Use:
 
-   * `Basic` si el ID de usuario está codificado en el formato de autenticación HTTP Basic
-   * `AsIs` si el ID de usuario se proporciona en texto sin formato o si se aplica cualquier valor de expresión regular debe usarse tal cual o cualquier expresión regular
+  * `Basic` si el ID de usuario está codificado en el formato de autenticación HTTP Basic
+  * `AsIs` si el ID de usuario se proporciona en texto sin formato o si se aplica cualquier valor de expresión regular debe usarse tal cual o cualquier expresión regular
 
 **Filtro de depuración Day CQ WCM** Esto resulta útil al desarrollar, ya que permite el uso de sufijos como ?debug=layout al acceder a una página. Por ejemplo, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout proporciona información de diseño que puede ser de interés para el desarrollador.
 
@@ -351,7 +360,7 @@ Indica el formato en el que se proporciona el ID de usuario. Use:
 
 * **Modo WCM** para definir el modo predeterminado.
 * En una instancia de autor, este modo puede ser `edit`, `disable,preview` o `analytics`.
-Se puede acceder a los otros modos desde la barra de tareas o se puede utilizar el sufijo `?wcmmode=disabled` para emular un entorno de producción.
+Se puede acceder a los demás modos desde la barra de tareas o se puede utilizar el sufijo `?wcmmode=disabled` para emular un entorno de producción.
 
 * En una instancia de publicación, este modo debe establecerse en `disabled` para garantizar que no se pueda acceder a ningún otro modo.
 

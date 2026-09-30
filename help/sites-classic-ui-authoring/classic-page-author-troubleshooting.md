@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: be4397d1-0680-4b44-bdd2-825b521a44d6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 25%
-
 ---
-
 # Resolución de problemas de AEM durante la creación{#troubleshooting-aem-when-authoring}
 
 La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
@@ -32,56 +41,56 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema**:
 
-   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la versión *antigua* de la página se sigue mostrando en el sitio de publicación.
+  * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la versión *antigua* de la página se sigue mostrando en el sitio de publicación.
 
 * **Motivo**:
 
-   * Esto puede tener varias causas, la mayoría de las veces la memoria caché (el explorador local o el Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
+  * Esto puede tener varias causas, la mayoría de las veces la memoria caché (el explorador local o el Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 
 * **Soluciones**:
 
-   * Aquí hay varias posibilidades:
-   * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
-   * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Agregar `?` al final de la dirección URL de la página. Por ejemplo:
+  * Aquí hay varias posibilidades:
+  * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
+  * Borre la caché del navegador local y vuelva a acceder a la página.
+  * Agregar `?` al final de la dirección URL de la página. Por ejemplo:
 
-     `http://localhost:4502/sites.html/content?`
+    `http://localhost:4502/sites.html/content?`
 
-     Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+    Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
 
-   * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
+  * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
 ## Sidekick no visible {#sidekick-not-visible}
 
 * **Problema**:
 
-   * Sidekick no está visible al editar una página de contenido en el entorno de creación.
+  * Sidekick no está visible al editar una página de contenido en el entorno de creación.
 
 * **Motivo**:
 
-   * En casos excepcionales, es posible que haya colocado el encabezado de la barra de tareas fuera del ámbito de la ventana actual. Esto significa que no puede volver a colocarlo.
+  * En casos excepcionales, es posible que haya colocado el encabezado de la barra de tareas fuera del ámbito de la ventana actual. Esto significa que no puede volver a colocarlo.
 
 * **Solución**:
 
-   * Cierre la sesión actual y vuelva a iniciarla. Sidekick volverá a la posición predeterminada.
+  * Cierre la sesión actual y vuelva a iniciarla. Sidekick volverá a la posición predeterminada.
 
 ## Buscar y reemplazar: no se reemplazan todas las instancias {#find-replace-not-all-instances-are-replaced}
 
 * **Problema:**
 
-   * Al usar la opción **Buscar y reemplazar**, puede ocurrir que no todas las instancias del término `find` se reemplacen en una página.
+  * Al usar la opción **Buscar y reemplazar**, puede ocurrir que no todas las instancias del término `find` se reemplacen en una página.
 
 * **Motivo**:
 
-   * La capacidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y de si se puede buscar en él. Por ejemplo, el texto de un blog se almacena en la propiedad `jcr:text`, que no está configurada para ser buscada. El ámbito predeterminado del servlet de búsqueda y reemplazo cubre las siguientes propiedades:
+  * La capacidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y de si se puede buscar en él. Por ejemplo, el texto de un blog se almacena en la propiedad `jcr:text`, que no está configurada para ser buscada. El ámbito predeterminado del servlet de búsqueda y reemplazo cubre las siguientes propiedades:
 
-      * `jcr:title`
-      * `jcr:description`
-      * `jcr:text`
-      * `text`
+    * `jcr:title`
+    * `jcr:description`
+    * `jcr:text`
+    * `text`
 
 * **Solución**:
 
-   * Estas definiciones se pueden cambiar con la configuración de **Day CQ WCM Find Replace Servlet** mediante la **consola web**; por ejemplo, en
+  * Estas definiciones se pueden cambiar con la configuración de **Day CQ WCM Find Replace Servlet** mediante la **consola web**; por ejemplo, en
 
-     `http://localhost:4502/system/console/configMgr`
+    `http://localhost:4502/system/console/configMgr`

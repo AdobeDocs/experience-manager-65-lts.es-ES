@@ -10,13 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 8354eccd-4f71-45bb-9bab-8f756b9ce083
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 82%
-
+source-wordcount: '649'
+ht-degree: 83%
 ---
-
 # Aplicación de flujos de trabajo a páginas{#applying-workflows-to-pages}
 
 Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
@@ -31,7 +46,7 @@ Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya as
 Los flujos de trabajo se pueden iniciar desde:
 
 * [la consola Sitios](#starting-a-workflow-from-the-sites-console).
-* [al editar una página, en Información de la página](#starting-a-workflow-from-the-page-editor). 
+* [al editar una página, en Información de la página](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -60,7 +75,7 @@ En ambos casos deberá:
 
 Puede iniciar un flujo de trabajo desde la barra de herramientas de la consola **Sitios**:
 
-1. Busque y seleccione la página deseada. 
+1. Busque y seleccione la página deseada.
 
 1. En la opción **Crear** de la barra de herramientas, ahora puede seleccionar el **Flujo de trabajo**.
 
@@ -95,14 +110,14 @@ Puede especificar los detalles:
    * **Modelo de flujo de trabajo**
    * **Título del flujo de trabajo**
 
-      * Puede especificar un título para esta instancia, de modo que pueda identificarla en una etapa posterior.
+     * Puede especificar un título para esta instancia, de modo que pueda identificarla en una etapa posterior.
 
    Según el modelo de flujo de trabajo, también están disponibles las siguientes opciones. Estas permiten conservar el paquete creado como carga útil después de que se haya completado el flujo de trabajo.
 
    * **Conservar paquete de flujo de trabajo**
    * **Título del paquete**
 
-      * Puede especificar un título para el paquete para facilitar su identificación.
+     * Puede especificar un título para el paquete para facilitar su identificación.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ Puede especificar los detalles:
 
    * Un recurso existente para ver acciones adicionales:
 
-      * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluirán los elementos secundarios de ese recurso.
-Se abre un cuadro de diálogo, que le permite restringir la selección según lo siguiente:
+     * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluirán los elementos secundarios de ese recurso.
+       Se abre un cuadro de diálogo, que le permite restringir la selección según lo siguiente:
 
-         * Incluir solo los elementos secundarios inmediatos.
-         * Incluir solo las páginas modificadas.
-         * Incluir solo las páginas ya publicadas.
+       * Incluir solo los elementos secundarios inmediatos.
+       * Incluir solo las páginas modificadas.
+       * Incluir solo las páginas ya publicadas.
 
-        Los elementos secundarios especificados se añaden a la lista de recursos a los que se aplicará el flujo de trabajo.
+       Los elementos secundarios especificados se añaden a la lista de recursos a los que se aplicará el flujo de trabajo.
 
-      * **Eliminar la selección** para eliminar ese recurso del flujo de trabajo.
+     * **Eliminar la selección** para eliminar ese recurso del flujo de trabajo.
 
    ![wf-53](assets/wf-53.png)
 

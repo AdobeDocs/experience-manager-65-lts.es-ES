@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 17%
-
 ---
-
 # Optimización de rendimiento {#performance-optimization}
 
 >[!NOTE]
@@ -597,11 +606,13 @@ Se recomienda limitar la personalización a donde sea necesario. Para explicar p
 * Si, por el contrario, ofrece una opción de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, mejorando así el rendimiento.
 
 >[!TIP]
+>
 >Para obtener más información sobre la configuración de la caché de Dispatcher, consulte el [Tutorial de caché de AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=es) y su sección sobre [Almacenamiento en caché de contenido protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=es#dispatcher-tips-and-tricks)
 
 Si personaliza cada página colocando el nombre del usuario en la barra de título (por ejemplo), tendrá un impacto en el rendimiento.
 
 >[!TIP]
+>
 >Para almacenar en caché el contenido protegido, consulte [Almacenamiento en caché del contenido protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es) en la guía de Dispatcher.
 
 Con respecto a la mezcla de contenido restringido y público en una página, considere una estrategia que utilice inclusiones del lado del servidor en Dispatcher o inclusiones del lado del cliente mediante Ajax en el explorador.

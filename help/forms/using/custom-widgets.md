@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 7d9fadf8-c48a-424e-8b71-18ffd0328a13
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 89%
-
 ---
-
 # Crear apariciones personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
 
 Puede conectar widgets personalizados a formularios Mobile. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados mediante el marco de aspectos visuales. El motor XFA utiliza varios widgets, consulte [Marco de apariencia para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md) para obtener información detallada.

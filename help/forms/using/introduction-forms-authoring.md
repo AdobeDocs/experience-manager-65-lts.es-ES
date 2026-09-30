@@ -9,13 +9,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 92%
-
+source-wordcount: '3211'
+ht-degree: 91%
 ---
-
 # Introducción a la creación de formularios adaptables {#introduction-to-authoring-adaptive-forms}
 
 ## Se aplica a {#applies-to}
@@ -29,7 +45,7 @@ Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cl
 
 Los formularios adaptables permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
-* **Uso del modelo de datos de formulario**
+* **Uso de un modelo de datos de formulario**
   La [integración de datos](../../forms/using/data-integration.md) permite integrar entidades y servicios de diferentes fuentes de datos en un modelo de datos de formulario que puede utilizar para crear formularios adaptables. Elija un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
@@ -86,12 +102,12 @@ La barra lateral consta de los siguientes exploradores:
 * **Explorador de contenido**
 En el explorador de contenido, puede ver lo siguiente
 
-   * **Objetos de formulario**
-Muestra la jerarquía de objetos del formulario. El autor puede desplazarse a un componente específico del formulario al pulsar ese elemento en el árbol de objetos del formulario. El autor puede buscar objetos y reorganizarlos desde este árbol.
+  * **Objetos de formulario**
+    Muestra la jerarquía de objetos del formulario. El autor puede desplazarse a un componente específico del formulario al pulsar ese elemento en el árbol de objetos del formulario. El autor puede buscar objetos y reorganizarlos desde este árbol.
 
-   * **Objetos del modelo de datos**
-Permite ver la jerarquía del modelo del formulario.
-Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos del modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
+  * **Objetos del modelo de datos**
+    Permite ver la jerarquía del modelo del formulario.
+    Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos de modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
 
 * **Explorador de propiedades**
 
@@ -253,7 +269,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
    <td>Teléfono</td>
    <td><p>Agrega un campo para capturar el número de teléfono. El componente Teléfono permite a los autores configurar uno de los siguientes tipos de números de teléfono. Cada tipo está asociado con una expresión regular predeterminada para la validación.</p>
     <ul>
-     <li>La validación del tipo internacional la realiza <code>^[+][0-9]{0,14}$</code>.</li>
+     <li>La validación del tipo internacional la realiza <code>^[+]&#x200B;[0-9]{0,14}$</code>.</li>
      <li>La validación del tipo USPhoneNumber la realiza <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>La validación del tipo UKPhoneNumber la realiza <code>text{'+'99 999 999 9999}</code>.</li>
      <li>El tipo personalizado no proporciona ningún patrón de validación predeterminado. Toma el valor del último tipo de número de teléfono seleccionado. También puede especificar su propio patrón de validación personalizado.</li>
@@ -287,11 +303,11 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 
 * Puede modificar la propiedad Título de los componentes en línea de un formulario adaptable en el Editor de formularios sin abrir el Explorador de propiedades siempre que el título esté visible en el formulario. Para ello:
 
-   1. Seleccione para seleccionar un componente que tenga la propiedad **[!UICONTROL Título]** y cuya propiedad **[!UICONTROL Ocultar título]** esté deshabilitada.
+  1. Seleccione para seleccionar un componente que tenga la propiedad **[!UICONTROL Título]** y cuya propiedad **[!UICONTROL Ocultar título]** esté deshabilitada.
 
-   1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
+  1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
+  1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
 
 * Algunos componentes de los formularios adaptables, como Correo electrónico y Teléfono, incluyen patrones de validación listos para usar. Sin embargo, puede especificar una validación personalizada actualizando el campo **[!UICONTROL Patrón de validación]** en el acordeón Patrones de las propiedades del componente. Consulte las descripciones de componentes de la tabla anterior para obtener más información sobre las validaciones predeterminadas.
 
@@ -304,9 +320,9 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 * Especifique valores para los elementos de Botón de opción y Casilla de verificación en el formato `{value}={text}` desde las propiedades de los componentes.
 * De forma predeterminada, el componente Archivo adjunto permite al usuario adjuntar un único archivo. Sin embargo, puede configurar las propiedades del componente para que admita varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden causar algunos problemas. Por lo tanto, se recomienda asociar un identificador único a cada archivo adjunto enviado cuando se envía el formulario. Para ello:
 
-   1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-   1. Busque y seleccione **[!UICONTROL Servicio de configuración de formularios adaptables]**.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, habilite la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
+  1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+  1. Busque y seleccione **[!UICONTROL Servicio de configuración de formularios adaptables]**.
+  1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, habilite la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
 
 * Para permitir que los usuarios adjunten un PDF mediante el explorador Safari, asegúrese de que agrega **aplicación/pdf** a la propiedad Tipos de archivo compatibles del componente Archivo adjunto. Los formularios adaptables creados con versiones anteriores de AEM Forms pueden contener **.pdf** en lugar de **aplicación/pdf** en la propiedad Tipos de archivo compatibles.
 
@@ -328,15 +344,15 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 * **Editar**: Permite seleccionar otros modos, como: **[!UICONTROL Editar]**, **[!UICONTROL Estilo]**, **[!UICONTROL Desarrollador]** y **[!UICONTROL Diseño]**.
 
-   * **Editar**: Permite editar las propiedades del formulario y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
-   * **Estilo**: Permite aplicar estilo al aspecto de los componentes del formulario. Por ejemplo, en el modo Estilo, puede seleccionar un panel y especificar su color de fondo.
+  * **Editar**: Permite editar las propiedades del formulario y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
+  * **Estilo**: Permite aplicar estilo al aspecto de los componentes del formulario. Por ejemplo, en el modo Estilo, puede seleccionar un panel y especificar su color de fondo.
 
-   * **Desarrollador**: Permite a un desarrollador lo siguiente:
+  * **Desarrollador**: Permite a un desarrollador lo siguiente:
 
-      * Descubrir de qué se componen los formularios.
-      * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
+    * Descubrir de qué se componen los formularios.
+    * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
 
-   * **Diseño**. Permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
+  * **Diseño**. Permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
 * **Vista previa**: Permite obtener una vista previa del aspecto del formulario cuando se publica.
 
@@ -389,10 +405,10 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 * **guideContainer**: La raíz de un formulario adaptable, que se marca como el **[!UICONTROL Inicio del formulario adaptable]** en la interfaz de usuario del formulario. En este componente, puede especificar lo siguiente:
 
-   * *Diseño móvil del formulario adaptable*: Define el aspecto del formulario en dispositivos móviles.
-   * *Página de agradecimiento*: Define la página a la que se redirige al usuario después de enviar el formulario.
-   * *Enviar acción*: Define cómo se procesa el formulario en el servidor una vez que el usuario lo envía.
-   * *Estilo*: Especifica la ruta al archivo CSS utilizado para personalizar el aspecto del formulario.
+  * *Diseño móvil del formulario adaptable*: Define el aspecto del formulario en dispositivos móviles.
+  * *Página de agradecimiento*: Define la página a la que se redirige al usuario después de enviar el formulario.
+  * *Enviar acción*: Define cómo se procesa el formulario en el servidor una vez que el usuario lo envía.
+  * *Estilo*: Especifica la ruta al archivo CSS utilizado para personalizar el aspecto del formulario.
 
 * **rootPanel:** El panel raíz de un formulario adaptable. Puede contener subpaneles bajo el nodo de elementos. Cada panel, incluido el panel raíz, puede tener un diseño asociado. El diseño del panel dicta cómo se coloca el formulario. Por ejemplo, en el diseño Acordeón, los elementos se muestran como pasos de Acordeón.
 

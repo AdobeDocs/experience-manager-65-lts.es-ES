@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 2bae83cc-ad0e-4a6a-a56e-1aa6533bde7e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 94%
-
 ---
-
 # Introducción a AEM sin encabezado {#getting-started}
 
 En esta parte del [Recorrido para desarrolladores de contenido sin encabezado de AEM](overview.md) obtenga información sobre lo que se necesita para comenzar su propio proyecto con contenido sin encabezado de AEM.
@@ -144,7 +170,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
-La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al usuario final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 

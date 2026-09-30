@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 4f36487c-45a2-4c18-b3cc-bb9284d68f49
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 18%
-
 ---
-
 # Configuración de para aplicaciones de AEM{#configuring-for-aem-apps}
 
 Adobe Experience Manager Apps permite actualizar el contenido de la OTA de la aplicación (por el aire). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación de su dispositivo se conecte a la instancia de publicación y compruebe las actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
@@ -25,7 +34,7 @@ Adobe Experience Manager Apps permite actualizar el contenido de la OTA de la ap
 Para configurar el servicio de filtro referente:
 
 * Abra la consola Apache Felix (**Configuraciones**) en:
-* https://&lt;server>:<port_number>/system/console/configMgr
+* https://<server>:<port_number>/system/console/configMgr
 * Inicie sesión como administrador.
 * En el menú **Configuraciones**, seleccione: *Filtro de referente de Apache Sling*
 * Marque el campo Permitir vacío para poder permitir encabezados de referente vacíos o que falten.

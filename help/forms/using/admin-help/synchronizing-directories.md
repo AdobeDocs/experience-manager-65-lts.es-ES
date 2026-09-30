@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # Sincronizar directorios {#synchronizing-directories}
 
 >[!NOTE]
@@ -92,7 +107,7 @@ Puede configurar Administración de usuarios para que compruebe periódicamente 
 1. Programar sincronización:
 
    * Para habilitar la sincronización automática diariamente, en Planificador, seleccione Ocurre. Seleccione Cada día de la lista y escriba la hora en formato de 24 horas en el cuadro correspondiente. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro Expresión cron.
-   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione Cron Expression y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronícelo a las 1:30 a.m. del último viernes del mes.
+   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione Cron Expression y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronícelo a la 1:30 a.m. del último viernes del mes.
 
 El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 

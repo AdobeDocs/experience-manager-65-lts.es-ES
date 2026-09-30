@@ -8,13 +8,22 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '605'
 ht-degree: 9%
-
 ---
-
 # Vista previa de recursos 3D en Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Versión | Vínculo del artículo |
@@ -32,14 +41,14 @@ El visor 3D interactivo está disponible en la página de detalles de recursos d
 
 La vista previa 3D interactiva admite los siguientes formatos de archivo:
 
-| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo de MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | |
 | GLTF | Formato de transmisión GL | model/gltf+json | Ver **Nota** a continuación. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif | |
 | STL | Estereolitografía | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | Compatibilidad solo con la ingesta; vista previa no disponible. |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | Compatibilidad solo con la ingesta; vista previa no disponible. |
+| USDZ | Archivo Zip de Universal Scene Description | model/vnd.usdz+zip | Compatibilidad solo con la ingesta; vista previa no disponible. |
 
 >[!NOTE]
 >

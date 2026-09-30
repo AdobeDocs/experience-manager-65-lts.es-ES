@@ -7,13 +7,24 @@ feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
-
 ---
-
 # Organizar sus recursos digitales {#organize-digital-assets}
 
 | Versión | Vínculo del artículo |
@@ -32,15 +43,15 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es an
 * Normalmente, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nomenclatura de archivos al principio del ciclo de creación de contenido.
 * Utilice carpetas únicamente para imponer una estructura de almacenamiento coherente para los recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento de recursos](processing-profiles.md):
 
-   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando.
-   * **Carpetas de cliente**: contiene recursos digitales basados en nombres de clientes o proyectos.
-   * **Carpetas principales**: contiene recursos digitales de origen originales.
-   * **Carpetas de representación**: contiene representaciones y copias de los recursos digitales originales.
-   * **Carpetas de tamaño de archivo**: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
-   * **Carpetas de ensayo**: contiene recursos digitales que están listos para publicarse en el sitio web.
-   * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME como imágenes, documentos y multimedia.
-   * **Archivar carpetas**: contiene recursos digitales retirados.
-   * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
+  * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando.
+  * **Carpetas de cliente**: contiene recursos digitales basados en nombres de clientes o proyectos.
+  * **Carpetas principales**: contiene recursos digitales de origen originales.
+  * **Carpetas de representación**: contiene representaciones y copias de los recursos digitales originales.
+  * **Carpetas de tamaño de archivo**: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
+  * **Carpetas de ensayo**: contiene recursos digitales que están listos para publicarse en el sitio web.
+  * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME como imágenes, documentos y multimedia.
+  * **Archivar carpetas**: contiene recursos digitales retirados.
+  * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no tengan probabilidades de cambiar para que la personalización o automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
 * Si un recurso ya se ha publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación, la ubicación original del recurso publicado aún estará disponible junto con el recurso recién publicado. Sin embargo, el recurso publicado original está *perdido* a [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a una carpeta diferente.

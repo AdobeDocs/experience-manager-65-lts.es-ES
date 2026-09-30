@@ -10,13 +10,27 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1187'
 ht-degree: 0%
-
 ---
-
 # Vídeo 360/VR {#vr-video}
 
 Los vídeos de 360 grados graban una vista en todas las direcciones al mismo tiempo. Se filman con una cámara omnidireccional o una colección de cámaras. Durante la reproducción en una pantalla plana, el usuario tiene control del ángulo de visión; las reproducciones en dispositivos móviles suelen utilizar sus controles giroscópicos integrados.
@@ -33,7 +47,7 @@ Consulte también [Administración de ajustes preestablecidos de visor](/help/as
 
 Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
 
-![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio ultraterrestre y la tierra y el sol detrás de ella.](assets/6_5_360videoiss_simplified.png)
+![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás.](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la Estación Espacial 360*
 
 ## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -60,14 +74,14 @@ Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edi
 
    * Lo ideal es que el contenido original de vídeo de 360 bits tenga una de las siguientes resoluciones:
 
-      * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD o,
-      * 2160p: 3840 x 2160, conocida como resolución 4k, UHD o Ultra HD. Esta resolución de pantalla grande se encuentra más a menudo en televisores y monitores de ordenador de primera calidad. La resolución de 2160p se denomina a menudo &quot;4k&quot; porque la anchura está cerca de los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
+     * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD o,
+     * 2160p: 3840 x 2160, conocida como resolución 4k, UHD o Ultra HD. Esta resolución de pantalla grande se encuentra más a menudo en televisores y monitores de ordenador de primera calidad. La resolución de 2160p se denomina a menudo &quot;4k&quot; porque la anchura está cerca de los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
 
    * [Crear un perfil de vídeo adaptable personalizado](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) con representaciones de mayor calidad. Por ejemplo, cree un perfil de vídeo adaptable que contenga las tres configuraciones siguientes:
 
-      * anchura=auto; altura=720; velocidad de bits=2500 kbps
-      * anchura=auto; altura=1080; velocidad de bits=5000 kbps
-      * anchura=auto; altura=1440; velocidad de bits=6600 kbps
+     * anchura=auto; altura=720; velocidad de bits=2500 kbps
+     * anchura=auto; altura=1080; velocidad de bits=5000 kbps
+     * anchura=auto; altura=1440; velocidad de bits=6600 kbps
 
    * Procesar contenido de vídeo de 360 en una carpeta dedicada exclusivamente a recursos de vídeo de 360.
 
@@ -83,8 +97,8 @@ De forma predeterminada, Experience Manager detecta el vídeo como &quot;360&quo
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo de propiedad** - Doble
-   * **Valor** - proporción de aspecto de punto flotante, valor predeterminado 2.0.
+  * **Tipo de propiedad** - Doble
+  * **Valor** - proporción de aspecto de punto flotante, valor predeterminado 2.0.
 
 Después de establecer esta propiedad, se aplica inmediatamente tanto a los vídeos existentes como a los vídeos cargados recientemente.
 
@@ -127,7 +141,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 
      El vídeo de realidad virtual (VR) es contenido de vídeo envolvente al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, puede crear vídeos de realidad virtual al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
 
-   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio ultraterrestre con la Tierra y el Sol parcialmente visibles en segundo plano](assets/6_5_360video-preview-video360vr.png)
+   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol parcialmente visibles al fondo](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un vídeo de RV de 360.*
 
 1. Cerca de la parte superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
@@ -137,6 +151,6 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 Publique el vídeo 360 para poder utilizarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrada con una CDN para una entrega escalable y con buen rendimiento.
 
 Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
-Ver también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Consulte también [Vincular URL a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Consulte también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Ver también [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 Consulte también [Agregar recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).

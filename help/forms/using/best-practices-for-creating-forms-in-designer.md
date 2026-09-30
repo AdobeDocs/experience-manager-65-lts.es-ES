@@ -6,13 +6,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '11350'
+source-wordcount: '11745'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas para crear formularios en Forms Designer
 
 LiveCycle Designer le permite crear contenido de formulario enriquecido y cumplir con las directrices de la sección 508. Esta guía contiene una descripción general de las prácticas recomendadas para crear un formulario accesible y directrices para implementar estas prácticas recomendadas mediante LiveCycle Designer. Se tratan las siguientes prácticas recomendadas:
@@ -51,19 +67,19 @@ En general, intente evitar utilizar efectos ópticos insertados por secuencias d
 Puntos de comprobación relacionados
 * Sección 508 §11934.21
 
-   * (h) Cuando se visualice la animación, la información se podrá visualizar al menos en un modo de presentación no animado a elección del usuario.
-   * (k) El software no debe utilizar texto parpadeante o intermitente, objetos u otros elementos que tengan una frecuencia de parpadeo mayor de 2 Hz e inferior a 55 Hz.
+  * (h) Cuando se visualice la animación, la información se podrá visualizar al menos en un modo de presentación no animado a elección del usuario.
+  * (k) El software no debe utilizar texto parpadeante o intermitente, objetos u otros elementos que tengan una frecuencia de parpadeo mayor de 2 Hz e inferior a 55 Hz.
 * Sección 508 §11934.22
-   * (j) Las páginas estarán diseñadas para evitar que la pantalla parpadee con una frecuencia superior a 2 Hz e inferior a 55 Hz.
+  * (j) Las páginas estarán diseñadas para evitar que la pantalla parpadee con una frecuencia superior a 2 Hz e inferior a 55 Hz.
 * WCAG 1.0
-   * 7.1 Hasta que los agentes de usuario permitan a los usuarios controlar los parpadeos, evite que la pantalla parpadee. (P1)
-   * 7.2 Hasta que los agentes de usuario permitan a los usuarios controlar los parpadeos, evite que el contenido parpadee (es decir, cambie la presentación a una velocidad normal, como encender y apagar) (P2).
-   * 7.3 Hasta que los agentes de usuario permitan a los usuarios congelar el contenido en movimiento, evite el movimiento en las páginas.
-   * 14.1 Utilice el lenguaje más claro y sencillo adecuado para el contenido de un sitio.
+  * 7.1 Hasta que los agentes de usuario permitan a los usuarios controlar los parpadeos, evite que la pantalla parpadee. (P1)
+  * 7.2 Hasta que los agentes de usuario permitan a los usuarios controlar los parpadeos, evite que el contenido parpadee (es decir, cambie la presentación a una velocidad normal, como encender y apagar) (P2).
+  * 7.3 Hasta que los agentes de usuario permitan a los usuarios congelar el contenido en movimiento, evite el movimiento en las páginas.
+  * 14.1 Utilice el lenguaje más claro y sencillo adecuado para el contenido de un sitio.
 * WCAG 2.0
-   * 2.2.2 Pausar, parar, ocultar: Para mover, parpadear, desplazar o actualizar automáticamente la información, todas las siguientes opciones son verdaderas: (Nivel A)
-   * 2.3.1 Tres parpadeos o por debajo de los límites: Las páginas web no contienen nada que parpadee más de tres veces en un segundo período, o el parpadeo está por debajo de los umbrales generales de parpadeo y parpadeo rojo. (Nivel A)
-   * 2.3.2 Tres parpadeos: Las páginas web no contienen nada que parpadee más de tres veces en un segundo periodo. (Nivel AAA)
+  * 2.2.2 Pausar, parar, ocultar: Para mover, parpadear, desplazar o actualizar automáticamente la información, todas las siguientes opciones son verdaderas: (Nivel A)
+  * 2.3.1 Tres parpadeos o por debajo de los límites: Las páginas web no contienen nada que parpadee más de tres veces en un segundo período, o el parpadeo está por debajo de los umbrales generales de parpadeo y parpadeo rojo. (Nivel A)
+  * 2.3.2 Tres parpadeos: Las páginas web no contienen nada que parpadee más de tres veces en un segundo periodo. (Nivel AAA)
 
 
 ## Configurar las propiedades del formulario para generar información de accesibilidad {#configure-form-properties}
@@ -85,10 +101,10 @@ En LiveCycle Designer, esta opción está seleccionada de forma predeterminada.
 **Puntos de comprobación relacionados**
 
 * Sección 508 §1194.21
-   * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
-   * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
+  * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 * Sección 508 §1194.22
-   * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 
 
 ## Elija los controles adecuados {#choose-right-controls}
@@ -103,15 +119,15 @@ Si utiliza otros objetos, la tecnología de asistencia puede ignorarlos. El uso 
 
 **Puntos de comprobación relacionados**
 * Sección 508 §1194.21
-   * (c) Se proporcionará una indicación en pantalla bien definida del enfoque actual que se mueva entre los elementos interactivos de la interfaz a medida que cambie el enfoque de entrada. El objetivo se expondrá mediante programación de modo que la tecnología de asistencia pueda rastrear el enfoque y los cambios de enfoque.
-   * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
-   * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (c) Se proporcionará una indicación en pantalla bien definida del enfoque actual que se mueva entre los elementos interactivos de la interfaz a medida que cambie el enfoque de entrada. El objetivo se expondrá mediante programación de modo que la tecnología de asistencia pueda rastrear el enfoque y los cambios de enfoque.
+  * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
+  * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 * Sección 508 §1194.22
-   * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 
 * WCAG 2.0
-   * 3.2.4 Identificación coherente: Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente. (Nivel AA).
-   * 4.1.2 Nombre, Función, Valor: Para todos los componentes de la interfaz de usuario (incluidos, entre otros, elementos de formulario, vínculos y componentes generados por secuencias de comandos), el nombre y la función se pueden determinar mediante programación; los estados, las propiedades y los valores que el usuario puede definir se pueden definir mediante programación; y la notificación de los cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia. (Nivel A)
+  * 3.2.4 Identificación coherente: Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente. (Nivel AA).
+  * 4.1.2 Nombre, Función, Valor: Para todos los componentes de la interfaz de usuario (incluidos, entre otros, elementos de formulario, vínculos y componentes generados por secuencias de comandos), el nombre y la función se pueden determinar mediante programación; los estados, las propiedades y los valores que el usuario puede definir se pueden definir mediante programación; y la notificación de los cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia. (Nivel A)
 
 
 ## Proporcionar equivalentes de texto para las imágenes {#provide-text-equivalents}
@@ -139,11 +155,11 @@ Cuando se incluye contenido gráfico puramente decorativo en los formularios, se
 
 Puntos de comprobación relacionados
 * Sección 508 §1194.22
-   * (a) Se proporcionará un equivalente textual para cada elemento no textual (por ejemplo, mediante &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento).
+  * (a) Se proporcionará un equivalente textual para cada elemento no textual (por ejemplo, mediante &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento).
 * WCAG 1.0
-   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
+  * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
 * WCAG 2.0
-   * 1.1.1 Contenido no textual: todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el objetivo equivalente, excepto para las situaciones que se enumeran a continuación. (Nivel A)
+  * 1.1.1 Contenido no textual: todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el objetivo equivalente, excepto para las situaciones que se enumeran a continuación. (Nivel A)
 
 
 ## Proporcionar las etiquetas adecuadas para los controles del formulario{#provide-proper-labels}
@@ -201,16 +217,16 @@ Cuando un usuario con deficiencias visuales presiona un botón de opción, el le
 * Una indicación del propósito del grupo de botones de opción
 * Una etiqueta significativa para cada botón de opción
 Para que los botones de opción sean accesibles mediante los títulos de los botones:
-   1. En la paleta Jerarquía, seleccione el grupo de exclusión.
-   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
-   1. Si los subtítulos de cada botón de opción proporcionan texto que tendrá sentido cuando lo lea un lector de pantalla, en la paleta Objeto, seleccione la pestaña Enlace y anule la selección de Especificar valor de elemento.
+  1. En la paleta Jerarquía, seleccione el grupo de exclusión.
+  1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
+  1. Si los subtítulos de cada botón de opción proporcionan texto que tendrá sentido cuando lo lea un lector de pantalla, en la paleta Objeto, seleccione la pestaña Enlace y anule la selección de Especificar valor de elemento.
 
   Para que los botones de opción sean accesibles mediante un valor de elemento especificado:
-   1. En la paleta Jerarquía, seleccione el grupo de exclusión.
-   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
-   1. En la paleta Jerarquía, seleccione el primer botón de opción del grupo.
-   1. En la paleta Objeto, haga clic en la pestaña Campo. En el área Elemento, haga doble clic en el elemento y escriba un valor significativo para el botón de opción seleccionado. Por ejemplo, para el primer botón de un grupo de métodos de pago, puede escribir Efectivo.
-   1. Repita los pasos 3 y 4 para cada botón de opción del grupo de exclusión.
+  1. En la paleta Jerarquía, seleccione el grupo de exclusión.
+  1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
+  1. En la paleta Jerarquía, seleccione el primer botón de opción del grupo.
+  1. En la paleta Objeto, haga clic en la pestaña Campo. En el área Elemento, haga doble clic en el elemento y escriba un valor significativo para el botón de opción seleccionado. Por ejemplo, para el primer botón de un grupo de métodos de pago, puede escribir Efectivo.
+  1. Repita los pasos 3 y 4 para cada botón de opción del grupo de exclusión.
 
 ### Etiquetado de controles personalizados
 
@@ -291,19 +307,19 @@ Cuando utilice vínculos en el formulario, asegúrese de que cada vínculo descr
 **Puntos de comprobación relacionados**
 
 * Sección 508 §1194.21
-   * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
-   * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (d) La tecnología de asistencia dispondrá de información suficiente sobre un elemento de interfaz de usuario, incluida la identidad, el funcionamiento y el estado del elemento. Cuando una imagen representa un elemento de programa, la información transmitida por la imagen también debe estar disponible en texto.
+  * (l) Cuando se utilicen formularios electrónicos, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 * Sección 508 §1194.22
-   * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
+  * (n) Cuando los formularios electrónicos estén diseñados para ser cumplimentados en línea, el formulario permitirá a las personas que utilicen tecnología de asistencia acceder a la información, los elementos de campo y la funcionalidad necesarios para cumplimentar y enviar el formulario, incluidas todas las direcciones y señales.
 * WCAG 1.0
-   * 12.4 Asociar explícitamente las etiquetas con sus controles (P2).
-   * 13.1 Identificar claramente el objetivo de cada vínculo (P2).
+  * 12.4 Asociar explícitamente las etiquetas con sus controles (P2).
+  * 13.1 Identificar claramente el objetivo de cada vínculo (P2).
 * WCAG 2.0
-   * 1.1.1 Contenido no textual: todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el objetivo equivalente, excepto para las situaciones que se enumeran a continuación. (Nivel A)
-   * 2.4.6 Encabezados y etiquetas: Los encabezados y las etiquetas describen el tema o el propósito. (Nivel AA)
-   * 3.2.4 Identificación coherente: Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente. (Nivel AA)
-   * 3.3.2 Etiquetas o instrucciones: se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada del usuario. (Nivel A)
-   * 4.1.2 Nombre, Función, Valor: Para todos los componentes de la interfaz de usuario (incluidos, entre otros, elementos de formulario, vínculos y componentes generados por secuencias de comandos), el nombre y la función se pueden determinar mediante programación; los estados, las propiedades y los valores que el usuario puede definir se pueden definir mediante programación; y la notificación de los cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia. (Nivel A)
+  * 1.1.1 Contenido no textual: todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el objetivo equivalente, excepto para las situaciones que se enumeran a continuación. (Nivel A)
+  * 2.4.6 Encabezados y etiquetas: Los encabezados y las etiquetas describen el tema o el propósito. (Nivel AA)
+  * 3.2.4 Identificación coherente: Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente. (Nivel AA)
+  * 3.3.2 Etiquetas o instrucciones: se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada del usuario. (Nivel A)
+  * 4.1.2 Nombre, Función, Valor: Para todos los componentes de la interfaz de usuario (incluidos, entre otros, elementos de formulario, vínculos y componentes generados por secuencias de comandos), el nombre y la función se pueden determinar mediante programación; los estados, las propiedades y los valores que el usuario puede definir se pueden definir mediante programación; y la notificación de los cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia. (Nivel A)
 
 
 ## Asegúrese de que la lectura y el orden de tabulación sean correctos {#ensure-reading-tab-order}
@@ -425,14 +441,14 @@ Si decide que no desea el orden de tabulación personalizado en el formulario, p
 
 **Puntos de comprobación relacionados**
 * Sección 508 §1194.21
-   * (a) Cuando el software esté diseñado para ejecutarse en un sistema que tenga un teclado, las funciones de producto deberán ser ejecutables desde un teclado en el que la función en sí o el resultado de realizar una función puedan discernirse textualmente.
+  * (a) Cuando el software esté diseñado para ejecutarse en un sistema que tenga un teclado, las funciones de producto deberán ser ejecutables desde un teclado en el que la función en sí o el resultado de realizar una función puedan discernirse textualmente.
 * WCAG 1.0
-   * 9.2 Garantizar que cualquier elemento que tenga su propia interfaz pueda funcionar de manera independiente del dispositivo.
+  * 9.2 Garantizar que cualquier elemento que tenga su propia interfaz pueda funcionar de manera independiente del dispositivo.
 * WCAG 2.0
-   * 1.3.2 Secuencia significativa: Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar una secuencia de lectura correcta mediante programación. (Nivel A)
-   * 2.1.1 Teclado: Toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales, excepto cuando la función subyacente requiera una entrada que dependa de la ruta del movimiento del usuario y no solo de los extremos. (Nivel A)
-   * 2.1.3 Teclado (sin excepción): toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales. (Nivel AAA)
-   * 2.4.3 Orden de enfoque: Si una página web se puede navegar secuencialmente y las secuencias de navegación afectan al significado o al funcionamiento, los componentes enfocables reciben atención en un orden que preserva el significado y la operabilidad. (Nivel A)
+  * 1.3.2 Secuencia significativa: Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar una secuencia de lectura correcta mediante programación. (Nivel A)
+  * 2.1.1 Teclado: Toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales, excepto cuando la función subyacente requiera una entrada que dependa de la ruta del movimiento del usuario y no solo de los extremos. (Nivel A)
+  * 2.1.3 Teclado (sin excepción): toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales. (Nivel AAA)
+  * 2.4.3 Orden de enfoque: Si una página web se puede navegar secuencialmente y las secuencias de navegación afectan al significado o al funcionamiento, los componentes enfocables reciben atención en un orden que preserva el significado y la operabilidad. (Nivel A)
 
 
 ## Asegúrese de que los controles del formulario sean accesibles mediante teclado{#ensure-keyboard-accessible}
@@ -447,15 +463,15 @@ Por último, es importante asegurarse de que el comportamiento generado por scri
 
 **Puntos de comprobación relacionados**
 * Sección 508 §1194.21
-   * (a) Cuando el software esté diseñado para ejecutarse en un sistema que tenga un teclado, las funciones de producto deberán ser ejecutables desde un teclado en el que la función en sí o el resultado de realizar una función puedan discernirse textualmente.
+  * (a) Cuando el software esté diseñado para ejecutarse en un sistema que tenga un teclado, las funciones de producto deberán ser ejecutables desde un teclado en el que la función en sí o el resultado de realizar una función puedan discernirse textualmente.
 * WCAG 1.0
-   * 6.4 Para scripts y applets, asegúrese de que los controladores de eventos son independientes del dispositivo de entrada (P2).
-   * 9.2 Garantizar que cualquier elemento que tenga su propia interfaz pueda funcionar de manera independiente del dispositivo (P2).
-   * 9.3 Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo (P2).
+  * 6.4 Para scripts y applets, asegúrese de que los controladores de eventos son independientes del dispositivo de entrada (P2).
+  * 9.2 Garantizar que cualquier elemento que tenga su propia interfaz pueda funcionar de manera independiente del dispositivo (P2).
+  * 9.3 Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo (P2).
 * WCAG 2.0
-   * 2.1.1 Teclado: Toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales, excepto cuando la función subyacente requiera una entrada que dependa de la ruta del movimiento del usuario y no solo de los extremos. (Nivel A)
-   * 2.1.2 Sin trampas para el foco del teclado: si es posible mover el foco a un componente de la página mediante una interfaz de teclado, entonces el foco se puede mover de ese componente usando solo una interfaz de teclado y, si se requiere algo más que las teclas de dirección o de tabulación sin modificar u otros métodos de salida estándar, se informa al usuario del método para mover el foco. (Nivel A)
-   * 2.1.3 Teclado (sin excepción): toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales. (Nivel AAA)
+  * 2.1.1 Teclado: Toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales, excepto cuando la función subyacente requiera una entrada que dependa de la ruta del movimiento del usuario y no solo de los extremos. (Nivel A)
+  * 2.1.2 Sin trampas para el foco del teclado: si es posible mover el foco a un componente de la página mediante una interfaz de teclado, entonces el foco se puede mover de ese componente usando solo una interfaz de teclado y, si se requiere algo más que las teclas de dirección o de tabulación sin modificar u otros métodos de salida estándar, se informa al usuario del método para mover el foco. (Nivel A)
+  * 2.1.3 Teclado (sin excepción): toda la funcionalidad del contenido se puede utilizar mediante una interfaz de teclado sin necesidad de tiempos específicos para pulsaciones de teclas individuales. (Nivel AAA)
 
 
 ## Usar el color de forma responsable{#use-color-responsibly}
@@ -504,14 +520,14 @@ Recomendaciones para el uso de colores:
 
 **Puntos de comprobación relacionados**
 * Sección 508 §1194.21
-   * (i) El código de colores no se utilizará como único medio para transmitir información, indicar una acción, provocar una respuesta o distinguir un elemento visual.
+  * (i) El código de colores no se utilizará como único medio para transmitir información, indicar una acción, provocar una respuesta o distinguir un elemento visual.
 * WCAG 1.0
-   * 2.1 Asegúrese de que toda la información transmitida con el color también esté disponible sin color, por ejemplo, desde el contexto o el marcado.
-   * 2.2 Asegúrese de que las combinaciones de colores de primer plano y de fondo ofrezcan suficiente contraste cuando las vea alguien con deficiencias de color o cuando las vea en una pantalla en blanco y negro. [Prioridad 2 para imágenes, Prioridad 3 para texto] (P2).
+  * 2.1 Asegúrese de que toda la información transmitida con el color también esté disponible sin color, por ejemplo, desde el contexto o el marcado.
+  * 2.2 Asegúrese de que las combinaciones de colores de primer plano y de fondo ofrezcan suficiente contraste cuando las vea alguien con deficiencias de color o cuando las vea en una pantalla en blanco y negro. [Prioridad 2 para imágenes, Prioridad 3 para texto] (P2).
 * WCAG 2.0
-   * 1.4.1 Uso del color: el color no se utiliza como el único medio visual para transmitir información, indicar una acción, pedir una respuesta o distinguir un elemento visual. (Nivel A)
-   * 1.4.3 Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto por lo siguiente: (Nivel AA)
-   * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto por lo siguiente: (Nivel AAA)
+  * 1.4.1 Uso del color: el color no se utiliza como el único medio visual para transmitir información, indicar una acción, pedir una respuesta o distinguir un elemento visual. (Nivel A)
+  * 1.4.3 Contraste (mínimo): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto para lo siguiente: (Nivel AA)
+  * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto para lo siguiente: (Nivel AAA)
 
 
 ## Proporcionar celdas de encabezado para las tablas{#provide-heading-cells}
@@ -567,13 +583,13 @@ Para los controles de las celdas de la tabla, el lector de pantalla anunciará e
 
 **Puntos de comprobación relacionados**
 * Sección 508 §1194.22
-   * (g) Los encabezados de fila y columna se identificarán para los cuadros de datos.
-   * (h) El marcado se utilizará para asociar celdas de datos y celdas de encabezado para tablas de datos que tengan dos o más niveles lógicos de encabezados de fila o columna.
+  * (g) Los encabezados de fila y columna se identificarán para los cuadros de datos.
+  * (h) El marcado se utilizará para asociar celdas de datos y celdas de encabezado para tablas de datos que tengan dos o más niveles lógicos de encabezados de fila o columna.
 * WCAG 1.0
-   * 5.1 Para las tablas de datos, identifique los encabezados de fila y columna (P1).
-   * 5.2 Para las tablas de datos que tienen dos o más niveles lógicos de encabezados de fila o columna, utilice el marcado para asociar celdas de datos y celdas de encabezado (P1)
+  * 5.1 Para las tablas de datos, identifique los encabezados de fila y columna (P1).
+  * 5.2 Para las tablas de datos que tienen dos o más niveles lógicos de encabezados de fila o columna, utilice el marcado para asociar celdas de datos y celdas de encabezado (P1)
 * WCAG 2.0
-   * 1.3.1 Información y relaciones: la información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en texto. (Nivel A)
+  * 1.3.1 Información y relaciones: la información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en texto. (Nivel A)
 
 
 ## Proporcionar una estructura de formulario navegable{#provide-navigable-form}
@@ -608,11 +624,11 @@ Siga estos pasos para crear un encabezado en el formulario:
 La mayoría de los lectores de pantalla permiten a los usuarios navegar rápidamente entre elementos de encabezado según su nivel. La figura 16 muestra un formulario que se divide en segmentos más pequeños utilizando encabezados. En este ejemplo, se utiliza la siguiente estructura de encabezado:
 
 * Nivel de encabezado 1: Solicitud de producto
-   * Nivel de encabezado 2: detalles del pedido
-      * Nivel de encabezado 3: Opciones de envío
+  * Nivel de encabezado 2: detalles del pedido
+    * Nivel de encabezado 3: Opciones de envío
 * Nivel de encabezado 2: información adicional
-   * Nivel de encabezado 3: Detalles personales
-   * Nivel de encabezado 3: Dirección
+  * Nivel de encabezado 3: Detalles personales
+  * Nivel de encabezado 3: Dirección
 
 ![Estructurar un formulario mediante encabezados](/help/forms/using/assets/image-16.png)
 
@@ -640,20 +656,20 @@ En LiveCycle Designer, puede crear listas mediante subformularios con los pasos 
 
 **Puntos de comprobación relacionados**
 * Sección 508 §11934.22
-   * (o) Se facilitará un método que permita a los usuarios omitir los enlaces de navegación repetitivos.
+  * (o) Se facilitará un método que permita a los usuarios omitir los enlaces de navegación repetitivos.
 * WCAG 1.0
-   * 3.5 Utilice elementos de encabezado para transmitir la estructura del documento y utilizarlos según la especificación (P2).
-   * 3.6 Marcar correctamente las listas y los elementos de la lista. (P2).
-   * 12.3 Dividir grandes bloques de información en grupos más manejables donde sea natural y apropiado. (P2).
-   * 13.3 Proporcionar información sobre la presentación general de un sitio (por ejemplo, un mapa del sitio o un índice).
-   * 13.4 Utilizar los mecanismos de navegación de manera coherente (P2).
+  * 3.5 Utilice elementos de encabezado para transmitir la estructura del documento y utilizarlos según la especificación (P2).
+  * 3.6 Marcar correctamente las listas y los elementos de la lista. (P2).
+  * 12.3 Dividir grandes bloques de información en grupos más manejables donde sea natural y apropiado. (P2).
+  * 13.3 Proporcionar información sobre la presentación general de un sitio (por ejemplo, un mapa del sitio o un índice).
+  * 13.4 Utilizar los mecanismos de navegación de manera coherente (P2).
 * WCAG 2.0
-   * 1.3.2 Secuencia significativa: Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar una secuencia de lectura correcta mediante programación. (Nivel A)
-   * 2.4.1 Omitir bloques: Existe un mecanismo disponible para evitar bloques de contenido que se repiten en varias páginas web. (Nivel A)
-   * 2.4.5 Múltiples maneras: Hay más de una manera de localizar una página web dentro de un conjunto de páginas web, excepto cuando la página web es el resultado de un proceso o un paso en él. (Nivel AA)
-   * 2.4.6 Encabezados y etiquetas: Los encabezados y las etiquetas describen el tema o el propósito. (Nivel AA)
-   * 2.4.10 Encabezados de sección: Los encabezados de sección se utilizan para organizar el contenido. (Nivel AAA)
-   * 3.2.3 Navegación coherente: Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas web se producen en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio. (Nivel AA)
+  * 1.3.2 Secuencia significativa: Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar una secuencia de lectura correcta mediante programación. (Nivel A)
+  * 2.4.1 Omitir bloques: Existe un mecanismo disponible para evitar bloques de contenido que se repiten en varias páginas web. (Nivel A)
+  * 2.4.5 Múltiples maneras: Hay más de una manera de localizar una página web dentro de un conjunto de páginas web, excepto cuando la página web es el resultado de un proceso o un paso en él. (Nivel AA)
+  * 2.4.6 Encabezados y etiquetas: Los encabezados y las etiquetas describen el tema o el propósito. (Nivel AA)
+  * 2.4.10 Encabezados de sección: Los encabezados de sección se utilizan para organizar el contenido. (Nivel AAA)
+  * 3.2.3 Navegación coherente: Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas web se producen en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio. (Nivel AA)
 
 
 ## Evitar scripts disruptivos{#avoid-disruptive-scripting}
@@ -670,20 +686,20 @@ Al diseñar secuencias de comandos para accesibilidad, tenga en cuenta las sigui
 
 **Puntos de comprobación relacionados**:
 * Sección 508 §1194.22
-   * (l) Cuando las páginas utilicen lenguajes de secuencias de comandos para mostrar contenido o crear elementos de interfaz, la información proporcionada por la secuencia de comandos se identificará con un texto funcional que pueda ser leído por la tecnología de asistencia.
-   * (p) Cuando se requiera una respuesta temporizada, se alertará al usuario y se le dará tiempo suficiente para indicar que se requiere más tiempo.
+  * (l) Cuando las páginas utilicen lenguajes de secuencias de comandos para mostrar contenido o crear elementos de interfaz, la información proporcionada por la secuencia de comandos se identificará con un texto funcional que pueda ser leído por la tecnología de asistencia.
+  * (p) Cuando se requiera una respuesta temporizada, se alertará al usuario y se le dará tiempo suficiente para indicar que se requiere más tiempo.
 * WCAG 1.0
-   * 1.4 Para cualquier presentación multimedia basada en el tiempo (por ejemplo, una película o animación), sincronice alternativas equivalentes (por ejemplo, subtítulos o descripciones auditivas de la pista visual) con la presentación (P1).
-   * 6.2 Asegúrese de que los equivalentes del contenido dinámico se actualicen cuando cambie el contenido dinámico.
-   * 6.3 Asegúrese de que las páginas se puedan utilizar cuando los scripts, applets u otros objetos de programación estén desactivados o no sean compatibles. Si no es posible, proporcione información equivalente en una página alternativa accesible.
-   * 6.5 Asegúrese de que el contenido dinámico sea accesible o proporcione una presentación o página alternativa (P2).
-   * 8.1 Hacer que elementos programáticos como scripts y applets sean accesibles o compatibles con las tecnologías de asistencia [Prioridad 1 si la funcionalidad es importante y no se presenta en ninguna otra parte]; en caso contrario (P2).
-   * 9.3 Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo (P2).
-   * 10.1 Hasta que los agentes de usuario permitan a los usuarios desactivar las ventanas generadas, no haga que aparezcan ventanas emergentes u otras ventanas y no cambie la ventana actual sin informar al usuario.
+  * 1.4 Para cualquier presentación multimedia basada en el tiempo (por ejemplo, una película o animación), sincronice alternativas equivalentes (por ejemplo, subtítulos o descripciones auditivas de la pista visual) con la presentación (P1).
+  * 6.2 Asegúrese de que los equivalentes del contenido dinámico se actualicen cuando cambie el contenido dinámico.
+  * 6.3 Asegúrese de que las páginas se puedan utilizar cuando los scripts, applets u otros objetos de programación estén desactivados o no sean compatibles. Si no es posible, proporcione información equivalente en una página alternativa accesible.
+  * 6.5 Asegúrese de que el contenido dinámico sea accesible o proporcione una presentación o página alternativa (P2).
+  * 8.1 Hacer que elementos programáticos como scripts y applets sean accesibles o compatibles con las tecnologías de asistencia [Prioridad 1 si la funcionalidad es importante y no se presenta en ninguna otra parte]; en caso contrario (P2).
+  * 9.3 Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo (P2).
+  * 10.1 Hasta que los agentes de usuario permitan a los usuarios desactivar las ventanas generadas, no haga que aparezcan ventanas emergentes u otras ventanas y no cambie la ventana actual sin informar al usuario.
 * WCAG 2.0
-   * 3.2.1 Enfoque: Cuando cualquier componente recibe enfoque, no se inicia un cambio de contexto. (Nivel A)
-   * 3.2.2 Al recibir entradas: Cambiar la configuración de cualquier componente de interfaz de usuario no provoca automáticamente un cambio de contexto a menos que se haya informado al usuario del comportamiento antes de utilizar el componente. (Nivel A)
-   * 3.2.5 Cambio en la solicitud: los cambios de contexto solo se inician mediante una solicitud del usuario o hay un mecanismo disponible para desactivarlos. (Nivel AAA)
+  * 3.2.1 Enfoque: Cuando cualquier componente recibe enfoque, no se inicia un cambio de contexto. (Nivel A)
+  * 3.2.2 Al recibir entradas: Cambiar la configuración de cualquier componente de interfaz de usuario no provoca automáticamente un cambio de contexto a menos que se haya informado al usuario del comportamiento antes de utilizar el componente. (Nivel A)
+  * 3.2.5 Cambio en la solicitud: los cambios de contexto solo se inician mediante una solicitud del usuario o hay un mecanismo disponible para desactivarlos. (Nivel AAA)
 
 ## Asegúrese de que todo el contenido de audio y vídeo sea accesible{#ensure-audio-video-accessible}
 
@@ -692,21 +708,21 @@ Para medios basados en Flash, consulte [vínculo](/help/forms/using/best-practic
 
 **Puntos de comprobación relacionados**:
 * Sección 508 §1194.22
-   * (b) Las alternativas equivalentes para cualquier presentación multimedia se sincronizarán con la presentación.
+  * (b) Las alternativas equivalentes para cualquier presentación multimedia se sincronizarán con la presentación.
 * WCAG 1.0
-   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
-   * 1.3 Hasta que los agentes de usuario puedan leer automáticamente en voz alta el texto equivalente a una pista visual, proporcione una descripción auditiva de la información importante de la pista visual de una presentación multimedia (P1).
-   * 1.4 Para cualquier presentación multimedia basada en el tiempo (por ejemplo, una película o animación), sincronice alternativas equivalentes (por ejemplo, subtítulos o descripciones auditivas de la pista visual) con la presentación (P1).
+  * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
+  * 1.3 Hasta que los agentes de usuario puedan leer automáticamente en voz alta el texto equivalente a una pista visual, proporcione una descripción auditiva de la información importante de la pista visual de una presentación multimedia (P1).
+  * 1.4 Para cualquier presentación multimedia basada en el tiempo (por ejemplo, una película o animación), sincronice alternativas equivalentes (por ejemplo, subtítulos o descripciones auditivas de la pista visual) con la presentación (P1).
 * WCAG 2.0
-   * 1.2.1 Solo audio y solo vídeo (pregrabado): Para los medios pregrabados solo audio y solo vídeo, los siguientes son verdaderos, excepto cuando el audio o vídeo es una alternativa para el texto y está claramente etiquetado como tal: (Nivel A)
-   * 1.2.2 Subtítulos (pregrabados): se proporcionan subtítulos para todo el contenido de audio pregrabado en medios sincronizados, excepto cuando los medios son una alternativa para el texto y se etiquetan claramente como tal. (Nivel A)
-   * 1.2.3 Descripción del audio o medios alternativos (pregrabados): Se ofrece una alternativa para los medios basados en el tiempo o la descripción del audio del contenido de vídeo pregrabado para los medios sincronizados, excepto cuando los medios son una alternativa para el texto y se etiquetan claramente como tal. (Nivel A)
-   * 1.2.4 Subtítulos (en vivo): se proporcionan subtítulos para todo el contenido de audio en vivo en medios sincronizados. (Nivel AA)
-   * 1.2.5 Descripción del audio (pregrabado): se proporciona la descripción del audio de todo el contenido de vídeo pregrabado en medios sincronizados. (Nivel AA)
-   * 1.2.6 Lenguaje de señas (pregrabado): Se proporciona interpretación del lenguaje de señas para todo el contenido de audio pregrabado en medios sincronizados. (Nivel AAA)
-   * 1.2.7 Descripción del audio extendido (pregrabado): cuando las pausas en el audio en primer plano son insuficientes para permitir que las descripciones del audio transmitan el sentido del vídeo, se proporciona una descripción del audio ampliada para todo el contenido de vídeo pregrabado en medios sincronizados. (Nivel AAA)
-   * 1.2.8 Alternativa a los medios (pregrabados): se ofrece una alternativa a los medios basados en el tiempo para todos los medios sincronizados pregrabados y para todos los medios solo de vídeo pregrabados. (Nivel AAA)
-   * 1.2.9 Solo audio (en vivo): Se proporciona una alternativa para los medios basados en el tiempo que presentan información equivalente para el contenido solo de audio en vivo. (Nivel AAA)
+  * 1.2.1 Solo audio y solo vídeo (pregrabado): Para los medios pregrabados solo audio y solo vídeo, los siguientes son verdaderos, excepto cuando el audio o vídeo es una alternativa para el texto y está claramente etiquetado como tal: (Nivel A)
+  * 1.2.2 Subtítulos (pregrabados): se proporcionan subtítulos para todo el contenido de audio pregrabado en medios sincronizados, excepto cuando los medios son una alternativa para el texto y se etiquetan claramente como tal. (Nivel A)
+  * 1.2.3 Descripción del audio o medios alternativos (pregrabados): Se ofrece una alternativa para los medios basados en el tiempo o la descripción del audio del contenido de vídeo pregrabado para los medios sincronizados, excepto cuando los medios son una alternativa para el texto y se etiquetan claramente como tal. (Nivel A)
+  * 1.2.4 Subtítulos (en vivo): se proporcionan subtítulos para todo el contenido de audio en vivo en medios sincronizados. (Nivel AA)
+  * 1.2.5 Descripción del audio (pregrabado): se proporciona la descripción del audio de todo el contenido de vídeo pregrabado en medios sincronizados. (Nivel AA)
+  * 1.2.6 Lenguaje de señas (pregrabado): Se proporciona interpretación del lenguaje de señas para todo el contenido de audio pregrabado en medios sincronizados. (Nivel AAA)
+  * 1.2.7 Descripción del audio extendido (pregrabado): cuando las pausas en el audio en primer plano son insuficientes para permitir que las descripciones del audio transmitan el sentido del vídeo, se proporciona una descripción del audio ampliada para todo el contenido de vídeo pregrabado en medios sincronizados. (Nivel AAA)
+  * 1.2.8 Alternativa a los medios (pregrabados): se ofrece una alternativa a los medios basados en el tiempo para todos los medios sincronizados pregrabados y para todos los medios solo de vídeo pregrabados. (Nivel AAA)
+  * 1.2.9 Solo audio (en vivo): Se proporciona una alternativa para los medios basados en el tiempo que presentan información equivalente para el contenido solo de audio en vivo. (Nivel AAA)
 
 ## Identificar el lenguaje natural y cualquier cambio en el lenguaje{#identify-natural-language}
 
@@ -736,7 +752,7 @@ Figura 18: **Cambio de la configuración regional de un objeto**
 
 **Puntos de comprobación relacionados**:
 * WCAG 1.0
-   * 4.1 Identifique claramente los cambios en el lenguaje natural del texto de un documento y cualquier equivalente textual (por ejemplo, subtítulos).
+  * 4.1 Identifique claramente los cambios en el lenguaje natural del texto de un documento y cualquier equivalente textual (por ejemplo, subtítulos).
 * WCAG 2.0
-   * 3.1.1 Idioma de la página: el lenguaje humano predeterminado de cada página web se puede determinar mediante programación. (Nivel A)
-   * 3.1.2 Lenguaje de las Partes: El lenguaje humano de cada pasaje o frase en el contenido puede ser determinado mediante programación, excepto para nombres propios, términos técnicos, palabras de lenguaje indeterminado, y palabras o frases que se han convertido en parte de la lengua vernácula del texto inmediatamente circundante. (Nivel AA)
+  * 3.1.1 Idioma de la página: el lenguaje humano predeterminado de cada página web se puede determinar mediante programación. (Nivel A)
+  * 3.1.2 Lenguaje de las Partes: El lenguaje humano de cada pasaje o frase en el contenido puede ser determinado mediante programación, excepto para nombres propios, términos técnicos, palabras de lenguaje indeterminado, y palabras o frases que se han convertido en parte de la lengua vernácula del texto inmediatamente circundante. (Nivel AA)

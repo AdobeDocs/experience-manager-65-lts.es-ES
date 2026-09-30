@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer
 exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 94%
-
+source-wordcount: '904'
+ht-degree: 89%
 ---
-
 # Descubra los conceptos básicos del modelado de contenido sin encabezado con AEM {#content-modeling-headless-basics}
 
 ## La historia hasta ahora {#story-so-far}
@@ -100,15 +116,15 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 Dos tipos de datos proporcionan referencias al contenido fuera de un fragmento específico:
 
 * **Referencia de contenido**
-Proporciona una sencilla referencia a otro contenido de cualquier tipo.
+Esto proporciona una sencilla referencia a otro contenido de cualquier tipo.
 Por ejemplo, puede hacer referencia a una imagen en una ubicación específica.
 
 * **Referencia de fragmento**
-Proporciona referencias a otros fragmentos de contenido.
+Esto proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado e introduce las relaciones necesarias para modelar el contenido.
 El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
-   * Editar directamente el fragmento al que se hace referencia.
-   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
+  * Editar directamente el fragmento al que se hace referencia.
+  * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 
 >[!NOTE]
 >
@@ -133,14 +149,14 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todos son personas, cada uno definido como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 
 * Mi compañía: compañía
-   * CEO: persona
-   * Empleado(s): persona
-      * Premio(s) personal(es): premio
+  * CEO: persona
+  * Empleado(s): persona
+    * Premio(s) personal(es): premio
 
 Y esto es solo para empezar. Según la complejidad, un premio podría ser específico de una compañía, o una compañía podría tener su oficina principal en una ciudad específica.
 
@@ -154,7 +170,7 @@ Ahora que ha aprendido lo básico, el siguiente paso consiste en [Obtener inform
 
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Conceptos de creación](/help/sites-authoring/author.md)
 

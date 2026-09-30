@@ -10,13 +10,33 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: 39be83b0-c003-4e6c-baca-95166f654bc7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 97%
-
 ---
-
 # Introducción a la personalización de AEM Forms Workspace{#introduction-to-customizing-aem-form-workspace}
 
 AEM Forms Workspace proporciona capacidades para modificar la semántica de presentación y la funcionalidad de su interfaz. A continuación, se describen los tipos de personalizaciones para cambiar el estilo, el diseño, el formato, la personalización de marca y la funcionalidad principal.
@@ -189,47 +209,47 @@ Está pensado principalmente para las personalizaciones, ya que permite generar 
 
 * client-pkg:
 
-   * src: contiene los artefactos necesarios para crear nodos CRX.
-   * pom.xml: el script para crear paquetes de implementación para varios perfiles y el paquete WS-Deploy.
+  * src: contiene los artefactos necesarios para crear nodos CRX.
+  * pom.xml: el script para crear paquetes de implementación para varios perfiles y el paquete WS-Deploy.
 
 * client-html:
 
-   * assembly: contiene un zip.xml utilizado por el script para crear el SDK de AEM Forms Workspace.
-   * src/main/webapp -
+  * assembly: contiene un zip.xml utilizado por el script para crear el SDK de AEM Forms Workspace.
+  * src/main/webapp -
 
-      * css: contiene las hojas de estilo de AEM Forms Workspace.
-      * images: contiene las imágenes utilizadas en AEM Forms Workspace.
-      * js:
+    * css: contiene las hojas de estilo de AEM Forms Workspace.
+    * images: contiene las imágenes utilizadas en AEM Forms Workspace.
+    * js:
 
-         * libs: contiene todas las bibliotecas de terceros utilizadas en AEM Forms Workspace.
-         * licenses: contiene las licencias para archivos HTML y JS, y código para prefijar estas licencias en los respectivos archivos de origen.
-         * minifier: se utiliza para la combinación, la minificación y la uglificación del código personalizado JavaScript.
-         * resourcejs_optimizer: se utiliza para la combinación, la minificación y la uglificación del origen JavaScript.
-         * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.
-         * runtime:
+      * libs: contiene todas las bibliotecas de terceros utilizadas en AEM Forms Workspace.
+      * licenses: contiene las licencias para archivos HTML y JS, y código para prefijar estas licencias en los respectivos archivos de origen.
+      * minifier: se utiliza para la combinación, la minificación y la uglificación del código personalizado JavaScript.
+      * resourcejs_optimizer: se utiliza para la combinación, la minificación y la uglificación del origen JavaScript.
+      * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.
+      * runtime:
 
-            * inicializer: contiene el archivo initializer.js, utilizado para inicializar las vistas de Backbone y los modelos utilizados en AEM Forms Workspace.
-            * models: contiene los modelos de Backbone de todos los componentes presentes en AEM Forms Workspace.
-            * routes: contiene los archivos JavaScript y los archivos HTML que cargan páginas Iniciar proceso, Tareas pendientes, Seguimiento y Preferencias en AEM Forms Workspace.
-            * services: contiene el archivo service.js, utilizado en AEM Forms Workspace. Todas las llamadas al servidor se realizan mediante service.js.
-            * templates: contiene todas las plantillas, es decir, los archivos HTML de todas las vistas de AEM Forms Workspace.
-            * util: contiene todos los archivos de utilidad (javascript) que se utilizan en AEM Forms Workspace.
-            * views: contiene las vistas de Backbone de todos los componentes de AEM Forms Workspace.
+        * inicializer: contiene el archivo initializer.js, utilizado para inicializar las vistas de Backbone y los modelos utilizados en AEM Forms Workspace.
+        * models: contiene los modelos de Backbone de todos los componentes presentes en AEM Forms Workspace.
+        * routes: contiene los archivos JavaScript y los archivos HTML que cargan páginas Iniciar proceso, Tareas pendientes, Seguimiento y Preferencias en AEM Forms Workspace.
+        * services: contiene el archivo service.js, utilizado en AEM Forms Workspace. Todas las llamadas al servidor se realizan mediante service.js.
+        * templates: contiene todas las plantillas, es decir, los archivos HTML de todas las vistas de AEM Forms Workspace.
+        * util: contiene todos los archivos de utilidad (javascript) que se utilizan en AEM Forms Workspace.
+        * views: contiene las vistas de Backbone de todos los componentes de AEM Forms Workspace.
 
-         * main.js
-         * router.js
+      * main.js
+      * router.js
 
-      * libs/ws: pdf.html y pluginPing.pdf se utilizan para cargar formularios PDF en AEM Forms Workspace, y WSNextAdapter.swf se utiliza para cargar formularios y guías SWF.
-      * Configuraciones regionales:
+    * libs/ws: pdf.html y pluginPing.pdf se utilizan para cargar formularios PDF en AEM Forms Workspace, y WSNextAdapter.swf se utiliza para cargar formularios y guías SWF.
+    * Configuraciones regionales:
 
-         * de-DE: contiene el archivo translation.json para alemán.
-         * en-US: contiene el archivo translation.json para inglés.
-         * fr-FR: contiene el archivo translation.json para francés.
-         * ja-JP: contiene el archivo translation.json para japonés.
-         * html.jsp: contiene código para detectar la configuración regional actual del explorador.
+      * de-DE: contiene el archivo translation.json para alemán.
+      * en-US: contiene el archivo translation.json para inglés.
+      * fr-FR: contiene el archivo translation.json para francés.
+      * ja-JP: contiene el archivo translation.json para japonés.
+      * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
-      * html.jsp
-      * GET.jsp
+    * html.jsp
+    * GET.jsp
 
 ### Paquete CRX {#crx-package}
 
@@ -256,30 +276,30 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 * images: contiene todas las imágenes.
 * js:
 
-   * libs:
+  * libs:
 
-      * need: contiene required.js.
-      * jqueryui: contiene jquery.ui.datepicker.ja.js.
+    * need: contiene required.js.
+    * jqueryui: contiene jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
+    * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
 
-   * main.js (combinado, minificado y uglificado).
-   * register.js
+  * main.js (combinado, minificado y uglificado).
+  * register.js
 
 * libs:
 
-   * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
+  * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
 
 * Configuración regional: contiene .content.xml.
 * Configuraciones regionales:
 
-   * de-DE: contiene el archivo translation.json para alemán.
-   * en-US: contiene el archivo translation.json para inglés.
-   * fr-FR: contiene el archivo translation.json para francés.
-   * ja-JP: contiene el archivo translation.json para japonés.
-   * html.jsp: contiene código para detectar la configuración regional actual del explorador.
+  * de-DE: contiene el archivo translation.json para alemán.
+  * en-US: contiene el archivo translation.json para inglés.
+  * fr-FR: contiene el archivo translation.json para francés.
+  * ja-JP: contiene el archivo translation.json para japonés.
+  * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
 * Index: contiene .content.xml.
 * profile: contiene offline.jsp.
@@ -301,30 +321,30 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 * images: contiene todas las imágenes.
 * js:
 
-   * libs:
+  * libs:
 
-      * need: contiene required.js.
-      * jqueryui: contiene jquery.ui.datepicker.ja.js.
+    * need: contiene required.js.
+    * jqueryui: contiene jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
+    * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
 
-   * main.js (combinado).
-   * register.js
+  * main.js (combinado).
+  * register.js
 
 * libs:
 
-   * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
+  * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
 
 * Configuración regional: contiene .content.xml.
 * Configuraciones regionales:
 
-   * de-DE: contiene el archivo translation.json para alemán.
-   * en-US: contiene el archivo translation.json para inglés.
-   * fr-FR: contiene el archivo translation.json para francés.
-   * ja-JP: contiene el archivo translation.json para japonés.
-   * html.jsp: contiene código para detectar la configuración regional actual del explorador.
+  * de-DE: contiene el archivo translation.json para alemán.
+  * en-US: contiene el archivo translation.json para inglés.
+  * fr-FR: contiene el archivo translation.json para francés.
+  * ja-JP: contiene el archivo translation.json para japonés.
+  * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
 * Index: contiene .content.xml.
 * profile: contiene offline.jsp.
@@ -345,35 +365,35 @@ mvn clean: instala el paquete Dev en client-pkg.
 * images: contiene todas las imágenes.
 * js:
 
-   * libs: contiene todas las bibliotecas utilizadas en AEM Forms Workspace.
-   * require: contiene required.js.
-   * jqueryui: contiene jquery.ui.datepicker.ja.js.
-   * runtime:
+  * libs: contiene todas las bibliotecas utilizadas en AEM Forms Workspace.
+  * require: contiene required.js.
+  * jqueryui: contiene jquery.ui.datepicker.ja.js.
+  * runtime:
 
-      * inicializer: contiene initializer.js y modelcontrollerpath.js.
-      * models: contiene los modelos de todos los componentes de AEM Forms Workspace.
-      * routes: contiene los archivos JavaScript y los archivos HTML que cargan páginas Iniciar proceso, Tareas pendientes, Seguimiento y Preferencias en AEM Forms Workspace.
-      * services: contiene el archivo service.js, utilizado en AEM Forms Workspace.
-      * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
-      * util: contiene todos los archivos de utilidad (JavaScript) que se utilizan en AEM Forms Workspace.
-      * views: contiene vistas de todos los componentes de AEM Forms Workspace.
+    * inicializer: contiene initializer.js y modelcontrollerpath.js.
+    * models: contiene los modelos de todos los componentes de AEM Forms Workspace.
+    * routes: contiene los archivos JavaScript y los archivos HTML que cargan páginas Iniciar proceso, Tareas pendientes, Seguimiento y Preferencias en AEM Forms Workspace.
+    * services: contiene el archivo service.js, utilizado en AEM Forms Workspace.
+    * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
+    * util: contiene todos los archivos de utilidad (JavaScript) que se utilizan en AEM Forms Workspace.
+    * views: contiene vistas de todos los componentes de AEM Forms Workspace.
 
-   * main.js
-   * register.js
-   * router.js
+  * main.js
+  * register.js
+  * router.js
 
 * libs:
 
-   * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
+  * ws: contiene pluginPing.pdf, pdf.html y WSNextAdapter.swf.
 
 * Configuración regional: contiene .content.xml.
 * Configuraciones regionales:
 
-   * de-DE: contiene el archivo translation.json para alemán.
-   * en-US: contiene el archivo translation.json para inglés.
-   * fr-FR: contiene el archivo translation.json para francés.
-   * ja-JP: contiene el archivo translation.json para japonés.
-   * html.jsp: contiene código para detectar la configuración regional actual del explorador.
+  * de-DE: contiene el archivo translation.json para alemán.
+  * en-US: contiene el archivo translation.json para inglés.
+  * fr-FR: contiene el archivo translation.json para francés.
+  * ja-JP: contiene el archivo translation.json para japonés.
+  * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
 * Index: contiene .content.xml.
 * profile: contiene offline.jsp.

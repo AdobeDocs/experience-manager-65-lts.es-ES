@@ -8,13 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 89%
-
 ---
-
 # Crear o configurar una carpeta vigilada {#create-or-configure-a-watched-folder}
 
 Un administrador puede configurar una carpeta de red, conocida como *carpeta vigilada*, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie una operación preconfigurada y se manipule el archivo. Una vez realizada la operación especificada, la operación guardará el archivo modificado en una carpeta de salida especificada. Para obtener información detallada sobre la administración de una carpeta vigilada, consulte [Ayuda de administración](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
@@ -45,9 +61,9 @@ Realice los siguientes pasos para crear una carpeta vigilada:
    * **Procesar archivos mediante**: tipo de proceso que se va a iniciar. Puede especificar el flujo de trabajo, el script o el servicio.
    * **Nombre del servicio/Ruta de script/Ruta del flujo de trabajo**: el comportamiento del campo se basa en el valor especificado para el campo **Procesar archivos mediante**. Puede especificar los siguientes valores:
 
-      * Para Flujo de trabajo, especifique el modelo del flujo de trabajo que se va a ejecutar. Por ejemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
-      * Para Script, especifique la ruta JCR del script que se va a ejecutar. Por ejemplo, /etc/watchfolder/test/testScript.ecma
-      * En Servicio, especifique el filtro utilizado para localizar un servicio OSGi. El servicio está registrado como una implementación de la interfaz com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad personalizada (foo=bar).
+     * Para Flujo de trabajo, especifique el modelo del flujo de trabajo que se va a ejecutar. Por ejemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+     * Para Script, especifique la ruta JCR del script que se va a ejecutar. Por ejemplo, /etc/watchfolder/test/testScript.ecma
+     * En Servicio, especifique el filtro utilizado para localizar un servicio OSGi. El servicio está registrado como una implementación de la interfaz com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad personalizada (foo=bar).
 
    >[!NOTE]
    >
@@ -66,8 +82,8 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
    * **Filtro de asignador de cargas útiles:** cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se ve. La estructura de carpetas tiene carpetas de fase, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada al flujo de trabajo y aceptar la salida de un flujo de trabajo. También puede enumerar los puntos de error, si los hay. La estructura de una carga útil es diferente de la de una carpeta vigilada. Puede escribir scripts personalizados para asignar la estructura de una carpeta vigilada a la carga útil. Este script se denomina filtro de asignador de cargas útiles. Hay dos implementaciones de asignador de carga útil listas para usar. Si no tiene [una implementación personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilice una predeterminada:
 
-      * **Asignador predeterminado:** utilice el asignador de cargas útiles predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil.
-      * **Asignador de cargas útiles basado en archivos simples:** utilice el asignador de cargas útiles basado en archivos simples para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
+     * **Asignador predeterminado:** utilice el asignador de cargas útiles predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil.
+     * **Asignador de cargas útiles basado en archivos simples:** utilice el asignador de cargas útiles basado en archivos simples para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
 
    * **Modo de ejecución**: especifique la lista separada por comas de modos de ejecución permitidos para ejecutar el flujo de trabajo.
    * **Tiempo de espera agotado: archivos clasificados después**: especifique el número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se haya seleccionado para el procesamiento se trate como si se hubiera agotado el tiempo de espera y se marque como un error. El mecanismo de tiempo de espera solo se activa cuando el valor de esta propiedad es un número positivo.
@@ -82,22 +98,22 @@ Realice los siguientes pasos para crear una carpeta vigilada:
    * **Eliminar resultados anteriores a:** especifique el tiempo, en número de días, a esperar antes de eliminar los archivos y carpetas anteriores al valor especificado. Esta configuración es útil para garantizar que la carpeta de resultados no se llene. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
    * **Nombre de la carpeta de resultados:** especifique el nombre de la carpeta para almacenar los resultados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Puede utilizar una ruta absoluta o relativa con los siguientes patrones de archivo:
 
-      * %F = prefijo del nombre de archivo
-      * %E = extensión del nombre de archivo
-      * %Y = año (completo)
-      * %y = año (dos últimos dígitos)
-      * %M = mes
-      * %D = día del mes
-      * %d = día del año
-      * %H = hora (reloj de 24 horas)
-      * %h = hora (reloj de 12 horas)
-      * %m = minuto
-      * %s = segundo
-      * %l = milisegundo
-      * %R = número aleatorio (entre 0 y 9)
-      * %P = ID del proceso o trabajo
-      * Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20.
-      * Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta de resultados dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+     * %F = prefijo del nombre de archivo
+     * %E = extensión del nombre de archivo
+     * %Y = año (completo)
+     * %y = año (dos últimos dígitos)
+     * %M = mes
+     * %D = día del mes
+     * %d = día del año
+     * %H = hora (reloj de 24 horas)
+     * %h = hora (reloj de 12 horas)
+     * %m = minuto
+     * %s = segundo
+     * %l = milisegundo
+     * %R = número aleatorio (entre 0 y 9)
+     * %P = ID del proceso o trabajo
+     * Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20.
+     * Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta de resultados dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
    * **Nombre de la carpeta de errores:** especifique la carpeta en la que se guardan los archivos con errores. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados.
    * **Conservar nombre de carpeta:** especifique la carpeta en la que se almacenan los archivos después de realizar el análisis y la recogida correctamente. La ruta puede ser un directorio absoluto, relativo o nulo. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.

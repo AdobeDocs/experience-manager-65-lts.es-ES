@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2498'
 ht-degree: 62%
-
 ---
-
 # Crear y organizar páginas {#creating-and-organizing-pages}
 
 En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para poder [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
@@ -85,13 +98,13 @@ Al crear una página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
-   * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar.
-   * Este campo es obligatorio.
+  * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar.
+  * Este campo es obligatorio.
 
 * **[Nombre](#name)**:
 
-   * Se usa para generar la URI.
-   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
+  * Se usa para generar la URI.
+  * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
 
 #### Restricciones de nombres de páginas y prácticas recomendadas {#page-name-restrictions-and-best-practices}
 
@@ -211,14 +224,14 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    * **Título**:
 
-      * Se muestra al usuario y es obligatorio.
+     * Se muestra al usuario y es obligatorio.
 
    * **Nombre**:
 
-      * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+     * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
+     * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+     * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!NOTE]
    >
@@ -344,8 +357,8 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    * Utilice la [vista de columna](/help/sites-authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
 
-      * Seleccione el destino haciendo clic en la miniatura de destino.
-      * Haga clic en **Siguiente** para continuar.
+     * Seleccione el destino haciendo clic en la miniatura de destino.
+     * Haga clic en **Siguiente** para continuar.
 
    * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
 
@@ -385,8 +398,8 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 Las acciones de movimiento de página siempre se procesan asincrónicamente, lo que permite al usuario continuar la creación en la IU sin impedimentos.
 
 * El usuario debe definir cuándo se debe realizar la operación asincrónica
-   * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
-   * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
+  * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
+  * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
 
   ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
 
@@ -412,8 +425,8 @@ El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los t
    * **Cancelar** para anular la acción
    * **Eliminar** para confirmar la acción:
 
-      * Si la página no tiene referencias, se eliminará la página.
-      * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+     * Si la página no tiene referencias, se eliminará la página.
+     * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >

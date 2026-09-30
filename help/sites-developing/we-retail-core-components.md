@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 62b6d299-f44e-4af3-b5e1-b0e92ca0598a
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 5%
-
+source-wordcount: '604'
+ht-degree: 7%
 ---
-
 # Pruebe los componentes principales de We.Retail{#trying-out-core-components-in-we-retail}
 
 Los componentes principales son componentes modernos y flexibles que ofrecen una extensibilidad sencilla y permiten una integración sencilla en sus proyectos. Los componentes principales se han creado en torno a varios principios de diseño principales, como HTL, facilidad de uso predeterminada, configurabilidad, versiones y extensibilidad. El sitio `We.Retail` se ha creado en componentes principales.
@@ -84,7 +93,7 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-## Consulte también {#further-information}
+## Ver también {#further-information}
 
 Para obtener más información sobre los componentes principales, consulte la guía de creación de [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) para obtener una descripción general de las funcionalidades. Consulte la guía [Desarrollo de componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/overview) para obtener información general técnica.
 

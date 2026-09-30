@@ -8,13 +8,27 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: e0d8c871-755b-4042-bb9e-9b9a2648e9fe
+    internal-label: Accessibility
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # Accesibilidad en [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] admite tecnologías de control de teclado y asistencia, como lectores de pantalla JAWS y NVDA, en la interfaz de usuario de creación.
@@ -33,10 +47,10 @@ La inversión del enfoque sigue la ubicación natural del elemento de la interfa
 * En el editor de puntos interactivos, puede utilizar algunas pulsaciones de teclas personalizadas, como las teclas de flecha, para interactuar con elementos complejos de la interfaz de usuario y cambiar la posición de los puntos interactivos.
 * En el editor de vídeo interactivo, puede utilizar `Spacebar` para seleccionar una imagen y agregarla a un segmento. Además, puede usar la clave `Backspace` para eliminar el elemento seleccionado de la ficha **[!UICONTROL Contenido]**. Además, si presiona `Tab`, funcionará como desee para desplazarse entre los elementos interactivos de la página.
 * En el editor de recorte inteligente/recorte inteligente de imágenes, puede hacer lo siguiente:
-   * Utilice las teclas de flecha para recortar el tamaño del marco, cambiar la posición de la imagen o ambas cosas.
-   * La primera `Tab` detención resalta todo el marco de imagen. A continuación, puede utilizar las teclas de flecha del teclado para cambiar la posición del marco.
-   * Las siguientes cuatro `Tab` paradas son las cuatro esquinas del fotograma. Cuando el enfoque se coloca en una esquina del marco, la esquina se resalta. De nuevo, puede utilizar las teclas de flecha del teclado para mover la esquina enfocada.
-Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+  * Utilice las teclas de flecha para recortar el tamaño del marco, cambiar la posición de la imagen o ambas cosas.
+  * La primera `Tab` detención resalta todo el marco de imagen. A continuación, puede utilizar las teclas de flecha del teclado para cambiar la posición del marco.
+  * Las siguientes cuatro `Tab` paradas son las cuatro esquinas del fotograma. Cuando el enfoque se coloca en una esquina del marco, la esquina se resalta. De nuevo, puede utilizar las teclas de flecha del teclado para mover la esquina enfocada.
+    Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 

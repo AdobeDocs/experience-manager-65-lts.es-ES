@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 2%
-
 ---
-
 # Personalización de la creación de páginas{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,12 +37,12 @@ Adobe Experience Manager (AEM) proporciona varios mecanismos para permitirle per
 
   Clientlibs le permite ampliar la implementación predeterminada para obtener nuevas funcionalidades, mientras reutiliza las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.`. La nueva clientlib debe:
 
-   * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
-   * formar parte de la categoría `cq.authoring.editor.sites.page.hook` apropiada
+  * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
+  * formar parte de la categoría `cq.authoring.editor.sites.page.hook` apropiada
 
 * Superposiciones
 
-  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
+  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no es necesaria una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
 
 >[!NOTE]
 >
@@ -151,12 +160,12 @@ En una instalación estándar de AEM:
 
      por ejemplo:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * propiedad: `editorType`
+       * propiedad: `editorType`
 
-           Define el tipo de editor en línea que se utiliza cuando se activa la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
+         Define el tipo de editor en línea que se utiliza cuando se activa la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
 
 1. Se pueden configurar detalles de configuración adicionales del editor mediante un nodo `config` que contenga configuraciones y un nodo `plugin` que contenga los detalles de configuración del complemento necesarios.
 

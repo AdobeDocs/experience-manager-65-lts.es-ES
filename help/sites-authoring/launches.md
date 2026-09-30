@@ -10,13 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 69%
-
+source-wordcount: '908'
+ht-degree: 68%
 ---
-
 # Lanzamientos{#launches}
 
 Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura.
@@ -30,7 +48,7 @@ Por ejemplo, las páginas de producto de temporada de su tienda en línea se act
 * Cambios en las páginas de origen que se producen como resultado de tareas normales de mantenimiento. Estos cambios se duplican automáticamente en las páginas de lanzamiento.
 * Ediciones que se realizan en las páginas de lanzamiento directamente en preparación para el trimestre siguiente.
 
-Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado. 
+Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado.
 
 También se puede realizar lo siguiente:
 
@@ -51,45 +69,45 @@ Los lanzamientos le permiten:
 
 * Cree una copia de las páginas de origen:
 
-   * La copia es su lanzamiento.
-   * Las páginas de origen de nivel superior se denominan **Producción**.
+  * La copia es su lanzamiento.
+  * Las páginas de origen de nivel superior se denominan **Producción**.
 
-      * Las páginas de origen puedan obtenerse de varias ramas (separadas).
+    * Las páginas de origen puedan obtenerse de varias ramas (separadas).
 
   ![Información general sobre las acciones de inicio](assets/chlimage_1-111.png)
 
 * Edite la configuración de lanzamiento:
 
-   * Adición o eliminación de páginas o ramas en el lanzamiento.
-   * Editar propiedades de lanzamiento; como **Título**, **Fecha de lanzamiento** e indicador **Listo para la producción**.
+  * Adición o eliminación de páginas o ramas en el lanzamiento.
+  * Editar propiedades de lanzamiento; como **Título**, **Fecha de lanzamiento** e indicador **Listo para la producción**.
 
 * Es posible promocionar y publicar el contenido de forma manual o automática:
 
-   * Manualmente:
+  * Manualmente:
 
-      * Promocione de nuevo el contenido del lanzamiento en el **Destino** (páginas de origen) cuando esté listo para su publicación.
-      * Publique el contenido de las páginas de origen (tras volver a promocionarlo).
-      * Promocione todas las páginas o solo las páginas modificadas.
+    * Promocione de nuevo el contenido del lanzamiento en el **Destino** (páginas de origen) cuando esté listo para su publicación.
+    * Publique el contenido de las páginas de origen (tras volver a promocionarlo).
+    * Promocione todas las páginas o solo las páginas modificadas.
 
-   * Automáticamente. Esto implica lo siguiente:
+  * Automáticamente. Esto implica lo siguiente:
 
-      * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
+    * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento.
 
-      * El indicador **Producción lista**: esto solo se puede establecer al editar un lanzamiento.
-      * Si se establece el indicador **Listo para la producción**, el lanzamiento se promocionará automáticamente a las páginas de producción en el **Lanzamiento**(**Activo**) **fecha** especificado. Después de la promoción, las páginas de producción se publican automáticamente.\
-        Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
+    * El indicador **Producción lista**: esto solo se puede establecer al editar un lanzamiento.
+    * Si se establece el indicador **Listo para la producción**, el lanzamiento se promocionará automáticamente a las páginas de producción en el **Lanzamiento**(**Activo**) **fecha** especificado. Después de la promoción, las páginas de producción se publican automáticamente.\
+      Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 
 * Actualice las páginas de origen y de lanzamiento en paralelo:
 
-   * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
-   * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
+  * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy).
+  * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen.
 
   ![Información general sobre actualizaciones](assets/chlimage_1-112.png)
 
 * [Crear un lanzamiento anidado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch): un lanzamiento dentro de un lanzamiento:
 
-   * El origen es un lanzamiento existente.
-   * Puede [promocionar un lanzamiento anidado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a cualquier destino; puede ser un lanzamiento principal o las páginas de origen de nivel superior (producción).
+  * El origen es un lanzamiento existente.
+  * Puede [promocionar un lanzamiento anidado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a cualquier destino; puede ser un lanzamiento principal o las páginas de origen de nivel superior (producción).
 
   ![Información general sobre el lanzamiento anidado](assets/chlimage_1-113.png)
 
@@ -101,7 +119,7 @@ Los lanzamientos le permiten:
 >
 >La creación y edición de lanzamientos requieren derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
->Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
+>Si experimenta algún problema, póngase en contacto con el administrador del sistema.
 
 >[!CAUTION]
 >
@@ -111,7 +129,7 @@ Los lanzamientos le permiten:
 
 ## La consola Lanzamientos {#the-launches-console}
 
-La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite realizar acciones con los enumerados. Se puede acceder a la consola desde: 
+La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite realizar acciones con los enumerados. Se puede acceder a la consola desde:
 
 * La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
 

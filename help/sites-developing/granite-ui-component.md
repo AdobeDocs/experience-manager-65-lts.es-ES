@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 2%
-
 ---
-
 # Creación de un nuevo componente de campo de IU de Granite{#creating-a-new-granite-ui-field-component}
 
 La interfaz de usuario de Granite proporciona una serie de componentes diseñados para utilizarse en formularios; estos se denominan *campos* en el vocabulario de la interfaz de usuario de Granite. Los componentes de formulario estándar de Granite están disponibles en:
@@ -34,16 +43,16 @@ Utilice el marco de trabajo Granite UI Foundation para desarrollar o ampliar com
 
 * del lado del servidor:
 
-   * una colección de componentes de base
+  * una colección de componentes de base
 
-      * base: modular, componible, capas, reutilizable
-      * componentes: componentes de Sling
+    * base: modular, componible, capas, reutilizable
+    * componentes: componentes de Sling
 
-   * ayudantes para el desarrollo de aplicaciones
+  * ayudantes para el desarrollo de aplicaciones
 
 * lado del cliente:
 
-   * una colección de clientlibs que proporciona cierto vocabulario (es decir, extensión del lenguaje HTML) para lograr patrones de interacción genéricos a través de una interfaz de usuario impulsada por hipermedia.
+  * una colección de clientlibs que proporciona cierto vocabulario (es decir, extensión del lenguaje HTML) para lograr patrones de interacción genéricos a través de una interfaz de usuario impulsada por hipermedia.
 
 El componente genérico de Granite UI `field` está compuesto por dos archivos de interés:
 
@@ -56,7 +65,7 @@ Para ver ejemplos, consulte:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * proporcionado por [Ejemplo de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

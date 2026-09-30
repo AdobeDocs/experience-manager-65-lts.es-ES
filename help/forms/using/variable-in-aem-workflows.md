@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2127'
-ht-degree: 89%
-
+source-wordcount: '2210'
+ht-degree: 90%
 ---
-
 # Variables en flujos de trabajo de AEM Forms{#variables-in-aem-forms-workflows}
 
 ## Se aplica a {#applies-to}
@@ -266,8 +280,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Almacenar datos confidenciales de usuarios fuera de JCR mediante variables de flujo de trabajo {#jcr-independent-persistance}
 
-Los datos procesados con Forms Workflow pueden contener datos confidenciales del usuario, como información de identificación personal e información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] proporciona la API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables de flujo de trabajo en almacenes de blob de Azure externos. Para obtener más información sobre el uso de la API, consulte [Uso de variables de flujo de trabajo para parametrizar datos confidenciales y almacenarlos en almacenes de datos externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Los datos procesados con Forms Workflow pueden contener datos confidenciales del usuario, como información de identificación personal e información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Usar variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] proporciona la API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables de flujo de trabajo en almacenes de Azure Blob externos. Para obtener más información sobre el uso de la API, consulte [Usar variables de flujo de trabajo para parametrizar datos confidenciales y almacenarlos en almacenes de datos externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Editar una variable {#edit-a-variable}
 

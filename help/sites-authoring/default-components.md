@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 21%
-
+source-wordcount: '399'
+ht-degree: 26%
 ---
-
 # Componentes{#components}
 
 Adobe Experience Manager (AEM) incorpora varios componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Los agrupan por un área funcional principal denominada grupo de componentes para ayudar en el filtrado.
@@ -35,7 +48,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo agregar componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
 * **WeRetail**: incluye los componentes principales procesados como proxy para usarlos con la [implementación de referencia de WeRetail](/help/sites-developing/we-retail.md).

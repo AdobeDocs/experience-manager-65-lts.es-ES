@@ -10,13 +10,21 @@ thumbnail: 3456-style-cif.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
-source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 19%
-
 ---
-
 # Diseño de los componentes principales del CIF de AEM {#style-aem-cif-core-components}
 
 El [Proyecto Venia de CIF](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para usar [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components). En este tutorial, inspeccionará el proyecto de referencia de Venia y comprenderá cómo se organizan los componentes principales de AEM CIF y CSS y JavaScript. También creará un estilo con CSS para actualizar el estilo predeterminado del componente **teaser de productos**.

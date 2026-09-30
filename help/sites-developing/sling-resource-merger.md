@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1261'
 ht-degree: 1%
-
 ---
-
 # Uso de la fusión de recursos de Sling en AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Función {#purpose}
@@ -76,7 +85,7 @@ La combinación de recursos proporciona las siguientes propiedades:
 
   El comodín `*` oculta todo.
 
-* `sling:hideResource` (`Boolean`)
+* `sling:hideResource` ( `Boolean`)
 
   Indica si los recursos están completamente ocultos, incluidos sus elementos secundarios.
 
@@ -86,7 +95,7 @@ La combinación de recursos proporciona las siguientes propiedades:
 
   El comodín `*` oculta todo.
 
-* `sling:orderBefore` (`String`)
+* `sling:orderBefore` ( `String`)
 
   Contiene el nombre del nodo del mismo nivel en el que el nodo actual se coloca delante de.
 
@@ -98,25 +107,25 @@ Para crear una superposición o invalidación, debe volver a crear el nodo origi
 
 * Superposición
 
-   * La definición de la entrada de navegación para la consola Sitios, como se muestra en el carril, se define en:
+  * La definición de la entrada de navegación para la consola Sitios, como se muestra en el carril, se define en:
 
-     `/libs/cq/core/content/nav/sites/jcr:title`
+    `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Para superponer, cree el siguiente nodo:
+  * Para superponer, cree el siguiente nodo:
 
-     `/apps/cq/core/content/nav/sites`
+    `/apps/cq/core/content/nav/sites`
 
-     A continuación, actualice la propiedad `jcr:title` según sea necesario.
+    A continuación, actualice la propiedad `jcr:title` según sea necesario.
 
 * Omitir
 
-   * La definición del cuadro de diálogo táctil para la consola Textos se define de la siguiente manera:
+  * La definición del cuadro de diálogo táctil para la consola Textos se define de la siguiente manera:
 
-     `/libs/foundation/components/text/cq:dialog`
+    `/libs/foundation/components/text/cq:dialog`
 
-   * Para anular la, cree el siguiente nodo. Por ejemplo:
+  * Para anular la, cree el siguiente nodo. Por ejemplo:
 
-     `/apps/the-project/components/text/cq:dialog`
+    `/apps/the-project/components/text/cq:dialog`
 
 Para crear cualquiera de ellas, sólo es necesario volver a crear la estructura del esqueleto. Para simplificar la recreación de la estructura, todos los nodos intermedios pueden ser del tipo `nt:unstructured` (no tienen que reflejar el tipo de nodo original). Por ejemplo, en `/libs`.
 
@@ -143,20 +152,20 @@ Con la funcionalidad estándar, estos casos de uso le permiten hacer lo siguient
 
   La propiedad no existe en la definición de `/libs`, pero es necesaria en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Crear la nueva propiedad en este nodo &quot;
+  1. Crear el nodo correspondiente en `/apps`
+  1. Crear la nueva propiedad en este nodo &quot;
 
 * **Redefinir una propiedad (no propiedades creadas automáticamente)**
 
   La propiedad está definida en `/libs`, pero se requiere un nuevo valor en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Crear la propiedad coincidente en este nodo (en `apps`)
+  1. Crear el nodo correspondiente en `/apps`
+  1. Crear la propiedad coincidente en este nodo (en `apps`)
 
-      * La propiedad tiene una prioridad basada en la configuración de Sling Resource Resolver.
-      * Se admite el cambio del tipo de propiedad.
+     * La propiedad tiene una prioridad basada en la configuración de Sling Resource Resolver.
+     * Se admite el cambio del tipo de propiedad.
 
-        Si utiliza un tipo de propiedad distinto del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
+       Si utiliza un tipo de propiedad distinto del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
 
   >[!NOTE]
   >
@@ -166,68 +175,68 @@ Con la funcionalidad estándar, estos casos de uso le permiten hacer lo siguient
 
   De manera predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetas a una superposición/invalidación para garantizar que se respete el tipo de nodo que se encuentra actualmente en `/libs`. Para imponer una superposición/invalidación, debe volver a crear el nodo en `/apps`, ocultar explícitamente la propiedad y redefinirla:
 
-   1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType` deseado
-   1. Cree la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
+  1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType` deseado
+  1. Cree la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
 
-      Esta propiedad, definida en `/apps`, tiene ahora prioridad sobre la definida en `/libs`
+     Esta propiedad, definida en `/apps`, tiene ahora prioridad sobre la definida en `/libs`
 
 * **Redefinir un nodo y sus elementos secundarios**
 
   El nodo y sus elementos secundarios se definen en `/libs`, pero se requiere una nueva configuración en la superposición/invalidación de `/apps`.
 
-   1. Combine las acciones de:
+  1. Combine las acciones de:
 
-      1. Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)
-      1. Redefinir la propiedad o las propiedades
+     1. Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)
+     1. Redefinir la propiedad o las propiedades
 
 * **Ocultar una propiedad**
 
   La propiedad está definida en `/libs`, pero no es necesaria en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Crear una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Se utiliza para especificar las propiedades que se deben ocultar/ignorar. También se pueden utilizar caracteres comodín. Por ejemplo:
+  1. Crear el nodo correspondiente en `/apps`
+  1. Crear una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Se utiliza para especificar las propiedades que se deben ocultar/ignorar. También se pueden utilizar caracteres comodín. Por ejemplo:
 
-      * `*`
-      * `["*"]`
-      * `jcr:title`
-      * `["jcr:title", "jcr:description"]`
+     * `*`
+     * `["*"]`
+     * `jcr:title`
+     * `["jcr:title", "jcr:description"]`
 
 * **Ocultar un nodo y sus elementos secundarios**
 
   El nodo y sus elementos secundarios se definen en `/libs`, pero no son necesarios en la superposición/invalidación de `/apps`.
 
-   1. Cree el nodo correspondiente en `/apps`
-   1. Crear una propiedad `sling:hideResource`
+  1. Cree el nodo correspondiente en `/apps`
+  1. Crear una propiedad `sling:hideResource`
 
-      * tipo: `Boolean`
-      * valor: `true`
+     * tipo: `Boolean`
+     * valor: `true`
 
 * **Ocultar elementos secundarios de un nodo (conservando las propiedades del nodo)**
 
   El nodo, sus propiedades y sus elementos secundarios se definen en `/libs`. El nodo y sus propiedades son necesarios en la superposición/anulación de `/apps`, pero algunos o todos los nodos secundarios no son necesarios en la superposición/anulación de `/apps`.
 
-   1. Cree el nodo correspondiente en `/apps`
-   1. Crear la propiedad `sling:hideChildren`:
+  1. Cree el nodo correspondiente en `/apps`
+  1. Crear la propiedad `sling:hideChildren`:
 
-      * tipo: `String[]`
-      * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
+     * tipo: `String[]`
+     * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
 
-      El comodín &ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
+     El carácter comodín &ast; se puede utilizar para ocultar o omitir todos los nodos secundarios.
 
 * **Reordenar nodos**
 
   El nodo y sus hermanos se definen en `/libs`. Para cambiar el orden, vuelva a crear el nodo en la superposición o invalidación `/apps`. Defina su nueva posición haciendo referencia al nodo del mismo nivel apropiado en `/libs`.
 
 
-   * Usar la propiedad `sling:orderBefore`:
+  * Usar la propiedad `sling:orderBefore`:
 
-      1. Cree el nodo correspondiente en `/apps`
-      1. Crear la propiedad `sling:orderBefore`:
+    1. Cree el nodo correspondiente en `/apps`
+    1. Crear la propiedad `sling:orderBefore`:
 
-         Especifica el nodo (como en `/libs`) antes del cual se coloca el nodo actual:
+       Especifica el nodo (como en `/libs`) antes del cual se coloca el nodo actual:
 
-         * tipo: `String`
-         * valor: `<before-SiblingName>`
+       * tipo: `String`
+       * valor: `<before-SiblingName>`
 
 ### Invocar la fusión de recursos de Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -241,21 +250,21 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
 * Superposición:
 
-   * objetivo: combinar recursos en función de su ruta de búsqueda
-   * punto de montaje: `/mnt/overlay`
-   * uso: `mount point + relative path`
-   * ejemplo:
+  * objetivo: combinar recursos en función de su ruta de búsqueda
+  * punto de montaje: `/mnt/overlay`
+  * uso: `mount point + relative path`
+  * ejemplo:
 
-      * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
+    * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * Anular:
 
-   * objetivo: combinar recursos en función de su supertipo
-   * punto de montaje: `/mnt/overide`
-   * uso: `mount point + absolute path`
-   * ejemplo:
+  * objetivo: combinar recursos en función de su supertipo
+  * punto de montaje: `/mnt/overide`
+  * uso: `mount point + absolute path`
+  * ejemplo:
 
-      * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
+    * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
 ### Ejemplo de uso {#example-of-usage}
 
@@ -263,9 +272,9 @@ Se tratan algunos ejemplos:
 
 * Superposición:
 
-   * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
-   * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
+  * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
+  * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * Anular:
 
-   * [Configuración de las propiedades de página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
+  * [Configuración de las propiedades de página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

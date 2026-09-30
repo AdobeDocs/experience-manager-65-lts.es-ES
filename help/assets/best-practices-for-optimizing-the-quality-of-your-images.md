@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 4%
-
 ---
-
 # Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 La optimización de la calidad de la imagen puede ser un proceso laborioso, ya que muchos factores contribuyen a obtener resultados aceptables. El resultado es en parte subjetivo porque los individuos perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
@@ -26,7 +37,7 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
 * Si no se proporciona ningún comando de formato en la dirección URL, la entrega de imágenes de Dynamic Media toma el valor predeterminado de JPG para la entrega.
-* JPG comprime a una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. Las compresiones PNG tienen una relación de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son más grandes que los archivos JPG.
+* JPG comprime en una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son más grandes que los archivos JPG.
 * JPG utiliza la compresión con pérdidas, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
 * JPG suele comprimir las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
 * Si las imágenes contienen transparencias, utilice PNG porque JPG no las admite.
@@ -60,24 +71,24 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 * Enfoque simple (`&op_sharpen`): al igual que el filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen tras el cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Se recomienda no utilizar &amp;op_sharpen a menos que sea necesario.
 * Máscara de enfoque (`&op_USM`): la máscara de enfoque es un filtro de enfoque estándar del sector. La práctica recomendada es enfocar las imágenes con máscara de enfoque siguiendo las directrices que se indican a continuación. El enmascaramiento de enfoque permite controlar los tres parámetros siguientes:
 
-   * `&op_sharpen=amount,radius,threshold`
+  * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto).
-      * **[!UICONTROL *radio *]**(0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles.)
+    * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto).
+    * **[!UICONTROL *radio *]**(0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles.)
 
-     Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
+    Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
 
-      * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto.)
+    * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto.)
 
-            Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
-        
-        Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
+          Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
+      
+      Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
 
-        Tema de ayuda de Experience Manager sobre el enfoque de una imagen.
+      Tema de ayuda de Experience Manager sobre el enfoque de una imagen.
 
-        Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+      Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
+    * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
 Se recomienda comenzar con el parámetro radio de la máscara de enfoque. Los ajustes de radio con los que puede empezar son los siguientes:
 
@@ -98,8 +109,8 @@ Deje el parámetro monocromo en 0.
 * Como práctica recomendada, para permanecer en el medio, establezca `qlt= value` en 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
 
-   * El parámetro `qlt=` tiene una segunda configuración que le permite activar la disminución de resolución de cromaticidad de RGB con el valor `,1` o desactivar con el valor `,0`.
-   * Para que sea sencillo, comience con la disminución de resolución de cromaticidad de RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
+  * El parámetro `qlt=` tiene una segunda configuración que le permite activar la disminución de resolución de cromaticidad de RGB con el valor `,1` o desactivar con el valor `,0`.
+  * Para que sea sencillo, comience con la disminución de resolución de cromaticidad de RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
 
 Como práctica recomendada para la compresión de JPG, use `&qlt=85,0`.
 
@@ -126,6 +137,6 @@ Si los resultados de enfoque siguen sin ser satisfactorios, aumente el radio en 
 
 A medida que experimenta, las siguientes sugerencias generales pueden resultar útiles para optimizar aún más el flujo de trabajo:
 
-* Try out and test different parameters in real time, directly on a URL.
-* As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path calls these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
-* Experience Manager also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. For advanced use cases where there are options to tune and optimize rendering results, [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html) can help you with customized insight and best practices.
+* Pruebe diferentes parámetros en tiempo real directamente en una dirección URL.
+* Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque al ingerir. Para casos de uso avanzados en los que hay opciones para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html) puede ayudarte con prácticas recomendadas y insight personalizadas.

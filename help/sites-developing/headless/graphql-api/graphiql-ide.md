@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 84%
-
 ---
-
 # Uso del IDE de GraphiQL {#graphiql-ide}
 
 Hay una implementación del IDE estándar de [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) disponible para usar con la API de GraphQL de Adobe Experience Manager (AEM).

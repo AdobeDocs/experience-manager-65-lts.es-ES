@@ -5,7 +5,17 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
-source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 1%

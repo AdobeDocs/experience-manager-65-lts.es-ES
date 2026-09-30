@@ -1,19 +1,35 @@
 ---
 title: Informes sobre el uso y uso compartido de recursos
-description: Informes sobre sus recursos en  [!DNL Adobe Experience Manager Assets] que le ayudarán a comprender el uso, la actividad y el uso compartido de sus recursos digitales.
+description: Informes sobre sus recursos en [!DNL Adobe Experience Manager Assets] que le ayudarán a comprender el uso, la actividad y el uso compartido de sus recursos digitales.
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 8%
-
 ---
-
 # Informes de recurso {#asset-reports}
 
 | Versión | Vínculo del artículo |

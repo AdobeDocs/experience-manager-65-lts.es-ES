@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 5e0e7d8e-4da2-4304-ac21-7500ca2ba9c6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 32%
-
+source-wordcount: '636'
+ht-degree: 24%
 ---
-
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
 La adición de contenido a las páginas del sitio web suele estar sujeta a discusiones antes de que se publique. Para ayudarle, muchos componentes directamente relacionados con el contenido (a diferencia, por ejemplo, del diseño) le permiten añadir una anotación.
@@ -103,13 +116,13 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    * Haga clic en el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
 
-      * Los bocetos no se pueden eliminar independientemente de la anotación.
+     * Los bocetos no se pueden eliminar independientemente de la anotación.
 
    * Cambiar la posición del marcador de texto.
    * Haga clic en una línea de un boceto para seleccionarlo y arrastrarlo a la posición deseada.
    * Mover o copiar un componente
 
-      * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán y su posición en relación con el párrafo seguirá siendo la misma.
+     * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán y su posición en relación con el párrafo seguirá siendo la misma.
 
 1. Para salir del modo de anotación y volver al anterior, haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
@@ -119,6 +132,6 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
 ### Indicador de anotaciones {#annotation-indicator}
 
-Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
+Las anotaciones no aparecen en el modo de edición, pero el distintivo de la parte superior derecha de la barra de herramientas muestra el número de anotaciones de la página actual. El distintivo sustituye al icono Anotaciones predeterminado, pero sigue funcionando como vínculo rápido que conmuta entre el modo Anotar y el modo Anotar:
 
 ![Indicador de anotaciones](assets/chlimage_1-242.png)

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5032'
 ht-degree: 4%
-
 ---
-
 # Crear un sitio web con todas las funciones (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +149,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   El valor de la propiedad path permitida es una expresión regular *.* Las páginas que tienen una ruta de acceso que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas las subpáginas.
+   El valor de la propiedad de ruta de acceso permitida es una *expresión regular.* Las páginas que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas las subpáginas.
 
    Cuando un autor crea una página debajo de /content, la plantilla **contentpage** aparece en una lista de plantillas disponibles para usar.
 
@@ -329,7 +338,7 @@ En esta sección se crean varios scripts que generan una parte del cuerpo de la 
 
 1. En CRXDE Lite, cree el archivo `left.jsp` en `/apps/mywebsite/components/contentpage`:
 
-   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear &#x200B;** luego **Crear archivo**.
+   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear** luego **Crear archivo**.
 
    1. En la ventana, escriba `left.jsp` como **Nombre** y haga clic en **Aceptar**.
 
@@ -795,7 +804,7 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
 1. Agregue propiedades al nodo listroot para configurarlo como un campo de texto. Cada fila de la siguiente tabla representa una propiedad. Cuando termine, haga clic en Guardar todo.
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | fieldLabel | Cadena | Ruta de raíz de lista |
    | name | Cadena | ./listroot |
@@ -924,7 +933,7 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
 1. Haga clic con el botón derecho en el nodo tab1 de la rama design_dialog y haga clic en Eliminar. Haga clic en Guardar todo.
 1. En el nodo `design_dialog/items/items`, cree un nodo denominado `img` de tipo `cq:Widget`. Agregue las siguientes propiedades y haga clic en Guardar todo:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | fileNameParameter | Cadena | ./imageName |
    | fileReferenceParameter | Cadena | ./imageReference |
@@ -938,7 +947,7 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
 
 Cree la secuencia de comandos que recupera la imagen del logotipo y la escribe en la página.
 
-1. Haga clic con el botón derecho en el nodo del componente logotipo y haga clic en Crear > Crear archivo para crear el archivo de script denominado img.GET.java.
+1. Haga clic con el botón derecho en el nodo del componente Logotipo y haga clic en Crear > Crear archivo para crear el archivo de script llamado img.GET.java.
 1. Abra el archivo, copie el siguiente código en el archivo y, a continuación, haga clic en Guardar todo:
 
 ```java
@@ -1195,7 +1204,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 
 1. En CRXDE, establezca las propiedades como se indica a continuación:
 
-| Nombre | Tipo | Valor  |
+| Nombre | Tipo | Valor |
 |---|---|---|
 | aceptar | Cadena | image/(gif\|jpeg\|png) |
 | grupos | Cadena | medios |

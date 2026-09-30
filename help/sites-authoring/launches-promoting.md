@@ -11,13 +11,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
 exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 76%
-
 ---
-
 # Promoción de lanzamientos{#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles al promocionar una página de lanzamiento:
@@ -55,29 +73,29 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
 
    * la consola **Sitios**:
 
-      1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
+     1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
 
-      1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
-      1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
-      1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
+     1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
+     1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
+     1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 
    * la consola **Lanzamientos**:
 
-      1. Seleccione el lanzamiento (haga clic en la miniatura).
-      1. Seleccione **Promocionar**.
+     1. Seleccione el lanzamiento (haga clic en la miniatura).
+     1. Seleccione **Promocionar**.
 
 1. En el primer paso puede especificar:
 
    * **Destino**
 
-      * **Eliminar lanzamiento después de la promoción**
+     * **Eliminar lanzamiento después de la promoción**
 
    * **Ámbito**
 
-      * **Promocionar lanzamiento completo**
-      * **Promocionar las páginas modificadas**
-      * **Promocionar página actual**
-      * **Promocionar la página actual y sus páginas secundarias**
+     * **Promocionar lanzamiento completo**
+     * **Promocionar las páginas modificadas**
+     * **Promocionar página actual**
+     * **Promocionar la página actual y sus páginas secundarias**
 
    Por ejemplo, al seleccionar para promocionar solo las páginas modificadas:
 
@@ -117,19 +135,19 @@ Después de crear un lanzamiento anidado, puede promocionarlo de nuevo a cualqui
 
    * **Destino**
 
-      * **Destino de la promoción**
-Puede promocionar a cualquiera de los orígenes.
+     * **Destino de la promoción**
+       Puede promocionar a cualquiera de los orígenes.
 
-      * **Eliminar lanzamiento después de la promoción**
-Después de la promoción, se eliminarán el lanzamiento seleccionado y los lanzamientos anidados en él.
+     * **Eliminar lanzamiento después de la promoción**
+       Después de la promoción, se eliminarán el lanzamiento seleccionado y los lanzamientos anidados en él.
 
    * **Ámbito**
-Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
+     Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
 
-      * **Promocionar lanzamiento completo**
-      * **Promocionar las páginas modificadas**
-      * **Promocionar página actual**
-      * **Promocionar la página actual y sus páginas secundarias**
+     * **Promocionar lanzamiento completo**
+     * **Promocionar las páginas modificadas**
+     * **Promocionar página actual**
+     * **Promocionar la página actual y sus páginas secundarias**
 
    ![Configuración para promocionar un lanzamiento](assets/chlimage_1-105.png)
 

@@ -9,13 +9,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1295'
 ht-degree: 1%
-
 ---
-
 # Creación de formularios de Adobe Campaign en AEM {#creating-adobe-campaign-forms-in-aem}
 
 AEM permite crear y utilizar formularios que interactúen con Adobe Campaign en el sitio web. Se pueden insertar campos específicos en los formularios y asignarlos a la base de datos de Adobe Campaign.
@@ -90,7 +107,7 @@ Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obt
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Haga clic en la ficha **Avanzado** y seleccione el tipo de formulario que es: **Suscribirse, cancelar la suscripción,** o **Guardar perfil**. A continuación, haga clic en **Aceptar.**: solo puede tener un tipo por formulario.
+1. Haga clic en la ficha **Avanzado** y seleccione el tipo de formulario que es: **Suscribirse, cancelar la suscripción,** o **Guardar perfil**; a continuación, haga clic en **Aceptar.** Solo puede tener un tipo por formulario.
 
    * **Adobe Campaign: Guardar perfil**: permite crear o actualizar un destinatario en Adobe Campaign (valor predeterminado).
    * **Adobe Campaign: Suscribirse a servicios**: permite administrar las suscripciones de un destinatario en Adobe Campaign.

@@ -1,19 +1,33 @@
 ---
-title: Buscar recursos e imágenes digitales en  [!DNL Adobe Experience Manager]
-description: Obtenga información sobre cómo encontrar los recursos necesarios en  [!DNL Adobe Experience Manager]  mediante el panel Filtros y cómo usar los recursos que se muestran en la búsqueda.
+title: Buscar recursos digitales e imágenes en [!DNL Adobe Experience Manager]
+description: Obtenga información sobre cómo encontrar los recursos necesarios en [!DNL Adobe Experience Manager] mediante el panel Filtros y cómo utilizar los recursos que se muestran en la búsqueda.
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5812'
 ht-degree: 6%
-
 ---
-
 # Buscar recursos digitales en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Versión | Vínculo del artículo |

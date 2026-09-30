@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 exl-id: 901bd212-3daf-4b1e-a7c3-afb832959913
-source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 42%
-
 ---
-
 # Administración de proyectos de traducción{#managing-translation-projects}
 
 Después de preparar el contenido para la traducción, debe completar la estructura lingüística creando las copias de idioma que faltan y crear proyectos de traducción.
@@ -43,8 +55,8 @@ AEM detecta si se está creando un proyecto de traducción para la traducción i
 * **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en la copia de idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en la copia de idioma.
 * **La copia de idioma ya incluye la página:** AEM trata esta situación como una traducción actualizada. Se crea un lanzamiento, se añade una copia de la página a este y se incluye en el proyecto. Los lanzamientos permiten revisar las traducciones actualizadas antes de enviarlas a la copia de idioma:
 
-   * Cuando la página traducida se importa a AEM, sobrescribe la página en el lanzamiento.
-   * La página traducida sobrescribe la copia de idioma solo cuando se promociona el lanzamiento.
+  * Cuando la página traducida se importa a AEM, sobrescribe la página en el lanzamiento.
+  * La página traducida sobrescribe la copia de idioma solo cuando se promociona el lanzamiento.
 
 Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma principal /content/geometrixx/en. No hay más páginas en la copia de idioma en francés.
 

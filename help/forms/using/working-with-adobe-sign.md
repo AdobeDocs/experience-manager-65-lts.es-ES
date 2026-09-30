@@ -10,13 +10,31 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3e804a65-156c-40b5-b707-8f20f84a58e5
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4060'
+source-wordcount: '4092'
 ht-degree: 90%
-
 ---
-
 # Usar [!DNL Adobe Sign] en un formulario adaptable{#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -124,7 +142,7 @@ Realice los siguientes pasos para agregar campos a un formulario adaptable y per
 
    ![Bloque de firma](assets/sign_block_new.png)
 
-   De forma predeterminada, el bloque [!DNL Adobe Sign] no es visible en el formulario adaptable publicado. Solo se ve en los documentos de firma. Puede cambiar la visibilidad de [!DNL Adobe Sign] Block en las propiedades del componente [!DNL Adobe Sign] Block.
+   De forma predeterminada, el bloque [!DNL Adobe Sign] no es visible en el formulario adaptable publicado. Solo se ve en los documentos de firma. Puede cambiar la visibilidad del bloque [!DNL Adobe Sign] en las propiedades del componente del bloque [!DNL Adobe Sign].
 
    >[!NOTE]
    >

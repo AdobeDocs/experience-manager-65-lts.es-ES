@@ -5,13 +5,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 3%
-
 ---
-
 # Conceptos básicos de configuración{#basic-configuration-concepts}
 
 Adobe Experience Manager (AEM) se instala con la configuración predeterminada de todos los parámetros, lo que le permite ejecutarse de forma predeterminada. Sin embargo, puede configurar AEM para sus propios requisitos específicos.
@@ -299,11 +308,11 @@ Las impresiones de página se muestran en la columna **Impresiones** de la conso
 
 * En la instancia de publicación:
 
-   * [Estadísticas de página de CQ WCM de día](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Estadísticas de página de CQ WCM de día](/help/sites-deploying/osgi-configuration-settings.md)
 
 * En la instancia de autor:
 
-   * [Rastreador de impresiones de página de Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Rastreador de impresiones de página de Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

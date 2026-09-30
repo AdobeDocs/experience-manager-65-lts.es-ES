@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4969'
+source-wordcount: '4975'
 ht-degree: 1%
-
 ---
-
 # Monitorización de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La consola JMX permite supervisar y administrar los servicios en el servidor de CRX. Las secciones siguientes resumen los atributos y las operaciones expuestos a través del marco de trabajo JMX.
@@ -53,37 +64,37 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 * Argumentos: ninguno
 * Valor devuelto: Datos de tabla que contienen las siguientes columnas:
 
-   * Trabajos
-   * Nombre de cola
-   * Activar tareas
-   * Tiempo medio de procesamiento
-   * Tiempo medio de espera
-   * Trabajos cancelados:
-   * Trabajos con errores:
-   * Trabajos finalizados
-   * Trabajos procesados
-   * Trabajos en cola
+  * Trabajos
+  * Nombre de cola
+  * Activar tareas
+  * Tiempo medio de procesamiento
+  * Tiempo medio de espera
+  * Trabajos cancelados:
+  * Trabajos con errores:
+  * Trabajos finalizados
+  * Trabajos procesados
+  * Trabajos en cola
 
 **returnWorkflowJobTopicInfo** Enumera la información de procesamiento de los trabajos de flujo de trabajo, organizados por tema.
 
 * Argumentos: ninguno
 * Valor devuelto: datos tabulares que contienen las siguientes columnas:
 
-   * Nombre del tema
-   * Tiempo medio de procesamiento
-   * Tiempo medio de espera
-   * Trabajos cancelados:
-   * Trabajos con errores:
-   * Trabajos finalizados
-   * Trabajos procesados
+  * Nombre del tema
+  * Tiempo medio de procesamiento
+  * Tiempo medio de espera
+  * Trabajos cancelados:
+  * Trabajos con errores:
+  * Trabajos finalizados
+  * Trabajos procesados
 
 **returnFailedWorkflowCount** Muestra el número de instancias de flujo de trabajo con errores. Puede especificar un modelo de flujo de trabajo para consultar o recuperar información de todos los modelos de flujo de trabajo.
 
 * Argumentos:
 
-   * model: ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique sin valor. El ID es la ruta al nodo del modelo, por ejemplo:
+  * model: ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique sin valor. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo con errores.
 
@@ -96,65 +107,65 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Reinicie la instancia: (Opcional) Especifique un valor de `true` para reiniciar las instancias una vez que hayan finalizado. El valor predeterminado de `false` no provoca el reinicio de las instancias de flujo de trabajo terminadas.
-   * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias fallidas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Reinicie la instancia: (Opcional) Especifique un valor de `true` para reiniciar las instancias una vez que hayan finalizado. El valor predeterminado de `false` no provoca el reinicio de las instancias de flujo de trabajo terminadas.
+  * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias fallidas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: Datos de tabla sobre las instancias que han finalizado, que contienen las columnas siguientes:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Carga útil
-   * StartComment
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Carga útil
+  * StartComment
+  * WorkflowTitle
 
 **retryFailedWorkItems** intenta ejecutar pasos de elementos de trabajo que han fallado. Puede reintentar todos los elementos de trabajo con errores o solo los elementos de trabajo con errores para un modelo de flujo de trabajo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a los elementos de trabajo con errores de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a los elementos de trabajo con errores de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: datos de tabla sobre los elementos de trabajo con errores que se vuelven a intentar, incluidas las columnas siguientes:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Carga útil
-   * StartComment
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Carga útil
+  * StartComment
+  * WorkflowTitle
 
 **PurgeActive** elimina las instancias de flujo de trabajo activas de una página específica. Se pueden depurar instancias activas para todos los modelos o sólo las instancias de un modelo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de días desde que se inició el flujo de trabajo: antigüedad de las instancias de flujo de trabajo que se van a depurar, en días.
-   * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Número de días desde que se inició el flujo de trabajo: antigüedad de las instancias de flujo de trabajo que se van a depurar, en días.
+  * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
 * Valor devuelto: datos tabulares sobre las instancias de flujo de trabajo activas que se depuran, incluidas las siguientes columnas:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Carga útil
-   * StartComment
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Carga útil
+  * StartComment
+  * WorkflowTitle
 
 **countStaleWorkflows** Devuelve el número de instancias de flujo de trabajo que están obsoletas. Puede recuperar el número de instancias antiguas para todos los modelos de flujo de trabajo o para un modelo específico.
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo antiguas.
 
@@ -162,10 +173,10 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias antiguas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias antiguas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
 * Valor devuelto: lista de instancias de flujo de trabajo que se reinician.
 
@@ -178,9 +189,9 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias en ejecución. No especificar ningún modelo para devolver el número de instancias en ejecución de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias en ejecución. No especificar ningún modelo para devolver el número de instancias en ejecución de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo en ejecución.
 
@@ -188,9 +199,9 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias completadas. No especificar ningún modelo para devolver el número de instancias completadas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias completadas. No especificar ningún modelo para devolver el número de instancias completadas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo completadas.
 
@@ -198,20 +209,20 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+  * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de días transcurridos desde que se completó el flujo de trabajo: número de días durante los cuales las instancias del flujo de trabajo quedaron en el estado completado.
-   * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Número de días transcurridos desde que se completó el flujo de trabajo: número de días durante los cuales las instancias del flujo de trabajo quedaron en el estado completado.
+  * Ejecución en seco: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
 * Valor devuelto: datos tabulares sobre las instancias de flujo de trabajo completadas que se depuran, incluidas las columnas siguientes:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Carga útil
-   * StartComment
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Carga útil
+  * StartComment
+  * WorkflowTitle
 
 ## Repositorio {#repository}
 
@@ -532,7 +543,7 @@ Sólo lectura.
 
 * Argumentos:
 
-   * name: Valor de tipo String que representa el nombre del nuevo espacio de trabajo.
+  * name: Valor de tipo String que representa el nombre del nuevo espacio de trabajo.
 
 * Valor devuelto: ninguno
 
@@ -540,7 +551,7 @@ Sólo lectura.
 
 * Argumentos:
 
-   * delete: valor booleano que indica si se eliminarán los elementos de repositorio no utilizados. El valor true provoca la eliminación de nodos y propiedades no utilizados. El valor false hace que se analicen todos los nodos, pero no se elimina ninguno.
+  * delete: valor booleano que indica si se eliminarán los elementos de repositorio no utilizados. El valor true provoca la eliminación de nodos y propiedades no utilizados. El valor false hace que se analicen todos los nodos, pero no se elimina ninguno.
 
 * Valor devuelto: ninguno
 
@@ -553,13 +564,13 @@ Sólo lectura.
 
 * Argumentos:
 
-   * `target`: (Opcional) Un valor `String` que representa el nombre del archivo ZIP o directorio en el que archivar los datos del repositorio. Para utilizar un archivo ZIP, incluya la extensión del nombre del archivo ZIP. Para utilizar un directorio, no incluya ninguna extensión de nombre de archivo.
+  * `target`: (Opcional) Un valor `String` que representa el nombre del archivo ZIP o directorio en el que archivar los datos del repositorio. Para utilizar un archivo ZIP, incluya la extensión del nombre del archivo ZIP. Para utilizar un directorio, no incluya ninguna extensión de nombre de archivo.
 
-     Para realizar una copia de seguridad incremental, especifique el directorio que se utilizó anteriormente para la copia de seguridad.
+    Para realizar una copia de seguridad incremental, especifique el directorio que se utilizó anteriormente para la copia de seguridad.
 
-     Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al elemento principal del directorio crx-quickstart.
+    Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al elemento principal del directorio crx-quickstart.
 
-     Cuando no especifica ningún valor, se utiliza el valor predeterminado de `backup-currentdate.zip`, donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
+    Cuando no especifica ningún valor, se utiliza el valor predeterminado de `backup-currentdate.zip`, donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
 
 * Valor devuelto: ninguno
 
@@ -592,7 +603,7 @@ Sólo lectura.
 
 * Argumentos:
 
-   * `background`: valor booleano que indica si se debe ejecutar la operación en segundo plano para que la consola web se pueda utilizar durante la ejecución. El valor true ejecuta la operación en segundo plano.
+  * `background`: valor booleano que indica si se debe ejecutar la operación en segundo plano para que la consola web se pueda utilizar durante la ejecución. El valor true ejecuta la operación en segundo plano.
 
 * Valor devuelto: ninguno
 
@@ -605,9 +616,9 @@ Sólo lectura.
 
 * Argumentos:
 
-   * `master`: valor de cadena que representa la dirección IP o el nombre de equipo del equipo que ejecuta el nodo del repositorio principal.
-   * `username`: nombre que se usará para autenticarse en el clúster.
-   * `password`: contraseña que se va a usar para la autenticación.
+  * `master`: valor de cadena que representa la dirección IP o el nombre de equipo del equipo que ejecuta el nodo del repositorio principal.
+  * `username`: nombre que se usará para autenticarse en el clúster.
+  * `password`: contraseña que se va a usar para la autenticación.
 
 * Valor devuelto: ninguno
 
@@ -623,28 +634,28 @@ El valor del campo SerieTemporal para cada tipo de estadística que define `org.
 * Tipo: `TimeSeries`
 * Nombre: uno de los siguientes valores de la clase `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum:
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * PAQUETE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * PAQUETE_CONTADOR
-   * PAQUETE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * PAQUETE_WRITE_COUNTER
-   * BUNDLE_WRITE_DURATION
-   * PAQUETE_WS_SIZE_COUNTER
-   * QUERY_AVERAGE
-   * QUERY_COUNT
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * PAQUETE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * PAQUETE_CONTADOR
+  * PAQUETE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * PAQUETE_WRITE_COUNTER
+  * BUNDLE_WRITE_DURATION
+  * PAQUETE_WS_SIZE_COUNTER
+  * QUERY_AVERAGE
+  * QUERY_COUNT
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### Atributos {#attributes-1}
 
@@ -816,7 +827,7 @@ Llama al método startupFinished del iniciador del servidor. El método intenta 
 Establece el valor de finalización del proceso de inicio del servidor. La barra de progreso de la ventana QuickStart representa el valor de finalización.
 
 * Argumentos:
-   * p1: Valor flotante que representa la parte completa del proceso de inicio, como fracción. El valor debe estar entre cero y uno. Por ejemplo, 0,3 indica que se ha completado el 30 %.
+  * p1: Valor flotante que representa la parte completa del proceso de inicio, como fracción. El valor debe estar entre cero y uno. Por ejemplo, 0,3 indica que se ha completado el 30 %.
 * Valor devuelto: ninguno.
 
 ## Servicios de terceros {#third-party-services}

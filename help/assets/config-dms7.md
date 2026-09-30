@@ -6,13 +6,29 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: ee69dd13-2aba-4eb0-912b-399e82368d73
+    internal-label: Scene7 mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6428'
+source-wordcount: '6652'
 ht-degree: 4%
-
 ---
-
 # Configuración de Dynamic Media, modo Scene7{#configuring-dynamic-media-scene-mode}
 
 Si utiliza la configuración de Adobe Experience Manager para diferentes entornos, como desarrollo, ensayo y producción, configure los servicios de nube de Dynamic Media para cada uno de esos entornos.
@@ -128,25 +144,25 @@ Consulte [Instalar paquete de funciones 18912 para la migración masiva de recur
    * **[!UICONTROL Ruta de la carpeta raíz de la compañía]**
 
    * **[!UICONTROL Publicación de Assets]**. Puede elegir entre las tres opciones siguientes:
-      * **[!UICONTROL Inmediatamente]** significa que cuando se cargan recursos, el sistema los ingiere y proporciona la dirección URL/incrustación al instante. No es necesaria la intervención del usuario para publicar los recursos.
-      * **[!UICONTROL Tras la activación]** significa que primero debe publicar explícitamente el recurso antes de que se proporcione un vínculo URL/incrustado.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir de Experience Manager 6.5.8, la instancia de publicación de Experience Manager refleja valores precisos de metadatos de Dynamic Media, como `dam:scene7Domain` y `dam:scene7FileStatus` solo en el modo de publicación **[!UICONTROL Tras la activación]**. Vaya al Administrador de configuración de Sling. Busque la configuración de `Scene7ActivationJobConsumer Component` o cree una nueva). Seleccione la casilla de verificación **[!UICONTROL Replicar metadatos después de la publicación de Dynamic Media]** y, a continuación, seleccione **[!UICONTROL Guardar]**.
+     * **[!UICONTROL Inmediatamente]** significa que cuando se cargan recursos, el sistema los ingiere y proporciona la dirección URL/incrustación al instante. No es necesaria la intervención del usuario para publicar los recursos.
+     * **[!UICONTROL Tras la activación]** significa que primero debe publicar explícitamente el recurso antes de que se proporcione un vínculo URL/incrustado.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir de Experience Manager 6.5.8, la instancia de publicación de Experience Manager refleja valores precisos de metadatos de Dynamic Media, como `dam:scene7Domain` y `dam:scene7FileStatus` solo en el modo de publicación **[!UICONTROL Tras la activación]**. Vaya al Administrador de configuración de Sling. Busque la configuración de `Scene7ActivationJobConsumer Component` o cree una nueva). Seleccione la casilla de verificación **[!UICONTROL Replicar metadatos después de la publicación de Dynamic Media]** y, a continuación, seleccione **[!UICONTROL Guardar]**.
 
-        ![Casilla Replicar metadatos después de la publicación de Dynamic Media](assets-dm/replicate-metadata-setting.png)
+       ![Casilla Replicar metadatos después de la publicación de Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicación selectiva]** Esta opción le permite controlar qué carpetas se publican en Dynamic Media. Permite utilizar funciones como Recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para su previsualización. Esos mismos recursos son *no* publicados en Dynamic Media para su publicación en el dominio público.<br>Puede establecer esta opción aquí en la **[!UICONTROL Configuración de nube de Dynamic Media]** o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en las **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte [Trabajo con publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).<br>Si cambia esta configuración más adelante o la cambia más adelante en el nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta se mantendrá tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
+     * **[!UICONTROL Publicación selectiva]** Esta opción le permite controlar qué carpetas se publican en Dynamic Media. Permite utilizar funciones como Recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para su previsualización. Esos mismos recursos son *no* publicados en Dynamic Media para su publicación en el dominio público.<br>Puede establecer esta opción aquí en la **[!UICONTROL Configuración de nube de Dynamic Media]** o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en las **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte [Trabajo con publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).<br>Si cambia esta configuración más adelante o la cambia más adelante en el nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta se mantendrá tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
 
    * **[!UICONTROL Servidor de vista previa segura]**: le permite especificar la ruta de la URL a su servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, Experience Manager puede acceder de forma segura a las representaciones remotas de Dynamic Media y previsualizarlas (no se envían binarios de vuelta a la instancia de Experience Manager).
-A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda dejar esta configuración como se especifica.
+     A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda dejar esta configuración como se especifica.
 
    * **[!UICONTROL Sincronizar todo el contenido]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de forma selectiva de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:
 
    * **[!UICONTROL Modo de sincronización de Dynamic Media]**
-      * **[!UICONTROL Habilitada de forma predeterminada]**: la configuración se aplica a todas las carpetas de forma predeterminada a menos que marque una carpeta específicamente para su exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Deshabilitado de forma predeterminada]**: la configuración no se aplicará a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Vea también [Trabajar con publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
-         * **[!UICONTROL Heredado]**: no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. Estado detallado de los programas heredados mediante información sobre herramientas.
-         * **[!UICONTROL Habilitar para subcarpetas]**: incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
-         * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluye todo en este subárbol de la sincronización con Dynamic Media.
+     * **[!UICONTROL Habilitada de forma predeterminada]**: la configuración se aplica a todas las carpetas de forma predeterminada a menos que marque una carpeta específicamente para su exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+     * **[!UICONTROL Deshabilitado de forma predeterminada]**: la configuración no se aplicará a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
+       Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Consulte también [Trabajo con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
+       * **[!UICONTROL Heredado]**: no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. Estado detallado de los programas heredados mediante información sobre herramientas.
+       * **[!UICONTROL Habilitar para subcarpetas]**: incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
+       * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluye todo en este subárbol de la sincronización con Dynamic Media.
 
    >[!NOTE]
    >
@@ -295,7 +311,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 1. En la ficha **[!UICONTROL Propiedades]**, en la columna **[!UICONTROL Nombre]**, busque `sizeLimit`.
 1. A la derecha del nombre `sizeLimit`, en la columna **[!UICONTROL Valor]**, haga doble clic en el campo de valor.
 1. Introduzca el valor apropiado en bytes para poder aumentar el límite de tamaño al tamaño máximo de carga deseado. Por ejemplo, para aumentar el límite de tamaño del recurso de carga a 10 GB, escriba `10737418240` en el campo de valor.
-Puede introducir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los recursos cargados que tengan más de 15 GB no se cargan.
+Puede escribir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los recursos cargados que tengan más de 15 GB no se cargan.
 
    ![Valor límite de tamaño](/help/assets/assets-dm/uploadassets15gb_c.png)
 

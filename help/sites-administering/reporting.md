@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 4%
-
 ---
-
 # Creación de informes {#reporting}
 
 Para ayudarle a monitorizar y analizar el estado de su instancia, Adobe Experience Manager (AEM) proporciona una selección de informes predeterminados, que se pueden configurar para sus necesidades individuales:
@@ -73,8 +82,8 @@ Para cambiar la selección de datos:
 
 * para agregar una columna, arrastre el componente requerido desde la barra de tareas y suéltelo en la posición que desee
 
-   * una marca de verificación verde indica cuándo es válida la posición y un par de flechas indica exactamente dónde se coloca
-   * un símbolo rojo que indica que la posición no es válida
+  * una marca de verificación verde indica cuándo es válida la posición y un par de flechas indica exactamente dónde se coloca
+  * un símbolo rojo que indica que la posición no es válida
 
 * para mover una columna, haga clic en el encabezado, mantenga pulsada la tecla y arrastre a la nueva posición
 * para quitar una columna, haga clic en el título de la columna, mantenga presionada la tecla y arrastre hacia arriba hasta el área del encabezado del informe (un símbolo menos rojo indica que la posición no es válida). Suelte el botón del ratón y el cuadro de diálogo Eliminar componentes solicitará confirmación de que realmente desea eliminar la columna.
@@ -173,8 +182,8 @@ Cuando se inicie la recopilación de datos, puede seleccionar lo siguiente:
 
   Por ejemplo, si hay instantáneas diarias disponibles para febrero de 2011:
 
-   * Si el intervalo se establece en `Day`, cada instantánea se muestra como un valor único en el gráfico.
-   * Si el intervalo se establece en `Month`, todas las instantáneas de febrero se agregan en un solo valor (mostrado como un solo &quot;punto&quot; en el gráfico).
+  * Si el intervalo se establece en `Day`, cada instantánea se muestra como un valor único en el gráfico.
+  * Si el intervalo se establece en `Month`, todas las instantáneas de febrero se agregan en un solo valor (mostrado como un solo &quot;punto&quot; en el gráfico).
 
 Seleccione sus requisitos y haga clic en **Ir** para aplicarlos al informe. Para actualizar la pantalla después de realizar más instantáneas, haz clic de nuevo en **Ir**.
 
@@ -250,17 +259,17 @@ Esta es una ubicación en la que se define el período para recopilar instantán
 
 * **Procesamiento de informes**
 
-   * **actualizar datos automáticamente**
+  * **actualizar datos automáticamente**
 
-     Los datos del informe se actualizan cada vez que se actualiza la definición del informe.
+    Los datos del informe se actualizan cada vez que se actualiza la definición del informe.
 
-   * **actualizar datos manualmente**
+  * **actualizar datos manualmente**
 
-     Esta opción se puede utilizar para evitar los retrasos causados por las operaciones de actualización automática cuando hay un gran volumen de datos.
+    Esta opción se puede utilizar para evitar los retrasos causados por las operaciones de actualización automática cuando hay un gran volumen de datos.
 
-     Si selecciona esta opción, los datos del informe deben actualizarse manualmente cuando haya habido cambios en algún aspecto de la configuración del informe. También significa que, cuando cambia cualquier aspecto de la configuración, la tabla del informe aparece en blanco.
+    Si selecciona esta opción, los datos del informe deben actualizarse manualmente cuando haya habido cambios en algún aspecto de la configuración del informe. También significa que, cuando cambia cualquier aspecto de la configuración, la tabla del informe aparece en blanco.
 
-     Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)** (junto a **Editar** en el informe). **Cargar datos** carga los datos y actualiza los datos del informe que se muestran.
+    Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)** (junto a **Editar** en el informe). **Cargar datos** carga los datos y actualiza los datos del informe que se muestran.
 
 * **instantáneas**
 Puede definir la frecuencia con la que se crean las instantáneas, diariamente, por hora o en absoluto.

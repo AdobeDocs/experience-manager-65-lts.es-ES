@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3753'
 ht-degree: 98%
-
 ---
-
 # Prácticas recomendadas para la administración de SEO y URL{#seo-and-url-management-best-practices}
 
 La optimización de los motores de búsqueda (SEO) se ha convertido en un tema de mucha importancia para muchos expertos en marketing. Como resultado, las cuestiones relacionadas con el SEO deben abordarse en muchos proyectos de AEM.

@@ -10,7 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 69%
@@ -660,82 +677,82 @@ Puede personalizar el componente de Target accediendo a las opciones del compone
 
 1. Configure el componente Target tal y como se describe en las tablas siguientes.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Opción</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Lugar de residencia</strong></td>
-   <td><p>La ubicación es una cadena que da un nombre a la ubicación del contenido de destino y conecta ofertas con lugares (o ubicaciones o componentes) en la página donde se deben colocar esas ofertas.</p> <p>Este campo es un valor genérico.</p> <p>Si introduce una oferta en un componente, la oferta recuerda el identificador de la ubicación. Al ejecutar la página, el motor evalúa los segmentos del usuario y, de acuerdo con ello, soluciona las experiencias de las campañas activas que deben mostrarse. A continuación, comprueba los ID de ubicación de la página e intenta hacer coincidir las ofertas con esos ID de ubicación con ellos.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Motor</strong></td>
-   <td>Seleccione entre <strong>Reglas de cliente (sin seguimiento), Adobe Target, ContextHub, </strong>y<strong> Adobe Campaign </strong>según el motor que desee usar.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Opción</strong></td>
+      <td><strong>Descripción</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Lugar de residencia</strong></td>
+      <td><p>La ubicación es una cadena que da un nombre a la ubicación del contenido de destino y conecta ofertas con lugares (o ubicaciones o componentes) en la página donde se deben colocar esas ofertas.</p> <p>Este campo es un valor genérico.</p> <p>Si introduce una oferta en un componente, la oferta recuerda el identificador de la ubicación. Al ejecutar la página, el motor evalúa los segmentos del usuario y, de acuerdo con ello, soluciona las experiencias de las campañas activas que deben mostrarse. A continuación, comprueba los ID de ubicación de la página e intenta hacer coincidir las ofertas con esos ID de ubicación con ellos.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Motor</strong></td>
+      <td>Seleccione entre <strong>Reglas de cliente (sin seguimiento), Adobe Target, ContextHub, </strong>y<strong> Adobe Campaign </strong>según el motor que desee usar.</td>
+   </tr>
+   </tbody>
+   </table>
 
-Si selecciona Adobe Target como motor:
+   Si selecciona Adobe Target como motor:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Opción</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Direccionamiento preciso</strong></td>
-   <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está habilitada.</p> <p>Si activa la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza primero un <code>mboxDefine</code> y después un <code>mboxUpdate</code>, lo que da como resultado una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza una <code>mboxCreate</code>, lo que da como resultado una solicitud sincrónica de inmediato (en este caso, no todos los datos de contexto pueden estar disponibles aún).</p> <p><strong>Nota:</strong> Habilitar o deshabilitar el direccionamiento preciso en un componente específico no afecta a la configuración establecida globalmente. Siempre puede seleccionar Segmentación precisa en el componente para anular la configuración global.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Incluir segmentos resueltos</strong></td>
-   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo.</p> <p>Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. Si tiene segmentos en AEM que no gestiona Adobe Target (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Parámetros heredados de contexto</strong></td>
-   <td>Enumera los parámetros de contexto heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada.</td>
-  </tr>
-  <tr>
-   <td><strong>Parámetros de contexto</strong></td>
-   <td>Haga clic en <strong>Agregar campo</strong> para configurar parámetros de contexto adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros de contexto agregados al componente se aplican <i>solamente</i> al componente y no a otros componentes, como sería el caso si hubiera agregado los parámetros de contexto directamente al marco de trabajo.</td>
-  </tr>
-  <tr>
-   <td><strong>Parámetros estáticos</strong></td>
-   <td>Haga clic en <strong>Agregar campo</strong> para configurar parámetros estáticos adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros estáticos agregados al componente se aplican <i>solamente</i> al componente y no a otros componentes, como sería el caso si hubiera agregado los parámetros estáticos directamente al marco de trabajo. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub).</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Opción</strong></td>
+      <td><strong>Descripción</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Direccionamiento preciso</strong></td>
+      <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está habilitada.</p> <p>Si activa la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza primero un <code>mboxDefine</code> y después un <code>mboxUpdate</code>, lo que da como resultado una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza una <code>mboxCreate</code>, lo que da como resultado una solicitud sincrónica de inmediato (en este caso, no todos los datos de contexto pueden estar disponibles aún).</p> <p><strong>Nota:</strong> Habilitar o deshabilitar el direccionamiento preciso en un componente específico no afecta a la configuración establecida globalmente. Siempre puede seleccionar Segmentación precisa en el componente para anular la configuración global.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Incluir segmentos resueltos</strong></td>
+      <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo.</p> <p>Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. Si tiene segmentos en AEM que no gestiona Adobe Target (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Parámetros heredados de contexto</strong></td>
+      <td>Enumera los parámetros de contexto heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada.</td>
+   </tr>
+   <tr>
+      <td><strong>Parámetros de contexto</strong></td>
+      <td>Haga clic en <strong>Agregar campo</strong> para configurar parámetros de contexto adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros de contexto agregados al componente se aplican <i>solamente</i> al componente y no a otros componentes, como sería el caso si hubiera agregado los parámetros de contexto directamente al marco de trabajo.</td>
+   </tr>
+   <tr>
+      <td><strong>Parámetros estáticos</strong></td>
+      <td>Haga clic en <strong>Agregar campo</strong> para configurar parámetros estáticos adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros estáticos agregados al componente se aplican <i>solamente</i> al componente y no a otros componentes, como sería el caso si hubiera agregado los parámetros estáticos directamente al marco de trabajo. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub).</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Al seleccionar un componente y hacerlo orientable, AEM también reemplaza el componente e introduce un componente de Adobe Target. El componente Adobe Target no solo se utiliza cuando se añade manualmente a la página, sino también cuando se marca como objetivo un componente existente.
+   >[!NOTE]
+   >
+   >Al seleccionar un componente y hacerlo orientable, AEM también reemplaza el componente e introduce un componente de Adobe Target. El componente Adobe Target no solo se utiliza cuando se añade manualmente a la página, sino también cuando se marca como objetivo un componente existente.
 
-Si selecciona Client Context (lado del cliente) como motor:
+   Si selecciona Client Context (lado del cliente) como motor:
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Opción</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Opciones del lado del cliente: estrategia</strong></td>
-   <td><p>Seleccione una de las siguientes opciones:</p>
-    <ul>
-     <li><strong>Primero</strong>: La experiencia superior en la lista según se ordenó en la campaña.</li>
-     <li><strong>Aleatorio</strong>: Se utiliza cualquier experiencia.</li>
-     <li><strong>Puntuación del flujo de navegación</strong>: se utilizan las etiquetas y las visitas de etiquetas relacionadas que se rastrean en el contexto del cliente. Se comparan las tasas de visitas de las etiquetas definidas en la página de teaser.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Opción</strong></td>
+      <td><strong>Descripción</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Opciones del lado del cliente: estrategia</strong></td>
+      <td><p>Seleccione una de las siguientes opciones:</p>
+      <ul>
+      <li><strong>Primero</strong>: La experiencia superior en la lista según se ordenó en la campaña.</li>
+      <li><strong>Aleatorio</strong>: Se utiliza cualquier experiencia.</li>
+      <li><strong>Puntuación del flujo de navegación</strong>: se utilizan las etiquetas y las visitas de etiquetas relacionadas que se rastrean en el contexto del cliente. Se comparan las tasas de visitas de las etiquetas definidas en la página de teaser.</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
-Seleccione **Adobe Campaign** como motor si integra AEM con Adobe Campaign. Consulte [Integración de AEM con Adobe Campaign](/help/sites-administering/campaign.md) para obtener más información.
+   Seleccione **Adobe Campaign** como motor si integra AEM con Adobe Campaign. Consulte [Integración de AEM con Adobe Campaign](/help/sites-administering/campaign.md) para obtener más información.
 
-Seleccione **ContextHub** como motor si utiliza ContextHub para segmentar. Consulte [Configuración de ContextHub.](/help/sites-developing/ch-configuring.md)
+   Seleccione **ContextHub** como motor si utiliza ContextHub para segmentar. Consulte [Configuración de ContextHub.](/help/sites-developing/ch-configuring.md)

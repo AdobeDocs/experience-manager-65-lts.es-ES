@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: a053ca75d106025fcfeb63ac5ba3c95283861e7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 5%
-
+source-wordcount: '1047'
+ht-degree: 6%
 ---
-
 # Integración de AEM Forms con los protocolos del servidor de correo de Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 Para permitir que las organizaciones cumplan con los requisitos de correo electrónico seguro, AEM Forms ofrece compatibilidad con OAuth 2.0 para la integración con los protocolos de servidor de correo de Microsoft® Office 365. Puede utilizar el servicio de autenticación OAuth 2.0 de Azure Active Directory (Azure AD) para conectarse con varios protocolos como IMAP, POP o SMTP y acceder a los datos de correo electrónico de los usuarios de Office 365. A continuación se proporcionan instrucciones paso a paso para configurar los protocolos del servidor de correo de Microsoft® Office 365 para autenticarse mediante el servicio OAuth 2.0:
@@ -25,7 +40,7 @@ También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft
 
 1. Rellene la información según sus necesidades y haga clic en **Registro**.
    ![Cuenta compatible](/help/forms/using/assets/azure_suuportedaccountype.png)
-En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - Multitenant) y cuentas personales de Microsoft® (por ejemplo, Skype, Xbox)** están seleccionadas.
+   En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - Multitenant) y cuentas personales de Microsoft® (por ejemplo, Skype, Xbox)** están seleccionadas.
 
    >[!NOTE]
    >

@@ -5,20 +5,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1310'
 ht-degree: 83%
-
 ---
-
 # Sistema de estilos{#style-system}
 
 El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, por lo que el componente es más flexible.
 
 Esto elimina la necesidad de desarrollar un componente personalizado para cada estilo o para personalizar el cuadro de diálogo del componente para habilitar dicha funcionalidad de estilo. Esto conduce a componentes más reutilizables que se pueden adaptar con rapidez y facilidad a las necesidades de los autores de contenido sin ningún tipo de desarrollo back-end de AEM.
 
-## Caso práctico    {#use-case}
+## Caso práctico {#use-case}
 
 Los autores de plantillas no solo necesitan la capacidad de configurar el funcionamiento de los componentes para los autores de contenido, sino también de configurar varias variaciones visuales alternativas de un componente.
 
@@ -69,7 +82,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 1. Configure las clases de CSS que desee poner a disposición de los autores de contenido como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. Los autores de contenido pueden utilizar los estilos como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
-### Como autor de contenido    {#as-a-content-author}
+### Como autor de contenido {#as-a-content-author}
 
 1. Después de instalar el proyecto WKND, vaya a la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en` y edite la página.
 1. Seleccione un componente del **Título** más abajo en la página
@@ -84,7 +97,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    >
    >En este ejemplo, los estilos **Colores** (**Negro**, **Blanco** y **Gris**) se excluyen mutuamente, mientras que las opciones **Estilo** (**Subrayado**, **Alinear a la derecha** y **Miniespaciado**) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](#as-a-template-author).
 
-### Como autor de plantillas    {#as-a-template-author}
+### Como autor de plantillas {#as-a-template-author}
 
 1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página > Editar plantilla**.
 
@@ -137,7 +150,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 >
 >La pestaña Estilos del cuadro de diálogo Editar no está habilitada de forma predeterminada.
 
-### Estilos con nombres de elemento       {#styles-with-element-names}
+### Estilos con nombres de elemento {#styles-with-element-names}
 
 Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la directiva, dentro del cuadro de diálogo de diseño, el autor de la plantilla también puede elegir un nombre de elemento que se establecerá para cada estilo. Se establecerá el nombre del elemento envolvente.
 
