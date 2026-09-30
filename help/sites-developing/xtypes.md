@@ -317,7 +317,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.data.DirectStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
-  Una pequeña clase auxiliar para crear un [CQ.Ext.data.Store](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) configurado con un [CQ.Ext.data.DirectProxy](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) y [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) para facilitar la interacción con un [proveedor[CQ.Ext.Direct](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) del lado del servidor](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
+  Una pequeña clase auxiliar para crear un [CQ.Ext.data.Store](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) configurado con un [CQ.Ext.data.DirectProxy](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) y [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) para facilitar la interacción con un [&#128279;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)proveedor[CQ.Ext.Direct](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) del lado del servidor.
 
 * `displayfield`
 
