@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer
 exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 92%
-
 ---
-
 # Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM {#architect-headless-content-fragment-models}
 
 ## La historia hasta ahora {#story-so-far}
@@ -64,7 +80,7 @@ Entonces, ¿qué se debe hacer?
 
 Puede arrastrar instancias de los **Tipos de datos** en el espacio de la izquierda: ya estará definiendo su modelo.
 
- ![Definición de campos](/help/assets/content-fragments/assets/cfm-models-04.png)
+![Definición de campos](/help/assets/content-fragments/assets/cfm-models-04.png)
 
 Una vez que haya agregado un tipo de datos, se le pedirá que defina las **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
 
@@ -117,22 +133,22 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Definición del modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+    * [Definición del modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Habilitación o deshabilitación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+    * [Habilitación o deshabilitación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+    * [Eliminación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+    * [Publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+    * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modelos de fragmento de contenido bloqueados (publicados)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+    * [Modelos de fragmento de contenido bloqueados (publicados)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guías de introducción
 
-   * [Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado](/help/sites-developing/headless/getting-started/create-content-model.md)
+  * [Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado](/help/sites-developing/headless/getting-started/create-content-model.md)

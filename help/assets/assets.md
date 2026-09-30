@@ -1,18 +1,31 @@
 ---
-title: Introducción a  [!DNL Adobe Experience Manager Assets]
+title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Cree, administre, procese y distribuya recursos digitales en Experience Manager. Estas guías describen las prácticas recomendadas, las funciones de accesibilidad y cómo utilizar recursos de AEM 6.5 LTS.
 hide: true
 feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 5%
-
 ---
-
 # Acerca de [!DNL Adobe Experience Manager Assets] como solución DAM {#administering-assets}
 
 | Versión | Vínculo del artículo |
@@ -66,9 +79,9 @@ Cuando se trabaja con recursos digitales en [!DNL Experience Manager], es útil 
 
 * **Los metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes de forma predeterminada:
 
-   * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
-   * IPTC: incluido evento, modelo, ubicación, etc.
-   * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
+  * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
+  * IPTC: incluido evento, modelo, ubicación, etc.
+  * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
 
 * **Etiquetado**: [!DNL Assets] se puede etiquetar y clasificar. Consulte [organización de recursos](/help/assets/organize-assets.md).
 

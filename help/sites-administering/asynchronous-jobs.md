@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e095b7d4-b1b4-4070-9264-b23ea2c677f5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '806'
 ht-degree: 82%
-
 ---
-
 # Operaciones asincrónicas {#asynchronous-operations}
 
 Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de manera asincrónica determinadas operaciones de larga duración y que requieren gran cantidad de recursos. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
@@ -74,7 +83,7 @@ Para ver en detalle el estado de las operaciones asincrónicas, vaya a la págin
 
 ## Purgar trabajos completados {#purging-completed-jobs}
 
-AEM ejecuta un trabajo de depuración todos los días a las 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
+AEM ejecuta un trabajo de depuración todos los días a la 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
 
 Puede modificar la programación del trabajo de depuración y la duración por la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 

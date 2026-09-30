@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: dbcedca5-5228-4ad0-9ee1-d32b519e60bd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 63%
-
 ---
-
 # Configuración del entorno de la cuenta{#configuring-your-account-environment}
 
 AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
@@ -31,15 +44,15 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 * Suplantar como
 
-   * Con la funcionalidad [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
+  * Con la funcionalidad [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
 
 * Perfil
 
-   * Ofrece un práctico vínculo a la [configuración de usuario](/help/sites-administering/security.md))
+  * Ofrece un práctico vínculo a la [configuración de usuario](/help/sites-administering/security.md))
 
 * [Mis preferencias](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * Especifique las distintas preferencias exclusivas al usuario
+  * Especifique las distintas preferencias exclusivas al usuario
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -61,13 +74,13 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Esta opción permite definir el comportamiento o la apertura de las ventanas. Seleccione:
 
-   * **Varias ventanas** (predeterminado)
+  * **Varias ventanas** (predeterminado)
 
-      * Las páginas se abren en una nueva ventana.
+    * Las páginas se abren en una nueva ventana.
 
-   * **Ventana única**
+  * **Ventana única**
 
-      * Las páginas se abren en la ventana actual.
+    * Las páginas se abren en la ventana actual.
 
 * **Mostrar las acciones del escritorio para Assets**
 
@@ -77,8 +90,8 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Define el color predeterminado que se utiliza para realizar anotaciones.
 
-   * Haga clic en el bloque de colores para poder abrir el selector de muestras y seleccionar un color.
-   * Como alternativa, introduzca el código hexadecimal del color deseado en el campo.
+  * Haga clic en el bloque de colores para poder abrir el selector de muestras y seleccionar un color.
+  * Como alternativa, introduzca el código hexadecimal del color deseado en el campo.
 
 * **Presentación de fecha relativa**
 
@@ -86,23 +99,23 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
-   * **Mostrar siempre la fecha exacta**: se muestra siempre la fecha exacta (nunca una fecha relativa).
-   * **1 día**: se muestra la fecha relativa para las fechas dentro de un día; de lo contrario, se muestra una fecha exacta.
+  * **Mostrar siempre la fecha exacta**: se muestra siempre la fecha exacta (nunca una fecha relativa).
+  * **1 día**: se muestra la fecha relativa para las fechas dentro de un día; de lo contrario, se muestra una fecha exacta.
 
-   * **7 días (valor predeterminado)**: se muestra la fecha relativa para las fechas dentro de siete días; de lo contrario, se muestra una fecha exacta.
+  * **7 días (valor predeterminado)**: se muestra la fecha relativa para las fechas dentro de siete días; de lo contrario, se muestra una fecha exacta.
 
-   * **1 mes**: se muestra la fecha relativa para las fechas dentro de un mes; de lo contrario, se muestra una fecha exacta.
+  * **1 mes**: se muestra la fecha relativa para las fechas dentro de un mes; de lo contrario, se muestra una fecha exacta.
 
-   * **1 año**: se muestra la fecha relativa para las fechas dentro de un año; de lo contrario se muestra una fecha exacta.
+  * **1 año**: se muestra la fecha relativa para las fechas dentro de un año; de lo contrario se muestra una fecha exacta.
 
-   * **Mostrar siempre la fecha relativa**: las fechas exactas nunca se muestran, y solo se muestran fechas relativas.
+  * **Mostrar siempre la fecha relativa**: las fechas exactas nunca se muestran, y solo se muestran fechas relativas.
 
 * **Habilitar métodos abreviados**
 
   AEM admite varios métodos abreviados de teclado para mejorar la eficacia de la creación de contenido.
 
-   * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+  * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 
   Esta opción habilita los métodos abreviados de teclado. De forma predeterminada, están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 

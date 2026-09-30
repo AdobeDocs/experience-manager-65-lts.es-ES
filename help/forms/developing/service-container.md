@@ -9,14 +9,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fea20b34-2f66-460e-8b1c-4e55842bc789
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 2%
-
 ---
-
 # Contenedor de servicio {#service-container}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -79,9 +92,9 @@ El contenedor de servicio proporciona las siguientes funciones:
 
   Cuando una aplicación cliente invoca un servicio, se producen tres eventos:
 
-   1. Una aplicación cliente envía una solicitud de invocación a un servicio.
-   1. El servicio realiza la operación especificada en la solicitud de invocación.
-   1. El contenedor de servicio devuelve una respuesta de invocación a la aplicación cliente.
+  1. Una aplicación cliente envía una solicitud de invocación a un servicio.
+  1. El servicio realiza la operación especificada en la solicitud de invocación.
+  1. El contenedor de servicio devuelve una respuesta de invocación a la aplicación cliente.
 
 **Consulte también**
 

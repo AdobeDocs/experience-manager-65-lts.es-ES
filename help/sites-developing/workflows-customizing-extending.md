@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3611'
 ht-degree: 1%
-
 ---
-
 # Ampliación de la funcionalidad del flujo de trabajo{#extending-workflow-functionality}
 
 En este tema se describe cómo desarrollar componentes de paso personalizados para los flujos de trabajo y, a continuación, cómo interactuar mediante programación con los flujos de trabajo.
@@ -63,8 +72,8 @@ El componente `/libs/cq/workflow/components/model/step` es el antecesor común m
 
   Un cuadro de diálogo con las siguientes pestañas:
 
-   * **Común**: para editar el título y la descripción.
-   * **Avanzado**: para editar propiedades de notificaciones por correo electrónico.
+  * **Común**: para editar el título y la descripción.
+  * **Avanzado**: para editar propiedades de notificaciones por correo electrónico.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +113,9 @@ Para heredar de uno de los componentes de paso base (existentes), agregue la sig
 * Tipo: `String`
 * Valor: una de las siguientes rutas que se resuelve en un componente base:
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### Especificación del título y la descripción predeterminados para las instancias de paso {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ Bajo el nodo `cq:Component`, agregue un nodo `cq:EditConfig`. Debajo de esto, ag
 
 * Nombre: `PROCESS_AUTO_ADVANCE`
 
-   * Tipo: `Boolean`
-   * Valor:
+  * Tipo: `Boolean`
+  * Valor:
 
-      * cuando se establece en `true`, el flujo de trabajo se ejecutará en ese paso y continuará: esto es predeterminado y también recomendado
-      * cuando `false`, el flujo de trabajo se ejecutará y se detendrá; esto requiere una administración adicional, por lo que se recomienda `true`
+    * cuando se establece en `true`, el flujo de trabajo se ejecutará en ese paso y continuará: esto es predeterminado y también recomendado
+    * cuando `false`, el flujo de trabajo se ejecutará y se detendrá; esto requiere una administración adicional, por lo que se recomienda `true`
 
 * Nombre: `DO_NOTIFY`
 
-   * Tipo: `Boolean`
-   * Value: indica si se deben enviar notificaciones por correo electrónico para los pasos de participación del usuario (y supone que el servidor de correo está configurado correctamente)
+  * Tipo: `Boolean`
+  * Value: indica si se deben enviar notificaciones por correo electrónico para los pasos de participación del usuario (y supone que el servidor de correo está configurado correctamente)
 
 ## Conservación y acceso a datos {#persisting-and-accessing-data}
 
@@ -838,12 +847,12 @@ Una manera sencilla de empezar a crear su propio paso personalizado es copiar un
 
      Debe ser uno de los siguientes:
 
-      * Flujo de trabajo de colaboración
-      * Flujo de trabajo DAM
-      * Flujo de trabajo de formularios
-      * Proyectos
-      * Flujo de trabajo WCM
-      * Flujo de trabajo
+     * Flujo de trabajo de colaboración
+     * Flujo de trabajo DAM
+     * Flujo de trabajo de formularios
+     * Proyectos
+     * Flujo de trabajo WCM
+     * Flujo de trabajo
 
    ![wf-35](assets/wf-35.png)
 

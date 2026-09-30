@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 63%
-
+source-wordcount: '1706'
+ht-degree: 64%
 ---
-
 
 # Publicación de páginas {#publishing-pages}
 
@@ -25,13 +38,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
->* **Publicar o cancelar la publicación**
+>* **Publicar/Cancelar publicación**
 >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
->* **Activar o desactivar**
+>* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar o replicación**
+>* **Replicar/replicación**
 >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 
 ## Privilegios insuficientes {#insufficient-privileges}
@@ -62,9 +75,9 @@ Si está editando una página, puede publicarla directamente desde el editor.
    * La página se publicará directamente si no hay ninguna referencia por publicar.
    * Si la página tiene referencias que es necesario publicar, estas se enumerarán en el asistente **Publicar**, donde puede:
 
-      * Especifique cuál de los recursos o etiquetas desea publicar junto con la página y, a continuación, utilice **Publicar** para completar el proceso.
+     * Especifique cuál de los recursos o etiquetas desea publicar junto con la página y, a continuación, utilice **Publicar** para completar el proceso.
 
-      * Utilizar **Cancelar** para anular la acción.
+     * Utilizar **Cancelar** para anular la acción.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -88,10 +101,10 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Administrar publicación    &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicación rápida](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Administrar publicación](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Publicación rápida  {#quick-publish}
+#### Publicación rápida {#quick-publish}
 
 **Publicación rápida** es para casos sencillos y publica las páginas seleccionadas inmediatamente, sin más interacción. Debido a esto, cualquier referencia no publicada también se publicará automáticamente.
 
@@ -111,7 +124,7 @@ Para publicar una página con Publicación rápida:
 >
 >La Publicación rápida es una publicación superficial, es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
-#### Administrar publicación     {#manage-publication}
+#### Administrar publicación {#manage-publication}
 
 **Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
@@ -184,7 +197,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    >[!NOTE]
    >
-   >El paso **Flujos de trabajo** se muestra en función de los derechos que pueda tener o no el usuario.
+   >El paso **Flujos de trabajo** se muestra en función de los derechos que tenga o no su usuario o usuaria.
    >
    >Consulte las secciones [Privilegios insuficientes](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Administración del acceso a los flujos de trabajo](/help/sites-administering/workflows-managing.md) y [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obtener más información.
 
@@ -211,7 +224,7 @@ De forma [similar a la publicación](/help/sites-authoring/publishing-pages.md#
 * [Desde el editor de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Desde la consola Sitios](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
+### Cancelación de la publicación desde el editor {#unpublishing-from-the-editor}
 
 Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
@@ -219,7 +232,7 @@ Si desea cancelar la publicación de una página que está editando, seleccione 
 >
 >No se puede cancelar la publicación de las páginas a las que se accede mediante [alias](/help/sites-authoring/editing-page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
-### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
+### Cancelación de la publicación desde la consola {#unpublishing-from-the-console}
 
 Al igual que [utiliza la opción Administrar publicación para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), puede usarla para cancelar la publicación.
 

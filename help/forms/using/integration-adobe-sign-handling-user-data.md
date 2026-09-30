@@ -7,14 +7,29 @@ feature: Acrobat Sign
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 90521ad8-703e-402b-81dd-4c06f5894358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 58%
 ---
 # Integración con Adobe Sign | Gestión de datos de usuario {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] se integra con [!DNL &#x200B; Adobe Sign] para permitir flujos de trabajo de firma electrónica en formularios adaptables para procesar formularios o acuerdos para flujos de trabajo legales, de ventas, nóminas y administración de recursos humanos. Permite la firma de un solo usuario y de varios, flujos de trabajo de firma secuenciales y simultáneos, la firma de formularios como un usuario anónimo o con la sesión iniciada, y múltiples formas de autenticar a los usuarios.
+[!DNL AEM Forms] se integra con [!DNL  Adobe Sign] para permitir flujos de trabajo de firma electrónica en formularios adaptables para procesar formularios o acuerdos para flujos de trabajo legales, de ventas, nóminas y administración de recursos humanos. Permite la firma de un solo usuario y de varios, flujos de trabajo de firma secuenciales y simultáneos, la firma de formularios como un usuario anónimo o con la sesión iniciada, y múltiples formas de autenticar a los usuarios.
 
 Cuando un firmante o varios firmantes firman y envían un formulario adaptable, se genera un acuerdo de [!DNL Adobe Sign] que contiene información sobre los firmantes.
 

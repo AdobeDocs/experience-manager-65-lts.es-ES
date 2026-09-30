@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 3%
-
 ---
-
 # Directorio global de almacenamiento de documentos{#global-document-storage-directory}
 
 El directorio *Global Document Storage (GDS)* es un directorio usado para almacenar archivos de larga duración que se usan en un proceso. Estos archivos incluyen PDF, directivas y plantillas de formulario. Los archivos de larga duración son una parte esencial del estado general de muchas implementaciones de formularios AEM Forms. Si se pierden o dañan algunos o todos los documentos de larga duración, el servidor de Forms puede volverse inestable. Los documentos de entrada para invocaciones de trabajo asincrónicas también se almacenan en el directorio GDS y deben estar disponibles para procesar solicitudes. Es importante tener en cuenta la fiabilidad del sistema de archivos que aloja el directorio GDS. Utilice una cabina redundante de discos independientes (RAID) u otra tecnología adecuada para sus necesidades de calidad y nivel de servicio.

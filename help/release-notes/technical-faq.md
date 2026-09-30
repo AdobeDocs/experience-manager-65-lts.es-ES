@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 59%
-
 ---
-
 # Preguntas técnicas frecuentes sobre AEM 6.5 LTS {#technical-faq}
 
 Esta página está diseñada para responder algunas preguntas técnicas frecuentes acerca de AEM 6.5 LTS.
@@ -50,7 +64,7 @@ Verifique que está utilizando Uber JAR con el clasificador `apis`. Tenga en cue
 
 No. AEM 6.5 LTS no admite artefactos de Sling migrados a los espacios de nombres del paquete `jakarta.*`. Use los equivalentes de `javax.*` en su código y dependencias; por ejemplo, `javax.annotation.PostConstruct` en lugar de `jakarta.annotation.PostConstruct` en los modelos Sling. La implementación de modelos Sling en AEM 6.5 LTS solo reconoce las anotaciones `javax.*`, por lo que las anotaciones `jakarta.*` se omiten silenciosamente durante la inicialización.
 
-Para obtener más información, consulte el artículo de la base de conocimiento [Los modelos Sling con `jakarta.annotation.PostConstruct` producen un error en AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-30339).
+Para obtener más información, consulte el artículo de la base de conocimiento [Los modelos Sling con `jakarta.annotation.PostConstruct` producen un error en AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339).
 
 ## Obtención de ayuda adicional
 

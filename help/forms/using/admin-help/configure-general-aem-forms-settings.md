@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 2%
-
 ---
-
 # Configuración general de AEM Forms {#general-aem-forms-settings}
 
 La página Configuraciones principales de la consola de administración proporciona opciones que pueden ayudar a mejorar el rendimiento del sistema. Después de configurar o actualizar esta configuración, reinicie el servidor de aplicaciones.
@@ -78,7 +93,7 @@ Para obtener información adicional sobre el directorio GDS, consulte [Preparaci
 
 **Ubicación del directorio de fuentes del cliente** *ndash; Escriba la ruta de acceso a un directorio que contenga fuentes adicionales que desee utilizar.
 
-***nota &#x200B;**: las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes de cliente, asegúrese de reiniciar el sistema en el que está instalado AEM forms.*
+***nota **: las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes de cliente, asegúrese de reiniciar el sistema en el que está instalado AEM forms.*
 
 **Ubicación del directorio de fuentes del sistema** *ndash; Escriba la ruta al directorio de fuentes proporcionado por el sistema operativo. Se pueden agregar varios directorios separados por punto y coma **;**.
 

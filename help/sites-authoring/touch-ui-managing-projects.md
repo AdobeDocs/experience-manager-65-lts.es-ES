@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
-
+source-wordcount: '970'
+ht-degree: 20%
 ---
-
 # Administración de proyectos {#managing-projects}
 
 En la consola **Proyectos**, tiene acceso a sus proyectos y los administra.
@@ -37,11 +50,11 @@ La forma más sencilla de hacerlo es conceder acceso de lectura al grupo **proje
 Siga estos pasos para crear un proyecto.
 
 1. En la consola **Proyectos**, haga clic en **Crear** para abrir el asistente **Crear proyecto**.
-1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información acerca de las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
+1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información acerca de las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
 
    ![Asistente para crear proyectos](assets/create-project-wizard.png)
 
-1. Defina **Title** y **Description** y agregue una imagen de **miniatura** si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen.
+1. Defina **Title** y **Description** y agregue una imagen de **miniatura** si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 

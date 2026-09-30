@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 exl-id: b43fe826-5bb9-474e-b83e-187b90afa84b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -103,7 +114,7 @@ Específico de la tienda:
 
 >[!NOTE]
 >
->Ver también la [Referencia de la API de ContextHub](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
+>Ver también la [Referencia de la API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adición de devoluciones de llamada de registro {#adding-record-callbacks}
 

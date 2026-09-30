@@ -10,7 +10,25 @@ feature: Panoramic Images,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: d61a43e0-1563-4df1-9eb3-9ab3d5eab8b2
+    internal-label: Panoramic images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -41,7 +59,7 @@ Para cargar recursos para usarlos con el visor de imágenes panorámicas, consul
 
 Para que el visualizador de imágenes panorámicas funcione correctamente en Adobe Experience Manager, sincronice los ajustes preestablecidos del visualizador de imágenes panorámicas con Dynamic Media Classic y metadatos específicos de Dynamic Media Classic para que los ajustes preestablecidos del visualizador se actualicen en el JCR. Para realizar esta sincronización, configure Dynamic Media Classic de la siguiente manera:
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
 1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
 1. En la página Publicar en el servidor de imágenes, en el menú desplegable **[!UICONTROL Contexto de publicación]**, cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes]**.

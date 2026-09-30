@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '570'
 ht-degree: 4%
-
 ---
-
 # Configuraciones de Cloud Service{#cloud-service-configurations}
 
 Las configuraciones están diseñadas para proporcionar la lógica y la estructura para almacenar configuraciones de servicio.
 
 Puede ampliar las instancias existentes para crear sus propias configuraciones.
 
-## Conceptos  {#concepts}
+## Conceptos {#concepts}
 
 Los principios utilizados para desarrollar las configuraciones se han basado en los siguientes conceptos:
 
@@ -49,8 +58,8 @@ Para proporcionar una configuración para nuevos servicios, haga lo siguiente:
 
 * En esta sección:
 
-   * una plantilla de configuración
-   * un componente de configuración
+  * una plantilla de configuración
+  * un componente de configuración
 
 La plantilla y el componente deben heredar `sling:resourceSuperType` de la plantilla base:
 
@@ -165,7 +174,7 @@ La propiedad será cifrada automáticamente (mediante el servicio `CryptoSupport
 >
 >De manera predeterminada, `EcryptionPostProcessor` solo cifra `POST` solicitudes realizadas a `/etc/cloudservices`.
 
-#### Propiedades adicionales para la página de servicio jcr:nodos de contenido {#additional-properties-for-service-page-jcr-content-nodes}
+#### Propiedades adicionales para los nodos jcr:content de la página de servicio {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +184,7 @@ La propiedad será cifrada automáticamente (mediante el servicio `CryptoSupport
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br />: se utiliza para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde se incluye <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente antes de la etiqueta <code>body</code>).<br /> En caso de que Adobe Analytics y Adobe Target se comporten de esta manera, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
+   <td>Ruta de acceso de referencia a un componente que se incluirá automáticamente en la página.<br /> Se usa para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde se incluye <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente antes de la etiqueta <code>body</code>).<br /> En caso de que se publique Adobe Analytics y Adobe Target, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
   </tr>
   <tr>
    <td>descripción</td>

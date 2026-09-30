@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 1%
-
 ---
-
 # Supervisión y mantenimiento de la instancia de Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Una vez implementadas las instancias de AEM, debe monitorizar y mantener su funcionamiento, rendimiento e integridad.
@@ -25,7 +34,7 @@ Un factor clave aquí es que para reconocer posibles problemas, debe saber cómo
 
 >[!NOTE]
 >
->Las directrices de esta página se aplican a implementaciones autoadministradas (locales). Si ejecuta AEM en Adobe Managed Services, la telemetría de aplicaciones e infraestructura se recopila por usted y está disponible a través de Observability Insights, que proporciona una vista alojada de los entornos de producción y no producción. Para obtener más información, consulte [Observability Insights](https://experienceleague.adobe.com/es/docs/ams-observability-insights/content/overview).
+>Las directrices de esta página se aplican a implementaciones autoadministradas (locales). Si ejecuta AEM en Adobe Managed Services, la telemetría de aplicaciones e infraestructura se recopila por usted y está disponible a través de Observability Insights, que proporciona una vista alojada de los entornos de producción y no producción. Para obtener más información, consulte [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
 
 | Comprobación | Consideraciones | Comentario/acciones |
 |---|---|---|
@@ -228,13 +237,13 @@ Hay varios archivos de registro en el servidor de archivos donde instaló AEM:
   * `error.log`
     Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=es)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
     Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
   * `request.log`
     Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=es)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
     Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
 
   * `stderr.log`
@@ -253,7 +262,7 @@ Hay varios archivos de registro en el servidor de archivos donde instaló AEM:
 
 >[!NOTE]
 >
->Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar &#x200B;** completo&quot; generado desde la página **system/console/status-Bundlelist &#x200B;**. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
+>Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar ** completo&quot; generado desde la página **system/console/status-Bundlelist **. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
 
 ### Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
@@ -1068,9 +1077,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 >Consulte también los siguientes artículos para obtener más información:
 >
->* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
->* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
->* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
+>* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### CPU al 100 % {#cpu-at}
@@ -1090,7 +1099,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-  * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+  * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1108,7 +1117,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
-  * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
+  * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 

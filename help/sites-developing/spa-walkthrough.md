@@ -8,13 +8,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1983'
 ht-degree: 66%
-
 ---
-
 
 # Introducción y tutorial de SPA {#spa-introduction-and-walkthrough}
 
@@ -32,17 +46,17 @@ Este artículo presenta los conceptos básicos de las SPA antes de guiar al lect
 
 La meta de esta introducción y tutorial es demostrar a un desarrollador AEM por qué los SPA son relevantes, cómo funcionan en general, cómo el editor de SPA gestiona las SPA y cómo es diferente de una aplicación AEM estándar.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de proyecto WKND SPA de ejemplo. Para seguir con este tutorial, debe tener disponible lo siguiente.
 
 * [AEM versión 6.5.4 o posterior](/help/release-notes/release-notes.md)
-   * Debe tener derechos de administrador en el sistema.
-* [La aplicación de proyecto WKND SPA de ejemplo está disponible en GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Descargue la [última versión de la aplicación React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Se le asignará un nombre similar a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Descargue las [imágenes de muestra más recientes](https://github.com/adobe/aem-guides-wknd-spa/releases) para la aplicación. Se le asignará un nombre similar a `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Use el administrador de paquetes](/help/sites-administering/package-manager.md) para instalar los paquetes como lo haría con cualquier otro paquete en AEM.
-   * No es necesario instalar la aplicación mediante Maven para realizar este tutorial.
+  * Debe tener derechos de administrador en el sistema.
+* [La aplicación de ejemplo del proyecto SPA de WKND disponible en GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+  * Descargue la [última versión de la aplicación React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Se le asignará un nombre similar a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Descargue las [imágenes de muestra más recientes](https://github.com/adobe/aem-guides-wknd-spa/releases) para la aplicación. Se le asignará un nombre similar a `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Use el administrador de paquetes](/help/sites-administering/package-manager.md) para instalar los paquetes como lo haría con cualquier otro paquete en AEM.
+  * No es necesario instalar la aplicación mediante Maven para realizar este tutorial.
 
 >[!CAUTION]
 >
@@ -153,7 +167,7 @@ Experimentar cómo se comporta un SPA para el usuario final y luego inspeccionar
 
    ![Paso 2](assets/spa-walkthrough-step-1-2.png)
 
-1. Abra las herramientas de desarrollador integradas del explorador y supervise la actividad de red a medida que navega por las páginas secundarias.
+1. Abra las herramientas de desarrollador integradas del explorador y monitorice la actividad de red a medida que navega por las páginas secundarias.
 
    ![Paso 3](assets/spa-walkthrough-step-1-3.png)
 

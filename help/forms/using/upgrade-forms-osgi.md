@@ -6,13 +6,33 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1620'
 ht-degree: 42%
-
 ---
-
 # Actualizar a AEM 6.5 Forms LTS en OSGi {#upgrade-to-aem-forms-osgi}
 
 Para [actualizar de AEM 6.5 a AEM 6.5 LTS](/help/sites-deploying/upgrade.md), actualice a AEM 6.5.17.0 Forms o posterior. Se admite una actualización directa de AEM 6.5.17.0 (o posterior) a AEM 6.5 Forms LTS.
@@ -93,7 +113,7 @@ Después de actualizar a AEM Forms 6.5.17.0 o posterior, siga estos pasos para a
 
    >[!NOTE]
    >
-   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >En AEM 6.4 Forms, la estructura del repositorio crx ha cambiado. Si actualiza de Forms 6.3 a AEM 6.5 Forms, utilice las rutas modificadas para la personalización que cree de nuevo. Para obtener la lista completa de las rutas cambiadas, consulte [Reestructurar el repositorio de Forms en AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Implementación de AEM en JBoss EAP 8 (Windows)

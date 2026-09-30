@@ -4,13 +4,21 @@ description: Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qu�
 feature: Developing
 role: Admin,Developer
 exl-id: 7c1af58f-95b3-4366-96cd-7383ac869923
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '1050'
 ht-degree: 16%
-
 ---
-
 # Finalización del soporte para el editor de SPA {#spa-editor-deprecation}
 
 Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qué significa su desaprobación para el proyecto y qué opciones tiene para futuros proyectos.
@@ -21,27 +29,27 @@ Adobe dejó de utilizar el Editor SPA con [AEM 6.5 LTS,](/help/release-notes/rel
 
 ## Detalles de obsolescencia {#details}
 
-La desaprobación del Editor de SPA **no significa la eliminación inmediata**, y si tiene implementaciones existentes, **puede seguir usándolo siempre que satisfaga sus necesidades.** Sin embargo, tenga en cuenta las siguientes implicaciones de su desuso.
+La desaprobación del Editor de SPA **no significa la eliminación inmediata**, y si tiene implementaciones existentes, **puede seguir usándolo siempre que satisfaga sus necesidades.** Sin embargo, tenga en cuenta las siguientes implicaciones de su desaprobación.
 
 * En el futuro, Adobe solo solucionará los problemas de seguridad y las vulnerabilidades de seguridad de P1 y P2.
 * No se realizarán más desarrollos, mejoras ni actualizaciones en sus SDK.
 
 La desuso significa que los siguientes SDK están ahora inmovilizados de funciones.
 
-* [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype/)
-* [Núcleo del proyecto de la SPA de AEM](https://github.com/adobe/aem-spa-project-core)
+* [Arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype/)
+* [Núcleo del proyecto de SPA de AEM](https://github.com/adobe/aem-spa-project-core)
 * [Administrador del modelo de página SPA de AEM](https://github.com/adobe/aem-spa-page-model-manager)
-* [Asignación de componentes de la SPA de AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componentes editables de React de SPA de AEM](https://github.com/adobe/aem-react-editable-components)
-   * [Componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components)
-   * [Base de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [SPA de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [Ejemplos de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-examples)
+* [Asignación de componentes de SPA de AEM](https://github.com/adobe/aem-spa-component-mapping)
+* [Componentes editables de AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+  * [Componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components)
+  * [Base de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
+  * [SPA de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
+  * [Ejemplos de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-examples)
 * [Componentes editables de AEM SPA Angular](https://github.com/adobe/aem-angular-editable-components)
-   * [Componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [Base de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [SPA de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [Ejemplos de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+  * [Componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components)
+  * [Base de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-base)
+  * [SPA de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+  * [Ejemplos de componentes principales de AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-examples)
 * [Componentes editables de AEM SPA Vue](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## Alternativas al Editor de SPA {#alternatives}
@@ -49,10 +57,10 @@ La desuso significa que los siguientes SDK están ahora inmovilizados de funcion
 El reemplazo más adecuado para el Editor SPA depende de las necesidades de sus proyectos.
 
 * **[El editor universal](/help/sites-developing/universal-editor/introduction.md)** es el mejor reemplazo directo del editor de SPA.
-   * El editor universal también es un editor visual y se diseñó específicamente para implementaciones disociadas, incorporando toda la experiencia de Adobe del editor de SPA.
-   * El editor universal también se ha [publicado para AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) y, por lo tanto, admite AMS y casos de uso locales, además de Cloud Services.
+  * El editor universal también es un editor visual y se diseñó específicamente para implementaciones disociadas, incorporando toda la experiencia de Adobe del editor de SPA.
+  * El editor universal también se ha [publicado para AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) y, por lo tanto, admite AMS y casos de uso locales, además de Cloud Services.
 * **[El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)** es una alternativa para aquellos que prefieren un editor basado en formularios.
-   * El Editor de fragmentos de contenido es más adecuado cuando el contenido está estructurado como fragmentos de contenido en lugar de como páginas.
+  * El Editor de fragmentos de contenido es más adecuado cuando el contenido está estructurado como fragmentos de contenido en lugar de como páginas.
 
 La estructuración del contenido con fragmentos de contenido no excluye el uso del Editor universal como editor visual, y ambos editores se pueden utilizar juntos.
 
@@ -64,15 +72,15 @@ El editor universal ofrece muchas ventajas, por lo que la migración a él es un
 * **Preparación para el futuro:** la hoja de ruta de AEM da prioridad al editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
 * **Integración más sencilla:** no se requiere un SDK específico de AEM para usar el editor universal, lo que reduce el bloqueo de la pila tecnológica.
 * **Traer su propia aplicación:** el editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
-* **Extensibilidad:** el editor universal se beneficia de un [marco de extensión](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) sólido, que incluye integraciones con GenAI, Workfront y más.
+* **Extensibilidad:** el editor universal se beneficia de un [marco de extensión](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) sólido, que incluye integraciones con GenAI, Workfront y más.
 
 No hay una ruta de migración directa del Editor de SPA al Editor universal. Esto se debe a diferencias fundamentales entre las dos tecnologías.
 
 * El editor universal no vuelve a introducir funciones como el editor de plantillas, el sistema de estilos o la cuadrícula adaptable.
-   * Estos casos de uso ahora se pueden administrar de forma más eficaz con CSS y JS de front-end delgados en proyectos de Edge Delivery Services o sin encabezado.
+  * Estos casos de uso ahora se pueden administrar de forma más eficaz con CSS y JS de front-end delgados en proyectos de Edge Delivery Services o sin encabezado.
 * Dado que el editor universal es un editor como servicio, no puede permitir a los implementadores insertar CSS o JS en los cuadros de diálogo de componentes.
-   * De este modo, evita la conversión automática de los cuadros de diálogo de componentes desde el editor de páginas.
-   * Esto afecta a muchas áreas de los cuadros de diálogo, como widgets personalizados, validación de campos, reglas de mostrar/ocultar y personalizaciones basadas en plantillas.
+  * De este modo, evita la conversión automática de los cuadros de diálogo de componentes desde el editor de páginas.
+  * Esto afecta a muchas áreas de los cuadros de diálogo, como widgets personalizados, validación de campos, reglas de mostrar/ocultar y personalizaciones basadas en plantillas.
 
 Teniendo en cuenta estas diferencias técnicas, la recomendación de Adobe es:
 

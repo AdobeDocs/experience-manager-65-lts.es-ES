@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 16%
-
+source-wordcount: '1916'
+ht-degree: 15%
 ---
-
 # Crear y organizar páginas{#creating-and-organizing-pages}
 
 En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para poder [crear contenido](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en esas páginas.
@@ -79,13 +88,13 @@ Al crear una página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
-   * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar. 
-   * Este campo es obligatorio.
+  * Se muestra al usuario en la consola, en la parte superior del contenido de la página al editar.
+  * Este campo es obligatorio.
 
 * **[Nombre](#name)**:
 
-   * Se usa para generar la URI.
-   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
+  * Se usa para generar la URI.
+  * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
 
 Al crear una página, AEM [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
@@ -106,7 +115,7 @@ Si proporciona solo una página **Title** al crear una página, AEM deriva la p�
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc-c-.html |
 
 #### Nombre {#name}
 
@@ -127,15 +136,18 @@ En la IU clásica **no puede escribir caracteres no válidos** en el campo **Nom
 
 En AEM, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
-La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
+La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de producto, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
 AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas ofrecidas dependen del sitio web individual y la información que se proporcione (al crear la nueva página) depende de la interfaz de usuario que se utilice. Los campos principales son:
 
-* **Título** El título se muestra en la página web resultante.
+* **Título**
+El título se muestra en la página web resultante.
 
-* **Nombre** Se utiliza al dar nombre a la página.
+* **Nombre**
+Se utiliza al dar nombre a la página.
 
-* **Plantilla** Una lista de plantillas disponibles para usar durante la generación de la nueva página.
+* **Plantilla**
+Una lista de plantillas disponibles para usar al generar la nueva página.
 
 ### Componentes {#components}
 
@@ -170,8 +182,8 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * Proporcione un **Título**; esto se mostrará al usuario.
    * Proporcione un **Nombre**; se usa para generar el URI. Si no se especifica, el nombre se derivará del título.
 
-      * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
-      * En la IU clásica, **no puede escribir caracteres no válidos** en el campo **Nombre**.
+     * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+     * En la IU clásica, **no puede escribir caracteres no válidos** en el campo **Nombre**.
 
    * Haga clic en la plantilla que desee utilizar para crear la nueva página.
 
@@ -207,7 +219,7 @@ Puede abrir la página que desea [editar](/help/sites-classic-ui-authoring/class
 
 * Una vez abierta una página, puede desplazarse a otras páginas del sitio (para editarlas) haciendo clic en los hipervínculos.
 
-### Copiar y pegar una página    {#copying-and-pasting-a-page}
+### Copiar y pegar una página {#copying-and-pasting-a-page}
 
 Al copiar, puede copiar lo siguiente:
 
@@ -319,7 +331,7 @@ Para mover o cambiar el nombre de una página:
 >
 >Si una página ya está activada, se desactiva automáticamente antes de la eliminación.
 
-### Bloquear una página   {#locking-a-page}
+### Bloquear una página {#locking-a-page}
 
 Puede [bloquear/desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) desde una consola o al editar una página individual. La información sobre las páginas bloqueadas también se muestra en ambas ubicaciones.
 

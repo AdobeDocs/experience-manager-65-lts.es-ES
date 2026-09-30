@@ -1,5 +1,5 @@
 ---
-title: Configurar OSGi
+title: Configuración de OSGi
 description: OSGi es un elemento fundamental de la pila tecnológica de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y su configuración. Este artículo detalla cómo puede administrar los ajustes de configuración para estos paquetes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1935'
 ht-degree: 0%
-
 ---
-
-# Configurar OSGi{#configuring-osgi}
+# Configuración de OSGi{#configuring-osgi}
 
 [OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
 
@@ -34,22 +43,22 @@ Se puede usar cualquiera de los métodos aunque existen diferencias sutiles, pri
 
 * [Consola web de Adobe CQ](#osgi-configuration-with-the-web-console)
 
-   * La consola web es la interfaz estándar para la configuración de OSGi. Proporciona una interfaz de usuario para editar las distintas propiedades, donde es posible seleccionar valores de listas predefinidas.
+  * La consola web es la interfaz estándar para la configuración de OSGi. Proporciona una interfaz de usuario para editar las distintas propiedades, donde es posible seleccionar valores de listas predefinidas.
 
-     Como tal, es el método más fácil de usar.
+    Como tal, es el método más fácil de usar.
 
-   * Cualquier configuración realizada con la consola web se aplica inmediatamente y se aplica a la instancia actual, independientemente del modo de ejecución actual o de cualquier cambio posterior en el modo de ejecución.
+  * Cualquier configuración realizada con la consola web se aplica inmediatamente y se aplica a la instancia actual, independientemente del modo de ejecución actual o de cualquier cambio posterior en el modo de ejecución.
 
 * [archivos de configuración](#osgi-configuration-with-configuration-files)
 
-   * Contiene la configuración definida en la consola web.
-   * Se puede incluir en paquetes de contenido para usarlos en otras instancias.
+  * Contiene la configuración definida en la consola web.
+  * Se puede incluir en paquetes de contenido para usarlos en otras instancias.
 
 * [content-nodes (sling:osgiConfig) en el repositorio](#osgi-configuration-in-the-repository)
 
-   * Requiere una configuración manual con CRXDE Lite.
-   * Debido a las convenciones de nomenclatura de los nodos `sling:OsgiConfig`, puede enlazar la configuración a un [modo de ejecución](/help/sites-deploying/configure-runmodes.md) específico. Incluso puede guardar configuraciones para más de un modo de ejecución en el mismo repositorio.
-   * Las configuraciones adecuadas se aplican inmediatamente (según el modo de ejecución).
+  * Requiere una configuración manual con CRXDE Lite.
+  * Debido a las convenciones de nomenclatura de los nodos `sling:OsgiConfig`, puede enlazar la configuración a un [modo de ejecución](/help/sites-deploying/configure-runmodes.md) específico. Incluso puede guardar configuraciones para más de un modo de ejecución en el mismo repositorio.
+  * Las configuraciones adecuadas se aplican inmediatamente (según el modo de ejecución).
 
 Sea cual sea el método que utilice, todos estos métodos de configuración:
 
@@ -132,7 +141,7 @@ Estos archivos se pueden incluir en paquetes de contenido y reutilizarse en otra
 La consola web no muestra ninguna indicación de en qué parte del repositorio se han guardado los cambios, pero se pueden localizar fácilmente:
 
 1. Cree el archivo de configuración [realizando un cambio inicial en la consola web](#osgi-configuration-with-the-web-console).
-1. Abra CRXDE Lite.
+1. Abra CRXDE Lite.
 1. En el menú **Herramientas**, seleccione **Consulta...** .
 1. Para buscar el PID de la configuración que ha actualizado, envíe una consulta de **Tipo** `SQL`.
 
@@ -317,17 +326,17 @@ Para enumerar todos los nodos de configuración de la instancia, use la funciona
 
   `/apps/{somewhere}`
 
-   * De forma predeterminada `{somewhere}` es `system/config`, por lo que la configuración se escribe en
+  * De forma predeterminada `{somewhere}` es `system/config`, por lo que la configuración se escribe en
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * Sin embargo, si está editando una configuración que inicialmente provino de otra parte del repositorio: por ejemplo:
+  * Sin embargo, si está editando una configuración que inicialmente provino de otra parte del repositorio: por ejemplo:
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     A continuación, la configuración actualizada se escribe en la ubicación original; por ejemplo:
+    A continuación, la configuración actualizada se escribe en la ubicación original; por ejemplo:
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * La configuración que ha cambiado `admin` se guarda en `*.config` archivos en:
 
@@ -335,17 +344,17 @@ Para enumerar todos los nodos de configuración de la instancia, use la funciona
      /crx-quickstart/launchpad/config
   ```
 
-   * Esta área son los datos privados del administrador de configuración de OSGi y contiene todos los detalles de configuración especificados por `admin`, independientemente de cómo hayan entrado al sistema.
-   * Esta área es un detalle de implementación y nunca debe editar este directorio directamente.
-   * Sin embargo, es útil conocer la ubicación de estos archivos de configuración para que se puedan realizar copias de seguridad, instalaciones múltiples o ambas:
+  * Esta área son los datos privados del administrador de configuración de OSGi y contiene todos los detalles de configuración especificados por `admin`, independientemente de cómo hayan entrado al sistema.
+  * Esta área es un detalle de implementación y nunca debe editar este directorio directamente.
+  * Sin embargo, es útil conocer la ubicación de estos archivos de configuración para que se puedan realizar copias de seguridad, instalaciones múltiples o ambas:
 
-      * Consola de administración de Apache Felix OSGi
+    * Consola de administración de Apache Felix OSGi
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * Repositorio de cliente de CRX Sling
+    * Repositorio de cliente de CRX Sling
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

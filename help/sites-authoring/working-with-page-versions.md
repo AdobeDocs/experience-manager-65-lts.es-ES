@@ -5,22 +5,35 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 62%
-
 ---
-
-# Uso de versiones de página  {#working-with-page-versions}
+# Uso de versiones de página{#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
 * Crear una versión de la página.
 * Restaurar una página a una versión anterior; por ejemplo:
-   * para deshacer un cambio realizado en la página.
+  * para deshacer un cambio realizado en la página.
 * Comparar la versión actual de una página con una versión anterior:
-   * para resaltar diferencias en el texto y las imágenes.
+  * para resaltar diferencias en el texto y las imágenes.
 
 >[!NOTE]
 >
@@ -29,7 +42,7 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
 >* Cuando se visualizan versiones, el contenido se visualiza con el código, CSS y JavaScript actuales del repositorio.
 >* Al restaurar versiones, solo se restaura el contenido y se le aplican el código, CSS y JavaScript actuales del repositorio.
 
-## Creación de una nueva versión   {#creating-a-new-version}
+## Creación de una nueva versión {#creating-a-new-version}
 
 Puede crear una versión de su recurso desde:
 
@@ -77,13 +90,13 @@ Una vez creada una versión de la página, existen varios métodos para restable
 
 * las opciones **Restaurar** de la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * **Restaurar versión**
+  * **Restaurar versión**
 
-     Restablecer versiones de páginas especificadas dentro de la carpeta seleccionada actualmente; esto también puede incluir la restauración de páginas que se han eliminado anteriormente.
+    Restablecer versiones de páginas especificadas dentro de la carpeta seleccionada actualmente; esto también puede incluir la restauración de páginas que se han eliminado anteriormente.
 
-   * **Restaurar árbol**
+  * **Restaurar árbol**
 
-     Restablecer una versión de todo un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente.
+    Restablecer una versión de todo un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente.
 
 >[!NOTE]
 >
@@ -165,7 +178,7 @@ Este método puede utilizarse para restaurar una versión de un árbol en una fe
 
 1. Seleccione **Restaurar** para que la versión seleccionada del árbol se restaure como la versión *actual*.
 
-## Vista previa de una versión   {#previewing-a-version}
+## Vista previa de una versión {#previewing-a-version}
 
 Puede obtener una vista previa de una versión específica:
 
@@ -197,7 +210,7 @@ Para comparar una versión anterior con la página actual, haga lo siguiente:
 
 1. Seleccione **Comparar con actual**. Se abre [diferencia de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
 
-## Deformación de tiempo   {#timewarp}
+## Deformación de tiempo {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
@@ -208,7 +221,7 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función utiliza las versiones de página para determinar el estado del entorno de publicación:
 
 * El sistema busca la versión de página que estaba activa en el momento seleccionado.
-   * Esta versión de página se creó o activó *antes de* el momento seleccionado en Deformación de tiempo.
+  * Esta versión de página se creó o activó *antes de* el momento seleccionado en Deformación de tiempo.
 * Al navegar a una página que se haya eliminado, también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
 * Si no se encuentra ninguna versión publicada, Deformación de tiempo vuelve al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que impediría el examen).
 

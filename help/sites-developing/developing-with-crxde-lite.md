@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2116'
 ht-degree: 4%
-
 ---
-
 # Desarrollo con CRXDE Lite{#developing-with-crxde-lite}
 
 En esta sección se describe cómo desarrollar la aplicación de Adobe Experience Manager (AEM) mediante CRXDE Lite.
@@ -29,7 +40,7 @@ Se recomienda CRXDE Lite cuando no tiene acceso directo al servidor de AEM. O bi
 >[!NOTE]
 >
 >A partir de AEM 6.5.5.0, el acceso anónimo de CRXDE Lite ya no es posible.
->Los usuarios son redirigidos a la pantalla de inicio de sesión.
+>Los usuarios se redirigen a la pantalla de inicio de sesión.
 
 
 >[!NOTE]

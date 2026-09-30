@@ -11,13 +11,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3747'
 ht-degree: 5%
-
 ---
-
 # Perfiles de vídeo {#video-profiles}
 
 Dynamic Media ya incluye un perfil predefinido de codificación de vídeo adaptable. La configuración de este perfil predeterminado está optimizada para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principal mediante el perfil de codificación de vídeo adaptable, el reproductor de vídeo optimiza la calidad de reproducción. Ajusta automáticamente el flujo de vídeo en función de la velocidad de conexión a Internet de los clientes. Esta funcionalidad se conoce como flujo de velocidad de bits adaptable.
@@ -109,7 +123,7 @@ El tamaño máximo de archivo de vídeo admitido para el recorte inteligente es 
 * 30 cuadros por segundo (FPS).
 * Tamaño de archivo de 300 MB.
 
-La IA de Adobe está limitada a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, la IA de Adobe y el recorte inteligente admiten un vídeo de 60 FPS solo si dura al menos dos minutos y medio.
+Adobe AI está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, Adobe AI y el recorte inteligente admiten un vídeo de 60 FPS solo si dura al menos dos minutos y medio.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
@@ -221,13 +235,13 @@ Seleccione el icono de información junto a cada opción. Puede leer las descrip
 1. Haga lo siguiente:
    * En el campo **[!UICONTROL Anchura]**, escriba **[!UICONTROL auto]**.
    * En el campo **[!UICONTROL Altura]**, escriba un valor en píxeles.
-Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para establecer la dimensión de vídeo más (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, seleccione **[!UICONTROL X]**.
+     Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para establecer la dimensión de vídeo más (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, seleccione **[!UICONTROL X]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
    * Seleccione la ficha **[!UICONTROL Avanzado]** y asegúrese de que la casilla de verificación **[!UICONTROL Usar valores predeterminados]** está activada (recomendada).
 
    * Desactive la casilla de verificación **[!UICONTROL Usar valores predeterminados]** y especifique la configuración de vídeo y audio que desee.
-Seleccione el icono de información junto a cada opción. Puede leer las descripciones adicionales o la configuración recomendada en función del códec de formato de vídeo seleccionado.
+     Seleccione el icono de información junto a cada opción. Puede leer las descripciones adicionales o la configuración recomendada en función del códec de formato de vídeo seleccionado.
 
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
 1. Realice una de las siguientes acciones:
@@ -281,7 +295,7 @@ Puede editar un perfil de codificación de vídeo existente para acceder a pará
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>El número de fotogramas objetivo entre fotogramas clave. Calcule este valor para que pueda generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave debe ser de 60 a 300.<br /> <br /> Los intervalos de fotogramas clave más bajos mejoran la búsqueda de flujo y el comportamiento de cambio de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos con movimiento alto. Sin embargo, como los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave menor suele reducir la calidad general de vídeo a una velocidad de bits determinada.</td>
+   <td>El número de fotogramas objetivo entre fotogramas clave. Calcule este valor para que pueda generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave debe ser de 60 a 300.<br /> <br /> Los intervalos de fotogramas clave más bajos mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos con movimiento alto. Sin embargo, como los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave menor suele reducir la calidad general de vídeo a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
    <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para DASH o HLS es de 60 a 90.</p> </td>
   </tr>
@@ -399,7 +413,7 @@ Vea también [Volver a procesar recursos en una carpeta después de editar su pe
 1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]**, seleccione el perfil en el menú desplegable y elija **[!UICONTROL Guardar y cerrar]**. La interfaz de usuario muestra el nombre del perfil en el nombre de la tarjeta para indicar las carpetas con un perfil asignado.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
+   Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 ### Aplicación de un perfil de vídeo global {#applying-a-video-profile-globally}
 

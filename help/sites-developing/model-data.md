@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1780'
+ht-degree: 1%
 ---
-
 # Modelado de datos: el modelo de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Origen {#source}
@@ -46,7 +55,7 @@ Me gustaría empezar a llenar este vacío expresando mis opiniones sobre cómo s
 
 Recomiendo no preocuparse por una estructura de datos declarada en un sentido rojo. Inicialmente.
 
-Aprende a amar a nt:unstructured (&amp; amigos) en el desarrollo.
+Aprenda a amar a nt:unstructured (&amp; amigos) en el desarrollo.
 
 Mi conclusión: La estructura es costosa y a menudo es totalmente innecesario declarar explícitamente la estructura al almacenamiento subyacente.
 
@@ -54,7 +63,7 @@ Existe un contrato implícito sobre la estructura que la aplicación utiliza de 
 
 Solo deben aplicarse otras restricciones de datos, como obligatorias o restricciones de tipo y valor, cuando sea necesario por motivos de integridad de los datos.
 
-#### Ejemplos {#example-1}
+#### Ejemplo {#example-1}
 
 El ejemplo anterior de usar una propiedad Fecha `lastModified` en, por ejemplo, el nodo &quot;publicación de blog&quot;, no significa que sea necesario un tipo de nodo especial. Definitivamente usaría `nt:unstructured` para los nodos de mis publicaciones de blog al menos inicialmente. Ya que en mi aplicación de blogs, todo lo que voy a hacer es mostrar la fecha de lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Como confío implícitamente en la aplicación de escritura de blogs para poner una &quot;fecha&quot; de todas formas, no es necesario declarar la presencia de una fecha `lastModified` en forma de nodo.
 
@@ -74,7 +83,7 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 >
 >La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe superar 1000.
 
-#### Ejemplos {#example-2}
+#### Ejemplo {#example-2}
 
 Yo modelaría un sistema simple de blogueo de la siguiente manera. Inicialmente, ni siquiera me importan los tipos de nodos respectivos que utilizo en este punto.
 
@@ -112,7 +121,7 @@ No utilice espacios de trabajo para el control de acceso. La visibilidad del con
 
 Los espacios de trabajo son los límites de las referencias y consultas.
 
-#### Ejemplos {#example-3}
+#### Ejemplo {#example-3}
 
 Utilice espacios de trabajo para cosas como:
 
@@ -135,7 +144,7 @@ Cualquier ruta al repositorio de contenido que contenga un SNS en uno de sus seg
 
 Para importar XML o interactuar con XML existente, SNS puede ser necesario y útil, pero nunca he utilizado SNS (ni tengo intención de hacerlo) en mis modelos de datos de &quot;campo verde&quot;.
 
-#### Ejemplos {#example-4}
+#### Ejemplo {#example-4}
 
 Uso
 
@@ -159,7 +168,7 @@ Las referencias implican integridad referencial. Es importante comprender que la
 
 Personalmente, solo utilizo referencias cuando realmente no puedo lidiar con una referencia colgada y, de lo contrario, utilizo una ruta, un nombre o un UUID de cadena para hacer referencia a otro nodo.
 
-#### Ejemplos {#example-5}
+#### Ejemplo {#example-5}
 
 Supongamos que permito &quot;referencias&quot; de un documento a) a otro documento b). Si modelo esta relación con propiedades de referencia, significa que los dos documentos están vinculados en un nivel de repositorio. No puedo exportar/importar el documento (a) individualmente, ya que es posible que el destino de la propiedad de referencia no exista. Otras operaciones como combinar, actualizar, restaurar o clonar también se ven afectadas.
 
@@ -173,13 +182,13 @@ Creo que hay casos prácticos en los que un sistema no puede funcionar si una re
 
 Si un modelo de contenido expone algo que incluso huele remotamente a archivo o carpeta, intento usar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
 
-En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. Por ejemplo, una interacción directa con implementaciones de servidor de archivos como CIFS o WebDAV ubicadas encima de JCR se vuelve implícita.
+Según mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo controlar y mostrar esos eventos si se enriquecen con metainformación adicional. Por ejemplo, una interacción directa con implementaciones de servidor de archivos como CIFS o WebDAV ubicadas encima de JCR se vuelve implícita.
 
 Creo que, como buena regla general, se podría utilizar lo siguiente: Si debe almacenar el nombre de archivo y el tipo MIME, `nt:file`/ `nt:resource` es una buena coincidencia. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
 
 Si debe agregar información meta para su recurso, por ejemplo una propiedad &quot;author&quot; o &quot;description&quot;, extienda `nt:resource` no `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
 
-#### Ejemplos {#example-6}
+#### Ejemplo {#example-6}
 
 Supongamos que alguien desea cargar una imagen en una entrada de blog en:
 
@@ -209,13 +218,13 @@ Es cierto que algunos nodos necesitan una identificación estable a lo largo de 
 
 Tenga en cuenta también que los elementos se pueden identificar por ruta. Y, a pesar de que los &quot;enlaces simbólicos&quot; tienen mucho más sentido para la mayoría de los usuarios que los enlaces duros en un sistema de archivos UNIX®, una ruta tiene sentido para la mayoría de las aplicaciones para referirse a un nodo de destino.
 
-Y lo que es más importante, es **mix**:referenciable, lo que significa que se puede aplicar a un nodo en el momento en el que realmente debe hacer referencia a él.
+Lo que es más importante, es **mix**:referenceable, lo que significa que se puede aplicar a un nodo en el momento en que realmente deba hacer referencia a él.
 
 Por lo tanto, el hecho de que desee poder hacer referencia potencialmente a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde `mix:referenceable` de forma estática. Esto se debe a que se puede agregar dinámicamente a cualquier instancia del documento.
 
-#### Ejemplos {#example-7}
+#### Ejemplo {#example-7}
 
-Utilice:
+Use:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

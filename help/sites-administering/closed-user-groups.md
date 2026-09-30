@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 1%
-
 ---
-
 # Grupos de usuarios cerrados en AEM{#closed-user-groups-in-aem}
 
 ## Introducción {#introduction}
@@ -101,10 +113,10 @@ Las siguientes prácticas recomendadas deben tener en cuenta la definición del 
 * Cree un modelo de amenazas para los datos o el contenido que debe protegerse para identificar los límites de las amenazas y obtener una imagen clara de la confidencialidad de los datos y las funciones asociadas con el acceso autorizado
 * Modele el contenido del repositorio y los CUG teniendo en cuenta los aspectos generales relacionados con la autorización y las prácticas recomendadas:
 
-   * Recuerde que el permiso de lectura solo se concede si un CUG determinado y la evaluación de otros módulos implementados en la concesión de configuración permiten que un sujeto determinado lea un elemento de repositorio determinado
-   * Evite crear CUG redundantes en los que el acceso de lectura ya está restringido por otros módulos de autorización
-   * La necesidad excesiva de CUG anidados puede resaltar problemas en el diseño de contenido
-   * La necesidad excesiva de CUG (por ejemplo, en cada página) puede indicar la necesidad de un modelo de autorización personalizado potencialmente más adecuado para satisfacer las necesidades de seguridad específicas de la aplicación y el contenido en cuestión.
+  * Recuerde que el permiso de lectura solo se concede si un CUG determinado y la evaluación de otros módulos implementados en la concesión de configuración permiten que un sujeto determinado lea un elemento de repositorio determinado
+  * Evite crear CUG redundantes en los que el acceso de lectura ya está restringido por otros módulos de autorización
+  * La necesidad excesiva de CUG anidados puede resaltar problemas en el diseño de contenido
+  * La necesidad excesiva de CUG (por ejemplo, en cada página) puede indicar la necesidad de un modelo de autorización personalizado potencialmente más adecuado para satisfacer las necesidades de seguridad específicas de la aplicación y el contenido en cuestión.
 
 * Limite las rutas admitidas para las políticas de CUG a unos pocos árboles en el repositorio para permitir un rendimiento optimizado. Por ejemplo, solo permite CUG debajo del nodo /content como enviado como valor predeterminado desde AEM 6.3.
 * Las políticas de CUG están diseñadas para conceder acceso de lectura a un pequeño conjunto de principales. La necesidad de un gran número de principios puede resaltar problemas en el diseño del contenido o la aplicación y debe reconsiderarse.
@@ -146,10 +158,10 @@ Al llamar a `AuthenticationHandler.requestCredentials`, este controlador intenta
 * Distinguir entre contraseña caducada y necesidad de inicio de sesión regular como motivo para la redirección;
 * Si es un inicio de sesión normal, comprueba si se puede obtener una ruta de inicio de sesión en el siguiente orden:
 
-   * de LoginPathProvider implementado por el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * de la implementación antigua y obsoleta de CUG,
-   * de las asignaciones de la página de inicio de sesión, según se define con `LoginSelectorHandler`,
-   * y, por último, vuelva a la página de inicio de sesión predeterminada, tal como se define en `LoginSelectorHandler`.
+  * de LoginPathProvider implementado por el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * de la implementación antigua y obsoleta de CUG,
+  * de las asignaciones de la página de inicio de sesión, según se define con `LoginSelectorHandler`,
+  * y, por último, vuelva a la página de inicio de sesión predeterminada, tal como se define en `LoginSelectorHandler`.
 
 * Cuando se obtiene una ruta de inicio de sesión válida a través de las llamadas enumeradas anteriormente, la solicitud del usuario se redirige a esa página.
 
@@ -158,10 +170,10 @@ El destino de esta documentación es la evaluación de la ruta de acceso de inic
 * El registro de las rutas de inicio de sesión depende de la distinción entre la contraseña caducada y la necesidad de iniciar sesión de forma regular como motivo para la redirección
 * Si el inicio de sesión es regular, comprueba si la ruta de inicio de sesión se puede obtener en el siguiente orden:
 
-   * de `LoginPathProvider` tal como lo implementó el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * de la implementación antigua y obsoleta de CUG,
-   * de las asignaciones de la página de inicio de sesión definidas con `LoginSelectorHandler`,
-   * y, finalmente, vuelva a la página de inicio de sesión predeterminada tal como se define con `LoginSelectorHandler`.
+  * de `LoginPathProvider` tal como lo implementó el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * de la implementación antigua y obsoleta de CUG,
+  * de las asignaciones de la página de inicio de sesión definidas con `LoginSelectorHandler`,
+  * y, finalmente, vuelva a la página de inicio de sesión predeterminada tal como se define con `LoginSelectorHandler`.
 
 * Cuando se obtiene una ruta de inicio de sesión válida a través de las llamadas enumeradas anteriormente, la solicitud del usuario se redirige a esa página.
 
@@ -179,9 +191,9 @@ Se deben tener en cuenta las siguientes prácticas recomendadas al definir los r
 * Contenido del repositorio de modelo tal que los requisitos de autenticación se apliquen a todo el árbol sin necesidad de excluir de nuevo los subárboles anidados de los requisitos.
 * Para evitar especificar y, a continuación, registrar rutas de inicio de sesión redundantes:
 
-   * basarse en la herencia y evitar definir rutas de inicio de sesión anidadas,
-   * no establezca la ruta de inicio de sesión opcional en un valor que corresponda al valor predeterminado o heredado,
-   * los desarrolladores de aplicaciones deben identificar qué rutas de inicio de sesión deben configurarse en las configuraciones globales de ruta de inicio de sesión (tanto predeterminadas como asignaciones) asociadas con `LoginSelectorHandler`.
+  * basarse en la herencia y evitar definir rutas de inicio de sesión anidadas,
+  * no establezca la ruta de inicio de sesión opcional en un valor que corresponda al valor predeterminado o heredado,
+  * los desarrolladores de aplicaciones deben identificar qué rutas de inicio de sesión deben configurarse en las configuraciones globales de ruta de inicio de sesión (tanto predeterminadas como asignaciones) asociadas con `LoginSelectorHandler`.
 
 ## Representación en el repositorio {#representation-in-the-repository}
 

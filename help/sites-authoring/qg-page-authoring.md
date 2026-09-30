@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 5a962fd3-33bb-44df-a48d-416a04f393eb
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 62%
-
 ---
-
 # Guía rápida para la creación de páginas{#quick-guide-to-authoring-pages}
 
 Estos procedimientos están pensados como una guía rápida (de alto nivel) para las acciones clave de la creación de contenido de página en AEM.
@@ -39,20 +52,20 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 
 * **Crear**
 
-   * Este botón está disponible en muchas consolas. Las opciones presentadas son sensibles al contexto, por lo que pueden variar en función del escenario.
+  * Este botón está disponible en muchas consolas. Las opciones presentadas son sensibles al contexto, por lo que pueden variar en función del escenario.
 
 * Reordenación de páginas en una carpeta
 
-   * Esto se puede hacer en [Vista de lista](/help/sites-authoring/basic-handling.md#list-view). Los cambios se aplican y son visibles en otras vistas.
+  * Esto se puede hacer en [Vista de lista](/help/sites-authoring/basic-handling.md#list-view). Los cambios se aplican y son visibles en otras vistas.
 
 #### Creación de páginas {#page-authoring}
 
 * Vínculos de navegación
 
-   * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe [obtener una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
+  * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe [obtener una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
 
-      * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
+    * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
+    * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Las versiones no se inician ni se crean desde el editor de páginas; ahora se realiza desde la consola Sitios (a través de **Crear** o [Cronología](/help/sites-authoring/basic-handling.md#timeline) para un recurso seleccionado).
 
@@ -111,8 +124,8 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
    * Especifique el modo de selección [seleccionando el recurso necesario](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
 
-      * Dispositivo móvil: seleccionar y mantener presionado
-      * Escritorio: [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions) - icono de marcar:
+     * Dispositivo móvil: seleccionar y mantener presionado
+     * Escritorio: [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions) - icono de marcar:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -147,9 +160,9 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Añadir un componente nuevo a su página](/help/sites-authoring/editing-content.md#inserting-a-component) mediante las siguientes opciones:
 
-      * apertura del panel lateral
-      * seleccionar la ficha componentes (el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
-      * arrastre el componente requerido a la página.
+     * apertura del panel lateral
+     * seleccionar la ficha componentes (el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
+     * arrastre el componente requerido a la página.
 
      El panel lateral se puede abrir (y cerrar) con:
 
@@ -157,24 +170,24 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Editar el contenido de un componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) en la página:
 
-      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
-      * Abra el editor en contexto del componente con las funciones Seleccionar y mantener presionadas o Hacer doble clic con el botón lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
-      * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
+     * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
+     * Abra el editor en contexto del componente con las funciones Seleccionar y mantener presionadas o Hacer doble clic con el botón lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
+     * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
 
      ![Modo de pantalla completa](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar las propiedades de un componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
+     * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
 
    * [Desplazar un componente](/help/sites-authoring/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
-      * Arrastre el componente en cuestión a la ubicación nueva.
-      * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Cortar** y **Pegar** donde sea necesario.
+     * Arrastre el componente en cuestión a la ubicación nueva.
+     * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Cortar** y **Pegar** donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Copiar** y **Pegar** según sea necesario.
+     * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Copiar** y **Pegar** según sea necesario.
 
    >[!NOTE]
    >
@@ -182,17 +195,17 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic en y, a continuación, utilice el icono **Eliminar**.
+     * Abra la barra de herramientas de componentes haciendo clic en y, a continuación, utilice el icono **Eliminar**.
 
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
-      * Seleccione el modo **Anotar** (icono de burbuja de voz). Añada anotaciones utilizando el icono **Añadir anotación** (signo más). Salga del modo Anotar utilizando la X en la parte superior derecha.
+     * Seleccione el modo **Anotar** (icono de burbuja de voz). Añada anotaciones utilizando el icono **Añadir anotación** (signo más). Salga del modo Anotar utilizando la X en la parte superior derecha.
 
      ![Anotar](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Vista previa de una página](/help/sites-authoring/editing-content.md#preview-mode) (para ver cómo aparecerá en el entorno de publicación)
 
-      * Seleccione **Vista previa** en la barra de herramientas.
+     * Seleccione **Vista previa** en la barra de herramientas.
 
    * Vuelva al modo de edición (o seleccione otro modo) utilizando **Editar** en el selector desplegable.
 
@@ -206,20 +219,20 @@ Existen dos métodos (principales) para [editar las propiedades de la página](/
 
 * Desde la consola **Sitios**:
 
-   1. [Desplácese hasta la página](#finding-your-page) que quiera publicar.
-   1. Seleccione el icono **Propiedades** desde:
+  1. [Desplácese hasta la página](#finding-your-page) que quiera publicar.
+  1. Seleccione el icono **Propiedades** desde:
 
-      * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
-      * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
+     * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
+     * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. Se muestran las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
+  1. Se muestran las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
 
 * Cuando [edite su página](#editing-your-page-content):
 
-   1. Abra el menú **Información de página**.
-   1. Seleccione **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
+  1. Abra el menú **Información de página**.
+  1. Seleccione **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -229,18 +242,18 @@ Existen dos métodos principales para [publicar la página](/help/sites-authorin
 
 * Desde la consola **Sitios**:
 
-   1. [Desplácese hasta la página](#finding-your-page) que quiera editar.
-   1. Seleccione el icono **Publicación rápida** desde:
+  1. [Desplácese hasta la página](#finding-your-page) que quiera editar.
+  1. Seleccione el icono **Publicación rápida** desde:
 
-      * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
-      * La barra de herramientas cuando su [página se haya seleccionado](#selectiingyourpageforfurtheraction) (también permite el acceso a [Publicar posteriormente](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
+     * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
+     * La barra de herramientas cuando su [página se haya seleccionado](#selectiingyourpageforfurtheraction) (también permite el acceso a [Publicar posteriormente](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Cuando [edite su página](#editing-your-page-content):
 
-   1. Abra el menú **Información de página**.
-   1. Seleccione **Publicar página**.
+  1. Abra el menú **Información de página**.
+  1. Seleccione **Publicar página**.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
@@ -266,15 +279,15 @@ Todas estas acciones pueden activarse del siguiente modo:
 
    * Copiar:
 
-      * Vaya a la nueva ubicación y pegue.
+     * Vaya a la nueva ubicación y pegue.
 
    * Mover:
 
-      * El asistente se abre para recopilar la información necesaria para mover la página. Siga las instrucciones que aparecen en pantalla.
+     * El asistente se abre para recopilar la información necesaria para mover la página. Siga las instrucciones que aparecen en pantalla.
 
    * Eliminar:
 
-      * Se le solicitará que confirme la acción.
+     * Se le solicitará que confirme la acción.
 
    >[!NOTE]
    >
@@ -334,8 +347,8 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    * **Volver a esta versión**
 
-      * Se restaura la versión.
+     * Se restaura la versión.
 
    * **Mostrar diferencias**
 
-      * La página se abre con las diferencias (entre las dos versiones) resaltadas.
+     * La página se abre con las diferencias (entre las dos versiones) resaltadas.

@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 852aaf6e-acf3-4224-bf4c-c0913110abd4
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '588'
 ht-degree: 41%
-
 ---
-
 # Uso de tareas {#working-with-tasks}
 
 Las tareas representan elementos de trabajo que deben realizarse con respecto al contenido. Cuando se le asigna una tarea, esta aparece en la bandeja de entrada del flujo de trabajo. Los elementos de tarea se pueden distinguir de los elementos de flujo de trabajo por el valor de la columna **Type**.

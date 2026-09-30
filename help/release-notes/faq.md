@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 91%
-
 ---
-
 # Preguntas frecuentes sobre AEM 6.5 LTS {#faq}
 
 Esta página está diseñada para responder algunas preguntas frecuentes acerca de AEM 6.5 LTS.
@@ -22,7 +36,7 @@ Adobe sigue profundamente comprometida con la seguridad y estabilidad de las apl
 
 ## Soy cliente On-Premise, ¿qué sucede si no actualizo a AEM 6.5 LTS?
 
-AEM 6.5 LTS incluye importantes actualizaciones de seguridad y estabilidad, incluida la compatibilidad con Oracle Java 17 y Java 21. Se recomienda que las organizaciones planifiquen una actualización a 6.5 LTS. Adobe seguirá siendo compatible con AEM 6.5 hasta el 28 de febrero de 2027. Consulte la [hoja de ruta](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) para obtener más detalles.
+AEM 6.5 LTS incluye importantes actualizaciones de seguridad y estabilidad, incluida la compatibilidad con Oracle Java 17 y Java 21. Se recomienda que las organizaciones planifiquen una actualización a 6.5 LTS. Adobe seguirá siendo compatible con AEM 6.5 hasta el 28 de febrero de 2027. Consulte la [hoja de ruta](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) para obtener más detalles.
 
 ## ¿Se verán afectadas mis personalizaciones e integraciones existentes si actualizo a AEM 6.5 LTS?
 

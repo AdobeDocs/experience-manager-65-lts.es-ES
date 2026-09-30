@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 2%
-
 ---
-
 # Integración de Creative Project y PIM {#creative-project-and-pim-integration}
 
 Si es un experto en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project en Adobe Experience Manager (AEM) para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
@@ -194,7 +207,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![Ver lista de tomas](assets/chlimage_1-148a.png)
 
-   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product &#x200B;** y **Description**.
+   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product** y **Description**.
 
    ![Editar lista de tomas](assets/chlimage_1-149a.png)
 

@@ -10,13 +10,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 1%
-
 ---
-
 # Cómo ejecutar AEM con espera en frío de TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introducción {#introduction}
@@ -334,7 +343,7 @@ Para ello, siga los pasos descritos a continuación:
 1. Vuelva a configurar el clon recién creado para que actúe como una instancia de espera en frío. Ver [Creación de una configuración de espera en frío de AEM TarMK.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
 1. Inicie las instancias primaria y de espera en frío.
 
-## Monitoreo {#monitoring}
+## Monitorización {#monitoring}
 
 La función expone información mediante JMX o MBeans. Al hacerlo, puede inspeccionar el estado actual del modo de espera y el principal mediante la [consola JMX](/help/sites-administering/jmx-console.md). La información se encuentra en un MBean de `type org.apache.jackrabbit.oak:type="Standby"`llamados `Status`.
 

@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b73b3adc-e12c-47a8-9342-6214128b72ff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 86%
-
 ---
-
 # Diccionario de datos{#data-dictionary}
 
 ## Introducción {#introduction}
@@ -199,7 +212,7 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 1. Después de realizar las entradas de datos, puede utilizar este archivo XML cuando previsualice una carta con datos de prueba.
 
    Puede agregar estos datos de prueba con DD (seleccione DD y Cargar datos de prueba y cargar este archivo xml)
-Después de esto, cuando previsualiza la carta normalmente (no personalizada), estos datos XML se utilizan en la carta. También puede seleccionar Personalizado y, a continuación, cargar este XML.
+   Después de esto, cuando previsualiza la carta normalmente (no personalizada), estos datos XML se utilizan en la carta. También puede seleccionar Personalizado y, a continuación, cargar este XML.
 
 ## Ejemplos {#samples}
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 2%
-
 ---
-
 # Desarrollo de informes {#developing-reports}
 
 Adobe Experience Manager (AEM) proporciona una selección de [informes estándar](/help/sites-administering/reporting.md), la mayoría de los cuales se basan en un marco de informes.
@@ -86,7 +95,7 @@ La página del informe es:
 
 ### Base del informe {#report-base}
 
-El componente [`reportbase` &#x200B;](#report-base-component) forma la base de cualquier informe porque:
+El componente [`reportbase` ](#report-base-component) forma la base de cualquier informe porque:
 
 * Conserva la definición de [query](#the-query-and-data-retrieval) que entrega el conjunto de resultados de datos subyacente.
 
@@ -96,7 +105,7 @@ El componente [`reportbase` &#x200B;](#report-base-component) forma la base de c
 
 ### Base de columna {#column-base}
 
-Cada columna es una instancia del componente [`columnbase` &#x200B;](#column-base-component) que:
+Cada columna es una instancia del componente [`columnbase` ](#column-base-component) que:
 
 * Es un párrafo que usa el parsys (`reportbase`) del informe respectivo.
 * Define el vínculo al [conjunto de resultados subyacente](#the-query-and-data-retrieval). Es decir, define los datos específicos a los que se hace referencia dentro de este conjunto de resultados y cómo se procesan.
@@ -189,7 +198,7 @@ Donde los pasos y elementos detallados son:
 Para construir y configurar un informe, es necesario lo siguiente:
 
 * una [ubicación para la definición de los componentes del informe](#location-of-report-components)
-* un componente [`reportbase` &#x200B;](#report-base-component)
+* un componente [`reportbase` ](#report-base-component)
 * uno o más [`columnbase` componentes](#column-base-component)
 * un [componente de página](#page-component)
 * un [diseño de informe](#report-design)

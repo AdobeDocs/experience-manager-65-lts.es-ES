@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3996'
 ht-degree: 7%
-
 ---
-
 # Administrar ajustes preestablecidos de imagen de Dynamic Media{#managing-image-presets}
 
 Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
@@ -329,7 +343,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
       Elección
      <strong>GIF</strong> o
      <strong>GIF con alfa</strong> proporciona estos elementos adicionales
-     Opciones de <strong>cuantificación de color GIF</strong>:
+     <strong>Cuantificación de color GIF</strong> opciones:
     </div>
     <ul>
      <li><strong>Escriba </strong>- Seleccione <strong>Adaptable</strong> (predeterminado), <strong>Web</strong> o <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no estará disponible.</li>
@@ -404,7 +418,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=es">Imágenes de enfoque</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Imágenes de enfoque</a>.
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +438,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que puede especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es#image-serving-api">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que puede especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>
@@ -441,7 +455,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 
 ## Definición de opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes que se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es#image-serving-api).
+Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes que se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 A continuación se muestran algunos ejemplos básicos de lo que se puede hacer con los modificadores de imagen.
 
@@ -449,7 +463,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 >
 >Algunos modificadores de imagen [no se pueden usar en Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=es#image-serving-api): invierte cada componente de color para obtener un efecto de imagen negativo.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api): invierte cada componente de color para obtener un efecto de imagen negativo.
 
   ```xml
   &op_invert=1
@@ -457,7 +471,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=es#image-serving-api): aplica un filtro de desenfoque a la imagen.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api): aplica un filtro de desenfoque a la imagen.
 
   ```xml
   &op_blur=7
@@ -473,7 +487,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=es#image-serving-api): disminuye o aumenta el brillo.
+* [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api): disminuye o aumenta el brillo.
 
   ```xml
   &op_brightness=58
@@ -481,7 +495,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=es#image-serving-api): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
   ```xml
   opac=29

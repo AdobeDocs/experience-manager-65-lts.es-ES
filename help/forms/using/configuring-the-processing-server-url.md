@@ -9,7 +9,23 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 61%
@@ -30,7 +46,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configuración de la consola web AEM &#x200B;](assets/web_configuration_console_new.png)
+   ![Configuración de la consola web AEM ](assets/web_configuration_console_new.png)
 
 1. En la **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, busque y haga clic en la opción **[!UICONTROL Configuración de AEM DS]**.
 

@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 8%
-
+source-wordcount: '4661'
+ht-degree: 7%
 ---
-
 # Administrar ajustes preestablecidos de visor{#managing-viewer-presets}
 
 Un ajuste preestablecido de visualizador es una colección de configuraciones que determinan cómo ven los usuarios los recursos de medios enriquecidos en las pantallas de sus equipos y dispositivos móviles. Si es administrador, puede crear ajustes preestablecidos de visualizador. Las opciones de configuración están disponibles para una matriz de opciones de configuración de visualizador. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
@@ -27,7 +41,7 @@ Para obtener instrucciones sobre cómo crear y personalizar sus propios ajustes 
 Ruta: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por ejemplo, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visualizador. Puede aplicar un ajuste preestablecido de visualizador a un recurso en cualquier momento en el que lo previsualice. Consulte [Aplicación de ajustes preestablecidos de visor](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +53,7 @@ En esta sección se describe cómo crear, editar y administrar ajustes preestabl
 
 Todos los visores predeterminados admiten la accesibilidad del teclado.
 
-Consulte también [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
+Consulte también [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
 
 ## Administrar ajustes preestablecidos de visor {#managing-viewer-presets-1}
 
@@ -55,7 +69,7 @@ Puede agregar, editar, eliminar, publicar y cancelar la publicación y previsual
 
 Las diferentes páginas web tienen diferentes necesidades. Por ejemplo, a veces desea una página web que proporcione un vínculo que abra el Visor de HTML5 en una ventana independiente del explorador. En otros casos, puede ser necesario incrustar el visualizador de HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O bien, puede ser &quot;adaptable&quot; y mostrarse de forma diferente en diferentes dispositivos o para diferentes tamaños de ventana del explorador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos e integrados que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web con diseño interactivo.
 
-Consulte la [biblioteca de imágenes adaptables](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) para obtener más información sobre cómo incrustar visores adaptables en las páginas web.
+Consulte la [biblioteca de imágenes adaptables](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) para obtener más información sobre cómo incrustar visores adaptables en las páginas web.
 
 >[!NOTE]
 >
@@ -158,7 +172,7 @@ Ver también [demostraciones en vivo](https://landing.adobe.com/en/na/dynamic-me
 
 Para obtener información sobre las versiones compatibles del explorador web y el sistema operativo para los visualizadores, consulte las Notas de la versión de los visualizadores.
 
-Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 >[!NOTE]
 >
@@ -166,7 +180,7 @@ Consulte &quot;Notas de la versión de visores&quot; en la tabla de contenido de
 >Ver [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
 >
 >Los nuevos ajustes preestablecidos de visualizador que cree y agregue deben activarse y publicarse.
->Ver [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Ajustes preestablecidos de visor de publicación](#publishing-viewer-presets).
+>Consulte [Activar o desactivar ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets) y [Publicar ajustes preestablecidos de visor](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -440,13 +454,13 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de visu
 
      El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver qué efecto tiene en el visor al instante mediante la muestra a la izquierda del editor.
 
-     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del visor *`<viewer name>`*&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources). Por ejemplo, si está creando un ajuste preestablecido de visualizador de tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) para obtener una lista y una descripción de cada propiedad.
+     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del visor *`<viewer name>`*&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources). Por ejemplo, si está creando un ajuste preestablecido de visualizador de tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en los AEM Assets. Seleccione **[!UICONTROL Importar CSS]** del menú desplegable **[!UICONTROL Tipo seleccionado]**. Si es necesario, desplace el editor visual hacia arriba para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador.
 
      Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS que importe deben definirse con su nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización de *&lt;nombre del visor>* Visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources). Por ejemplo, si desea leer acerca de los marcadores CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización de *&lt;nombre del visor>* Visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources). Por ejemplo, si desea leer acerca de los marcadores CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
 
    >[!NOTE]
    >
@@ -464,15 +478,15 @@ Por ejemplo, para el tipo *VideoPlayer*, en **[!UICONTROL Modificadores]** > **[
    * **[!UICONTROL dash]**: los vídeos se transmiten solo como dash. Sin embargo, en dispositivos Safari/iOS, debe seleccionar **[!UICONTROL hls]** como tipo en su lugar.
    * **[!UICONTROL hls]**: los vídeos se transmiten solo como hls.
    * **[!UICONTROL auto]**: práctica recomendada. La creación de flujos DASH y HLS está optimizada para el almacenamiento. Por lo tanto, Adobe recomienda que siempre seleccione **[!UICONTROL auto]** como tipo de reproducción. Los vídeos se transmiten como guión, hls o progresivo, como en el siguiente orden de reproducción:
-      * Si el navegador admite DASH, primero se utiliza la transmisión por secuencias DASH.
-      * Si el explorador no admite DASH, se utiliza la transmisión por secuencias de HLS en segundo lugar.
-      * Si el navegador no es compatible con DASH o HLS, se utiliza la reproducción progresiva en último lugar.
+     * Si el navegador admite DASH, primero se utiliza la transmisión por secuencias DASH.
+     * Si el explorador no admite DASH, se utiliza la transmisión por secuencias de HLS en segundo lugar.
+     * Si el navegador no es compatible con DASH o HLS, se utiliza la reproducción progresiva en último lugar.
 
 1. En el menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione un componente cuyos comportamientos desee cambiar.
 
    Muchos componentes del editor visual tienen asociada una descripción detallada. Estas descripciones aparecen en los cuadros azules cuando se expande un componente para mostrar sus parámetros asociados.
 
-   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
+   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
 
    >[!NOTE]
    >

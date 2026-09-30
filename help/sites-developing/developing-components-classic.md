@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 0%
-
+source-wordcount: '2446'
+ht-degree: 2%
 ---
-
 # Desarrollo de componentes de Adobe Experience Manager (AEM) (IU clásica){#developing-aem-components-classic-ui}
 
 La IU clásica utiliza ExtJS para crear widgets que proporcionen el aspecto de los componentes. Debido a la naturaleza de estos widgets, existen algunas diferencias entre la forma en que los componentes interactúan con la IU clásica y la [IU táctil](/help/sites-developing/developing-components.md).
@@ -63,20 +72,20 @@ Resumen:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - El objeto de solicitud ajustado ( `SlingHttpServletRequest`).
-   * `slingResponse`: el objeto de respuesta ajustado ( `SlingHttpServletResponse`).
-   * `resource` - El objeto de recursos de Sling ( `slingRequest.getResource();`).
-   * `resourceResolver` - El objeto Resource Resolver de Sling ( `slingRequest.getResoucreResolver();`).
-   * `currentNode`: el nodo JCR resuelto para la solicitud.
-   * `log` - El registrador predeterminado ().
-   * `sling`: el asistente de scripts de Sling.
-   * `properties` - Las propiedades del recurso al que se dirige ( `resource.adaptTo(ValueMap.class);`).
-   * `pageProperties`: propiedades de la página del recurso al que se dirige.
-   * `pageManager`: administrador de páginas para acceder a las páginas de contenido de AEM ( `resourceResolver.adaptTo(PageManager.class);`).
-   * `component`: objeto de componente del componente de AEM actual.
-   * `designer`: objeto de Designer para recuperar información de diseño ( `resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign`: diseño del recurso al que se dirige.
-   * `currentStyle`: estilo del recurso al que se dirige.
+  * `slingRequest` - El objeto de solicitud ajustado ( `SlingHttpServletRequest`).
+  * `slingResponse`: el objeto de respuesta ajustado ( `SlingHttpServletResponse`).
+  * `resource` - El objeto de recursos de Sling ( `slingRequest.getResource();`).
+  * `resourceResolver` - El objeto Resource Resolver de Sling ( `slingRequest.getResoucreResolver();`).
+  * `currentNode`: el nodo JCR resuelto para la solicitud.
+  * `log` - El registrador predeterminado ().
+  * `sling`: el asistente de scripts de Sling.
+  * `properties` - Las propiedades del recurso al que se dirige ( `resource.adaptTo(ValueMap.class);`).
+  * `pageProperties`: propiedades de la página del recurso al que se dirige.
+  * `pageManager`: administrador de páginas para acceder a las páginas de contenido de AEM ( `resourceResolver.adaptTo(PageManager.class);`).
+  * `component`: objeto de componente del componente de AEM actual.
+  * `designer`: objeto de Designer para recuperar información de diseño ( `resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign`: diseño del recurso al que se dirige.
+  * `currentStyle`: estilo del recurso al que se dirige.
 
 ### Acceso al contenido {#accessing-content}
 
@@ -164,8 +173,8 @@ Para desarrollar nuevos componentes para AEM basados en componentes existentes, 
 
    * adición de un campo en el cuadro de diálogo
 
-      * `cq:dialog` - cuadro de diálogo para la IU táctil
-      * `dialog` - cuadro de diálogo para la IU clásica
+     * `cq:dialog` - cuadro de diálogo para la IU táctil
+     * `dialog` - cuadro de diálogo para la IU clásica
 
    * reemplazando el archivo `.jsp` (asígnele el nombre después del nuevo componente)
    * o reprocesamiento completo de todo el componente si lo desea
@@ -278,16 +287,16 @@ Para crear el componente, utilice el componente textimage estándar como base y 
 
    * Nombre del componente
 
-      * Establecer `jcr:description` en `Text Image Component (Extended)`
-      * Establecer `jcr:title` en `Text Image (Extended)`
+     * Establecer `jcr:description` en `Text Image Component (Extended)`
+     * Establecer `jcr:title` en `Text Image (Extended)`
 
    * Grupo, donde el componente aparece en la barra de tareas (dejar tal cual)
 
-      * Dejar `componentGroup` establecido en `General`
+     * Dejar `componentGroup` establecido en `General`
 
    * Componente principal para el nuevo componente (el componente estándar textimage)
 
-      * Establecer `sling:resourceSuperType` en `foundation/components/textimage`
+     * Establecer `sling:resourceSuperType` en `foundation/components/textimage`
 
    Después de este paso, el nodo de componente tiene este aspecto:
 
@@ -305,24 +314,24 @@ Para crear el componente, utilice el componente textimage estándar como base y 
 
    * Para las dos primeras pestañas (tab1 y tab2):
 
-      * Cambie xtype a cqinclude (para heredar del componente estándar).
-      * Agregue una propiedad path con los valores `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` y `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivamente.
-      * Elimine todas las demás propiedades o subnodos.
+     * Cambie xtype a cqinclude (para heredar del componente estándar).
+     * Agregue una propiedad path con los valores `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` y `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivamente.
+     * Elimine todas las demás propiedades o subnodos.
 
    * Para la pestaña 3:
 
-      * Deje las propiedades y los subnodos sin cambios
-      * Agregar una definición de campo a `tab3/items`, posición de nodo de tipo `cq:Widget`
-      * Establezca las siguientes propiedades (de tipo cadena) para el nuevo nodo `tab3/items/position`:
+     * Deje las propiedades y los subnodos sin cambios
+     * Agregar una definición de campo a `tab3/items`, posición de nodo de tipo `cq:Widget`
+     * Establezca las siguientes propiedades (de tipo cadena) para el nuevo nodo `tab3/items/position`:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Agregue el subnodo `position/options` de tipo `cq:WidgetCollection` para representar las dos opciones de colocación de la imagen y, debajo de él, cree dos nodos, o1 y o2 de tipo `nt:unstructured`.
-      * Para el nodo `position/options/o1` establezca las propiedades: `text` en `Left` y `value` en `left.`
-      * Para el nodo `position/options/o2` establezca las propiedades: `text` en `Right` y `value` en `right`.
+     * Agregue el subnodo `position/options` de tipo `cq:WidgetCollection` para representar las dos opciones de colocación de la imagen y, debajo de él, cree dos nodos, o1 y o2 de tipo `nt:unstructured`.
+     * Para el nodo `position/options/o1` establezca las propiedades: `text` en `Left` y `value` en `left.`
+     * Para el nodo `position/options/o2` establezca las propiedades: `text` en `Right` y `value` en `right`.
 
    * Eliminar ficha4.
 
@@ -378,7 +387,7 @@ Para deshabilitar esta capacidad, utilice el componente de imagen estándar como
 
 1. Edite los metadatos del componente:
 
-   * Definir **jcr:title** en `Image (Extended)`
+   * Establecer **jcr:title** en `Image (Extended)`
 
 1. Navegue hasta `/apps/geometrixx/components/image/dialog/items/image`.
 1. Añada una propiedad:

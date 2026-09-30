@@ -1,18 +1,29 @@
 ---
 title: Experiencia de página de inicio de [!DNL Assets]
-description: Personalice la página de inicio de [!DNL Experience Manager Assets] para disfrutar de una experiencia de pantalla de bienvenida enriquecida que incluya una instantánea de las actividades recientes relacionadas con los recursos.
+description: Personalice la página de inicio [!DNL Experience Manager Assets] para disfrutar de una pantalla de bienvenida enriquecida que incluya una instantánea de las actividades recientes relacionadas con los recursos.
 contentOwner: AG
 feature: Asset Management
 role: Admin, User
 solution: Experience Manager, Experience Manager Assets
 exl-id: cdf1f56c-d9b2-456b-be05-e0394ea6204f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
-
+source-wordcount: '568'
+ht-degree: 96%
 ---
-
 # Experiencia de página de inicio de [!DNL Adobe Experience Manager Assets] {#aem-assets-home-page-experience}
 
 Personalice la página de inicio de [!DNL Adobe Experience Manager Assets] para disfrutar de una experiencia de pantalla de bienvenida enriquecida que incluya una instantánea de las actividades recientes relacionadas con los recursos.

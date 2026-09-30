@@ -10,7 +10,22 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6653649a-5076-48e3-a7ed-5b74d4d2e8e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 41%
@@ -35,7 +50,7 @@ El servidor de seguridad de los documentos es el componente central mediante el 
 
 El servidor de seguridad de los documentos proporciona una interfaz basada en Web (página Web) para crear directivas, administrar documentos protegidos por directivas y monitorizar eventos asociados a documentos protegidos por directivas. Los administradores también pueden configurar opciones globales como autenticación de usuarios, auditoría y mensajería para usuarios invitados y administrar cuentas de usuario invitadas.
 
-El servidor está incluido en la oferta de complementos de seguridad de los documentos de AEM Forms. Puede ponerse en contacto con el [equipo de ventas](https://business.adobe.com/es/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) de AEM Forms para comprar el complemento Seguridad de los documentos.
+El servidor está incluido en la oferta de complementos de seguridad de los documentos de AEM Forms. Puede ponerse en contacto con el [equipo de ventas](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) de AEM Forms para comprar el complemento Seguridad de los documentos.
 
 ### Proteger documentos {#protect-documents}
 
@@ -47,7 +62,7 @@ Puede utilizar Document Security SDK, Adobe Acrobat, la extensión de Document S
 
 * **SDK de seguridad de documentos:** el SDK es un cliente con numerosas características. Puede utilizar Document Security SDK para acceder a la funcionalidad del servidor de documentos, abrir documentos protegidos por directivas y desarrollar extensiones, complementos o aplicaciones personalizados. Por ejemplo, puede desarrollar extensiones para proteger formatos de archivo personalizados o integrar SDK con soluciones de Prevención de pérdida de datos (DLP). Las extensiones, aplicaciones y complementos desarrollados con Document Security SDK para enviar documentos al servidor de AEM Forms designado y las directivas se aplican en el servidor. El cliente de AEM Forms Document Security SDK (CSDK) no puede desproteger los documentos protegidos mediante la Biblioteca de Protección Portátil (PPL) y a la inversa.
 
-  Document Security SDK está disponible tanto para Java™ como para C++. Java™ SDK se incluye en la oferta de seguridad de los documentos de AEM Forms y se instala en la implementación de formularios de AEM en JEE. Póngase en contacto con el [Servicio de atención al cliente de AEM](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) para adquirir C++ SDK. C++ SDK se puede compilar con Microsoft® Visual Studio 2013. Visite el sitio [Documentación de la API de Document Security](https://help.adobe.com/es_ES/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html), donde podrá aprender y utilizar características de SDK.
+  Document Security SDK está disponible tanto para Java™ como para C++. Java™ SDK se incluye en la oferta de seguridad de los documentos de AEM Forms y se instala en la implementación de formularios de AEM en JEE. Póngase en contacto con el [Servicio de atención al cliente de AEM](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) para adquirir C++ SDK. C++ SDK se puede compilar con Microsoft® Visual Studio 2013. Visite el sitio [Documentación de la API de Document Security](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html), donde podrá aprender y utilizar características de SDK.
 
 * **Adobe Acrobat:** Puede usar Adobe Acrobat para aplicar directivas de seguridad a documentos de PDF creados con aplicaciones de escritorio populares, como Microsoft® Office, exploradores Web o cualquier aplicación que admita la impresión en formato PDF.
 
@@ -61,7 +76,7 @@ Puede utilizar Document Security SDK, Adobe Acrobat, la extensión de Document S
 
   Junto con lo anterior, la PPL tiene todas las características de Document Security SDK. Puede utilizar Document Security SDK para acceder a la funcionalidad del servidor de documentos, abrir documentos protegidos por directivas y desarrollar extensiones, complementos o aplicaciones personalizados. La PPL no puede desproteger los documentos protegidos mediante AEM Forms Document Security Client SDK (CSDK) y a la inversa.
 
-  La PPL está disponible para los idiomas Java™ y C++ en versiones de 32 y 64 bits. También está disponible como un paquete OSGi para AEM Forms en OSGi. La PPL de C++ se puede compilar con Microsoft® Visual Studio 2013. Si tiene licencia para el complemento de seguridad de los documentos de AEM Forms, puede ponerse en contacto con el equipo de asistencia de [AEM Forms Document Security](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) para obtener la PPL. Más adelante, puede utilizar la Ayuda de PPL (incluida en la biblioteca) para configurar y utilizar la PPL.
+  La PPL está disponible para los idiomas Java™ y C++ en versiones de 32 y 64 bits. También está disponible como un paquete OSGi para AEM Forms en OSGi. La PPL de C++ se puede compilar con Microsoft® Visual Studio 2013. Si tiene licencia para el complemento de seguridad de los documentos de AEM Forms, puede ponerse en contacto con el equipo de asistencia de [AEM Forms Document Security](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) para obtener la PPL. Más adelante, puede utilizar la Ayuda de PPL (incluida en la biblioteca) para configurar y utilizar la PPL.
 
 ### Ver o editar documentos protegidos {#view-or-edit-protected-documents}
 

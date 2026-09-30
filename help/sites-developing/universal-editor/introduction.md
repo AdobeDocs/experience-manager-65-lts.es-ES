@@ -4,13 +4,19 @@ description: Obtenga información acerca de la flexibilidad del editor universal
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # Acerca del editor universal {#universal-editor}
 
 Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado con AEM 6.5 LTS.
@@ -39,9 +45,9 @@ El editor universal es un servicio que funciona junto con AEM para crear conteni
 Lo siguiente es compatible con el editor universal:
 
 * AEM 6.5 LTS GA
-   * Se admite el alojamiento On-Premise y de Adobe Managed Services (AMS)*.
+  * Se admite el alojamiento On-Premise y de Adobe Managed Services (AMS)*.
 * [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * Se admiten tanto el alojamiento on-premise como el alojamiento AMS*.
+  * Se admiten tanto el alojamiento on-premise como el alojamiento AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versión `2023.8.13099` o superior)
 
 Este documento se centra en la compatibilidad con AEM 6.5 LTS del editor universal. Para utilizar el editor universal con AEM 6.5 LTS, necesita lo siguiente:
@@ -129,11 +135,11 @@ Las siguientes variables están disponibles para definir las asignaciones en `Un
 Asignaciones de ejemplo:
 
 * Abra todas las páginas de `/content/foo` en AEM Author:
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Resultados al abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Resultados al abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Abra todas las páginas de `/content/bar` en un servidor NextJS remoto y proporcione todas las variables como información
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Resultados al abrir `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Resultados al abrir `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Configuración del servicio de editor universal {#set-up-ue}
 
@@ -148,7 +154,7 @@ Con AEM actualizado y configurado, puede configurar un servicio de editor univer
 
 ### Actualice Dispatcher {#update-dispatcher}
 
-Con AEM configurado y un servicio de editor universal local en ejecución, debe permitir un proxy inverso para el nuevo servicio [&#x200B; en Dispatcher.](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
+Con AEM configurado y un servicio de editor universal local en ejecución, debe permitir un proxy inverso para el nuevo servicio [ en Dispatcher.](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Ajuste el archivo vhost de la instancia de autor para incluir un proxy inverso.
 

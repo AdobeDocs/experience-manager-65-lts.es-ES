@@ -5,13 +5,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 70%
-
+source-wordcount: '1701'
+ht-degree: 72%
 ---
-
 # Conceptos básicos de creación para usuarios sin encabezado con AEM {#author-headless-basics}
 
 ## La historia hasta ahora {#story-so-far}
@@ -24,8 +44,8 @@ Este artículo se basa en estos elementos para que pueda comprender cómo crear 
 
 * **Público**: principiante
 * **Objetivo**: presentar los conceptos básicos de la creación de CMS sin encabezado.
-   * Introducción a la creación con AEMaaCS.
-   * Introducción a los fragmentos de contenido.
+  * Introducción a la creación con AEMaaCS.
+  * Introducción a los fragmentos de contenido.
 
 ## Gestión básica {#basic-handling}
 
@@ -193,8 +213,8 @@ De acuerdo. Esta sección puede parecer un poco extraña, pero cuando abra el Ed
 
 * **Modelos de fragmentos de contenido**
 
-  Verá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También es un vínculo que le lleva al editor de modelos.
-Los modelos de fragmentos de contenido son realmente vitales para los fragmentos de contenido, ya que definen la estructura que utiliza. Sin embargo, crearlos y editarlos es (por lo general) responsabilidad de otra persona, el Arquitecto de contenido.
+  Aparecerá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También se trata de un vínculo que conduce al editor de modelos.
+  Los modelos de fragmento de contenido son vitales para los fragmentos de contenido, ya que definen la estructura que se utiliza. Sin embargo, crearlos y editarlos es, normalmente, responsabilidad de otra persona, el arquitecto de contenido.
 
   >[!NOTE]
   >
@@ -234,38 +254,38 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtener información so
 
 * [Gestión básica](/help/sites-authoring/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero la mayoría de funciones también son relevantes para la creación de los **Fragmentos de contenido** debajo de la consola **Recursos**.
 
-   * [Panel de navegación](/help/sites-authoring/basic-handling.md#navigation-panel)
+  * [Panel de navegación](/help/sites-authoring/basic-handling.md#navigation-panel)
 
-   * [Encabezado](/help/sites-authoring/basic-handling.md#the-header)
+  * [Encabezado](/help/sites-authoring/basic-handling.md#the-header)
 
-   * [Barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
+  * [Barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
+  * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
 
-   * [Visualización y selección de los recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+  * [Visualización y selección de los recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Selector de carril](/help/sites-authoring/basic-handling.md#rail-selector)
+  * [Selector de carril](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
-   * [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Aplicación de la configuración a la carpeta Recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Aplicación de la configuración a la carpeta Recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Guías de introducción
-   * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
 

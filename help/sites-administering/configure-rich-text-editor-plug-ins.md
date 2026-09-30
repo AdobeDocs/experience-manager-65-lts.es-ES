@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4463'
 ht-degree: 2%
-
 ---
-
 # Configuración de los complementos del editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
 Las funcionalidades de RTE están disponibles a través de una serie de complementos, cada uno con la propiedad features. Puede configurar la propiedad features para activar o desactivar una o varias funciones RTE. Este artículo describe cómo configurar específicamente los complementos RTE.
@@ -38,16 +47,16 @@ De manera predeterminada, los complementos `format`, `link`, `list`, `justify` y
 
    * Según el componente, los nodos principales son:
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * un nodo de configuración alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * un nodo de configuración alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * Son del tipo: **jcr:primaryType** `cq:Widget`
    * Ambos tienen las siguientes propiedades:
 
-      * **Nombre** `name`
-      * **Tipo** `String`
-      * **Valor** `./text`
+     * **Nombre** `name`
+     * **Tipo** `String`
+     * **Valor** `./text`
 
 1. Según la interfaz para la que esté configurando, cree un nodo `<rtePlugins-node>`, si no existe:
 
@@ -299,7 +308,7 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
 1. Añada el texto de la propiedad al mismo nodo. El valor es el nombre del estilo que ve el autor al seleccionar el estilo.
    * Nombre: `text`
-*Tipo: `String`
+     *Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Cree una hoja de estilos y especifique su ruta. Consulte [especificar la ubicación de la hoja de estilos](#locationofstylesheet). Agregue el siguiente contenido a la hoja de estilos. Cambie el color de fondo como desee.
@@ -506,13 +515,13 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
 
    * Para definir estilos para toda la tabla (disponible en **Propiedades de la tabla**):
 
-      * **Nombre** `tableStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nombre** `tableStyles`
+     * **Tipo** `cq:WidgetCollection`
 
    * Para definir estilos para celdas individuales (disponibles en **Propiedades de celda**):
 
-      * **Nombre** `cellStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nombre** `cellStyles`
+     * **Tipo** `cq:WidgetCollection`
 
 1. Cree un nodo (bajo el nodo `tableStyles` o `cellStyles` según corresponda) para que pueda representar un estilo individual:
 
@@ -523,15 +532,15 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
 
    * Para definir el estilo CSS al que se hará referencia
 
-      * **Nombre** `cssName`
-      * **Tipo** `String`
-      * **Valor** representa el nombre de la clase CSS (sin `.` anterior, por ejemplo, `cssClass` en lugar de `.cssClass`)
+     * **Nombre** `cssName`
+     * **Tipo** `String`
+     * **Valor** representa el nombre de la clase CSS (sin `.` anterior, por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Para definir un texto descriptivo que aparecerá en el selector desplegable
 
-      * **Nombre** `text`
-      * **Tipo** `String`
-      * **Valor** el texto que aparecerá en la lista de selección
+     * **Nombre** `text`
+     * **Tipo** `String`
+     * **Valor** el texto que aparecerá en la lista de selección
 
 1. Guarde todos los cambios.
 
@@ -684,58 +693,58 @@ Para configurar cómo se añaden los vínculos en AEM desde otro programa, defin
 
    * Estilo CSS para vínculos internos:
 
-      * **Nombre** `cssInternal`
-      * **Tipo** `String`
-      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
+     * **Nombre** `cssInternal`
+     * **Tipo** `String`
+     * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Estilo CSS para vínculos externos
 
-      * **Nombre** `cssExternal`
-      * **Tipo** `String`
-      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
+     * **Nombre** `cssExternal`
+     * **Tipo** `String`
+     * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Matriz de **protocolos** válidos. Los protocolos admitidos son `http://`, `https://`, `file://` y `mailto:`.
 
-      * **Nombre** `protocols`
-      * **Tipo** `String[]`
-      * **Valor** uno o más protocolos
+     * **Nombre** `protocols`
+     * **Tipo** `String[]`
+     * **Valor** uno o más protocolos
 
    * **defaultProtocol** (propiedad de tipo **String**): Protocolo que se debe usar si el usuario no especificó uno explícitamente.
 
-      * **Nombre** `defaultProtocol`
-      * **Tipo** `String`
-      * **Valor** uno o más protocolos predeterminados
+     * **Nombre** `defaultProtocol`
+     * **Tipo** `String`
+     * **Valor** uno o más protocolos predeterminados
 
    * Definición de cómo gestionar el atributo de destino de un vínculo. Cree un nodo:
 
-      * **Nombre** `targetConfig`
-      * **Tipo** `nt:unstructured`
+     * **Nombre** `targetConfig`
+     * **Tipo** `nt:unstructured`
 
      En el nodo `targetConfig`, defina las propiedades necesarias:
 
-      * Especifique el modo de destino:
+     * Especifique el modo de destino:
 
-         * **Nombre** `mode`
-         * **Tipo** `String`
-         * **Valor**
+       * **Nombre** `mode`
+       * **Tipo** `String`
+       * **Valor**
 
-            * `auto`: significa que se elige un destino automático
+         * `auto`: significa que se elige un destino automático
 
-              (especificado por la propiedad `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
+           (especificado por la propiedad `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
 
-            * `manual`: no aplicable en este contexto
-            * `blank`: no aplicable en este contexto
+         * `manual`: no aplicable en este contexto
+         * `blank`: no aplicable en este contexto
 
-      * El destino de los vínculos internos:
+     * El destino de los vínculos internos:
 
-         * **Nombre** `targetInternal`
-         * **Tipo** `String`
-         * **Value** es el destino de los vínculos internos (utilícelo únicamente cuando el modo sea `auto`)
+       * **Nombre** `targetInternal`
+       * **Tipo** `String`
+       * **Value** es el destino de los vínculos internos (utilícelo únicamente cuando el modo sea `auto`)
 
-      * El destino de los vínculos externos:
+     * El destino de los vínculos externos:
 
-         * **Nombre** `targetExternal`
-         * **Tipo** `String`
-         * **Value** es el destino de los vínculos externos (solo se usa cuando el modo es `auto`).
+       * **Nombre** `targetExternal`
+       * **Tipo** `String`
+       * **Value** es el destino de los vínculos externos (solo se usa cuando el modo es `auto`).
 
 1. Guarde todos los cambios.

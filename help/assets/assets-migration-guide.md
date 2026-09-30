@@ -1,18 +1,36 @@
 ---
 title: Migración de recursos por lotes
-description: Describe cómo incluir recursos en  [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlas en instancias de publicación.
+description: Describe cómo traer recursos a [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlos en instancias de publicación.
 contentOwner: AG
 role: Developer,Admin
 feature: Migration,Renditions,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: b8328197-6d2a-493d-8098-db4f68f1fcb0
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 6%
-
+source-wordcount: '1858'
+ht-degree: 10%
 ---
-
 # Migración de recursos por lotes {#assets-migration-guide}
 
 Hay que tener en cuenta varios pasos al migrar recursos a [!DNL Adobe Experience Manager]. La extracción de recursos y metadatos de su directorio raíz actual está fuera del ámbito de este documento, ya que varía ampliamente entre implementaciones, pero este documento describe cómo llevar estos recursos a [!DNL Experience Manager], aplicar sus metadatos, generar representaciones y activarlos en instancias de publicación.
@@ -31,7 +49,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >* Administrador de acciones rápidas de ACS Commons
 >* Flujo de trabajo sintético
 >
->Este software es de código abierto y está cubierto por la [Licencia de &#x200B;](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Migrar a [!DNL Experience Manager] {#migrating-to-aem}
 
@@ -84,7 +102,7 @@ Después de cargar los recursos en el sistema, debe procesarlos a través del fl
 Después de configurar el flujo de trabajo según sus necesidades, tiene dos opciones para ejecutarlo:
 
 1. El método más sencillo es [ACS Commons&#39; Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Esta herramienta permite ejecutar una consulta y procesar sus resultados a través de un flujo de trabajo. También hay opciones para configurar los tamaños de lote.
-1. Puede utilizar [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) junto con [Synth Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Aunque este enfoque es mucho más complicado, le permite eliminar la sobrecarga del motor de flujo de trabajo [!DNL Experience Manager] y optimizar el uso de los recursos del servidor. Además, Fast Action Manager aumenta todavía más el rendimiento mediante la supervisión dinámica de los recursos del servidor y la limitación de la carga localizada en el sistema. Se han proporcionado ejemplos de secuencias de comandos en la página de características de ACS Commons.
+1. Puede utilizar [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) junto con [Synth Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Aunque este enfoque es mucho más complicado, le permite eliminar la sobrecarga del motor de flujo de trabajo [!DNL Experience Manager] y optimizar el uso de los recursos del servidor. Además, Fast Action Manager aumenta todavía más el rendimiento mediante la monitorización dinámica de los recursos del servidor y la limitación de la carga localizada en el sistema. Se han proporcionado ejemplos de secuencias de comandos en la página de características de ACS Commons.
 
 ### Activar recursos {#activating-assets}
 

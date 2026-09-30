@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
 exl-id: c8745d19-139a-4cea-982a-537bc1dd207d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 95%
-
 ---
-
 # Crear apariencias personalizadas para campos de formularios adaptables{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Introducción {#introduction}
@@ -130,9 +146,9 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">&lbrace;
+   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
+      }</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

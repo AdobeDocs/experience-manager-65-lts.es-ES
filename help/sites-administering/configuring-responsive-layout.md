@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 3%
-
 ---
-
 # Configuración del contenedor y el modo de diseño{#configuring-layout-container-and-layout-mode}
 
 Obtenga información sobre cómo configurar el contenedor y el modo de diseño.
@@ -34,17 +43,17 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
   Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes en una cuadrícula adaptable. Se puede utilizar como parsys predeterminado para la página o estar disponible para los autores en el explorador de componentes.
 
-   * El componente **Contenedor de diseño** predeterminado se define en:
+  * El componente **Contenedor de diseño** predeterminado se define en:
 
-     /libs/wcm/foundation/components/responsivegrid
+    /libs/wcm/foundation/components/responsivegrid
 
-   * Puede definir contenedores de diseño:
+  * Puede definir contenedores de diseño:
 
-      * Como un componente que el usuario puede agregar a una página.
-      * Como parsys predeterminado para la página.
-      * Ambos.
+    * Como un componente que el usuario puede agregar a una página.
+    * Como parsys predeterminado para la página.
+    * Ambos.
 
-        Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
+      Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
 
 * **[Modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Una vez que el contenedor de diseño esté colocado en la página, puede usar el modo **Diseño** para colocar el contenido en la cuadrícula adaptable.
@@ -82,13 +91,13 @@ Estos procedimientos se utilizan para habilitar el modo **Layout** en el sitio.
 * Se utilizan en diseños adaptables.
 * Se puede definir:
 
-   * En la plantilla de página, desde donde se copia la configuración a cualquier página creada con esa plantilla.
-   * En el nodo de la página, desde donde cualquier página secundaria hereda la configuración.
+  * En la plantilla de página, desde donde se copia la configuración a cualquier página creada con esa plantilla.
+  * En el nodo de la página, desde donde cualquier página secundaria hereda la configuración.
 
 * Defina un título y una anchura:
 
-   * El título describe la agrupación de dispositivos genéricos, con orientación si es necesario; por ejemplo, teléfono, tableta, tableta horizontal.
-   * La anchura define la anchura máxima en píxeles para esa agrupación de dispositivos genéricos. Por ejemplo, si el punto de interrupción del teléfono tiene una anchura de 768, indique la anchura máxima del diseño utilizado para un dispositivo móvil.
+  * El título describe la agrupación de dispositivos genéricos, con orientación si es necesario; por ejemplo, teléfono, tableta, tableta horizontal.
+  * La anchura define la anchura máxima en píxeles para esa agrupación de dispositivos genéricos. Por ejemplo, si el punto de interrupción del teléfono tiene una anchura de 768, indique la anchura máxima del diseño utilizado para un dispositivo móvil.
 
 * Están visibles como marcadores en la parte superior del editor de páginas cuando utiliza el emulador.
 * Se heredan de la jerarquía de nodos principal y se pueden anular a voluntad.
@@ -193,7 +202,7 @@ Los dos ejemplos siguientes ilustran la definición:
 
 AEM utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
-También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/?lang=es) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -233,11 +242,11 @@ Por ejemplo:
 
 * Antes:
 
-   * `width=100px`
+  * `width=100px`
 
 * Después:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Cambio de tamaño y compatibilidad con imágenes adaptables {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ Puede configurar el número de columnas disponibles para cada instancia específ
 
    * Número de columnas disponibles:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Componentes que se pueden añadir al componente actual:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Cuadrículas adaptables anidadas {#nested-responsive-grids}
 

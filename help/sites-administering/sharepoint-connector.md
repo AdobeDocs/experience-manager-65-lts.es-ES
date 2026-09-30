@@ -9,7 +9,15 @@ docset: aem65
 feature: Integration
 role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 3%
@@ -85,7 +93,7 @@ El conector admite lo siguiente:
 
 ### Instalación estándar {#standard-installation}
 
-Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es#software-distribution).
+Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
 #### Integración con AEM {#integrating-with-aem}

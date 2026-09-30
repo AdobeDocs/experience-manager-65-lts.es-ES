@@ -1,18 +1,32 @@
 ---
 title: Migrar recursos y documentos de AEM Forms
-description: La utilidad de migración le permite migrar recursos y documentos de Adobe Experience Manager (AEM) Forms de AEM 6.5.22.0 Forms a AEM 6.5 Forms LTS.
+description: La utilidad de migración permite migrar recursos y documentos de Adobe Experience Manager (AEM) Forms de AEM 6.5.22.0 Forms a AEM 6.5 Forms LTS.
 content-type: reference
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1765'
 ht-degree: 51%
-
 ---
-
 # Migrar recursos y documentos de AEM Forms{#migrate-aem-forms-assets-and-documents}
 
 La utilidad de migración convierte los [recursos adaptables de Forms](../../forms/using/introduction-forms-authoring.md), las [configuraciones en la nube](/help/sites-developing/extending-cloud-config.md) y los [recursos de Administración de correspondencia](/help/forms/using/cm-overview.md) del formato utilizado en versiones anteriores al formato utilizado en Adobe Experience Manager (AEM) 6.5 LTS Forms. Al ejecutar la utilidad de migración, se migran los siguientes elementos:
@@ -48,7 +62,7 @@ Debido a [cambios relacionados con la compatibilidad con versiones anteriores](/
 
 Para los recursos de Administración de correspondencia:
 
-* En el caso de los recursos importados de la plataforma anterior, se agrega una propiedad, **fd:version=1.0**.
+* Para los recursos importados de la plataforma anterior, se agrega una propiedad: **fd:version=1.0**.
 * A partir de AEM 6.1 Forms, los comentarios no están disponibles de forma predeterminada. Los comentarios que se agregaron anteriormente están disponibles en los recursos, pero no son visibles en la interfaz automáticamente. Personalice la propiedad extendedProperties en la interfaz de usuario de AEM Forms para que los comentarios sean visibles.
 * En algunas versiones anteriores, como LiveCycle ES4, el texto se editaba con RichTextEditor de Flex, pero desde AEM 6.1 Forms, se utiliza un editor HTML. Debido a esta renderización y al aspecto de las fuentes, los tamaños y los márgenes de fuente pueden diferir de las versiones anteriores en la interfaz de usuario del Autor. Sin embargo, las cartas tienen el mismo aspecto cuando se representan.
 * Las listas de los módulos de texto se han mejorado, y ahora se procesan de forma diferente. Es posible que haya diferencias visuales. Adobe recomienda procesar y ver las cartas en las que utiliza listas en módulos de texto.
@@ -90,11 +104,11 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Para migrar **recursos**, seleccione Migración de AEM Forms Assets y, en la siguiente pantalla, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Formularios adaptables
-      * Fragmentos de documento
-      * Temas
-      * Cartas
-      * Diccionarios de datos
+     * Formularios adaptables
+     * Fragmentos de documento
+     * Temas
+     * Cartas
+     * Diccionarios de datos
 
    >[!NOTE]
    >
@@ -102,12 +116,12 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Para migrar componentes de formulario adaptable personalizados, seleccione **Migración de componentes personalizados de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Componentes personalizados escritos para formularios adaptables
-      * Superposiciones de componentes, si las hay.
+     * Componentes personalizados escritos para formularios adaptables
+     * Superposiciones de componentes, si las hay.
 
    * Para migrar plantillas de formulario adaptable, seleccione **Migración de plantillas de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
+     * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
 
    * Migre los servicios de configuración de AEM Forms Cloud para utilizar el nuevo paradigma de servicios en la nube sensibles al contexto, que incluye la interfaz de usuario táctil (en `/conf`). Cuando migre los servicios de configuración de AEM Forms Cloud, los servicios en la nube de `/etc` se mueven a `/conf`. Si no tiene personalizaciones de servicios en la nube que dependan de rutas heredadas (`/etc`), Adobe recomienda ejecutar la utilidad de migración después de actualizar a la versión 6.5; usar la interfaz de usuario táctil de la configuración en la nube para cualquier trabajo posterior. Si tiene personalizaciones de servicios en la nube existentes, continúe usando la IU clásica en la configuración actualizada hasta que las personalizaciones se actualicen para que se alineen con las rutas migradas (`/conf`) y luego ejecute la utilidad de migración.
 
@@ -115,23 +129,23 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Servicios en la nube del modelo de datos de formulario
 
-      * Ruta de origen: `/etc/cloudservices/fdm`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/fdm`
+     * Ruta de origen: `/etc/cloudservices/fdm`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Ruta de origen: `/etc/cloudservices/recaptcha`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/recaptcha`
+     * Ruta de origen: `/etc/cloudservices/recaptcha`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Ruta de origen: `/etc/cloudservices/echosign`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/echosign`
+     * Ruta de origen: `/etc/cloudservices/echosign`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/echosign`
 
    * Servicios de nube de Typekit
 
-      * Ruta de origen: `/etc/cloudservices/typekit`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/typekit`
+     * Ruta de origen: `/etc/cloudservices/typekit`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/typekit`
 
    La ventana del explorador muestra lo siguiente a medida que se produce el proceso de migración:
 
@@ -151,15 +165,15 @@ Estos componentes se pueden migrar abriéndolos en el Editor de reglas desde el 
 
 * Para migrar reglas y scripts (no es necesario si se actualiza desde la versión 6.3) de componentes personalizados, seleccione Migración de componentes personalizados de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
-   * Reglas y scripts creados con el Editor de reglas (6.1 FP1 y versiones posteriores)
+  * Reglas y scripts creados con el Editor de reglas (6.1 FP1 y versiones posteriores)
 
-   * Scripts creados con la pestaña Script en la IU de 6.1 y versiones anteriores
+  * Scripts creados con la pestaña Script en la IU de 6.1 y versiones anteriores
 
 * Para migrar plantillas (no es necesario si se actualiza desde las versiones 6.3 y 6.4), seleccione Migración de plantillas de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
-   * Plantillas antiguas: las plantillas de formulario adaptable creadas en /apps con AEM 6.1 Forms o versiones anteriores. Eso incluye los scripts definidos en los componentes de plantilla.
+  * Plantillas antiguas: las plantillas de formulario adaptable creadas en /apps con AEM 6.1 Forms o versiones anteriores. Eso incluye los scripts definidos en los componentes de plantilla.
 
-   * Nuevas plantillas: las plantillas de formulario adaptable creadas con el editor de plantillas en `/conf`. Eso incluye la migración de reglas y scripts creados con el Editor de reglas.
+  * Nuevas plantillas: las plantillas de formulario adaptable creadas con el editor de plantillas en `/conf`. Eso incluye la migración de reglas y scripts creados con el Editor de reglas.
 
 ### Tareas de mantenimiento después de ejecutar la utilidad de migración. {#housekeepingtasks}
 

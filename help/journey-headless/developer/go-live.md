@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
-source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1909'
 ht-degree: 52%
-
 ---
-
 # Cómo hacer un lanzamiento con su aplicación sin encabezado {#go-live}
 
 En esta parte del [Recorrido para desarrolladores sin encabezado de AEM](overview.md), aprenda a implementar una aplicación sin encabezado en directo.
@@ -97,7 +123,7 @@ El entorno de desarrollo local se compone de tres áreas principales:
 
 Una vez configurado el entorno de desarrollo local, puede simular el contenido que se sirve a la aplicación React implementando un servidor de nodos estático localmente.
 
-Para obtener información más detallada sobre la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=es).
+Para obtener información más detallada sobre la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Preparación de la aplicación sin encabezado de AEM para el lanzamiento {#prepare-your-aem-headless-application-for-golive}
 
@@ -115,12 +141,12 @@ Ahora es el momento de preparar su aplicación sin encabezado de AEM para su lan
 * Evite más de cinco niveles anidados de jerarquías de fragmento. Los niveles adicionales hacen que a los autores de contenido les resulte difícil considerar el impacto de sus cambios.
 * Utilice consultas de varios objetos en lugar de modelar consultas con jerarquías de dependencia dentro de los modelos. Al hacerlo, se obtiene una mayor flexibilidad a largo plazo para reestructurar la salida de JSON sin tener que realizar muchos cambios en el contenido.
 
-### Maximizar la proporción de visitas en caché de CDN {#maximize-cdn}
+### Maximizar la proporción de hits en caché de CDN {#maximize-cdn}
 
 * No utilice consultas directas de GraphQL, a menos que solicite contenido activo desde la superficie.
-   * Utilice consultas persistentes siempre que sea posible.
-   * Proporcione un TTL de CDN superior a 600 segundos para que la CDN pueda almacenarlo en caché.
-   * AEM calcula el impacto de un cambio de modelo en las consultas existentes.
+  * Utilice consultas persistentes siempre que sea posible.
+  * Proporcione un TTL de CDN superior a 600 segundos para que la CDN pueda almacenarlo en caché.
+  * AEM calcula el impacto de un cambio de modelo en las consultas existentes.
 * Divida los archivos JSON o las consultas de GraphQL entre una tasa de cambio de contenido baja y alta para reducir el tráfico del cliente a CDN y asignar un TTL más alto. Al hacerlo, se minimiza la revalidación por CDN del JSON con el servidor de origen.
 * Para invalidar activamente el contenido de la CDN, utilice Depuración suave. Al hacerlo, la CDN puede volver a descargar el contenido sin provocar una pérdida de caché.
 
@@ -144,11 +170,11 @@ La implementación en producción puede depender de si tiene una instancia de AE
 
 ## Implementación en producción mediante Maven {#deploy-to-production-maven}
 
-Para una implementación *tradicional* (que no es AMS) que use Maven, consulte el [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es#build) para obtener una descripción general.
+Para una implementación *tradicional* (que no es AMS) que use Maven, consulte el [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obtener una descripción general.
 
 ## Implementación en producción mediante Cloud Manager {#deploy-to-production-cloud-manager}
 
-Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=es).
+Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
 Una vez que las actualizaciones se hayan cargado a Cloud Manager, impleméntelas en AEM mediante [la canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
 
@@ -164,15 +190,15 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
 * Valide las versiones de producción y previsualización de la aplicación.
 * Verifique las páginas de estado de AEM para el estado actual de disponibilidad del servicio.
 * Acceda a los informes de rendimiento.
-   * Rendimiento de entrega
-      * Servidores de origen: número de llamadas, tasas de error, cargas de CPU, tráfico de carga útil
-   * Rendimiento del autor
-      * Compruebe el número de usuarios, solicitudes y carga
+  * Rendimiento de entrega
+    * Servidores de origen: número de llamadas, tasas de error, cargas de CPU, tráfico de carga útil
+  * Rendimiento del autor
+    * Compruebe el número de usuarios, solicitudes y carga
 * Acceso a informes de rendimiento específicos de la aplicación y el espacio
-   * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes, naranjas o rojas y, a continuación, identifique los problemas específicos de la aplicación.
-   * Abra los mismos informes filtrados anteriormente en la aplicación o el espacio (por ejemplo, escritorio de Photoshop, muro de pago).
-   * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y de la aplicación.
-   * Póngase en contacto con asistencia al cliente en caso de que surjan otros problemas.
+  * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes, naranjas o rojas y, a continuación, identifique los problemas específicos de la aplicación.
+  * Abra los mismos informes filtrados anteriormente en la aplicación o el espacio (por ejemplo, escritorio de Photoshop, muro de pago).
+  * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y de la aplicación.
+  * Póngase en contacto con asistencia al cliente en caso de que surjan otros problemas.
 
 ## Solución de problemas {#troubleshooting}
 
@@ -225,9 +251,9 @@ Si necesita este tipo de flexibilidad para su proyecto, continúe con la parte o
 
 * Caché de CDN
 
-   * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
+  * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurando la [reescritura de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*buscar reescritura de CDN*)
+  * Configurando la [reescritura de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*buscar reescritura de CDN*)
 
 * [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

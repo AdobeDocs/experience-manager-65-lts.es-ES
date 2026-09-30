@@ -6,13 +6,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2098'
 ht-degree: 15%
-
 ---
-
 # Evaluación de la complejidad de la actualización con AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
 ## Información general {#overview}
@@ -88,10 +97,10 @@ El formato del informe es el siguiente:
 
 * **Información general del informe**: información sobre el informe que incluye lo siguiente:
 
-   * **Hora del informe**: Cuando se generó el contenido del informe y se puso a disposición por primera vez
-   * **Hora de caducidad**: cuando caduque la caché de contenido del informe
-   * **Período de tiempo de generación**: Cantidad de tiempo en que se generó el informe
-   * **Recuento de búsqueda**: El número total de resultados incluidos en el informe
+  * **Hora del informe**: Cuando se generó el contenido del informe y se puso a disposición por primera vez
+  * **Hora de caducidad**: cuando caduque la caché de contenido del informe
+  * **Período de tiempo de generación**: Cantidad de tiempo en que se generó el informe
+  * **Recuento de búsqueda**: El número total de resultados incluidos en el informe
 
 * **Información general del sistema**: Información sobre el sistema AEM en el que se ejecutó el analizador
 * **Búsqueda de categorías**: varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: nombre de la categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
@@ -102,7 +111,7 @@ El formato del informe es el siguiente:
 
 >[!NOTE]
 >
->Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Para comprender los niveles de importancia, siga la tabla siguiente:
 
@@ -233,4 +242,4 @@ El tiempo de caducidad que queda para el informe de AEM Analyzer se muestra en l
 ### Problemas conocidos {#known-issues}
 
 * En ocasiones, la operación Quitar puede mostrar la notificación: *&quot;Algunas rutas no se quitaron correctamente, compruebe los registros e inténtelo de nuevo.*&quot;. Sin embargo, si las rutas se eliminaron, puede ignorar este mensaje de forma segura
-* Del mismo modo, la operación del paquete puede fallar con el siguiente error: *&quot;Error al realizar la operación deseada, compruebe los registros e inténtelo de nuevo.*&quot;. Es probable que se deba a la caducidad de la sesión. En estos casos, el problema se debe resolver reintentando la operación.
+* Del mismo modo, la operación del paquete puede fallar con el error: *&quot;Error al realizar la operación deseada, compruebe los registros e inténtelo de nuevo.*&quot;. Es probable que se deba a la caducidad de la sesión. En estos casos, el problema se debe resolver reintentando la operación.

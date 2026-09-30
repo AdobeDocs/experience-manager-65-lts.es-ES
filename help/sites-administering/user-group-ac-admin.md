@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3107'
 ht-degree: 3%
-
 ---
-
 # Administración de derechos de usuario, grupo y acceso{#user-group-and-access-rights-administration}
 
 La activación del acceso a un repositorio de CRX implica varios temas:
@@ -70,22 +82,22 @@ CRX utiliza dos conceptos clave al evaluar los derechos de acceso:
 
 * **principal** es una entidad que cuenta con derechos de acceso. Las entidades principales incluyen:
 
-   * Una cuenta de usuario
-   * Una cuenta de grupo
+  * Una cuenta de usuario
+  * Una cuenta de grupo
 
-     Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
+    Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
 
 * Se usa un **asunto** para representar el origen de una solicitud.
 
   Se utiliza para consolidar los derechos de acceso aplicables a esa solicitud. Estas se toman de:
 
-   * Principal de usuario
+  * Principal de usuario
 
-     Los derechos que asigna directamente a la cuenta de usuario.
+    Los derechos que asigna directamente a la cuenta de usuario.
 
-   * Todas las entidades de seguridad de grupo asociadas a ese usuario
+  * Todas las entidades de seguridad de grupo asociadas a ese usuario
 
-     Todos los derechos se asignan a cualquiera de los grupos a los que pertenece el usuario.
+    Todos los derechos se asignan a cualquiera de los grupos a los que pertenece el usuario.
 
   A continuación, el resultado se utiliza para permitir o denegar el acceso al recurso solicitado.
 
@@ -124,8 +136,8 @@ Los derechos de acceso en CRX se evalúan de la siguiente manera:
 
 * Las entidades de seguridad de usuario siempre tienen prioridad sobre las de grupo, independientemente de:
 
-   * su orden en la lista de control de acceso
-   * su posición en la jerarquía del nodo
+  * su orden en la lista de control de acceso
+  * su posición en la jerarquía del nodo
 
 * Para un principal determinado, existe (como máximo) una entrada denegada y 1 permitida en un nodo determinado. La implementación siempre borra las entradas redundantes y se asegura de que el mismo privilegio no aparezca en las entradas de permiso y de denegación.
 

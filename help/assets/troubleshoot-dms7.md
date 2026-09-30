@@ -11,13 +11,27 @@ feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: aaba5717-080e-40d6-a128-c9c8a9255476
+    internal-label: Troubleshooting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1411'
 ht-degree: 1%
-
 ---
-
 # Resolución de problemas de Dynamic Media, modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 En el siguiente documento se describe la solución de problemas de Dynamic Media que ejecuta el modo de ejecución **dynamicmedia_scene7**.
@@ -243,7 +257,7 @@ En CRXDE Lite, haga lo siguiente:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Ejemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+     Ejemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solución**
 
@@ -255,7 +269,8 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. Busque el paquete de visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
 1. Seleccione **Reinstalar**.
 1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo Configuración de Dynamic Media - S7.
-1. No realice cambios, seleccione **Guardar**.Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
+1. No realice cambios, seleccione **Guardar**.
+Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
 
 ### Problema: La previsualización de imagen no se carga en la creación de ajustes preestablecidos de visualizador {#image-preview-not-loading}
 

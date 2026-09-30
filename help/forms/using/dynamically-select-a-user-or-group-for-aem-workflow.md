@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 60%
-
+source-wordcount: '945'
+ht-degree: 62%
 ---
-
 # Seleccionar dinámicamente un usuario o un grupo para los pasos de los flujos de trabajo centrados en AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Obtenga información sobre cómo seleccionar un usuario o un grupo para un flujo de trabajo de AEM Forms en tiempo de ejecución.
@@ -26,7 +42,7 @@ Asignar tareas y pasos de Adobe Sign de [flujos de trabajo centrados en Forms en
 
 ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para seleccionar un usuario o un grupo de forma dinámica mediante ECMAScript:
 
-1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`. 
+1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Cree un archivo con la extensión .ecma en la siguiente ruta. Si la ruta (estructura de nodos) no existe, créela:
 
    * (Ruta para el paso Asignar tarea) `/apps/fd/dashboard/scripts/participantChooser`
@@ -42,7 +58,7 @@ ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del client
    1. Agregue la propiedad `mix:title` en el cuadro de diálogo Editar mixins y haga clic en **Aceptar**.
    1. Agregue la siguiente propiedad al nodo `jcr:content` del script:
 
-      | Nombre | Tipo | Valor  |
+      | Nombre | Tipo | Valor |
       |--- |--- |--- |
       | `jcr:title` | Cadena | Especifique el nombre del script; por ejemplo, Seleccionar el agente de campo más cercano. Este nombre se muestra en los pasos `Assign Task` y Firmar documento. |
 
@@ -117,7 +133,7 @@ function getAdobeSignRecipients() {
 
 Puede usar la interfaz de Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir un usuario o un grupo de forma dinámica para los pasos de Adobe Sign y Asignar tarea. Puede crear un paquete OSGi que use la interfaz Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implementarlo en el servidor de AEM Forms. Esto le permitirá seleccionar la opción en los componentes `Assign Task` y Adobe Sign del flujo de trabajo de AEM.
 
-Necesitará los archivos jar del [AEM Forms Client SDK](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) y [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar el código de ejemplo que se muestra a continuación. Agregue estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
+Necesitará los archivos jar del [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) y [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar el código de ejemplo que se muestra a continuación. Agregue estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
 
 1. Abra Eclipse IDE. Vaya a **[!UICONTROL Archivo]** > **[!UICONTROL Nuevo proyecto]**.
 1. En la pantalla Seleccionar un asistente, seleccione **[!UICONTROL Proyecto Maven]** y haga clic en **[!UICONTROL Siguiente]**.

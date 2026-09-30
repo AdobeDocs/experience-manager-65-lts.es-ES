@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 3%
-
+source-wordcount: '2529'
+ht-degree: 1%
 ---
-
 # Uso de adaptadores de Sling{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) ofrece un [patrón de adaptador](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para traducir objetos que implementan convenientemente la interfaz [adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Esta interfaz proporciona un método [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) genérico que traduce el objeto al tipo de clase que se pasa como argumento.
@@ -338,13 +347,13 @@ Aún no hay destinos, pero implementa Adaptable y podría utilizarse como origen
 
 #### Seguridad {#security}
 
-**Autorizable**, **Usuario y &#x200B;** Grupo** se adaptan a:
+**Autorizable**, **Usuario y** Grupo** se adaptan a:
 
 | [Nodo](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Devuelve el nodo de inicio del usuario/grupo. |
 | --- | --- |
 | [EstadoDeReplicación](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/replication/ReplicationStatus.html) | Devuelve el estado de replicación del nodo principal del usuario/grupo. |
 
-#### DAM  {#dam}
+#### DAM {#dam}
 
 **El recurso** se adapta a:
 

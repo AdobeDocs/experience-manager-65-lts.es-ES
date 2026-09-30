@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 1782ad8c-b514-4d41-86c9-59c60af46cde
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 2%
-
 ---
-
 # Integración con Silverpop Engage{#integrating-with-silverpop-engage}
 
 <!--
@@ -50,7 +59,7 @@ Para crear una configuración de Silverpop en Cloud Services:
    >
    >Silverpop Engage no está disponible como opción en los servicios de terceros a menos que descargue el paquete desde Package Share.
 
-1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de **&#x200B; Configuración &#x200B;** Silverpop.
+1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de ** Configuración ** Silverpop.
 1. Introduzca el nombre de usuario y la contraseña, y seleccione un punto final de API en la lista desplegable.
 1. Haga clic en **Conectar con Silverpop.** Cuando se haya conectado correctamente, verá un cuadro de diálogo de éxito. Haz clic en **Aceptar** para salir de la ventana. Para ir a Silverpop, haga clic en **Ir a Silverpop Engage**.
 1. Silverpop se ha configurado. Puede editar la configuración haciendo clic en **Editar**.

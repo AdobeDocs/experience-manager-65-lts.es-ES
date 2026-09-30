@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 4%
-
 ---
-
 # Configurar los ajustes del servicio {#configure-service-settings}
 
 >[!NOTE]
@@ -75,11 +92,11 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 El servicio Bridge de migración central (`CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge le permiten reutilizar los siguientes recursos centrales en los formularios de AEM:
 
-* diseño de plantilla (&ast;.ifd)
-* plantillas de salida (&ast;.mdf)
-* archivos de datos (archivos &ast;.dat)
-* archivos de preámbulo (archivos &ast;.pre)
-* archivos de definición de datos (&ast;.tdf)
+* diseño de plantilla (&amp;ast;.ifd)
+* plantillas de salida (&amp;ast;.mdf)
+* archivos de datos (archivos &amp;ast;.dat)
+* archivos de preámbulo (archivos &amp;ast;.pre)
+* archivos de definición de datos (&amp;ast;.tdf)
 
 La siguiente configuración está disponible para el servicio Bridge de migración central.
 
@@ -421,7 +438,7 @@ Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario s
 
 ## Ajustes del servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html).
+El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Los siguientes ajustes están disponibles para el servicio de configuración de Microsoft SharePoint:
 

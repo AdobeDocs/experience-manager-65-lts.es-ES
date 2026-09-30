@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # Acerca de las imágenes inteligentes con proporción de píxeles de dispositivo (DPR) del lado del cliente {#client-side-dpr}
 
 La solución actual de imágenes inteligentes utiliza cadenas del agente de usuario para determinar el tipo de dispositivo (escritorio, tableta, móvil, etc.) que se está utilizando.
@@ -57,7 +71,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
    Puede combinar ambos scripts de DPR en uno para evitar varias solicitudes de red.
 
    Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página de HTML.
-Adobe también recomienda que Bootstrap la aplicación con la etiqueta HTML de diferenciación en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página de HTML.
+   Adobe también recomienda que Bootstrap la aplicación con la etiqueta HTML de diferenciación en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página de HTML.
 
 ## Descarga de archivos JavaScript {#client-side-dpr-script}
 

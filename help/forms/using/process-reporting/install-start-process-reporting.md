@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1774'
 ht-degree: 77%
-
 ---
-
 # Introducción a la creación de informes de procesos{#getting-started-with-process-reporting}
 
 Process Reporting permite a los usuarios de AEM Forms consultar información sobre los procesos de AEM Forms definidos actualmente en la implementación de AEM Forms. Sin embargo, Process Reporting no accede directamente a los datos del repositorio de AEM Forms. Los datos se publican primero en el repositorio de Process Reporting de forma programada (*mediante los servicios ProcessDataPublisher y ProcessDataStorage*). A continuación, los informes y las consultas de Process Reporting se generan a partir de los datos de Process Reporting publicados en el repositorio. Process Reporting se instala como parte del módulo de Forms Workflow.
@@ -45,7 +60,7 @@ Los servicios de Process Reporting publican los datos de la base de datos de AE
 
 Esta operación puede consumir muchos recursos y afectar al rendimiento de los servidores de AEM Forms. Se recomienda programarla fuera de las franjas temporales de mayor actividad del servidor de AEM Forms.
 
-De manera predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a. m.
+De forma predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a. m.
 
 Para cambiar la programación de publicación, realice los siguientes pasos:
 

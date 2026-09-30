@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3268'
 ht-degree: 6%
-
 ---
-
 # Referencia de pasos de flujo de trabajo {#workflow-step-reference}
 
 Los modelos de flujo de trabajo constan de una serie de pasos de varios tipos. Según el tipo, estos pasos se pueden configurar y ampliar con parámetros y secuencias de comandos para proporcionar la funcionalidad y el control necesarios.
@@ -52,7 +61,7 @@ Una descripción de la etapa.
 * **Tiempo de espera**
 
   Período después del cual se agota el tiempo de espera del paso.
-Puede seleccionar entre: **Desactivado**, **Inmediato**, **1h**, **6h**, **12h**, **24h**.
+  Puede seleccionar entre: **Desactivado**, **Inmediato**, **1h**, **6h**, **12h**, **24h**.
 
 * **Controlador de tiempo de espera**
 
@@ -68,15 +77,15 @@ Las siguientes propiedades están disponibles para muchos componentes de paso de
 
 * **Notificar al usuario por correo electrónico**
 
-   * Notifique a los participantes enviándoles un correo electrónico cuando el flujo de trabajo alcance el paso.
-   * Si está habilitada, se envía un correo electrónico al usuario definido por la propiedad **Usuario/Grupo**, o a cada miembro del grupo si se define un grupo.
+  * Notifique a los participantes enviándoles un correo electrónico cuando el flujo de trabajo alcance el paso.
+  * Si está habilitada, se envía un correo electrónico al usuario definido por la propiedad **Usuario/Grupo**, o a cada miembro del grupo si se define un grupo.
 
 * **Usuario/grupo**
 
-   * Un cuadro de selección desplegable le permite desplazarse hasta un usuario o grupo y seleccionarlos.
-   * Si asigna el paso a un usuario específico, solo este puede actuar en el paso.
-   * Si asigna el paso a un grupo completo, cuando el flujo de trabajo llegue a este paso, todos los usuarios de este grupo tendrán la acción en su **Bandeja de entrada de flujo de trabajo**.
-   * Consulte [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md) para obtener más información.
+  * Un cuadro de selección desplegable le permite desplazarse hasta un usuario o grupo y seleccionarlos.
+  * Si asigna el paso a un usuario específico, solo este puede actuar en el paso.
+  * Si asigna el paso a un grupo completo, cuando el flujo de trabajo llegue a este paso, todos los usuarios de este grupo tendrán la acción en su **Bandeja de entrada de flujo de trabajo**.
+  * Consulte [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md) para obtener más información.
 
 ## División Y {#and-split}
 
@@ -90,8 +99,8 @@ Para configurar la división:
 
 * Editar las propiedades de división **AND**:
 
-   * **Split Name**: asigne un nombre para fines explicativos
-   * Seleccione el número de ramas necesarias; 2, 3, 4 o 5.
+  * **Split Name**: asigne un nombre para fines explicativos
+  * Seleccione el número de ramas necesarias; 2, 3, 4 o 5.
 
 * Añada los pasos del flujo de trabajo a las ramas según sea necesario.
 
@@ -112,7 +121,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](#step-properties-common-tab)
 * **Contenedor**
 
-   * **Flujo de trabajo secundario**: seleccione el flujo de trabajo que desea iniciar.
+  * **Flujo de trabajo secundario**: seleccione el flujo de trabajo que desea iniciar.
 
 ## Ir a la etapa {#goto-step}
 
@@ -130,12 +139,12 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](#step-properties-common-tab)
 * **Proceso**
 
-   * **Paso de destino**: seleccione el paso que se ejecutará después de evaluar la condición para la expresión de enrutamiento.
-   * **Expresión de enrutamiento**: seleccione la definición de regla, el script externo o un script ECMA que determine si se ejecutará el **paso de destino**.
+  * **Paso de destino**: seleccione el paso que se ejecutará después de evaluar la condición para la expresión de enrutamiento.
+  * **Expresión de enrutamiento**: seleccione la definición de regla, el script externo o un script ECMA que determine si se ejecutará el **paso de destino**.
 
-      * **Definición de regla:** Use el [editor de expresiones](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) para definir la regla.
-      * **Script externo:** La ruta de acceso del script externo.
-      * **Script ECMA**: El script que determina si se ejecutará el **Paso Goto**.
+    * **Definición de regla:** Use el [editor de expresiones](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) para definir la regla.
+    * **Script externo:** La ruta de acceso del script externo.
+    * **Script ECMA**: El script que determina si se ejecutará el **Paso Goto**.
 
 #### Simulación de un bucle for {#simulating-a-for-loop}
 
@@ -198,18 +207,18 @@ Para configurar la división:
 
 * Editar las propiedades de **OR Split**:
 
-   * **Común**
+  * **Común**
 
-      * Especifique el nombre de la división.
+    * Especifique el nombre de la división.
 
-   * **Ramas (*x)***
+  * **Ramas (*x)***
 
-      * **Agregar rama:** Agregue más ramas al paso.
-      * **Seleccionar expresión de enrutamiento**: para evaluar la rama activa, seleccione la expresión de enrutamiento. Los valores posibles incluyen: Definición de regla, Script externo y script ECMA.
-      * **Haga clic para agregar expresión**: Agregue expresión para evaluar la rama activa si selecciona **Definición de regla** como expresión de enrutamiento.
-      * **Ruta de script**: La ruta a un archivo que contiene el script para evaluar la rama activa si selecciona **Script externo** como expresión de enrutamiento.
-      * **Script**: agregue el script en el cuadro para evaluar la rama activa si selecciona **Script ECMA** como expresión de enrutamiento.
-      * **Ruta predeterminada**: Si hay varias ramas, se sigue la rama predeterminada. Solo se puede especificar una rama como predeterminada.
+    * **Agregar rama:** Agregue más ramas al paso.
+    * **Seleccionar expresión de enrutamiento**: para evaluar la rama activa, seleccione la expresión de enrutamiento. Los valores posibles incluyen: Definición de regla, Script externo y script ECMA.
+    * **Haga clic para agregar expresión**: Agregue expresión para evaluar la rama activa si selecciona **Definición de regla** como expresión de enrutamiento.
+    * **Ruta de script**: La ruta a un archivo que contiene el script para evaluar la rama activa si selecciona **Script externo** como expresión de enrutamiento.
+    * **Script**: agregue el script en el cuadro para evaluar la rama activa si selecciona **Script ECMA** como expresión de enrutamiento.
+    * **Ruta predeterminada**: Si hay varias ramas, se sigue la rama predeterminada. Solo se puede especificar una rama como predeterminada.
 
   >[!NOTE]
   >
@@ -269,7 +278,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Usuario/grupo](#step-properties-user-group-tab)
 * **Cuadro de diálogo**
 
-   * **Ruta de diálogo**: La ruta al nodo de diálogo del [diálogo que ha creado](#dialog-participant-step-creating-a-dialog).
+  * **Ruta de diálogo**: La ruta al nodo de diálogo del [diálogo que ha creado](#dialog-participant-step-creating-a-dialog).
 
 #### Paso de participante del diálogo: Creación de un cuadro de diálogo {#dialog-participant-step-creating-a-dialog}
 
@@ -284,20 +293,18 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 
 * **Almacenar datos con la carga útil**
 
-   * Para almacenar datos de widget como una propiedad de la carga útil del flujo de trabajo, utilice el siguiente formato para el valor de la propiedad name del nodo de widget:
+  * Para almacenar datos de widget como una propiedad de la carga útil del flujo de trabajo, utilice el siguiente formato para el valor de la propiedad name del nodo de widget:
+    `./jcr:content/nodename`
 
-     `./jcr:content/nodename`
-
-   * Los datos se almacenan en la propiedad `nodename` del nodo de carga útil. Si el nodo no contiene esa propiedad, se crea la propiedad.
-   * Cuando se almacena con la carga útil, los usos posteriores del cuadro de diálogo con la misma carga útil sobrescriben el valor de la propiedad.
+  * Los datos se almacenan en la propiedad `nodename` del nodo de carga útil. Si el nodo no contiene esa propiedad, se crea la propiedad.
+  * Cuando se almacena con la carga útil, los usos posteriores del cuadro de diálogo con la misma carga útil sobrescriben el valor de la propiedad.
 
 * **Almacenar datos con el elemento de trabajo**
 
-   * Para almacenar los datos del widget como una propiedad de los metadatos del elemento de trabajo, utilice el siguiente formato para el valor de la propiedad name:
+  * Para almacenar los datos del widget como una propiedad de los metadatos del elemento de trabajo, utilice el siguiente formato para el valor de la propiedad name:
+    `nodename`
 
-     `nodename`
-
-   * Los datos se almacenan en la propiedad `nodename` del elemento de trabajo `metadata`. Los datos se conservan si el cuadro de diálogo se utiliza posteriormente con la misma carga útil.
+  * Los datos se almacenan en la propiedad `nodename` del elemento de trabajo `metadata`. Los datos se conservan si el cuadro de diálogo se utiliza posteriormente con la misma carga útil.
 
 #### Paso de participante del cuadro de diálogo: definición del cuadro de diálogo {#dialog-participant-step-dialog-definition}
 
@@ -387,13 +394,13 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](#step-properties-common-tab)
 * **Selector de participantes**
 
-   * **Selector de participantes**: Nombre del [selector de participantes que ha creado](#developingtheparticipantchooser).
-   * **Argumentos**: Cualquier argumento requerido.
-   * **Correo electrónico**: Indica si se debe enviar una notificación por correo electrónico al usuario.
+  * **Selector de participantes**: Nombre del [selector de participantes que ha creado](#developingtheparticipantchooser).
+  * **Argumentos**: Cualquier argumento requerido.
+  * **Correo electrónico**: Indica si se debe enviar una notificación por correo electrónico al usuario.
 
 * **Cuadro de diálogo**
 
-   * **Ruta de diálogo**: La ruta al nodo de diálogo del [cuadro de diálogo que crea (como en el **Paso de participante del cuadro de diálogo**)](#dialog-participant-step-creating-a-dialog).
+  * **Ruta de diálogo**: La ruta al nodo de diálogo del [cuadro de diálogo que crea (como en el **Paso de participante del cuadro de diálogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Etapa de participante dinámica: desarrollo del selector de participantes {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -432,9 +439,9 @@ Cree un servicio OSGi o un ECMAScript que seleccione un usuario al que asignar e
 
   Los servicios deben implementar la interfaz [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). La interfaz define los siguientes miembros:
 
-   * Campo `SERVICE_PROPERTY_LABEL`: utilice este campo para especificar el nombre del selector de participantes. El nombre aparece en una lista de selectores de participantes disponibles en las propiedades de **Paso de participante dinámico**.
+  * Campo `SERVICE_PROPERTY_LABEL`: utilice este campo para especificar el nombre del selector de participantes. El nombre aparece en una lista de selectores de participantes disponibles en las propiedades de **Paso de participante dinámico**.
 
-   * Método `getParticipant`: devuelve el ID principal resuelto dinámicamente como un valor `String`.
+  * Método `getParticipant`: devuelve el ID principal resuelto dinámicamente como un valor `String`.
 
   >[!CAUTION]
   >
@@ -516,7 +523,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Usuario/grupo](#step-properties-user-group-tab)
 * **Formulario**
 
-   * **Ruta de formulario**: La ruta al [formulario que creó](#form-participant-step-creating-the-form).
+  * **Ruta de formulario**: La ruta al [formulario que creó](#form-participant-step-creating-the-form).
 
 #### Paso de participante del formulario: creación del formulario {#form-participant-step-creating-the-form}
 
@@ -555,7 +562,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](#step-properties-common-tab)
 * **Argumentos**
 
-   * **Participantes**: especifica la lista de usuarios disponibles para la selección. Para agregar un usuario a la lista, haga clic en **Agregar elemento** y escriba la ruta de acceso principal del nodo de usuario o el identificador de usuario. El orden de los usuarios no afecta a la probabilidad de que se les asigne un elemento de trabajo.
+  * **Participantes**: especifica la lista de usuarios disponibles para la selección. Para agregar un usuario a la lista, haga clic en **Agregar elemento** y escriba la ruta de acceso principal del nodo de usuario o el identificador de usuario. El orden de los usuarios no afecta a la probabilidad de que se les asigne un elemento de trabajo.
 
 ### Selector de participantes del lanzador de flujo de trabajo {#workflow-initiator-participant-chooser}
 
@@ -580,14 +587,14 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](#step-properties-common-tab)
 * **Proceso**
 
-   * **Proceso**: Implementación de proceso que se va a ejecutar. Utilice el menú desplegable para seleccionar el servicio ECMAScript o OSGi. Para obtener información acerca de:
+  * **Proceso**: Implementación de proceso que se va a ejecutar. Utilice el menú desplegable para seleccionar el servicio ECMAScript o OSGi. Para obtener información acerca de:
 
-      * Los servicios estándar ECMAScripts y OSGi, vea [Procesos integrados para pasos de proceso](/help/sites-developing/workflows-process-ref.md).
-      * Crear ECMAScripts para un paso del proceso, consulte [Implementación de un paso del proceso con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creación de servicios OSGi para un paso de proceso, consulte [Implementación de un paso de proceso con una clase Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+    * Los servicios estándar ECMAScripts y OSGi, vea [Procesos integrados para pasos de proceso](/help/sites-developing/workflows-process-ref.md).
+    * Crear ECMAScripts para un paso del proceso, consulte [Implementación de un paso del proceso con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+    * Creación de servicios OSGi para un paso de proceso, consulte [Implementación de un paso de proceso con una clase Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
-   * **Avance del controlador**: seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
-   * **Argumentos**: argumentos que se van a pasar al proceso.
+  * **Avance del controlador**: seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
+  * **Argumentos**: argumentos que se van a pasar al proceso.
 
 ## Establecer variable {#set-variable}
 
@@ -602,15 +609,15 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 * [Común](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Asignación**
 
-   * **Seleccionar variable:** Utilice esta opción para seleccionar una variable y establecer su valor.
-   * **Seleccionar modo de asignación:** Para establecer el valor de la variable, seleccione un modo de asignación. Según el tipo de datos de la variable, puede utilizar las siguientes opciones para establecer su valor:
+  * **Seleccionar variable:** Utilice esta opción para seleccionar una variable y establecer su valor.
+  * **Seleccionar modo de asignación:** Para establecer el valor de la variable, seleccione un modo de asignación. Según el tipo de datos de la variable, puede utilizar las siguientes opciones para establecer su valor:
 
-      * **Literal:** utilice la opción cuando conozca el valor exacto que desea especificar.
-      * **Expresión:** utilice la opción cuando el valor que se va a utilizar se calcule en función de una expresión. La expresión se crea en el editor de expresiones proporcionado.
-      * **Notación de puntos JSON:** Utilice la opción para recuperar un valor de una variable de tipo JSON o FDM.
-      * **XPATH:** Utilice la opción para recuperar un valor de una variable de tipo XML.
-      * **En relación con la carga útil:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta relativa a la carga útil.
-      * **Ruta absoluta:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta absoluta.
+    * **Literal:** utilice la opción cuando conozca el valor exacto que desea especificar.
+    * **Expresión:** utilice la opción cuando el valor que se va a utilizar se calcule en función de una expresión. La expresión se crea en el editor de expresiones proporcionado.
+    * **Notación de puntos JSON:** Utilice la opción para recuperar un valor de una variable de tipo JSON o FDM.
+    * **XPATH:** Utilice la opción para recuperar un valor de una variable de tipo XML.
+    * **En relación con la carga útil:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta relativa a la carga útil.
+    * **Ruta absoluta:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta absoluta.
 
-   * **Especificar valor:** Para asignar a la variable, especifique un valor. El valor que especifique en este campo depende del modo de asignación.
-   * **Agregar asignación:** Utilice esta opción para agregar más asignaciones y establecer un valor para la variable.
+  * **Especificar valor:** Para asignar a la variable, especifique un valor. El valor que especifique en este campo depende del modo de asignación.
+  * **Agregar asignación:** Utilice esta opción para agregar más asignaciones y establecer un valor para la variable.

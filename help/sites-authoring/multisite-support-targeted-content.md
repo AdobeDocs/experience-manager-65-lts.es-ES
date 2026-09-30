@@ -9,13 +9,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2853'
 ht-degree: 84%
-
 ---
-
 # Uso del contenido de destino de varios sitios{#working-with-targeted-content-in-multisites}
 
 Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios de AEM para el contenido de destino.
@@ -67,18 +87,18 @@ Gracias a la compatibilidad con varios sitios del contenido de destino puede, po
 
 * Un conjunto de contenido de destino totalmente *distinto*: si edita el contenido de destino en uno no afectará al otro. Los sitios vinculados a áreas diferentes leen y escriben en su propia área configurada. Por ejemplo:
 
-   * El sitio A está vinculado al área X
-   * El sitio B está vinculado al área Y
+  * El sitio A está vinculado al área X
+  * El sitio B está vinculado al área Y
 
 * Un conjunto *compartido* de contenido de destino: editar en uno tiene un impacto directo en ambos sitios; puede configurar esto teniendo dos sitios que se refieren a la misma área. Los sitios vinculados a la misma área comparten el contenido dirigido del área. Por ejemplo:
 
-   * El sitio A está vinculado al área X
-   * El sitio B está vinculado al área X
+  * El sitio A está vinculado al área X
+  * El sitio B está vinculado al área X
 
 * Un conjunto distinto de contenido de destino *heredado* de otro sitio mediante MSM: el contenido se puede trasladar unidireccionalmente desde una copia maestra a una Live Copy. Por ejemplo:
 
-   * El sitio A está vinculado al área X
-   * El sitio B está vinculado al área Y (que es una Live Copy del área X)
+  * El sitio A está vinculado al área X
+  * El sitio B está vinculado al área Y (que es una Live Copy del área X)
 
 También podría tener **varias** marcas que se utilizan en un sitio, lo que podría ser más complejo que este ejemplo.
 

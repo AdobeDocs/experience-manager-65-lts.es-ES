@@ -6,13 +6,29 @@ feature: Workflow, Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 06785380-07cc-4c8b-b11c-6005471bd058
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 2%
-
 ---
-
 # Procesar recursos digitales {#process-assets}
 
 [!DNL Adobe Experience Manager Assets] le permite trabajar en sus recursos digitales de muchas maneras para permitir un procesamiento de recursos sólido. Puede utilizar los métodos de procesamiento predeterminados o personalizados para garantizar la finalización completa de los procesos empresariales, las auditorías y el cumplimiento, el descubrimiento y la distribución, y la cordura básica de sus recursos digitales. Puede realizar las tareas de administración de recursos y, al mismo tiempo, lograr la escala y personalización necesarias.

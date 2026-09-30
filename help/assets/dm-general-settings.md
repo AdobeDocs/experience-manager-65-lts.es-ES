@@ -6,13 +6,27 @@ role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2530'
 ht-degree: 0%
-
 ---
-
 # Configuración general de Dynamic Media
 
 La configuración de **[!UICONTROL Configuración general de Dynamic Media]** solo está disponible si:
@@ -48,7 +62,7 @@ Consulte también [Opcional: configuración de Dynamic Media: configuración del
    * Ficha [Illustrator](#illustrator-tab)
 
    ![Página de configuración general de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**&#x200B;seleccionada.*<br><br>
+   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**seleccionada.*<br><br>
 
 1. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
@@ -58,8 +72,8 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
 | Opción | Descripción |
 | --- | --- |
-| **[!UICONTROL Nombre de servidor publicado]** | Requerido.<br>El nombre debe usar `https://` en la ruta.<br>Este servidor es el servidor CDN (red de distribución de contenido) activo que se usa en todas las llamadas URL generadas por el sistema que son específicas de su cuenta. No cambie este nombre de servidor a menos que el soporte técnico de Adobe se lo indique. |
-| **[!UICONTROL Nombre del servidor de origen]** | Requerido.<br>Este servidor se usa solamente para las pruebas de control de calidad. No cambie este nombre de servidor a menos que el soporte técnico de Adobe se lo indique. |
+| **[!UICONTROL Nombre de servidor publicado]** | Requerido.<br>El nombre debe usar `https://` en la ruta de acceso.<br>Este servidor es el servidor CDN (red de distribución de contenido) activo que se usa en todas las llamadas URL generadas por el sistema que son específicas de su cuenta. No cambie este nombre de servidor a menos que el soporte técnico de Adobe se lo indique. |
+| **[!UICONTROL Nombre del servidor de origen]** | Requerido.<br>Este servidor se usa solamente para pruebas de control de calidad. No cambie este nombre de servidor a menos que el soporte técnico de Adobe se lo indique. |
 
 ## Cargar a la aplicación {#upload-to-application}
 
@@ -82,7 +96,7 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
   Controla la conservación de cualquier definición de recorte manual existente.
 
-  Consulte también `preserveCrop` en [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=es) y [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=es), ambos en la Guía de referencia de visores de Dynamic Media.
+  Consulte también `preserveCrop` en [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) y [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos en la Guía de referencia de visores de Dynamic Media.
 
 ## Opciones de carga predeterminadas {#default-upload-options}
 
@@ -94,10 +108,10 @@ El efecto Máscara de enfoque utiliza las mismas opciones que el filtro Máscara
 
 | Opciones de máscara de enfoque | Descripción |
 | --- | --- |
-| **[!UICONTROL Importe]** | Requerido.<br>Controla la cantidad de contraste que se aplica a los píxeles del borde.<br>Considérelo como la intensidad del efecto. La principal diferencia entre los valores de cantidad de Máscara de enfoque en Adobe Dynamic Media y los valores de cantidad en Adobe Photoshop es que Photoshop tiene un intervalo de cantidad del 1 % al 500 %. Mientras que en Adobe Dynamic Media, el intervalo de valores es de `0.0` a `5.0`. Un valor de 5,0 en Adobe Dynamic Media es el equivalente aproximado de 500% en Photoshop; un valor de 0,9 es el equivalente de 90%, y así sucesivamente. |
+| **[!UICONTROL Importe]** | Requerido.<br>Controla el contraste que se aplica a los píxeles del borde.<br>Considérelo como la intensidad del efecto. La principal diferencia entre los valores de cantidad de Máscara de enfoque en Adobe Dynamic Media y los valores de cantidad en Adobe Photoshop es que Photoshop tiene un intervalo de cantidad del 1 % al 500 %. Mientras que en Adobe Dynamic Media, el intervalo de valores es de `0.0` a `5.0`. Un valor de 5,0 en Adobe Dynamic Media es el equivalente aproximado de 500% en Photoshop; un valor de 0,9 es el equivalente de 90%, y así sucesivamente. |
 | **[!UICONTROL Radio]** | Requerido.<br>Controla el radio del efecto.<br>El intervalo de valores es de `0` a `250`. El efecto se ejecuta en todos los píxeles de una imagen y se irradia desde todos los píxeles en todas las direcciones. El radio se mide en píxeles. Por ejemplo, para obtener un efecto de enfoque similar para una imagen de 2000 x 2000 píxeles e imagen de 500 x 500 píxeles, debe establecer un radio de dos píxeles en la imagen de 2000 x 2000 píxeles. A continuación, defina un valor de radio de un píxel en la imagen de 500 x 500 píxeles. Se utiliza un valor mayor para una imagen que tiene más píxeles. |
-| **[!UICONTROL Umbral]** | Requerido.<br>El umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Este efecto es importante para que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El intervalo de valores es de `0` a `255`, que es el número de pasos de brillo de una imagen en escala de grises. `0`=negro, `128`=50% gris y `255`=blanco.<br>Un valor de umbral de `12` ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde de las áreas de contrastes, como cuando las pestañas tocan la piel.<br>Si tiene una foto de la cara de alguien, la máscara de enfoque afecta a las partes de contraste de la imagen. Por ejemplo, donde las pestañas y la piel se juntan para crear una zona obvia de contraste, y la piel lisa en sí misma. Incluso la piel más suave muestra cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en los píxeles de la piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que aumenta la nitidez.<br>Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian drásticamente el contraste, como la apariencia suave.<br>En el gráfico de cremallera mostrado anteriormente, observe la textura junto a las cremalleras. El ruido de la imagen se muestra porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
-| **[!UICONTROL Monocromo]** | Seleccione esta opción para resaltar el brillo (intensidad) de la imagen con máscara de enfoque.<br>Anule la selección para aplicar máscara de enfoque a cada componente de color por separado. |
+| **[!UICONTROL Umbral]** | Requerido.<br>El umbral es un intervalo de contraste que se omite al aplicar el filtro Máscara de enfoque. Este efecto es importante para que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El intervalo de valores es de `0` a `255`, que es el número de pasos de brillo de una imagen en escala de grises. `0`=negro, `128`=50% gris y `255`=blanco.<br>Un valor de umbral de `12` ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde de las áreas de contrastes, como cuando las pestañas tocan la piel.<br>Si tiene una foto de la cara de alguien, la máscara de enfoque afecta a las partes de contraste de la imagen. Por ejemplo, donde las pestañas y la piel se juntan para crear una zona obvia de contraste, y la piel lisa en sí misma. Incluso la piel más suave muestra cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en los píxeles de la piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que aumenta la nitidez.<br>Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian drásticamente el contraste, como la apariencia suave.<br>En el gráfico de cremallera mostrado anteriormente, observe la textura junto a las cremalleras. El ruido de la imagen se muestra porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
+| **[!UICONTROL Monocromo]** | Seleccione esta opción para resaltar el brillo (intensidad) de la imagen con máscara de enfoque.<br>Anule la selección de esta opción para resaltar cada componente de color por separado. |
 
 Vea también [Enfoque de imágenes en Adobe Dynamic Media y en Image Server](/help/assets/assets/sharpening_images.pdf).
 
@@ -114,7 +128,7 @@ Al cargar archivos de imagen de PostScript (EPS), puede aplicarles formato de va
 | **[!UICONTROL Procesando]** | Elija Rasterizar para convertir los gráficos vectoriales del archivo al formato de mapa de bits. |
 | **[!UICONTROL Mantener el fondo transparente en las imágenes procesadas]** | Conserva la transparencia de fondo del archivo. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]** - Conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]** - Se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]** - Se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]** - Se convierte al espacio de color de escala de grises. |
 
 ### Pestaña Photoshop {#photoshop-tab}
 
@@ -126,7 +140,7 @@ Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las
 | **[!UICONTROL Crear plantilla]** | Crea una plantilla a partir de las capas del archivo PSD. |
 | **[!UICONTROL Extraer texto]** | Extrae el texto para que los usuarios puedan buscar texto en un visor. |
 | **[!UICONTROL Extender las capas al tamaño del fondo]** | Amplía el tamaño de las capas de imagen copiadas al tamaño de la capa de fondo. |
-| **[!UICONTROL Nomenclatura de capas]** | Amplía el tamaño de las capas de imagen copiadas al tamaño de la capa de fondo.<br>· **[!UICONTROL Nombre de capa]** - Nombra las imágenes después de sus nombres de capa en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio del archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de las capas del fichero PSD son nombres de capas Photoshop por defecto (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán los nombres de sus números de capa en el fichero PSD. <br>· **[!UICONTROL Photoshop y número de capa]**: nombra las imágenes después de sus números de capa en el archivo PSD, omitiendo los nombres de capa originales. Las imágenes se nombran con el nombre de archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo denominado `Spring Ad.psd` se denomina `Spring Ad_2` aunque no tuviera un nombre predeterminado en Photoshop.<br>· **[!UICONTROL Photoshop y nombre de capa]** - Nombra las imágenes después del archivo PSD seguido del nombre o número de capa. El número de capa se utiliza si los nombres de capa del fichero PSD son nombres de capa Photoshop por defecto. Por ejemplo, una capa denominada `Price Tag` en un archivo de PSD denominado `SpringAd` se denomina `Spring Ad_Price Tag`. Una capa con el nombre predeterminado Capa 2 se llama `Spring Ad_2`. |
+| **[!UICONTROL Nomenclatura de capas]** | Amplía el tamaño de las capas de imagen copiada hasta el tamaño de la capa de fondo.<br>· **[!UICONTROL Nombre de capa]** - Nombra las imágenes después de sus nombres de capa en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio del archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de las capas del fichero PSD son nombres de capas Photoshop por defecto (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán los nombres de sus números de capa en el fichero PSD. <br>· **[!UICONTROL Photoshop y número de capa]**: nombra las imágenes después de sus números de capa en el archivo PSD, omitiendo los nombres de capa originales. Las imágenes se nombran con el nombre de archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado `Spring Ad.psd` se denomina `Spring Ad_2` aunque tuviera un nombre no predeterminado en Photoshop.<br>· **[!UICONTROL Photoshop y el nombre de la capa]** - Nombra las imágenes después del archivo PSD seguido del nombre de la capa o el número de capa. El número de capa se utiliza si los nombres de capa del fichero PSD son nombres de capa Photoshop por defecto. Por ejemplo, una capa denominada `Price Tag` en un archivo de PSD denominado `SpringAd` se denomina `Spring Ad_Price Tag`. Una capa con el nombre predeterminado Capa 2 se llama `Spring Ad_2`. |
 | **[!UICONTROL Anclaje]** | Especifique cómo se anclan las imágenes en las plantillas que se generan a partir de la composición por capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo llenen mejor el mismo espacio, sin importar la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere las imágenes de reemplazo para rellenar el espacio asignado en la plantilla. |
 
 ### Pestaña PDF {#pdf-tab}
@@ -136,9 +150,9 @@ Puede elegir entre rasterizar los archivos, extraer palabras de búsqueda y vín
 | Opción PDF | Descripción |
 | --- | --- |
 | **[!UICONTROL Procesando]** | · **[!UICONTROL Ninguno]**: no se ha completado ningún procesamiento de PDF.<br>· **[!UICONTROL Miniatura]**: rasga cada página del archivo PDF y la convierte en una imagen en miniatura.<br> · **[!UICONTROL Rasterizar]**: rasga las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Para crear un catálogo electrónico, elija esta opción. |
-| **[!UICONTROL Extraer]** | · **[!UICONTROL Ninguno]**: no se extraen palabras de búsqueda ni vínculos de PDF.<br>· **[!UICONTROL Palabras de búsqueda]**: extrae palabras de búsqueda del archivo PDF para que se pueda buscar en él por palabra clave en un visor de catálogos electrónicos.<br>· **[!UICONTROL Vínculos]**: extrae vínculos de los archivos PDF y los convierte a mapas de imágenes que se utilizan en un visor de catálogos electrónicos.<br>· **[!UICONTROL Palabras de búsqueda y vínculos]**: extrae tanto las palabras de búsqueda como los vínculos para usarlos en un visor de catálogos electrónicos. |
+| **[!UICONTROL Extraer]** | · **[!UICONTROL Ninguno]**: no se extraen palabras de búsqueda ni vínculos de PDF.<br>· **[!UICONTROL Palabras de búsqueda]**: extrae palabras de búsqueda del archivo PDF para que se pueda buscar por palabra clave en un visor de catálogos electrónicos.<br>· **[!UICONTROL Vínculos]**: extrae vínculos de los archivos PDF y los convierte en mapas de imágenes que se utilizan en un visor de catálogos electrónicos.<br>· **[!UICONTROL Palabras de búsqueda y vínculos]**: extrae palabras de búsqueda y vínculos para su uso en un visor de catálogos electrónicos. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo PDF. El valor predeterminado es 150. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: mantiene el espacio de color del archivo PDF.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]** - Mantiene el espacio de color del archivo PDF.<br>· **[!UICONTROL Forzar como RGB]** - Convierte al espacio de color RGB.<br>· **[!UICONTROL Forzar como CMYK]** - Convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]** - Convierte al espacio de color de escala de grises. |
 
 ### Pestaña Illustrator {#illustrator-tab}
 
@@ -154,4 +168,4 @@ Al cargar archivos de imagen de Illustrator (AI), puede aplicarles formato de va
 | **[!UICONTROL Procesando]** | Elija Rasterizar para convertir los gráficos vectoriales del archivo al formato de mapa de bits. |
 | **[!UICONTROL Mantener el fondo transparente en las imágenes procesadas]** | Conserva la transparencia de fondo del archivo. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]** - Conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]** - Se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]** - Se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]** - Se convierte al espacio de color de escala de grises. |

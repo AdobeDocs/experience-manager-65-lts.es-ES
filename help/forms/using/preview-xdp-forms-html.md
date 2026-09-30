@@ -8,7 +8,24 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 83%
@@ -85,7 +102,7 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
    >
    >Asegúrese de que el servidor de AEM Forms esté operativo. La vista previa HTML conecta con el servidor CRX para *generar* una vista previa.
 
-   ![Opciones de AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 
@@ -109,7 +126,7 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
 
 Designer permite obtener una vista previa y probar el formulario con datos XML de ejemplo. Se recomienda probar el formulario con frecuencia con datos de ejemplo para asegurarse de que el formulario se procesa correctamente.
 
-Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Si no tiene datos de ejemplo, Designer puede crearlos o puede crearlos usted mismo. (Ver [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 La prueba del formulario mediante una fuente de datos de ejemplo garantiza que los datos y los campos se asignen y que los subformularios repetibles se repitan como se esperaba. Puede crear un diseño de formulario equilibrado que proporcione el espacio adecuado para que cada objeto muestre los datos combinados.
 

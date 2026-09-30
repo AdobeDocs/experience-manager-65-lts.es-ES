@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3848'
-ht-degree: 80%
-
+source-wordcount: '3906'
+ht-degree: 79%
 ---
-
 # Crear correspondencia{#create-correspondence}
 
 ## Crear correspondencia en la interfaz de usuario Crear correspondencia {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -57,7 +70,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    >[!NOTE]
    >
-   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Introducir datos {#enterdata}
 
@@ -358,7 +371,7 @@ A continuación se muestran las ventajas y las funcionalidades disponibles en la
 * **Resaltar contenido editable en una carta**: en la interfaz de usuario de Crear correspondencia, puede seleccionar Resaltar contenido editable para resaltar en gris todo el contenido editable de la carta. Para obtener más información, consulte [Administrar contenido](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Ventajas de la vista previa PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Ventajas de la vista previa de PDF**
 
 * **Salto de página**: en la vista previa PDF, puede ver exactamente cómo los saltos de página de la carta afectan a su salida.
 * **Vista previa final**: en la vista previa PDF, puede ver el formato y el aspecto exactos de la carta, tal como aparecerá en su salida.
@@ -371,7 +384,7 @@ Para obtener más información sobre la compatibilidad con scripts en formulario
 
 De forma predeterminada, la interfaz de usuario de Crear correspondencia utiliza HTML o formularios móviles para obtener la vista previa de la carta. La vista previa de formularios móviles no presenta problemas de representación en ningún explorador, ya que utiliza el complemento nativo del explorador y no requiere complementos adicionales. Puede cambiar el modo de vista previa de la carta a PDF. Sin embargo, las restricciones del explorador pueden crear problemas para diferentes características de la vista previa interactiva PDF de la carta.
 
-Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/es/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obtener más información sobre la compatibilidad del explorador con la vista previa de cartas, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para cambiar el modo de vista previa de la carta, complete los siguientes pasos:
 

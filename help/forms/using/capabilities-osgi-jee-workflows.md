@@ -4,21 +4,38 @@ description: Acciones y capacidades de los flujos de trabajo de AEM centrados en
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 96%
-
 ---
-
 # Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en los flujos de trabajo de OSGi y JEE de AEM Forms {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## Bandeja de entrada de AEM y espacio de trabajo HTML {#aem-inbox-and-html-workspace}
 
-Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo de AEM centrados en Forms en OSGi. Por su parte, HTML Workspace permite ejecutar y supervisar flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en la bandeja de entrada de AEM para flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para flujos de trabajo JEE de AEM Forms.
+Puede utilizar la bandeja de entrada de AEM para ejecutar y monitorizar los flujos de trabajo de AEM centrados en Forms en OSGi. Por su parte, HTML Workspace permite ejecutar y supervisar flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en la bandeja de entrada de AEM para flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para flujos de trabajo JEE de AEM Forms.
 
 <table>
  <tbody>
@@ -391,7 +408,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
 
 1. Puede utilizar Flujos de trabajo de AEM centrados en Forms en OSGi para firmar un formulario adaptable rellenado. Los flujos de trabajo de AEM centrados en Forms en OSGi son compatibles con la firma fuera del formulario. La experiencia de [firma dentro del formulario](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) no es compatible.
 
-1. Es necesario acceder a la bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo centrados en Forms en AEM Forms OSGi y el espacio de trabajo HTML para ejecutar y supervisar los flujos de trabajo JEE de AEM Forms.
+1. Es necesario acceder a la bandeja de entrada de AEM para ejecutar y monitorizar los flujos de trabajo centrados en Forms en AEM Forms OSGi y el espacio de trabajo HTML para ejecutar y monitorizar los flujos de trabajo JEE de AEM Forms.
 1. Los servicios de documentos nativos de AEM Forms están disponibles para los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms. El flujo de trabajo de AEM utiliza servicios de documentos nativos para flujos de trabajo AEM centrados en Forms en los flujos de trabajo OSGi y JEE de AEM Forms (Process Management).
 1. Los flujos de trabajo JEE de AEM Forms solo pueden procesar un formulario adaptable. No admite la representación de un formulario adaptable como documento PDF.
 1. Los flujos de trabajo JEE de AEM Forms no tienen un paso independiente para Adobe Sign. Se necesita un formulario adaptable habilitado para Adobe Sign para los flujos de trabajo JEE de AEM Forms. Para obtener más información, consulte [Documentación de Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
@@ -408,7 +425,7 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
  <tbody>
   <tr>
    <td><p><strong>Acciones</strong></p> </td>
-   <td><p><strong>Bandeja de entrada AEM</strong></p> </td>
+   <td><p><strong>Bandeja de entrada de AEM</strong></p> </td>
    <td><p><strong>Aplicación de AEM Forms</strong></p> </td>
   </tr>
   <tr>

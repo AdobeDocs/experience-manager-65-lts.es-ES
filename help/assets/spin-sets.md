@@ -10,13 +10,29 @@ feature: Spin Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 16b03ca5-c060-4944-ad30-ad0bd350dc52
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2038'
 ht-degree: 9%
-
 ---
-
 # Conjuntos de giros{#spin-sets}
 
 Un conjunto de giros simula el acto del mundo real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los elementos desde cualquier ángulo, obteniendo los detalles visuales clave desde cualquier ángulo.
@@ -222,7 +238,7 @@ Puede realizar varias tareas de edición en conjuntos de giros, como las siguien
    * Para reordenar las imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, seleccione **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
-Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+     Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, ve al conjunto de giros, selecciónalo y selecciona **[!UICONTROL Eliminar]**

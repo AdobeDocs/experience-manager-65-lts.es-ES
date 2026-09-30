@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '9584'
+source-wordcount: '9591'
 ht-degree: 54%
-
 ---
-
 # Crear contenido accesible (en conformidad con WCAG 2.0){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
@@ -118,8 +127,8 @@ Existen varias formas de contenido no textual, por lo que el valor de la alterna
 * Las alternativas textuales deben ser concisas, pero captar claramente la información esencial proporcionada por el contenido no textual.
 * Deben evitarse las descripciones largas (más de 100 caracteres). Si una alternativa textual requiere más detalle, haga lo siguiente:
 
-   * proporcione una breve descripción en el texto alternativo
-   * y añada una descripción más larga en el texto en cualquier otra parte, en la misma página o en una página web aparte. Cree un vínculo a esta descripción separada poniendo un vínculo en la imagen o situando un vínculo de texto junto a la imagen.
+  * proporcione una breve descripción en el texto alternativo
+  * y añada una descripción más larga en el texto en cualquier otra parte, en la misma página o en una página web aparte. Cree un vínculo a esta descripción separada poniendo un vínculo en la imagen o situando un vínculo de texto junto a la imagen.
 
 * El texto alternativo no debe repetir el contenido proporcionado en el texto de la misma página. Recuerde que muchas imágenes son ilustraciones de puntos que ya se han tratado en el texto de una página, por lo que puede que ya exista una alternativa textual detallada.
 * Si el contenido no textual es un vínculo a otra página o documento y no hay otro texto que forme parte del mismo vínculo, el texto alternativo para la imagen debe indicar el destino del vínculo. No debe describir la imagen.
@@ -168,9 +177,9 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
   El W3C proporciona varias sugerencias, como las siguientes. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
 
-   * Rompecabezas lógicos
-   * El uso de sonido en lugar de imágenes
-   * Cuentas de uso limitado y filtros de spam
+  * Rompecabezas lógicos
+  * El uso de sonido en lugar de imágenes
+  * Cuentas de uso limitado y filtros de spam
 
 * Imágenes de fondo:
 
@@ -201,8 +210,8 @@ Esta información trata sobre el contenido web *basado en el tiempo*. Abarca el 
 * Nivel A
 * Solo audio y Solo vídeo (pregrabado): para medios de solo audio y solo vídeo pregrabado, la siguiente información es cierta, excepto cuando el audio o el vídeo es una alternativa para texto y se etiqueta claramente como:
 
-   * Solo audio pregrabado: se proporciona una alternativa para medios basados en el tiempo que presentan información equivalente para contenido solo audio pregrabado.
-   * Solo vídeo pregrabado: se proporciona una alternativa para los medios basados en el tiempo o una pista de audio que presenta información equivalente para el contenido solo de vídeo pregrabado.
+  * Solo audio pregrabado: se proporciona una alternativa para medios basados en el tiempo que presentan información equivalente para contenido solo audio pregrabado.
+  * Solo vídeo pregrabado: se proporciona una alternativa para los medios basados en el tiempo o una pista de audio que presenta información equivalente para el contenido solo de vídeo pregrabado.
 
 #### Objetivo: solo audio y Solo vídeo (pregrabado) (1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
 
@@ -220,14 +229,14 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 
 * Si el contenido es audio pregrabado sin vídeo (como podcast):
 
-   * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio.
+  * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio.
 
-     La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
+    La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
 
 * Si el contenido es una animación o un vídeo pregrabado sin audio:
 
-   * Proporcione un vínculo inmediatamente antes o después del contenido para una descripción textual equivalente a la información proporcionada por el vídeo.
-   * O bien, una descripción de audio equivalente en un formato de audio utilizado comúnmente, como MP3.
+  * Proporcione un vínculo inmediatamente antes o después del contenido para una descripción textual equivalente a la información proporcionada por el vídeo.
+  * O bien, una descripción de audio equivalente en un formato de audio utilizado comúnmente, como MP3.
 
 >[!NOTE]
 >
@@ -299,8 +308,8 @@ Se pueden adoptar dos enfoques para cumplir este criterio con éxito. Cualquiera
    * Durante las pausas en el diálogo existente, se puede proporcionar información acerca de los cambios en la escena que no se presentan como parte de la pista de audio existente.
    * Proporcionando una pista de audio nueva, adicional y optativa, que contenga la banda sonora original, pero incluyendo también información de audio adicional acerca de los cambios en la escena.
 
-      * Los usuarios pueden cambiar entre la pista de audio existente (que *no* contiene una descripción de audio) y la nueva pista de audio (que *sí* contiene una descripción de audio).
-      * Este método evita interrupciones a los usuarios que no necesitan la descripción adicional.
+     * Los usuarios pueden cambiar entre la pista de audio existente (que *no* contiene una descripción de audio) y la nueva pista de audio (que *sí* contiene una descripción de audio).
+     * Este método evita interrupciones a los usuarios que no necesitan la descripción adicional.
 
    * Creando una segunda versión del contenido de vídeo que permita descripciones de audio extendidas. Al hacerlo, se reducen las dificultades asociadas con la descripción detallada del audio dentro de los espacios entre los diálogos existentes, pausando temporalmente el audio y el vídeo en los puntos apropiados. El resultado es una descripción del audio mucho más larga antes de que se retome la acción. Como en el ejemplo anterior, esta opción resulta mejor como una pista de audio adicional y opcional para prevenir interrupciones a los usuarios que no necesitan la descripción adicional.
 
@@ -312,7 +321,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 * [Entender los criterios de éxito 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/es/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Subtítulos (en vivo) (1.2.4)  {#captions-live}
 
@@ -400,8 +409,8 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
 
   Usar el &lt;strong> o &lt;em> element to indicate emphasis. No utilice encabezados o texto enfatizado en los párrafos.
 
-   * Enfatice el texto que quiera remarcar;
-   * Haz clic en el icono **B** (para &lt;strong>) o en el icono **I** (para &lt;em>) shown within the **Properties** panel (make sure that HTML is selected).
+  * Enfatice el texto que quiera remarcar;
+  * Haz clic en el icono **B** (para &lt;strong>) o en el icono **I** (para &lt;em>) shown within the **Properties** panel (make sure that HTML is selected).
 
   >[!NOTE]
   >
@@ -415,13 +424,13 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
 * **Utilizar listas**:
 Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
-   * El elemento `<ul>` se usa para *listas sin ordenar* (con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
+  * El elemento `<ul>` se usa para *listas sin ordenar* (con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
 
-     en RTE, use el icono **Lista con viñetas**.
+    en RTE, use el icono **Lista con viñetas**.
 
-   * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
+  * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
 
-     En RTE, utilice el icono **Lista numerada**.
+    En RTE, utilice el icono **Lista numerada**.
 
   Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, en el que se muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente a HTML, pero puede verlo en la vista de edición de código fuente.
 
@@ -433,10 +442,10 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   Las tablas de datos deben identificarse utilizando elementos de tablas de HTML:
 
-   * un elemento `<table>`
-   * un elemento `<tr>` para cada fila de la tabla
-   * un elemento `<th>` para cada titular de fila y columna
-   * un elemento `<td>` para cada celda de datos
+  * un elemento `<table>`
+  * un elemento `<tr>` para cada fila de la tabla
+  * un elemento `<th>` para cada titular de fila y columna
+  * un elemento `<td>` para cada celda de datos
 
   >[!NOTE]
   >
@@ -444,9 +453,9 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   Además, las tablas accesibles utilizan los siguientes elementos y atributos:
 
-   * El elemento `<caption>` se utiliza para proporcionar un subtítulo visible para la tabla. Los subtítulos aparecen centrados sobre la tabla de forma predeterminada, pero se pueden colocar correctamente con CSS. El subtítulo está asociado programáticamente con la tabla, por lo que se trata de un método útil para proporcionar una introducción al contenido.
-   * El elemento `<h3 class="summary">` ayuda a los usuarios que carecen de visión para que entiendan con mayor facilidad la información que se presenta en la tabla mediante una sinopsis de lo que el usuario puede ver. Resulta particularmente útil cuando se utilizan diseños de la tabla complejos o poco convencionales (este atributo no se muestra en el buscador, solo se lee en voz alta para tecnologías de asistencia).
-   * El atributo `scope` del elemento `<th>` se utiliza para indicar si una celda representa el encabezado de una fila en concreto o de una columna en concreto. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
+  * El elemento `<caption>` se utiliza para proporcionar un subtítulo visible para la tabla. Los subtítulos aparecen centrados sobre la tabla de forma predeterminada, pero se pueden colocar correctamente con CSS. El subtítulo está asociado programáticamente con la tabla, por lo que se trata de un método útil para proporcionar una introducción al contenido.
+  * El elemento `<h3 class="summary">` ayuda a los usuarios que carecen de visión para que entiendan con mayor facilidad la información que se presenta en la tabla mediante una sinopsis de lo que el usuario puede ver. Resulta particularmente útil cuando se utilizan diseños de la tabla complejos o poco convencionales (este atributo no se muestra en el buscador, solo se lee en voz alta para tecnologías de asistencia).
+  * El atributo `scope` del elemento `<th>` se utiliza para indicar si una celda representa el encabezado de una fila en concreto o de una columna en concreto. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
 
   >[!NOTE]
   >
@@ -454,8 +463,8 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
   Al agregar una **Tabla**, puede configurar **propiedades de la tabla** mediante el cuadro de diálogo.
 
-   * un **pie de ilustración** apropiado.
-   * Idealmente, elimine los valores predeterminados de **anchura**, **altura**, **borde**, **relleno de celda** y **espaciado de celda**, ya que estas propiedades se pueden definir en una hoja de estilo global.
+  * un **pie de ilustración** apropiado.
+  * Idealmente, elimine los valores predeterminados de **anchura**, **altura**, **borde**, **relleno de celda** y **espaciado de celda**, ya que estas propiedades se pueden definir en una hoja de estilo global.
 
   ![Cuadro de diálogo de propiedades de tabla.](assets/chlimage_1-20a.png)
 
@@ -600,17 +609,17 @@ Si se utiliza el color como medio para transmitir información, se debería prop
 
 * [Entender los criterios de éxito 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Cumplir los criterios de éxito 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Directrices para cumplir una relación de contraste de 3:1 que contenga una lista de colores &quot;seguros para la web&quot;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Directrices para cumplir la relación de contraste 3:1 que contiene una lista de colores &quot;seguros para la web&quot;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contraste (mínimo) (1.4.3) {#contrast-minimum}
 
 * Criterios de éxito 1.4.3
 * Nivel AA
-* Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4,5:1, excepto en los casos siguientes:
+* Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto para lo siguiente:
 
-   * Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 3:1.
-   * Secundario: el texto o las imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son puramente decorativos o no visibles para nadie, o que forman parte de una imagen que contiene otro contenido visual significativo, no tienen requisitos de contraste.
-   * Logotipos: El texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
+  * Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 3:1.
+  * Secundario: el texto o las imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son puramente decorativos o no visibles para nadie, o que forman parte de una imagen que contiene otro contenido visual significativo, no tienen requisitos de contraste.
+  * Logotipos: El texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
 
 #### Objetivo: Contraste (mínimo) (1.4.3) {#purpose-contrast-minimum}
 
@@ -627,9 +636,9 @@ Las personas con ciertas deficiencias visuales quizá no puedan distinguir entre
 
 Asegúrese de que el texto contraste lo suficiente con el fondo. Las relaciones de contraste dependen del tamaño y del estilo del texto en cuestión:
 
-* Para el texto cuyo tamaño es menor de 18 puntos (o 14 puntos en negrita), la relación de contraste entre el texto o las imágenes del texto y el fondo debe ser de al menos 4,5:1.
-* Para el texto cuyo tamaño es de al menos 18 puntos (o 14 puntos en negrita), la relación de contraste debe ser de al menos 3:1.
-* Si el fondo es un patrón, el fondo alrededor de cualquier texto debe estar sombreado para que se mantenga la relación 4.5:1 o 3:1.
+* Para un texto de menos de 18 puntos (o 14 puntos en negrita) de tamaño, la relación de contraste entre el texto o las imágenes del texto y el fondo debe ser de al menos 4.5:1.
+* Para texto con un tamaño mínimo de 18 puntos (o 14 puntos en negrita), la relación de contraste debe ser de al menos 3:1.
+* Si un fondo tiene un patrón, el fondo alrededor de cualquier texto debe estar sombreado para que se mantenga la relación 4.5:1 o 3:1.
 
 Para comprobar los niveles de contraste, utilice una herramienta de contraste de color como el programa [Paciello Group Color Contrast Analyzer](https://www.paciellogroup.com/resources/contrast-analyser.html) o el [verificador de contraste de color WebAIM](https://webaim.org/resources/contrastchecker/). Estas herramientas permiten comprobar pares de colores e informar sobre cualquier problema de contraste.
 
@@ -648,8 +657,8 @@ Si no es posible alcanzar los niveles de contraste recomendados, proporcione un 
 * Nivel AA
 * Imágenes de texto: si las tecnologías que se utilizan consiguen la presentación visual, el texto se utiliza para proporcionar información (y no las imágenes de texto), excepto en los casos siguientes:
 
-   * Personalizable: la imagen de texto se puede personalizar visualmente según los requisitos del usuario.
-   * Esencial: una presentación de texto en concreto resulta esencial para que se transmita la información.
+  * Personalizable: la imagen de texto se puede personalizar visualmente según los requisitos del usuario.
+  * Esencial: una presentación de texto en concreto resulta esencial para que se transmita la información.
 
 >[!NOTE]
 >
@@ -678,15 +687,15 @@ Si es necesario utilizar imágenes de texto, utilice CSS para reemplazar las im�
 * Nivel A
 * Pausar, parar, ocultar: Para mover, cerrar, desplazar o actualizar automáticamente la información, los siguientes criterios son verdaderos:
 
-   * Movimiento, parpadeo, desplazamiento: para cualquier información de movimiento, parpadeo o desplazamiento que
-      * (a) se inicia automáticamente,
-      * (b) dure más de cinco segundos, y
-      * (c) se presente en paralelo con otros contenidos,
-existe un mecanismo para que el usuario lo ponga en pausa, lo detenga o lo oculte a menos que el movimiento, el parpadeo o el desplazamiento formen parte de una actividad en la que sea esencial;
-   * Actualización automática: para cualquier información de actualización automática que
-      * (a) se inicie automáticamente, y
-      * (b) se presente en paralelo con otros contenidos,
-existe un mecanismo para que el usuario lo ponga en pausa, lo detenga, lo oculte o controle la frecuencia de la actualización a menos que la actualización automática forme parte de una actividad en la que sea esencial.
+  * Movimiento, parpadeo, desplazamiento: para cualquier información de movimiento, parpadeo o desplazamiento que
+    * (a) se inicia automáticamente,
+    * (b) dure más de cinco segundos, y
+    * (c) se presente en paralelo con otros contenidos,
+      existe un mecanismo para que el usuario lo ponga en pausa, lo detenga o lo oculte a menos que el movimiento, el parpadeo o el desplazamiento formen parte de una actividad en la que sea esencial;
+  * Actualización automática: para cualquier información de actualización automática que
+    * (a) se inicie automáticamente, y
+    * (b) se presente en paralelo con otros contenidos,
+      existe un mecanismo para que el usuario lo ponga en pausa, lo detenga, lo oculte o controle la frecuencia de la actualización a menos que la actualización automática forme parte de una actividad en la que sea esencial.
 
 Puntos que se deben tener en cuenta:
 
@@ -781,13 +790,13 @@ Sobre todo, es importante asegurarse de que el objetivo de un vínculo se descri
 
 * Ejemplo incorrecto:
 
-   * Texto: Para obtener más información sobre las clases nocturnas de otoño de 2010, haga clic aquí.
-   * Motivo: no indica el destino claramente y resulta ambiguo.
+  * Texto: Para obtener más información sobre las clases nocturnas de otoño de 2010, haga clic aquí.
+  * Motivo: no indica el destino claramente y resulta ambiguo.
 
 * Ejemplo correcto:
 
-   * Texto: Clases nocturnas de otoño de 2010, más información.
-   * Motivo: ajustando ligeramente el texto y la posición del vínculo se puede mejorar el texto del vínculo.
+  * Texto: Clases nocturnas de otoño de 2010, más información.
+  * Motivo: ajustando ligeramente el texto y la posición del vínculo se puede mejorar el texto del vínculo.
 
 Los vínculos deben redactarse de forma coherente en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página específica se denomina **Publicaciones** en una página, use ese texto en otras páginas para asegurar la coherencia.
 

@@ -1,18 +1,34 @@
 ---
 title: Lightbox como su galería de imágenes personal
-description: Obtenga información sobre Lightbox como su galería de imágenes personal en Adobe Experience Manager Assets&rbrack;.
+description: Obtenga información sobre Lightbox como su galería de imágenes personal en Adobe Experience Manager Assets].
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: 913b8c5a-c532-43a0-93ce-0b96dd5eec54
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
-
 ---
-
 # Lightbox {#lightbox}
 
 Lightbox es un tipo especial de colección que proporciona un acceso fácil a los recursos. Puede acceder rápidamente a Lightbox para añadir o eliminar recursos. Sirve como su galería de imágenes personal.

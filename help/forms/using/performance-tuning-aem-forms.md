@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 68%
-
+source-wordcount: '810'
+ht-degree: 69%
 ---
-
 # Ajuste del rendimiento del servidor de AEM Forms{#performance-tuning-of-aem-forms-server}
 
 Este artículo analiza las estrategias y las prácticas recomendadas que puede implementar para reducir los cuellos de botella y optimizar el rendimiento de su implementación de AEM Forms.
@@ -42,7 +56,7 @@ Es posible que la configuración de caché predeterminada de AEM Forms no sea l
 * **Tamaño de caché** (en términos de número de formularios): según los requisitos
 * **Tamaño máximo del objeto**: según los requisitos
 
-![Configuraciones de Mobile Forms &#x200B;](assets/snap.png)
+![Configuraciones de Mobile Forms ](assets/snap.png)
 
 >[!NOTE]
 >
@@ -95,8 +109,8 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. El objetivo de las 
    >
    >Para Linux®, el valor predeterminado `APACHE_HOME` es `/etc/httpd/`.
 
-1. Configure el proxy en el puerto 4502 de crx.
-Agregue la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
+1. Configure el proxy en el puerto 4502 de CRX.
+Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -149,9 +163,9 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 
 * El directorio de instalación de AEM. Si no es posible excluir el directorio completo, excluya los siguientes elementos:
 
-   * [El directorio de instalación de AEM]\crx-repository\temp
-   * [El directorio de instalación de AEM]\crx-repository\repository
-   * [El directorio de instalación de AEM]\crx-repository\launchpad
+  * [El directorio de instalación de AEM]\crx-repository\temp
+  * [El directorio de instalación de AEM]\crx-repository\repository
+  * [El directorio de instalación de AEM]\crx-repository\launchpad
 
 <!--
 

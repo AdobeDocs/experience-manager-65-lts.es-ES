@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 1%
-
+source-wordcount: '1168'
+ht-degree: 2%
 ---
-
 # Recuperación de los datos de AEM Forms {#recovering-the-aem-forms-data}
 
 En esta sección se describen los pasos necesarios para recuperar los datos de los formularios AEM Forms. Vea también [Consideraciones especiales para la copia de seguridad y la recuperación](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -51,11 +65,11 @@ Si un nodo único de un clúster de varios nodos ha fallado y los nodos restante
 1. Si es necesario, vuelva a crear el sistema físico a partir de una imagen del sistema. Por ejemplo, este paso puede no ser necesario si el motivo de la recuperación es un servidor de base de datos defectuoso.
 1. Aplique parches o actualizaciones a los formularios de AEM aplicados desde que se creó la imagen. Esta información se registró en el procedimiento de copia de seguridad. Los formularios AEM deben tener parches al mismo nivel que cuando se realizó la copia de seguridad del sistema.
 1. (Servidor de aplicaciones WebSphere®) Si se recupera en una nueva instancia de WebSphere®, ejecute el comando restoreConfig.bat/sh.
-1. Recupere la base de datos de formularios AEM Forms ejecutando primero una operación de restauración de base de datos utilizando los archivos de copia de seguridad de la base de datos y, a continuación, aplicando los redo logs de transacción a la base de datos recuperada. (Consulte [base de datos de formularios AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obtener más información, consulte uno de estos artículos de la base de conocimientos:
+1. Recupere la base de datos de formularios AEM Forms ejecutando primero una operación de restauración de base de datos utilizando los archivos de copia de seguridad de la base de datos y, a continuación, aplicando los redo logs de transacción a la base de datos recuperada. (Consulte [base de datos de formularios de AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obtener más información, consulte uno de estos artículos de la base de conocimiento:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Copia de seguridad y recuperación de DB2® para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Copia de seguridad y recuperación de Oracle para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Copia de seguridad y recuperación de Microsoft® SQL Server para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [Copia de seguridad y recuperación de MySQL para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recupere el directorio GDS eliminando primero el contenido del directorio GDS en la instalación existente de los formularios AEM Forms y, a continuación, copiando el contenido del directorio GDS del GDS de copia de seguridad. Si cambió la ubicación del directorio GDS, consulte [Cambio de la ubicación de GDS durante la recuperación](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).

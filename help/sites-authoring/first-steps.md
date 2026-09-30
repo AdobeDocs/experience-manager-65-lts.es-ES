@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 13%
-
 ---
-
 # Primeros pasos para los autores{#first-steps-for-authors}
 
 Esta sección le ofrece una descripción general de las tareas principales que utilizará al [empezar a crear contenido](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
@@ -51,7 +64,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicación de una página {#publishing-a-page}
 

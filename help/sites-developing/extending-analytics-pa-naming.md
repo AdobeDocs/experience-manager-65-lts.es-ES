@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -40,7 +51,7 @@ El servicio `DefaultPageNameProvider` determina cuál de estas variables CQ se a
 
 * `pagedata.navTitle`: el servicio usa `page.getNavigationTitle()`
 
-El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
+El objeto `page` es el objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) para la página.
 
 Si no asigna una variable CQ a la propiedad `s.pageName` en el marco de trabajo, el valor de `s.pageName` se genera a partir de la ruta de acceso de la página. Por ejemplo, la página con la ruta de acceso `/content/geometrixx/en` usa el valor `content:geometrixx:en` para `s.pageName`.
 

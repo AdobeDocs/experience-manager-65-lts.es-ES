@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 00f52303-66c3-4865-a74b-eda0e6949193
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 2%
-
 ---
-
 # Prevenir ataques CSRF {#preventing-csrf-attacks}
 
 ## Cómo funcionan los ataques CSRF {#how-csrf-attacks-work}
@@ -37,7 +54,7 @@ Por ejemplo, imagine un escenario en el que ha iniciado sesión en la consola de
 * cualquier cliente de escritorio que realice una solicitud HTTP en un extremo SOAP o REST de formularios AEM
 * cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación web de AEM forms
 
-Permitir referente nulo en puntos finales SOAP y REST. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Protección y seguridad para formularios AEM](https://help.adobe.com/es_ES/livecycle/11.0/HardeningSecurity/index.html).
+Permitir referente nulo en puntos finales SOAP y REST. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Protección y seguridad para formularios AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Excepción de referente permitido:** La excepción de referente permitido es una sublista de la lista de referentes permitidos, desde la cual se bloquean las solicitudes. Las excepciones de referencia permitidas son específicas de una aplicación web. Si no se debe permitir que un subconjunto de los referentes permitidos invoque una aplicación web determinada, se pueden realizar listas de bloqueados de los referentes mediante Excepciones de referentes permitidos. Las excepciones de referentes permitidos se especifican en el archivo web.xml de la aplicación. (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en Protección y seguridad para formularios AEM en la página Ayuda y tutoriales).
 
@@ -48,7 +65,7 @@ AEM Forms proporciona filtrado de referentes, que puede ayudar a evitar ataques 
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    * Si es POST, el servidor de Forms realiza la comprobación del encabezado de referente.
-   * Si es GET, el servidor de Forms omite la comprobación del referente, a menos que CSRF_CHECK_GETS esté establecido en True, en cuyo caso realiza la comprobación del encabezado del referente. CSRF_CHECK_GETS se especifica en el archivo web.xml de la aplicación. (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Guía de protección y seguridad](https://help.adobe.com/es_ES/livecycle/11.0/HardeningSecurity/index.html)).
+   * Si es GET, el servidor de Forms omite la comprobación del referente, a menos que CSRF_CHECK_GETS esté establecido en True, en cuyo caso realiza la comprobación del encabezado del referente. CSRF_CHECK_GETS se especifica en el archivo web.xml de la aplicación. (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Guía de protección y seguridad](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)).
 
 1. El servidor de Forms comprueba si el URI solicitado está incluido en la lista de permitidos:
 

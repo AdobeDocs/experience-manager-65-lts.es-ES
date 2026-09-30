@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d6bd4028-56c9-4e09-9bba-1199a41b41b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 6%
@@ -38,11 +49,11 @@ Para utilizar los tokens, debe replicar el binario HMAC en todas las instancias 
 >
 >Asegúrese de realizar también los cambios de configuración necesarios en Dispatcher para utilizar el marco de protección CSRF:
 >
->* [Configuración de Adobe Experience Manager Dispatcher para prevenir ataques de tipo CSRF](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Configuración de Adobe Experience Manager Dispatcher para prevenir ataques de tipo CSRF](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Información general de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
+>Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
 >
 >Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página de OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).

@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3540'
 ht-degree: 2%
-
 ---
-
 # Desarrollo de componentes de AEM{#developing-aem-components}
 
 Los componentes de AEM se utilizan para mantener, dar formato y representar el contenido disponible en las páginas web.
@@ -88,11 +97,11 @@ El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se 
 
 ### Uso de Java {#using-java}
 
-[La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es). Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
+[La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
 
 ### Uso de JavaScript {#using-javascript}
 
-[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es). Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
+[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 
 ### Uso de bibliotecas HTML del lado del cliente {#using-client-side-html-libraries}
 
@@ -191,7 +200,7 @@ Para ver ejemplos, consulte:
 >
 >Consulte:
 >
->* la sesión de AEM Gems en [Personalizar campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+>* la sesión de AEM Gems en [Personalizar campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* el código de ejemplo relacionado que se cubre en [Ejemplo de código: Cómo personalizar los campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -457,9 +466,9 @@ Al migrar un componente diseñado para utilizarlo con la IU clásica a un compon
   * Cree un cuadro de diálogo para utilizarlo en la interfaz de usuario táctil. Sin embargo, por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásico cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
   * Se proporcionan [herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md) para ayudarle a ampliar los componentes existentes.
   * [Asignar ExtJS a componentes de Granite UI](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) proporciona una visión general conveniente de los xtype y tipos de nodo de ExtJS con sus tipos de recursos de Granite UI equivalentes.
-  * Personalizando campos, para obtener más información, consulte la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+  * Personalizando campos, para obtener más información, consulte la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
   * Migrar de vtypes a [Validación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-  * Con oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
+  * Con oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de AEM Gems en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrando código cq:listener {#migrating-cq-listener-code}
 

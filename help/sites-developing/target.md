@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
-source-git-commit: 6360a0573f3683ad491c5e9edad5d34840f98ebb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 4%
-
 ---
-
 
 # Desarrollo de contenido de destino {#developing-for-targeted-content}
 
@@ -205,7 +214,7 @@ El script JSP de este componente genera llamadas a la API de JavaScript de Targe
 
 El archivo predeterminado `mbox.js` que se usa para crear mboxes se encuentra en `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Para usar un archivo `mbox.js` personalizado, agregue el archivo a la configuración de nube de Target. Para agregar el archivo, el archivo `mbox.js` debe estar disponible en el sistema de archivos.
 
-Por ejemplo, si desea usar el servicio [Marketing Cloud ID,](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es) debe descargar `mbox.js` para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=es) y [antes de la implementación.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=es)
+Por ejemplo, si desea usar el servicio [Marketing Cloud ID,](https://experienceleague.adobe.com/docs/id-service/using/home.html) debe descargar `mbox.js` para que contenga el valor correcto para la variable `imsOrgID`, que se basa en el inquilino. Esta variable es necesaria para integrar con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como Source de informes para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) y [antes de la implementación.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 
 >[!NOTE]
 >

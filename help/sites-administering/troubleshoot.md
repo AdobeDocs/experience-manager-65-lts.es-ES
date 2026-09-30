@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '497'
 ht-degree: 2%
-
 ---
-
 # Solución de problemas de Adobe Experience Manager {#troubleshooting-aem}
 
 La siguiente sección trata algunos problemas que pueden producirse al utilizar AEM (Adobe Experience Manager), así como sugerencias para solucionarlos.
@@ -94,17 +103,17 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es) para obtener más información
+Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obtener más información
 
 ### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 
 Cuando la funcionalidad está desarrollada para AEM WCM, se pueden abrir sesiones JCR (comparables a la apertura de una conexión a base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
 
 * El sistema se vuelve más lento.
-* Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
+* Puede ver gran parte de las entradas de CacheManager: resizeAll en el archivo de registro; el siguiente número (size=&lt;x>) shows the number of caches, each session opens several caches.
 * De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
-Para empezar a analizar las sesiones no cerradas, consulte el artículo de Knowledge Base [Unclosed Resource Resolver](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Para empezar a analizar las sesiones no cerradas, consulte el artículo de Knowledge Base [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

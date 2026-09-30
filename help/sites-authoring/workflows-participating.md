@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 72%
-
 ---
-
 # Participación en flujos de trabajo{#participating-in-workflows}
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo. El usuario recibe una notificación y puede realizar las acciones adecuadas:
@@ -37,12 +52,12 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
 * Cuando utilice el editor de páginas, la barra de estado mostrará lo siguiente:
 
-   * Nombre de los flujos de trabajo que se están aplicando a la página; por ejemplo, Solicitud de activación.
-   * Las acciones disponibles para el usuario actual para el paso actual del flujo de trabajo; por ejemplo, Completar, Delegar, Ver detalles.
-   * El número de flujos de trabajo a los que está sujeta la página. Puede hacer lo siguiente:
+  * Nombre de los flujos de trabajo que se están aplicando a la página; por ejemplo, Solicitud de activación.
+  * Las acciones disponibles para el usuario actual para el paso actual del flujo de trabajo; por ejemplo, Completar, Delegar, Ver detalles.
+  * El número de flujos de trabajo a los que está sujeta la página. Puede hacer lo siguiente:
 
-      * utilice las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
-      * haga clic en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee mostrar en la barra de estado.
+    * utilice las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
+    * haga clic en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee mostrar en la barra de estado.
 
   ![wf-59](assets/wf-59.png)
 

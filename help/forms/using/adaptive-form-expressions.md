@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 92%
-
+source-wordcount: '2866'
+ht-degree: 91%
 ---
-
 # Expresiones de formularios adaptables{#adaptive-form-expressions}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -39,10 +55,10 @@ Los paneles de repetición son instancias de un panel que se agregan o quitan de
 * Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de paneles repetibles, como suma, recuento, mínimo, máximo, filtrar y mucho más. Para obtener la lista completa de funciones, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * Las API para manipular instancias de panel de repetición son las siguientes:
 
-   * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
-   * Para obtener un índice de repetición de panel: `panel1.instanceIndex`
-   * Para obtener el instanceManager de un panel: `_panel1 or panel1.instanceManager`
-   * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
+  * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
+  * Para obtener un índice de repetición de panel: `panel1.instanceIndex`
+  * Para obtener el instanceManager de un panel: `_panel1 or panel1.instanceManager`
+  * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Tipos de expresión {#expression-types}
 
@@ -77,7 +93,7 @@ La expresión “calculate” se utiliza para calcular automáticamente el valor
 
 **Tipo de devolución**: la expresión devuelve un valor compatible con el campo en el que se muestra el resultado de la expresión (por ejemplo, decimal).
 
-**Ejemplo**: La expresión “calculate” para mostrar la suma de dos campos en **field1** es:
+**Ejemplo**: la expresión &quot;calculate&quot; para mostrar la suma de dos campos en **campo1** es:
 `field2.value + field3.value`
 
 ### Expresión “click” {#click-expression}
@@ -102,7 +118,7 @@ El script de inicialización se activa cuando se inicializa un formulario adapta
 
 **Tipo de devolución:** El script de inicialización no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
+**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con el valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expresión “options” {#options-expression}
@@ -137,7 +153,7 @@ La expresión “validate” se utiliza para validar los campos mediante la expr
 
 **Se aplica a**: campos
 
-**Tipo de devolución**: La expresión devuelve un valor Boolean, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
+**Tipo de devolución**: La expresión devuelve un valor Booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -159,7 +175,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:** Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -184,7 +200,7 @@ La expresión “step completion” se utiliza para evitar que un usuario vaya a
 
 **Tipo de devolución**: La expresión devuelve un valor Booleano, que representa si el panel actual es válido o no. **True** representa que el panel actual es válido y el usuario puede navegar hasta el siguiente panel.
 
-**Ejemplo**: en un formulario organizado en varios paneles, antes de navegar al siguiente panel, se valida el panel actual. En estos casos, se utiliza la expresión &quot;step completion&quot;. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
+**Ejemplo**: En un formulario organizado en varios paneles, antes de navegar hasta el panel siguiente, se valida el panel actual. En estos casos, se utiliza la expresión “step completion”. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validaciones en formularios adaptables {#validations-in-adaptive-form}

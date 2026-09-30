@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Administración de flujos de trabajo{#administering-workflows}
 
 Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM). Flujos de trabajo:
 
 * Consiste en una serie de pasos que se ejecutan en un orden específico.
 
-   * Cada paso realiza una actividad distinta, como esperar los datos introducidos por el usuario, activar una página o enviar un mensaje de correo electrónico.
+  * Cada paso realiza una actividad distinta, como esperar los datos introducidos por el usuario, activar una página o enviar un mensaje de correo electrónico.
 
 * Puede interactuar con recursos del repositorio, cuentas de usuario y servicios de AEM.
 * Puede coordinar actividades complejas que implican cualquier aspecto de AEM.

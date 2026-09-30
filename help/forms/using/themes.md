@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5975'
-ht-degree: 94%
-
+source-wordcount: '6216'
+ht-degree: 96%
 ---
-
 # Crear y usar temáticas {#creating-and-using-themes}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -47,7 +63,7 @@ Realice los siguientes pasos para Crear una temática:
 
 1. Haga clic en **Adobe Experience Manager**, luego en **Forms** y, por último, en **Temáticas**.
 
-1. En la página Temas, haga clic en **Crear > Tema**.
+1. En la página Temáticas, haga clic en **Crear > Temática**.
 Se inicia un asistente para crear una temática.
 
 1. En la pestaña Básico del asistente Crear temática, proporcione un **Título** y un **Nombre** para la temática. Son campos obligatorios.
@@ -83,8 +99,8 @@ Para cargar una temática:
 1. Haga clic en **Adobe Experience Manager**, luego en **Forms** y, por último, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Cargar archivo**.
-1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en su equipo y haga clic en **Cargar**.
-La temática cargada está disponible en la página Temáticas.
+1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**.
+La temática cargada está disponible en la página de temáticas.
 
 ## Metadatos de una temática {#metadata-of-a-theme}
 
@@ -211,25 +227,25 @@ El editor de temáticas se divide en dos paneles:
 
 * **Barra lateral**- Aparece en el lado izquierdo. Tiene los siguientes elementos:
 
-   * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario o la comunicación interactiva heredarán dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
+  * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario o la comunicación interactiva heredarán dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
 
-     **Componente genérico de estilo:**
-Un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección.
-Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y dirección.
+    **Componente genérico de estilo:**
+    Un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección.
+    Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y dirección.
 
-     **Componente específico del estilo**:
-Un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
+    **Componente específico del estilo**:
+    Un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
 
-     Por ejemplo, un campo de cuadro de texto como una dirección es más largo y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
+    Por ejemplo, un campo de cuadro de texto como una dirección es más largo y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
 
-     Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
+    Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
 
-   * **Estado:** permite personalizar estilos de un objeto en un estado específico. Por ejemplo, se puede especificar la apariencia de un objeto cuando está en estado predeterminado, de enfoque, deshabilitado, de desplazamiento o de error.
-   * **Categorías de las propiedades:** las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimensión y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
+  * **Estado:** permite personalizar estilos de un objeto en un estado específico. Por ejemplo, se puede especificar la apariencia de un objeto cuando está en estado predeterminado, de enfoque, deshabilitado, de desplazamiento o de error.
+  * **Categorías de las propiedades:** las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimensión y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
 
-   * **Avanzado:** permite agregar CSS personalizado a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
+  * **Avanzado:** permite agregar CSS personalizado a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
 
-   * **Ver CSS**: permite ver el CSS del componente seleccionado
+  * **Ver CSS**: permite ver el CSS del componente seleccionado
 
   Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [debajo de](../../forms/using/themes.md#using-rail).
 
@@ -262,8 +278,8 @@ Los paneles integrados incluyen:
 * Asistente
 * Diseño móvil
 
-   * Títulos del panel en el encabezado
-   * Sin títulos del panel en el encabezado
+  * Títulos del panel en el encabezado
+  * Sin títulos del panel en el encabezado
 
 Los selectores varían para cada diseño.
 Dar estilo a los diseños personalizados desde el editor de temáticas implica:
@@ -344,7 +360,7 @@ Los botones Rehacer y Deshacer aparecen al aplicar estilo a un componente en el 
 El editor de temáticas permite editar una temática que haya creado o cargado. Vaya a **Formularios y documentos > Temáticas**; luego, seleccione una y ábrala. La temática se abre en el editor de temáticas.
 
 Como se ha indicado anteriormente, el editor de temáticas tiene dos paneles: Barra lateral y Lienzo.
-![editor de temáticas](assets/theme-editor.png)
+![theme-editor](assets/theme-editor.png)
 
 Personalización del estilo del estado de éxito del componente Widget de cuadro de texto en el editor de temáticas. El componente está seleccionado en Lienzo y su estado está seleccionado en la barra lateral. Las opciones de estilo disponibles en la barra lateral se utilizan para personalizar el aspecto de un componente.
 
@@ -357,10 +373,10 @@ En la barra de herramientas Lienzo, verá:
 * **Alternar panel lateral** ![toggle-side-panel](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
 * **Opciones de la temática** ![theme-options](assets/theme-options.png): proporciona tres opciones
 
-   * Configurar: proporciona opciones para seleccionar el formulario de vista previa o la comunicación interactiva, la clientlib base y la configuración de Adobe Fonts.
-   * Ver temática CSS: genera CSS para la temática seleccionada.
-   * Administrar estilos: proporciona opciones para administrar estilos de texto e imagen
-   * Ayuda: ejecuta una repaso guiado con imágenes sobre el editor de temáticas.
+  * Configurar: proporciona opciones para seleccionar el formulario de vista previa o la comunicación interactiva, la clientlib base y la configuración de Adobe Fonts.
+  * Ver temática CSS: genera CSS para la temática seleccionada.
+  * Administrar estilos: proporciona opciones para administrar estilos de texto e imagen
+  * Ayuda: ejecuta una repaso guiado con imágenes sobre el editor de temáticas.
 
 * **Emulador** ![regla](assets/ruler.png): emula el aspecto de la temática para diferentes tamaños de visualización. Un tamaño de visualización se trata como un punto de interrupción en el emulador. Puede seleccionar un punto de interrupción y especificar un estilo para él. Por ejemplo, Escritorio y Tablet son dos puntos de interrupción. Puede especificar distintos estilos para cada punto de interrupción.
 
@@ -383,7 +399,7 @@ Barra de herramientas de los componentes del cuadro numérico del lienzo
 
 La barra lateral del editor de temáticas ofrece opciones para personalizar estilos para los componentes de una temática y utilizar selectores. Los selectores permiten seleccionar un grupo de componentes o componentes individuales, así como buscar selectores en la barra lateral. Puede escribir selectores para los componentes personalizados.
 
-Al seleccionar un componente del lienzo o los selectores en la barra lateral, la barra lateral muestra todas las opciones que le permiten personalizar los estilos para él.
+Cuando se selecciona un componente del lienzo o los selectores en la barra lateral, la barra lateral muestra todas las opciones que le permiten personalizar los estilos para él.
 A continuación se muestran las opciones que ve en la barra lateral al seleccionar un componente:
 
 * Estado
@@ -461,7 +477,7 @@ Siga estos pasos para personalizar el estilo de un componente en particular (un 
 
 1. Seleccione **Widget del cuadro numérico**.
 1. El título de la barra lateral cambia a Widget del cuadro numérico y muestra las opciones para personalizar su aspecto.
-Use la opción **Dimension y posición** en la barra lateral para personalizar el tamaño del componente. Asegúrese de que el estado sea **Predeterminado**.
+Use **Dimensión y posición** en la barra lateral para personalizar el tamaño del componente. Compruebe que el estado es **Predeterminado**.
 
 En lugar de seleccionar **Widget del cuadro numérico**, seleccione **Widget del campo** en la barra de herramientas de componentes y realice los pasos anteriores. Al seleccionar dimensiones para **Widget del campo**, todos los cuadros de texto excepto el cuadro numérico tienen el mismo tamaño.
 
@@ -642,27 +658,27 @@ Puede ver el CSS generado mediante las siguientes opciones:
 * Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
 * **Usar clientlib base, editor de temáticas y aplicar estilo dentro de la línea**
 
-   * **Clientlib base**:
+  * **Clientlib base**:
 
-     La biblioteca de cliente base contiene información de estilo. Utilizar información de estilo en bibliotecas de cliente en temáticas.
+    La biblioteca de cliente base contiene información de estilo. Utilizar información de estilo en bibliotecas de cliente en temáticas.
 
-      1. Navegue hasta **Experience Manager > Forms > Temáticas**.
-      1. En la página Temáticas seleccione una temática y haga clic en **Ver propiedades**.
-      1. En la página Propiedades que se abre, haga clic en **Avanzadas**.
-      1. En la pestaña Avanzadas, en el campo Ubicación de Clientlib, busque y seleccione la biblioteca de cliente que desee utilizar.
-      1. Haga clic en **Guardar**.
+    1. Navegue hasta **Experience Manager > Forms > Temáticas**.
+    1. En la página Temáticas seleccione una temática y haga clic en **Ver propiedades**.
+    1. En la página Propiedades que se abre, haga clic en **Avanzadas**.
+    1. En la pestaña Avanzadas, en el campo Ubicación de Clientlib, busque y seleccione la biblioteca de cliente que desee utilizar.
+    1. Haga clic en **Guardar**.
 
-     El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Al importar la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
-También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
-Ver [Obteniendo apariencia específica mediante Temáticas](#specific-af-appearance)
+    El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Cuando se importa la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
+    También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
+    [ Consulte Obtener una apariencia específica mediante Temáticas](#specific-af-appearance)
 
-   * **Editor de temáticas:**
+  * **Editor de temáticas:**
 
-     El editor de temáticas permite crear temáticas para aplicar estilo al formulario o a la comunicación interactiva. Puede especificar el estilo de los componentes de una temática, que permite mantener la coherencia en la apariencia y la presentación de varios formularios o comunicaciones interactivas. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
+    El editor de temáticas permite crear temáticas para aplicar estilo al formulario o a la comunicación interactiva. Puede especificar el estilo de los componentes de una temática, que permite mantener la coherencia en la apariencia y la presentación de varios formularios o comunicaciones interactivas. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
 
-   * **Estilo dentro de la línea:**
+  * **Estilo dentro de la línea:**
 
-     Los componentes de estilo se pueden aplicar con el modo Estilo del editor multicanal de comunicaciones interactivas o de formularios cuando se trabaja con un formulario. Si se utiliza el modo de estilo para cambiar el estilo de los componentes del formulario, se anulará el estilo especificado en la temática. Si desea cambiar el estilo de ciertos componentes de un formulario concreto, consulte [Aplicar estilo a componentes dentro de la línea](../../forms/using/inline-style-adaptive-forms.md).
+    Los componentes de estilo se pueden aplicar con el modo Estilo del editor multicanal de comunicaciones interactivas o de formularios cuando se trabaja con un formulario. Si se utiliza el modo de estilo para cambiar el estilo de los componentes del formulario, se anulará el estilo especificado en la temática. Si desea cambiar el estilo de ciertos componentes de un formulario concreto, consulte [Aplicar estilo a componentes dentro de la línea](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Usar bibliotecas del lado del cliente**
 
@@ -675,4 +691,4 @@ Ver [Obteniendo apariencia específica mediante Temáticas](#specific-af-appeara
 * **Utilización del editor de formularios o del editor de temáticas para trabajar con encabezado y pie de página**
 
   Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia.
-Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
+  Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.

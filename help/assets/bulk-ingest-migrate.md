@@ -10,7 +10,20 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9d49d64b-fe90-4da6-a2db-19a69d1dc12c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 1%
@@ -19,13 +32,13 @@ ht-degree: 1%
 
 La instalación del paquete de funciones 18912 es *opcional*.
 
-El paquete de funciones 18912 permite la ingesta masiva de recursos directamente en el modo Dynamic Media - Scene7 en Adobe Experience Manager a través del FTP. También le permite migrar recursos de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. El paquete de funciones está disponible en [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
+El paquete de funciones 18912 permite la ingesta masiva de recursos directamente en el modo Dynamic Media - Scene7 en Adobe Experience Manager a través del FTP. También le permite migrar recursos de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. El paquete de funciones está disponible en [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >Puede usar el paquete de funciones para migrar recursos por su cuenta de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. También puede migrar recursos en lote mediante la función FTP de Dynamic Media Classic. Sin embargo, Adobe *no* recomienda que utilice cualquiera de estos métodos debido a la complejidad que implica.
 >
->Por lo tanto, este paquete de características de migración es *solo* compatible como parte de un proyecto de migración cuando se realiza a través de [Adobe Professional Services](https://business.adobe.com/es/customers/consulting-services/main.html).
+>Por lo tanto, este paquete de características de migración es *solo* compatible como parte de un proyecto de migración cuando se realiza a través de [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Antes de instalar el paquete de funciones, cree un usuario de servicio y proporcione esa información al servicio de asistencia de Adobe.
 

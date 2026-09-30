@@ -7,13 +7,27 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 4%
-
 ---
-
 # Procesar recursos mediante controladores de medios y flujos de trabajo {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] incluye un conjunto de flujos de trabajo y controladores de medios predeterminados para procesar los recursos. Un flujo de trabajo define las tareas que se ejecutan en los recursos y, a continuación, delega las tareas específicas en los controladores de medios como, por ejemplo, la generación de miniaturas o la extracción de metadatos.
@@ -124,7 +138,7 @@ Se deben implementar los siguientes métodos:
 
 Esta es una plantilla de ejemplo:
 
-package my.own.stuff; /&ast; &ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementar las partes relevantes }
+package my.own.stuff; /&amp;ast; &amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementar las partes relevantes }
 
 La interfaz y las clases incluyen:
 

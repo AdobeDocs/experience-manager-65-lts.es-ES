@@ -9,13 +9,24 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 2c1d2260-8cda-4dd0-b3c7-a57957282421
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 2%
-
 ---
-
 # Etiquetado{#tagging}
 
 El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pueden clasificar por un área de nombres y una taxonomía.

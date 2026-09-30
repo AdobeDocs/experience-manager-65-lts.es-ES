@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: de6cd8e2-d295-46b2-9068-feb1ff7d15d3
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 9%
-
+source-wordcount: '346'
+ht-degree: 12%
 ---
-
 # Integración de AEM 6.5 con Adobe Campaign{#integrating-with-adobe-campaign}
 
 Obtenga información acerca de la compatibilidad de AEM 6.5 con las integraciones con Adobe Campaign.
@@ -26,7 +35,7 @@ Adobe Campaign es un conjunto de soluciones que le permite personalizar y entreg
 >
 >Este documento describe la integración de Adobe Campaign con AEM 6.5, la solución de AEM local o alojada en AMS.
 >
->Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service, la solución nativa de la nube de AEM, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=es)
+>Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service, la solución nativa de la nube de AEM, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
 
 ## Integración con Adobe Campaign Classic {#acc}
 
@@ -34,8 +43,8 @@ Existen varias versiones de Adobe Campaign Classic (ACC). La compatibilidad con 
 
 | Versión ACC | Integración con AEM 6.5 <br>On-Premies | Integración con AEM 6.5<br>AMS |
 |---|---|---|
-| [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=es) | Compatible | Compatible  |
-| [Consola de cliente v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=es) | Compatible | Compatible  |
+| [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=es) | Compatible | Compatible |
+| [Consola de cliente v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=es) | Compatible | Compatible |
 
 En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign Classic.
 
@@ -43,7 +52,7 @@ En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en AEM.
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en AEM.
 * [Solución de problemas de la integración de Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md): aprenda a solucionar los problemas más comunes con la integración de AEM y ACC.
 
 ## Integración con Adobe Campaign Standard {#acs}
@@ -53,7 +62,7 @@ La integración de [Adobe Campaign Standard](https://experienceleague.adobe.com/
 | Integración con AEM 6.5 <br>On-Premies | Integración con AEM 6.5<br>AMS |
 |---|---|
 | Compatible | Compatible |
-| Compatible | Compatible  |
+| Compatible | Compatible |
 
 En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign Standard.
 
@@ -61,4 +70,4 @@ En la siguiente documentación se describe cómo integrar AEM con Adobe Campaign
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)

@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
+source-wordcount: '6255'
 ht-degree: 0%
-
 ---
-
 # Configurar el tipo de archivo {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -127,7 +139,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) a PDF. El software OCR le permite buscar, corregir y copiar el texto en PDF.
 
-***nota &#x200B;**: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
+***nota **: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
 
 **Idioma principal de OCR:** Especifica el idioma que el motor de OCR utilizará para identificar los caracteres.
 
@@ -266,7 +278,7 @@ Para obtener instrucciones sobre cómo obtener acceso a esta configuración, con
 
    >[!NOTE]
    >
-   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**&#x200B;aún están completamente desincrustadas.*
+   >*Si está usando esta opción en combinación con **Desincrustar algunas fuentes**, las fuentes de la lista **Agregar fuentes a la incrustación**aún están completamente desincrustadas.*
 
    >[!NOTE]
    >
@@ -621,7 +633,7 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 
 ## Otra configuración de la aplicación (sólo Windows) {#other-applications-settings-windows-only}
 
-No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/es_ES/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker de Adobe: `pmd, pm6, p65, pm`

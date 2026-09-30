@@ -10,13 +10,22 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # Tablero de operaciones {#operations-dashboard}
 
 ## Introducción {#introduction}
@@ -107,13 +116,13 @@ La creación de una comprobación de estado individual implica dos pasos: implem
 
    * **Nombre:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valor:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valor:** `granite/operations/components/mbean`
 
    * **Nombre:** `resource`
 
-      * **Tipo:** `String`
-      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **Tipo:** `String`
+     * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
 
    * **Nombre:** `Composite Health Check`
 
-      * **Tipo:** `nt:unstructured`
+     * **Tipo:** `nt:unstructured`
 
    Con las siguientes propiedades:
 
    * **Nombre:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valor:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valor:** `granite/operations/components/mbean`
 
    * **Nombre:** `resource`
 
-      * **Tipo:** `String`
-      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **Tipo:** `String`
+     * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -495,7 +504,7 @@ Las siguientes tareas están disponibles en el tablero de operaciones:
 1. La tarea de mantenimiento **Purga del proyecto**, ubicada en el menú **Ventana de mantenimiento semanal**; con la opción **Agregar**.
 1. La tarea de mantenimiento **Purgar tareas ad hoc**, ubicada en el menú **Ventana de mantenimiento semanal**; con la opción **Agregar**.
 
-El horario predeterminado para la ventana de mantenimiento diario es de 2:00 a.m. a 5:00 a.m. Las tareas configuradas para ejecutarse en la ventana de mantenimiento semanal se ejecutan entre las 1:00 y las 2:00 a.m. los sábados.
+El horario predeterminado para la ventana de mantenimiento diario es de 2:00 a.m. a 5:00 a.m. Las tareas configuradas para ejecutarse en la ventana de mantenimiento semanal se ejecutan entre la 1 y las 2 de la madrugada los sábados.
 
 También puede configurar los horarios pulsando el icono de engranaje en cualquiera de las dos tarjetas de mantenimiento:
 
@@ -660,7 +669,7 @@ El **Panel de información general del sistema** muestra información general de
 
 >[!NOTE]
 >
->También puedes [ver este vídeo](https://video.tv.adobe.com/v/40159?captions=spa) para ver una introducción al Panel de información general del sistema.
+>También puedes [ver este vídeo](https://video.tv.adobe.com/v/21340) para ver una introducción al Panel de información general del sistema.
 
 ### Cómo Acceder A {#how-to-access}
 

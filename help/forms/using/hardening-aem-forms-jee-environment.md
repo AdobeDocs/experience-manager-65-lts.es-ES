@@ -6,16 +6,33 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 hide: true
+removedfrom6.5.2025: 'yes'
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7800'
 ht-degree: 90%
-
 ---
-
 # Mejorar la seguridad de AEM Forms en el entorno JEE {#hardening-your-aem-forms-on-jee-environment}
 
 Conozca diferentes configuraciones de seguridad para mejorar la seguridad de AEM Forms en un entorno JEE que se ejecuta en una intranet corporativa.
@@ -191,12 +208,12 @@ Para ejecutar el servidor de aplicaciones en el que se implementa AEM Forms en 
    * **Directorio Global Document Storage (GDS)**: la ubicación del directorio GDS se configura manualmente durante el proceso de instalación de AEM Forms. Si la configuración de la ubicación permanece vacía durante la instalación, la ubicación predeterminada es un directorio en la instalación del servidor de aplicaciones en `[JBoss root]/server/[type]/svcnative/DocumentStorage`.
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
-      * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
-En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
-      * (Linux) /var/tmp o /usr/tmp
-      * (AIX) /tmp o /usr/tmp
-      * (Solaris) /var/tmp o /usr/tmp
+     * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
+     * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
+       En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+     * (Linux) /var/tmp o /usr/tmp
+     * (AIX) /tmp o /usr/tmp
+     * (Solaris) /var/tmp o /usr/tmp
 1. Asigne permisos de escritura a la nueva cuenta de usuario en los siguientes directorios:
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
@@ -263,7 +280,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 1. Inicie el servidor de AEM Forms.
 1. Escriba la siguiente URL en un explorador para probar el cambio y asegurarse de que ya no funciona.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloqueo del acceso remoto al Almacén de confianza**
 
@@ -1017,12 +1034,12 @@ La instalación llave en mano de AEM Forms en JEE configura una cuenta de servi
    * **Directorio Global Document Storage (GDS)**: la ubicación del directorio GDS se configura manualmente durante el proceso de instalación de AEM Forms. Si la configuración de la ubicación permanece vacía durante la instalación, la ubicación predeterminada es un directorio en la instalación del servidor de aplicaciones en `[JBoss root]/server/[type]/svcnative/DocumentStorage`.
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
-      * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
-En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
-      * (Linux) /var/tmp o /usr/tmp
-      * (AIX) /tmp o /usr/tmp
-      * (Solaris) /var/tmp o /usr/tmp
+     * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
+     * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
+       En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+     * (Linux) /var/tmp o /usr/tmp
+     * (AIX) /tmp o /usr/tmp
+     * (Solaris) /var/tmp o /usr/tmp
 1. Asigne permisos de escritura a la nueva cuenta de usuario en los siguientes directorios:
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\

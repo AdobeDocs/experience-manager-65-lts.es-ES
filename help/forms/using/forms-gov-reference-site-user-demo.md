@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 56%
-
 ---
-
 # Tutorial del sitio de referencia de We.Gov y We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Requisitos previos {#pre-requisites}
@@ -24,22 +42,22 @@ Configure el sitio de referencia tal como se describe en [Configure y configure 
 
 * AEM Forms
 
-   * Conversión de formularios automatizada
-   * Creación
-   * Modelos de datos de formulario/Fuentes de datos
+  * Conversión de formularios automatizada
+  * Creación
+  * Modelos de datos de formulario/Fuentes de datos
 
 * AEM Forms
 
-   * Data Capture
-   * (Opcional) Integración de datos (MS® Dynamics)
-   * (Opcional) Adobe Sign
+  * Data Capture
+  * (Opcional) Integración de datos (MS® Dynamics)
+  * (Opcional) Adobe Sign
 
 * Flujo de trabajo
 * Notificaciones por correo electrónico
 * (Opcional) Comunicaciones con los clientes
 
-   * Canal de impresión
-   * Canal web
+  * Canal de impresión
+  * Canal web
 
 * Adobe Analytics
 * Integraciones de fuentes de datos
@@ -64,14 +82,14 @@ También se incluyen los siguientes grupos:
 
 * **Usuarios De Forms de We.Gov**
 
-   * George Lang (miembro)
-   * Camila Santos (miembro)
+  * George Lang (miembro)
+  * Camila Santos (miembro)
 
 * **Usuarios de We.Gov**
 
-   * George Lang (miembro)
-   * Camila Santos (miembro)
-   * Aya Tan (miembro)
+  * George Lang (miembro)
+  * Camila Santos (miembro)
+  * Aya Tan (miembro)
 
 ### Leyenda de los términos de la descripción general de la demostración {#demo-overview-terms-legend}
 
@@ -227,7 +245,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
    1. **Casado**: mostrar el panel matrimonial dependiente
    1. **Divorciado**: mostrar el panel Familiares.
    1. **Viudo**: mostrar el panel Familiares.
-   1. **¿Tiene hijos?**: botón de opción (Sí/No) para mostrar el panel secundario dependiente.
+   1. **¿Tiene elementos secundarios?**: botón de opción (Sí/No) para mostrar el panel secundario dependiente.
 
       1. Botón (Agregar/quitar) para agregar/quitar varios paneles secundarios dependientes.
 

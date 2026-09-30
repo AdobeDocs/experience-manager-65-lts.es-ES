@@ -9,13 +9,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1257'
 ht-degree: 68%
-
 ---
-
 # Personalizar plantillas para componentes del portal de Forms{#customizing-templates-for-forms-portal-components}
 
 ## Requisitos previos {#prerequisites}
@@ -41,8 +52,8 @@ Haga lo siguiente para poder crear una plantilla personalizada para varios compo
    * Componente Buscar y listar: “/libs/fd/fp/formTemplate”
    * Componente Borradores y envíos:
 
-      * Sección Borradores: /libs/fd/fp/draftsTemplate
-      * Sección Envíos: /libs/fd/fp/submissionsTemplate
+     * Sección Borradores: /libs/fd/fp/draftsTemplate
+     * Sección Envíos: /libs/fd/fp/submissionsTemplate
 
    * Componente de vínculo: /libs/fd/fp/linkTemplate
 
@@ -88,11 +99,11 @@ Forms Portal proporciona una sintaxis para que los marcadores de posición muest
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repeatable** a **true**.
 
-*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. El primero, con la clase CSS “__FP_boxes-container” funciona como un elemento de contenedor para los formularios que se enumeran. El segundo, con la clase CSS “__FP_boxes” es una plantilla para las entidades básicas, en este caso un formulario. El atributo **data-repeatable**&#x200B;presente en el elemento Div tiene el valor **true**.*
+*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. El primero, con la clase CSS “__FP_boxes-container” funciona como un elemento de contenedor para los formularios que se enumeran. El segundo, con la clase CSS “__FP_boxes” es una plantilla para las entidades básicas, en este caso un formulario. El atributo **data-repeatable**presente en el elemento Div tiene el valor **true**.*
 
 Cada marcador de posición tiene un conjunto exclusivo de metadatos predeterminados. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **${metadata_prop}** al lugar.
 
-*En el ejemplo, la propiedad metadata se usa en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;y **ruta**&#x200B;de la manera prescrita.*
+*En el ejemplo, la propiedad metadata se usa en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y **ruta**de la manera prescrita.*
 
 ## Metadatos predeterminados {#out-of-the-box-metadata}
 
@@ -121,7 +132,7 @@ Compatibilidad con la localización, clasificación y uso de propiedades de conf
    *En el ejemplo analizado, los atributos `${localize-Apply}` y `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tabla, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
-Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, el valor del encabezado &quot;data-sortKey&quot; es &quot;título&quot;. Haga clic en el encabezado para poder ordenar los valores de una columna en particular.
+Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el valor del encabezado “data-sortKey” es “título”. Haga clic en el encabezado para poder ordenar los valores de una columna en particular.
 
 1. **Usar las propiedades de configuración**: el componente Buscar y listar tiene varias configuraciones que puede utilizar en la interfaz de usuario. Por ejemplo, para mostrar el texto de información del objeto HTML guardado a través del cuadro de diálogo de edición, utilice el atributo `${config-htmlLinkText}`. **Del mismo modo, para el texto de información del objeto PDF, utilice el atributo** `${config-pdfLinkText}`.
 

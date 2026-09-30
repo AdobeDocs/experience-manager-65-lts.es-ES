@@ -11,13 +11,22 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 2%
-
 ---
-
 
 # Prácticas recomendadas para plantillas de correo electrónico {#best-practices-for-email-templates}
 
@@ -25,7 +34,7 @@ ht-degree: 2%
 >
 >Este artículo se aplica a los componentes de base obsoletos basados en los componentes de correo electrónico de AEM.
 >
->Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
+>Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 

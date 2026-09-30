@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
-source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 9%
-
+source-wordcount: '786'
+ht-degree: 10%
 ---
-
 # Implementación de referencia de `We.Retail`{#we-retail-reference-implementation}
 
 ## Introducción {#introduction}
@@ -35,7 +44,7 @@ Como implementación de referencia estándar de AEM, `We.Retail` muestra algunas
 | [Estructura del sitio globalizada](/help/sites-administering/tc-bp.md) | `We.Retail` incluye páginas de idioma principal que se copian en tiempo real en sitios de un país en particular. | [¡Pruébelo!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Diseño interactivo](/help/sites-authoring/responsive-layout.md) | Todas las páginas tienen un diseño interactivo para adaptarse dinámicamente a la pantalla y al tamaño del dispositivo. | [¡Pruébelo!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Plantillas editables](/help/sites-developing/page-templates-editable.md) | Todas las páginas se basan en plantillas editables, lo que permite a los usuarios que no son desarrolladores adaptar y personalizar las plantillas. | [¡Pruébelo!](/help/sites-developing/we-retail-editable-templates.md) |
-| [Lenguaje de plantilla HTML &#x200B;](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/overview) | Todos los componentes se basan en HTL |  |
+| [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/overview) | Todos los componentes se basan en HTL |  |
 | [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébelo!](/help/sites-developing/we-retail-core-components.md) |
 | [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) | La sección de experiencias `We.Retail` muestra la capacidad de reutilizar contenido mediante fragmentos de contenido. | [Pruébelos](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) | Un fragmento de experiencia es un grupo de uno o más componentes, incluido el contenido y el diseño, a los que se puede hacer referencia dentro de las páginas. | [Pruébelos](/help/sites-developing/we-retail-experience-fragments.md) |
@@ -104,7 +113,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub.
 
-* [Abrir proyecto aem-sample-we-retail en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Abra el proyecto aem-sample-we-retail en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Descargar el proyecto como [archivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
 La última versión también se puede [descargar directamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) como un paquete instalable.

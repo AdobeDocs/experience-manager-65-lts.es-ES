@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 3%
-
 ---
-
 # Estrategia de copia de seguridad y recuperación para AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Si la implementación de AEM Forms almacena datos personalizados adicionales en una base de datos diferente, usted es el responsable de implementar una estrategia para realizar una copia de seguridad de estos datos y garantizar que permanezcan sincronizados con los datos de los formularios de AEM. Además, la aplicación debe diseñarse para que sea lo suficientemente sólida como para gestionar un escenario en el que las bases de datos adicionales no estén sincronizadas. Se recomienda encarecidamente que cualquier operación de base de datos que se realice se realice en el contexto de una transacción para mantener un estado coherente.
@@ -45,9 +60,9 @@ La base de datos se utiliza para almacenar artefactos de formulario, configuraci
 
 * El modo **Copia de seguridad de instantáneas** indica que el sistema de formularios de AEM está en modo de copia de seguridad indefinidamente o durante un número determinado de minutos, después de lo cual el modo de copia de seguridad ya no estará habilitado. Para entrar o salir del modo de copia de seguridad de instantánea, puede utilizar una de las siguientes opciones. Después de un escenario de recuperación, el modo de copia de seguridad de instantáneas no debe estar habilitado.
 
-   * Utilice la página Valores de Copia de Seguridad de la Consola de Administración. Para entrar en el modo de instantánea, active la casilla de verificación Operar en modo de copia de seguridad segura. Anule la selección de la casilla de verificación para salir del modo de instantánea.
-   * Use el script LCBackupMode (consulte [Realizar una copia de seguridad de la base de datos, GDS y los directorios raíz de almacenamiento de contenido](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para salir del modo de copia de seguridad de instantáneas, en el argumento script, establezca el parámetro `continuousCoverage` en `false` o use la opción `leaveContinuousCoverage`.
-   * Usar la API de copia de seguridad/recuperación proporcionada. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Utilice la página Valores de Copia de Seguridad de la Consola de Administración. Para entrar en el modo de instantánea, active la casilla de verificación Operar en modo de copia de seguridad segura. Anule la selección de la casilla de verificación para salir del modo de instantánea.
+  * Use el script LCBackupMode (consulte [Realizar una copia de seguridad de la base de datos, GDS y los directorios raíz de almacenamiento de contenido](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para salir del modo de copia de seguridad de instantáneas, en el argumento script, establezca el parámetro `continuousCoverage` en `false` o use la opción `leaveContinuousCoverage`.
+  * Usar la API de copia de seguridad/recuperación proporcionada. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * El modo **Copia de seguridad móvil** indica que el sistema siempre está en modo de copia de seguridad, con una nueva sesión en modo de copia de seguridad que se inicia en cuanto se libera la sesión anterior. No hay tiempo de espera asociado al modo de copia de seguridad móvil. Cuando se llama al script LCBackupMode o a las API para dejar el modo de copia de seguridad móvil, se inicia una nueva sesión de modo de copia de seguridad móvil. Este modo es útil para admitir copias de seguridad continuas, pero sigue permitiendo que los documentos antiguos e innecesarios se limpien del directorio GDS. El modo de copia de seguridad móvil no es compatible a través de la página Copia de seguridad y recuperación. Después de un escenario de recuperación, el modo de copia de seguridad móvil sigue habilitado. Puede salir del modo de copia de seguridad continua (modo de copia de seguridad móvil) utilizando el script LCBackupMode con la opción `leaveContinuousCoverage`.
 

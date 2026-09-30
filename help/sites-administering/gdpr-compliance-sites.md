@@ -9,13 +9,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin,Developer,Leader,User
 exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 100%
-
 ---
-
 # AEM Sites: preparación para el RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -60,7 +78,7 @@ Para obtener más información sobre la administración de solicitudes de intere
 
 ## ContextHub {#contexthub}
 
-AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md).  Esto mantiene los datos específicos del visitante en el explorador, para usarlos para la personalización basada en reglas.
+AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md). Esto mantiene los datos específicos del visitante en el explorador, para usarlos para la personalización basada en reglas.
 
 De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM envía reglas a la capa de datos para tomar decisiones de personalización en el explorador.
 
@@ -79,9 +97,9 @@ Estas directrices implementan la inclusión como predeterminada. Por lo tanto, u
 * El componente de exclusión debe incluirse cada vez que se incluya el componente ContextHub.
 * Los términos y condiciones relacionados con el RGPD del sitio web deben mostrarse al visitante del sitio web, lo que le permite hacer lo siguiente:
 
-   * Aceptar
-   * Rechazar
-   * Cambiar su opción anterior
+  * Aceptar
+  * Rechazar
+  * Cambiar su opción anterior
 
 * Si el visitante de un sitio acepta los términos y condiciones del sitio, se debe eliminar la cookie de exclusión de ContextHub:
 
@@ -108,49 +126,49 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
 
 * Utilizar la consola del explorador; por ejemplo:
 
-   * Chrome:
+  * Chrome:
 
-      * Abra Herramientas para desarrolladores > Aplicación > Almacenamiento:
+    * Abra Herramientas para desarrolladores > Aplicación > Almacenamiento:
 
-         * Almacenamiento local > (sitio web) > ContextHubPersistence
-         * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
-         * Cookies > (sitio web) > SessionPersistence
+      * Almacenamiento local > (sitio web) > ContextHubPersistence
+      * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
+      * Cookies > (sitio web) > SessionPersistence
 
-   * Firefox:
+  * Firefox:
 
-      * Abra Herramientas para desarrolladores > Almacenamiento:
+    * Abra Herramientas para desarrolladores > Almacenamiento:
 
-         * Almacenamiento local > (sitio web) > ContextHubPersistence
-         * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
-         * Cookies > (sitio web) > SessionPersistence
+      * Almacenamiento local > (sitio web) > ContextHubPersistence
+      * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
+      * Cookies > (sitio web) > SessionPersistence
 
-   * Safari:
+  * Safari:
 
-      * Abra Preferencias > Avanzado > Mostrar el menú Desarrollo en la barra de menús
-      * Abra Desarrollo > Mostrar consola de JavaScript
+    * Abra Preferencias > Avanzado > Mostrar el menú Desarrollo en la barra de menús
+    * Abra Desarrollo > Mostrar consola de JavaScript
 
-         * Consola > Almacenamiento > Almacenamiento local > (sitio web) > ContextHubPersistence
-         * Consola > Almacenamiento > Almacenamiento de sesión > (sitio web) > ContextHubPersistence
-         * Consola > Almacenamiento > Cookies > (sitio web) > ContextHubPersistence
+      * Consola > Almacenamiento > Almacenamiento local > (sitio web) > ContextHubPersistence
+      * Consola > Almacenamiento > Almacenamiento de sesión > (sitio web) > ContextHubPersistence
+      * Consola > Almacenamiento > Cookies > (sitio web) > ContextHubPersistence
 
-   * Internet Explorer:
+  * Internet Explorer:
 
-      * Abra Herramientas para desarrolladores > Consola
+    * Abra Herramientas para desarrolladores > Consola
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * Utilice la API de ContextHub en la consola del explorador:
 
-   * ContextHub proporciona las siguientes capas de persistencia de datos:
+  * ContextHub proporciona las siguientes capas de persistencia de datos:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
+    El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
 
 Por ejemplo, para ver los datos almacenados en localStorage:
 
@@ -158,28 +176,28 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
 
 * Utilice la consola del explorador:
 
-   * Chrome: abra Herramientas para desarrolladores > Aplicación > Almacenamiento:
+  * Chrome: abra Herramientas para desarrolladores > Aplicación > Almacenamiento:
 
-      * Almacenamiento local > (sitio web) > ContextHubPersistence
-      * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
-      * Cookies > (sitio web) > SessionPersistence
+    * Almacenamiento local > (sitio web) > ContextHubPersistence
+    * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
+    * Cookies > (sitio web) > SessionPersistence
 
-   * Firefox: abra Herramientas para desarrolladores > Almacenamiento:
+  * Firefox: abra Herramientas para desarrolladores > Almacenamiento:
 
-      * Almacenamiento local > (sitio web) > ContextHubPersistence
-      * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
-      * Cookies > (sitio web) > SessionPersistence
+    * Almacenamiento local > (sitio web) > ContextHubPersistence
+    * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
+    * Cookies > (sitio web) > SessionPersistence
 
 * Utilice la API de ContextHub en la consola del explorador:
 
-   * ContextHub proporciona las siguientes capas de persistencia de datos:
+  * ContextHub proporciona las siguientes capas de persistencia de datos:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
+    El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
 
 Por ejemplo, para ver los datos almacenados en localStorage:
 
@@ -218,7 +236,7 @@ Para borrar la persistencia de ContextHub:
 
 * Para borrar todas las capas de persistencia de ContextHub, se debe llamar al código apropiado para todas las capas:
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (predeterminado)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

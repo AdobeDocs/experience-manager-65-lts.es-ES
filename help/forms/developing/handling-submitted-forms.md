@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2915'
+source-wordcount: '2927'
 ht-degree: 1%
-
 ---
-
 # Administrar formularios enviados {#handling-submitted-forms}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -217,10 +234,10 @@ Administrar un formulario enviado mediante la API de Forms (Java):
 
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-      * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
-      * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, por ejemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Este valor de parámetro es opcional.
-      * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
+     * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
+     * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
+     * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, por ejemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Este valor de parámetro es opcional.
+     * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
      El método `processFormSubmission` devuelve un objeto `FormsResult` que contiene los resultados del envío del formulario.
 
@@ -239,18 +256,18 @@ Administrar un formulario enviado mediante la API de Forms (Java):
 
    * Si el tipo de contenido de datos es `application/vnd.adobe.xdp+xml` o `text/xml`, cree una lógica de aplicación para recuperar los valores de datos XML.
 
-      * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
-      * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.DataInputStream` y pasando el objeto `com.adobe.idp.Document`.
-      * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `newInstance` del objeto `org.w3c.dom.DocumentBuilderFactory` estático.
-      * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `newDocumentBuilder` del objeto `org.w3c.dom.DocumentBuilderFactory`.
-      * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
-      * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
+     * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
+     * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.DataInputStream` y pasando el objeto `com.adobe.idp.Document`.
+     * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `newInstance` del objeto `org.w3c.dom.DocumentBuilderFactory` estático.
+     * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `newDocumentBuilder` del objeto `org.w3c.dom.DocumentBuilderFactory`.
+     * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
+     * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
 
    * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos de PDF enviados como un archivo de PDF.
 
-      * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
-      * Cree un objeto `java.io.File` mediante su constructor público. Asegúrese de especificar PDF como la extensión del nombre de archivo.
-      * Rellene el archivo PDF invocando el método `copyToFile` del objeto `com.adobe.idp.Document` y pasando el objeto `java.io.File`.
+     * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
+     * Cree un objeto `java.io.File` mediante su constructor público. Asegúrese de especificar PDF como la extensión del nombre de archivo.
+     * Rellene el archivo PDF invocando el método `copyToFile` del objeto `com.adobe.idp.Document` y pasando el objeto `java.io.File`.
 
 **Consulte también**
 
@@ -288,17 +305,17 @@ Administrar un formulario enviado mediante la API de Forms (servicio web):
    * Crear un objeto `RenderOptionsSpec` mediante su constructor. Establezca el valor de configuración regional invocando el método `setLocale` del objeto `RenderOptionsSpec` y pasando un valor de cadena que especifique el valor de configuración regional.
    * Invoque el método `processFormSubmission` del objeto `FormsService` y pase los siguientes valores:
 
-      * El objeto `BLOB` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
-      * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método.
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `javax.xml.rpc.holders.ShortHolder` vacío que ha rellenado el método.
-      * Un objeto `MyArrayOf_xsd_anyTypeHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar los archivos adjuntos enviados junto con el formulario.
-      * Un objeto `FormsResultHolder` vacío que el método rellena con el formulario enviado.
+     * El objeto `BLOB` que contiene los datos del formulario.
+     * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
+     * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método.
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `javax.xml.rpc.holders.ShortHolder` vacío que ha rellenado el método.
+     * Un objeto `MyArrayOf_xsd_anyTypeHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar los archivos adjuntos enviados junto con el formulario.
+     * Un objeto `FormsResultHolder` vacío que el método rellena con el formulario enviado.
 
      El método `processFormSubmission` rellena el parámetro `FormsResultHolder` con los resultados del envío del formulario.
 
@@ -312,21 +329,21 @@ Administrar un formulario enviado mediante la API de Forms (servicio web):
 
    * Si el tipo de contenido de datos es `application/vnd.adobe.xdp+xml` o `text/xml`, cree una lógica de aplicación para recuperar los valores de datos XML.
 
-      * Cree un objeto `BLOB` invocando el método `getOutputContent` del objeto `FormsResult`.
-      * Cree una matriz de bytes invocando el método `getBinaryData` del objeto `BLOB`.
-      * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.ByteArrayInputStream` y pasando la matriz de bytes.
-      * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `newInstance` del objeto `org.w3c.dom.DocumentBuilderFactory` estático.
-      * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `newDocumentBuilder` del objeto `org.w3c.dom.DocumentBuilderFactory`.
-      * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
-      * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
+     * Cree un objeto `BLOB` invocando el método `getOutputContent` del objeto `FormsResult`.
+     * Cree una matriz de bytes invocando el método `getBinaryData` del objeto `BLOB`.
+     * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.ByteArrayInputStream` y pasando la matriz de bytes.
+     * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `newInstance` del objeto `org.w3c.dom.DocumentBuilderFactory` estático.
+     * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `newDocumentBuilder` del objeto `org.w3c.dom.DocumentBuilderFactory`.
+     * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
+     * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
 
    * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos de PDF enviados como un archivo de PDF.
 
-      * Cree un objeto `BLOB` invocando el método `getOutputContent` del objeto `FormsResult`.
-      * Cree una matriz de bytes invocando el método `getBinaryData` del objeto `BLOB`.
-      * Cree un objeto `java.io.File` mediante su constructor público. Asegúrese de especificar PDF como la extensión del nombre de archivo.
-      * Cree un objeto `java.io.FileOutputStream` utilizando su constructor y pasando el objeto `java.io.File`.
-      * Rellene el archivo PDF invocando el método `write` del objeto `java.io.FileOutputStream` y pasando la matriz de bytes.
+     * Cree un objeto `BLOB` invocando el método `getOutputContent` del objeto `FormsResult`.
+     * Cree una matriz de bytes invocando el método `getBinaryData` del objeto `BLOB`.
+     * Cree un objeto `java.io.File` mediante su constructor público. Asegúrese de especificar PDF como la extensión del nombre de archivo.
+     * Cree un objeto `java.io.FileOutputStream` utilizando su constructor y pasando el objeto `java.io.File`.
+     * Rellene el archivo PDF invocando el método `write` del objeto `java.io.FileOutputStream` y pasando la matriz de bytes.
 
 **Consulte también**
 

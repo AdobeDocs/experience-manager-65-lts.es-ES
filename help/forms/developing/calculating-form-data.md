@@ -10,14 +10,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 1%
-
 ---
-
 # Calcular datos de formulario {#calculating-form-data}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -150,10 +165,10 @@ Calcular datos de formulario mediante la API de Forms (Java):
    * Para recuperar datos de formulario que contengan un script de cálculo, cree un objeto `com.adobe.idp.Document` utilizando su constructor e invocando el método `getInputStream` del objeto `javax.servlet.http.HttpServletResponse` desde el constructor.
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-      * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML y PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
+     * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
+     * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML y PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+     * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
      El método `processFormSubmission` devuelve un objeto `FormsResult` que contiene los resultados del envío del formulario.
 
@@ -197,17 +212,17 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
    * Crear un objeto `RenderOptionsSpec` mediante su constructor. Establezca el valor de configuración regional invocando el método `setLocale` del objeto `RenderOptionsSpec` y pasando un valor de cadena que especifique el valor de configuración regional.
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-      * El objeto `BLOB` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno que incluyen todos los encabezados HTTP relevantes. Por ejemplo, puede especificar el siguiente valor de cadena: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución. Para obtener más información, consulte .
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método.
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `BLOBHolder` vacío que ha rellenado el método.
-      * Un objeto `javax.xml.rpc.holders.ShortHolder` vacío que ha rellenado el método.
-      * Un objeto `MyArrayOf_xsd_anyTypeHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar los archivos adjuntos enviados junto con el formulario.
-      * Un objeto `FormsResultHolder` vacío que el método rellena con el formulario enviado.
+     * El objeto `BLOB` que contiene los datos del formulario.
+     * Un valor de cadena que especifica variables de entorno que incluyen todos los encabezados HTTP relevantes. Por ejemplo, puede especificar el siguiente valor de cadena: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
+     * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución. Para obtener más información, consulte .
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método.
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `BLOBHolder` vacío que ha rellenado el método.
+     * Un objeto `javax.xml.rpc.holders.ShortHolder` vacío que ha rellenado el método.
+     * Un objeto `MyArrayOf_xsd_anyTypeHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar los archivos adjuntos enviados junto con el formulario.
+     * Un objeto `FormsResultHolder` vacío que el método rellena con el formulario enviado.
 
      El método `processFormSubmission` rellena el parámetro `FormsResultHolder` con los resultados del envío del formulario. El método `processFormSubmission` devuelve un objeto `FormsResult` que contiene los resultados del envío del formulario.
 

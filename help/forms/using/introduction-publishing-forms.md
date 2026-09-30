@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 62%
-
+source-wordcount: '1075'
+ht-degree: 60%
 ---
-
 # Introducción a la publicación de formularios en un portal{#introduction-to-publishing-forms-on-a-portal}
 
 ## Se aplica a {#applies-to}
@@ -77,7 +90,7 @@ El portal de Forms permite mostrar una lista de los formularios del repositorio 
 
 1. **Enumerar borradores y formularios enviados en una página del portal de Forms**: agregue y configure el componente Borradores y envíos en la página del portal de Forms. El componente muestra una lista de todos los formularios que están en estado de borrador y los formularios que ya se han enviado.
 
-   Para permitir que un formulario adaptable enviado aparezca en la pestaña Envíos, establezca la acción **Acción de envío** en **[Acción de envío del portal de formularios](configuring-submit-actions.md).** También puede habilitar la opción Enviar del portal de Forms. Cada vez que un usuario envía el formulario, este se agrega a la pestaña Envíos.
+   Para permitir que un formulario adaptable enviado aparezca en la pestaña Envíos, establezca la **acción de envío** en **[Acción de envío del portal de Forms](configuring-submit-actions.md).** También puede activar la opción Forms Portal Submit. Cada vez que un usuario envía el formulario, este se agrega a la pestaña Envíos.
 
 1. **Configurar el almacenamiento de los datos de los borradores y los formularios enviados:** los datos de los borradores y los envíos se almacenan en el repositorio de AEM de forma predeterminada. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. [Configure el componente Portal de Forms para guardar datos en una ubicación segura](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalización de los componentes del portal de Forms:** [Personalice las plantillas de página del portal de Forms](../../forms/using/customizing-templates-forms-portal-components.md) para proporcionar un aspecto distintivo a los componentes.

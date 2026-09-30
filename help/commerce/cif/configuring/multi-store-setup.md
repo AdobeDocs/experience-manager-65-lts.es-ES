@@ -9,20 +9,28 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 11%
-
 ---
-
 # Configuración de varias tiendas de Commerce {#multi-store}
 
 Los componentes principales de AEM CIF se pueden utilizar en varias estructuras del sitio de AEM y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Adobe Commerce o vistas de tiendas. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
 
 Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la tienda Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32819/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Las funciones de administración de varios sitios de AEM de Live Copy y de copia de idioma se utilizan con Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
@@ -32,7 +40,7 @@ Para conectar un sitio de AEM y los componentes principales de AEM CIF también 
 
 ## Configuración {#configuration}
 
-1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
+1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Asegúrese de que funcione la conexión entre AEM y Adobe Commerce.
 
@@ -58,7 +66,7 @@ Para conectar un sitio de AEM y los componentes principales de AEM CIF también 
 
 ## Recursos adicionales
 
-* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
+* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componentes principales de AEM CIF: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Uso del Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=es)
+* [Uso del Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)

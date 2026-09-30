@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3487'
 ht-degree: 2%
-
 ---
-
 # Imágenes inteligentes {#smart-imaging}
 
 Smart Imaging aplica las características de visualización únicas de cada usuario para ofrecer las imágenes adecuadas optimizadas automáticamente para su experiencia, lo que resulta en un mejor rendimiento y participación.
@@ -90,7 +106,7 @@ Al activar la conversión de formato del explorador adjuntando `bfc=on` a la dir
 
 Puede desactivar Imágenes inteligentes adjuntando `bfc=off` a la dirección URL de la imagen.
 
-Consulte también [bfc](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
+Consulte también [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
 ### Acerca de la optimización de la proporción de píxeles del dispositivo (dpr) {#dpr}
 
@@ -244,29 +260,29 @@ Al crear el caso de soporte, especifique qué funciones de imágenes inteligente
 
    * **Detalles de contacto principal:**
 
-      * Proporcione su nombre, correo electrónico y número de teléfono.
+     * Proporcione su nombre, correo electrónico y número de teléfono.
 
    * **Funciones de imágenes inteligentes para habilitar:**
 
-      * Enumere las funcionalidades que desee para su cuenta:
+     * Enumere las funcionalidades que desee para su cuenta:
 
-         * Conversión de formato del explorador: WebP o AVIF
-         * Optimización del ancho de banda de red
-         * DPR: DPR requiere ajustes del lado del cliente para determinar el `dprValue` correcto. Por lo tanto, Adobe recomienda habilitar el DPR mediante direcciones URL adjuntando `dpr=on,dprValue`.
+       * Conversión de formato del explorador: WebP o AVIF
+       * Optimización del ancho de banda de red
+       * DPR: DPR requiere ajustes del lado del cliente para determinar el `dprValue` correcto. Por lo tanto, Adobe recomienda habilitar el DPR mediante direcciones URL adjuntando `dpr=on,dprValue`.
 
    * **Dominio para imágenes inteligentes:**
 
-      * Enumerar todos los dominios relevantes, como *`company.com`* o *`mycompany.scene7.com`*
-      * Imágenes inteligentes admite dominios genéricos y personalizados.
-      * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
+     * Enumerar todos los dominios relevantes, como *`company.com`* o *`mycompany.scene7.com`*
+     * Imágenes inteligentes admite dominios genéricos y personalizados.
+     * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
 
-         1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
-         1. Busque el campo **[!UICONTROL Nombre de servidor publicado]** para confirmar su dominio.
-         1. Compruebe que está utilizando la CDN de Adobe en lugar de una administrada por otro proveedor.
+       1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+       1. Busque el campo **[!UICONTROL Nombre de servidor publicado]** para confirmar su dominio.
+       1. Compruebe que está utilizando la CDN de Adobe en lugar de una administrada por otro proveedor.
 
    * **Indicar compatibilidad con HTTP/2:**
 
-      * Especifique si necesita imágenes inteligentes para trabajar sobre HTTP/2.
+     * Especifique si necesita imágenes inteligentes para trabajar sobre HTTP/2.
 
 1. La Asistencia al cliente de Adobe habilita las funciones de imágenes inteligentes solicitadas de forma predeterminada, lo que elimina la necesidad de anexar parámetros manualmente a las direcciones URL.
 1. Adobe recomienda establecer el Tiempo de vida (TTL) en al menos 24 horas para maximizar el rendimiento mediante el almacenamiento en caché.
@@ -340,7 +356,8 @@ Este encabezado indica lo siguiente:
 >
 >Si el valor de `X-Adobe-Smart-Imaging` es -1 y WebP aún se está entregando, Imágenes inteligentes estará activo. Sin embargo, las ventajas de tamaño no se calcularon debido a que la caché no está actualizada. Puede usar `cache=update` (solo una vez) en la dirección URL de la imagen para solucionar este problema.
 >Ejemplo de uso del modificador:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Para invalidar toda la caché, debe crear un caso de compatibilidad.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>Para invalidar toda la caché, debe crear un caso de soporte.
 
 +++
 

@@ -8,20 +8,33 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2105'
-ht-degree: 79%
-
+source-wordcount: '2195'
+ht-degree: 81%
 ---
-
 # Configuración de las fuentes de datos{#configure-data-sources}
 
 ## Se aplica a {#applies-to}
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Integración de datos](do-not-localize/data-integeration.png)
@@ -132,10 +145,10 @@ Haga lo siguiente para configurar los servicios RESTful:
    * Seleccione la URL o el archivo en la lista desplegable Fuente Swagger y especifique la URL Swagger al archivo de definición Swagger o cargue el archivo Swagger de su sistema de archivos local.
    * En función de la entrada Fuente Swagger, los siguientes campos están rellenados previamente con valores:
 
-      * Esquema: Los protocolos de transferencia utilizados por la API REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente Swagger.
-      * Host: El nombre de dominio o la dirección IP del host que sirve la API de REST. Es un campo obligatorio.
-      * Ruta base: El prefijo URL de todas las rutas de API. Es un campo opcional.\
-        Si es necesario, edite los valores rellenados previamente para estos campos.
+     * Esquema: Los protocolos de transferencia utilizados por la API REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente Swagger.
+     * Host: El nombre de dominio o la dirección IP del host que sirve la API de REST. Es un campo obligatorio.
+     * Ruta base: El prefijo URL de todas las rutas de API. Es un campo opcional.\
+       Si es necesario, edite los valores rellenados previamente para estos campos.
 
    * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Clave de API, Autenticación personalizada o Autenticación mutua) para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
@@ -147,14 +160,14 @@ Haga lo siguiente para configurar los servicios RESTful:
 
 ### Configuración del cliente HTTP del modelo de datos de formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] forma el modelo de datos al integrarse con los servicios web RESTful, ya que el origen de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+El modelo de datos de formulario [!DNL Experience Manager Forms], al integrarse con servicios web RESTful como fuente de datos, incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos de formulario:
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La dirección URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
-1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: &#x200B;]
+1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: ]
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
@@ -182,7 +195,7 @@ Los servicios web basados en SOAP se describen utilizando [Especificaciones del 
    * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua) para acceder al servicio SOAP y facilitar los detalles correspondientes para la autenticación.
 
      Si selecciona **[!UICONTROL Token X509]** como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de clave]**. Especifique el tiempo, en segundos, hasta que la solicitud de autenticación sea válida, en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
+     Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de la clave]**. Especifique el tiempo, en segundos, durante los que la solicitud de autenticación será válida en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
 
      Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
 
@@ -194,8 +207,8 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
->El modelo de datos de formulario admite [OData versión 4](https://www.odata.org/documentation/).
->Para obtener una guía paso a paso sobre cómo configurar Microsoft Dynamics 365, en línea o de forma local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
+>Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 

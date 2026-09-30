@@ -7,13 +7,31 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: 3757f625b08650514ecaf07d4e2d13e1be6d5f0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 94%
-
 ---
-
 # Instalación y configuración de un flujo de trabajo centrado en Forms de OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## Introducción {#introduction}
@@ -58,15 +76,15 @@ Antes de empezar a instalar y configurar el flujo de trabajo centrado en Forms d
 * La ruta de instalación de la instancia de AEM no contiene espacios en blanco.
 * Se está ejecutando una instancia de AEM. En la terminología de AEM, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor en el modo Autor o Publicación. Se necesita al menos una instancia de AEM (de autor o procesamiento) para ejecutar el flujo de trabajo centrado en Forms de OSGi:
 
-   * **Autor**: la instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
-   * **Procesamiento:** una instancia de procesamiento es una instancia de [autor de AEM protegida](/help/forms/using/hardening-securing-aem-forms-environment.md). Puede configurar una instancia de autor y protegerla después de realizar la instalación.
+  * **Autor**: la instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
+  * **Procesamiento:** una instancia de procesamiento es una instancia de [autor de AEM protegida](/help/forms/using/hardening-securing-aem-forms-environment.md). Puede configurar una instancia de autor y protegerla después de realizar la instalación.
 
-   * **Publicación**: la instancia de AEM que sirve el contenido publicado al público a través de Internet o de una red interna.
+  * **Publicación**: la instancia de AEM que sirve el contenido publicado al público a través de Internet o de una red interna.
 
 * Se cumplen los requisitos de memoria. El paquete de complementos de AEM Forms requiere:
 
-   * 15 GB de espacio temporal para instalaciones basadas en Microsoft Windows.
-   * 6 GB de espacio temporal para instalaciones basadas en UNIX.
+  * 15 GB de espacio temporal para instalaciones basadas en Microsoft Windows.
+  * 6 GB de espacio temporal para instalaciones basadas en UNIX.
 
 * Requisitos adicionales para sistemas basados en UNIX: si está utilizando un sistema operativo basado en UNIX, instale los siguientes paquetes desde los medios de instalación del sistema operativo correspondiente.
 

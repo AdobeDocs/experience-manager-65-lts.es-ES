@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6215'
 ht-degree: 3%
-
 ---
-
 # Vídeos interactivos{#interactive-videos}
 
 Puede crear fácilmente vídeos interactivos (también conocidos como vídeos de ventas) que promuevan la conversión directamente desde el vídeo. La participación del cliente con el vídeo se produce en un panel junto al reproductor de vídeo, donde el servicio relacionado, la información o las miniaturas de productos se desplazan hasta la vista en función de lo que aparece en el vídeo. Los clientes pueden seleccionar la miniatura y vincularse directamente al servicio, añadir el artículo a un carro de compras para su compra inmediata o vincularse a una página web para obtener más información.
@@ -33,7 +44,7 @@ Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostracione
 
 * Seleccione la miniatura si desea pausar el vídeo y abrir la vista rápida del producto. Por ejemplo, seleccione la imagen en miniatura de KitchenAid del vídeo para obtener una vista de giro de 360 grados de la mesa de mezclas o aumente la imagen para ver los detalles de la mesa de mezclas.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=es. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Fotograma de un vídeo interactivo de ventas](assets/chlimage_1-126.png) *Captura de fotograma de vídeo de un vídeo interactivo de ventas.*
 
@@ -63,13 +74,13 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 Busque el encabezado **Ejemplo** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en esta página web de demostración inicial que *aún no* tiene interactividad agregada:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Los **ejemplos** sirven para ilustrar los pasos que se siguen para integrar vídeos interactivos en su propio sitio web.
 
 Cuando termine el tutorial en la última sección Ejemplo, la página web de demostración final con el vídeo interactivo completamente integrado tendrá el siguiente aspecto:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 Pasos del vídeo interactivo:
 
@@ -152,10 +163,10 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
     <td><p>SKU único, encontrado en la cadena de consulta.</p> </td>
     <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las miniaturas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -171,9 +182,9 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
     <td><p>SKU e ID de categoría en la cadena de consulta.</p> </td>
     <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de miniaturas son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
       <li>El SKU es <code>305466</code> y <code>categoryId</code> es <code>1100004</code></li>
@@ -188,7 +199,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 Cuando se aplica el método anterior al sitio web de ejemplo, tiene una página web con varias miniaturas de productos, cada una con un botón &quot;VER MÁS&quot;:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Después de activar todas las vistas rápidas de productos disponibles en la página, obtiene la siguiente lista de solicitudes de vista rápida realizadas al back-end:
 
@@ -257,7 +268,7 @@ Para cargar un vídeo y sus recursos de miniaturas asociados:
 1. Cargue el vídeo y los recursos de miniaturas asociados a la carpeta o carpetas que desee.
 
    Consulte [Cargar recursos](/help/assets/manage-assets.md).
-Consulte [Cargar recursos mediante la programación de trabajos de FTP](/help/assets/manage-assets.md).
+   Consulte [Cargar recursos mediante la programación de trabajos de FTP](/help/assets/manage-assets.md).
 
    Ahora añada interactividad al vídeo.
 
@@ -315,7 +326,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
         <td><strong>El valor predeterminado de Duración del segmento es...</strong></td>
         </tr>
         <tr>
-        <td>3 minutes or more</td>
+        <td>3 minutos o más</td>
         <td>60 segundos</td>
         </tr>
         <tr>
@@ -327,89 +338,89 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
         <td>20 segundos<br /> </td>
         </tr>
         <tr>
-        <td>30-60 seconds</td>
+        <td>30 a 60 segundos</td>
         <td>10 segundos</td>
         </tr>
         <tr>
-        <td>30 seconds or less</td>
+        <td>30 segundos o menos</td>
         <td>5 segundos</td>
         </tr>
       </tbody>
     </table>
 
-   The video timeline uses as much screen real estate as what is made available to it. As such, the segments you added maintain their correct width when the browser is resized.
+   La cronología del vídeo utiliza tantos bienes raíces de pantalla como lo que está disponible para ella. Como tal, los segmentos que ha agregado mantienen su anchura correcta cuando se cambia el tamaño del explorador.
 
-   To illustrate, the following three screenshots are using the same video. Notice that the width of each segment changes depending on the Timeline Scale setting.
+   Para ilustrar, las tres capturas de pantalla siguientes utilizan el mismo vídeo. Observe que la anchura de cada segmento cambia según la configuración Escala de cronología.
 
    ![chlimage_1-23](assets/chlimage_1-129.png)
 
-   Screenshot A
+   Captura de pantalla A
 
-   Screenshot A above shows you the default view of a 29-second product video. The Timeline Scale is set at the default of 5 seconds.
+   La captura de pantalla A anterior muestra la vista predeterminada de un vídeo de producto de 29 segundos. La Escala de cronología se establece en 5 segundos como valor predeterminado.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
-   Screenshot B
+   Captura de pantalla B
 
-   In Screenshot B above, the Timeline Scale slider was dragged from the default of 5 seconds to 3 seconds. Notice that the individual Timeline Scale time stamps are now all set at 3-second intervals.
+   En la captura de pantalla B anterior, el deslizador Escala de cronología se arrastró del valor predeterminado de 5 a 3 segundos. Tenga en cuenta que las marcas de tiempo de escala de tiempo individuales ahora están configuradas en intervalos de 3 segundos.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
-   Screenshot C
+   Captura de pantalla C
 
-   In Screenshot C above, the Timeline Scale setting was moved to 8 seconds. Notice how the segments that contain product thumbnails have shrunk. Zooming out in this manner is useful if you have a long video and you want to be able to see an overview of more segments that would normally fit in the width of the page.
+   En la captura de pantalla C anterior, la configuración Escala de cronología se movió a 8 segundos. Observe cómo se han reducido los segmentos que contienen miniaturas de productos. Alejar de esta manera es útil si tiene un vídeo largo y desea poder ver una descripción general de más segmentos que normalmente se ajustarían al ancho de la página.
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * To adjust a segment&#39;s start time and end time.
+   * Para ajustar la hora de inicio y la hora de finalización de un segmento.
 
-     Select a segment, then drag the leading or trailing blue oval to adjust the start or end time, respectively. The video frame displayed moves to the appropriate time in the video, based on your adjustments. The movement of the timeline segment is restricted based on any adjacent segments in the timeline. The minimum allowed segment time is one second.
+     Seleccione un segmento y, a continuación, arrastre el óvalo azul inicial o final para ajustar la hora de inicio o finalización, respectivamente. El fotograma de vídeo mostrado se desplaza al momento apropiado del vídeo, según los ajustes que haya realizado. El movimiento del segmento de la cronología está restringido en función de cualquier segmento adyacente de la cronología. El tiempo mínimo permitido para el segmento es de un segundo.
 
-     Use the following navigation shortcuts to quickly check and fine-tune your video segments:
+     Utilice los siguientes métodos abreviados de navegación para comprobar y ajustar rápidamente los segmentos de vídeo:
 
-      * To seek the video directly to the beginning of that segment, select the leading blue oval.
-      * To seek the video directly to the end of that segment, select the trailing blue oval.
-      * To return video playback to the start of that segment, select the entire segment.
+     * Para buscar el vídeo directamente al principio de ese segmento, seleccione el óvalo azul inicial.
+     * Para buscar el vídeo directamente al final de ese segmento, seleccione el óvalo azul final.
+     * Para devolver la reproducción de vídeo al principio de ese segmento, seleccione todo el segmento.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
-   Repositioning the ending of a timeline segment
+   Reposición del final de un segmento de cronología
 
-   * To delete a segment
+   * Para eliminar un segmento
 
-     Select the last segment that is on the timeline, then on the toolbar, select **[!UICONTROL Delete Segment]**. If two or more segments are selected, **[!UICONTROL Delete Segment]** is disabled.
+     Seleccione el último segmento de la cronología y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Eliminar segmento]**. Si se seleccionan dos o más segmentos, se deshabilita **[!UICONTROL Eliminar segmento]**.
 
-     You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then select **[!UICONTROL Delete Segment]**.
+     Solo puede eliminar el último segmento. Por ejemplo, si desea eliminar todos los segmentos de la cronología, siempre debe seleccionar el último y, a continuación, seleccionar **[!UICONTROL Eliminar segmento]**.
 
-1. Select a time segment to which you want to associate one or more thumbnail images.
-1. To the right of the video, select the **[!UICONTROL Content]** tab.
-1. Under the Content tab, select **[!UICONTROL Select Assets]**, then browse and select all the image assets that you want to use with your video. The selected assets are added to the Asset Selector panel in the Content tab.
+1. Seleccione un segmento de tiempo al que desee asociar una o varias imágenes en miniatura.
+1. A la derecha del vídeo, seleccione la ficha **[!UICONTROL Contenido]**.
+1. En la pestaña Contenido, seleccione **[!UICONTROL Seleccionar Assets]** y, a continuación, examine y seleccione todos los recursos de imagen que desee usar con el vídeo. Los recursos seleccionados se agregan al panel Selector de recursos en la pestaña Contenido.
 
-1. In the asset selector below the Content tab, do any of the following:
+1. En el selector de recursos que se encuentra debajo de la pestaña Contenido, realice una de las siguientes acciones:
 
    <table>
       <tbody>
         <tr>
-        <td>To associate a thumbnail to the selected timeline segment</td>
-        <td><p>Select the image in the asset selector panel on the right.</p> <p>You can add as many thumbnails as you want to a timeline segment. For each image you select, a check mark appears over the image in the asset selector.</p> </td>
+        <td>Para asociar una miniatura al segmento de cronología seleccionado</td>
+        <td><p>Seleccione la imagen en el panel selector de recursos de la derecha.</p> <p>Puede agregar tantas miniaturas como desee a un segmento de cronología. Para cada imagen que seleccione, aparecerá una marca de verificación sobre la imagen en el selector de recursos.</p> </td>
         </tr>
         <tr>
-        <td>To remove a thumbnail from the selected timeline segment</td>
-        <td><p>Do any of the following:</p>
+        <td>Para quitar una miniatura del segmento de escala de tiempo seleccionado</td>
+        <td><p>Realice una de las siguientes acciones:</p>
           <ul>
-          <li>In the asset selector panel, select an image with a check mark to deselect it. The image asset is removed from the timeline segment.<br /> </li>
-          <li>In the selected timeline segment, select an image, then on the toolbar, select <strong>Delete Product</strong>.</li>
+          <li>En el panel del selector de recursos, seleccione una imagen con una marca de verificación para anular su selección. El recurso de imagen se ha eliminado del segmento de escala de tiempo.<br /> </li>
+          <li>En el segmento de cronología seleccionado, seleccione una imagen y, en la barra de herramientas, seleccione <strong>Eliminar producto</strong>.</li>
           </ul> </td>
         </tr>
       </tbody>
     </table>
 
-   ![Asset picker](assets/chlimage_1-133.png)
+   ![Selector de recursos](assets/chlimage_1-133.png)
 
-   Selecting an image in the asset selector panel adds it to the selected timeline segment.
+   Al seleccionar una imagen en el panel selector de recursos, se agrega al segmento de cronología seleccionado.
 
-1. Select a single thumbnail image within one of the timeline segments, then select the **[!UICONTROL Actions]** tab.
-1. Do any of the following:
+1. Seleccione una sola imagen en miniatura en uno de los segmentos de la cronología y, a continuación, seleccione la ficha **[!UICONTROL Acciones]**.
+1. Realice una de las siguientes acciones:
    <table> 
     <tbody> 
       <tr> 
@@ -542,7 +553,7 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 
 Uso del sitio web de demostración como ejemplo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Observe que el código incrustado es estándar:
 
@@ -573,7 +584,7 @@ Observe que el código incrustado es estándar:
 
 La integración es tan sencilla como eliminar el código de incrustación de vídeo y sustituirlo por el código de incrustación de vídeo interactivo de Experience Manager. Puede ver los resultados en la siguiente dirección URL. Aunque muestra un vídeo interactivo presente en la página, aún no está integrado con la vista rápida existente:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integración de un vídeo interactivo con una vista rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -662,27 +673,27 @@ El proceso de construir la URL de vista rápida es opuesto al proceso de identif
   <tbody>
   <tr>
     <td><p>SKU único, encontrado en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU único, encontrado en la ruta URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoría en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -773,7 +784,7 @@ El código fuente completo es el siguiente:
 
 El sitio web de demostración final con el vídeo interactivo completamente integrado tiene el siguiente aspecto:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=es)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 

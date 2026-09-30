@@ -1,18 +1,32 @@
 ---
 title: Creación de proyectos de traducción
-description: Aprenda a crear proyectos de traducción en  [!DNL Adobe Experience Manager].
+description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Developer,Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
 exl-id: e6b78580-a96e-4560-8f25-b62bb04b060e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ee8e0f18-03e5-48ca-a013-04a577cd9a60
+    internal-label: Translation
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1897'
 ht-degree: 16%
-
 ---
-
 # Creación de proyectos de traducción {#creating-translation-projects}
 
 Para crear una copia de idioma, déclencheur uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario [!DNL Experience Manager].

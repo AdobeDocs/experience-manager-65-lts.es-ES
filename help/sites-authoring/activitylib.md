@@ -10,13 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: b5fc6cf5-fffd-4ee9-91d4-d10e532c3a11
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1941'
 ht-degree: 75%
-
 ---
-
 # Administración de actividades{#managing-activities}
 
 La consola Actividades permite crear, organizar y administrar las [actividades](/help/sites-authoring/personalization.md#activities) de marketing de las marcas.
@@ -80,7 +95,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo de actividad: &#x200B;** El tipo de actividad: prueba A/B o segmentación de experiencias
+* **Tipo de actividad: **El tipo de actividad: prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de público y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
@@ -108,7 +123,7 @@ Para añadir una actividad, haga lo siguiente:
 1. Agregue una o varias experiencias a la actividad. Haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
 
-   1. Haga clic en **Seleccionar audiencia &#x200B;** y seleccione el segmento de destino de la experiencia.
+   1. Haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
    1. Haga clic en **Agregar experiencia**, escriba un nombre y haga clic en **Aceptar**.
 
    1. Haga clic en **Siguiente**.

@@ -8,18 +8,29 @@ mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10112'
+source-wordcount: '10238'
 ht-degree: 3%
-
 ---
-
 # Administración de recursos digitales {#manage-digital-assets}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 En [!DNL Adobe Experience Manager Assets], puede hacer más que almacenar y administrar sus recursos. [!DNL Experience Manager] ofrece capacidades de administración de recursos de nivel empresarial. Puede editar y compartir recursos, ejecutar búsquedas avanzadas y crear varias representaciones de decenas de formatos de archivo compatibles. También puede administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y administrar metadatos, colaborar mediante anotaciones y mucho más.
@@ -58,7 +69,7 @@ Puede cargar varios tipos de recursos (incluidas imágenes, archivos PDF, archiv
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!IMPORTANT]
 >
@@ -104,7 +115,7 @@ Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no
 
 >[!CAUTION]
 >
->La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=es) y establece `timeout configuration` en menos del tiempo que tarda un recurso en cargarse, se producirá un tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
+>La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) y establece `timeout configuration` en menos del tiempo que tarda un recurso en cargarse, se producirá un tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
 >
 >Teniendo en cuenta el tiempo de espera de caducidad de la credencial, la latencia, el ancho de banda y las cargas simultáneas esperadas, el valor más alto que le permite asegurarse de que se selecciona lo siguiente:
 >
@@ -167,7 +178,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [&#x200B; (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>En el modo Dynamic Media - Scene7, el tamaño predeterminado del archivo de carga de recursos es de 2 GB o menos. Para configurar la carga de recursos de más de 2 GB y hasta 15 GB, consulte [ (opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
@@ -179,7 +190,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 1. Si elige un cliente FTP, inicie sesión en el servidor FTP con el nombre de usuario y la contraseña de FTP que recibió del correo electrónico de aprovisionamiento. En el cliente FTP, cargue archivos o carpetas en el servidor FTP.
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=es#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó sus credenciales e inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
@@ -198,7 +209,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 1. En la esquina inferior derecha de la página Cargar, haga clic en **[!UICONTROL Enviar carga]**.
 
    Para ver el progreso de la carga, en la barra de navegación global, haga clic en **[!UICONTROL Trabajos]**. La página Trabajos muestra el progreso de la carga. Puede seguir trabajando en [!DNL Experience Manager] y volver a la página Trabajos en Dynamic Media Classic en cualquier momento para revisar un trabajo en curso.
-Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]** junto al campo Duración.
+   Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]** junto al campo Duración.
 
 #### Opciones del trabajo de carga {#upload-job-options}
 
@@ -884,7 +895,7 @@ Puede crear versiones en [!DNL Experience Manager] en los siguientes casos:
 * Cargue un recurso con el mismo nombre de archivo que exista en la misma ubicación. Puede ser un recurso nuevo o una versión modificada del mismo recurso.
 * Edite una imagen en [!DNL Experience Manager] y guarde los cambios.
 * Editar los metadatos de un recurso.
-* Use la aplicación de escritorio [!DNL Experience Manager] para desproteger un recurso existente, editarlo y [cargar los cambios](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#edit-assets-upload-updated-assets).
+* Use la aplicación de escritorio [!DNL Experience Manager] para desproteger un recurso existente, editarlo y [cargar los cambios](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas procesadas de las mismas imágenes, por ejemplo, una representación en PNG de un archivo JPEG cargado.
 
@@ -959,4 +970,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html).

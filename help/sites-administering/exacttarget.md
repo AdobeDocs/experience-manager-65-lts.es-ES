@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: cd36d432-ad42-41be-abcf-f74ef2e42544
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 3%
@@ -64,7 +75,7 @@ Para crear una configuración de ExactTarget en Herramientas:
 
 1. En la página de bienvenida, haga clic en **Herramientas**. O bien, vaya directamente a `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Services** y después **ExactTarget**.
-1. Haga clic en **Nuevo** para abrir la ventana **Crear página &#x200B;**.
+1. Haga clic en **Nuevo** para abrir la ventana **Crear página **.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

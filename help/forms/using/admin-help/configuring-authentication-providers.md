@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
-
 ---
-
 # Configurar proveedores de autenticación {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -160,7 +175,7 @@ Sin el aprovisionamiento Just-In-Time, cuando un usuario se autentica correctame
 1. Para crear un dominio, haga clic en Nuevo dominio empresarial o Nuevo dominio híbrido. Para editar un dominio existente, haga clic en el nombre del dominio.
 1. Seleccione Habilitar aprovisionamiento Just In Time.
 
-   ***nota &#x200B;**: Si falta la casilla de verificación Habilitar aprovisionamiento justo a tiempo, haga clic en Inicio > Configuración > Administración de usuarios > Configuración > Atributos avanzados del sistema y, a continuación, haga clic en Recargar.*
+   ***nota **: Si falta la casilla de verificación Habilitar aprovisionamiento justo a tiempo, haga clic en Inicio > Configuración > Administración de usuarios > Configuración > Atributos avanzados del sistema y, a continuación, haga clic en Recargar.*
 
 1. Agregar proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un creador de identidad y un proveedor de asignación registrados. (Consulte [Configuración de proveedores de autenticación](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Guarde el dominio.

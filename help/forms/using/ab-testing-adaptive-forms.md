@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5e7165e5-b2bf-4716-82d3-de02f669cd6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 54%
-
 ---
-
 # Crear y administrar pruebas A/B para formularios adaptables{#create-and-manage-a-b-test-for-adaptive-forms}
 
 [!BADGE Suspendido]{type=negative tooltip="Esta función acaba ahora con su vida útil"}
@@ -44,7 +60,8 @@ El código de cliente identifica la cuenta de cliente de Adobe Target y se utili
 
 1. En el servidor de AEM, vaya a https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 
-1. En la sección **Adobe Target**, haga clic en **Mostrar configuraciones** y, a continuación, en el icono **+** para agregar una configuración.Si está configurando un destino por primera vez, haga clic en **Configurar ahora.**
+1. En la sección **Adobe Target**, haga clic en **Mostrar configuraciones** y, a continuación, en el icono **+** para agregar una configuración.
+Si está configurando un destino por primera vez, haga clic en **Configurar ahora.**
 
 1. En el cuadro de diálogo Crear configuración, especifique un **Título** y opcionalmente un **Nombre** para la configuración.
 
@@ -60,7 +77,8 @@ El código de cliente identifica la cuenta de cliente de Adobe Target y se utili
 
 1. Haga clic en **Configuración de AEM Forms Target**.
 1. Seleccione un **Marco de trabajo de Target**.
-1. En el campo **URL de destino**, especifique todas las direcciones URL donde se ejecutan las pruebas A/B. Por ejemplo, https://&lt;*hostname*>:&lt;*port*>/ para AEM Forms Server en OSGi o https://&lt;*hostname*>:&lt;*port*>/lc/ para AEM Forms Server en JEE.Tenga en cuenta que desea configurar una URL de destino para una instancia de publicación y que los clientes pueden acceder a ella mediante el nombre del host o la dirección IP. En este caso, debe configurar como direcciones URL de destino mediante el nombre de host y la dirección IP. Si configura solo una de las direcciones URL, la prueba A/B no se ejecuta para los clientes que provienen de la otra dirección URL. Haga clic en **+** para especificar varias direcciones URL.
+1. En el campo **URL de destino**, especifique todas las direcciones URL donde se ejecutan las pruebas A/B. Por ejemplo, https://&lt;*hostname*>:&lt;*port*>/ para AEM Forms Server en OSGi o https://&lt;*hostname*>:&lt;*port*>/lc/ para AEM Forms Server en JEE.
+Tenga en cuenta que desea configurar una URL de destino para una instancia de publicación y que los clientes pueden acceder a ella mediante el nombre del host o la dirección IP. En este caso, debe configurar como direcciones URL de destino mediante el nombre de host y la dirección IP. Si configura solo una de las direcciones URL, la prueba A/B no se ejecuta para los clientes que provienen de la otra dirección URL. Haga clic en **+** para especificar varias direcciones URL.
 
 1. Haga clic en **Guardar**.
 
@@ -154,6 +172,7 @@ Para ver y analizar el informe de prueba A/B:
 [![Informe de prueba A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analice el informe y compruebe si tiene suficientes datos para declarar como ganadora a la experiencia con mejor rendimiento. Puede optar por continuar con la misma prueba A/B durante más tiempo o declarar un ganador y finalizarla.
-1. Para declarar un ganador y finalizar la prueba A/B, haga clic en el botón **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.Como alternativa, puede declarar un ganador primero si hace clic en el botón **Declarar ganador** de la experiencia correspondiente. Le solicitará que confirme el ganador. Haga clic en **Sí** para finalizar la prueba A/B.
+1. Para declarar un ganador y finalizar la prueba A/B, haga clic en el botón **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.
+Como alternativa, puede declarar un ganador primero si hace clic en el botón **Declarar ganador** de la experiencia correspondiente. Le solicitará que confirme el ganador. Haga clic en **Sí** para finalizar la prueba A/B.
 
 Si eligió la experiencia A como ganadora, la prueba A/B finaliza y, en adelante, solo se ofrecerá la experiencia A a las audiencias.

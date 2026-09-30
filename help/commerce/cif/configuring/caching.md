@@ -5,13 +5,21 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 7da2c607-b407-4e4b-bfba-bfaa78aff475
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 54%
-
 ---
-
 # Almacenamiento en caché y rendimiento {#caching}
 
 ## Almacenamiento en caché de respuestas de GraphQL y componentes {#graphql}
@@ -54,7 +62,7 @@ El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](
 
 Además del CIF de contenido administrado de AEM puro, una página generalmente puede mostrar datos de comercio que se recuperan dinámicamente desde Adobe Commerce a través de GraphQL. Aunque la estructura de la página en sí podría no cambiar nunca, el contenido comercial podría cambiar, por ejemplo, si algunos datos del producto (como nombre o precio) cambian en Adobe Commerce.
 
-Para asegurarse de que las páginas de CIF se puedan almacenar en caché durante una cantidad de tiempo limitada en AEM Dispatcher, recomendamos el uso de [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-time-based-cache-invalidation-enablettl) (también conocida como caché basada en TTL) al almacenar en caché las páginas de CIF en AEM Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para asegurarse de que las páginas de CIF se puedan almacenar en caché durante una cantidad de tiempo limitada en AEM Dispatcher, recomendamos el uso de [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (también conocida como caché basada en TTL) al almacenar en caché las páginas de CIF en AEM Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
 Con el almacenamiento en caché basado en TTL, un desarrollador suele definir una o varias duraciones de almacenamiento en caché para páginas de AEM seleccionadas. Esto garantiza que las páginas de CIF solo se almacenen en caché en la Dispatcher de AEM durante el tiempo establecido y que el contenido se actualice con frecuencia.
 

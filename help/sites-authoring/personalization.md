@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 28%
-
 ---
-
 
 # Personalización y segmentación de contenido {#personalization}
 
@@ -25,7 +40,7 @@ AEM proporciona un marco de herramientas para crear contenido dirigido y present
 
 ## Modo Targeting {#targeting-mode}
 
-[Contenido segmentado por el autor mediante el modo de Segmentación de AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
+[Contenido segmentado por el autor mediante el modo de Segmentación de AEM. ](/help/sites-authoring/content-targeting-touch.md) En el modo segmentación y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
 
 ## Actividades {#activities}
 

@@ -5,29 +5,42 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 38%
-
 ---
-
 # Su bandeja de entrada{#your-inbox}
 
 Puede recibir notificaciones de varias áreas de AEM, incluidos flujos de trabajo y proyectos; por ejemplo, acerca de:
 
 * Tareas:
 
-   * estas también se pueden crear en distintos puntos de la interfaz de usuario de AEM, por ejemplo, en **Proyectos**,
-   * pueden ser el producto del paso **Crear tarea** o **Crear tarea de proyecto** de un flujo de trabajo.
+  * estas también se pueden crear en distintos puntos de la interfaz de usuario de AEM, por ejemplo, en **Proyectos**,
+  * pueden ser el producto del paso **Crear tarea** o **Crear tarea de proyecto** de un flujo de trabajo.
 
 * Flujos de trabajo:
 
-   * elementos de trabajo que representan acciones que debe realizar en el contenido de la página;
+  * elementos de trabajo que representan acciones que debe realizar en el contenido de la página;
 
-      * estos son el producto de los pasos del flujo de trabajo **Participante**
+    * estos son el producto de los pasos del flujo de trabajo **Participante**
 
-   * elementos de error, para permitir que los administradores reintenten el paso con errores.
+  * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
 Estas notificaciones las recibe en su propia bandeja de entrada, donde puede verlas y realizar acciones.
 
@@ -112,9 +125,9 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
 
   Para **Vista de calendario** puede configurar lo siguiente:
 
-   * **Agrupar por**
-   * **Programa** o **Ninguno**
-   * **Tamaño de la tarjeta**
+  * **Agrupar por**
+  * **Programa** o **Ninguno**
+  * **Tamaño de la tarjeta**
 
   ![wf-92](assets/wf-92.png)
 
@@ -122,8 +135,8 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
 
   Para **Vista de lista** puede configurar el mecanismo de ordenación:
 
-   * **Campo de ordenación**
-   * **Orden de clasificación**
+  * **Campo de ordenación**
+  * **Orden de clasificación**
 
   ![wf-83](assets/inbox-settings.png)
 
@@ -140,21 +153,21 @@ La opción Admin Control permite a los administradores lo siguiente:
 La opción Control de administración solo está visible para los miembros del grupo `administrators` o `workflow-administrators`.
 
 * **Personalización de columnas**: personalice una Bandeja de entrada AEM para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
-   * **Agregar columna**: Seleccione una columna para agregarla a la Bandeja de entrada AEM.
-   * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione el icono ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
-   * **Eliminar columna**: Seleccione el icono ![eliminar](assets/delete_updated.svg) para eliminar la columna de la bandeja de entrada AEM.
-   * **Mover columna**: arrastre el icono ![mover](assets/move_updated.svg) para mover una columna a una nueva posición en la Bandeja de entrada de AEM.
+  * **Agregar columna**: Seleccione una columna para agregarla a la Bandeja de entrada AEM.
+  * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione el icono ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
+  * **Eliminar columna**: Seleccione el icono ![eliminar](assets/delete_updated.svg) para eliminar la columna de la bandeja de entrada AEM.
+  * **Mover columna**: arrastre el icono ![mover](assets/move_updated.svg) para mover una columna a una nueva posición en la Bandeja de entrada de AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalización de marca**
 
-   * **Personalizar texto de encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el texto predeterminado de **Adobe Experience Manager**.
+  * **Personalizar texto de encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el texto predeterminado de **Adobe Experience Manager**.
 
-   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo.
+  * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo.
 
 * **Navegación de usuario**
-   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
+  * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
 * **Guardar:** Haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
@@ -174,9 +187,9 @@ La opción Control de administración solo está visible para los miembros del g
    * **Volver a asignar**/**Delegar** un elemento.
    * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
-      * mostrar las propiedades del elemento
-      * abra un tablero o un asistente apropiado para realizar más acciones
-      * abrir documentación relacionada
+     * mostrar las propiedades del elemento
+     * abra un tablero o un asistente apropiado para realizar más acciones
+     * abrir documentación relacionada
 
    * **Retroceder** a un paso anterior.
    * Consultar la carga útil de un flujo de trabajo.
@@ -213,20 +226,20 @@ Desde la bandeja de entrada puede crear las siguientes tareas:
 
    * **Básico**:
 
-      * **Título**
-      * **Proyecto**
-      * **Usuario asignado**
-      * **Contenido**; similar a Carga útil, es una referencia de la tarea a una ubicación del repositorio
-      * **Descripción**
-      * **Prioridad de tareas**
-      * **Fecha de inicio**
-      * **Fecha de vencimiento**
+     * **Título**
+     * **Proyecto**
+     * **Usuario asignado**
+     * **Contenido**; similar a Carga útil, es una referencia de la tarea a una ubicación del repositorio
+     * **Descripción**
+     * **Prioridad de tareas**
+     * **Fecha de inicio**
+     * **Fecha de vencimiento**
 
    ![wf-86](assets/wf-86.png)
 
    * **Avanzado**
 
-      * **Nombre**: se usa para formar la dirección URL; si está en blanco, se basará en el **Título**.
+     * **Nombre**: se usa para formar la dirección URL; si está en blanco, se basará en el **Título**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -250,15 +263,15 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
 
    * **Básico**
 
-      * **Título**
-      * **Descripción**
-      * **Fecha de inicio**
-      * **Fecha de vencimiento**
-      * **Usuario** y función
+     * **Título**
+     * **Descripción**
+     * **Fecha de inicio**
+     * **Fecha de vencimiento**
+     * **Usuario** y función
 
    * **Avanzado**
 
-      * **Nombre**
+     * **Nombre**
 
    >[!NOTE]
    >

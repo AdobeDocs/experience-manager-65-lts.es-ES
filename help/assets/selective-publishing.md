@@ -10,13 +10,27 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3028'
 ht-degree: 3%
-
 ---
-
 # Configuración de la publicación selectiva en el nivel de carpeta en Dynamic Media {#selective-publish-configure-folder}
 
 Puede optar por publicar o cancelar la publicación de recursos en Adobe Experience Manager o Dynamic Media, o desde ellos, en el nivel de carpeta. Puede usar **[!UICONTROL Administrar publicación]** o **[!UICONTROL Publicación rápida]** en lugar de depender únicamente de la **[!UICONTROL Configuración de Dynamic Media]** cuya configuración es global para todas las carpetas de la instancia de Dynamic Media.
@@ -147,7 +161,7 @@ Consulte [Crear una configuración de Dynamic Media](#configuring-dynamic-media-
    | Acción | Descripción |
    | --- | --- |
    | **[!UICONTROL Cancelar publicación]** (de Experience Manager) | Seleccione esta opción si desea cancelar la publicación de recursos desde Experience Manager. |
-   | **[!UICONTROL Cancelar publicación de medios dinámicos]** | Seleccione esta opción si desea cancelar la publicación de recursos desde Dynamic Media.<br>Esta opción solo está disponible si **[!UICONTROL Modo de publicación de Dynamic Media]** está establecido en **[!UICONTROL Publicación selectiva]** en las propiedades de la carpeta. |
+   | **[!UICONTROL Cancelar publicación de medios dinámicos]** | Seleccione esta opción si desea cancelar la publicación de recursos de Dynamic Media.<br>Esta opción solo está disponible si **[!UICONTROL Modo de publicación de Dynamic Media]** está establecido en **[!UICONTROL Publicación selectiva]** en las propiedades de la carpeta. |
 
 1. En **[!UICONTROL Programar]**, establezca el tiempo de desactivación.
 

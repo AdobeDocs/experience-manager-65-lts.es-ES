@@ -1,18 +1,29 @@
 ---
 title: Consideraciones y requisitos de red
-description: Explica las consideraciones de red al diseñar una implementación de  [!DNL Adobe Experience Manager Assets] .
+description: Describe consideraciones de red al diseñar una implementación de [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer,Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf1dee29-75bb-445b-a661-fc7c52d78b63
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1018'
 ht-degree: 1%
-
 ---
-
 # Consideraciones de red de [!DNL Assets] {#assets-network-considerations}
 
 Comprender su red es tan importante como comprender [!DNL Adobe Experience Manager Assets]. La red puede afectar a las experiencias de carga, descarga y usuario. El diagrama de la topología de red ayuda a identificar los puntos de estrangulamiento y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.

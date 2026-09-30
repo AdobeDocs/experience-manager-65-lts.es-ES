@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 1%
@@ -468,7 +479,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 Esto se debe a que elementos html adicionales como la etiqueta &lt;div> se añaden al HTML generado después de la importación.
 
 * Tampoco se recomiendan los scripts que dependen de una estructura similar a la anterior para su uso con elementos marcados para su conversión a componentes de AEM.
-* No se recomienda el uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&ast;&quot;>.
+* No se recomienda el uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
 * El diseño debe seguir las prácticas recomendadas de las plantillas HTML5. Más información sobre: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuración de módulos OSGI {#configuring-osgi-modules}
@@ -529,7 +540,7 @@ En la tabla siguiente se describen brevemente las propiedades:
 >
 >Por ejemplo, si la configuración predeterminada es
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Y necesita reemplazar `CQ_DESIGN_PATH` con `VIPURL` en el patrón de búsqueda, entonces el patrón de búsqueda debería tener este aspecto:
 >

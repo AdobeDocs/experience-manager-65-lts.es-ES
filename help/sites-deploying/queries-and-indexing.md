@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 2%
-
 ---
-
 # Consultas e indexación de Oak{#oak-queries-and-indexing}
 
 >[!NOTE]
@@ -316,39 +325,39 @@ Consideremos esta estructura de nodos como un ejemplo:
 
 * **Nombre:** `analyzers`
 
-   * **Nombre:** `default`
+  * **Nombre:** `default`
 
-      * **Nombre:** `charFilters`
-      * **Tipo:** `nt:unstructured`
+    * **Nombre:** `charFilters`
+    * **Tipo:** `nt:unstructured`
 
-         * **Nombre:** `HTMLStrip`
-         * **Nombre:** `Mapping`
+      * **Nombre:** `HTMLStrip`
+      * **Nombre:** `Mapping`
 
-      * **Nombre:** `tokenizer`
+    * **Nombre:** `tokenizer`
 
-         * **Nombre de propiedad:** `name`
+      * **Nombre de propiedad:** `name`
 
-            * **Tipo:** `String`
-            * **Valor:** `Standard`
+        * **Tipo:** `String`
+        * **Valor:** `Standard`
 
-      * **Nombre:** `filters`
-      * **Tipo:** `nt:unstructured`
+    * **Nombre:** `filters`
+    * **Tipo:** `nt:unstructured`
 
-         * **Nombre:** `LowerCase`
-         * **Nombre:** `Stop`
+      * **Nombre:** `LowerCase`
+      * **Nombre:** `Stop`
 
-            * **Nombre de propiedad:** `words`
+        * **Nombre de propiedad:** `words`
 
-               * **Tipo:** `String`
-               * **Valor:** `stop1.txt, stop2.txt`
+          * **Tipo:** `String`
+          * **Valor:** `stop1.txt, stop2.txt`
 
-            * **Nombre:** `stop1.txt`
+        * **Nombre:** `stop1.txt`
 
-               * **Tipo:** `nt:file`
+          * **Tipo:** `nt:file`
 
-            * **Nombre:** `stop2.txt`
+        * **Nombre:** `stop2.txt`
 
-               * **Tipo:** `nt:file`
+          * **Tipo:** `nt:file`
 
 El nombre de los filtros, charFilters y tokenizers se forman eliminando los sufijos de fábrica. Así:
 

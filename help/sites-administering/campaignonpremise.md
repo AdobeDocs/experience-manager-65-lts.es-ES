@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a3108797-8085-4683-971f-509e7bfa06b0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 2%
-
 ---
-
 # Integración de AEM 6.5 con Adobe Campaign Classic {#integrating-campaign-classic}
 
 Al integrar AEM con Adobe Campaign Classic (ACC), puede administrar la entrega de correo electrónico, el contenido y los formularios directamente en AEM. Los pasos de configuración tanto en Adobe Campaign Classic como en AEM son necesarios para habilitar la comunicación bidireccional entre las soluciones.
@@ -43,7 +52,7 @@ Este documento le guía en detalle por cada uno de estos pasos.
 
 * Acceso de administrador a Adobe Campaign Classic
   * Para realizar la integración, necesita una instancia de Adobe Campaign Classic en funcionamiento, incluida una base de datos configurada.
-  * Si necesita más detalles sobre cómo configurar Adobe Campaign Classic, consulte la [documentación de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=es), en particular la guía Instalación y configuración.
+  * Si necesita más detalles sobre cómo configurar Adobe Campaign Classic, consulte la [documentación de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html), en particular la guía Instalación y configuración.
 * Acceso de administrador a AEM
 
 ## Instalación del paquete de integración de AEM en Campaign {#install-package}
@@ -118,7 +127,7 @@ El paquete de integración crea automáticamente el operador `aemserver` que AEM
    >
    >De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. Para que AEM se conecte a Adobe Campaign, debe seleccionar una zona como se detalla en los pasos anteriores.
    >
-   >Adobe recomienda encarecidamente crear una zona de seguridad específica de AEM para evitar problemas de seguridad. Para obtener más información sobre este tema, consulte la [documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=es)
+   >Adobe recomienda encarecidamente crear una zona de seguridad específica de AEM para evitar problemas de seguridad. Para obtener más información sobre este tema, consulte la [documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. En el cliente de Campaign, vuelva al operador `aemserver` y seleccione la pestaña **General**.
 

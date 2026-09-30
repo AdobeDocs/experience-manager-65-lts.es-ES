@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 90%
-
 ---
-
 # Informes personalizados en informes de procesos{#custom-reports-in-process-reporting}
 
 Puede utilizar la interfaz de REST de QueryBuilder o crear un servicio OSGi mediante la API de QueryBuilder para crear un informe personalizado.
@@ -28,12 +43,12 @@ Antes de agregar cualquier informe personalizado, realice el siguiente procedimi
 
 ## Uso de la interfaz de REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es) antes de realizar los siguientes pasos:
+La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) antes de realizar los siguientes pasos:
 
 1. Vaya a la URL `https://'[server]:[port]'/lc/bin/querybuilder.json`.
 1. Cree una consulta basada en la estructura y las propiedades del nodo de almacenamiento de Process Reporting.
 
-   Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, las visitas y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
+   Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, los hits y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
 
    Para recuperar todos los nombres de proceso, la consulta es:
 
@@ -45,7 +60,7 @@ La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share�
 
 ## Creación de un servicio mediante la API de Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es).
+El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Cree un servicio OSGi con las anotaciones adecuadas. Para acceder a QueryBuilder, utilice:
 
@@ -639,7 +654,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
    * **description**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de la descripción.
    * **icon**: especifica la imagen que representa el informe de forma gráfica. Puede dejar vacío el campo del icono.
 
-   ![Propiedades del nodo &#x200B;](assets/node_properties_new.png)
+   ![Propiedades del nodo ](assets/node_properties_new.png)
 
    Propiedades del nodo
 

@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f5114938-1279-4f00-9c2b-bd9ecd8eef6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 98%
-
 ---
-
 # Editor de texto enriquecido {#rich-text-editor}
 
 El editor de texto enriquecido es un componente básico para introducir contenido textual en AEM. Constituye la base de diversos componentes, entre ellos, los siguientes:
@@ -128,7 +137,7 @@ AEM guarda un registro de las últimas 50 acciones del componente actual, en ord
 
 ### Alineación {#alignment}
 
-![Barra de herramientas de alineación &#x200B;](do-not-localize/cq55_rte_alignment.png)
+![Barra de herramientas de alineación ](do-not-localize/cq55_rte_alignment.png)
 
 El texto puede estar alineado a la izquierda, al centro o a la derecha.
 

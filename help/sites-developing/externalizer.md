@@ -1,5 +1,5 @@
 ---
-title: Externalización de direcciones URL
+title: Externalización de URL
 description: El externalizador es un servicio OSGI que permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 2%
 ---
-
-# Externalización de direcciones URL{#externalizing-urls}
+# Externalización de URL{#externalizing-urls}
 
 En Adobe Experience Manager (AEM), **Externalizer** es un servicio OSGI que le permite transformar mediante programación una ruta de acceso de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) al anteponer a la ruta de acceso un DNS preconfigurado.
 
@@ -51,8 +60,8 @@ Para definir una asignación de dominio para el servicio **Externalizer**:
 
    * **scheme** es http o https, pero también puede ser ftp, etc.
 
-      * si lo desea, utilice https para aplicar vínculos https
-      * se utiliza si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
+     * si lo desea, utilice https para aplicar vínculos https
+     * se utiliza si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
 
    * **server** es el nombre de host (puede ser un nombre de dominio o una dirección ip).
    * **puerto** (opcional) es el número de puerto.

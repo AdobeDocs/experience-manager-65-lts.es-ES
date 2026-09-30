@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: cf510635-6cbf-4f2b-b289-7ad31978c608
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2219'
 ht-degree: 1%
-
 ---
-
 # Configuración de su campaña{#setting-up-your-campaign}
 
 La configuración de una nueva campaña incluye los siguientes pasos (genéricos):
@@ -30,22 +41,22 @@ A continuación, según el tipo de experiencias que cree, debe [crear una experi
 
 * Si crea un teaser:
 
-   1. [Crear una experiencia de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Agregar contenido al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Crear un punto de contacto para el teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (agregue el teaser a una página de contenido).
+  1. [Crear una experiencia de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Agregar contenido al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Crear un punto de contacto para el teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (agregue el teaser a una página de contenido).
 
 * Si crea una newsletter:
 
-   1. [Crear una experiencia de newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Añadir contenido al boletín informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personalice la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crear una página de aterrizaje de newsletter atractiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Envíe la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a los suscriptores o posibles clientes.
+  1. [Crear una experiencia de newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Añadir contenido al boletín informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personalice la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Crear una página de aterrizaje de newsletter atractiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Envíe la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a los suscriptores o posibles clientes.
 
 * Si crea una oferta de Adobe Target (anteriormente Test&amp;Target):
 
-   1. [Crear una experiencia de oferta de Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Integración con Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Crear una experiencia de oferta de Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Integración con Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -122,19 +133,19 @@ Ahora que ha creado el esqueleto básico para la experiencia, debe continuar con
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Conecte la página de teaser a segmentos del visitante.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Crear un punto de contacto para el teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (agregue el teaser a una página de contenido).
+  * [Conecte la página de teaser a segmentos del visitante.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Crear un punto de contacto para el teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (agregue el teaser a una página de contenido).
 
 * [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Añadir contenido al boletín informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personalice la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Envíe la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a los suscriptores o posibles clientes.
-   * [Crear una página de aterrizaje de newsletter atractiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Añadir contenido al boletín informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personalice la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Envíe la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a los suscriptores o posibles clientes.
+  * [Crear una página de aterrizaje de newsletter atractiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Oferta de Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Integración con Adobe Target](/help/sites-administering/target.md)
+  * [Integración con Adobe Target](/help/sites-administering/target.md)
 
 ### Adición de un nuevo punto de contacto {#adding-a-new-touchpoint}
 
@@ -152,7 +163,8 @@ Si tiene experiencias existentes, puede agregar un punto de contacto directament
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
+>Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes).
+>Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 En AEM MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas, por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellene los posibles clientes).
 
@@ -299,7 +311,8 @@ Para eliminar posibles clientes existentes en el MCM, seleccione la casilla de v
 
 >[!NOTE]
 >
->Adobe no planea mejorar esta capacidad (administración de listas).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
+>Adobe no planea mejorar esta capacidad (administración de listas).
+>Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista. Las listas son visibles en el MCM, ya sea en el panel o haciendo clic en **Listas**. Ambos le proporcionan el nombre de la lista y el número de miembros.
 

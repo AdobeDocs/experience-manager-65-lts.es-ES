@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
-
 ---
-
 # Copia de seguridad de los datos de Forms de Adobe Experience Manager (AEM) {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ Además de esto, observe las siguientes directrices para el proceso de copia de 
 
   Tenga en cuenta los siguientes puntos al realizar copias de seguridad de las instancias de autor y publicación:
 
-   * Asegúrese de que la copia de seguridad de las instancias de autor y publicación se sincronice para iniciarse al mismo tiempo. Aunque puede seguir utilizando instancias de autor y publicación mientras se realiza la copia de seguridad, se recomienda no publicar ningún recurso durante la copia de seguridad para evitar cualquier cambio no capturado. Espere a que finalice la copia de seguridad de las instancias de autor y publicación antes de publicar nuevos recursos.
-   * La copia de seguridad completa del nodo Autor incluye una copia de seguridad de los datos de Forms Manager y AEM Forms Workspace.
-   * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos localmente. No deben implementar ningún proceso nuevo durante la fase de copia de seguridad.
-   * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total necesario para realizar una copia de seguridad de todos los datos de AEM Forms (BD, GDS, repositorio de AEM y cualquier otro dato personalizado adicional).
+  * Asegúrese de que la copia de seguridad de las instancias de autor y publicación se sincronice para iniciarse al mismo tiempo. Aunque puede seguir utilizando instancias de autor y publicación mientras se realiza la copia de seguridad, se recomienda no publicar ningún recurso durante la copia de seguridad para evitar cualquier cambio no capturado. Espere a que finalice la copia de seguridad de las instancias de autor y publicación antes de publicar nuevos recursos.
+  * La copia de seguridad completa del nodo Autor incluye una copia de seguridad de los datos de Forms Manager y AEM Forms Workspace.
+  * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos localmente. No deben implementar ningún proceso nuevo durante la fase de copia de seguridad.
+  * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total necesario para realizar una copia de seguridad de todos los datos de AEM Forms (BD, GDS, repositorio de AEM y cualquier otro dato personalizado adicional).
 
 Haga una copia de seguridad de la base de datos de AEM Forms, incluidos los registros de transacciones. Ver [base de datos de AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 

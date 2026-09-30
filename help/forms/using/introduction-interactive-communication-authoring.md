@@ -9,13 +9,29 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 77%
-
 ---
-
 # Introducción a la IU de creación de una comunicación interactiva{#introduction-to-interactive-communication-authoring-ui}
 
 La interfaz de usuario para la creación de [comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md) es intuitiva y proporciona lo siguiente para la creación de los canales impreso y web de las comunicaciones interactivas:
@@ -58,7 +74,7 @@ En el explorador de contenido, puede ver la jerarquía de objetos del documento 
 * **Explorador de propiedades**
 
   Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos:
-Seleccione un componente, luego seleccione ![field-level](assets/field-level.png) > **Contenedor de documento** y luego seleccione ![cmppr](assets/cmppr.png).
+  Seleccione un componente, luego seleccione ![field-level](assets/field-level.png) > **Contenedor de documento** y luego seleccione ![cmppr](assets/cmppr.png).
 
 * **Explorador de Assets**
 Segmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas o vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
@@ -91,10 +107,10 @@ Los puntos clave para trabajar con los componentes de las comunicaciones interac
 * Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo Nombre del elemento en el Explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
 * Puede modificar la propiedad Título de los componentes en línea de una comunicación interactiva en el editor sin abrir el Explorador de propiedades siempre que el título esté visible en la comunicación. Para ello:
 
-   1. Seleccione para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
-   1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
+  1. Seleccione para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
+  1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
+  1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
 
 ## Barra de herramientas de los componentes {#component-toolbar}
 
@@ -134,18 +150,18 @@ Además, la opción **Reemplazar** de la barra de herramientas permite reemplaza
 
 La barra de herramientas Página de la parte superior proporciona opciones que le permiten previsualizar la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva al crearla y realizar los cambios correspondientes. En la barra de herramientas Página, verá lo siguiente:
 
-* Alternar panel lateral![&#x200B; alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
+* Alternar panel lateral![ alternar-panel-lateral](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
 * Información de la página ![información_de_la_página](assets/pageinformationad.png): permite ver las propiedades de la página.
 * Emulador ![regla](assets/ruler.png): permite emular el aspecto de la comunicación interactiva en diferentes tamaños de visualización, como tabletas y teléfonos.
 * Edición: permite seleccionar otros modos, como Edición, Estilo, Desarrollador y Diseño.
 
-   * Edición: permite editar las propiedades de la comunicación interactiva y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
-   * Estilo: permite aplicar un estilo a la apariencia de los componentes de la comunicación interactiva. Por ejemplo, en el modo Estilo, puede seleccionar un panel y especificar su color de fondo.
-   * Desarrollador: permite a los desarrolladores lo siguiente:
+  * Edición: permite editar las propiedades de la comunicación interactiva y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
+  * Estilo: permite aplicar un estilo a la apariencia de los componentes de la comunicación interactiva. Por ejemplo, en el modo Estilo, puede seleccionar un panel y especificar su color de fondo.
+  * Desarrollador: permite a los desarrolladores lo siguiente:
 
-      * Ver los componentes de la comunicación interactiva.
-      * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
+    * Ver los componentes de la comunicación interactiva.
+    * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
 
-   * Destino: permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
+  * Destino: permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
 * Vista previa: permite obtener una vista previa del aspecto de la comunicación interactiva al publicarla.

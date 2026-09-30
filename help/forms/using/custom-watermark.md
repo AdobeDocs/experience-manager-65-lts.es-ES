@@ -9,7 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: eb089355-51d9-4c41-bd82-5ca873438410
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
@@ -77,7 +92,7 @@ Puede seguir los siguientes pasos para personalizar el texto y el aspecto de la 
    </DDX>
    ```
 
-   Para obtener información sobre cómo personalizar el aspecto, el texto y la alineación de la marca de agua, consulte Agregar y eliminar marcas de agua y fondos en el documento [Servicio Assembler y referencia DDX](https://help.adobe.com/es_ES/livecycle/11.0/ddxRef.pdf).
+   Para obtener información sobre cómo personalizar el aspecto, el texto y la alineación de la marca de agua, consulte Agregar y eliminar marcas de agua y fondos en el documento [Servicio Assembler y referencia DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

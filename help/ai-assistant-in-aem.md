@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 100%
-
 ---
-
 # Asistente de IA en AEM 6.5 LTS {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
@@ -35,14 +51,14 @@ Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cl
 
 El siguiente vídeo de 3 minutos y 25 segundos ofrece una guía paso a paso del Asistente de IA en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475361/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Obtener acceso al Asistente de IA en AEM{#get-access}
 
 Para obtener acceso al Asistente de IA en AEM, los clientes deben tener lo siguiente:
 
 * Permiso para utilizar el asistente de IA en AEM con el fin de obtener conocimientos del producto. Este permiso le permite hacer preguntas relacionadas con el producto en el chat del Asistente de IA. Este permiso debe estar habilitado.
-* Permiso para abrir tickets de asistencia, lo cual requiere el rol de **Administrador de asistencia**.
+* Permiso para abrir tickets de asistencia, lo cual requiere la función de **Administrador de asistencia**.
 
 >[!NOTE]
 >
@@ -129,7 +145,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 -->

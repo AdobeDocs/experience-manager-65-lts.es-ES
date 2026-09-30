@@ -5,7 +5,23 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 10%
@@ -25,7 +41,7 @@ Consulte [configuración de servicios de contenido inteligente](#integrate-adobe
 
 >[!NOTE]
 >
->Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&support-tab=home?lang=es#support).
+>Si es necesario, puede enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&support-tab=home?lang=es#support).
 
 ## Configuración de OAuth para los usuarios de AMS existentes {#oauth-config-new-ams-users}
 
@@ -42,7 +58,7 @@ Una configuración de OAuth requiere los siguientes requisitos previos:
 
 ### Configuración de OAuth para los usuarios de AMS y OnPrem existentes {#steps-config-oauth-onprem}
 
-El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/es?lang=es&support-tab=home?lang=es#support).
+El administrador del sistema puede realizar los siguientes pasos. El cliente de AMS puede ponerse en contacto con el representante de Adobe o enviar un ticket de asistencia siguiendo el [proceso de asistencia](https://experienceleague.adobe.com/?lang=es&support-tab=home?lang=es#support).
 
 1. Agregar o actualizar las siguientes propiedades en `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -124,7 +140,7 @@ Un certificado público permite autenticar el perfil en Adobe Developer Console.
 
    >[!NOTE]
    >
-   >La URL proporcionada como [!UICONTROL URL de servicio] no es accesible a través del explorador y genera un error 404. La configuración funciona correctamente con el mismo valor del parámetro [!UICONTROL Service URL]. Para ver el estado general del servicio y el programa de mantenimiento, consulte [https://status.adobe.com/es-es](https://status.adobe.com/es-es).
+   >La URL proporcionada como [!UICONTROL URL de servicio] no es accesible a través del explorador y genera un error 404. La configuración funciona correctamente con el mismo valor del parámetro [!UICONTROL Service URL]. Para ver el estado general del servicio y el programa de mantenimiento, consulte [https://status.adobe.com](https://status.adobe.com).
 
 1. Haga clic en **[!UICONTROL Descargar certificado público para la integración de OAuth]** y descargue el archivo de certificado público `AEM-SmartTags.crt`. Además, ya no es necesario cargar este certificado en Adobe Developer Console.
 
@@ -184,4 +200,4 @@ Para configurar la integración, use los valores de los campos [!UICONTROL ID. D
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Configurar el etiquetado inteligente](config-smart-tagging.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3373'
 ht-degree: 1%
-
 ---
-
 # Componentes principales de AEM {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +37,10 @@ Necesita las siguientes habilidades para desarrollar sobre AEM:
 
 * Conocimientos básicos de las técnicas de aplicación web, incluidos:
 
-   * el ciclo de solicitud-respuesta (XMLHttpRequest / XMLHttpResponse)
-   * HTML
-   * CSS
-   * JavaScript
+  * el ciclo de solicitud-respuesta (XMLHttpRequest / XMLHttpResponse)
+  * HTML
+  * CSS
+  * JavaScript
 
 * Conocimientos prácticos de Experience Server (CRX), incluido el Explorador de contenido
 * Para desarrollar en la IU clásica, también se requieren conocimientos básicos de JSP (JavaServer Pages), incluida la capacidad de comprender y modificar ejemplos de JSP simples.
@@ -44,7 +53,7 @@ El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://devel
 
 El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; se usa para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; se usa para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +95,8 @@ Debido a la filosofía centrada en el contenido, Sling implementa un servidor or
 * RESTful, no solo en la superficie; los recursos y las representaciones se modelan correctamente dentro del servidor
 * elimina uno o varios modelos de datos
 
-   * anteriormente se necesitaban los siguientes elementos: estructura URL, objetos empresariales, esquema de base de datos;
-   * esto ahora se reduce a: URL = recurso = estructura JCR
+  * anteriormente se necesitaban los siguientes elementos: estructura URL, objetos empresariales, esquema de base de datos;
+  * esto ahora se reduce a: URL = recurso = estructura JCR
 
 ### Descomposición de URL {#url-decomposition}
 
@@ -160,11 +169,11 @@ Otros puntos que hay que tener en cuenta son:
 * cuando se requiere el método (GET, POST), se especifica en mayúsculas según la especificación HTTP, por ejemplo, jobs.POST.esp (consulte a continuación)
 * se admiten varios motores de scripts:
 
-   * HTL (idioma de plantilla de HTML: sistema de plantillas del lado de servidor recomendado por Adobe Experience Manager para HTML): `.html`
-   * Páginas de ECMAScript (JavaScript) (ejecución del lado del servidor): `.esp, .ecma`
-   * Java™ Server Pages (ejecución del lado del servidor): `.jsp`
-   * Compilador de servlet Java™ (ejecución del lado del servidor): `.java`
-   * Plantillas de JavaScript (ejecución del lado del cliente): `.jst`
+  * HTL (idioma de plantilla de HTML: sistema de plantillas del lado de servidor recomendado por Adobe Experience Manager para HTML): `.html`
+  * Páginas de ECMAScript (JavaScript) (ejecución del lado del servidor): `.esp, .ecma`
+  * Java™ Server Pages (ejecución del lado del servidor): `.jsp`
+  * Compilador de servlet Java™ (ejecución del lado del servidor): `.java`
+  * Plantillas de JavaScript (ejecución del lado del cliente): `.jst`
 
 La lista de motores de scripts admitidos por la instancia determinada de AEM se enumera en la Consola de administración Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
@@ -198,19 +207,19 @@ En el ejemplo anterior, si `sling:resourceType` es `hr/jobs`, para:
 
 * Si no se ha definido ningún sling:resourceType, entonces:
 
-   * la ruta de contenido se utiliza para buscar un script adecuado (si el ResourceTypeProvider basado en la ruta está activo).
+  * la ruta de contenido se utiliza para buscar un script adecuado (si el ResourceTypeProvider basado en la ruta está activo).
 
-     Por ejemplo, el script de `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
+    Por ejemplo, el script de `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
 
-   * se utiliza el tipo de nodo principal.
+  * se utiliza el tipo de nodo principal.
 
 * Si no se encuentra ningún script, se utiliza el predeterminado.
 
   La representación predeterminada es compatible con texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales enumeran las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res o las solicitudes sin extensión de solicitud es poner en cola el recurso (cuando sea posible).
 * Para la gestión de errores http (códigos 403 o 404), Sling busca un script en:
 
-   * la ubicación /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
-   * o la ubicación de las secuencias de comandos estándar /libs/sling/servlet/errorhandler/403.esp o 404.esp respectivamente.
+  * la ubicación /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
+  * o la ubicación de las secuencias de comandos estándar /libs/sling/servlet/errorhandler/403.esp o 404.esp respectivamente.
 
 Si se aplican varios scripts a una solicitud determinada, se selecciona el script con la mejor coincidencia. Cuanto más específica sea una coincidencia, mejor será; es decir, cuanto más coincida el selector, mejor, independientemente de la coincidencia de cualquier extensión de solicitud o nombre de método.
 
@@ -243,30 +252,30 @@ Por ejemplo:
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 La jerarquía de tipo de:
 
 * `/x`
-   * es `[ c, b, a, <default>]`
+  * es `[ c, b, a, <default>]`
 * while para `/y`
-   * la jerarquía es `[ c, a, <default>]`
+  * la jerarquía es `[ c, a, <default>]`
 
 Esto se debe a que `/y` tiene la propiedad `sling:resourceSuperType`, mientras que `/x` no la tiene y, por lo tanto, su supertipo se toma de su tipo de recurso.
 
@@ -278,14 +287,14 @@ Si llama a la representación (la secuencia de comandos) directamente, oculta el
 
 * gestión automática de métodos http distintos de GET, incluidos:
 
-   * POST, PUT y DELETE, que se gestionan con una implementación predeterminada de sling
-   * el script `POST.jsp` en su ubicación sling:resourceType
+  * POST, PUT y DELETE, que se gestionan con una implementación predeterminada de sling
+  * el script `POST.jsp` en su ubicación sling:resourceType
 
 * su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de vital importancia para el desarrollo a gran escala
 
 ### API de Sling {#sling-api}
 
-Utiliza el paquete de API de Sling, org.apache.sling.&ast;, y las bibliotecas de etiquetas.
+Utiliza el paquete de API de Sling, org.apache.sling.&amp;ast;, y las bibliotecas de etiquetas.
 
 ### Hacer referencia a elementos existentes mediante sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -470,9 +479,9 @@ Por ejemplo, los sitios web a menudo se ofrecen en varios idiomas para audiencia
 * Gestionar de forma eficaz las distintas versiones lingüísticas de un sitio web.
 * Actualizar automáticamente uno o varios sitios en función de un sitio de origen:
 
-   * Haga cumplir una estructura base común y utilice contenido común en varios sitios.
-   * Maximice el uso de los recursos disponibles.
-   * Mantenga un aspecto común.
-   * Centrar los esfuerzos en administrar el contenido que difiere entre los sitios.
+  * Haga cumplir una estructura base común y utilice contenido común en varios sitios.
+  * Maximice el uso de los recursos disponibles.
+  * Mantenga un aspecto común.
+  * Centrar los esfuerzos en administrar el contenido que difiere entre los sitios.
 
 Para obtener más información, consulte [Administrador de varios sitios](/help/sites-administering/msm.md).

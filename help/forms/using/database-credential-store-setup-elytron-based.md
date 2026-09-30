@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
-source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '377'
 ht-degree: 2%
-
 ---
-
 # Configuración del almacén de credenciales de base de datos (basado en Elytron)
 
 ## Configurar el almacén de credenciales de base de datos mediante Elytron
@@ -85,7 +93,7 @@ Descargue el script adecuado y colóquelo en el siguiente directorio:
 
 Durante la ejecución, la secuencia de comandos solicita las siguientes entradas:
 
-1. **Ruta JBOSS_HOME**
+1. Ruta de acceso de **JBOSS_HOME**
 Introduzca la ruta completa al directorio de instalación de JBoss.
 
 2. **Nombre de archivo de configuración de base de datos**
@@ -115,10 +123,10 @@ La secuencia de comandos realiza automáticamente las siguientes acciones:
 
 * Crea los siguientes alias de credenciales:
 
-   * `EncryptDBPassword`
-   * `EncryptDBPassword_IDP_DS`
-   * `EncryptDBPassword_EDC_DS`
-   * `EncryptDBPassword_AEM_DS`
+  * `EncryptDBPassword`
+  * `EncryptDBPassword_IDP_DS`
+  * `EncryptDBPassword_EDC_DS`
+  * `EncryptDBPassword_AEM_DS`
 * Comprueba que todos los alias se hayan agregado correctamente
 
 La ejecución correcta confirma la creación del almacén de credenciales y la verificación de alias.

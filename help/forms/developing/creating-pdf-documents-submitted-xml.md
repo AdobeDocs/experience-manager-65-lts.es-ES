@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 66736a58-b2ef-404e-b94c-9bc407828359
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 1%
-
 ---
-
 # Crear documentos PDF con datos XML enviados {#creating-pdf-documents-with-submittedxml-data}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -102,10 +119,10 @@ Cree un documento de PDF con datos XML enviados mediante la API de Forms, Output
 
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-      * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`.
-      * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
+     * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
+     * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`.
+     * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
      El método `processFormSubmission` devuelve un objeto `FormsResult` que contiene los resultados del envío del formulario.
 

@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3056'
-ht-degree: 0%
-
+source-wordcount: '3217'
+ht-degree: 2%
 ---
-
 # Configuración de Experience Manager Assets para Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html) optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Conecta Adobe Experience Manager Assets con aplicaciones de escritorio de Creative Cloud, Adobe InDesign, Adobe Photoshop y Adobe Illustrator. El panel Adobe Asset Link permite a los creativos acceder al contenido almacenado en los AEM Assets y modificarlo sin salir de las aplicaciones creativas con las que están más familiarizados.
@@ -54,7 +63,7 @@ Adobe recomienda instalar el paquete de configuración [adobe-asset-link-config]
    Establezca las siguientes propiedades y guarde los cambios.
 
    * [!UICONTROL Asignaciones de grupo]: dejar vacío a menos que lo desee. Para obtener más información, consulte [Asignación de grupo](#group-mapping).
-   * [!UICONTROL Organización]: escriba el identificador de organización que está usando en Adobe Admin Console. Para obtener más información sobre los identificadores de organización, consulte [Crear grupo de usuarios](https://helpx.adobe.com/es/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organización]: escriba el identificador de organización que está usando en Adobe Admin Console. Para obtener más información sobre los identificadores de organización, consulte [Crear grupo de usuarios](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
 
 1. Busque la configuración **[!UICONTROL Controlador de autenticación del portador de Granite de Adobe]** y haga clic para editarla.
 
@@ -116,7 +125,7 @@ Para configurar Experience Manager manualmente:
 
 ## Configuración adicional después de la migración a Perfiles de empresa {#configure-migration-activity}
 
-Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/es/enterprise/kb/introducing-adobe-profiles.html?lang=es).
+Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html?lang=es).
 
 Solo se requiere una configuración adicional si utiliza diferentes organizaciones de Adobe IMS para Experience Manager y Creative Cloud para empresas (CCE) y se establece una relación de confianza de dominio entre estas dos organizaciones.
 
@@ -131,7 +140,7 @@ Solo se requiere una configuración adicional si utiliza diferentes organizacion
 1. Una instancia de Experience Manager en funcionamiento con la autenticación del portador configurada para AAL.
 1. Instale el siguiente paquete (Service Pack 11) en su instancia de Experience Manager 6.5.
 
-   [Descargar Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Descargar Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Póngase en contacto con el [!UICONTROL Servicio de atención al cliente] para obtener el ID de cliente y la clave secreta para la autenticación del portador de su organización de IMS.
 
@@ -282,11 +291,11 @@ Si tiene problemas al configurar o utilizar Adobe Asset Link, intente lo siguien
 * Asegúrese de que la implementación cumpla los requisitos previos. Concretamente, asegúrese de que están instalados los paquetes de funciones o paquetes adecuados.
 * Póngase en contacto con el socio o integrador de sistemas de su organización.
 * Si los usuarios de Creative Cloud no pueden comprobar los recursos desprotegidos, compruebe el uso de mayúsculas y minúsculas en los nombres de dominio en los ID de correo electrónico. Para solucionarlo, consulte [configuración manual](#manual-configuration).
-* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/es/enterprise/kb/asset-link-troubleshooting.html).
+* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
->* [Acerca de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+>* [Acerca de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es)
 >* [Use Asset Link en la aplicación de escritorio de Creative Cloud y administre recursos](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Configurar Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/es/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [Configurar Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).

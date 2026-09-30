@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 95cc8c29-7494-4326-934d-6def59875d71
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '786'
 ht-degree: 1%
-
 ---
-
 
 # Componentes compuestos en SPA {#composite-components-in-spas}
 
@@ -163,7 +177,7 @@ A continuación, puede añadirlo a su SPA y recuperar su contenido.
     itemPath='root/responsivegrid' />
    ```
 
-1. Agregue el componente `wknd-spa/components/imagecard` creado a los componentes permitidos para el componente contenedor [&#x200B; en la plantilla de página.](/help/sites-authoring/templates.md)
+1. Agregue el componente `wknd-spa/components/imagecard` creado a los componentes permitidos para el componente contenedor [ en la plantilla de página.](/help/sites-authoring/templates.md)
 
 Ahora el componente `imagecard` se puede agregar directamente al contenedor en el editor de AEM.
 
@@ -181,4 +195,4 @@ Si el contenido existe en AEM, se puede incluir directamente en la SPA proporcio
 
 ![Ruta compuesta en la estructura del nodo](assets/composite-path.png)
 
-El componente `AEMCard` es el mismo que se definió [&#x200B; en el caso de uso anterior.](#content-does-not-exist) Aquí el contenido definido en la ubicación anterior del proyecto de AEM se incluye en la SPA.
+El componente `AEMCard` es el mismo que se definió [en el caso de uso anterior.](#content-does-not-exist) Aquí el contenido definido en la ubicación anterior del proyecto de AEM se incluye en la SPA.

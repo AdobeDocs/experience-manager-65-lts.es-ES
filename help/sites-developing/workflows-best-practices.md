@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
-
 ---
-
 # Prácticas recomendadas de flujos de trabajo{#workflow-best-practices}
 
 Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM).
@@ -239,8 +248,8 @@ Guardar una sesión:
 * Dentro de un proceso de flujo de trabajo, si `WorkflowSession` se está utilizando para modificar el repositorio, no guarde explícitamente la sesión: el flujo de trabajo guardará la sesión cuando se complete.
 * No se debe llamar a `Session.Save` desde un paso del flujo de trabajo:
 
-   * se recomienda adaptar la sesión JCR del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
-   * no se recomienda que un paso de proceso cree su propia sesión JCR.
+  * se recomienda adaptar la sesión JCR del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
+  * no se recomienda que un paso de proceso cree su propia sesión JCR.
 
 * Al eliminar los ahorros innecesarios, puede reducir la sobrecarga y, por lo tanto, hacer que los flujos de trabajo sean más eficientes.
 
@@ -303,7 +312,7 @@ Al actualizar la instancia:
 * asegúrese de que se realiza una copia de seguridad de todos los modelos de flujo de trabajo personalizados antes de actualizar una instancia.
 * confirme que ninguno de sus flujos de trabajo personalizados se almacene en la [ubicación](#locations):
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 ## Herramientas del sistema {#system-tools}
 
