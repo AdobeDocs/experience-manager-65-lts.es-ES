@@ -1,6 +1,6 @@
 ---
 title: Lightbox como su galería de imágenes personal
-description: Obtenga información sobre Lightbox como su galería de imágenes personal en Adobe Experience Manager Assets].
+description: Obtenga información sobre Lightbox como su galería de imágenes personal en Adobe Experience Manager Assets&rbrack;.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions

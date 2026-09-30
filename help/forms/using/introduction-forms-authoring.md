@@ -171,7 +171,7 @@ En el explorador de contenido, puede ver lo siguiente
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>
@@ -269,7 +269,7 @@ En el explorador de contenido, puede ver lo siguiente
    <td>Teléfono</td>
    <td><p>Agrega un campo para capturar el número de teléfono. El componente Teléfono permite a los autores configurar uno de los siguientes tipos de números de teléfono. Cada tipo está asociado con una expresión regular predeterminada para la validación.</p>
     <ul>
-     <li>La validación del tipo internacional la realiza <code>^[+][0-9]{0,14}$</code>.</li>
+     <li>La validación del tipo internacional la realiza <code>^[+]&#x200B;[0-9]{0,14}$</code>.</li>
      <li>La validación del tipo USPhoneNumber la realiza <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>La validación del tipo UKPhoneNumber la realiza <code>text{'+'99 999 999 9999}</code>.</li>
      <li>El tipo personalizado no proporciona ningún patrón de validación predeterminado. Toma el valor del último tipo de número de teléfono seleccionado. También puede especificar su propio patrón de validación personalizado.</li>

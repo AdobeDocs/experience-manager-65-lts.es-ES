@@ -115,7 +115,7 @@ Si proporciona solo una página **Title** al crear una página, AEM deriva la p�
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc-c-.html |
+| SC%&amp;&ast;ç+ | sc-c-.html |
 
 #### Nombre {#name}
 

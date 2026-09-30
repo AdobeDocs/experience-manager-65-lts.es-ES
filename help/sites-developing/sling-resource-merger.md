@@ -221,7 +221,7 @@ Con la funcionalidad estándar, estos casos de uso le permiten hacer lo siguient
      * tipo: `String[]`
      * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
 
-     El carácter comodín &amp;ast; se puede utilizar para ocultar o omitir todos los nodos secundarios.
+     El carácter comodín &ast; se puede utilizar para ocultar o omitir todos los nodos secundarios.
 
 * **Reordenar nodos**
 

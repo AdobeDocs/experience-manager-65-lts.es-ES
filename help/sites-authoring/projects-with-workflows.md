@@ -53,12 +53,12 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |  |  |
 | Solicitar página de destino | x |  |  |  |
 | Solicitar correo electrónico | x |  |  |  |
-| Crear copia de idioma DAM&amp;ast; |  |  |  | x |
-| Creación y traducción de copia de idioma de DAM&amp;ast; |  |  |  | x |
+| Crear copia de idioma DAM&ast; |  |  |  | x |
+| Creación y traducción de copia de idioma de DAM&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
+>&ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 

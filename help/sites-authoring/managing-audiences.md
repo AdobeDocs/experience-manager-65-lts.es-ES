@@ -88,7 +88,7 @@ Para crear un público de Adobe Target:
 
    ![captura de pantalla_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. En la consola Audiencias, haga clic en **Crear** y, a continuación** Crear audiencia de destino**.
+1. En la consola Audiencias, haga clic en **Crear** y, a continuación **&#x200B; Crear audiencia de destino**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

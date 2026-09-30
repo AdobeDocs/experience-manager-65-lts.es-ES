@@ -330,7 +330,7 @@ Hay varias propiedades de configuración disponibles:
 * **Ruta**
 Ruta de acceso para la que está activo este controlador de autenticación. Si este parámetro se deja vacío, el controlador de autenticación se desactiva. Por ejemplo, la ruta / hace que el controlador de autenticación se utilice para todo el repositorio.
 
-* Clasificación del servicio ****
+* Clasificación del servicio **&#x200B;**
 El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un valor `int` en el cual los valores más altos designan una prioridad más alta.
 El valor predeterminado es `0`.
 
@@ -343,7 +343,7 @@ Nombres de cookies que podrían contener un ID de usuario.
 * **Nombres de parámetros**
 Nombres de los parámetros de solicitud que pueden proporcionar el ID de usuario.
 
-* Mapa de usuario de ****
+* Mapa de usuario de **&#x200B;**
 Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por uno diferente en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario `admin` aparece a ambos lados del mapa, se omite la asignación. El carácter &quot;=&quot; debe tener un carácter de escape &quot;\&quot; inicial.
 
 * **Formato**
