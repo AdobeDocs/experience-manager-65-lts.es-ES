@@ -33,9 +33,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1110'
 ht-degree: 84%
 ---
 # Actualización del contenido mediante las API de AEM Assets {#update-your-content}
@@ -283,7 +283,7 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 
 >[!NOTE]
 >
->Para obtener más información, consulte la Referencia de API. En particular, la [API de Adobe Experience Manager Assets: fragmentos de contenido](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Para obtener más información, consulte la Referencia de API. En particular, la [API de Adobe Experience Manager Assets: fragmentos de contenido](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html).
 
 ### Lectura/entrega {#read-delivery}
 
@@ -353,7 +353,7 @@ Debe continuar con su recorrido sin encabezado de AEM revisando el documento [C�
 * [API HTTP de Recursos](/help/assets/mac-api-assets.md)
 * [API de REST de fragmentos de contenido](/help/assets/assets-api-content-fragments.md)
   * [Referencia de la API](/help/assets/assets-api-content-fragments.md#api-reference)
-* [API de Adobe Experience Manager Assets: fragmentos de contenido](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API de Adobe Experience Manager Assets: fragmentos de contenido](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 * [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Explicación de CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=es)

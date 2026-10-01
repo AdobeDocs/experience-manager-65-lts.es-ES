@@ -20,9 +20,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 4%
 ---
 # Acerca de la seguridad de los documentos {#about-document-security}
@@ -283,4 +283,4 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
   >[!NOTE]
   >
-  >Puede usar la API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.
+  >Puede usar la API [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.

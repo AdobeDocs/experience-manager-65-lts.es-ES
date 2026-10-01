@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 71%
 ---
 # Generar varias comunicaciones interactivas mediante la API por lotes {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
 ## Invocar la API por lotes utilizando solicitudes REST
 
-Puede invocar [la API por lotes](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java™ personalizado para implementar la API en la instancia de AEM.
+Puede invocar [la API por lotes](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java™ personalizado para implementar la API en la instancia de AEM.
 
 Antes de implementar el servlet Java™, asegúrese de que tiene una comunicación interactiva y de que los archivos de datos correspondientes están listos. Siga estos pasos para poder crear e implementar el servlet Java™:
 

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '684'
 ht-degree: 11%
 ---
 # Migración a la IU táctil{#migration-to-the-touch-ui}
@@ -152,7 +152,7 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 Para obtener información completa sobre el desarrollo de AEM, consulte la recopilación de recursos en:
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/getting-started.md)
-* [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentación de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriales y vídeos de AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
 * [Gems de AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=es)

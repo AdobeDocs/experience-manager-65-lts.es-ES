@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3379'
 ht-degree: 1%
 ---
 # Componentes principales de AEM {#aem-core-concepts}
@@ -49,11 +49,11 @@ También se recomienda que lea y siga las [Directrices y prácticas recomendadas
 
 ## Repositorio de contenido de Java™ {#java-content-repository}
 
-El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor e independiente de la implementación para acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
+El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor e independiente de la implementación para acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
 
 El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; se usa para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; se usa para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -345,7 +345,7 @@ Los siguientes son de interés para el desarrollo:
 
 **Elemento** Un elemento es un nodo o una propiedad.
 
-Para obtener información detallada sobre la manipulación de objetos Item, consulte los [documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de la interfaz javax.jcr.Item
+Para obtener información detallada sobre la manipulación de objetos Item, consulte los [documentos Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de la interfaz javax.jcr.Item
 
 **Nodo (y sus propiedades)** Los nodos y sus propiedades se definen en la especificación JCR API 2.0 (JSR 283). Almacenan contenido, definiciones de objetos, secuencias de comandos de procesamiento y otros datos.
 
@@ -361,7 +361,7 @@ Por ejemplo, para obtener las propiedades del nodo actual, puede utilizar el sig
 
 CurrentNode es el objeto de nodo actual.
 
-Para obtener más información sobre cómo manipular objetos Node, consulte [Documentos de Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Para obtener más información sobre cómo manipular objetos Node, consulte [Documentos de Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget**: en AEM, todos los widgets administran todas las entradas de usuario. Suelen utilizarse para controlar la edición de un fragmento de contenido.
 
@@ -400,7 +400,7 @@ Por ejemplo, para obtener el nombre de la página actual, puede utilizar el sigu
 
 S`tring pageName = currentPage.getName();`
 
-CurrentPage es el objeto de página actual. Para obtener más información sobre cómo manipular los objetos Page, consulte [Documentos de Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
+CurrentPage es el objeto de página actual. Para obtener más información sobre cómo manipular los objetos Page, consulte [Documentos de Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Administrador de páginas** El administrador de páginas es una interfaz que proporciona métodos para operaciones de nivel de página.
 
@@ -408,7 +408,7 @@ Por ejemplo, para obtener la página contenedora de un recurso, puede utilizar e
 
 Página myPage = pageManager.getContainingPage(myResource);
 
-PageManager, que es el objeto de administrador de páginas, y myResource, un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Documentos de Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager, que es el objeto de administrador de páginas, y myResource, un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Documentos de Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 

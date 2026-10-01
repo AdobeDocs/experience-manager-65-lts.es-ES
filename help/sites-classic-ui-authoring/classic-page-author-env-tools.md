@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '951'
 ht-degree: 6%
 ---
 # Creación: entorno y herramientas {#authoring-the-environment-and-tools}
@@ -159,7 +159,7 @@ puede utilizar cualquier número de caracteres comodín en una consulta.
 
 >[!NOTE]
 >
->También puede usar la búsqueda [SQL2](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>También puede usar la búsqueda [SQL2](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrando referencias {#showing-references}
 

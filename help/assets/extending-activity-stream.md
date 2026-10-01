@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '259'
 ht-degree: 0%
 ---
 # Integrar [!DNL Assets] con el flujo de actividad {#integrating-assets-with-activity-stream}
@@ -68,4 +68,4 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 ## Leer eventos grabados {#reading-recorded-events}
 
-Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

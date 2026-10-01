@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # Referencia de predicados del generador de consultas{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Conceptualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Estas uni
 
 ### hasPermission {#haspermission}
 
-Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -269,7 +267,7 @@ Admite la extracción de facetas y proporciona dos bloques para los recursos pri
 
 ### memberOf {#memberof}
 
-Busca elementos que sean miembros de una [colección de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Busca elementos que sean miembros de una [colección de recursos de sling](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -475,18 +473,18 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
   (solo para el servlet JSON) seleccione la forma en que se escriben las visitas como JSON, con estas estándar (ampliables mediante el servicio ResultHitWriter):
 
-   * **simple**:
+  * **simple**:
 
-     Elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si se establecieron).
+    Elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si se establecieron).
 
-   * **completo**:
+  * **completo**:
 
-     Los resultados se representan como Sling JSON para cada nodo, y `jcr:path` muestra la ruta de la visita. De manera predeterminada, la respuesta incluye solamente las propiedades directas del nodo; use `p.nodedepth=N` para incluir contenido más profundo, donde `0` devuelve todo el subárbol. Establezca `p.acls=true` para incluir los permisos JCR de la sesión actual para cada elemento (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Los resultados se representan como Sling JSON para cada nodo, y `jcr:path` muestra la ruta de la visita. De manera predeterminada, la respuesta incluye solamente las propiedades directas del nodo; use `p.nodedepth=N` para incluir contenido más profundo, donde `0` devuelve todo el subárbol. Establezca `p.acls=true` para incluir los permisos JCR de la sesión actual para cada elemento (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
 
-   * **selectivo**:
+  * **selectivo**:
 
-     La respuesta incluye únicamente las propiedades enumeradas en `p.properties`, que es una lista de rutas relativas separadas por espacios (utilice `+` en las direcciones URL). Si una ruta relativa tiene una profundidad mayor que 1, la salida la anida como objetos secundarios. La propiedad especial `jcr:path` siempre incluye la ruta de acceso de la visita.
+    La respuesta incluye únicamente las propiedades enumeradas en `p.properties`, que es una lista de rutas relativas separadas por espacios (utilice `+` en las direcciones URL). Si una ruta relativa tiene una profundidad mayor que 1, la salida la anida como objetos secundarios. La propiedad especial `jcr:path` siempre incluye la ruta de acceso de la visita.
 
 
 ### `savedquery` {#savedquery}

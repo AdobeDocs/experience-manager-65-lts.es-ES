@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 29%
+source-wordcount: '688'
+ht-degree: 26%
 ---
 # Mejoras de traducción{#translation-enhancements}
 
@@ -91,7 +91,7 @@ AEM actualiza la traducción de las cadenas existentes en la memoria de traducci
 Para usar esta función, haga lo siguiente:
 
 * Configure un sistema de administración de etiquetas para su uso con AEM.
-* El conector debe implementar el método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* El conector debe implementar el método [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
   * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
   * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
 

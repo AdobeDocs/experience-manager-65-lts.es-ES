@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1698'
 ht-degree: 79%
 ---
 # Escribir una acción de envío personalizada para formularios adaptables{#writing-custom-submit-action-for-adaptive-forms}
@@ -157,7 +157,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    Añada el script post.POST.jsp a su acción. (/apps/custom_submit_action/store_and_mail/).
 
-   Ejecute la acción predeterminada Almacenar (script post.POST.jsp). Utilice la API [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que CQ proporciona en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
+   Ejecute la acción predeterminada Almacenar (script post.POST.jsp). Utilice la API [FormsHelper.runAction](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que CQ proporciona en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -167,7 +167,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    `String mailTo = properties.get("mailTo");`
 
-   Finalmente, utilice la API CQ Mail para enviar el correo electrónico. Utilice la clase [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para crear el objeto de correo electrónico como se muestra a continuación:
+   Finalmente, utilice la API CQ Mail para enviar el correo electrónico. Utilice la clase [SimpleEmail](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para crear el objeto de correo electrónico como se muestra a continuación:
 
    >[!NOTE]
    >

@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 7%
 ---
 # Ampliar búsqueda de recursos {#extending-assets-search}
@@ -61,7 +61,7 @@ Puede agregar fichas de búsqueda adicionales configurándolas en la interfaz de
 
 Además de usar predicados preexistentes, los desarrolladores de [!DNL Experience Manager] también pueden crear sus propios predicados mediante la [API de Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La creación de predicados personalizados requiere conocimientos básicos sobre el [marco de trabajo de widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+La creación de predicados personalizados requiere conocimientos básicos sobre el [marco de trabajo de widgets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
 
 La práctica recomendada es copiar un predicado existente y ajustarlo. Los predicados de muestra están en **/libs/cq/search/components/predicates**.
 

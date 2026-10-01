@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 3%
 ---
 # Uso de Ocultar condiciones {#using-hide-conditions}
@@ -43,7 +43,7 @@ Al utilizar las condiciones de ocultación, los administradores, los desarrollad
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` es responsable de filtrar los recursos en función de la existencia y el valor de la propiedad `granite:hide`, ubicada en el campo que se va a filtrar. La implementación de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` incluye una instancia de `FilteringResourceWrapper.`
 
-La implementación utiliza la API [ELResolver de Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) y agrega una variable personalizada `cqDesign` a través de ExpressionCustomizer.
+La implementación utiliza la API [ELResolver de Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) y agrega una variable personalizada `cqDesign` a través de ExpressionCustomizer.
 
 A continuación se muestran algunos ejemplos de ocultar condiciones en un nodo de diseño ubicado en `etc/design` o como directiva de contenido.
 

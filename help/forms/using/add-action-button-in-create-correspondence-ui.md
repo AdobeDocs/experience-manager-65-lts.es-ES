@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1903'
 ht-degree: 95%
 ---
 # Agregar un botón de acción personalizado en la interfaz de usuario Crear correspondencia {#add-custom-action-button-in-create-correspondence-ui}
@@ -437,11 +437,11 @@ Para obtener más información, consulte [Conectar AEM Forms con Adobe LiveCycle
    >
    >Cada vez que realice cambios en el servidor de LiveCycle, reinícielo.
 
-   El archivo DSCSample.jar utiliza la API renderLetter. Para obtener más información sobre la API renderLetter, consulte [Interfaz de LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   El archivo DSCSample.jar utiliza la API renderLetter. Para obtener más información sobre la API renderLetter, consulte [Interfaz de LetterRenderService](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importar DSC a LiveCycle {#import-dsc-to-livecyle}
 
-El archivo DSCSample.jar utiliza la API renderLetter para procesar la carta como bytes de PDF de los datos XML que DSC proporciona como entrada. Para obtener más información sobre renderLetter y otras API, consulte [Servicio de procesamiento de cartas](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+El archivo DSCSample.jar utiliza la API renderLetter para procesar la carta como bytes de PDF de los datos XML que DSC proporciona como entrada. Para obtener más información sobre renderLetter y otras API, consulte [Servicio de procesamiento de cartas](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Inicie Workbench e inicie sesión.
 1. Seleccione **Ventana > Mostrar vistas > Componentes**. La vista Componentes se agrega a Workbench ES2.

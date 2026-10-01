@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 5%
 ---
 # Estructura de la IU táctil de Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
@@ -176,4 +176,4 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 Para obtener más información sobre los conceptos relacionados con la IU táctil, lee [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
+Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.

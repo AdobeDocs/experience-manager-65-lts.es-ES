@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2978'
 ht-degree: 1%
 ---
 # Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
@@ -327,12 +327,12 @@ En una página, puede incluir CoralUI 2 RTE clientlib o CoralUI 3 RTE clientlib.
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre la configuración de RTE, consulte la referencia de la [API del widget de AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
+Para obtener más información sobre la configuración de RTE, consulte la referencia de la [API del widget de AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText).
 
 En particular, para ver los complementos y las opciones relacionadas disponibles:
 
-* El componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido). Para conocer todos los parámetros disponibles para el formulario de texto enriquecido, consulte las Opciones de configuración.
-* El componente RichText proporciona una amplia gama de funcionalidades mediante los complementos enumerados en [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada complemento:
+* El componente [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido). Para conocer todos los parámetros disponibles para el formulario de texto enriquecido, consulte las Opciones de configuración.
+* El componente RichText proporciona una amplia gama de funcionalidades mediante los complementos enumerados en [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada complemento:
 
   * consulte las Características para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
   * Consulte las Opciones de configuración para todos los parámetros disponibles para obtener una configuración detallada del complemento correspondiente

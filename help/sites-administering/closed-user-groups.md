@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 1%
 ---
 # Grupos de usuarios cerrados en AEM{#closed-user-groups-in-aem}
@@ -217,7 +217,7 @@ La página asociada con la ruta de inicio de sesión puede encontrarse dentro o 
 
 ### Administración de políticas de CUG {#managing-cug-policies}
 
-El nuevo tipo de directivas de control de acceso para restringir el acceso de lectura para un CUG se administra mediante la API de administración de control de acceso JCR y sigue los mecanismos descritos con la [especificación JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+El nuevo tipo de directivas de control de acceso para restringir el acceso de lectura para un CUG se administra mediante la API de administración de control de acceso JCR y sigue los mecanismos descritos con la [especificación JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Establecer una nueva directiva CUG {#set-a-new-cug-policy}
 
