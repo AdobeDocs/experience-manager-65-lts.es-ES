@@ -291,7 +291,7 @@ Si tiene problemas al configurar o utilizar Adobe Asset Link, intente lo siguien
 * Asegúrese de que la implementación cumpla los requisitos previos. Concretamente, asegúrese de que están instalados los paquetes de funciones o paquetes adecuados.
 * Póngase en contacto con el socio o integrador de sistemas de su organización.
 * Si los usuarios de Creative Cloud no pueden comprobar los recursos desprotegidos, compruebe el uso de mayúsculas y minúsculas en los nombres de dominio en los ID de correo electrónico. Para solucionarlo, consulte [configuración manual](#manual-configuration).
-* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Para obtener más información, consulte [solucionar problemas de Asset Link](https://helpx.adobe.com/es/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
