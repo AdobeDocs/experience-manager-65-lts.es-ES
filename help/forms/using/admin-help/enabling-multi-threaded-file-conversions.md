@@ -24,110 +24,49 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 1%
 ---
 # Habilitar conversiones de archivos con varios subprocesos {#enabling-multi-threaded-file-conversions}
 
-PDF Generator permite habilitar conversiones de archivos con varios procesos para determinados tipos de archivos. La conversión de archivos con varios subprocesos mejora el rendimiento de PDF Generator al permitirle realizar varias conversiones al mismo tiempo.
+PDF Generator puede ejecutar varias conversiones de archivos simultáneamente para mejorar el rendimiento de las conversiones. Elija el modo de conversión aplicable:
 
-## Habilitar conversiones de archivos con varios subprocesos para documentos de OpenOffice, Word y PowerPoint {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
+| Modo de conversión | Aplicaciones que admiten conversiones simultáneas | Modelo de cuenta de usuario |
+|---|---|---|
+| Modo multiusuario | OpenOffice | Una cuenta de usuario independiente ejecuta cada instancia de OpenOffice. |
+| Modo de un solo usuario | Microsoft® Word y Microsoft® Excel | Una cuenta de usuario ejecuta varias instancias de Word y Excel. Las conversiones de PowerPoint permanecen serializadas. |
 
-De forma predeterminada, PDF Generator solo puede convertir un documento de OpenOffice, Microsoft® Word o PowerPoint a la vez. Si habilita las conversiones multiproceso, PDF Generator puede convertir más de un documento simultáneamente. PDF Generator inicia varias instancias de OpenOffice o PDFMaker (utilizadas para realizar las conversiones de Word y PowerPoint).
+Antes de habilitar cualquiera de los dos modos, complete la [configuración previa a la instalación de PDF Generator](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) para las aplicaciones y el sistema operativo que utilice. Para ver las versiones de aplicaciones compatibles, consulte [Soporte de software para PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
 
->[!NOTE]
->
->Las conversiones de archivos con varios subprocesos no son compatibles con Microsoft® Word 2003 y PowerPoint 2003. Para habilitar las conversiones de archivos multiproceso, actualice a Microsoft® Word 2007 y PowerPoint 2007 o Microsoft® Word 2010 y PowerPoint 2010.
+## Modo multiusuario {#multi-user-mode}
 
->[!NOTE]
->
->Las conversiones de archivos con varios subprocesos no son compatibles con Microsoft® Excel, Microsoft® Visio, Microsoft® Project o Microsoft® Publisher.
+En el modo multiusuario, PDF Generator inicia cada instancia de OpenOffice en una cuenta de usuario independiente. Configure suficientes cuentas de usuario administrativo válidas para la cantidad de conversiones simultáneas que necesita. En un clúster, configure las mismas cuentas en cada nodo.
 
-Cada instancia de OpenOffice o PDFMaker se inicia con una cuenta de usuario independiente. Cada cuenta de usuario que agregue debe ser un usuario válido con privilegios administrativos en el equipo Forms Server. En un entorno agrupado, el mismo conjunto de usuarios debe ser válido para todos los nodos del clúster.
+En Windows, asegúrese de que los usuarios de PDF Generator tengan el privilegio [Reemplazar un token de nivel de proceso](/help/forms/using/install-configure-document-services.md#grant-the-replace-a-process-level-token-privilege) y complete la configuración de Control de cuentas de usuario aplicable que se describe en [Configurar servicios de documentos](/help/forms/using/install-configure-document-services.md#disable-user-account-control-uac).
 
-En la página Cuentas de usuario de la consola de administración, puede especificar qué cuentas de usuario utilizar para las conversiones de archivos con varios subprocesos. Puede agregar cuentas, eliminarlas o cambiar las contraseñas de las cuentas. Si está ejecutando PDF Generator en Windows Server 2003 o Windows Server 2008, agregue al menos tres cuentas de usuario que tengan privilegios de administrador.
+### Conversiones de OpenOffice {#openoffice-conversions}
 
-Cuando agregue usuarios para OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Windows Server 2003 o 2008, o para OpenOffice en Linux® o Sun™ Solaris™, descarte los cuadros de diálogo de activación inicial de todos los usuarios.
+Configure una cuenta de usuario de PDF Generator para cada instancia de OpenOffice que se pueda ejecutar simultáneamente. Instale OpenOffice en una ubicación a la que todos los usuarios configurados puedan acceder y descarte los cuadros de diálogo de activación iniciales de OpenOffice para cada usuario.
 
-### Añada el derecho para reemplazar el token de nivel de proceso {#add-the-right-to-replace-the-process-level-token}
+Para sistemas basados en UNIX, complete los requisitos de instalación de OpenOffice y permisos de usuario en [Configurar servicios de documentos](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations).
 
-En un sistema operativo Windows, las cuentas de usuario de administrador que se utilizan para la conversión de PDF (usuarios de PDFG) deben reemplazar los privilegios de token de nivel de proceso. Puede agregar este derecho mediante el Editor de directivas de grupo:
+## Modo de un solo usuario en Windows {#single-user-mode-on-windows}
 
-1. En el menú Inicio de Windows, haga clic en Ejecutar y escriba gpedit.msc.
-1. Haga clic en Directiva de equipo local > Configuración del equipo > Configuración de Windows > Configuración de seguridad > Directivas locales > Asignación de derechos de usuario. Edite la directiva *Reemplazar un token de nivel de proceso* para incluir el grupo Administradores.
-1. Agregue el usuario a la entrada Reemplazar un símbolo (token) de nivel de proceso.
+El modo de un solo usuario permite que PDF Generator ejecute conversiones simultáneas en una cuenta de usuario configurada.
 
-### Configuración adicional necesaria para OpenOffice, Microsoft® Word y Microsoft® PowerPoint en Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+En este modo, varias instancias de Microsoft® Word (DOC y DOCX) y Excel (XLS y XLSX) se ejecutan bajo el mismo usuario. Microsoft® PowerPoint (PPT y PPTX) no admite el modo de usuario único. PDF Generator inicia sólo una instancia de PowerPoint a la vez, por lo que las conversiones de PowerPoint se serializan.
 
-Si está ejecutando OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Windows Server 2008, deshabilite UAC para cada usuario agregado.
+Para habilitar el modo de un solo usuario para las conversiones de Word y Excel:
 
-1. Haga clic en Panel de control de Campaign > Cuentas de usuario > Activar o desactivar el Control de cuentas de usuario.
-1. Anule la selección de la casilla &quot;Usar el Control de cuentas de usuario (UAC) para ayudar a proteger el equipo&quot; y haga clic en Aceptar.
-1. Reinicie el equipo para que la configuración surta efecto.
+1. En la consola de administración, vaya a **Inicio > Servicios > Aplicaciones y servicios > Administración de servicios**.
+1. Filtre por **PDF Generator** y seleccione **GeneratePDFService**.
+1. En la ficha **Configuración**, configure las siguientes opciones:
 
-### Configuración adicional necesaria para OpenOffice en Linux® o Solaris™ {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
+   * Establezca **Habilitar modo de usuario único para PDFMaker** en **true**.
+   * Establezca **Tamaño de grupo de PDFMaker** en el número máximo de instancias de Word que pueden ejecutar conversiones simultáneamente.
+   * Establezca **Habilitar modo de usuario único para Native2PDF** en **true**.
+   * Establezca **Native2PDF Pool Size** en el número máximo de instancias de Excel que pueden ejecutar conversiones simultáneamente.
 
-1. Agregar cuentas de usuario. (Consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
-1. A continuación, debe cambiar el archivo /etc/sudoers. El permiso predeterminado para este archivo es 440. Cambie el permiso de este archivo a modificable.
-1. Agregue entradas para usuarios adicionales (que no sean el administrador que ejecuta el servidor de Forms) en el archivo /etc/sudoers. Por ejemplo, si está ejecutando formularios AEM Forms como un usuario denominado lcadm y un servidor denominado myhost, y desea suplantar a user1 y user2, agregue las siguientes entradas a /etc/sudoers:
-
-   ```shell
-    lcadm myhost=(user1) NOPASSWD: ALL
-    lcadm myhost=(user2) NOPASSWD: ALL
-   ```
-
-   Esta configuración permite a lcadm ejecutar cualquier comando en el host &#39;myhost&#39; como &#39;user1&#39; o &#39;user2&#39; sin solicitar una contraseña.
-
-   >[!NOTE]
-   >
-   >Asegúrese de haber asignado los roles de usuario del sistema y usuario de PDFG &quot;user1&quot; y &quot;user2&quot; Para asignar un rol de PDFG a un usuario, consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
-
-1. También en el archivo /etc/sudoers, localice y comente esta línea agregando un signo de número (#) al principio de la línea:
-
-   ```shell
-   Defaults requiretty
-   ```
-
-   Esto le permite añadir usuarios de Linux®.
-
-1. Vuelva a cambiar el permiso del archivo etc/sudoers a 440.
-1. Permitir que todos los usuarios que agregó mediante [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account) realicen conexiones al servidor de Forms. Por ejemplo, para permitir que un usuario local denominado user1 tenga permiso para establecer la conexión con el servidor de Forms, utilice el siguiente comando
-
-   `xhost +local:user1@`
-
-   Para obtener más información, consulte la documentación del comando xhost.
-
-1. Reinicie el servidor.
-
->[!NOTE]
->
->OpenOffice debe estar instalado en una ubicación de directorio a la que todos los usuarios de PDFG puedan acceder. Puede comprobarlo iniciando sesión como usuario de PDFG y comprobando si puede iniciar OpenOffice sin problemas.
-
-### Agregar una cuenta de usuario {#add-a-user-account}
-
->[!NOTE]
-> 
-> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
-
-1. En la consola de administración, haga clic en Servicios > PDF Generator > Cuentas de usuario.
-1. Haga clic en Agregar e introduzca el nombre de usuario y la contraseña de un usuario que tenga privilegios administrativos en el servidor de Forms. Si está configurando usuarios para OpenOffice, descarte los cuadros de diálogo de activación iniciales de OpenOffice.
-
-   >[!NOTE]
-   >
-   >Si está configurando usuarios para OpenOffice, el número de instancias de OpenOffice no puede ser mayor que el número de cuentas de usuario especificadas en este paso.
-
-1. Reinicie Forms Server.
-
-### Quitar un usuario de la lista utilizada para las conversiones de archivos multiproceso {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
-
-1. En la consola de administración, haga clic en Servicios > PDF Generator > Cuentas de usuario.
-1. Haga clic en la casilla de verificación situada junto al usuario que desee quitar y, a continuación, haga clic en Eliminar.
-1. En la página de confirmación, haga clic en Eliminar.
-1. Reinicie Forms Server.
-
-### Cambiar la contraseña de una cuenta {#change-the-password-for-an-account}
-
-1. En la consola de administración, haga clic en Servicios > PDF Generator > Cuentas de usuario.
-1. Haga clic en el nombre de usuario e introduzca y confirme la nueva contraseña. Esta contraseña debe coincidir con la contraseña del sistema del usuario.
+1. Reinicie el servidor de AEM Forms.

@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10769'
-ht-degree: 46%
+source-wordcount: '10979'
+ht-degree: 45%
 ---
 # Instalación y configuración de Document Services {#installing-and-configuring-document-services}
 
@@ -1123,6 +1123,27 @@ Se necesita una cuenta de usuario local para ejecutar el servicio PDF Generator
 
 1. En la pestaña **[!UICONTROL Cuentas de usuario]**, proporcione las credenciales de una cuenta de usuario local y haga clic en **[!UICONTROL Enviar]**. Si Microsoft® Windows se lo solicita, permita el acceso al usuario. Cuando se agrega correctamente, el usuario configurado se muestra en la sección **[!UICONTROL Sus cuentas de usuario]** de la pestaña **[!UICONTROL Cuentas de usuario]**.
 
+### (Solo Windows) Habilite las conversiones de PDF Generator de varios subprocesos
+
+Para ejecutar conversiones de documentos de varios subprocesos mientras AEM Forms se ejecuta como un servicio de Windows, PDF Generator procesa las conversiones con una sola cuenta de usuario configurada.
+
+>[!NOTE]
+>
+> En este modo, varias instancias de **Microsoft® Word** (doc/docx) y **Excel** (xls/xlsx) se ejecutan bajo el mismo usuario y controlan las conversiones simultáneamente. **Microsoft® PowerPoint** (ppt/pptx) no admite este modo. PDF Generator inicia sólo una instancia de PowerPoint a la vez, por lo que las conversiones con varios subprocesos no son compatibles con PowerPoint.
+
+Para habilitar las conversiones multiproceso para Word y Excel:
+
+1. Configure una [cuenta de usuario local](#configure-a-local-user-account-to-run-the-pdf-generator-service) para PDF Generator.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuración de PDF Generator]**. La URL predeterminada es <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. En la ficha **[!UICONTROL Configuración general]**, defina las siguientes opciones (configure PDFMaker para Word y Native2PDF para Excel):
+
+   * **Habilitar modo de usuario único para PDFMaker:** **true**
+   * **Tamaño del grupo de procesos de un solo usuario de PDFMaker:** Establezca como desee. Este valor es el número máximo de instancias de Word que pueden ejecutar conversiones al mismo tiempo.
+   * **Habilitar modo de usuario único para Native2PDF:** **true**
+   * **Tamaño del grupo de procesos de un solo usuario nativo2PDF:** Establezca como desee. Este valor es el número máximo de instancias de Excel que pueden ejecutar conversiones al mismo tiempo.
+
+1. Reinicie el servidor de AEM Forms.
+
 ### Configuración del tiempo de espera {#configure-the-time-out-settings}
 
 1. En el [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el servicio **[!UICONTROL Jacorb ORB Provider]**.
@@ -1482,7 +1503,6 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
         
         ```
-
     
   * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
@@ -1490,8 +1510,8 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
         
         ```
-
-    * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
+    
+* Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++
 
