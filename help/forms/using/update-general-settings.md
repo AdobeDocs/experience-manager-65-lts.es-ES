@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 92%
+source-wordcount: '449'
+ht-degree: 80%
 ---
 # Actualizar la configuración general{#updating-general-settings}
+
+>[!NOTE]
+>
+>Las versiones de Android y iOS de la aplicación de AEM Forms se han suspendido. La aplicación de Android se canceló la publicación de Google Play en septiembre de 2026 y la aplicación de iOS se ha eliminado de Apple App Store.
+>Estas aplicaciones ya no están disponibles para la instalación. Para obtener ayuda con la aplicación Android, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 La configuración general de la aplicación de AEM Forms le permite especificar configuraciones, como recuperar archivos adjuntos, modo sin conexión, pantalla de aterrizaje, categoría predeterminada y frecuencia de guardado automático.
 
@@ -51,9 +56,9 @@ En la pestaña General, cambie la configuración de descarga de archivos adjunto
 
    Pantalla Configuración general
 
-   >[!NOTE]
-   >
-   >Las opciones pueden mostrarse de forma diferente en distintos dispositivos móviles.
+>[!NOTE]
+>
+>Las opciones pueden mostrarse de forma diferente en distintos dispositivos móviles.
 
 ### Configuración general {#general-settings}
 

@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 95%
-
+source-wordcount: '838'
+ht-degree: 94%
 ---
-
 # Configurar el proyecto Xcode y compilar la aplicación iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms para iOS se ha suspendido y eliminado de Apple App Store.
+>Ya no está disponible para la instalación.
 
 AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. La fuente contiene todos los componentes para crear una aplicación de AEM Forms personalizada. El archivo del código fuente, `adobe-lc-mobileworkspace-src-<version>.zip` forma parte del paquete `adobe-aemfd-forms-app-src-pkg-<version>.zip` en Distribución de software.
 
@@ -32,7 +35,7 @@ Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pa
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
 1. Para descargar el archivo del código fuente, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` en su explorador.
-El paquete de origen se descargará en el dispositivo.
+El paquete de fuente se descargará en el dispositivo.
 
 La siguiente imagen muestra el contenido extraído del `adobe-lc-mobileworkspace-src-<version>.zip`.
 
@@ -122,9 +125,9 @@ Para obtener información detallada sobre la firma de código y la adición de d
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >Este paso solo es necesario si la aplicación de AEM Forms necesita conectarse a un servidor que no cumpla los requisitos de App Transport Security.
+>[!NOTE]
+>
+>Este paso solo es necesario si la aplicación de AEM Forms necesita conectarse a un servidor que no cumpla los requisitos de App Transport Security.
 
 1. En **PROYECTO**, seleccione **AEM Forms** y asegúrese de que la firma adecuada esté seleccionada para **Identidad de firma de código**, **Depurar**, **Versión** y **Cualquier SDK de iOS**.
 1. Conecte un iPad aprovisionado a un equipo Mac.
