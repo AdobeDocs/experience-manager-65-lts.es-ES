@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 82%
+source-wordcount: '371'
+ht-degree: 70%
 ---
 # Personalizar gestos {#gesture-customization}
+
+>[!NOTE]
+>
+>Las versiones de Android y iOS de la aplicación de AEM Forms se han suspendido. La aplicación de Android se canceló la publicación de Google Play en septiembre de 2026 y la aplicación de iOS se ha eliminado de Apple App Store.
+>Estas aplicaciones ya no están disponibles para la instalación. Para obtener ayuda con la aplicación Android, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puede personalizar los gestos de la aplicación AEM Forms para proporcionar un método distinto de interactuar con la aplicación. Por ejemplo, puede añadir nuevos gestos para abrir o cerrar una tarea o un punto de inicio.
 
@@ -50,9 +55,9 @@ En la aplicación AEM Forms, el gesto de deslizar el dedo hacia la izquierda ab
    * En Eclipse, vaya a la carpeta **assets > www > wsmobile > js > runtime > views**.
    * En Visual Studio, vaya a la carpeta **MWSWindows > www > wsmobile > js > runtime > views**.
 
-   >[!NOTE]
-   >
-   >El archivo task.js contiene la vista de Backbone asociada a todas las tareas o puntos de inicio que aparecen en las listas de tareas o puntos de inicio.
+>[!NOTE]
+>
+>El archivo task.js contiene la vista de Backbone asociada a todas las tareas o puntos de inicio que aparecen en las listas de tareas o puntos de inicio.
 
 1. Busque la propiedad events de la vista en el archivo `task.js`.
 
