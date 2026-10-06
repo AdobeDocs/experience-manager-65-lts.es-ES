@@ -47,7 +47,7 @@ El código fuente de la aplicación de AEM Forms está disponible para los clien
 
 La compatibilidad con la aplicación de AEM Forms para Android y iOS ha dejado de ofrecerse. Las aplicaciones de Android y iOS ya no están disponibles en Google Play ni en Apple App Store.
 
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar y distribuir la aplicación en dispositivos iOS, Android o Windows, consulte [Personalizar, crear y distribuir la aplicación de AEM Forms](#customize-build-distribute).
 
