@@ -102,7 +102,7 @@ El conocimiento del producto abarca conceptos y temas derivados de la documentac
 | Aprendizaje puntual | <ul><li>¿Qué es el editor universal?</li><li>¿Cómo se crea un programa en Cloud Manager?</li></ul> |
 | Descubrimiento abierto | <ul><li>¿Cómo se utiliza el editor universal?</li><li>¿Hay alguna manera de copiar el contenido de un entorno a otro?</li></ul> |
 | Resolución de problemas | <ul><li>¿Por qué no puedo acceder al editor universal?</li><li>¿Por qué falla mi canalización?</li></ul> |
-| **Creación de tickets de asistencia** | **Disponible solo para administradores de asistencia **<br>**Ejemplos** |
+| **Creación de tickets de asistencia** | **Disponible solo para administradores de asistencia &#x200B;**<br>**Ejemplos** |
 | Creación automática de tickets de asistencia que captura el historial y el contexto de chat del Asistente de IA | <ul><li>Crear un ticket de asistencia para mí.</li></ul> |
 | Recuperar el estado del ticket de asistencia | <ul><li>Mostrarme todos los tickets de asistencia que he abierto.</li><li>Mostrarme el estado del ticket “E-----------”</li></ul> |
 
