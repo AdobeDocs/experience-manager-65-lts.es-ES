@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
+source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
 workflow-type: tm+mt
-source-wordcount: '7505'
-ht-degree: 20%
+source-wordcount: '7432'
+ht-degree: 21%
 ---
 
 # Notas de la versión actuales de Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
@@ -662,19 +662,21 @@ El error es silencioso: los nodos de contenido no se cargan durante la activaci�
 >
 > Para evitar errores en la carga de contenido después de actualizar a AEM 6.5 LTS SP2, quite todos los comentarios de los archivos JSON en los paquetes de `Sling-Initial-Content`.
 
+<!--
+### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
 
-### La actualización del paquete Jackson afecta al conector GlobalLink {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 actualiza el paquete jackson. Este cambio afecta a las implementaciones que utilizan el conector de traducción GlobalLink.
-
-Si usa el paquete `gs4tr-globallink-adaptors-aem.core` en una versión anterior a 3.4.4.7, actualice el paquete a una versión compatible. La versión 3.4.4.7 o posterior funciona con el paquete jackson actualizado en SP3.
-
+AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
 >[!NOTE]
 >
->Actualice el paquete `gs4tr-globallink-adaptors-aem.core` a 3.4.4.7 o posterior antes o durante la actualización del SP3 para evitar problemas de compatibilidad con el conector GlobalLink.
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+-->
+
+
 
 <!--
-
 AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
 
 If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
