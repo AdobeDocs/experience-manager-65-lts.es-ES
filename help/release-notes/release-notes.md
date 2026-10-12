@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **Revisión obligatoria**: para evitar problemas de SNFE (SegmentNotFoundException) durante la compactación en línea en espera, instale la revisión descrita en [Problemas conocidos: corrupción del repositorio durante la compactación en línea](#repository-corruption-during-online-compaction-granite-73045).
 
 ## Qué se incluye en [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -646,6 +648,20 @@ En esta sección se enumeran las características y funciones que se han elimina
 
 ## Problemas conocidos {#known-issues}
 
+### Daños en el repositorio durante la compactación en línea en espera (GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+Los usuarios pueden experimentar daños en el repositorio durante la compactación en línea si la instancia se ejecutaba anteriormente como un modo de espera pasiva TarMK y luego se promocionó a la principal. Se puede producir un `SegmentNotFoundException` (SNFE) en este escenario y puede provocar daños en el repositorio.
+
+Para resolver el problema, instale la revisión de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip). Dado que la revisión incluye un paquete `oak-segment-tar` de bajo nivel, la instancia se reinicia después de la instalación.
+
+Planifique el tiempo de inactividad de la instancia al aplicarla. Para la compactación sin conexión, use el Jar [`oak-run` correspondiente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar), también disponible en Distribución de software.
+
+>[!NOTE]
+>
+> * Para cualquier operación de `oak-run`, use el jar [`oak-run` 2.4.1-B002](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar).
+>
+> * Inicie AEM estableciendo la propiedad del sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true`.
+
 ### AEM Forms
 
 * En el Administrador de configuración, la inicialización de la base de datos falla durante Bootstrap en el modo personalizado llave en mano de AEM Forms 6.5 LTS JEE cuando no se selecciona ningún módulo o solo componentes limitados. El error se debe a que falta una dependencia (xalan-2.7.2.jar), lo que provoca un error. Añadir el archivo JAR a Adobe-livecycle-jboss.ear\lib resuelve el problema. (FORMS-24690)
@@ -698,7 +714,7 @@ Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.co
 
 -->
 
-&#x200B;###
+###
 
 ### Error de conexión de Dispatcher con la función solo SSL (corregido en AEM 6.5 LTS SP1 y posterior){#ssl-only-feature}
 
