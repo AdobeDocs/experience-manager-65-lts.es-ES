@@ -375,7 +375,7 @@ Solo muestra el valor, si hay uno
 
 Puede configurar lo siguiente:
 
-* Asignación de **&#x200B;**
+* Asignación de ****
 Seleccione un campo de personalización de Adobe Campaign, si corresponde.
 
 * **Clave de reconciliación**
