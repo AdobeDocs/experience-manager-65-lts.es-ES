@@ -1539,6 +1539,6 @@ Para este componente, puede establecer varios parámetros tanto en el modo de ed
    ```
 
 1. Guarde los cambios.
-1. En el explorador, vuelva a cargar la página ** productos **. Toda la página tiene el siguiente aspecto:
+1. En el explorador, vuelva a cargar la página **&#x200B; productos &#x200B;**. Toda la página tiene el siguiente aspecto:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
