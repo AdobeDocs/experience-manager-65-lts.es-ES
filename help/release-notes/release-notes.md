@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,23 @@ Para instalar AEM Forms 6.5 LTS SP3 en JEE, complete estos pasos en orden:
 
 * En **AEM Forms en JEE 6.5 LTS SP3**, se produce un error al convertir los archivos **PostScript (PS), EPS y PRN a PDF**. El proceso nativo `PsToPdfSvc` puede finalizar inesperadamente, lo que provoca que el trabajo de conversión falle con errores como `ALC-PDG-003-011` y `ALC-PDG-001-028`. Póngase en contacto con Asistencia al cliente de Adobe para obtener ayuda. (FORMS-28152)
 
+En AEM Forms en JEE, Extensiones de Reader no funciona en la plataforma WebSphere® Liberty Profile (WLP). El archivo EAR incluido con LTS SP3 no tiene las bibliotecas necesarias de Bouncy Castle en su ruta de clase.
+
+**Solución alternativa**
+
+1. Vaya a `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`.
+1. Abra `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF` y anexe estas entradas al elemento `Class-Path`:
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. Vuelva a implementar el archivo EAR modificado en la carpeta WebSphere® Liberty Profile `dropins`:
+   1. Detenga el servidor WebSphere® Liberty Profile y elimine `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Elimine el directorio `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
+   1. Copie el archivo EAR modificado del paso 2 al `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Inicie el servidor del perfil de WebSphere® Liberty.
+
 #### Correcciones de seguridad {#forms-security-fixes-65-lts-sp3}
 
 Esta versión resuelve las vulnerabilidades de seguridad en AEM Forms, incluidas XSS, SSRF y XXE, y actualiza las bibliotecas.
@@ -714,7 +731,7 @@ Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.co
 
 -->
 
-&#x200B;###
+###
 
 ### Error de conexión de Dispatcher con la función solo SSL (corregido en AEM 6.5 LTS SP1 y posterior){#ssl-only-feature}
 
