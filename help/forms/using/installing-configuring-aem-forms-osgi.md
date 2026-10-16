@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 95%
@@ -254,12 +254,12 @@ Para usar Adobe Analytics con AEM Forms, consulte [Configuración de análisis
 
 Es probable que los clientes abandonen un formulario si la experiencia que ofrece no es atractiva. A pesar de que para ellos resulta frustrante, también puede aumentar el volumen y el coste de la asistencia en su organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. AEM Forms es la solución a este problema.
 
-AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias del cliente personalizadas y atractivas en diferentes canales digitales. Para utilizar Adobe Target en formularios adaptables de prueba A/B, consulte [Integración de Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias del cliente personalizadas y atractivas en diferentes canales digitales. Para utilizar Adobe Target en formularios adaptables de prueba A/B, consulte [Integración de Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms).
 
 ## Pasos siguientes {#next-steps}
 
 Ha configurado un entorno para utilizar las capacidades de AEM Forms Data Capture. Ahora, los siguientes pasos para utilizar esta capacidad son:
 
 * [Creación de su primer formulario adaptable](/help/forms/using/create-your-first-adaptive-form.md)
-* [Creación de su primer formulario de PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
+* [Creación de su primer formulario de PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introducción a los formularios HTML5](/help/forms/using/introduction.md)

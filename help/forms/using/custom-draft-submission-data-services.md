@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 48%
@@ -41,7 +41,7 @@ De forma predeterminada, AEM Forms almacena los datos de usuario asociados con e
 
 Sin embargo, los componentes del portal de AEM Forms proporcionan servicios de datos que le permiten personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 
-Para personalizar el almacenamiento de los datos de usuario, debe implementar los servicios [Datos de borrador](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Para personalizar el almacenamiento de los datos de usuario, debe implementar los servicios [Datos de borrador](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service).
 
 ## Requisitos previos {#prerequisites}
 

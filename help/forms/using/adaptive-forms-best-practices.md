@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 77%
@@ -102,11 +102,11 @@ Para obtener más información, consulte [Crear un formulario adaptable](/help/f
   * Para personalizar el diseño de los componentes de formulario adaptables listos para usar en /libs, [cree componentes de diseño personalizados](/help/forms/using/custom-layout-components-forms.md) además de [diseños predeterminados](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Introduzca interactividades personalizadas mediante la creación de widgets o apariciones personalizados. No se recomienda modificar los componentes predeterminados. Para obtener más información, consulte [Marco de trabajo de aspecto](/help/forms/using/introduction-widgets.md).
 
-* Consulte [Administrar información personal](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) para recomendaciones sobre la administración de datos PII.
+* Consulte [Administrar información personal](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information) para recomendaciones sobre la administración de datos PII.
 
 ### Crear plantillas de formulario
 
-Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algunas de las prácticas recomendadas son las siguientes:
 
@@ -288,7 +288,7 @@ Para obtener más información, consulte [Complemento AEM Chrome: formulario ada
 
 Las validaciones del lado del servidor son necesarias para evitar cualquier intento de omitir las validaciones en el cliente y cualquier posible compromiso de los envíos de datos y las violaciones de reglas comerciales. Las validaciones del lado del servidor se ejecutan en el servidor al cargar la biblioteca de cliente necesaria.
 
-* Incluya funciones en una biblioteca de cliente para validar expresiones en formularios adaptables y especifique la biblioteca de cliente en el cuadro de diálogo del contenedor de formularios adaptables. Para obtener más información, consulte [Revalidación del lado del servidor](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Incluya funciones en una biblioteca de cliente para validar expresiones en formularios adaptables y especifique la biblioteca de cliente en el cuadro de diálogo del contenedor de formularios adaptables. Para obtener más información, consulte [Revalidación del lado del servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * La validación del lado del servidor valida el modelo de formulario. Se recomienda crear una biblioteca de cliente independiente para las validaciones y no mezclarla con otras cosas como el estilo del HTML y la manipulación DOM en la misma biblioteca de cliente.
 
 ### Localizar formularios adaptables {#localizing-adaptive-forms}
@@ -373,11 +373,11 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
 
-* &#x200B;<!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
-* &#x200B;<!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
-* &#x200B;<!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
-* &#x200B;<!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
 
 El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
 

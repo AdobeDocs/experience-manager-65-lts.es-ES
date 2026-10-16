@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 97%
@@ -58,7 +58,7 @@ Para un formulario adaptable, la opción de guardado automático no está habili
    * Especificar un intervalo de tiempo si selecciona el activador **[!UICONTROL En base a tiempo]**.
    * Especificar un nombre de evento si selecciona el activador **[!UICONTROL En base a eventos]**.
 
-   También puede crear y agregar estrategias personalizadas a la lista. Para obtener más información, consulte [Implementar una estrategia personalizada para guardar automáticamente los formularios](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   También puede crear y agregar estrategias personalizadas a la lista. Para obtener más información, consulte [Implementar una estrategia personalizada para guardar automáticamente los formularios](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms).
 
 1. (Solo guardado automático en base a tiempo) Realice los siguientes pasos para configurar las opciones de guardado automático en base a tiempo.
 

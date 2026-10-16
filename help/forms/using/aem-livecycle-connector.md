@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 49%
@@ -66,7 +66,7 @@ Las aplicaciones cliente pueden iniciar servicios de LiveCycle mediante programa
 
 El conector de AEM LiveCycle simplifica el flujo al exponer estas instancias de cliente como servicios OSGi a los que se puede acceder mediante OSGi estándar. El conector de LiveCycle ofrece las siguientes características:
 
-* Instancias de cliente como el servicio OSGi: Los clientes empaquetados como paquetes OSGI se enumeran en la sección [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Cada cliente jar registra la instancia del cliente como un servicio OSGi con el registro de servicios OSGi.
+* Instancias de cliente como el servicio OSGi: Los clientes empaquetados como paquetes OSGI se enumeran en la sección [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#document-services-list). Cada cliente jar registra la instancia del cliente como un servicio OSGi con el registro de servicios OSGi.
 * Propagación de la credencial de usuario: los detalles de conexión necesarios para conectarse al servidor de LiveCycle se administran en un lugar central.
 * Servicio ServiceClientFactory: para iniciar los procesos, la aplicación cliente puede acceder a la instancia de ServiceClientFactory.
 
@@ -94,7 +94,7 @@ Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
    </dependency>
    ```
 
-   Para iniciar un servicio, agregue una dependencia Maven correspondiente al servicio. Para obtener la lista de dependencias, consulte [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por ejemplo, para el servicio Generar PDF agregue la siguiente dependencia:
+   Para iniciar un servicio, agregue una dependencia Maven correspondiente al servicio. Para obtener la lista de dependencias, consulte [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#document-services-list). Por ejemplo, para el servicio Generar PDF agregue la siguiente dependencia:
 
    ```xml
    <dependency>

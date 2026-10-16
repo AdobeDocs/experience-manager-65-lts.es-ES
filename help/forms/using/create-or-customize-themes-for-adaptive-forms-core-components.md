@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 41%
@@ -115,7 +115,7 @@ Crear o personalizar una temática es un proceso de varios pasos. Realice los pa
 1. [Personalizar el aspecto del tema](#customize-the-theme)
 1. [Preparar el tema para la implementación local](#generate-the-clientlib)
 1. [Implementar el tema en un entorno local](#deploy-the-theme-on-a-local-environment)
-1. [Implementar el tema en el entorno de producción](#5-deploy-a-theme-on-your-production-environment)
+1. [Implementar el tema en el entorno de producción](#deploy-theme)
 
 <!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)

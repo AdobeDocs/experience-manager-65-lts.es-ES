@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 2%
@@ -50,4 +50,4 @@ Utilice tipos de variables simples (por ejemplo, string o int) y evite utilizar 
 
 Utilice el almacenamiento global de documentos (GDS) de forma eficaz. El directorio GDS del servidor de Forms se utiliza para almacenar, entre otras cosas, archivos que se pasan a servicios que forman parte de formularios AEM en procesos. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
 
-La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.
+La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)). Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.

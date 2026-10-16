@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 96%
@@ -40,9 +40,9 @@ Las consultas Ad hoc en los informes de procesos le permiten crear consultas per
 
 Además, las consultas Ad hoc se pueden definir mediante filtros de propiedades de procesos y tareas. Estos filtros se pueden guardar y utilizar para ejecutar los informes más adelante.
 
-[**Buscar el proceso**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): busque instancias de proceso con un filtro de búsqueda definido por el usuario basado en atributos de proceso.
+[**Buscar el proceso**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search): busque instancias de proceso con un filtro de búsqueda definido por el usuario basado en atributos de proceso.
 
-[**Detalles del proceso**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): consulte los detalles de una instancia de proceso al especificar el ID de proceso.
+[**Detalles del proceso**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details): consulte los detalles de una instancia de proceso al especificar el ID de proceso.
 
 **Buscar tareas**: busque instancias de tareas con un filtro de búsqueda definido por el usuario basado en atributos de tareas.
 

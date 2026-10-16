@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 55%
@@ -223,7 +223,7 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
 Después de crear una temática de formulario adaptable, realice los siguientes pasos para utilizarlo de forma adaptativa:
 
-1. Para incluir la temática creada en [para crear una temática de formulario adaptable](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), cree una página personalizada de tipo `cq:Component`.
+1. Para incluir la temática creada en [para crear una temática de formulario adaptable](/help/forms/using/creating-custom-adaptive-form-themes.md#to-create-an-adaptive-form-theme), cree una página personalizada de tipo `cq:Component`.
 
    Por ejemplo, `/apps/myAfCustomizations/myAfPages/forestPage`.
 

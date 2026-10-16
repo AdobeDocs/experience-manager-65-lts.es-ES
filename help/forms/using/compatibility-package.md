@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 59%
@@ -32,7 +32,7 @@ ht-degree: 59%
 
 Interactive Communications es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM Forms 6.5 LTS. Para seguir usando cartas en AEM Forms 6.5 LTS, debes instalar el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) más reciente.
 
-El paquete de compatibilidad de AEMFD también le permite [usar los siguientes recursos de AEM Forms 6.5.22.0, 6.4, 6.3 y 6.2 en AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+El paquete de compatibilidad de AEMFD también le permite [usar los siguientes recursos de AEM Forms 6.5.22.0, 6.4, 6.3 y 6.2 en AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts)
 
 * Fragmentos de documento
 * Cartas

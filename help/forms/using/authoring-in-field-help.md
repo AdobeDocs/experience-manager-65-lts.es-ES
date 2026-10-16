@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 90%
@@ -45,8 +45,8 @@ En este artículo se explica cómo los autores de formularios pueden agregar ayu
 
 Puede especificar la ayuda en contexto mediante las siguientes opciones de la sección Contenido de ayuda de la pestaña Propiedades de la barra lateral.
 
-* [Descripción breve](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [Descripción larga](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [Descripción breve](../../forms/using/authoring-in-field-help.md#short-description)
+* [Descripción larga](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![Ayuda en contexto para campos de formulario](assets/descriptions.png)
 

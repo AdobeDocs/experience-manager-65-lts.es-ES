@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 3%
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 Asegúrese de que las fuentes utilizadas en un formulario estén disponibles para su uso en el servidor de aplicaciones J2EE que aloja los formularios AEM. Por ejemplo, imagine el siguiente escenario. Un diseñador de formularios agrega una fuente al directorio de fuentes que utiliza Designer y crea un formulario que utiliza esa fuente en un equipo independiente. Para que el servicio Output utilice la fuente, colóquela en el directorio de fuentes del cliente. Si el directorio de fuentes del cliente no existe, cree un directorio en el servidor de aplicaciones J2EE que aloje formularios AEM.
 
-Para obtener información sobre la configuración de fuentes adicional, consulte [Configuración general de los formularios de AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
+Para obtener información sobre la configuración de fuentes adicional, consulte [Configuración general de los formularios de AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).
 
 **Especifique la ubicación del directorio de fuentes del cliente**
 

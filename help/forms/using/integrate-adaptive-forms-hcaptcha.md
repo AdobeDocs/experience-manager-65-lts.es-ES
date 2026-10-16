@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 27%
@@ -84,7 +84,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 1. En el **[!UICONTROL Contenedor de configuración]**, seleccione el Contenedor de configuración que contiene la Configuración de nube que conecta AEM Forms con Chcaptcha.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-   Si no tiene un contenedor de configuración para Chcaptcha, consulte la sección [Conectar su entorno de AEM Forms con Chcaptcha®](#configure-hcaptcha-steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
+   Si no tiene un contenedor de configuración para Chcaptcha, consulte la sección [Conectar su entorno de AEM Forms con Chcaptcha®](#connect-your-forms-environment-with-hcaptcha-service) para obtener información sobre cómo crear un contenedor de configuración.
 
    ![Seleccionar el contenedor de configuración](/help/forms/using/assets/captcha-properties.png)
 

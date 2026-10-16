@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 92%
@@ -40,7 +40,7 @@ ht-degree: 92%
 
 Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
-Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es).
+Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Información general {#overview}
 
@@ -215,7 +215,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 **Remove Instance**. Quita una instancia del panel repetible o fila de tabla especificados.
 
-**Navegar hasta** navega a otras comunicaciones interactivas, otros formularios adaptables, otros recursos, como imágenes o fragmentos de documento, o una URL externa. Para obtener más información, consulte [Botón Agregar a la comunicación interactiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegar hasta** navega a otras comunicaciones interactivas, otros formularios adaptables, otros recursos, como imágenes o fragmentos de documento, o una URL externa. Para obtener más información, consulte [Botón Agregar a la comunicación interactiva](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel).
 
 ### Establecer valor de {#set-value-of}
 

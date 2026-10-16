@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 97%
@@ -114,8 +114,8 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
   ![Herramientas de AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurar PDF Generator:** un administrador puede configurar las opciones de AEM [!DNL Forms] PDF Generator, agregar cuentas de usuario e importar o exportar la configuración a PDF Generator.
-* **Publicar recursos de Administración de correspondencia:** AEM [!DNL Forms] permite publicar todas las cartas, fragmentos de documento, diccionarios de datos y dependencias relacionadas de una instancia de autor a la vez. Los recursos publicados incluyen todos los recursos de Administración de correspondencia y las dependencias relacionadas. Para obtener información detallada, consulte [Publicación y cancelación de la publicación de formularios y documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Exportar recursos de Administración de correspondencia:** puede descargar todos los recursos de Administración de correspondencia y las dependencias relacionadas en forma de paquete desde una instancia de AEM [!DNL Forms]. Para ver los pasos detallados, consulte [Importación y exportación de recursos a AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Publicar recursos de Administración de correspondencia:** AEM [!DNL Forms] permite publicar todas las cartas, fragmentos de documento, diccionarios de datos y dependencias relacionadas de una instancia de autor a la vez. Los recursos publicados incluyen todos los recursos de Administración de correspondencia y las dependencias relacionadas. Para obtener información detallada, consulte [Publicación y cancelación de la publicación de formularios y documentos](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets).
+* **Exportar recursos de Administración de correspondencia:** puede descargar todos los recursos de Administración de correspondencia y las dependencias relacionadas en forma de paquete desde una instancia de AEM [!DNL Forms]. Para ver los pasos detallados, consulte [Importación y exportación de recursos a AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## Elementos comunes de la interfaz de usuario {#commonelements}
 
