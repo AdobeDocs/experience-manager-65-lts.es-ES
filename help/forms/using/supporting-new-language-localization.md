@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 85%
@@ -81,13 +81,13 @@ AEM Forms admite actualmente la localización del contenido de los formularios a
 
 Para agregar compatibilidad con una nueva configuración regional en el tiempo de ejecución de un formulario adaptable, haga lo siguiente:
 
-1. [Añada una configuración regional al servicio GuideLocalizationService.](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [Añada una configuración regional al servicio GuideLocalizationService.](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [Agregar una biblioteca de cliente XFA para una configuración regional.](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [Agregar una biblioteca de cliente XFA para una configuración regional.](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [Agregue la biblioteca de cliente del formulario adaptable para una configuración regional.](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Agregar la compatibilidad con la configuración regional del diccionario.](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Reiniciar el servidor](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [Agregue la biblioteca de cliente del formulario adaptable para una configuración regional.](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [Agregar la compatibilidad con la configuración regional del diccionario.](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [Reiniciar el servidor](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 93%
@@ -68,7 +68,7 @@ La acción Enviar correo electrónico permite a un autor enviar correos electró
 
    Especifique el asunto y el cuerpo del correo electrónico en los campos **[!UICONTROL Asunto]** y **[!UICONTROL Plantilla de correo electrónico]**, respectivamente.
 
-   También puede especificar marcadores de posición de variables en los campos, en cuyo caso, los valores de los campos se procesarán cuando un usuario final envíe correctamente el formulario. Para obtener más información, consulte [Uso de nombres de campos de formulario adaptables para crear contenido de correo electrónico de forma dinámica](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   También puede especificar marcadores de posición de variables en los campos, en cuyo caso, los valores de los campos se procesarán cuando un usuario final envíe correctamente el formulario. Para obtener más información, consulte [Uso de nombres de campos de formulario adaptables para crear contenido de correo electrónico de forma dinámica](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content).
 
    Seleccione **[!UICONTROL Incluir datos adjuntos]** si el formulario incluye archivos adjuntos y desea adjuntarlos al correo electrónico.
 

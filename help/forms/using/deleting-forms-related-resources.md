@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -58,6 +58,6 @@ Si elimina un recurso de la instancia de autor, también se eliminará de la ins
 
 En AEM Forms, se puede hacer referencia a una plantilla de formulario XFA mediante un formulario adaptable u otra plantilla de formulario XFA. Además, una plantilla puede hacer referencia a un recurso u otra plantilla XFA.
 
-No es aconsejable eliminar un formulario XFA al que se hace referencia mediante un formulario adaptable, ya que podría dañarlo. Cuando un formulario adaptable hace referencia a un formulario XFA, sus campos están enlazados. Tras la eliminación de XFA, el formulario adaptable no podrá sincronizar sus campos con los campos XFA y mostrará un mensaje de error para dichos campos. Para obtener más información sobre el impacto de la eliminación de XFA a la que se hace referencia y sobre los AF sucios, consulte [Actualizar formularios XFA a los que se hace referencia](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+No es aconsejable eliminar un formulario XFA al que se hace referencia mediante un formulario adaptable, ya que podría dañarlo. Cuando un formulario adaptable hace referencia a un formulario XFA, sus campos están enlazados. Tras la eliminación de XFA, el formulario adaptable no podrá sincronizar sus campos con los campos XFA y mostrará un mensaje de error para dichos campos. Para obtener más información sobre el impacto de la eliminación de XFA a la que se hace referencia y sobre los AF sucios, consulte [Actualizar formularios XFA a los que se hace referencia](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms).
 
 Para eliminar un formulario XFA de este tipo, actualice el formulario adaptable y quite los enlaces con los campos XFA.

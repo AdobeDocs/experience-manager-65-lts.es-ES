@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 93%
@@ -122,7 +122,7 @@ Para crear una propiedad secundaria:
 
 1. En un modelo de datos de formulario, selecciona un objeto de modelo de datos y selecciona **[!UICONTROL Crear propiedad secundaria]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear propiedad secundaria]**, especifique un nombre y un tipo de datos para la propiedad en los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]**, respectivamente. Si lo desea, puede especificar un título y una descripción para la propiedad.
-1. Habilite la opción Calculada si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Editar propiedades](#edit-properties).
+1. Habilite la opción Calculada si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Editar propiedades](#properties).
 1. Si el objeto de modelo de datos está enlazado a una fuente de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto de modelo de datos principal con el mismo nombre y tipo de datos.
 
    Para enlazar manualmente una propiedad secundaria con una propiedad de objeto de modelo de datos, selecciona el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto de modelo de datos principal. Selecciona una propiedad con la que enlazar el objeto y selecciona el icono del tic. Tenga en cuenta que solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.

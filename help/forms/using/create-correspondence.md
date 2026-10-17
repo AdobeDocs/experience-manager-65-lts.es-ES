@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 79%
@@ -49,7 +49,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    >[!NOTE]
    >
-   >Si un diccionario de datos no está asociado con la carta, se abrirá la vista previa de la carta. De lo contrario, si la carta está basada en el diccionario de datos, Administración de correspondencia mostrará las opciones Previsualizar y Personalizado en el menú Previsualizar y podrá seleccionar una de las dos opciones. También puede asociar datos de prueba con un diccionario de datos. Cuando el [diccionario de datos tiene asociados datos de prueba](../../forms/using/data-dictionary.md#p-working-with-test-data-p), al seleccionar la opción Previsualizar, la vista previa normal se abrirá con los datos de prueba rellenados.
+   >Si un diccionario de datos no está asociado con la carta, se abrirá la vista previa de la carta. De lo contrario, si la carta está basada en el diccionario de datos, Administración de correspondencia mostrará las opciones Previsualizar y Personalizado en el menú Previsualizar y podrá seleccionar una de las dos opciones. También puede asociar datos de prueba con un diccionario de datos. Cuando el [diccionario de datos tiene asociados datos de prueba](../../forms/using/data-dictionary.md#working-with-test-data), al seleccionar la opción Previsualizar, la vista previa normal se abrirá con los datos de prueba rellenados.
 
 1. Para poder procesar una correspondencia al previsualizarla, debe ser administrador o formar parte de uno de los siguientes grupos:
 
@@ -58,7 +58,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    Si no dispone de los permisos necesarios, solicite al administrador el acceso correspondiente. Para obtener más información sobre crear y agregar usuarios a grupos, consulte [Agregar usuarios o grupos a un grupo](/help/sites-administering/security.md). Si intenta procesar una correspondencia sin tener los permisos adecuados, aparecerá la página de error 404.
 
-1. Si ha seleccionado **Previsualizar** > **Personalizado**, se abrirá un cuadro de diálogo. En el cuadro de diálogo, seleccione un archivo de datos, correspondiente al diccionario de datos, con el que previsualizar la carta y, a continuación, seleccione **Previsualizar**. Se creará un archivo de datos basado en un diccionario de datos para una carta específica. Para obtener más información sobre el archivo de datos, consulte [Diccionario de datos](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Si ha seleccionado **Previsualizar** > **Personalizado**, se abrirá un cuadro de diálogo. En el cuadro de diálogo, seleccione un archivo de datos, correspondiente al diccionario de datos, con el que previsualizar la carta y, a continuación, seleccione **Previsualizar**. Se creará un archivo de datos basado en un diccionario de datos para una carta específica. Para obtener más información sobre el archivo de datos, consulte [Diccionario de datos](../../forms/using/data-dictionary.md#working-with-test-data).
 
    ![Previsualizar carta](assets/8_previewcustomdatafile.png)
 
@@ -254,7 +254,7 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
 
    ![Salto de página explícito](assets/8_pagebreak.png)
 
-1. Para guardar la carta como borrador, para poder volver a trabajar más adelante, seleccione Guardar como borrador. Para utilizar esta opción, la carta debe [publicarse](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obtener más información, consulte Instancia de borrador en las [instancias Guardar borrador y Enviar carta](#savingdrafts).
+1. Para guardar la carta como borrador, para poder volver a trabajar más adelante, seleccione Guardar como borrador. Para utilizar esta opción, la carta debe [publicarse](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Para obtener más información, consulte Instancia de borrador en las [instancias Guardar borrador y Enviar carta](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ Cuando se representa una carta en la interfaz de usuario Crear correspondencia, 
 
 Existen dos tipos de instancias de cartas que se pueden guardar: la instancia de borrador y la instancia de envío.
 
-* **Instancia de borrador**: la instancia de borrador captura el estado actual de la carta que previsualiza. Para guardar una instancia de borrador, primero asegúrese de que la carta y todos los recursos a los que hace referencia están en estado Publicado. Para obtener información sobre cómo publicar una carta, consulte [Publicar un recurso](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Debe publicar una carta antes de guardarla como borrador, ya que cuando lo hace, crea una versión de la carta, de sus recursos dependientes y de los datos en ese momento. Usted u otro usuario no pueden editar la versión publicada de una carta y se puede restaurar más tarde sin discrepancias inesperadas de la versión publicada. Puede volver a esta instancia más tarde y continuar desde donde lo dejó.
+* **Instancia de borrador**: la instancia de borrador captura el estado actual de la carta que previsualiza. Para guardar una instancia de borrador, primero asegúrese de que la carta y todos los recursos a los que hace referencia están en estado Publicado. Para obtener información sobre cómo publicar una carta, consulte [Publicar un recurso](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Debe publicar una carta antes de guardarla como borrador, ya que cuando lo hace, crea una versión de la carta, de sus recursos dependientes y de los datos en ese momento. Usted u otro usuario no pueden editar la versión publicada de una carta y se puede restaurar más tarde sin discrepancias inesperadas de la versión publicada. Puede volver a esta instancia más tarde y continuar desde donde lo dejó.
 
 * **Instancia de envío**: las instancias de envío capturan el estado de la carta cuando se envía. La instancia de envío almacena el estado del PDF de la instancia de carta una vez que se ha procesado junto con los datos introducidos por el usuario en la interfaz de usuario de Crear correspondencia.
 

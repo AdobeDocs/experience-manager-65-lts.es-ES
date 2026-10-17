@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 88%
@@ -244,7 +244,7 @@ Primero necesita lo siguiente para crear una correspondencia:
 * Otros XDP ([fragmentos de diseño](document-fragments.md#document-fragments)) que forman parte de la carta. Los XDP\Diseños se crean en [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es).
 * El diccionario de datos [relevante](/help/forms/using/data-dictionary.md) (Opcional).
 * Los [módulos de datos](/help/forms/using/document-fragments.md) que desee utilizar en la correspondencia.
-* [Datos de prueba](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) es el archivo XML con los datos de prueba transferidos en él. Los datos de prueba son necesarios si utiliza un diccionario de datos.
+* [Datos de prueba](/help/forms/using/data-dictionary.md#working-with-test-data) es el archivo XML con los datos de prueba transferidos en él. Los datos de prueba son necesarios si utiliza un diccionario de datos.
 
 ## Crear una plantilla de carta {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ Primero necesita lo siguiente para crear una correspondencia:
 
    ![Mensaje de alerta: carta creada correctamente](assets/createcorrespondencecreated.png)
 
-   **Siguiente**: al seleccionar **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Siguiente**: al seleccionar **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 ### Inserte módulos de datos y fragmentos de diseño en una carta y configúrelos {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

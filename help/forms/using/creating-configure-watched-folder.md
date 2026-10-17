@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 89%
@@ -47,7 +47,7 @@ Antes de configurar una carpeta vigilada, asegúrese de lo siguiente:
 
 * Las carpetas vigiladas son una característica avanzada de AEM Forms. Requiere un paquete de complementos de AEM Forms para funcionar. Asegúrese de que el paquete adecuado de complementos de AEM Forms esté instalado y configurado.
 * Puede crear la carpeta vigilada en un almacenamiento compartido o local. Asegúrese de que el usuario de AEM Forms configurado para ejecutar la carpeta vigilada tenga permisos de lectura y escritura en la carpeta vigilada.
-* Puede utilizar un servicio, un flujo de trabajo o un script para automatizar una operación con una carpeta vigilada. Asegúrese de que el servicio, el flujo de trabajo o el script correspondiente estén creados y listos para ejecutarse. Para obtener información sobre la creación de un servicio, un flujo de trabajo o un script, consulte [Varios métodos de procesar archivos](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Puede utilizar un servicio, un flujo de trabajo o un script para automatizar una operación con una carpeta vigilada. Asegúrese de que el servicio, el flujo de trabajo o el script correspondiente estén creados y listos para ejecutarse. Para obtener información sobre la creación de un servicio, un flujo de trabajo o un script, consulte [Varios métodos de procesar archivos](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles).
 * Una carpeta vigilada tiene varias propiedades, consulte [Propiedades de las carpetas vigiladas](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Realice los siguientes pasos para crear una carpeta vigilada:

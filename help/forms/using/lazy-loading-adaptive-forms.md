@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 81%
@@ -59,7 +59,7 @@ Solo puede configurar fragmentos de formulario adaptable para la carga diferida.
 * **Identificar y marcar valores globales**
 Las transacciones basadas en Forms implican elementos dinámicos para capturar datos relevantes de los usuarios y procesarlos para simplificar la experiencia de rellenado de los formularios. Por ejemplo, el formulario tiene el campo A en el fragmento X, cuyo valor determina la validez del campo B en otro fragmento. En este caso, si el fragmento X está marcado para la carga diferida, el valor del campo A debe estar disponible para validar el campo B incluso cuando el fragmento X no está cargado. Para conseguirlo, puede marcar el campo A como global, lo que garantiza que su valor esté disponible para validar el campo B cuando el fragmento X no está cargado.
 
-  Para obtener información sobre cómo convertir un valor de campo en global, consulte [Configuración de la carga diferida](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Para obtener información sobre cómo convertir un valor de campo en global, consulte [Configuración de la carga diferida](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading).
 
 * **Escriba reglas para controlar la visibilidad de los campos**
 Forms incluye algunos campos y secciones que no son aplicables a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de formularios utilizan la visibilidad o las reglas de Mostrar u ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de la oficina no se muestra a los usuarios que eligen Desempleado en el campo Situación laboral en un formulario. Para obtener más información sobre cómo escribir reglas, consulte [Uso del Editor de reglas](../../forms/using/rule-editor.md).

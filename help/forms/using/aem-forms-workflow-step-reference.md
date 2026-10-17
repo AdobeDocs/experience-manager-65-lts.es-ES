@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 90%
@@ -36,7 +36,7 @@ Esta documentación se aplica a **AEM 6.5 LTS Forms**.
 
 Para obtener documentación de AEM as a Cloud Service, consulte [AEM Forms en Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
 
-Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
+Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#adding-a-step-to-a-model).
 
 ## Pasos de Forms Workflow {#forms-workflow-steps}
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 84%
@@ -136,7 +136,7 @@ Para compartir recursos, como diccionarios de datos, cartas y fragmentos de docu
 
 Utilice esta opción para descargar todos los recursos de Administración de correspondencia y las dependencias relacionadas como paquete desde una instancia de AEM Forms.
 
-Por ejemplo, si Administración de correspondencia tiene una carta que utiliza una imagen y un texto, el paquete descargado también contiene la imagen y el texto asociados a la carta. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso. Una vez que haya descargado el paquete (.cmp), puede [importar el paquete a otra instancia de AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Por ejemplo, si Administración de correspondencia tiene una carta que utiliza una imagen y un texto, el paquete descargado también contiene la imagen y el texto asociados a la carta. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso. Una vez que haya descargado el paquete (.cmp), puede [importar el paquete a otra instancia de AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 Para descargar todos los recursos de Administración de correspondencia y las dependencias relacionadas como paquete, siga los siguientes pasos:
 
@@ -161,7 +161,7 @@ Para descargar todos los recursos de Administración de correspondencia y las de
 
 1. Seleccione el vínculo **Descargar paquete exportado** para descargar el archivo del paquete.
 
-   Para agregar los recursos del paquete a otra instancia de Administración de correspondencia, [importe el paquete a una instancia de AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Para agregar los recursos del paquete a otra instancia de Administración de correspondencia, [importe el paquete a una instancia de AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 ### Importar fragmentos de documento, cartas o diccionarios de datos en Administración de correspondencia {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2700'
 ht-degree: 92%
@@ -186,7 +186,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 
 El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para usar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de AEM Forms con Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
-Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
+Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
 
 ## Enviar a la lista de Microsoft® SharePoint{#submit-to-sharedrive}
 

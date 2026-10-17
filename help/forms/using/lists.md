@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6929'
 ht-degree: 86%
@@ -65,7 +65,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    El corrector ortográfico predeterminado del explorador comprueba la ortografía en el Editor de texto. Para administrar la revisión ortográfica y gramatical, puede editar la configuración del corrector ortográfico del explorador o instalar complementos del explorador para revisar la ortografía y la gramática.
 
-   También puede utilizar los distintos métodos abreviados de teclado en el Editor de texto para administrar, editar y dar formato al texto. Para obtener más información, consulte los métodos abreviados de teclado del [Editor de texto](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) en Métodos abreviados de teclado de Administración de correspondencia.
+   También puede utilizar los distintos métodos abreviados de teclado en el Editor de texto para administrar, editar y dar formato al texto. Para obtener más información, consulte los métodos abreviados de teclado del [Editor de texto](/help/forms/using/keyboard-shortcuts.md#formatting) en Métodos abreviados de teclado de Administración de correspondencia.
 
 1. Se abre el Editor de texto. Introduzca el texto. Utilice la barra de herramientas situada en la parte superior de la página para dar formato al texto e insertar condiciones, vínculos y saltos de página.
 
@@ -501,7 +501,7 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
    A continuación, seleccione el DD y exporte los datos de muestra. El archivo XML que obtiene contiene datos de empleados y tres instancias para Nominee_details (de forma predeterminada, se descargan 3 instancias. Puede agregar más o eliminarlas según sus necesidades). Actualice los valores y, a continuación, importe los datos de prueba en el DD. El archivo CMP es el paquete y contiene el DD. Importe el DD en Administración de correspondencia.
 
-   Para obtener más información sobre cómo trabajar con el diccionario de datos y los datos de prueba, consulte [Diccionario de datos](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Para obtener más información sobre cómo trabajar con el diccionario de datos y los datos de prueba, consulte [Diccionario de datos](/help/forms/using/data-dictionary.md#working-with-test-data).
 
    ![Estructura del diccionario de datos](assets/dd.jpeg)
 

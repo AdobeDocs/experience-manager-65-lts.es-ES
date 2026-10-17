@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 85%
@@ -433,7 +433,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
   * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
   * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
   * **Incluir campos no enlazados en el documento de registro:** Al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
-  * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos del [!UICONTROL documento de registro] al enviar el formulario. Cuando habilita [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir esos campos del [!UICONTROL Documento de registro]
+  * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos del [!UICONTROL documento de registro] al enviar el formulario. Cuando habilita [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir esos campos del [!UICONTROL Documento de registro]
 * **[!UICONTROL PROPIEDADES DEL CAMPO DE FORMULARIO]**
   * Si marca la opción **Para el componente Casilla de verificación y Botón de radio, mostrar solo los valores seleccionados**, se generará la salida del documento de registro (DoR) con solo los valores seleccionados.
   * Puede seleccionar Separador para varios valores seleccionados o puede elegir cualquier otro tipo de separador.

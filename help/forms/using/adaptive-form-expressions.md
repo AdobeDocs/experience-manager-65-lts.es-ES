@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 91%
@@ -219,7 +219,7 @@ Hay varios motivos de validación disponibles para un campo. Para seleccionar un
 
 ### Expresiones de validación {#validation-expressions}
 
-La validación de un campo también se puede calcular mediante expresiones en diferentes campos. Estas expresiones se escriben dentro del campo **Script de validación** de la pestaña **Script** en el diálogo **Editar** de un componente. El estado de validación de un campo depende del valor que devuelva la expresión. Para obtener información sobre cómo escribir estas expresiones, consulte [Expresión “validate”](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+La validación de un campo también se puede calcular mediante expresiones en diferentes campos. Estas expresiones se escriben dentro del campo **Script de validación** de la pestaña **Script** en el diálogo **Editar** de un componente. El estado de validación de un campo depende del valor que devuelva la expresión. Para obtener información sobre cómo escribir estas expresiones, consulte [Expresión “validate”](../../forms/using/adaptive-form-expressions.md#validate-expression).
 
 ## Información adicional {#additional-information}
 

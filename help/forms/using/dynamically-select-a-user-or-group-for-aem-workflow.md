@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 56%
@@ -240,7 +240,7 @@ Necesitará los archivos jar del [AEM Forms Client SDK](https://experienceleague
    </project>
    ```
 
-1. Agregue código fuente que use la interfaz de Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir dinámicamente un usuario o un grupo para el paso Asignar tarea. Para ver el código de ejemplo, consulte [Ejemplo para elegir dinámicamente un usuario o un grupo mediante una interfaz Java](#-sample-scripts-for).
+1. Agregue código fuente que use la interfaz de Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir dinámicamente un usuario o un grupo para el paso Asignar tarea. Para ver el código de ejemplo, consulte [Ejemplo para elegir dinámicamente un usuario o un grupo mediante una interfaz Java](#sample-java-code-to-dynamically-choose-a-user-or-a-group).
 1. Abra un símbolo del sistema y vaya al directorio que contiene el proyecto del paquete OSGi. Utilice el siguiente comando para crear el paquete OSGi:
 
    `mvn clean install`

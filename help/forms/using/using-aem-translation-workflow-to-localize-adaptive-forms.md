@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 98%
@@ -62,9 +62,9 @@ El servicio de traducción automática traduce inmediatamente el contenido de lo
 
    Para obtener más información sobre la configuración y las opciones del documento de registro, consulte:
 
-   [Configuración de la plantilla de un documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Configuración de la plantilla de un documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-template-configuration)
 
-   [Configuración del documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Configuración del documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-settings)
 
 1. [Personalice la información de marca del documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) y asegúrese de que la configuración regional del explorador está establecida en el mismo idioma en el que ha localizado el formulario adaptable mediante lenguaje de máquina. La configuración regional del explorador ayuda a localizar la información de marca en el documento de registro.
 1. Para ver el documento de registro localizado, seleccione Generar previsualización. El PDF del documento de registro se genera y abre en una nueva pestaña del explorador.

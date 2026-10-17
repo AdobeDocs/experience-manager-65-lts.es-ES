@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 60%
@@ -84,7 +84,7 @@ El portal de Forms permite mostrar una lista de los formularios del repositorio 
 1. **Habilitar componentes del portal de Forms**: los componentes del portal de Forms no están disponibles para su uso de forma predeterminada. [Habilite los componentes de la barra de tareas de AEM](/help/forms/using/enabling-forms-portal-components.md) en una página de AEM Sites.
 1. **Mostrar una lista de formularios en una página (cree la página del portal de Forms):** Los formularios se pueden mostrar en forma de lista en páginas de sitios de AEM Sites y que no sean de AEM. La lista contiene los formularios disponibles en la instancia de publicación. Un usuario puede abrir los formularios y empezar a rellenarlos. Cada vez que un usuario abre un formulario, se crea una nueva instancia del formulario:
 
-   1. **Mostrar una lista de formularios en una página de AEM Sites**: agregue el componente **[Búsqueda y lista](../../forms/using/creating-form-portal-page.md)** a la página y configure el **[Panel Lista](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** para mostrar una lista de formularios en una página. Agregue también el componente **Panel Buscar** al componente **Búsqueda y lista** y configúrelo para añadir la funcionalidad de búsqueda a la página. La página con el componente Forms Portal se conoce como [página Forms Portal](../../forms/using/creating-form-portal-page.md).
+   1. **Mostrar una lista de formularios en una página de AEM Sites**: agregue el componente **[Búsqueda y lista](../../forms/using/creating-form-portal-page.md)** a la página y configure el **[Panel Lista](../../forms/using/creating-form-portal-page.md#list-pane)** para mostrar una lista de formularios en una página. Agregue también el componente **Panel Buscar** al componente **Búsqueda y lista** y configúrelo para añadir la funcionalidad de búsqueda a la página. La página con el componente Forms Portal se conoce como [página Forms Portal](../../forms/using/creating-form-portal-page.md).
 
    1. **Enumerar formularios en una página que no sea de AEM Sites:** Use las [API de búsqueda del portal de Forms](/help/forms/using/listing-forms-webpage-using-apis.md) para consultar, recuperar y enumerar formularios en páginas que no sean de AEM Sites.
 

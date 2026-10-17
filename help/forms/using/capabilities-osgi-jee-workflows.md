@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 96%
@@ -412,7 +412,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
 1. Los servicios de documentos nativos de AEM Forms están disponibles para los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms. El flujo de trabajo de AEM utiliza servicios de documentos nativos para flujos de trabajo AEM centrados en Forms en los flujos de trabajo OSGi y JEE de AEM Forms (Process Management).
 1. Los flujos de trabajo JEE de AEM Forms solo pueden procesar un formulario adaptable. No admite la representación de un formulario adaptable como documento PDF.
 1. Los flujos de trabajo JEE de AEM Forms no tienen un paso independiente para Adobe Sign. Se necesita un formulario adaptable habilitado para Adobe Sign para los flujos de trabajo JEE de AEM Forms. Para obtener más información, consulte [Documentación de Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Puede usar el paso [Invocar el servicio del modelo de datos de formulario](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) paso para invocar un servicio web y publicar o recuperar datos de una aplicación de terceros.
+1. Puede usar el paso [Invocar el servicio del modelo de datos de formulario](../../forms/using/aem-forms-workflow-step-reference.md#invoke-form-data-model-service-step) paso para invocar un servicio web y publicar o recuperar datos de una aplicación de terceros.
 1. Puede usar el paso [Enviar correo electrónico](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) para enviar correos electrónicos.
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}

@@ -18,7 +18,7 @@ level_v2:
     internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 81%
@@ -66,11 +66,11 @@ Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del Edi
 >
 >Los tipos de reglas disponibles, incluidas las condiciones y las acciones definidas en el editor de reglas, también dependen del tipo de objeto de formulario en el que se vaya a crear una regla. El editor de reglas solo muestra tipos de reglas y opciones válidas para escribir condiciones e instrucciones de acción para un tipo de objeto de formulario concreto. Por ejemplo, no ve los tipos Validar y Establecer valor de para un objeto panel.
 
-Para obtener más información sobre los tipos de reglas disponibles en el editor de reglas, consulte [Tipos de reglas disponibles en el editor de reglas](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Para obtener más información sobre los tipos de reglas disponibles en el editor de reglas, consulte [Tipos de reglas disponibles en el editor de reglas](rule-editor.md#available-rule-types-in-rule-editor).
 
 ### Pautas para elegir una construcción de regla {#guidelines-for-choosing-a-rule-construct}
 
-Aunque puede lograr la mayoría de los casos de uso utilizando cualquier construcción de regla, estas son algunas pautas para elegir una construcción antes que otra. Para obtener más información sobre las reglas disponibles en el editor de reglas, consulte [Tipos de reglas disponibles en el editor de reglas](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Aunque puede lograr la mayoría de los casos de uso utilizando cualquier construcción de regla, estas son algunas pautas para elegir una construcción antes que otra. Para obtener más información sobre las reglas disponibles en el editor de reglas, consulte [Tipos de reglas disponibles en el editor de reglas](rule-editor.md#available-rule-types-in-rule-editor).
 
 * Una regla general típica al crear una regla es pensarla en el contexto del objeto en el que quiere escribirla. Tenga en cuenta que desea ocultar o mostrar un campo B en función del valor que un usuario especifique en el campo A. En este caso, se evalúa una condición en el campo A y, en función del valor que devuelve, se activa una acción en el campo B.
 
@@ -111,7 +111,7 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 
 ## Tipos de reglas disponibles en el editor de reglas {#available-rule-types-in-rule-editor}
 
-El editor de reglas proporciona un conjunto de tipos de reglas predefinidas que puede utilizar para escribir reglas. Veamos en detalle cada tipo de regla. Para obtener más información sobre cómo escribir reglas en el editor de reglas, consulte [Escribir reglas](rule-editor.md#p-write-rules-p).
+El editor de reglas proporciona un conjunto de tipos de reglas predefinidas que puede utilizar para escribir reglas. Veamos en detalle cada tipo de regla. Para obtener más información sobre cómo escribir reglas en el editor de reglas, consulte [Escribir reglas](rule-editor.md#write-rules).
 
 ### [!UICONTROL When] {#whenruletype}
 
@@ -413,7 +413,7 @@ Para iniciar la interfaz de usuario del editor de reglas:
 
    ![create-rules](assets/create-rules.png)
 
-   Cualquier regla existente en los objetos de formulario seleccionados se muestra en esta vista. Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
+   Cualquier regla existente en los objetos de formulario seleccionados se muestra en esta vista. Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#manage-rules).
 
 1. Seleccione **[!UICONTROL Crear]** para escribir una regla nueva. El editor visual de la interfaz de usuario del editor de reglas se abre de forma predeterminada cuando se inicia el editor de reglas por primera vez.
 
@@ -443,7 +443,7 @@ Algunas de las funciones de la lista se muestran en la figura:
 >
 >Puede buscar texto en nombres de objetos y funciones y títulos en las pestañas Objetos de formulario y Funciones.
 
-En el árbol izquierdo de los objetos de formulario, puede seleccionar los objetos de formulario para mostrar las reglas aplicadas a cada uno de ellos. No solo puede desplazarse por las reglas de los distintos objetos de formulario, sino que también puede copiar y pegar reglas entre los objetos de formulario. Para obtener más información, consulte [Copiar y pegar reglas](rule-editor.md#p-copy-paste-rules-p).
+En el árbol izquierdo de los objetos de formulario, puede seleccionar los objetos de formulario para mostrar las reglas aplicadas a cada uno de ellos. No solo puede desplazarse por las reglas de los distintos objetos de formulario, sino que también puede copiar y pegar reglas entre los objetos de formulario. Para obtener más información, consulte [Copiar y pegar reglas](rule-editor.md#copy-paste-rules).
 
 ### C. Alternar entre funciones y objetos de formulario {#c-form-objects-and-functions-toggle-br}
 
@@ -453,7 +453,7 @@ Al pulsar el botón de cambio, se alternan los paneles de funciones y de objetos
 
 El editor de reglas visual es el área del modo de editor visual de la interfaz de usuario del editor de reglas donde se escriben las reglas. Permite seleccionar un tipo de regla y definir las condiciones y las acciones correspondientes. Al definir condiciones y acciones en una regla, puede arrastrar y soltar funciones y objetos de formulario desde el panel Objetos de formulario y el de Funciones.
 
-Para obtener más información sobre el uso del editor de reglas visuales, consulte [Escribir reglas](rule-editor.md#p-write-rules-p).
+Para obtener más información sobre el uso del editor de reglas visuales, consulte [Escribir reglas](rule-editor.md#write-rules).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -470,7 +470,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Botones de finalización y cancelación {#done-and-cancel-buttons}
 
-El botón **[!UICONTROL Listo]** se utiliza para guardar una regla. Puede guardar una regla incompleta. Sin embargo, las que estén incompletas no son válidas, por lo tanto, no se ejecutan. Las reglas guardadas en un objeto de formulario se enumeran cuando se inicia el editor de reglas la próxima vez desde el mismo objeto. Puede administrar las reglas existentes en esa vista. Para obtener más información, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
+El botón **[!UICONTROL Listo]** se utiliza para guardar una regla. Puede guardar una regla incompleta. Sin embargo, las que estén incompletas no son válidas, por lo tanto, no se ejecutan. Las reglas guardadas en un objeto de formulario se enumeran cuando se inicia el editor de reglas la próxima vez desde el mismo objeto. Puede administrar las reglas existentes en esa vista. Para obtener más información, consulte [Administrar reglas](rule-editor.md#manage-rules).
 
 El botón **[!UICONTROL Cancelar]** descarta los cambios realizados en una regla y cierra el editor de reglas.
 
@@ -853,7 +853,7 @@ Para copiar y pegar reglas, haga lo siguiente:
 
    ![copyrule](assets/copyrule.png)
 
-   Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
+   Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#manage-rules).
 
 1. Seleccione la casilla de verificación situada junto al título de la regla. Aparecerán las opciones para administrar la regla. Seleccione **[!UICONTROL Copiar]**.
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 95%
@@ -288,7 +288,7 @@ Puede utilizar los pasos Asignar tarea y Enviar correo electrónico de flujos de
 
 ### Purgar instancias del flujo de trabajo {#purge-workflow-instances}
 
-Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, por lo que puede depurar con regularidad las instancias del flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md#regular) depuración de instancias de flujo de trabajo.
+Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, por lo que puede depurar con regularidad las instancias del flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances) depuración de instancias de flujo de trabajo.
 
 ## Parametrizar datos confidenciales a variables de flujo de trabajo y almacenarlos en repositorios de datos externos {#externalize-wf-variables}
 

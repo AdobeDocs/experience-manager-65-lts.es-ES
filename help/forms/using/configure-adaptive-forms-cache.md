@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 58%
@@ -70,7 +70,7 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
   * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [Deshabilite el uso de la configuración regional del explorador &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
-  * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-instance-of-adaptive-forms-is-cached).
 
 ### Habilitación del almacenamiento en caché en Dispatcher
 

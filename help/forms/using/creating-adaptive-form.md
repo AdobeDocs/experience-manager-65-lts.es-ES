@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 93%
@@ -57,7 +57,7 @@ Siga estos pasos para crear un formulario adaptable.
    >Para una instalación predeterminada, el inicio de sesión es `admin` y la contraseña es `admin`.
 
 1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
-1. Aparecerá una opción para seleccionar una plantilla. Para obtener más información sobre las plantillas, consulte [Plantillas de formularios adaptables](creating-adaptive-form.md#p-adaptive-form-templates-p). Seleccione una plantilla para seleccionarla y haga clic en Siguiente.
+1. Aparecerá una opción para seleccionar una plantilla. Para obtener más información sobre las plantillas, consulte [Plantillas de formularios adaptables](creating-adaptive-form.md#adaptive-form-templates). Seleccione una plantilla para seleccionarla y haga clic en Siguiente.
 1. Aparecerá la opción “Agregar propiedades”. Especifique los valores para los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
 
    * **[!UICONTROL Título:]** Especifica el nombre para mostrar del formulario. El título le ayuda a identificar el formulario en la interfaz de usuario de [!DNL Experience Manager Forms].

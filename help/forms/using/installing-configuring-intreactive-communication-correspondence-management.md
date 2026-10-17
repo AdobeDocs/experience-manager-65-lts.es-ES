@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 84%
@@ -189,7 +189,7 @@ Dispatcher es la herramienta de equilibrio de carga y almacenamiento en caché d
 
 Es probable que los clientes abandonen una comunicación interactiva si la experiencia que ofrece no es atractiva. Aunque para los clientes resulta frustrante, también aumenta el volumen y el coste de la asistencia en su organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. AEM Forms es la solución a este problema.
 
-AEM Forms se integra con Adobe Target, una solución de Adobe Experience Cloud, para ofrecer experiencias de cliente personalizadas y atractivas en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms se integra con Adobe Target, una solución de Adobe Experience Cloud, para ofrecer experiencias de cliente personalizadas y atractivas en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms).
 
 #### Configurar la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 La administración de usuarios permite habilitar el inicio de sesión único (SSO) entre los módulos de formularios de AEM y las aplicaciones protegidas por Netegrity SiteMinder mediante el lenguaje de marcado de aserción de seguridad (SAML). Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM Forms no son necesarias y no se muestran si el usuario ya se ha autenticado a través del portal de la empresa.
 
-Para obtener información acerca de cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, vea [Base de datos IBM DB2: Ejecutar comandos para el mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Para obtener información acerca de cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, vea [Base de datos IBM DB2: Ejecutar comandos para el mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance).
 
 ## Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

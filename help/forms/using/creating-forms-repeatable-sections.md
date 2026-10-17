@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 100%
@@ -135,7 +135,7 @@ El subformulario repetible es similar a los paneles repetibles de los formulario
 1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica un valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
 1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario todavía se colocan en el formulario.
 1. Agregue dos botones en el subformulario principal: uno para añadir instancias y otro para eliminar instancias de subformularios repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/es_ES/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Ahora, vincule la plantilla de formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Ahora, vincule la plantilla de formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Utilice los botones creados en el paso 9 para añadir y quitar subformularios.
 
 El archivo .zip adjunto contiene un subformulario repetible de ejemplo.

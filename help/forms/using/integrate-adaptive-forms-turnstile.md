@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 21%
@@ -86,7 +86,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
 1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**. En **[!UICONTROL Contenedor de configuración]**, seleccione el contenedor de configuración que contiene la configuración de nube que conecta AEM Forms con Turnstile.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-   Si no tiene un contenedor de configuración para configurar el servicio Captcha, consulte la sección [Configurar el torniquete](#configure-turnstile-steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
+   Si no tiene un contenedor de configuración para configurar el servicio Captcha, consulte la sección [Configurar el torniquete](#steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
 
    ![Seleccionar el contenedor de configuración](assets/captcha-properties.png)
 

@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 51%
@@ -181,7 +181,7 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
 
 1. Asegúrese de que la versión XFA de los diseños y los diseños de fragmento sea la 3.3 o posterior. Si utiliza diseños y diseños de fragmento de una versión anterior, es posible que se produzcan problemas al procesar la carta. Para actualizar una versión de un XFA anterior a la versión más reciente, complete los siguientes pasos:
 
-   1. [Descargue el XFA como archivo zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) desde la interfaz de usuario de Forms.
+   1. [Descargue el XFA como archivo zip](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management) desde la interfaz de usuario de Forms.
    1. Extraiga el archivo.
    1. Abra el archivo XFA en la última versión de Designer y guárdelo. El XFA se actualiza a la versión más reciente.
    1. Cargue el XFA en la interfaz de usuario de Forms.

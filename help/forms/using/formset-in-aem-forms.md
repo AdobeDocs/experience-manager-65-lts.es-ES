@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 98%
@@ -80,7 +80,7 @@ Para crear un conjunto de formularios, haga lo siguiente:
 
    * Orden del formulario: arrastre y suelte los formularios para reordenarlos. El orden del formulario define el orden en el que se muestran los formularios al usuario final en la aplicación de AEM Forms y en la representación independiente.
    * Identificador de formulario: especifica una identidad única para los formularios que se van a utilizar en las expresiones de idoneidad.
-   * Raíz de datos: para cada formulario del conjunto de formularios, el autor puede configurar el XPATH en el que los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario incluya el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar previamente XML para un conjunto de formularios](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Raíz de datos: para cada formulario del conjunto de formularios, el autor puede configurar el XPATH en el que los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario incluya el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar previamente XML para un conjunto de formularios](../../forms/using/formset-in-aem-forms.md#prefill-xml-for-form-set).
    * Expresión de idoneidad: especifica una expresión de JavaScript que evalúa un valor booleano e indica si un formulario de un conjunto de formularios es apto para rellenarlo. Si es false, no se pregunta al usuario ni se le muestra el formulario que se va a rellenar. Normalmente, la expresión se basa en los valores de los campos capturados antes de este formulario. Las expresiones también contienen llamadas a la API fs.valueOf del conjunto de formularios para extraer los valores rellenados por el usuario en un campo de uno de los formularios del conjunto de formularios:
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 95%
@@ -179,7 +179,7 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
    * El método `getEventMap` mapea los eventos activados por el widget, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos HTML estándar para el widget predeterminado y debe actualizarse si se activa un evento alternativo.
    * El `showDisplayValue` y `showValue` aplican la cláusula de visualización y de edición de imagen y se pueden sobrescribir para que tengan un comportamiento alternativo.
 
-   * El método `getCommitValue` es invocado por el marco de trabajo de formularios adaptables cuando se produce el evento `commit`. Generalmente, ocurre en el evento de salida, excepto para los elementos de lista desplegable, el botón de radio y la casilla de verificación al cambiar). Para obtener más información, consulte [Expresiones de formularios adaptables](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * El método `getCommitValue` es invocado por el marco de trabajo de formularios adaptables cuando se produce el evento `commit`. Generalmente, ocurre en el evento de salida, excepto para los elementos de lista desplegable, el botón de radio y la casilla de verificación al cambiar). Para obtener más información, consulte [Expresiones de formularios adaptables](../../forms/using/adaptive-form-expressions.md#value-commit-script).
 
    * El archivo de plantilla proporciona una implementación de muestra para varios métodos. Quite los métodos que no se vayan a ampliar.
 
