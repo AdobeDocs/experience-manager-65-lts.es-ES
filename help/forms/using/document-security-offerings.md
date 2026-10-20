@@ -66,7 +66,7 @@ Puede utilizar Document Security SDK, Adobe Acrobat, la extensión de Document S
 
 * **Adobe Acrobat:** Puede usar Adobe Acrobat para aplicar directivas de seguridad a documentos de PDF creados con aplicaciones de escritorio populares, como Microsoft® Office, exploradores Web o cualquier aplicación que admita la impresión en formato PDF.
 
-  Puede comprar y descargar Adobe Acrobat desde el [Sitio web de Adobe](https://www.adobe.com/acrobat/free-trial-download.html). El artículo de Adobe Acrobat [Configuración de directivas de seguridad para PDF](https://helpx.adobe.com/es/acrobat/using/setting-security-policies-pdfs.html) proporciona información detallada sobre la creación y aplicación de directivas en Adobe Acrobat.
+  Puede comprar y descargar Adobe Acrobat desde el [Sitio web de Adobe](https://www.adobe.com/es/acrobat/free-trial-download.html). El artículo de Adobe Acrobat [Configuración de directivas de seguridad para PDF](https://helpx.adobe.com/es/acrobat/using/setting-security-policies-pdfs.html) proporciona información detallada sobre la creación y aplicación de directivas en Adobe Acrobat.
 
 * **Extensión de Document Security para Microsoft® Office**: puede utilizar la extensión de Document Security para Microsoft® Office para aplicar directivas predefinidas a los archivos de Microsoft® Office desde los programas de Microsoft® Office. La extensión garantiza que solo las personas autorizadas puedan utilizar archivos de Microsoft® Word, Excel y PowerPoint protegidos por directivas. Solo los usuarios autorizados que tengan el complemento instalado pueden utilizar los archivos protegidos por directivas.
 

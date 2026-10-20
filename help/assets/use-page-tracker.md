@@ -61,7 +61,7 @@ El siguiente código de ejemplo muestra la apariencia de una página web que con
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/es"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
@@ -109,7 +109,7 @@ El código incrustado se agrega dentro del cuerpo del código del sitio web. El 
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/es"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img
