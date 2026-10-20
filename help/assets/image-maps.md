@@ -44,7 +44,7 @@ Los mapas de imágenes permiten agregar una o más áreas hipervinculadas que fu
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Haga clic en el punto interactivo e introduzca la dirección URL y el texto Alt. En la lista **[!UICONTROL Destino]**, especifique dónde desea que se muestre el mapa de imagen; por ejemplo, la misma ficha, una ficha nueva o un iFrame. Por ejemplo, escriba `https://www.adobe.com` como dirección URL, `Adobe website` como texto alternativo y especifique **[!UICONTROL Nueva ficha]** de la lista **[!UICONTROL Destino]** para que el mapa de imagen se abra en una nueva ficha.
+1. Haga clic en el punto interactivo e introduzca la dirección URL y el texto Alt. En la lista **[!UICONTROL Destino]**, especifique dónde desea que se muestre el mapa de imagen; por ejemplo, la misma ficha, una ficha nueva o un iFrame. Por ejemplo, escriba `https://www.adobe.com/es` como dirección URL, `Adobe website` como texto alternativo y especifique **[!UICONTROL Nueva ficha]** de la lista **[!UICONTROL Destino]** para que el mapa de imagen se abra en una nueva ficha.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

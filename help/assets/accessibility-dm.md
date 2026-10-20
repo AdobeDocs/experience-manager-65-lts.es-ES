@@ -81,5 +81,5 @@ Ver [vídeo en Dynamic Media: agregar subtítulos opcionales al vídeo](/help/as
 
 >[!MORELIKETHIS]
 >
->* [Accesibilidad para las soluciones de Adobe](https://www.adobe.com/accessibility.html)
+>* [Accesibilidad para las soluciones de Adobe](https://www.adobe.com/es/accessibility.html)
 >* [Accesibilidad en [!DNL Experience Manager Assets]](/help/assets/accessibility.md)

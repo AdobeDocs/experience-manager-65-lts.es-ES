@@ -180,7 +180,7 @@ Se pueden crear nuevas configuraciones a través de la interfaz de usuario de PD
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento del ciclo de vida del producto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento del ciclo de vida del producto Adobe](https://www.adobe.com/es/support/products/enterprise/eol/eol_matrix.html).
 
 El servicio Administración de documentos (`DocumentManagementService`) habilita los procesos para que utilicen la funcionalidad de administración de contenido proporcionada por los servicios de contenido (obsoleto). Las operaciones de Administración de documentos proporcionan tareas básicas que son necesarias para mantener espacios y contenido en el sistema de administración de contenido. Algunos ejemplos de estas tareas son copiar, eliminar, mover, recuperar y almacenar contenido, crear espacios y asociaciones y obtener y establecer atributos de contenido.
 

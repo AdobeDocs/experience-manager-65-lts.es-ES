@@ -51,8 +51,8 @@ Formato de área:
 
 Ejemplo:
 
-`[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
-`[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
+`[rect(0,0,10,10)"https://www.adobe.com/es"|"_self"|"alt"|(0,0,0.8,0.8)]`
+`[circle(10,10,10)"https://www.adobe.com/es"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
 ## Compatibilidad con imágenes de SVG {#support-for-svg-images}
 

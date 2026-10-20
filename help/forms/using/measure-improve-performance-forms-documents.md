@@ -48,7 +48,7 @@ Para maximizar el ROI, las organizaciones deben monitorizar cómo sus clientes i
 
 ## La solución {#the-solution}
 
-AEM Forms se integra con las soluciones de [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) soluciones [Adobe Analytics](https://www.adobe.com/es/marketing-cloud/web-analytics.html) y [Adobe Target](https://www.adobe.com/es/marketing-cloud/testing-targeting.html), lo cual le permite monitorizar y analizar el rendimiento de los formularios, así como experimentar e identificar la experiencia que proporciona una mejor tasa de conversión.
+AEM Forms se integra con las soluciones de [Adobe Marketing Cloud](https://www.adobe.com/es/marketing-cloud.html) soluciones [Adobe Analytics](https://www.adobe.com/es/marketing-cloud/web-analytics.html) y [Adobe Target](https://www.adobe.com/es/marketing-cloud/testing-targeting.html), lo cual le permite monitorizar y analizar el rendimiento de los formularios, así como experimentar e identificar la experiencia que proporciona una mejor tasa de conversión.
 
 ## El flujo de trabajo {#the-workflow}
 

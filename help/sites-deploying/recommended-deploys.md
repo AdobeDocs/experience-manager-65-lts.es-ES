@@ -87,7 +87,7 @@ Los inconvenientes:
 
 >[!NOTE]
 >
->La implementación en modo de espera en frío en este ejemplo de TarMK requiere que las instancias primaria y en espera tengan licencia por separado, ya que hay una replicación constante en el servidor de conmutación por error. Para obtener más información acerca de las licencias, consulte los [Términos generales de licencia de Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>La implementación en modo de espera en frío en este ejemplo de TarMK requiere que las instancias primaria y en espera tengan licencia por separado, ya que hay una replicación constante en el servidor de conmutación por error. Para obtener más información acerca de las licencias, consulte los [Términos generales de licencia de Adobe](https://www.adobe.com/es/legal/terms/enterprise-licensing.html).
 
 ### Granja TarMK {#tarmk-farm}
 
