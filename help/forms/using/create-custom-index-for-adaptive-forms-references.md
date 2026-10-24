@@ -16,7 +16,7 @@ Cree un índice de Lucene etiquetado para evitar consultas de recorrido cuando A
 
 En AEM Forms 6.5 LTS SP1 y versiones posteriores, la consulta de referencia utiliza la etiqueta de índice `aemformsAFReferences`. Estas versiones incluyen el cambio de consulta, pero debe crear un índice personalizado con esa etiqueta. Este artículo muestra cómo definir e implementar el índice.
 
-Para AEM Forms 6.5, consulte [Crear un índice personalizado para referencias de formularios adaptables en AEM Forms 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
+Para AEM Forms 6.5, consulte [Crear un índice personalizado para referencias de formularios adaptables en AEM Forms 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
 
 ## Requisitos previos {#prerequisites}
 
