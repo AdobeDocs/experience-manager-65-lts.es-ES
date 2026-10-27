@@ -674,7 +674,7 @@ La compactación en línea puede dañar el repositorio JCR con un `SegmentNotFou
 
 1. Instale la [revisión](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) desde la distribución de software. Incluye un paquete `oak-segment-tar` de bajo nivel, por lo que la instancia se reinicia después de la instalación; planifique el tiempo de inactividad.
 1. Establezca la propiedad del sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true` al iniciar AEM. Este indicador es necesario al iniciar AEM, no mientras se ejecuta la compactación sin conexión.
-1. Para cualquier operación de `oak-run`, use el jar [`oak-run` 2.4.1-B002 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) coincidente de la distribución de software.
+1. Para cualquier operación de `oak-run`, use el jar [`oak-run` 2.4.1-B002 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) coincidente de la distribución de software.
 
 ### AEM Forms
 
@@ -706,7 +706,7 @@ Para utilizar las siguientes características, instale el paquete `cq-dam-cfm-in
 Descargue el paquete de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) del portal de distribución de software de Adobe.
 
 
-###
+&#x200B;###
 
 ### Error de conexión de Dispatcher con la función solo SSL (corregido en AEM 6.5 LTS SP1 y posterior){#ssl-only-feature}
 
