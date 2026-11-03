@@ -7,9 +7,9 @@ user-guide-description: Utilice la documentación de Adobe Experience Manager 6.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
+source-wordcount: '7768'
 ht-degree: 66%
 ---
 # Documentación de Adobe Experience Manager 6.5 LTS {#content}
@@ -773,12 +773,6 @@ ht-degree: 66%
     + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-    + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-    + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
-    + [Conceptos básicos de scripts Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
-    + [Referencia de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
-    + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
     + [Usar la firma manuscrita en formularios HTML5](/help/forms/using/scribble-signature.md)
     + [Cambiar el contenido de la página cero en Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Prácticas recomendadas de accesibilidad {#accessibility-best-practices}
