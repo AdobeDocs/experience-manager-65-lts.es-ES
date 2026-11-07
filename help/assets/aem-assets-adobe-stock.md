@@ -484,7 +484,7 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
 >* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/es/stock/faq.html)
 
