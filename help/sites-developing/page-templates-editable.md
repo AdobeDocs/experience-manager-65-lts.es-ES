@@ -60,7 +60,7 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 
 La creación de plantillas editables se realiza principalmente con la [consola y el editor de plantillas](/help/sites-authoring/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
-Para obtener información sobre cómo usar plantillas editables en un proyecto de AEM, consulte [Creación de un proyecto de AEM con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Para obtener información sobre cómo usar plantillas editables en un proyecto de AEM, consulte [Creación de un proyecto de AEM con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=es).
 
 Al crear una plantilla editable, debe hacer lo siguiente:
 
